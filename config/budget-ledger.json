@@ -1,0 +1,1458 @@
+{
+  "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
+  "daily_cap_usd": 5.0,
+  "date": "2026-09-16",
+  "spent_usd": 1.425403,
+  "calls": [
+    {
+      "ts": "2026-09-16T13:35:52Z",
+      "run_id": "local",
+      "purpose": "cli",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 3.1e-05,
+      "tokens_in": 7,
+      "tokens_out": 7
+    },
+    {
+      "ts": "2026-09-16T13:36:47Z",
+      "run_id": "local",
+      "purpose": "smoke-test",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 9e-06,
+      "tokens_in": 7,
+      "tokens_out": 1
+    },
+    {
+      "ts": "2026-09-16T13:38:12Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:people-family",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006157,
+      "tokens_in": 295,
+      "tokens_out": 1583
+    },
+    {
+      "ts": "2026-09-16T13:38:17Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:people-family",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.014572,
+      "tokens_in": 302,
+      "tokens_out": 1164
+    },
+    {
+      "ts": "2026-09-16T13:39:01Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:people-family",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004399,
+      "tokens_in": 374,
+      "tokens_out": 1920
+    },
+    {
+      "ts": "2026-09-16T13:39:21Z",
+      "run_id": "local",
+      "purpose": "probe:deepseek-reasoning",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.000312,
+      "tokens_in": 29,
+      "tokens_out": 67
+    },
+    {
+      "ts": "2026-09-16T13:39:25Z",
+      "run_id": "local",
+      "purpose": "probe:deepseek-reasoning",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.000517,
+      "tokens_in": 29,
+      "tokens_out": 168
+    },
+    {
+      "ts": "2026-09-16T13:40:05Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:people-family",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.003073,
+      "tokens_in": 295,
+      "tokens_out": 1561
+    },
+    {
+      "ts": "2026-09-16T13:40:15Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:food-drink",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.0,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-16T13:40:21Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:body-health",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006114,
+      "tokens_in": 297,
+      "tokens_out": 1571
+    },
+    {
+      "ts": "2026-09-16T13:40:22Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:food-drink",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.011464,
+      "tokens_in": 302,
+      "tokens_out": 905
+    },
+    {
+      "ts": "2026-09-16T13:40:26Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:body-health",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.013184,
+      "tokens_in": 304,
+      "tokens_out": 1048
+    },
+    {
+      "ts": "2026-09-16T13:40:28Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:clothes-personal",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.003986,
+      "tokens_in": 294,
+      "tokens_out": 1004
+    },
+    {
+      "ts": "2026-09-16T13:40:32Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:clothes-personal",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.0136,
+      "tokens_in": 302,
+      "tokens_out": 1083
+    },
+    {
+      "ts": "2026-09-16T13:40:36Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:body-health",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.005647,
+      "tokens_in": 297,
+      "tokens_out": 1523
+    },
+    {
+      "ts": "2026-09-16T13:40:36Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:clothes-personal",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.003592,
+      "tokens_in": 315,
+      "tokens_out": 965
+    },
+    {
+      "ts": "2026-09-16T13:40:36Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:home-household",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.012166,
+      "tokens_in": 305,
+      "tokens_out": 963
+    },
+    {
+      "ts": "2026-09-16T13:40:37Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:home-household",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005537,
+      "tokens_in": 298,
+      "tokens_out": 1417
+    },
+    {
+      "ts": "2026-09-16T13:40:44Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:town-buildings",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.0,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-16T13:40:45Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:food-drink",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002937,
+      "tokens_in": 295,
+      "tokens_out": 1259
+    },
+    {
+      "ts": "2026-09-16T13:40:48Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:town-buildings",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.010282,
+      "tokens_in": 305,
+      "tokens_out": 806
+    },
+    {
+      "ts": "2026-09-16T13:40:50Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:nature-weather",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.012556,
+      "tokens_in": 308,
+      "tokens_out": 995
+    },
+    {
+      "ts": "2026-09-16T13:40:52Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:nature-weather",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005524,
+      "tokens_in": 301,
+      "tokens_out": 1413
+    },
+    {
+      "ts": "2026-09-16T13:40:58Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:plants-animals",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.004333,
+      "tokens_in": 292,
+      "tokens_out": 1097
+    },
+    {
+      "ts": "2026-09-16T13:40:59Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:home-household",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.003752,
+      "tokens_in": 321,
+      "tokens_out": 1800
+    },
+    {
+      "ts": "2026-09-16T13:41:10Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:materials-properties",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.0129,
+      "tokens_in": 312,
+      "tokens_out": 1023
+    },
+    {
+      "ts": "2026-09-16T13:41:11Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:town-buildings",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002817,
+      "tokens_in": 298,
+      "tokens_out": 1200
+    },
+    {
+      "ts": "2026-09-16T13:41:11Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:plants-animals",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004164,
+      "tokens_in": 293,
+      "tokens_out": 1188
+    },
+    {
+      "ts": "2026-09-16T13:41:11Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:nature-weather",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.003755,
+      "tokens_in": 324,
+      "tokens_out": 1800
+    },
+    {
+      "ts": "2026-09-16T13:41:19Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:size-shape-quantity",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005534,
+      "tokens_in": 303,
+      "tokens_out": 1415
+    },
+    {
+      "ts": "2026-09-16T13:41:19Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:plants-animals",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.02076,
+      "tokens_in": 300,
+      "tokens_out": 1680
+    },
+    {
+      "ts": "2026-09-16T13:41:28Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:size-shape-quantity",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.01718,
+      "tokens_in": 310,
+      "tokens_out": 1380
+    },
+    {
+      "ts": "2026-09-16T13:41:29Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:numbers-time",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006556,
+      "tokens_in": 306,
+      "tokens_out": 1687
+    },
+    {
+      "ts": "2026-09-16T13:41:33Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:size-shape-quantity",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002585,
+      "tokens_in": 303,
+      "tokens_out": 1309
+    },
+    {
+      "ts": "2026-09-16T13:41:33Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:numbers-time",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.015566,
+      "tokens_in": 313,
+      "tokens_out": 1245
+    },
+    {
+      "ts": "2026-09-16T13:41:41Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:movement-position",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006049,
+      "tokens_in": 300,
+      "tokens_out": 1553
+    },
+    {
+      "ts": "2026-09-16T13:41:43Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:movement-position",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.01529,
+      "tokens_in": 307,
+      "tokens_out": 1223
+    },
+    {
+      "ts": "2026-09-16T13:41:44Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:materials-properties",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.004759,
+      "tokens_in": 305,
+      "tokens_out": 1208
+    },
+    {
+      "ts": "2026-09-16T13:41:47Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:materials-properties",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.003296,
+      "tokens_in": 305,
+      "tokens_out": 1426
+    },
+    {
+      "ts": "2026-09-16T13:41:49Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:travel-transport",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.004465,
+      "tokens_in": 294,
+      "tokens_out": 1132
+    },
+    {
+      "ts": "2026-09-16T13:41:55Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:travel-transport",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.013252,
+      "tokens_in": 302,
+      "tokens_out": 1054
+    },
+    {
+      "ts": "2026-09-16T13:41:58Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:work-business-money",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.013428,
+      "tokens_in": 306,
+      "tokens_out": 1068
+    },
+    {
+      "ts": "2026-09-16T13:42:02Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:work-business-money",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005159,
+      "tokens_in": 299,
+      "tokens_out": 1316
+    },
+    {
+      "ts": "2026-09-16T13:42:02Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:movement-position",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.00647,
+      "tokens_in": 300,
+      "tokens_out": 1920
+    },
+    {
+      "ts": "2026-09-16T13:42:05Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:travel-transport",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002071,
+      "tokens_in": 295,
+      "tokens_out": 1039
+    },
+    {
+      "ts": "2026-09-16T13:42:05Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:numbers-time",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.005018,
+      "tokens_in": 306,
+      "tokens_out": 1619
+    },
+    {
+      "ts": "2026-09-16T13:42:08Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:school-science",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.011324,
+      "tokens_in": 304,
+      "tokens_out": 893
+    },
+    {
+      "ts": "2026-09-16T13:42:13Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:work-business-money",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.006654,
+      "tokens_in": 319,
+      "tokens_out": 1920
+    },
+    {
+      "ts": "2026-09-16T13:42:13Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:school-science",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005522,
+      "tokens_in": 297,
+      "tokens_out": 1413
+    },
+    {
+      "ts": "2026-09-16T13:42:14Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:language-communication",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006071,
+      "tokens_in": 299,
+      "tokens_out": 1559
+    },
+    {
+      "ts": "2026-09-16T13:42:16Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:language-communication",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.013464,
+      "tokens_in": 306,
+      "tokens_out": 1071
+    },
+    {
+      "ts": "2026-09-16T13:42:18Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:school-science",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.006267,
+      "tokens_in": 317,
+      "tokens_out": 1800
+    },
+    {
+      "ts": "2026-09-16T13:42:21Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:thinking-knowing",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005564,
+      "tokens_in": 299,
+      "tokens_out": 1424
+    },
+    {
+      "ts": "2026-09-16T13:42:27Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:thinking-knowing",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.00461,
+      "tokens_in": 299,
+      "tokens_out": 1247
+    },
+    {
+      "ts": "2026-09-16T13:42:27Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:feelings-character",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.00621,
+      "tokens_in": 295,
+      "tokens_out": 1597
+    },
+    {
+      "ts": "2026-09-16T13:42:29Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:feelings-character",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.014032,
+      "tokens_in": 302,
+      "tokens_out": 1119
+    },
+    {
+      "ts": "2026-09-16T13:42:30Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:language-communication",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.003974,
+      "tokens_in": 322,
+      "tokens_out": 1920
+    },
+    {
+      "ts": "2026-09-16T13:42:37Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:society-law-religion",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005568,
+      "tokens_in": 299,
+      "tokens_out": 1425
+    },
+    {
+      "ts": "2026-09-16T13:42:38Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:feelings-character",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.003145,
+      "tokens_in": 318,
+      "tokens_out": 1488
+    },
+    {
+      "ts": "2026-09-16T13:42:40Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:society-law-religion",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.01338,
+      "tokens_in": 306,
+      "tokens_out": 1064
+    },
+    {
+      "ts": "2026-09-16T13:42:41Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:arts-sport-leisure",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.01194,
+      "tokens_in": 306,
+      "tokens_out": 944
+    },
+    {
+      "ts": "2026-09-16T13:42:42Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:thinking-knowing",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.021384,
+      "tokens_in": 306,
+      "tokens_out": 1731
+    },
+    {
+      "ts": "2026-09-16T13:42:45Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:arts-sport-leisure",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.00502,
+      "tokens_in": 298,
+      "tokens_out": 1279
+    },
+    {
+      "ts": "2026-09-16T13:42:47Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:technology-tools",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.004269,
+      "tokens_in": 297,
+      "tokens_out": 1079
+    },
+    {
+      "ts": "2026-09-16T13:42:52Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:society-law-religion",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.005153,
+      "tokens_in": 299,
+      "tokens_out": 1376
+    },
+    {
+      "ts": "2026-09-16T13:42:54Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:technology-tools",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.013258,
+      "tokens_in": 305,
+      "tokens_out": 1054
+    },
+    {
+      "ts": "2026-09-16T13:42:56Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:physical-actions",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.014434,
+      "tokens_in": 311,
+      "tokens_out": 1151
+    },
+    {
+      "ts": "2026-09-16T13:42:57Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:arts-sport-leisure",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004735,
+      "tokens_in": 299,
+      "tokens_out": 1211
+    },
+    {
+      "ts": "2026-09-16T13:42:57Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:physical-actions",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006584,
+      "tokens_in": 304,
+      "tokens_out": 1695
+    },
+    {
+      "ts": "2026-09-16T13:43:01Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:technology-tools",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.00518,
+      "tokens_in": 298,
+      "tokens_out": 1680
+    },
+    {
+      "ts": "2026-09-16T13:43:03Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:perception-senses",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.004993,
+      "tokens_in": 302,
+      "tokens_out": 1271
+    },
+    {
+      "ts": "2026-09-16T13:43:07Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:life-daily",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.004429,
+      "tokens_in": 305,
+      "tokens_out": 1120
+    },
+    {
+      "ts": "2026-09-16T13:43:09Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:life-daily",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.010526,
+      "tokens_in": 313,
+      "tokens_out": 825
+    },
+    {
+      "ts": "2026-09-16T13:43:15Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:life-daily",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002174,
+      "tokens_in": 329,
+      "tokens_out": 974
+    },
+    {
+      "ts": "2026-09-16T13:43:18Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:describing-things",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006263,
+      "tokens_in": 306,
+      "tokens_out": 1609
+    },
+    {
+      "ts": "2026-09-16T13:43:23Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:describing-things",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.016874,
+      "tokens_in": 313,
+      "tokens_out": 1354
+    },
+    {
+      "ts": "2026-09-16T13:43:27Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:perception-senses",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002855,
+      "tokens_in": 303,
+      "tokens_out": 1216
+    },
+    {
+      "ts": "2026-09-16T13:43:31Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:describing-people",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005581,
+      "tokens_in": 297,
+      "tokens_out": 1429
+    },
+    {
+      "ts": "2026-09-16T13:43:32Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:describing-people",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.01354,
+      "tokens_in": 302,
+      "tokens_out": 1078
+    },
+    {
+      "ts": "2026-09-16T13:43:33Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:describing-things",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.00705,
+      "tokens_in": 326,
+      "tokens_out": 2040
+    },
+    {
+      "ts": "2026-09-16T13:43:40Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:physical-actions",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.005552,
+      "tokens_in": 304,
+      "tokens_out": 2040
+    },
+    {
+      "ts": "2026-09-16T13:43:41Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:perception-senses",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.02078,
+      "tokens_in": 310,
+      "tokens_out": 1680
+    },
+    {
+      "ts": "2026-09-16T13:43:43Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:describing-people",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004628,
+      "tokens_in": 296,
+      "tokens_out": 1254
+    },
+    {
+      "ts": "2026-09-16T13:43:45Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:abstract-nouns",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.0,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-16T13:43:46Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:danger-safety-crime",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.004313,
+      "tokens_in": 301,
+      "tokens_out": 1090
+    },
+    {
+      "ts": "2026-09-16T13:43:52Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:abstract-nouns",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.0148,
+      "tokens_in": 314,
+      "tokens_out": 1181
+    },
+    {
+      "ts": "2026-09-16T13:43:56Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:determiners-pronouns",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.003847,
+      "tokens_in": 294,
+      "tokens_out": 967
+    },
+    {
+      "ts": "2026-09-16T13:43:58Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:danger-safety-crime",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.019334,
+      "tokens_in": 307,
+      "tokens_out": 1560
+    },
+    {
+      "ts": "2026-09-16T13:44:00Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:danger-safety-crime",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002589,
+      "tokens_in": 300,
+      "tokens_out": 1090
+    },
+    {
+      "ts": "2026-09-16T13:44:00Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:determiners-pronouns",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.003676,
+      "tokens_in": 295,
+      "tokens_out": 966
+    },
+    {
+      "ts": "2026-09-16T13:44:02Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:determiners-pronouns",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.01473,
+      "tokens_in": 303,
+      "tokens_out": 1177
+    },
+    {
+      "ts": "2026-09-16T13:44:03Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:prepositions-conjunctions",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.003947,
+      "tokens_in": 293,
+      "tokens_out": 994
+    },
+    {
+      "ts": "2026-09-16T13:44:08Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:abstract-nouns",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.006018,
+      "tokens_in": 307,
+      "tokens_out": 1628
+    },
+    {
+      "ts": "2026-09-16T13:44:10Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:adverbs",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006136,
+      "tokens_in": 301,
+      "tokens_out": 1576
+    },
+    {
+      "ts": "2026-09-16T13:44:15Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:prepositions-conjunctions",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.00272,
+      "tokens_in": 317,
+      "tokens_out": 1266
+    },
+    {
+      "ts": "2026-09-16T13:44:15Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:prepositions-conjunctions",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.016094,
+      "tokens_in": 301,
+      "tokens_out": 1291
+    },
+    {
+      "ts": "2026-09-16T13:44:18Z",
+      "run_id": "local",
+      "purpose": "wordlist:propose:verbs-light-modal",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.004279,
+      "tokens_in": 325,
+      "tokens_out": 1076
+    },
+    {
+      "ts": "2026-09-16T13:44:27Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:phrasal-verbs",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.009752,
+      "tokens_in": 298,
+      "tokens_out": 763
+    },
+    {
+      "ts": "2026-09-16T13:44:28Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:adverbs",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002929,
+      "tokens_in": 299,
+      "tokens_out": 1491
+    },
+    {
+      "ts": "2026-09-16T13:44:29Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:phrasal-verbs",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005066,
+      "tokens_in": 290,
+      "tokens_out": 1293
+    },
+    {
+      "ts": "2026-09-16T13:44:29Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:adverbs",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.02362,
+      "tokens_in": 308,
+      "tokens_out": 1917
+    },
+    {
+      "ts": "2026-09-16T13:44:30Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:verbs-light-modal",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.0026,
+      "tokens_in": 349,
+      "tokens_out": 1187
+    },
+    {
+      "ts": "2026-09-16T13:44:33Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:affixes",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.002593,
+      "tokens_in": 302,
+      "tokens_out": 631
+    },
+    {
+      "ts": "2026-09-16T13:44:38Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:verbs-light-modal",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.020826,
+      "tokens_in": 333,
+      "tokens_out": 1680
+    },
+    {
+      "ts": "2026-09-16T13:44:38Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:phrasal-verbs",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004194,
+      "tokens_in": 291,
+      "tokens_out": 1125
+    },
+    {
+      "ts": "2026-09-16T13:44:39Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:affixes",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.010486,
+      "tokens_in": 311,
+      "tokens_out": 822
+    },
+    {
+      "ts": "2026-09-16T13:44:42Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:defining-metalanguage",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.014472,
+      "tokens_in": 348,
+      "tokens_out": 1148
+    },
+    {
+      "ts": "2026-09-16T13:44:43Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:defining-metalanguage",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006627,
+      "tokens_in": 341,
+      "tokens_out": 1699
+    },
+    {
+      "ts": "2026-09-16T13:44:47Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:interjections-discourse",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.002525,
+      "tokens_in": 302,
+      "tokens_out": 613
+    },
+    {
+      "ts": "2026-09-16T13:44:49Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:affixes",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002609,
+      "tokens_in": 326,
+      "tokens_out": 1200
+    },
+    {
+      "ts": "2026-09-16T13:44:51Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:abbreviations",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.001858,
+      "tokens_in": 292,
+      "tokens_out": 437
+    },
+    {
+      "ts": "2026-09-16T13:44:53Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:abbreviations",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.007312,
+      "tokens_in": 302,
+      "tokens_out": 559
+    },
+    {
+      "ts": "2026-09-16T13:44:54Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:interjections-discourse",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.010808,
+      "tokens_in": 310,
+      "tokens_out": 849
+    },
+    {
+      "ts": "2026-09-16T13:44:54Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:abbreviations",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.001076,
+      "tokens_in": 317,
+      "tokens_out": 405
+    },
+    {
+      "ts": "2026-09-16T13:44:55Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:interjections-discourse",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.002754,
+      "tokens_in": 304,
+      "tokens_out": 733
+    },
+    {
+      "ts": "2026-09-16T13:45:12Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:propose:defining-metalanguage",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.006907,
+      "tokens_in": 341,
+      "tokens_out": 2040
+    },
+    {
+      "ts": "2026-09-16T13:47:15Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:body-health",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.008186,
+      "tokens_in": 285,
+      "tokens_out": 2126
+    },
+    {
+      "ts": "2026-09-16T13:47:19Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:people-family",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.008522,
+      "tokens_in": 283,
+      "tokens_out": 2216
+    },
+    {
+      "ts": "2026-09-16T13:47:22Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:body-health",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.020822,
+      "tokens_in": 283,
+      "tokens_out": 1688
+    },
+    {
+      "ts": "2026-09-16T13:47:32Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:food-drink",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.008957,
+      "tokens_in": 283,
+      "tokens_out": 2332
+    },
+    {
+      "ts": "2026-09-16T13:47:34Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:body-health",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.005322,
+      "tokens_in": 302,
+      "tokens_out": 2636
+    },
+    {
+      "ts": "2026-09-16T13:47:35Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:food-drink",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.021166,
+      "tokens_in": 281,
+      "tokens_out": 1717
+    },
+    {
+      "ts": "2026-09-16T13:47:36Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:people-family",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.029362,
+      "tokens_in": 281,
+      "tokens_out": 2400
+    },
+    {
+      "ts": "2026-09-16T13:47:39Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:people-family",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004652,
+      "tokens_in": 277,
+      "tokens_out": 2400
+    },
+    {
+      "ts": "2026-09-16T13:47:50Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:clothes-personal",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.007185,
+      "tokens_in": 285,
+      "tokens_out": 1859
+    },
+    {
+      "ts": "2026-09-16T13:47:54Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:food-drink",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.00819,
+      "tokens_in": 277,
+      "tokens_out": 2215
+    },
+    {
+      "ts": "2026-09-16T13:47:56Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:home-household",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.019972,
+      "tokens_in": 284,
+      "tokens_out": 1617
+    },
+    {
+      "ts": "2026-09-16T13:47:56Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:home-household",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.009109,
+      "tokens_in": 286,
+      "tokens_out": 2372
+    },
+    {
+      "ts": "2026-09-16T13:48:04Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:clothes-personal",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.02623,
+      "tokens_in": 281,
+      "tokens_out": 2139
+    },
+    {
+      "ts": "2026-09-16T13:48:06Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:town-buildings",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.007283,
+      "tokens_in": 286,
+      "tokens_out": 1885
+    },
+    {
+      "ts": "2026-09-16T13:48:13Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:home-household",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.008544,
+      "tokens_in": 300,
+      "tokens_out": 2520
+    },
+    {
+      "ts": "2026-09-16T13:48:19Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:nature-weather",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.009067,
+      "tokens_in": 289,
+      "tokens_out": 2360
+    },
+    {
+      "ts": "2026-09-16T13:48:20Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:clothes-personal",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004041,
+      "tokens_in": 277,
+      "tokens_out": 1797
+    },
+    {
+      "ts": "2026-09-16T13:48:22Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:nature-weather",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.018934,
+      "tokens_in": 287,
+      "tokens_out": 1530
+    },
+    {
+      "ts": "2026-09-16T13:48:24Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:town-buildings",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.024628,
+      "tokens_in": 284,
+      "tokens_out": 2005
+    },
+    {
+      "ts": "2026-09-16T13:48:32Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:town-buildings",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.012911,
+      "tokens_in": 280,
+      "tokens_out": 2205
+    },
+    {
+      "ts": "2026-09-16T13:48:35Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:plants-animals",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.009544,
+      "tokens_in": 281,
+      "tokens_out": 2489
+    },
+    {
+      "ts": "2026-09-16T13:48:37Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:plants-animals",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.01977,
+      "tokens_in": 279,
+      "tokens_out": 1601
+    },
+    {
+      "ts": "2026-09-16T13:48:40Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:nature-weather",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004889,
+      "tokens_in": 306,
+      "tokens_out": 2407
+    },
+    {
+      "ts": "2026-09-16T13:48:41Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:materials-properties",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.018222,
+      "tokens_in": 291,
+      "tokens_out": 1470
+    },
+    {
+      "ts": "2026-09-16T13:48:44Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:materials-properties",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.008455,
+      "tokens_in": 293,
+      "tokens_out": 2196
+    },
+    {
+      "ts": "2026-09-16T13:48:52Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:size-shape-quantity",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006166,
+      "tokens_in": 291,
+      "tokens_out": 1586
+    },
+    {
+      "ts": "2026-09-16T13:49:05Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:numbers-time",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.006824,
+      "tokens_in": 294,
+      "tokens_out": 1761
+    },
+    {
+      "ts": "2026-09-16T13:49:08Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:size-shape-quantity",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.026498,
+      "tokens_in": 289,
+      "tokens_out": 2160
+    },
+    {
+      "ts": "2026-09-16T13:49:15Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:materials-properties",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004653,
+      "tokens_in": 287,
+      "tokens_out": 2400
+    },
+    {
+      "ts": "2026-09-16T13:49:21Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:plants-animals",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.006518,
+      "tokens_in": 275,
+      "tokens_out": 2432
+    },
+    {
+      "ts": "2026-09-16T13:49:23Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:numbers-time",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.025064,
+      "tokens_in": 292,
+      "tokens_out": 2040
+    },
+    {
+      "ts": "2026-09-16T13:49:24Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:size-shape-quantity",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004231,
+      "tokens_in": 285,
+      "tokens_out": 1884
+    },
+    {
+      "ts": "2026-09-16T13:49:28Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:movement-position",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.008474,
+      "tokens_in": 288,
+      "tokens_out": 2202
+    },
+    {
+      "ts": "2026-09-16T13:49:35Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:movement-position",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.018404,
+      "tokens_in": 286,
+      "tokens_out": 1486
+    },
+    {
+      "ts": "2026-09-16T13:49:37Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:travel-transport",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.00823,
+      "tokens_in": 283,
+      "tokens_out": 2138
+    },
+    {
+      "ts": "2026-09-16T13:49:38Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:numbers-time",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.003969,
+      "tokens_in": 288,
+      "tokens_out": 2040
+    },
+    {
+      "ts": "2026-09-16T13:49:39Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:travel-transport",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.016834,
+      "tokens_in": 281,
+      "tokens_out": 1356
+    },
+    {
+      "ts": "2026-09-16T13:49:53Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:work-business-money",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.011199,
+      "tokens_in": 287,
+      "tokens_out": 2929
+    },
+    {
+      "ts": "2026-09-16T13:49:54Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:school-science",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.019658,
+      "tokens_in": 283,
+      "tokens_out": 1591
+    },
+    {
+      "ts": "2026-09-16T13:49:57Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:movement-position",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.004656,
+      "tokens_in": 282,
+      "tokens_out": 2400
+    },
+    {
+      "ts": "2026-09-16T13:49:57Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:work-business-money",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.024462,
+      "tokens_in": 285,
+      "tokens_out": 1991
+    },
+    {
+      "ts": "2026-09-16T13:50:09Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:school-science",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.00846,
+      "tokens_in": 285,
+      "tokens_out": 2199
+    },
+    {
+      "ts": "2026-09-16T13:50:11Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:language-communication",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.009609,
+      "tokens_in": 287,
+      "tokens_out": 2505
+    },
+    {
+      "ts": "2026-09-16T13:50:14Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:language-communication",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.018402,
+      "tokens_in": 285,
+      "tokens_out": 1486
+    },
+    {
+      "ts": "2026-09-16T13:50:22Z",
+      "run_id": "20260916T134425Z-1yir52",
+      "purpose": "wordlist:expand:work-business-money",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.009827,
+      "tokens_in": 281,
+      "tokens_out": 3000
+    }
+  ],
+  "history": {}
+}
