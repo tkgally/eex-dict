@@ -1,0 +1,340 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tkgally/eex-dict/schema/entry.schema.json",
+  "title": "TKG English Learner's Dictionary entry",
+  "description": "One JSON file per entry (one headword plus one part of speech). The custom keyword x-vocabulary names a closed set in schema/vocabularies.json whose keys are the only allowed values; standard validators ignore it and tools/validate.py enforces it. Rules the schema cannot express (id equals slug, slug agrees with headword and pos, the file path agrees with the slug, no abbreviations in prose, example counts, adaptation word caps, pronunciation required for ordinary parts of speech, the draft ceiling) live in tools/validate.py and are documented in wiki/conventions.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "slug", "headword", "pos", "homograph", "variants", "pronunciation", "inflections", "frequency", "labels", "core_idea", "senses", "phrases", "word_family", "synonym_discrimination", "usage_note", "learner_errors", "etymology", "see_also", "adaptation", "l1", "provenance"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "id": {"$ref": "#/$defs/slug"},
+    "slug": {"$ref": "#/$defs/slug"},
+    "headword": {"type": "string", "minLength": 1},
+    "pos": {"type": "string", "x-vocabulary": "pos"},
+    "homograph": {"type": "integer", "minimum": 1},
+    "variants": {"type": "array", "items": {"$ref": "#/$defs/variant"}},
+    "pronunciation": {"$ref": "#/$defs/pronunciation"},
+    "inflections": {"$ref": "#/$defs/inflections"},
+    "frequency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["band", "basis", "defining_vocabulary"],
+      "properties": {
+        "band": {"type": "integer", "minimum": 1, "maximum": 5},
+        "basis": {"const": "editorial"},
+        "defining_vocabulary": {"type": "boolean"}
+      }
+    },
+    "labels": {"$ref": "#/$defs/labelset"},
+    "core_idea": {"type": ["string", "null"]},
+    "senses": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sense"}},
+    "phrases": {"type": "array", "items": {"$ref": "#/$defs/phrase"}},
+    "word_family": {"type": "array", "items": {"$ref": "#/$defs/family_member"}},
+    "synonym_discrimination": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["words", "note"],
+          "properties": {
+            "words": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/slug"}},
+            "note": {"type": "string", "minLength": 1}
+          }
+        }
+      ]
+    },
+    "usage_note": {"type": ["string", "null"]},
+    "learner_errors": {"type": "array", "items": {"$ref": "#/$defs/learner_error"}},
+    "etymology": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["text", "sources_consulted", "checked"],
+          "properties": {
+            "text": {"type": "string", "minLength": 1},
+            "sources_consulted": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+            "checked": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}
+          }
+        }
+      ]
+    },
+    "see_also": {"type": "array", "items": {"$ref": "#/$defs/xref"}},
+    "adaptation": {"$ref": "#/$defs/adaptation"},
+    "l1": {"$ref": "#/$defs/l1map"},
+    "provenance": {"$ref": "#/$defs/provenance"}
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "headword lowercased, spaces to hyphens, apostrophes and periods dropped, non-ASCII letters transliterated, then a hyphen and the part-of-speech code, then -2, -3 for later homographs"
+    },
+    "sub_id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+    "prose": {"type": "string", "minLength": 1, "description": "plain text; links are placed at build time; [[slug|visible text]] forces a link target"},
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["form", "kind", "region", "note"],
+      "properties": {
+        "form": {"type": "string", "minLength": 1},
+        "kind": {"type": "string", "x-vocabulary": "variant_kinds"},
+        "region": {"type": ["string", "null"], "x-vocabulary": "region"},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "transcription": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ipa", "source", "checked_by", "status"],
+      "properties": {
+        "ipa": {"type": "string", "minLength": 1, "description": "IPA with primary stress ˈ, secondary stress ˌ, and syllable breaks marked with a period; no slashes or brackets"},
+        "source": {"type": "string", "minLength": 1, "description": "model:<model slug> for a drafter's transcription"},
+        "checked_by": {"type": ["string", "null"], "description": "what tools/pronounce_check.py did, for example agreement:3/3;cmudict:agree"},
+        "status": {"type": "string", "x-vocabulary": "verification_status"}
+      }
+    },
+    "pronunciation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["american", "british", "variants", "audio", "notes"],
+      "properties": {
+        "american": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/transcription"}]},
+        "british": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/transcription"}]},
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["ipa", "region", "note"],
+            "properties": {
+              "ipa": {"type": "string", "minLength": 1},
+              "region": {"type": ["string", "null"], "x-vocabulary": "region"},
+              "note": {"type": ["string", "null"]}
+            }
+          }
+        },
+        "audio": {"type": ["string", "null"], "description": "reserved for a relative path to an audio file; null until audio exists"},
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "inflections": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["forms", "regular", "source", "status", "note"],
+      "properties": {
+        "forms": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "plural": {"type": ["string", "null"]},
+            "third_person_singular": {"type": ["string", "null"]},
+            "past_tense": {"type": ["string", "null"]},
+            "past_participle": {"type": ["string", "null"]},
+            "present_participle": {"type": ["string", "null"]},
+            "comparative": {"type": ["string", "null"]},
+            "superlative": {"type": ["string", "null"]}
+          }
+        },
+        "regular": {"type": "boolean"},
+        "source": {"type": "string", "x-vocabulary": "inflection_sources"},
+        "status": {"type": "string", "x-vocabulary": "verification_status"},
+        "note": {"type": ["string", "null"], "description": "a plain-text remark shown on the site, for example 'past tense also dreamt'"}
+      }
+    },
+    "labelset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["register", "region", "domain", "currency", "attitude"],
+      "properties": {
+        "register": {"type": "array", "items": {"type": "string", "x-vocabulary": "register"}},
+        "region": {"type": "array", "items": {"type": "string", "x-vocabulary": "region"}},
+        "domain": {"type": "array", "items": {"type": "string", "x-vocabulary": "domain"}},
+        "currency": {"type": "array", "items": {"type": "string", "x-vocabulary": "currency"}},
+        "attitude": {"type": "array", "items": {"type": "string", "x-vocabulary": "attitude"}}
+      }
+    },
+    "grammar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["countability", "transitivity", "codes", "patterns"],
+      "properties": {
+        "countability": {"type": ["string", "null"], "x-vocabulary": "countability"},
+        "transitivity": {"type": ["string", "null"], "x-vocabulary": "transitivity"},
+        "codes": {"type": "array", "items": {"type": "string", "x-vocabulary": "grammar_codes"}},
+        "patterns": {"type": "array", "items": {"type": "string", "x-vocabulary": "verb_patterns"}}
+      }
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "note", "pattern"],
+      "properties": {
+        "text": {"$ref": "#/$defs/prose"},
+        "note": {"type": ["string", "null"]},
+        "pattern": {"type": ["string", "null"], "x-vocabulary": "verb_patterns"}
+      }
+    },
+    "collocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "items"],
+      "properties": {
+        "type": {"type": "string", "x-vocabulary": "collocation_types"},
+        "items": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "xref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "note"],
+      "properties": {
+        "slug": {"$ref": "#/$defs/slug"},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "family_member": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "form", "note"],
+      "properties": {
+        "slug": {"$ref": "#/$defs/slug"},
+        "form": {"type": ["string", "null"], "description": "the word as displayed when it differs from what the slug shows, for example o'clock"},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "adaptation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["semantic", "grammar", "culture", "false_friends", "pronunciation"],
+      "properties": {
+        "semantic": {"type": ["string", "null"]},
+        "grammar": {"type": ["string", "null"]},
+        "culture": {"type": ["string", "null"]},
+        "false_friends": {"type": ["string", "null"]},
+        "pronunciation": {"type": ["string", "null"]}
+      }
+    },
+    "l1map": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$"},
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["equivalents", "note", "status"],
+        "properties": {
+          "equivalents": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "note": {"type": ["string", "null"]},
+          "status": {"type": "string", "x-vocabulary": "l1_statuses"}
+        }
+      }
+    },
+    "subsense": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["letter", "definition", "explanation", "grammar", "labels", "examples", "collocations"],
+      "properties": {
+        "letter": {"type": "string", "pattern": "^[a-z]$"},
+        "definition": {"$ref": "#/$defs/prose"},
+        "explanation": {"type": ["string", "null"]},
+        "grammar": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/grammar"}]},
+        "labels": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/labelset"}]},
+        "examples": {"type": "array", "items": {"$ref": "#/$defs/example"}},
+        "collocations": {"type": "array", "items": {"$ref": "#/$defs/collocation"}}
+      }
+    },
+    "sense": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["n", "signpost", "definition", "explanation", "grammar", "labels", "pronunciation", "examples", "collocations", "synonyms", "antonyms", "compare", "subsenses", "adaptation", "l1"],
+      "properties": {
+        "n": {"type": "integer", "minimum": 1},
+        "signpost": {"type": ["string", "null"]},
+        "definition": {"$ref": "#/$defs/prose"},
+        "explanation": {"type": ["string", "null"]},
+        "grammar": {"$ref": "#/$defs/grammar"},
+        "labels": {"$ref": "#/$defs/labelset"},
+        "pronunciation": {
+          "oneOf": [
+            {"type": "null"},
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["american", "british"],
+              "properties": {
+                "american": {"$ref": "#/$defs/transcription"},
+                "british": {"$ref": "#/$defs/transcription"}
+              }
+            }
+          ]
+        },
+        "examples": {"type": "array", "items": {"$ref": "#/$defs/example"}},
+        "collocations": {"type": "array", "items": {"$ref": "#/$defs/collocation"}},
+        "synonyms": {"type": "array", "items": {"$ref": "#/$defs/xref"}},
+        "antonyms": {"type": "array", "items": {"$ref": "#/$defs/xref"}},
+        "compare": {"type": "array", "items": {"$ref": "#/$defs/xref"}},
+        "subsenses": {"type": "array", "items": {"$ref": "#/$defs/subsense"}},
+        "adaptation": {"$ref": "#/$defs/adaptation"},
+        "l1": {"$ref": "#/$defs/l1map"}
+      }
+    },
+    "phrase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sub_id", "text", "definition", "explanation", "labels", "examples", "adaptation", "l1"],
+      "properties": {
+        "sub_id": {"$ref": "#/$defs/sub_id"},
+        "text": {"type": "string", "minLength": 1},
+        "definition": {"$ref": "#/$defs/prose"},
+        "explanation": {"type": ["string", "null"]},
+        "labels": {"$ref": "#/$defs/labelset"},
+        "examples": {"type": "array", "items": {"$ref": "#/$defs/example"}},
+        "adaptation": {"$ref": "#/$defs/adaptation"},
+        "l1": {"$ref": "#/$defs/l1map"}
+      }
+    },
+    "learner_error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["incorrect", "correct", "note"],
+      "properties": {
+        "incorrect": {"type": "string", "minLength": 1},
+        "correct": {"type": "string", "minLength": 1},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "review_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["run_id", "role", "model", "date", "file", "ok", "issues", "blocking"],
+      "properties": {
+        "run_id": {"type": "string", "minLength": 1},
+        "role": {"type": "string", "minLength": 1, "description": "the role named in config/models.md, for example reviewer-a"},
+        "model": {"type": "string", "minLength": 1, "description": "the resolved model slug, as data"},
+        "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+        "file": {"type": "string", "minLength": 1, "description": "reviews/<run-id>/<slug>.json"},
+        "ok": {"type": "integer", "minimum": 0},
+        "issues": {"type": "integer", "minimum": 0},
+        "blocking": {"type": "integer", "minimum": 0}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created", "modified", "drafted_by", "run_id", "reviews", "status", "flags", "notes"],
+      "properties": {
+        "created": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"},
+        "modified": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"},
+        "drafted_by": {"type": "string", "minLength": 1, "description": "the drafting model's slug, as data"},
+        "run_id": {"type": ["string", "null"]},
+        "reviews": {"type": "array", "items": {"$ref": "#/$defs/review_record"}},
+        "status": {"type": "string", "x-vocabulary": "entry_status"},
+        "flags": {"type": "array", "items": {"type": "string", "x-vocabulary": "provenance_flags"}},
+        "notes": {"type": ["string", "null"], "description": "free text for the record: a declined field, an adjudication summary"}
+      }
+    }
+  }
+}

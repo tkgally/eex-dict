@@ -1,0 +1,963 @@
+{
+  "_doc": "Every closed vocabulary of the TKG English Learner's Dictionary, with a one-line description of each value. tools/validate.py enforces these; tools/build_site.py renders the labels and codes. A classifying field may hold only a value listed here. A new value is added only by a logged decision (wiki/decisions/) in the same pull request as the first entry that needs it. Keys are the exact strings stored in entries; 'code' is the short form shown beside the spelled-out label on the site.",
+  "schema_version": "1.0",
+  "pos": {
+    "n": {
+      "label": "noun",
+      "description": "a word for a person, thing, place, quality, or idea"
+    },
+    "v": {
+      "label": "verb",
+      "description": "a word for an action, event, or state"
+    },
+    "adj": {
+      "label": "adjective",
+      "description": "a word that describes a noun"
+    },
+    "adv": {
+      "label": "adverb",
+      "description": "a word that describes a verb, an adjective, another adverb, or a whole sentence"
+    },
+    "prep": {
+      "label": "preposition",
+      "description": "a word placed before a noun phrase to show a relation such as place, time, or direction"
+    },
+    "conj": {
+      "label": "conjunction",
+      "description": "a word that joins words, phrases, or clauses"
+    },
+    "pron": {
+      "label": "pronoun",
+      "description": "a word used in place of a noun phrase"
+    },
+    "det": {
+      "label": "determiner",
+      "description": "a word placed before a noun to show which one or how many"
+    },
+    "num": {
+      "label": "number",
+      "description": "a cardinal or ordinal number word"
+    },
+    "modal": {
+      "label": "modal verb",
+      "description": "a verb such as can or must used before another verb to express possibility, permission, or necessity"
+    },
+    "aux": {
+      "label": "auxiliary verb",
+      "description": "a helping verb such as be, have, or do used to form tenses, questions, and negatives"
+    },
+    "interj": {
+      "label": "interjection",
+      "description": "a word or sound used on its own to express a feeling or reaction"
+    },
+    "phrv": {
+      "label": "phrasal verb",
+      "description": "a verb plus an adverb or preposition with a meaning of its own"
+    },
+    "phr": {
+      "label": "phrase",
+      "description": "a fixed expression with no single part of speech"
+    },
+    "prefix": {
+      "label": "prefix",
+      "description": "a group of letters added to the beginning of a word to change its meaning"
+    },
+    "suffix": {
+      "label": "suffix",
+      "description": "a group of letters added to the end of a word to change its meaning or part of speech"
+    },
+    "comb": {
+      "label": "combining form",
+      "description": "a word part used to form compounds, such as -phobia or eco-"
+    },
+    "abbr": {
+      "label": "abbreviation",
+      "description": "a short form of a word or phrase, including initialisms and acronyms"
+    }
+  },
+  "countability": {
+    "countable": {
+      "code": "C",
+      "description": "has a plural and can follow a or an: a book, two books"
+    },
+    "uncountable": {
+      "code": "U",
+      "description": "has no plural and does not follow a or an: some water, a lot of information"
+    },
+    "countable or uncountable": {
+      "code": "C/U",
+      "description": "used both ways, often with a difference of meaning: a coffee, some coffee"
+    },
+    "singular only": {
+      "code": "sing",
+      "description": "used only in the singular, usually with the or a possessive: the future, the outdoors, my whereabouts"
+    },
+    "plural only": {
+      "code": "pl",
+      "description": "used only in the plural and takes a plural verb: scissors, clothes"
+    }
+  },
+  "transitivity": {
+    "transitive": {
+      "code": "T",
+      "description": "takes a direct object: She closed the door."
+    },
+    "intransitive": {
+      "code": "I",
+      "description": "takes no direct object: The door closed."
+    },
+    "transitive or intransitive": {
+      "code": "T/I",
+      "description": "used with or without a direct object in this sense"
+    },
+    "linking": {
+      "code": "L",
+      "description": "joins the subject to a word that describes it: She seems tired."
+    }
+  },
+  "verb_patterns": {
+    "verb + object": {
+      "code": "V + obj",
+      "description": "the verb is followed by a direct object",
+      "example": "She read the letter."
+    },
+    "verb + two objects": {
+      "code": "V + obj + obj",
+      "description": "the verb is followed by an indirect object and a direct object",
+      "example": "He gave her the keys."
+    },
+    "verb + to-infinitive": {
+      "code": "V + to-inf",
+      "description": "the verb is followed by to and the base form of another verb",
+      "example": "They decided to leave."
+    },
+    "verb + object + to-infinitive": {
+      "code": "V + obj + to-inf",
+      "description": "an object comes between the verb and to plus a base form",
+      "example": "She asked him to wait."
+    },
+    "verb + bare infinitive": {
+      "code": "V + inf",
+      "description": "the verb is followed by a base form without to",
+      "example": "You had better go."
+    },
+    "verb + object + bare infinitive": {
+      "code": "V + obj + inf",
+      "description": "an object comes between the verb and a base form without to",
+      "example": "Let me help."
+    },
+    "verb + -ing form": {
+      "code": "V + -ing",
+      "description": "the verb is followed by the -ing form of another verb",
+      "example": "I enjoy swimming."
+    },
+    "verb + object + -ing form": {
+      "code": "V + obj + -ing",
+      "description": "an object comes between the verb and an -ing form",
+      "example": "I saw them leaving."
+    },
+    "verb + that-clause": {
+      "code": "V + that",
+      "description": "the verb is followed by a clause that can begin with that",
+      "example": "She said that she was tired."
+    },
+    "verb + object + that-clause": {
+      "code": "V + obj + that",
+      "description": "an object comes between the verb and a that-clause",
+      "example": "He told me that it was late."
+    },
+    "verb + wh-clause": {
+      "code": "V + wh",
+      "description": "the verb is followed by a clause beginning with a question word or whether",
+      "example": "I wonder what happened."
+    },
+    "verb + object + wh-clause": {
+      "code": "V + obj + wh",
+      "description": "an object comes between the verb and a clause beginning with a question word",
+      "example": "Ask her where it is."
+    },
+    "verb + wh-word + to-infinitive": {
+      "code": "V + wh + to-inf",
+      "description": "the verb is followed by a question word and to plus a base form",
+      "example": "I know how to swim."
+    },
+    "verb + adjective": {
+      "code": "V + adj",
+      "description": "the verb is followed by an adjective that describes the subject",
+      "example": "The milk went sour."
+    },
+    "verb + noun complement": {
+      "code": "V + noun",
+      "description": "the verb is followed by a noun phrase that describes the subject",
+      "example": "She became a doctor."
+    },
+    "verb + object + adjective": {
+      "code": "V + obj + adj",
+      "description": "the verb is followed by an object and an adjective that describes it",
+      "example": "The news made him happy."
+    },
+    "verb + object + noun complement": {
+      "code": "V + obj + noun",
+      "description": "the verb is followed by an object and a noun phrase that describes it",
+      "example": "They named the baby Ana."
+    },
+    "verb + object + as + noun or adjective": {
+      "code": "V + obj + as",
+      "description": "the verb is followed by an object, as, and a description of the object",
+      "example": "We regard her as a friend."
+    },
+    "verb + preposition + object": {
+      "code": "V + prep + obj",
+      "description": "the verb needs a particular preposition before its object",
+      "example": "It depends on the weather."
+    },
+    "verb + object + preposition + object": {
+      "code": "V + obj + prep + obj",
+      "description": "the verb takes an object and then a preposition with a second object",
+      "example": "She thanked him for the gift."
+    },
+    "verb + adverb or preposition": {
+      "code": "V + adv/prep",
+      "description": "the verb is used with an adverb or preposition particle and no object",
+      "example": "The plane took off."
+    },
+    "verb + object + adverb": {
+      "code": "V + obj + adv",
+      "description": "a separable phrasal verb with the object between the verb and the particle",
+      "example": "Turn the light off."
+    },
+    "verb + adverb + object": {
+      "code": "V + adv + obj",
+      "description": "a phrasal verb with the object after the particle",
+      "example": "Turn off the light."
+    },
+    "verb + for + object + to-infinitive": {
+      "code": "V + for + obj + to-inf",
+      "description": "the verb is followed by for, an object, and to plus a base form",
+      "example": "We waited for the rain to stop."
+    },
+    "verb + direct speech": {
+      "code": "V + speech",
+      "description": "the verb introduces or follows the exact words someone says",
+      "example": "\"Wait,\" she said."
+    },
+    "verb + object + past participle": {
+      "code": "V + obj + past participle",
+      "description": "the verb is followed by an object and a past participle",
+      "example": "I had my hair cut."
+    },
+    "usually passive": {
+      "code": "usually passive",
+      "description": "in this sense the verb is used mostly in the passive",
+      "example": "The bridge was built in a year."
+    },
+    "not used in the passive": {
+      "code": "no passive",
+      "description": "in this sense the verb has no passive form",
+      "example": "This bag holds a lot. (not *A lot is held by this bag.)"
+    },
+    "not used in continuous tenses": {
+      "code": "no continuous",
+      "description": "in this sense the verb is not used in the -ing progressive forms",
+      "example": "I know the answer. (not *I am knowing the answer.)"
+    }
+  },
+  "grammar_codes": {
+    "attributive only": {
+      "code": "attrib",
+      "applies_to": [
+        "adj"
+      ],
+      "description": "used only before a noun: a mere child, not *the child is mere"
+    },
+    "predicative only": {
+      "code": "pred",
+      "applies_to": [
+        "adj"
+      ],
+      "description": "used only after a linking verb: the baby is asleep, not *an asleep baby"
+    },
+    "after the noun": {
+      "code": "after noun",
+      "applies_to": [
+        "adj"
+      ],
+      "description": "placed after the noun it describes: the president elect, the people present"
+    },
+    "not gradable": {
+      "code": "not gradable",
+      "applies_to": [
+        "adj",
+        "adv"
+      ],
+      "description": "has no comparative or superlative and is not used with very: dead, unique, daily"
+    },
+    "comparative with more": {
+      "code": "more",
+      "applies_to": [
+        "adj",
+        "adv"
+      ],
+      "description": "the comparative and superlative are formed with more and most, not -er and -est"
+    },
+    "usually plural": {
+      "code": "usu pl",
+      "applies_to": [
+        "n"
+      ],
+      "description": "the noun is countable but normally used in the plural: circumstances, surroundings"
+    },
+    "usually singular": {
+      "code": "usu sing",
+      "applies_to": [
+        "n"
+      ],
+      "description": "the noun is countable but normally used in the singular, often with a or the: a knack, the gist"
+    },
+    "singular or plural verb": {
+      "code": "sing/pl verb",
+      "applies_to": [
+        "n"
+      ],
+      "description": "a singular noun for a group that can take a singular or a plural verb: the team is or the team are"
+    },
+    "often before another noun": {
+      "code": "before noun",
+      "applies_to": [
+        "n"
+      ],
+      "description": "the noun is often used like an adjective before another noun: a business meeting"
+    },
+    "sentence adverb": {
+      "code": "sentence adverb",
+      "applies_to": [
+        "adv"
+      ],
+      "description": "the adverb comments on or connects a whole sentence: However, we stayed."
+    }
+  },
+  "collocation_types": {
+    "adjective + noun": {
+      "description": "adjectives that typically describe the noun: a heavy rain, a busy schedule"
+    },
+    "verb + noun": {
+      "description": "verbs that typically take the noun as their object: make a decision, catch a bus"
+    },
+    "noun + verb": {
+      "description": "verbs that the noun typically does: prices rise, a bomb goes off"
+    },
+    "noun + noun": {
+      "description": "compounds and noun modifiers: bank account, traffic jam"
+    },
+    "adverb + adjective": {
+      "description": "adverbs that typically strengthen or qualify the adjective: deeply grateful, fully aware"
+    },
+    "verb + adverb": {
+      "description": "adverbs that typically go with the verb: apologize profusely, listen carefully"
+    },
+    "adverb + verb": {
+      "description": "adverbs that typically come before the verb: strongly recommend, firmly believe"
+    },
+    "noun + preposition": {
+      "description": "prepositions that follow the noun: an interest in, a reason for"
+    },
+    "verb + preposition": {
+      "description": "prepositions that follow the verb: depend on, apply for"
+    },
+    "adjective + preposition": {
+      "description": "prepositions that follow the adjective: afraid of, keen on"
+    },
+    "preposition + noun": {
+      "description": "prepositions that go before the noun: at risk, in danger, on purpose"
+    },
+    "phrase": {
+      "description": "a fixed phrase built around the headword that is not an idiom: from time to time, sooner or later"
+    }
+  },
+  "crossref_types": {
+    "synonym": {
+      "description": "a word with nearly the same meaning in this sense; listed under the sense, symmetric"
+    },
+    "antonym": {
+      "description": "a word with the opposite meaning in this sense; listed under the sense, symmetric"
+    },
+    "compare": {
+      "description": "a word learners confuse with this one or should see beside it; listed under the sense, symmetric"
+    },
+    "see also": {
+      "description": "a related entry worth reading; listed at entry level, not symmetric"
+    },
+    "word family": {
+      "description": "a word derived from or related in form to this one; listed at entry level, symmetric"
+    }
+  },
+  "register": {
+    "formal": {
+      "description": "used in serious, official, or academic speech and writing; would sound stiff in casual talk"
+    },
+    "informal": {
+      "description": "used in casual speech and writing among friends and family; avoided in formal writing"
+    },
+    "very informal": {
+      "description": "used only in relaxed speech and casual messages; out of place in most writing"
+    },
+    "slang": {
+      "description": "very informal language used by a particular group, often new and often short-lived"
+    },
+    "humorous": {
+      "description": "used to be funny or playful"
+    },
+    "literary": {
+      "description": "found mainly in poetry, novels, and elevated writing, not in ordinary speech"
+    },
+    "technical": {
+      "description": "used mainly by specialists in the field named by the domain label"
+    },
+    "vulgar": {
+      "description": "a rude word for sex, the body, or body functions that many people find offensive"
+    },
+    "offensive": {
+      "description": "a word that insults or is likely to hurt a person or group; use with great care or not at all"
+    },
+    "polite": {
+      "description": "a word chosen to be respectful or to avoid a more direct word"
+    },
+    "childish": {
+      "description": "used by or to young children: tummy, doggie"
+    }
+  },
+  "region": {
+    "_doc": "The variety of English in which the word or sense is mainly used. The set is open-ended by design so that World Englishes can be added by a logged decision; 'online' marks forms that belong to no region.",
+    "American": {
+      "description": "mainly used in the United States"
+    },
+    "British": {
+      "description": "mainly used in the United Kingdom"
+    },
+    "Australian": {
+      "description": "mainly used in Australia"
+    },
+    "New Zealand": {
+      "description": "mainly used in New Zealand"
+    },
+    "Canadian": {
+      "description": "mainly used in Canada"
+    },
+    "Irish": {
+      "description": "mainly used in Ireland"
+    },
+    "Scottish": {
+      "description": "mainly used in Scotland"
+    },
+    "Indian": {
+      "description": "mainly used in India"
+    },
+    "Pakistani": {
+      "description": "mainly used in Pakistan"
+    },
+    "Singaporean": {
+      "description": "mainly used in Singapore"
+    },
+    "Malaysian": {
+      "description": "mainly used in Malaysia"
+    },
+    "Philippine": {
+      "description": "mainly used in the Philippines"
+    },
+    "Nigerian": {
+      "description": "mainly used in Nigeria"
+    },
+    "South African": {
+      "description": "mainly used in South Africa"
+    },
+    "Caribbean": {
+      "description": "mainly used in the English-speaking Caribbean"
+    },
+    "online": {
+      "description": "used mainly in online writing and not tied to any region"
+    }
+  },
+  "domain": {
+    "_doc": "The field of knowledge or activity a word or sense belongs to. Used only when the word is tied to the field, not for every word that can appear in it.",
+    "agriculture": {
+      "description": "farming and growing food"
+    },
+    "animals": {
+      "description": "animals and their behaviour"
+    },
+    "architecture": {
+      "description": "the design of buildings"
+    },
+    "art": {
+      "description": "painting, sculpture, design, and photography"
+    },
+    "astronomy": {
+      "description": "stars, planets, and space"
+    },
+    "aviation": {
+      "description": "aircraft and flying"
+    },
+    "biology": {
+      "description": "living things and how they work"
+    },
+    "business": {
+      "description": "companies, trade, and management"
+    },
+    "chemistry": {
+      "description": "substances and how they combine"
+    },
+    "clothing": {
+      "description": "clothes and fashion"
+    },
+    "computing": {
+      "description": "computers, software, and the internet"
+    },
+    "cooking": {
+      "description": "preparing food"
+    },
+    "crime": {
+      "description": "crime and the police"
+    },
+    "economics": {
+      "description": "the economy and economic theory"
+    },
+    "education": {
+      "description": "schools, universities, and teaching"
+    },
+    "engineering": {
+      "description": "designing and building machines and structures"
+    },
+    "environment": {
+      "description": "the natural environment, pollution, and climate"
+    },
+    "film and television": {
+      "description": "films, television, and video"
+    },
+    "finance": {
+      "description": "money, banking, and investment"
+    },
+    "food": {
+      "description": "food and drink"
+    },
+    "games": {
+      "description": "games, gambling, and puzzles"
+    },
+    "geography": {
+      "description": "the earth's surface, maps, and places"
+    },
+    "geology": {
+      "description": "rocks and the structure of the earth"
+    },
+    "government": {
+      "description": "the state, public administration, and public services"
+    },
+    "grammar": {
+      "description": "the structure of language and terms for talking about it"
+    },
+    "history": {
+      "description": "the study of the past"
+    },
+    "human body": {
+      "description": "parts of the body and how it works"
+    },
+    "law": {
+      "description": "the law and the courts"
+    },
+    "literature": {
+      "description": "novels, poetry, plays, and criticism"
+    },
+    "mathematics": {
+      "description": "numbers, shapes, and calculation"
+    },
+    "media": {
+      "description": "newspapers, journalism, and publishing"
+    },
+    "medicine": {
+      "description": "illness, treatment, and health care"
+    },
+    "military": {
+      "description": "armed forces and war"
+    },
+    "music": {
+      "description": "music and musicians"
+    },
+    "philosophy": {
+      "description": "ideas about knowledge, existence, and right and wrong"
+    },
+    "physics": {
+      "description": "matter, energy, and forces"
+    },
+    "plants": {
+      "description": "plants and gardening"
+    },
+    "politics": {
+      "description": "politics and elections"
+    },
+    "psychology": {
+      "description": "the mind and behaviour"
+    },
+    "religion": {
+      "description": "religion and belief"
+    },
+    "science": {
+      "description": "science in general, when no narrower field fits"
+    },
+    "sex": {
+      "description": "sex and sexuality, in neutral or clinical use"
+    },
+    "sport": {
+      "description": "sports and physical games"
+    },
+    "technology": {
+      "description": "machines, devices, and industrial processes"
+    },
+    "theatre": {
+      "description": "plays, acting, and performance"
+    },
+    "transport": {
+      "description": "vehicles, roads, railways, and travel"
+    },
+    "weather": {
+      "description": "weather and climate as experienced day to day"
+    }
+  },
+  "currency": {
+    "old-fashioned": {
+      "description": "still used and understood, but sounds like the language of an older generation"
+    },
+    "dated": {
+      "description": "no longer in ordinary use, though older people may use it and most people understand it"
+    },
+    "old use": {
+      "description": "no longer used at all except in old texts or deliberate imitation of them"
+    },
+    "historical": {
+      "description": "refers to something that belonged to the past and no longer exists; the word itself is current"
+    },
+    "new": {
+      "description": "came into use recently and may not last"
+    }
+  },
+  "attitude": {
+    "approving": {
+      "description": "shows that the speaker admires or likes what is described"
+    },
+    "disapproving": {
+      "description": "shows that the speaker dislikes or criticizes what is described"
+    },
+    "ironic": {
+      "description": "used to mean the opposite of what it seems to say, often to be funny or critical"
+    },
+    "euphemistic": {
+      "description": "a gentler or less direct word for something unpleasant or embarrassing"
+    },
+    "affectionate": {
+      "description": "shows warmth or fondness toward the person or thing described"
+    },
+    "dismissive": {
+      "description": "treats the person or thing described as unimportant or not worth respect"
+    }
+  },
+  "adaptation_kinds": {
+    "semantic": {
+      "description": "how this word's senses split or merge in ways other languages commonly divide differently"
+    },
+    "grammar": {
+      "description": "a grammatical trap for learners from other languages: countability, argument structure, tense, preposition choice"
+    },
+    "culture": {
+      "description": "cultural or encyclopedic background a reader outside the English-speaking world needs"
+    },
+    "false_friends": {
+      "description": "a warning where an internationalism or look-alike in other languages differs in meaning"
+    },
+    "pronunciation": {
+      "description": "a sound, stress, or spelling-to-sound trap for learners in general"
+    }
+  },
+  "variant_kinds": {
+    "spelling": {
+      "description": "a different spelling of the same word: colour for color"
+    },
+    "form": {
+      "description": "a different form of the same word with the same meaning: amongst for among, gotten for got"
+    }
+  },
+  "inflection_form_keys": {
+    "plural": {
+      "applies_to": [
+        "n"
+      ],
+      "description": "the plural form of a noun; null when the noun has no plural"
+    },
+    "third_person_singular": {
+      "applies_to": [
+        "v",
+        "phrv"
+      ],
+      "description": "the present-tense form used with he, she, and it"
+    },
+    "past_tense": {
+      "applies_to": [
+        "v",
+        "phrv"
+      ],
+      "description": "the simple past form"
+    },
+    "past_participle": {
+      "applies_to": [
+        "v",
+        "phrv"
+      ],
+      "description": "the form used after have and in the passive"
+    },
+    "present_participle": {
+      "applies_to": [
+        "v",
+        "phrv"
+      ],
+      "description": "the -ing form"
+    },
+    "comparative": {
+      "applies_to": [
+        "adj",
+        "adv"
+      ],
+      "description": "the -er form; null when the comparative is made with more or the word is not gradable"
+    },
+    "superlative": {
+      "applies_to": [
+        "adj",
+        "adv"
+      ],
+      "description": "the -est form; null when the superlative is made with most or the word is not gradable"
+    }
+  },
+  "inflection_sources": {
+    "rules": {
+      "description": "generated by the regular rules in tools/inflect.py"
+    },
+    "exceptions": {
+      "description": "taken from schema/inflection-exceptions.json"
+    },
+    "none": {
+      "description": "the part of speech does not inflect"
+    }
+  },
+  "verification_status": {
+    "verified": {
+      "description": "checked by the agreement rule in wiki/decisions/pronunciation-pipeline.md, or generated by a rule or the exceptions table"
+    },
+    "disputed": {
+      "description": "the checks disagreed; the entry carries a flag and the question is in reviews/needs_curator.txt"
+    },
+    "unverified": {
+      "description": "no check has been made yet, or the check could not be completed"
+    }
+  },
+  "entry_status": {
+    "draft": {
+      "description": "written but not yet through the full pipeline; never published"
+    },
+    "reviewed": {
+      "description": "schema-valid, pronunciation and inflections verified or flagged, both reviewers run, every blocking issue adjudicated; published"
+    }
+  },
+  "provenance_flags": {
+    "pronunciation-disputed": {
+      "description": "the pronunciation panel disagreed and the open data did not settle it"
+    },
+    "pronunciation-unverified": {
+      "description": "the pronunciation check could not be run"
+    },
+    "inflection-disputed": {
+      "description": "the inflection rules and the reviewers disagreed"
+    },
+    "inflection-unverified": {
+      "description": "the inflection rules could not decide a form"
+    },
+    "label-disputed": {
+      "description": "the reviewers disagreed about a usage label and no open data bears on it"
+    },
+    "grammar-disputed": {
+      "description": "the reviewers disagreed about a grammar code or pattern"
+    },
+    "fact-disputed": {
+      "description": "the reviewers disagreed about a factual claim in a note"
+    },
+    "needs-curator": {
+      "description": "a question about this entry is waiting in reviews/needs_curator.txt"
+    },
+    "declined-in-part": {
+      "description": "the drafting model declined to write one or more fields; the entry says which"
+    }
+  },
+  "review_verdicts": {
+    "ok": {
+      "description": "the reviewer found nothing wrong with the field"
+    },
+    "issue": {
+      "description": "the reviewer found a problem; the exact claim is quoted, with a severity, a family, and a one-line reason"
+    }
+  },
+  "review_severity": {
+    "blocking": {
+      "description": "the entry must not be published until this is fixed or rejected with a reason"
+    },
+    "minor": {
+      "description": "worth fixing, but the entry can be published as it stands"
+    }
+  },
+  "review_decisions": {
+    "apply": {
+      "description": "the session agreed with the reviewer and changed the entry"
+    },
+    "reject": {
+      "description": "the session disagreed with the reviewer and left the entry as it was; the reason is logged"
+    },
+    "escalate": {
+      "description": "the session could not decide; the question went to reviews/needs_curator.txt and the entry carries a flag"
+    }
+  },
+  "issue_families": {
+    "definition-meaning": {
+      "description": "the definition is wrong, misleading, or misses the sense"
+    },
+    "definition-style": {
+      "description": "the definition is circular, padded, not phrasal, or too hard for the reader"
+    },
+    "definition-vocabulary": {
+      "description": "the definition uses a word outside the defining vocabulary that has no entry"
+    },
+    "explanation": {
+      "description": "the plain-prose explanation is wrong or unhelpful"
+    },
+    "example-unnatural": {
+      "description": "an example is unidiomatic, awkward, or unlike real use"
+    },
+    "example-grammar": {
+      "description": "an example is ungrammatical or does not show the sense or pattern claimed"
+    },
+    "example-policy": {
+      "description": "an example breaks the example rules: real-world facts, brand names, culturally loaded names or settings"
+    },
+    "grammar-code": {
+      "description": "a countability, transitivity, pattern, or grammar code is wrong or missing"
+    },
+    "label": {
+      "description": "a register, region, domain, currency, or attitude label is wrong or missing"
+    },
+    "collocation": {
+      "description": "a collocation is wrong, unnatural, or wrongly typed"
+    },
+    "cross-reference": {
+      "description": "a synonym, antonym, compare, see-also, or word-family reference is wrong"
+    },
+    "learner-error": {
+      "description": "a learner-error item is wrong or its correction is wrong"
+    },
+    "synonym-discrimination": {
+      "description": "the synonym-discrimination note is wrong or misleading"
+    },
+    "usage-note": {
+      "description": "a claim in the usage note is wrong"
+    },
+    "etymology": {
+      "description": "the etymology is wrong, unverified, or not relevant to current use"
+    },
+    "pronunciation": {
+      "description": "a transcription is wrong"
+    },
+    "inflection": {
+      "description": "an inflected form is wrong"
+    },
+    "sense-structure": {
+      "description": "a sense is missing, over-split, wrongly ordered, or its signpost or the core idea misleads"
+    },
+    "phrase": {
+      "description": "an idiom or fixed-phrase sub-entry is wrong or misplaced"
+    },
+    "adaptation": {
+      "description": "an adaptation note is wrong, not language-neutral, or over the word cap"
+    },
+    "spelling-or-format": {
+      "description": "a spelling mistake, an abbreviation, or a formatting slip in a prose field"
+    },
+    "other": {
+      "description": "an issue that fits no family above; the reason says what it is"
+    }
+  },
+  "queue_statuses": {
+    "pending": {
+      "description": "in the queue, not yet claimed by any run"
+    },
+    "claimed": {
+      "description": "listed in a claim file by a run that has not yet merged its entry"
+    },
+    "done": {
+      "description": "the entry exists in entries/"
+    },
+    "declined": {
+      "description": "the drafting model declined to write the entry; the reason is in the queue note"
+    },
+    "deferred": {
+      "description": "set aside by a logged decision; the note says why and until when"
+    },
+    "duplicate": {
+      "description": "the same lexical item is already in the queue or the dictionary under another row"
+    }
+  },
+  "queue_sources": {
+    "defining": {
+      "description": "a member of the defining vocabulary"
+    },
+    "band": {
+      "description": "added by the frequency-band estimation of wiki/decisions/defining-vocabulary.md"
+    },
+    "closure": {
+      "description": "used in a definition, example, or note without having an entry (found by tools/lint_vocab.py)"
+    },
+    "family": {
+      "description": "named in a word-family box without having an entry"
+    },
+    "crossref": {
+      "description": "named as a synonym, antonym, compare, or see-also target without having an entry"
+    },
+    "owner": {
+      "description": "requested by the owner through inbox/"
+    },
+    "world": {
+      "description": "World Englishes and online English, added in the later phase"
+    }
+  },
+  "frequency_bands": {
+    "1": {
+      "label": "very common",
+      "description": "the defining vocabulary and the words every learner meets first"
+    },
+    "2": {
+      "label": "common",
+      "description": "words most intermediate learners know or need soon"
+    },
+    "3": {
+      "label": "fairly common",
+      "description": "words an upper-intermediate learner meets in ordinary reading"
+    },
+    "4": {
+      "label": "less common",
+      "description": "words an advanced learner meets in wide reading"
+    },
+    "5": {
+      "label": "rare",
+      "description": "specialized, literary, or unusual words"
+    }
+  },
+  "l1_statuses": {
+    "draft": {
+      "description": "written but not checked by a speaker of the language"
+    },
+    "reviewed": {
+      "description": "checked"
+    }
+  }
+}
