@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-base="{{base}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="{{base}}site.css">
+<script>try{if(localStorage.getItem('eex-translator')==='1'){document.documentElement.classList.add('translator-on');}}catch(e){}</script>
+{{head}}
+</head>
+<body data-page="{{kind}}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="masthead">
+    <a class="site-name" href="{{base}}index.html">{{site_name}}</a>
+    <button class="translator-toggle" type="button" aria-pressed="false" title="Show the notes written for translators and adapters: the adaptation notes and the per-language slots">Translator&rsquo;s view</button>
+  </div>
+  <form class="search" role="search" action="{{base}}index.html" method="get" autocomplete="off">
+    <label class="visually-hidden" for="{{search_id}}">Search the dictionary</label>
+    <input id="{{search_id}}" class="search-input" type="search" name="q" placeholder="Search a word or any of its forms" spellcheck="false" autocapitalize="none">
+    <ul class="search-results" hidden></ul>
+  </form>
+  <nav class="site-nav" aria-label="Site">
+    <a href="{{base}}index.html">Home</a>
+    <a href="{{base}}browse/index.html">Browse</a>
+    <a href="{{base}}random.html">Random</a>
+    <a href="{{base}}recent.html">Recent</a>
+    <a href="{{base}}journal/index.html">Journal</a>
+    <a href="{{base}}about.html">About</a>
+  </nav>
+</header>
+<main id="main">
+{{content}}
+</main>
+<footer class="site-footer">
+  <p class="disclosure">{{disclosure}} <a href="{{base}}about.html">About this dictionary</a></p>
+  <p class="footer-links"><a href="{{base}}grammar-key.html">Grammar key</a> &middot; <a href="{{base}}labels-key.html">Labels key</a> &middot; <a href="{{base}}pronunciation-key.html">Pronunciation key</a> &middot; <a href="{{base}}browse/index.html">Browse</a> &middot; <a href="{{base}}journal/index.html">Journal</a></p>
+  <p class="footer-licence">Dictionary data: CC0 1.0 (public domain). Site code: MIT.</p>
+</footer>
+<script src="{{base}}site.js"></script>
+</body>
+</html>

@@ -4,15 +4,14 @@
 
 ## State
 
-- Stage A of the founding session is merged: scaffold, schema, vocabularies, decision pages, core tools, CI gate.
-- No entries exist yet. The defining vocabulary, the queue, the style guide, the seed set, the site, and the Routine are still to be built (Stages B to D of the founding prompt).
+- Stages A and B of the founding session are merged: scaffold, schema, vocabularies, decision pages, the defining vocabulary (2,394 lemmas), the queue (3,907 rows), the pronunciation test and its rule, every pipeline, Routine, and site tool, `routine-prompt.md`.
+- Seventy-seven seed entries are drafted on the founding session's branch (claimed in `headwords/claims/`), not yet reviewed or merged; Stage C (reviews, site check, style-guide model entries) and Stage D (dry run, final baton and journal) follow, with the reviews after the UTC day rolls over because the daily budget is spent.
 - The Routine must not be scheduled until the founding session finishes Stage D and the owner has reviewed the seed set.
 
 ## Queue (work top-down, one unit at a time)
 
-1. Stage B: `schema/defining-vocabulary.txt` from three models' judgment; `headwords/queue.tsv` bands 1 to 3; `tools/inflect.py` with `schema/inflection-exceptions.json` checked by two models; `tools/lint_vocab.py`; the pronunciation experiment (design frozen first) and `tools/pronounce_check.py`; complete the two pending decision pages.
-2. Stage C: `wiki/style-guide.md`; 50 to 100 seed entries through the full pipeline (`tools/review_panel.py` needed first); `tools/build_site.py`, `pages.yml`, Playwright check; the seed review guide in `journal/`.
-3. Stage D: `routine-prompt.md`, `tools/next_mode.py`, `config/routine-config.json`, `tools/claim.py`, `tools/queue.py`, `tools/originality_check.py`, `tools/metrics.py`, `tools/absorb_branch.py`, `tools/README.md`; dry-run five entries by the prompt; final journal.
+1. Stage C: the 77 seed entries through the rest of the pipeline (pronunciation check, both reviewers, adjudication, lint, crossref), three of them into the style guide as model entries, the British hand check of the pronunciation test, site built and checked, the seed review guide; merge.
+2. Stage D: dry-run a five-entry build cycle by `routine-prompt.md` and fix the prompt; final `NEXT.md` and journal; merge.
 4. First lint pass due after the fifth Routine run (framework section 6).
 
 ## Fences (do not re-grind)

@@ -34,6 +34,12 @@ jobs:
       - name: Relative links
         run: python3 tools/check_links.py
 
+      - name: Defining-vocabulary ratchet on changed entries
+        run: python3 tools/lint_vocab.py --changed --gate
+
+      - name: Cross-reference gate
+        run: python3 tools/crossref.py --gate
+
       - name: Duplicate slugs
         run: |
           dups=$(find entries -type f -name '*.json' -exec basename {} \; | sort | uniq -d)
@@ -65,8 +71,3 @@ jobs:
           fi
           echo "sources/ is markdown only"
 
-      # Added when those tools land:
-      #   - name: Defining-vocabulary gate
-      #     run: python3 tools/lint_vocab.py --gate
-      #   - name: Cross-reference gate
-      #     run: python3 tools/crossref.py --gate

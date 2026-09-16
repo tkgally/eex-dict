@@ -1,0 +1,62 @@
+{
+ "role": "reviewer-b",
+ "model": "google/gemini-3.8-flash",
+ "cost_usd": 0.010964,
+ "tokens_in": 11584,
+ "tokens_out": 607,
+ "reply": {
+  "problems": [
+   {
+    "section": "nouns",
+    "word": "octopus",
+    "table_says": "[\"octopuses\", \"octopi\"]",
+    "should_be": "[\"octopuses\", \"octopodes\"] or mention \"octopuses\" as primary with \"octopi\" noted as etymologically disputed / informal",
+    "confidence": "high",
+    "reason": "In standard English lexicography (especially Merriam-Webster and Oxford), 'octopuses' is the standard plural; 'octopi' is based on a mistaken Latin derivation of a Greek word, while 'octopodes' or 'octopuses' are the preferred/etymologically correct forms."
+   },
+   {
+    "section": "single_l",
+    "word": "cruel",
+    "table_says": "cruel",
+    "should_be": "remove from single_l",
+    "confidence": "high",
+    "reason": "'Cruel' is an adjective, not a verb; it does not undergo consonant doubling or single-l verb inflections (-ed, -ing)."
+   },
+   {
+    "section": "verbs",
+    "word": "stride",
+    "table_says": "{\"past_tense\":\"strode\",\"past_participle\":\"stridden\"}",
+    "should_be": "{\"past_tense\":\"strode\",\"past_participle\":\"stridden\",\"note\":\"also strode\"}",
+    "confidence": "medium",
+    "reason": "'Strode' is widely accepted and used as the past participle of 'stride' alongside 'stridden'."
+   }
+  ],
+  "missing": [
+   {
+    "section": "verbs",
+    "word": "tore",
+    "forms": "Base verb 'tear' is present, but 'slit' and others are present; common irregular verbs like 'cling', 'sting' are present, but 'spat'/'spit' has 'spit', check if 'cost' etc. are covered."
+   },
+   {
+    "section": "verbs",
+    "word": "can",
+    "forms": "past_tense: could"
+   },
+   {
+    "section": "verbs",
+    "word": "may",
+    "forms": "past_tense: might"
+   },
+   {
+    "section": "verbs",
+    "word": "shall",
+    "forms": "past_tense: should"
+   },
+   {
+    "section": "verbs",
+    "word": "will",
+    "forms": "past_tense: would"
+   }
+  ]
+ }
+}
