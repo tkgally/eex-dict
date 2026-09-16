@@ -14,7 +14,7 @@ An intermediate learner (roughly B1) must be able to read every definition. An a
 
 **No circularity.** The headword, its inflections, and its close derivatives do not appear in its own definition (*happiness*: not *the state of being happy* when *happy* is itself defined through *happiness*; define the base word in plain terms and let the derivative point to it).
 
-**No padding.** Never *used to describe*, *a term for*, *the act of*, *refers to*, *is when*. Say the thing: not *used to describe a person who talks a lot* but *talking a lot*.
+**No padding.** Never *used to describe*, *a term for*, *the act of*, *refers to*, *is when*. Say the thing: not *used to describe a person who talks a lot* but *talking a lot*. The one formula that is allowed, because nothing else works, is *used to* or *used when* for function words, discourse markers, and interjections (*used before a noun to show which one is meant*; *used to change the subject*).
 
 **Countable nouns take an article** in the definition (*a place where...*); uncountable nouns take none (*money that...*). Verbs are defined with their argument slots spelled out with *someone* and *something*: *to give something to someone so that they can use it for a time* (written *give something to someone so that they can use it for a time*).
 
@@ -83,7 +83,7 @@ Idioms and fixed phrases live in `phrases[]` of the keyword entry: the first nou
 
 ## 10. Pronunciation, inflections, variants
 
-The drafter writes `pronunciation.american.ipa` and `pronunciation.british.ipa` with the symbol set in `tools/pronounce_check.py` (primary stress `ˈ`, secondary `ˌ`, syllable breaks with a period, no slashes), and `source: "model:<its slug>"`. A heteronym puts the sense-specific pronunciation in `senses[].pronunciation`. `checked_by` and `status` are written by the checker, never by hand. Prefixes, suffixes, combining forms, and abbreviations may leave both transcriptions null when no fixed pronunciation exists. Inflections come from `tools/inflect.py`; the drafter only supplies the gradability codes and, for a verb with an unpredictable form, a line in `schema/inflection-exceptions.json` in the same pull request.
+The drafter writes `pronunciation.american.ipa` and `pronunciation.british.ipa` with the symbol set in `tools/pronounce_check.py` (primary stress `ˈ`, secondary `ˌ`, syllable breaks with a period, no slashes; a one-syllable word carries no stress mark; a multi-word headword has a space between its words), and `source: "model:<its slug>"`. A heteronym puts the sense-specific pronunciation in `senses[].pronunciation`. `checked_by` and `status` are written by the checker, never by hand. Prefixes, suffixes, combining forms, and abbreviations may leave both transcriptions null when no fixed pronunciation exists. Inflections come from `tools/inflect.py`; the drafter only supplies the gradability codes and, for a verb with an unpredictable form, a line in `schema/inflection-exceptions.json` in the same pull request.
 
 ## 11. Etymology
 

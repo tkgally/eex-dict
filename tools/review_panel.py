@@ -31,12 +31,12 @@ DEFAULT_ROLES = ["reviewer-a", "reviewer-b"]
 SYSTEM = """You are a senior lexicographer checking an entry of an English-English learner's dictionary for intermediate and advanced learners (CEFR B1 to C2). American English is the dictionary's primary variety; British forms are recorded in variant fields. The entry was written by a language model and must be checked field by field for factual and linguistic correctness, not for taste. You answer with JSON only.
 
 House rules you check against:
-- Definitions are phrasal (a noun by a noun phrase, a verb by a base-form verb phrase without "to"), present tense, not circular, no padding such as "used to describe" or "refers to", and written in plain words an intermediate learner knows.
+- Definitions are phrasal (a noun by a noun phrase, a verb by a base-form verb phrase without "to"), present tense, not circular, no padding such as "used to describe" or "refers to", and written in plain words an intermediate learner knows. Exception: for function words, discourse markers, and interjections the formula "used to ..." / "used when ..." is the house style and is never an issue.
 - An explanation field exists only for words whose use is easier to explain than to define (function words, discourse markers, modals, affixes).
 - Senses: a new sense only where learners need a different definition, grammar, collocation set, or translation; most useful first; signposts of one to three words; a core-idea line on entries with three or more senses.
 - Examples: two to four per sense, natural American English, showing typical collocations and patterns; NO checkable real-world facts (dates, statistics, named events, science claims, prices), no brand names, culturally neutral settings, personal names only from: Kim, Mari, Sam, Ana, Lee, Omar, Yuki, Ravi, Sara.
 - Grammar values, labels, and patterns must be right for the sense (countability, transitivity, verb patterns, adjective position, register, region, domain, currency, attitude).
-- Pronunciation: General American and British IPA with stress marks; inflections must be the real forms.
+- Pronunciation: General American and British IPA; a one-syllable word carries no stress mark (that is the house convention, not an issue); multi-word headwords have a space between words. Inflections must be the real forms.
 - Collocations must be genuinely typical; cross-references must be real synonyms, antonyms, or confusable words; learner errors must be errors learners actually make and the correction must be right.
 - Notes of every kind (usage note, synonym discrimination, etymology, adaptation notes) must be factually true; adaptation notes must be language-neutral (never naming a language) and at most 60 words.
 - No abbreviations anywhere in prose: never sb, sth, e.g., i.e., etc.
@@ -160,7 +160,11 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
             rev["summary"] = str(raw.get("summary")) if isinstance(raw, dict) and raw.get("summary") else None
             rev["error"] = err
         except Exception as e:  # noqa: BLE001
-            rev["error"] = f"{type(e).__name__}: {str(e)[:300]}"
+            msg = f"{type(e).__name__}: {str(e)[:300]}"
+            if "budget check refused" in msg:
+                print(f"  [{role}] skipped: {msg}", file=sys.stderr)
+                continue                                   # no record: the review did not happen
+            rev["error"] = msg
         record["reviewers"].append(rev)
     return record
 
@@ -262,6 +266,8 @@ def main() -> int:
         if a.dry_run:
             print(f"{slug}: {len(checklist(entry))} checklist fields; prompt {len(user_prompt(entry))} chars")
             continue
+        if not record["reviewers"]:
+            print(f"{slug}: no reviewer ran (budget); nothing written"); continue
         out = write_record(record, p, entry)
         cost = sum(float(r.get("cost_usd") or 0) for r in record["reviewers"])
         total_cost += cost
