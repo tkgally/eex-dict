@@ -19,7 +19,7 @@
 - [entry-unit-and-homographs](decisions/entry-unit-and-homographs.md) — one entry per headword plus part of speech.
 - [definitions-and-explanations](decisions/definitions-and-explanations.md) — phrasal definition primary, optional explanation.
 - [defining-vocabulary-rule](decisions/defining-vocabulary-rule.md) — the soft rule and the closure queue.
-- [defining-vocabulary](decisions/defining-vocabulary.md) — how the list and the bands were built (Stage B).
+- [defining-vocabulary](decisions/defining-vocabulary.md) — how the 2,326-lemma list and the frequency bands were built from three models' judgment, with counts.
 - [senses](decisions/senses.md) — order, splitting principle, core idea.
 - [examples](decisions/examples.md) — two to four per sense, no real-world facts, the names policy.
 - [grammar-codes](decisions/grammar-codes.md) — closed codes; labels and codes both shown; no abbreviations.
@@ -29,7 +29,7 @@
 - [frequency-bands](decisions/frequency-bands.md) — editorial bands 1 to 5, no CEFR.
 - [adaptation-layer](decisions/adaptation-layer.md) — five language-neutral note kinds and the l1 slots.
 - [pronunciation](decisions/pronunciation.md) — American and British IPA from model knowledge, checked by agreement.
-- [pronunciation-pipeline](decisions/pronunciation-pipeline.md) — the panel and the agreement rule (Stage B).
+- [pronunciation-pipeline](decisions/pronunciation-pipeline.md) — the panel, the votes, and the two-vote agreement rule adopted from the experiment.
 - [licence-and-openness](decisions/licence-and-openness.md) — CC0 data, MIT code, nothing vendored.
 - [drafting-and-review](decisions/drafting-and-review.md) — in-session drafting, two non-Anthropic reviewers, closed verdicts.
 - [verification](decisions/verification.md) — what is checked how; adjudication rules.
@@ -41,4 +41,6 @@
 
 ## Notes (observed problems, method records, experiment results)
 
-(none yet)
+- [pronunciation-model-test-v1](notes/pronunciation-model-test-v1.md) — the experiment result: model transcriptions against the CMU dictionary, the amended normalization, the adopted two-vote rule.
+- [inflection-exceptions-check](notes/inflection-exceptions-check.md) — the two-model check of the inflection exceptions table: what was applied and what was rejected.
+- [seed-set-drafting](notes/seed-set-drafting.md) — how the seed set was drafted and the judgment calls the drafters flagged.

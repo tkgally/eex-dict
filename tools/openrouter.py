@@ -366,6 +366,21 @@ def _load_spend():
     return mod
 
 
+def reasoning_for(model_slug: str, task: str = "review") -> dict:
+    """The reasoning setting a call needs to answer within its output budget.
+
+    Reasoning tokens count against max_tokens and are billed as output. For
+    listing and transcription tasks ("pronunciation", "wordlist") no reasoning
+    is needed and it is switched off for every model (probe of 2026-09-16: GPT-5.6
+    Terra then answers at a third of the cost with the same transcriptions).
+    For reviews, DeepSeek models spend the whole output budget on hidden
+    reasoning unless it is switched off; the others review at low effort.
+    """
+    if task in ("pronunciation", "wordlist"):
+        return {"enabled": False}
+    return {"enabled": False} if model_slug.startswith("deepseek/") else {"effort": "low"}
+
+
 def model_for(role_or_model: str, models_md: Path | None = None) -> str:
     """A slug (contains '/') is used as is; anything else is looked up as a role."""
     return role_or_model if "/" in role_or_model else resolve_role(role_or_model, models_md)

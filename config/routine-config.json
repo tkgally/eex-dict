@@ -1,0 +1,16 @@
+{
+  "_doc": "Tuning knobs for the scheduled Routine (routine-prompt.md), read by tools/next_mode.py. 'weights' are the long-run share of runs per mode; a deterministic debt scheduler replays metrics/history.jsonl so no state file is needed and overlapping runs cannot conflict. Triggers: lint is forced when 'lint_every_runs' runs have passed without one; originality is forced every 'originality_every_runs' runs; site is forced when the last recorded site build failed; build is blocked when the draft ceiling is reached or the day's remaining budget cannot pay for the panel; closure is suppressed when the queue has no closure candidates; review is suppressed when nothing needs a second reading. Founding values, 2026-09-16.",
+  "modes": ["build", "review", "closure", "site", "lint", "originality"],
+  "weights": {"build": 0.55, "review": 0.20, "closure": 0.10, "site": 0.05, "lint": 0.05, "originality": 0.05},
+  "lint_every_runs": 5,
+  "originality_every_runs": 10,
+  "draft_ceiling": 40,
+  "entries_per_run": 20,
+  "systemic_fix_cap": 40,
+  "panel_cost_per_entry_usd": 0.02,
+  "pronunciation_cost_per_entry_usd": 0.004,
+  "per_run_cap_usd": 1.25,
+  "review_block_size": 20,
+  "drafter_via_openrouter": false,
+  "anti_repeat_modes": ["site", "lint", "originality"]
+}

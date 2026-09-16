@@ -1,0 +1,2675 @@
+{
+ "_doc": "The dictionary's own table of English inflections that the rules in tools/inflect.py cannot predict, written from the project's knowledge; nothing here is copied from an external data set. American forms are primary; a note records the British or alternative form. Sections: verbs {base: {past_tense, past_participle, third_person_singular?, present_participle?, note?}} (a missing third person or participle is made by the rules); nouns {singular: plural string | null (no plural) | [alternatives, first shown] | {plural, also?, note?}}; adjectives and adverbs {base: {comparative, superlative, note?}} (null forms with a note mean the word is not gradable or compares with more); doubling (words of more than one syllable whose final consonant doubles before -ed, -ing, -er, -est); single_l (American single l where British doubles: traveled, travelled); keep_e (the final e stays before -ing); ie_to_y (-ie becomes -ying); o_es (nouns and verbs that take -es after o); f_to_ves (-f or -fe becomes -ves); c_ck (a k is added before -ed and -ing); suffix_regular (words ending in -man that take -s). A word is looked up in lower case; a hyphenated or spaced headword is looked up whole, then by its last word. Add a line here, in the same pull request as the entry that needs it, when a form is unpredictable.",
+ "verbs": {
+  "arise": {
+   "past_tense": "arose",
+   "past_participle": "arisen"
+  },
+  "awake": {
+   "past_tense": "awoke",
+   "past_participle": "awoken",
+   "note": "also awaked"
+  },
+  "babysit": {
+   "past_tense": "babysat",
+   "past_participle": "babysat",
+   "present_participle": "babysitting"
+  },
+  "be": {
+   "past_tense": "was",
+   "past_participle": "been",
+   "third_person_singular": "is",
+   "present_participle": "being",
+   "note": "am, are; were"
+  },
+  "bear": {
+   "past_tense": "bore",
+   "past_participle": "borne",
+   "note": "born in the passive of giving birth"
+  },
+  "beat": {
+   "past_tense": "beat",
+   "past_participle": "beaten",
+   "note": "also beat as past participle, informal"
+  },
+  "become": {
+   "past_tense": "became",
+   "past_participle": "become"
+  },
+  "befall": {
+   "past_tense": "befell",
+   "past_participle": "befallen"
+  },
+  "beget": {
+   "past_tense": "begot",
+   "past_participle": "begotten",
+   "present_participle": "begetting"
+  },
+  "begin": {
+   "past_tense": "began",
+   "past_participle": "begun",
+   "present_participle": "beginning"
+  },
+  "behold": {
+   "past_tense": "beheld",
+   "past_participle": "beheld"
+  },
+  "bend": {
+   "past_tense": "bent",
+   "past_participle": "bent"
+  },
+  "beseech": {
+   "past_tense": "besought",
+   "past_participle": "besought",
+   "note": "also beseeched"
+  },
+  "beset": {
+   "past_tense": "beset",
+   "past_participle": "beset",
+   "present_participle": "besetting"
+  },
+  "bet": {
+   "past_tense": "bet",
+   "past_participle": "bet",
+   "present_participle": "betting"
+  },
+  "bid": {
+   "past_tense": "bid",
+   "past_participle": "bid",
+   "present_participle": "bidding",
+   "note": "bade and bidden in the old meaning of ordering or greeting"
+  },
+  "bind": {
+   "past_tense": "bound",
+   "past_participle": "bound"
+  },
+  "binge": {
+   "past_tense": "binged",
+   "past_participle": "binged",
+   "present_participle": "bingeing",
+   "note": "also binging"
+  },
+  "bite": {
+   "past_tense": "bit",
+   "past_participle": "bitten"
+  },
+  "bleed": {
+   "past_tense": "bled",
+   "past_participle": "bled"
+  },
+  "blow": {
+   "past_tense": "blew",
+   "past_participle": "blown"
+  },
+  "break": {
+   "past_tense": "broke",
+   "past_participle": "broken"
+  },
+  "breed": {
+   "past_tense": "bred",
+   "past_participle": "bred"
+  },
+  "bring": {
+   "past_tense": "brought",
+   "past_participle": "brought"
+  },
+  "broadcast": {
+   "past_tense": "broadcast",
+   "past_participle": "broadcast",
+   "note": "also broadcasted"
+  },
+  "browbeat": {
+   "past_tense": "browbeat",
+   "past_participle": "browbeaten"
+  },
+  "build": {
+   "past_tense": "built",
+   "past_participle": "built"
+  },
+  "burn": {
+   "past_tense": "burned",
+   "past_participle": "burned",
+   "note": "also burnt, especially British"
+  },
+  "burst": {
+   "past_tense": "burst",
+   "past_participle": "burst"
+  },
+  "bus": {
+   "past_tense": "bused",
+   "past_participle": "bused",
+   "third_person_singular": "buses",
+   "present_participle": "busing",
+   "note": "also bussed, bussing"
+  },
+  "buy": {
+   "past_tense": "bought",
+   "past_participle": "bought"
+  },
+  "cast": {
+   "past_tense": "cast",
+   "past_participle": "cast"
+  },
+  "catch": {
+   "past_tense": "caught",
+   "past_participle": "caught"
+  },
+  "choose": {
+   "past_tense": "chose",
+   "past_participle": "chosen"
+  },
+  "cling": {
+   "past_tense": "clung",
+   "past_participle": "clung"
+  },
+  "come": {
+   "past_tense": "came",
+   "past_participle": "come"
+  },
+  "cost": {
+   "past_tense": "cost",
+   "past_participle": "cost",
+   "note": "costed when the meaning is to estimate the cost of something"
+  },
+  "creep": {
+   "past_tense": "crept",
+   "past_participle": "crept"
+  },
+  "cut": {
+   "past_tense": "cut",
+   "past_participle": "cut",
+   "present_participle": "cutting"
+  },
+  "deal": {
+   "past_tense": "dealt",
+   "past_participle": "dealt"
+  },
+  "dig": {
+   "past_tense": "dug",
+   "past_participle": "dug",
+   "present_participle": "digging"
+  },
+  "dive": {
+   "past_tense": "dove",
+   "past_participle": "dived",
+   "note": "also dived as the past tense"
+  },
+  "do": {
+   "past_tense": "did",
+   "past_participle": "done",
+   "third_person_singular": "does"
+  },
+  "draw": {
+   "past_tense": "drew",
+   "past_participle": "drawn"
+  },
+  "dream": {
+   "past_tense": "dreamed",
+   "past_participle": "dreamed",
+   "note": "also dreamt"
+  },
+  "drink": {
+   "past_tense": "drank",
+   "past_participle": "drunk"
+  },
+  "drive": {
+   "past_tense": "drove",
+   "past_participle": "driven"
+  },
+  "dwell": {
+   "past_tense": "dwelled",
+   "past_participle": "dwelled",
+   "note": "also dwelt"
+  },
+  "eat": {
+   "past_tense": "ate",
+   "past_participle": "eaten"
+  },
+  "fall": {
+   "past_tense": "fell",
+   "past_participle": "fallen"
+  },
+  "feed": {
+   "past_tense": "fed",
+   "past_participle": "fed"
+  },
+  "feel": {
+   "past_tense": "felt",
+   "past_participle": "felt"
+  },
+  "fight": {
+   "past_tense": "fought",
+   "past_participle": "fought"
+  },
+  "find": {
+   "past_tense": "found",
+   "past_participle": "found"
+  },
+  "fit": {
+   "past_tense": "fit",
+   "past_participle": "fit",
+   "present_participle": "fitting",
+   "note": "also fitted, especially British and for the meaning of installing something"
+  },
+  "flee": {
+   "past_tense": "fled",
+   "past_participle": "fled"
+  },
+  "fling": {
+   "past_tense": "flung",
+   "past_participle": "flung"
+  },
+  "fly": {
+   "past_tense": "flew",
+   "past_participle": "flown"
+  },
+  "forbid": {
+   "past_tense": "forbade",
+   "past_participle": "forbidden",
+   "present_participle": "forbidding",
+   "note": "also forbad"
+  },
+  "forecast": {
+   "past_tense": "forecast",
+   "past_participle": "forecast",
+   "note": "also forecasted"
+  },
+  "forego": {
+   "past_tense": "forewent",
+   "past_participle": "foregone",
+   "third_person_singular": "foregoes"
+  },
+  "foresee": {
+   "past_tense": "foresaw",
+   "past_participle": "foreseen"
+  },
+  "foretell": {
+   "past_tense": "foretold",
+   "past_participle": "foretold"
+  },
+  "forget": {
+   "past_tense": "forgot",
+   "past_participle": "forgotten",
+   "present_participle": "forgetting"
+  },
+  "forgive": {
+   "past_tense": "forgave",
+   "past_participle": "forgiven"
+  },
+  "forgo": {
+   "past_tense": "forwent",
+   "past_participle": "forgone",
+   "third_person_singular": "forgoes"
+  },
+  "forsake": {
+   "past_tense": "forsook",
+   "past_participle": "forsaken"
+  },
+  "freeze": {
+   "past_tense": "froze",
+   "past_participle": "frozen"
+  },
+  "get": {
+   "past_tense": "got",
+   "past_participle": "gotten",
+   "present_participle": "getting",
+   "note": "also got as the past participle, as in have got; British English uses got"
+  },
+  "give": {
+   "past_tense": "gave",
+   "past_participle": "given"
+  },
+  "go": {
+   "past_tense": "went",
+   "past_participle": "gone",
+   "third_person_singular": "goes"
+  },
+  "grind": {
+   "past_tense": "ground",
+   "past_participle": "ground"
+  },
+  "grow": {
+   "past_tense": "grew",
+   "past_participle": "grown"
+  },
+  "hang": {
+   "past_tense": "hung",
+   "past_participle": "hung",
+   "note": "hanged for execution"
+  },
+  "have": {
+   "past_tense": "had",
+   "past_participle": "had",
+   "third_person_singular": "has"
+  },
+  "hear": {
+   "past_tense": "heard",
+   "past_participle": "heard"
+  },
+  "hew": {
+   "past_tense": "hewed",
+   "past_participle": "hewn",
+   "note": "also hewed as past participle"
+  },
+  "hide": {
+   "past_tense": "hid",
+   "past_participle": "hidden"
+  },
+  "hit": {
+   "past_tense": "hit",
+   "past_participle": "hit",
+   "present_participle": "hitting"
+  },
+  "hold": {
+   "past_tense": "held",
+   "past_participle": "held"
+  },
+  "hurt": {
+   "past_tense": "hurt",
+   "past_participle": "hurt"
+  },
+  "input": {
+   "past_tense": "input",
+   "past_participle": "input",
+   "present_participle": "inputting",
+   "note": "also inputted"
+  },
+  "interweave": {
+   "past_tense": "interwove",
+   "past_participle": "interwoven"
+  },
+  "keep": {
+   "past_tense": "kept",
+   "past_participle": "kept"
+  },
+  "kneel": {
+   "past_tense": "knelt",
+   "past_participle": "knelt",
+   "note": "also kneeled"
+  },
+  "knit": {
+   "past_tense": "knitted",
+   "past_participle": "knitted",
+   "present_participle": "knitting",
+   "note": "also knit"
+  },
+  "know": {
+   "past_tense": "knew",
+   "past_participle": "known"
+  },
+  "lay": {
+   "past_tense": "laid",
+   "past_participle": "laid"
+  },
+  "lead": {
+   "past_tense": "led",
+   "past_participle": "led"
+  },
+  "lean": {
+   "past_tense": "leaned",
+   "past_participle": "leaned",
+   "note": "also leant, especially British"
+  },
+  "leap": {
+   "past_tense": "leaped",
+   "past_participle": "leaped",
+   "note": "also leapt, especially British"
+  },
+  "learn": {
+   "past_tense": "learned",
+   "past_participle": "learned",
+   "note": "also learnt, especially British"
+  },
+  "leave": {
+   "past_tense": "left",
+   "past_participle": "left"
+  },
+  "lend": {
+   "past_tense": "lent",
+   "past_participle": "lent"
+  },
+  "let": {
+   "past_tense": "let",
+   "past_participle": "let",
+   "present_participle": "letting"
+  },
+  "lie": {
+   "past_tense": "lay",
+   "past_participle": "lain",
+   "present_participle": "lying",
+   "note": "lie meaning tell an untruth is regular: lied"
+  },
+  "light": {
+   "past_tense": "lit",
+   "past_participle": "lit",
+   "note": "also lighted"
+  },
+  "lose": {
+   "past_tense": "lost",
+   "past_participle": "lost"
+  },
+  "make": {
+   "past_tense": "made",
+   "past_participle": "made"
+  },
+  "mean": {
+   "past_tense": "meant",
+   "past_participle": "meant"
+  },
+  "meet": {
+   "past_tense": "met",
+   "past_participle": "met"
+  },
+  "mislay": {
+   "past_tense": "mislaid",
+   "past_participle": "mislaid"
+  },
+  "mislead": {
+   "past_tense": "misled",
+   "past_participle": "misled"
+  },
+  "misread": {
+   "past_tense": "misread",
+   "past_participle": "misread"
+  },
+  "misspeak": {
+   "past_tense": "misspoke",
+   "past_participle": "misspoken"
+  },
+  "misspell": {
+   "past_tense": "misspelled",
+   "past_participle": "misspelled",
+   "note": "also misspelt, especially British"
+  },
+  "mistake": {
+   "past_tense": "mistook",
+   "past_participle": "mistaken"
+  },
+  "misunderstand": {
+   "past_tense": "misunderstood",
+   "past_participle": "misunderstood"
+  },
+  "mow": {
+   "past_tense": "mowed",
+   "past_participle": "mowed",
+   "note": "also mown as past participle"
+  },
+  "offset": {
+   "past_tense": "offset",
+   "past_participle": "offset",
+   "present_participle": "offsetting"
+  },
+  "outbid": {
+   "past_tense": "outbid",
+   "past_participle": "outbid",
+   "present_participle": "outbidding"
+  },
+  "outdo": {
+   "past_tense": "outdid",
+   "past_participle": "outdone",
+   "third_person_singular": "outdoes"
+  },
+  "outgrow": {
+   "past_tense": "outgrew",
+   "past_participle": "outgrown"
+  },
+  "output": {
+   "past_tense": "output",
+   "past_participle": "output",
+   "present_participle": "outputting",
+   "note": "also outputted"
+  },
+  "outrun": {
+   "past_tense": "outran",
+   "past_participle": "outrun",
+   "present_participle": "outrunning"
+  },
+  "outsell": {
+   "past_tense": "outsold",
+   "past_participle": "outsold"
+  },
+  "outshine": {
+   "past_tense": "outshone",
+   "past_participle": "outshone"
+  },
+  "overcome": {
+   "past_tense": "overcame",
+   "past_participle": "overcome"
+  },
+  "overdo": {
+   "past_tense": "overdid",
+   "past_participle": "overdone",
+   "third_person_singular": "overdoes"
+  },
+  "overeat": {
+   "past_tense": "overate",
+   "past_participle": "overeaten"
+  },
+  "overhang": {
+   "past_tense": "overhung",
+   "past_participle": "overhung"
+  },
+  "overhear": {
+   "past_tense": "overheard",
+   "past_participle": "overheard"
+  },
+  "overpay": {
+   "past_tense": "overpaid",
+   "past_participle": "overpaid"
+  },
+  "override": {
+   "past_tense": "overrode",
+   "past_participle": "overridden"
+  },
+  "overrun": {
+   "past_tense": "overran",
+   "past_participle": "overrun",
+   "present_participle": "overrunning"
+  },
+  "oversee": {
+   "past_tense": "oversaw",
+   "past_participle": "overseen"
+  },
+  "oversleep": {
+   "past_tense": "overslept",
+   "past_participle": "overslept"
+  },
+  "overspend": {
+   "past_tense": "overspent",
+   "past_participle": "overspent"
+  },
+  "overtake": {
+   "past_tense": "overtook",
+   "past_participle": "overtaken"
+  },
+  "overthrow": {
+   "past_tense": "overthrew",
+   "past_participle": "overthrown"
+  },
+  "partake": {
+   "past_tense": "partook",
+   "past_participle": "partaken"
+  },
+  "pay": {
+   "past_tense": "paid",
+   "past_participle": "paid"
+  },
+  "plead": {
+   "past_tense": "pleaded",
+   "past_participle": "pleaded",
+   "note": "also pled, especially in American legal use"
+  },
+  "prepay": {
+   "past_tense": "prepaid",
+   "past_participle": "prepaid"
+  },
+  "preset": {
+   "past_tense": "preset",
+   "past_participle": "preset",
+   "present_participle": "presetting"
+  },
+  "prove": {
+   "past_tense": "proved",
+   "past_participle": "proved",
+   "note": "also proven"
+  },
+  "put": {
+   "past_tense": "put",
+   "past_participle": "put",
+   "present_participle": "putting"
+  },
+  "quit": {
+   "past_tense": "quit",
+   "past_participle": "quit",
+   "present_participle": "quitting",
+   "note": "also quitted, chiefly British"
+  },
+  "read": {
+   "past_tense": "read",
+   "past_participle": "read",
+   "note": "the past forms are spelled read but pronounced like red"
+  },
+  "rebuild": {
+   "past_tense": "rebuilt",
+   "past_participle": "rebuilt"
+  },
+  "redo": {
+   "past_tense": "redid",
+   "past_participle": "redone",
+   "third_person_singular": "redoes"
+  },
+  "remake": {
+   "past_tense": "remade",
+   "past_participle": "remade"
+  },
+  "repay": {
+   "past_tense": "repaid",
+   "past_participle": "repaid"
+  },
+  "reread": {
+   "past_tense": "reread",
+   "past_participle": "reread"
+  },
+  "resell": {
+   "past_tense": "resold",
+   "past_participle": "resold"
+  },
+  "reset": {
+   "past_tense": "reset",
+   "past_participle": "reset",
+   "present_participle": "resetting"
+  },
+  "retake": {
+   "past_tense": "retook",
+   "past_participle": "retaken"
+  },
+  "retell": {
+   "past_tense": "retold",
+   "past_participle": "retold"
+  },
+  "rethink": {
+   "past_tense": "rethought",
+   "past_participle": "rethought"
+  },
+  "rewind": {
+   "past_tense": "rewound",
+   "past_participle": "rewound"
+  },
+  "rewrite": {
+   "past_tense": "rewrote",
+   "past_participle": "rewritten"
+  },
+  "rid": {
+   "past_tense": "rid",
+   "past_participle": "rid",
+   "present_participle": "ridding"
+  },
+  "ride": {
+   "past_tense": "rode",
+   "past_participle": "ridden"
+  },
+  "ring": {
+   "past_tense": "rang",
+   "past_participle": "rung"
+  },
+  "rise": {
+   "past_tense": "rose",
+   "past_participle": "risen"
+  },
+  "run": {
+   "past_tense": "ran",
+   "past_participle": "run",
+   "present_participle": "running"
+  },
+  "saw": {
+   "past_tense": "sawed",
+   "past_participle": "sawed",
+   "note": "also sawn, especially British"
+  },
+  "say": {
+   "past_tense": "said",
+   "past_participle": "said"
+  },
+  "see": {
+   "past_tense": "saw",
+   "past_participle": "seen"
+  },
+  "seek": {
+   "past_tense": "sought",
+   "past_participle": "sought"
+  },
+  "sell": {
+   "past_tense": "sold",
+   "past_participle": "sold"
+  },
+  "send": {
+   "past_tense": "sent",
+   "past_participle": "sent"
+  },
+  "set": {
+   "past_tense": "set",
+   "past_participle": "set",
+   "present_participle": "setting"
+  },
+  "sew": {
+   "past_tense": "sewed",
+   "past_participle": "sewn",
+   "note": "also sewed as past participle"
+  },
+  "shake": {
+   "past_tense": "shook",
+   "past_participle": "shaken"
+  },
+  "shear": {
+   "past_tense": "sheared",
+   "past_participle": "shorn",
+   "note": "also sheared as past participle"
+  },
+  "shed": {
+   "past_tense": "shed",
+   "past_participle": "shed",
+   "present_participle": "shedding"
+  },
+  "shine": {
+   "past_tense": "shone",
+   "past_participle": "shone",
+   "note": "shined when the meaning is to polish"
+  },
+  "shoe": {
+   "past_tense": "shod",
+   "past_participle": "shod",
+   "present_participle": "shoeing",
+   "note": "also shoed"
+  },
+  "shoot": {
+   "past_tense": "shot",
+   "past_participle": "shot"
+  },
+  "show": {
+   "past_tense": "showed",
+   "past_participle": "shown",
+   "note": "also showed as past participle"
+  },
+  "shrink": {
+   "past_tense": "shrank",
+   "past_participle": "shrunk",
+   "note": "also shrunk as the past tense; shrunken as a past participle before a noun"
+  },
+  "shut": {
+   "past_tense": "shut",
+   "past_participle": "shut",
+   "present_participle": "shutting"
+  },
+  "sing": {
+   "past_tense": "sang",
+   "past_participle": "sung"
+  },
+  "sink": {
+   "past_tense": "sank",
+   "past_participle": "sunk",
+   "note": "also sunk as past tense"
+  },
+  "sit": {
+   "past_tense": "sat",
+   "past_participle": "sat",
+   "present_participle": "sitting"
+  },
+  "slay": {
+   "past_tense": "slew",
+   "past_participle": "slain",
+   "note": "slayed in the informal meaning of impressing an audience"
+  },
+  "sleep": {
+   "past_tense": "slept",
+   "past_participle": "slept"
+  },
+  "slide": {
+   "past_tense": "slid",
+   "past_participle": "slid"
+  },
+  "sling": {
+   "past_tense": "slung",
+   "past_participle": "slung"
+  },
+  "slink": {
+   "past_tense": "slunk",
+   "past_participle": "slunk"
+  },
+  "slit": {
+   "past_tense": "slit",
+   "past_participle": "slit",
+   "present_participle": "slitting"
+  },
+  "smell": {
+   "past_tense": "smelled",
+   "past_participle": "smelled",
+   "note": "also smelt, especially British"
+  },
+  "smite": {
+   "past_tense": "smote",
+   "past_participle": "smitten"
+  },
+  "sneak": {
+   "past_tense": "snuck",
+   "past_participle": "snuck",
+   "note": "also sneaked"
+  },
+  "sow": {
+   "past_tense": "sowed",
+   "past_participle": "sown",
+   "note": "also sowed as past participle"
+  },
+  "speak": {
+   "past_tense": "spoke",
+   "past_participle": "spoken"
+  },
+  "speed": {
+   "past_tense": "sped",
+   "past_participle": "sped",
+   "note": "speeded when the meaning is to speed something up"
+  },
+  "spell": {
+   "past_tense": "spelled",
+   "past_participle": "spelled",
+   "note": "also spelt, especially British"
+  },
+  "spend": {
+   "past_tense": "spent",
+   "past_participle": "spent"
+  },
+  "spill": {
+   "past_tense": "spilled",
+   "past_participle": "spilled",
+   "note": "also spilt, especially British"
+  },
+  "spin": {
+   "past_tense": "spun",
+   "past_participle": "spun",
+   "present_participle": "spinning"
+  },
+  "spit": {
+   "past_tense": "spat",
+   "past_participle": "spat",
+   "present_participle": "spitting",
+   "note": "also spit as past tense and past participle in American English"
+  },
+  "split": {
+   "past_tense": "split",
+   "past_participle": "split",
+   "present_participle": "splitting"
+  },
+  "spoil": {
+   "past_tense": "spoiled",
+   "past_participle": "spoiled",
+   "note": "also spoilt, especially British"
+  },
+  "spread": {
+   "past_tense": "spread",
+   "past_participle": "spread"
+  },
+  "spring": {
+   "past_tense": "sprang",
+   "past_participle": "sprung",
+   "note": "also sprung as past tense"
+  },
+  "stand": {
+   "past_tense": "stood",
+   "past_participle": "stood"
+  },
+  "steal": {
+   "past_tense": "stole",
+   "past_participle": "stolen"
+  },
+  "stick": {
+   "past_tense": "stuck",
+   "past_participle": "stuck"
+  },
+  "sting": {
+   "past_tense": "stung",
+   "past_participle": "stung"
+  },
+  "stink": {
+   "past_tense": "stank",
+   "past_participle": "stunk",
+   "note": "also stunk as past tense"
+  },
+  "strew": {
+   "past_tense": "strewed",
+   "past_participle": "strewn",
+   "note": "also strewed as past participle"
+  },
+  "stride": {
+   "past_tense": "strode",
+   "past_participle": "stridden",
+   "note": "also strode as the past participle"
+  },
+  "strike": {
+   "past_tense": "struck",
+   "past_participle": "struck",
+   "note": "stricken in some fixed expressions"
+  },
+  "string": {
+   "past_tense": "strung",
+   "past_participle": "strung"
+  },
+  "strive": {
+   "past_tense": "strove",
+   "past_participle": "striven",
+   "note": "also strived"
+  },
+  "sublet": {
+   "past_tense": "sublet",
+   "past_participle": "sublet",
+   "present_participle": "subletting"
+  },
+  "swear": {
+   "past_tense": "swore",
+   "past_participle": "sworn"
+  },
+  "sweep": {
+   "past_tense": "swept",
+   "past_participle": "swept"
+  },
+  "swell": {
+   "past_tense": "swelled",
+   "past_participle": "swollen",
+   "note": "also swelled as past participle"
+  },
+  "swim": {
+   "past_tense": "swam",
+   "past_participle": "swum",
+   "present_participle": "swimming"
+  },
+  "swing": {
+   "past_tense": "swung",
+   "past_participle": "swung"
+  },
+  "take": {
+   "past_tense": "took",
+   "past_participle": "taken"
+  },
+  "teach": {
+   "past_tense": "taught",
+   "past_participle": "taught"
+  },
+  "tear": {
+   "past_tense": "tore",
+   "past_participle": "torn"
+  },
+  "tell": {
+   "past_tense": "told",
+   "past_participle": "told"
+  },
+  "think": {
+   "past_tense": "thought",
+   "past_participle": "thought"
+  },
+  "throw": {
+   "past_tense": "threw",
+   "past_participle": "thrown"
+  },
+  "thrust": {
+   "past_tense": "thrust",
+   "past_participle": "thrust"
+  },
+  "tread": {
+   "past_tense": "trod",
+   "past_participle": "trodden",
+   "note": "also trod as past participle"
+  },
+  "undercut": {
+   "past_tense": "undercut",
+   "past_participle": "undercut",
+   "present_participle": "undercutting"
+  },
+  "undergo": {
+   "past_tense": "underwent",
+   "past_participle": "undergone",
+   "third_person_singular": "undergoes"
+  },
+  "underlie": {
+   "past_tense": "underlay",
+   "past_participle": "underlain",
+   "present_participle": "underlying"
+  },
+  "underpay": {
+   "past_tense": "underpaid",
+   "past_participle": "underpaid"
+  },
+  "understand": {
+   "past_tense": "understood",
+   "past_participle": "understood"
+  },
+  "undertake": {
+   "past_tense": "undertook",
+   "past_participle": "undertaken"
+  },
+  "underwrite": {
+   "past_tense": "underwrote",
+   "past_participle": "underwritten"
+  },
+  "undo": {
+   "past_tense": "undid",
+   "past_participle": "undone",
+   "third_person_singular": "undoes"
+  },
+  "unfreeze": {
+   "past_tense": "unfroze",
+   "past_participle": "unfrozen"
+  },
+  "unwind": {
+   "past_tense": "unwound",
+   "past_participle": "unwound"
+  },
+  "uphold": {
+   "past_tense": "upheld",
+   "past_participle": "upheld"
+  },
+  "upset": {
+   "past_tense": "upset",
+   "past_participle": "upset",
+   "present_participle": "upsetting"
+  },
+  "wake": {
+   "past_tense": "woke",
+   "past_participle": "woken",
+   "note": "also waked"
+  },
+  "waylay": {
+   "past_tense": "waylaid",
+   "past_participle": "waylaid"
+  },
+  "wear": {
+   "past_tense": "wore",
+   "past_participle": "worn"
+  },
+  "weave": {
+   "past_tense": "wove",
+   "past_participle": "woven",
+   "note": "weaved when the meaning is to move in and out"
+  },
+  "wed": {
+   "past_tense": "wed",
+   "past_participle": "wed",
+   "present_participle": "wedding",
+   "note": "also wedded"
+  },
+  "weep": {
+   "past_tense": "wept",
+   "past_participle": "wept"
+  },
+  "wet": {
+   "past_tense": "wet",
+   "past_participle": "wet",
+   "present_participle": "wetting",
+   "note": "also wetted"
+  },
+  "win": {
+   "past_tense": "won",
+   "past_participle": "won",
+   "present_participle": "winning"
+  },
+  "wind": {
+   "past_tense": "wound",
+   "past_participle": "wound",
+   "note": "wind meaning to make someone short of breath is regular: winded"
+  },
+  "withdraw": {
+   "past_tense": "withdrew",
+   "past_participle": "withdrawn"
+  },
+  "withhold": {
+   "past_tense": "withheld",
+   "past_participle": "withheld"
+  },
+  "withstand": {
+   "past_tense": "withstood",
+   "past_participle": "withstood"
+  },
+  "wring": {
+   "past_tense": "wrung",
+   "past_participle": "wrung"
+  },
+  "write": {
+   "past_tense": "wrote",
+   "past_participle": "written"
+  },
+  "shave": {
+   "past_tense": "shaved",
+   "past_participle": "shaved",
+   "note": "shaven before a noun: a clean-shaven face"
+  },
+  "thrive": {
+   "past_tense": "thrived",
+   "past_participle": "thrived",
+   "note": "also throve and thriven, old-fashioned"
+  }
+ },
+ "nouns": {
+  "addendum": "addenda",
+  "adieu": [
+   "adieus",
+   "adieux"
+  ],
+  "aide-de-camp": "aides-de-camp",
+  "aircraft": "aircraft",
+  "alga": "algae",
+  "alumna": "alumnae",
+  "alumnus": "alumni",
+  "amoeba": [
+   "amoebas",
+   "amoebae"
+  ],
+  "analysis": "analyses",
+  "antenna": {
+   "plural": "antennas",
+   "also": [
+    "antennae"
+   ],
+   "note": "antennae for the feelers of insects and in scientific use; antennas for radio and television"
+  },
+  "antithesis": "antitheses",
+  "apex": [
+   "apexes",
+   "apices"
+  ],
+  "apparatus": [
+   "apparatuses",
+   "apparatus"
+  ],
+  "appendix": [
+   "appendixes",
+   "appendices"
+  ],
+  "aquarium": [
+   "aquariums",
+   "aquaria"
+  ],
+  "atrium": [
+   "atriums",
+   "atria"
+  ],
+  "attorney general": [
+   "attorneys general",
+   "attorney generals"
+  ],
+  "automaton": [
+   "automatons",
+   "automata"
+  ],
+  "axis": "axes",
+  "bacillus": "bacilli",
+  "bacterium": "bacteria",
+  "barracks": "barracks",
+  "basis": "bases",
+  "bass": "bass",
+  "beau": [
+   "beaus",
+   "beaux"
+  ],
+  "bird of prey": "birds of prey",
+  "bison": "bison",
+  "brother-in-law": "brothers-in-law",
+  "bureau": [
+   "bureaus",
+   "bureaux"
+  ],
+  "burmese": "burmese",
+  "cactus": [
+   "cacti",
+   "cactuses"
+  ],
+  "caribou": "caribou",
+  "carp": "carp",
+  "cattle": {
+   "plural": null,
+   "note": "plural only"
+  },
+  "chassis": "chassis",
+  "chateau": [
+   "chateaus",
+   "chateaux"
+  ],
+  "cherub": [
+   "cherubim",
+   "cherubs"
+  ],
+  "chief of staff": "chiefs of staff",
+  "child": "children",
+  "chili": "chilies",
+  "chinese": "chinese",
+  "clothes": {
+   "plural": null,
+   "note": "plural only"
+  },
+  "coat of arms": "coats of arms",
+  "cod": "cod",
+  "codex": "codices",
+  "commander-in-chief": "commanders-in-chief",
+  "compendium": [
+   "compendiums",
+   "compendia"
+  ],
+  "concerto": [
+   "concertos",
+   "concerti"
+  ],
+  "congolese": "congolese",
+  "consortium": [
+   "consortia",
+   "consortiums"
+  ],
+  "corps": "corps",
+  "corpus": [
+   "corpora",
+   "corpuses"
+  ],
+  "cortex": [
+   "cortices",
+   "cortexes"
+  ],
+  "court-martial": [
+   "courts-martial",
+   "court-martials"
+  ],
+  "crisis": "crises",
+  "criterion": "criteria",
+  "crossroads": "crossroads",
+  "cul-de-sac": [
+   "culs-de-sac",
+   "cul-de-sacs"
+  ],
+  "curriculum": [
+   "curricula",
+   "curriculums"
+  ],
+  "datum": "data",
+  "daughter-in-law": "daughters-in-law",
+  "deer": "deer",
+  "diagnosis": "diagnoses",
+  "die": {
+   "plural": "dice",
+   "note": "dies for the tool that shapes metal"
+  },
+  "dwarf": [
+   "dwarfs",
+   "dwarves"
+  ],
+  "editor-in-chief": "editors-in-chief",
+  "elk": "elk",
+  "ellipsis": "ellipses",
+  "emphasis": "emphases",
+  "epoch": "epochs",
+  "erratum": "errata",
+  "eunuch": "eunuchs",
+  "father-in-law": "fathers-in-law",
+  "fish": {
+   "plural": "fish",
+   "also": [
+    "fishes"
+   ],
+   "note": "fishes for different kinds of fish"
+  },
+  "flamingo": [
+   "flamingos",
+   "flamingoes"
+  ],
+  "focus": [
+   "focuses",
+   "foci"
+  ],
+  "foot": "feet",
+  "formula": [
+   "formulas",
+   "formulae"
+  ],
+  "forum": [
+   "forums",
+   "fora"
+  ],
+  "fungus": [
+   "fungi",
+   "funguses"
+  ],
+  "gallows": "gallows",
+  "gateau": [
+   "gateaux",
+   "gateaus"
+  ],
+  "genus": "genera",
+  "goose": "geese",
+  "governor general": [
+   "governors general",
+   "governor generals"
+  ],
+  "grouse": "grouse",
+  "haddock": "haddock",
+  "halibut": "halibut",
+  "hanger-on": "hangers-on",
+  "head of state": "heads of state",
+  "headquarters": "headquarters",
+  "helix": [
+   "helices",
+   "helixes"
+  ],
+  "hippopotamus": [
+   "hippopotamuses",
+   "hippopotami"
+  ],
+  "hole in one": "holes in one",
+  "honorarium": [
+   "honorariums",
+   "honoraria"
+  ],
+  "hoof": [
+   "hooves",
+   "hoofs"
+  ],
+  "hovercraft": "hovercraft",
+  "hypothesis": "hypotheses",
+  "index": [
+   "indexes",
+   "indices"
+  ],
+  "japanese": "japanese",
+  "jeans": {
+   "plural": null,
+   "note": "plural only"
+  },
+  "kibbutz": "kibbutzim",
+  "lady-in-waiting": "ladies-in-waiting",
+  "larva": "larvae",
+  "leave of absence": "leaves of absence",
+  "lebanese": "lebanese",
+  "libretto": [
+   "librettos",
+   "libretti"
+  ],
+  "loch": "lochs",
+  "locus": "loci",
+  "looker-on": "lookers-on",
+  "louse": "lice",
+  "mackerel": "mackerel",
+  "maid of honor": "maids of honor",
+  "maltese": "maltese",
+  "man": "men",
+  "man-of-war": "men-of-war",
+  "mango": [
+   "mangoes",
+   "mangos"
+  ],
+  "matriarch": "matriarchs",
+  "matrix": [
+   "matrices",
+   "matrixes"
+  ],
+  "maximum": [
+   "maximums",
+   "maxima"
+  ],
+  "means": "means",
+  "medium": {
+   "plural": "media",
+   "also": [
+    "mediums"
+   ],
+   "note": "media for means of communication and for materials; mediums for people who claim to speak with the dead"
+  },
+  "memorandum": [
+   "memorandums",
+   "memoranda"
+  ],
+  "metamorphosis": "metamorphoses",
+  "millennium": [
+   "millennia",
+   "millenniums"
+  ],
+  "minimum": [
+   "minimums",
+   "minima"
+  ],
+  "monarch": "monarchs",
+  "mongoose": "mongooses",
+  "moose": "moose",
+  "moratorium": [
+   "moratoriums",
+   "moratoria"
+  ],
+  "mother-in-law": "mothers-in-law",
+  "mouse": {
+   "plural": "mice",
+   "note": "also mouses for the computer device"
+  },
+  "nebula": [
+   "nebulae",
+   "nebulas"
+  ],
+  "neurosis": "neuroses",
+  "notary public": [
+   "notaries public",
+   "notary publics"
+  ],
+  "nucleus": [
+   "nuclei",
+   "nucleuses"
+  ],
+  "oasis": "oases",
+  "octopus": {
+   "plural": "octopuses",
+   "also": [
+    "octopi"
+   ],
+   "note": "octopi is common but disputed; octopodes is rare"
+  },
+  "offspring": "offspring",
+  "oligarch": "oligarchs",
+  "ovum": "ova",
+  "ox": "oxen",
+  "pants": {
+   "plural": null,
+   "note": "plural only"
+  },
+  "paparazzo": "paparazzi",
+  "parent-in-law": "parents-in-law",
+  "parenthesis": "parentheses",
+  "passer-by": "passers-by",
+  "passerby": "passersby",
+  "patriarch": "patriarchs",
+  "penny": {
+   "plural": "pennies",
+   "also": [
+    "pence"
+   ],
+   "note": "pence for an amount of money in British English; pennies for the coins"
+  },
+  "person": {
+   "plural": "people",
+   "also": [
+    "persons"
+   ],
+   "note": "persons in formal and legal use"
+  },
+  "persona": [
+   "personas",
+   "personae"
+  ],
+  "phenomenon": "phenomena",
+  "pike": {
+   "plural": "pike",
+   "also": [
+    "pikes"
+   ],
+   "note": "pike for the fish; pikes for the weapon"
+  },
+  "plaice": "plaice",
+  "plateau": [
+   "plateaus",
+   "plateaux"
+  ],
+  "podium": [
+   "podiums",
+   "podia"
+  ],
+  "poet laureate": [
+   "poets laureate",
+   "poet laureates"
+  ],
+  "point of view": "points of view",
+  "police": {
+   "plural": null,
+   "note": "plural only"
+  },
+  "polyhedron": [
+   "polyhedra",
+   "polyhedrons"
+  ],
+  "portuguese": "portuguese",
+  "power of attorney": "powers of attorney",
+  "prognosis": "prognoses",
+  "psychosis": "psychoses",
+  "pupa": [
+   "pupae",
+   "pupas"
+  ],
+  "quantum": "quanta",
+  "radius": [
+   "radii",
+   "radiuses"
+  ],
+  "referendum": [
+   "referendums",
+   "referenda"
+  ],
+  "reindeer": "reindeer",
+  "right of way": "rights of way",
+  "rule of thumb": "rules of thumb",
+  "runner-up": "runners-up",
+  "salmon": "salmon",
+  "scarf": [
+   "scarves",
+   "scarfs"
+  ],
+  "schema": [
+   "schemas",
+   "schemata"
+  ],
+  "scissors": {
+   "plural": null,
+   "note": "plural only"
+  },
+  "secretary-general": "secretaries-general",
+  "seraph": [
+   "seraphim",
+   "seraphs"
+  ],
+  "sergeant major": [
+   "sergeants major",
+   "sergeant majors"
+  ],
+  "series": "series",
+  "sheep": "sheep",
+  "shorts": {
+   "plural": null,
+   "note": "plural only"
+  },
+  "shrimp": [
+   "shrimp",
+   "shrimps"
+  ],
+  "sister-in-law": "sisters-in-law",
+  "son-in-law": "sons-in-law",
+  "spacecraft": "spacecraft",
+  "species": "species",
+  "spectrum": [
+   "spectra",
+   "spectrums"
+  ],
+  "squid": "squid",
+  "stadium": [
+   "stadiums",
+   "stadia"
+  ],
+  "staff": {
+   "plural": "staffs",
+   "note": "also staves for the set of lines that music is written on"
+  },
+  "state of affairs": "states of affairs",
+  "stigma": [
+   "stigmas",
+   "stigmata"
+  ],
+  "still life": "still lifes",
+  "stimulus": "stimuli",
+  "stomach": "stomachs",
+  "stratum": "strata",
+  "sudanese": "sudanese",
+  "surgeon general": "surgeons general",
+  "swine": "swine",
+  "swiss": "swiss",
+  "syllabus": [
+   "syllabi",
+   "syllabuses"
+  ],
+  "symposium": [
+   "symposia",
+   "symposiums"
+  ],
+  "synopsis": "synopses",
+  "synthesis": "syntheses",
+  "tableau": [
+   "tableaux",
+   "tableaus"
+  ],
+  "taiwanese": "taiwanese",
+  "tech": "techs",
+  "tempo": [
+   "tempos",
+   "tempi"
+  ],
+  "terminus": [
+   "termini",
+   "terminuses"
+  ],
+  "thesaurus": [
+   "thesauruses",
+   "thesauri"
+  ],
+  "thesis": "theses",
+  "tooth": "teeth",
+  "trousers": {
+   "plural": null,
+   "note": "plural only"
+  },
+  "trout": "trout",
+  "tuna": "tuna",
+  "ultimatum": [
+   "ultimatums",
+   "ultimata"
+  ],
+  "vertebra": [
+   "vertebrae",
+   "vertebras"
+  ],
+  "vertex": [
+   "vertices",
+   "vertexes"
+  ],
+  "vietnamese": "vietnamese",
+  "virtuoso": [
+   "virtuosos",
+   "virtuosi"
+  ],
+  "vortex": [
+   "vortices",
+   "vortexes"
+  ],
+  "watercraft": "watercraft",
+  "wharf": [
+   "wharves",
+   "wharfs"
+  ],
+  "woman": "women",
+  "won": "won",
+  "work of art": "works of art",
+  "yen": "yen",
+  "yuan": "yuan",
+  "zero": [
+   "zeros",
+   "zeroes"
+  ],
+  "brother": {
+   "plural": "brothers",
+   "also": [
+    "brethren"
+   ],
+   "note": "brethren for members of a religious group or a fellowship"
+  }
+ },
+ "adjectives": {
+  "apt": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more"
+  },
+  "bad": {
+   "comparative": "worse",
+   "superlative": "worst"
+  },
+  "both": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "chief": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "daily": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "dead": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "double": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "dry": {
+   "comparative": "drier",
+   "superlative": "driest",
+   "note": "also dryer as the comparative"
+  },
+  "due": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "each": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "eager": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more"
+  },
+  "far": {
+   "comparative": "farther",
+   "superlative": "farthest",
+   "note": "also further, furthest"
+  },
+  "female": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "first": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "former": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "free": {
+   "comparative": "freer",
+   "superlative": "freest"
+  },
+  "fun": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more; funner and funnest are informal"
+  },
+  "good": {
+   "comparative": "better",
+   "superlative": "best"
+  },
+  "half": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "hourly": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "ill": {
+   "comparative": "worse",
+   "superlative": "worst"
+  },
+  "inner": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "just": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more"
+  },
+  "last": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "late": {
+   "comparative": "later",
+   "superlative": "latest",
+   "note": "latter and last in some meanings"
+  },
+  "latter": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "left": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "little": {
+   "comparative": "less",
+   "superlative": "least",
+   "note": "littler and littlest for size, informal"
+  },
+  "live": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "lower": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "main": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "male": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "many": {
+   "comparative": "more",
+   "superlative": "most"
+  },
+  "mere": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "middle": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "monthly": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "much": {
+   "comparative": "more",
+   "superlative": "most"
+  },
+  "near": {
+   "comparative": "nearer",
+   "superlative": "nearest",
+   "note": "next in the meaning of the one coming after"
+  },
+  "next": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "nightly": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "old": {
+   "comparative": "older",
+   "superlative": "oldest",
+   "note": "elder and eldest for members of a family"
+  },
+  "only": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "other": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "outer": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "own": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "past": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "prime": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "proper": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more"
+  },
+  "real": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more"
+  },
+  "right": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more"
+  },
+  "same": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "secret": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more"
+  },
+  "shy": {
+   "comparative": "shyer",
+   "superlative": "shyest",
+   "note": "also shier, shiest"
+  },
+  "single": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "sly": {
+   "comparative": "slyer",
+   "superlative": "slyest",
+   "note": "also slier, sliest"
+  },
+  "sober": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more"
+  },
+  "sole": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "spry": {
+   "comparative": "spryer",
+   "superlative": "spryest",
+   "note": "also sprier, spriest"
+  },
+  "such": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "top": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "triple": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "true": {
+   "comparative": "truer",
+   "superlative": "truest"
+  },
+  "unfair": {
+   "comparative": "unfairer",
+   "superlative": "unfairest"
+  },
+  "unfriendly": {
+   "comparative": "unfriendlier",
+   "superlative": "unfriendliest"
+  },
+  "unhappy": {
+   "comparative": "unhappier",
+   "superlative": "unhappiest"
+  },
+  "unhealthy": {
+   "comparative": "unhealthier",
+   "superlative": "unhealthiest"
+  },
+  "unkind": {
+   "comparative": "unkinder",
+   "superlative": "unkindest"
+  },
+  "unlucky": {
+   "comparative": "unluckier",
+   "superlative": "unluckiest"
+  },
+  "unsteady": {
+   "comparative": "unsteadier",
+   "superlative": "unsteadiest"
+  },
+  "untidy": {
+   "comparative": "untidier",
+   "superlative": "untidiest"
+  },
+  "unwise": {
+   "comparative": "unwiser",
+   "superlative": "unwisest"
+  },
+  "unworthy": {
+   "comparative": "unworthier",
+   "superlative": "unworthiest"
+  },
+  "upper": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "utter": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "weekly": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "well": {
+   "comparative": "better",
+   "superlative": "best"
+  },
+  "whole": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "worth": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "wrong": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more"
+  },
+  "wry": {
+   "comparative": "wryer",
+   "superlative": "wryest",
+   "note": "also wrier, wriest"
+  },
+  "yearly": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  }
+ },
+ "adverbs": {
+  "abroad": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "across": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "again": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "ago": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "ahead": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "all": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "almost": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "along": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "already": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "also": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "always": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "anyway": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "apart": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "around": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "aside": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "away": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "back": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "badly": {
+   "comparative": "worse",
+   "superlative": "worst"
+  },
+  "close": {
+   "comparative": "closer",
+   "superlative": "closest"
+  },
+  "deep": {
+   "comparative": "deeper",
+   "superlative": "deepest"
+  },
+  "down": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "early": {
+   "comparative": "earlier",
+   "superlative": "earliest"
+  },
+  "either": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "else": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "enough": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "even": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "ever": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "far": {
+   "comparative": "farther",
+   "superlative": "farthest",
+   "note": "also further, furthest"
+  },
+  "fast": {
+   "comparative": "faster",
+   "superlative": "fastest"
+  },
+  "forth": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "hard": {
+   "comparative": "harder",
+   "superlative": "hardest"
+  },
+  "hence": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "here": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "high": {
+   "comparative": "higher",
+   "superlative": "highest"
+  },
+  "however": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "in": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "indeed": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "instead": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "just": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "late": {
+   "comparative": "later",
+   "superlative": "latest"
+  },
+  "little": {
+   "comparative": "less",
+   "superlative": "least"
+  },
+  "long": {
+   "comparative": "longer",
+   "superlative": "longest"
+  },
+  "loud": {
+   "comparative": "louder",
+   "superlative": "loudest"
+  },
+  "low": {
+   "comparative": "lower",
+   "superlative": "lowest"
+  },
+  "maybe": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "much": {
+   "comparative": "more",
+   "superlative": "most"
+  },
+  "near": {
+   "comparative": "nearer",
+   "superlative": "nearest"
+  },
+  "neither": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "never": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "not": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "now": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "off": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "often": {
+   "comparative": null,
+   "superlative": null,
+   "note": "comparative with more; oftener is rare"
+  },
+  "on": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "once": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "only": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "out": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "over": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "perhaps": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "please": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "pretty": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "quick": {
+   "comparative": "quicker",
+   "superlative": "quickest",
+   "note": "informal; quickly in careful writing"
+  },
+  "quite": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "rather": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "seldom": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "slow": {
+   "comparative": "slower",
+   "superlative": "slowest",
+   "note": "informal; slowly in careful writing"
+  },
+  "so": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "sometimes": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "somewhat": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "soon": {
+   "comparative": "sooner",
+   "superlative": "soonest"
+  },
+  "still": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "then": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "there": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "therefore": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "thus": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "too": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "twice": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "up": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "very": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "well": {
+   "comparative": "better",
+   "superlative": "best"
+  },
+  "wide": {
+   "comparative": "wider",
+   "superlative": "widest"
+  },
+  "yet": {
+   "comparative": null,
+   "superlative": null,
+   "note": "not gradable"
+  },
+  "ill": {
+   "comparative": "worse",
+   "superlative": "worst"
+  }
+ },
+ "doubling": [
+  "abet",
+  "acquit",
+  "admit",
+  "allot",
+  "annul",
+  "aver",
+  "babysit",
+  "beget",
+  "begin",
+  "beset",
+  "bootleg",
+  "catnap",
+  "commit",
+  "compel",
+  "concur",
+  "confer",
+  "control",
+  "defer",
+  "demur",
+  "deter",
+  "dispel",
+  "emit",
+  "entrap",
+  "equip",
+  "excel",
+  "expel",
+  "extol",
+  "forbid",
+  "forget",
+  "format",
+  "handicap",
+  "hobnob",
+  "impel",
+  "incur",
+  "infer",
+  "input",
+  "inter",
+  "kidnap",
+  "leapfrog",
+  "occur",
+  "offset",
+  "omit",
+  "outbid",
+  "outfit",
+  "output",
+  "outrun",
+  "outstrip",
+  "outwit",
+  "overlap",
+  "overrun",
+  "patrol",
+  "permit",
+  "prefer",
+  "preset",
+  "program",
+  "propel",
+  "rebel",
+  "recap",
+  "recur",
+  "refer",
+  "regret",
+  "remit",
+  "repel",
+  "reset",
+  "sandbag",
+  "sidestep",
+  "sublet",
+  "submit",
+  "transmit",
+  "undercut",
+  "underpin",
+  "unplug",
+  "unwrap",
+  "unzip",
+  "upset",
+  "worship",
+  "zigzag"
+ ],
+ "single_l": [
+  "bevel",
+  "cancel",
+  "carol",
+  "channel",
+  "chisel",
+  "counsel",
+  "cruel",
+  "cudgel",
+  "dial",
+  "dishevel",
+  "drivel",
+  "duel",
+  "enamel",
+  "equal",
+  "fuel",
+  "funnel",
+  "gravel",
+  "grovel",
+  "imperil",
+  "initial",
+  "jewel",
+  "kennel",
+  "label",
+  "level",
+  "libel",
+  "marvel",
+  "model",
+  "panel",
+  "parcel",
+  "pedal",
+  "pencil",
+  "pummel",
+  "quarrel",
+  "ravel",
+  "revel",
+  "rival",
+  "shovel",
+  "shrivel",
+  "signal",
+  "snivel",
+  "spiral",
+  "stencil",
+  "swivel",
+  "tassel",
+  "tinsel",
+  "total",
+  "travel",
+  "trowel",
+  "tunnel",
+  "unravel",
+  "yodel"
+ ],
+ "keep_e": [
+  "agree",
+  "be",
+  "binge",
+  "canoe",
+  "decree",
+  "disagree",
+  "dye",
+  "eye",
+  "flee",
+  "foresee",
+  "free",
+  "guarantee",
+  "hoe",
+  "oversee",
+  "referee",
+  "see",
+  "shoe",
+  "sightsee",
+  "singe",
+  "tinge",
+  "tiptoe",
+  "toe",
+  "whinge"
+ ],
+ "ie_to_y": [
+  "belie",
+  "die",
+  "lie",
+  "tie",
+  "untie",
+  "vie"
+ ],
+ "o_es": [
+  "buffalo",
+  "cargo",
+  "domino",
+  "echo",
+  "embargo",
+  "grotto",
+  "hero",
+  "mosquito",
+  "motto",
+  "potato",
+  "tomato",
+  "tornado",
+  "torpedo",
+  "veto",
+  "volcano"
+ ],
+ "f_to_ves": [
+  "calf",
+  "elf",
+  "half",
+  "knife",
+  "leaf",
+  "life",
+  "loaf",
+  "self",
+  "sheaf",
+  "shelf",
+  "thief",
+  "wife",
+  "wolf"
+ ],
+ "c_ck": [
+  "bivouac",
+  "frolic",
+  "mimic",
+  "panic",
+  "picnic",
+  "shellac",
+  "tarmac",
+  "traffic"
+ ],
+ "suffix_regular": [
+  "caiman",
+  "dolman",
+  "german",
+  "human",
+  "norman",
+  "ottoman",
+  "roman",
+  "shaman",
+  "talisman",
+  "walkman"
+ ]
+}
