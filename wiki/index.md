@@ -42,5 +42,6 @@
 ## Notes (observed problems, method records, experiment results)
 
 - [pronunciation-model-test-v1](notes/pronunciation-model-test-v1.md) — the experiment result: model transcriptions against the CMU dictionary, the amended normalization, the adopted two-vote rule.
+- [routine-dry-run-v1](notes/routine-dry-run-v1.md) — a Sonnet-class dry run of the Routine prompt: what worked, what the prompt got wrong, what changed.
 - [inflection-exceptions-check](notes/inflection-exceptions-check.md) — the two-model check of the inflection exceptions table: what was applied and what was rejected.
 - [seed-set-drafting](notes/seed-set-drafting.md) — how the seed set was drafted and the judgment calls the drafters flagged.

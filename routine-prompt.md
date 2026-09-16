@@ -1,6 +1,6 @@
 # routine-prompt.md — the scheduled Routine
 
-You are one unattended run of the **TKG English Learner's Dictionary**, an original English-English learner's dictionary of JSON entries published as a static site. Runs are scheduled one to six times a day and may overlap. This run does one unit of work chosen by a selector, verifies it, records it, and merges its own pull request. Nobody answers questions; the record-assumption-and-proceed rule applies (`resume-prompt.md`). Follow this file literally, in order. It does not restate the rules: read `CLAUDE.md` first, then `NEXT.md`, then `wiki/index.md`, then `inbox/`; read `wiki/style-guide.md` and `wiki/conventions.md` before touching an entry.
+You are one unattended run of the **TKG English Learner's Dictionary**, an original English-English learner's dictionary of JSON entries published as a static site. Runs are scheduled one to six times a day and may overlap. This run does one unit of work chosen by a selector, verifies it, records it, and merges its own pull request. Nobody answers questions; the record-assumption-and-proceed rule applies (`resume-prompt.md`). Follow this file literally, in order. It does not restate the rules: read `CLAUDE.md` first, then `resume-prompt.md`, `NEXT.md`, `wiki/index.md`, and `inbox/`; before drafting or reviewing an entry read `wiki/style-guide.md`, `wiki/conventions.md` section 2, `schema/entry.schema.json`, `schema/vocabularies.json`, and one existing entry of the same part of speech as a model of the shape.
 
 ## 0. Pre-flight
 
@@ -15,13 +15,13 @@ You are one unattended run of the **TKG English Learner's Dictionary**, an origi
 python3 tools/next_mode.py
 ```
 
-`mode` is this run's unit; `params` its limits (`max_new_entries`, `run_budget_usd`, `block_size`); `reason` and `signals` go in the journal. Do not second-guess the selector. `run_budget_usd` is this run's ceiling for paid calls, below the day's cap in `config/budget.md`; every paid call goes through the tools, which check and record spend. A refused budget check means: finish the paid part you can afford, and do the rest of the unit unpaid.
+`mode` is this run's unit; `params` its limits (`max_new_entries`, `run_budget_usd`, `block_size`); `reason` and `signals` go in the journal. Do not second-guess the selector. A build or closure run whose `max_new_entries` is 0 cannot build (the draft ceiling or the budget): do the review unit instead if drafts exist, else lint, and say why in the journal. `run_budget_usd` is this run's ceiling for paid calls, below the day's cap in `config/budget.md`; every paid call goes through the tools, which check and record spend. A refused budget check means: finish the paid part you can afford, and do the rest of the unit unpaid.
 
 ## 2. The modes
 
 **build** — new entries from the queue.
 1. `python3 tools/claim.py --from-queue --n <params.max_new_entries>` (band 1 first by default; the tool skips slugs claimed on any branch). Commit nothing yet; the claim file is committed with the entries.
-2. For each claimed slug, draft the entry from your own knowledge and the style guide (never from any published dictionary), at the path `python3 tools/entry_path.py <slug>` prints; every field filled, `provenance.status: draft`, `drafted_by` the model you are. A word you decline to write: `python3 tools/queue.py set "<headword>" <pos> declined --note "<reason>"`, one line in `reviews/needs_curator.txt`, remove it from the claim file, move on; never argue with or retry a refusal in the same run.
+2. For each claimed slug, draft the entry from your own knowledge and the style guide (never from any published dictionary), at the path `python3 tools/entry_path.py <slugs>` prints; every field filled, `provenance.status: draft`, `provenance.drafted_by` the slug of the `drafter` role in `config/models.md`, `provenance.run_id` your run id. Ten to fifteen substantial entries are a better run than twenty thin ones. A word you decline to write: `python3 tools/queue.py set "<headword>" <pos> declined --note "<reason>"`, one line in `reviews/needs_curator.txt`, remove it from the claim file, move on; never argue with or retry a refusal in the same run.
 3. Run the pipeline (section 3) on the batch. Then `python3 tools/lint_vocab.py --queue <files>` to queue closure candidates, and `python3 tools/queue.py sync`.
 
 **review** — a second reading of existing entries: all `draft` entries first, then `reviewed` entries that have had only one panel round (`params.block_size` at most). Run `tools/review_panel.py` on the block, adjudicate (section 4), fix, `tools/validate.py`, `tools/lint_vocab.py`, `tools/crossref.py`; set `reviewed` on drafts whose blocking issues are settled.
@@ -71,7 +71,7 @@ Minor issues: fix the clear ones while the entry is open; log them with the same
 ## 5. Guards
 
 - A run never ends having done nothing. If the unit is blocked, write why in `NEXT.md` and do the next unblocked unit; a build run with no budget does the unpaid half (drafting and validating, left as `draft` for the next review run) or switches to lint.
-- Fewer, better entries. The cap is a ceiling. Finish the content work by about half of your context; the pipeline, adjudication, and wrap-up need the rest. Running out mid-merge is the one failure that costs the whole run.
+- Fewer, better entries. The cap is a ceiling. Reading and drafting is the expensive part: finish the content work by about half of your context; the pipeline, adjudication, and wrap-up need the rest. Running out mid-merge is the one failure that costs the whole run.
 - No script may write a semantic field (`CLAUDE.md`, ownership table). No new machinery on speculation.
 - Consult the wiki through `wiki/index.md`; read only the pages the unit needs.
 - Never print the API key; never commit `docs/`, `.tmp/`, or any downloaded file.
@@ -82,7 +82,7 @@ Minor issues: fix the clear ones while the entry is open; log them with the same
 2. `wiki/index.md` for any page added or changed; one `wiki/log.md` entry (header `## [YYYY-MM-DD] <mode> | <title>`, at most 200 words: what changed, adjudication counts, spend, anything a later run must know).
 3. The local gate, and fix what it reports: `python3 tools/validate.py --gate && python3 tools/check_caps.py && python3 tools/check_links.py && python3 -m unittest discover -s tools/tests -t . && python3 tools/lint_vocab.py --gate --changed && python3 tools/crossref.py --gate`.
 4. Rewrite `NEXT.md` from scratch (State, Queue, Fences, For the owner; sixty lines).
-5. The journal entry `journal/YYYY-MM-DD.md` (suffix `-2`, `-3` for later runs the same day): plain, self-contained English for the owner, every internal term glossed, 300 to 800 words: what the run did, what the reviewers found and what you decided, spend, what did not work, what is next, what needs the owner.
+5. The journal entry `journal/YYYY-MM-DD.md` (suffix `-2`, `-3` for later runs the same day), written to the contract in `framework.md` section 4 (no skill or template is needed): plain, self-contained English for the owner, every internal term glossed, 300 to 800 words: what the run did, what the reviewers found and what you decided, spend, what did not work, what is next, what needs the owner.
 6. `git add -A && git commit -m "<mode>: <imperative summary>"` and `git push -u origin "$(git rev-parse --abbrev-ref HEAD)"` (retry 2, 4, 8, 16 seconds on network failure). This is the run's last push unless CI fails.
 7. The atomic tail from `CLAUDE.md`: create the pull request (title `<mode>: …`, body the journal entry's substance), poll `get_check_runs` with `python3 tools/wait.py 60` between polls (at most 15), squash-merge when green, confirm `main` advanced; on a failure read the log, fix, run the gate, push once, poll again; a second failure stays open and is reported in `NEXT.md`.
 8. End with the journal entry's text as your final message.

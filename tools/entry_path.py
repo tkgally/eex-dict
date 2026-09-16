@@ -27,7 +27,7 @@ def main(argv=None):
     parser.add_argument("--slug", metavar="HEADWORD", help="print the slug of HEADWORD; give the pos code and an optional homograph number after it")
     parser.add_argument("--shard", metavar="SLUG", help="print the shard directory of SLUG")
     parser.add_argument("--sub-id", metavar="TEXT", help="print the sub_id of a phrase")
-    parser.add_argument("rest", nargs="*", help="the slug, or with --slug: POS [HOMOGRAPH]")
+    parser.add_argument("rest", nargs="*", help="one or more slugs, or with --slug: POS [HOMOGRAPH]")
     args = parser.parse_args(argv)
 
     try:
@@ -42,10 +42,11 @@ def main(argv=None):
         elif args.sub_id is not None:
             print(eexlib.phrase_sub_id(args.sub_id))
         else:
-            if len(args.rest) != 1:
-                parser.error("give exactly one slug")
-            eexlib.parse_slug(args.rest[0])
-            print(eexlib.relative_entry_path(args.rest[0]))
+            if not args.rest:
+                parser.error("give at least one slug")
+            for slug in args.rest:                      # one path per line, in the order given
+                eexlib.parse_slug(slug)
+                print(eexlib.relative_entry_path(slug))
     except ValueError as exc:
         print("entry_path: %s" % exc, file=sys.stderr)
         return 2
