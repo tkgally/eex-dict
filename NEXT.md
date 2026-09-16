@@ -10,7 +10,7 @@
 
 ## Queue (work top-down, one unit at a time)
 
-1. Stage C: the 77 seed entries through the rest of the pipeline (pronunciation check, both reviewers, adjudication, lint, crossref), three of them into the style guide as model entries, the British hand check of the pronunciation test, site built and checked, the seed review guide; merge.
+1. Stage C, in progress on this branch: the 77 seed entries are drafted, validated, inflected, pronunciation-checked, lint-clean, cross-referenced; model entries are in the style guide. Left: `python3 tools/review_panel.py <all 77 slugs>` (about US$2.20, after 00:00 UTC on 2026-09-17), adjudication with `--report` and `--decide`, `validate.py`, set `provenance.status: reviewed`, `queue.py sync`, `build_site.py` and `site_check.py`, the Wiktionary hand check file `experiments/pronunciation-model-test-v1/wiktionary-check.tsv`; then merge.
 2. Stage D: dry-run a five-entry build cycle by `routine-prompt.md` and fix the prompt; final `NEXT.md` and journal; merge.
 4. First lint pass due after the fifth Routine run (framework section 6).
 

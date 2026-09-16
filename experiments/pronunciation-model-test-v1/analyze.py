@@ -74,7 +74,8 @@ def main() -> int:
     if wpath.exists():
         with wpath.open(encoding="utf-8") as f:
             for r in csv.DictReader(f, delimiter="\t"):
-                wikt[(r["word"], r["pos"], r["role"])] = r["verdict"]
+                if r["verdict"] in ("agree", "disagree"):      # not-fetched and no-line rows are not checks
+                    wikt[(r["word"], r["pos"], r["role"])] = r["verdict"]
 
     # per-role agreement with CMU (American), by stratum
     cmu_n1 = defaultdict(lambda: defaultdict(int)); cmu_n2 = defaultdict(lambda: defaultdict(int)); cmu_have = defaultdict(int)

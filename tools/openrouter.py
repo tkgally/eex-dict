@@ -377,7 +377,9 @@ def reasoning_for(model_slug: str, task: str = "review") -> dict:
     reasoning unless it is switched off; the others review at low effort.
     """
     if task in ("pronunciation", "wordlist"):
-        return {"enabled": False}
+        # Google endpoints refuse to disable reasoning (HTTP 400, 2026-09-16); at low effort they
+        # answer these tasks with no reasoning tokens anyway.
+        return {"effort": "low"} if model_slug.startswith("google/") else {"enabled": False}
     return {"enabled": False} if model_slug.startswith("deepseek/") else {"effort": "low"}
 
 

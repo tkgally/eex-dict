@@ -33,3 +33,10 @@ Heteronyms are excluded from the CMU comparison (CMU does not mark the part of s
 | rare | 100 | 90 | 9 | 1 | 87 | 8 | 5 |
 | heteronym | 50 | 47 | 3 | 0 | 50 | 0 | 0 |
 | loan | 50 | 48 | 1 | 1 | 44 | 4 | 2 |
+
+## 4. Hand check against Wiktionary (British), agree rate by role
+
+- drafter: 97.5% of 81
+- pronunciation-1: 97.5% of 81
+- pronunciation-2: 92.6% of 81
+- pronunciation-3: 98.8% of 81
