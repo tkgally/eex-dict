@@ -217,7 +217,7 @@
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "Countable and singular in this sense: a hand, never hands. It is followed by with and a noun (a hand with the dishes) or by an -ing form after give someone a hand (give me a hand moving this).",
+        "grammar": "Countable and singular in this sense: a hand (the plural hands means workers, as in the worker sense). It is followed by with and a noun (a hand with the dishes) or by an -ing form after give someone a hand (give me a hand moving this).",
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -298,7 +298,7 @@
       "compare": [],
       "subsenses": [],
       "adaptation": {
-        "semantic": "Most languages express this sense with a word for control, care, or power rather than the body part; in the hands of usually translates as under the control of, and in good hands as well cared for.",
+        "semantic": "This sense may need a word for control, care, or power rather than the body part: in the hands of usually translates as under the control of, and in good hands as well cared for.",
         "grammar": null,
         "culture": null,
         "false_friends": null,
@@ -627,7 +627,7 @@
       },
       "labels": {
         "register": [
-          "formal"
+          "literary"
         ],
         "region": [],
         "domain": [],
@@ -743,9 +743,7 @@
       "definition": "help someone do something",
       "explanation": "Lend a hand and need a hand are used in the same way: Can you lend a hand? Do you need a hand?",
       "labels": {
-        "register": [
-          "informal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -918,7 +916,7 @@
       "sub_id": "hand-in-hand",
       "text": "hand in hand",
       "definition": "holding each other's hand",
-      "explanation": "Two things that go hand in hand are closely connected and happen together.",
+      "explanation": null,
       "labels": {
         "register": [],
         "region": [],
@@ -931,9 +929,37 @@
           "text": "The couple walked hand in hand along the shore.",
           "note": null,
           "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "go-hand-in-hand",
+      "text": "go hand in hand",
+      "definition": "be closely connected, so that one happens together with the other",
+      "explanation": "Often go hand in hand with something.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Poverty and poor health often go hand in hand.",
+          "note": null,
+          "pattern": null
         },
         {
-          "text": "Better roads go hand in hand with more traffic.",
+          "text": "For most people, more responsibility goes hand in hand with a higher salary.",
           "note": null,
           "pattern": null
         }
@@ -1183,8 +1209,8 @@
     {
       "sub_id": "hands-up",
       "text": "hands up",
-      "definition": "used to tell people to raise a hand if they want to answer or offer something, or to raise both arms to show that they will not fight",
-      "explanation": null,
+      "definition": "used to tell people to raise one or both hands",
+      "explanation": "In a class or a meeting, Hands up! asks people to raise a hand if they want to answer or offer something: Hands up if you know the answer. Said by the police or by a robber, Hands up! orders people to raise both hands to show that they will not fight or run away.",
       "labels": {
         "register": [],
         "region": [],
@@ -1820,16 +1846,6 @@
       "note": null
     },
     {
-      "slug": "handle-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "handle-v",
-      "form": null,
-      "note": null
-    },
-    {
       "slug": "handbag-n",
       "form": null,
       "note": null
@@ -1946,8 +1962,8 @@
     }
   ],
   "adaptation": {
-    "semantic": "In many languages one word covers both the hand and the arm, or the border between them is drawn differently; English hand ends at the wrist. The help, control, clock, worker, and card senses are separate words almost everywhere, so each needs its own translation.",
-    "grammar": "English uses a possessive, not the, with body parts: wash your hands, hold my hand. Several fixed uses are plural even for one hand each: shake hands, hold hands, clap your hands. The help sense is countable and singular: a hand, never hands.",
+    "semantic": "In many languages one word covers both the hand and the arm, or the border between them is drawn differently; English hand ends at the wrist. The help, control, clock, worker, and card senses are often separate words in other languages, so check each one.",
+    "grammar": "English uses a possessive, not the, with body parts: wash your hands, hold my hand. Several fixed uses are plural even for one hand each: shake hands, hold hands, clap your hands. The help sense is countable and singular: a hand; the plural hands means workers.",
     "culture": "In most English-speaking countries adults shake hands when they are introduced and often when they part; a firm, short handshake is expected. Raising a hand is the normal way to ask to speak in a class or a meeting.",
     "false_friends": null,
     "pronunciation": "The vowel is the short a of cat. The plural hands ends in the cluster ndz, which learners often reduce to ns or nz; keep the d."
@@ -1955,11 +1971,32 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-16T14:33:53Z",
-    "modified": "2026-09-16T15:22:16Z",
+    "modified": "2026-09-17T01:15:32Z",
     "drafted_by": "claude-fable-5-1",
     "run_id": "20260916T134425Z-1yir52",
-    "reviews": [],
-    "status": "draft",
+    "reviews": [
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/hand-n.json",
+        "ok": 248,
+        "issues": 12,
+        "blocking": 11
+      },
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/hand-n.json",
+        "ok": 258,
+        "issues": 0,
+        "blocking": 0
+      }
+    ],
+    "status": "reviewed",
     "flags": [],
     "notes": null
   }

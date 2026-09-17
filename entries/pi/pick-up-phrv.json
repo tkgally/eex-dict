@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To pick up is to take something from where it is; the other senses extend this to getting, catching, learning, noticing, or starting something.",
+  "core_idea": "To pick up is to lift something from where it is; the other senses extend this to collecting, getting, learning, catching, noticing, answering, and starting something.",
   "senses": [
     {
       "n": 1,
@@ -106,6 +106,10 @@
       ],
       "synonyms": [
         {
+          "slug": "lift-v",
+          "note": null
+        },
+        {
           "slug": "take-v",
           "note": null
         }
@@ -120,8 +124,8 @@
       "subsenses": [
         {
           "letter": "a",
-          "definition": "pick yourself up: stand up again after falling",
-          "explanation": null,
+          "definition": "stand up again after falling",
+          "explanation": "Only as pick yourself up.",
           "grammar": null,
           "labels": null,
           "examples": [
@@ -250,8 +254,8 @@
       "subsenses": [
         {
           "letter": "a",
-          "definition": "of the police: stop someone and take them to a police station",
-          "explanation": null,
+          "definition": "stop someone and take them to a police station",
+          "explanation": "The subject is the police.",
           "grammar": null,
           "labels": null,
           "examples": [
@@ -281,7 +285,7 @@
     {
       "n": 3,
       "signpost": "buy or get",
-      "definition": "buy or get something, especially cheaply or without planning to",
+      "definition": "buy or get something, often quickly or without much planning",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -343,7 +347,7 @@
     {
       "n": 4,
       "signpost": "learn",
-      "definition": "learn a language, a skill, or a habit by hearing or seeing it, without studying",
+      "definition": "learn a language, a skill, or a habit little by little and without formal study, by hearing or seeing it",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -617,7 +621,7 @@
     {
       "n": 8,
       "signpost": "notice",
-      "definition": "notice something that is not easy to notice, such as a mistake or a smell, or, of a machine such as a radio, receive sounds or messages sent through the air",
+      "definition": "notice something that is not easy to notice, such as a mistake or a smell",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -648,11 +652,6 @@
           "pattern": null
         },
         {
-          "text": "Our radio can pick up stations from far away.",
-          "note": null,
-          "pattern": null
-        },
-        {
           "text": "A good editor picks up errors that others miss.",
           "note": null,
           "pattern": null
@@ -662,7 +661,6 @@
         {
           "type": "verb + noun",
           "items": [
-            "pick up a signal",
             "pick up a mistake",
             "pick up a smell",
             "pick up a scent"
@@ -680,8 +678,44 @@
       "subsenses": [
         {
           "letter": "a",
-          "definition": "pick up on something: notice something, especially a feeling or a hint, and do something about it",
+          "definition": "receive sounds, radio waves, or messages sent through the air, as a radio or a phone does",
           "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + adverb + object",
+              "verb + object + adverb"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "Our radio can pick up stations from far away.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The phone can't pick up a signal in the tunnel.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "pick up a signal",
+                "pick up a station"
+              ]
+            }
+          ]
+        },
+        {
+          "letter": "b",
+          "definition": "notice something, especially a feeling or a hint, and understand what it means",
+          "explanation": "Only as pick up on something; it cannot be separated.",
           "grammar": {
             "countability": null,
             "transitivity": "transitive",
@@ -918,7 +952,7 @@
   "etymology": null,
   "see_also": [],
   "adaptation": {
-    "semantic": "Each sense is usually a different verb in other languages: lift, fetch, buy, learn, catch, improve, answer, notice, continue, pay. Translate the sense, not the phrase.",
+    "semantic": "Each sense is likely to be a different verb in another language: lift, fetch, buy, learn, catch, improve, answer, notice, continue, pay. Translate the sense, not the phrase.",
     "grammar": "Pick up is separable: pick up the bag or pick the bag up; a pronoun object always goes between: pick it up, pick me up. The improve sense (business picked up) has no object. Pick up on takes an object after on and cannot be separated.",
     "culture": null,
     "false_friends": null,
@@ -927,11 +961,32 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-16T14:27:34Z",
-    "modified": "2026-09-16T15:22:16Z",
+    "modified": "2026-09-17T01:15:32Z",
     "drafted_by": "claude-fable-5-1",
     "run_id": "20260916T134425Z-1yir52",
-    "reviews": [],
-    "status": "draft",
+    "reviews": [
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/pick-up-phrv.json",
+        "ok": 112,
+        "issues": 12,
+        "blocking": 10
+      },
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/pick-up-phrv.json",
+        "ok": 118,
+        "issues": 4,
+        "blocking": 0
+      }
+    ],
+    "status": "reviewed",
     "flags": [],
     "notes": null
   }

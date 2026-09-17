@@ -114,11 +114,11 @@ anti-	prefix	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary pa
 anxious	adj	1	defining	pending	2026-09-16	votes 2; referenced by afraid-adj
 any	det	1	defining	done	2026-09-16	votes 3; referenced by some-det
 any	pron	1	defining	pending	2026-09-16	votes 2
-anybody	pron	1	defining	pending	2026-09-16	votes 1
-anyone	pron	1	defining	pending	2026-09-16	votes 1
-anything	pron	1	defining	pending	2026-09-16	votes 1; referenced by thing-n
+anybody	pron	1	defining	pending	2026-09-16	votes 1; referenced by any-det
+anyone	pron	1	defining	pending	2026-09-16	votes 1; referenced by any-det
+anything	pron	1	defining	pending	2026-09-16	votes 1; referenced by thing-n; referenced by any-det
 anyway	adv	1	defining	done	2026-09-16	votes 2
-anywhere	adv	1	defining	pending	2026-09-16	votes 2
+anywhere	adv	1	defining	pending	2026-09-16	votes 2; referenced by any-det
 apart	adv	1	defining	pending	2026-09-16	votes 3
 apartment	n	1	defining	pending	2026-09-16	votes 1; referenced by house-n
 apologize	v	1	defining	pending	2026-09-16	votes 1; referenced by sorry-adj
@@ -744,7 +744,7 @@ evening	n	1	defining	pending	2026-09-16	votes 3
 event	n	1	defining	pending	2026-09-16	votes 2
 eventually	adv	1	defining	pending	2026-09-16	votes 1
 ever	adv	1	defining	pending	2026-09-16	votes 3
-every	det	1	defining	pending	2026-09-16	votes 3
+every	det	1	defining	pending	2026-09-16	votes 3; referenced by all-det
 everybody	pron	1	defining	pending	2026-09-16	votes 1
 everyone	pron	1	defining	pending	2026-09-16	votes 1
 everything	pron	1	defining	pending	2026-09-16	votes 1; referenced by thing-n
@@ -1005,7 +1005,7 @@ hall	n	1	defining	pending	2026-09-16	votes 2
 hand	n	1	defining	done	2026-09-16	votes 3
 hand over	phrv	1	defining	pending	2026-09-16	votes 1
 handle	n	1	defining	pending	2026-09-16	votes 2; referenced by hand-n
-handle	v	1	defining	pending	2026-09-16	votes 2; referenced by hand-n
+handle	v	1	defining	pending	2026-09-16	votes 2; referenced by hand-n; referenced by take-v
 handsome	adj	1	defining	pending	2026-09-16	votes 2
 hang	v	1	defining	pending	2026-09-16	votes 2
 hang up	phrv	1	defining	pending	2026-09-16	votes 1
@@ -1256,7 +1256,7 @@ lie	v	1	defining	pending	2026-09-16	votes 3
 lie down	phrv	1	defining	pending	2026-09-16	votes 2
 life	n	1	defining	pending	2026-09-16	votes 2
 lift	n	1	defining	pending	2026-09-16	votes 2
-lift	v	1	defining	pending	2026-09-16	votes 2
+lift	v	1	defining	pending	2026-09-16	votes 2; referenced by pick-up-phrv
 light	adj	1	defining	pending	2026-09-16	votes 3
 light	n	1	defining	pending	2026-09-16	votes 3
 light	v	1	defining	pending	2026-09-16	votes 2
@@ -1528,7 +1528,7 @@ order	n	1	defining	pending	2026-09-16	votes 3
 order	v	1	defining	pending	2026-09-16	votes 2; referenced by tell-v
 organ	n	1	defining	pending	2026-09-16	votes 1
 orphan	n	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
-other	adj	1	defining	pending	2026-09-16	votes 2
+other	adj	1	defining	pending	2026-09-16	votes 2; referenced by another-det
 other	det	1	defining	pending	2026-09-16	votes 3
 other	pron	1	defining	pending	2026-09-16	votes 2
 otherwise	adv	1	defining	pending	2026-09-16	votes 2
@@ -2528,7 +2528,7 @@ while	conj	1	defining	pending	2026-09-16	votes 3
 whisper	v	1	defining	pending	2026-09-16	votes 2
 white	adj	1	defining	pending	2026-09-16	votes 2
 who	pron	1	defining	pending	2026-09-16	votes 3
-whole	adj	1	defining	pending	2026-09-16	votes 3
+whole	adj	1	defining	pending	2026-09-16	votes 3; referenced by all-det
 whole	n	1	defining	pending	2026-09-16	votes 2
 whom	pron	1	defining	pending	2026-09-16	votes 3
 whose	det	1	defining	pending	2026-09-16	votes 3
@@ -3915,7 +3915,7 @@ adviser	n	3	family	pending	2026-09-16	referenced by advice-n
 advisory	adj	3	family	pending	2026-09-16	referenced by advice-n
 ancient	adj	3	crossref	pending	2026-09-16	referenced by old-adj
 antique	adj	3	crossref	pending	2026-09-16	referenced by old-adj
-anyhow	adv	3	crossref	pending	2026-09-16	referenced by anyway-adv
+anyhow	adv	3	crossref	pending	2026-09-16	referenced by anyway-adv; referenced by any-det
 anytime	adv	3	family	pending	2026-09-16	referenced by time-n
 applause	n	3	crossref	pending	2026-09-16	referenced by hand-n
 array	n	3	crossref	pending	2026-09-16	referenced by bank-n
@@ -4277,3 +4277,6 @@ willing	adj	3	crossref	pending	2026-09-16	referenced by happy-adj
 witness	v	3	crossref	pending	2026-09-16	referenced by see-v
 wrist	n	3	crossref	pending	2026-09-16	referenced by hand-n
 x ray	v	3	family	pending	2026-09-16	referenced by x-ray-n
+altogether	adv	3	family	pending	2026-09-17	referenced by all-det
+addition	n	3	closure	pending	2026-09-17	used in another-det senses[0].definition
+thumb	n	3	closure	pending	2026-09-17	used in hand-n senses[0].definition

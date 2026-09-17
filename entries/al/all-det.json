@@ -10,14 +10,14 @@
     "american": {
       "ipa": "ɔl",
       "source": "model:claude-sonnet-5",
-      "checked_by": null,
-      "status": "unverified"
+      "checked_by": "agreement:4/4;cmudict:agree",
+      "status": "verified"
     },
     "british": {
       "ipa": "ɔːl",
       "source": "model:claude-sonnet-5",
-      "checked_by": null,
-      "status": "unverified"
+      "checked_by": "agreement:3/3",
+      "status": "verified"
     },
     "variants": [],
     "audio": null,
@@ -90,8 +90,6 @@
           "type": "phrase",
           "items": [
             "all the time",
-            "all over",
-            "all together",
             "all sorts of",
             "all kinds of"
           ]
@@ -112,7 +110,7 @@
     },
     {
       "n": 2,
-      "signpost": "the whole of a time or place",
+      "signpost": "whole time or place",
       "definition": "used before a noun of time or place to mean the whole of it, from beginning to end or from one side to the other",
       "explanation": "This use is common with day, night, week, and way: it rained all day; we walked all the way home.",
       "grammar": {
@@ -159,8 +157,7 @@
             "all night",
             "all week",
             "all year",
-            "all the way",
-            "all along"
+            "all the way"
           ]
         }
       ],
@@ -220,7 +217,7 @@
     {
       "sub_id": "all-in-all",
       "text": "all in all",
-      "definition": "considering everything together; on the whole",
+      "definition": "used to give your opinion after considering everything",
       "explanation": null,
       "labels": {
         "register": [],
@@ -264,9 +261,9 @@
       "every-det",
       "whole-adj"
     ],
-    "note": "All and every both mean every single one, but every takes a singular noun and a singular verb (every child knows), while all takes a plural or uncountable noun (all children know, all the water is gone). Whole means complete, with no part missing, and goes with a singular noun after a or the: the whole cake, not all the cake, for one single thing."
+    "note": "All and every both mean every single one, but every takes a singular noun and a singular verb (every child knows), while all takes a plural or uncountable noun (all children know, all the water is gone). Whole means complete, with no part missing, and goes with a singular noun after a or the: the whole cake. All the cake is also possible, but whole is more usual for one single thing."
   },
-  "usage_note": "All can also stand alone as a pronoun, meaning everything or everyone: that is all; all are welcome. Before a personal pronoun object, all follows it rather than coming before it: I ate it all, not I ate all it.",
+  "usage_note": "All can also stand alone as a pronoun, meaning everything or everyone: that is all; all are welcome. Before a personal pronoun object, all follows it rather than coming before it: I ate it all (or all of it, all of them), not I ate all it.",
   "learner_errors": [
     {
       "incorrect": "All of students like the teacher.",
@@ -277,11 +274,6 @@
       "incorrect": "All my two sisters live abroad.",
       "correct": "Both my sisters live abroad.",
       "note": "For exactly two people or things, both is used, not all."
-    },
-    {
-      "incorrect": "He ate all.",
-      "correct": "He ate it all.",
-      "note": "All alone cannot replace it or them as an object; add of it or of them, or place all right after the pronoun."
     }
   ],
   "etymology": null,
@@ -296,11 +288,32 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-16T15:47:44Z",
-    "modified": "2026-09-16T15:51:15Z",
+    "modified": "2026-09-17T01:15:32Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260916T154500Z-dryrun",
-    "reviews": [],
-    "status": "draft",
+    "reviews": [
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/all-det.json",
+        "ok": 37,
+        "issues": 6,
+        "blocking": 6
+      },
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/all-det.json",
+        "ok": 37,
+        "issues": 6,
+        "blocking": 1
+      }
+    ],
+    "status": "reviewed",
     "flags": [],
     "notes": null
   }

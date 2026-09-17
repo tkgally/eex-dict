@@ -10,14 +10,14 @@
     "american": {
       "ipa": "ˈɛn.i",
       "source": "model:claude-sonnet-5",
-      "checked_by": null,
-      "status": "unverified"
+      "checked_by": "agreement:4/4;cmudict:agree",
+      "status": "verified"
     },
     "british": {
       "ipa": "ˈen.i",
       "source": "model:claude-sonnet-5",
-      "checked_by": null,
-      "status": "unverified"
+      "checked_by": "agreement:3/3",
+      "status": "verified"
     },
     "variants": [],
     "audio": null,
@@ -48,7 +48,7 @@
       "n": 1,
       "signpost": "in questions and negatives",
       "definition": "used before a plural or uncountable noun in a question or a negative sentence for an amount or number that is not stated",
-      "explanation": "Any takes the place of some once a sentence becomes a question or a negative: I have some time becomes do you have any time? and I don't have any time. It is also used after words with a negative idea, such as without and hardly: I left without any money.",
+      "explanation": "Any takes the place of some once a sentence becomes a question or a negative: I have some time becomes Do you have any time? and I don't have any time. It is also used after words with a negative idea, such as without and hardly: I left without any money.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -89,9 +89,6 @@
         {
           "type": "phrase",
           "items": [
-            "any more",
-            "any longer",
-            "any time soon",
             "hardly any"
           ]
         }
@@ -160,8 +157,7 @@
           "type": "phrase",
           "items": [
             "any time",
-            "any day",
-            "any way"
+            "any day"
           ]
         }
       ],
@@ -212,9 +208,9 @@
       "any-det",
       "some-det"
     ],
-    "note": "Some is the normal choice in a positive statement, an offer, or a request: I have some free time; would you like some cake? Any takes its place in a question or a negative statement: do you have any free time? I don't have any. In a positive statement, any means it makes no difference which one: sit in any chair."
+    "note": "Some is the normal choice in a positive statement, an offer, or a request: I have some free time; Would you like some cake? Any takes its place in a question or a negative statement: Do you have any free time? I don't have any. In a positive statement, any means it makes no difference which one: Sit in any chair."
   },
-  "usage_note": "Any is kept, not some, after if in a real condition when the amount is still unknown: if you need any help, let me know. In an offer or a request, some is usually kept even though the sentence looks like a question: would you like some coffee?",
+  "usage_note": "Any is kept, not some, after if in a real condition when the amount is still unknown: If you need any help, let me know. In an offer or a request, some is usually kept even though the sentence looks like a question: Would you like some coffee?",
   "learner_errors": [
     {
       "incorrect": "I want any coffee.",
@@ -236,7 +232,7 @@
   "see_also": [],
   "adaptation": {
     "semantic": "Any marks an unstated amount in a question or negative, and a free choice in a positive statement; many languages use one word for both, or none at all.",
-    "grammar": "Any shifts in from some when a sentence becomes a question or a negative: I need some help becomes do you need any help? and I don't need any help.",
+    "grammar": "Any shifts in from some when a sentence becomes a question or a negative: I need some help becomes Do you need any help? and I don't need any help.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -244,11 +240,32 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-16T15:47:44Z",
-    "modified": "2026-09-16T15:51:15Z",
+    "modified": "2026-09-17T01:15:32Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260916T154500Z-dryrun",
-    "reviews": [],
-    "status": "draft",
+    "reviews": [
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/any-det.json",
+        "ok": 25,
+        "issues": 10,
+        "blocking": 6
+      },
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/any-det.json",
+        "ok": 31,
+        "issues": 2,
+        "blocking": 0
+      }
+    ],
+    "status": "reviewed",
     "flags": [],
     "notes": null
   }

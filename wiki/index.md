@@ -45,3 +45,4 @@
 - [routine-dry-run-v1](notes/routine-dry-run-v1.md) — a Sonnet-class dry run of the Routine prompt: what worked, what the prompt got wrong, what changed.
 - [inflection-exceptions-check](notes/inflection-exceptions-check.md) — the two-model check of the inflection exceptions table: what was applied and what was rejected.
 - [seed-set-drafting](notes/seed-set-drafting.md) — how the seed set was drafted and the judgment calls the drafters flagged.
+- [reviewer-precision](notes/reviewer-precision.md) — the first measurement of the two reviewers' precision by issue family on the seed set, the noise patterns, and the families the lint run should switch off.

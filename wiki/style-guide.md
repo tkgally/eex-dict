@@ -30,7 +30,7 @@ An intermediate learner (roughly B1) must be able to read every definition. An a
 
 **The splitting principle.** Make a new sense only when learners need a different **definition**, different **grammar** (countability, transitivity, patterns), a different **collocation set**, or a different **translation** in most languages. A metaphorical extension that any reader would get from the first sense is not a new sense; a use that a learner would translate with a different word is. When in doubt, do not split: put the extension in an example with a note.
 
-**Sub-senses** (`a`, `b`) hold variations that share the definition's core but differ in one of the four tests in a minor way (*bank* of a river versus *bank* of snow).
+**Sub-senses** (`a`, `b`) hold variations that share the definition's core but differ in one of the four tests in a minor way (*bank* of a river versus *bank* of snow). A sub-sense limited to one form or one kind of subject (*look after yourself*, *of the police*) states that restriction in its `explanation` or its collocations, never as a prefix inside the definition.
 
 **Ordering.** Most useful first: the sense a learner is most likely to meet and need. Not historical order, not "literal first". The core meaning that the other senses depend on usually comes first anyway.
 
@@ -95,9 +95,9 @@ Vulgar words for sex, the body, and body functions are included, defined plainly
 
 ## 13. Adaptation notes
 
-Five kinds, each at most 60 words, language-neutral (never *in Japanese...*), null when nothing needs saying. They exist so that a translator adapting the entry into any language knows where the traps are.
+Five kinds, each at most 60 words, language-neutral (never *in Japanese...*), null when nothing needs saying. They exist so that a translator adapting the entry into any language knows where the traps are. Hedge claims about other languages (*often*, *many languages*), never *most* or *all*: a translator cannot check them, and a reviewer will flag them.
 
-- **semantic**: how the senses split or merge in other languages. *"bank": the money sense and the river sense are unrelated words in most languages; do not translate with one word.* *"brother": many languages must choose older or younger; English does not.*
+- **semantic**: how the senses split or merge in other languages. *"bank": the money sense and the river sense are unrelated words in many languages; do not translate with one word.* *"brother": many languages must choose older or younger; English does not.*
 - **grammar**: a countability, argument-structure, tense, or preposition trap. *"information" is uncountable: no plural, no "an information".* *"explain" takes "to someone", never a bare indirect object: "explain it to me", not "explain me it".*
 - **culture**: background a reader outside the English-speaking world needs. *"bank holiday" is a public holiday, not a day banks are open.* *A "pub" serves food and families as well as drink.*
 - **false_friends**: internationalisms that mean something else. *"actually" means "in fact", not "currently".* *"eventually" means "in the end", not "possibly".*

@@ -16,4 +16,4 @@ Code refers to roles; only this file names model slugs. Every slug below was che
 
 How to re-verify: fetch the model list (no key needed) and confirm each slug is present; update the Verified date. A slug that has disappeared is replaced by the nearest current model from the same lab, with a line in `wiki/log.md`.
 
-Reasoning: the reviewers get `reasoning: {"effort": "low"}` where the model supports it, so a review costs about the same as the entry it reads. The panel calls send `usage: {"include": true}` and record the billed `usage.cost` in `config/budget-ledger.json` through `tools/spend.py`.
+Reasoning: panel and reviewer calls run without hidden reasoning (it is billed as output and counts against the reply limit, and the closed checklists do not need it); Google endpoints refuse to disable it and run at low effort, where they spend no reasoning tokens on these tasks. The panel calls send `usage: {"include": true}` and record the billed `usage.cost` in `config/budget-ledger.json` through `tools/spend.py`.

@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "The picture behind every sense of run is movement forward that does not stop: a person on foot, water, a machine, a bus service, a road across the land, or a business that keeps going.",
+  "core_idea": "The picture behind most senses of run is movement that keeps going: a person on foot, water, a machine, a bus service, a road across the land, or a business that continues.",
   "senses": [
     {
       "n": 1,
@@ -188,7 +188,7 @@
       ],
       "adaptation": {
         "semantic": null,
-        "grammar": "The direction goes in a phrase after the verb: run to the door, run across the street, run upstairs. The verb itself says only how the person moves, so a language that puts the direction inside the verb (rush in, rush out) needs to split the idea in two.",
+        "grammar": "The direction goes in a phrase after the verb: run to the door, run across the street, run upstairs. The verb itself says only how the person moves, so a language whose verbs of motion include the direction (one verb for go in running) needs to split the idea in two.",
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -629,7 +629,8 @@
         "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
@@ -829,7 +830,10 @@
         "countability": null,
         "transitivity": "intransitive",
         "codes": [],
-        "patterns": []
+        "patterns": [
+          "verb + adverb or preposition",
+          "verb + preposition + object"
+        ]
       },
       "labels": {
         "register": [],
@@ -1230,7 +1234,9 @@
       "labels": {
         "register": [],
         "region": [
-          "American"
+          "American",
+          "Canadian",
+          "Australian"
         ],
         "domain": [
           "politics"
@@ -1393,7 +1399,8 @@
         "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
@@ -1464,14 +1471,15 @@
     {
       "n": 14,
       "signpost": "drive someone",
-      "definition": "take someone or something somewhere in a car",
+      "definition": "take someone or something somewhere quickly, especially in a car",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object + preposition + object"
+          "verb + object + preposition + object",
+          "verb + object + adverb"
         ]
       },
       "labels": {
@@ -1569,7 +1577,7 @@
         }
       ],
       "adaptation": {
-        "semantic": "This informal sense means give someone a ride in a car, usually a short trip; it never means on foot. Languages without a light verb for this say drive or take by car.",
+        "semantic": "This informal sense usually means give someone a ride in a car on a short trip, or take something somewhere quickly. Languages without a light verb for this say drive or take by car.",
         "grammar": null,
         "culture": null,
         "false_friends": null,
@@ -1925,7 +1933,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "Most languages have one word for a person running and use other verbs for the rest: a business is managed, a machine works, water flows, a bus goes, a road goes, a story appears. Translate each sense by its meaning, not by the word run.",
+    "semantic": "Other languages often have one word for a person running and use other verbs for the rest: a business is managed, a machine works, water flows, a bus goes, a road goes, a story appears. Translate each sense by its meaning, not by the word run.",
     "grammar": "Run is irregular: run, ran, run. The past participle after have and in the passive is run, not ran. Many senses are used both with and without an object: the engine runs, she runs the engine; the story ran, the paper ran the story.",
     "culture": null,
     "false_friends": null,
@@ -1934,11 +1942,32 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-16T14:23:02Z",
-    "modified": "2026-09-16T15:22:16Z",
+    "modified": "2026-09-17T01:15:32Z",
     "drafted_by": "claude-fable-5-1",
     "run_id": "20260916T134425Z-1yir52",
-    "reviews": [],
-    "status": "draft",
+    "reviews": [
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/run-v.json",
+        "ok": 177,
+        "issues": 15,
+        "blocking": 12
+      },
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/run-v.json",
+        "ok": 192,
+        "issues": 0,
+        "blocking": 0
+      }
+    ],
+    "status": "reviewed",
     "flags": [],
     "notes": null
   }

@@ -380,7 +380,9 @@ def reasoning_for(model_slug: str, task: str = "review") -> dict:
         # Google endpoints refuse to disable reasoning (HTTP 400, 2026-09-16); at low effort they
         # answer these tasks with no reasoning tokens anyway.
         return {"effort": "low"} if model_slug.startswith("google/") else {"enabled": False}
-    return {"enabled": False} if model_slug.startswith("deepseek/") else {"effort": "low"}
+    # Reviews: hidden reasoning is billed as output and counts against max_tokens; the closed
+    # checklist does not need it. Google endpoints refuse to disable it, so they run at low effort.
+    return {"effort": "low"} if model_slug.startswith("google/") else {"enabled": False}
 
 
 def model_for(role_or_model: str, models_md: Path | None = None) -> str:

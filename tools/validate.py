@@ -505,6 +505,8 @@ def collect_paths(ctx, args):
             ctx.report.error("entries/", "--changed needs a git checkout: %s" % exc)
     for p in args.paths:
         p = Path(p)
+        if not p.is_absolute() and (ctx.root / p).exists():
+            p = ctx.root / p  # a relative path names a place under --root
         if p.is_dir():
             paths.extend(sorted(q for q in p.rglob("*.json") if q.is_file()))
         else:

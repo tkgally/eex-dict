@@ -610,7 +610,7 @@
         }
       ],
       "adaptation": {
-        "semantic": "Go plus an adjective is not a general word for become: it is used for changes for the worse, for loss of control, and for colors. A learner who uses go for every change (go happy, go rich) is not understood as intended; get or become is the neutral choice.",
+        "semantic": "Go plus an adjective is not a general word for become: it is used for changes for the worse, for loss of control, and for colors. A learner who uses go for every change (go happy, go rich) sounds wrong; get or become is the neutral choice.",
         "grammar": null,
         "culture": null,
         "false_friends": null,
@@ -1450,7 +1450,9 @@
       "explanation": "Two days to go means two days remain; three miles to go means three miles remain. A coffee to go is one you take with you; this use is mainly American.",
       "labels": {
         "register": [],
-        "region": [],
+        "region": [
+          "American"
+        ],
         "domain": [],
         "currency": [],
         "attitude": []
@@ -1479,7 +1481,7 @@
     {
       "sub_id": "here-goes",
       "text": "here goes",
-      "definition": "I am going to try now, whatever happens",
+      "definition": "used just before you try something difficult or dangerous",
       "explanation": "Said just before you begin something you are nervous about.",
       "labels": {
         "register": [
@@ -1596,11 +1598,32 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-16T14:23:45Z",
-    "modified": "2026-09-16T15:22:16Z",
+    "modified": "2026-09-17T01:15:32Z",
     "drafted_by": "claude-fable-5-1",
     "run_id": "20260916T134425Z-1yir52",
-    "reviews": [],
-    "status": "draft",
+    "reviews": [
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/go-v.json",
+        "ok": 180,
+        "issues": 5,
+        "blocking": 5
+      },
+      {
+        "run_id": "20260916T134425Z-1yir52",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-17",
+        "file": "reviews/20260916T134425Z-1yir52/go-v.json",
+        "ok": 185,
+        "issues": 0,
+        "blocking": 0
+      }
+    ],
+    "status": "reviewed",
     "flags": [],
     "notes": null
   }
