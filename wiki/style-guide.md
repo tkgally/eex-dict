@@ -14,7 +14,7 @@ An intermediate learner (roughly B1) must be able to read every definition. An a
 
 **No circularity.** The headword, its inflections, and its close derivatives do not appear in its own definition (*happiness*: not *the state of being happy* when *happy* is itself defined through *happiness*; define the base word in plain terms and let the derivative point to it).
 
-**No padding.** Never *used to describe*, *a term for*, *the act of*, *refers to*, *is when*. Say the thing: not *used to describe a person who talks a lot* but *talking a lot*.
+**No padding.** Never *used to describe*, *a term for*, *the act of*, *refers to*, *is when*. Say the thing: not *used to describe a person who talks a lot* but *talking a lot*. The one formula that is allowed, because nothing else works, is *used to* or *used when* for function words, discourse markers, and interjections (*used before a noun to show which one is meant*; *used to change the subject*).
 
 **Countable nouns take an article** in the definition (*a place where...*); uncountable nouns take none (*money that...*). Verbs are defined with their argument slots spelled out with *someone* and *something*: *to give something to someone so that they can use it for a time* (written *give something to someone so that they can use it for a time*).
 
@@ -30,7 +30,7 @@ An intermediate learner (roughly B1) must be able to read every definition. An a
 
 **The splitting principle.** Make a new sense only when learners need a different **definition**, different **grammar** (countability, transitivity, patterns), a different **collocation set**, or a different **translation** in most languages. A metaphorical extension that any reader would get from the first sense is not a new sense; a use that a learner would translate with a different word is. When in doubt, do not split: put the extension in an example with a note.
 
-**Sub-senses** (`a`, `b`) hold variations that share the definition's core but differ in one of the four tests in a minor way (*bank* of a river versus *bank* of snow).
+**Sub-senses** (`a`, `b`) hold variations that share the definition's core but differ in one of the four tests in a minor way (*bank* of a river versus *bank* of snow). A sub-sense limited to one form or one kind of subject (*look after yourself*, *of the police*) states that restriction in its `explanation` or its collocations, never as a prefix inside the definition.
 
 **Ordering.** Most useful first: the sense a learner is most likely to meet and need. Not historical order, not "literal first". The core meaning that the other senses depend on usually comes first anyway.
 
@@ -83,7 +83,7 @@ Idioms and fixed phrases live in `phrases[]` of the keyword entry: the first nou
 
 ## 10. Pronunciation, inflections, variants
 
-The drafter writes `pronunciation.american.ipa` and `pronunciation.british.ipa` with the symbol set in `tools/pronounce_check.py` (primary stress `ˈ`, secondary `ˌ`, syllable breaks with a period, no slashes), and `source: "model:<its slug>"`. A heteronym puts the sense-specific pronunciation in `senses[].pronunciation`. `checked_by` and `status` are written by the checker, never by hand. Prefixes, suffixes, combining forms, and abbreviations may leave both transcriptions null when no fixed pronunciation exists. Inflections come from `tools/inflect.py`; the drafter only supplies the gradability codes and, for a verb with an unpredictable form, a line in `schema/inflection-exceptions.json` in the same pull request.
+The drafter writes `pronunciation.american.ipa` and `pronunciation.british.ipa` with the symbol set in `tools/pronounce_check.py` (primary stress `ˈ`, secondary `ˌ`, syllable breaks with a period, no slashes; a one-syllable word carries no stress mark; a multi-word headword has a space between its words), and `source: "model:<its slug>"`. A heteronym puts the sense-specific pronunciation in `senses[].pronunciation`. `checked_by` and `status` are written by the checker, never by hand. Prefixes, suffixes, combining forms, and abbreviations may leave both transcriptions null when no fixed pronunciation exists. Inflections come from `tools/inflect.py`; the drafter only supplies the gradability codes and, for a verb with an unpredictable form, a line in `schema/inflection-exceptions.json` in the same pull request.
 
 ## 11. Etymology
 
@@ -95,9 +95,9 @@ Vulgar words for sex, the body, and body functions are included, defined plainly
 
 ## 13. Adaptation notes
 
-Five kinds, each at most 60 words, language-neutral (never *in Japanese...*), null when nothing needs saying. They exist so that a translator adapting the entry into any language knows where the traps are.
+Five kinds, each at most 60 words, language-neutral (never *in Japanese...*), null when nothing needs saying. They exist so that a translator adapting the entry into any language knows where the traps are. Hedge claims about other languages (*often*, *many languages*), never *most* or *all*: a translator cannot check them, and a reviewer will flag them.
 
-- **semantic**: how the senses split or merge in other languages. *"bank": the money sense and the river sense are unrelated words in most languages; do not translate with one word.* *"brother": many languages must choose older or younger; English does not.*
+- **semantic**: how the senses split or merge in other languages. *"bank": the money sense and the river sense are unrelated words in many languages; do not translate with one word.* *"brother": many languages must choose older or younger; English does not.*
 - **grammar**: a countability, argument-structure, tense, or preposition trap. *"information" is uncountable: no plural, no "an information".* *"explain" takes "to someone", never a bare indirect object: "explain it to me", not "explain me it".*
 - **culture**: background a reader outside the English-speaking world needs. *"bank holiday" is a public holiday, not a day banks are open.* *A "pub" serves food and families as well as drink.*
 - **false_friends**: internationalisms that mean something else. *"actually" means "in fact", not "currently".* *"eventually" means "in the end", not "possibly".*
@@ -113,4 +113,10 @@ Read it as the learner: can a B1 reader follow every definition? Read it as the 
 
 ## 16. Model entries
 
-(Filled in from the seed set in the founding session's Stage C: one polysemous verb, one noun with phrases, one function word, each linked to its JSON file and annotated.)
+Three finished entries from the seed set, each the model for its kind. Read the JSON, not just this summary.
+
+**A polysemous verb: [run](../entries/ru/run-v.json).** Fourteen senses, each with a signpost (*move fast*, *hurry or escape*, *manage*, *work or operate*, *buses and trains*, *of liquid*...), opened by a core idea that names what they share: movement forward that does not stop. The first sense is the physical one a learner meets first; the extensions follow in order of use, with subsenses for variations that share a definition (*run a red light* under *hurry or escape*). Every sense carries its transitivity and its patterns (*verb + object* for *run a restaurant*, *verb + adjective* for *run low*), examples that show those patterns, and collocations by type. Phrases hold only the idioms whose keyword is *run* (*run for it*, *up and running*); phrasal verbs (*run out*, *run into*) are entries of their own and appear under see also. The word family lists the derived entries (*runner*, *running*, *runaway*); the synonym discrimination settles *run* / *jog* / *sprint*; the learner errors are the ones learners of many languages make (*I have ran*, *runs during two hours*); the adaptation notes tell a translator where the senses split.
+
+**A noun with idioms: [hand](../entries/ha/hand-n.json).** Nine senses from the body part outward (*help*, *control or care*, *of a clock*, *worker*, *handwriting*...), each with its countability and codes (*usually singular* for *a hand* meaning help, *usually plural* for *in the hands of*), and thirty-two phrases under the keyword rule (*give someone a hand*, *on the other hand*, *by hand*, *get out of hand*), each phrase with its own definition, labels, and one to three examples, and an explanation only where a phrase needs one. Note what is not here: *off the top of your head* is under *head*, *know something like the back of your hand* is under *back*, because the keyword is the first noun.
+
+**A function word: [the](../entries/th/the-det.json).** Seven senses that are really seven uses (*particular one*, *only one*, *whole kind*, *best, first, only*, *groups of people*, *the more the better*, *with names*), each with a short phrasal definition that stands on its own and an explanation field that carries what a learner actually needs: when the use occurs, what it contrasts with, what a learner from a language without articles gets wrong. Examples show the use in the plainest possible sentence. The pronunciation notes give the weak forms; the learner errors (*I love the nature*) and the adaptation notes do the work that a translation could not.

@@ -31,15 +31,16 @@ DEFAULT_ROLES = ["reviewer-a", "reviewer-b"]
 SYSTEM = """You are a senior lexicographer checking an entry of an English-English learner's dictionary for intermediate and advanced learners (CEFR B1 to C2). American English is the dictionary's primary variety; British forms are recorded in variant fields. The entry was written by a language model and must be checked field by field for factual and linguistic correctness, not for taste. You answer with JSON only.
 
 House rules you check against:
-- Definitions are phrasal (a noun by a noun phrase, a verb by a base-form verb phrase without "to"), present tense, not circular, no padding such as "used to describe" or "refers to", and written in plain words an intermediate learner knows.
+- Definitions are phrasal (a noun by a noun phrase, a verb by a base-form verb phrase without "to"), present tense, not circular, no padding such as "used to describe" or "refers to", and written in plain words an intermediate learner knows. Exception: for function words, discourse markers, and interjections the formula "used to ..." / "used when ..." is the house style and is never an issue.
 - An explanation field exists only for words whose use is easier to explain than to define (function words, discourse markers, modals, affixes).
 - Senses: a new sense only where learners need a different definition, grammar, collocation set, or translation; most useful first; signposts of one to three words; a core-idea line on entries with three or more senses.
 - Examples: two to four per sense, natural American English, showing typical collocations and patterns; NO checkable real-world facts (dates, statistics, named events, science claims, prices), no brand names, culturally neutral settings, personal names only from: Kim, Mari, Sam, Ana, Lee, Omar, Yuki, Ravi, Sara.
 - Grammar values, labels, and patterns must be right for the sense (countability, transitivity, verb patterns, adjective position, register, region, domain, currency, attitude).
-- Pronunciation: General American and British IPA with stress marks; inflections must be the real forms.
+- Pronunciation: General American and British IPA; a one-syllable word carries no stress mark (that is the house convention, not an issue); multi-word headwords have a space between words. Inflections must be the real forms.
 - Collocations must be genuinely typical; cross-references must be real synonyms, antonyms, or confusable words; learner errors must be errors learners actually make and the correction must be right.
 - Notes of every kind (usage note, synonym discrimination, etymology, adaptation notes) must be factually true; adaptation notes must be language-neutral (never naming a language) and at most 60 words.
 - No abbreviations anywhere in prose: never sb, sth, e.g., i.e., etc.
+- House conventions that are NOT issues: a core-idea line on a two-sense entry (optional there); periods in IPA (they mark syllable breaks); no length marks in General American IPA; one form per inflection slot with alternatives in its note; "online" as a region label; one to three examples on a phrase; "used to ..." definitions for function words; an adaptation note that mentions "some languages", "many languages", a country, or a variety (language-neutral means it is not written for one target language); an entry-level label (vulgar, informal) that covers every sense and phrase without being repeated; no stress mark on a monosyllable; a British transcription with no linking r; a plain-English respelling in a pronunciation note; an etymology that names source languages; an explanation field on a high-frequency verb, modal, or abbreviation whose use is harder than its meaning; grammar patterns only from the closed list (no adjective, noun, or determiner patterns: those go in collocations); compounds in a word family; a subsense with its own countability; a generic example (the wettest spring on record) that states no real-world fact.
 - Etymology appears only when it helps a learner use the word today; a wrong or doubtful origin is an issue.
 
 Severity: "blocking" for anything wrong, misleading, ungrammatical, unnatural, unsafe for a learner to copy, or against the example rules; "minor" for something worth improving that a learner could still safely use. Quote the exact text you object to. Do not flag a definition for being plain, short, or unlike a published dictionary's; plain and short is the house style. Do not flag the absence of a sense unless it is a common current sense a learner would need."""
@@ -149,18 +150,29 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
         try:
             res = openrouter.call_with_budget(model, [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}],
                                               purpose=f"review:{entry['slug']}:{role}", estimate_usd=est,
-                                              max_tokens=40 * len(fields) + 1500, temperature=0.1,
+                                              max_tokens=120 * len(fields) + 3000, temperature=0.1,
                                               response_format={"type": "json_object"},
                                               reasoning=openrouter.reasoning_for(model))
             rev.update({"model": res.get("model") or model, "cost_usd": res.get("cost"), "tokens_in": res.get("tokens_in"),
                         "tokens_out": res.get("tokens_out")})
-            raw = openrouter.parse_json_reply(res["text"])
+            try:
+                raw = openrouter.parse_json_reply(res["text"])
+            except ValueError as e:
+                rev["error"] = f"{e} | finish={res.get('finish_reason')} | head={(res.get('text') or '')[:300]!r}"
+                record["reviewers"].append(rev)
+                continue
             verdicts, err = normalize_verdicts(raw, fields)
+            if err and not verdicts:
+                err = f"{err} | finish={res.get('finish_reason')} | head={(res.get('text') or '')[:300]!r}"
             rev["verdicts"] = verdicts
             rev["summary"] = str(raw.get("summary")) if isinstance(raw, dict) and raw.get("summary") else None
             rev["error"] = err
         except Exception as e:  # noqa: BLE001
-            rev["error"] = f"{type(e).__name__}: {str(e)[:300]}"
+            msg = f"{type(e).__name__}: {str(e)[:300]}"
+            if "budget check refused" in msg:
+                print(f"  [{role}] skipped: {msg}", file=sys.stderr)
+                continue                                   # no record: the review did not happen
+            rev["error"] = msg
         record["reviewers"].append(rev)
     return record
 
@@ -168,6 +180,11 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
 def write_record(record: dict, entry_path: Path, entry: dict) -> Path:
     out = eexlib.ROOT / "reviews" / record["run_id"] / f"{record['slug']}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
+    if out.exists():                                   # merge: keep earlier successful records of other roles
+        old = eexlib.load_json(out)
+        new_roles = {r["role"] for r in record["reviewers"]}
+        kept = [r for r in old.get("reviewers", []) if r["role"] not in new_roles and not r.get("error")]
+        record["reviewers"] = kept + record["reviewers"]
     eexlib.save_json(out, record)
     for rev in record["reviewers"]:
         issues = [v for v in rev["verdicts"] if v["verdict"] == "issue"]
@@ -262,6 +279,8 @@ def main() -> int:
         if a.dry_run:
             print(f"{slug}: {len(checklist(entry))} checklist fields; prompt {len(user_prompt(entry))} chars")
             continue
+        if not record["reviewers"]:
+            print(f"{slug}: no reviewer ran (budget); nothing written"); continue
         out = write_record(record, p, entry)
         cost = sum(float(r.get("cost_usd") or 0) for r in record["reviewers"])
         total_cost += cost

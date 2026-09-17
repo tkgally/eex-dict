@@ -152,12 +152,22 @@ def cmd_set(a) -> int:
     return 1
 
 
+POS_ORDER = ["det", "pron", "prep", "conj", "modal", "aux", "v", "n", "adj", "adv", "num", "interj", "phrv",
+             "phr", "prefix", "suffix", "comb", "abbr"]   # queue order within a band: function words and
+                                                            # light verbs first, affixes and abbreviations last
+
+
+def order_key(r: dict) -> tuple:
+    pos = r["pos"]
+    return (int(r["band"]), POS_ORDER.index(pos) if pos in POS_ORDER else len(POS_ORDER), r["headword"].lower())
+
+
 def cmd_next(a) -> int:
     rows = load()
     taken = taken_slugs()
     existing = {p.stem for p in eexlib.iter_entry_paths()}
     out = []
-    for r in sorted(rows, key=lambda r: (int(r["band"]), r["headword"], r["pos"])):
+    for r in sorted(rows, key=order_key):
         if r["status"] != "pending":
             continue
         if a.band and str(r["band"]) != str(a.band):

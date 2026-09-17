@@ -187,15 +187,16 @@ def ask_panel(items: list[tuple[str, str]], roles: list[str], purpose: str, chun
             batch = items[i:i + chunk]
             user = PROMPT + "\n".join(f"{w}|{p}" for w, p in batch)
             est = openrouter.estimate_cost(model, 500 + 8 * len(batch), 60 * len(batch))
-            res = openrouter.call_with_budget(model, [{"role": "user", "content": user}],
-                                              purpose=f"{purpose}:{role}", estimate_usd=est,
-                                              max_tokens=60 * len(batch) + 600, temperature=temperature,
-                                              response_format={"type": "json_object"},
-                                              reasoning=openrouter.reasoning_for(model, "pronunciation"))
             try:
+                res = openrouter.call_with_budget(model, [{"role": "user", "content": user}],
+                                                  purpose=f"{purpose}:{role}", estimate_usd=est,
+                                                  max_tokens=60 * len(batch) + 600, temperature=temperature,
+                                                  response_format={"type": "json_object"},
+                                                  reasoning=openrouter.reasoning_for(model, "pronunciation"))
                 data = openrouter.parse_json_reply(res["text"])
-            except ValueError:
-                data = {}
+            except Exception as e:  # noqa: BLE001  (a failed chunk leaves this role's votes empty)
+                print(f"{role}: chunk of {len(batch)} failed: {str(e)[:160]}", file=sys.stderr)
+                continue
             for it in data.get("items", []) if isinstance(data, dict) else []:
                 if not isinstance(it, dict):
                     continue
