@@ -1,0 +1,447 @@
+{
+  "run_id": "20260918T163256Z-05mkcp",
+  "slug": "half-det",
+  "entry_modified": "2026-09-18T16:43:30Z",
+  "reviewers": [
+    {
+      "role": "reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "requested_at": "2026-09-18T16:46:47Z",
+      "cost_usd": 0.01931,
+      "tokens_in": 2607,
+      "tokens_out": 1300,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "issue",
+          "quote": "\"pos\": \"det\"",
+          "severity": "blocking",
+          "family": "other",
+          "reason": "Half in the patterns shown is not solely a determiner; its use before the, possessives, pronouns, and plural nouns is generally analyzed as a quantifier/pronoun-like word, so this part-of-speech split is not coherent."
+        },
+        {
+          "field": "headword_and_pos",
+          "verdict": "issue",
+          "quote": "\"Half my friends live abroad now.\"",
+          "severity": "blocking",
+          "family": "other",
+          "reason": "This is not a determiner use under a strict determiner entry, since half functions as the head of the noun phrase rather than as a determiner of friends."
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "issue",
+          "quote": "\"used before a noun, or before **a** or **an** and a singular noun, to mean one of two equal parts of something\"",
+          "severity": "blocking",
+          "family": "definition-meaning",
+          "reason": "The definition wrongly implies that half goes directly before any noun; it does not normally occur as *half cake* or *half students* without an article, possessive, demonstrative, or of."
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "issue",
+          "quote": "\"**Half** goes directly before **a** or **an** and a singular noun\"",
+          "severity": "blocking",
+          "family": "explanation",
+          "reason": "Half does not go directly before a or an; it precedes the whole phrase, as in half an hour."
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "issue",
+          "quote": "\"half price\"",
+          "severity": "minor",
+          "family": "collocation",
+          "reason": "Half price is chiefly an adjective-like fixed phrase meaning ‘at half the usual price’ and does not illustrate the determiner pattern of this sense."
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "issue",
+          "quote": "\"**Half** can take a singular or a plural verb depending on the noun it refers to\"",
+          "severity": "blocking",
+          "family": "usage-note",
+          "reason": "This describes half as the head of a noun phrase that controls verb agreement, a use that does not belong in an entry restricted to the part of speech det."
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "issue",
+          "quote": "\"**Half** goes directly before **a** or **an** and a noun\"",
+          "severity": "blocking",
+          "family": "adaptation",
+          "reason": "This inaccurately describes the word order: half precedes the full noun phrase half an hour, not a or an alone."
+        },
+        {
+          "field": "adaptation",
+          "verdict": "issue",
+          "quote": "\"The **l** is silent in American English, said *haf*; British English keeps a long vowel, *hahf*.\"",
+          "severity": "minor",
+          "family": "pronunciation",
+          "reason": "The l is also silent in British English, so limiting that statement to American English is misleading."
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "issue",
+          "quote": "\"senses\": [{\"n\": 1",
+          "severity": "blocking",
+          "family": "sense-structure",
+          "reason": "The entry combines distinct grammatical uses, including determiner-like half an hour and quantifier/pronoun-like Half my friends and Half the students; these require a coherent part-of-speech treatment or separate entries."
+        },
+        {
+          "field": "consistency",
+          "verdict": "issue",
+          "quote": "\"pos\": \"det\" / \"Half my friends live abroad now.\" / \"Half can take a singular or a plural verb\"",
+          "severity": "blocking",
+          "family": "other",
+          "reason": "The declared determiner part of speech conflicts with examples and the usage note that treat half as a noun-phrase head with verb-agreement behavior."
+        }
+      ],
+      "summary": "The pronunciation and most individual examples are sound, but the entry's determiner-only part-of-speech analysis conflicts with several included constructions. The definition and adaptation explanation also inaccurately state that half goes directly before a or an.",
+      "error": null
+    },
+    {
+      "role": "reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "requested_at": "2026-09-18T16:47:01Z",
+      "cost_usd": 0.007224,
+      "tokens_in": 2747,
+      "tokens_out": 1377,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry for 'half' (determiner) accurately follows all lexicographical house rules, including function-word definitions, grammar explanations, pronunciation notes, and example patterns.",
+      "error": null
+    }
+  ]
+}
