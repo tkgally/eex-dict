@@ -122,9 +122,8 @@ def build_date():
 
 
 def plain_prose(text):
-    """Prose with ``[[slug|text]]`` overrides reduced to their visible text."""
-    text = re.sub(r"\[\[([a-z0-9-]+)\|([^\]]*)\]\]", r"\2", str(text or ""))
-    return re.sub(r"\[\[([a-z0-9-]+)\]\]", lambda m: link_words.headword_from_slug(m.group(1)), text)
+    """Prose with its inline marks removed and ``[[slug|text]]`` overrides reduced to their visible text."""
+    return link_words.plain_text(str(text or ""))
 
 
 def gloss(text, limit=GLOSS_LIMIT):
@@ -467,6 +466,10 @@ class Builder:
     def prose(self, text, slug, base):
         return self.index.link(text, slug, base)
 
+    def example_prose(self, text, slug, base):
+        """An example sentence: linked like prose, with the entry's own headword marked (wiki/decisions/inline-markup.md)."""
+        return self.index.link(text, slug, base, mark_self=True)
+
     def pos_label(self, code):
         return (self.vocab.get("pos", {}).get(code) or {}).get("label") or code
 
@@ -521,7 +524,7 @@ class Builder:
         return '<span class="pron"><span class="pron-label">%s</span> /<span class="ipa">%s</span>/%s</span>' % (
             esc(label), esc(t["ipa"]), mark)
 
-    def render_pronunciation(self, p, cls="pron-line"):
+    def render_pronunciation(self, p, slug, base, cls="pron-line"):
         if not p:
             return ""
         parts = [self.render_transcription("American", p.get("american")),
@@ -534,16 +537,16 @@ class Builder:
                 label = "also (%s)" % v["region"]
             extra = self.render_transcription(label, {"ipa": v["ipa"], "status": "verified"})
             if v.get("note"):
-                extra += ' <span class="muted small">%s</span>' % esc(v["note"])
+                extra += ' <span class="muted small">%s</span>' % self.prose(v["note"], slug, base)
             parts.append(extra)
         if p.get("notes"):
-            parts.append('<span class="muted small">%s</span>' % esc(p["notes"]))
+            parts.append('<span class="muted small">%s</span>' % self.prose(p["notes"], slug, base))
         parts = [x for x in parts if x]
         if not parts:
             return ""
         return '<div class="%s">%s</div>' % (cls, " ".join(parts))
 
-    def render_variants(self, variants):
+    def render_variants(self, variants, slug, base):
         rows = []
         for v in variants or []:
             if not v or not v.get("form"):
@@ -556,11 +559,11 @@ class Builder:
                 lead = "Also spelled" if kind == "spelling" else "Also"
             text = "%s: <b>%s</b>" % (esc(lead), esc(v["form"]))
             if v.get("note"):
-                text += ' <span class="muted">(%s)</span>' % esc(v["note"])
+                text += ' <span class="muted">(%s)</span>' % self.prose(v["note"], slug, base)
             rows.append('<div class="variants">%s</div>' % text)
         return "".join(rows)
 
-    def render_inflections(self, inflections):
+    def render_inflections(self, inflections, slug, base):
         if not inflections:
             return ""
         forms = inflections.get("forms") or {}
@@ -573,7 +576,7 @@ class Builder:
             if key not in FORM_NAMES and value:
                 parts.append('<span class="form"><span class="form-name">%s</span> <b>%s</b></span>' % (esc(key.replace("_", " ")), esc(value)))
         if inflections.get("note"):
-            parts.append('<span class="note">%s</span>' % esc(inflections["note"]))
+            parts.append('<span class="note">%s</span>' % self.prose(inflections["note"], slug, base))
         if not parts:
             return ""
         return '<div class="inflections">%s</div>' % " ".join(parts)
@@ -621,7 +624,7 @@ class Builder:
         for ex in examples:
             if not ex or not ex.get("text"):
                 continue
-            text = '<span class="ex">%s</span>' % self.prose(ex["text"], slug, base)
+            text = '<span class="ex">%s</span>' % self.example_prose(ex["text"], slug, base)
             if ex.get("pattern"):
                 info = self.vocab_info("verb_patterns", ex["pattern"])
                 text += ' <a class="pattern" href="%sgrammar-key.html#%s" title="%s">%s</a>' % (
@@ -678,7 +681,7 @@ class Builder:
         if gram or labels:
             parts.append('<p class="gram-line">%s</p>' % " ".join(x for x in (gram, labels) if x))
         if s.get("pronunciation"):
-            parts.append(self.render_pronunciation(s["pronunciation"], cls="pron-line sense-pron"))
+            parts.append(self.render_pronunciation(s["pronunciation"], slug, base, cls="pron-line sense-pron"))
         parts.append(self.render_examples(s.get("examples"), slug, base))
         parts.append(self.render_collocations(s.get("collocations"), slug, base))
         parts.append(self.render_xref_list("Synonyms", s.get("synonyms"), slug, base))
@@ -734,9 +737,9 @@ class Builder:
             title += '<span class="homograph" title="homograph %d">%d</span>' % (homograph, homograph)
         title += '<span class="pos">%s</span>' % esc(self.pos_label(e.get("pos")))
         parts.append('<h2 class="entry-title">%s</h2>' % title)
-        parts.append(self.render_pronunciation(e.get("pronunciation")))
-        parts.append(self.render_variants(e.get("variants")))
-        parts.append(self.render_inflections(e.get("inflections")))
+        parts.append(self.render_pronunciation(e.get("pronunciation"), slug, base))
+        parts.append(self.render_variants(e.get("variants"), slug, base))
+        parts.append(self.render_inflections(e.get("inflections"), slug, base))
         meta = self.render_frequency(e.get("frequency"), base) + self.render_labels(e.get("labels"), base)
         if meta:
             parts.append('<div class="entry-meta">%s</div>' % meta)
@@ -1097,7 +1100,9 @@ class Builder:
             '<p>Grammar codes are explained in the <a href="grammar-key.html">grammar key</a>, usage labels in the '
             '<a href="labels-key.html">labels key</a>, and the phonetic symbols in the <a href="pronunciation-key.html">pronunciation key</a>. '
             'Every word in a definition, explanation, example, or note that has an entry of its own is a link; resting the pointer on it '
-            '(or tapping it once on a phone) shows a preview. The <b>translator\'s view</b> button at the top reveals notes written for '
+            '(or tapping it once on a phone) shows a preview. In an explanation or a note, a word in <b class="mention">bold</b> is being talked about as a word, '
+            'and a phrase in <i class="illus">italics</i> is quoted as an illustration of use; in an example sentence the headword itself is in bold. '
+            'The <b>translator\'s view</b> button at the top reveals notes written for '
             'anyone adapting the dictionary into another language: how the senses split across languages, grammar traps, cultural '
             'background, false friends, and pronunciation traps.</p>',
             '<p class="muted small">Site built on %s.</p>' % esc(self.date),

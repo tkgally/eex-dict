@@ -40,6 +40,10 @@ House rules you check against:
 - Collocations must be genuinely typical; cross-references must be real synonyms, antonyms, or confusable words; learner errors must be errors learners actually make and the correction must be right.
 - Notes of every kind (usage note, synonym discrimination, etymology, adaptation notes) must be factually true; adaptation notes must be language-neutral (never naming a language) and at most 60 words.
 - No abbreviations anywhere in prose: never sb, sth, e.g., i.e., etc.
+- Inline marks in prose are house style, not an issue: double asterisks around a word named as a word (**all** goes before a plural noun), single asterisks around a phrase quoted as an illustration (*all the students*). Example sentences carry no marks (the site marks the headword itself) unless the headword appears in an irregular or separated form, which is then marked with double asterisks. A plainly wrong mark (a quoted phrase in double asterisks, a mention in single ones) is a minor spelling-or-format issue.
+- One entry per headword and part of speech: a use that belongs to another part of speech (a determiner's pronoun use, an adjective's adverb use, a noun's verb use) is not a sense, a subsense, or an example of this entry; it belongs in its own entry, and this entry may only point to it in one clause. Flag such a use under headword_and_pos.
+- The fields of an entry must agree with each other: what an explanation, a usage note, a synonym-discrimination note, a learner-error note, or an adaptation note says about the word must not contradict another field or the grammar values. A statement about where a word comes from belongs only in the etymology field; elsewhere it is an issue.
+- Pronunciation notes and pronunciation adaptation notes are written in plain words for a learner (a sound compared with a familiar word, a respelling in capitals for stress); technical terms such as schwa, rhotic, voiced, or diphthong are an issue.
 - House conventions that are NOT issues: a core-idea line on a two-sense entry (optional there); periods in IPA (they mark syllable breaks); no length marks in General American IPA; one form per inflection slot with alternatives in its note; "online" as a region label; one to three examples on a phrase; "used to ..." definitions for function words; an adaptation note that mentions "some languages", "many languages", a country, or a variety (language-neutral means it is not written for one target language); an entry-level label (vulgar, informal) that covers every sense and phrase without being repeated; no stress mark on a monosyllable; a British transcription with no linking r; a plain-English respelling in a pronunciation note; an etymology that names source languages; an explanation field on a high-frequency verb, modal, or abbreviation whose use is harder than its meaning; grammar patterns only from the closed list (no adjective, noun, or determiner patterns: those go in collocations); compounds in a word family; a subsense with its own countability; a generic example (the wettest spring on record) that states no real-world fact.
 - Etymology appears only when it helps a learner use the word today; a wrong or doubtful origin is an issue.
 
@@ -64,7 +68,7 @@ def checklist(entry: dict) -> list[str]:
         base = f"phrases[{i}]"
         fields += [f"{base}.text_and_placement", f"{base}.definition", f"{base}.labels", f"{base}.examples", f"{base}.adaptation"]
     fields += ["word_family", "synonym_discrimination", "usage_note", "learner_errors", "etymology", "see_also",
-               "adaptation", "sense_structure"]
+               "adaptation", "sense_structure", "consistency"]
     return fields
 
 
@@ -97,7 +101,10 @@ def user_prompt(entry: dict) -> str:
         "\"family\": \"<one of: " + FAMILIES_HINT + ">\" | null, \"reason\": \"<one line, or null>\"}], "
         "\"summary\": \"<one or two sentences>\"}. A field with several problems gets several objects with the same field name. "
         "\"sense_structure\" is the verdict on the set of senses as a whole (missing, over-split, misordered); "
-        "\"headword_and_pos\" is whether the headword, part of speech, and homograph split are right; "
+        "\"headword_and_pos\" is whether the headword, part of speech, and homograph split are right and whether every sense and every use "
+        "described belongs to this part of speech; "
+        "\"consistency\" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note "
+        "against the grammar values, a claim made twice in two ways); "
         "\"cross_references\" covers synonyms, antonyms, and compare of that sense.\n\n"
         "ENTRY (JSON):\n" + json.dumps(strip_for_review(entry), ensure_ascii=False, indent=1)
     )

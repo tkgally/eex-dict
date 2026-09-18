@@ -16,8 +16,10 @@ there is at least one error.  ``--quiet`` hides the WARN lines.
 The checks, in the order they run for each file: redirect stubs; JSON and
 schema (with x-vocabulary); id, slug, path, shard, homograph; sense numbers,
 subsense letters, phrase sub_ids, example counts, adaptation word caps,
-core_idea; prose (the abbreviation deny list, [[slug|text]] link overrides,
-example punctuation); pronunciation; frequency against the defining
+core_idea; prose (the abbreviation deny list, the inline marks of
+wiki/decisions/inline-markup.md, [[slug|text]] link overrides, example
+punctuation, an example that does not contain the headword, technical terms
+in pronunciation notes); pronunciation; frequency against the defining
 vocabulary and the queue; provenance (dates, and the ``reviewed`` rules).
 """
 
@@ -41,6 +43,12 @@ DRAFT_CEILING = 40
 EXAMPLE_LIMITS = {"sense": (2, 4), "subsense": (1, 4), "phrase": (1, 3)}
 EXAMPLE_ENDINGS = (".", "?", "!", '"', "'", "”", "’")
 IPA_FORBIDDEN = "/[]"
+# Words a B1 reader cannot follow in a pronunciation note (style guide section 11); the note says the sound in plain words.
+PRONUNCIATION_JARGON = ["schwa", "rhotic", "non-rhotic", "diphthong", "monophthong", "fricative", "plosive", "affricate",
+                        "glottal", "alveolar", "velar", "bilabial", "labiodental", "aspirated", "unaspirated", "voiced",
+                        "voiceless", "unvoiced", "sibilant", "approximant", "allophone", "phoneme"]
+JARGON_RE = re.compile(r"(?<![A-Za-z-])(?:%s)(?![A-Za-z])" % "|".join(re.escape(t) for t in PRONUNCIATION_JARGON), re.IGNORECASE)
+PRONUNCIATION_PROSE_RE = re.compile(r"^pronunciation\.|\.pronunciation$|^adaptation\.pronunciation$")
 
 
 def L(value):
@@ -291,6 +299,7 @@ def check_structure(ctx, rel, e):
 
 def check_prose(ctx, rel, e):
     err, warn = ctx.report.error, ctx.report.warn
+    forms = [] if e.get("pos") in eexlib.AFFIX_POS else eexlib.own_forms(e)
     for field, text in eexlib.iter_prose(e):
         reported = set()
         for m in DENY_RE.finditer(text):
@@ -298,18 +307,32 @@ def check_prose(ctx, rel, e):
             if token.lower() not in reported:
                 reported.add(token.lower())
                 err(rel, "%s: abbreviation %r is not allowed in prose" % (field, token))
+        for message in eexlib.markup_errors(text, field):
+            err(rel, "%s: %s" % (field, message))
         for m in LINK_RE.finditer(text):
             inner = m.group(1)
             if "|" not in inner:
                 err(rel, "%s: link override %r must have the form [[slug|visible text]]" % (field, m.group(0)))
                 continue
-            slug = inner.split("|", 1)[0]
+            slug, visible = inner.split("|", 1)
             if not eexlib.SLUG_RE.match(slug):
                 err(rel, "%s: link override target %r is not a well-formed slug" % (field, slug))
             elif slug not in ctx.existing_slugs:
                 warn(rel, "%s: link override target %r has no entry" % (field, slug))
-        if field.endswith("].text") and ".examples[" in field and not text.rstrip().endswith(EXAMPLE_ENDINGS):
-            warn(rel, "%s: example does not end in . ? ! or a closing quote" % field)
+            if "*" in visible:
+                err(rel, "%s: a link override carries no mark inside it: %r" % (field, m.group(0)))
+        if eexlib.EXAMPLE_TEXT_FIELD.search(field):
+            if not text.rstrip().endswith(EXAMPLE_ENDINGS):
+                warn(rel, "%s: example does not end in . ? ! or a closing quote" % field)
+            explicit = any(kind == "b" for kind, _i, _s, _e in eexlib.iter_markup(text))
+            if forms and not explicit and not eexlib.contains_form(text, forms):
+                warn(rel, "%s: example contains neither the headword nor a listed form (mark an irregular or separated form with **...**)" % field)
+        if PRONUNCIATION_PROSE_RE.search(field):
+            for m in JARGON_RE.finditer(text):
+                token = m.group(0)
+                if token.lower() not in reported:
+                    reported.add(token.lower())
+                    err(rel, "%s: %r is a technical term; say the sound in plain words (style guide section 11)" % (field, token))
 
 
 # --------------------------------------------------------------------------

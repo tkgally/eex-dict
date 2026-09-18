@@ -7,7 +7,7 @@ All tools are Python 3 standard library only and run from the repository root. E
 | Command | Job |
 |---|---|
 | `python3 tools/entry_path.py <slug>` | the file path for a slug; `--slug "<headword>" <pos> [homograph]` computes the slug; `--sub-id "<phrase>"` a phrase sub_id; `--shard <slug>` the shard |
-| `python3 tools/validate.py [files] [--all] [--changed] [--gate] [--fix-format]` | schema, vocabularies, slug and path agreement, no abbreviations, example counts, adaptation caps, pronunciation presence, reviewed-status requirements, draft ceiling (`--gate`); `--fix-format` normalizes key order |
+| `python3 tools/validate.py [files] [--all] [--changed] [--gate] [--fix-format]` | schema, vocabularies, slug and path agreement, no abbreviations, well-formed inline marks, an example that lacks the headword (warning), plain words in pronunciation notes, example counts, adaptation caps, pronunciation presence, reviewed-status requirements, draft ceiling (`--gate`); `--fix-format` normalizes key order |
 | `python3 tools/schema_check.py <file>` | the JSON-schema-subset checker validate.py uses (no external library) |
 | `python3 tools/inflect.py <slugs> [--dry-run]` | writes `inflections` from the rules and `schema/inflection-exceptions.json`; `--word W --pos P [--code C]` shows forms; `--confirm <slugs>` marks them verified after review |
 | `python3 tools/queue.py stamp <slugs>` | writes `frequency.band` and `frequency.defining_vocabulary` from the queue and the defining vocabulary |
@@ -49,7 +49,7 @@ All tools are Python 3 standard library only and run from the repository root. E
 | Command | Job |
 |---|---|
 | `python3 tools/build_site.py [--out docs]` | render the site from `entries/`, `journal/`, and `metrics/` (never committed; GitHub Actions runs it on merge) |
-| `python3 tools/link_words.py` | the build-time linker (library used by build_site.py; `--text "..."` shows links for a string) |
+| `python3 tools/link_words.py` | the build-time linker: links every word that has an entry, renders the inline marks, and marks the headword in example sentences (library used by build_site.py; `--text "..."` shows links for a string) |
 | `python3 tools/site_check.py` | Playwright checks at phone and desktop widths (home page, three entry pages, search of an inflected form, a preview) |
 
 ## Integrity and caps

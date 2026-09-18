@@ -27,6 +27,14 @@ The rules
 * ``[[slug|visible text]]`` in the source forces the target: the link goes to
   that slug's anchor and shows the text.  ``[[slug]]`` shows the target's
   headword.  A slug with no published entry shows the text unlinked.
+* The inline marks of wiki/decisions/inline-markup.md are rendered here:
+  ``**word**`` (a word named as a word) becomes ``<b class="mention">``,
+  ``*phrase*`` (language quoted as an illustration) becomes ``<i class="illus">``,
+  and words inside either are linked as usual.  With ``mark_self=True`` (the
+  site uses it for example sentences) the entry's own headword and its listed
+  forms are wrapped in ``<b class="ex-hw">`` instead of being left plain; an
+  explicit ``**...**`` in an example marks the headword by hand and switches
+  the automatic marking off for that sentence.
 * The entry's own headword and its forms are never linked (``self_slug``).
   Ambiguity is judged before that exclusion: a form shared by the entry's own
   headword and another headword is left unlinked rather than sent to the other.
@@ -373,17 +381,37 @@ class Index:
         return '<a class="w" href="%s" data-hw="%s">%s</a>' % (
             html.escape(href, quote=True), html.escape(info["display"], quote=True), html.escape(visible, quote=False))
 
-    def link(self, text, self_slug=None, base_rel=""):
-        """The HTML of ``text`` with links placed; ``[[slug|text]]`` overrides honoured."""
+    def link(self, text, self_slug=None, base_rel="", mark_self=False):
+        """The HTML of ``text`` with links placed, ``[[slug|text]]`` overrides honoured, and the
+        inline marks rendered; ``mark_self`` marks the entry's own headword (see the module docstring)."""
         text = "" if text is None else str(text)
         self_key = self._self_key(self_slug)
+        marks = list(eexlib.iter_markup(text))
+        explicit = mark_self and any(kind == "b" for kind, _inner, _s, _e in marks)
+        auto = mark_self and not explicit
+        out = []
+        pos = 0
+        for kind, inner, start, end in marks:
+            out.append(self._link_segment(text[pos:start], self_key, base_rel, auto))
+            if kind == "b" and mark_self:
+                out.append('<b class="ex-hw">%s</b>' % html.escape(inner, quote=False))
+            elif kind == "b":
+                out.append('<b class="mention">%s</b>' % self._link_segment(inner, self_key, base_rel, False))
+            else:
+                out.append('<i class="illus">%s</i>' % self._link_segment(inner, self_key, base_rel, False))
+            pos = end
+        out.append(self._link_segment(text[pos:], self_key, base_rel, auto))
+        return "".join(out)
+
+    def _link_segment(self, text, self_key, base_rel, mark_self):
+        """Links in a stretch of text with no marks: overrides honoured, the rest linked word by word."""
         out = []
         pos = 0
         for m in OVERRIDE_RE.finditer(text):
-            out.append(self._link_plain(text[pos:m.start()], self_key, base_rel))
+            out.append(self._link_plain(text[pos:m.start()], self_key, base_rel, mark_self))
             out.append(self._override(m.group(1), m.group(2), base_rel))
             pos = m.end()
-        out.append(self._link_plain(text[pos:], self_key, base_rel))
+        out.append(self._link_plain(text[pos:], self_key, base_rel, mark_self))
         return "".join(out)
 
     def _override(self, slug, visible, base_rel):
@@ -393,7 +421,15 @@ class Index:
         info = self.headwords[hw_key]
         return self.anchor((hw_key, slug), visible if visible else info["display"], base_rel)
 
-    def _link_plain(self, seg, self_key, base_rel):
+    @staticmethod
+    def _self_mark(visible):
+        return '<b class="ex-hw">%s</b>' % html.escape(visible, quote=False)
+
+    def _is_self_form(self, key, self_key):
+        """True when ``key`` is a listed form of the entry's own headword (ambiguity with another headword aside)."""
+        return bool(self_key) and self_key in (self.forms.get(key) or {})
+
+    def _link_plain(self, seg, self_key, base_rel, mark_self=False):
         if not seg:
             return ""
         tokens = list(WORD_RE.finditer(seg))
@@ -409,11 +445,12 @@ class Index:
             tok = m.group(0)
             key = _norm_token(tok)
             if key in self.multi_first and self.max_tokens > 1:
-                hit_span = self._match_multi(seg, tokens, i, self_key)
+                hit_span = self._match_multi(seg, tokens, i, self_key, mark_self)
                 if hit_span is not None:
                     hit, span = hit_span
                     last = tokens[i + span - 1]
-                    out.append(self.anchor(hit, seg[m.start():last.end()], base_rel))
+                    visible = seg[m.start():last.end()]
+                    out.append(self._self_mark(visible) if hit == "self" else self.anchor(hit, visible, base_rel))
                     pos = last.end()
                     i += span
                     continue
@@ -421,10 +458,14 @@ class Index:
             pm = POSSESSIVE_RE.match(key)
             if pm:
                 base, suffix = pm.group(1), pm.group(2)
+            cut = len(tok) - len(suffix)
             hit = self.resolve(base)
             if hit is not None and hit[0] != self_key:
-                cut = len(tok) - len(suffix)
                 out.append(self.anchor(hit, tok[:cut], base_rel) + html.escape(tok[cut:], quote=False))
+            elif mark_self and self._is_self_form(base, self_key):
+                out.append(self._self_mark(tok[:cut]) + html.escape(tok[cut:], quote=False))
+            elif mark_self and hit is None and self._is_self_form(eexlib.split_clitic(key)[0], self_key):
+                out.append(self._self_mark(tok))        # doesn't, can't, cannot: the whole token
             else:
                 out.append(html.escape(tok, quote=False))
             pos = m.end()
@@ -432,7 +473,9 @@ class Index:
         out.append(html.escape(seg[pos:], quote=False))
         return "".join(out)
 
-    def _match_multi(self, seg, tokens, i, self_key):
+    def _match_multi(self, seg, tokens, i, self_key, mark_self=False):
+        """``(hit, span)`` for the longest multi-word form starting at token ``i``; ``hit`` is ``"self"``
+        for the entry's own headword when ``mark_self`` is set.  Self forms are never linked."""
         n = len(tokens)
         for span in range(min(self.max_tokens, n - i), 1, -1):
             ok = True
@@ -446,6 +489,8 @@ class Index:
             hit = self.resolve_exact(mkey)
             if hit is not None and hit[0] != self_key:
                 return hit, span
+            if mark_self and self._is_self_form(mkey, self_key):
+                return "self", span
         return None
 
     def links(self, text, self_slug=None, base_rel=""):
@@ -513,10 +558,16 @@ def set_default_index(index):
     _DEFAULT = index
 
 
-def link_text(text, self_slug, base_rel, index=None):
+def link_text(text, self_slug, base_rel, index=None, mark_self=False):
     """The HTML of ``text`` with every resolvable word linked (see the module docstring)."""
     index = index if index is not None else default_index()
-    return index.link(text, self_slug, base_rel)
+    return index.link(text, self_slug, base_rel, mark_self=mark_self)
+
+
+def plain_text(text):
+    """``text`` with marks removed and overrides reduced to their visible text: for glosses and previews."""
+    text = eexlib.strip_markup(text)
+    return OVERRIDE_RE.sub(lambda m: m.group(2) if m.group(2) else headword_from_slug(m.group(1)), text)
 
 
 # --------------------------------------------------------------------------

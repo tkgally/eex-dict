@@ -64,6 +64,9 @@ class TempSite:
                                        "patterns": ["verb + adverb or preposition"]}
         run["senses"][0]["examples"] = [{"text": "Sam ran to the bank.", "note": None, "pattern": "verb + adverb or preposition"},
                                         {"text": "The children were running along the banks of the river.", "note": None, "pattern": None}]
+        run["usage_note"] = "**Run** is irregular: *ran*, *run*. Compare **bank**."
+        run["pronunciation"]["notes"] = "**Run** rhymes with *fun*."
+        run["inflections"]["note"] = "past tense **ran**"
         run["provenance"]["created"] = "2026-09-17T01:00:00Z"
         write_json(self.dir / "entries" / "ru" / "run-v.json", run)
         write_json(self.dir / "entries" / "ba" / "banc-n.json",
@@ -155,6 +158,21 @@ class BuildSiteTests(unittest.TestCase):
         self.assertNotIn('data-hw="run"', run)
         bank = self.site.read("w/bank.html")
         self.assertNotIn('data-hw="bank"', bank)
+
+    def test_inline_marks_and_the_headword_in_examples(self):
+        run = self.site.read("w/run.html")
+        self.assertIn('<span class="ex">Sam <b class="ex-hw">ran</b> to', run)
+        self.assertIn('<b class="ex-hw">running</b>', run)
+        self.assertIn('<b class="mention">Run</b> is irregular: <i class="illus">ran</i>, <i class="illus">run</i>. '
+                      'Compare <b class="mention"><a class="w" href="../w/bank.html#bank-n" data-hw="bank">bank</a></b>.', run)
+        self.assertIn('<span class="muted small"><b class="mention">Run</b> rhymes with <i class="illus">fun</i>.</span>', run)
+        self.assertIn('<span class="note">past tense <b class="mention">ran</b></span>', run)
+        bank = self.site.read("w/bank.html")
+        self.assertIn('at the <b class="ex-hw">bank</b> near', bank)
+        self.assertIn('burst its <b class="ex-hw">banks</b>', bank)
+        self.assertNotIn("*", build_site.plain_prose("**Run** is *irregular*"))
+        for name in ("search-index.json", "p/run.json"):
+            self.assertNotIn("**", self.site.read(name))
 
     def test_every_page_has_the_shell(self):
         for path in sorted(self.site.out.rglob("*.html")):

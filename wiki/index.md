@@ -5,7 +5,7 @@
 ## Rules and style
 
 - [conventions](conventions.md) — the schema of this knowledge base and every file format the tools read or write: slugs, shards, run ids, claims, the queue, review files, the decision ledger, the budget ledger, metrics.
-- [style-guide](style-guide.md) — the house style every drafting session reads: definitions, senses, examples, grammar, labels, boxes, phrases, adaptation notes, originality; three model entries (section 16, filled in Stage C).
+- [style-guide](style-guide.md) — the house style every drafting session reads: definitions, senses, examples, the inline marks, grammar, labels, boxes, phrases, adaptation notes, originality; three model entries (section 17).
 - [open-questions](open-questions.md) — questions for the owner with the working assumption in force.
 
 ## Decisions (one page each; binding)
@@ -38,6 +38,8 @@
 - [owner-involvement](decisions/owner-involvement.md) — journal, curator queue, open questions, inbox.
 - [slugs-and-ids](decisions/slugs-and-ids.md) — the slug is the ID; deterministic paths; renames by redirect.
 - [site](decisions/site.md) — static, mobile-first, built by CI, checked by a Routine mode.
+- [inline-markup](decisions/inline-markup.md) — the owner's ruling of 2026-09-18: words named as words and quoted illustrations are marked in the prose (`**word**`, `*phrase*`); the headword in examples is marked by the site; how the seed set is converted.
+- [part-of-speech-and-consistency](decisions/part-of-speech-and-consistency.md) — one part of speech per entry, the entry agrees with itself, origin claims only in etymology, grammar exceptions named as such, pronunciation notes in plain words (from the seed-set feedback of 2026-09-18).
 
 ## Notes (observed problems, method records, experiment results)
 

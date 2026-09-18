@@ -36,6 +36,8 @@ An intermediate learner (roughly B1) must be able to read every definition. An a
 
 **Signposts.** Every sense of an entry with two or more senses carries a `signpost`: one to three words in plain English that let the reader pick the sense from a list (*for money*, *of a river*, *turn or lean*). Lowercase, no period. A one-sense entry has `signpost: null`.
 
+**One part of speech.** The entry holds only the uses that belong to its part of speech ([part-of-speech-and-consistency](decisions/part-of-speech-and-consistency.md)). *Another* standing alone (*I'll have another*) is a pronoun and belongs in *another* (pronoun), not in a sense, an explanation, or an example of *another* (determiner); *alone* after a verb (*she traveled alone*) is an adverb entry, not a note in the adjective. Point to the other entry in one clause of the usage note and in `see_also`, and queue it if it does not exist (`python3 tools/queue.py add "<headword>" <pos> --band N --source crossref`).
+
 **Core idea.** An entry with three or more senses opens with `core_idea`: one sentence, in the defining vocabulary, that says what the senses have in common (*A bank is a place or a raised edge where something is kept or piled up*). It is the one place where a sentence form is used. It is null for one-sense entries and optional for two-sense entries.
 
 ## 5. Examples
@@ -51,17 +53,30 @@ Rules:
 - **The `note`** on an example is for a short gloss of what the example shows (*passive*, *with a negative*), not for a translation or a paraphrase. Usually null.
 - **The `pattern`** on an example names the verb pattern it illustrates, from the closed list, or is null.
 
-## 6. Grammar
+## 6. Marks in prose
+
+Two marks tell the reader when a word is being talked about rather than used ([inline-markup](decisions/inline-markup.md)). Use them in every prose field: definitions, explanations, the core idea, notes of every kind, adaptation notes.
+
+- `**word**` around a word or phrase **named as a word**: `**All** goes before a plural noun`, `**all of** is also possible`, `the plural **monies** is legal`. The test: *the word* can be put in front of it. The site shows it in bold.
+- `*phrase*` around **language quoted as an illustration**, a phrase or sentence shown in use inside the prose: `before a plural noun (*all children*, *all water*)`, `it is common with day: *it rained all day*`. A respelling or a sound written out in a pronunciation note is an illustration too: `*MUN-ee*`. The site shows it in italics.
+
+**The headword in an example sentence is marked by the site, not by you:** it finds the headword, its listed inflected forms, its variants, and their contracted forms, and shows them in bold. Leave examples unmarked, with three exceptions, which you mark with `**...**`: a form that is not in the inflections table (`**Are** you ready?`), a separated phrasal verb (`**pick** it **up**`), and a form hidden behind a contraction on another word (`**I've** got a car`). A hand mark switches the automatic marking off for that sentence, so mark every occurrence in it. `tools/validate.py` warns about an example that contains no form of the headword and no mark.
+
+**Rules.** A mark is paired, has no space just inside it, stays on one line, never nests, and never sits inside a `[[slug|text]]` override (put the override inside the mark). No marks in collocation items, in the text of a phrase, or in the `incorrect` and `correct` forms of a learner error: those fields are quoted language as a whole. No single-asterisk marks inside an example. An asterisk never marks an ungrammatical form; the wrong form lives only in `incorrect`.
+
+## 7. Grammar
 
 Every sense carries `grammar`: `countability` for nouns (else null), `transitivity` for verbs and phrasal verbs (else null), `codes` from the grammar codes, `patterns` from the verb patterns, most typical first, at most five. Codes and patterns are chosen by the drafter and reviewed; the site shows the spelled-out label with its short code beside it. In prose, everything is spelled out: *someone*, *something*, *for example*, *that is*, *and so on*, *usually*, *especially*; never `sb`, `sth`, `e.g.`, `i.e.`, `etc.`, `usu.`, `esp.`, `vs.`, `cf.`, `approx.`, `NB`. The validator rejects them.
 
 Gradability is the drafter's call, recorded as a code (`not gradable`, `comparative with more`); `tools/inflect.py` then generates only the forms the codes allow. Never write inflections by hand.
 
-## 7. Labels
+A grammar statement with a real exception states the rule for ordinary use and names the exception as one, in the same breath: `**Money** is uncountable in ordinary use; the plural **monies** belongs to legal and financial documents`. Two flat statements side by side read as a contradiction.
+
+## 8. Labels
 
 Labels come from the five closed sets ([usage-labels](decisions/usage-labels.md)). Entry-level `labels` apply to every sense; sense-level labels apply to that sense only; do not repeat an entry-level label at sense level. A label is used when the word would be out of place without it: `informal` when the word would jar in a report, `technical` when only specialists use it, a domain only when the word belongs to the field. `vulgar` and `offensive` are never omitted where they apply. Region labels say where a word is *mainly* used; a word used everywhere gets none. Variants (`variants[]`) record a British spelling or form with its region; the headword and every prose field stay American.
 
-## 8. The boxes
+## 9. The boxes
 
 **Collocations** (`collocations[]` per sense): two to six items per type, only types that are genuinely typical, in the order a learner would meet them. Items are short phrases with the headword in them (*open a bank account*), not sentences. A verb collocation shows the object slot with *something* or *someone* only when the phrase is unclear without it.
 
@@ -77,23 +92,23 @@ Labels come from the five closed sets ([usage-labels](decisions/usage-labels.md)
 
 **See also** (`see_also[]`): related entries worth reading that are not synonyms or family (*bank* to *account*). Sparingly.
 
-## 9. Phrases
+## 10. Phrases
 
 Idioms and fixed phrases live in `phrases[]` of the keyword entry: the first noun in the phrase, else the first verb, else the first content word (*break the bank* under *bank*; *make up one's mind* under *mind*; *by and large* under *large*). A phrase gets a phrasal definition, an explanation only if it needs one, its own labels, and one to three examples. Write the phrase with *someone* and *something* in the slots (*give someone a hand*); the `sub_id` is the phrase text slugified (`give-someone-a-hand`). Phrasal verbs are not phrases: they are entries (`give-up-phrv`).
 
-## 10. Pronunciation, inflections, variants
+## 11. Pronunciation, inflections, variants
 
-The drafter writes `pronunciation.american.ipa` and `pronunciation.british.ipa` with the symbol set in `tools/pronounce_check.py` (primary stress `ˈ`, secondary `ˌ`, syllable breaks with a period, no slashes; a one-syllable word carries no stress mark; a multi-word headword has a space between its words), and `source: "model:<its slug>"`. A heteronym puts the sense-specific pronunciation in `senses[].pronunciation`. `checked_by` and `status` are written by the checker, never by hand. Prefixes, suffixes, combining forms, and abbreviations may leave both transcriptions null when no fixed pronunciation exists. Inflections come from `tools/inflect.py`; the drafter only supplies the gradability codes and, for a verb with an unpredictable form, a line in `schema/inflection-exceptions.json` in the same pull request.
+The drafter writes `pronunciation.american.ipa` and `pronunciation.british.ipa` with the symbol set in `tools/pronounce_check.py` (primary stress `ˈ`, secondary `ˌ`, syllable breaks with a period, no slashes; a one-syllable word carries no stress mark; a multi-word headword has a space between its words), and `source: "model:<its slug>"`. A heteronym puts the sense-specific pronunciation in `senses[].pronunciation`. `checked_by` and `status` are written by the checker, never by hand. Prefixes, suffixes, combining forms, and abbreviations may leave both transcriptions null when no fixed pronunciation exists. `pronunciation.notes`, a variant's note, and the adaptation note on pronunciation are written for a B1 reader: name the stressed part in ordinary spelling and capitals (`*uh-NUTH-er*`), compare a sound with a common word (`the **u** of **sun**`, `the **th** of **this**, not of **thin**`), and never use a technical term (*schwa*, *rhotic*, *voiced*, *diphthong*; `tools/validate.py` rejects them). Inflections come from `tools/inflect.py`; the drafter only supplies the gradability codes and, for a verb with an unpredictable form, a line in `schema/inflection-exceptions.json` in the same pull request.
 
-## 11. Etymology
+## 12. Etymology
 
-Include an `etymology` only when both tests pass: (1) the origin was checked in two open sources during verification (name them in `sources_consulted`; nothing is copied from them), and (2) knowing it helps a learner use the word today: a Greek or Latin root that recurs (*tele-*, *-graph*), a transparent compound, a borrowing that explains an odd spelling or pronunciation (*ballet*, *yacht*) or a sense (*salary*). Two sentences at most, in the defining vocabulary. Otherwise `null`. Folk etymologies and disputed origins are omitted, not hedged.
+Include an `etymology` only when both tests pass: (1) the origin was checked in two open sources during verification (name them in `sources_consulted`; nothing is copied from them), and (2) knowing it helps a learner use the word today: a Greek or Latin root that recurs (*tele-*, *-graph*), a transparent compound, a borrowing that explains an odd spelling or pronunciation (*ballet*, *yacht*) or a sense (*salary*). Two sentences at most, in the defining vocabulary. Otherwise `null`. Folk etymologies and disputed origins are omitted, not hedged. A claim about where a word or a form comes from lives only here: an explanation or a note describes the present-day form (`**another** is one word and already contains **an**`) and never its history.
 
-## 12. Taboo and offensive vocabulary
+## 13. Taboo and offensive vocabulary
 
 Vulgar words for sex, the body, and body functions are included, defined plainly, labelled `vulgar` (and `offensive` when they insult). Slurs against groups are not included for now. If you decline to write an entry or a field, do not argue with yourself: record it (`declined` in the queue with a one-line reason, or `declined-in-part` in `provenance.flags` with the field named in `provenance.notes`) and move on. Examples for vulgar words are still natural and still neutral in setting.
 
-## 13. Adaptation notes
+## 14. Adaptation notes
 
 Five kinds, each at most 60 words, language-neutral (never *in Japanese...*), null when nothing needs saying. They exist so that a translator adapting the entry into any language knows where the traps are. Hedge claims about other languages (*often*, *many languages*), never *most* or *all*: a translator cannot check them, and a reviewer will flag them.
 
@@ -103,17 +118,17 @@ Five kinds, each at most 60 words, language-neutral (never *in Japanese...*), nu
 - **false_friends**: internationalisms that mean something else. *"actually" means "in fact", not "currently".* *"eventually" means "in the end", not "possibly".*
 - **pronunciation**: a sound, stress, or spelling trap for learners in general. *"record": stress on the first syllable for the noun, the second for the verb.* *"comfortable" has three syllables in American English, the second "o" is silent.*
 
-## 14. Originality
+## 15. Originality
 
 Draft from your own knowledge and this guide. Never open a commercial or copyrighted dictionary while drafting, and never reproduce a definition, example, or note you remember from one. Open resources are consulted only afterwards, to check a fact, and nothing is copied from them. The periodic originality check searches the web for our definitions phrase by phrase; a definition that matches a published one is rewritten. A definition that is short and plain will often resemble others by necessity (*a young dog*); that is not copying. A distinctive turn of phrase or an unusual example that matches is.
 
-## 15. Before you submit an entry
+## 16. Before you submit an entry
 
-Read it as the learner: can a B1 reader follow every definition? Read it as the reviewer: is every fact in every note true? Then run the pipeline in `CLAUDE.md`. The three model entries in section 16 show what a finished entry looks like.
+Read it as the learner: can a B1 reader follow every definition? Read it as the reviewer: is every fact in every note true? Read it as a whole: does every field say the same thing about the word? An explanation, the synonym discrimination, a learner-error note, and an adaptation note often restate one fact; they must agree with each other and with the grammar values. Then run the pipeline in `CLAUDE.md`. The three model entries in section 17 show what a finished entry looks like.
 
-## 16. Model entries
+## 17. Model entries
 
-Three finished entries from the seed set, each the model for its kind. Read the JSON, not just this summary.
+Three finished entries from the seed set, each the model for its kind, all three carrying the marks of section 6. Read the JSON, not just this summary.
 
 **A polysemous verb: [run](../entries/ru/run-v.json).** Fourteen senses, each with a signpost (*move fast*, *hurry or escape*, *manage*, *work or operate*, *buses and trains*, *of liquid*...), opened by a core idea that names what they share: movement forward that does not stop. The first sense is the physical one a learner meets first; the extensions follow in order of use, with subsenses for variations that share a definition (*run a red light* under *hurry or escape*). Every sense carries its transitivity and its patterns (*verb + object* for *run a restaurant*, *verb + adjective* for *run low*), examples that show those patterns, and collocations by type. Phrases hold only the idioms whose keyword is *run* (*run for it*, *up and running*); phrasal verbs (*run out*, *run into*) are entries of their own and appear under see also. The word family lists the derived entries (*runner*, *running*, *runaway*); the synonym discrimination settles *run* / *jog* / *sprint*; the learner errors are the ones learners of many languages make (*I have ran*, *runs during two hours*); the adaptation notes tell a translator where the senses split.
 
