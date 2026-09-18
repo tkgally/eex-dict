@@ -5,7 +5,8 @@ Everything the command-line tools have in common lives here: the repository
 root, JSON loading and saving in the house format, the vocabularies, the slug
 rules of wiki/conventions.md section 2 (slugify, parse_slug, shard,
 entry_path, phrase_sub_id), iteration over entry files, the list of prose
-fields, key ordering derived from the schema, and two small git helpers.
+fields and the inline marks they may carry, the headword's own forms, key
+ordering derived from the schema, and two small git helpers.
 
 Standard library only.  Import it from a sibling tool with::
 
@@ -322,6 +323,131 @@ def iter_prose(entry):
     """
     for spec in PROSE_PATHS:
         yield from _walk(entry, _split_path(spec), "")
+
+
+# --------------------------------------------------------------------------
+# Inline marks in prose (wiki/decisions/inline-markup.md)
+# --------------------------------------------------------------------------
+
+# ``**word**`` names a word as a word (in an example: the headword itself);
+# ``*phrase*`` quotes language as an illustration.  A mark never spans a line,
+# never starts or ends with a space, and never nests.  Anything else that
+# contains an asterisk is malformed (tools/validate.py reports it).
+MARK_RE = re.compile(r"\*\*(?![\s*])(.+?)(?<![\s*])\*\*|\*(?![\s*])(.+?)(?<![\s*])\*")
+
+# Prose fields that carry no marks at all: they are quoted language as a whole.
+NO_MARKUP_FIELDS = re.compile(r"(?:^|\.)(?:collocations\[\d+\]\.items\[\d+\]|phrases\[\d+\]\.text|learner_errors\[\d+\]\.(?:incorrect|correct))$")
+EXAMPLE_TEXT_FIELD = re.compile(r"examples\[\d+\]\.text$")
+
+
+def iter_markup(text):
+    """Yield ``(kind, inner, start, end)`` for every well-formed mark in ``text``: kind ``"b"`` or ``"i"``."""
+    for m in MARK_RE.finditer(str(text or "")):
+        if m.group(1) is not None:
+            yield "b", m.group(1), m.start(), m.end()
+        else:
+            yield "i", m.group(2), m.start(), m.end()
+
+
+def strip_markup(text):
+    """``text`` with its marks removed and their inner text kept (malformed asterisks are left alone)."""
+    return MARK_RE.sub(lambda m: m.group(1) if m.group(1) is not None else m.group(2), str(text or ""))
+
+
+def markup_errors(text, field=""):
+    """One message per fault in the marks of a prose field, judged by the field's path (empty for a prose field
+    that allows both marks): an asterisk outside a mark, a nested mark, a single-asterisk mark in an example,
+    any mark in a field that carries none.  (A mark inside a link override is the validator's check.)"""
+    text = str(text or "")
+    out = []
+    if "*" not in text:
+        return out
+    if field and NO_MARKUP_FIELDS.search(field):
+        out.append("marks are not used in this field (it is quoted language as a whole)")
+        return out
+    example = bool(field) and bool(EXAMPLE_TEXT_FIELD.search(field))
+    rest = []
+    pos = 0
+    for kind, inner, start, end in iter_markup(text):
+        rest.append(text[pos:start])
+        pos = end
+        if "*" in inner:
+            out.append("marks do not nest: %r" % text[start:end])
+        if example and kind == "i":
+            out.append("an example carries no single-asterisk mark (the sentence is the illustration): %r" % text[start:end])
+    rest.append(text[pos:])
+    leftover = "".join(rest)
+    if "*" in leftover:
+        out.append("an asterisk that is not a well-formed mark (**word** or *phrase*, no space inside, same line)")
+    return out
+
+
+def own_forms(entry):
+    """The headword, its listed inflected forms, and its variant forms, as display strings (duplicates removed)."""
+    forms = []
+    hw = entry.get("headword") if isinstance(entry, dict) else None
+    if isinstance(hw, str) and hw.strip():
+        forms.append(hw.strip())
+    infl = entry.get("inflections") if isinstance(entry, dict) else None
+    table = infl.get("forms") if isinstance(infl, dict) else None
+    for value in (table or {}).values():
+        if isinstance(value, str):
+            for piece in re.split(r"[/,;]| or ", value):
+                if piece.strip():
+                    forms.append(piece.strip())
+    for v in (entry.get("variants") or []) if isinstance(entry, dict) else []:
+        if isinstance(v, dict) and isinstance(v.get("form"), str) and v["form"].strip():
+            forms.append(v["form"].strip())
+    seen, out = set(), []
+    for f in forms:
+        if f.lower() not in seen:
+            seen.add(f.lower())
+            out.append(f)
+    return out
+
+
+_WORD_TOKEN_RE = re.compile(r"[^\W_]+(?:['’][^\W_]+)*")
+_CLITIC_RE = re.compile(r"^(.+?)(n't|'(?:s|ve|re|ll|d|m))$")
+AFFIX_POS = {"prefix", "suffix", "comb"}
+
+
+def split_clitic(word):
+    """``(base, clitic)`` for a lowercase token with a contracted ending: ``doesn't`` -> ``('does', "n't")``,
+    ``bank's`` -> ``('bank', "'s")``, ``can't`` -> ``('can', "'t")``, ``cannot`` -> ``('can', 'not')``; else ``(word, '')``."""
+    if word == "cannot":
+        return "can", "not"
+    if word == "can't":
+        return "can", "'t"
+    m = _CLITIC_RE.match(word)
+    if m and len(m.group(1)) >= 1:
+        return m.group(1), m.group(2)
+    return word, ""
+
+
+def _norm_word(token):
+    s = token.lower().replace("’", "'")
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(ch for ch in s if not unicodedata.combining(ch))
+    return split_clitic(s)[0]
+
+
+def contains_form(text, forms):
+    """True when ``text`` contains one of ``forms`` as whole words (a multi-word form as adjacent words).
+
+    Case, accents, and a contracted ending (``'s``, ``n't``, ``'ve``) are ignored.  Used by the validator's
+    "does the example contain the headword" check; the site's own marking is
+    done by tools/link_words.py from the same forms.
+    """
+    tokens = [_norm_word(t) for t in _WORD_TOKEN_RE.findall(strip_markup(text))]
+    for form in forms:
+        want = [_norm_word(t) for t in _WORD_TOKEN_RE.findall(str(form))]
+        if not want:
+            continue
+        n = len(want)
+        for i in range(len(tokens) - n + 1):
+            if tokens[i:i + n] == want:
+                return True
+    return False
 
 
 # --------------------------------------------------------------------------

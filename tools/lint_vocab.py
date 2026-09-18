@@ -483,7 +483,7 @@ def _override_text(match):
 def tokenize(text):
     """The checkable word tokens of a prose field, normalized: overrides replaced by their visible
     text, possessives and clitics dropped, digits, single letters and example names skipped."""
-    text = OVERRIDE_RE.sub(_override_text, str(text))
+    text = OVERRIDE_RE.sub(_override_text, eexlib.strip_markup(str(text)))
     out = []
     for tok in TOKEN_RE.findall(text):
         tok = _norm(tok)

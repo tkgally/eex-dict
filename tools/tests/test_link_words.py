@@ -59,8 +59,8 @@ class LinkerTests(unittest.TestCase):
     def setUpClass(cls):
         cls.index = link_words.build_index(CORPUS, lemmatizer="rules")
 
-    def link(self, text, self_slug=None, base="../"):
-        return self.index.link(text, self_slug, base)
+    def link(self, text, self_slug=None, base="../", mark_self=False):
+        return self.index.link(text, self_slug, base, mark_self=mark_self)
 
     def test_listed_forms_resolve_to_their_entry(self):
         html = self.link("She ran home.")
@@ -155,6 +155,45 @@ class LinkerTests(unittest.TestCase):
         self.assertEqual(link_words.form_key("a.m."), "a m")
         self.assertEqual(link_words.page_name("in-spite-of-prep"), "in-spite-of")
         self.assertEqual(link_words.headword_from_slug("building-society-n"), "building society")
+
+    def test_marks_are_rendered_and_linked_inside(self):
+        html = self.link("**The** goes before a noun (*the bank*, *the banks*).", "run-v")
+        self.assertIn('<b class="mention"><a class="w" href="../w/the.html#the-det" data-hw="the">The</a></b> goes', html)
+        self.assertIn('(<i class="illus"><a class="w" href="../w/the.html#the-det" data-hw="the">the</a> '
+                      '<a class="w" href="../w/bank.html" data-hw="bank">bank</a></i>, ', html)
+        self.assertNotIn("*", html)
+
+    def test_example_marks_the_entry_headword_and_its_forms(self):
+        html = self.link("Sam ran and runs to the bank.", "run-v", mark_self=True)
+        self.assertIn('<b class="ex-hw">ran</b> and <b class="ex-hw">runs</b>', html)
+        self.assertIn('data-hw="bank">bank</a>', html)
+        self.assertNotIn("run.html", html)
+        # a multi-word form, and the possessive of a single word
+        self.assertIn('<b class="ex-hw">gave up</b>', self.link("Kim gave up.", "give-up-phrv", mark_self=True))
+        self.assertIn("<b class=\"ex-hw\">bank</b>'s", self.link("the bank's door", "bank-n", mark_self=True))
+        # a headword with several entries is still the entry's own form
+        self.assertIn('<b class="ex-hw">bats</b>', self.link("two bats", "bat-n-2", mark_self=True))
+        # without mark_self nothing changes
+        self.assertNotIn("ex-hw", self.link("Sam ran.", "run-v"))
+        # a form shared with another headword is never linked, but in its own entry's example it is the headword
+        self.assertIn('<b class="ex-hw">lay</b>', self.link("She lay down.", "lie-v", mark_self=True))
+        self.assertNotIn("<a", self.link("She lay down.", "lie-v", mark_self=True))
+
+    def test_explicit_mark_in_an_example_switches_the_automatic_marking_off(self):
+        html = self.link("**Ran** he ever ran?", "run-v", mark_self=True)
+        self.assertIn('<b class="ex-hw">Ran</b> he ever ran?', html)
+        self.assertEqual(html.count("ex-hw"), 1)
+
+    def test_contractions_are_marked_whole(self):
+        index = link_words.build_index([entry("do", "v", {"third_person_singular": "does", "past_tense": "did"}), entry("can", "modal")],
+                                       lemmatizer="rules")
+        self.assertIn("<b class=\"ex-hw\">doesn't</b>", index.link("She doesn't know.", "do-v", "../", mark_self=True))
+        self.assertIn("<b class=\"ex-hw\">can't</b> and <b class=\"ex-hw\">cannot</b>",
+                      index.link("I can't and cannot.", "can-modal", "../", mark_self=True))
+
+    def test_plain_text_strips_marks_and_overrides(self):
+        self.assertEqual(link_words.plain_text("**All** of [[the-det|the]] *students* and [[account-n]]"),
+                         "All of the students and account")
 
     def test_rule_lemmas(self):
         self.assertIn("run", link_words.rule_lemmas("running"))

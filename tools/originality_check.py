@@ -31,11 +31,11 @@ def sample(n: int, seed: int | None) -> list[tuple[str, str, str]]:
         if eexlib.is_redirect_stub(e) or e["provenance"]["status"] != "reviewed":
             continue
         for i, s in enumerate(e["senses"]):
-            pool.append((e["slug"], f"senses[{i}].definition", s["definition"]))
+            pool.append((e["slug"], f"senses[{i}].definition", eexlib.strip_markup(s["definition"])))
         for i, ph in enumerate(e.get("phrases", [])):
-            pool.append((e["slug"], f"phrases[{i}].definition", ph["definition"]))
+            pool.append((e["slug"], f"phrases[{i}].definition", eexlib.strip_markup(ph["definition"])))
         if e.get("usage_note"):
-            pool.append((e["slug"], "usage_note", e["usage_note"]))
+            pool.append((e["slug"], "usage_note", eexlib.strip_markup(e["usage_note"])))
     rng = random.Random(seed if seed is not None else int(datetime.now(timezone.utc).strftime("%Y%m%d")))
     rng.shuffle(pool)
     return pool[:n]

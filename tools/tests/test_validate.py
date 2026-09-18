@@ -201,9 +201,78 @@ class ValidateTests(unittest.TestCase):
         self.assertIn("WARN", out)
         self.assertIn("stress", out)
 
+    def test_inline_marks(self):
+        e = self.repo.entry()
+        e["usage_note"] = "**Bank** takes **the**: *in the bank*, *at the bank*."
+        e["senses"][0]["definition"] = "a business that keeps money; compare **account**"
+        self.repo.write(e)
+        self.assertPasses()
+        e = self.repo.entry()
+        e["usage_note"] = "A lone * asterisk"
+        self.repo.write(e)
+        self.assertFails("usage_note: an asterisk that is not a well-formed mark")
+        e = self.repo.entry()
+        e["usage_note"] = "**a *nested* mark**"
+        self.repo.write(e)
+        self.assertFails("marks do not nest")
+        e = self.repo.entry()
+        e["senses"][0]["examples"][0]["text"] = "Mari opened an account at *the bank*."
+        self.repo.write(e)
+        self.assertFails("an example carries no single-asterisk mark")
+        e = self.repo.entry()
+        e["senses"][0]["collocations"][0]["items"][0] = "**bank** account"
+        self.repo.write(e)
+        self.assertFails("marks are not used in this field")
+        e = self.repo.entry()
+        e["learner_errors"][0]["incorrect"] = "I went to *bank*."
+        self.repo.write(e)
+        self.assertFails("marks are not used in this field")
+        e = self.repo.entry()
+        e["usage_note"] = "see [[account-n|**account**]]"
+        self.repo.write(e)
+        self.assertFails("a link override carries no mark inside it")
+
+    def test_example_without_the_headword_warns_unless_marked(self):
+        e = self.repo.entry()
+        e["senses"][0]["examples"][0]["text"] = "Mari opened an account near her office."
+        self.repo.write(e)
+        out = self.assertPasses()
+        self.assertIn("examples[0].text: example contains neither the headword nor a listed form", out)
+        e["senses"][0]["examples"][0]["text"] = "Mari **banked** the check near her office."
+        self.repo.write(e)
+        out = self.assertPasses()
+        self.assertNotIn("contains neither", out)
+        # a plural, a possessive, and a contraction all count as the headword
+        for text in ("Two banks closed.", "The bank's door was shut.", "The bank's open, isn't it?"):
+            e["senses"][0]["examples"][0]["text"] = text
+            self.repo.write(e)
+            self.assertNotIn("contains neither", self.assertPasses())
+        # affixes live inside their words: no check
+        e = self.repo.entry()
+        e["pos"], e["slug"], e["id"], e["headword"] = "prefix", "un-prefix", "un-prefix", "un-"
+        e["pronunciation"]["american"] = e["pronunciation"]["british"] = None
+        e["senses"][0]["examples"][0]["text"] = "The test was unfair."
+        self.repo.write(e, "entries/un/un-prefix.json")
+        (self.repo.dir / "entries" / "ba" / "bank-n.json").unlink()
+        self.assertNotIn("contains neither", self.assertPasses())
+
+    def test_pronunciation_notes_in_plain_words(self):
+        e = self.repo.entry()
+        e["pronunciation"]["notes"] = "The last sound is a schwa."
+        self.repo.write(e)
+        self.assertFails("pronunciation.notes: 'schwa' is a technical term")
+        e = self.repo.entry()
+        e["adaptation"]["pronunciation"] = "The final d is voiced."
+        self.repo.write(e)
+        self.assertFails("adaptation.pronunciation: 'voiced' is a technical term")
+        e = self.repo.entry()
+        e["usage_note"] = "Voiced opinions are welcome."     # only pronunciation prose is checked
+        self.repo.write(e)
+        self.assertPasses()
+
     def test_warnings_for_example_punctuation_and_unknown_link_target(self):
         e = self.repo.entry()
-        e["senses"][0]["examples"][0]["text"] = "No full stop here"
+        e["senses"][0]["examples"][0]["text"] = "No full stop after this bank"
         e["usage_note"] = "See [[shore-n|shore]]."
         self.repo.write(e)
         out = self.assertPasses()
