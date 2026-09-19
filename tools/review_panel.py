@@ -28,6 +28,20 @@ import eexlib  # noqa: E402
 
 DEFAULT_ROLES = ["reviewer-a", "reviewer-b"]
 
+# Switched off by the 2026-09-19 lint run under the 30-percent rule (routine-prompt.md,
+# lint mode): a (role, family) pair with precision under 30 percent over twenty or more
+# adjudicated decisions, measured by `tools/metrics.py --precision` over all-time
+# reviews/decisions.jsonl. Figures and rationale in wiki/notes/reviewer-precision.md.
+# An issue from a switched-off pair is downgraded to "ok" before it reaches adjudication,
+# so it is never counted, never printed, and never logged as a decision.
+DISABLED_FAMILIES = {
+    ("reviewer-a", "example-policy"),   # 0.16 over 44
+    ("reviewer-a", "grammar-code"),     # 0.27 over 75
+    ("reviewer-a", "sense-structure"),  # 0.29 over 48
+    ("reviewer-b", "example-policy"),   # 0.05 over 83
+    ("reviewer-b", "explanation"),      # 0.24 over 21
+}
+
 SYSTEM = """You are a senior lexicographer checking an entry of an English-English learner's dictionary for intermediate and advanced learners (CEFR B1 to C2). American English is the dictionary's primary variety; British forms are recorded in variant fields. The entry was written by a language model and must be checked field by field for factual and linguistic correctness, not for taste. You answer with JSON only.
 
 House rules you check against:
@@ -110,7 +124,7 @@ def user_prompt(entry: dict) -> str:
     )
 
 
-def normalize_verdicts(raw: dict, fields: list[str]) -> tuple[list[dict], str | None]:
+def normalize_verdicts(raw: dict, fields: list[str], role: str | None = None) -> tuple[list[dict], str | None]:
     families = set(eexlib.vocab_values("issue_families"))
     out, seen = [], set()
     err = None
@@ -130,8 +144,11 @@ def normalize_verdicts(raw: dict, fields: list[str]) -> tuple[list[dict], str | 
             v["severity"] = sev if sev in ("blocking", "minor") else "minor"
             fam = str(it.get("family") or "other").strip().lower()
             v["family"] = fam if fam in families else "other"
-            v["quote"] = (str(it.get("quote")) if it.get("quote") not in (None, "") else None)
-            v["reason"] = (str(it.get("reason")) if it.get("reason") not in (None, "") else None)
+            if (role, v["family"]) in DISABLED_FAMILIES:
+                v = {"field": field, "verdict": "ok", "quote": None, "severity": None, "family": None, "reason": None}
+            else:
+                v["quote"] = (str(it.get("quote")) if it.get("quote") not in (None, "") else None)
+                v["reason"] = (str(it.get("reason")) if it.get("reason") not in (None, "") else None)
         out.append(v)
         seen.add(field)
     missing = [f for f in fields if f not in seen]
@@ -168,7 +185,7 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
                 rev["error"] = f"{e} | finish={res.get('finish_reason')} | head={(res.get('text') or '')[:300]!r}"
                 record["reviewers"].append(rev)
                 continue
-            verdicts, err = normalize_verdicts(raw, fields)
+            verdicts, err = normalize_verdicts(raw, fields, role)
             if err and not verdicts:
                 err = f"{err} | finish={res.get('finish_reason')} | head={(res.get('text') or '')[:300]!r}"
             rev["verdicts"] = verdicts
