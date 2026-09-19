@@ -54,7 +54,7 @@ actor	n	1	defining	pending	2026-09-16	votes 3
 actual	adj	1	defining	pending	2026-09-16	votes 1; referenced by actually-adv
 actually	adv	1	defining	done	2026-09-16	votes 3
 ad	abbr	1	defining	pending	2026-09-16	votes 2
-add	v	1	defining	pending	2026-09-16	votes 2; referenced by lend-v
+add	v	1	defining	pending	2026-09-16	votes 2; referenced by lend-v; referenced by addition-n
 address	n	1	defining	pending	2026-09-16	votes 1
 adjective	n	1	defining	pending	2026-09-16	votes 1
 admire	v	1	defining	pending	2026-09-16	votes 2
@@ -755,7 +755,7 @@ exact	adj	1	defining	pending	2026-09-16	votes 1
 exactly	adv	1	defining	pending	2026-09-16	votes 3
 examine	v	1	defining	pending	2026-09-16	votes 2
 example	n	1	defining	pending	2026-09-16	votes 3
-except	prep	1	defining	pending	2026-09-16	votes 3
+except	prep	1	defining	pending	2026-09-16	votes 3; referenced by exception-n
 exchange	n	1	defining	pending	2026-09-16	votes 1
 excite	v	1	defining	pending	2026-09-16	votes 2
 excited	adj	1	defining	pending	2026-09-16	votes 3
@@ -833,7 +833,7 @@ financial	adj	1	defining	pending	2026-09-16	votes 1
 find	v	1	defining	pending	2026-09-16	votes 3
 find out	phrv	1	defining	pending	2026-09-16	votes 3; referenced by see-v
 fine	adj	1	defining	pending	2026-09-16	votes 1; referenced by good-adj
-finger	n	1	defining	pending	2026-09-16	votes 2; referenced by hand-n
+finger	n	1	defining	pending	2026-09-16	votes 2; referenced by hand-n; referenced by thumb-n
 fire	n	1	defining	pending	2026-09-16	votes 3
 fire	v	1	defining	pending	2026-09-16	votes 2
 firm	n	1	defining	pending	2026-09-16	votes 2; referenced by house-n
@@ -1159,7 +1159,7 @@ iron	n	1	defining	pending	2026-09-16	votes 2
 island	n	1	defining	pending	2026-09-16	votes 2
 issue	n	1	defining	pending	2026-09-16	votes 1
 it	pron	1	defining	done	2026-09-16	votes 3
-item	n	1	defining	pending	2026-09-16	votes 1; referenced by thing-n
+item	n	1	defining	pending	2026-09-16	votes 1; referenced by thing-n; referenced by article-n
 its	det	1	defining	done	2026-09-16	votes 2; referenced by it-pron
 itself	pron	1	defining	done	2026-09-16	votes 1; referenced by it-pron
 jacket	n	1	defining	pending	2026-09-16	votes 2
@@ -3021,7 +3021,7 @@ evaluate	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,w
 evaluation	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 evaporate	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 excellent	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=1,wordlist-3=2); referenced by good-adj
-exceptional	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
+exceptional	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by exception-n
 exceptionally	adv	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 excessively	adv	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 executive	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
@@ -4278,8 +4278,8 @@ witness	v	3	crossref	pending	2026-09-16	referenced by see-v
 wrist	n	3	crossref	pending	2026-09-16	referenced by hand-n
 x ray	v	3	family	pending	2026-09-16	referenced by x-ray-n
 altogether	adv	3	family	pending	2026-09-17	referenced by all-det
-addition	n	3	closure	pending	2026-09-17	used in another-det senses[0].definition
-thumb	n	3	closure	pending	2026-09-17	used in hand-n senses[0].definition
+addition	n	3	closure	done	2026-09-17	used in another-det senses[0].definition
+thumb	n	3	closure	done	2026-09-17	used in hand-n senses[0].definition
 another	pron	1	owner	done	2026-09-18	owner feedback 2026-09-18: the pronoun use of another, referenced by another-det
 alone	adv	1	crossref	pending	2026-09-18	referenced by alone-adj (adverb use split off under the part-of-speech rule)
 either	adv	1	crossref	pending	2026-09-18	referenced by either-det
@@ -4287,15 +4287,24 @@ enough	pron	1	crossref	done	2026-09-18	referenced by enough-det
 few	pron	1	crossref	done	2026-09-18	referenced by few-det
 her	pron	1	crossref	done	2026-09-18	referenced by her-det
 his	pron	1	crossref	done	2026-09-18	referenced by his-det; referenced by he-pron
-exception	n	3	closure	pending	2026-09-18	used in every-det senses[0].definition
+exception	n	3	closure	done	2026-09-18	used in every-det senses[0].definition
 everyday	adj	3	family	pending	2026-09-18	referenced by every-det
 many	pron	3	crossref	pending	2026-09-18	referenced by many-det
 more	pron	3	crossref	pending	2026-09-18	referenced by more-det
 most	pron	3	crossref	pending	2026-09-18	referenced by most-det
 much	pron	3	crossref	pending	2026-09-18	referenced by much-det
 several	pron	3	crossref	pending	2026-09-18	referenced by several-det
-additional	n	3	closure	pending	2026-09-18	used in other-det senses[0].definition
-article	n	3	closure	pending	2026-09-18	used in most-det senses[0].definition
+additional	n	3	closure	declined	2026-09-18	used in other-det senses[0].definition; queued as noun but 'additional' is an adjective; pos_guess defaults to noun when it cannot infer pos from morphology
+article	n	3	closure	done	2026-09-18	used in most-det senses[0].definition
 these	pron	1	crossref	done	2026-09-19	referenced by these-det (standalone use)
 those	pron	1	crossref	done	2026-09-19	referenced by those-det (standalone use)
-identity	n	3	closure	pending	2026-09-19	used in somebody-pron senses[0].definition; also in 2 other entries
+identity	n	3	closure	done	2026-09-19	used in somebody-pron senses[0].definition; also in 2 other entries
+additional	adj	3	crossref	done	2026-09-19	correct pos for the word queued as additional-n (used in other-det senses[0].definition); declined as noun; correct pos for the word queued as additional-n (used in other-det senses[0].definition); declined as noun
+additionally	adv	3	family	pending	2026-09-19	referenced by additional-adj
+extra	adj	3	crossref	pending	2026-09-19	referenced by additional-adj
+identical	adj	3	family	pending	2026-09-19	referenced by identity-n
+identification	n	3	family	pending	2026-09-19	referenced by identity-n
+identify	v	3	family	pending	2026-09-19	referenced by identity-n
+subtraction	n	3	crossref	pending	2026-09-19	referenced by addition-n
+thumb	v	3	crossref	pending	2026-09-19	referenced by thumb-n
+thumbprint	n	3	family	pending	2026-09-19	referenced by thumb-n
