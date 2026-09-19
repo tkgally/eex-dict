@@ -1,31 +1,32 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-19 by the fifth scheduled Routine run (build mode).*
+*Rewritten 2026-09-19 by the sixth scheduled Routine run (build mode).*
 
 ## State
 
-- 120 entries, all `reviewed` (0 `draft`). Queue: 4,175 pending, 120 done, 391 closure-gap, 4 duplicate.
-- This run drafted and fully reviewed 10 determiners (*that, their, these, this, those, what, whatever, which, whose, your*) and 4 pronouns (*all, another, any, anybody*). Two-reviewer panel: 38 issues, 28 blocking; adjudicated 28 apply / 10 reject. Rejected reviewer-a's repeated claim that `which-det`'s *in which case* / *by which time* sense and *which one* are pronoun, not determiner, use — checked against a grammar reference (relative determiners); kept as drafted. Applied fixes caught real pos-split drift in `whatever-det` (a clause-use sentence that belonged to `whatever-pron`) and `all-pron` (two examples using a following noun, which is `all-det`'s territory, not a personal pronoun). Queued `these-pron` and `those-pron`, missing targets the seed vote had not queued.
+- 132 entries, all `reviewed` (0 `draft`). Queue: 4,163 pending, 132 done, 388 closure-gap, 4 duplicate.
+- This run drafted and fully reviewed 12 pronouns (*anyone, anything, both, each, either, enough, everybody, everyone, everything, few, he, her*), continuing the determiner/pronoun pos-split set. Two-reviewer panel: 45 issues, 30 blocking; adjudicated 30 apply / 15 reject. Real catches: a "standing alone without a noun" grammar clause folded into the *definition* field on five entries (moved to the explanation); `each-pron`'s definition used the headword `each` circularly, and its "ten dollars each" example was a postposed-adverbial use, not a pronoun use, and was removed along with its collocation; `everything-pron`/`anything-pron` definitions restated the headword as `any`/`every` plus `thing`; three learner-error items and one collocation illustrated the determiner, not the pronoun, use. Rejected several reviewer-a pronunciation objections against `anyone`, `everybody`, and `few`'s American IPA, all contradicted by the CMU/panel agreement already on record or by house style (no American length mark); rejected two usage-note objections that would have contradicted the already-published, reviewed `both-det`/`few-det` entries.
 - Pre-flight: no open pull request, no orphan branches, inbox empty (only `archive/`).
-- Gate, caps, links, 292 unit tests, lint_vocab and crossref gates all pass. Spend today: US$0.65 of US$5.00 (this run: US$0.33).
-- `next_mode.py` debts: closure 0.80, review 0.60, build 0.40, originality 0.40, site 0.40, lint -0.60 (2 runs since last lint of 5).
+- Gate, caps, links, 292 unit tests, lint_vocab and crossref gates all pass. Spend today: US$0.93 of US$5.00 (this run: US$0.28).
+- `next_mode.py` for the next run: **originality** (forced — run 10 is a multiple of 10). Debts otherwise: closure 0.90, review 0.80, site 0.45, originality 0.45, build -0.05, lint -0.55 (3 runs since last lint of 5).
 
 ## Queue (work top-down, one unit at a time)
 
-1. **review**: 108 entries reviewed only once (one panel round); 34 `markup-pending` among the debt from before this run (unchanged this run — build was chosen over review by scheduler debt).
-2. **build/closure**: the pos-split pointers this run created or left open — `that-pron`, `this-pron`, `these-pron`, `those-pron`, `what-pron`, `whatever-pron`, `which-pron`, `whose-pron`, `yours-pron`, `theirs-pron` — are all queued and now referenced from live entries; closure gap is 391 and growing, due for its own pass.
-3. **closure**: cross-reference/family targets with no entry yet (391 open) surface through the queue in due course.
-4. Next **lint** due in about three runs from now (runs_since_lint = 2); re-measure reviewer precision then.
+1. **originality** is forced next run regardless of debt: `originality_check.py sample --n 10` over the 132 reviewed entries.
+2. **review**: 120 entries reviewed only once (one panel round); 34 `markup-pending` entries unchanged since the lint run before last.
+3. **build/closure**: pos-split pointers this run left open — `something-pron`, `neither-pron`, `enough-adv`, `she-pron`, `him-pron`, `his-pron`, `himself-pron`, `hers-pron`, `herself-pron` — are queued (mostly already were) and now referenced from live entries.
+4. **closure**: cross-reference/family targets with no entry yet (388 open, still growing) surface through the queue in due course.
+5. Next **lint** due in about two runs from now (runs_since_lint = 3); re-measure reviewer precision then.
 
 ## Fences (do not re-grind)
 
 - The charter decisions in `wiki/decisions/` are the owner's; do not reopen them.
 - Marks: `**word**` and `*phrase*` only; the headword in an example is marked by the site, by hand only for an irregular, separated, or contracted form.
-- Part of speech: a word's use in another part of speech gets its own entry and a pointer in `see_also`, never demonstrated with a worked example inside another entry. Watch specifically for a determiner's word used before a clause or standing alone with no following noun — that belongs in the paired pronoun entry, not a sense/collocation here (this run's `whatever-det`/`all-pron` fixes).
-- American IPA carries no length mark (`ː`); British keeps it.
+- Part of speech: watch for a pronoun standing where a determiner-like postposed adverbial reading is also possible (this run's `each-pron`: "ten dollars each" removed as adverbial, not pronoun).
+- Definitions never fold in grammar/distribution facts ("standing alone without a noun"); that belongs in the explanation, not the definition (this run's fix across five entries).
+- American IPA carries no length mark (`ː`); British keeps it. A reviewer claim to the contrary is always wrong.
 - No external word list, frequency list, or pronouncing data is ever stored in the repository, whatever its licence.
-- **asleep**, **afraid**, **alive**, **alone**, **awake** never come immediately before a noun, but do follow a noun with a complement (*the baby asleep in the crib*); carry forward if either is touched again.
-- A reviewer's confident-sounding but wrong claim is rejected with a one-line reason, not applied for safety's sake (this run: `which-det` sense 2, checked against a grammar reference rather than rejected on instinct alone).
+- A claim that contradicts an already-published, reviewed sibling entry (`both-det`, `few-det`) is rejected for consistency unless open data settles it the other way.
 - Do not re-enable a switched-off (role, family) pair without a fresh measurement showing it above 30 percent.
 
 ## For the owner

@@ -1,27 +1,27 @@
 {
   "schema_version": "1.0",
-  "id": "his-det",
-  "slug": "his-det",
-  "headword": "his",
-  "pos": "det",
+  "id": "her-pron",
+  "slug": "her-pron",
+  "headword": "her",
+  "pos": "pron",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "hɪz",
+      "ipa": "hɜr",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "hɪz",
+      "ipa": "hɜː",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "In fast, connected speech **her** is often reduced to a quick, weak sound close to *er*, especially right after a verb (*tell her*); said alone or for emphasis, it is pronounced fully, *hur*."
   },
   "inflections": {
     "forms": {},
@@ -46,9 +46,9 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "belonging to a man or boy",
-      "definition": "belonging to or connected with a man, boy, or male animal already mentioned",
-      "explanation": "**His** goes directly before a noun and does not change for a plural noun: *his book*, *his books*. The same spelling, **his**, is also used alone, without a following noun, to mean the thing belonging to him (*this book is his*); that independent use is a separate entry.",
+      "signpost": null,
+      "definition": "used as the object of a verb or preposition to refer to a woman, girl, or female animal already mentioned or clear from context",
+      "explanation": "**Her** is the object form; the subject form is **she**. The same word, **her**, is also the possessive determiner before a noun (*her book*), a separate entry; the independent possessive, used without a following noun, is **hers**.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -65,22 +65,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Sam forgot his keys again.",
+          "text": "I saw her at the store yesterday.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Omar and his wife just moved here.",
+          "text": "Can you give her this message?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The dog buried his bone in the yard.",
+          "text": "We went to the movies with her.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Did you see his new car?",
+          "text": "Ana asked her to help with the project.",
           "note": null,
           "pattern": null
         }
@@ -90,7 +90,7 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "their-det",
+          "slug": "him-pron",
           "note": null
         }
       ],
@@ -108,61 +108,65 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "he-pron",
+      "slug": "herself-pron",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**His** never changes for number: *his book*, *his books*. Unlike **her**, which becomes **hers** when used alone, **his** keeps the same spelling in both uses: *This is his book* and *This book is his*.",
+  "usage_note": "**Her** is both the object pronoun (*I saw her*) and the possessive determiner before a noun (*her book*); the independent possessive, standing alone without a noun, is the different word **hers** (*this book is hers*).",
   "learner_errors": [
     {
-      "incorrect": "his books is on the table",
-      "correct": "his books are on the table",
-      "note": "**His** does not affect the verb; the verb agrees with the noun that follows it, here the plural **books**."
+      "incorrect": "Her is my friend.",
+      "correct": "She is my friend.",
+      "note": "**Her** is not used as the subject of a sentence; the subject pronoun is **she**."
     }
   ],
   "etymology": null,
   "see_also": [
     {
       "slug": "her-det",
-      "note": null
+      "note": "the possessive, directly before a noun: *her book*"
     },
     {
-      "slug": "his-pron",
-      "note": "the same spelling used alone, without a following noun: *this is his*"
+      "slug": "hers-pron",
+      "note": "the independent possessive, used without a noun: *this is hers*"
+    },
+    {
+      "slug": "she-pron",
+      "note": "the subject form"
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "**His** stays the same before a singular or plural noun; it does not agree with the noun's own gender or number, unlike the possessive forms of many other languages.",
+    "grammar": "English pronouns change form for subject, object, and possessive (**she**, **her**, **her**/**hers**); many languages use one form for all three.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-18T16:40:24Z",
-    "modified": "2026-09-19T06:51:53Z",
+    "created": "2026-09-19T06:38:25Z",
+    "modified": "2026-09-19T06:55:00Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260918T163256Z-05mkcp",
+    "run_id": "20260919T063323Z-ksey48",
     "reviews": [
       {
-        "run_id": "20260918T163256Z-05mkcp",
+        "run_id": "20260919T063323Z-ksey48",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-18",
-        "file": "reviews/20260918T163256Z-05mkcp/his-det.json",
+        "date": "2026-09-19",
+        "file": "reviews/20260919T063323Z-ksey48/her-pron.json",
         "ok": 25,
         "issues": 0,
         "blocking": 0
       },
       {
-        "run_id": "20260918T163256Z-05mkcp",
+        "run_id": "20260919T063323Z-ksey48",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-18",
-        "file": "reviews/20260918T163256Z-05mkcp/his-det.json",
+        "date": "2026-09-19",
+        "file": "reviews/20260919T063323Z-ksey48/her-pron.json",
         "ok": 25,
         "issues": 0,
         "blocking": 0
