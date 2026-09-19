@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-19] build | Thirteen personal and reflexive pronouns
+
+Tenth scheduled run, build (highest scheduler debt). Pre-flight clean: no open pull request, no orphan branches, inbox empty. Claimed 20 pronoun slugs, trimmed to 13: subject/object/independent-possessive *I, me, she, him, his, hers, mine, ours* and reflexives *myself, himself, herself, itself, ourselves*; released *neither, nobody, none, nothing, other, some, somebody* to pending. Pipeline: validate, inflect (verified), pronounce-check (26 transcriptions; `ours`/`ourselves` American disputed, `ours` settled by CMU, `ourselves` flagged and sent to curator). Panel: 34 issues, 18 blocking, 30 applied, 4 rejected (precision 0.81/1.0). Real catch, repeated across four entries: a usage note claiming the reflexive-object restriction applies entrywide, contradicting each entry's own emphatic sense (*he himself doesn't believe it*) — rescoped. `itself-pron`'s claim that verbs like *open* never take a reflexive object contradicted its own examples (*turns itself off*); hedged. `she-pron`'s learner-error note contradicted its own ship/country sense; qualified. Fixed two defining-vocabulary violations and a missing British length mark on *me*. Queued *we-pron*, *us-pron*. Gate, caps, links, 292 tests, lint_vocab and crossref gates all pass. Spend: US$0.34.
+
 ## [2026-09-19] lint | Second lint pass: mechanical checks clean, stale curator lines resolved
 
 Ninth scheduled run, forced (five runs since last lint). Pre-flight clean: no open pull request, no orphan branches (`list_branches` shows only `main` remotely), inbox empty. Caps and links green. `crossref.py --all --apply`: 723 missing targets, all expected closure-queue gaps; back-filled 6 entries' `word_family` with mirrored back-links (the *anybody/anyone/anything/everybody/everyone/everything*-pron set). `lint_vocab.py --all --queue`: 0 violations. `claim.py --prune` removed 2 stale claim files.

@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "its-det",
-  "slug": "its-det",
-  "headword": "its",
-  "pos": "det",
+  "id": "i-pron",
+  "slug": "i-pron",
+  "headword": "I",
+  "pos": "pron",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ɪts",
+      "ipa": "aɪ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ɪts",
+      "ipa": "aɪ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -46,9 +46,9 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "belonging to a thing or animal",
-      "definition": "belonging to or connected with a thing, animal, or idea already mentioned",
-      "explanation": "**Its** goes directly before a noun and does not change for a plural noun: *its color*, *its wheels*. Do not confuse it with **it's**, the short form of *it is* or *it has*, which always has an apostrophe.",
+      "signpost": null,
+      "definition": "used by a speaker or writer to refer to themselves",
+      "explanation": "**I** is the subject form and is always written with a capital letter, wherever it stands in a sentence. The object form is **me**; the possessive determiner is **my**, and the independent possessive is **mine**.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -65,22 +65,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The company changed its name last year.",
+          "text": "I live near the park.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The cat cleaned its paws.",
+          "text": "Can I ask you a question?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Every rule has its exceptions.",
+          "text": "My brother and I went fishing last weekend.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The team celebrated its first win.",
+          "text": "I think it's going to rain.",
           "note": null,
           "pattern": null
         }
@@ -103,64 +103,87 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "it-pron",
+      "slug": "me-pron",
       "form": null,
-      "note": null
+      "note": "the object form"
     },
     {
-      "slug": "itself-pron",
+      "slug": "my-det",
+      "form": null,
+      "note": "the possessive, before a noun"
+    },
+    {
+      "slug": "mine-pron",
+      "form": null,
+      "note": "the independent possessive"
+    },
+    {
+      "slug": "myself-pron",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Its** never takes an apostrophe. **It's**, with an apostrophe, is a different word: the short form of **it is** or **it has**. Reading the sentence with **it is** in full is a quick check: *The dog wagged its tail* cannot become *the dog wagged it is tail*, so no apostrophe is needed.",
+  "usage_note": "Unlike ordinary words, **I** keeps its capital letter wherever it stands in a sentence, not just at the start. When **I** is joined with another person, it comes last and stays in the subject form: *my friend and I*, not *me and my friend*.",
   "learner_errors": [
     {
-      "incorrect": "The company lost it's biggest client.",
-      "correct": "The company lost its biggest client.",
-      "note": "The possessive **its** has no apostrophe; **it's** means **it is** or **it has**."
+      "incorrect": "Me and my friend went to the store.",
+      "correct": "My friend and I went to the store.",
+      "note": "**I** is the subject form; it is used, not **me**, and it comes last when joined with another person."
+    },
+    {
+      "incorrect": "i am a teacher.",
+      "correct": "I am a teacher.",
+      "note": "**I** is always written with a capital letter."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "it-pron",
+      "slug": "me-pron",
+      "note": null
+    },
+    {
+      "slug": "my-det",
+      "note": null
+    },
+    {
+      "slug": "mine-pron",
       "note": null
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "**Its** stays the same before a singular or plural noun.",
+    "grammar": "English pronouns change form for subject, object, and possessive (**I**, **me**, **my**/**mine**); many languages use one form for all three, or leave the pronoun out when the verb already shows who the subject is.",
     "culture": null,
     "false_friends": null,
-    "pronunciation": "**Its** and the contraction **it's** sound exactly the same, *ɪts*; only the spelling and the meaning tell them apart."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-18T16:40:24Z",
-    "modified": "2026-09-19T13:56:17Z",
+    "created": "2026-09-19T13:41:11Z",
+    "modified": "2026-09-19T13:55:00Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260918T163256Z-05mkcp",
+    "run_id": "20260919T133903Z-slooyb",
     "reviews": [
       {
-        "run_id": "20260918T163256Z-05mkcp",
+        "run_id": "20260919T133903Z-slooyb",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-18",
-        "file": "reviews/20260918T163256Z-05mkcp/its-det.json",
-        "ok": 25,
-        "issues": 0,
-        "blocking": 0
+        "date": "2026-09-19",
+        "file": "reviews/20260919T133903Z-slooyb/i-pron.json",
+        "ok": 24,
+        "issues": 1,
+        "blocking": 1
       },
       {
-        "run_id": "20260918T163256Z-05mkcp",
+        "run_id": "20260919T133903Z-slooyb",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-18",
-        "file": "reviews/20260918T163256Z-05mkcp/its-det.json",
-        "ok": 25,
-        "issues": 0,
+        "date": "2026-09-19",
+        "file": "reviews/20260919T133903Z-slooyb/i-pron.json",
+        "ok": 24,
+        "issues": 2,
         "blocking": 0
       }
     ],
