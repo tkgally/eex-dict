@@ -1,0 +1,431 @@
+{
+  "run_id": "20260919T153326Z-fzpnak",
+  "slug": "that-pron",
+  "entry_modified": "2026-09-19T15:41:01Z",
+  "reviewers": [
+    {
+      "role": "reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "requested_at": "2026-09-19T15:44:19Z",
+      "cost_usd": 0.015763,
+      "tokens_in": 2614,
+      "tokens_out": 1003,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "issue",
+          "quote": "a person or thing that is not close to the speaker, or that the speaker and listener already know or have just mentioned",
+          "severity": "blocking",
+          "family": "definition-meaning",
+          "reason": "The definition wrongly requires the referent to be not close to the speaker and does not cover discourse reference adequately; **that** can refer to a situation, statement, or event as well as a person or thing."
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "issue",
+          "quote": "**That** stands alone for something farther away, or something already talked about, and contrasts with **this**, which points to something near.",
+          "severity": "blocking",
+          "family": "explanation",
+          "reason": "This misleadingly presents physical distance from the speaker as the core contrast; **this** and **that** also differ in discourse reference and psychological distance."
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "issue",
+          "quote": "**That** takes a singular verb, even when it refers to more than one thing already mentioned as a whole idea.",
+          "severity": "blocking",
+          "family": "learner-error",
+          "reason": "The stated rule is too broad: demonstrative **that** can refer to plural entities only when they are conceptualized as a single situation or idea, while ordinary plural reference requires **those**; the example does not establish this distinction clearly."
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "issue",
+          "quote": "a person or thing that is not close to the speaker",
+          "severity": "blocking",
+          "family": "definition-meaning",
+          "reason": "The definition and explanation consistently overstate physical distance as required, while several examples show discourse-reference uses that need not involve physical distance."
+        }
+      ],
+      "summary": "The entry is structurally sound and correctly separates pronoun, determiner, and conjunction uses. Its central meaning explanation needs revision because it inaccurately makes physical distance from the speaker a requirement, and the learner-error note needs a more precise account of singular agreement.",
+      "error": null
+    },
+    {
+      "role": "reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "requested_at": "2026-09-19T15:44:28Z",
+      "cost_usd": 0.007742,
+      "tokens_in": 2773,
+      "tokens_out": 1510,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "issue",
+          "quote": "a person or thing that is not close to the speaker, or that the speaker and listener already know or have just mentioned",
+          "severity": "minor",
+          "family": "definition-style",
+          "reason": "For function words like pronouns, house style specifies definitions should use the formula 'used to ...' / 'used when ...' rather than a standard noun-phrase formula."
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "issue",
+          "quote": "[[that-det|that]]",
+          "severity": "minor",
+          "family": "spelling-or-format",
+          "reason": "Wiki-link markup syntax does not follow standard house rules for inline formatting."
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "issue",
+          "quote": null,
+          "severity": "blocking",
+          "family": "sense-structure",
+          "reason": "The common relative pronoun use of 'that' ('the book that you gave me', 'the person that called') is a distinct pronoun sense missing from this entry."
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry is mostly well-crafted, but it lacks a vital sense for the relative pronoun 'that' (CEFR B1) and includes raw wiki-link brackets in the usage note.",
+      "error": null
+    }
+  ]
+}
