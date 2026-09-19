@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "its-det",
-  "slug": "its-det",
-  "headword": "its",
-  "pos": "det",
+  "id": "hers-pron",
+  "slug": "hers-pron",
+  "headword": "hers",
+  "pos": "pron",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ɪts",
+      "ipa": "hɜrz",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ɪts",
+      "ipa": "hɜːz",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -46,9 +46,9 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "belonging to a thing or animal",
-      "definition": "belonging to or connected with a thing, animal, or idea already mentioned",
-      "explanation": "**Its** goes directly before a noun and does not change for a plural noun: *its color*, *its wheels*. Do not confuse it with **it's**, the short form of *it is* or *it has*, which always has an apostrophe.",
+      "signpost": null,
+      "definition": "the thing or things belonging to or connected with a woman, girl, or female animal already mentioned",
+      "explanation": "**Hers** is the independent possessive, used without a following noun: *this book is hers*. The possessive determiner, used directly before a noun, is the different word **her** (*her book*), a separate entry.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -65,22 +65,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The company changed its name last year.",
+          "text": "This coat is hers, not mine.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The cat cleaned its paws.",
+          "text": "The red bike is hers.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Every rule has its exceptions.",
+          "text": "Is that scarf yours or hers?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The team celebrated its first win.",
+          "text": "The choice was hers to make.",
           "note": null,
           "pattern": null
         }
@@ -88,7 +88,12 @@
       "collocations": [],
       "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "his-pron",
+          "note": null
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -103,62 +108,80 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "it-pron",
+      "slug": "she-pron",
       "form": null,
-      "note": null
+      "note": "the subject form"
     },
     {
-      "slug": "itself-pron",
+      "slug": "her-pron",
+      "form": null,
+      "note": "the object form"
+    },
+    {
+      "slug": "her-det",
+      "form": null,
+      "note": "the possessive, directly before a noun"
+    },
+    {
+      "slug": "herself-pron",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Its** never takes an apostrophe. **It's**, with an apostrophe, is a different word: the short form of **it is** or **it has**. Reading the sentence with **it is** in full is a quick check: *The dog wagged its tail* cannot become *the dog wagged it is tail*, so no apostrophe is needed.",
+  "usage_note": "**Hers** never comes directly before a noun; that place belongs to **her** (*her book*, not *hers book*). **Hers** stands alone, in the place a noun phrase would fill: *this book is hers*, not *this is hers book*.",
   "learner_errors": [
     {
-      "incorrect": "The company lost it's biggest client.",
-      "correct": "The company lost its biggest client.",
-      "note": "The possessive **its** has no apostrophe; **it's** means **it is** or **it has**."
+      "incorrect": "This book is her.",
+      "correct": "This book is hers.",
+      "note": "Without a following noun, use the independent possessive **hers**, not **her**."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "it-pron",
+      "slug": "her-det",
+      "note": "the possessive, directly before a noun: *her book*"
+    },
+    {
+      "slug": "she-pron",
+      "note": null
+    },
+    {
+      "slug": "her-pron",
       "note": null
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "**Its** stays the same before a singular or plural noun.",
+    "grammar": "English marks the independent possessive with its own form (**mine**, **hers**, **ours**), separate from the possessive determiner (**my**, **her**, **our**) that goes before a noun; many languages use one possessive form throughout.",
     "culture": null,
     "false_friends": null,
-    "pronunciation": "**Its** and the contraction **it's** sound exactly the same, *ɪts*; only the spelling and the meaning tell them apart."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-18T16:40:24Z",
-    "modified": "2026-09-19T13:56:17Z",
+    "created": "2026-09-19T13:41:11Z",
+    "modified": "2026-09-19T13:48:30Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260918T163256Z-05mkcp",
+    "run_id": "20260919T133903Z-slooyb",
     "reviews": [
       {
-        "run_id": "20260918T163256Z-05mkcp",
+        "run_id": "20260919T133903Z-slooyb",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-18",
-        "file": "reviews/20260918T163256Z-05mkcp/its-det.json",
+        "date": "2026-09-19",
+        "file": "reviews/20260919T133903Z-slooyb/hers-pron.json",
         "ok": 25,
         "issues": 0,
         "blocking": 0
       },
       {
-        "run_id": "20260918T163256Z-05mkcp",
+        "run_id": "20260919T133903Z-slooyb",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-18",
-        "file": "reviews/20260918T163256Z-05mkcp/its-det.json",
+        "date": "2026-09-19",
+        "file": "reviews/20260919T133903Z-slooyb/hers-pron.json",
         "ok": 25,
         "issues": 0,
         "blocking": 0
