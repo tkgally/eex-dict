@@ -27,6 +27,20 @@ Both reviewers were told the house conventions in the prompt and still flagged t
 
 The largest genuine family was **adaptation** (reviewer-a, 0.65 over 130): unsupported "most languages" claims, and a few plain errors (*a hand, never hands*; *English always needs it*). The reviewers were also right about a dozen circular or prefixed subsense definitions, about *smell of* under the cause sense of *of*, and about *take someone to court* hiding in a movement sense.
 
+## 2026-09-19: switched off, all-time figures
+
+*Lint run, `tools/metrics.py --precision` over all 798 decisions logged since the founding session (the seed set plus the two build runs and the review run that followed).*
+
+| role | family | applied | rejected | precision |
+|---|---|---|---|---|
+| reviewer-a | example-policy | 7 | 37 | 0.16 |
+| reviewer-a | grammar-code | 20 | 55 | 0.27 |
+| reviewer-a | sense-structure | 14 | 34 | 0.29 |
+| reviewer-b | example-policy | 4 | 79 | 0.05 |
+| reviewer-b | explanation | 5 | 16 | 0.24 |
+
+All five are still under 30 percent over twenty or more decisions, so all five are now switched off in `tools/review_panel.py` (`DISABLED_FAMILIES`): an issue from one of these pairs is downgraded to `ok` before it reaches adjudication, so it never needs a decision line. `reviewer-a`'s `etymology` (0.25, 8) and `inflection` (0.00, 5) stay on: too few decisions to judge. `reviewer-b`'s `adaptation` (0.25, 4), `grammar-code` (0.14, 7), `inflection` (0.00, 3), and `phrase` (0.25, 8) likewise. `reviewer-a`'s overall precision this measurement is 0.56 (432/766); `reviewer-b`'s is 0.37 (82/222).
+
 ## What the next lint run should do
 
-Apply the 30-percent rule to reviewer-a example-policy and grammar-code and to reviewer-b example-policy, unless the extended prompt has already brought them above the line on the next twenty decisions; re-measure after each review run and append the table here.
+Re-measure after each review run and append to the table above; if a switched-off pair's issues (visible only by temporarily re-enabling it, or by the reviewer's raw `verdicts` before normalization) look to have improved, that is a judgment call for a future lint run, not an automatic re-enable — this project runs no A/B test on live entries to find out. Watch `reviewer-a` `etymology` and `sense-structure`'s neighbor `definition-style` (0.60, 47) as they approach or cross the threshold at higher counts.
