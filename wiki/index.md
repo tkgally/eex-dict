@@ -48,3 +48,4 @@
 - [inflection-exceptions-check](notes/inflection-exceptions-check.md) — the two-model check of the inflection exceptions table: what was applied and what was rejected.
 - [seed-set-drafting](notes/seed-set-drafting.md) — how the seed set was drafted and the judgment calls the drafters flagged.
 - [reviewer-precision](notes/reviewer-precision.md) — the first measurement of the two reviewers' precision by issue family on the seed set, the noise patterns, and the families the lint run should switch off.
+- [reviewer-noise](notes/reviewer-noise.md) — reviewer-a called all 10 sampled definitions "copied" in the first originality check, unsupported by search evidence in 7 of 10; watch for a repeat.
