@@ -49,3 +49,4 @@
 - [seed-set-drafting](notes/seed-set-drafting.md) — how the seed set was drafted and the judgment calls the drafters flagged.
 - [reviewer-precision](notes/reviewer-precision.md) — the first measurement of the two reviewers' precision by issue family on the seed set, the noise patterns, and the families the lint run should switch off.
 - [reviewer-noise](notes/reviewer-noise.md) — reviewer-a called all 10 sampled definitions "copied" in the first originality check, unsupported by search evidence in 7 of 10; watch for a repeat.
+- [review-panel-parse-failures](notes/review-panel-parse-failures.md) — `review_panel.py` recorded a hollow, zero-verdict "pass" when a reviewer's reply was truncated; a re-run fixed it. Suggested tooling fix noted for a later run.
