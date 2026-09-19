@@ -1,27 +1,27 @@
 {
   "schema_version": "1.0",
-  "id": "my-det",
-  "slug": "my-det",
-  "headword": "my",
+  "id": "whatever-det",
+  "slug": "whatever-det",
+  "headword": "whatever",
   "pos": "det",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "maɪ",
+      "ipa": "wʌt.ˈɛv.ɚ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "maɪ",
+      "ipa": "wɒt.ˈev.ə",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "Stress falls on the middle part: *wuht-EV-er*."
   },
   "inflections": {
     "forms": {},
@@ -46,9 +46,9 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "belonging to me",
-      "definition": "belonging to or connected with the speaker",
-      "explanation": "**My** goes directly before a noun and does not change for a plural noun: *my book*, *my books*. The same idea used alone, without a following noun, is a different word, **mine** (*this book is mine*), a separate entry.",
+      "signpost": "no matter which",
+      "definition": "used before a noun to mean any at all, with no limit or condition on which one",
+      "explanation": "**Whatever** offers a completely open choice, stronger than **any**: *take whatever seat you like* means it truly does not matter which.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -65,36 +65,40 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I can't find my keys.",
+          "text": "Wear whatever shoes are most comfortable.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "My sister lives in another city.",
+          "text": "We'll deal with whatever problems come up.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "This is my favorite song.",
+          "text": "Choose whatever topic interests you most.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Could you hold my bag for a second?",
+          "text": "I'll help you with whatever task you need.",
           "note": null,
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "whatever time",
+            "whatever way"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [
         {
-          "slug": "our-det",
-          "note": null
-        },
-        {
-          "slug": "your-det",
+          "slug": "any-det",
           "note": null
         }
       ],
@@ -112,58 +116,48 @@
   "phrases": [],
   "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": "**My** never changes for number: *my book*, *my books*. It stands alone as an exclamation of surprise (*My, that's a big dog!*); this interjection use is a separate entry. The independent possessive, used without a following noun, is a different word, **mine** (*this is mine*).",
-  "learner_errors": [
-    {
-      "incorrect": "This book is my.",
-      "correct": "This book is mine.",
-      "note": "Without a following noun, use **mine**; **my** always needs a noun after it."
-    }
-  ],
+  "usage_note": "Standing alone, without a following noun, **whatever** is a pronoun: *Do whatever you like*, *Whatever you decide is fine* — a separate entry, **[[whatever-pron|whatever]]**.",
+  "learner_errors": [],
   "etymology": null,
   "see_also": [
     {
-      "slug": "our-det",
-      "note": null
-    },
-    {
-      "slug": "mine-pron",
-      "note": "the independent possessive, used without a following noun: *this is mine*"
+      "slug": "whatever-pron",
+      "note": "**whatever** standing alone, without a following noun: *do whatever you like*"
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "**My** stays the same before a singular or plural noun; it does not agree with the noun's own gender or number, unlike the possessive forms of many other languages.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-18T20:40:00Z",
-    "modified": "2026-09-19T03:50:01Z",
+    "created": "2026-09-19T03:38:54Z",
+    "modified": "2026-09-19T04:05:00Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260918T203317Z-6urxtt",
+    "run_id": "20260919T033309Z-kxdv7t",
     "reviews": [
       {
-        "run_id": "20260918T203317Z-6urxtt",
+        "run_id": "20260919T033309Z-kxdv7t",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-18",
-        "file": "reviews/20260918T203317Z-6urxtt/my-det.json",
-        "ok": 25,
-        "issues": 0,
-        "blocking": 0
+        "date": "2026-09-19",
+        "file": "reviews/20260919T033309Z-kxdv7t/whatever-det.json",
+        "ok": 20,
+        "issues": 5,
+        "blocking": 5
       },
       {
-        "run_id": "20260918T203317Z-6urxtt",
+        "run_id": "20260919T033309Z-kxdv7t",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-18",
-        "file": "reviews/20260918T203317Z-6urxtt/my-det.json",
-        "ok": 25,
-        "issues": 0,
-        "blocking": 0
+        "date": "2026-09-19",
+        "file": "reviews/20260919T033309Z-kxdv7t/whatever-det.json",
+        "ok": 24,
+        "issues": 1,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
