@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-19] build | Ten determiners and four pronouns
+
+Fifth scheduled run, chosen by scheduler debt (build highest). Pre-flight clean: no open pull request, no orphan branches, inbox empty. Claimed 20 slugs from the queue, then trimmed the batch to 14 (fewer, better entries) before drafting: determiners *that, their, these, this, those, what, whatever, which, whose, your* and pronouns *all, another, any, anybody*. Full pipeline run: validate, inflect (all verified), pronounce-check (28 transcriptions, all verified), two-reviewer panel (38 issues, 28 blocking). Adjudicated every blocking issue: 28 applied, 10 rejected. The two largest rejections were considered ones — kept *which one* and the *in which case / by which time* sense of `which-det` as determiner use (checked against a grammar reference: *which* directly precedes a noun there, `one`/`case`/`time`), against one reviewer's repeated claim that these are pronoun uses. Real catches: `whatever-det` and `all-pron` had drifted into their sibling pos-split entries' territory (clause use, noun-object "of" phrases) and were rewritten to stay noun-only / personal-pronoun-only respectively. Queued `these-pron` and `those-pron`, missing pos-split targets the existing queue rows for the set had not covered. Gate, caps, links, 292 tests, lint_vocab and crossref gates all pass. Spend: US$0.33.
+
 ## [2026-09-19] lint | Reviewer-precision switch-off; branch and claim cleanup
 
 Fourth scheduled run, forced by the five-runs-since-last-lint rule. Pre-flight: no open pull request; two closed-by-owner branches show file residue against current `main` only because later runs kept editing the same entries — both already logged as owner-closed and absorbed by a different path, so no new curator lines; the other orphan branches confirmed fully absorbed (already logged). `claim.py --prune` removed four stale claim files.
