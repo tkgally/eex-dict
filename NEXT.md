@@ -1,35 +1,38 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-19 by the seventh scheduled Routine run (originality mode).*
+*Rewritten 2026-09-19 by the eighth scheduled Routine run (review mode).*
 
 ## State
 
-- 132 entries, all `reviewed` (0 `draft`). Queue: 4,163 pending, 132 done, 388 closure-gap, 4 duplicate (unchanged this run — no new drafting).
-- First originality check: `originality_check.py sample --n 10` over the 132 reviewed entries. No exact-phrase web search matched a published source for any of the 10, but reviewer-a called all 10 "copied" on style alone with no source cited — logged as reviewer overcall in new page `wiki/notes/reviewer-noise.md`. On my own reading against recalled published wording, three looked like real paraphrases of a specific dictionary's sentence shape: `be-v` `be-that-as-it-may`, `please-interj` sense 3, `person-n` `in-person`. Rewrote all three; full pipeline (validate, panel, adjudicate, validate, lint_vocab, crossref) on each: 17 issues, 7 blocking, 9 applied / 8 rejected. Two first-draft rewrites hit defining-vocabulary violations and were rewritten again to clear them. Also cleared `person-n`'s long-standing `markup-pending` flag while it was open.
+- 132 entries, all `reviewed` (0 `draft`). Queue: 4,163 pending, 132 done, 388 closure-gap, 4 duplicate (unchanged this run).
+- Review mode (selector: highest debt). Took the 10 markup-pending, reviewed-once entries with the fewest senses for a thorough pass: `alone-adj`, `quickly-adv`, `sorry-adj`, `borrow-v`, `lend-v`, `speak-v`, `happy-adj`, `tell-v`, `talk-v`, `say-v`. Full panel + adjudication (86 decisions: 68 applied, 18 rejected), inline marks hand-added field by field, flag cleared, full pipeline (validate/lint_vocab/crossref) green on each.
+- Real content fixes: `alone-adj` sense 1 had adverbial examples wrongly used as adjective ones; `quickly-adv` sense 2 was defined like *soon* instead of a duration; `say-v`'s parenthetical *say, six o'clock* use is now its own subsense; several entries had "never/only" claims hedged to "usually" per style rule.
+- Tooling problem found and logged (not fixed): `review_panel.py` can silently record an empty, zero-verdict reviewer pass when a reply is truncated (`talk-v`, this run). New page `wiki/notes/review-panel-parse-failures.md`.
 - Pre-flight: no open pull request, no orphan branches, inbox empty (only `archive/`).
-- Gate, caps, links, 292 unit tests, lint_vocab and crossref gates all pass. Spend today: US$1.09 of US$5.00 (this run: US$0.16).
-- `next_mode.py` for the next run: not yet queried by this run's writer; the debt scheduler will likely pick **build** or **review** (both positive debt last measured). Re-run `next_mode.py --explain` at the start of the next session.
+- Gate, caps, links, 292 unit tests, lint_vocab and crossref gates all pass. Spend today: US$1.71 of US$5.00 (this run: US$0.61).
+- `next_mode.py` not yet queried by the next session; re-run `--explain` at the start.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **review**: 120 entries reviewed only once (one panel round); 33 `markup-pending` entries remain (down from 34: `person-n` cleared this run).
-2. **build/closure**: pos-split pointers queued from recent runs — `something-pron`, `neither-pron`, `enough-adv`, `she-pron`, `him-pron`, `his-pron`, `himself-pron`, `hers-pron`, `herself-pron`.
-3. **closure**: cross-reference/family targets with no entry yet (still 388+, growing as new phrases/word-family entries are added).
-4. Next **lint** due in about one run from now (runs_since_lint was 3 as of the last build run, plus this originality run = 4; lint is forced every 5).
-5. Next **originality** check due in 10 more runs (forced every 10th run; this was run 10 of the cycle).
+1. **review**: 23 `markup-pending` entries remain (down from 33): `big-adj`, `house-n`, `news-n`, `go-v`, `good-adj`, `bank-n`, `see-v`, `family-n`, `x-ray-n`, `people-n`, `shit-n`, `get-v`, `record-n`, `record-v`, `take-v`, `color-n`, `head-n`, `thing-n`, `old-adj`, `way-n`, `water-n`, `make-v`, `time-n`. All are large, multi-sense entries (5–14 senses) — expect fewer per run than this one.
+2. **review**: 107 entries reviewed only once (one panel round), most of the 23 above included.
+3. **build/closure**: pos-split pointers queued from recent runs — `something-pron`, `neither-pron`, `enough-adv`, `she-pron`, `him-pron`, `his-pron`, `himself-pron`, `hers-pron`, `herself-pron`.
+4. **closure**: cross-reference/family targets with no entry yet (388+, growing).
+5. Next **lint** due in about one run (runs_since_lint was 4 plus this review run = 5; forced every 5).
+6. Next **originality** check due in 9 more runs (forced every 10th; this was run 1 of the new cycle).
 
 ## Fences (do not re-grind)
 
 - The charter decisions in `wiki/decisions/` are the owner's; do not reopen them.
 - Marks: `**word**` and `*phrase*` only; the headword in an example is marked by the site, by hand only for an irregular, separated, or contracted form.
-- American IPA carries no length mark (`ː`); British keeps it. A reviewer claim to the contrary is always wrong (rejected again this run on `please-interj`).
+- American IPA carries no length mark (`ː`); British keeps it. A reviewer claim to the contrary is always wrong.
 - No external word list, frequency list, or pronouncing data is ever stored in the repository, whatever its licence.
-- Originality-check reviewer answers are a style-only signal (this run: 10/10 "copied," 7/10 unsupported by search) — weigh them against the session's own reading and the exact-phrase search, not at face value; watch `wiki/notes/reviewer-noise.md` for a repeat.
-- A rewritten definition must still clear `lint_vocab.py`'s closed defining vocabulary before it is done — check candidate wording against `schema/defining-vocabulary.txt` early, not after the fact.
-- Do not re-enable a switched-off (role, family) pair without a fresh measurement showing it above 30 percent.
+- A rewritten definition must still clear `lint_vocab.py`'s closed defining vocabulary — check wording against `schema/defining-vocabulary.txt` early (`say-v`'s new subsense hit "commas"/"approximate"/"react" this run, all fixed).
+- `wiki/notes/reviewer-noise.md`: originality-check reviewer over-calls "copied"; watch for a repeat.
+- `wiki/notes/review-panel-parse-failures.md`: spot-check a reviewer's `ok` count isn't suspiciously 0 before trusting a review pair.
 
 ## For the owner
 
-- Three items remain open: enable GitHub Pages; open question 4 (split *be/have/do/one* by the part-of-speech rule?); open question 5 (the look of the marks); open question 2 (reviewer-b's tier) stays "keep" — precision 0.37 over 222 decisions, not yet the twenty more the assumption waits for.
+- Three items remain open: enable GitHub Pages; open question 4 (split *be/have/do/one* by part of speech?); open question 5 (the look of the marks); open question 2 (reviewer-b's tier) stays "keep" — precision 0.37 over 222 decisions.
 - `reviews/needs_curator.txt` has four prune-branch lines and one pronunciation question (*several-det* British), all awaiting the owner; this tool set cannot delete branches.
-- New this run: `wiki/notes/reviewer-noise.md` flags that the originality-check reviewer role may over-call "copied" regardless of real resemblance; no action needed yet, just a watch item for the next originality run.
+- New this run: a real tooling gap in `review_panel.py` (see above) — worth a fix in a future session, not urgent (the workaround caught it this time).
