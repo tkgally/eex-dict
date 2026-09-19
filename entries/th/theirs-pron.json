@@ -1,31 +1,25 @@
 {
   "schema_version": "1.0",
-  "id": "ours-pron",
-  "slug": "ours-pron",
-  "headword": "ours",
+  "id": "theirs-pron",
+  "slug": "theirs-pron",
+  "headword": "theirs",
   "pos": "pron",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "aʊrz",
+      "ipa": "ðɛrz",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:1/4;cmudict:agree",
-      "status": "disputed"
+      "checked_by": "agreement:3/4;cmudict:agree",
+      "status": "verified"
     },
     "british": {
-      "ipa": "aʊəz",
+      "ipa": "ðeəz",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
-    "variants": [
-      {
-        "ipa": "ˈaʊ.ərz",
-        "region": null,
-        "note": "a fuller, two-syllable form, heard especially in careful or slow speech"
-      }
-    ],
+    "variants": [],
     "audio": null,
     "notes": null
   },
@@ -53,8 +47,8 @@
     {
       "n": 1,
       "signpost": null,
-      "definition": "the thing or things belonging to or connected with the speaker and at least one other person",
-      "explanation": "**Ours** is the independent possessive, used without a following noun: *this house is ours*. The possessive determiner, used directly before a noun, is the different word **our** (*our house*), a separate entry.",
+      "definition": "the thing or things belonging to or connected with two or more people already mentioned, or with a person of unstated sex",
+      "explanation": "**Theirs** is the independent possessive, used without a following noun: *this car is theirs*. The possessive determiner, used directly before a noun, is the different word **their** (*their car*), a separate entry.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -71,22 +65,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "That table by the window is ours.",
+          "text": "This suitcase is theirs, not ours.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Is this car ours or theirs?",
+          "text": "Is that dog theirs or the neighbors'?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The garden is ours to take care of.",
+          "text": "The choice was theirs to make.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Which of these bags are ours?",
+          "text": "Whose turn is it? Theirs.",
           "note": null,
           "pattern": null
         }
@@ -96,11 +90,7 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "mine-pron",
-          "note": null
-        },
-        {
-          "slug": "theirs-pron",
+          "slug": "ours-pron",
           "note": null
         }
       ],
@@ -118,85 +108,92 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "we-pron",
+      "slug": "they-pron",
       "form": null,
       "note": "the subject form"
     },
     {
-      "slug": "us-pron",
+      "slug": "them-pron",
       "form": null,
       "note": "the object form"
     },
     {
-      "slug": "our-det",
+      "slug": "their-det",
       "form": null,
       "note": "the possessive, directly before a noun"
     },
     {
-      "slug": "ourselves-pron",
+      "slug": "themselves-pron",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Ours** never comes directly before a noun; that place belongs to **our** (*our house*, not *ours house*). **Ours** stands alone, in the place a noun phrase would fill: *this house is ours*, not *this is ours house*.",
+  "usage_note": "**Theirs** never comes directly before a noun; that place belongs to **their** (*their car*, not *theirs car*).",
   "learner_errors": [
     {
-      "incorrect": "This house is our.",
-      "correct": "This house is ours.",
-      "note": "Without a following noun, use the independent possessive **ours**, not **our**."
+      "incorrect": "This book is their's.",
+      "correct": "This book is theirs.",
+      "note": "**Theirs** is a possessive pronoun and never takes an apostrophe, unlike a possessive noun such as **Sam's**."
+    },
+    {
+      "incorrect": "This is theirs car.",
+      "correct": "This is their car.",
+      "note": "Directly before a noun, use **their**, not **theirs**."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "our-det",
-      "note": "the possessive, directly before a noun: *our house*"
+      "slug": "their-det",
+      "note": null
     },
     {
-      "slug": "mine-pron",
+      "slug": "they-pron",
+      "note": null
+    },
+    {
+      "slug": "them-pron",
       "note": null
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "English marks the independent possessive with its own form (**mine**, **hers**, **ours**), separate from the possessive determiner (**my**, **her**, **our**) that goes before a noun; many languages use one possessive form throughout.",
+    "grammar": "English marks the independent possessive with its own form (**theirs**, **hers**, **ours**), separate from the possessive determiner (**their**, **her**, **our**) that goes before a noun; many languages use one possessive form throughout.",
     "culture": null,
     "false_friends": null,
-    "pronunciation": "In connected speech, **our** and **ours** are often reduced; said alone or for emphasis, the fuller two-syllable form is more common."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-19T13:41:11Z",
-    "modified": "2026-09-19T15:51:58Z",
+    "created": "2026-09-19T15:39:00Z",
+    "modified": "2026-09-19T16:10:00Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260919T133903Z-slooyb",
+    "run_id": "20260919T153326Z-fzpnak",
     "reviews": [
       {
-        "run_id": "20260919T133903Z-slooyb",
+        "run_id": "20260919T153326Z-fzpnak",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-19",
-        "file": "reviews/20260919T133903Z-slooyb/ours-pron.json",
-        "ok": 24,
-        "issues": 1,
+        "file": "reviews/20260919T153326Z-fzpnak/theirs-pron.json",
+        "ok": 25,
+        "issues": 0,
         "blocking": 0
       },
       {
-        "run_id": "20260919T133903Z-slooyb",
+        "run_id": "20260919T153326Z-fzpnak",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-19",
-        "file": "reviews/20260919T133903Z-slooyb/ours-pron.json",
+        "file": "reviews/20260919T153326Z-fzpnak/theirs-pron.json",
         "ok": 25,
         "issues": 0,
         "blocking": 0
       }
     ],
     "status": "reviewed",
-    "flags": [
-      "pronunciation-disputed"
-    ],
-    "notes": "pronunciation.american: the model panel mostly voted for a fuller two-syllable form; settled in favor of the drafter's one-syllable transcription, which CMU agrees with."
+    "flags": [],
+    "notes": null
   }
 }

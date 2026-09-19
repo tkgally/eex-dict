@@ -1,27 +1,27 @@
 {
   "schema_version": "1.0",
-  "id": "anybody-pron",
-  "slug": "anybody-pron",
-  "headword": "anybody",
+  "id": "this-pron",
+  "slug": "this-pron",
+  "headword": "this",
   "pos": "pron",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈɛn.iˌbɑd.i",
+      "ipa": "ðɪs",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:2/4;cmudict:disagree",
+      "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈen.iˌbɒd.i",
+      "ipa": "ðɪs",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "The strongest stress is on the first part, with lighter stress on **bod**: *EN-ee-bah-dee*."
+    "notes": null
   },
   "inflections": {
     "forms": {},
@@ -46,9 +46,9 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "any person",
-      "definition": "any person at all",
-      "explanation": "**Anybody** is used mainly in questions, negative sentences, and conditions: *is anybody home?* It is also used in an ordinary positive statement when it means it does not matter who: *anybody can learn to cook*.",
+      "signpost": null,
+      "definition": "a person or thing that is here, near the speaker, or being talked about right now",
+      "explanation": "**This** stands alone for someone or something nearby or already part of the conversation, and contrasts with **that**, which points to something farther away. Directly before a noun, **this** is a determiner, a separate entry. **This** is also used to introduce a person: *this is my friend Sam*.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -65,22 +65,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Is anybody home?",
+          "text": "This is my favorite book.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "I didn't see anybody at the park.",
+          "text": "Can you believe this?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "If anybody calls, tell them I'm out.",
+          "text": "This is Ana; she just moved here.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Anybody can join the club for free.",
+          "text": "I've never seen anything like this.",
           "note": null,
           "pattern": null
         }
@@ -89,21 +89,23 @@
         {
           "type": "phrase",
           "items": [
-            "anybody else",
-            "hardly anybody"
+            "like this"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "anyone-pron",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [
         {
-          "slug": "somebody-pron",
+          "slug": "that-pron",
+          "note": "**that** points to something farther away or already mentioned"
+        },
+        {
+          "slug": "this-det",
+          "note": "**this** directly before a noun: *this book*, compared with the pronoun use standing alone: *this is mine*"
+        },
+        {
+          "slug": "these-pron",
           "note": null
         }
       ],
@@ -119,56 +121,59 @@
     }
   ],
   "phrases": [],
-  "word_family": [
-    {
-      "slug": "any-det",
-      "form": null,
-      "note": null
-    }
-  ],
+  "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": "**Anybody** and **anyone** mean the same thing and can normally be used in place of each other; **anybody** is slightly more conversational.",
+  "usage_note": "Directly before a noun, **this** is a determiner, a separate entry: **[[this-det|this]]** *book*. Standing alone, without a following noun, it is this pronoun: *this is mine*.",
   "learner_errors": [
     {
-      "incorrect": "I didn't see somebody.",
-      "correct": "I didn't see anybody.",
-      "note": "After a negative, **anybody** is used, not **somebody**."
+      "incorrect": "This are my friends.",
+      "correct": "These are my friends.",
+      "note": "For more than one person or thing, use the plural **these**, not **this**."
     }
   ],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "this-det",
+      "note": "**this** directly before a noun: *this book*"
+    },
+    {
+      "slug": "these-pron",
+      "note": "the plural of **this**"
+    }
+  ],
   "adaptation": {
-    "semantic": "**Anybody** covers both 'no particular person' in questions and negatives, and 'it doesn't matter who' in positive statements; some languages use different words for these two ideas.",
-    "grammar": "**Anybody** usually shifts in from **somebody** when a sentence becomes a question or a negative (*Somebody called* becomes *Did anybody call?*), but **somebody** is kept in a question when the speaker has a particular person in mind: *Did somebody call while I was out?*",
+    "semantic": null,
+    "grammar": "The plural of **this** is a separate word, **these**, not a form made by adding an ending to **this** itself.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-19T03:38:54Z",
-    "modified": "2026-09-19T15:51:58Z",
+    "created": "2026-09-19T15:39:00Z",
+    "modified": "2026-09-19T16:10:00Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260919T033309Z-kxdv7t",
+    "run_id": "20260919T153326Z-fzpnak",
     "reviews": [
       {
-        "run_id": "20260919T033309Z-kxdv7t",
+        "run_id": "20260919T153326Z-fzpnak",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-19",
-        "file": "reviews/20260919T033309Z-kxdv7t/anybody-pron.json",
-        "ok": 21,
-        "issues": 4,
-        "blocking": 3
+        "file": "reviews/20260919T153326Z-fzpnak/this-pron.json",
+        "ok": 23,
+        "issues": 2,
+        "blocking": 2
       },
       {
-        "run_id": "20260919T033309Z-kxdv7t",
+        "run_id": "20260919T153326Z-fzpnak",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-19",
-        "file": "reviews/20260919T033309Z-kxdv7t/anybody-pron.json",
-        "ok": 24,
-        "issues": 1,
+        "file": "reviews/20260919T153326Z-fzpnak/this-pron.json",
+        "ok": 25,
+        "issues": 0,
         "blocking": 0
       }
     ],
