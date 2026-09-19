@@ -44,3 +44,7 @@ All five are still under 30 percent over twenty or more decisions, so all five a
 ## What the next lint run should do
 
 Re-measure after each review run and append to the table above; if a switched-off pair's issues (visible only by temporarily re-enabling it, or by the reviewer's raw `verdicts` before normalization) look to have improved, that is a judgment call for a future lint run, not an automatic re-enable — this project runs no A/B test on live entries to find out. Watch `reviewer-a` `etymology` and `sense-structure`'s neighbor `definition-style` (0.60, 47) as they approach or cross the threshold at higher counts.
+
+## 2026-09-19: second lint pass, no new switch-offs
+
+The five disabled pairs' counts are unchanged (they stop generating decisions once downgraded to `ok`), so the seed-set figures above still hold for them. Over the fields still live, none crossed under 30 percent at twenty or more decisions: `reviewer-a` `definition-style` grew to 0.65 (55, up from 0.60/47 — moving away from the threshold, not toward it); `pronunciation` sits at 0.37 (41); `reviewer-b` `definition-style` is 0.58 (31). `reviewer-a`'s overall precision is now 0.57 (512/892); `reviewer-b`'s is 0.49 (137/280), up from 0.37/222 — too few added decisions yet to revisit open question 2. Nothing actionable this run; keep watching `definition-style` (both roles) and `reviewer-a` `pronunciation` as they accumulate.

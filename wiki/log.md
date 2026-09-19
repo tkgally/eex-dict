@@ -2,6 +2,14 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-19] lint | Second lint pass: mechanical checks clean, stale curator lines resolved
+
+Ninth scheduled run, forced (five runs since last lint). Pre-flight clean: no open pull request, no orphan branches (`list_branches` shows only `main` remotely), inbox empty. Caps and links green. `crossref.py --all --apply`: 723 missing targets, all expected closure-queue gaps; back-filled 6 entries' `word_family` with mirrored back-links (the *anybody/anyone/anything/everybody/everyone/everything*-pron set). `lint_vocab.py --all --queue`: 0 violations. `claim.py --prune` removed 2 stale claim files.
+
+`metrics.py --precision`: no family newly crosses under 30 percent at twenty-plus decisions; the five already switched off stay off. `reviewer-a` overall now 0.57 (892 decisions), `reviewer-b` 0.49 (280, up from 0.37/222) — question 2 stays "keep". Watching `definition-style` (both roles) and `reviewer-a` `pronunciation`. Recorded in [reviewer-precision](notes/reviewer-precision.md).
+
+Wiki check: index matches pages on disk both ways; log has no gaps; open questions has no stale items. `reviews/needs_curator.txt`: four prune-branch lines for branches confirmed already gone from the remote — moved to Resolved; the one open pronunciation question unchanged. Gate, caps, links, unit tests, lint_vocab and crossref gates all pass. Spend: US$0.
+
 ## [2026-09-19] review | Ten markup-pending entries re-reviewed and marked up
 
 Eighth scheduled run, review chosen by scheduler debt (no drafts existed). Pre-flight clean: no open pull request, no orphan branches, inbox empty. Of 33 `markup-pending` entries (all also due a second panel round), took the 10 with fewest senses for a thorough pass in one run: `alone-adj`, `quickly-adv`, `sorry-adj`, `borrow-v`, `lend-v`, `speak-v`, `happy-adj`, `tell-v`, `talk-v`, `say-v`. Panel plus adjudication on each (86 decisions: 68 applied, 18 rejected), then hand-added the inline marks of style guide section 6 field by field and cleared the flag. Real catches: `alone-adj` sense 1 used adverbial examples (*lives alone*) as adjective ones, contradicting its own usage note; `quickly-adv` sense 2 was defined like *soon* (a point in time) instead of a duration; `say-v`'s parenthetical *say, six o'clock* use didn't fit "suppose" and became its own subsense; several entries had discrimination or adaptation claims true only "usually," not "never/only" (hedged per style rule). One tooling problem: `review_panel.py` silently recorded an empty, zero-verdict reviewer-b pass for `talk-v` on a truncated reply; re-run gave a normal review. Logged in new page `wiki/notes/review-panel-parse-failures.md`, no fix made. Gate, caps, links, 292 tests, lint_vocab and crossref gates pass. Spend: US$0.61.
