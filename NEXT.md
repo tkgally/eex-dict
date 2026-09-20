@@ -1,25 +1,23 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-20 by the nineteenth scheduled Routine run (lint mode).*
+*Rewritten 2026-09-20 by the twentieth scheduled Routine run (review mode).*
 
 ## State
 
 - 199 entries, all `reviewed` (0 `draft`). Queue: 4,124 pending, 199 done, 407 closure-gap, 4 duplicate, 1 declined.
-- Lint mode (selector: forced, 5 runs since the last lint). Pre-flight clean: no open pull request, no orphan branch, inbox empty (checkout already at `origin/main`).
-- Mechanical checks: `check_caps`, `check_links` clean; `crossref --all --apply` updated 6 entries (`except-prep, for-prep, none-pron, nothing-pron, pick-up-phrv, you-pron`) with missing back-links, 0 errors, 728 missing targets (expected closure-queue gaps); `lint_vocab --all --queue` 0 violations; `claim.py --prune` removed 3 stale claim files.
-- `metrics.py --precision`: the five families switched off 2026-09-19 stayed at their seed-set figures (mechanism confirmed working again); nothing newly crossed 30 percent at twenty-plus decisions. `reviewer-a` overall now 0.62 (665/1064), `reviewer-b` 0.58 (211/363), both up. Recorded in `wiki/notes/reviewer-precision.md`.
-- Wiki check: `index.md` matches the filesystem both ways; `log.md` has no gaps; `open-questions.md` and `needs_curator.txt` unchanged, no duplicates or staleness found.
-- Fixed the two remaining logged tooling gaps: `review_panel.py --decide` now takes `--index N` to disambiguate a quote nested inside another quote on the same field/role (`wiki/notes/review-panel-decide-substring-collision.md`); `pronounce_check.py` now clears a stale `pronunciation-disputed` flag once every checked variety re-verifies (`wiki/notes/pronounce-check-stale-flag.md`). Eight new tests, 305 passing (was 297).
-- No new entries; not this mode's unit. Spend: US$0 this run, US$1.26 today.
+- Review mode (selector: highest scheduler debt; no draft entries existed). Pre-flight clean: no open pull request, no orphan branch, inbox empty, checkout already at `origin/main`.
+- The unit: all 15 remaining `markup-pending` entries, the last of the 2026-09-18 inline-markup backlog — `house-n`, `shit-n`, `bank-n`, `color-n`, `water-n`, `good-adj`, `thing-n`, `make-v`, `see-v`, `head-n`, `go-v`, `get-v`, `way-n`, `time-n`, `take-v`. No panel round needed (all already fully reviewed); hand markup only, field by field, against `wiki/style-guide.md` section 6 and the model entries. No wording changed. `markup-pending` now flags zero entries — the backlog opened 2026-09-18 is closed.
+- One pre-existing, unrelated warning surfaced: `time-n` phrases[17] (`kill-time`)'s second example ("an hour to kill") doesn't literally contain "time" or a listed form, so `validate.py` flags it (not a markup issue, a content one; left for a future review run to judge whether it needs a hand mark or a different example).
+- Gate, caps, links, 305 tests, `lint_vocab` (0 violations, only pre-existing out-of-vocabulary warnings) and `crossref` (0 errors, 728 expected closure-queue gaps) all pass. No new entries this run; not this mode's unit. Spend: US$0 this run, US$1.26 today.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **review (markup-pending)**: still 15 entries, unchanged — smallest first: `house-n`, `shit-n`, `bank-n`, `color-n`, `water-n`, `good-adj`, `thing-n`, `make-v`, `see-v`, `head-n`, `go-v`, `get-v`, `way-n`, `time-n`, `take-v`. Hand markup only, no panel round.
+1. **review**: no `draft` entries and no `markup-pending` entries remain. Next review unit is a second panel round on `reviewed` entries that have had only one (173 as of the last count) — pick the block by `params.block_size` when review is next selected.
 2. **build**: 7 prepositions ready to claim — `as-well-as-prep`, `below-prep`, `beside-prep`, `beyond-prep`, `despite-prep`, `including-prep`, `inside-prep`.
 3. **closure**: cross-reference/family targets with no entry (407+, growing, incl. `in-front-of-prep`, `until-prep`, `since-prep`, `on-prep`, `up-prep`, `besides-prep`, `whatever-pron`, `one-pron`, `yourselves-pron`, `as-conj`, `before-conj`, `other-det`, `what-det`).
-4. Next **lint** due in about 5 runs (~run 24).
+4. Next **lint** due in about 4 runs (~run 24).
 5. Next **originality** check due around run 30 (forced: multiples of 10).
-6. No small tooling fixes remain open; watch `reviewer-a` `pronunciation` (0.36, 47) and `label` (0.55, 51) as precision candidates approaching or receding from the 30-percent line.
+6. No small tooling fixes remain open; watch `reviewer-a` `pronunciation` (0.36, 47) and `label` (0.55, 51) as precision candidates approaching or receding from the 30-percent line (unchanged since the last lint pass).
 
 ## Fences (do not re-grind)
 
@@ -32,7 +30,7 @@
 - `about`/`around` before a number, amount, or time ("about ten dollars") is an adverb sense, not a preposition sense; keep preposition entries free of it.
 - Prepositions have adverbial/predicative look-alikes ("fell behind", "close by", "behind on rent") that take no direct object; keep those out of the preposition entry (queue a separate adverb entry instead).
 - Watch for a preposition's own headword slipping unmarked into its own definition; a second look at every definition catches this that `lint_vocab.py`'s defining-vocabulary check does not.
-- Inline markup rules from 2026-09-18 stand as documented in the style guide section 6.
+- Inline markup rules from 2026-09-18 stand as documented in the style guide section 6. The backlog they created is now fully converted; any new or rewritten entry gets marks at drafting time, not as a later pass.
 - Don't call *whom* or restrictive *which* (no comma) "strictly correct" or "required"; American English treats *who*/*that* as standard, *whom*/restrictive-*which* as the more formal alternative.
 
 ## For the owner
