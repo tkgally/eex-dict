@@ -1,15 +1,15 @@
 {
   "run_id": "20260920T183304Z-iruckz",
-  "slug": "as-well-as-prep",
-  "entry_modified": "2026-09-20T18:42:54Z",
+  "slug": "outside-prep",
+  "entry_modified": "2026-09-20T18:41:04Z",
   "reviewers": [
     {
       "role": "reviewer-a",
       "model": "openai/gpt-5.6-terra",
-      "requested_at": "2026-09-20T18:47:14Z",
-      "cost_usd": 0.01136,
-      "tokens_in": 2591,
-      "tokens_out": 903,
+      "requested_at": "2026-09-20T18:45:51Z",
+      "cost_usd": 0.018384,
+      "tokens_in": 2822,
+      "tokens_out": 1178,
       "verdicts": [
         {
           "field": "headword_and_pos",
@@ -85,11 +85,11 @@
         },
         {
           "field": "senses[0].explanation",
-          "verdict": "issue",
-          "quote": "**As well as** joins two things of the same kind: two nouns, two -ing forms, or two clauses.",
-          "severity": "blocking",
-          "family": "explanation",
-          "reason": "This inaccurately says the preposition can join two clauses; it normally takes a noun phrase or an -ing clause, while finite-clause coordination is a different construction."
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
         },
         {
           "field": "senses[0].grammar",
@@ -140,6 +140,78 @@
           "reason": null
         },
         {
+          "field": "senses[1].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].collocations",
+          "verdict": "issue",
+          "quote": "outside my expertise",
+          "severity": "blocking",
+          "family": "collocation",
+          "reason": "This is not a typical idiomatic collocation; use “outside my area of expertise” or “outside my expertise” only in a fuller contextual phrase if supported by natural usage."
+        },
+        {
+          "field": "senses[1].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
           "field": "word_family",
           "verdict": "ok",
           "quote": null,
@@ -157,19 +229,27 @@
         },
         {
           "field": "usage_note",
-          "verdict": "issue",
-          "quote": "**As well as** is also used to link two clauses, and there the second one keeps its own subject and verb: *she cooks well, as well as being tidy*.",
-          "severity": "blocking",
-          "family": "usage-note",
-          "reason": "The statement is inaccurate, and its example does not contain two clauses with separate subjects and finite verbs; *being tidy* is an -ing clause."
-        },
-        {
-          "field": "learner_errors",
           "verdict": "ok",
           "quote": null,
           "severity": null,
           "family": null,
           "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "issue",
+          "quote": "The car is outside of the garage.",
+          "severity": "blocking",
+          "family": "learner-error",
+          "reason": "“Outside of” is a standard and grammatical variant in American English, not a learner error; the correction wrongly presents an acceptable form as incorrect."
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "issue",
+          "quote": "**Outside** already includes the meaning of **of**; **outside of** is heard in casual American speech but is not needed.",
+          "severity": "blocking",
+          "family": "usage-note",
+          "reason": "This misleadingly restricts grammatical American English “outside of” to casual speech and implies that it is incorrect or unnecessary."
         },
         {
           "field": "etymology",
@@ -205,23 +285,23 @@
         },
         {
           "field": "consistency",
-          "verdict": "issue",
-          "quote": "two clauses / **As well as** is also used to link two clauses",
-          "severity": "blocking",
-          "family": "other",
-          "reason": "The explanation and usage note repeat the same incorrect analysis of finite-clause use."
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
         }
       ],
-      "summary": "The entry is generally sound, with natural examples and correct core grammar. The explanation and usage note incorrectly characterize the construction as linking two finite clauses and need revision.",
+      "summary": "The entry is generally accurate and well structured. Revise the non-idiomatic collocation and remove the learner-error treatment of standard American English “outside of.”",
       "error": null
     },
     {
       "role": "reviewer-b",
       "model": "google/gemini-3.8-flash",
-      "requested_at": "2026-09-20T18:47:21Z",
-      "cost_usd": 0.006169,
-      "tokens_in": 2731,
-      "tokens_out": 1099,
+      "requested_at": "2026-09-20T18:45:59Z",
+      "cost_usd": 0.009281,
+      "tokens_in": 2999,
+      "tokens_out": 1875,
       "verdicts": [
         {
           "field": "headword_and_pos",
@@ -352,6 +432,78 @@
           "reason": null
         },
         {
+          "field": "senses[1].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
           "field": "word_family",
           "verdict": "ok",
           "quote": null,
@@ -369,11 +521,11 @@
         },
         {
           "field": "usage_note",
-          "verdict": "issue",
-          "quote": "**As well as** is also used to link two clauses, and there the second one keeps its own subject and verb: *she cooks well, as well as being tidy*.",
-          "severity": "minor",
-          "family": "usage-note",
-          "reason": "The example '*she cooks well, as well as being tidy*' contains a participle phrase rather than a clause with its own subject and finite verb."
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
         },
         {
           "field": "learner_errors",
@@ -424,7 +576,7 @@
           "reason": null
         }
       ],
-      "summary": "The entry is sound, accurate, and well-tailored to intermediate learners. The only issue is a minor mismatch in the usage note where the example given for linking clauses with a separate subject and verb actually features an -ing participle phrase.",
+      "summary": "The entry is lexicographically sound and fully complies with all house rules. Definitions, examples, collocations, pronunciations, and learner notes are well formed and accurate.",
       "error": null
     }
   ]
