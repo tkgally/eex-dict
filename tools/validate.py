@@ -404,6 +404,22 @@ def count_blocking(review_file):
     return n
 
 
+def hollow_reviewer_error(review_file, role):
+    """The stored error for `role`'s record in review_file, only when that record also
+    logged zero verdicts (a reviewer call that failed and never actually checked the
+    entry, as opposed to one that genuinely found nothing to flag). None otherwise, or
+    if the file cannot be read. See wiki/notes/review-panel-parse-failures.md."""
+    try:
+        data = eexlib.load_json(review_file)
+    except (OSError, ValueError):
+        return None
+    for reviewer in L(D(data).get("reviewers")):
+        r = D(reviewer)
+        if r.get("role") == role and r.get("error") and not L(r.get("verdicts")):
+            return str(r.get("error"))
+    return None
+
+
 def check_provenance(ctx, rel, e):
     err = ctx.report.error
     prov = D(e.get("provenance"))
@@ -438,6 +454,11 @@ def check_provenance(ctx, rel, e):
         blocking = count_blocking(review_path)
         if blocking is None:
             err(rel, "provenance.reviews[%d].file %r cannot be read as JSON" % (i, file))
+            continue
+        hollow = hollow_reviewer_error(review_path, rec.get("role"))
+        if hollow is not None:
+            err(rel, "provenance.reviews[%d]: role %r logged 0 verdicts after an error (%s); re-run review_panel.py for this role"
+                % (i, rec.get("role"), hollow[:120]))
             continue
         decided = ctx.decisions.get((e.get("slug"), rec.get("run_id")), 0)
         if decided < blocking:

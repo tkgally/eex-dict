@@ -553,18 +553,28 @@ def check_entry(lem, entry):
 # Queue, changed files, report
 # --------------------------------------------------------------------------
 
+# Suffixes that mark a base-form adjective with no comparative/superlative in play
+# (additional, former, sole, active, curious, silent, ...). Checked before the noun
+# default so pos_guess does not misclassify these; not exhaustive, only a stronger
+# signal than the bare default. See wiki/notes/lint-vocab-pos-guess-gap.md.
+ADJ_SUFFIXES = ("al", "ive", "ous", "ent", "ant", "ic", "ful", "less", "able", "ible")
+
+
 def pos_guess(lem, lemma, kind):
-    """``v`` for a lemma reached from a verb form, ``adj`` from a comparative or superlative,
-    ``adv`` for a -ly adverb whose base is a lemma, else ``n``."""
+    """``v`` for a lemma reached from a verb form, ``adj`` from a comparative, superlative,
+    or a recognized adjective suffix, ``adv`` for a -ly adverb whose base is a lemma, else
+    ``n`` (unmarked as a guess: no morphological signal favored any other part of speech)."""
     if kind in VERB_KINDS:
-        return "v"
+        return "v", False
     if kind in ADJ_KINDS:
-        return "adj"
+        return "adj", False
     stem = lemma[:-2]
     if lemma.endswith("ly") and len(lemma) > 4 and any(
             lem.is_lemma(c) for c in (stem, stem + "e", stem[:-1] + "y", stem + "le", stem[:-2])):
-        return "adv"
-    return "n"
+        return "adv", False
+    if any(lemma.endswith(suf) and len(lemma) > len(suf) + 2 for suf in ADJ_SUFFIXES):
+        return "adj", False
+    return "n", True
 
 
 def queue_lemmas(lem, results, root):
@@ -575,8 +585,9 @@ def queue_lemmas(lem, results, root):
             lemma = item["lemma"].strip("-")
             if len(lemma) < 2 or lemma in lem.known:
                 continue
-            pos = pos_guess(lem, lemma, item["kind"])
-            row = rows.setdefault((lemma, pos), {"note": "used in %s %s" % (res["slug"], item["field"]), "more": set()})
+            pos, guessed = pos_guess(lem, lemma, item["kind"])
+            row = rows.setdefault((lemma, pos), {"note": "used in %s %s" % (res["slug"], item["field"]),
+                                                  "more": set(), "guessed": guessed})
             row["more"].add(res["slug"])
     if not rows:
         return 0
@@ -586,6 +597,8 @@ def queue_lemmas(lem, results, root):
         for (lemma, pos), row in sorted(rows.items()):
             others = len(row["more"]) - 1
             note = row["note"] + ("; also in %d other entr%s" % (others, "y" if others == 1 else "ies") if others else "")
+            if row["guessed"]:
+                note += "; pos guessed (no morphological signal), check before claiming"
             fh.write("%s\t%s\t3\tclosure\t%s\n" % (lemma, pos, note))
     try:
         script = Path(root) / "tools" / "queue.py"

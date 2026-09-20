@@ -147,6 +147,23 @@ class ValidateTests(unittest.TestCase):
         (self.repo.dir / "reviews" / "decisions.jsonl").write_text(json.dumps(decision) + "\n", encoding="utf-8")
         self.assertPasses()
 
+    def test_reviewed_rejects_hollow_reviewer_record(self):
+        # a role whose reply failed and logged zero verdicts must not silently satisfy
+        # the "two distinct roles" gate as if it had reviewed the entry (wiki/notes/review-panel-parse-failures.md)
+        e = self.repo.entry()
+        e["provenance"]["status"] = "reviewed"
+        e["provenance"]["flags"] = ["pronunciation-unverified"]
+        e["provenance"]["reviews"] = self.reviews()
+        self.repo.write(e)
+        write_json(self.repo.dir / "reviews" / "run1" / "bank-n.json",
+                   {"run_id": "run1", "slug": "bank-n", "entry_modified": "2026-09-16T12:00:00Z",
+                    "reviewers": [{"role": "reviewer-a", "verdicts": []}, {"role": "reviewer-b", "verdicts": [],
+                                   "error": "no verdicts list in the reply"}]})
+        self.assertFails("logged 0 verdicts after an error")
+        # a role that genuinely found nothing to flag (no error) still passes
+        self.write_review_file(blocking=0)
+        self.assertPasses()
+
     def reviews(self):
         return [{"run_id": "run1", "role": role, "model": "reviewer", "date": "2026-09-16",
                  "file": "reviews/run1/bank-n.json", "ok": 10, "issues": 0, "blocking": 0}

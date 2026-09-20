@@ -194,17 +194,21 @@ class CommandTests(TempRepo):
         self.assertEqual(rows[0], ["headword", "pos", "band", "source", "status", "added", "note"])
         by_word = {r[0]: r for r in rows[1:]}
         self.assertEqual(by_word["sandy"][1:5], ["n", "3", "closure", "pending"])
-        self.assertEqual(by_word["sandy"][6], "used in shore-n senses[0].definition")
-        self.assertEqual(by_word["liquid"][6], "used in water-n senses[0].definition")
+        self.assertEqual(by_word["sandy"][6], "used in shore-n senses[0].definition; pos guessed (no morphological signal), check before claiming")
+        self.assertEqual(by_word["liquid"][6], "used in water-n senses[0].definition; pos guessed (no morphological signal), check before claiming")
         quiet_main(["--root", str(self.root), "--queue", "shore-n"])     # a second run adds no duplicate
         self.assertEqual(len(queue.read_text(encoding="utf-8").splitlines()), 3)
 
     def test_pos_guess(self):
         lem = lint_vocab.Lemmatizer(root=self.root)
-        self.assertEqual(lint_vocab.pos_guess(lem, "wove", "past_tense"), "v")
-        self.assertEqual(lint_vocab.pos_guess(lem, "safely", None), "adv")
-        self.assertEqual(lint_vocab.pos_guess(lem, "family", None), "n")
-        self.assertEqual(lint_vocab.pos_guess(lem, "worse", "comparative"), "adj")
+        self.assertEqual(lint_vocab.pos_guess(lem, "wove", "past_tense"), ("v", False))
+        self.assertEqual(lint_vocab.pos_guess(lem, "safely", None), ("adv", False))
+        self.assertEqual(lint_vocab.pos_guess(lem, "worse", "comparative"), ("adj", False))
+        # a genuine unguessed noun: no verb/adjective/adverb signal
+        self.assertEqual(lint_vocab.pos_guess(lem, "family", None), ("n", True))
+        # a base-form adjective caught by its suffix rather than falling through to noun
+        self.assertEqual(lint_vocab.pos_guess(lem, "additional", None), ("adj", False))
+        self.assertEqual(lint_vocab.pos_guess(lem, "curious", None), ("adj", False))
 
     def test_json(self):
         code, out = quiet_main(["--root", str(self.root), "--json", "--all"])
