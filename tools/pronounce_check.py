@@ -226,6 +226,14 @@ def verdict(drafter: str, votes: dict[str, str], variety: str, threshold: int = 
     return "unverified", checked_by
 
 
+def update_disputed_flag(flags: list, any_disputed: bool, flag: str = "pronunciation-disputed") -> None:
+    """Keep provenance.flags in sync with the current verdicts: present iff any variety is disputed."""
+    if any_disputed and flag not in flags:
+        flags.append(flag)
+    elif not any_disputed and flag in flags:
+        flags.remove(flag)
+
+
 def cmu_votes(word: str, cmu: dict[str, list[str]] | None, drafter: str) -> str:
     """The CMU transcription used as the vote: the variant that agrees with the drafter if any, else the first."""
     if cmu is None:
@@ -269,6 +277,8 @@ def main() -> int:
     changed = 0
     for p, e in entries:
         key = (e["headword"].lower(), e["pos"])
+        any_disputed = False
+        any_checked = False
         for variety in ("american", "british"):
             tr = e["pronunciation"].get(variety)
             if not tr:
@@ -278,13 +288,14 @@ def main() -> int:
                 votes["cmudict"] = cmu_votes(key[0], cmu, tr["ipa"])
             status, checked_by = verdict(tr["ipa"], votes, variety, a.threshold)
             print(f"{e['slug']:24s} {variety:9s} {tr['ipa']:22s} -> {status:10s} {checked_by}")
+            any_checked = True
+            if status == "disputed":
+                any_disputed = True
             if not a.dry_run:
                 tr["status"], tr["checked_by"] = status, checked_by
-                flag = "pronunciation-disputed"
-                flags = e["provenance"].setdefault("flags", [])
-                if status == "disputed" and flag not in flags:
-                    flags.append(flag)
                 changed += 1
+        if not a.dry_run and any_checked:
+            update_disputed_flag(e["provenance"].setdefault("flags", []), any_disputed)
         if not a.dry_run:
             e["provenance"]["modified"] = eexlib.utcnow_iso()
             eexlib.save_json(p, e)

@@ -7,6 +7,7 @@ reviews/<run-id>/<slug>.json, and record the review in the entry's provenance.
     python3 tools/review_panel.py --report <slug>            # list the open issues from the latest review file
     python3 tools/review_panel.py --decide <slug> --field <field> --role <role> --decision apply|reject|escalate --note "..."
         # add --quote "<text>" when a role raised more than one issue on the same field, to say which one;
+        # add --index N (1-based, printed on ambiguity) when one issue's quote is a substring of another's;
         # omitted with more than one match, the command lists them and logs nothing
 
 Every field in the checklist gets a verdict: ``ok`` or ``issue``; an issue
@@ -261,10 +262,15 @@ def decide(a) -> int:
         if not narrowed:
             print(f"--quote {a.quote!r} matches none of {len(matches)} issue(s) by {a.role} on {a.field} in {f}"); return 1
         matches = narrowed
+    if a.index is not None:
+        if not 1 <= a.index <= len(matches):
+            print(f"--index {a.index} out of range: {len(matches)} issue(s) by {a.role} on {a.field} in {f}"); return 1
+        matches = [matches[a.index - 1]]
     if len(matches) > 1:
-        print(f"{len(matches)} distinct issues by {a.role} on {a.field} in {f}; disambiguate with --quote \"<exact or partial quote>\":")
-        for v in matches:
-            print(f"  severity={v['severity']} family={v['family']} quote={v.get('quote')!r} reason={v.get('reason')!r}")
+        print(f"{len(matches)} distinct issues by {a.role} on {a.field} in {f}; disambiguate with --quote \"<exact or partial quote>\" "
+              "or --index N (one's quote nested in another's needs --index):")
+        for i, v in enumerate(matches, 1):
+            print(f"  [{i}] severity={v['severity']} family={v['family']} quote={v.get('quote')!r} reason={v.get('reason')!r}")
         return 1
     match = matches[0]
     line = {"ts": eexlib.utcnow_iso(), "run_id": rec["run_id"], "slug": a.slug, "field": a.field, "role": a.role,
@@ -287,6 +293,9 @@ def main() -> int:
     ap.add_argument("--note", default="")
     ap.add_argument("--quote", default="", help="disambiguate --decide when a role raised more than one issue on the same field: "
                                                  "an exact or partial match against the issue's quote")
+    ap.add_argument("--index", type=int, default=None,
+                    help="disambiguate --decide by position (1-based) among the matching issues, printed on ambiguity; "
+                         "for the rare case where one issue's --quote is a substring of another's")
     a = ap.parse_args()
     if a.report:
         f = latest_review_file(a.report)

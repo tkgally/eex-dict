@@ -78,7 +78,7 @@ class TestDecideCollisions(unittest.TestCase):
 
     def decide(self, **kw):
         defaults = {"slug": "they-pron", "field": "adaptation", "role": "reviewer-a", "decision": "apply",
-                    "note": "n", "quote": ""}
+                    "note": "n", "quote": "", "index": None}
         defaults.update(kw)
         return review_panel.decide(argparse.Namespace(**defaults))
 
@@ -105,6 +105,58 @@ class TestDecideCollisions(unittest.TestCase):
         eexlib.save_json(self.root / "reviews" / "run1" / "they-pron.json", rec)
         code = self.decide()
         self.assertEqual(code, 0)
+
+    def test_index_disambiguates_by_position(self):
+        code = self.decide(index=2)
+        self.assertEqual(code, 0)
+        logged = json.loads(self.decisions_path.read_text(encoding="utf-8").strip())
+        self.assertEqual(logged["severity"], "minor")
+
+    def test_index_out_of_range_logs_nothing(self):
+        code = self.decide(index=3)
+        self.assertEqual(code, 1)
+        self.assertFalse(self.decisions_path.exists())
+
+
+class TestDecideSubstringCollision(unittest.TestCase):
+    """wiki/notes/review-panel-decide-substring-collision.md: --quote alone cannot separate an
+    issue quoting a whole sentence from one quoting just its tail, since the tail is a substring
+    of the full quote either way; --index breaks the tie by position."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory(prefix="eex-review-panel-")
+        self.addCleanup(self.tmp.cleanup)
+        self.root = Path(self.tmp.name)
+        self.old_root = eexlib.ROOT
+        eexlib.set_root(self.root)
+        self.addCleanup(eexlib.set_root, self.old_root)
+        rec = {"run_id": "run1", "slug": "pick-up-phrv", "entry_modified": "2026-09-20T00:00:00Z",
+               "reviewers": [{"role": "reviewer-a", "verdicts": [
+                   {"field": "core_idea", "verdict": "issue", "severity": "blocking", "family": "sense-structure",
+                    "reason": "two ideas", "quote": "To pick up is to lift something and starting something."},
+                   {"field": "core_idea", "verdict": "issue", "severity": "minor", "family": "definition-style",
+                    "reason": "tense mismatch", "quote": "starting something"},
+               ]}]}
+        eexlib.save_json(self.root / "reviews" / "run1" / "pick-up-phrv.json", rec)
+        self.decisions_path = self.root / "reviews" / "decisions.jsonl"
+
+    def decide(self, **kw):
+        defaults = {"slug": "pick-up-phrv", "field": "core_idea", "role": "reviewer-a", "decision": "apply",
+                    "note": "n", "quote": "", "index": None}
+        defaults.update(kw)
+        return review_panel.decide(argparse.Namespace(**defaults))
+
+    def test_quote_alone_still_ambiguous(self):
+        code = self.decide(quote="starting something")
+        self.assertEqual(code, 1)
+        self.assertFalse(self.decisions_path.exists())
+
+    def test_index_resolves_it(self):
+        code = self.decide(quote="starting something", index=2)
+        self.assertEqual(code, 0)
+        logged = json.loads(self.decisions_path.read_text(encoding="utf-8").strip())
+        self.assertEqual(logged["family"], "definition-style")
+        self.assertEqual(logged["severity"], "minor")
 
 
 if __name__ == "__main__":

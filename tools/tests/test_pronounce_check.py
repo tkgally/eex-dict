@@ -45,5 +45,30 @@ class VerdictTests(unittest.TestCase):
         self.assertEqual(v, "unverified")
 
 
+class DisputedFlagTests(unittest.TestCase):
+    def test_adds_flag_when_disputed(self):
+        flags = []
+        pc.update_disputed_flag(flags, True)
+        self.assertEqual(flags, ["pronunciation-disputed"])
+
+    def test_removes_flag_once_reverified(self):
+        flags = ["pronunciation-disputed"]
+        pc.update_disputed_flag(flags, False)
+        self.assertEqual(flags, [])
+
+    def test_leaves_other_flags_untouched(self):
+        flags = ["markup-pending", "pronunciation-disputed"]
+        pc.update_disputed_flag(flags, False)
+        self.assertEqual(flags, ["markup-pending"])
+
+    def test_idempotent(self):
+        flags = ["pronunciation-disputed"]
+        pc.update_disputed_flag(flags, True)
+        self.assertEqual(flags, ["pronunciation-disputed"])
+        flags = []
+        pc.update_disputed_flag(flags, False)
+        self.assertEqual(flags, [])
+
+
 if __name__ == "__main__":
     unittest.main()
