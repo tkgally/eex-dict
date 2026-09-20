@@ -6,6 +6,8 @@ reviews/<run-id>/<slug>.json, and record the review in the entry's provenance.
     python3 tools/review_panel.py <slug> [<slug> ...] [--roles reviewer-a,reviewer-b] [--dry-run]
     python3 tools/review_panel.py --report <slug>            # list the open issues from the latest review file
     python3 tools/review_panel.py --decide <slug> --field <field> --role <role> --decision apply|reject|escalate --note "..."
+        # add --quote "<text>" when a role raised more than one issue on the same field, to say which one;
+        # omitted with more than one match, the command lists them and logs nothing
 
 Every field in the checklist gets a verdict: ``ok`` or ``issue``; an issue
 carries the exact text objected to, a severity (``blocking`` or ``minor``), a
@@ -245,15 +247,26 @@ def decide(a) -> int:
     if f is None:
         print(f"no review file for {a.slug}"); return 1
     rec = eexlib.load_json(f)
-    match = None
+    matches = []
     for rev in rec["reviewers"]:
         if rev["role"] != a.role:
             continue
         for v in rev["verdicts"]:
             if v["verdict"] == "issue" and v["field"] == a.field:
-                match = v
-    if match is None:
+                matches.append(v)
+    if not matches:
         print(f"no issue by {a.role} on {a.field} in {f}"); return 1
+    if a.quote:
+        narrowed = [v for v in matches if a.quote in (v.get("quote") or "")]
+        if not narrowed:
+            print(f"--quote {a.quote!r} matches none of {len(matches)} issue(s) by {a.role} on {a.field} in {f}"); return 1
+        matches = narrowed
+    if len(matches) > 1:
+        print(f"{len(matches)} distinct issues by {a.role} on {a.field} in {f}; disambiguate with --quote \"<exact or partial quote>\":")
+        for v in matches:
+            print(f"  severity={v['severity']} family={v['family']} quote={v.get('quote')!r} reason={v.get('reason')!r}")
+        return 1
+    match = matches[0]
     line = {"ts": eexlib.utcnow_iso(), "run_id": rec["run_id"], "slug": a.slug, "field": a.field, "role": a.role,
             "family": match["family"], "severity": match["severity"], "decision": a.decision, "note": a.note}
     with (eexlib.ROOT / "reviews" / "decisions.jsonl").open("a", encoding="utf-8") as fh:
@@ -272,6 +285,8 @@ def main() -> int:
     ap.add_argument("--decide", metavar="SLUG", dest="slug")
     ap.add_argument("--field"); ap.add_argument("--role"); ap.add_argument("--decision", choices=["apply", "reject", "escalate"])
     ap.add_argument("--note", default="")
+    ap.add_argument("--quote", default="", help="disambiguate --decide when a role raised more than one issue on the same field: "
+                                                 "an exact or partial match against the issue's quote")
     a = ap.parse_args()
     if a.report:
         f = latest_review_file(a.report)
