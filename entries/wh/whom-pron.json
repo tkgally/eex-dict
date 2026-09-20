@@ -1,27 +1,27 @@
 {
   "schema_version": "1.0",
-  "id": "something-pron",
-  "slug": "something-pron",
-  "headword": "something",
+  "id": "whom-pron",
+  "slug": "whom-pron",
+  "headword": "whom",
   "pos": "pron",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈsʌmˌθɪŋ",
+      "ipa": "hum",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈsʌmˌθɪŋ",
+      "ipa": "huːm",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "The strongest stress is on the first part: *SUM-thing*."
+    "notes": null
   },
   "inflections": {
     "forms": {},
@@ -36,7 +36,9 @@
     "defining_vocabulary": true
   },
   "labels": {
-    "register": [],
+    "register": [
+      "formal"
+    ],
     "region": [],
     "domain": [],
     "currency": [],
@@ -47,8 +49,8 @@
     {
       "n": 1,
       "signpost": null,
-      "definition": "a thing that is not named or not known, or whose identity does not matter",
-      "explanation": "**Something** is used mainly in positive statements to mean a particular but unnamed thing: *something happened*. In questions and negative sentences, **anything** is usually used instead: *did anything happen?*, not *did something happen?*, unless the speaker has a particular thing in mind.",
+      "definition": "the object form of **who**",
+      "explanation": "**Whom** is used, mainly in formal writing, to ask about or refer to a person as the object of a verb or right after a preposition. Directly after a preposition, it cannot be dropped or replaced with **who**: *the person to whom I spoke*, not *the person to who I spoke*. Elsewhere, as an object relative pronoun, **whom** can often be left out altogether: *the person I spoke to*.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -65,22 +67,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Something smells wonderful in the kitchen.",
+          "text": "Whom did you invite to the wedding?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "I need to tell you something important.",
+          "text": "To whom should I address the letter?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There is something wrong with the printer.",
+          "text": "She is the person whom I most admire.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Let's get something to eat.",
+          "text": "I wasn't sure whom to ask for help.",
           "note": null,
           "pattern": null
         }
@@ -89,8 +91,10 @@
         {
           "type": "phrase",
           "items": [
-            "something else",
-            "or something"
+            "to whom",
+            "for whom",
+            "with whom",
+            "to whom it may concern"
           ]
         }
       ],
@@ -98,14 +102,14 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "anything-pron",
-          "note": "**anything** is used mainly in questions and negatives; **something** is used mainly in positive statements"
+          "slug": "who-pron",
+          "note": "**who** covers both subject and object in everyday speech; **whom** is a more formal object form"
         }
       ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "**Something** usually shifts to **anything** when a sentence becomes a question or a negative (*Something happened* becomes *Did anything happen?*), but **something** is kept when the speaker has a particular thing in mind.",
+        "grammar": "English marks the object form of its person-asking pronoun (**whom**) separately from the subject form (**who**), but only in careful use; many languages either always mark this distinction or never do.",
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -116,34 +120,24 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "some-det",
+      "slug": "who-pron",
       "form": null,
-      "note": null
-    },
-    {
-      "slug": "thing-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "some-pron",
-      "form": null,
-      "note": null
+      "note": "the subject form, and the everyday object form"
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
+  "usage_note": "Everyday speech generally uses **who** for both subject and object; **whom** is kept mainly in formal writing and directly after a preposition (*to whom it may concern*). With the preposition at the end of the clause instead, **who** is standard even in careful writing: *who did you speak to?*",
   "learner_errors": [
     {
-      "incorrect": "Did something go wrong?",
-      "correct": "Did anything go wrong?",
-      "note": "In a question with no particular thing in mind, **anything** is the usual choice, not **something**."
+      "incorrect": "Whom is at the door?",
+      "correct": "Who is at the door?",
+      "note": "**Whom** is never the subject of a verb; use **who** when asking who is doing the action."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "anything-pron",
+      "slug": "who-pron",
       "note": null
     }
   ],
@@ -156,27 +150,27 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-19T15:39:00Z",
-    "modified": "2026-09-20T06:50:22Z",
+    "created": "2026-09-20T06:33:27Z",
+    "modified": "2026-09-20T06:42:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260919T153326Z-fzpnak",
+    "run_id": "20260920T063327Z-1rtv3d",
     "reviews": [
       {
-        "run_id": "20260919T153326Z-fzpnak",
+        "run_id": "20260920T063327Z-1rtv3d",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-19",
-        "file": "reviews/20260919T153326Z-fzpnak/something-pron.json",
-        "ok": 25,
-        "issues": 0,
-        "blocking": 0
+        "date": "2026-09-20",
+        "file": "reviews/20260920T063327Z-1rtv3d/whom-pron.json",
+        "ok": 20,
+        "issues": 5,
+        "blocking": 5
       },
       {
-        "run_id": "20260919T153326Z-fzpnak",
+        "run_id": "20260920T063327Z-1rtv3d",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-19",
-        "file": "reviews/20260919T153326Z-fzpnak/something-pron.json",
+        "date": "2026-09-20",
+        "file": "reviews/20260920T063327Z-1rtv3d/whom-pron.json",
         "ok": 25,
         "issues": 0,
         "blocking": 0

@@ -1,27 +1,33 @@
 {
   "schema_version": "1.0",
-  "id": "something-pron",
-  "slug": "something-pron",
-  "headword": "something",
-  "pos": "pron",
+  "id": "as-prep",
+  "slug": "as-prep",
+  "headword": "as",
+  "pos": "prep",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈsʌmˌθɪŋ",
+      "ipa": "æz",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈsʌmˌθɪŋ",
+      "ipa": "æz",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
-    "variants": [],
+    "variants": [
+      {
+        "ipa": "əz",
+        "region": null,
+        "note": "the weak, unstressed form heard in ordinary speech"
+      }
+    ],
     "audio": null,
-    "notes": "The strongest stress is on the first part: *SUM-thing*."
+    "notes": null
   },
   "inflections": {
     "forms": {},
@@ -46,9 +52,9 @@
   "senses": [
     {
       "n": 1,
-      "signpost": null,
-      "definition": "a thing that is not named or not known, or whose identity does not matter",
-      "explanation": "**Something** is used mainly in positive statements to mean a particular but unnamed thing: *something happened*. In questions and negative sentences, **anything** is usually used instead: *did anything happen?*, not *did something happen?*, unless the speaker has a particular thing in mind.",
+      "signpost": "in a role or state",
+      "definition": "in the position, job, role, or state of someone or something",
+      "explanation": "Often placed at the start of a sentence and followed by a comma, especially to name a stage of life or a role held at a particular time: *As a child, she loved to draw*; *as president, he made several changes*.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -65,32 +71,35 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Something smells wonderful in the kitchen.",
+          "text": "She works as a nurse at the city hospital.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "I need to tell you something important.",
+          "text": "As a child, she loved to draw.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There is something wrong with the printer.",
+          "text": "As president, he made several important changes.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Let's get something to eat.",
+          "text": "Think of it as a favor, not a payment.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + preposition",
           "items": [
-            "something else",
-            "or something"
+            "work as",
+            "serve as",
+            "act as",
+            "know someone as",
+            "use something as"
           ]
         }
       ],
@@ -98,14 +107,14 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "anything-pron",
-          "note": "**anything** is used mainly in questions and negatives; **something** is used mainly in positive statements"
+          "slug": "like-prep",
+          "note": "**as** names someone's actual role or job; **like** only compares to it: *he works as a doctor* (he is one) against *he works like a doctor* (he behaves similarly)"
         }
       ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "**Something** usually shifts to **anything** when a sentence becomes a question or a negative (*Something happened* becomes *Did anything happen?*), but **something** is kept when the speaker has a particular thing in mind.",
+        "grammar": null,
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -114,36 +123,20 @@
     }
   ],
   "phrases": [],
-  "word_family": [
-    {
-      "slug": "some-det",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "thing-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "some-pron",
-      "form": null,
-      "note": null
-    }
-  ],
+  "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": null,
+  "usage_note": "**As** is also a conjunction, joining two clauses (*as I was leaving, the phone rang*), and part of the comparison pattern **as ... as** (*as tall as her brother*); this entry covers only the preposition, used directly before a noun phrase.",
   "learner_errors": [
     {
-      "incorrect": "Did something go wrong?",
-      "correct": "Did anything go wrong?",
-      "note": "In a question with no particular thing in mind, **anything** is the usual choice, not **something**."
+      "incorrect": "He works like a doctor at the clinic.",
+      "correct": "He works as a doctor at the clinic.",
+      "note": "**As** names someone's actual job; **like** only says something resembles it, without being it."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "anything-pron",
+      "slug": "as-conj",
       "note": null
     }
   ],
@@ -156,29 +149,29 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-19T15:39:00Z",
-    "modified": "2026-09-20T06:50:22Z",
+    "created": "2026-09-20T06:33:27Z",
+    "modified": "2026-09-20T06:43:33Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260919T153326Z-fzpnak",
+    "run_id": "20260920T063327Z-1rtv3d",
     "reviews": [
       {
-        "run_id": "20260919T153326Z-fzpnak",
+        "run_id": "20260920T063327Z-1rtv3d",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-19",
-        "file": "reviews/20260919T153326Z-fzpnak/something-pron.json",
-        "ok": 25,
-        "issues": 0,
-        "blocking": 0
+        "date": "2026-09-20",
+        "file": "reviews/20260920T063327Z-1rtv3d/as-prep.json",
+        "ok": 35,
+        "issues": 4,
+        "blocking": 3
       },
       {
-        "run_id": "20260919T153326Z-fzpnak",
+        "run_id": "20260920T063327Z-1rtv3d",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-19",
-        "file": "reviews/20260919T153326Z-fzpnak/something-pron.json",
-        "ok": 25,
-        "issues": 0,
+        "date": "2026-09-20",
+        "file": "reviews/20260920T063327Z-1rtv3d/as-prep.json",
+        "ok": 38,
+        "issues": 1,
         "blocking": 0
       }
     ],
