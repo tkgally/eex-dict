@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "active-adj",
-  "slug": "active-adj",
-  "headword": "active",
-  "pos": "adj",
+  "id": "act-n",
+  "slug": "act-n",
+  "headword": "act",
+  "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈæk.tɪv",
+      "ipa": "ækt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈæk.tɪv",
+      "ipa": "ækt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,13 +25,12 @@
   },
   "inflections": {
     "forms": {
-      "comparative": null,
-      "superlative": null
+      "plural": "acts"
     },
     "regular": true,
     "source": "rules",
     "status": "verified",
-    "note": "comparative with more"
+    "note": null
   },
   "frequency": {
     "band": 1,
@@ -45,19 +44,17 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**Active** describes someone who does a lot of things and moves often, something that is currently working or in use, or, in grammar, a sentence in which the subject performs the action.",
+  "core_idea": "An **act** is something that is done, a law made by a government, or a part of a play or show.",
   "senses": [
     {
       "n": 1,
-      "signpost": "energetic",
-      "definition": "doing a lot of things, especially physical activities",
+      "signpost": "something done",
+      "definition": "something that someone does",
       "explanation": null,
       "grammar": {
-        "countability": null,
+        "countability": "countable",
         "transitivity": null,
-        "codes": [
-          "comparative with more"
-        ],
+        "codes": [],
         "patterns": []
       },
       "labels": {
@@ -70,43 +67,131 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She stays active by swimming every day.",
+          "text": "It was a kind act to carry the old man's bags.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "An active lifestyle helps you stay healthy.",
+          "text": "Helping a stranger is a simple act of kindness.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He's still very active at eighty.",
+          "text": "The rescue was seen as an act of great courage.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The children are much more active outdoors.",
+          "text": "Breaking the window was a deliberate act, not an accident.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adverb + adjective",
+          "type": "adjective + noun",
           "items": [
-            "physically active",
-            "very active"
+            "a kind act",
+            "a brave act",
+            "a criminal act",
+            "a deliberate act"
           ]
         },
         {
-          "type": "phrase",
+          "type": "noun + preposition",
           "items": [
-            "stay active",
-            "keep active"
+            "an act of kindness",
+            "an act of violence",
+            "an act of courage"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "action-n",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [
+        {
+          "slug": "action-n",
+          "note": "an **act** is one single thing done; **action** can mean the same, or the general process of doing something"
+        }
+      ],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 2,
+      "signpost": "law",
+      "definition": "a law that has been formally passed by a government or parliament",
+      "explanation": null,
+      "grammar": {
+        "countability": "countable",
+        "transitivity": null,
+        "codes": [
+          "often before another noun"
+        ],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [
+          "government"
+        ],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Parliament passed a new act to protect the environment.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The act was signed into law last year.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Under this act, all workers get paid leave.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "pass an act",
+            "amend an act",
+            "repeal an act"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a new act",
+            "a federal act"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "law-n",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -120,149 +205,55 @@
       "l1": {}
     },
     {
-      "n": 2,
-      "signpost": "in use",
-      "definition": "currently working, in use, or in operation",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": null,
-        "codes": [
-          "comparative with more"
-        ],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "The account is no longer active.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "There are several active projects in the department.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Is your gym membership still active?",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The software license is still active.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "adjective + noun",
-          "items": [
-            "active account",
-            "active project",
-            "active license"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [
-        {
-          "letter": "a",
-          "definition": "of a mountain: still able to send out hot rock and fire",
-          "explanation": null,
-          "grammar": null,
-          "labels": null,
-          "examples": [
-            {
-              "text": "An active volcano could erupt at any time.",
-              "note": null,
-              "pattern": null
-            },
-            {
-              "text": "Scientists monitor the region's active volcanoes closely.",
-              "note": null,
-              "pattern": null
-            }
-          ],
-          "collocations": [
-            {
-              "type": "adjective + noun",
-              "items": [
-                "active volcano"
-              ]
-            }
-          ]
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
       "n": 3,
-      "signpost": "taking part",
-      "definition": "taking a full and regular part in an activity or group",
+      "signpost": "part of a play",
+      "definition": "one of the main parts that a play or a show is divided into",
       "explanation": null,
       "grammar": {
-        "countability": null,
+        "countability": "countable",
         "transitivity": null,
-        "codes": [
-          "comparative with more"
-        ],
+        "codes": [],
         "patterns": []
       },
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "theatre"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "She's an active member of the committee.",
+          "text": "The play has three acts.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He's active in local politics.",
+          "text": "The hero dies near the end of the second act.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Active volunteers keep the charity running.",
+          "text": "There is a short break between acts.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adjective + noun",
+          "type": "noun + noun",
           "items": [
-            "active member",
-            "active participant"
+            "act one",
+            "act two"
           ]
         },
         {
-          "type": "adjective + preposition",
+          "type": "adjective + noun",
           "items": [
-            "active in"
+            "the final act"
           ]
         }
       ],
@@ -281,22 +272,20 @@
     },
     {
       "n": 4,
-      "signpost": "subject acts",
-      "definition": "having a subject that performs the action of the verb, rather than receives it",
+      "signpost": "short performance",
+      "definition": "a short performance that is one part of a show",
       "explanation": null,
       "grammar": {
-        "countability": null,
+        "countability": "countable",
         "transitivity": null,
-        "codes": [
-          "comparative with more"
-        ],
+        "codes": [],
         "patterns": []
       },
       "labels": {
         "register": [],
         "region": [],
         "domain": [
-          "grammar"
+          "theatre"
         ],
         "currency": [],
         "attitude": []
@@ -304,30 +293,34 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "“The cat chased the mouse” is in the active voice.",
+          "text": "The clown's act made everyone laugh.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Most sentences in English are active.",
+          "text": "She is the opening act for tonight's concert.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Change the sentence from active to passive.",
+          "text": "His juggling act was the best part of the circus.",
           "note": null,
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "noun + noun",
+          "items": [
+            "a comedy act",
+            "the opening act",
+            "a circus act"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "passive-adj",
-          "note": "the opposite: the subject receives the action"
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -342,22 +335,22 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "activity-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "actively-adv",
-      "form": null,
-      "note": null
-    },
-    {
       "slug": "action-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "act-n",
+      "slug": "active-adj",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "actor-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "activity-n",
       "form": null,
       "note": null
     },
@@ -371,7 +364,16 @@
   "usage_note": null,
   "learner_errors": [],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "law-n",
+      "note": null
+    },
+    {
+      "slug": "play-n",
+      "note": null
+    }
+  ],
   "adaptation": {
     "semantic": null,
     "grammar": null,
@@ -381,30 +383,30 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-21T15:39:07Z",
+    "created": "2026-09-21T21:47:09Z",
     "modified": "2026-09-21T22:01:22Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260921T153333Z-vegr13",
+    "run_id": "20260921T214310Z-f8guhz",
     "reviews": [
       {
-        "run_id": "20260921T153333Z-vegr13",
+        "run_id": "20260921T214310Z-f8guhz",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-21",
-        "file": "reviews/20260921T153333Z-vegr13/active-adj.json",
-        "ok": 39,
-        "issues": 5,
-        "blocking": 5
+        "file": "reviews/20260921T214310Z-f8guhz/act-n.json",
+        "ok": 51,
+        "issues": 1,
+        "blocking": 1
       },
       {
-        "run_id": "20260921T153333Z-vegr13",
+        "run_id": "20260921T214310Z-f8guhz",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-21",
-        "file": "reviews/20260921T153333Z-vegr13/active-adj.json",
-        "ok": 40,
-        "issues": 3,
-        "blocking": 1
+        "file": "reviews/20260921T214310Z-f8guhz/act-n.json",
+        "ok": 50,
+        "issues": 1,
+        "blocking": 0
       }
     ],
     "status": "reviewed",

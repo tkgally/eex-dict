@@ -1,35 +1,36 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-21 by the twenty-ninth scheduled Routine run (lint mode).*
+*Rewritten 2026-09-21 by the thirtieth scheduled Routine run (build mode).*
 
 ## State
 
-- 262 entries, all `reviewed` (0 `draft`). Queue: 4,119 pending, 262 done, 4 duplicate, 9 declined.
-- Lint mode (selector: forced, five runs since last lint — one of those five was an inflated duplicate row, see Fences). Pre-flight: no open pull request, no orphan branch, inbox empty; checkout confirmed at `origin/main`'s latest commit.
-- Mechanical checks: caps, links, gate, 305 unit tests, lint_vocab and crossref gates all pass. `crossref.py --all --apply` back-filled `word_family` on six entries (`actor-n, adopt-v, age-v, ahead-adv, aware-adj, have-v`); 797 missing crossref targets remain queued-eligible (unchanged; no `--queue` this call). `lint_vocab.py --all --queue`: 0 violations. `claim.py --prune` removed 2 stale claim files.
-- Reviewer precision: no family newly crosses under 30 percent at twenty-plus decisions; the five already switched off stay off. `reviewer-a` overall 0.67 (1347 decisions, up from 0.64); `reviewer-b` 0.65 (489, up from 0.62). `reviewer-a` `pronunciation` moved toward the 30-percent line for the first time (0.33, was 0.37) — the nearest live family to switch-off; watch it closely next lint pass.
-- New tooling gap found and logged (not fixed): `metrics/history.jsonl` has five duplicate rows from past `build` runs calling `metrics.py` twice, inflating `next_mode.py`'s `runs_total`/`runs_since_lint` counts. Detail and proposed fix in [metrics-duplicate-calls](wiki/notes/metrics-duplicate-calls.md). Do not call `tools/metrics.py` more than once per run.
-- Wiki index checked against pages on disk both ways: clean. `reviews/needs_curator.txt`: ten open items, no duplicates, all still awaiting the owner.
-- Spend: US$0 this run; US$3.58 today (unchanged, lint mode did no paid calls; `run_budget_usd` was 0).
+- 273 entries, all `reviewed` (0 `draft`). Queue: 4,093 pending, 273 done, 32 claimed, 9 declined, 4 duplicate.
+- Build mode (selector: highest scheduler debt). Pre-flight: no open pull request, no orphan branch, inbox empty; checkout confirmed at `origin/main`'s latest commit.
+- Drafted eleven band-1 entries: *act* (noun and verb), *activity, address, adjective, advertise, affect, aim, air, airport, alarm*. First `claim.py --from-queue` call grabbed the whole remaining band-1 preposition set including *on* and *over* (the two heaviest words this file had flagged for deferral); discarded it and hand-claimed the diversified list `NEXT.md` itself suggested.
+- Panel: 38 issues, 18 blocking, 35 applied, 3 rejected (precision this run: reviewer-a 0.905, reviewer-b 0.941). Two reviewer-b parse failures (*activity-n*, *alarm-n*) re-ran cleanly with `--roles reviewer-b`. Rejected two reviewer-a label complaints on *adjective-n* and one reviewer-b markup complaint on the same entry — both cited style-guide rules (entry-level labels, word-named-as-word marks) the reviewer had misread; notes on each decision line.
+- Fixed seven defining-vocabulary violations by rewording definitions (*opera, behave* x2, *identifies, aircraft* x2, *broadcast*) rather than adding entries; no script touched a semantic field.
+- *affect-v*'s first usage-note draft wrongly implied the word is never a noun; narrowed the claim to the everyday verb sense and queued *affect-n* (the specialized psychology noun) with a `see_also` link.
+- All eleven pass `validate.py --gate`, `lint_vocab.py`, `crossref.py --apply --queue`, `queue.py stamp`; status `reviewed`. 28 closure/crossref targets queued (*law-n, behave-v, perform-v, hobby-n, speech-n, affected-adj, airline-n, airplane-n, alarm-v*, and others).
+- Mechanical checks: caps, links, gate, 305 unit tests, lint_vocab and crossref gates all pass.
+- Spend: US$0.35 this run (pronunciation panel + review panel; both reviewer-b reruns included), US$3.93 today.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: *on* and *over* — the two heaviest remaining band-1 prepositions, still deferred; otherwise keep diversifying (e.g. *aim, air, airport, alarm, activity, address, adjective, advertise, affect, agreement* siblings like *act, actual, actually*).
-2. **review**: 196 `reviewed` entries remain at only one panel round; pick the next block by `params.block_size` when review is next selected.
-3. **closure**: 450+ cross-reference/family targets with no entry, still growing (e.g. this run's own back-links did not add new ones; closure_gap is 454 per `metrics.py`).
-4. Next **lint** due in about 5 real runs (run ~34 by true count, since the trigger fires on raw history rows — see the tooling-gap note above; do not assume run ~29 was exact).
-5. Next **originality** check due around run 30 (forced: multiples of 10; also subject to the same inflation caveat).
-6. A future lint or setup unit should dedupe `next_mode.py`'s `history()` by `run_id` and consider having `metrics.py` refuse/warn on a duplicate `run_id` for the current run.
+1. **build**: keep diversifying band 1; avoid claiming the whole remaining preposition set in one grab (*on, over, up, to, under, through* are all still heavy and unbuilt) — mix in a handful at a time with nouns/verbs/adjectives, as this run did.
+2. **review**: 207 `reviewed` entries remain at only one panel round; pick the next block by `params.block_size` when review is next selected.
+3. **closure**: 471 cross-reference/family targets with no entry, still growing.
+4. Next **lint** due in about 5 real runs from here (`runs_since_lint` reset to 1 this run; the duplicate-row inflation noted previously still applies — see [metrics-duplicate-calls](wiki/notes/metrics-duplicate-calls.md), not yet fixed).
+5. Next **originality** check due around run 40 (forced: multiples of 10).
+6. `next_mode.py --explain` picked **site** as the highest-debt mode after this run finished; the next scheduled run should expect that unless its own signals move it.
 
 ## Fences (do not re-grind)
 
 - The charter decisions in `wiki/decisions/` are the owner's; do not reopen them.
 - American IPA drops the length mark on `i` (not `iː`) and `ɝ` (not `ɝː`); British keeps `iː`/`ɜː`. IPA stress marks precede the stressed syllable.
-- A single reviewer repeatedly flagging the same field across rounds with inconsistent reasons, while the other reviewer never flags it, is noise.
+- Words inside `schema/defining-vocabulary.txt` may be used in a definition even with no entry yet; only words *outside* that list require an existing entry. The first sense of a defining-vocabulary word's own entry is exempt from the check entirely (warning only); `core_idea` and phrase definitions are never exempt.
+- `--decide` needs `--quote` or `--index` when a role raised two distinct issues on the same field; `write_record` merges a role rerun with the earlier successful role's record, so a single-role rerun (e.g. `--roles reviewer-b`) is the fix for a parse failure, not a full rerun.
+- Never mutate a list while iterating over it when patching entry JSON by script (caused one runaway process this run, killed before it wrote anything).
 - Closed-vocabulary grammar codes must be checked against `schema/vocabularies.json` before rejecting a code as invalid.
-- Do not add a note-only line to `schema/inflection-exceptions.json` for a fully regular verb just to record a spelling variant (flips `source`/`regular`, can break unit tests). Reject the issue instead.
-- core_idea and every sense's own `.definition` draw on the defining vocabulary; only a headword's own first sense is exempt.
-- `runs_total`/`runs_since_lint` from `next_mode.py --explain` run about one-sixth high (5 duplicate rows of 30 real runs so far); do not trust them as an exact run count until the dedupe fix lands.
 
 ## For the owner
 

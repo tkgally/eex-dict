@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "active-adj",
-  "slug": "active-adj",
-  "headword": "active",
-  "pos": "adj",
+  "id": "act-v",
+  "slug": "act-v",
+  "headword": "act",
+  "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈæk.tɪv",
+      "ipa": "ækt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈæk.tɪv",
+      "ipa": "ækt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,13 +25,15 @@
   },
   "inflections": {
     "forms": {
-      "comparative": null,
-      "superlative": null
+      "third_person_singular": "acts",
+      "past_tense": "acted",
+      "past_participle": "acted",
+      "present_participle": "acting"
     },
     "regular": true,
     "source": "rules",
     "status": "verified",
-    "note": "comparative with more"
+    "note": null
   },
   "frequency": {
     "band": 1,
@@ -45,19 +47,17 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**Active** describes someone who does a lot of things and moves often, something that is currently working or in use, or, in grammar, a sentence in which the subject performs the action.",
+  "core_idea": "To **act** is to do something, to do things in a certain way, to perform in a play or film, or to do someone else's job for a time.",
   "senses": [
     {
       "n": 1,
-      "signpost": "energetic",
-      "definition": "doing a lot of things, especially physical activities",
+      "signpost": "do something",
+      "definition": "do something, especially to deal with a problem",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": null,
-        "codes": [
-          "comparative with more"
-        ],
+        "transitivity": "intransitive",
+        "codes": [],
         "patterns": []
       },
       "labels": {
@@ -70,39 +70,35 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She stays active by swimming every day.",
+          "text": "The government must act now to stop the flooding.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "An active lifestyle helps you stay healthy.",
+          "text": "If we don't act quickly, it will be too late.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He's still very active at eighty.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The children are much more active outdoors.",
+          "text": "She acted at once and called for help.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adverb + adjective",
+          "type": "verb + adverb",
           "items": [
-            "physically active",
-            "very active"
+            "act quickly",
+            "act now",
+            "act immediately",
+            "act fast"
           ]
         },
         {
           "type": "phrase",
           "items": [
-            "stay active",
-            "keep active"
+            "a reason to act"
           ]
         }
       ],
@@ -121,16 +117,16 @@
     },
     {
       "n": 2,
-      "signpost": "in use",
-      "definition": "currently working, in use, or in operation",
+      "signpost": "behave",
+      "definition": "do things in a particular way",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": null,
-        "codes": [
-          "comparative with more"
-        ],
-        "patterns": []
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + adjective"
+        ]
       },
       "labels": {
         "register": [],
@@ -142,68 +138,52 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The account is no longer active.",
+          "text": "Stop acting like a child.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There are several active projects in the department.",
+          "text": "He always acts tough in front of his friends.",
+          "note": "informal, with an adjective",
+          "pattern": "verb + adjective"
+        },
+        {
+          "text": "She has been acting strangely all week.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Is your gym membership still active?",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The software license is still active.",
+          "text": "They acted as if nothing had happened.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adjective + noun",
+          "type": "verb + adverb",
           "items": [
-            "active account",
-            "active project",
-            "active license"
+            "act strangely",
+            "act responsibly",
+            "act selfishly"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "act like something",
+            "act as if"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "behave-v",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [
-        {
-          "letter": "a",
-          "definition": "of a mountain: still able to send out hot rock and fire",
-          "explanation": null,
-          "grammar": null,
-          "labels": null,
-          "examples": [
-            {
-              "text": "An active volcano could erupt at any time.",
-              "note": null,
-              "pattern": null
-            },
-            {
-              "text": "Scientists monitor the region's active volcanoes closely.",
-              "note": null,
-              "pattern": null
-            }
-          ],
-          "collocations": [
-            {
-              "type": "adjective + noun",
-              "items": [
-                "active volcano"
-              ]
-            }
-          ]
-        }
-      ],
+      "subsenses": [],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -215,58 +195,61 @@
     },
     {
       "n": 3,
-      "signpost": "taking part",
-      "definition": "taking a full and regular part in an activity or group",
+      "signpost": "perform",
+      "definition": "perform a part in a play, a film, or a show",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": null,
-        "codes": [
-          "comparative with more"
-        ],
-        "patterns": []
+        "transitivity": "transitive or intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + object",
+          "verb + preposition + object"
+        ]
       },
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "theatre"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "She's an active member of the committee.",
+          "text": "She has acted in films since she was a child.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "He's active in local politics.",
+          "text": "He acted the part of the king.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         },
         {
-          "text": "Active volunteers keep the charity running.",
+          "text": "I've always wanted to act on stage.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adjective + noun",
+          "type": "verb + preposition",
           "items": [
-            "active member",
-            "active participant"
-          ]
-        },
-        {
-          "type": "adjective + preposition",
-          "items": [
-            "active in"
+            "act in a film",
+            "act on stage",
+            "act in a play"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "perform-v",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -281,53 +264,53 @@
     },
     {
       "n": 4,
-      "signpost": "subject acts",
-      "definition": "having a subject that performs the action of the verb, rather than receives it",
+      "signpost": "act as",
+      "definition": "serve as, or do the same job as, someone or something else",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": null,
-        "codes": [
-          "comparative with more"
-        ],
-        "patterns": []
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + preposition + object"
+        ]
       },
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "grammar"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "“The cat chased the mouse” is in the active voice.",
+          "text": "The coach's office also acts as a meeting room.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "Most sentences in English are active.",
+          "text": "Sara agreed to act as translator for the visitors.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "Change the sentence from active to passive.",
+          "text": "Vitamin C acts as an antioxidant in the body.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + preposition + object"
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "verb + preposition",
+          "items": [
+            "act as something"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "passive-adj",
-          "note": "the opposite: the subject receives the action"
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -342,17 +325,17 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "activity-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "actively-adv",
-      "form": null,
-      "note": null
-    },
-    {
       "slug": "action-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "active-adj",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "actor-n",
       "form": null,
       "note": null
     },
@@ -362,14 +345,20 @@
       "note": null
     },
     {
-      "slug": "act-v",
+      "slug": "activity-n",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "She acts a teacher at the school.",
+      "correct": "She acts as a teacher at the school.",
+      "note": "**Act** meaning serve as needs **as** before the noun."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
@@ -381,29 +370,29 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-21T15:39:07Z",
+    "created": "2026-09-21T21:47:09Z",
     "modified": "2026-09-21T22:01:22Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260921T153333Z-vegr13",
+    "run_id": "20260921T214310Z-f8guhz",
     "reviews": [
       {
-        "run_id": "20260921T153333Z-vegr13",
+        "run_id": "20260921T214310Z-f8guhz",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-21",
-        "file": "reviews/20260921T153333Z-vegr13/active-adj.json",
-        "ok": 39,
-        "issues": 5,
-        "blocking": 5
+        "file": "reviews/20260921T214310Z-f8guhz/act-v.json",
+        "ok": 45,
+        "issues": 8,
+        "blocking": 7
       },
       {
-        "run_id": "20260921T153333Z-vegr13",
+        "run_id": "20260921T214310Z-f8guhz",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-21",
-        "file": "reviews/20260921T153333Z-vegr13/active-adj.json",
-        "ok": 40,
-        "issues": 3,
+        "file": "reviews/20260921T214310Z-f8guhz/act-v.json",
+        "ok": 48,
+        "issues": 4,
         "blocking": 1
       }
     ],
