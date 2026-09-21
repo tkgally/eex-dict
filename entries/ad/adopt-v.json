@@ -1,31 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "adult-n",
-  "slug": "adult-n",
-  "headword": "adult",
-  "pos": "n",
+  "id": "adopt-v",
+  "slug": "adopt-v",
+  "headword": "adopt",
+  "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈæd.ʌlt",
+      "ipa": "əˈdɑpt",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:1/4;cmudict:agree",
-      "status": "disputed"
+      "checked_by": "agreement:4/4;cmudict:agree",
+      "status": "verified"
     },
     "british": {
-      "ipa": "ˈæd.ʌlt",
+      "ipa": "əˈdɒpt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "Stress falls on the first part: *AD-ult*. Some American speakers instead stress the second part, *uh-DULT*; both are common."
+    "notes": null
   },
   "inflections": {
     "forms": {
-      "plural": "adults"
+      "third_person_singular": "adopts",
+      "past_tense": "adopted",
+      "past_participle": "adopted",
+      "present_participle": "adopting"
     },
     "regular": true,
     "source": "rules",
@@ -44,16 +47,16 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "An adult is a person or an animal that has finished growing.",
+  "core_idea": "**Adopt** is to take a child into your family as your own, or to start using a plan, method, or way of doing something.",
   "senses": [
     {
       "n": 1,
-      "signpost": "person",
-      "definition": "a person who is fully grown, generally considered to be at least eighteen years old",
+      "signpost": "take in a child",
+      "definition": "take a child who is not your own biological child into your family, permanently and legally",
       "explanation": null,
       "grammar": {
-        "countability": "countable",
-        "transitivity": null,
+        "countability": null,
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": []
       },
@@ -67,89 +70,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Only adults are allowed in this section of the pool.",
+          "text": "They adopted a baby girl from overseas.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "As an adult, she moved to a different city.",
+          "text": "She was adopted when she was two.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The movie is intended for adults, not children.",
+          "text": "The couple has decided to adopt.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Both adults and children enjoyed the show.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "adjective + noun",
-          "items": [
-            "young adult",
-            "responsible adult"
-          ]
-        },
-        {
-          "type": "verb + noun",
-          "items": [
-            "become an adult",
-            "treat someone like an adult"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [
-        {
-          "slug": "child-n",
-          "note": null
-        }
-      ],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": "The exact age at which a person becomes an adult in law varies by country; eighteen is common but not universal.",
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 2,
-      "signpost": "animal",
-      "definition": "an animal that is fully grown",
-      "explanation": null,
-      "grammar": {
-        "countability": "countable",
-        "transitivity": null,
-        "codes": [],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [
-          "biology"
-        ],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "Adults of this species can weigh several tons.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Only adults have the bright orange coloring; the young are gray.",
+          "text": "Many families choose to adopt an older child.",
           "note": null,
           "pattern": null
         }
@@ -167,17 +103,81 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 2,
+      "signpost": "start using",
+      "definition": "start to use a particular method, plan, idea, or attitude",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The company adopted a new marketing strategy.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "He adopted a more relaxed attitude toward work.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Many schools have adopted this teaching method.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The new safety rules were adopted last month.",
+          "note": null,
+          "pattern": "usually passive"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "adopt a policy",
+            "adopt a strategy",
+            "adopt an approach"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [],
   "word_family": [
     {
-      "slug": "adulthood-n",
+      "slug": "adoption-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "adult-adj",
+      "slug": "adopted-adj",
       "form": null,
       "note": null
     }
@@ -186,12 +186,7 @@
   "usage_note": null,
   "learner_errors": [],
   "etymology": null,
-  "see_also": [
-    {
-      "slug": "adult-adj",
-      "note": "the adjective, as in *adult content*"
-    }
-  ],
+  "see_also": [],
   "adaptation": {
     "semantic": null,
     "grammar": null,
@@ -201,36 +196,34 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-20T21:35:16Z",
-    "modified": "2026-09-21T15:57:20Z",
+    "created": "2026-09-21T15:39:07Z",
+    "modified": "2026-09-21T15:46:54Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260920T213316Z-u156ny",
+    "run_id": "20260921T153333Z-vegr13",
     "reviews": [
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260921T153333Z-vegr13",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/adult-n.json",
+        "date": "2026-09-21",
+        "file": "reviews/20260921T153333Z-vegr13/adopt-v.json",
         "ok": 34,
         "issues": 0,
         "blocking": 0
       },
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260921T153333Z-vegr13",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/adult-n.json",
-        "ok": 34,
+        "date": "2026-09-21",
+        "file": "reviews/20260921T153333Z-vegr13/adopt-v.json",
+        "ok": 33,
         "issues": 1,
         "blocking": 1
       }
     ],
     "status": "reviewed",
-    "flags": [
-      "pronunciation-disputed"
-    ],
+    "flags": [],
     "notes": null
   }
 }
