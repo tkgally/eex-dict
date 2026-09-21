@@ -1,0 +1,7 @@
+# inflect-uncountable-plural-gap
+
+`tools/inflect.py`'s `_noun_forms` (line ~208) returns `{"plural": None}` with `note: "no plural"` for any noun whose countability is `uncountable`, `plural only`, or `singular only`, before ever consulting `schema/inflection-exceptions.json`. So a noun that is uncountable in ordinary use but has a rare, recognized plural in a specialized register (*money* → *monies*/*moneys* in legal and financial documents) can never have that plural recorded in `inflections`, even with an exceptions-table entry, because the `NO_PLURAL` short-circuit runs first.
+
+Caught 2026-09-21 (review run) on `money-n`: `inflections.note` said flatly "no plural" while `usage_note` correctly documented the *monies*/*moneys* exception. A reviewer flagged this as a contradiction. Adjudicated as by-design and rejected: `inflections.note` records the ordinary-use default (a script-owned field, never hand-edited), and the rare-register exception is exactly what `usage_note` (model-owned prose) exists to carry — this matches the house pattern for "a grammar statement with a real exception" (style guide section 7). But the tool cannot represent this nuance in the field it owns even when a drafter wants to, which is a real gap.
+
+Fix due a later run (about a fifth of a build or lint run at most): let a nouns-table entry with an explicit `"plural"` value override `NO_PLURAL` for that headword only, keeping the short-circuit for every noun with no table entry.
