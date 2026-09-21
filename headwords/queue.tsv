@@ -2185,7 +2185,7 @@ super-	prefix	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary p
 supper	n	1	defining	pending	2026-09-16	votes 1
 supply	n	1	defining	pending	2026-09-16	votes 2; referenced by bank-n
 supply	v	1	defining	pending	2026-09-16	votes 2
-support	n	1	defining	pending	2026-09-16	votes 2
+support	n	1	defining	pending	2026-09-16	votes 2; referenced by opposition-n
 support	v	1	defining	pending	2026-09-16	votes 2
 suppose	v	1	defining	pending	2026-09-16	votes 3; referenced by say-v
 sure	adj	1	defining	pending	2026-09-16	votes 3
@@ -2571,7 +2571,7 @@ worker	n	1	defining	pending	2026-09-16	votes 2; referenced by hand-n
 world	n	1	defining	pending	2026-09-16	votes 2
 worm	n	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
 worn	adj	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
-worried	adj	1	defining	pending	2026-09-16	votes 1; referenced by afraid-adj; referenced by anxious-adj
+worried	adj	1	defining	pending	2026-09-16	votes 1; referenced by afraid-adj; referenced by anxious-adj; referenced by concerning-adj
 worry	n	1	defining	pending	2026-09-16	votes 3
 worry	v	1	defining	pending	2026-09-16	votes 3
 worth	adj	1	defining	pending	2026-09-16	votes 2
@@ -2841,7 +2841,7 @@ compress	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,w
 conceive	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 concept	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
 concern	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
-concerning	prep	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
+concerning	prep	3	band	done	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 condense	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 conditioner	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3)
 conduct	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
@@ -3272,7 +3272,7 @@ landlord	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,w
 landmark	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 landscape	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
 laptop	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
-lean	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
+lean	v	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); used (as leaned) in against-prep example; correct lemma for declined leaning-v
 lease	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 lease	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 lecture	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
@@ -4308,26 +4308,26 @@ identify	v	3	family	pending	2026-09-19	referenced by identity-n
 subtraction	n	3	crossref	pending	2026-09-19	referenced by addition-n
 thumb	v	3	crossref	pending	2026-09-19	referenced by thumb-n
 thumbprint	n	3	family	pending	2026-09-19	referenced by thumb-n
-concerning	v	3	closure	pending	2026-09-20	used in about-prep senses[0].definition
-contact	n	3	closure	pending	2026-09-20	used in against-prep core_idea; pos guessed (no morphological signal), check before claiming
-honor	n	3	closure	pending	2026-09-20	used in after-prep senses[2].definition; pos guessed (no morphological signal), check before claiming
-leaning	v	3	closure	pending	2026-09-20	used in against-prep senses[1].definition
-opposed	v	3	closure	pending	2026-09-20	used in against-prep senses[0].definition
-opposition	n	3	closure	pending	2026-09-20	used in against-prep core_idea; pos guessed (no morphological signal), check before claiming
-pressure	n	3	closure	pending	2026-09-20	used in against-prep core_idea; pos guessed (no morphological signal), check before claiming
-rank	n	3	closure	pending	2026-09-20	used in above-prep core_idea; pos guessed (no morphological signal), check before claiming
-surrounded	v	3	closure	pending	2026-09-20	used in among-prep senses[0].definition
-surrounding	v	3	closure	pending	2026-09-20	used in around-prep core_idea
+concerning	v	3	closure	duplicate	2026-09-20	used in about-prep senses[0].definition; duplicate: correct pos is prep (existing band-sourced pending row); wrong pos from -ing morphology guess
+contact	n	3	closure	done	2026-09-20	used in against-prep core_idea; pos guessed (no morphological signal), check before claiming
+honor	n	3	closure	declined	2026-09-20	used in after-prep senses[2].definition; pos guessed (no morphological signal), check before claiming; stale: word no longer appears anywhere in entries/; reworded away since this row was queued
+leaning	v	3	closure	declined	2026-09-20	used in against-prep senses[1].definition; surface form found was 'leaned' in an example, not 'leaning'; real gap is the base verb, requeued as lean-v
+opposed	v	3	closure	declined	2026-09-20	used in against-prep senses[0].definition; used predicatively ('opposed to'); correct pos is adj, requeued as opposed-adj
+opposition	n	3	closure	done	2026-09-20	used in against-prep core_idea; pos guessed (no morphological signal), check before claiming
+pressure	n	3	closure	done	2026-09-20	used in against-prep core_idea; pos guessed (no morphological signal), check before claiming
+rank	n	3	closure	declined	2026-09-20	used in above-prep core_idea; pos guessed (no morphological signal), check before claiming; stale: word no longer appears anywhere in entries/; reworded away since this row was queued
+surrounded	v	3	closure	declined	2026-09-20	used in among-prep senses[0].definition; past participle of surround; real gap is the base verb, requeued as surround-v
+surrounding	v	3	closure	declined	2026-09-20	used in around-prep core_idea; appears only in a signpost, not defining prose; listed as an unlinked word-family form under surround-v instead
 about	adj	3	crossref	pending	2026-09-20	referenced by about-prep
 about	adv	3	crossref	pending	2026-09-20	referenced by about-prep
 afterward	adv	3	family	pending	2026-09-20	referenced by after-prep
 along	adv	3	crossref	pending	2026-09-20	referenced by along-prep
 no one	pron	3	crossref	pending	2026-09-20	referenced by nobody-pron
-role	n	3	closure	pending	2026-09-20	used in as-prep senses[0].definition; pos guessed (no morphological signal), check before claiming
+role	n	3	closure	done	2026-09-20	used in as-prep senses[0].definition; pos guessed (no morphological signal), check before claiming
 in front of	prep	3	crossref	pending	2026-09-20	referenced by before-prep; referenced by behind-prep
 yourselves	pron	3	crossref	pending	2026-09-20	referenced by yourself-pron
-enclosed	v	3	closure	pending	2026-09-20	used in in-prep senses[0].definition; used in outside-prep senses[0].definition
-feature	n	3	closure	pending	2026-09-20	used in plus-prep senses[0].definition; pos guessed (no morphological signal), check before claiming
+enclosed	v	3	closure	declined	2026-09-20	used in in-prep senses[0].definition; used in outside-prep senses[0].definition; used adjectivally ('an enclosed space'); correct pos is adj, requeued as enclosed-adj
+feature	n	3	closure	done	2026-09-20	used in plus-prep senses[0].definition; pos guessed (no morphological signal), check before claiming
 as well	adv	3	crossref	pending	2026-09-20	referenced by as-well-as-prep
 close to	prep	3	crossref	pending	2026-09-20	referenced by near-prep
 compared to	prep	3	crossref	pending	2026-09-20	referenced by beside-prep
@@ -4336,7 +4336,7 @@ far from	prep	3	crossref	pending	2026-09-20	referenced by near-prep
 in addition to	prep	3	crossref	pending	2026-09-20	referenced by as-well-as-prep
 inclusion	n	3	family	pending	2026-09-20	referenced by including-prep
 next to	prep	3	crossref	pending	2026-09-20	referenced by beside-prep
-arrangement	adj	3	closure	pending	2026-09-20	used in account-n senses[0].definition
+arrangement	adj	3	closure	declined	2026-09-20	used in account-n senses[0].definition; arrangement is a noun; wrong pos from suffix-guess bug, requeued as arrangement-n
 acceptable	adj	3	family	pending	2026-09-20	referenced by accept-v
 acceptance	n	3	family	pending	2026-09-20	referenced by accept-v
 according to	prep	3	crossref	pending	2026-09-20	referenced by per-prep
@@ -4350,3 +4350,14 @@ awaken	v	3	family	pending	2026-09-20	referenced by awake-adj
 capable	adj	3	crossref	pending	2026-09-20	referenced by able-adj
 eager	adj	3	crossref	pending	2026-09-20	referenced by anxious-adj
 imaginary	adj	3	crossref	pending	2026-09-20	referenced by actual-adj
+enclosed	adj	3	closure	done	2026-09-21	used in in-prep, outside-prep definitions; correct pos for declined enclosed-v
+opposed	adj	3	closure	done	2026-09-21	used in against-prep definition; correct pos for declined opposed-v
+surround	v	3	closure	done	2026-09-21	used (as surrounded) in among-prep definition; correct lemma for declined surrounded-v
+arrangement	n	3	closure	done	2026-09-21	used in account-n definition; correct pos for declined arrangement-adj
+concerning	adj	2	family	done	2026-09-21	informal contemporary adjective sense (causing worry), added editorially alongside the concerning-prep closure entry
+arrange	v	3	family	pending	2026-09-21	referenced by arrangement-n
+contact	v	3	family	pending	2026-09-21	referenced by contact-n
+enclose	v	3	family	pending	2026-09-21	referenced by enclosed-adj
+oppose	v	3	family	pending	2026-09-21	referenced by opposition-n
+surrounding	adj	3	family	pending	2026-09-21	referenced by surround-v
+surroundings	n	3	family	pending	2026-09-21	referenced by surround-v
