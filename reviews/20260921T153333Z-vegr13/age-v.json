@@ -1,15 +1,15 @@
 {
   "run_id": "20260921T153333Z-vegr13",
-  "slug": "actor-n",
-  "entry_modified": "2026-09-21T15:46:35Z",
+  "slug": "age-v",
+  "entry_modified": "2026-09-21T15:41:47Z",
   "reviewers": [
     {
       "role": "reviewer-a",
       "model": "openai/gpt-5.6-terra",
-      "requested_at": "2026-09-21T15:53:55Z",
-      "cost_usd": 0.012875,
-      "tokens_in": 2727,
-      "tokens_out": 1027,
+      "requested_at": "2026-09-21T15:47:16Z",
+      "cost_usd": 0.017752,
+      "tokens_in": 2651,
+      "tokens_out": 1161,
       "verdicts": [
         {
           "field": "headword_and_pos",
@@ -77,11 +77,11 @@
         },
         {
           "field": "senses[0].definition",
-          "verdict": "ok",
-          "quote": null,
-          "severity": null,
-          "family": null,
-          "reason": null
+          "verdict": "issue",
+          "quote": "become older, or make someone or something seem or become older",
+          "severity": "blocking",
+          "family": "definition-meaning",
+          "reason": "This incorrectly includes the distinct causative meaning of making something seem older, which needs its own sense or a definition that accurately states the result."
         },
         {
           "field": "senses[0].explanation",
@@ -277,23 +277,23 @@
         },
         {
           "field": "consistency",
-          "verdict": "ok",
-          "quote": null,
-          "severity": null,
-          "family": null,
-          "reason": null
+          "verdict": "issue",
+          "quote": "\"signpost\": \"grow older\"",
+          "severity": "blocking",
+          "family": "other",
+          "reason": "The signpost covers only becoming older, but the definition and examples also include transitive causative uses."
         }
       ],
-      "summary": "The entry is factually and linguistically sound. Its senses, grammar, pronunciations, examples, and collocations are appropriate for a learner's dictionary.",
+      "summary": "The entry is largely accurate in pronunciation, inflection, grammar, labels, and examples. Sense 1 conflates becoming older with causing someone or something to appear or become older, creating a definition and sense-structure problem.",
       "error": null
     },
     {
       "role": "reviewer-b",
       "model": "google/gemini-3.8-flash",
-      "requested_at": "2026-09-21T15:54:05Z",
-      "cost_usd": 0.00927,
-      "tokens_in": 2905,
-      "tokens_out": 1891,
+      "requested_at": "2026-09-21T15:47:27Z",
+      "cost_usd": 0.007879,
+      "tokens_in": 2805,
+      "tokens_out": 1540,
       "verdicts": [
         {
           "field": "headword_and_pos",
@@ -329,11 +329,11 @@
         },
         {
           "field": "inflections",
-          "verdict": "ok",
-          "quote": null,
-          "severity": null,
-          "family": null,
-          "reason": null
+          "verdict": "issue",
+          "quote": "\"present_participle\": \"aging\"",
+          "severity": "minor",
+          "family": "inflection",
+          "reason": "The British variant spelling 'ageing' should be noted in inflections.note."
         },
         {
           "field": "labels",
@@ -425,19 +425,19 @@
         },
         {
           "field": "senses[1].signpost",
-          "verdict": "issue",
-          "quote": "person or group with influence",
-          "severity": "minor",
-          "family": "sense-structure",
-          "reason": "Signposts must be one to three words long (here five words)."
-        },
-        {
-          "field": "senses[1].definition",
           "verdict": "ok",
           "quote": null,
           "severity": null,
           "family": null,
           "reason": null
+        },
+        {
+          "field": "senses[1].definition",
+          "verdict": "issue",
+          "quote": "let food or drink mature over a period of time to develop its flavor",
+          "severity": "blocking",
+          "family": "definition-meaning",
+          "reason": "The definition only covers the transitive use ('let food or drink mature'), but the grammar label is 'transitive or intransitive' and an example shows intransitive wine aging ('Some wines age better than others')."
         },
         {
           "field": "senses[1].explanation",
@@ -465,11 +465,11 @@
         },
         {
           "field": "senses[1].examples",
-          "verdict": "ok",
-          "quote": null,
-          "severity": null,
-          "family": null,
-          "reason": null
+          "verdict": "issue",
+          "quote": "\"pattern\": \"usually passive\"",
+          "severity": "minor",
+          "family": "grammar-code",
+          "reason": "'usually passive' is placed in the pattern field instead of a grammar code or note."
         },
         {
           "field": "senses[1].collocations",
@@ -561,14 +561,14 @@
         },
         {
           "field": "consistency",
-          "verdict": "ok",
-          "quote": null,
-          "severity": null,
-          "family": null,
-          "reason": null
+          "verdict": "issue",
+          "quote": "let food or drink mature over a period of time to develop its flavor",
+          "severity": "blocking",
+          "family": "definition-meaning",
+          "reason": "Sense 2 definition conflicts with its transitivity and examples by defining only the transitive reading while allowing intransitive."
         }
       ],
-      "summary": "The entry is solid and follows house style well, except that the signpost on sense 2 exceeds the three-word limit.",
+      "summary": "The entry is mostly sound, but sense 2 defines only the transitive use ('let food or drink mature') while being labeled as transitive or intransitive and containing an intransitive example. Additionally, the standard British spelling variant 'ageing' should be mentioned in the inflection notes.",
       "error": null
     }
   ]

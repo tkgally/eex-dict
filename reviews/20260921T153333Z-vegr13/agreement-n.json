@@ -1,15 +1,15 @@
 {
   "run_id": "20260921T153333Z-vegr13",
-  "slug": "actor-n",
-  "entry_modified": "2026-09-21T15:46:35Z",
+  "slug": "agreement-n",
+  "entry_modified": "2026-09-21T15:41:47Z",
   "reviewers": [
     {
       "role": "reviewer-a",
       "model": "openai/gpt-5.6-terra",
-      "requested_at": "2026-09-21T15:53:55Z",
-      "cost_usd": 0.012875,
-      "tokens_in": 2727,
-      "tokens_out": 1027,
+      "requested_at": "2026-09-21T15:47:36Z",
+      "cost_usd": 0.021461,
+      "tokens_in": 3184,
+      "tokens_out": 1359,
       "verdicts": [
         {
           "field": "headword_and_pos",
@@ -212,6 +212,78 @@
           "reason": null
         },
         {
+          "field": "senses[2].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].definition",
+          "verdict": "issue",
+          "quote": "the grammatical matching of one word's form to another, such as a verb to its subject in number",
+          "severity": "minor",
+          "family": "definition-vocabulary",
+          "reason": "The technical word “grammatical” is avoidable in a definition for intermediate learners; “matching of word forms” states the idea more plainly."
+        },
+        {
+          "field": "senses[2].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
           "field": "word_family",
           "verdict": "ok",
           "quote": null,
@@ -284,16 +356,16 @@
           "reason": null
         }
       ],
-      "summary": "The entry is factually and linguistically sound. Its senses, grammar, pronunciations, examples, and collocations are appropriate for a learner's dictionary.",
+      "summary": "The entry is factually and structurally sound, with appropriate senses, grammar, examples, and pronunciation. The only minor improvement is to make the grammar-sense definition slightly more accessible.",
       "error": null
     },
     {
       "role": "reviewer-b",
       "model": "google/gemini-3.8-flash",
-      "requested_at": "2026-09-21T15:54:05Z",
-      "cost_usd": 0.00927,
-      "tokens_in": 2905,
-      "tokens_out": 1891,
+      "requested_at": "2026-09-21T15:47:46Z",
+      "cost_usd": 0.011662,
+      "tokens_in": 3409,
+      "tokens_out": 2428,
       "verdicts": [
         {
           "field": "headword_and_pos",
@@ -425,11 +497,11 @@
         },
         {
           "field": "senses[1].signpost",
-          "verdict": "issue",
-          "quote": "person or group with influence",
-          "severity": "minor",
-          "family": "sense-structure",
-          "reason": "Signposts must be one to three words long (here five words)."
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
         },
         {
           "field": "senses[1].definition",
@@ -489,6 +561,78 @@
         },
         {
           "field": "senses[1].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].examples",
+          "verdict": "issue",
+          "quote": "Subject-verb agreement means adding **-s** to the verb after **he**, **she**, or **it**.",
+          "severity": "minor",
+          "family": "spelling-or-format",
+          "reason": "Example sentences carry no inline markup unless the headword appears in an irregular or separated form."
+        },
+        {
+          "field": "senses[2].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[2].adaptation",
           "verdict": "ok",
           "quote": null,
           "severity": null,
@@ -568,7 +712,7 @@
           "reason": null
         }
       ],
-      "summary": "The entry is solid and follows house style well, except that the signpost on sense 2 exceeds the three-word limit.",
+      "summary": "The entry is well-crafted and accurate across all major lexicographical criteria. One minor formatting issue was found in sense 3, where inline asterisks were improperly used inside an example sentence.",
       "error": null
     }
   ]
