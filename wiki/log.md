@@ -2,6 +2,16 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-22] lint | Seventh pass: mechanical checks clean, no new switch-offs, one tooling gap logged
+
+Seventh scheduled run, forced (5 runs since the last lint). Pre-flight: no open pull request, no orphan branch, inbox empty; checkout confirmed at `origin/main`'s latest commit.
+
+Mechanical checks: caps, links both clean. `crossref --all --apply` (0 errors, 848 missing closure targets, still growing as expected; 4 entries gained symmetric back-links). `lint_vocab --all --queue` (0 violations; two new closure rows queued). `claim.py --prune` removed 3 stale claim files. 305 unit tests pass.
+
+`metrics.py --precision`: the five disabled (role, family) pairs are unchanged (`reviewer-a` `example-policy` 7/44, `grammar-code` 20/75, `sense-structure` 14/48; `reviewer-b` `example-policy` 4/83, `explanation` 5/21); no family newly crossed 30 percent at twenty-plus decisions. Notable: `reviewer-b`'s overall precision (0.69) has caught up to and edged past `reviewer-a`'s (0.68) for the first time — updated open question 2 accordingly. `reviewer-a` `pronunciation` still nearest the threshold, flat at 0.32 (62).
+
+New tooling gap logged, not fixed: `lint_vocab.py --all --queue` accumulates overlapping duplicate note text on a row across repeat passes ([note](notes/lint-vocab-queue-note-duplication.md)). Index checked against pages on disk: no orphans, no dead links. Spend: US$0.
+
 ## [2026-09-22] build | Twelve band-1 verbs, everyday and irregular
 
 Thirty-third scheduled run, build (highest scheduler debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed 20 band-1 verbs; released 8 (*become, begin, believe, belong, bend, bite, bleed, blow*) back to `pending`, favoring fewer, better entries. Drafted *answer, appeal, appear, apply, argue, arrest, arrive, ask, assume, attack, bake, beat* (2–4 senses each). Inflections 12/12 verified, *beat* from the exceptions table. Pronunciation 24/24 verified. Panel: 71 issues, 48 blocking, 63 applied, 8 rejected, 1 escalated (precision reviewer-a 0.881, reviewer-b 0.897). Rejected clean misreads: "usually passive" is a valid verb pattern, not an invalid code; "office" in *assume office* is a direct object, not intransitive; the house "To X is to..." core-idea form is standard; American IPA `bit` for *beat* correctly drops the length mark per house convention. Split *appear* sense 3 (performing vs. attending court). Moved *apply yourself* into its own phrase. Escalated whether *beat* is a merely-informal past participle to `needs_curator.txt`; entry flagged `inflection-disputed`. Fixed eleven defining-vocabulary violations by rewording. 16 closure/crossref targets queued; all 12 marked done. Gate, caps, links, 305 tests, lint_vocab and crossref gates pass. Spend: US$0.42 of the US$1.25 run budget.
