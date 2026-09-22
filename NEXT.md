@@ -1,34 +1,34 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-22 by the thirty-fifth scheduled review run.*
+*Rewritten 2026-09-22 by the thirty-sixth scheduled build run.*
 
 ## State
 
-- 310 entries, all `reviewed` (0 `draft`). Queue: 4,118 pending, 32 claimed, 310 done, 9 declined, 4 duplicate (total 4,473).
-- Review mode (selector: highest scheduler debt). Pre-flight: no open pull request, no orphan branch, inbox empty; checkout confirmed at `origin/main`'s latest commit.
-- Took the 20 oldest `reviewed` entries with only one panel round (block size 20): *good, water, house, bank, head, thing, way, time, color, record* (n and v), *shit, people, news, family, x-ray, all, another, any, either*. `reviewed_once_only` now 224 (was 244).
-- Panel: 113 issues (86 blocking), 70 applied, 43 rejected, 0 escalated. Precision 0.62 both roles this run.
-- Real content fixes: false House-of-Lords claim in *house*; any/some overgeneralizations in *any*; a biology-only label on a sense covering languages too in *family*; raw IPA/jargon in several pronunciation notes; a countability bug in *water*. Moved four misplaced non-determiner uses out per the one-part-of-speech rule (*at all*/*all in all*, *either ... or*, *time* sense 7 the multiplication use); queued the three entries this needs: `all` (adv), `either` (conj), `times` (prep).
-- Reviewer-suggested wording twice broke defining-vocabulary discipline (*ethnic*, *origin*, *album*, plus pre-existing *congress*, *gambling*, *shelter* already in *house*); reworded all six definitions to stay inside `schema/defining-vocabulary.txt` and queued the six words instead of drafting them mid-review.
-- Mechanical checks all clean: gate, caps, links, 305 unit tests, lint_vocab (0 violations after the vocabulary fixes above), crossref (0 errors, 902 missing targets, growing as expected).
-- Spend: US$1.54 of the US$1.25 run-budget guideline (the panel call for 19 entries alone cost $1.53; no further paid calls taken this run once over) of US$2.95 today's US$5 cap.
+- 322 entries, all `reviewed` (0 `draft`). Queue: 4,130 pending, 32 claimed, 322 done, 9 declined, 4 duplicate (total 4,497).
+- Build mode (selector: highest scheduler debt). Pre-flight: no open pull request, no orphan branch, inbox empty; checkout confirmed at `origin/main`'s latest commit.
+- Claimed 20 band-1 words; released 8 verbs (*care, carry, catch, cause, celebrate, change, charge, check*) back to `pending`, favoring fewer, better entries. Drafted *times* (prep) and *either* (conj) — both queued by the prior review run for the crossref split-outs — plus ten verbs: *breed, bring, brush, build, burn, bury, buy, calculate, call, calm*.
+- Inflections 12/12 verified (*breed, bring, build, buy* from the exceptions table, the rest by rule). Pronunciation 24/24 verified, all agreement, no disputes.
+- Panel: 38 issues (32 blocking), 28 applied, 10 rejected, 0 escalated. Precision this run: reviewer-a 0.72, reviewer-b 0.78.
+- Real content fixes: circularity and an overstated exclusivity claim in *times*/*either*; a house-style definition-prefix bug in *breed*; a disputed *bring*/*take* learner error rewritten unambiguously; an unverifiable etymological claim pulled from *bury the hatchet*'s adaptation note (etymology claims belong only in `etymology`, never adaptation, per the style guide); *call* sense 4 unified after two readings conflicted. Rejected a request to split *times* into two part-of-speech entries — kept combined per the prior run's explicit queue note.
+- Fixed three defining-vocabulary violations (*gradually*, *intensely*, *prepare*) by rewording.
+- Mechanical checks all clean: gate, caps, links, 305 unit tests, lint_vocab and crossref gates (0 violations, 0 errors).
+- Spend: US$0.40 of the US$1.25 run-budget guideline; US$3.35 of the US$5 today's cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **closure** or **build**: `next_mode.py` now reports build=2.20 and closure=2.40 debt (closure highest, but the tool selected build last time it was checked here — re-run `next_mode.py --explain` fresh, do not assume). `queue_closure` is 533 and growing.
-2. **review**: 224 `reviewed` entries remain at one panel round.
-3. **lint**: 2 runs since the last one; check `next_mode.py --explain` for the forced threshold.
-4. Six pre-existing `link override target has no entry` warnings, now seven with `all-adv` added this run (all harmless, all queued).
-5. Next originality run due at run 50 (every 10th); we are at run 44 (metrics run counter) / run 35 (routine count) — check `next_mode.py --explain`'s `runs_total`.
+1. **closure**: `next_mode.py` now reports closure debt 2.50 (highest); `queue_closure` is 555 and growing. Re-run `next_mode.py --explain` fresh at the next session start, do not assume.
+2. **review**: 236 `reviewed` entries remain at one panel round (debt 2.00).
+3. **lint**: 3 runs since the last one; forced at 5.
+4. Next originality run due at scheduler run 50 (every 10th); we are at run 45.
+5. 37 new closure/crossref targets queued this run (phrasal verbs, word-family members, synonym/antonym targets for the ten new verbs and *times*/*either*); seven pre-existing `link override target has no entry` warnings, all harmless, all queued.
 
 ## Fences (do not re-grind)
 
 - The charter decisions in `wiki/decisions/` are the owner's; do not reopen them.
-- American IPA drops the length mark on `i` (not `iː`) and `ɝ` (not `ɝː`); British keeps `iː`/`ɜː`. A reviewer flagging this is itself wrong — confirmed again this run on *any-det* (rejected).
-- `tools/entry_path.py <slug>` always prints a deterministic path and exits 0, whether or not the file exists. Checking existence needs a real file test (`[ -f "$(...)" ]`), never the command's success alone — a wrong assumption here this run nearly mis-queued *gambling* as a duplicate of a nonexistent `gamble-v` (caught and reverted before commit).
-- A word outside `schema/defining-vocabulary.txt` may go in a definition/explanation/core_idea only when its own entry exists; check the vocabulary file directly before accepting a reviewer's proposed rewording of a definition, or queue the word and use different phrasing instead.
-- "Another one" is determiner + pro-noun "one" (like "another day"), not a pronoun use of *another* — a reviewer flagging this is wrong.
-- Phrases/collocations that are genuinely a different part of speech than the host entry (adverb, conjunction) get removed and the missing entry queued with `queue.py add ... --source crossref`, per the *the* (adv) and *either* (adv) precedent.
+- American IPA drops the length mark on `i`, `ɝ`, and `ɔ` (not `iː`, `ɝː`, `ɔː`); British keeps the length mark. Confirmed again this run on *burn*, *call*.
+- A claim about a word's or phrase's origin lives only in `etymology` (with two verified sources), never in an `adaptation` note — caught this run on *bury the hatchet*'s culture note, which was unverifiable and removed rather than kept as a hedge.
+- `times` (prep) intentionally bundles the arithmetic "multiplied by" sense and the comparative "that much more" sense in one entry, per the review run that queued it (2026-09-22); a reviewer proposing to split them by part of speech was rejected on that basis.
+- A full sense's definition may not open with an "of X:" restrictive prefix (that pattern is reserved, and only loosely, for subsenses); state the restriction in the sense's `explanation` instead. *break-v* sense 4 still has this bug uncorrected — a future lint or review pass should fix it.
 
 ## For the owner
 
