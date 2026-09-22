@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-22] build | Twelve band-1 verbs: become, begin, believe, belong, bend, bite, bleed, blow, board, boil, break, breathe
+
+Thirty-fourth scheduled run, build. Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed 20 band-1 verbs; released 8 (*breed, bring, brush, build, burn, bury, buy, calculate*) back to `pending`, favoring fewer, better entries. Drafted the other 12 (1–7 senses each; *break* and *blow* carried subsenses and idiom phrases). Inflections 12/12, pronunciation 24/24, both verified. Panel: 99 decisions (91 applied, 8 rejected) across 56 blocking issues; *break-v* needed a second reviewer-b pass after its first reply parsed with zero verdicts. Rejected clean misreads: American IPA `blid` for *bleed* drops the length mark correctly; `theatre` is the exact closed-vocabulary spelling. Split *break* sense 7 (interruption vs. *break the silence*). Moved examples off phrasal-verb particles (*blow out*, *blow up*) that belong to their own entries. Fixed a circularity (*break*'s definition used "break"). Logged a follow-up on `queue-stale-claimed-rows.md`: the prior run's release step left these 8 words at `claimed`, not `pending`. 56 closure/crossref targets queued; all 12 done. Gate, caps, links, 305 tests, lint_vocab and crossref gates pass. Spend: US$0.51 of the US$1.25 run budget.
+
 ## [2026-09-22] lint | Seventh pass: mechanical checks clean, no new switch-offs, one tooling gap logged
 
 Seventh scheduled run, forced (5 runs since the last lint). Pre-flight: no open pull request, no orphan branch, inbox empty; checkout confirmed at `origin/main`'s latest commit.
