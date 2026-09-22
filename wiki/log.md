@@ -2,6 +2,14 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-22] review | Second panel round: good, water, house, bank, head, thing, way, time, color, record (n/v), shit, people, news, family, x-ray, all, another, any, either
+
+Review, highest debt. Took the 20 oldest `reviewed` entries with one panel round. Panel: 113 issues, 70 applied, 43 rejected, 0 escalated; reviewer precision 0.62 both roles.
+
+Real fixes: a false House-of-Lords claim in *house*; an inaccurate vowel note and any/some overgeneralizations in *any*; a biology-only label on a sense covering language families too in *family*; raw IPA and banned phonetic jargon in several pronunciation notes; a countability bug in *water* (*a water*, coded uncountable). Rejected overreach on the American-IPA length-mark convention and two standard learner-error notes. Moved four misplaced uses out per the one-part-of-speech rule: *at all*/*all in all* (adverb), *either ... or* (conjunction), *time*'s multiplication sense (prep/conj); rejected the same claim for *another one*. Queued: `all` (adv), `either` (conj), `times` (prep). Reviewer wording twice broke the defining-vocabulary rule (*ethnic*, *origin*, *album*, plus pre-existing *congress*, *gambling*, *shelter*); reworded inside the vocabulary, queued the words instead. A stray `--decide` wrongly marked *gambling* a duplicate of a nonexistent `gamble-v`; reverted.
+
+Gate, caps, links, tests, lint_vocab, crossref pass. Spend: US$1.54, over the US$1.25 guideline.
+
 ## [2026-09-22] build | Twelve band-1 verbs: become, begin, believe, belong, bend, bite, bleed, blow, board, boil, break, breathe
 
 Thirty-fourth scheduled run, build. Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed 20 band-1 verbs; released 8 (*breed, bring, brush, build, burn, bury, buy, calculate*) back to `pending`, favoring fewer, better entries. Drafted the other 12 (1–7 senses each; *break* and *blow* carried subsenses and idiom phrases). Inflections 12/12, pronunciation 24/24, both verified. Panel: 99 decisions (91 applied, 8 rejected) across 56 blocking issues; *break-v* needed a second reviewer-b pass after its first reply parsed with zero verdicts. Rejected clean misreads: American IPA `blid` for *bleed* drops the length mark correctly; `theatre` is the exact closed-vocabulary spelling. Split *break* sense 7 (interruption vs. *break the silence*). Moved examples off phrasal-verb particles (*blow out*, *blow up*) that belong to their own entries. Fixed a circularity (*break*'s definition used "break"). Logged a follow-up on `queue-stale-claimed-rows.md`: the prior run's release step left these 8 words at `claimed`, not `pending`. 56 closure/crossref targets queued; all 12 done. Gate, caps, links, 305 tests, lint_vocab and crossref gates pass. Spend: US$0.51 of the US$1.25 run budget.
