@@ -1,27 +1,24 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-22 by the thirty-second scheduled Routine run (build mode).*
+*Rewritten 2026-09-22 by the thirty-first scheduled Routine run (originality mode).*
 
 ## State
 
-- 286 entries, all `reviewed` (0 `draft`). Queue: 4,081 pending, 32 claimed, 286 done, 9 declined, 4 duplicate.
-- Build mode (selector: highest scheduler debt). Pre-flight: no open pull request, no orphan branch, inbox empty; checkout confirmed at `origin/main`'s latest commit.
-- Claimed and built the 13 entries the top of the queue offered: conjunctions *when, where, whether, while, yet* and modals *could, may, might, ought, shall, should, will, would* — completing both closed categories.
-- Inflections: all `source: none` (expected for conj/modal). Pronunciation: 26/26 transcriptions verified by full panel agreement.
-- Panel: 72 issues, 40 blocking, 64 applied, 5 rejected (precision reviewer-a 0.929, reviewer-b 0.926) — see `wiki/log.md` for the recurring patterns (softened absolute grammar claims, an overclaimed "formal" register, etymology-in-usage-note).
-- Fixed 12 defining-vocabulary violations in definitions by rewording; 11 closure/crossref targets queued.
-- Mechanical checks: `validate.py --gate` (0 errors, 6 pre-existing warnings, unchanged), caps, links, 305 unit tests, `lint_vocab.py --gate --changed` (0 violations), `crossref.py --gate` (0 errors, 1003 warnings — closure gap, growing as expected).
-- New finding logged, not yet fixed: [queue-stale-claimed-rows](wiki/notes/queue-stale-claimed-rows.md) — eleven band-1 conjunctions (*although, as, but, if, nor, once, or, since, so, though, unless*) are stuck at queue status `claimed` with no backing claim file, so `queue.py next` permanently skips them. Work around by hand (`queue.py set "<word>" conj pending --note "..."`) until a tool fix lands.
-- Spend: US$0.47 this run, well under the $1.25 run budget and $5 daily cap.
+- 286 entries, all `reviewed` (0 `draft`). Queue: 4,081 pending, 32 claimed, 286 done, 9 declined, 4 duplicate. Unchanged this run.
+- Originality mode (selector: forced, run 40 is a multiple of 10). Pre-flight: no open pull request, no orphan branch, inbox empty; checkout confirmed at `origin/main`'s latest commit.
+- Sampled 10 definitions, ran an exact-phrase web search on each, put the standard question to reviewer-a in one combined call ($0.0052). No page anywhere matched any of the 10 texts verbatim. Reviewer-a said "copied" for 7/10, citing Cambridge Dictionary each time, but every citation failed on inspection (two were the reviewer echoing our own text back; five named a real Cambridge entry with different actual wording). Verdict: 4 original, 6 generic-overlap, 0 rewrite. Recorded to `reviews/originality/2026-09-22.md`; nothing rewritten.
+- New note logged: [reviewer-noise](wiki/notes/reviewer-noise.md) third entry — reviewer-a's "copied" calls have taken three different shapes (blanket, unsupported-mixed, now confident-but-mismatched-citation) across three forced runs; not yet enough to change the tooling.
+- The public site is confirmed **live**: <https://tkgally.github.io/eex-dict/>. `README.md`'s Site section now names the URL; the "enable GitHub Pages" owner item is closed.
+- Spend: US$0.0052 this run (well under the $0.1 run budget), US$0.4760 today of the $5 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **originality**: the selector reports run 40 is a forced multiple of 10 — likely due next scheduled run (subject to the known duplicate-metrics-call miscount, see item 4).
-2. **build**: after originality, resume band 1. The eleven stale-claimed conjunctions above are high-value defining-vocabulary words but need the queue-status workaround first; otherwise move to nouns/verbs/adjectives per `queue.py next` order (suffixes/affixes are next after conj/modal exhaust, so prefer hand-picking content words over them for now).
-3. **review**: 220 `reviewed` entries remain at only one panel round; pick the next block by `params.block_size` when review is next selected.
-4. `runs_since_lint` is now 3 (lint debt still deeply negative, -4.05); the duplicate-row metrics-call inflation from [metrics-duplicate-calls](wiki/notes/metrics-duplicate-calls.md) still applies, not yet fixed — this run called `metrics.py` exactly once, per the rule.
-5. **closure**: 472 cross-reference/family targets with no entry, still growing (1,003 missing-target warnings, mostly repeats of the same targets).
-6. Six pre-existing `link override target has no entry` warnings (*alone-adj, favorite-adj, that-pron, very-adv, whatever-det*, one `time-n` example-marking warning) are unchanged and harmless.
+1. **build**: resume band 1. Per the 2026-09-22 build run: eleven band-1 conjunctions (*although, as, but, if, nor, once, or, since, so, though, unless*) are stuck at queue status `claimed` with no backing claim file ([queue-stale-claimed-rows](wiki/notes/queue-stale-claimed-rows.md)); work around by hand (`queue.py set "<word>" conj pending --note "..."`) before drafting them. Otherwise move to nouns/verbs/adjectives per `queue.py next` order.
+2. **review**: 220 `reviewed` entries remain at only one panel round; pick the next block by `params.block_size` when review is next selected.
+3. `runs_since_lint` is now 4 (lint debt still deeply negative, was -4.05); the duplicate-row metrics-call inflation from [metrics-duplicate-calls](wiki/notes/metrics-duplicate-calls.md) still applies, not yet fixed — this run called `metrics.py` exactly once, per the rule.
+4. **closure**: 472 cross-reference/family targets with no entry, still growing (1,003 missing-target warnings as of the last lint pass, mostly repeats of the same targets).
+5. Six pre-existing `link override target has no entry` warnings (*alone-adj, favorite-adj, that-pron, very-adv, whatever-det*, one `time-n` example-marking warning) are unchanged and harmless.
+6. Next originality run due at run 50 (every 10th).
 
 ## Fences (do not re-grind)
 
@@ -32,8 +29,10 @@
 - Never mutate a list while iterating over it when patching entry JSON by script.
 - Closed-vocabulary grammar codes must be checked against `schema/vocabularies.json` before rejecting a code as invalid; `polite` is a valid register value, not a reviewer-b false positive.
 - A contraction or short form listed in `variants[]` (kind `form`) is auto-marked by the site in examples; it does not need a hand `**mark**`.
+- An originality-check "copied" verdict from reviewer-a needs its cited source checked against the actual text, not taken on trust — see [reviewer-noise](wiki/notes/reviewer-noise.md).
 
 ## For the owner
 
-- Three items remain open: enable GitHub Pages; open question 4 (split *be/have/do/one* by part of speech?); open question 5 (the look of the marks).
+- The public site is live: <https://tkgally.github.io/eex-dict/>.
+- Two open questions remain: open question 4 (split *be/have/do/one* by part of speech?); open question 5 (the look of the marks).
 - `reviews/needs_curator.txt` has ten open items, unchanged this run.

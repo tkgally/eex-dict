@@ -2,6 +2,14 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-22] originality | Third forced originality check; GitHub Pages confirmed live
+
+`next_mode.py` forced originality (run 40). Sampled 10 definitions; ran an exact-phrase web search for each; put the standard question to reviewer-a in one combined call ($0.0052). No page matched any of the 10 texts verbatim. Reviewer-a said "copied" for 7/10 and, for the first time, cited Cambridge Dictionary each time — but two citations were the reviewer echoing our own sentence back, and the other five named a real entry with different actual wording. All 7 downgraded to `generic-overlap`; verdict 4 original, 6 generic-overlap, 0 rewrite. Logged as a third [reviewer-noise](notes/reviewer-noise.md) data point: a new, more convincing-looking shape of the same over-triggering pattern. Recorded to `reviews/originality/2026-09-22.md`.
+
+The owner confirmed the public site is now live at <https://tkgally.github.io/eex-dict/> (previously an open item). Updated `README.md`'s Site section and cleared the item from `NEXT.md`.
+
+Spend: US$0.0052 this run, US$0.4760 today. No entries changed; `metrics.py` called once.
+
 ## [2026-09-22] build | Thirteen function-word entries: conjunctions and modals
 
 Thirty-second scheduled run, build (highest scheduler debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed the top of the queue, exactly the remaining conjunctions and modals: *when, where, whether, while, yet* (conjunction) and *could, may, might, ought, shall, should, will, would* (modal) — two closed grammatical categories completed in one run. Inflections: all `source: none` as expected. Pronunciation: 26/26 transcriptions verified by full panel agreement. Panel: 72 issues, 40 blocking, 64 applied, 5 rejected (precision reviewer-a 0.929, reviewer-b 0.926). Recurring findings: absolute grammar claims needing softened exceptions (*will*/*would* in *if*/*when* clauses for willingness), an overclaimed "formal" register on *ought* and one sense of *might*, and an etymological aside in two usage notes that belonged in `etymology` instead — removed rather than sourced, since neither was verified against two open references. Rejected: `polite` challenged as a non-standard register label (it is a valid closed-vocabulary value) and a claim that a variant-listed contraction (*shan't*) needed hand-marking (the site auto-marks `variants[]`). Fixed twelve defining-vocabulary violations by rewording. 11 closure/crossref targets queued. Gate, caps, links, 305 tests, lint_vocab and crossref gates pass. Spend: US$0.47.
