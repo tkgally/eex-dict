@@ -2,6 +2,12 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-22] lint | Eighth pass: 32 stale queue claims freed, two stale summaries corrected
+
+Forty-eighth scheduled run, lint (forced: 5 runs since the last). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Mechanical checks: `check_caps`, `check_links` clean; `crossref --all --apply` updated 6 entries with back-links, 0 errors; `lint_vocab --all --queue` 0 violations. `claim.py --prune` removed 3 stale claim files. `metrics.py --precision`: the five disabled pairs unchanged; `reviewer-a` overall 0.69 (1138/1649, up from 0.68); `reviewer-b` 0.70 (442/630, up from 0.69); nothing newly crossed 30 percent at twenty-plus decisions; nearest is `reviewer-a` `pronunciation` at 0.34.
+
+Judgmental pass: `wiki/index.md` still called two notes (`pronounce-check-stale-flag`, `review-panel-decide-substring-collision`) "fix due a later run" though both landed in code 2026-09-20 — corrected. `queue-stale-claimed-rows` had spread: all 32 `claimed` rows (16 conjunctions, 16 prepositions), not just the eleven first caught, had zero backing claim file. Freed all 32 to `pending` by hand; `queue.py counts` now shows `claimed=0`. Root-cause tool fix still not done. Left `break-v` sense 4's "of X:" definition-prefix bug for a review run with budget (needs the paid panel). Gate, caps, links, 305 tests, lint_vocab and crossref gates pass, 0 errors. Spend: US$0.
+
 ## [2026-09-22] closure | Eight nouns: aircraft, album, mathematics, mixture, origin, permission, responsibility, shelter
 
 Thirty-seventh scheduled run, closure (highest debt). Pre-flight clean. Claimed 20 closure-queue slugs; 12 were bogus `lint_vocab.py --queue` pos-guesses (wrong base form, a verb-only word queued as a noun, or a split artifact from "British English"), declined with reasons on their queue rows; correct forms re-queued (*commit-v, gamble-v, achievement-n, resource-n, criticism-n*). Drafted the remaining 8, 1–2 senses each.
