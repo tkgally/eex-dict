@@ -14,4 +14,4 @@ An original English-English learner's dictionary for intermediate and advanced l
 
 ## Site
 
-The site is deployed by GitHub Pages from the `pages` workflow. Until a domain is set, it lives at the repository's GitHub Pages URL.
+The site is deployed by GitHub Pages from the `pages` workflow, live at <https://tkgally.github.io/eex-dict/>. Until a custom domain is set, it stays at that GitHub Pages URL.
