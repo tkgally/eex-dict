@@ -1375,7 +1375,7 @@ minute	n	1	defining	pending	2026-09-16	votes 3
 mirror	n	1	defining	pending	2026-09-16	votes 2
 mis-	prefix	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
 mistake	n	1	defining	pending	2026-09-16	votes 2
-mix	v	1	defining	pending	2026-09-16	votes 3
+mix	v	1	defining	pending	2026-09-16	votes 3; referenced by mixture-n
 mm	abbr	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
 modern	adj	1	defining	pending	2026-09-16	votes 2; referenced by old-adj
 modest	adj	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
@@ -3398,8 +3398,8 @@ orchard	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wo
 orchestra	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
 ordinary	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
 organic	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
-original	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=1,wordlist-3=2)
-originally	adv	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
+original	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=1,wordlist-3=2); referenced by origin-n
+originally	adv	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2); referenced by origin-n
 outbreak	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 outcome	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
 outfit	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
@@ -4362,10 +4362,10 @@ oppose	v	3	family	pending	2026-09-21	referenced by opposition-n
 surrounding	adj	3	family	pending	2026-09-21	referenced by surround-v
 surroundings	n	3	family	pending	2026-09-21	referenced by surround-v
 because	prep	3	crossref	pending	2026-09-21	the because+NP preposition use split out of because-conj sense 3 in review; referenced by because-conj
-achieve	n	3	closure	pending	2026-09-21	used in action-n senses[0].definition; pos guessed (no morphological signal), check before claiming; used in aim-n senses[0].definition; pos guessed (no morphological signal), check before claiming; used in action-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming
-obtained	v	3	closure	pending	2026-09-21	used in available-adj senses[0].definition
-permission	n	3	closure	pending	2026-09-21	used in allow-v senses[0].definition; pos guessed (no morphological signal), check before claiming; used in allow-v senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming
-resources	n	3	closure	pending	2026-09-21	used in afford-v senses[0].definition; pos guessed (no morphological signal), check before claiming
+achieve	n	3	closure	declined	2026-09-21	used in action-n senses[0].definition; pos guessed (no morphological signal), check before claiming; used in aim-n senses[0].definition; pos guessed (no morphological signal), check before claiming; used in action-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming; no noun sense; pos misguessed, achieve is verb-only
+obtained	v	3	closure	declined	2026-09-21	used in available-adj senses[0].definition; wrong base form; obtain already queued separately (crossref, pending)
+permission	n	3	closure	done	2026-09-21	used in allow-v senses[0].definition; pos guessed (no morphological signal), check before claiming; used in allow-v senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming
+resources	n	3	closure	declined	2026-09-21	used in afford-v senses[0].definition; pos guessed (no morphological signal), check before claiming; inflected plural; headword should be resource (singular)
 accidental	adj	3	family	pending	2026-09-21	referenced by accident-n
 accidentally	adv	3	family	pending	2026-09-21	referenced by accident-n
 advantageous	adj	3	family	pending	2026-09-21	referenced by advantage-n
@@ -4377,7 +4377,7 @@ angrily	adv	3	family	pending	2026-09-21	referenced by angry-adj
 availability	n	3	family	pending	2026-09-21	referenced by available-adj
 furious	adj	3	crossref	pending	2026-09-21	referenced by angry-adj
 mad	adj	3	crossref	pending	2026-09-21	referenced by angry-adj
-permit	v	3	crossref	pending	2026-09-21	referenced by allow-v
+permit	v	3	crossref	pending	2026-09-21	referenced by allow-v; referenced by permission-n
 unavailable	adj	3	family	pending	2026-09-21	referenced by available-adj
 unaware	adj	3	crossref	pending	2026-09-21	referenced by aware-adj
 the	adv	1	crossref	pending	2026-09-21	correlative comparative use (the more..., the better...) split from the-det, review run 20260921T123329Z-8t05x6; referenced by the-det
@@ -4390,12 +4390,12 @@ admirable	adj	3	family	pending	2026-09-21	referenced by admire-v
 admirer	n	3	family	pending	2026-09-21	referenced by admire-v
 adopted	adj	3	family	pending	2026-09-21	referenced by adopt-v
 passive	adj	3	crossref	pending	2026-09-21	referenced by active-adj
-achievements	n	3	closure	pending	2026-09-21	used in admire-v senses[0].definition; pos guessed (no morphological signal), check before claiming
+achievements	n	3	closure	declined	2026-09-21	used in admire-v senses[0].definition; pos guessed (no morphological signal), check before claiming; inflected plural; headword should be achievement (singular)
 biological	adj	3	closure	pending	2026-09-21	used in adopt-v senses[0].definition
-gradually	n	3	closure	pending	2026-09-21	used in absorb-v senses[0].definition; pos guessed (no morphological signal), check before claiming
+gradually	n	3	closure	declined	2026-09-21	used in absorb-v senses[0].definition; pos guessed (no morphological signal), check before claiming; wrong pos; gradually is adverb-only, already queued as adv (band, pending)
 affect	n	3	crossref	pending	2026-09-21	referenced by affect-v (psychology term, distinct sense)
-aircraft	n	3	closure	pending	2026-09-21	used in airport-n senses[0].definition; pos guessed (no morphological signal), check before claiming
-mixture	n	3	closure	pending	2026-09-21	used in air-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+aircraft	n	3	closure	done	2026-09-21	used in airport-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+mixture	n	3	closure	done	2026-09-21	used in air-n senses[0].definition; pos guessed (no morphological signal), check before claiming
 adverb	n	3	crossref	pending	2026-09-21	referenced by adjective-n
 advertisement	n	3	family	pending	2026-09-21	referenced by advertise-v
 advertising	n	3	family	pending	2026-09-21	referenced by advertise-v
@@ -4403,7 +4403,7 @@ affected	adj	3	family	pending	2026-09-21	referenced by affect-v
 affecting	adj	3	family	pending	2026-09-21	referenced by affect-v
 aim	v	3	family	pending	2026-09-21	referenced by aim-n
 airline	n	3	family	pending	2026-09-21	referenced by air-n
-airplane	n	3	family	pending	2026-09-21	referenced by air-n
+airplane	n	3	family	pending	2026-09-21	referenced by air-n; referenced by aircraft-n
 alarm	v	3	family	pending	2026-09-21	referenced by alarm-n
 alarmed	adj	3	family	pending	2026-09-21	referenced by alarm-n
 behave	v	3	crossref	pending	2026-09-21	referenced by act-v
@@ -4412,11 +4412,11 @@ promote	v	3	crossref	pending	2026-09-21	referenced by advertise-v
 stillness	n	3	crossref	pending	2026-09-21	referenced by activity-n
 wherever	conj	3	crossref	pending	2026-09-22	referenced by where-conj
 attractive	adj	3	closure	pending	2026-09-22	used in appeal-v core_idea
-committed	v	3	closure	pending	2026-09-22	used in arrest-v senses[0].definition
-criticize	n	3	closure	pending	2026-09-22	used in attack-v core_idea; pos guessed (no morphological signal), check before claiming
-react	n	3	closure	pending	2026-09-22	used in answer-v core_idea; pos guessed (no morphological signal), check before claiming
+committed	v	3	closure	declined	2026-09-22	used in arrest-v senses[0].definition; wrong base form; headword should be commit (past participle wrongly queued)
+criticize	n	3	closure	declined	2026-09-22	used in attack-v core_idea; pos guessed (no morphological signal), check before claiming; no noun sense; noun form is criticism, not criticize
+react	n	3	closure	declined	2026-09-22	used in answer-v core_idea; pos guessed (no morphological signal), check before claiming; no noun sense; citation stale (word not found in cited field); noun form is reaction
 relevant	adj	3	closure	pending	2026-09-22	used in apply-v core_idea
-responsibility	n	3	closure	pending	2026-09-22	used in assume-v senses[1].definition; pos guessed (no morphological signal), check before claiming
+responsibility	n	3	closure	done	2026-09-22	used in assume-v senses[1].definition; pos guessed (no morphological signal), check before claiming
 urgent	adj	3	closure	pending	2026-09-22	used in appeal-v core_idea
 answerable	adj	3	family	pending	2026-09-22	referenced by answer-v
 appealing	adj	3	family	pending	2026-09-22	referenced by appeal-v
@@ -4434,8 +4434,8 @@ quarrel	v	3	crossref	pending	2026-09-22	referenced by argue-v
 repel	v	3	crossref	pending	2026-09-22	referenced by appeal-v
 request	v	3	crossref	pending	2026-09-22	referenced by ask-v
 respond	v	3	crossref	pending	2026-09-22	referenced by answer-v
-british	n	3	closure	pending	2026-09-22	used in shall-modal senses[0].definition; pos guessed (no morphological signal), check before claiming
-english	n	3	closure	pending	2026-09-22	used in shall-modal senses[0].definition; pos guessed (no morphological signal), check before claiming
+british	n	3	closure	declined	2026-09-22	used in shall-modal senses[0].definition; pos guessed (no morphological signal), check before claiming; bogus extraction from compound 'British English'; adjective not noun
+english	n	3	closure	declined	2026-09-22	used in shall-modal senses[0].definition; pos guessed (no morphological signal), check before claiming; extracted from compound 'British English'; citation stale, ambiguous, deferred
 beginner	n	3	family	pending	2026-09-22	referenced by begin-v
 believable	adj	3	family	pending	2026-09-22	referenced by believe-v
 believer	n	3	family	pending	2026-09-22	referenced by believe-v
@@ -4466,11 +4466,11 @@ waste	v	3	crossref	pending	2026-09-22	referenced by blow-v
 all	adv	1	crossref	pending	2026-09-22	at all, all in all are adverbial; not determiner or pronoun uses; referenced by all-det
 either	conj	1	crossref	done	2026-09-22	either ... or is a conjunction, moved out of either-det; referenced by either-det
 times	prep	1	crossref	done	2026-09-22	multiplied by / that much more, three times four; moved out of time-n sense 7; referenced by time-n
-album	n	3	closure	pending	2026-09-22	used in record-n senses[4].definition; pos guessed (no morphological signal), check before claiming; referenced by record-n
+album	n	3	closure	done	2026-09-22	used in record-n senses[4].definition; pos guessed (no morphological signal), check before claiming; referenced by record-n
 ethnic	adj	3	closure	pending	2026-09-22	used in color-n senses[1].definition; also in 1 other entry
-gambling	v	3	closure	pending	2026-09-22	used in house-n senses[4].definition; inflected -ing form of existing gamble-v/gamble-n; no separate entry needed; reverted: gamble-v does not exist; was wrongly marked duplicate
-origin	n	3	closure	pending	2026-09-22	used in family-n core_idea; pos guessed (no morphological signal), check before claiming
-shelter	n	3	closure	pending	2026-09-22	used in house-n senses[0].subsenses[1].definition; pos guessed (no morphological signal), check before claiming
+gambling	v	3	closure	declined	2026-09-22	used in house-n senses[4].definition; inflected -ing form of existing gamble-v/gamble-n; no separate entry needed; reverted: gamble-v does not exist; was wrongly marked duplicate; inflected -ing form; gamble not an existing entry; see note history
+origin	n	3	closure	done	2026-09-22	used in family-n core_idea; pos guessed (no morphological signal), check before claiming
+shelter	n	3	closure	done	2026-09-22	used in house-n senses[0].subsenses[1].definition; pos guessed (no morphological signal), check before claiming
 take down	phrv	3	crossref	pending	2026-09-22	referenced by record-v
 breed	n	3	family	pending	2026-09-22	referenced by breed-v
 breeder	n	3	family	pending	2026-09-22	referenced by breed-v
@@ -4494,5 +4494,18 @@ calmly	adv	3	family	pending	2026-09-22	referenced by calm-v
 phone	v	3	crossref	pending	2026-09-22	referenced by call-v
 purchase	v	3	crossref	pending	2026-09-22	referenced by buy-v
 soothe	v	3	crossref	pending	2026-09-22	referenced by calm-v
-arrange	n	3	closure	pending	2026-09-22	used in brush-v senses[0].definition; pos guessed (no morphological signal), check before claiming
-mathematics	n	3	closure	pending	2026-09-22	used in calculate-v senses[0].definition; pos guessed (no morphological signal), check before claiming
+arrange	n	3	closure	declined	2026-09-22	used in brush-v senses[0].definition; pos guessed (no morphological signal), check before claiming; no noun sense; arrange already queued correctly as v (family, pending)
+mathematics	n	3	closure	done	2026-09-22	used in calculate-v senses[0].definition; pos guessed (no morphological signal), check before claiming
+commit	v	3	closure	pending	2026-09-22	correct base form; referenced by arrest-v senses[0].definition (was wrongly queued as committed-v)
+gamble	v	3	closure	pending	2026-09-22	correct base form; referenced by house-n senses[4] example note (was wrongly queued as gambling-v)
+achievement	n	3	closure	pending	2026-09-22	correct singular form; referenced by admire-v/action-n/aim-n (was wrongly queued as achieve-n/achievements-n)
+resource	n	3	closure	pending	2026-09-22	correct singular form; referenced by afford-v senses[0].definition (was wrongly queued as resources-n)
+criticism	n	3	closure	pending	2026-09-22	correct noun form; referenced by attack-v senses[1].signpost (was wrongly queued as criticize-n)
+mathematical	adj	3	family	pending	2026-09-22	referenced by mathematics-n
+mixed	adj	3	family	pending	2026-09-22	referenced by mixture-n
+originate	v	3	family	pending	2026-09-22	referenced by origin-n
+permit	n	3	family	pending	2026-09-22	referenced by permission-n
+responsible	adj	3	family	pending	2026-09-22	referenced by responsibility-n
+responsibly	adv	3	family	pending	2026-09-22	referenced by responsibility-n
+shelter	v	3	crossref	pending	2026-09-22	referenced by shelter-n
+sheltered	adj	3	family	pending	2026-09-22	referenced by shelter-n

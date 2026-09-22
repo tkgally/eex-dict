@@ -2,6 +2,14 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-22] closure | Eight nouns: aircraft, album, mathematics, mixture, origin, permission, responsibility, shelter
+
+Thirty-seventh scheduled run, closure (highest debt). Pre-flight clean. Claimed 20 closure-queue slugs; 12 were bogus `lint_vocab.py --queue` pos-guesses (wrong base form, a verb-only word queued as a noun, or a split artifact from "British English"), declined with reasons on their queue rows; correct forms re-queued (*commit-v, gamble-v, achievement-n, resource-n, criticism-n*). Drafted the remaining 8, 1–2 senses each.
+
+Inflections and pronunciation verified 16/16 (one disputed CMU vote on *responsibility*, kept per the two-vote rule). Panel: 18 issues, 17 applied, 1 rejected (precision reviewer-a 1.0, reviewer-b 0.875; one reviewer-b call failed to parse for *permission*, re-run). Fixes: several illustration phrases wrongly double-asterisked as words-named-as-words, some caught by reviewers, some by my own re-check; an overclaimed *mixture* chemistry definition simplified; two absolute "never plural" claims on *permission* softened for technical uses; a bad *responsibility* learner-error correction replaced with a natural to-infinitive pattern; a wrong collocation type on *shelter* fixed. Five defining-vocabulary violations reworded to zero.
+
+Gate, caps, links, 305 tests, lint_vocab and crossref gates pass. `metrics.py` was called twice (before and after `queue.py sync`), reproducing the known duplicate-row bug; left as is. Spend: US$0.21 of US$1.25 run budget.
+
 ## [2026-09-22] build | Ten verbs plus the two crossref-queued function words: times (prep), either (conj)
 
 Thirty-sixth scheduled run, build (highest debt). Pre-flight clean. Claimed 20; released 8 verbs, favoring fewer, better entries. Drafted *times* (prep) and *either* (conj), both queued by the prior review run, plus *breed, bring, brush, build, burn, bury, buy, calculate, call, calm* (1–4 senses each).
