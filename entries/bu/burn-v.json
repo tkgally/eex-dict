@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "add-v",
-  "slug": "add-v",
-  "headword": "add",
+  "id": "burn-v",
+  "slug": "burn-v",
+  "headword": "burn",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "æd",
+      "ipa": "bɝn",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "æd",
+      "ipa": "bɜːn",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,15 +25,15 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "adds",
-      "past_tense": "added",
-      "past_participle": "added",
-      "present_participle": "adding"
+      "third_person_singular": "burns",
+      "past_tense": "burned",
+      "past_participle": "burned",
+      "present_participle": "burning"
     },
-    "regular": true,
-    "source": "rules",
+    "regular": false,
+    "source": "exceptions",
     "status": "verified",
-    "note": null
+    "note": "also burnt, especially British"
   },
   "frequency": {
     "band": 1,
@@ -47,19 +47,18 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **add** is to put something together with something else, to say something more, or to put numbers together to find a total.",
+  "core_idea": "To **burn** is to be destroyed by fire, to damage something with heat, to use something as fuel, or to feel an emotion very strongly.",
   "senses": [
     {
       "n": 1,
-      "signpost": "put together",
-      "definition": "put something together with another thing to make a larger amount, number, or group",
+      "signpost": "on fire",
+      "definition": "produce flame and heat while being destroyed, or cause something to do this",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + object + preposition + object",
           "verb + object"
         ]
       },
@@ -73,63 +72,37 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Add a little salt to the soup.",
+          "text": "The wood burned slowly in the fireplace.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         },
         {
-          "text": "She added her name to the list.",
+          "text": "She burned the letter without reading it.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + object"
         },
         {
-          "text": "Add two cups of flour to the bowl.",
+          "text": "The candle burned all night.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "They added a new room to the house.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "adverb + verb",
           "items": [
-            "add salt",
-            "add water",
-            "add an ingredient"
-          ]
-        },
-        {
-          "type": "verb + preposition",
-          "items": [
-            "add to"
+            "burn slowly",
+            "burn brightly"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "lend-v",
-          "note": null
-        },
-        {
-          "slug": "calculate-v",
-          "note": null
-        }
-      ],
-      "antonyms": [
-        {
-          "slug": "remove-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
+      "antonyms": [],
       "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "The thing that receives the addition is introduced by **to**: *add milk to the batter*, not *add milk in the batter*.",
+        "grammar": null,
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -138,16 +111,15 @@
     },
     {
       "n": 2,
-      "signpost": "say something more",
-      "definition": "say something more after what has already been said",
+      "signpost": "damage by heat",
+      "definition": "damage or hurt something with heat or fire",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + that-clause",
-          "verb + direct speech"
+          "verb + object"
         ]
       },
       "labels": {
@@ -160,17 +132,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "\"And don't be late,\" she added.",
+          "text": "I burned my hand on the stove.",
           "note": null,
-          "pattern": "verb + direct speech"
+          "pattern": "verb + object"
         },
         {
-          "text": "He added that he would call again tomorrow.",
+          "text": "Don't burn the toast!",
           "note": null,
-          "pattern": "verb + that-clause"
+          "pattern": "verb + object"
         },
         {
-          "text": "I have nothing more to add.",
+          "text": "The sun burned her skin.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "Her skin burns easily in strong sun.",
           "note": null,
           "pattern": null
         }
@@ -179,14 +156,14 @@
         {
           "type": "verb + noun",
           "items": [
-            "add a comment"
+            "burn your hand",
+            "burn the toast"
           ]
         },
         {
-          "type": "phrase",
+          "type": "adverb + verb",
           "items": [
-            "nothing to add",
-            "if I may add"
+            "burn easily"
           ]
         }
       ],
@@ -205,12 +182,12 @@
     },
     {
       "n": 3,
-      "signpost": "in math",
-      "definition": "put two or more numbers together to find their total",
+      "signpost": "use as fuel",
+      "definition": "use something as fuel",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
           "verb + object"
@@ -219,42 +196,89 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "mathematics",
-          "education"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Add 5 and 3 to get 8.",
+          "text": "The furnace burns oil.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "Children learn to add before they learn to subtract.",
+          "text": "Cars burn gasoline.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + noun",
           "items": [
-            "add and subtract",
-            "add two numbers"
+            "burn fuel",
+            "burn gasoline"
           ]
         }
       ],
       "synonyms": [],
-      "antonyms": [
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "strong feeling",
+      "definition": "feel an emotion very strongly",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
         {
-          "slug": "subtract-v",
-          "note": null
+          "text": "She was burning with anger.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        },
+        {
+          "text": "He burned with curiosity to know the answer.",
+          "note": null,
+          "pattern": "verb + preposition + object"
         }
       ],
+      "collocations": [
+        {
+          "type": "verb + preposition",
+          "items": [
+            "burn with anger",
+            "burn with curiosity"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -270,63 +294,57 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "addition-n",
+      "slug": "burn-n",
       "form": null,
-      "note": null
+      "note": "an injury caused by fire or heat"
     },
     {
-      "slug": "additional-adj",
+      "slug": "burner-n",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [
-    {
-      "incorrect": "Add the sugar in the mixture.",
-      "correct": "Add the sugar to the mixture.",
-      "note": "**Add** takes **to**, not **in**, before what receives it."
-    }
-  ],
+  "learner_errors": [],
   "etymology": null,
   "see_also": [
     {
-      "slug": "add-up-phrv",
-      "note": "for **add up**, meaning to make sense or to calculate a total"
+      "slug": "burn-out-phrv",
+      "note": "become extremely tired from too much work"
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": null,
+    "grammar": "The past tense and past participle are **burned** in American English; British English often uses **burnt** instead.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-20T21:35:16Z",
-    "modified": "2026-09-22T16:04:12Z",
+    "created": "2026-09-22T15:44:00Z",
+    "modified": "2026-09-22T16:03:27Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260920T213316Z-u156ny",
+    "run_id": "20260922T154320Z-28os9u",
     "reviews": [
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260922T154320Z-28os9u",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/add-v.json",
-        "ok": 42,
-        "issues": 1,
-        "blocking": 0
+        "date": "2026-09-22",
+        "file": "reviews/20260922T154320Z-28os9u/burn-v.json",
+        "ok": 48,
+        "issues": 4,
+        "blocking": 3
       },
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260922T154320Z-28os9u",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/add-v.json",
-        "ok": 43,
+        "date": "2026-09-22",
+        "file": "reviews/20260922T154320Z-28os9u/burn-v.json",
+        "ok": 52,
         "issues": 0,
         "blocking": 0
       }

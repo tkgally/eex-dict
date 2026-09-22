@@ -2,6 +2,14 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-22] build | Ten verbs plus the two crossref-queued function words: times (prep), either (conj)
+
+Thirty-sixth scheduled run, build (highest debt). Pre-flight clean. Claimed 20; released 8 verbs, favoring fewer, better entries. Drafted *times* (prep) and *either* (conj), both queued by the prior review run, plus *breed, bring, brush, build, burn, bury, buy, calculate, call, calm* (1–4 senses each).
+
+Inflections and pronunciation verified 12/12 and 24/24. Panel: 38 issues, 32 blocking, 28 applied, 10 rejected (precision 0.72/0.78). Real fixes: a circular definition and an overstated exclusivity claim reworded across *times*/*either*; a house-style "of X:" definition prefix removed from *breed*; a disputed *bring*/*take* learner-error rewritten unambiguously; an unverifiable etymological claim removed from *bury the hatchet*'s adaptation note (belongs only in `etymology`); *call* sense 4 unified after two readings conflicted. Rejected: a negative *either...or* objection (standard construction); a "circular" flag on *burn*'s "use as fuel" (*fuel* is not a derivative); a self-contradicting *bury* pronunciation issue (already verified 4/4); a request to split *times* into two entries, kept combined per the prior queue note. Fixed three defining-vocabulary violations.
+
+Gate, caps, links, 305 tests, lint_vocab and crossref gates pass. 37 closure/crossref targets queued. Spend: US$0.40 of US$1.25 run budget.
+
 ## [2026-09-22] review | Second panel round: good, water, house, bank, head, thing, way, time, color, record (n/v), shit, people, news, family, x-ray, all, another, any, either
 
 Review, highest debt. Took the 20 oldest `reviewed` entries with one panel round. Panel: 113 issues, 70 applied, 43 rejected, 0 escalated; reviewer precision 0.62 both roles.
