@@ -7,3 +7,5 @@
 **Workaround used.** Kept the last two records (one per role) by hand; `provenance.reviews` is script-owned, so this touched no semantic field. Noted in the entry's `provenance.notes`.
 
 **Suggested fix.** On a `--roles` re-run, replace the existing record for the same `run_id` and role instead of appending, and write records only for the roles called. A unit test with a hollow first record would pin it.
+
+**Recurred 2026-09-23** (review run `20260923T124315Z-orpgu2`) on `least-det`: same four-record result, same hand workaround.
