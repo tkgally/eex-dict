@@ -1,6 +1,14 @@
 # Log
 
-*Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
+*Append-only, newest first. Header: `## [2026-09-23] build | Twelve conjunctions: after, although, before, but, if, nor, once, or, since, though, unless, until
+
+Forty-ninth scheduled run, build (highest debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed twelve of the sixteen band-1 conjunctions freed by the last lint; left *as, so, than, that* for a later run (each is large). Drafted 1–4 senses each; *but*, *if*, *or* have a core idea.
+
+Inflections 12/12 and pronunciation 24/24 verified (4/4 panel plus CMU). Panel: 19 issues, 18 blocking, all from reviewer-a; reviewer-b flagged nothing. 18 applied, 1 rejected. Real fixes: *before* sense 2 (*it was weeks before...*) wrongly defined as *until*, rewritten; *after*/*before* learner-error notes mixed the preposition's **-ing** use into the conjunction entry; *if* sense 4 (*a good, if long, meeting*) defined as a hedge; *unless* usage note overclaimed that **unless** never works for imagined past situations; two weak learner errors replaced or dropped. Rejected: a claim that *if ... or not* needs **whether**.
+
+A reviewer-b parse failure on *unless* was re-run; the re-run duplicated provenance records ([note](notes/review-panel-rerun-duplicate-records.md)). Gate, caps, links, tests pass. Spend: US$0.35 of US$1.25.
+
+## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
 ## [2026-09-22] lint | Eighth pass: 32 stale queue claims freed, two stale summaries corrected
 
