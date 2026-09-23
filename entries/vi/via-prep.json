@@ -1,27 +1,33 @@
 {
   "schema_version": "1.0",
-  "id": "outside-prep",
-  "slug": "outside-prep",
-  "headword": "outside",
+  "id": "via-prep",
+  "slug": "via-prep",
+  "headword": "via",
   "pos": "prep",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˌaʊtˈsaɪd",
+      "ipa": "ˈvaɪ.ə",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/4;cmudict:disagree",
+      "checked_by": "agreement:3/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˌaʊtˈsaɪd",
+      "ipa": "ˈvaɪ.ə",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
-    "variants": [],
+    "variants": [
+      {
+        "ipa": "ˈvi.ə",
+        "region": null,
+        "note": "also common: *VEE-uh*"
+      }
+    ],
     "audio": null,
-    "notes": null
+    "notes": "Most often said *VY-uh*; *VEE-uh* is also common."
   },
   "inflections": {
     "forms": {},
@@ -42,12 +48,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**Outside** shows a position not inside a place, or beyond the limits of a subject, group, or time.",
+  "core_idea": null,
   "senses": [
     {
       "n": 1,
-      "signpost": "not inside",
-      "definition": "not inside a building or an enclosed place",
+      "signpost": "through a place",
+      "definition": "through or stopping at a place on the way to somewhere else",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -65,47 +71,30 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "A crowd waited outside the theater.",
+          "text": "We drove home via the coast road.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Leave your boots outside the door.",
+          "text": "The train goes to the city via the airport.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There's a bench outside the library.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The dog sleeps outside the house at night.",
+          "text": "They came in via the back door.",
           "note": null,
           "pattern": null
         }
       ],
-      "collocations": [
-        {
-          "type": "preposition + noun",
-          "items": [
-            "outside the door",
-            "outside the building"
-          ]
-        }
-      ],
+      "collocations": [],
       "synonyms": [],
-      "antonyms": [
+      "antonyms": [],
+      "compare": [
         {
-          "slug": "inside-prep",
-          "note": null
-        },
-        {
-          "slug": "within-prep",
-          "note": null
+          "slug": "through-prep",
+          "note": "**via** names a place passed on the way to somewhere else; **through** is about going into something and out of the other side"
         }
       ],
-      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -118,8 +107,8 @@
     },
     {
       "n": 2,
-      "signpost": "beyond the limits of",
-      "definition": "beyond the limits of a subject, a group, a time, or a person's job",
+      "signpost": "using",
+      "definition": "by using a person, system, or machine to send or do something",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -137,33 +126,35 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "That question is outside my area of expertise.",
+          "text": "I'll send you the file via email.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The store is closed outside normal business hours.",
+          "text": "The meeting was held via video call.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Few people outside the company knew about the plan.",
+          "text": "We heard the news via a friend.",
           "note": null,
           "pattern": null
         }
       ],
-      "collocations": [
+      "collocations": [],
+      "synonyms": [
         {
-          "type": "phrase",
-          "items": [
-            "outside working hours",
-            "outside my area of expertise"
-          ]
+          "slug": "through-prep",
+          "note": null
         }
       ],
-      "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "by-prep",
+          "note": "**by** is more usual with a way of sending in everyday speech: *by email*, *by phone*"
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -176,20 +167,9 @@
     }
   ],
   "phrases": [],
-  "word_family": [
-    {
-      "slug": "outside-adv",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "outside-n",
-      "form": null,
-      "note": null
-    }
-  ],
+  "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": null,
+  "usage_note": "**Via** is common in writing and at work. In everyday speech, **by** is more usual for a way of sending (*by email*), and **through** for a person who passes something on (*through a friend*).",
   "learner_errors": [],
   "etymology": null,
   "see_also": [],
@@ -202,29 +182,29 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-20T18:37:00Z",
-    "modified": "2026-09-23T06:56:47Z",
+    "created": "2026-09-23T06:48:00Z",
+    "modified": "2026-09-23T06:56:39Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260920T183304Z-iruckz",
+    "run_id": "20260923T064303Z-8ccw4f",
     "reviews": [
       {
-        "run_id": "20260920T183304Z-iruckz",
+        "run_id": "20260923T064303Z-8ccw4f",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T183304Z-iruckz/outside-prep.json",
-        "ok": 32,
-        "issues": 3,
-        "blocking": 3
+        "date": "2026-09-23",
+        "file": "reviews/20260923T064303Z-8ccw4f/via-prep.json",
+        "ok": 29,
+        "issues": 5,
+        "blocking": 5
       },
       {
-        "run_id": "20260920T183304Z-iruckz",
+        "run_id": "20260923T064303Z-8ccw4f",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T183304Z-iruckz/outside-prep.json",
-        "ok": 34,
-        "issues": 0,
+        "date": "2026-09-23",
+        "file": "reviews/20260923T064303Z-8ccw4f/via-prep.json",
+        "ok": 33,
+        "issues": 1,
         "blocking": 0
       }
     ],
