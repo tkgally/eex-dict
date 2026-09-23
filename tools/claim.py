@@ -5,7 +5,7 @@
     python3 tools/claim.py --taken                   # every slug claimed on origin/main, origin/claude/*, or locally, plus existing entries
     python3 tools/claim.py "bank|n" "give up|phrv"   # claim these headwords (headword|pos[|homograph])
     python3 tools/claim.py --from-queue --n 20 [--band 1] [--source closure] [--pos n]
-    python3 tools/claim.py --prune                   # delete claim files whose slugs all have entries on origin/main (lint mode)
+    python3 tools/claim.py --prune                   # delete claim files whose slugs all have entries on origin/main, then queue.py sync (lint mode)
 
 A claim is headwords/claims/<run-id>.json (wiki/conventions.md section 3), written
 before drafting and committed with the entries. `git fetch origin` runs first so
@@ -151,6 +151,8 @@ def main() -> int:
             if slugs and slugs <= on_main:
                 p.unlink(); removed += 1; print(f"pruned {p.name}")
         print(f"pruned {removed} claim file(s)")
+        r = subprocess.run([sys.executable, str(HERE / "queue.py"), "sync"], capture_output=True, text=True, cwd=eexlib.ROOT)
+        print(r.stdout.strip() or r.stderr.strip())   # also resets queue rows left `claimed` with no claim file
         return 0
     if a.from_queue:
         cmd = [sys.executable, str(HERE / "queue.py"), "next", "--n", str(min(a.n, CAP))]

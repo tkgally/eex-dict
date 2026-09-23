@@ -204,6 +204,22 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
     return record
 
 
+def record_provenance(entry: dict, record: dict, file: str) -> None:
+    """One provenance.reviews line per role in the (merged) review file. A re-run in the same run (say
+    --roles reviewer-b after a parse failure) replaces that run's lines instead of appending beside them
+    (wiki/notes/review-panel-rerun-duplicate-records.md)."""
+    reviews = entry["provenance"].setdefault("reviews", [])
+    roles = {rev["role"] for rev in record["reviewers"]}
+    reviews[:] = [r for r in reviews if not (r.get("run_id") == record["run_id"] and r.get("role") in roles)]
+    for rev in record["reviewers"]:
+        issues = [v for v in rev["verdicts"] if v["verdict"] == "issue"]
+        reviews.append({
+            "run_id": record["run_id"], "role": rev["role"], "model": rev["model"],
+            "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "file": file,
+            "ok": sum(1 for v in rev["verdicts"] if v["verdict"] == "ok"), "issues": len(issues),
+            "blocking": sum(1 for v in issues if v["severity"] == "blocking")})
+
+
 def write_record(record: dict, entry_path: Path, entry: dict) -> Path:
     out = eexlib.ROOT / "reviews" / record["run_id"] / f"{record['slug']}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -213,13 +229,7 @@ def write_record(record: dict, entry_path: Path, entry: dict) -> Path:
         kept = [r for r in old.get("reviewers", []) if r["role"] not in new_roles and not r.get("error")]
         record["reviewers"] = kept + record["reviewers"]
     eexlib.save_json(out, record)
-    for rev in record["reviewers"]:
-        issues = [v for v in rev["verdicts"] if v["verdict"] == "issue"]
-        entry["provenance"].setdefault("reviews", []).append({
-            "run_id": record["run_id"], "role": rev["role"], "model": rev["model"],
-            "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "file": str(out.relative_to(eexlib.ROOT)),
-            "ok": sum(1 for v in rev["verdicts"] if v["verdict"] == "ok"), "issues": len(issues),
-            "blocking": sum(1 for v in issues if v["severity"] == "blocking")})
+    record_provenance(entry, record, str(out.relative_to(eexlib.ROOT)))
     entry["provenance"]["modified"] = eexlib.utcnow_iso()
     eexlib.save_json(entry_path, entry)
     return out

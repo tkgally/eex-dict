@@ -44,7 +44,21 @@ def history() -> list[dict]:
                 except json.JSONDecodeError:
                     continue
     rows.sort(key=lambda r: r.get("ts", ""))
-    return rows
+    return dedupe_runs(rows)
+
+
+def dedupe_runs(rows: list[dict]) -> list[dict]:
+    """One row per run: a run that called metrics.py twice counts once, at its first row's place, with its
+    last row's content (wiki/notes/metrics-duplicate-calls.md). Rows without a run_id are kept as they are."""
+    last = {r["run_id"]: r for r in rows if r.get("run_id")}
+    out, seen = [], set()
+    for r in rows:
+        rid = r.get("run_id")
+        if not rid:
+            out.append(r)
+        elif rid not in seen:
+            seen.add(rid); out.append(last[rid])
+    return out
 
 
 def budget_remaining() -> tuple[float, float, float]:
