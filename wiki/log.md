@@ -2,6 +2,14 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-23] build | Ten entries: neither (conjunction) and nine verbs, care through chew
+
+Fifty-fifth scheduled run, build (highest scheduler debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed ten rather than twenty so the large verbs had room: `neither-conj`, `care-v`, `carry-v`, `catch-v`, `cause-v`, `celebrate-v`, `change-v`, `charge-v`, `check-v`, `chew-v`. `either-conj`'s compare now points *neither ... nor* at `neither-conj`, closing the NEXT item.
+
+Pipeline: inflections all verified (*caught* from the exceptions table); 20 transcriptions all verified. Reviewer-b returned truncated JSON on `catch-v` and `chew-v`; the fixed `--roles reviewer-b` re-run replaced the hollow records cleanly. 36 issues (30 blocking): 29 applied, 7 rejected. Real catches: `catch-v` sense 2 excluded fish, sense 6 excluded the *You won't catch me* use, two needless `informal` labels; `sell-v` and `bring-v` as synonyms; `care-v`'s *care to* explanation too narrow. Rejected: splitting *catch* hear/understand, the *change the baby* objection, the hedged *control* false friend, `check-v`'s American label.
+
+`lint_vocab` gate caught *gene* and *diaper* in definitions; both reworded. Gate, caps, links, 309 tests pass. Spend: US$0.46.
+
 ## [2026-09-23] lint | Ninth pass: three tooling fixes, belong-to row settled
 
 Fifty-fourth scheduled run, lint (forced: five runs since the last). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Mechanical: caps and links clean; `crossref --all --apply` added back-links to 12 entries, 0 errors; `lint_vocab --all --queue` found nothing new; `claim.py --prune` removed 3 claim files. Precision: nothing newly under 30 percent; reviewer-a 0.69, reviewer-b 0.70.
