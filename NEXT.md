@@ -1,24 +1,23 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-23 by the forty-ninth scheduled run (build).*
+*Rewritten 2026-09-23 by the fiftieth scheduled run (originality).*
 
 ## State
 
 - 342 entries, all `reviewed` (0 `draft`). Queue: 4,147 pending, 0 claimed, 342 done, 21 declined, 4 duplicate (total 4,514).
-- This run: twelve band-1 conjunctions (*after, although, before, but, if, nor, once, or, since, though, unless, until*), full pipeline. Inflections 12/12 and pronunciation 24/24 verified. Panel: 19 issues (all reviewer-a), 18 applied, 1 rejected; reviewer-b raised nothing on any of the twelve.
+- This run: the fourth originality check (`reviews/originality/2026-09-23.md`). 10 sampled fields: 4 original, 4 generic-overlap, 2 rewritten (`airport-n` sense 1; `action-n` phrase *actions speak louder than words*), both through the full pipeline (2 minor issues, both applied).
+- Repaired `wiki/log.md`'s header line, which the forty-ninth run's entry had been spliced into. Log entries go below the italic header line, never inside it.
 - Pre-flight: no open pull request, no orphan branch, inbox empty.
-- Crossref queued 4 new missing targets (among them `once-adv`, `since-adv`, `though-adv`, `even-though-conj`, `neither-adv`, `otherwise-adv`, `until-prep`, `if-n`; some were already queued).
-- New tooling note: `review-panel-rerun-duplicate-records` (a `--roles reviewer-b` re-run after a hollow parse failure appends duplicate records to `provenance.reviews`; cleaned by hand on `unless-conj`).
-- Spend: US$0.35 of this run's US$1.25; US$0.35 of today's US$5 cap.
+- Spend: US$0.08 of this run's US$0.10; US$0.44 of today's US$5 cap.
 
 ## Queue (work top-down, one unit at a time)
 
 1. **build**: the four remaining band-1 conjunctions *as, so, than, that* (each large; two or three per run is plenty), then the 16 band-1 prepositions (*on, over, such as, through, throughout, to, toward, towards, under, until, up, upon, via, with, within, without*). *towards* is the British form of *toward*: record it as a variant of `toward-prep` and mark its queue row `duplicate` rather than drafting a second entry.
 2. **review**: 244 `reviewed` entries remain at one panel round.
 3. **closure**: 552 closure-gap lemmas.
-4. Next lint pass due at scheduler run 53; next originality run due at scheduler run 50 (this was run 49).
+4. Next lint pass due at scheduler run 53; next originality run due at scheduler run 60 (this was run 50).
 5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
-6. Tooling fixes due (notes in `wiki/notes/`): `review-panel-rerun-duplicate-records`, `queue-stale-claimed-rows`, `metrics-duplicate-calls`, `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`.
+6. Tooling fixes due (notes in `wiki/notes/`): `review-panel-rerun-duplicate-records`, `queue-stale-claimed-rows`, `metrics-duplicate-calls`, `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; and consider adding the "quote the source or do not answer copied" sentence to the reviewer question in `tools/originality_check.py` (`wiki/notes/reviewer-noise.md`, 2026-09-23 update).
 
 ## Fences (do not re-grind)
 

@@ -1,14 +1,18 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-09-23] build | Twelve conjunctions: after, although, before, but, if, nor, once, or, since, though, unless, until
+*Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
+
+## [2026-09-23] originality | Fourth check: 10 sampled, 2 rewritten (airport, actions speak louder than words)
+
+Fiftieth scheduled run, originality (forced: run 50). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Sampled 10 fields; exact-phrase search found no verbatim match for any. Verdicts: 4 original, 4 generic-overlap, 2 rewrite. `airport-n` sense 1 followed a published learner dictionary's sentence shape ("…take off and land, with buildings for passengers…"); `action-n`'s *actions speak louder than words* followed published wording ("shows … more clearly than what you say"). Both were rewritten by hand and put through the full pipeline: airport 0 issues, action 2 minor issues, both applied (a duplicate synonym/compare link, double asterisks on illustration phrases). reviewer-a, told to quote any source it claimed, said "cannot tell" 9 times and "copied" never ([note](notes/reviewer-noise.md)). Also repaired this page's header, which the previous run's entry had been spliced into. Spend: US$0.08 of US$0.10.
+
+## [2026-09-23] build | Twelve conjunctions: after, although, before, but, if, nor, once, or, since, though, unless, until
 
 Forty-ninth scheduled run, build (highest debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed twelve of the sixteen band-1 conjunctions freed by the last lint; left *as, so, than, that* for a later run (each is large). Drafted 1–4 senses each; *but*, *if*, *or* have a core idea.
 
 Inflections 12/12 and pronunciation 24/24 verified (4/4 panel plus CMU). Panel: 19 issues, 18 blocking, all from reviewer-a; reviewer-b flagged nothing. 18 applied, 1 rejected. Real fixes: *before* sense 2 (*it was weeks before...*) wrongly defined as *until*, rewritten; *after*/*before* learner-error notes mixed the preposition's **-ing** use into the conjunction entry; *if* sense 4 (*a good, if long, meeting*) defined as a hedge; *unless* usage note overclaimed that **unless** never works for imagined past situations; two weak learner errors replaced or dropped. Rejected: a claim that *if ... or not* needs **whether**.
 
 A reviewer-b parse failure on *unless* was re-run; the re-run duplicated provenance records ([note](notes/review-panel-rerun-duplicate-records.md)). Gate, caps, links, tests pass. Spend: US$0.35 of US$1.25.
-
-## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
 ## [2026-09-22] lint | Eighth pass: 32 stale queue claims freed, two stale summaries corrected
 
