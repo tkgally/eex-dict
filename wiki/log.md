@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-23] build | Eight function words: as (conjunction); on, over, such as, to, until, up, with (prepositions)
+
+Fifty-second scheduled run, build (highest debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Drafted the last band-1 conjunction (*as*) and the last seven band-1 prepositions, three of them very large (*on* 12 senses, *to* 10, *with* 11). All 16 transcriptions verified. Panel: 42 issues, 33 blocking; 29 applied, 13 rejected, 0 escalated; reviewer-b raised one issue in eight entries. Applied: spending uses of *on* and filling uses of *with* moved into their own subsenses; circular or synonym-only definitions reworded to match `since-conj` and `although-conj`. Rejected: *on 12 Oak Street* as standard; *the same ... as* as a determiner use; *Such as?* as not prepositional; *a quarter till five* as not American. New open question 6: infinitive *to* has no part-of-speech value and so no entry. Spend: US$0.49 of US$1.25.
+
 ## [2026-09-23] build | Eleven function words: so, than, that (conjunctions); through, throughout, toward, under, upon, via, within, without
 
 Fifty-first scheduled run, build (highest debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Drafted three of the four remaining band-1 conjunctions (left *as*, the largest) and eight band-1 prepositions; *towards* marked `duplicate` and recorded as a British variant of `toward-prep`. Pronunciation: all 22 transcriptions verified. Panel: 50 issues, 42 blocking; 40 applied, 10 rejected, 0 escalated. Structural fix, both reviewers agreed: relative *that* (*the book that I read*) is a pronoun, so it moved from `that-conj` to a new sense 2 of `that-pron`, whose usage note had routed it to `that-conj` since the eleventh run; `that-pron` went through the panel again (0 issues). Rejected: a claim that demonstrative *that* has a weak form; *used after* as a banned formula for function words; *upon Monday* as current English. Spend: US$0.46 of US$1.25.
