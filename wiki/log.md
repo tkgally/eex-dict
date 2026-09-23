@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-23] originality | Fifth check: 10 sampled, 2 rewritten (catch sense 3, alive sense 1)
+
+Fifty-sixth scheduled run, originality (forced: true run 50 under the corrected count). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Sampled 10 fields; exact-phrase search found no verbatim match for 9. Verdicts: 5 original, 3 generic-overlap, 2 rewrite. `catch-v` sense 3 was Longman's *catch a train* sentence with only the list changed; `alive-adj` sense 1 ("living, not dead") was identical to Cambridge's. Rewrote both by hand ("reach a bus, train, or plane before it leaves and travel on it"; "still having life, rather than having died"); full pipeline: catch 0 issues; alive 3 issues (1 blocking), all applied: a redundant example (*survives the winter alive*) replaced, and the learner-error pair rewritten (it had a second, unrelated article error and a wrong form in italics). reviewer-a made its first verified "copied" call ([note](notes/reviewer-noise.md)); its first call returned nothing after spending the token limit on hidden reasoning. Recorded to `reviews/originality/2026-09-23-2.md`. Spend: US$0.15, over the US$0.10 run ceiling by the wasted call; today US$2.47 of 5.
+
 ## [2026-09-23] build | Ten entries: neither (conjunction) and nine verbs, care through chew
 
 Fifty-fifth scheduled run, build (highest scheduler debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed ten rather than twenty so the large verbs had room: `neither-conj`, `care-v`, `carry-v`, `catch-v`, `cause-v`, `celebrate-v`, `change-v`, `charge-v`, `check-v`, `chew-v`. `either-conj`'s compare now points *neither ... nor* at `neither-conj`, closing the NEXT item.

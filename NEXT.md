@@ -1,24 +1,23 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-23 by the fifty-fifth scheduled run (build).*
+*Rewritten 2026-09-23 by the fifty-sixth scheduled run (originality).*
 
 ## State
 
 - 371 entries, all `reviewed` (0 `draft`). Queue: 4,147 pending, 0 claimed, 371 done, 21 declined, 6 duplicate.
-- This run: build, ten entries: `neither-conj` and the verbs *care, carry, catch, cause, celebrate, change, charge, check, chew*. `either-conj`'s compare note now points at `neither-conj` (item closed).
-- About 262 `reviewed` entries remain at one panel round (the ten new ones included).
-- Reviewer-b truncated its reply on two large entries (`catch-v`, `chew-v`); the `--roles reviewer-b` re-run fixed both cleanly. Watch for it on large verbs.
-- Spend: US$0.46 this run; US$2.32 of today's US$5 cap.
+- This run: originality, the fifth check (`reviews/originality/2026-09-23-2.md`). 10 sampled: 5 original, 3 generic-overlap, 2 rewritten (`catch-v` sense 3, too close to Longman; `alive-adj` sense 1, identical to Cambridge). Both rewrites went through the full pipeline; `alive-adj` also got a new fourth example and a new learner-error pair.
+- About 262 `reviewed` entries remain at one panel round.
+- For the originality reviewer call, pass `--reasoning-effort low`: at the default, reviewer-a spent its whole token limit on hidden reasoning and replied with nothing (US$0.025 wasted).
+- Spend: US$0.15 this run (over the US$0.10 ceiling by the wasted call); US$2.47 of today's US$5 cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **originality**: due at true run 50, which is probably the next run (`next_mode.py` decides).
-2. **build**: band 1 in queue order, continuing the verbs: *choose, chop, clean, climb, close, collect, come, communicate, compare, compete, confuse, connect, consider, consist, contain...* *Come* and *close* are large; keep runs to eight to twelve entries when the batch holds large verbs.
-3. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns and determiners (*all-pron, another-pron, any-pron, anybody-pron, that-det, their-det, these-det, this-det, those-det, what-det...*).
-4. **closure**: about 580 closure-gap lemmas. The *gene* and *diaper* closure rows queued this run are no longer used in any definition (both definitions were reworded); treat them as ordinary band-3 rows.
-5. **lint**: next due after five runs from the ninth pass (about run 53).
-6. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
-7. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; and consider adding the "quote the source or do not answer copied" sentence to the reviewer question in `tools/originality_check.py` (`wiki/notes/reviewer-noise.md`).
+1. **build**: band 1 in queue order, continuing the verbs: *choose, chop, clean, climb, close, collect, come, communicate, compare, compete, confuse, connect, consider, consist, contain...* *Come* and *close* are large; keep runs to eight to twelve entries when the batch holds large verbs.
+2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns and determiners (*all-pron, another-pron, any-pron, anybody-pron, that-det, their-det, these-det, this-det, those-det, what-det...*).
+3. **closure**: about 580 closure-gap lemmas. The *gene* and *diaper* closure rows queued by the previous run are no longer used in any definition (both definitions were reworded); treat them as ordinary band-3 rows.
+4. **lint**: next due after five runs from the ninth pass (about run 53; `next_mode.py` decides). Originality next at true run 60.
+5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
+6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; and add the "quote the source or do not answer copied" sentence to the reviewer question in `tools/originality_check.py` (two checks now support it: `wiki/notes/reviewer-noise.md`).
 
 ## Fences (do not re-grind)
 
@@ -42,3 +41,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
+- Two more definitions were found too close to published dictionaries and rewritten; details in the journal for 2026-09-23 (`journal/2026-09-23-8.md`).
