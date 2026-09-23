@@ -159,5 +159,26 @@ class TestDecideSubstringCollision(unittest.TestCase):
         self.assertEqual(logged["severity"], "minor")
 
 
+class RerunProvenanceTest(unittest.TestCase):
+    """A --roles re-run in the same run replaces that run's provenance lines, not appends beside them
+    (wiki/notes/review-panel-rerun-duplicate-records.md)."""
+
+    def rev(self, role, verdicts, error=None):
+        return {"role": role, "model": "m", "verdicts": verdicts, "error": error}
+
+    def test_rerun_replaces_hollow_record_and_adds_no_duplicate(self):
+        entry = {"provenance": {"reviews": [
+            {"run_id": "old", "role": "reviewer-a", "ok": 5, "issues": 0, "blocking": 0}]}}
+        ok = [{"verdict": "ok", "severity": None}]
+        first = {"run_id": "r1", "reviewers": [self.rev("reviewer-a", ok), self.rev("reviewer-b", [], "no verdicts")]}
+        review_panel.record_provenance(entry, first, "reviews/r1/x.json")
+        merged = {"run_id": "r1", "reviewers": [self.rev("reviewer-a", ok), self.rev("reviewer-b", ok + ok)]}
+        review_panel.record_provenance(entry, merged, "reviews/r1/x.json")
+        lines = entry["provenance"]["reviews"]
+        self.assertEqual([(r["run_id"], r["role"]) for r in lines],
+                         [("old", "reviewer-a"), ("r1", "reviewer-a"), ("r1", "reviewer-b")])
+        self.assertEqual(lines[-1]["ok"], 2)
+
+
 if __name__ == "__main__":
     unittest.main()

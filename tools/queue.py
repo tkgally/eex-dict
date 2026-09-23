@@ -6,7 +6,7 @@
     python3 tools/queue.py add-batch <file.tsv>          # columns headword, pos, band, source[, note]
     python3 tools/queue.py set "<headword>" <pos> <status> [--note "..."]
     python3 tools/queue.py next [--n 20] [--band N] [--source S] [--pos P]   # pending rows not claimed anywhere
-    python3 tools/queue.py sync                           # rows whose entry exists become done; entries without a row are reported
+    python3 tools/queue.py sync                           # rows whose entry exists become done; claimed rows no claim file lists go back to pending
     python3 tools/queue.py stamp <slug> [<slug> ...]      # write frequency.band and frequency.defining_vocabulary into entries
     python3 tools/queue.py counts                         # rows by status, band, source
 
@@ -187,6 +187,22 @@ def cmd_next(a) -> int:
     return 0
 
 
+def reset_stale_claims(rows: list[dict], taken: set[str]) -> list[str]:
+    """A `claimed` row that no claim file anywhere lists (claim.py --taken) goes back to `pending`
+    (wiki/notes/queue-stale-claimed-rows.md). Run after the done pass, so a drafted row is already `done`."""
+    reset = []
+    for r in rows:
+        if r["status"] != "claimed":
+            continue
+        slug = eexlib.slugify(r["headword"], r["pos"])
+        if slug not in taken:
+            r["status"] = "pending"
+            if "stale claim reset" not in (r.get("note") or ""):
+                r["note"] = ((r.get("note") or "") + "; stale claim reset by queue.py sync").strip("; ")
+            reset.append(slug)
+    return reset
+
+
 def cmd_sync(a) -> int:
     rows = load()
     index = {eexlib.slugify(r["headword"], r["pos"]): r for r in rows}
@@ -202,8 +218,11 @@ def cmd_sync(a) -> int:
             missing.append(slug)
         elif r["status"] in ("pending", "claimed"):
             r["status"] = "done"; done += 1
+    reset = reset_stale_claims(rows, taken_slugs())
     save(rows)
-    print(f"marked done: {done}; entries without a queue row: {len(missing)}")
+    print(f"marked done: {done}; stale claims reset to pending: {len(reset)}; entries without a queue row: {len(missing)}")
+    for s in reset:
+        print("  reset " + s)
     for s in missing:
         print("  " + s)
     return 0

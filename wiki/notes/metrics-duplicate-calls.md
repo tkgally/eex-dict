@@ -19,3 +19,7 @@ No fix this run (`CLAUDE.md` rule 10 and the lint-mode guard: an observed proble
 ## What the next session should do
 
 Keep this in mind when reading `next_mode.py --explain`'s `runs_total` / `runs_since_lint`: they run about one-sixth high on average (5 inflated of 30 real runs so far). Do not call `tools/metrics.py` more than once per run — follow `routine-prompt.md` section 6 step 1 only; `CLAUDE.md`'s generic finish checklist is superseded by the mode-specific wrap-up for a scheduled Routine run. A future lint or setup unit should dedupe `history()` by `run_id` in `next_mode.py` (and consider having `metrics.py` warn or refuse on a duplicate `run_id`).
+
+## Fixed 2026-09-23 (ninth lint pass)
+
+`next_mode.py`'s `history()` now keeps one row per `run_id` (`dedupe_runs`; test in `tools/tests/test_next_mode.py`), so a doubled `metrics.py` call no longer advances the lint or originality trigger. `metrics/history.jsonl` itself is unchanged (53 rows, 47 runs at the fix). One consequence: the run count dropped by six, so the originality check forced at inflated "run 50" earlier today will fire again at true run 50, three runs after this one.

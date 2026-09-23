@@ -9,3 +9,5 @@
 **Suggested fix.** On a `--roles` re-run, replace the existing record for the same `run_id` and role instead of appending, and write records only for the roles called. A unit test with a hollow first record would pin it.
 
 **Recurred 2026-09-23** (review run `20260923T124315Z-orpgu2`) on `least-det`: same four-record result, same hand workaround.
+
+**Fixed 2026-09-23 (ninth lint pass).** `write_record` now calls `record_provenance`, which drops the entry's existing `provenance.reviews` lines for the same `run_id` and roles before writing one line per role from the merged review file. A `--roles reviewer-b` re-run replaces the hollow line and no longer copies reviewer-a's. Test: `RerunProvenanceTest` in `tools/tests/test_review_panel.py`.
