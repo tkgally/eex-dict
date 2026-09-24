@@ -1,21 +1,21 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-24 by the sixty-third scheduled run (build).*
+*Rewritten 2026-09-24 by the sixty-fourth scheduled run (build).*
 
 ## State
 
-- 433 entries, all `reviewed` (0 `draft`). Queue: 4,260 pending, 0 claimed, 433 done, 21 declined, 6 duplicate.
-- This run: build, ten verbs *doubt* through *eat*. 62 issues, 43 applied, 19 rejected. Back-links added by `crossref` to `decrease-v`, `take-v`, `give-up-phrv`; the last was moved by hand from sense 1 to sense 2.
-- About 312 `reviewed` entries remain at one panel round.
+- 443 entries, all `reviewed` (0 `draft`). Queue: 4,276 pending, 0 claimed, 443 done, 21 declined, 6 duplicate.
+- This run: build, ten verbs *elect* through *excite*. 39 issues, 37 applied, 2 rejected. Back-links added by `crossref` to `check-v`, `choose-v` (moved by hand to sense 2), `consider-v`, `decide-v`, `dislike-v`.
+- About 322 `reviewed` entries remain at one panel round.
 - For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
-- Spend: US$0.47 this run; US$2.57 of today's US$5 cap.
+- Spend: US$0.37 this run; US$2.94 of today's US$5 cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: band 1 in queue order, continuing the verbs: *elect, employ, empty, encourage, end, enjoy, enter, entertain, examine, excite...* *End* and *enter* are large. Keep runs to eight to twelve entries when the batch holds large verbs. *fall-v*, *win-v*, *wear-v*, *ride-v*, *put-on-phrv* (band 1, already queued) are now targets of this run's comparison boxes. The six *cut* phrasal verbs are queued from `cut-v`'s see-also.
+1. **build**: band 1 in queue order, continuing the verbs: *exercise, exist, expand, expect, express, fall, farm, fear, feed, feel...* Keep runs to eight to twelve entries when the batch holds large verbs (*expect*, *fall*, *feel*). `end-up-phrv` and the *employ*/*examine*/*excite* families (*employee*, *exam*, *excited*, *exciting*) are queued from this run.
 2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns and determiners (*all-pron, another-pron, any-pron, anybody-pron, that-det, their-det, these-det, this-det, those-det, what-det...*).
 3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
-4. **lint**: next due two runs from now (five after the tenth pass of 2026-09-24) (`next_mode.py` decides). Originality is due next or soon. Every lint: check each back-link `crossref --all --apply` adds (it lands on sense 1 when no sense names the source).
+4. **lint**: next due one run from now (five after the tenth pass of 2026-09-24) (`next_mode.py` decides). Originality is due next or soon. Every lint: check each back-link `crossref --all --apply` adds (it lands on sense 1 when no sense names the source).
 5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
 6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`, `crossref-first-sense-backlinks`.
 7. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
@@ -38,6 +38,7 @@
 - A subject restriction (*of food*, *of a train*) goes in `explanation`, never as a prefix in the definition; reviewer-b flags it reliably.
 - A participle phrase (*badly damaged*, *crushed to death*) is a `phrase` collocation (*be badly damaged*), never "adverb + verb"; reviewer-a flags it every time.
 - Settled: *mix up* is a phrasal verb (`mix-up-phrv`); *cost* sense 3 past form **costed** lives in its explanation.
+- Adaptation notes: an opening quoted headword is allowed; words named inside the sentence take `**...**`.
 - Call `metrics.py` once per run, in wrap-up only. Set hand-written provenance timestamps from `date -u`, never ahead of the clock.
 
 ## For the owner
@@ -45,4 +46,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- This run's report: `journal/2026-09-24-7.md`.
+- This run's report: `journal/2026-09-24-8.md`.
