@@ -1,34 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "create-v",
-  "slug": "create-v",
-  "headword": "create",
+  "id": "discuss-v",
+  "slug": "discuss-v",
+  "headword": "discuss",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "kri.ˈeɪt",
+      "ipa": "dɪ.ˈskʌs",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "kriː.ˈeɪt",
+      "ipa": "dɪ.ˈskʌs",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "**Create** has two parts, with the stress on the second: *kree-AYT*."
+    "notes": "The stress is on the second part: *dih-SKUSS*."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "creates",
-      "past_tense": "created",
-      "past_participle": "created",
-      "present_participle": "creating"
+      "third_person_singular": "discusses",
+      "past_tense": "discussed",
+      "past_participle": "discussed",
+      "present_participle": "discussing"
     },
     "regular": true,
     "source": "rules",
@@ -51,15 +51,19 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "make new",
-      "definition": "make something new exist, or make something by using your skill or imagination",
+      "signpost": "talk about",
+      "definition": "talk about something with other people, especially to share ideas or make a decision",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + preposition + object",
+          "verb + wh-word + to-infinitive",
+          "verb + -ing form",
+          "verb + wh-clause"
         ]
       },
       "labels": {
@@ -72,64 +76,60 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The new factory will create hundreds of jobs.",
+          "text": "We need to discuss the plan before the meeting.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "She created a website for her small business.",
+          "text": "I discussed the problem with my teacher.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "The artist creates large pictures from old newspapers.",
+          "text": "They discussed what to do next.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + wh-word + to-infinitive"
         },
         {
-          "text": "You'll need to create a password before you log in.",
+          "text": "We discussed moving to a bigger apartment.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + -ing form"
         }
       ],
       "collocations": [
         {
           "type": "verb + noun",
           "items": [
-            "create jobs",
-            "create a character",
-            "create an account",
-            "create a work of art"
+            "discuss a problem",
+            "discuss a plan",
+            "discuss the matter",
+            "discuss the details"
           ]
         },
         {
-          "type": "adverb + verb",
+          "type": "verb + adverb",
           "items": [
-            "specially created",
-            "newly created"
+            "discuss something openly",
+            "discuss something in detail"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "discuss something with someone"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "make-v",
-          "note": null
-        },
-        {
-          "slug": "produce-v",
-          "note": null
-        }
-      ],
-      "antonyms": [
-        {
-          "slug": "destroy-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
+      "antonyms": [],
       "compare": [
         {
-          "slug": "develop-v",
-          "note": null
+          "slug": "talk-v",
+          "note": "**talk about** is less formal"
+        },
+        {
+          "slug": "argue-v",
+          "note": "**argue** means to disagree, often angrily"
         }
       ],
       "subsenses": [],
@@ -144,8 +144,8 @@
     },
     {
       "n": 2,
-      "signpost": "cause",
-      "definition": "cause a situation, a feeling, or a problem to exist",
+      "signpost": "write about",
+      "definition": "write or speak about a subject in detail",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -165,38 +165,33 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The changes to the timetable created a lot of confusion.",
+          "text": "The book discusses the history of the city.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "Their loud music has created problems with the neighbors.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "Warm colors create a friendly feeling in a room.",
+          "text": "Chapter three discusses this question in more detail.",
           "note": null,
           "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "adverb + verb",
           "items": [
-            "create problems",
-            "create a feeling",
-            "create an impression",
-            "create a need"
+            "briefly discuss",
+            "fully discuss"
+          ]
+        },
+        {
+          "type": "verb + adverb",
+          "items": [
+            "discussed above",
+            "discussed below"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "cause-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -213,70 +208,59 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "creation-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "creative-adj",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "creator-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "creativity-n",
+      "slug": "discussion-n",
       "form": null,
       "note": null
     }
   ],
-  "synonym_discrimination": {
-    "words": [
-      "create-v",
-      "make-v",
-      "produce-v"
-    ],
-    "note": "**Make** is the everyday word for bringing something into being: *make a cake*, *make a mistake*. **Create** stresses that the thing is new or comes from imagination or planning: *create a character*, *create jobs*. **Produce** is used for making things in large numbers or for a result: *the factory produces cars*, *the plan produced good results*."
-  },
+  "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "We discussed about the problem.",
+      "correct": "We discussed the problem.",
+      "note": "**Discuss** takes a direct object with no **about**; the noun **discussion** can take **about**."
+    },
+    {
+      "incorrect": "I want to discuss with you.",
+      "correct": "I want to discuss something with you.",
+      "note": "**Discuss** needs an object that names what is talked about."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": null,
+    "grammar": "**discuss** takes a direct object: *discuss the plan*, not *discuss about the plan*. Many languages use a word like **about** here, so learners often add it.",
     "culture": null,
     "false_friends": null,
-    "pronunciation": "**Create** has two parts with separate vowels: *kree-AYT*. Do not run the **e** and **a** together into one sound."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-24T06:47:41Z",
-    "modified": "2026-09-24T15:53:03Z",
+    "created": "2026-09-24T15:45:47Z",
+    "modified": "2026-09-24T15:53:16Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260924T064310Z-hlbtu6",
+    "run_id": "20260924T154324Z-1d6djm",
     "reviews": [
       {
-        "run_id": "20260924T064310Z-hlbtu6",
+        "run_id": "20260924T154324Z-1d6djm",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-24",
-        "file": "reviews/20260924T064310Z-hlbtu6/create-v.json",
-        "ok": 33,
-        "issues": 1,
-        "blocking": 1
+        "file": "reviews/20260924T154324Z-1d6djm/discuss-v.json",
+        "ok": 34,
+        "issues": 0,
+        "blocking": 0
       },
       {
-        "run_id": "20260924T064310Z-hlbtu6",
+        "run_id": "20260924T154324Z-1d6djm",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-24",
-        "file": "reviews/20260924T064310Z-hlbtu6/create-v.json",
-        "ok": 34,
-        "issues": 0,
+        "file": "reviews/20260924T154324Z-1d6djm/discuss-v.json",
+        "ok": 33,
+        "issues": 1,
         "blocking": 0
       }
     ],
