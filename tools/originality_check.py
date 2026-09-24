@@ -63,7 +63,8 @@ def main() -> int:
              "generic-overlap (a short plain definition that any dictionary would write the same way), rewrite (matches a "
              "published dictionary's distinctive wording; rewrite the field in a build or review run and log it).", "",
              "Reviewer question: \"Does this definition read as copied from a published dictionary, or as an original plain-English "
-             "definition? Answer copied / original / cannot tell, with one line of reason.\"", "",
+             "definition? Answer copied / original / cannot tell, with one line of reason. If you answer copied, name the source and "
+             "quote the matching published wording exactly; if you cannot quote it, do not answer copied.\"", "",
              "| slug | field | text | query | search result | reviewer | verdict |", "|---|---|---|---|---|---|---|"]
     for slug, field, text in items:
         q = '"' + text.replace('"', "'")[:120] + '"'

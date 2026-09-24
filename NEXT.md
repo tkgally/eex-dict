@@ -1,23 +1,24 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-24 by the fifty-ninth scheduled run (build).*
+*Rewritten 2026-09-24 by the sixtieth scheduled run (lint, tenth pass).*
 
 ## State
 
 - 403 entries, all `reviewed` (0 `draft`). Queue: 4,212 pending, 0 claimed, 403 done, 21 declined, 6 duplicate.
-- This run: build, ten verbs (*count, cover, crash, create, cross, crush, cure, cut, damage, dance*). 38 panel issues, 29 applied, 9 rejected.
-- About 282 `reviewed` entries remain at one panel round.
+- This run: lint. Changed-entry detection fixed (`lint_vocab`/`validate --changed` now see new shard directories); originality reviewer question now requires a quoted source; five misplaced back-links moved on `catch-v` and `cut-v`.
+- About 292 `reviewed` entries remain at one panel round.
 - For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
-- Spend: US$0.49 this run; US$1.37 of today's US$5 cap.
+- Spend: US$0 this run; US$1.37 of today's US$5 cap.
 
 ## Queue (work top-down, one unit at a time)
 
 1. **build**: band 1 in queue order, continuing the verbs: *date, decide, decrease, defend, define, delete, deliver, depend, describe, destroy...* Keep runs to eight to twelve entries when the batch holds large verbs. The six *cut* phrasal verbs (*cut down/off/out/up/back/in*) are queued from `cut-v`'s see-also.
 2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns and determiners (*all-pron, another-pron, any-pron, anybody-pron, that-det, their-det, these-det, this-det, those-det, what-det...*).
 3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
-4. **lint**: next due after five runs from the ninth pass (`next_mode.py` decides). Originality next at true run 60.
+4. **lint**: next due five runs after this tenth pass (`next_mode.py` decides). Originality is due next or soon. Every lint: check each back-link `crossref --all --apply` adds (it lands on sense 1 when no sense names the source).
 5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
-6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-changed-base` (until fixed, run the local vocabulary gate with `--base origin/main`), `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; and add the "quote the source or do not answer copied" sentence to the reviewer question in `tools/originality_check.py` (two checks now support it: `wiki/notes/reviewer-noise.md`).
+6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`, `crossref-first-sense-backlinks`.
+7. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
 
 ## Fences (do not re-grind)
 
@@ -44,4 +45,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- Ten new verbs; details in `journal/2026-09-24-3.md`.
+- Lint pass details in `journal/2026-09-24-4.md`.

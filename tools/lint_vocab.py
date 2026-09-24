@@ -619,7 +619,7 @@ def changed_paths(root, base):
         return eexlib.changed_entry_paths(base, root)
     names = set()
     for cmd in (["git", "diff", "--name-only", "%s...HEAD" % base, "--", "entries/"],
-                ["git", "status", "--porcelain", "--", "entries/"]):
+                ["git", "status", "--porcelain", "--untracked-files=all", "--", "entries/"]):
         proc = subprocess.run(cmd, cwd=str(root), capture_output=True, text=True)
         for line in proc.stdout.splitlines():
             name = line[3:] if cmd[1] == "status" else line
