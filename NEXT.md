@@ -1,18 +1,18 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-24 by the fifty-eighth scheduled run (build).*
+*Rewritten 2026-09-24 by the fifty-ninth scheduled run (build).*
 
 ## State
 
-- 393 entries, all `reviewed` (0 `draft`). Queue: 4,186 pending, 0 claimed, 393 done, 21 declined, 6 duplicate.
-- This run: build, twelve verbs (*confuse, connect, consider, consist, contain, continue, control, cook, cool, copy, cost, cough*). 26 panel issues, 21 applied, 5 rejected.
+- 403 entries, all `reviewed` (0 `draft`). Queue: 4,212 pending, 0 claimed, 403 done, 21 declined, 6 duplicate.
+- This run: build, ten verbs (*count, cover, crash, create, cross, crush, cure, cut, damage, dance*). 38 panel issues, 29 applied, 9 rejected.
 - About 282 `reviewed` entries remain at one panel round.
 - For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
-- Spend: US$0.43 this run; US$0.87 of today's US$5 cap.
+- Spend: US$0.49 this run; US$1.37 of today's US$5 cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: band 1 in queue order, continuing the verbs: *count, cover, crash, create, cross, crush, cure, cut, damage, dance, date, decide...* *Cover* and *cut* are large (*cut* has many phrasal verbs; keep them as separate entries); keep runs to eight to twelve entries when the batch holds large verbs.
+1. **build**: band 1 in queue order, continuing the verbs: *date, decide, decrease, defend, define, delete, deliver, depend, describe, destroy...* Keep runs to eight to twelve entries when the batch holds large verbs. The six *cut* phrasal verbs (*cut down/off/out/up/back/in*) are queued from `cut-v`'s see-also.
 2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns and determiners (*all-pron, another-pron, any-pron, anybody-pron, that-det, their-det, these-det, this-det, those-det, what-det...*).
 3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
 4. **lint**: next due after five runs from the ninth pass (`next_mode.py` decides). Originality next at true run 60.
@@ -35,6 +35,7 @@
 - A region label means *mainly used there* (`check-v` sense 3, American, with *tick* usual in British English); reject objections that the word also occurs elsewhere.
 - Releasing a claimed word you will not draft: `queue.py set ... pending` and remove it from the claim file; `queue.py sync` resets orphaned `claimed` rows on its own.
 - A subject restriction (*of food*, *of a train*) goes in `explanation`, never as a prefix in the definition; reviewer-b flags it reliably.
+- A participle phrase (*badly damaged*, *crushed to death*) is a `phrase` collocation (*be badly damaged*), never "adverb + verb"; reviewer-a flags it every time.
 - Settled: *mix up* is a phrasal verb (`mix-up-phrv`); *cost* sense 3 past form **costed** lives in its explanation.
 - Call `metrics.py` once per run, in wrap-up only. Set hand-written provenance timestamps from `date -u`, never ahead of the clock.
 
@@ -43,4 +44,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- Twelve new verbs; details in `journal/2026-09-24-2.md`.
+- Ten new verbs; details in `journal/2026-09-24-3.md`.
