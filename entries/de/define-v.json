@@ -1,39 +1,39 @@
 {
   "schema_version": "1.0",
-  "id": "beat-v",
-  "slug": "beat-v",
-  "headword": "beat",
+  "id": "define-v",
+  "slug": "define-v",
+  "headword": "define",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "bit",
+      "ipa": "dɪ.ˈfaɪn",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/3;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "biːt",
+      "ipa": "dɪ.ˈfaɪn",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/3",
+      "checked_by": "agreement:2/2",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "The stress is on the second part: *dih-FINE*."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "beats",
-      "past_tense": "beat",
-      "past_participle": "beaten",
-      "present_participle": "beating"
+      "third_person_singular": "defines",
+      "past_tense": "defined",
+      "past_participle": "defined",
+      "present_participle": "defining"
     },
-    "regular": false,
-    "source": "exceptions",
+    "regular": true,
+    "source": "rules",
     "status": "verified",
-    "note": "also beat as past participle, informal"
+    "note": null
   },
   "frequency": {
     "band": 1,
@@ -47,20 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **beat** is to hit something repeatedly, to do better than someone in a competition, to mix something quickly, or to make a regular repeated movement or sound.",
+  "core_idea": "To define something is to mark clearly what it is, what it means, or where its edges are.",
   "senses": [
     {
       "n": 1,
-      "signpost": "hit repeatedly",
-      "definition": "hit someone or something many times, usually hard",
+      "signpost": "give the meaning",
+      "definition": "say exactly what a word or an idea means",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
           "verb + object",
-          "verb + preposition + object"
+          "verb + object + as + noun or adjective"
         ]
       },
       "labels": {
@@ -73,35 +73,52 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "He beat the dust out of the rug.",
+          "text": "How would you define happiness?",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "Rain beat against the windows all night.",
+          "text": "The rules define a child as anyone under sixteen.",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": "verb + object + as + noun or adjective"
         },
         {
-          "text": "The waves beat against the rocks.",
+          "text": "This word is hard to define.",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "define a word",
+            "define a term"
+          ]
         },
         {
-          "text": "Someone was beating on the door.",
-          "note": null,
-          "pattern": "verb + preposition + object"
-        }
-      ],
-      "collocations": [],
-      "synonyms": [
+          "type": "verb + adverb",
+          "items": [
+            "define something clearly",
+            "define something broadly",
+            "define something narrowly"
+          ]
+        },
         {
-          "slug": "break-v",
-          "note": null
+          "type": "phrase",
+          "items": [
+            "define something as something"
+          ]
         }
       ],
+      "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "explain-v",
+          "note": "give information so that someone understands, not an exact meaning"
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -114,15 +131,16 @@
     },
     {
       "n": 2,
-      "signpost": "defeat",
-      "definition": "do better than someone or something, such as in a competition or a previous best result",
+      "signpost": "state clearly",
+      "definition": "say or decide clearly what something is, what it includes, or where its limits are",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + wh-clause"
         ]
       },
       "labels": {
@@ -135,37 +153,40 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Our team beat theirs by two goals.",
+          "text": "First, we need to define the problem.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "She beat her own best time.",
+          "text": "My role in the team isn't clearly defined.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "He always beats me at chess.",
+          "text": "The contract defines what each side must do.",
           "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "Nobody could beat the champion that year.",
-          "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + wh-clause"
         }
       ],
-      "collocations": [],
-      "synonyms": [
+      "collocations": [
         {
-          "slug": "defeat-v",
-          "note": null
+          "type": "verb + noun",
+          "items": [
+            "define a problem",
+            "define a role",
+            "define the limits",
+            "define your goals"
+          ]
         },
         {
-          "slug": "destroy-v",
-          "note": null
+          "type": "adverb + verb",
+          "items": [
+            "clearly define",
+            "well defined"
+          ]
         }
       ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -180,8 +201,8 @@
     },
     {
       "n": 3,
-      "signpost": "mix quickly",
-      "definition": "mix something quickly and well, using a fork or a similar tool",
+      "signpost": "show the character",
+      "definition": "be the most important quality that makes someone or something what they are",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -194,41 +215,34 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "cooking"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Beat the eggs and sugar together.",
+          "text": "Don't let one mistake define you.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "Beat the cream until it thickens.",
+          "text": "Kindness defined her whole life.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "She beat the batter for two minutes.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "Beat the mixture until smooth.",
+          "text": "What defines a good teacher?",
           "note": null,
           "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "phrase",
           "items": [
-            "beat eggs",
-            "beat cream"
+            "define who you are",
+            "define a generation"
           ]
         }
       ],
@@ -247,14 +261,17 @@
     },
     {
       "n": 4,
-      "signpost": "regular movement",
-      "definition": "make a regular repeated movement or sound",
+      "signpost": "show the edge",
+      "definition": "show the shape or edge of something clearly",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "intransitive",
+        "transitivity": "transitive",
         "codes": [],
-        "patterns": []
+        "patterns": [
+          "verb + object",
+          "usually passive"
+        ]
       },
       "labels": {
         "register": [],
@@ -266,33 +283,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Her heart was beating fast.",
+          "text": "The mountains were sharply defined against the sky.",
           "note": null,
-          "pattern": null
+          "pattern": "usually passive"
         },
         {
-          "text": "The drum beat steadily through the night.",
+          "text": "Use a darker color to define the edges.",
           "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Wings beat softly overhead.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "His pulse beat quickly after the run.",
-          "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "noun + verb",
+          "type": "adverb + verb",
           "items": [
-            "heart beats",
-            "drum beats",
-            "wings beat"
+            "sharply defined",
+            "clearly defined"
           ]
         }
       ],
@@ -313,12 +319,12 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "beat-n",
+      "slug": "definition-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "beating-n",
+      "slug": "definite-adj",
       "form": null,
       "note": null
     }
@@ -327,9 +333,9 @@
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "I have beat him yesterday.",
-      "correct": "I beat him yesterday.",
-      "note": "The simple past of **beat** is **beat**, not a present perfect form, for a finished past action with a time word like **yesterday**."
+      "incorrect": "Can you define me this word?",
+      "correct": "Can you define this word for me?",
+      "note": "**Define** takes one object; the person goes after **for**."
     }
   ],
   "etymology": null,
@@ -343,36 +349,34 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-22T05:12:20Z",
-    "modified": "2026-09-24T12:52:52Z",
+    "created": "2026-09-24T12:45:54Z",
+    "modified": "2026-09-24T12:53:15Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260922T051159Z-5k35hq",
+    "run_id": "20260924T124322Z-0jqi0i",
     "reviews": [
       {
-        "run_id": "20260922T051159Z-5k35hq",
+        "run_id": "20260924T124322Z-0jqi0i",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-22",
-        "file": "reviews/20260922T051159Z-5k35hq/beat-v.json",
-        "ok": 46,
-        "issues": 8,
-        "blocking": 7
+        "date": "2026-09-24",
+        "file": "reviews/20260924T124322Z-0jqi0i/define-v.json",
+        "ok": 51,
+        "issues": 1,
+        "blocking": 1
       },
       {
-        "run_id": "20260922T051159Z-5k35hq",
+        "run_id": "20260924T124322Z-0jqi0i",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-22",
-        "file": "reviews/20260922T051159Z-5k35hq/beat-v.json",
-        "ok": 50,
-        "issues": 2,
-        "blocking": 2
+        "date": "2026-09-24",
+        "file": "reviews/20260924T124322Z-0jqi0i/define-v.json",
+        "ok": 51,
+        "issues": 1,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
-    "flags": [
-      "inflection-disputed"
-    ],
+    "flags": [],
     "notes": null
   }
 }
