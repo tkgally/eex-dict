@@ -17,7 +17,7 @@
 3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
 4. **lint**: next due after five runs from the ninth pass (`next_mode.py` decides). Originality next at true run 60.
 5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
-6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; and add the "quote the source or do not answer copied" sentence to the reviewer question in `tools/originality_check.py` (two checks now support it: `wiki/notes/reviewer-noise.md`).
+6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-changed-base` (until fixed, run the local vocabulary gate with `--base origin/main`), `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; and add the "quote the source or do not answer copied" sentence to the reviewer question in `tools/originality_check.py` (two checks now support it: `wiki/notes/reviewer-noise.md`).
 
 ## Fences (do not re-grind)
 
