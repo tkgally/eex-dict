@@ -1,21 +1,21 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-24 by the sixty-first scheduled run (build).*
+*Rewritten 2026-09-24 by the sixty-second scheduled run (build).*
 
 ## State
 
-- 413 entries, all `reviewed` (0 `draft`). Queue: 4,224 pending, 0 claimed, 413 done, 21 declined, 6 duplicate.
-- This run: build, ten verbs *date* through *destroy*. 29 issues, 24 applied, 5 rejected. Two back-links fixed by hand (`beat-v` sense 2; `count-on-phrv`).
-- About 302 `reviewed` entries remain at one panel round.
+- 423 entries, all `reviewed` (0 `draft`). Queue: 4,234 pending, 0 claimed, 423 done, 21 declined, 6 duplicate.
+- This run: build, ten verbs *develop* through *divorce*. 16 issues, 10 applied, 6 rejected. Back-links added by `crossref` to `argue-v`, `talk-v`, `create-v`; all three landed on the right sense.
+- About 312 `reviewed` entries remain at one panel round.
 - For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
-- Spend: US$0.39 this run; US$1.75 of today's US$5 cap.
+- Spend: US$0.35 this run; US$2.10 of today's US$5 cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: band 1 in queue order, continuing the verbs: *develop, die, disagree, disappear, disappoint, discover, discuss, dislike, divide, divorce...* Keep runs to eight to twelve entries when the batch holds large verbs. The six *cut* phrasal verbs (*cut down/off/out/up/back/in*) are queued from `cut-v`'s see-also.
+1. **build**: band 1 in queue order, continuing the verbs: *doubt, draw, dream, dress, drink, drive, drop, dry, earn, eat...* *Draw*, *drive*, and *drop* are large. Keep runs to eight to twelve entries when the batch holds large verbs. The six *cut* phrasal verbs (*cut down/off/out/up/back/in*) are queued from `cut-v`'s see-also.
 2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns and determiners (*all-pron, another-pron, any-pron, anybody-pron, that-det, their-det, these-det, this-det, those-det, what-det...*).
 3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
-4. **lint**: next due four runs from now (five after the tenth pass of 2026-09-24) (`next_mode.py` decides). Originality is due next or soon. Every lint: check each back-link `crossref --all --apply` adds (it lands on sense 1 when no sense names the source).
+4. **lint**: next due three runs from now (five after the tenth pass of 2026-09-24) (`next_mode.py` decides). Originality is due next or soon. Every lint: check each back-link `crossref --all --apply` adds (it lands on sense 1 when no sense names the source).
 5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
 6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`, `crossref-first-sense-backlinks`.
 7. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
@@ -45,4 +45,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- This run's report: `journal/2026-09-24-5.md`.
+- This run's report: `journal/2026-09-24-6.md`.
