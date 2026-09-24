@@ -232,3 +232,27 @@ class CommandTests(TempRepo):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ChangedEntryPathsTest(unittest.TestCase):
+    """A new entry in a new, untracked shard directory counts as changed (the 2026-09-24
+    close-v miss: plain `git status --porcelain` lists only the directory)."""
+
+    def test_untracked_new_shard_is_listed(self):
+        tmp = Path(tempfile.mkdtemp())
+        try:
+            def git(*args):
+                subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@t", *args],
+                               cwd=str(tmp), check=True, capture_output=True)
+            git("init", "-q")
+            (tmp / "entries" / "ch").mkdir(parents=True)
+            (tmp / "entries" / "ch" / "chop-v.json").write_text("{}\n")
+            git("add", "-A")
+            git("commit", "-q", "-m", "base")
+            (tmp / "entries" / "ch" / "chew-v.json").write_text("{}\n")
+            (tmp / "entries" / "cl").mkdir()
+            (tmp / "entries" / "cl" / "close-v.json").write_text("{}\n")
+            names = [p.name for p in eexlib.changed_entry_paths("HEAD", tmp)]
+            self.assertEqual(names, ["chew-v.json", "close-v.json"])
+        finally:
+            shutil.rmtree(tmp)

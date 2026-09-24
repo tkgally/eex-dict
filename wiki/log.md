@@ -2,6 +2,14 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-24] lint | Tenth pass: changed-entry detection fixed, five back-links moved
+
+Sixtieth scheduled run, lint (forced: five runs since the last). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Mechanical: caps and links clean; `crossref --all --apply` added 13 back-links to 11 entries, 0 errors; `lint_vocab --all --queue` queued nothing new; `claim.py --prune` removed four claim files, no stale rows. Precision: no family crossed the 30-percent line; reviewer-a 0.70, reviewer-b 0.71 (`wiki/notes/reviewer-precision.md`).
+
+Fixed `lint-vocab-changed-base`: `git status --porcelain` lists a new untracked shard directory without its files, so `lint_vocab --changed` and `validate --changed` missed entries in new shards before commit. Both now pass `--untracked-files=all`; a unit test covers it; the `--base origin/main` workaround is retired. Added the quote-your-source sentence to the reviewer question in `tools/originality_check.py` (two checks supported it).
+
+Checked the 13 back-links: five sat on the wrong sense (`catch-v` x4, `cut-v` x1) and were moved by hand; `borrow-v`/`carry-v` has no fitting sense and waits for a build or review run. New note `crossref-first-sense-backlinks`. No paid calls.
+
 ## [2026-09-24] build | Ten verbs, count through dance
 
 Fifty-ninth scheduled run, build. Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed ten (two large: *cover*, *cut*): `count-v`, `cover-v`, `crash-v`, `create-v`, `cross-v`, `crush-v`, `cure-v`, `cut-v`, `damage-v`, `dance-v`. All 20 transcriptions verified (4/4 with CMU; British 3/3); inflections from rules, *cut* from the exceptions table. Vocabulary lint caught *fail*, *defeat*, *opponent*, *tobacco*, *nails*, *document* in definitions before review; reworded. Panel: 38 issues (28 blocking); 29 applied, 9 rejected, none escalated. Main fixes: participle phrases (*badly damaged*, *crushed to death*) moved from "adverb + verb" to the phrase type in four entries; *cover* insurance sense redefined; *cross* "mix" now "breed"; *damage* notes no longer limit it to physical things; *cut*'s hairdresser learner error removed. Rejected: *count until ten* note kept (reworded), *dance with the music* kept, *make something new exist* is grammatical. Back-links added to *cause* and *consider*; 36 targets queued. Spend US$0.49 this run; US$1.37 today.

@@ -541,7 +541,9 @@ def changed_entry_paths(base="origin/main", root=None):
     """Entry files added or changed since ``base``, plus uncommitted changes under entries/.
 
     Uses ``git diff --name-only --diff-filter=ACMR <base>...HEAD -- entries/``
-    and ``git status --porcelain -- entries/``.  Returns sorted absolute Paths
+    and ``git status --porcelain --untracked-files=all -- entries/`` (without
+    ``--untracked-files=all`` a new, untracked shard directory is listed as the
+    directory alone and its files are missed).  Returns sorted absolute Paths
     of files that still exist.
     """
     root = _root(root)
@@ -552,7 +554,7 @@ def changed_entry_paths(base="origin/main", root=None):
         print("warning: %s" % exc, file=sys.stderr)
         out = ""
     names.update(line.strip() for line in out.splitlines() if line.strip())
-    for line in _git(["status", "--porcelain", "--", "entries/"], root).splitlines():
+    for line in _git(["status", "--porcelain", "--untracked-files=all", "--", "entries/"], root).splitlines():
         if len(line) < 4:
             continue
         name = line[3:].strip()
