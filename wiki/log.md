@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-24] build | Ten verbs, date through destroy
+
+Sixty-first scheduled run, build. Pre-flight clean: no open pull request, no orphan branch, inbox empty. Claimed ten: `date-v`, `decide-v`, `decrease-v`, `defend-v`, `define-v`, `delete-v`, `deliver-v`, `depend-v`, `describe-v`, `destroy-v`. All 20 transcriptions verified (3/3 American with CMU, 2/2 British; one panel member's chunk failed to parse); inflections from rules. Vocabulary lint caught *romantic*, *settle*, *criticized*, *accused*, *opponent*, *according*, *definite*, *curve*, *spoil*, *defeat* in definitions; reworded. reviewer-b's first reply failed to parse on `decide-v` and `deliver-v`; re-run for that role only, both clean, no duplicate records. Panel: 29 issues (22 blocking); 24 applied, 5 rejected, none escalated. Main fixes: *deliver* sense 2 widened to decisions and messages, sense 5 object corrected; *depend* sense 1 and core idea redefined; *date back* explanation no longer requires *to*. Rejected: *defendant* stays in `defend-v`'s word family; three *usually passive* / no-bare-pattern grammar objections. Back-links: `beat-v`'s moved from sense 1 to sense 2 by hand; `depend-v`'s *count* synonym retargeted to `count-on-phrv`. Spend: US$0.39.
+
 ## [2026-09-24] lint | Tenth pass: changed-entry detection fixed, five back-links moved
 
 Sixtieth scheduled run, lint (forced: five runs since the last). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Mechanical: caps and links clean; `crossref --all --apply` added 13 back-links to 11 entries, 0 errors; `lint_vocab --all --queue` queued nothing new; `claim.py --prune` removed four claim files, no stale rows. Precision: no family crossed the 30-percent line; reviewer-a 0.70, reviewer-b 0.71 (`wiki/notes/reviewer-precision.md`).
