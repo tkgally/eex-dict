@@ -1,23 +1,23 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-23 by the fifty-sixth scheduled run (originality).*
+*Rewritten 2026-09-24 by the fifty-seventh scheduled run (build).*
 
 ## State
 
-- 371 entries, all `reviewed` (0 `draft`). Queue: 4,147 pending, 0 claimed, 371 done, 21 declined, 6 duplicate.
-- This run: originality, the fifth check (`reviews/originality/2026-09-23-2.md`). 10 sampled: 5 original, 3 generic-overlap, 2 rewritten (`catch-v` sense 3, too close to Longman; `alive-adj` sense 1, identical to Cambridge). Both rewrites went through the full pipeline; `alive-adj` also got a new fourth example and a new learner-error pair.
-- About 262 `reviewed` entries remain at one panel round.
-- For the originality reviewer call, pass `--reasoning-effort low`: at the default, reviewer-a spent its whole token limit on hidden reasoning and replied with nothing (US$0.025 wasted).
-- Spend: US$0.15 this run (over the US$0.10 ceiling by the wasted call); US$2.47 of today's US$5 cap.
+- 381 entries, all `reviewed` (0 `draft`). Queue: 4,169 pending, 0 claimed, 381 done, 21 declined, 6 duplicate.
+- This run: build, ten verbs (*choose, chop, clean, climb, close, collect, come, communicate, compare, compete*). 25 panel issues, 19 applied, 6 rejected.
+- About 270 `reviewed` entries remain at one panel round.
+- For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
+- Spend: US$0.45 this run; US$0.45 of today's US$5 cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: band 1 in queue order, continuing the verbs: *choose, chop, clean, climb, close, collect, come, communicate, compare, compete, confuse, connect, consider, consist, contain...* *Come* and *close* are large; keep runs to eight to twelve entries when the batch holds large verbs.
+1. **build**: band 1 in queue order, continuing the verbs: *confuse, connect, consider, consist, contain, continue, control, cook, cool, copy, cost, cough...* *Consider*, *continue*, and *control* are large; keep runs to eight to twelve entries when the batch holds large verbs.
 2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns and determiners (*all-pron, another-pron, any-pron, anybody-pron, that-det, their-det, these-det, this-det, those-det, what-det...*).
-3. **closure**: about 580 closure-gap lemmas. The *gene* and *diaper* closure rows queued by the previous run are no longer used in any definition (both definitions were reworded); treat them as ordinary band-3 rows.
-4. **lint**: next due after five runs from the ninth pass (about run 53; `next_mode.py` decides). Originality next at true run 60.
+3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
+4. **lint**: next due after five runs from the ninth pass (`next_mode.py` decides). Originality next at true run 60.
 5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
-6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; and add the "quote the source or do not answer copied" sentence to the reviewer question in `tools/originality_check.py` (two checks now support it: `wiki/notes/reviewer-noise.md`).
+6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-changed-base` (until fixed, run the local vocabulary gate with `--base origin/main`), `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; and add the "quote the source or do not answer copied" sentence to the reviewer question in `tools/originality_check.py` (two checks now support it: `wiki/notes/reviewer-noise.md`).
 
 ## Fences (do not re-grind)
 
@@ -34,6 +34,7 @@
 - Idioms whose first noun is not the headword go under that noun (*catch fire* under *fire*, *change your mind* under *mind*), not under the verb.
 - A region label means *mainly used there* (`check-v` sense 3, American, with *tick* usual in British English); reject objections that the word also occurs elsewhere.
 - Releasing a claimed word you will not draft: `queue.py set ... pending` and remove it from the claim file; `queue.py sync` resets orphaned `claimed` rows on its own.
+- Settled this run: *chop* "reduce" keeps `informal`; *come from* and *come in* (colors, sizes) keep "not used in continuous tenses".
 - Call `metrics.py` once per run, in wrap-up only. Set hand-written provenance timestamps from `date -u`, never ahead of the clock.
 
 ## For the owner
@@ -41,4 +42,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- Two more definitions were found too close to published dictionaries and rewritten; details in the journal for 2026-09-23 (`journal/2026-09-23-8.md`).
+- Ten new verbs; details in `journal/2026-09-24.md`.
