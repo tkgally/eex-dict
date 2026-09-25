@@ -1,25 +1,25 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-25 by the seventy-first scheduled run (build).*
+*Rewritten 2026-09-25 by the seventy-second scheduled run (lint, twelfth pass).*
 
 ## State
 
 - 483 entries, all `reviewed` (0 `draft`). Queue: 4,340 pending, 0 claimed, 483 done, 21 declined, 6 duplicate.
-- This run: build, ten band-1 verbs (*give* to *hate*). 28 issues, 19 applied, 9 rejected. One reviewer-b parse failure (`guard-v`) re-ran clean.
-- About 322 `reviewed` entries remain at one panel round.
+- This run: lint. 19 sense back-links added; five misplaced and not yet moved (item 2). Log header repaired.
+- About 332 `reviewed` entries remain at one panel round.
 - For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
-- Spend: US$0.43 this run; US$2.76 today, of the US$5 daily cap.
+- Spend: US$0 this run; US$2.76 today, of the US$5 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: band 1 in queue order, continuing the verbs after *hate* (*hear, heat, help, hide, hire, hit, hold, hope, hug, hurt*...; `queue.py next` decides). Keep runs to eight to twelve entries when the batch holds large verbs (*hold*, *hit*, *help*). Earlier runs queued phrasal verbs (*give in, give away, grow up, hang on, hang out*...) and families (*gift-n, growth-n, guard-n, hatred-n*...).
-2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns (*someone-pron, something-pron, theirs-pron, them-pron, themselves-pron, these-pron, they-pron, this-pron, those-pron, us-pron...*). Clear the signpost on any one-sense entry a review opens ([note](wiki/notes/one-sense-signposts.md); 42 left). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)); check each such flag against the fences below.
-3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
-4. **lint**: due now: five runs since the eleventh pass of 2026-09-25 (`next_mode.py` decides). Originality is due soon. Every lint: check each BACKLINK line `crossref --all --apply` prints; placement is by shared wording now, still about one in four wrong.
-5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
-6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; `crossref-first-sense-backlinks` partly fixed.
-7. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
-8. `boil-v` sense 1 opens its definition with *(of a liquid)*; move the restriction to `explanation` when a review touches it (full pipeline).
+1. **build**: band 1 in queue order, continuing the verbs after *hate* (*hear, heat, help, hide, hire, hit, hold, hope, hug, hurt*...; `queue.py next` decides). Keep runs to eight to twelve entries when the batch holds large verbs (*hold*, *hit*, *help*).
+2. **Back-links to move by hand**, one entry at a time, when any run opens these entries (or the next lint): `happen-v` `become-v` synonym sense 1 -> 2; `fit-v` `belong-v` synonym 1 -> 4; `fix-v` `cure-v` synonym 1 -> 2; `fire-v` `employ-v` antonym 1 -> 2; `give-v` `lend-v` synonym 1 -> 4 ([note](wiki/notes/crossref-first-sense-backlinks.md)).
+3. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns (*someone-pron, something-pron, theirs-pron, them-pron, themselves-pron, these-pron, they-pron, this-pron, those-pron, us-pron...*). Clear the signpost on any one-sense entry a review opens ([note](wiki/notes/one-sense-signposts.md); 42 left). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)).
+4. **closure**: about 887 closure-gap lemmas.
+5. **lint**: next due five runs after this one (`next_mode.py` decides). Originality is due soon. Every lint: check each BACKLINK line `crossref --all --apply` prints; about one in four is wrong. `reviewer-a` `pronunciation` precision is 0.33 over 96 decisions: re-measure; under 0.30 it is switched off.
+6. When drafting or reviewing touches `break-v`: sense 4's definition becomes "begin suddenly", restriction moved to `explanation` (full pipeline). `boil-v` sense 1: move *(of a liquid)* to `explanation` likewise.
+7. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; `crossref-first-sense-backlinks` partly fixed.
+8. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
 
 ## Fences (do not re-grind)
 
@@ -50,6 +50,6 @@
 ## For the owner
 
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
-- Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
+- Six open questions; the ones that most need you: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- This run's report: `journal/2026-09-25-7.md`.
+- This run's report: `journal/2026-09-25-8.md`.

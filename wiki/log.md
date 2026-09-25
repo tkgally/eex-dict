@@ -1,10 +1,14 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-09-25] build | Ten band-1 verbs: give to hate
+*Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
+
+## [2026-09-25] lint | Twelfth pass: log header repaired, five back-links misplaced
+
+Seventy-second scheduled run, lint (forced: five runs since the last). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Mechanical: caps, links, `crossref --all --apply` (19 sense back-links on 14 entries; 1,440 missing targets, all expected), `lint_vocab --all --queue` (0 violations), `claim.py --prune` (4 stale claim files). Of the 19 back-links, five sit on the wrong sense (`happen-v`, `fit-v`, `fix-v`, `fire-v`, `give-v`; [note](notes/crossref-first-sense-backlinks.md)); a scripted move was refused by the session's permission check, so they wait for a hand move. Precision: no new switch-off; `reviewer-a` `pronunciation` 0.33 (96) is near the line ([note](notes/reviewer-precision.md)). Judgmental: the previous run's log entry had been spliced into this page's header line; repaired. Index matches the pages; journals match log entries; no duplicate curator lines; open questions current. Spend: US$0.
+
+## [2026-09-25] build | Ten band-1 verbs: give to hate
 
 Seventy-first scheduled run, build (`next_mode.py`: highest scheduler debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Drafted ten verbs: *give, govern, grow, guard, guess, handle, hang, happen, harm, hate*. Inflections and all 20 transcriptions verified (*give*, *grow*, *hang* from the exceptions table; `hang-v` sense 2 explains **hanged**). Panel: 28 issues, 13 blocking; 19 applied, 9 rejected, none escalated. Real catches: *take* is not the antonym of *give* as a present; two example notes that labelled a participle as an adjective (*growing interest*, *closely guarded secret*); *cope* needs **with**; *I am hating this* is possible informally, so `hate-v`'s learner error and absolute continuous-tense code became a usage note. Rejected: two-object pattern objections on *give you fifty dollars* and *gives her the chance*; the American label on *I guess* (region fence); opening quoted headword flags (fence). `guard-v` reviewer-b reply failed to parse; re-run cleanly. Back-links: 8; *grow* moved from `get-v` sense 13 (*have got*) to sense 2 (*become*); *decide-v* / `govern-v` synonym pair dropped as wrong. 27 targets queued. Spend: US$0.43 this run; US$2.76 today.
-
-## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
 ## [2026-09-25] review | Second panel round on twenty personal pronouns
 
