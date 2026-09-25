@@ -80,3 +80,7 @@ The five disabled pairs' counts are unchanged (`reviewer-a` `example-policy` 7/4
 ## 2026-09-24: tenth lint pass, no new switch-offs
 
 The five disabled pairs' counts are unchanged (`reviewer-a` `example-policy` 7/44, `grammar-code` 20/75, `sense-structure` 14/48; `reviewer-b` `example-policy` 4/83, `explanation` 5/21), over four build runs and one originality check since the last measurement. Live fields: `reviewer-a` `ALL` 0.70 (1325/1898, up from 0.69); `reviewer-b` `ALL` 0.71 (470/665, up from 0.70). No family crossed under 30 percent at twenty or more decisions. `reviewer-a` `pronunciation` is 0.35 (81), still the nearest live family to the line. Under twenty: `reviewer-a` `etymology` 0.40 (15), `inflection` 0.11 (9, one escalation); `reviewer-b` `phrase` 0.41 (17), `adaptation` 0.50 (14). Watch `reviewer-b` `phrase`: three more decisions bring it to twenty.
+
+## 2026-09-25: eleventh lint pass, no new switch-offs
+
+The five disabled pairs' counts are unchanged. Live fields: `reviewer-a` `ALL` 0.70 (1432/2045); `reviewer-b` `ALL` 0.70 (498/708). No family crossed under 30 percent at twenty or more decisions. `reviewer-a` `pronunciation` is 0.34 (87), still the nearest live family to the line. Under twenty: `reviewer-a` `etymology` 0.40 (15), `inflection` 0.12 (9); `reviewer-b` `phrase` 0.41 (17), `adaptation` 0.56 (16).

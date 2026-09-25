@@ -2,6 +2,12 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-25] lint | Eleventh pass: back-link placement by shared wording
+
+Sixty-sixth scheduled run, lint (forced: five runs since the last). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Mechanical: caps and links clean; `crossref --all --apply` added 11 back-links to 11 entries, 0 errors; `lint_vocab --all --queue` queued nothing new; `claim.py --prune` removed four claim files, no stale rows. Precision: no family crossed the 30-percent line; reviewer-a 0.70, reviewer-b 0.70.
+
+Checked the 11 back-links: two sat on sense 1 wrongly and were moved by hand (`develop-v` <- `get-v` to sense 4, illness; `drive-v` <- `run-v` to sense 3, take someone in a car). Partly fixed `crossref-first-sense-backlinks` (recurred, logged reason): with no sense naming the source, the tool now picks the target sense sharing the most definition words (at least two), else sense 1. On the dictionary's 585 symmetric pairs this places 77 percent right, against 68 for first-sense; lint passes still check each back-link. Docstring corrected (the note is null). Index, curator file, and open questions read: no contradictions, no duplicates, nothing stale. No paid calls.
+
 ## [2026-09-25] review | Second panel round on twenty pronouns and determiners
 
 Sixty-fifth scheduled run, review (highest scheduler debt; 0 drafts, 332 entries at one panel round). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Panel on the 20 oldest one-round entries: `all-pron`, `another-pron`, `any-pron`, `anybody-pron`, `that-det`, `their-det`, `these-det`, `this-det`, `those-det`, `what-det`, `whatever-det`, `which-det`, `whose-det`, `your-det`, `anyone-pron`, `anything-pron`, `both-pron`, `each-pron`, `either-pron`, `enough-pron`. reviewer-b's reply on `any-pron` failed to parse; re-run for that role, clean. 45 issues (31 blocking): 21 applied, 24 rejected, none escalated. Real fixes: `either-pron`'s adaptation note said *either* always needs a negative (both reviewers); `all-pron` now names *we all*; `both-pron`'s negative-scope claim replaced; `anyone-pron`'s learner-error note hedged; `this-det` allows uncountable nouns; *each one*/*either one* collocations replaced. Rejected: nine `which-det` flags reading the relative determiner (*in which case*) as a pronoun ([note](notes/reviewer-noise.md)); *any of the teachers* stays under the pronoun (fence). Spend: US$0.44.

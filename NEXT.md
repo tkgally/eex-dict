@@ -1,23 +1,23 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-25 by the sixty-fifth scheduled run (review).*
+*Rewritten 2026-09-25 by the sixty-sixth scheduled run (lint, eleventh pass).*
 
 ## State
 
 - 443 entries, all `reviewed` (0 `draft`). Queue: 4,276 pending, 0 claimed, 443 done, 21 declined, 6 duplicate.
-- This run: review, second panel round on 20 pronouns and determiners (*all-pron* through *enough-pron*). 45 issues, 21 applied, 24 rejected, none escalated.
+- This run: lint. 11 back-links added (two moved by hand to the right sense); `crossref.py` now places a back-link by shared definition words (77 percent right on existing pairs, against 68). No paid calls.
 - About 312 `reviewed` entries remain at one panel round.
 - For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
-- Spend: US$0.44 this run and today, of the US$5 daily cap.
+- Spend: US$0 this run; US$0.44 today, of the US$5 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
 1. **build**: band 1 in queue order, continuing the verbs: *exercise, exist, expand, expect, express, fall, farm, fear, feed, feel...* Keep runs to eight to twelve entries when the batch holds large verbs (*expect*, *fall*, *feel*). `end-up-phrv` and the *employ*/*examine*/*excite* families (*employee*, *exam*, *excited*, *exciting*) are queued from this run.
 2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns (*everybody-pron, everyone-pron, everything-pron, few-pron, he-pron, her-pron, hers-pron, herself-pron, him-pron, himself-pron...*). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)); check each such flag against the fences below.
 3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
-4. **lint**: due next run (five after the tenth pass of 2026-09-24) (`next_mode.py` decides). Originality is due next or soon. Every lint: check each back-link `crossref --all --apply` adds (it lands on sense 1 when no sense names the source).
+4. **lint**: next due five runs after this eleventh pass of 2026-09-25 (`next_mode.py` decides). Originality is due soon. Every lint: check each BACKLINK line `crossref --all --apply` prints; placement is by shared wording now, still about one in four wrong.
 5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
-6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`, `crossref-first-sense-backlinks`.
+6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; `crossref-first-sense-backlinks` partly fixed.
 7. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
 
 ## Fences (do not re-grind)
@@ -47,4 +47,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- This run's report: `journal/2026-09-25.md`.
+- This run's report: `journal/2026-09-25-2.md`.
