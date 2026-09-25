@@ -1,34 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "eat-v",
-  "slug": "eat-v",
-  "headword": "eat",
+  "id": "feed-v",
+  "slug": "feed-v",
+  "headword": "feed",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "it",
+      "ipa": "fid",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "iːt",
+      "ipa": "fiːd",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "**Eat** rhymes with **meet**. The past form **ate** is said like **eight** in American English; in British English many people say *et*, rhyming with **bet**. **Eaten** is *EE-tun*."
+    "notes": "**Feed** rhymes with **need**. The past form **fed** rhymes with **red**."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "eats",
-      "past_tense": "ate",
-      "past_participle": "eaten",
-      "present_participle": "eating"
+      "third_person_singular": "feeds",
+      "past_tense": "fed",
+      "past_participle": "fed",
+      "present_participle": "feeding"
     },
     "regular": false,
     "source": "exceptions",
@@ -47,19 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **eat** is to take food in through the mouth; it also means having a meal and, informally, a worry that seems to eat at someone from inside.",
+  "core_idea": "To **feed** someone or something is to give them what they need to live, grow, or keep working, most often food.",
   "senses": [
     {
       "n": 1,
-      "signpost": "food",
-      "definition": "put food in your mouth, chew it, and swallow it",
+      "signpost": "give food",
+      "definition": "give food to a person or an animal",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -72,114 +73,41 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "What did you eat for lunch?",
+          "text": "Can you feed the cat while I am away?",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "I don't eat meat.",
+          "text": "She was feeding the baby with a spoon.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Eat your vegetables!",
+          "text": "Don't feed bread to the ducks.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "The baby is starting to eat on her own.",
+          "text": "It costs a lot to feed a family of five.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
           "type": "verb + noun",
           "items": [
-            "eat meat",
-            "eat fruit",
-            "eat breakfast"
+            "feed the baby",
+            "feed the cat",
+            "feed a family",
+            "feed the birds"
           ]
         },
-        {
-          "type": "verb + adverb",
-          "items": [
-            "eat well",
-            "eat properly",
-            "eat quickly",
-            "eat healthily"
-          ]
-        }
-      ],
-      "synonyms": [
-        {
-          "slug": "feed-v",
-          "note": null
-        }
-      ],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 2,
-      "signpost": "meal",
-      "definition": "have a meal",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "intransitive",
-        "codes": [],
-        "patterns": [
-          "verb + adverb or preposition"
-        ]
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "What time do you usually eat?",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "We ate at a small restaurant near the river.",
-          "note": null,
-          "pattern": "verb + adverb or preposition"
-        },
-        {
-          "text": "Let's eat outside tonight.",
-          "note": null,
-          "pattern": "verb + adverb or preposition"
-        }
-      ],
-      "collocations": [
         {
           "type": "verb + preposition",
           "items": [
-            "eat at home",
-            "eat at a restaurant"
-          ]
-        },
-        {
-          "type": "phrase",
-          "items": [
-            "something to eat",
-            "a bite to eat"
+            "feed something to someone",
+            "feed someone on something"
           ]
         }
       ],
@@ -197,22 +125,21 @@
       "l1": {}
     },
     {
-      "n": 3,
-      "signpost": "worry",
-      "definition": "keep making someone feel worried, upset, or annoyed",
-      "explanation": "Usually in a continuous tense, and very often in the question *What's eating you?*",
+      "n": 2,
+      "signpost": "eat",
+      "definition": "eat, or get food from something",
+      "explanation": "Used mostly of animals and babies, not of adults eating a meal.",
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + preposition + object",
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
-        "register": [
-          "informal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -221,27 +148,33 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "What's eating you today?",
+          "text": "Cows feed on grass.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "Something has been eating him all week.",
+          "text": "Owls feed mainly at night.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + adverb or preposition"
+        },
+        {
+          "text": "The baby is feeding every three hours.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + preposition",
           "items": [
-            "what's eating you"
+            "feed on something",
+            "feed off something"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "bother-v",
+          "slug": "eat-v",
           "note": null
         }
       ],
@@ -256,35 +189,120 @@
         "pronunciation": null
       },
       "l1": {}
-    }
-  ],
-  "phrases": [
+    },
     {
-      "sub_id": "eat-someone-alive",
-      "text": "eat someone alive",
-      "definition": "beat someone very easily, or be very angry with someone and punish them",
+      "n": 3,
+      "signpost": "supply",
+      "definition": "put something into a machine or supply something to it, usually a little at a time",
       "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object + preposition + object",
+          "verb + object"
+        ]
+      },
       "labels": {
-        "register": [
-          "informal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
         "attitude": []
       },
+      "pronunciation": null,
       "examples": [
         {
-          "text": "If you're late with the report, the boss will eat you alive.",
+          "text": "She fed coins into the machine.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "The other team ate us alive.",
+          "text": "The paper is fed through the printer.",
+          "note": "passive",
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "Feed the wire through the hole in the wall.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object + preposition + object"
         }
       ],
+      "collocations": [
+        {
+          "type": "verb + preposition",
+          "items": [
+            "feed something into something",
+            "feed something through something"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "supply-v",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "make stronger",
+      "definition": "make a feeling, a belief, or a problem stronger or bigger",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "His success only fed his pride.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "The news fed people's fears.",
+          "note": null,
+          "pattern": "verb + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "feed fears",
+            "feed a habit",
+            "feed someone's anger"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -295,69 +313,61 @@
       "l1": {}
     }
   ],
+  "phrases": [],
   "word_family": [
     {
-      "slug": "eater-n",
+      "slug": "feed-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "fed-up-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Have** is often used in place of **eat** with meals: *have breakfast*, *have lunch*. Soup eaten with a spoon is **eaten**; soup from a cup can be **drunk**.",
+  "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "I eated too much at dinner.",
-      "correct": "I ate too much at dinner.",
-      "note": "The past tense is **ate**, and the past participle is **eaten**."
-    },
-    {
-      "incorrect": "I ate a pill for my headache.",
-      "correct": "I took a pill for my headache.",
-      "note": "Medicine and pills are **taken**, not **eaten**."
+      "incorrect": "I feeded the dog.",
+      "correct": "I fed the dog.",
+      "note": "The past tense and past participle are **fed**."
     }
   ],
   "etymology": null,
-  "see_also": [
-    {
-      "slug": "eat-out-phrv",
-      "note": null
-    },
-    {
-      "slug": "eat-up-phrv",
-      "note": null
-    }
-  ],
+  "see_also": [],
   "adaptation": {
-    "semantic": "In some languages soup is drunk rather than eaten, and one verb covers eating and taking medicine. English often says **eat** soup when a spoon is used, and always **take** medicine.",
-    "grammar": null,
+    "semantic": null,
+    "grammar": "\"feed\": the one who eats is the object (*feed the baby*); the food follows **to** when it comes first: *feed bread to the ducks*.",
     "culture": null,
     "false_friends": null,
-    "pronunciation": "\"ate\" has two pronunciations: like **eight** (usual in American English) or *et*, rhyming with **bet** (common in British English)."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-24T18:48:13Z",
-    "modified": "2026-09-25T06:53:58Z",
+    "created": "2026-09-25T06:47:55Z",
+    "modified": "2026-09-25T06:53:36Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260924T184311Z-yq3eas",
+    "run_id": "20260925T064323Z-r23b83",
     "reviews": [
       {
-        "run_id": "20260924T184311Z-yq3eas",
+        "run_id": "20260925T064323Z-r23b83",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-24",
-        "file": "reviews/20260924T184311Z-yq3eas/eat-v.json",
-        "ok": 38,
-        "issues": 9,
-        "blocking": 6
+        "date": "2026-09-25",
+        "file": "reviews/20260925T064323Z-r23b83/feed-v.json",
+        "ok": 46,
+        "issues": 6,
+        "blocking": 5
       },
       {
-        "run_id": "20260924T184311Z-yq3eas",
+        "run_id": "20260925T064323Z-r23b83",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-24",
-        "file": "reviews/20260924T184311Z-yq3eas/eat-v.json",
-        "ok": 47,
+        "date": "2026-09-25",
+        "file": "reviews/20260925T064323Z-r23b83/feed-v.json",
+        "ok": 51,
         "issues": 1,
         "blocking": 0
       }

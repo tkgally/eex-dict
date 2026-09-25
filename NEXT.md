@@ -1,21 +1,21 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-25 by the sixty-sixth scheduled run (lint, eleventh pass).*
+*Rewritten 2026-09-25 by the sixty-seventh scheduled run (build).*
 
 ## State
 
-- 443 entries, all `reviewed` (0 `draft`). Queue: 4,276 pending, 0 claimed, 443 done, 21 declined, 6 duplicate.
-- This run: lint. 11 back-links added (two moved by hand to the right sense); `crossref.py` now places a back-link by shared definition words (77 percent right on existing pairs, against 68). No paid calls.
-- About 312 `reviewed` entries remain at one panel round.
+- 453 entries, all `reviewed` (0 `draft`). Queue: 4,287 pending, 0 claimed, 453 done, 21 declined, 6 duplicate.
+- This run: build, ten verbs (*exercise, exist, expand, expect, express, fall, farm, fear, feed, feel*). 29 issues, 18 applied, 11 rejected. 5 back-links, all checked and right.
+- About 322 `reviewed` entries remain at one panel round.
 - For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
-- Spend: US$0 this run; US$0.44 today, of the US$5 daily cap.
+- Spend: US$0.43 this run; US$0.86 today, of the US$5 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: band 1 in queue order, continuing the verbs: *exercise, exist, expand, expect, express, fall, farm, fear, feed, feel...* Keep runs to eight to twelve entries when the batch holds large verbs (*expect*, *fall*, *feel*). `end-up-phrv` and the *employ*/*examine*/*excite* families (*employee*, *exam*, *excited*, *exciting*) are queued from this run.
+1. **build**: band 1 in queue order, continuing the verbs: *fight, fill, find, fire, fit, fix, flash, float, flow, fly...* Keep runs to eight to twelve entries when the batch holds large verbs (*find*, *fit*, *fly*). This run queued the *fall* phrasal verbs (*fall apart, fall behind, fall out, fall through, fall for*) and families (*feeling-n, fear-n, feed-n, fed-up-adj, expectation-n*...).
 2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns (*everybody-pron, everyone-pron, everything-pron, few-pron, he-pron, her-pron, hers-pron, herself-pron, him-pron, himself-pron...*). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)); check each such flag against the fences below.
 3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
-4. **lint**: next due five runs after this eleventh pass of 2026-09-25 (`next_mode.py` decides). Originality is due soon. Every lint: check each BACKLINK line `crossref --all --apply` prints; placement is by shared wording now, still about one in four wrong.
+4. **lint**: next due five runs after the eleventh pass of 2026-09-25 (four more runs) (`next_mode.py` decides). Originality is due soon. Every lint: check each BACKLINK line `crossref --all --apply` prints; placement is by shared wording now, still about one in four wrong.
 5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
 6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; `crossref-first-sense-backlinks` partly fixed.
 7. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
@@ -39,7 +39,7 @@
 - A subject restriction (*of food*, *of a train*) goes in `explanation`, never as a prefix in the definition; reviewer-b flags it reliably.
 - A participle phrase (*badly damaged*, *crushed to death*) is a `phrase` collocation (*be badly damaged*), never "adverb + verb"; reviewer-a flags it every time.
 - Settled: *mix up* is a phrasal verb (`mix-up-phrv`); *cost* sense 3 past form **costed** lives in its explanation.
-- Adaptation notes: an opening quoted headword is allowed; words named inside the sentence take `**...**`.
+- Adaptation notes: an opening quoted headword is allowed; words named inside the sentence take `**...**`. Reject reviewer-b's recurring flag against it.
 - Call `metrics.py` once per run, in wrap-up only. Set hand-written provenance timestamps from `date -u`, never ahead of the clock.
 
 ## For the owner
@@ -47,4 +47,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- This run's report: `journal/2026-09-25-2.md`.
+- This run's report: `journal/2026-09-25-3.md`.

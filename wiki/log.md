@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-25] build | Ten band-1 verbs: exercise to feel
+
+Sixty-seventh scheduled run, build (`next_mode.py`: highest scheduler debt). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Drafted ten verbs: *exercise, exist, expand, expect, express, fall, farm, fear, feed, feel*. Inflections and all 20 transcriptions verified (*fall*, *feed*, *feel* from the exceptions table). Panel: 29 issues, 16 blocking; 18 applied, 11 rejected, none escalated. Real catches (reviewer-a): *expect* sense 2 said "waiting", redefined as believing someone will arrive; *fall* "lose power, or be taken by an enemy" split in two; *feed*'s lake example did not fit the machine sense; *exercise*'s synonym note ignored its own senses 2 and 3. Rejected: the American no-length-mark objection on *feed*, formal labels on *fear* sense 2, and six format flags against the opening quoted headword in adaptation notes ([note](notes/reviewer-noise.md)). `expand-v` reviewer-b reply failed to parse; re-run cleanly. Back-links: 5, all checked and correctly placed. 21 missing targets queued. Spend: US$0.43 this run; US$0.86 today.
+
 ## [2026-09-25] lint | Eleventh pass: back-link placement by shared wording
 
 Sixty-sixth scheduled run, lint (forced: five runs since the last). Pre-flight clean: no open pull request, no orphan branch, inbox empty. Mechanical: caps and links clean; `crossref --all --apply` added 11 back-links to 11 entries, 0 errors; `lint_vocab --all --queue` queued nothing new; `claim.py --prune` removed four claim files, no stale rows. Precision: no family crossed the 30-percent line; reviewer-a 0.70, reviewer-b 0.70.
