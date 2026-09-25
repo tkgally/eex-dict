@@ -1,21 +1,21 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-25 by the sixty-seventh scheduled run (build).*
+*Rewritten 2026-09-25 by the sixty-eighth scheduled run (build).*
 
 ## State
 
-- 453 entries, all `reviewed` (0 `draft`). Queue: 4,287 pending, 0 claimed, 453 done, 21 declined, 6 duplicate.
-- This run: build, ten verbs (*exercise, exist, expand, expect, express, fall, farm, fear, feed, feel*). 29 issues, 18 applied, 11 rejected. 5 back-links, all checked and right.
-- About 322 `reviewed` entries remain at one panel round.
+- 463 entries, all `reviewed` (0 `draft`). Queue: 4,304 pending, 0 claimed, 463 done, 21 declined, 6 duplicate.
+- This run: build, ten verbs (*fight, fill, find, fire, fit, fix, flash, float, flow, fly*). 47 issues, 31 applied, 16 rejected. 1 back-link, checked and right.
+- About 332 `reviewed` entries remain at one panel round.
 - For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
-- Spend: US$0.43 this run; US$0.86 today, of the US$5 daily cap.
+- Spend: US$0.54 this run; US$1.41 today, of the US$5 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: band 1 in queue order, continuing the verbs: *fight, fill, find, fire, fit, fix, flash, float, flow, fly...* Keep runs to eight to twelve entries when the batch holds large verbs (*find*, *fit*, *fly*). This run queued the *fall* phrasal verbs (*fall apart, fall behind, fall out, fall through, fall for*) and families (*feeling-n, fear-n, feed-n, fed-up-adj, expectation-n*...).
+1. **build**: band 1 in queue order, continuing the verbs after *fly* (`queue.py next` decides). Keep runs to eight to twelve entries when the batch holds large verbs. This run queued phrasal verbs (*fight back, fight off, fill in, fill out, fill up, find out, fit in, fix up*) and families (*fit-n, fix-n, fixed-adj, flight-n, flow-n*...); *suit-v* and *match-v* are needed by `fit-v`'s synonym box.
 2. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns (*everybody-pron, everyone-pron, everything-pron, few-pron, he-pron, her-pron, hers-pron, herself-pron, him-pron, himself-pron...*). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)); check each such flag against the fences below.
 3. **closure**: about 610 closure-gap lemmas (this run queued *axe* and *border*, among others).
-4. **lint**: next due five runs after the eleventh pass of 2026-09-25 (four more runs) (`next_mode.py` decides). Originality is due soon. Every lint: check each BACKLINK line `crossref --all --apply` prints; placement is by shared wording now, still about one in four wrong.
+4. **lint**: next due five runs after the eleventh pass of 2026-09-25 (three more runs) (`next_mode.py` decides). Originality is due soon. Every lint: check each BACKLINK line `crossref --all --apply` prints; placement is by shared wording now, still about one in four wrong.
 5. When drafting or reviewing touches `break-v`: fix sense 4's definition from "of weather, or of something that has been hidden: begin suddenly" to "begin suddenly", restriction moved to `explanation` (style guide section 4). Full pipeline required.
 6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; `crossref-first-sense-backlinks` partly fixed.
 7. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
@@ -24,6 +24,7 @@
 
 - The charter decisions in `wiki/decisions/` are the owner's; do not reopen them.
 - American IPA drops the length mark on `i`, `u`, `ɝ`, and `ɔ`; British keeps it. Reject reviewer-a's recurring "long vowel" objection.
+- *fire* is transcribed with two syllables (`ˈfaɪ.ɚ`), verified by the panel and CMU; reject one-syllable objections.
 - *X of* before a noun phrase (*each of us*, *neither of them*) is the pronoun entry, never the determiner.
 - Idioms stay under their keyword entry whatever its part of speech (*at least*, *more or less*); a correlative pair (*either ... or*, *neither ... nor*) gets a conjunction entry.
 - A claim about a word's origin lives only in `etymology`, never in an `adaptation` note.
@@ -47,4 +48,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Three open questions: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- This run's report: `journal/2026-09-25-3.md`.
+- This run's report: `journal/2026-09-25-4.md`.
