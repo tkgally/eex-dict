@@ -17,13 +17,17 @@ see_also, word_family, synonym_discrimination.words, phrases are not references)
   more), otherwise it is listed as an asymmetry.
 
 A sense-level back-link is added to the target's sense that already lists the
-source, else to the target's first sense with a note "added as a back-link";
-a session should check that the sense fits. --gate exits 1 on ERRORs only
+source; else to the target sense whose definition and explanation share the most
+content words with the source sense's (the source headword in the target sense
+counts two), provided the best sense scores at least 2; else to the first sense.
+The back-link's note is null. Each back-link is printed as a BACKLINK line; a
+session should check that the sense fits. --gate exits 1 on ERRORs only
 (missing targets are the closure queue's job, not a gate failure).
 """
 from __future__ import annotations
 
 import argparse
+import re
 import subprocess
 import sys
 import tempfile
@@ -34,6 +38,41 @@ sys.path.insert(0, str(HERE))
 import eexlib  # noqa: E402
 
 SENSE_RELATIONS = ["synonyms", "antonyms", "compare"]
+
+# Words too common to say which sense a back-link belongs on.
+_STOP = set("""a an the of to or and in on for with by at from as is are be been being it its
+this that these those something someone somebody somewhere things thing people person you your
+they them their he she his her we our not no so if when which who what how very more most usually
+especially often another other such some any than into out up about over used using use one way
+make makes made have has had do does done get gets got""".split())
+MIN_OVERLAP = 2   # chosen on the 585 symmetric pairs in the dictionary, 2026-09-25
+
+
+def _stem(w: str) -> str:
+    for suf in ("ing", "ed", "es", "s", "ly"):
+        if len(w) > len(suf) + 3 and w.endswith(suf):
+            return w[: -len(suf)]
+    return w
+
+
+def _content_words(sense: dict) -> set[str]:
+    text = f"{sense.get('definition') or ''} {sense.get('explanation') or ''}".lower()
+    return {_stem(w) for w in re.findall(r"[a-z]+", text) if w not in _STOP and len(w) > 2}
+
+
+def best_sense(target: dict, source_sense: dict | None, source_headword: str = "") -> int:
+    """Index of the target sense that best matches the source sense (0 when nothing scores MIN_OVERLAP)."""
+    if not source_sense:
+        return 0
+    sw = _content_words(source_sense)
+    hw = _stem(source_headword.lower())
+    best, best_score = 0, -1
+    for j, s in enumerate(target.get("senses", [])):
+        tw = _content_words(s)
+        score = len(sw & tw) + (2 if hw and hw in tw else 0)
+        if score > best_score and (j == 0 or score >= MIN_OVERLAP):
+            best, best_score = j, score
+    return best
 
 
 def load_all() -> dict[str, tuple[Path, dict]]:
@@ -67,16 +106,22 @@ def has_backlink(target: dict, rel: str, source_slug: str) -> bool:
     return any(x["slug"] == source_slug for s in target.get("senses", []) for x in s.get(rel, []))
 
 
-def add_backlink(target: dict, rel: str, source_slug: str) -> str:
+def add_backlink(target: dict, rel: str, source_slug: str, source: dict | None = None,
+                 source_sense_index: int | None = None) -> str:
     if rel == "word_family":
         target.setdefault("word_family", []).append({"slug": source_slug, "form": None, "note": None})
         return "word_family"
-    # prefer a sense that already mentions the source in another relation; else the first sense
-    idx = 0
+    # prefer a sense that already mentions the source in another relation; else the closest sense
+    idx = None
     for i, s in enumerate(target.get("senses", [])):
         if any(x["slug"] == source_slug for r in SENSE_RELATIONS for x in s.get(r, [])):
             idx = i
             break
+    if idx is None:
+        src_sense = None
+        if source is not None and source_sense_index is not None:
+            src_sense = source.get("senses", [])[source_sense_index]
+        idx = best_sense(target, src_sense, (source or {}).get("headword", ""))
     target["senses"][idx].setdefault(rel, []).append({"slug": source_slug, "note": None})
     return f"senses[{idx}].{rel}"
 
@@ -116,7 +161,7 @@ def main() -> int:
                 tp, te = entries[target]
                 if not has_backlink(te, rel, slug):
                     if a.apply:
-                        loc = add_backlink(te, rel, slug)
+                        loc = add_backlink(te, rel, slug, e, sense_i)
                         te["provenance"]["modified"] = eexlib.utcnow_iso()
                         changed.add(target)
                         print(f"BACKLINK {target} {loc} <- {slug}")
