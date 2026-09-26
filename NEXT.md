@@ -1,24 +1,24 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-26 by the seventy-fourth scheduled run (closure).*
+*Rewritten 2026-09-26 by the seventy-fifth scheduled run (build).*
 
 ## State
 
-- 505 entries, all `reviewed` (0 `draft`). Queue: 4,367 pending, 0 claimed, 505 done, 21 declined, 9 duplicate.
-- This run: closure, twelve words (*commit, achievement, border, bullet, criticism, ladder, pen, pencil, package, eager, relevant, urgent*); 26 adjudication decisions; no back-links.
-- About 342 `reviewed` entries remain at one panel round.
+- 515 entries, all `reviewed` (0 `draft`). Queue: 4,377 pending, 0 claimed, 515 done, 21 declined, 9 duplicate.
+- This run: build, ten verbs (*imagine, improve, include, increase, inform, injure, install, intend, interest, introduce*); 16 adjudication decisions; three back-links, all right.
+- About 354 `reviewed` entries remain at one panel round.
 - For the originality reviewer call, pass `--reasoning-effort low` (a default-effort call returned nothing on 2026-09-23).
-- Spend: US$0.36 this run; US$0.77 today, of the US$5 daily cap.
+- Spend: US$0.31 this run; US$1.08 today, of the US$5 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: band 1 in queue order, continuing the verbs after *hurt* (*imagine, improve, include, increase, inform, injure, install, intend, interest, introduce*...; `queue.py next` decides). Eight to twelve entries per run.
+1. **build**: band 1 in queue order, continuing the verbs after *introduce* (*invest, invite, involve, join*...; `queue.py next` decides). Eight to twelve entries per run.
 2. **Back-links to move by hand**, one entry at a time, when any run opens these entries (or the next lint): `happen-v` `become-v` synonym sense 1 -> 2; `fit-v` `belong-v` synonym 1 -> 4; `fix-v` `cure-v` synonym 1 -> 2; `fire-v` `employ-v` antonym 1 -> 2; `give-v` `lend-v` synonym 1 -> 4 ([note](wiki/notes/crossref-first-sense-backlinks.md)).
 3. **review**: one-round entries; the next oldest are the 2026-09-19 pronouns (*someone-pron, something-pron, theirs-pron, them-pron, themselves-pron, these-pron, they-pron, this-pron, those-pron, us-pron...*). Clear the signpost on any one-sense entry a review opens ([note](wiki/notes/one-sense-signposts.md); 42 left). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)).
 4. **closure**: about 924 closure-gap lemmas. Check each claimed row's part of speech first (three bogus rows this run). *pen* the animal enclosure is an unrelated homograph: queue it as `pen-n-2` when a run can, never as a sense of `pen-n`.
-5. **lint**: next due about three runs after this one (`next_mode.py` decides). Originality is due soon. Every lint: check each BACKLINK line `crossref --all --apply` prints; about one in four is wrong. `reviewer-a` `pronunciation` precision is 0.33 over 96 decisions: re-measure; under 0.30 it is switched off.
+5. **lint**: next due in about two runs (`next_mode.py` decides). Originality is due soon. Every lint: check each BACKLINK line `crossref --all --apply` prints; about one in four is wrong. `reviewer-a` `pronunciation` precision is 0.33 over 96 decisions: re-measure; under 0.30 it is switched off.
 6. When drafting or reviewing touches `break-v`: sense 4's definition becomes "begin suddenly", restriction moved to `explanation` (full pipeline). `boil-v` sense 1: move *(of a liquid)* to `explanation` likewise.
-7. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`; `crossref-first-sense-backlinks` partly fixed.
+7. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`, `crossref-cross-type-backlinks` (new); `crossref-first-sense-backlinks` partly fixed.
 8. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
 
 ## Fences (do not re-grind)
@@ -51,4 +51,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Six open questions; the ones that most need you: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: unchanged; nothing added this run.
-- This run's report: `journal/2026-09-26-2.md`.
+- This run's report: `journal/2026-09-26-3.md`.

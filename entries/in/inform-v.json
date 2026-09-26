@@ -1,34 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "add-v",
-  "slug": "add-v",
-  "headword": "add",
+  "id": "inform-v",
+  "slug": "inform-v",
+  "headword": "inform",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "æd",
+      "ipa": "ɪn.ˈfɔrm",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "æd",
+      "ipa": "ɪn.ˈfɔːm",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "Stress is on the second part: *in-FORM*."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "adds",
-      "past_tense": "added",
-      "past_participle": "added",
-      "present_participle": "adding"
+      "third_person_singular": "informs",
+      "past_tense": "informed",
+      "past_participle": "informed",
+      "present_participle": "informing"
     },
     "regular": true,
     "source": "rules",
@@ -47,24 +47,27 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **add** is to put something together with something else, to say something more, or to put numbers together to find a total.",
+  "core_idea": "To inform is to give someone facts, or to let facts and knowledge shape something.",
   "senses": [
     {
       "n": 1,
-      "signpost": "put together",
-      "definition": "put something together with another thing to make a larger amount, number, or group",
+      "signpost": "tell",
+      "definition": "tell someone about something, especially in an official way",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
+          "verb + object",
           "verb + object + preposition + object",
-          "verb + object"
+          "verb + object + that-clause"
         ]
       },
       "labels": {
-        "register": [],
+        "register": [
+          "formal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -73,72 +76,65 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Add a little salt to the soup.",
+          "text": "Please inform us of any change of address.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "She added her name to the list.",
+          "text": "The school informed parents that classes would start late.",
           "note": null,
+          "pattern": "verb + object + that-clause"
+        },
+        {
+          "text": "We were not informed about the change.",
+          "note": "passive",
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Add two cups of flour to the bowl.",
+          "text": "Nobody informed me.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "They added a new room to the house.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "verb + preposition",
           "items": [
-            "add salt",
-            "add water",
-            "add an ingredient"
+            "inform of",
+            "inform about"
           ]
         },
         {
-          "type": "verb + preposition",
+          "type": "adverb + verb",
           "items": [
-            "add to"
+            "fully inform",
+            "officially inform"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "keep someone informed",
+            "we regret to inform you"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "lend-v",
+          "slug": "notify-v",
           "note": null
         },
         {
-          "slug": "calculate-v",
-          "note": null
+          "slug": "tell-v",
+          "note": "more everyday"
         }
       ],
-      "antonyms": [
-        {
-          "slug": "remove-v",
-          "note": null
-        },
-        {
-          "slug": "delete-v",
-          "note": null
-        }
-      ],
-      "compare": [
-        {
-          "slug": "include-v",
-          "note": null
-        }
-      ],
+      "antonyms": [],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "The thing that receives the addition is introduced by **to**: *add milk to the batter*, not *add milk in the batter*.",
+        "grammar": null,
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -147,20 +143,21 @@
     },
     {
       "n": 2,
-      "signpost": "say something more",
-      "definition": "say something more after what has already been said",
+      "signpost": "shape",
+      "definition": "have an influence on something, such as a choice, an opinion, or a piece of work",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + that-clause",
-          "verb + direct speech"
+          "verb + object"
         ]
       },
       "labels": {
-        "register": [],
+        "register": [
+          "formal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -169,33 +166,83 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "\"And don't be late,\" she added.",
+          "text": "Her own childhood informs much of her writing.",
           "note": null,
-          "pattern": "verb + direct speech"
+          "pattern": "verb + object"
         },
         {
-          "text": "He added that he would call again tomorrow.",
-          "note": null,
-          "pattern": "verb + that-clause"
-        },
-        {
-          "text": "I have nothing more to add.",
-          "note": null,
-          "pattern": null
+          "text": "Our decision was informed by the facts.",
+          "note": "passive",
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
-          "items": [
-            "add a comment"
-          ]
-        },
-        {
           "type": "phrase",
           "items": [
-            "nothing to add",
-            "if I may add"
+            "be informed by"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "influence-v",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 3,
+      "signpost": "to police",
+      "definition": "tell the police or someone in power about something wrong that another person has done",
+      "explanation": "Used in the pattern **inform on** someone, or more formally **inform against** someone.",
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": [
+          "disapproving"
+        ]
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "He informed on his own brother.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        },
+        {
+          "text": "She refused to inform on her friends.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + preposition",
+          "items": [
+            "inform on",
+            "inform against"
           ]
         }
       ],
@@ -211,80 +258,32 @@
         "pronunciation": null
       },
       "l1": {}
-    },
-    {
-      "n": 3,
-      "signpost": "in math",
-      "definition": "put two or more numbers together to find their total",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "transitive or intransitive",
-        "codes": [],
-        "patterns": [
-          "verb + object"
-        ]
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [
-          "mathematics",
-          "education"
-        ],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "Add 5 and 3 to get 8.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "Children learn to add before they learn to subtract.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "phrase",
-          "items": [
-            "add and subtract",
-            "add two numbers"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [
-        {
-          "slug": "subtract-v",
-          "note": null
-        }
-      ],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
     }
   ],
   "phrases": [],
   "word_family": [
     {
-      "slug": "addition-n",
+      "slug": "information-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "additional-adj",
+      "slug": "informant-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "informer-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "informative-adj",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "informed-adj",
       "form": null,
       "note": null
     }
@@ -293,18 +292,13 @@
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "Add the sugar in the mixture.",
-      "correct": "Add the sugar to the mixture.",
-      "note": "**Add** takes **to**, not **in**, before what receives it."
+      "incorrect": "He informed that the meeting was canceled.",
+      "correct": "He informed us that the meeting was canceled.",
+      "note": "**Inform** needs the person who is told as its object, before the **that** clause."
     }
   ],
   "etymology": null,
-  "see_also": [
-    {
-      "slug": "add-up-phrv",
-      "note": "for **add up**, meaning to make sense or to calculate a total"
-    }
-  ],
+  "see_also": [],
   "adaptation": {
     "semantic": null,
     "grammar": null,
@@ -314,27 +308,27 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-20T21:35:16Z",
-    "modified": "2026-09-26T06:51:08Z",
+    "created": "2026-09-26T06:46:00Z",
+    "modified": "2026-09-26T06:51:35Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260920T213316Z-u156ny",
+    "run_id": "20260926T064312Z-c2ms4g",
     "reviews": [
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260926T064312Z-c2ms4g",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/add-v.json",
+        "date": "2026-09-26",
+        "file": "reviews/20260926T064312Z-c2ms4g/inform-v.json",
         "ok": 42,
         "issues": 1,
         "blocking": 0
       },
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260926T064312Z-c2ms4g",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/add-v.json",
+        "date": "2026-09-26",
+        "file": "reviews/20260926T064312Z-c2ms4g/inform-v.json",
         "ok": 43,
         "issues": 0,
         "blocking": 0
