@@ -20,6 +20,7 @@ if str(TOOLS) not in sys.path:
     sys.path.insert(0, str(TOOLS))
 
 import openrouter  # noqa: E402
+import spend  # noqa: E402
 
 MODELS_MD = """# Models and roles
 
@@ -249,7 +250,7 @@ class CallWithBudgetTests(unittest.TestCase):
         fake = mock.Mock(side_effect=AssertionError("must not be called"))
         with mock.patch.object(openrouter, "chat", fake):
             with self.assertRaises(RuntimeError) as cm:
-                openrouter.call_with_budget("reviewer-b", "hi", "unit-test", 5.5, ledger=self.ledger,
+                openrouter.call_with_budget("reviewer-b", "hi", "unit-test", spend.DEFAULT_CAP_USD + 0.5, ledger=self.ledger,
                                             models_md=self.models_md)
         self.assertIn("budget check refused", str(cm.exception))
         fake.assert_not_called()

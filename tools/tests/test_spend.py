@@ -15,6 +15,7 @@ if str(TOOLS) not in sys.path:
 
 import spend  # noqa: E402
 
+CAP = spend.DEFAULT_CAP_USD   # tests are relative to the cap, which the owner may change
 TODAY = "2026-09-16"
 YESTERDAY = "2026-09-15"
 
@@ -40,7 +41,7 @@ class SpendTests(unittest.TestCase):
         self.assertTrue(self.ledger.is_file())
         data = self.read()
         self.assertEqual(list(data), ["_doc", "daily_cap_usd", "date", "spent_usd", "calls", "history"])
-        self.assertEqual(data["daily_cap_usd"], 5.0)
+        self.assertEqual(data["daily_cap_usd"], CAP)
         self.assertEqual(data["date"], TODAY)
         self.assertEqual(data["spent_usd"], 0.0)
         self.assertEqual(data["calls"], [])
@@ -49,11 +50,11 @@ class SpendTests(unittest.TestCase):
     def test_check_within_and_over_cap(self):
         ok, left, _ = spend.check(self.ledger, 1.0, today=TODAY)
         self.assertTrue(ok)
-        self.assertEqual(left, 4.0)
-        ok, left, _ = spend.check(self.ledger, 5.0, today=TODAY)   # exactly the cap is allowed
+        self.assertEqual(left, round(CAP - 1.0, 6))
+        ok, left, _ = spend.check(self.ledger, CAP, today=TODAY)   # exactly the cap is allowed
         self.assertTrue(ok)
         self.assertEqual(left, 0.0)
-        ok, left, _ = spend.check(self.ledger, 5.000001, today=TODAY)
+        ok, left, _ = spend.check(self.ledger, round(CAP + 0.000001, 6), today=TODAY)
         self.assertFalse(ok)
         self.assertEqual(left, -0.000001)
         with self.assertRaises(ValueError):
@@ -71,9 +72,9 @@ class SpendTests(unittest.TestCase):
                                  "tokens_out": 20})
         self.assertEqual(ledger["spent_usd"], 0.001235)          # 6-decimal rounding
         self.assertEqual(self.read()["spent_usd"], 0.001235)
-        ok, left, _ = spend.check(self.ledger, 4.998765, today=TODAY)
+        ok, left, _ = spend.check(self.ledger, round(CAP - 0.001235, 6), today=TODAY)
         self.assertTrue(ok)
-        ok, _, _ = spend.check(self.ledger, 4.998766, today=TODAY)
+        ok, _, _ = spend.check(self.ledger, round(CAP - 0.001234, 6), today=TODAY)
         self.assertFalse(ok)
 
     def test_rollover_moves_total_into_history(self):
@@ -108,7 +109,7 @@ class SpendTests(unittest.TestCase):
         text = spend.status_text(ledger)
         self.assertIn(f"date:      {TODAY}", text)
         self.assertIn("spent:     $0.500000", text)
-        self.assertIn("remaining: $4.500000", text)
+        self.assertIn(f"remaining: ${CAP - 0.5:.6f}", text)
         self.assertIn("calls:     1", text)
         history_lines = [ln for ln in text.splitlines() if ln.startswith("  2026-")]
         self.assertEqual(len(history_lines), 7)
@@ -125,9 +126,9 @@ class SpendTests(unittest.TestCase):
                 "--tokens-in", "10", "--tokens-out", "2", "--run-id", "test")
         self.assertEqual(p.returncode, 0, p.stderr)
         self.assertIn("today's total $0.250000", p.stdout)
-        p = run("check", "--cost", "4.75")
+        p = run("check", "--cost", f"{CAP - 0.25:.6f}")
         self.assertEqual(p.returncode, 0, p.stderr)
-        p = run("check", "--cost", "4.750001")
+        p = run("check", "--cost", f"{CAP - 0.249999:.6f}")
         self.assertEqual(p.returncode, 1)
         self.assertIn("refused", p.stdout)
         p = run("status")
