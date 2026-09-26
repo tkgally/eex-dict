@@ -1,34 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "affect-v",
-  "slug": "affect-v",
-  "headword": "affect",
+  "id": "hire-v",
+  "slug": "hire-v",
+  "headword": "hire",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ə.ˈfɛkt",
+      "ipa": "ˈhaɪ.ɚ",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:2/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ə.ˈfekt",
+      "ipa": "ˈhaɪ.ə",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "**Hire** sounds like **higher**."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "affects",
-      "past_tense": "affected",
-      "past_participle": "affected",
-      "present_participle": "affecting"
+      "third_person_singular": "hires",
+      "past_tense": "hired",
+      "past_participle": "hired",
+      "present_participle": "hiring"
     },
     "regular": true,
     "source": "rules",
@@ -51,15 +51,17 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "cause change",
-      "definition": "cause a change in someone or something; influence someone or something",
+      "signpost": "employ",
+      "definition": "give someone a job and pay them to work for you",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + to-infinitive",
+          "verb + object + as + noun or adjective"
         ]
       },
       "labels": {
@@ -72,47 +74,59 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The weather can affect your mood.",
+          "text": "The company hired ten new workers this year.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         },
         {
-          "text": "The new law will affect thousands of workers.",
+          "text": "We need to hire a lawyer.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         },
         {
-          "text": "Lack of sleep affects your ability to concentrate.",
-          "note": null,
-          "pattern": null
+          "text": "She was hired as a teacher.",
+          "note": "passive",
+          "pattern": "verb + object + as + noun or adjective"
         },
         {
-          "text": "Smoking affects the lungs and the heart.",
+          "text": "They hired someone to paint the house.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object + to-infinitive"
         }
       ],
       "collocations": [
         {
-          "type": "adverb + verb",
+          "type": "verb + noun",
           "items": [
-            "directly affect",
-            "seriously affect",
-            "badly affect"
+            "hire staff",
+            "hire workers",
+            "hire a lawyer",
+            "hire a builder"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "be hired as something"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "influence-v",
-          "note": null
-        },
-        {
-          "slug": "hit-v",
+          "slug": "employ-v",
           "note": null
         }
       ],
-      "antonyms": [],
+      "antonyms": [
+        {
+          "slug": "fire-v",
+          "note": null
+        },
+        {
+          "slug": "dismiss-v",
+          "note": null
+        }
+      ],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -126,8 +140,8 @@
     },
     {
       "n": 2,
-      "signpost": "emotion",
-      "definition": "cause someone to feel strong emotion",
+      "signpost": "pay to use",
+      "definition": "pay money to use something, such as a car or a room, for a short time",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -139,7 +153,9 @@
       },
       "labels": {
         "register": [],
-        "region": [],
+        "region": [
+          "British"
+        ],
         "domain": [],
         "currency": [],
         "attitude": []
@@ -147,33 +163,35 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The sad story affected her deeply.",
+          "text": "We hired a car for the week.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         },
         {
-          "text": "He was clearly affected by the news of her death.",
+          "text": "You can hire bikes at the station.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         },
         {
-          "text": "The film's ending affected the whole audience.",
+          "text": "They hired a hall for the wedding party.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "adverb + verb",
+          "type": "verb + noun",
           "items": [
-            "deeply affect",
-            "profoundly affect"
+            "hire a car",
+            "hire a boat",
+            "hire a room",
+            "hire a bike"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "move-v",
+          "slug": "rent-v",
           "note": null
         }
       ],
@@ -193,68 +211,52 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "affected-adj",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "affecting-adj",
+      "slug": "hire-n",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Affect** is nearly always a verb, meaning to influence or change something. A separate, specialized noun **affect** (an observable emotional state) belongs to psychology and psychiatry, not everyday use. The everyday noun that pairs with the verb **affect** is spelled **effect**.",
-  "learner_errors": [
-    {
-      "incorrect": "The medicine has no affect.",
-      "correct": "The medicine has no effect.",
-      "note": "**Affect** is a verb; the everyday noun is **effect**."
-    },
-    {
-      "incorrect": "It will effect our plans.",
-      "correct": "It will affect our plans.",
-      "note": "**Effect** is occasionally a formal verb meaning bring about (*effect change*), but the everyday verb meaning influence is **affect**."
-    }
-  ],
+  "usage_note": "In British English you **hire** a car, a boat, or a room for a short time and **rent** a house or apartment for a longer time. American English usually uses **rent** for all of these, and **hire** mainly for giving someone a job.",
+  "learner_errors": [],
   "etymology": null,
   "see_also": [
     {
-      "slug": "affect-n",
+      "slug": "rent-v",
       "note": null
     }
   ],
   "adaptation": {
-    "semantic": null,
+    "semantic": "\"hire\" has two uses: giving someone a job, and (mainly in British English) paying to use a thing for a short time. Many languages use different verbs for these.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": null
+    "pronunciation": "\"hire\": in American English it often sounds like two syllables, *HY-er*, the same as **higher**."
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-21T21:47:09Z",
-    "modified": "2026-09-26T00:54:29Z",
+    "created": "2026-09-26T00:45:54Z",
+    "modified": "2026-09-26T00:54:45Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260921T214310Z-f8guhz",
+    "run_id": "20260926T004257Z-f05pzl",
     "reviews": [
       {
-        "run_id": "20260921T214310Z-f8guhz",
+        "run_id": "20260926T004257Z-f05pzl",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-21",
-        "file": "reviews/20260921T214310Z-f8guhz/affect-v.json",
-        "ok": 31,
-        "issues": 3,
-        "blocking": 3
+        "date": "2026-09-26",
+        "file": "reviews/20260926T004257Z-f05pzl/hire-v.json",
+        "ok": 30,
+        "issues": 4,
+        "blocking": 4
       },
       {
-        "run_id": "20260921T214310Z-f8guhz",
+        "run_id": "20260926T004257Z-f05pzl",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-21",
-        "file": "reviews/20260921T214310Z-f8guhz/affect-v.json",
-        "ok": 32,
+        "date": "2026-09-26",
+        "file": "reviews/20260926T004257Z-f05pzl/hire-v.json",
+        "ok": 33,
         "issues": 2,
         "blocking": 0
       }
