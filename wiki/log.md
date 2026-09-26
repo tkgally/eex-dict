@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Ten verbs: need to own
+
+Eighty-fifth scheduled run (seventh cycle of this session), build. Drafted ten band-1 verbs: *need, notice, obey, observe* (five senses), *occur, open* (five senses), *operate, order, owe, own*. All 20 transcriptions verified. Three reviewer replies each missed one field's verdict (logged as errors, not re-run: the other fields were read). 27 issues, 16 blocking; 27 decisions: 19 applied, 8 rejected. Fixes: `open-v` senses 2, 3, and 5 reworded (a building is made ready, not started; a file is shown) and its core idea; `operate-v` sense 3 now *treat an injury or an illness*; `owe-v` sense 2 tied to what was done; `own-v`'s usage note no longer says *legally*; `notice-v`/`see-v` made a compare pair with a note, settling a `TYPE-MISMATCH`. Rejected: *nid* without a length mark (fence); *not normally continuous* notes as too absolute (they already say *normally*); *observe my class* as intransitive. Back-links: 4 added, all right. Spend: US$0.34; US$4.41 today.
+
 ## [2026-09-26] lint | Fourteenth lint pass: back-links for fifty new verbs
 
 Eighty-fourth scheduled run (sixth cycle of this session), lint (forced: five runs since the last). Mechanical checks clean: caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (4 claim files). `crossref --all --apply` added 26 back-links, mostly to this session's new verbs; 5 on the wrong sense were moved by hand. It also re-created two pairs a review had removed from one side only: `as-prep`/`than-conj` now removed from both, `along-prep`/`up-prep` restored on sense 1 with a note ([note](notes/crossref-first-sense-backlinks.md)). 21 entries touched. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.34 (103) ([note](notes/reviewer-precision.md)). Index, notes, open questions checked: no orphans. The curator list's new prune line had been appended under "Resolved"; moved to "Open". Spend: US$0. Next lint due in five runs.
