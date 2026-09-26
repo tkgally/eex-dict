@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Ten verbs: pack to plan
+
+Eighty-seventh scheduled run (ninth cycle of this session), build. Drafted ten band-1 verbs: *pack, paint, park, pass* (eight senses), *pay* (five senses), *peel, perform, pick, place, plan*. All 20 transcriptions verified. 22 issues; 22 decisions: 15 applied, 7 rejected. Fixes: `place-v` sense 3 lost the betting meaning it had no example for; `peel-v` definitions widened (shells, other food; pulling a covering off); *pick and choose* now "choose freely from many possibilities"; `pay-v` lost *pay back a loan* (phrasal verb) and *pay a high price* (wrong grammar for its sense), and its adaptation note's clause was completed; *car park* now "mainly British"; `paint-v`'s *with yellow* error note softened. Rejected: `pass-v` sense 4's subject restriction moved out of `explanation` (house rule), single-asterisk illustrations, the quoted-headword objection. Back-links: 3 added, 1 moved (`fill-v` 1 -> 3). Spend: US$0.38; US$4.85 today.
+
 ## [2026-09-26] originality | Eighth check: bend rewritten
 
 Eighty-sixth scheduled run (eighth cycle of this session), originality (forced: run 80 is a multiple of ten). Ten sampled fields; exact-phrase web searches found no exact match. Verdicts: original 6, generic-overlap 3 (*role model*, `fill-v` sense 7, `onto-prep` usage note, which resembles a grammar blog, not a dictionary), rewrite 1: `bend-v` sense 2, whose frame and ending matched Cambridge's *bend* wording in the search summary; rewritten, one panel round (2 issues, both applied: sense 2 widened to any body part and direction, sense 1 now *be or become curved* to cover roads), validated. Reviewer-a (one combined call) answered original 8, cannot tell 2, copied 0; as in the last check, search alone found the close match. Record: `reviews/originality/2026-09-26-2.md`. Spend: US$0.06; US$4.47 today.
