@@ -1714,28 +1714,28 @@ program	n	1	defining	pending	2026-09-16	votes 1
 progress	n	1	defining	pending	2026-09-16	votes 1
 promise	n	1	defining	pending	2026-09-16	votes 1
 pronoun	n	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
-pronounce	v	1	defining	pending	2026-09-16	votes 1
-pronunciation	n	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
-proof	n	1	defining	pending	2026-09-16	votes 3
+pronounce	v	1	defining	done	2026-09-16	votes 1
+pronunciation	n	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech; referenced by pronounce-v
+proof	n	1	defining	pending	2026-09-16	votes 3; referenced by prove-v
 proper	adj	1	defining	pending	2026-09-16	votes 1
 properly	adv	1	defining	pending	2026-09-16	votes 1
-protect	v	1	defining	pending	2026-09-16	votes 3; referenced by defend-v; referenced by guard-v
-protection	n	1	defining	pending	2026-09-16	votes 2
+protect	v	1	defining	done	2026-09-16	votes 3; referenced by defend-v; referenced by guard-v
+protection	n	1	defining	pending	2026-09-16	votes 2; referenced by protect-v
 protest	n	1	defining	pending	2026-09-16	votes 1
 proud	adj	1	defining	pending	2026-09-16	votes 3
-prove	v	1	defining	pending	2026-09-16	votes 3
-provide	v	1	defining	pending	2026-09-16	votes 2; referenced by give-v
+prove	v	1	defining	done	2026-09-16	votes 3
+provide	v	1	defining	done	2026-09-16	votes 2; referenced by give-v
 public	adj	1	defining	pending	2026-09-16	votes 3
 public	n	1	defining	pending	2026-09-16	votes 2; referenced by people-n
-pull	v	1	defining	pending	2026-09-16	votes 3; referenced by draw-v
+pull	v	1	defining	done	2026-09-16	votes 3; referenced by draw-v
 pulse	n	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
-punish	v	1	defining	pending	2026-09-16	votes 3
-punishment	n	1	defining	pending	2026-09-16	votes 2
+punish	v	1	defining	done	2026-09-16	votes 3
+punishment	n	1	defining	pending	2026-09-16	votes 2; referenced by punish-v
 pure	adj	1	defining	pending	2026-09-16	votes 1
 purple	adj	1	defining	pending	2026-09-16	votes 1
 purpose	n	1	defining	pending	2026-09-16	votes 3; referenced by aim-n
 purse	n	1	defining	pending	2026-09-16	votes 2
-push	v	1	defining	pending	2026-09-16	votes 3; referenced by press-v
+push	v	1	defining	pending	2026-09-16	votes 3; referenced by press-v; referenced by pull-v
 put	v	1	defining	pending	2026-09-16	votes 3; referenced by place-v
 put away	phrv	1	defining	pending	2026-09-16	votes 2
 put back	phrv	1	defining	pending	2026-09-16	votes 1
@@ -2184,9 +2184,9 @@ sun	n	1	defining	pending	2026-09-16	votes 2
 super-	prefix	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
 supper	n	1	defining	pending	2026-09-16	votes 1
 supply	n	1	defining	pending	2026-09-16	votes 2; referenced by bank-n
-supply	v	1	defining	pending	2026-09-16	votes 2; referenced by feed-v
+supply	v	1	defining	pending	2026-09-16	votes 2; referenced by feed-v; referenced by provide-v
 support	n	1	defining	pending	2026-09-16	votes 2; referenced by opposition-n
-support	v	1	defining	pending	2026-09-16	votes 2; referenced by encourage-v
+support	v	1	defining	pending	2026-09-16	votes 2; referenced by encourage-v; referenced by provide-v
 suppose	v	1	defining	pending	2026-09-16	votes 3; referenced by say-v; referenced by assume-v; referenced by expect-v; referenced by guess-v; referenced by imagine-v
 sure	adj	1	defining	pending	2026-09-16	votes 3
 surely	adv	1	defining	pending	2026-09-16	votes 2
@@ -5031,3 +5031,12 @@ prevention	n	3	family	pending	2026-09-26	referenced by prevent-v
 produce	n	3	family	pending	2026-09-26	referenced by produce-v
 production	n	3	family	pending	2026-09-26	referenced by produce-v
 urge	v	3	crossref	pending	2026-09-26	referenced by press-v
+declare	v	3	crossref	pending	2026-09-26	referenced by pronounce-v
+disprove	v	3	crossref	pending	2026-09-26	referenced by prove-v
+protective	adj	3	family	pending	2026-09-26	referenced by protect-v
+proven	adj	3	family	pending	2026-09-26	referenced by prove-v
+provider	n	3	family	pending	2026-09-26	referenced by provide-v
+provision	n	3	family	pending	2026-09-26	referenced by provide-v
+pull	n	3	family	pending	2026-09-26	referenced by pull-v
+pull up	phrv	3	crossref	pending	2026-09-26	referenced by pull-v
+reward	v	3	crossref	pending	2026-09-26	referenced by punish-v

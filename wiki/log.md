@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Six verbs: pronounce to punish
+
+Ninety-first scheduled run (thirteenth and last cycle of this session; the clock still allowed a start after the lint cycle). Drafted six band-1 verbs: *pronounce, protect, prove, provide, pull, punish*. All 12 transcriptions verified. 8 issues; 8 decisions: 6 applied, 2 rejected. Fixes: `pull-v` sense 3 now "arrive at or leave a place", with *pull into, pull out of, pull up*; sense 2 no longer defines *pull* with *pulling*; `pronounce-v`'s bare-letter example replaced; *be well protected* recast. Rejected: putting *proven* in `prove-v`'s past-participle slot (one value per slot; the inflection note records it), the quoted-headword objection. Spend: US$0.16; US$5.98 today.
+
 ## [2026-09-26] lint | Fifteenth lint pass: back-links for the last 18 verbs
 
 Ninetieth scheduled run (twelfth and last cycle of this session), lint (forced: five runs since the last). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (3 files) clean. `crossref --all --apply` added 22 back-links; 4 on the wrong sense moved by hand. Two were mirrors of links a review removed from one side only earlier today (`until-conj`/`by-prep`, `out-prep`/`into-prep`): kept on the right senses. The earlier review's journal said a dry `crossref --all` found no pending mirrors; the dry run does not print them, so that check proved nothing ([note](notes/crossref-first-sense-backlinks.md)). The standing `you-pron`/`one-pron` type mismatch (a stale synonym back-link) is settled as a compare pair. 17 entries touched. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.33 (105). Spend: US$0. Next lint due in five runs.
