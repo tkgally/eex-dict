@@ -322,7 +322,7 @@ call	v	1	defining	done	2026-09-16	votes 3
 call off	phrv	1	defining	pending	2026-09-16	votes 2; referenced by call-v
 calm	adj	1	defining	pending	2026-09-16	votes 3; referenced by anxious-adj; referenced by calm-v
 calm	v	1	defining	done	2026-09-16	votes 3
-calm down	phrv	1	defining	pending	2026-09-16	votes 1; referenced by calm-v
+calm down	phrv	1	defining	pending	2026-09-16	votes 1; referenced by calm-v; referenced by relax-v
 camera	n	1	defining	pending	2026-09-16	votes 2
 can	modal	1	defining	done	2026-09-16	votes 3
 cancer	n	1	defining	pending	2026-09-16	votes 2
@@ -1349,7 +1349,7 @@ medicine	n	1	defining	pending	2026-09-16	votes 3
 meet	v	1	defining	done	2026-09-16	votes 2; referenced by see-v; referenced by gather-v
 melt	v	1	defining	done	2026-09-16	votes 2; referenced by freeze-v
 member	n	1	defining	pending	2026-09-16	votes 2
-memory	n	1	defining	pending	2026-09-16	votes 3
+memory	n	1	defining	pending	2026-09-16	votes 3; referenced by remember-v
 mental	adj	1	defining	pending	2026-09-16	votes 3
 mention	v	1	defining	done	2026-09-16	votes 2; referenced by speak-v
 menu	n	1	defining	pending	2026-09-16	votes 1
@@ -1793,25 +1793,25 @@ reduce	v	1	defining	done	2026-09-16	votes 1; referenced by cut-v; referenced by 
 refer	v	1	defining	done	2026-09-16	votes 1
 reflect	v	1	defining	done	2026-09-16	votes 1
 refuse	v	1	defining	done	2026-09-16	votes 2; referenced by take-v; referenced by accept-v
-regret	v	1	defining	pending	2026-09-16	votes 2
+regret	v	1	defining	done	2026-09-16	votes 2
 regular	adj	1	defining	pending	2026-09-16	votes 2
 regularly	adv	1	defining	pending	2026-09-16	votes 1
-relate	v	1	defining	pending	2026-09-16	votes 2
-related	adj	1	defining	pending	2026-09-16	votes 2
-relation	n	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
-relationship	n	1	defining	pending	2026-09-16	votes 3
-relative	n	3	defining	pending	2026-09-16	votes 3; panel median 3, secondary part of speech; referenced by family-n
-relax	v	1	defining	pending	2026-09-16	votes 3
+relate	v	1	defining	done	2026-09-16	votes 2
+related	adj	1	defining	pending	2026-09-16	votes 2; referenced by relate-v
+relation	n	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech; referenced by relate-v
+relationship	n	1	defining	pending	2026-09-16	votes 3; referenced by relate-v
+relative	n	3	defining	pending	2026-09-16	votes 3; panel median 3, secondary part of speech; referenced by family-n; referenced by relate-v
+relax	v	1	defining	done	2026-09-16	votes 3
 relief	n	1	defining	pending	2026-09-16	votes 1
 religion	n	1	defining	pending	2026-09-16	votes 3
 religious	adj	1	defining	pending	2026-09-16	votes 2
-remain	v	1	defining	pending	2026-09-16	votes 2; referenced by become-v; referenced by continue-v; referenced by keep-v
-remember	v	1	defining	pending	2026-09-16	votes 3; referenced by forget-v
-remind	v	1	defining	pending	2026-09-16	votes 1
-remove	v	1	defining	pending	2026-09-16	votes 2; referenced by take-v; referenced by add-v; referenced by delete-v; referenced by install-v
+remain	v	1	defining	done	2026-09-16	votes 2; referenced by become-v; referenced by continue-v; referenced by keep-v
+remember	v	1	defining	done	2026-09-16	votes 3; referenced by forget-v
+remind	v	1	defining	done	2026-09-16	votes 1
+remove	v	1	defining	done	2026-09-16	votes 2; referenced by take-v; referenced by add-v; referenced by delete-v; referenced by install-v
 rent	n	1	defining	pending	2026-09-16	votes 1
-repair	n	1	defining	pending	2026-09-16	votes 2
-repair	v	1	defining	pending	2026-09-16	votes 2; referenced by fix-v
+repair	n	1	defining	pending	2026-09-16	votes 2; referenced by repair-v
+repair	v	1	defining	done	2026-09-16	votes 2; referenced by fix-v
 repeat	v	1	defining	pending	2026-09-16	votes 2
 reply	v	1	defining	pending	2026-09-16	votes 2; referenced by answer-v
 report	n	1	defining	pending	2026-09-16	votes 1; referenced by record-n; referenced by account-n
@@ -2115,7 +2115,7 @@ start over	phrv	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary
 state	n	1	defining	pending	2026-09-16	votes 3
 statement	n	1	defining	pending	2026-09-16	votes 1
 station	n	1	defining	pending	2026-09-16	votes 3
-stay	v	1	defining	pending	2026-09-16	votes 3; referenced by go-v; referenced by keep-v
+stay	v	1	defining	pending	2026-09-16	votes 3; referenced by go-v; referenced by keep-v; referenced by remain-v
 steal	v	1	defining	pending	2026-09-16	votes 2; referenced by take-v
 steam	n	1	defining	pending	2026-09-16	votes 3
 steep	adj	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
@@ -3322,7 +3322,7 @@ meadow	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wor
 meanwhile	adv	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
 melody	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 memorize	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=4); referenced by learn-v
-mend	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by fix-v
+mend	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by fix-v; referenced by repair-v
 metric	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=4)
 metropolitan	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 microwave	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=3)
@@ -5086,3 +5086,15 @@ referral	n	3	family	pending	2026-09-26	referenced by refer-v
 reflection	n	3	family	pending	2026-09-26	referenced by reflect-v
 reflective	adj	3	family	pending	2026-09-26	referenced by reflect-v
 refusal	n	3	family	pending	2026-09-26	referenced by refuse-v
+regret	n	3	family	pending	2026-09-26	referenced by regret-v
+regretful	adj	3	family	pending	2026-09-26	referenced by regret-v
+regrettable	adj	3	family	pending	2026-09-26	referenced by regret-v
+relaxation	n	3	family	pending	2026-09-26	referenced by relax-v
+relaxed	adj	3	family	pending	2026-09-26	referenced by relax-v
+relaxing	adj	3	family	pending	2026-09-26	referenced by relax-v
+remainder	n	3	family	pending	2026-09-26	referenced by remain-v
+remaining	adj	3	family	pending	2026-09-26	referenced by remain-v
+remains	n	3	family	pending	2026-09-26	referenced by remain-v
+remembrance	n	3	family	pending	2026-09-26	referenced by remember-v
+reminder	n	3	family	pending	2026-09-26	referenced by remind-v
+removal	n	3	family	pending	2026-09-26	referenced by remove-v
