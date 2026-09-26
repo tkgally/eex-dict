@@ -1,34 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "destroy-v",
-  "slug": "destroy-v",
-  "headword": "destroy",
+  "id": "invest-v",
+  "slug": "invest-v",
+  "headword": "invest",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "dɪ.ˈstrɔɪ",
+      "ipa": "ɪn.ˈvɛst",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/3;cmudict:agree",
+      "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "dɪ.ˈstrɔɪ",
+      "ipa": "ɪn.ˈvest",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:2/2",
+      "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "The stress is on the second part: *dih-STROY*."
+    "notes": null
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "destroys",
-      "past_tense": "destroyed",
-      "past_participle": "destroyed",
-      "present_participle": "destroying"
+      "third_person_singular": "invests",
+      "past_tense": "invested",
+      "past_participle": "invested",
+      "present_participle": "investing"
     },
     "regular": true,
     "source": "rules",
@@ -47,18 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To destroy something is to harm it so badly that it can no longer exist or work as it did before.",
+  "core_idea": "To invest is to put money, time, or effort into something now so that it brings something good later.",
   "senses": [
     {
       "n": 1,
-      "signpost": "damage completely",
-      "definition": "damage something so badly that it no longer exists or cannot be used or repaired",
+      "signpost": "money",
+      "definition": "put money into a business, a building, land, or a plan so that you will get more money back later",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
+          "verb + preposition + object",
+          "verb + object + preposition + object",
           "verb + object"
         ]
       },
@@ -72,69 +74,51 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The fire destroyed the whole building.",
+          "text": "She invested her savings in a small bakery.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "It's a good time to invest in property.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        },
+        {
+          "text": "He lost most of the money he had invested.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "Their home was destroyed in the flood.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "The storm destroyed most of the crops.",
-          "note": null,
-          "pattern": "verb + object"
+          "text": "Many people start to invest when they get their first job.",
+          "note": "no object",
+          "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adverb + verb",
+          "type": "verb + noun",
           "items": [
-            "completely destroy",
-            "almost destroy",
-            "partly destroy"
+            "invest money",
+            "invest your savings"
           ]
         },
         {
-          "type": "noun + verb",
+          "type": "verb + adverb",
           "items": [
-            "a fire destroys something",
-            "a storm destroys something"
+            "invest heavily",
+            "invest wisely"
           ]
         },
         {
-          "type": "phrase",
+          "type": "verb + preposition",
           "items": [
-            "be destroyed by fire"
+            "invest in"
           ]
         }
       ],
       "synonyms": [],
-      "antonyms": [
-        {
-          "slug": "build-v",
-          "note": null
-        },
-        {
-          "slug": "create-v",
-          "note": null
-        },
-        {
-          "slug": "make-v",
-          "note": null
-        }
-      ],
-      "compare": [
-        {
-          "slug": "damage-v",
-          "note": "harm only partly"
-        },
-        {
-          "slug": "break-v",
-          "note": null
-        }
-      ],
+      "antonyms": [],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -147,14 +131,15 @@
     },
     {
       "n": 2,
-      "signpost": "ruin",
-      "definition": "harm something such as a hope, a relationship, or someone's life so badly that it cannot be saved",
+      "signpost": "time or effort",
+      "definition": "give a lot of time, effort, or energy to something because you think it is worth it",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
+          "verb + object + preposition + object",
           "verb + object"
         ]
       },
@@ -168,43 +153,32 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The accident destroyed his hopes of playing again.",
+          "text": "We've invested a lot of time in this project.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Don't let one argument destroy your friendship.",
+          "text": "She invested all her energy in her new business.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Lies destroyed their trust in each other.",
+          "text": "Parents invest years in their children's education.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         }
       ],
       "collocations": [
         {
           "type": "verb + noun",
           "items": [
-            "destroy a career",
-            "destroy a relationship",
-            "destroy someone's life",
-            "destroy trust",
-            "destroy hopes"
+            "invest time",
+            "invest effort",
+            "invest energy"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "ruin-v",
-          "note": null
-        },
-        {
-          "slug": "kill-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -219,16 +193,15 @@
     },
     {
       "n": 3,
-      "signpost": "kill an animal",
-      "definition": "kill an animal, usually because it is sick, hurt, or dangerous",
+      "signpost": "buy something useful",
+      "definition": "buy something that costs a lot but will be useful for a long time",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "usually passive"
+          "verb + preposition + object"
         ]
       },
       "labels": {
@@ -236,39 +209,32 @@
         "region": [],
         "domain": [],
         "currency": [],
-        "attitude": [
-          "euphemistic"
-        ]
+        "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "The injured horse had to be destroyed.",
+          "text": "It's time I invested in a good winter coat.",
           "note": null,
-          "pattern": "usually passive"
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "The dog was destroyed after it attacked a child.",
+          "text": "If you cook a lot, invest in a sharp knife.",
           "note": null,
-          "pattern": "usually passive"
+          "pattern": "verb + preposition + object"
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + preposition",
           "items": [
-            "have to be destroyed"
+            "invest in"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "put-down-phrv",
-          "note": "more informal"
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -281,20 +247,20 @@
     },
     {
       "n": 4,
-      "signpost": "defeat",
-      "definition": "beat someone completely and easily in a game or competition",
+      "signpost": "give power",
+      "definition": "officially give someone power or a right",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
         "register": [
-          "informal"
+          "formal"
         ],
         "region": [],
         "domain": [],
@@ -304,31 +270,26 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We destroyed them in the final.",
+          "text": "The law invests the committee with the power to make decisions.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "She destroyed every player she faced.",
-          "note": null,
-          "pattern": "verb + object"
+          "text": "The new president was invested with full authority.",
+          "note": "passive",
+          "pattern": "verb + object + preposition + object"
         }
       ],
       "collocations": [
         {
-          "type": "adverb + verb",
+          "type": "phrase",
           "items": [
-            "completely destroy",
-            "easily destroy"
+            "invest someone with power",
+            "invest someone with authority"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "beat-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -345,65 +306,59 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "destruction-n",
+      "slug": "investment-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "destructive-adj",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "destroyer-n",
+      "slug": "investor-n",
       "form": null,
       "note": null
     }
   ],
-  "synonym_discrimination": {
-    "words": [
-      "destroy-v",
-      "damage-v",
-      "ruin-v"
-    ],
-    "note": "**Damage** means harm something so that it is less good but still exists: *The rain damaged the roof*. **Destroy** means harm it so badly that it cannot be used or repaired: *The fire destroyed the house*. **Ruin** is often used for plans, days, clothes, and chances: *The rain ruined our picnic*."
-  },
+  "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "She invested on a new company.",
+      "correct": "She invested in a new company.",
+      "note": "Before the business or thing that gets the money, use **in**, not **on**."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": null,
+    "grammar": "\"invest\" takes **in** before the thing that gets the money or effort: *invest in a company*, *invest time in a project*. Several languages use a word meaning *on* or *into* here.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-24T12:46:36Z",
-    "modified": "2026-09-26T18:53:36Z",
+    "created": "2026-09-26T18:45:48Z",
+    "modified": "2026-09-26T18:53:04Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260924T124322Z-0jqi0i",
+    "run_id": "20260926T184304Z-iujuq0",
     "reviews": [
       {
-        "run_id": "20260924T124322Z-0jqi0i",
+        "run_id": "20260926T184304Z-iujuq0",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-24",
-        "file": "reviews/20260924T124322Z-0jqi0i/destroy-v.json",
+        "date": "2026-09-26",
+        "file": "reviews/20260926T184304Z-iujuq0/invest-v.json",
         "ok": 50,
         "issues": 2,
-        "blocking": 2
+        "blocking": 1
       },
       {
-        "run_id": "20260924T124322Z-0jqi0i",
+        "run_id": "20260926T184304Z-iujuq0",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-24",
-        "file": "reviews/20260924T124322Z-0jqi0i/destroy-v.json",
-        "ok": 51,
-        "issues": 1,
+        "date": "2026-09-26",
+        "file": "reviews/20260926T184304Z-iujuq0/invest-v.json",
+        "ok": 49,
+        "issues": 3,
         "blocking": 0
       }
     ],
