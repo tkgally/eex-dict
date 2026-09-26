@@ -21,7 +21,10 @@ source; else to the target sense whose definition and explanation share the most
 content words with the source sense's (the source headword in the target sense
 counts two), provided the best sense scores at least 2; else to the first sense.
 The back-link's note is null. Each back-link is printed as a BACKLINK line; a
-session should check that the sense fits. --gate exits 1 on ERRORs only
+session should check that the sense fits. When the target already names the
+source under another sense relation (a synonym one way, a compare the other),
+nothing is written and a TYPE-MISMATCH line is printed: the type is a semantic
+choice for the session. --gate exits 1 on ERRORs only
 (missing targets are the closure queue's job, not a gate failure).
 """
 from __future__ import annotations
@@ -106,6 +109,15 @@ def has_backlink(target: dict, rel: str, source_slug: str) -> bool:
     return any(x["slug"] == source_slug for s in target.get("senses", []) for x in s.get(rel, []))
 
 
+def other_type_link(target: dict, rel: str, source_slug: str) -> str | None:
+    """The other sense relation under which the target already names the source, if any."""
+    for s in target.get("senses", []):
+        for r in SENSE_RELATIONS:
+            if r != rel and any(x["slug"] == source_slug for x in s.get(r, [])):
+                return r
+    return None
+
+
 def add_backlink(target: dict, rel: str, source_slug: str, source: dict | None = None,
                  source_sense_index: int | None = None) -> str:
     if rel == "word_family":
@@ -160,7 +172,11 @@ def main() -> int:
             if rel in SENSE_RELATIONS or rel == "word_family":
                 tp, te = entries[target]
                 if not has_backlink(te, rel, slug):
-                    if a.apply:
+                    other = other_type_link(te, rel, slug) if rel in SENSE_RELATIONS else None
+                    if other:
+                        # the pair's type is a semantic choice: report it, never write a second type
+                        print(f"TYPE-MISMATCH {target} names {slug} under {other}, {slug} names {target} under {rel}"); warns += 1
+                    elif a.apply:
                         loc = add_backlink(te, rel, slug, e, sense_i)
                         te["provenance"]["modified"] = eexlib.utcnow_iso()
                         changed.add(target)
