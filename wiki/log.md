@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] closure | Ten closure words: gamble to ethnic
+
+Ninety-second scheduled run (first cycle of a new session), closure: words the dictionary's own definitions already use. Drafted *gamble* (v), *axe, diaper, gene, organization, resource* (n), *attractive, biological, comparative, ethnic* (adj); every claimed row's part of speech was right. All 20 transcriptions verified. 46 issues; 46 decisions: 31 applied, 15 rejected. Fixes: *attractive* sense 1 widened to things as well as people; *ethnic* sense 2 reworded and its usage note now says the catch-all use is disliked; *bet* is also used for non-money risks (*gamble* note); *comparative* sense 2 now "true to some degree". Rejected: reviewer-a's British *diaper* with a final r, *organisation* without *-naɪ-*, American *resource* with second-syllable stress (all panel- and CMU-verified). Six definitions reworded into the defining vocabulary. Queue row `good looking|adj` should read *good-looking*. Spend: US$0.31; US$6.28 today.
+
 ## [2026-09-26] build | Six verbs: pronounce to punish
 
 Ninety-first scheduled run (thirteenth and last cycle of this session; the clock still allowed a start after the lint cycle). Drafted six band-1 verbs: *pronounce, protect, prove, provide, pull, punish*. All 12 transcriptions verified. 8 issues; 8 decisions: 6 applied, 2 rejected. Fixes: `pull-v` sense 3 now "arrive at or leave a place", with *pull into, pull out of, pull up*; sense 2 no longer defines *pull* with *pulling*; `pronounce-v`'s bare-letter example replaced; *be well protected* recast. Rejected: putting *proven* in `prove-v`'s past-participle slot (one value per slot; the inflection note records it), the quoted-headword objection. Spend: US$0.16; US$5.98 today.
