@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "call-v",
-  "slug": "call-v",
-  "headword": "call",
+  "id": "return-v",
+  "slug": "return-v",
+  "headword": "return",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "kɔl",
+      "ipa": "rɪˈtɝn",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "kɔːl",
+      "ipa": "rɪˈtɜːn",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,10 +25,10 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "calls",
-      "past_tense": "called",
-      "past_participle": "called",
-      "present_participle": "calling"
+      "third_person_singular": "returns",
+      "past_tense": "returned",
+      "past_participle": "returned",
+      "present_participle": "returning"
     },
     "regular": true,
     "source": "rules",
@@ -47,19 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **call** is to contact someone by phone, to give someone or something a name, to say something loudly, or to ask someone to come.",
+  "core_idea": "To return is to go back, or to give, send, or do something back.",
   "senses": [
     {
       "n": 1,
-      "signpost": "phone",
-      "definition": "contact someone by telephone",
+      "signpost": "come back",
+      "definition": "come or go back to a place",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + adverb or preposition",
+          "verb + preposition + object"
         ]
       },
       "labels": {
@@ -72,42 +73,45 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I'll call you tomorrow.",
+          "text": "She returned home late last night.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + adverb or preposition"
         },
         {
-          "text": "She called the office to explain she was sick.",
+          "text": "When will you return from your trip?",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "Can you call me back later?",
+          "text": "He never returned to the town where he grew up.",
           "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "He called from the airport to say he had landed.",
-          "note": null,
-          "pattern": null
+          "pattern": "verb + preposition + object"
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "call someone back",
-            "call collect"
+            "return home",
+            "return from somewhere",
+            "return to somewhere"
+          ]
+        },
+        {
+          "type": "verb + adverb",
+          "items": [
+            "return safely",
+            "never return"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "phone-v",
+          "slug": "come-back-phrv",
           "note": null
         },
         {
-          "slug": "ring-v",
+          "slug": "go-back-phrv",
           "note": null
         }
       ],
@@ -125,15 +129,16 @@
     },
     {
       "n": 2,
-      "signpost": "name",
-      "definition": "give someone or something a particular name",
+      "signpost": "give back",
+      "definition": "give, send, take, or put something back",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object + noun complement"
+          "verb + object",
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -146,33 +151,40 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "They called the baby Ana.",
+          "text": "Please return the book to the library by Friday.",
           "note": null,
-          "pattern": "verb + object + noun complement"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Everyone calls him Lee.",
+          "text": "I returned the shoes because they were too small.",
           "note": null,
-          "pattern": "verb + object + noun complement"
+          "pattern": "verb + object"
         },
         {
-          "text": "We call this dish a stew.",
+          "text": "He returned the money he had borrowed.",
           "note": null,
-          "pattern": "verb + object + noun complement"
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
+          "type": "verb + noun",
+          "items": [
+            "return a book",
+            "return a product",
+            "return money"
+          ]
+        },
+        {
           "type": "phrase",
           "items": [
-            "what do you call this?",
-            "call someone something"
+            "return something to someone"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "name-v",
+          "slug": "give-back-phrv",
           "note": null
         }
       ],
@@ -190,16 +202,15 @@
     },
     {
       "n": 3,
-      "signpost": "shout",
-      "definition": "say something loudly to get someone's attention",
+      "signpost": "happen again",
+      "definition": "begin to happen or exist again",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "verb + direct speech"
+          "verb + preposition + object"
         ]
       },
       "labels": {
@@ -212,17 +223,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She called his name across the street.",
+          "text": "The pain returned after a few days.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         },
         {
-          "text": "\"Wait for me!\" he called.",
+          "text": "After the storm, things slowly returned to normal.",
           "note": null,
-          "pattern": "verb + direct speech"
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "Someone called for help from inside the building.",
+          "text": "The cold weather will return next week.",
           "note": null,
           "pattern": null
         }
@@ -231,17 +242,12 @@
         {
           "type": "phrase",
           "items": [
-            "call for help",
-            "call someone's name"
+            "return to normal",
+            "the pain returns"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "shout-v",
-          "note": "**shout** is louder and more forceful; **call** often just means to speak to get attention"
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -256,8 +262,69 @@
     },
     {
       "n": 4,
-      "signpost": "ask to come",
-      "definition": "ask or order someone or something to come, especially for help or to take part in something",
+      "signpost": "go back to",
+      "definition": "start doing, reading, or talking about something again after a break",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "She returned to work after the baby was born.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        },
+        {
+          "text": "Let's return to the first question.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        },
+        {
+          "text": "He returned to his book after lunch.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "return to work",
+            "return to school",
+            "return to a subject"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "do the same back",
+      "definition": "do or give the same thing to someone that they have done or given to you",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -277,17 +344,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The doctor called the next patient.",
+          "text": "I smiled at her, but she didn't return my smile.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "They called a meeting for Friday afternoon.",
+          "text": "Thanks for your help. I hope I can return the favor.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "Call an ambulance!",
+          "text": "Please return my call as soon as possible.",
           "note": null,
           "pattern": "verb + object"
         }
@@ -296,9 +363,10 @@
         {
           "type": "verb + noun",
           "items": [
-            "call a meeting",
-            "call an ambulance",
-            "call a doctor"
+            "return a favor",
+            "return someone's smile",
+            "return a call",
+            "return a greeting"
           ]
         }
       ],
@@ -316,71 +384,27 @@
       "l1": {}
     }
   ],
-  "phrases": [
-    {
-      "sub_id": "call-it-a-day",
-      "text": "call it a day",
-      "definition": "decide to stop doing something, especially work, for the rest of the day",
-      "explanation": null,
-      "labels": {
-        "register": [
-          "informal"
-        ],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "We've been working for ten hours; let's call it a day.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The team called it a day after finishing the report.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    }
-  ],
+  "phrases": [],
   "word_family": [
     {
-      "slug": "caller-n",
+      "slug": "return-n",
       "form": null,
       "note": null
-    },
-    {
-      "slug": "call-n",
-      "form": null,
-      "note": "a telephone conversation, or a loud cry"
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
-  "etymology": null,
-  "see_also": [
+  "learner_errors": [
     {
-      "slug": "call-on-phrv",
-      "note": "visit someone, or ask someone to speak or answer"
-    },
-    {
-      "slug": "call-off-phrv",
-      "note": "cancel a planned event"
+      "incorrect": "When did you return back from your trip?",
+      "correct": "When did you return from your trip?",
+      "note": "**Return** already means *go back*, so **back** is not needed."
     }
   ],
+  "etymology": null,
+  "see_also": [],
   "adaptation": {
-    "semantic": "Many languages need separate verbs for contacting someone by telephone (sense 1) and giving something a name (sense 2); English uses one word for both.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -388,29 +412,29 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-22T15:44:00Z",
-    "modified": "2026-09-26T22:53:28Z",
+    "created": "2026-09-26T22:49:33Z",
+    "modified": "2026-09-26T22:53:26Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260922T154320Z-28os9u",
+    "run_id": "20260926T224809Z-poh5we",
     "reviews": [
       {
-        "run_id": "20260922T154320Z-28os9u",
+        "run_id": "20260926T224809Z-poh5we",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-22",
-        "file": "reviews/20260922T154320Z-28os9u/call-v.json",
-        "ok": 52,
-        "issues": 5,
-        "blocking": 5
+        "date": "2026-09-26",
+        "file": "reviews/20260926T224809Z-poh5we/return-v.json",
+        "ok": 57,
+        "issues": 4,
+        "blocking": 3
       },
       {
-        "run_id": "20260922T154320Z-28os9u",
+        "run_id": "20260926T224809Z-poh5we",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-22",
-        "file": "reviews/20260922T154320Z-28os9u/call-v.json",
-        "ok": 57,
-        "issues": 0,
+        "date": "2026-09-26",
+        "file": "reviews/20260926T224809Z-poh5we/return-v.json",
+        "ok": 60,
+        "issues": 1,
         "blocking": 0
       }
     ],
