@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] lint | Seventeenth lint pass: back-links for the last cycles' words
+
+One-hundred-second scheduled run (cycle 11 of this session), lint (forced: five runs since the last). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (4 files) clean. `crossref --all --apply` added 8 back-links to *rise, ride, arrange, achieve*; 2 on the wrong sense moved by hand (`rise-v` *jump* to "increase", `ride-v` *drive* to "bike or horse", where the *ride my car* error lives). A second `--apply` added nothing. Index matches the pages; curator file and open questions current. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.32 (111). 4 entries touched. Spend: US$0. Next lint due in five runs.
+
 ## [2026-09-26] closure | Two closure words and six family words: bell to enclose
 
 One-hundred-first scheduled run (cycle 10 of this session), closure. Only three closure rows were pending: *bell*, *motorcycle*, and *upward*, which was queued as a noun (declined; `upward|adv` queued instead, curator line added). The rest came from `--source family`: *oneself* (pron), *achieve, aim, arrange, contact, enclose* (v). All 16 transcriptions verified. 18 decisions: 14 applied, 4 rejected. Fixes: `aim-v` sense 2 no longer "aims a ball", and *take aim* (the noun) removed; `enclose-v` drops the inverted *Enclosed is a list*; `oneself-pron` emphatic sense now "personally, without help"; `achieve-v` translator's note now allows *succeed in*; `bell-n` sense 1 no longer lists the idiom *ring a bell* as a plain collocation. `crossref` put *achieve* on *reach* "arrive"; moved by hand to "level or result". Spend: US$0.22; US$9.00 today.
