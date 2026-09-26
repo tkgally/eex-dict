@@ -2,7 +2,7 @@
 
 *Owner-set. Sessions never edit this file. A Routine session may not reopen any decision here; it may queue a question for the owner in `wiki/open-questions.md` with a working assumption and proceed. Each decision also has a page under `wiki/decisions/` that sessions cite.*
 
-The TKG English Learner's Dictionary is an original English-English learner's dictionary written by language models under the direction of Tom Gally, a lexicographer, and published as a static website from this repository. It is built by scheduled autonomous sessions that add no more than twenty verified entries per run. The founding session ran on 2026-09-16.
+The TKG English Learner's Dictionary is an original English-English learner's dictionary written by language models under the direction of Tom Gally, a lexicographer, and published as a static website from this repository. It is built by scheduled autonomous sessions. The founding session ran on 2026-09-16.
 
 ## Product
 
