@@ -1,37 +1,37 @@
 {
   "schema_version": "1.0",
-  "id": "forget-v",
-  "slug": "forget-v",
-  "headword": "forget",
+  "id": "land-v",
+  "slug": "land-v",
+  "headword": "land",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "fɚˈɡet",
+      "ipa": "lænd",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "fəˈɡet",
+      "ipa": "lænd",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "**Forget** is said *fer-GET*, with the stress on the second part."
+    "notes": null
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "forgets",
-      "past_tense": "forgot",
-      "past_participle": "forgotten",
-      "present_participle": "forgetting"
+      "third_person_singular": "lands",
+      "past_tense": "landed",
+      "past_participle": "landed",
+      "present_participle": "landing"
     },
-    "regular": false,
-    "source": "exceptions",
+    "regular": true,
+    "source": "rules",
     "status": "verified",
     "note": null
   },
@@ -47,22 +47,19 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **forget** is to not keep something in your mind: a fact, a thing to do, or a thing to bring.",
+  "core_idea": "To land is to come down onto the ground or another surface at the end of a movement, or to end up with something.",
   "senses": [
     {
       "n": 1,
-      "signpost": "not remember",
-      "definition": "be unable to remember a fact, a name, or something from the past",
+      "signpost": "from the air",
+      "definition": "come down from the air onto the ground or water",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "verb + wh-clause",
-          "verb + that-clause",
-          "verb + -ing form"
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
@@ -75,48 +72,41 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I've forgotten her name.",
+          "text": "The plane landed safely despite the storm.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         },
         {
-          "text": "I forget where I parked the car.",
+          "text": "We land in about two hours.",
           "note": null,
-          "pattern": "verb + wh-clause"
+          "pattern": "verb + adverb or preposition"
         },
         {
-          "text": "I'll never forget meeting you for the first time.",
+          "text": "A bird landed on the roof.",
           "note": null,
-          "pattern": "verb + -ing form"
-        },
-        {
-          "text": "Sorry, I forgot that you were coming today.",
-          "note": null,
-          "pattern": "verb + that-clause"
+          "pattern": "verb + adverb or preposition"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "adverb + verb",
           "items": [
-            "forget a name",
-            "forget a face",
-            "forget a password"
+            "land safely"
           ]
         },
         {
-          "type": "adverb + verb",
+          "type": "verb + preposition",
           "items": [
-            "completely forget",
-            "almost forget",
-            "never forget"
+            "land at",
+            "land in",
+            "land on"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [
         {
-          "slug": "remember-v",
+          "slug": "take-off-phrv",
           "note": null
         }
       ],
@@ -133,74 +123,8 @@
     },
     {
       "n": 2,
-      "signpost": "not do",
-      "definition": "not remember to do something that you should do",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "transitive or intransitive",
-        "codes": [],
-        "patterns": [
-          "verb + to-infinitive",
-          "verb + preposition + object"
-        ]
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "Don't forget to lock the door.",
-          "note": null,
-          "pattern": "verb + to-infinitive"
-        },
-        {
-          "text": "I forgot to call my mother yesterday.",
-          "note": null,
-          "pattern": "verb + to-infinitive"
-        },
-        {
-          "text": "He forgot about the meeting.",
-          "note": null,
-          "pattern": "verb + preposition + object"
-        }
-      ],
-      "collocations": [
-        {
-          "type": "phrase",
-          "items": [
-            "don't forget to do something",
-            "forget about something"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [
-        {
-          "slug": "remember-v",
-          "note": null
-        }
-      ],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 3,
-      "signpost": "not bring",
-      "definition": "not remember to bring something with you",
+      "signpost": "a plane",
+      "definition": "bring a plane or a boat down onto the ground or to the shore",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -220,17 +144,12 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Oh no, I forgot my keys!",
+          "text": "The pilot landed the plane in a field.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "Don't forget your umbrella.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "She forgot her homework again.",
+          "text": "They landed the boat on a small beach.",
           "note": null,
           "pattern": "verb + object"
         }
@@ -239,20 +158,14 @@
         {
           "type": "verb + noun",
           "items": [
-            "forget your keys",
-            "forget your wallet",
-            "forget your bag"
+            "land a plane",
+            "land a helicopter"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "leave-v",
-          "note": null
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -264,17 +177,16 @@
       "l1": {}
     },
     {
-      "n": 4,
-      "signpost": "stop thinking",
-      "definition": "stop thinking or worrying about something or someone",
+      "n": 3,
+      "signpost": "after falling",
+      "definition": "come down onto something after falling or being thrown",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "verb + preposition + object"
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
@@ -287,27 +199,142 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Let's forget about work for the weekend.",
+          "text": "The ball landed in the neighbor's yard.",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": "verb + adverb or preposition"
         },
         {
-          "text": "Try to forget what happened.",
+          "text": "She slipped and landed on her back.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
+        },
+        {
+          "text": "A cup fell off the shelf and landed on the floor.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + preposition",
+          "items": [
+            "land on",
+            "land in"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "get something good",
+      "definition": "succeed in getting something good, such as a job or a contract",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "She landed a job at a big hotel.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "You can forget that idea; it will never work.",
+          "text": "The company has just landed its biggest order.",
           "note": null,
           "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
+          "type": "verb + noun",
+          "items": [
+            "land a job",
+            "land a role",
+            "land a contract"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "cause problems",
+      "definition": "put someone in a difficult situation",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "His jokes landed him in trouble with his boss.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "One careless mistake could land you in serious trouble.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        }
+      ],
+      "collocations": [
+        {
           "type": "phrase",
           "items": [
-            "forget about something",
-            "forget the past"
+            "land someone in trouble",
+            "land someone in a mess"
           ]
         }
       ],
@@ -325,98 +352,56 @@
       "l1": {}
     }
   ],
-  "phrases": [
-    {
-      "sub_id": "forget-it",
-      "text": "forget it",
-      "definition": "used to say that something is not important, or to refuse a request firmly",
-      "explanation": null,
-      "labels": {
-        "register": [
-          "informal"
-        ],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "\"Sorry I'm late.\" \"Forget it, it doesn't matter.\"",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "\"Can I borrow your car?\" \"Forget it!\"",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    }
-  ],
+  "phrases": [],
   "word_family": [
     {
-      "slug": "forgetful-adj",
+      "slug": "land-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "unforgettable-adj",
+      "slug": "landing-n",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Forget to do something** means not doing it because you did not remember: *I forgot to lock the door*. **Forget doing something** means not remembering something that happened, and is usually used with **never**: *I will never forget seeing the ocean for the first time*.",
-  "learner_errors": [
-    {
-      "incorrect": "I forgot locking the door.",
-      "correct": "I forgot to lock the door.",
-      "note": "Use the **to**-infinitive for something you did not do."
-    }
-  ],
+  "usage_note": null,
+  "learner_errors": [],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"forget\": *forget to do* (it was not done) and *forget doing* (it happened, but the memory is gone) differ in meaning.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": "\"forget\": the stress is on the second part, *fer-GET*."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-25T12:47:33Z",
-    "modified": "2026-09-26T19:05:57Z",
+    "created": "2026-09-26T18:59:03Z",
+    "modified": "2026-09-26T19:01:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260925T124333Z-ea4ckf",
+    "run_id": "20260926T185648Z-iujuq0",
     "reviews": [
       {
-        "run_id": "20260925T124333Z-ea4ckf",
+        "run_id": "20260926T185648Z-iujuq0",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-25",
-        "file": "reviews/20260925T124333Z-ea4ckf/forget-v.json",
-        "ok": 54,
-        "issues": 3,
-        "blocking": 3
+        "date": "2026-09-26",
+        "file": "reviews/20260926T185648Z-iujuq0/land-v.json",
+        "ok": 60,
+        "issues": 1,
+        "blocking": 1
       },
       {
-        "run_id": "20260925T124333Z-ea4ckf",
+        "run_id": "20260926T185648Z-iujuq0",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-25",
-        "file": "reviews/20260925T124333Z-ea4ckf/forget-v.json",
-        "ok": 56,
-        "issues": 1,
+        "date": "2026-09-26",
+        "file": "reviews/20260926T185648Z-iujuq0/land-v.json",
+        "ok": 61,
+        "issues": 0,
         "blocking": 0
       }
     ],
