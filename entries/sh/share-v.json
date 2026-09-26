@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "place-v",
-  "slug": "place-v",
-  "headword": "place",
+  "id": "share-v",
+  "slug": "share-v",
+  "headword": "share",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "pleɪs",
+      "ipa": "ʃɛr",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "pleɪs",
+      "ipa": "ʃeə",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,10 +25,10 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "places",
-      "past_tense": "placed",
-      "past_participle": "placed",
-      "present_participle": "placing"
+      "third_person_singular": "shares",
+      "past_tense": "shared",
+      "past_participle": "shared",
+      "present_participle": "sharing"
     },
     "regular": true,
     "source": "rules",
@@ -47,20 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To place is to put someone or something in a position, a situation, or an order of importance.",
+  "core_idea": "To share is to have, use, give, or tell something together with other people.",
   "senses": [
     {
       "n": 1,
-      "signpost": "put",
-      "definition": "put something somewhere, especially with care",
+      "signpost": "use together",
+      "definition": "have or use something at the same time as someone else",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object + preposition + object",
-          "verb + object + adverb"
+          "verb + object",
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -73,40 +73,32 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She placed the vase on the table.",
+          "text": "I share a room with my sister.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Place the chicken in a hot oven.",
+          "text": "We shared a taxi to the airport.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + object"
         },
         {
-          "text": "He placed his hand on my shoulder.",
+          "text": "The two families share a garden.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "adverb + verb",
+          "type": "phrase",
           "items": [
-            "carefully place",
-            "gently place"
+            "share a room",
+            "share a flat",
+            "share something with someone"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "put-v",
-          "note": null
-        },
-        {
-          "slug": "set-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -121,21 +113,20 @@
     },
     {
       "n": 2,
-      "signpost": "a situation",
-      "definition": "put someone or something in a particular situation",
+      "signpost": "divide",
+      "definition": "divide something between two or more people",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
+          "verb + object",
           "verb + object + preposition + object"
         ]
       },
       "labels": {
-        "register": [
-          "formal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -144,22 +135,34 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "His decision placed us in a difficult position.",
+          "text": "They shared the cake between them.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "The children were placed in the care of their aunt.",
-          "note": "passive",
-          "pattern": "verb + object + preposition + object"
+          "text": "Let's share the cost of the meal.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "We share the housework equally.",
+          "note": null,
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
+          "type": "verb + noun",
+          "items": [
+            "share the cost",
+            "share the work"
+          ]
+        },
+        {
           "type": "phrase",
           "items": [
-            "place someone in danger",
-            "place someone under arrest"
+            "share something between people",
+            "share something equally"
           ]
         }
       ],
@@ -178,15 +181,16 @@
     },
     {
       "n": 3,
-      "signpost": "an order or an ad",
-      "definition": "make an order for something, or put an advertisement somewhere",
+      "signpost": "give some",
+      "definition": "let someone have or use part of something that you have",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -199,22 +203,27 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I placed an order for new shoes online.",
+          "text": "Will you share your fries with me?",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "They placed an ad in the local newspaper.",
+          "text": "Children have to learn to share.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
+        },
+        {
+          "text": "There's only one book, so you'll have to share.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "phrase",
           "items": [
-            "place an order",
-            "place an ad"
+            "share something with someone",
+            "learn to share"
           ]
         }
       ],
@@ -233,9 +242,72 @@
     },
     {
       "n": 4,
-      "signpost": "recognize",
-      "definition": "recognize someone and remember where you know them from",
-      "explanation": "Usually used with **can't** or **couldn't**.",
+      "signpost": "tell",
+      "definition": "tell other people about your ideas, feelings, or experiences, or show them something",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object",
+          "verb + object + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Thank you for sharing your story with us.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "She shared the good news with her family.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "He shared some photos of the trip online.",
+          "note": null,
+          "pattern": "verb + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "share news",
+            "share ideas",
+            "share an experience",
+            "share a photo"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "have the same",
+      "definition": "have the same feeling, opinion, or interest as someone else",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -255,70 +327,23 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I know his face, but I can't place him.",
+          "text": "I share your worries about the plan.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "She looked familiar, but I couldn't place her.",
+          "text": "The two sisters share a love of music.",
           "note": null,
           "pattern": "verb + object"
-        }
-      ],
-      "collocations": [],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 5,
-      "signpost": "importance",
-      "definition": "give something a particular amount of importance or value",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "transitive",
-        "codes": [],
-        "patterns": [
-          "verb + object + preposition + object"
-        ]
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "Our school places great importance on reading.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "Don't place too much trust in what he says.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + noun",
           "items": [
-            "place importance on something",
-            "place trust in someone",
-            "place value on something"
+            "share someone's view",
+            "share someone's concern",
+            "share an interest"
           ]
         }
       ],
@@ -339,53 +364,59 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "place-n",
+      "slug": "share-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "placement-n",
+      "slug": "shared-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Place** in sense 1 is a little more formal and careful than **put**: *place the plates on the table*.",
-  "learner_errors": [],
+  "usage_note": null,
+  "learner_errors": [
+    {
+      "incorrect": "Can you share me your notes?",
+      "correct": "Can you share your notes with me?",
+      "note": "Say *share something with someone*; **share** does not take two objects."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": null,
+    "grammar": "\"share\": in the sense *let someone have part of something*, the other person comes after **with** (*share it with me*), not straight after the verb.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T19:55:11Z",
-    "modified": "2026-09-26T23:16:14Z",
+    "created": "2026-09-26T23:13:02Z",
+    "modified": "2026-09-26T23:16:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T195326Z-iujuq0",
+    "run_id": "20260926T231200Z-poh5we",
     "reviews": [
       {
-        "run_id": "20260926T195326Z-iujuq0",
+        "run_id": "20260926T231200Z-poh5we",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-26",
-        "file": "reviews/20260926T195326Z-iujuq0/place-v.json",
-        "ok": 58,
-        "issues": 3,
-        "blocking": 3
+        "file": "reviews/20260926T231200Z-poh5we/share-v.json",
+        "ok": 59,
+        "issues": 2,
+        "blocking": 2
       },
       {
-        "run_id": "20260926T195326Z-iujuq0",
+        "run_id": "20260926T231200Z-poh5we",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-26",
-        "file": "reviews/20260926T195326Z-iujuq0/place-v.json",
-        "ok": 60,
-        "issues": 1,
+        "file": "reviews/20260926T231200Z-poh5we/share-v.json",
+        "ok": 59,
+        "issues": 2,
         "blocking": 0
       }
     ],

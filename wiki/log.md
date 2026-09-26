@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Six verbs: sense to share
+
+One-hundred-fourth scheduled run (cycle 13 of this session). Drafted six band-1 verbs: *sense, sentence, serve, set, shape, share*; *set* took its forms from the exceptions table. All 12 transcriptions verified. 13 decisions: 7 applied, 6 rejected. Fixes: `serve-v` sports sense no longer needs a net or an opponent and now takes an object, prison sense covers other punishments; `set-v` *set an example* moved to "decide"; `shape-v` no longer defined with *shape*; `share-v` translator's note limited to the give-some sense. Rejected: four objections to explanations naming the subject (style guide rule), two to the closed-list pattern values. Back-links on *feel* and *place* moved by hand to the right senses; *feel* then gained a mirror on `seem-v`. Spend: US$0.23; US$9.52 today.
+
 ## [2026-09-26] build | Eight verbs: rule to send
 
 One-hundred-third scheduled run (cycle 12 of this session). Drafted eight band-1 verbs: *rule, sail, satisfy, save, score, seem, sell, send*; *sell* and *send* took their forms from the exceptions table. All 16 transcriptions verified. 22 decisions: 17 applied, 5 rejected. Fixes: `sell-v` sense 2 now intransitive only (the transitive *sold a million copies* replaced), *sell out* and *send for* removed as collocations (other entries); `sail-v` sense 2 covers traveling in a sailing boat, not only controlling one; `satisfy-v` loses a wrong "no continuous" pattern and now "does what a rule asks for"; `save-v` sports sense reworded; `seem-v` sense 2 no longer a *used to* definition. A *seem*/*look* type mismatch settled as synonyms. Spend: US$0.29; US$9.29 today.

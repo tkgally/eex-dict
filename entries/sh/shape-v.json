@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "seem-v",
-  "slug": "seem-v",
-  "headword": "seem",
+  "id": "shape-v",
+  "slug": "shape-v",
+  "headword": "shape",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "sim",
+      "ipa": "ʃeɪp",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "siːm",
+      "ipa": "ʃeɪp",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,10 +25,10 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "seems",
-      "past_tense": "seemed",
-      "past_participle": "seemed",
-      "present_participle": "seeming"
+      "third_person_singular": "shapes",
+      "past_tense": "shaped",
+      "past_participle": "shaped",
+      "present_participle": "shaping"
     },
     "regular": true,
     "source": "rules",
@@ -51,19 +51,16 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "appear",
-      "definition": "appear to be something, or appear to have a particular quality",
+      "signpost": "form",
+      "definition": "give something a particular form",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "linking",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + adjective",
-          "verb + to-infinitive",
-          "verb + noun complement",
-          "verb + that-clause",
-          "not used in continuous tenses"
+          "verb + object",
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -76,52 +73,31 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "You seem tired. Are you OK?",
+          "text": "She shaped the clay into a bowl.",
           "note": null,
-          "pattern": "verb + adjective"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "She seems like a nice person.",
+          "text": "Shape the dough into small balls.",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "He seemed to know everyone at the party.",
+          "text": "The wind has shaped the rocks over many years.",
           "note": null,
-          "pattern": "verb + to-infinitive"
-        },
-        {
-          "text": "It seems that we're too late.",
-          "note": null,
-          "pattern": "verb + that-clause"
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "seem like something",
-            "it seems that",
-            "seem to be",
-            "seem happy",
-            "seem strange"
+            "shape something into something",
+            "shape something by hand"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "appear-v",
-          "note": null
-        },
-        {
-          "slug": "look-v",
-          "note": "**look** is used for what you can see: *you look tired*"
-        },
-        {
-          "slug": "feel-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -136,16 +112,15 @@
     },
     {
       "n": 2,
-      "signpost": "less direct",
-      "definition": "appear, in a way that makes what you say sound less direct or less strong",
-      "explanation": "Often used to be polite, or to say that something is difficult for reasons you do not understand.",
+      "signpost": "influence",
+      "definition": "have a strong effect on how someone or something develops",
+      "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "linking",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + to-infinitive",
-          "not used in continuous tenses"
+          "verb + object"
         ]
       },
       "labels": {
@@ -158,32 +133,37 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I can't seem to open this jar.",
+          "text": "His childhood shaped the person he became.",
           "note": null,
-          "pattern": "verb + to-infinitive"
+          "pattern": "verb + object"
         },
         {
-          "text": "We seem to have a small problem.",
+          "text": "New technology is shaping the way we work.",
           "note": null,
-          "pattern": "verb + to-infinitive"
+          "pattern": "verb + object"
         },
         {
-          "text": "There seems to be a mistake in the bill.",
+          "text": "Her ideas helped to shape the company.",
           "note": null,
-          "pattern": "verb + to-infinitive"
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "can't seem to do something",
-            "seem to have a problem",
-            "there seems to be something"
+            "shape the future",
+            "shape someone's life",
+            "shape the way something develops"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "influence-v",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -200,65 +180,54 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "seeming-adj",
+      "slug": "shape-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "seemingly-adv",
+      "slug": "shaped-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [
-    {
-      "incorrect": "He is seeming very happy today.",
-      "correct": "He seems very happy today.",
-      "note": "**Seem** is not used in the continuous form."
-    },
-    {
-      "incorrect": "It seems me that you are right.",
-      "correct": "It seems to me that you are right.",
-      "note": "The person who has the opinion comes after **to**."
-    }
-  ],
+  "learner_errors": [],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"seem\": a linking verb, followed by an adjective (*seem happy*), **like** and a noun (*seem like a nice person*), or **to** and a verb (*seem to know*). It is not used in the continuous form.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T23:06:06Z",
-    "modified": "2026-09-26T23:16:28Z",
+    "created": "2026-09-26T23:13:02Z",
+    "modified": "2026-09-26T23:16:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T230451Z-poh5we",
+    "run_id": "20260926T231200Z-poh5we",
     "reviews": [
       {
-        "run_id": "20260926T230451Z-poh5we",
+        "run_id": "20260926T231200Z-poh5we",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-26",
-        "file": "reviews/20260926T230451Z-poh5we/seem-v.json",
-        "ok": 35,
+        "file": "reviews/20260926T231200Z-poh5we/shape-v.json",
+        "ok": 34,
         "issues": 0,
         "blocking": 0
       },
       {
-        "run_id": "20260926T230451Z-poh5we",
+        "run_id": "20260926T231200Z-poh5we",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-26",
-        "file": "reviews/20260926T230451Z-poh5we/seem-v.json",
+        "file": "reviews/20260926T231200Z-poh5we/shape-v.json",
         "ok": 33,
         "issues": 1,
-        "blocking": 1
+        "blocking": 0
       }
     ],
     "status": "reviewed",
