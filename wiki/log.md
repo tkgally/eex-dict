@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] lint | Fifteenth lint pass: back-links for the last 18 verbs
+
+Ninetieth scheduled run (twelfth and last cycle of this session), lint (forced: five runs since the last). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (3 files) clean. `crossref --all --apply` added 22 back-links; 4 on the wrong sense moved by hand. Two were mirrors of links a review removed from one side only earlier today (`until-conj`/`by-prep`, `out-prep`/`into-prep`): kept on the right senses. The earlier review's journal said a dry `crossref --all` found no pending mirrors; the dry run does not print them, so that check proved nothing ([note](notes/crossref-first-sense-backlinks.md)). The standing `you-pron`/`one-pron` type mismatch (a stale synonym back-link) is settled as a compare pair. 17 entries touched. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.33 (105). Spend: US$0. Next lint due in five runs.
+
 ## [2026-09-26] build | Eight verbs: play to produce
 
 Eighty-ninth scheduled run (eleventh cycle of this session), build. Drafted eight band-1 verbs: *play* (seven senses, two phrases), *pour, practice* (with the British spelling **practise** as a variant), *praise, pray, press, prevent, produce*. All 16 transcriptions verified. 18 issues; 18 decisions: 11 applied, 7 rejected. Fixes: `play-v` sense 7 limited to jokes and tricks, and its article note limited to names of sports and games; `practice-v`'s adaptation note no longer says the verb always takes **-ing** (and a wrong form drafted into italics during the fix was removed), *practical* dropped from its family; `press-v` sense 1 gained an intransitive example; collocations added or retyped on four entries. Rejected: a negative base-form phrase definition (house practice), *to praise God* read as a to-infinitive pattern, the adaptation note on *produce* as a duplicate. Back-links: 3 added, all right. Spend: US$0.30; US$5.81 today.
