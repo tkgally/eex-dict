@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] lint | Sixteenth lint pass: back-links for this session's verbs
+
+Ninety-sixth scheduled run (cycle 5 of this session), lint (forced: five runs since the last). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (4 files) clean. `crossref --all --apply` added 12 back-links to this session's verbs; 3 on the wrong sense moved by hand (`pull-v` *draw* to sense 1, `quit-v` *give up* to sense 2, `read-v` *say* to the sign sense). A second `--apply` added nothing. Index matches the pages on disk; open questions current; the new prune-branch line in `reviews/needs_curator.txt` moved from under "Resolved" to "Open". Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.32 (110). 9 entries touched. Spend: US$0. Next lint due in five runs.
+
 ## [2026-09-26] build | Eight verbs: read to refuse
 
 Ninety-fifth scheduled run (cycle 4 of this session). Drafted eight band-1 verbs: *read, realize, recognize, recover, reduce, refer, reflect, refuse*. All 16 transcriptions verified; *read* took its forms and its "pronounced like red" note from the exceptions table, and `inflect.py` doubled the r of *referred* correctly. 25 decisions: 11 applied, 14 rejected. Fixes: `read-v` sense 3 no longer defined with *reading*; `reflect-v` sense 5 now "make someone seem good or bad to other people"; `realize-v`'s false-friend note agrees with its formal *plan* sense; `reduce-v`'s learner-error note now says *usually* (the cooking sense has no object). Rejected: reviewer-b's six calls to hand-mark *read* in examples (a listed form, marked by the site), four quoted-headword objections. `crossref` back-link on `accept-v` moved from sense 1 to sense 2 by hand. Spend: US$0.32; US$7.44 today.
