@@ -36,5 +36,25 @@ class BestSenseTest(unittest.TestCase):
         self.assertEqual(target["senses"][1]["synonyms"], [{"slug": "chop-v", "note": None}])
 
 
+class OtherTypeLinkTest(unittest.TestCase):
+    """2026-09-26: contain/include and tell/inform became both synonym and compare."""
+
+    def test_compare_blocks_a_synonym_backlink(self):
+        target = entry("contain", "have something inside")
+        target["senses"][0]["compare"] = [{"slug": "include-v", "note": None}]
+        self.assertEqual(crossref.other_type_link(target, "synonyms", "include-v"), "compare")
+
+    def test_synonym_blocks_a_compare_backlink(self):
+        target = entry("tell", "give information to someone", "order someone")
+        target["senses"][1]["synonyms"] = [{"slug": "inform-v", "note": None}]
+        self.assertEqual(crossref.other_type_link(target, "compare", "inform-v"), "synonyms")
+
+    def test_same_type_or_no_link_is_none(self):
+        target = entry("tell", "give information to someone")
+        target["senses"][0]["synonyms"] = [{"slug": "inform-v", "note": None}]
+        self.assertIsNone(crossref.other_type_link(target, "synonyms", "inform-v"))
+        self.assertIsNone(crossref.other_type_link(target, "antonyms", "ask-v"))
+
+
 if __name__ == "__main__":
     unittest.main()
