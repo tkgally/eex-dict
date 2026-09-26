@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Eight verbs: push to reach
+
+Ninety-third scheduled run (cycle 2 of this session). Drafted eight band-1 verbs: *push, put, question, quit, race, rain, raise, reach*. All 16 transcriptions verified; *put* and *quit* took their forms from the exceptions table. 32 decisions: 23 applied, 9 rejected. Fixes: `push-v` sense 3 now also transitive (*push your way*); `question-v` sense 1 no longer requires many questions; `quit-v` sense 2 covers any habit or activity, and *quitted* is "rare and mostly British"; `put-v`'s place requirement limited to sense 1; `reach-v` sense 5 now "manage to speak to or send a message". Rejected: reviewer-a's claim that *raise* can lack an object (*raising money* has one), and six quoted-headword objections. Back-links: *ask*, *mention*, *arrive*; a *get*/*reach* type mismatch settled as synonyms. Spend: US$0.33; US$6.62 today.
+
 ## [2026-09-26] closure | Ten closure words: gamble to ethnic
 
 Ninety-second scheduled run (first cycle of a new session), closure: words the dictionary's own definitions already use. Drafted *gamble* (v), *axe, diaper, gene, organization, resource* (n), *attractive, biological, comparative, ethnic* (adj); every claimed row's part of speech was right. All 20 transcriptions verified. 46 issues; 46 decisions: 31 applied, 15 rejected. Fixes: *attractive* sense 1 widened to things as well as people; *ethnic* sense 2 reworded and its usage note now says the catch-all use is disliked; *bet* is also used for non-money risks (*gamble* note); *comparative* sense 2 now "true to some degree". Rejected: reviewer-a's British *diaper* with a final r, *organisation* without *-naɪ-*, American *resource* with second-syllable stress (all panel- and CMU-verified). Six definitions reworded into the defining vocabulary. Queue row `good looking|adj` should read *good-looking*. Spend: US$0.31; US$6.28 today.
