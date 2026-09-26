@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "arrive-v",
-  "slug": "arrive-v",
-  "headword": "arrive",
+  "id": "race-v",
+  "slug": "race-v",
+  "headword": "race",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ə.ˈraɪv",
+      "ipa": "reɪs",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ə.ˈraɪv",
+      "ipa": "reɪs",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,10 +25,10 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "arrives",
-      "past_tense": "arrived",
-      "past_participle": "arrived",
-      "present_participle": "arriving"
+      "third_person_singular": "races",
+      "past_tense": "raced",
+      "past_participle": "raced",
+      "present_participle": "racing"
     },
     "regular": true,
     "source": "rules",
@@ -47,18 +47,19 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **arrive** is to reach a place at the end of a journey, to come to a decision after discussion, or, of a time or event, to begin.",
+  "core_idea": "To race is to go, work, or try to do something very fast.",
   "senses": [
     {
       "n": 1,
-      "signpost": "reach a place",
-      "definition": "reach a place at the end of a journey",
+      "signpost": "compete",
+      "definition": "compete with someone to see who is the fastest",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "intransitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
+          "verb + object",
           "verb + preposition + object"
         ]
       },
@@ -72,120 +73,44 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We arrived at the hotel just before dark.",
+          "text": "I'll race you to the end of the street!",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "She races against the best runners in the country.",
           "note": null,
           "pattern": "verb + preposition + object"
         },
         {
-          "text": "The train arrives in Boston at noon.",
+          "text": "The boys raced each other to the car.",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": "verb + object"
         },
         {
-          "text": "She arrived home late last night.",
+          "text": "He used to race cars when he was young.",
           "note": null,
-          "pattern": null
-        },
-        {
-          "text": "What time does your flight arrive?",
-          "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
           "type": "verb + preposition",
           "items": [
-            "arrive at",
-            "arrive in"
+            "race against someone"
           ]
-        }
-      ],
-      "synonyms": [
-        {
-          "slug": "get-v",
-          "note": null
         },
         {
-          "slug": "come-v",
-          "note": null
-        }
-      ],
-      "antonyms": [
-        {
-          "slug": "leave-v",
-          "note": null
-        },
-        {
-          "slug": "go-v",
-          "note": null
-        }
-      ],
-      "compare": [
-        {
-          "slug": "reach-v",
-          "note": null
-        }
-      ],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 2,
-      "signpost": "reach a decision",
-      "definition": "reach a decision, conclusion, or agreement after discussion or thought",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "intransitive",
-        "codes": [],
-        "patterns": [
-          "verb + preposition + object"
-        ]
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "The committee finally arrived at a decision.",
-          "note": null,
-          "pattern": "verb + preposition + object"
-        },
-        {
-          "text": "It took hours to arrive at a price both sides accepted.",
-          "note": null,
-          "pattern": "verb + preposition + object"
-        },
-        {
-          "text": "How did you arrive at that conclusion?",
-          "note": null,
-          "pattern": "verb + preposition + object"
-        },
-        {
-          "text": "We arrived at a compromise after a long talk.",
-          "note": null,
-          "pattern": "verb + preposition + object"
-        }
-      ],
-      "collocations": [
-        {
-          "type": "verb + preposition",
+          "type": "verb + noun",
           "items": [
-            "arrive at a decision",
-            "arrive at a conclusion"
+            "race cars",
+            "race horses"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "race someone to somewhere"
           ]
         }
       ],
@@ -203,10 +128,136 @@
       "l1": {}
     },
     {
-      "n": 3,
-      "signpost": "of a time or event",
-      "definition": "begin, spoken of a time, a season, or an event",
+      "n": 2,
+      "signpost": "move fast",
+      "definition": "go or move somewhere very quickly",
       "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + adverb or preposition"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "He raced up the stairs.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
+        },
+        {
+          "text": "An ambulance raced past us.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
+        },
+        {
+          "text": "We raced to the station, but the train had already left.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + preposition",
+          "items": [
+            "race to somewhere",
+            "race past",
+            "race across something"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "rush-v",
+          "note": null
+        },
+        {
+          "slug": "hurry-v",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 3,
+      "signpost": "hurry to do",
+      "definition": "try to do something very quickly because there is not much time",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + to-infinitive"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Workers are racing to finish the bridge before winter.",
+          "note": null,
+          "pattern": "verb + to-infinitive"
+        },
+        {
+          "text": "Doctors raced to save his life.",
+          "note": null,
+          "pattern": "verb + to-infinitive"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "race to do something",
+            "race against time",
+            "race against the clock"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "heart or mind",
+      "definition": "beat or work much faster than usual",
+      "explanation": "Used about the heart, the pulse, or the mind, often because of fear or excitement.",
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -223,32 +274,23 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Winter arrived early this year.",
+          "text": "My heart was racing as I opened the letter.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The big day has finally arrived.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Change is arriving faster than expected.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The rainy season arrives in June.",
+          "text": "Her mind raced with questions.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + adverb",
+          "type": "noun + verb",
           "items": [
-            "arrive early",
-            "arrive late"
+            "your heart races",
+            "your mind races",
+            "your pulse races"
           ]
         }
       ],
@@ -269,7 +311,17 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "arrival-n",
+      "slug": "race-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "racing-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "racer-n",
       "form": null,
       "note": null
     }
@@ -278,12 +330,7 @@
   "usage_note": null,
   "learner_errors": [],
   "etymology": null,
-  "see_also": [
-    {
-      "slug": "reach-v",
-      "note": null
-    }
-  ],
+  "see_also": [],
   "adaptation": {
     "semantic": null,
     "grammar": null,
@@ -293,30 +340,30 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-22T05:12:20Z",
-    "modified": "2026-09-26T22:01:30Z",
+    "created": "2026-09-26T21:56:46Z",
+    "modified": "2026-09-26T21:59:40Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260922T051159Z-5k35hq",
+    "run_id": "20260926T215441Z-poh5we",
     "reviews": [
       {
-        "run_id": "20260922T051159Z-5k35hq",
+        "run_id": "20260926T215441Z-poh5we",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-22",
-        "file": "reviews/20260922T051159Z-5k35hq/arrive-v.json",
-        "ok": 39,
-        "issues": 4,
-        "blocking": 3
+        "date": "2026-09-26",
+        "file": "reviews/20260926T215441Z-poh5we/race-v.json",
+        "ok": 51,
+        "issues": 1,
+        "blocking": 0
       },
       {
-        "run_id": "20260922T051159Z-5k35hq",
+        "run_id": "20260926T215441Z-poh5we",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-22",
-        "file": "reviews/20260922T051159Z-5k35hq/arrive-v.json",
-        "ok": 41,
-        "issues": 2,
-        "blocking": 1
+        "date": "2026-09-26",
+        "file": "reviews/20260926T215441Z-poh5we/race-v.json",
+        "ok": 52,
+        "issues": 0,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
