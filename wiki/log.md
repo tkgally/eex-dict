@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Eight verbs: regret to repair
+
+Ninety-seventh scheduled run (cycle 6 of this session). Drafted eight band-1 verbs: *regret, relate, relax, remain, remember, remind, remove, repair*. All 16 transcriptions verified (*remind*, *remove* American 3/4 with CMU disagreeing). 29 decisions: 16 applied, 13 rejected. Fixes: `remember-v` sense 3 (honoring the dead) no longer carries *be remembered as/for*, moved to sense 1; `relate-v` sense 3 no longer requires shared experience; `regret-v` sense 2 covers difficult as well as bad news; `remain-v` sense 3 reworded; *mend* "more common in British English", not "mainly British". Rejected: reviewer-a's claim that *remind* can take a thing as object (in *this song reminds me* the object is *me*), core-idea and quoted-headword objections. One back-link (*tell*). Spend: US$0.28; US$7.72 today.
+
 ## [2026-09-26] lint | Sixteenth lint pass: back-links for this session's verbs
 
 Ninety-sixth scheduled run (cycle 5 of this session), lint (forced: five runs since the last). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (4 files) clean. `crossref --all --apply` added 12 back-links to this session's verbs; 3 on the wrong sense moved by hand (`pull-v` *draw* to sense 1, `quit-v` *give up* to sense 2, `read-v` *say* to the sign sense). A second `--apply` added nothing. Index matches the pages on disk; open questions current; the new prune-branch line in `reviews/needs_curator.txt` moved from under "Resolved" to "Open". Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.32 (110). 9 entries touched. Spend: US$0. Next lint due in five runs.
