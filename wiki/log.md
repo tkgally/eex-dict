@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] review | Second round for 18 entries, inside-prep to awake-adj
+
+Ninety-fourth scheduled run (cycle 3 of this session), review: the next 18 one-round entries by creation date (nine prepositions from 2026-09-20, then *able* to *awake*). 37 issues; 37 decisions: 21 applied, 16 rejected. Fixes: `account-n` sense 4 now a user arrangement, not "a way to use"; `apologize-v` covers things that caused a problem (*the company apologized for the delay*); `since-prep` explanation covers the past-perfect case; `onto-prep` usage note explains *went on to*; `add-v` synonyms *lend* (removed on both sides) and *calculate* (moved to the arithmetic sense); duplicate *like*/*such as* compare removed on both sides; `outside-prep` antonym *within* moved to the limits sense; `actual-adj` learner error replaced. Rejected: reviewer-a's calls that *plus* and *outside* examples are not prepositions, and that *since* notes are too categorical (its counterexample is `since-conj`). Spend: US$0.50; US$7.12 today.
+
 ## [2026-09-26] build | Eight verbs: push to reach
 
 Ninety-third scheduled run (cycle 2 of this session). Drafted eight band-1 verbs: *push, put, question, quit, race, rain, raise, reach*. All 16 transcriptions verified; *put* and *quit* took their forms from the exceptions table. 32 decisions: 23 applied, 9 rejected. Fixes: `push-v` sense 3 now also transitive (*push your way*); `question-v` sense 1 no longer requires many questions; `quit-v` sense 2 covers any habit or activity, and *quitted* is "rare and mostly British"; `put-v`'s place requirement limited to sense 1; `reach-v` sense 5 now "manage to speak to or send a message". Rejected: reviewer-a's claim that *raise* can lack an object (*raising money* has one), and six quoted-headword objections. Back-links: *ask*, *mention*, *arrive*; a *get*/*reach* type mismatch settled as synonyms. Spend: US$0.33; US$6.62 today.
