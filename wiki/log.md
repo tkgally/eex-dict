@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] review | Second round for 16 entries, one-pron to admire-v
+
+One-hundred-fifth scheduled run (cycle 14, last of this session), review of the next 16 one-round entries (*one* to *admire*). 38 issues; 38 decisions: 27 applied, 11 rejected. Fixes: `allow-v` notes said the object before **to** must be a person (*allows water to drain*); `angry-adj` learner error now allows **at** for both; `ability-n` and `advantage-n` notes softened, and a wrong form removed from italics in `ability-n`; `absorb-v` core idea and sense 3 reworded; `accident-n` *happy accident* no longer contradicted; `active-adj` volcano subsense loses its "of a mountain" prefix, grammar-voice sense not gradable; `aware-adj`'s *awake* synonym limited by a note (the mirror of `awake-adj` sense 2). Signposts cleared on one-sense `advantage-n` and `admire-v`. Rejected: reviewer-a's misreadings of `one-pron` (*follows*, the unwritten **w**), *activer*/*activest*. Spend: US$0.47; US$9.99 today.
+
 ## [2026-09-26] build | Six verbs: sense to share
 
 One-hundred-fourth scheduled run (cycle 13 of this session). Drafted six band-1 verbs: *sense, sentence, serve, set, shape, share*; *set* took its forms from the exceptions table. All 12 transcriptions verified. 13 decisions: 7 applied, 6 rejected. Fixes: `serve-v` sports sense no longer needs a net or an opponent and now takes an object, prison sense covers other punishments; `set-v` *set an example* moved to "decide"; `shape-v` no longer defined with *shape*; `share-v` translator's note limited to the give-some sense. Rejected: four objections to explanations naming the subject (style guide rule), two to the closed-list pattern values. Back-links on *feel* and *place* moved by hand to the right senses; *feel* then gained a mirror on `seem-v`. Spend: US$0.23; US$9.52 today.
