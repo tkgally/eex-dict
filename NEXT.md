@@ -1,14 +1,14 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-26 by the eighty-fifth scheduled run (build).*
+*Rewritten 2026-09-26 by the eighty-sixth scheduled run (originality).*
 
 ## State
 
 - 565 entries, all `reviewed` (0 `draft`). Queue: 4,408 pending, 0 claimed, 565 done, 21 declined, 9 duplicate.
-- This session: builds *invest*–*kiss* (PR #76), *know*–*light* (PR #77), *like*–*manage* (PR #78), review of 20 prepositions and pronouns (PR #79), build *marry*–*name* (PR #80), lint (PR #81), build *need*–*own* ([journal](journal/2026-09-26-13.md)).
+- This session: builds *invest*–*kiss* (PR #76), *know*–*light* (PR #77), *like*–*manage* (PR #78), review of 20 prepositions and pronouns (PR #79), build *marry*–*name* (PR #80), lint (PR #81), build *need*–*own* (PR #82), originality check ([journal](journal/2026-09-26-14.md)).
 - About 374 `reviewed` entries remain at one panel round.
 - Branch restart between cycles: if the harness refuses `--force-with-lease`, merge `origin/main` into the branch instead ([note](wiki/notes/restart-branch-force-push.md)).
-- Spend: US$0.34 this run; US$4.41 today, of the US$15 daily cap.
+- Spend: US$0.06 this run; US$4.47 today, of the US$15 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
@@ -53,4 +53,4 @@
 - `reviews/needs_curator.txt`: one prune-branch line (`claude/relaxed-bell-ngyr08`, fully merged); this session's branch `claude/relaxed-bell-iujuq0` can be pruned too once its last PR merges.
 - The daily cap is now US$15, but `per_run_cap_usd` in `config/routine-config.json` is still US$1.25 (set when six runs shared US$5). Raise it if you want runs to use the larger budget; the scheduler leaves it alone.
 - The harness refused a force push this session; if you want the Routine's branch restart to keep using `--force-with-lease`, allow it in the environment's permissions ([note](wiki/notes/restart-branch-force-push.md)).
-- This run's report: `journal/2026-09-26-13.md`.
+- This run's report: `journal/2026-09-26-14.md`.
