@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Eight verbs: rule to send
+
+One-hundred-third scheduled run (cycle 12 of this session). Drafted eight band-1 verbs: *rule, sail, satisfy, save, score, seem, sell, send*; *sell* and *send* took their forms from the exceptions table. All 16 transcriptions verified. 22 decisions: 17 applied, 5 rejected. Fixes: `sell-v` sense 2 now intransitive only (the transitive *sold a million copies* replaced), *sell out* and *send for* removed as collocations (other entries); `sail-v` sense 2 covers traveling in a sailing boat, not only controlling one; `satisfy-v` loses a wrong "no continuous" pattern and now "does what a rule asks for"; `save-v` sports sense reworded; `seem-v` sense 2 no longer a *used to* definition. A *seem*/*look* type mismatch settled as synonyms. Spend: US$0.29; US$9.29 today.
+
 ## [2026-09-26] lint | Seventeenth lint pass: back-links for the last cycles' words
 
 One-hundred-second scheduled run (cycle 11 of this session), lint (forced: five runs since the last). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (4 files) clean. `crossref --all --apply` added 8 back-links to *rise, ride, arrange, achieve*; 2 on the wrong sense moved by hand (`rise-v` *jump* to "increase", `ride-v` *drive* to "bike or horse", where the *ride my car* error lives). A second `--apply` added nothing. Index matches the pages; curator file and open questions current. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.32 (111). 4 entries touched. Spend: US$0. Next lint due in five runs.
