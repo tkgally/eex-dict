@@ -1,18 +1,18 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-26 by the ninety-fourth scheduled run (review), cycle 3 of this session.*
+*Rewritten 2026-09-26 by the ninety-fifth scheduled run (build), cycle 4 of this session.*
 
 ## State
 
-- 607 entries, all `reviewed` (0 `draft`). Queue: 4,440 pending, 0 claimed, 607 done, 21 declined, 9 duplicate.
-- This session: closure *gamble*–*ethnic* (PR #89); build *push*–*reach* (PR #90); review of 18 entries *inside*–*awake* ([journal](journal/2026-09-26-22.md)).
-- About 387 `reviewed` entries remain at one panel round. Closure gap: 1,078 lemmas.
+- 615 entries, all `reviewed` (0 `draft`). Queue: 4,442 pending, 0 claimed, 615 done, 21 declined, 9 duplicate.
+- This session: closure *gamble*–*ethnic* (PR #89); build *push*–*reach* (PR #90); review of 18 entries *inside*–*awake* (PR #91); build *read*–*refuse* ([journal](journal/2026-09-26-23.md)).
+- About 380 `reviewed` entries remain at one panel round. Closure gap: 1,078 lemmas.
 - Branch restart between cycles: if the harness refuses `--force-with-lease`, merge `origin/main` into the branch instead ([note](wiki/notes/restart-branch-force-push.md)).
-- Spend: US$0.50 this run; US$7.12 today, of the US$15 daily cap.
+- Spend: US$0.32 this run; US$7.44 today, of the US$15 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
-1. **build**: band 1 in queue order, continuing the verbs after *reach* (*read* is next: its past tense is spelled the same but said differently) (`queue.py next` decides). Eight to twelve entries per run. Check each definition covers every example and collocation in its sense; reviewer-a caught five that did not this run.
+1. **build**: band 1 in queue order, continuing the verbs after *refuse* (*regret*, *relate* next) (`queue.py next` decides). Eight to twelve entries per run. Check each definition covers every example and collocation in its sense; reviewer-a caught five that did not this run.
 2. **review**: one-round entries; the next oldest are `bad-adj`, `off-prep`, `out-prep`, `per-prep`, then the 2026-09-21 entries (`python3` sort by `provenance.created`). When a run opens *anyone, anybody, anything*: check they agree with the new *someone/somebody/something* notes (those stay natural in questions expecting yes). Clear the signpost on any one-sense entry a review opens ([note](wiki/notes/one-sense-signposts.md); 41 left). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)).
 3. **closure**: about 1,078 closure-gap lemmas. Check each claimed row's part of speech first. The row `good looking|adj` (queued 2026-09-26) should read *good-looking*; draft it with the hyphen. *pen* the animal enclosure is an unrelated homograph: queue it as `pen-n-2` when a run can, never as a sense of `pen-n`.
 4. **lint**: next due in one run (`next_mode.py` decides). Every lint: check each BACKLINK line `crossref --all --apply` prints; about one in five is wrong. A review that removes a cross-reference removes its mirror too, or lint re-creates it (a dry `crossref --all` does not show pending back-links). `reviewer-a` `pronunciation` precision is 0.33 over 105 decisions: re-measure; under 0.30 it is switched off.

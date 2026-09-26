@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Eight verbs: read to refuse
+
+Ninety-fifth scheduled run (cycle 4 of this session). Drafted eight band-1 verbs: *read, realize, recognize, recover, reduce, refer, reflect, refuse*. All 16 transcriptions verified; *read* took its forms and its "pronounced like red" note from the exceptions table, and `inflect.py` doubled the r of *referred* correctly. 25 decisions: 11 applied, 14 rejected. Fixes: `read-v` sense 3 no longer defined with *reading*; `reflect-v` sense 5 now "make someone seem good or bad to other people"; `realize-v`'s false-friend note agrees with its formal *plan* sense; `reduce-v`'s learner-error note now says *usually* (the cooking sense has no object). Rejected: reviewer-b's six calls to hand-mark *read* in examples (a listed form, marked by the site), four quoted-headword objections. `crossref` back-link on `accept-v` moved from sense 1 to sense 2 by hand. Spend: US$0.32; US$7.44 today.
+
 ## [2026-09-26] review | Second round for 18 entries, inside-prep to awake-adj
 
 Ninety-fourth scheduled run (cycle 3 of this session), review: the next 18 one-round entries by creation date (nine prepositions from 2026-09-20, then *able* to *awake*). 37 issues; 37 decisions: 21 applied, 16 rejected. Fixes: `account-n` sense 4 now a user arrangement, not "a way to use"; `apologize-v` covers things that caused a problem (*the company apologized for the delay*); `since-prep` explanation covers the past-perfect case; `onto-prep` usage note explains *went on to*; `add-v` synonyms *lend* (removed on both sides) and *calculate* (moved to the arithmetic sense); duplicate *like*/*such as* compare removed on both sides; `outside-prep` antonym *within* moved to the limits sense; `actual-adj` learner error replaced. Rejected: reviewer-a's calls that *plus* and *outside* examples are not prepositions, and that *since* notes are too categorical (its counterexample is `since-conj`). Spend: US$0.50; US$7.12 today.
