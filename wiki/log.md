@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] originality | Eighth check: bend rewritten
+
+Eighty-sixth scheduled run (eighth cycle of this session), originality (forced: run 80 is a multiple of ten). Ten sampled fields; exact-phrase web searches found no exact match. Verdicts: original 6, generic-overlap 3 (*role model*, `fill-v` sense 7, `onto-prep` usage note, which resembles a grammar blog, not a dictionary), rewrite 1: `bend-v` sense 2, whose frame and ending matched Cambridge's *bend* wording in the search summary; rewritten, one panel round (2 issues, both applied: sense 2 widened to any body part and direction, sense 1 now *be or become curved* to cover roads), validated. Reviewer-a (one combined call) answered original 8, cannot tell 2, copied 0; as in the last check, search alone found the close match. Record: `reviews/originality/2026-09-26-2.md`. Spend: US$0.06; US$4.47 today.
+
 ## [2026-09-26] build | Ten verbs: need to own
 
 Eighty-fifth scheduled run (seventh cycle of this session), build. Drafted ten band-1 verbs: *need, notice, obey, observe* (five senses), *occur, open* (five senses), *operate, order, owe, own*. All 20 transcriptions verified. Three reviewer replies each missed one field's verdict (logged as errors, not re-run: the other fields were read). 27 issues, 16 blocking; 27 decisions: 19 applied, 8 rejected. Fixes: `open-v` senses 2, 3, and 5 reworded (a building is made ready, not started; a file is shown) and its core idea; `operate-v` sense 3 now *treat an injury or an illness*; `owe-v` sense 2 tied to what was done; `own-v`'s usage note no longer says *legally*; `notice-v`/`see-v` made a compare pair with a note, settling a `TYPE-MISMATCH`. Rejected: *nid* without a length mark (fence); *not normally continuous* notes as too absolute (they already say *normally*); *observe my class* as intransitive. Back-links: 4 added, all right. Spend: US$0.34; US$4.41 today.
