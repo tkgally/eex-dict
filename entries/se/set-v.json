@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "put-v",
-  "slug": "put-v",
-  "headword": "put",
+  "id": "set-v",
+  "slug": "set-v",
+  "headword": "set",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "pʊt",
+      "ipa": "sɛt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "pʊt",
+      "ipa": "set",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,10 +25,10 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "puts",
-      "past_tense": "put",
-      "past_participle": "put",
-      "present_participle": "putting"
+      "third_person_singular": "sets",
+      "past_tense": "set",
+      "past_participle": "set",
+      "present_participle": "setting"
     },
     "regular": false,
     "source": "exceptions",
@@ -47,12 +47,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To put is to move something or someone into a place, a state, or a form.",
+  "core_idea": "To set is to put something in a particular place, position, or state, or to fix it so that it is ready.",
   "senses": [
     {
       "n": 1,
-      "signpost": "in a place",
-      "definition": "move something into a particular place or position",
+      "signpost": "put",
+      "definition": "put something in a particular place, especially carefully",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -60,7 +60,8 @@
         "codes": [],
         "patterns": [
           "verb + object + preposition + object",
-          "verb + object + adverb"
+          "verb + object + adverb",
+          "verb + object"
         ]
       },
       "labels": {
@@ -73,50 +74,38 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Put the milk in the fridge.",
+          "text": "She set the tray on the table.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Where did you put my keys?",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "She put her hand on my shoulder.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "He put the box down carefully.",
+          "text": "He set the box down by the door.",
           "note": null,
           "pattern": "verb + object + adverb"
+        },
+        {
+          "text": "Could you set the table for dinner?",
+          "note": null,
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + preposition",
-          "items": [
-            "put something in something",
-            "put something on something",
-            "put something into something"
-          ]
-        },
-        {
           "type": "phrase",
           "items": [
-            "put something back",
-            "put something away"
+            "set something down",
+            "set something on something",
+            "set the table"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "place-v",
+          "slug": "put-v",
           "note": null
         },
         {
-          "slug": "set-v",
+          "slug": "place-v",
           "note": null
         }
       ],
@@ -134,15 +123,17 @@
     },
     {
       "n": 2,
-      "signpost": "in a state",
-      "definition": "cause someone or something to be in a particular state or situation",
+      "signpost": "decide",
+      "definition": "decide on a time, a price, a rule, or a limit",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object + preposition + object"
+          "verb + object",
+          "verb + object + preposition + object",
+          "verb + two objects"
         ]
       },
       "labels": {
@@ -155,35 +146,37 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The news put everyone in a good mood.",
+          "text": "Have you set a date for the wedding?",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "The school sets strict rules about phones.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "Let's set a limit on how much we spend.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Driving so fast puts other people at risk.",
+          "text": "She set herself the goal of running every day.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "The new rule will put an end to the problem.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "Her singing soon put the baby to sleep.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + two objects"
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + noun",
           "items": [
-            "put someone at risk",
-            "put someone in a good mood",
-            "put an end to something",
-            "put someone to sleep",
-            "put something in danger"
+            "set a date",
+            "set a price",
+            "set a limit",
+            "set a goal",
+            "set a rule",
+            "set a record",
+            "set an example"
           ]
         }
       ],
@@ -202,14 +195,15 @@
     },
     {
       "n": 3,
-      "signpost": "write",
-      "definition": "write something, or write something in a particular place",
+      "signpost": "a machine",
+      "definition": "make a clock or a machine ready to work in a particular way",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
+          "verb + object",
           "verb + object + preposition + object"
         ]
       },
@@ -223,27 +217,28 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Put your name at the top of the page.",
+          "text": "I set my alarm for six o'clock.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "What should I put in the letter?",
+          "text": "Set the oven to a low heat.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "She put a check next to each correct answer.",
+          "text": "Did you remember to set the clock?",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + noun",
           "items": [
-            "put your name on something",
-            "put something in writing"
+            "set an alarm",
+            "set a clock",
+            "set a timer"
           ]
         }
       ],
@@ -262,16 +257,14 @@
     },
     {
       "n": 4,
-      "signpost": "say",
-      "definition": "say or express something in a particular way",
-      "explanation": null,
+      "signpost": "sun or moon",
+      "definition": "go down and disappear from the sky",
+      "explanation": "Used about the sun and the moon.",
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "intransitive",
         "codes": [],
-        "patterns": [
-          "verb + object"
-        ]
+        "patterns": []
       },
       "labels": {
         "register": [],
@@ -283,39 +276,32 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I don't know how to put this, but your shirt is on backward.",
+          "text": "The sun sets earlier in winter.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Let me put it another way.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "To put it simply, we don't have enough money.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "As my grandmother used to put it, the early bird catches the worm.",
+          "text": "We watched the sun set over the sea.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "noun + verb",
           "items": [
-            "put it simply",
-            "put it another way",
-            "put it politely",
-            "as someone put it"
+            "the sun sets",
+            "the moon sets"
           ]
         }
       ],
       "synonyms": [],
-      "antonyms": [],
+      "antonyms": [
+        {
+          "slug": "rise-v",
+          "note": null
+        }
+      ],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -329,15 +315,17 @@
     },
     {
       "n": 5,
-      "signpost": "time or money",
-      "definition": "use time, effort, or money for a particular purpose",
+      "signpost": "cause a state",
+      "definition": "cause someone or something to be in a particular state",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object + preposition + object"
+          "verb + object + adjective",
+          "verb + object + preposition + object",
+          "verb + object + -ing form"
         ]
       },
       "labels": {
@@ -350,29 +338,137 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She put a lot of effort into the project.",
+          "text": "The prisoners were finally set free.",
+          "note": null,
+          "pattern": "verb + object + adjective"
+        },
+        {
+          "text": "Someone set the old car on fire.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "They put all their savings into the new house.",
+          "text": "Her words set me thinking.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "We've put a lot of time into this, so please be careful with it.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + object + -ing form"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "phrase",
           "items": [
-            "put effort into something",
-            "put money into something",
-            "put time into something",
-            "put work into something"
+            "set someone free",
+            "set something on fire",
+            "set someone thinking"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 6,
+      "signpost": "a story",
+      "definition": "place the events of a story, a film, or a play in a particular place or time",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object + preposition + object",
+          "usually passive"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The film is set in a small village by the sea.",
+          "note": null,
+          "pattern": "usually passive"
+        },
+        {
+          "text": "Her new novel is set in the future.",
+          "note": null,
+          "pattern": "usually passive"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "be set in a place",
+            "be set in the future"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 7,
+      "signpost": "become hard",
+      "definition": "become firm or hard",
+      "explanation": "Used about liquids and soft substances such as glue, cement, or jelly.",
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Leave the jelly in the fridge to set.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The glue takes an hour to set.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "leave something to set",
+            "take time to set"
           ]
         }
       ],
@@ -390,130 +486,75 @@
       "l1": {}
     }
   ],
-  "phrases": [
+  "phrases": [],
+  "word_family": [
     {
-      "sub_id": "put-two-and-two-together",
-      "text": "put two and two together",
-      "definition": "understand what is happening by thinking about the facts you have",
-      "explanation": null,
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "When I saw the empty box and the happy dog, I put two and two together.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "She'll put two and two together soon enough.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
+      "slug": "set-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "setting-n",
+      "form": null,
+      "note": null
     }
   ],
-  "word_family": [],
-  "synonym_discrimination": {
-    "words": [
-      "put-v",
-      "place-v",
-      "set-v"
-    ],
-    "note": "**Put** is the everyday word and fits almost any situation: *Put your bag here*. **Place** is more formal and suggests care: *He placed the glass carefully on the table*. **Set** often means putting something down in its proper position: *She set the tray on the table*."
-  },
+  "synonym_discrimination": null,
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "I put my bag.",
-      "correct": "I put my bag on the chair.",
-      "note": "**Put** in this sense needs both an object and a place."
-    },
-    {
-      "incorrect": "Yesterday I putted the keys in the drawer.",
-      "correct": "Yesterday I put the keys in the drawer.",
-      "note": "The past tense and past participle of **put** are both **put**."
+      "incorrect": "I setted my alarm for six.",
+      "correct": "I set my alarm for six.",
+      "note": "The past tense and past participle of **set** are both **set**."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "put-away-phrv",
+      "slug": "set-up-phrv",
       "note": null
     },
     {
-      "slug": "put-back-phrv",
+      "slug": "set-off-phrv",
       "note": null
     },
     {
-      "slug": "put-down-phrv",
-      "note": null
-    },
-    {
-      "slug": "put-off-phrv",
-      "note": null
-    },
-    {
-      "slug": "put-on-phrv",
-      "note": null
-    },
-    {
-      "slug": "put-out-phrv",
-      "note": null
-    },
-    {
-      "slug": "put-together-phrv",
-      "note": null
-    },
-    {
-      "slug": "put-up-phrv",
+      "slug": "set-out-phrv",
       "note": null
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"put\": in the sense *move something to a place*, the verb needs both an object and a place (*put it on the table*); many languages let the place be left out. The present, past, and past participle are all **put**.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T21:56:46Z",
-    "modified": "2026-09-26T23:16:14Z",
+    "created": "2026-09-26T23:13:02Z",
+    "modified": "2026-09-26T23:16:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T215441Z-poh5we",
+    "run_id": "20260926T231200Z-poh5we",
     "reviews": [
       {
-        "run_id": "20260926T215441Z-poh5we",
+        "run_id": "20260926T231200Z-poh5we",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-26",
-        "file": "reviews/20260926T215441Z-poh5we/put-v.json",
-        "ok": 62,
-        "issues": 4,
-        "blocking": 2
+        "file": "reviews/20260926T231200Z-poh5we/set-v.json",
+        "ok": 77,
+        "issues": 2,
+        "blocking": 0
       },
       {
-        "run_id": "20260926T215441Z-poh5we",
+        "run_id": "20260926T231200Z-poh5we",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-26",
-        "file": "reviews/20260926T215441Z-poh5we/put-v.json",
-        "ok": 65,
-        "issues": 1,
+        "file": "reviews/20260926T231200Z-poh5we/set-v.json",
+        "ok": 77,
+        "issues": 2,
         "blocking": 0
       }
     ],

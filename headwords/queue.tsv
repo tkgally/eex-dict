@@ -1926,21 +1926,21 @@ sell	v	1	defining	done	2026-09-16	votes 3; referenced by buy-v
 seller	n	1	defining	pending	2026-09-16	votes 1; referenced by sell-v
 semi-	prefix	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
 send	v	1	defining	done	2026-09-16	votes 2; referenced by deliver-v; referenced by refer-v
-sense	n	1	defining	pending	2026-09-16	votes 3
-sense	v	1	defining	pending	2026-09-16	votes 2
+sense	n	1	defining	pending	2026-09-16	votes 3; referenced by sense-v
+sense	v	1	defining	done	2026-09-16	votes 2
 sensible	adj	1	defining	pending	2026-09-16	votes 1
-sensitive	adj	1	defining	pending	2026-09-16	votes 1
-sentence	n	1	defining	pending	2026-09-16	votes 3
-sentence	v	1	defining	pending	2026-09-16	votes 2
+sensitive	adj	1	defining	pending	2026-09-16	votes 1; referenced by sense-v
+sentence	n	1	defining	pending	2026-09-16	votes 3; referenced by sentence-v
+sentence	v	1	defining	done	2026-09-16	votes 2
 separate	adj	1	defining	pending	2026-09-16	votes 1
 serious	adj	1	defining	pending	2026-09-16	votes 3; referenced by big-adj
 seriously	adv	1	defining	pending	2026-09-16	votes 2
-serve	v	1	defining	pending	2026-09-16	votes 3
-server	n	1	defining	pending	2026-09-16	votes 1
-service	n	1	defining	pending	2026-09-16	votes 2
-set	v	1	defining	pending	2026-09-16	votes 3; referenced by fix-v; referenced by lay-v; referenced by put-v; referenced by rise-v
-set off	phrv	1	defining	pending	2026-09-16	votes 1
-set up	phrv	1	defining	pending	2026-09-16	votes 3; referenced by form-v
+serve	v	1	defining	done	2026-09-16	votes 3
+server	n	1	defining	pending	2026-09-16	votes 1; referenced by serve-v
+service	n	1	defining	pending	2026-09-16	votes 2; referenced by serve-v
+set	v	1	defining	done	2026-09-16	votes 3; referenced by fix-v; referenced by lay-v; referenced by put-v; referenced by rise-v
+set off	phrv	1	defining	pending	2026-09-16	votes 1; referenced by set-v
+set up	phrv	1	defining	pending	2026-09-16	votes 3; referenced by form-v; referenced by set-v
 seven	num	1	defining	pending	2026-09-16	votes 3
 several	det	1	defining	done	2026-09-16	votes 1
 sew	v	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
@@ -1952,9 +1952,9 @@ shall	modal	1	defining	done	2026-09-16	votes 2
 shallow	adj	1	defining	pending	2026-09-16	votes 3
 shame	n	1	defining	pending	2026-09-16	votes 3
 shampoo	n	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
-shape	n	1	defining	pending	2026-09-16	votes 3
-shape	v	1	defining	pending	2026-09-16	votes 2
-share	v	1	defining	pending	2026-09-16	votes 2; referenced by divide-v
+shape	n	1	defining	pending	2026-09-16	votes 3; referenced by shape-v
+shape	v	1	defining	done	2026-09-16	votes 2
+share	v	1	defining	done	2026-09-16	votes 2; referenced by divide-v
 sharp	adj	1	defining	pending	2026-09-16	votes 3
 shave	v	1	defining	pending	2026-09-16	votes 2
 she	pron	1	defining	done	2026-09-16	votes 3; referenced by he-pron
@@ -3632,7 +3632,7 @@ segment	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wo
 seizure	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=4)
 seminar	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3)
 senate	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3)
-serving	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3)
+serving	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3); referenced by serve-v
 severe	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by bad-adj
 shabby	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 shed	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3)
@@ -4407,7 +4407,7 @@ airplane	n	3	family	pending	2026-09-21	referenced by air-n; referenced by aircra
 alarm	v	3	family	pending	2026-09-21	referenced by alarm-n
 alarmed	adj	3	family	pending	2026-09-21	referenced by alarm-n
 behave	v	3	crossref	pending	2026-09-21	referenced by act-v
-influence	v	3	crossref	pending	2026-09-21	referenced by affect-v; referenced by inform-v
+influence	v	3	crossref	pending	2026-09-21	referenced by affect-v; referenced by inform-v; referenced by shape-v
 promote	v	3	crossref	pending	2026-09-21	referenced by advertise-v; referenced by encourage-v
 stillness	n	3	crossref	pending	2026-09-21	referenced by activity-n
 wherever	conj	3	crossref	pending	2026-09-22	referenced by where-conj
@@ -5150,3 +5150,9 @@ seeming	adj	3	family	pending	2026-09-26	referenced by seem-v
 sell out	phrv	3	crossref	pending	2026-09-26	referenced by sell-v
 sender	n	3	family	pending	2026-09-26	referenced by send-v
 mail	n	3	closure	pending	2026-09-26	used in send-v senses[0].definition; pos guessed (no morphological signal), check before claiming
+set	n	3	family	pending	2026-09-26	referenced by set-v
+set out	phrv	3	crossref	pending	2026-09-26	referenced by set-v
+setting	n	3	family	pending	2026-09-26	referenced by set-v
+shaped	adj	3	family	pending	2026-09-26	referenced by shape-v
+share	n	3	family	pending	2026-09-26	referenced by share-v
+shared	adj	3	family	pending	2026-09-26	referenced by share-v
