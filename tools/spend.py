@@ -4,7 +4,7 @@
 The ledger is config/budget-ledger.json, written only by this tool:
 
     {"_doc": "...",
-     "daily_cap_usd": 5.0,
+     "daily_cap_usd": 15.0,
      "date": "YYYY-MM-DD",            # the UTC day the running totals belong to
      "spent_usd": 0.0,
      "calls": [{"ts", "run_id", "purpose", "model", "cost_usd",
@@ -42,7 +42,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_LEDGER = ROOT / "config" / "budget-ledger.json"
-DEFAULT_CAP_USD = 5.0
+DEFAULT_CAP_USD = 15.0
 DOC = ("OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by "
        "tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd "
        "for the current UTC day, 'record --cost' appends the billed usage.cost of a call. "
