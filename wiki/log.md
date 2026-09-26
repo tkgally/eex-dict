@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] review | Second round for 16 entries, bad-adj to surround-v
+
+Ninety-ninth scheduled run (cycle 8 of this session), review of the next 16 one-round entries (*bad* to *surround*). 39 issues; 39 decisions: 31 applied, 8 rejected. Main fix: `out-prep` treated **out from** and American bare **out** (*out the window*) as wrong; it gains a new sense 1 (*through an opening*, American) and its usage note, learner error, and adaptation note are rewritten; the *out of* senses stay. Also: `off-prep` loses British *off school* and its dialect-dependent vowel comparison; `per-prep` sense 2 and `concerning-prep` reworded; `surround-v` sense 2 no longer says "uncertain or interesting"; `enclosed-adj` gets its missing signpost; American length marks removed from `opposition-n` and `contact-n` (re-verified). Rejected: calling *out of milk* adjectival; a plural for `opposition-n`. `crossref --all --apply` also added 8 mirrors to this session's *remove*, *remain*, *require* (all checked). Spend: US$0.50; US$8.49 today.
+
 ## [2026-09-26] build | Eight verbs: repeat to rest
 
 Ninety-eighth scheduled run (cycle 7 of this session). Drafted eight band-1 verbs: *repeat, reply, represent, require, rescue, research, respect, rest*. All 16 transcriptions verified (*require* American 2/4 plus CMU, transcribed with two final syllables like *fire*; *research* American 3/4, CMU disagreeing, first-syllable stress recorded as a variant). 17 decisions: 14 applied, 3 rejected. Fixes: `represent-v` sense 4 covers *represent someone as*; `require-v` sense 2 no longer only rules and laws, and no longer "usually passive"; `research-v` usage note cut to one clause pointing to the noun, *research into* no longer called British; passive examples on `rescue-v` and `require-v` noted as passive; *the crew was rescued* (American agreement). Back-links on *need, admire, relax, lean, depend*; a *reply*/*answer* type mismatch settled as synonyms. Spend: US$0.27; US$7.99 today.
