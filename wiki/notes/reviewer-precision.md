@@ -104,3 +104,7 @@ Disabled pairs unchanged. Live: `reviewer-a` `ALL` 0.70 (1756/2496); `reviewer-b
 ## 2026-09-26: sixteenth lint pass, no new switch-offs
 
 Disabled pairs unchanged. Live: `reviewer-a` `ALL` 0.70 (1824/2597); `reviewer-b` `ALL` 0.65 (614/944). No family under 30 percent at twenty or more decisions. `reviewer-a` `pronunciation` 0.32 (35/110): three rejections this session (British *diaper* with a final r, British *organisation*, American *resource*), all panel- and CMU-verified; one or two more and it crosses the line. `reviewer-b` `spelling-or-format` 0.53 (205), still falling on the quoted-headword flag and on requests to hand-mark listed forms (six on `read-v`). Under twenty: `reviewer-a` `inflection` 0.08 (12); `reviewer-b` `phrase` 0.41 (17).
+
+## 2026-09-26: seventeenth lint pass, no new switch-offs
+
+Disabled pairs unchanged. Live: `reviewer-a` `ALL` 0.71 (1894/2685); `reviewer-b` `ALL` 0.65 (634/980). No family under 30 percent at twenty or more decisions; `reviewer-a` `pronunciation` 0.32 (111), with no new rejection in the last five runs. `reviewer-b` `spelling-or-format` 0.51 (215), still falling on the quoted-headword flag. Under twenty: `reviewer-a` `inflection` 0.07 (15); `reviewer-b` `phrase` 0.41 (17).
