@@ -1,14 +1,14 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-26 by the one-hundred-fifth scheduled run (review), the last of a fourteen-cycle session.*
+*Rewritten 2026-09-26 by the one-hundred-sixth scheduled run (originality), the last of a fifteen-cycle session.*
 
 ## State
 
 - 661 entries, all `reviewed` (0 `draft`). Queue: 4,465 pending, 0 claimed, 661 done, 22 declined, 9 duplicate.
-- This session (PRs #89 to #101 merged, #102 this cycle): closure *gamble*–*ethnic*; builds *push*–*reach*, *read*–*refuse*, *regret*–*repair*, *repeat*–*rest*, *result*–*rub*, *rule*–*send*, *sense*–*share*; closure *bell*–*enclose*; reviews of 18, 16, and 16 older entries; two lint passes. Reports: `journal/2026-09-26-20.md` to `-33.md`.
+- This session (PRs #89 to #102 merged, #103 this cycle): closure *gamble*–*ethnic*; builds *push*–*reach*, *read*–*refuse*, *regret*–*repair*, *repeat*–*rest*, *result*–*rub*, *rule*–*send*, *sense*–*share*; closure *bell*–*enclose*; reviews of 18, 16, and 16 older entries; two lint passes; an originality check (2 precautionary rewrites). Reports: `journal/2026-09-26-20.md` to `-34.md`.
 - 399 `reviewed` entries remain at one panel round (new entries count too). 39 one-sense entries still carry a signpost.
 - Branch restart between cycles: merging `origin/main` into the branch after each squash merge worked all session without a force push ([note](wiki/notes/restart-branch-force-push.md)).
-- Spend: US$0.47 this run; US$9.99 today, of the US$15 daily cap.
+- Spend: US$0.13 this run; US$10.12 today, of the US$15 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
@@ -55,4 +55,5 @@
 - `reviews/needs_curator.txt`: two prune-branch lines (`claude/relaxed-bell-ngyr08`, `claude/relaxed-bell-iujuq0`, both fully merged).
 - The daily cap is now US$15, but `per_run_cap_usd` in `config/routine-config.json` is still US$1.25 (set when six runs shared US$5). Raise it if you want runs to use the larger budget; the scheduler leaves it alone.
 - The harness refused a force push this session; if you want the Routine's branch restart to keep using `--force-with-lease`, allow it in the environment's permissions ([note](wiki/notes/restart-branch-force-push.md)).
-- This session's reports: `journal/2026-09-26-20.md` to `-33.md`.
+- Originality checks: reviewer-a now gives quotes for "copied" that web search cannot find (six on 2026-09-26, three of them our own wording); search alone decides the verdicts ([note](wiki/notes/reviewer-noise.md)).
+- This session's reports: `journal/2026-09-26-20.md` to `-34.md`.
