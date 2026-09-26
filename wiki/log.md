@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] lint | Fourteenth lint pass: back-links for fifty new verbs
+
+Eighty-fourth scheduled run (sixth cycle of this session), lint (forced: five runs since the last). Mechanical checks clean: caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (4 claim files). `crossref --all --apply` added 26 back-links, mostly to this session's new verbs; 5 on the wrong sense were moved by hand. It also re-created two pairs a review had removed from one side only: `as-prep`/`than-conj` now removed from both, `along-prep`/`up-prep` restored on sense 1 with a note ([note](notes/crossref-first-sense-backlinks.md)). 21 entries touched. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.34 (103) ([note](notes/reviewer-precision.md)). Index, notes, open questions checked: no orphans. The curator list's new prune line had been appended under "Resolved"; moved to "Open". Spend: US$0. Next lint due in five runs.
+
 ## [2026-09-26] build | Ten verbs: marry to name
 
 Eighty-third scheduled run (fifth cycle of this session), build. Drafted ten band-1 verbs: *marry, mean* (six senses, two phrases), *measure, meet, melt, mention, mix, move, multiply, name*. All 20 transcriptions verified. One reviewer-b reply (`name-v`) failed to parse and was re-run. 31 issues, 10 blocking; 31 decisions: 18 applied, 13 rejected. Fixes: `meet-v` sense 6 now "reach the level that a need, a rule, or a plan asks for", and its usage note no longer limits bare *meet* to social meetings; `move-v` lost *move on* (a phrasal verb) from sense 3 and *move house* from its collocations (British; covered in the usage note); `mix-v`'s two-object drinks example replaced; *thanks for the lift* became *ride*; four collocation groups retyped verb + adverb. Rejected: `mix-up-phrv` as an invalid slug (settled), the passive pattern objection (house practice), capitalized prose illustrations. Back-links: 2 added, both right. Spend: US$0.41; US$4.08 today.
