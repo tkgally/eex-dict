@@ -4,7 +4,7 @@
 
 ## [2026-09-26] lint | Seventeenth lint pass: back-links for the last cycles' words
 
-One-hundred-second scheduled run (cycle 11 of this session), lint (forced: five runs since the last). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (4 files) clean. `crossref --all --apply` added 8 back-links to *rise, ride, arrange, achieve*; 2 on the wrong sense moved by hand (`rise-v` *jump* to "increase", `ride-v` *drive* to "bike or horse", where the *ride my car* error lives). A second `--apply` added nothing. Index matches the pages; curator file and open questions current. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.32 (111). 6 entries touched. Spend: US$0. Next lint due in five runs.
+One-hundred-second scheduled run (cycle 11 of this session), lint (forced: five runs since the last). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (4 files) clean. `crossref --all --apply` added 8 back-links to *rise, ride, arrange, achieve*; 2 on the wrong sense moved by hand (`rise-v` *jump* to "increase", `ride-v` *drive* to "bike or horse", where the *ride my car* error lives). A second `--apply` added nothing. Index matches the pages; curator file and open questions current. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.32 (111). 4 entries touched. Spend: US$0. Next lint due in five runs.
 
 ## [2026-09-26] closure | Two closure words and six family words: bell to enclose
 
