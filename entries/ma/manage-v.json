@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "appear-v",
-  "slug": "appear-v",
-  "headword": "appear",
+  "id": "manage-v",
+  "slug": "manage-v",
+  "headword": "manage",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ə.ˈpɪr",
+      "ipa": "ˈmæn.ɪdʒ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ə.ˈpɪə",
+      "ipa": "ˈmæn.ɪdʒ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,10 +25,10 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "appears",
-      "past_tense": "appeared",
-      "past_participle": "appeared",
-      "present_participle": "appearing"
+      "third_person_singular": "manages",
+      "past_tense": "managed",
+      "past_participle": "managed",
+      "present_participle": "managing"
     },
     "regular": true,
     "source": "rules",
@@ -47,82 +47,19 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **appear** is to come into sight, to seem a certain way, or to take part in a show, a movie, or a court case.",
+  "core_idea": "To manage is to control something, or to succeed in dealing with something difficult.",
   "senses": [
     {
       "n": 1,
-      "signpost": "come into sight",
-      "definition": "come into sight",
+      "signpost": "be in charge",
+      "definition": "be in charge of a business, a team, or a group of people",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "intransitive",
-        "codes": [],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "A ship appeared on the horizon.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "She suddenly appeared in the doorway.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The stars appear as the sky grows dark.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "A rash appeared on his arm.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [],
-      "synonyms": [],
-      "antonyms": [
-        {
-          "slug": "disappear-v",
-          "note": null
-        }
-      ],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 2,
-      "signpost": "seem",
-      "definition": "seem to be true, based on how something looks or what is known",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "linking",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + adjective",
-          "verb + to-infinitive",
-          "verb + that-clause",
-          "not used in continuous tenses"
+          "verb + object"
         ]
       },
       "labels": {
@@ -135,34 +72,42 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She appeared nervous before the interview.",
+          "text": "She manages a small hotel.",
           "note": null,
-          "pattern": "verb + adjective"
+          "pattern": "verb + object"
         },
         {
-          "text": "He appears to have left already.",
+          "text": "He manages a team of ten people.",
           "note": null,
-          "pattern": "verb + to-infinitive"
+          "pattern": "verb + object"
         },
         {
-          "text": "It appears that the flight has been delayed.",
-          "note": null,
-          "pattern": "verb + that-clause"
-        },
-        {
-          "text": "The house appears empty.",
-          "note": null,
-          "pattern": "verb + adjective"
+          "text": "The company is badly managed.",
+          "note": "passive",
+          "pattern": "verb + object"
         }
       ],
-      "collocations": [],
-      "synonyms": [
+      "collocations": [
         {
-          "slug": "seem-v",
-          "note": null
+          "type": "verb + noun",
+          "items": [
+            "manage a business",
+            "manage a team",
+            "manage a project",
+            "manage a store"
+          ]
         },
         {
-          "slug": "look-v",
+          "type": "adverb + verb",
+          "items": [
+            "manage well",
+            "badly managed"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "run-v",
           "note": null
         }
       ],
@@ -179,16 +124,17 @@
       "l1": {}
     },
     {
-      "n": 3,
-      "signpost": "perform",
-      "definition": "take part in a movie, show, or performance",
+      "n": 2,
+      "signpost": "succeed",
+      "definition": "succeed in doing something difficult",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "intransitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + preposition + object"
+          "verb + to-infinitive",
+          "verb + object"
         ]
       },
       "labels": {
@@ -201,32 +147,28 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She has appeared in several films.",
+          "text": "Did you manage to find the house?",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": "verb + to-infinitive"
         },
         {
-          "text": "The band last appeared on stage in the spring.",
+          "text": "We managed to finish on time.",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": "verb + to-infinitive"
         },
         {
-          "text": "He appears twice in the new show.",
+          "text": "I don't know how she manages it.",
           "note": null,
-          "pattern": "verb + preposition + object"
-        },
-        {
-          "text": "The singer appeared live for the first time in years.",
-          "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + preposition",
+          "type": "adverb + verb",
           "items": [
-            "appear in",
-            "appear on"
+            "somehow manage",
+            "finally manage",
+            "just manage"
           ]
         }
       ],
@@ -244,56 +186,110 @@
       "l1": {}
     },
     {
-      "n": 4,
-      "signpost": "attend court",
-      "definition": "be present in court as a required part of a legal case",
+      "n": 3,
+      "signpost": "cope",
+      "definition": "deal with a difficult situation, especially with little money or help",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + preposition + object"
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "law"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "He is due to appear in court next week.",
+          "text": "How do you manage on such a small salary?",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": "verb + adverb or preposition"
         },
         {
-          "text": "The witness failed to appear in court.",
-          "note": null,
-          "pattern": "verb + preposition + object"
-        },
-        {
-          "text": "She must appear before the judge on Monday.",
-          "note": null,
-          "pattern": "verb + preposition + object"
-        },
-        {
-          "text": "Both parties are required to appear in person.",
+          "text": "Don't worry about us; we'll manage.",
           "note": null,
           "pattern": null
+        },
+        {
+          "text": "I can't manage without my car.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
         }
       ],
       "collocations": [
         {
           "type": "verb + preposition",
           "items": [
-            "appear in court",
-            "appear before"
+            "manage on",
+            "manage without"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "cope-v",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "use wisely",
+      "definition": "use or control time, money, or other things in a sensible way",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "You need to manage your time better.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "She's good at managing money.",
+          "note": null,
+          "pattern": "verb + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "manage your time",
+            "manage money",
+            "manage stress"
           ]
         }
       ],
@@ -314,28 +310,34 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "appearance-n",
+      "slug": "manager-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "disappear-v",
+      "slug": "management-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "manageable-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
-  "etymology": null,
-  "see_also": [
+  "learner_errors": [
     {
-      "slug": "seem-v",
-      "note": null
+      "incorrect": "I managed finishing the work.",
+      "correct": "I managed to finish the work.",
+      "note": "In the sense *succeed*, **manage** is followed by **to** and a base form."
     }
   ],
+  "etymology": null,
+  "see_also": [],
   "adaptation": {
-    "semantic": null,
+    "semantic": "\"manage\" in sense 2 means *succeed in doing something with effort*, not *try*. A translator should not use a word that only means *attempt*.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -343,30 +345,30 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-22T05:12:20Z",
-    "modified": "2026-09-26T19:15:48Z",
+    "created": "2026-09-26T19:10:22Z",
+    "modified": "2026-09-26T19:15:21Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260922T051159Z-5k35hq",
+    "run_id": "20260926T190823Z-iujuq0",
     "reviews": [
       {
-        "run_id": "20260922T051159Z-5k35hq",
+        "run_id": "20260926T190823Z-iujuq0",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-22",
-        "file": "reviews/20260922T051159Z-5k35hq/appear-v.json",
-        "ok": 39,
-        "issues": 5,
-        "blocking": 5
+        "date": "2026-09-26",
+        "file": "reviews/20260926T190823Z-iujuq0/manage-v.json",
+        "ok": 49,
+        "issues": 3,
+        "blocking": 3
       },
       {
-        "run_id": "20260922T051159Z-5k35hq",
+        "run_id": "20260926T190823Z-iujuq0",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-22",
-        "file": "reviews/20260922T051159Z-5k35hq/appear-v.json",
-        "ok": 40,
-        "issues": 3,
-        "blocking": 1
+        "date": "2026-09-26",
+        "file": "reviews/20260926T190823Z-iujuq0/manage-v.json",
+        "ok": 51,
+        "issues": 1,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
