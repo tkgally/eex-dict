@@ -6,7 +6,7 @@
 
 ## Non-negotiables
 
-1. **No more than 20 new entries per run**, each through the full pipeline below before it is marked `reviewed`. Fewer, better entries beat the cap. At most 40 `draft` entries may exist at once; above that, building stops until reviewing catches up.
+1. **No more than 20 new entries per run**, each through the full pipeline below before it is marked `reviewed`. A scheduled run is a series of cycles, each merged before the next (`routine-prompt.md`); every per-run rule applies to each cycle. Fewer, better entries beat the cap. At most 40 `draft` entries may exist at once; above that, building stops until reviewing catches up.
 2. **No script writes a semantic field.** See the ownership table. A "systemic fix" to a semantic field is a per-entry model pass with review, at most 40 entries per run.
 3. **Every classifying field is a closed vocabulary** (`schema/vocabularies.json`). Adding a value is a logged decision in the same pull request as the first entry that needs it.
 4. **Nothing from any external data set is stored in the repository**, whatever its licence: no frequency lists, word lists, pronouncing dictionaries, WordNet, Wiktionary. Open resources may be consulted at run time, in a temporary directory outside the repository, to check a fact; the entry records only the verdict. Copyrighted dictionaries are never consulted while drafting. `sources/` holds markdown only.

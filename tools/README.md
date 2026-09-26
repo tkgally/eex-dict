@@ -43,6 +43,7 @@ All tools are Python 3 standard library only and run from the repository root. E
 | `python3 tools/metrics.py --mode M --changed N [--site-build S]` / `--summary` / `--precision` | one metrics line per run; reviewer precision by role and family |
 | `python3 tools/absorb_branch.py <branch> [--pr N]` / `--residue <branch>` | take over a stranded run's branch with a per-file merge policy |
 | `python3 tools/wait.py [seconds]` | foreground wait between CI polls |
+| `python3 tools/run_clock.py [start]` | a Routine run's clock: records the start, then says whether another cycle may begin and when to wrap up |
 
 ## Site
 
