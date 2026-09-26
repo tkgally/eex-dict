@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] closure | Two closure words and six family words: bell to enclose
+
+One-hundred-first scheduled run (cycle 10 of this session), closure. Only three closure rows were pending: *bell*, *motorcycle*, and *upward*, which was queued as a noun (declined; `upward|adv` queued instead, curator line added). The rest came from `--source family`: *oneself* (pron), *achieve, aim, arrange, contact, enclose* (v). All 16 transcriptions verified. 18 decisions: 14 applied, 4 rejected. Fixes: `aim-v` sense 2 no longer "aims a ball", and *take aim* (the noun) removed; `enclose-v` drops the inverted *Enclosed is a list*; `oneself-pron` emphatic sense now "personally, without help"; `achieve-v` translator's note now allows *succeed in*; `bell-n` sense 1 no longer lists the idiom *ring a bell* as a plain collocation. `crossref` put *achieve* on *reach* "arrive"; moved by hand to "level or result". Spend: US$0.22; US$9.00 today.
+
 ## [2026-09-26] build | Eight verbs: result to rub
 
 One-hundredth scheduled run (cycle 9 of this session). Drafted eight band-1 verbs: *result, retire, return, ride, ring, rise, roll, rub*; *ride*, *ring*, *rise* took their forms from the exceptions table. All 16 transcriptions verified (*retire* American 3/4, two final syllables like *fire*). 21 decisions: 15 applied, 6 rejected. Fixes: `ride-v` sense 2 no longer excludes drivers, and its British note now says *go by bus*; `return-v` sense 4 covers *return to his book*, *return a call* kept only in sense 5; `ring-v` sense 2 covers pulling a rope; `rub-v` senses 2 and 3 reworded. Rejected: merging *ring* "put a circle around" (**ringed**) into this entry (an unrelated homograph, not yet queued; see the homograph note), dropping the British label on *ring* "phone". Spend: US$0.29; US$8.78 today.
