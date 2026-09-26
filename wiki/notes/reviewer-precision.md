@@ -92,3 +92,7 @@ The five disabled pairs' counts are unchanged. Live fields: `reviewer-a` `ALL` 0
 ## 2026-09-26: thirteenth lint pass, no new switch-offs
 
 The five disabled pairs' counts are unchanged. Live fields: `reviewer-a` `ALL` 0.70 (1571/2245); `reviewer-b` `ALL` 0.68 (539/790). No family crossed under 30 percent at twenty or more decisions. `reviewer-a` `pronunciation` is 0.33 (99), still the nearest live family to the line. Under twenty: `reviewer-a` `etymology` 0.40 (15), `inflection` 0.10 (10, one escalation); `reviewer-b` `phrase` 0.41 (17), `adaptation` 0.56 (16).
+
+## 2026-09-26: fourteenth lint pass, no new switch-offs
+
+Disabled pairs unchanged. Live fields: `reviewer-a` `ALL` 0.71 (1694/2403); `reviewer-b` `ALL` 0.66 (573/867). No family under 30 percent at twenty or more decisions. `reviewer-a` `pronunciation` rose to 0.34 (103). `reviewer-b` `spelling-or-format` fell to 0.60 (167): about thirty rejections today are the quoted-headword flag on adaptation notes, a settled house convention it repeats every entry. Under twenty: `reviewer-a` `etymology` 0.40 (15), `inflection` 0.10 (10); `reviewer-b` `phrase` 0.41 (17).
