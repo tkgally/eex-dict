@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Eight verbs: result to rub
+
+One-hundredth scheduled run (cycle 9 of this session). Drafted eight band-1 verbs: *result, retire, return, ride, ring, rise, roll, rub*; *ride*, *ring*, *rise* took their forms from the exceptions table. All 16 transcriptions verified (*retire* American 3/4, two final syllables like *fire*). 21 decisions: 15 applied, 6 rejected. Fixes: `ride-v` sense 2 no longer excludes drivers, and its British note now says *go by bus*; `return-v` sense 4 covers *return to his book*, *return a call* kept only in sense 5; `ring-v` sense 2 covers pulling a rope; `rub-v` senses 2 and 3 reworded. Rejected: merging *ring* "put a circle around" (**ringed**) into this entry (an unrelated homograph, not yet queued; see the homograph note), dropping the British label on *ring* "phone". Spend: US$0.29; US$8.78 today.
+
 ## [2026-09-26] review | Second round for 16 entries, bad-adj to surround-v
 
 Ninety-ninth scheduled run (cycle 8 of this session), review of the next 16 one-round entries (*bad* to *surround*). 39 issues; 39 decisions: 31 applied, 8 rejected. Main fix: `out-prep` treated **out from** and American bare **out** (*out the window*) as wrong; it gains a new sense 1 (*through an opening*, American) and its usage note, learner error, and adaptation note are rewritten; the *out of* senses stay. Also: `off-prep` loses British *off school* and its dialect-dependent vowel comparison; `per-prep` sense 2 and `concerning-prep` reworded; `surround-v` sense 2 no longer says "uncertain or interesting"; `enclosed-adj` gets its missing signpost; American length marks removed from `opposition-n` and `contact-n` (re-verified). Rejected: calling *out of milk* adjectival; a plural for `opposition-n`. `crossref --all --apply` also added 8 mirrors to this session's *remove*, *remain*, *require* (all checked). Spend: US$0.50; US$8.49 today.
