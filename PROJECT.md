@@ -40,4 +40,4 @@ The TKG English Learner's Dictionary is an original English-English learner's di
 
 ## Budget
 
-US$5.00 per UTC day for paid model calls, all runs combined (`config/budget.md`).
+US$15.00 per UTC day for paid model calls, all runs combined (`config/budget.md`).
