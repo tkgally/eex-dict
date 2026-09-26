@@ -1,21 +1,21 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-26 by the one-hundred-fourth scheduled run (build), cycle 13 of this session.*
+*Rewritten 2026-09-26 by the one-hundred-fifth scheduled run (review), the last of a fourteen-cycle session.*
 
 ## State
 
 - 661 entries, all `reviewed` (0 `draft`). Queue: 4,465 pending, 0 claimed, 661 done, 22 declined, 9 duplicate.
-- This session: closure *gamble*–*ethnic* (PR #89); build *push*–*reach* (PR #90); review of 18 entries *inside*–*awake* (PR #91); build *read*–*refuse* (PR #92); lint (PR #93); build *regret*–*repair* (PR #94); build *repeat*–*rest* (PR #95); review of 16 entries *bad*–*surround* (PR #96); build *result*–*rub* (PR #97); closure *bell*–*enclose* (PR #98); lint (PR #99); build *rule*–*send* (PR #100); build *sense*–*share* ([journal](journal/2026-09-26-32.md)).
-- About 380 `reviewed` entries remain at one panel round. Closure gap: 1,078 lemmas.
-- Branch restart between cycles: if the harness refuses `--force-with-lease`, merge `origin/main` into the branch instead ([note](wiki/notes/restart-branch-force-push.md)).
-- Spend: US$0.23 this run; US$9.52 today, of the US$15 daily cap.
+- This session (PRs #89 to #101 merged, #102 this cycle): closure *gamble*–*ethnic*; builds *push*–*reach*, *read*–*refuse*, *regret*–*repair*, *repeat*–*rest*, *result*–*rub*, *rule*–*send*, *sense*–*share*; closure *bell*–*enclose*; reviews of 18, 16, and 16 older entries; two lint passes. Reports: `journal/2026-09-26-20.md` to `-33.md`.
+- 399 `reviewed` entries remain at one panel round (new entries count too). 39 one-sense entries still carry a signpost.
+- Branch restart between cycles: merging `origin/main` into the branch after each squash merge worked all session without a force push ([note](wiki/notes/restart-branch-force-push.md)).
+- Spend: US$0.47 this run; US$9.99 today, of the US$15 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
 1. **build**: band 1 in queue order, continuing the verbs after *share* (`queue.py next` decides) (`queue.py next` decides). Eight to twelve entries per run. Check each definition covers every example and collocation in its sense; reviewer-a caught five that did not this run.
-2. **review**: one-round entries; the next oldest are `one-pron`, `accident-n`, then the rest of the 2026-09-21 entries (`python3` sort by `provenance.created`). When a run opens *anyone, anybody, anything*: check they agree with the new *someone/somebody/something* notes (those stay natural in questions expecting yes). Clear the signpost on any one-sense entry a review opens ([note](wiki/notes/one-sense-signposts.md); 41 left). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)).
+2. **review**: one-round entries; the next oldest are the 2026-09-21T15:39 entries after `admire-v` (`python3` sort by `provenance.created`). When a run opens *anyone, anybody, anything*: check they agree with the new *someone/somebody/something* notes (those stay natural in questions expecting yes). Clear the signpost on any one-sense entry a review opens ([note](wiki/notes/one-sense-signposts.md); 39 left). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)).
 3. **closure**: only `upward|adv` is left under `--source closure` (the ~1,100 gap lemmas appear to be mostly defining-vocabulary words, queued as `defining` rows); closure runs now draw on `--source family`, then `crossref`. Check each claimed row's part of speech first. The row `good looking|adj` (queued 2026-09-26) should read *good-looking*; draft it with the hyphen. *pen* the animal enclosure is an unrelated homograph: queue it as `pen-n-2` when a run can, never as a sense of `pen-n`.
-4. **lint**: next due in three runs (`next_mode.py` decides). Every lint: check each BACKLINK line `crossref --all --apply` prints; about one in five is wrong. A review that removes a cross-reference removes its mirror too, or lint re-creates it (a dry `crossref --all` does not show pending back-links). `reviewer-a` `pronunciation` precision is 0.32 over 111 decisions: re-measure; under 0.30 it is switched off.
+4. **lint**: next due in two runs (`next_mode.py` decides). Every lint: check each BACKLINK line `crossref --all --apply` prints; about one in five is wrong. A review that removes a cross-reference removes its mirror too, or lint re-creates it (a dry `crossref --all` does not show pending back-links). `reviewer-a` `pronunciation` precision is 0.32 over 111 decisions: re-measure; under 0.30 it is switched off.
 5. When drafting or reviewing touches `break-v`: sense 4's definition becomes "begin suddenly", restriction moved to `explanation` (full pipeline). `boil-v` sense 1: move *(of a liquid)* to `explanation` likewise.
 6. Tooling fixes still due (notes in `wiki/notes/`): `lint-vocab-queue-note-duplication`, `inflect-uncountable-plural-gap`, `restart-branch-force-push`, `homograph-queue-and-inflection` (`lie-v-2` *tell an untruth*, `pen-n-2`, and `ring-v-2` *put a circle around*, past **ringed**, need a hand claim and a check of the forms `inflect.py` writes); `crossref-first-sense-backlinks` partly fixed.
 7. When drafting or reviewing touches `borrow-v` or `carry-v`: `borrow-v` sense 3 (subtraction) compares with `carry-v`, which has no arithmetic sense; add the sense or drop the compare (full pipeline).
@@ -55,4 +55,4 @@
 - `reviews/needs_curator.txt`: two prune-branch lines (`claude/relaxed-bell-ngyr08`, `claude/relaxed-bell-iujuq0`, both fully merged).
 - The daily cap is now US$15, but `per_run_cap_usd` in `config/routine-config.json` is still US$1.25 (set when six runs shared US$5). Raise it if you want runs to use the larger budget; the scheduler leaves it alone.
 - The harness refused a force push this session; if you want the Routine's branch restart to keep using `--force-with-lease`, allow it in the environment's permissions ([note](wiki/notes/restart-branch-force-push.md)).
-- This session's reports start at `journal/2026-09-26-20.md`.
+- This session's reports: `journal/2026-09-26-20.md` to `-33.md`.
