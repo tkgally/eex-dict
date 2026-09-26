@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "relax-v",
-  "slug": "relax-v",
-  "headword": "relax",
+  "id": "rest-v",
+  "slug": "rest-v",
+  "headword": "rest",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "rɪˈlæks",
+      "ipa": "rɛst",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "rɪˈlæks",
+      "ipa": "rest",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,10 +25,10 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "relaxes",
-      "past_tense": "relaxed",
-      "past_participle": "relaxed",
-      "present_participle": "relaxing"
+      "third_person_singular": "rests",
+      "past_tense": "rested",
+      "past_participle": "rested",
+      "present_participle": "resting"
     },
     "regular": true,
     "source": "rules",
@@ -47,18 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To relax is to become or make something less tight, less worried, or less strict.",
+  "core_idea": "To rest is to be still without working, to lie on or against something, or to depend on something.",
   "senses": [
     {
       "n": 1,
-      "signpost": "rest",
-      "definition": "rest or do something you enjoy, so that you stop feeling tired or worried",
+      "signpost": "relax",
+      "definition": "stop working or moving, and relax or sleep, so that you feel less tired",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "intransitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
-        "patterns": []
+        "patterns": [
+          "verb + object"
+        ]
       },
       "labels": {
         "register": [],
@@ -70,41 +72,34 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I like to relax with a good book in the evening.",
+          "text": "You should rest for a few days.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "We spent the weekend relaxing by the lake.",
+          "text": "Let's stop and rest for a while.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + adverb or preposition"
         },
         {
-          "text": "You work too hard. You need to relax more.",
+          "text": "The doctor told her to rest her injured leg.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + adverb",
-          "items": [
-            "relax completely",
-            "relax a little"
-          ]
-        },
-        {
           "type": "phrase",
           "items": [
-            "relax at home",
-            "sit back and relax",
-            "relax with a book"
+            "rest for a while",
+            "rest your eyes",
+            "rest your legs"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "rest-v",
+          "slug": "relax-v",
           "note": null
         }
       ],
@@ -122,15 +117,16 @@
     },
     {
       "n": 2,
-      "signpost": "calm down",
-      "definition": "become calmer and less nervous, or make someone calmer",
+      "signpost": "lean",
+      "definition": "put something on or against something, or be on or against it",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object + preposition + object",
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
@@ -143,33 +139,40 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Relax! Everything's going to be fine.",
+          "text": "She rested her head on his shoulder.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "A warm bath will help you relax.",
+          "text": "His bike was resting against the wall.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + adverb or preposition"
         },
         {
-          "text": "Soft music relaxes me.",
+          "text": "Her hand rested lightly on the table.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + adverb or preposition"
         }
       ],
       "collocations": [
         {
+          "type": "verb + preposition",
+          "items": [
+            "rest on something",
+            "rest against something"
+          ]
+        },
+        {
           "type": "phrase",
           "items": [
-            "help someone relax",
-            "try to relax"
+            "rest your head on something",
+            "rest your elbows on something"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "calm-down-phrv",
+          "slug": "lean-v",
           "note": null
         }
       ],
@@ -187,20 +190,21 @@
     },
     {
       "n": 3,
-      "signpost": "body",
-      "definition": "make a part of your body less tight, or become less tight",
-      "explanation": null,
+      "signpost": "depend",
+      "definition": "depend on someone or something",
+      "explanation": "**Rest with** someone means that the decision or the duty is theirs.",
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "verb + adverb or preposition"
+          "verb + preposition + object"
         ]
       },
       "labels": {
-        "register": [],
+        "register": [
+          "formal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -209,88 +213,36 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Relax your shoulders and breathe slowly.",
+          "text": "All our hopes rest on him.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "Her face relaxed into a smile.",
+          "text": "Success rests on good planning.",
           "note": null,
-          "pattern": "verb + adverb or preposition"
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "Stretching helps your muscles relax.",
+          "text": "The final decision rests with the manager.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + preposition + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "verb + preposition",
           "items": [
-            "relax your muscles",
-            "relax your shoulders",
-            "relax your grip"
+            "rest on something",
+            "rest with someone"
           ]
         }
       ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 4,
-      "signpost": "rules",
-      "definition": "make a rule or a control less strict",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "transitive",
-        "codes": [],
-        "patterns": [
-          "verb + object"
-        ]
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
+      "synonyms": [
         {
-          "text": "The school has relaxed its rules on uniforms.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "The government plans to relax some travel restrictions.",
-          "note": null,
-          "pattern": "verb + object"
+          "slug": "depend-v",
+          "note": null
         }
       ],
-      "collocations": [
-        {
-          "type": "verb + noun",
-          "items": [
-            "relax the rules",
-            "relax restrictions",
-            "relax controls"
-          ]
-        }
-      ],
-      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -304,67 +256,92 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "rest-assured",
+      "text": "rest assured",
+      "definition": "be certain that something is true or will happen",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "formal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Rest assured that we will do everything we can.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "You can rest assured that your money is safe.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
-      "slug": "relaxed-adj",
+      "slug": "rest-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "relaxing-adj",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "relaxation-n",
+      "slug": "restful-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [
-    {
-      "incorrect": "I want to relax myself this weekend.",
-      "correct": "I want to relax this weekend.",
-      "note": "**Relax** in the sense *rest* has no object; do not add **myself**."
-    }
-  ],
+  "learner_errors": [],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"relax\": in the sense *rest* it has no object in English (*I relaxed*), where many languages use a reflexive form, like *relax oneself*.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T22:25:54Z",
-    "modified": "2026-09-26T22:36:44Z",
+    "created": "2026-09-26T22:33:13Z",
+    "modified": "2026-09-26T22:36:38Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T222420Z-poh5we",
+    "run_id": "20260926T223159Z-poh5we",
     "reviews": [
       {
-        "run_id": "20260926T222420Z-poh5we",
+        "run_id": "20260926T223159Z-poh5we",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-26",
-        "file": "reviews/20260926T222420Z-poh5we/relax-v.json",
-        "ok": 51,
+        "file": "reviews/20260926T223159Z-poh5we/rest-v.json",
+        "ok": 47,
         "issues": 1,
         "blocking": 0
       },
       {
-        "run_id": "20260926T222420Z-poh5we",
+        "run_id": "20260926T223159Z-poh5we",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-26",
-        "file": "reviews/20260926T222420Z-poh5we/relax-v.json",
-        "ok": 50,
-        "issues": 2,
+        "file": "reviews/20260926T223159Z-poh5we/rest-v.json",
+        "ok": 48,
+        "issues": 0,
         "blocking": 0
       }
     ],

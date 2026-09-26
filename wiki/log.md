@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-26] build | Eight verbs: repeat to rest
+
+Ninety-eighth scheduled run (cycle 7 of this session). Drafted eight band-1 verbs: *repeat, reply, represent, require, rescue, research, respect, rest*. All 16 transcriptions verified (*require* American 2/4 plus CMU, transcribed with two final syllables like *fire*; *research* American 3/4, CMU disagreeing, first-syllable stress recorded as a variant). 17 decisions: 14 applied, 3 rejected. Fixes: `represent-v` sense 4 covers *represent someone as*; `require-v` sense 2 no longer only rules and laws, and no longer "usually passive"; `research-v` usage note cut to one clause pointing to the noun, *research into* no longer called British; passive examples on `rescue-v` and `require-v` noted as passive; *the crew was rescued* (American agreement). Back-links on *need, admire, relax, lean, depend*; a *reply*/*answer* type mismatch settled as synonyms. Spend: US$0.27; US$7.99 today.
+
 ## [2026-09-26] build | Eight verbs: regret to repair
 
 Ninety-seventh scheduled run (cycle 6 of this session). Drafted eight band-1 verbs: *regret, relate, relax, remain, remember, remind, remove, repair*. All 16 transcriptions verified (*remind*, *remove* American 3/4 with CMU disagreeing). 29 decisions: 16 applied, 13 rejected. Fixes: `remember-v` sense 3 (honoring the dead) no longer carries *be remembered as/for*, moved to sense 1; `relate-v` sense 3 no longer requires shared experience; `regret-v` sense 2 covers difficult as well as bad news; `remain-v` sense 3 reworded; *mend* "more common in British English", not "mainly British". Rejected: reviewer-a's claim that *remind* can take a thing as object (in *this song reminds me* the object is *me*), core-idea and quoted-headword objections. One back-link (*tell*). Spend: US$0.28; US$7.72 today.
