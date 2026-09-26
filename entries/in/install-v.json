@@ -1,34 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "add-v",
-  "slug": "add-v",
-  "headword": "add",
+  "id": "install-v",
+  "slug": "install-v",
+  "headword": "install",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "æd",
+      "ipa": "ɪn.ˈstɔl",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "æd",
+      "ipa": "ɪn.ˈstɔːl",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "Stress is on the second part: *in-STAWL*."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "adds",
-      "past_tense": "added",
-      "past_participle": "added",
-      "present_participle": "adding"
+      "third_person_singular": "installs",
+      "past_tense": "installed",
+      "past_participle": "installed",
+      "present_participle": "installing"
     },
     "regular": true,
     "source": "rules",
@@ -47,20 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **add** is to put something together with something else, to say something more, or to put numbers together to find a total.",
+  "core_idea": "To install is to put something or someone in place so that it is ready to work.",
   "senses": [
     {
       "n": 1,
-      "signpost": "put together",
-      "definition": "put something together with another thing to make a larger amount, number, or group",
+      "signpost": "equipment",
+      "definition": "put a machine, a system, or a piece of equipment in place so that it is ready to use",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object + preposition + object",
-          "verb + object"
+          "verb + object",
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -73,23 +73,18 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Add a little salt to the soup.",
+          "text": "They installed a new lock on the front door.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "She added her name to the list.",
+          "text": "The plumber came to install the shower.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + object"
         },
         {
-          "text": "Add two cups of flour to the bowl.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "They added a new room to the house.",
-          "note": null,
+          "text": "Security cameras were installed in the parking lot.",
+          "note": "passive",
           "pattern": "verb + object + preposition + object"
         }
       ],
@@ -97,25 +92,21 @@
         {
           "type": "verb + noun",
           "items": [
-            "add salt",
-            "add water",
-            "add an ingredient"
+            "install a heating system",
+            "install a lock",
+            "install cameras"
           ]
         },
         {
-          "type": "verb + preposition",
+          "type": "phrase",
           "items": [
-            "add to"
+            "have something installed"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "lend-v",
-          "note": null
-        },
-        {
-          "slug": "calculate-v",
+          "slug": "fit-v",
           "note": null
         }
       ],
@@ -123,22 +114,13 @@
         {
           "slug": "remove-v",
           "note": null
-        },
-        {
-          "slug": "delete-v",
-          "note": null
         }
       ],
-      "compare": [
-        {
-          "slug": "include-v",
-          "note": null
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "The thing that receives the addition is introduced by **to**: *add milk to the batter*, not *add milk in the batter*.",
+        "grammar": null,
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -147,20 +129,91 @@
     },
     {
       "n": 2,
-      "signpost": "say something more",
-      "definition": "say something more after what has already been said",
+      "signpost": "software",
+      "definition": "put a computer program onto a computer or phone so that it can be used",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + that-clause",
-          "verb + direct speech"
+          "verb + object",
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
         "register": [],
+        "region": [],
+        "domain": [
+          "computing"
+        ],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Install the app on your phone.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "Do I need to install anything before I can play the game?",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "The update installs itself when you restart the computer.",
+          "note": null,
+          "pattern": "verb + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "install an app",
+            "install software",
+            "install an update"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [
+        {
+          "slug": "uninstall-v",
+          "note": null
+        }
+      ],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 3,
+      "signpost": "in a job",
+      "definition": "put someone in an important job, often at an official event",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object",
+          "verb + object + as + noun or adjective"
+        ]
+      },
+      "labels": {
+        "register": [
+          "formal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -169,33 +222,21 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "\"And don't be late,\" she added.",
-          "note": null,
-          "pattern": "verb + direct speech"
+          "text": "The new president will be installed next month.",
+          "note": "passive",
+          "pattern": "verb + object"
         },
         {
-          "text": "He added that he would call again tomorrow.",
+          "text": "They installed her as head of the committee.",
           "note": null,
-          "pattern": "verb + that-clause"
-        },
-        {
-          "text": "I have nothing more to add.",
-          "note": null,
-          "pattern": null
+          "pattern": "verb + object + as + noun or adjective"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
-          "items": [
-            "add a comment"
-          ]
-        },
-        {
           "type": "phrase",
           "items": [
-            "nothing to add",
-            "if I may add"
+            "be installed as"
           ]
         }
       ],
@@ -211,100 +252,26 @@
         "pronunciation": null
       },
       "l1": {}
-    },
-    {
-      "n": 3,
-      "signpost": "in math",
-      "definition": "put two or more numbers together to find their total",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "transitive or intransitive",
-        "codes": [],
-        "patterns": [
-          "verb + object"
-        ]
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [
-          "mathematics",
-          "education"
-        ],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "Add 5 and 3 to get 8.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "Children learn to add before they learn to subtract.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "phrase",
-          "items": [
-            "add and subtract",
-            "add two numbers"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [
-        {
-          "slug": "subtract-v",
-          "note": null
-        }
-      ],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
     }
   ],
   "phrases": [],
   "word_family": [
     {
-      "slug": "addition-n",
+      "slug": "installation-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "additional-adj",
+      "slug": "uninstall-v",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [
-    {
-      "incorrect": "Add the sugar in the mixture.",
-      "correct": "Add the sugar to the mixture.",
-      "note": "**Add** takes **to**, not **in**, before what receives it."
-    }
-  ],
+  "learner_errors": [],
   "etymology": null,
-  "see_also": [
-    {
-      "slug": "add-up-phrv",
-      "note": "for **add up**, meaning to make sense or to calculate a total"
-    }
-  ],
+  "see_also": [],
   "adaptation": {
     "semantic": null,
     "grammar": null,
@@ -314,29 +281,29 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-20T21:35:16Z",
-    "modified": "2026-09-26T06:51:08Z",
+    "created": "2026-09-26T06:46:00Z",
+    "modified": "2026-09-26T06:51:35Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260920T213316Z-u156ny",
+    "run_id": "20260926T064312Z-c2ms4g",
     "reviews": [
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260926T064312Z-c2ms4g",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/add-v.json",
+        "date": "2026-09-26",
+        "file": "reviews/20260926T064312Z-c2ms4g/install-v.json",
         "ok": 42,
         "issues": 1,
-        "blocking": 0
+        "blocking": 1
       },
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260926T064312Z-c2ms4g",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/add-v.json",
-        "ok": 43,
-        "issues": 0,
+        "date": "2026-09-26",
+        "file": "reviews/20260926T064312Z-c2ms4g/install-v.json",
+        "ok": 38,
+        "issues": 5,
         "blocking": 0
       }
     ],

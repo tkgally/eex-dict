@@ -1,34 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "add-v",
-  "slug": "add-v",
-  "headword": "add",
+  "id": "imagine-v",
+  "slug": "imagine-v",
+  "headword": "imagine",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "æd",
+      "ipa": "ɪ.ˈmæ.dʒɪn",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "æd",
+      "ipa": "ɪ.ˈmæ.dʒɪn",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "Stress is on the second part: *ih-MAJ-in*. The **g** sounds like the **j** of **jam**."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "adds",
-      "past_tense": "added",
-      "past_participle": "added",
-      "present_participle": "adding"
+      "third_person_singular": "imagines",
+      "past_tense": "imagined",
+      "past_participle": "imagined",
+      "present_participle": "imagining"
     },
     "regular": true,
     "source": "rules",
@@ -47,20 +47,22 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **add** is to put something together with something else, to say something more, or to put numbers together to find a total.",
+  "core_idea": "To imagine is to make a picture or an idea in your mind of something that you cannot see, or that may not be true.",
   "senses": [
     {
       "n": 1,
-      "signpost": "put together",
-      "definition": "put something together with another thing to make a larger amount, number, or group",
+      "signpost": "picture",
+      "definition": "form a picture or idea of something in your mind",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object + preposition + object",
-          "verb + object"
+          "verb + object",
+          "verb + -ing form",
+          "verb + wh-clause",
+          "verb + object + -ing form"
         ]
       },
       "labels": {
@@ -73,72 +75,56 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Add a little salt to the soup.",
+          "text": "Imagine a small house by the sea.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + object"
         },
         {
-          "text": "She added her name to the list.",
+          "text": "I can't imagine living without music.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + -ing form"
         },
         {
-          "text": "Add two cups of flour to the bowl.",
+          "text": "Can you imagine how she felt?",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + wh-clause"
         },
         {
-          "text": "They added a new room to the house.",
+          "text": "Try to imagine yourself lying on a quiet beach.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": "verb + object + -ing form"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "adverb + verb",
           "items": [
-            "add salt",
-            "add water",
-            "add an ingredient"
+            "easily imagine",
+            "hardly imagine"
           ]
         },
         {
-          "type": "verb + preposition",
+          "type": "phrase",
           "items": [
-            "add to"
+            "can't imagine",
+            "can you imagine",
+            "just imagine",
+            "try to imagine"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "lend-v",
-          "note": null
-        },
-        {
-          "slug": "calculate-v",
+          "slug": "picture-v",
           "note": null
         }
       ],
-      "antonyms": [
-        {
-          "slug": "remove-v",
-          "note": null
-        },
-        {
-          "slug": "delete-v",
-          "note": null
-        }
-      ],
-      "compare": [
-        {
-          "slug": "include-v",
-          "note": null
-        }
-      ],
+      "antonyms": [],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "The thing that receives the addition is introduced by **to**: *add milk to the batter*, not *add milk in the batter*.",
+        "grammar": null,
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -147,16 +133,16 @@
     },
     {
       "n": 2,
-      "signpost": "say something more",
-      "definition": "say something more after what has already been said",
+      "signpost": "believe wrongly",
+      "definition": "think that something is happening or is true when it is not",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + that-clause",
-          "verb + direct speech"
+          "verb + object",
+          "verb + that-clause"
         ]
       },
       "labels": {
@@ -169,33 +155,27 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "\"And don't be late,\" she added.",
+          "text": "Nobody is following you. You're imagining things.",
           "note": null,
-          "pattern": "verb + direct speech"
+          "pattern": "verb + object"
         },
         {
-          "text": "He added that he would call again tomorrow.",
+          "text": "I thought I heard a knock, but I must have imagined it.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "She imagined that everyone was laughing at her.",
           "note": null,
           "pattern": "verb + that-clause"
-        },
-        {
-          "text": "I have nothing more to add.",
-          "note": null,
-          "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
-          "items": [
-            "add a comment"
-          ]
-        },
-        {
           "type": "phrase",
           "items": [
-            "nothing to add",
-            "if I may add"
+            "imagine things",
+            "must have imagined it"
           ]
         }
       ],
@@ -214,37 +194,39 @@
     },
     {
       "n": 3,
-      "signpost": "in math",
-      "definition": "put two or more numbers together to find their total",
+      "signpost": "suppose",
+      "definition": "think that something is probably true",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + that-clause"
         ]
       },
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "mathematics",
-          "education"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Add 5 and 3 to get 8.",
+          "text": "I imagine you're hungry after your long trip.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + that-clause"
         },
         {
-          "text": "Children learn to add before they learn to subtract.",
+          "text": "I imagine they'll be here soon.",
           "note": null,
+          "pattern": "verb + that-clause"
+        },
+        {
+          "text": "\"Will he come?\" \"I imagine so.\"",
+          "note": "with so",
           "pattern": null
         }
       ],
@@ -252,18 +234,22 @@
         {
           "type": "phrase",
           "items": [
-            "add and subtract",
-            "add two numbers"
+            "I imagine so",
+            "I imagine that"
           ]
         }
       ],
-      "synonyms": [],
-      "antonyms": [
+      "synonyms": [
         {
-          "slug": "subtract-v",
+          "slug": "suppose-v",
+          "note": null
+        },
+        {
+          "slug": "expect-v",
           "note": null
         }
       ],
+      "antonyms": [],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -279,12 +265,17 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "addition-n",
+      "slug": "imagination-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "additional-adj",
+      "slug": "imaginary-adj",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "imaginative-adj",
       "form": null,
       "note": null
     }
@@ -293,20 +284,15 @@
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "Add the sugar in the mixture.",
-      "correct": "Add the sugar to the mixture.",
-      "note": "**Add** takes **to**, not **in**, before what receives it."
+      "incorrect": "I can't imagine to live there.",
+      "correct": "I can't imagine living there.",
+      "note": "After **imagine**, use an **-ing** form, not a **to** infinitive."
     }
   ],
   "etymology": null,
-  "see_also": [
-    {
-      "slug": "add-up-phrv",
-      "note": "for **add up**, meaning to make sense or to calculate a total"
-    }
-  ],
+  "see_also": [],
   "adaptation": {
-    "semantic": null,
+    "semantic": "\"imagine\" has a weak use, *I imagine you're tired*, that means *I suppose*. Many languages use a different verb for this than for making a picture in the mind.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -314,29 +300,29 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-20T21:35:16Z",
-    "modified": "2026-09-26T06:51:08Z",
+    "created": "2026-09-26T06:46:00Z",
+    "modified": "2026-09-26T06:51:35Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260920T213316Z-u156ny",
+    "run_id": "20260926T064312Z-c2ms4g",
     "reviews": [
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260926T064312Z-c2ms4g",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/add-v.json",
-        "ok": 42,
-        "issues": 1,
+        "date": "2026-09-26",
+        "file": "reviews/20260926T064312Z-c2ms4g/imagine-v.json",
+        "ok": 43,
+        "issues": 0,
         "blocking": 0
       },
       {
-        "run_id": "20260920T213316Z-u156ny",
+        "run_id": "20260926T064312Z-c2ms4g",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-20",
-        "file": "reviews/20260920T213316Z-u156ny/add-v.json",
-        "ok": 43,
-        "issues": 0,
+        "date": "2026-09-26",
+        "file": "reviews/20260926T064312Z-c2ms4g/imagine-v.json",
+        "ok": 42,
+        "issues": 1,
         "blocking": 0
       }
     ],
