@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-27] lint | Eighteenth lint pass
+
+Second cycle of the 2026-09-27 18:44 run. Caps and links clean. `crossref --all --apply` wrote six back-links; five were right (*deliver/send*, *divide/share*, *fix/set*, *govern/rule*, *lay/set*); `refer-v` landed on `send-v`'s mail sense and was moved by hand to *make someone go*. `lint_vocab --all --queue` added nothing; `claim --prune` removed two stale claim files. Precision: no new switch-offs ([note](notes/reviewer-precision.md)); `reviewer-a` `inflection` 0.06 over 16 decisions is four from the twenty-decision line. The two prune-branch lines in `reviews/needs_curator.txt` closed: the branches are gone. Index, open questions, and decisions agree. Gap found: the owner's commit of 2026-09-27 raising `per_run_cap_usd` from US$1.25 to US$3.00 in `config/routine-config.json` had no log line; recorded here. Next lint due in five runs. Spend: US$0.
+
 ## [2026-09-27] review | Second round for 12 late-cycle verbs, set-v to score-v
 
 First cycle of the 2026-09-27 18:44 run, review of 12 one-round verbs written in the last cycles of 2026-09-26 (*set, put, serve, share, shape, sense, sentence, save, sell, send, seem, score*). Before the panel, missing common senses added by hand: *set* gains *set the table* (subsense), *example or record*, *work to do* (British), *broken bone*, a *sit/sat* learner error and usage note; *put* gains *tax or blame*, *consider important*, *ask or suggest*, *guess an amount*, the phrase *to put it mildly*, and a *put attention* error; *send* gains *cause a state* and *send for*; *serve* *be enough for*; *sell* *make people buy*; *save* *avoid the need*. 35 issues, 25 blocking; 35 decisions: 23 applied, 12 rejected. Both reviewers rejected a drafted *set* sense *be set to* as adjectival: removed, `set-adj` queued. *seem* sense 2 reworded around *can't seem to*. Rejected: British label on *set homework* (region means mainly), *score ninety percent* as a non-object. Spend: US$0.56; US$0.56 today.

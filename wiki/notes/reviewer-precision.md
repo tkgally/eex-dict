@@ -108,3 +108,7 @@ Disabled pairs unchanged. Live: `reviewer-a` `ALL` 0.70 (1824/2597); `reviewer-b
 ## 2026-09-26: seventeenth lint pass, no new switch-offs
 
 Disabled pairs unchanged. Live: `reviewer-a` `ALL` 0.71 (1894/2685); `reviewer-b` `ALL` 0.65 (634/980). No family under 30 percent at twenty or more decisions; `reviewer-a` `pronunciation` 0.32 (111), with no new rejection in the last five runs. `reviewer-b` `spelling-or-format` 0.51 (215), still falling on the quoted-headword flag. Under twenty: `reviewer-a` `inflection` 0.07 (15); `reviewer-b` `phrase` 0.41 (17).
+
+## 2026-09-27: eighteenth lint pass, no new switch-offs
+
+Disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (1948/2766); `reviewer-b` `ALL` 0.65 (660/1018). No live family under 30 percent at twenty or more decisions; `reviewer-a` `pronunciation` 0.32 (36/112). `reviewer-b` `spelling-or-format` 0.50 (220). Under twenty: `reviewer-a` `inflection` 0.06 (16), four decisions from the line; `reviewer-b` `phrase` 0.41 (17).
