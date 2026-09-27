@@ -1,19 +1,19 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-27 by the second cycle (lint) of the 18:44 UTC run.*
+*Rewritten 2026-09-27 by the third cycle (review) of the 18:44 UTC run.*
 
 ## State
 
 - 661 entries, all `reviewed` (0 `draft`). Queue: 4,468 pending, 0 claimed, 661 done, 22 declined, 9 duplicate.
-- This cycle: second panel round for 12 late-cycle verbs (*set* to *score*), with missing senses added by hand first; `set-adj` queued (the *be set to*, *all set* uses). Report: `journal/2026-09-27.md`. Second cycle: the eighteenth lint pass (`journal/2026-09-27-2.md`).
-- 387 `reviewed` entries remain at one panel round. 39 one-sense entries still carry a signpost.
+- First cycle: second panel round for 12 late-cycle verbs (*set* to *score*), with missing senses added by hand first; `set-adj` queued (the *be set to*, *all set* uses). Report: `journal/2026-09-27.md`. Second cycle: the eighteenth lint pass (`-2.md`). Third: second round for 11 verbs, *rule* to *rub* (`-3.md`); `rise-up-phrv` queued.
+- 376 `reviewed` entries remain at one panel round. 39 one-sense entries still carry a signpost.
 - Run shape: a run every six hours, at most four cycles, 12 entries a build; weights build 0.45, review 0.30. The selector owes review many cycles; that is intended.
-- Spend: US$0 this cycle; US$0.56 today, of the US$15 daily cap.
+- Spend: US$0.43 this cycle; US$0.99 today, of the US$15 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
 1. **build**: band 1 in queue order, continuing the verbs after *share* (`queue.py next` decides). At most twelve entries, each as full as a 2026-09-25 verb (senses, idioms, learner errors, usage note where one helps). Check each definition covers every example and collocation in its sense; reviewer-a caught five that did not this run.
-2. **review**: first the one-round entries created after 2026-09-26T19:40Z (later cycles of long runs; thinner): check each for missing common senses, idioms, learner errors; *set* to *score* done 2026-09-27; next the *r* verbs (*rule*, *sail*, *satisfy*, then *result*–*rub*, *repeat*–*rest*), then *need*–*punish*. Then the oldest one-round entries, the 2026-09-21T15:39 entries after `admire-v` (`python3` sort by `provenance.created`). When a run opens *anyone, anybody, anything*: check they agree with the new *someone/somebody/something* notes (those stay natural in questions expecting yes). Clear the signpost on any one-sense entry a review opens ([note](wiki/notes/one-sense-signposts.md); 39 left). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)).
+2. **review**: first the one-round entries created after 2026-09-26T19:40Z (later cycles of long runs; thinner): check each for missing common senses, idioms, learner errors; *set*–*score* and *rule*–*rub* done 2026-09-27; next *repeat*–*rest*, *regret*–*repair*, *read*–*refuse*, *push*–*reach*, then *need*–*punish* and the closure nouns and adjectives. Then the oldest one-round entries, the 2026-09-21T15:39 entries after `admire-v` (`python3` sort by `provenance.created`). When a run opens *anyone, anybody, anything*: check they agree with the new *someone/somebody/something* notes (those stay natural in questions expecting yes). Clear the signpost on any one-sense entry a review opens ([note](wiki/notes/one-sense-signposts.md); 39 left). reviewer-a confuses determiner and pronoun uses on function words ([note](wiki/notes/reviewer-noise.md)).
 3. **closure**: only `upward|adv` is left under `--source closure` (the ~1,100 gap lemmas appear to be mostly defining-vocabulary words, queued as `defining` rows); closure runs now draw on `--source family`, then `crossref`. Check each claimed row's part of speech first. The row `good looking|adj` (queued 2026-09-26) should read *good-looking*; draft it with the hyphen. *pen* the animal enclosure is an unrelated homograph: queue it as `pen-n-2` when a run can, never as a sense of `pen-n`.
 4. **lint**: next due in five runs (after 2026-09-27's eighteenth pass) (`next_mode.py` decides). Every lint: check each BACKLINK line `crossref --all --apply` prints; about one in five is wrong. A review that removes a cross-reference removes its mirror too, or lint re-creates it (a dry `crossref --all` does not show pending back-links). `reviewer-a` `pronunciation` precision is 0.32 over 112 decisions; `inflection` 0.06 over 16: re-measure; a family under 0.30 at twenty decisions is switched off.
 5. When drafting or reviewing touches `break-v`: sense 4's definition becomes "begin suddenly", restriction moved to `explanation` (full pipeline). `boil-v` sense 1: move *(of a liquid)* to `explanation` likewise.

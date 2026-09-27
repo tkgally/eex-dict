@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-27] review | Second round for 11 late-cycle verbs, rule-v to rub-v
+
+Third cycle of the 2026-09-27 18:44 run: *rule, sail, satisfy, result, retire, return, ride, ring, rise, roll, rub*. Added by hand first: *rule a line*; *sail* leave port (subsense) and *sail through*; *ride on* (depend) and the phrase *be riding high*; *ring* be full of sound; *rise* of bread and rise against a ruler; *roll* the dough flat and *roll your eyes*; *return* a ball (subsense). 42 issues, 22 blocking; 42 decisions: 32 applied, 10 rejected. Applied: *ring*'s ears use split into its own subsense; *retire* sense 2 now only leaving a race or game (career use moved to sense 1); *ride*'s British claims softened; *rise up* removed as a phrasal verb and queued (`rise-up-phrv`); *ruled paper* (adjectival) dropped from *rule*. Rejected: *sail* meaning leave port as not distinct; the quoted-headword flag (three times). Spend: US$0.43; US$0.99 today.
+
 ## [2026-09-27] lint | Eighteenth lint pass
 
 Second cycle of the 2026-09-27 18:44 run. Caps and links clean. `crossref --all --apply` wrote six back-links; five were right (*deliver/send*, *divide/share*, *fix/set*, *govern/rule*, *lay/set*); `refer-v` landed on `send-v`'s mail sense and was moved by hand to *make someone go*. `lint_vocab --all --queue` added nothing; `claim --prune` removed two stale claim files. Precision: no new switch-offs ([note](notes/reviewer-precision.md)); `reviewer-a` `inflection` 0.06 over 16 decisions is four from the twenty-decision line. The two prune-branch lines in `reviews/needs_curator.txt` closed: the branches are gone. Index, open questions, and decisions agree. Gap found: the owner's commit of 2026-09-27 raising `per_run_cap_usd` from US$1.25 to US$3.00 in `config/routine-config.json` had no log line; recorded here. Next lint due in five runs. Spend: US$0.
