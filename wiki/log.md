@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-27] setup | Routine: cycles restart by merge; only an empty daily budget ends a run
+
+Owner-requested review of the first three two-hour sessions (runs 92 to 106, pull requests #73 to #103, all merged). Two fixes to `routine-prompt.md`. (1) The first session stopped after three cycles and 24 minutes: Run shape step 5 ended the run when `run_budget_usd` was 0, which every lint cycle reports by design. The rule now reads the day's remaining budget (`signals.budget_remaining_usd` under US$0.50) or a refused budget check. (2) The harness refused the `--force-with-lease` push used to restart the branch each cycle; all three sessions merged `origin/main` into the branch instead and pushed plainly, with no conflicts in 31 cycles. That workaround is now the rule ([note](notes/restart-branch-force-push.md), closed). Spend: US$0.
+
 ## [2026-09-26] originality | Third check of the day: two precautionary rewrites
 
 One-hundred-sixth scheduled run (cycle 15, last of this session), originality (forced: run 100 is a multiple of 10). Ten sampled definitions: no exact-phrase match for any. Search showed two frame resemblances, rewritten: `inside-prep` sense 1 ("within the walls, sides, or edges of something...", against a published "in or into the interior or inner part") and `old-adj` sense 4 ("that you had, knew, or did before, but not any longer", against a published "...; former"). Panel on both: 11 decisions, 6 applied (all `old-adj`: sense 3 *having existed*, sense 6, *elderly* moved to see also, *come over*), 5 rejected (reviewer-a's adverb calls on `inside-prep`); reviewer-b re-run once after a parse failure. reviewer-a called six definitions "copied" with quotes that search never found, three repeating our own wording ([note](notes/reviewer-noise.md)). Verdicts: 4 original, 4 generic-overlap, 2 rewrite (`reviews/originality/2026-09-26-3.md`). Spend: US$0.13, over the US$0.10 run ceiling by a failed reviewer call; US$10.12 today.
