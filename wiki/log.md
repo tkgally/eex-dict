@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-27] setup | Runs stop at four cycles; more review, twelve entries a build
+
+At the owner's request, after a review of the 2026-09-26 sessions found entries growing thinner in the later cycles of long runs (mean entry size per build cycle fell from about 900 words to about 470 in one session; [note](notes/late-cycle-thinning.md)). `tools/run_clock.py` now counts merged cycles (`done`) and refuses a fifth; four new unit tests. `routine-prompt.md`: runs every six hours, at most four cycles, and a run ends after the current cycle once its conversation has been summarized. `config/routine-config.json`: `entries_per_run` 20 to 12; weights build 0.55 to 0.45, review 0.20 to 0.30, so the selector now owes review about fifteen cycles, which is intended: `NEXT.md` sends those reviews to the thinner entries written after 2026-09-26T19:40Z first. `config/budget.md` no longer says six runs share a day. Spend: US$0.
+
 ## [2026-09-27] setup | Routine: cycles restart by merge; only an empty daily budget ends a run
 
 Owner-requested review of the first three two-hour sessions (runs 92 to 106, pull requests #73 to #103, all merged). Two fixes to `routine-prompt.md`. (1) The first session stopped after three cycles and 24 minutes: Run shape step 5 ended the run when `run_budget_usd` was 0, which every lint cycle reports by design. The rule now reads the day's remaining budget (`signals.budget_remaining_usd` under US$0.50) or a refused budget check. (2) The harness refused the `--force-with-lease` push used to restart the branch each cycle; all three sessions merged `origin/main` into the branch instead and pushed plainly, with no conflicts in 31 cycles. That workaround is now the rule ([note](notes/restart-branch-force-push.md), closed). Spend: US$0.

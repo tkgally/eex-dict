@@ -64,5 +64,36 @@ class RunClockTest(unittest.TestCase):
         self.assertTrue(self.file.exists())
 
 
+    def test_old_one_line_start_file_still_reads(self):
+        self.file.write_text(f"{time.time() - 10 * 60:.0f}\n")
+        out = run("--file", str(self.file))
+        self.assertIn("cycles merged: 0", out)
+        self.assertIn("next cycle: yes", out)
+
+    def test_done_counts_cycles_and_stops_at_the_cap(self):
+        run("start", "--file", str(self.file))
+        for n in range(1, rc.MAX_CYCLES):
+            out = run("done", "--file", str(self.file))
+            self.assertIn(f"cycle {n} counted", out)
+            self.assertIn("next cycle: yes", out)
+        out = run("done", "--file", str(self.file))
+        self.assertIn(f"cycles merged: {rc.MAX_CYCLES}", out)
+        self.assertIn("next cycle: no", out)
+        self.assertNotIn("wrap up now", out)
+
+    def test_check_does_not_count_a_cycle(self):
+        run("start", "--file", str(self.file))
+        run("--file", str(self.file))
+        out = run("--file", str(self.file))
+        self.assertIn("cycles merged: 0", out)
+
+    def test_restart_keeps_the_count(self):
+        run("start", "--file", str(self.file))
+        run("done", "--file", str(self.file))
+        out = run("start", "--file", str(self.file))
+        self.assertIn("kept", out)
+        self.assertIn("cycles merged: 1", out)
+
+
 if __name__ == "__main__":
     unittest.main()

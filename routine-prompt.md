@@ -1,14 +1,14 @@
 # routine-prompt.md — the scheduled Routine
 
-You are one unattended run of the **TKG English Learner's Dictionary**, an original English-English learner's dictionary of JSON entries published as a static site. Runs are scheduled every three hours and may overlap. A run lasts about two hours and is a series of **cycles**: each cycle does one unit of work chosen by a selector, verifies it, records it, and merges its own pull request, and the run starts cycle after cycle until the run clock says stop. Nobody answers questions; the record-assumption-and-proceed rule applies (`resume-prompt.md`). Follow this file literally, in order. It does not restate the rules: read `CLAUDE.md` first, then `resume-prompt.md`, `NEXT.md`, `wiki/index.md`, and `inbox/`; before drafting or reviewing an entry read `wiki/style-guide.md`, `wiki/conventions.md` section 2, `schema/entry.schema.json`, `schema/vocabularies.json`, and one existing entry of the same part of speech as a model of the shape.
+You are one unattended run of the **TKG English Learner's Dictionary**, an original English-English learner's dictionary of JSON entries published as a static site. Runs are scheduled every six hours. A run is a short series of **cycles**, at most four: each cycle does one unit of work chosen by a selector, verifies it, records it, and merges its own pull request, and the run starts cycle after cycle until the run clock says stop. The cap exists because entries grew thinner in the later cycles of long runs; every cycle's entries must be as full as the first cycle's. Nobody answers questions; the record-assumption-and-proceed rule applies (`resume-prompt.md`). Follow this file literally, in order. It does not restate the rules: read `CLAUDE.md` first, then `resume-prompt.md`, `NEXT.md`, `wiki/index.md`, and `inbox/`; before drafting or reviewing an entry read `wiki/style-guide.md`, `wiki/conventions.md` section 2, `schema/entry.schema.json`, `schema/vocabularies.json`, and one existing entry of the same part of speech as a model of the shape.
 
 ## Run shape: cycles until the clock says stop
 
-The run's first command is `python3 tools/run_clock.py start` (it records the start time; a repeat does not reset it).
+The run's first command is `python3 tools/run_clock.py start` (it records the start time and a cycle count; a repeat resets neither).
 
 1. **Cycle 1** is section 0 (once per run), then sections 1 to 6. Cycles 2, 3, ... start at section 1. Each cycle is complete on its own: its own run id, claim file, metrics line, journal entry, `NEXT.md`, pull request and merge, so a later cycle cut short loses nothing earlier.
-2. **Each cycle counts as a run** for every per-run rule: the 20-entry cap, `per_run_cap_usd`, the claim cap, one `metrics.py` call, one log entry.
-3. **After each cycle's merge**, `python3 tools/run_clock.py`. `next cycle: yes` → bring the merged `main` into the branch (a merge, never a reset or force push: the harness refuses force pushes), take a fresh run id, and begin at section 1:
+2. **Each cycle counts as a run** for every per-run rule: the 20-entry cap (the selector sets 12), `per_run_cap_usd`, the claim cap, one `metrics.py` call, one log entry.
+3. **After each cycle's merge**, `python3 tools/run_clock.py done` (it counts the cycle). `next cycle: yes` → bring the merged `main` into the branch (a merge, never a reset or force push: the harness refuses force pushes), take a fresh run id, and begin at section 1:
    ```bash
    git fetch --prune origin && git merge origin/main --no-edit
    git diff --quiet origin/main || echo "branch differs from main: stop and look"
@@ -17,7 +17,7 @@ The run's first command is `python3 tools/run_clock.py start` (it records the st
    `next cycle: no`, or a cycle whose pull request did not merge (failed twice, or pending at the poll cap) → end the run (section 6, step 8). Never start a cycle on top of an unmerged one.
 4. **Within a cycle**, `python3 tools/run_clock.py` between batches (every few entries, and before each paid call). Once it prints `wrap up now`, stop drafting wherever it stands, release unstarted claims (`queue.py set ... pending`, remove them from the claim file), and go to the pipeline with what you have.
 5. **Budget ends the run early.** When the selector's `signals.budget_remaining_usd` (the day's budget) is under US$0.50 or a budget check is refused, do that cycle's unpaid work (section 5) and end the run: the day's budget resets at UTC midnight, and more unpaid cycles would only lint an unchanged dictionary. `run_budget_usd` 0 in an unpaid mode (lint, site) is normal and ends nothing.
-6. **Sizes bound a cycle, not the context window.** Read "half of your context" in section 5 as the context this cycle has used. If the harness warns that context is running low, finish the current cycle and end the run.
+6. **Sizes bound a cycle, not the context window.** Read "half of your context" in section 5 as the context this cycle has used. If the harness warns that context is running low, or the earlier conversation has been summarized, finish the current cycle and end the run: a summary drops the style guide's detail, and entries drafted after one come out thinner.
 7. **Start every cycle by re-reading** this section and the section for the mode the selector picks; in a long run the early conversation may have been summarized.
 
 ## 0. Pre-flight
@@ -39,7 +39,7 @@ python3 tools/next_mode.py
 
 **build** — new entries from the queue.
 1. `python3 tools/claim.py --from-queue --n <params.max_new_entries>` (band 1 first by default; the tool skips slugs claimed on any branch). Commit nothing yet; the claim file is committed with the entries.
-2. For each claimed slug, draft the entry from your own knowledge and the style guide (never from any published dictionary), at the path `python3 tools/entry_path.py <slugs>` prints; every field filled, `provenance.status: draft`, `provenance.drafted_by` the slug of the `drafter` role in `config/models.md`, `provenance.run_id` your run id. Ten to fifteen substantial entries are a better run than twenty thin ones. A word you decline to write: `python3 tools/queue.py set "<headword>" <pos> declined --note "<reason>"`, one line in `reviews/needs_curator.txt`, remove it from the claim file, move on; never argue with or retry a refusal in the same run.
+2. For each claimed slug, draft the entry from your own knowledge and the style guide (never from any published dictionary), at the path `python3 tools/entry_path.py <slugs>` prints; every field filled, `provenance.status: draft`, `provenance.drafted_by` the slug of the `drafter` role in `config/models.md`, `provenance.run_id` your run id. Fewer, fuller entries beat more thin ones; the selector allows twelve. A word you decline to write: `python3 tools/queue.py set "<headword>" <pos> declined --note "<reason>"`, one line in `reviews/needs_curator.txt`, remove it from the claim file, move on; never argue with or retry a refusal in the same run.
 3. Run the pipeline (section 3) on the batch. Then `python3 tools/lint_vocab.py --queue <files>` to queue closure candidates, and `python3 tools/queue.py sync`.
 
 **review** — a second reading of existing entries: all `draft` entries first, then `reviewed` entries that have had only one panel round (`params.block_size` at most), those flagged `markup-pending` before the rest. Run `tools/review_panel.py` on the block, adjudicate (section 4), fix, `tools/validate.py`, `tools/lint_vocab.py`, `tools/crossref.py`; set `reviewed` on drafts whose blocking issues are settled. While an entry flagged `markup-pending` is open, add the inline marks of style guide section 6 to its prose by hand, field by field (never by a script or a pattern), and remove the flag.
@@ -108,7 +108,7 @@ Minor issues: fix the clear ones while the entry is open; log them with the same
 ## Quick reference
 
 ```bash
-python3 tools/run_clock.py start | (no argument: elapsed, next cycle, wrap up now)
+python3 tools/run_clock.py start | done | (no argument: elapsed, cycles, next cycle, wrap up now)
 python3 tools/claim.py --id | --taken | --from-queue --n N [--source S] | --prune
 python3 tools/next_mode.py [--explain]
 python3 tools/queue.py list|add|set|next|sync|stamp|counts
