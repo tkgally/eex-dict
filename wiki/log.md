@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-27] review | Second round for 12 late-cycle verbs, set-v to score-v
+
+First cycle of the 2026-09-27 18:44 run, review of 12 one-round verbs written in the last cycles of 2026-09-26 (*set, put, serve, share, shape, sense, sentence, save, sell, send, seem, score*). Before the panel, missing common senses added by hand: *set* gains *set the table* (subsense), *example or record*, *work to do* (British), *broken bone*, a *sit/sat* learner error and usage note; *put* gains *tax or blame*, *consider important*, *ask or suggest*, *guess an amount*, the phrase *to put it mildly*, and a *put attention* error; *send* gains *cause a state* and *send for*; *serve* *be enough for*; *sell* *make people buy*; *save* *avoid the need*. 35 issues, 25 blocking; 35 decisions: 23 applied, 12 rejected. Both reviewers rejected a drafted *set* sense *be set to* as adjectival: removed, `set-adj` queued. *seem* sense 2 reworded around *can't seem to*. Rejected: British label on *set homework* (region means mainly), *score ninety percent* as a non-object. Spend: US$0.56; US$0.56 today.
+
 ## [2026-09-27] setup | Runs stop at four cycles; more review, twelve entries a build
 
 At the owner's request, after a review of the 2026-09-26 sessions found entries growing thinner in the later cycles of long runs (mean entry size per build cycle fell from about 900 words to about 470 in one session; [note](notes/late-cycle-thinning.md)). `tools/run_clock.py` now counts merged cycles (`done`) and refuses a fifth; four new unit tests. `routine-prompt.md`: runs every six hours, at most four cycles, and a run ends after the current cycle once its conversation has been summarized. `config/routine-config.json`: `entries_per_run` 20 to 12; weights build 0.55 to 0.45, review 0.20 to 0.30, so the selector now owes review about fifteen cycles, which is intended: `NEXT.md` sends those reviews to the thinner entries written after 2026-09-26T19:40Z first. `config/budget.md` no longer says six runs share a day. Spend: US$0.
