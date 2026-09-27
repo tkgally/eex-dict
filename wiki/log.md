@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-27] review | Second round for 16 late-cycle verbs, repeat-v to repair-v
+
+Fourth and last cycle of the 2026-09-27 18:44 run: *repeat, reply, represent, require, rescue, research, respect, rest, regret, relate, relax, remain, remember, remind, remove, repair*. These were fuller than the *s* verbs; one sense added by hand (*remember me to someone*, old-fashioned). 29 issues, 14 blocking; 29 decisions: 14 applied, 15 rejected. Applied: *represent* sense 3 now *be or amount to*; *respect* sense 2 no longer only *treat with care*; *rest* sense 3 covers *rests with someone*; *remind* sense 2 covers connection as well as likeness; absolute claims softened in *reply*'s and *remain*'s discriminations and *repeat*'s learner error; notes added to *remove*'s *delete* synonym and *install* antonym instead of dropping the symmetric pair. Rejected: `reviewer-a` read *remind*'s person-object note as a subject claim (twice); formal labels on *require* and *represent* kept; the quoted-headword flag (five times). Spend: US$0.52; US$1.51 today.
+
 ## [2026-09-27] review | Second round for 11 late-cycle verbs, rule-v to rub-v
 
 Third cycle of the 2026-09-27 18:44 run: *rule, sail, satisfy, result, retire, return, ride, ring, rise, roll, rub*. Added by hand first: *rule a line*; *sail* leave port (subsense) and *sail through*; *ride on* (depend) and the phrase *be riding high*; *ring* be full of sound; *rise* of bread and rise against a ruler; *roll* the dough flat and *roll your eyes*; *return* a ball (subsense). 42 issues, 22 blocking; 42 decisions: 32 applied, 10 rejected. Applied: *ring*'s ears use split into its own subsense; *retire* sense 2 now only leaving a race or game (career use moved to sense 1); *ride*'s British claims softened; *rise up* removed as a phrasal verb and queued (`rise-up-phrv`); *ruled paper* (adjectival) dropped from *rule*. Rejected: *sail* meaning leave port as not distinct; the quoted-headword flag (three times). Spend: US$0.43; US$0.99 today.
