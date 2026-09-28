@@ -706,7 +706,7 @@ electric	adj	1	defining	pending	2026-09-16	votes 1
 electricity	n	1	defining	pending	2026-09-16	votes 1
 electronic	adj	1	defining	pending	2026-09-16	votes 1
 else	adv	1	defining	pending	2026-09-16	votes 1
-email	n	1	defining	pending	2026-09-16	votes 1
+email	n	1	defining	pending	2026-09-16	votes 1; referenced by mail-n
 emergency	n	1	defining	pending	2026-09-16	votes 3
 emotion	n	1	defining	pending	2026-09-16	votes 3
 emotional	adj	1	defining	pending	2026-09-16	votes 1
@@ -864,7 +864,7 @@ fog	n	1	defining	pending	2026-09-16	votes 1
 fold	v	1	defining	done	2026-09-16	votes 3
 folder	n	1	defining	pending	2026-09-16	votes 1; referenced by fold-v
 follow	v	1	defining	done	2026-09-16	votes 3
-following	adj	1	defining	pending	2026-09-16	votes 1; referenced by follow-v
+following	adj	1	defining	pending	2026-09-16	votes 1; referenced by follow-v; referenced by following-prep
 food	n	1	defining	pending	2026-09-16	votes 3
 fool	n	1	defining	pending	2026-09-16	votes 1
 foolish	adj	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
@@ -2416,7 +2416,7 @@ unlock	v	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part o
 unpack	v	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech; referenced by pack-v
 until	conj	1	defining	done	2026-09-16	votes 3; stale claim, no backing file, see queue-stale-claimed-rows.md
 until	prep	1	defining	done	2026-09-16	votes 3; referenced by by-prep; stale claim, no backing file, see queue-stale-claimed-rows.md; referenced by until-conj; referenced by through-prep
-up	adv	1	defining	pending	2026-09-16	votes 3; referenced by up-prep
+up	adv	1	defining	pending	2026-09-16	votes 3; referenced by up-prep; referenced by upward-adv
 up	prep	1	defining	done	2026-09-16	votes 3; referenced by down-prep; stale claim, no backing file, see queue-stale-claimed-rows.md
 upload	n	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
 upon	prep	1	defining	done	2026-09-16	votes 2; stale claim, no backing file, see queue-stale-claimed-rows.md
@@ -2460,7 +2460,7 @@ vs.	abbr	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part o
 wage	n	1	defining	pending	2026-09-16	votes 2
 wait	v	1	defining	pending	2026-09-16	votes 1; referenced by expect-v; referenced by hold-v
 wait for	phrv	1	defining	pending	2026-09-16	votes 2
-wake	v	1	defining	pending	2026-09-16	votes 3
+wake	v	1	defining	pending	2026-09-16	votes 3; referenced by awaken-v
 wake up	phrv	1	defining	pending	2026-09-16	votes 3
 walk	n	1	defining	pending	2026-09-16	votes 3
 walk	v	1	defining	pending	2026-09-16	votes 3; referenced by run-v
@@ -2573,7 +2573,7 @@ worm	n	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of 
 worn	adj	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
 worried	adj	1	defining	pending	2026-09-16	votes 1; referenced by afraid-adj; referenced by anxious-adj; referenced by concerning-adj
 worry	n	1	defining	pending	2026-09-16	votes 3
-worry	v	1	defining	pending	2026-09-16	votes 3; referenced by fear-v
+worry	v	1	defining	pending	2026-09-16	votes 3; referenced by fear-v; referenced by alarm-v
 worth	adj	1	defining	pending	2026-09-16	votes 2
 would	modal	1	defining	done	2026-09-16	votes 2; referenced by used-to-modal
 wound	n	1	defining	pending	2026-09-16	votes 3
@@ -3487,7 +3487,7 @@ porch	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,word
 pork	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
 portable	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 portion	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
-post	n	1	band	pending	2026-09-16	panel median 1 (wordlist-1=1,wordlist-2=1,wordlist-3=2)
+post	n	1	band	pending	2026-09-16	panel median 1 (wordlist-1=1,wordlist-2=1,wordlist-3=2); referenced by mail-n
 post	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=1,wordlist-3=3)
 poultry	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=2)
 poverty	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
@@ -3921,11 +3921,11 @@ applause	n	3	crossref	pending	2026-09-16	referenced by hand-n
 array	n	3	crossref	pending	2026-09-16	referenced by bank-n
 aspect	n	3	crossref	pending	2026-09-16	referenced by way-n
 bank holiday	n	3	family	pending	2026-09-16	referenced by bank-n
-bank on	phrv	3	family	pending	2026-09-16	referenced by bank-n
-bank	v	3	family	pending	2026-09-16	referenced by bank-n
+bank on	phrv	3	family	pending	2026-09-16	referenced by bank-n; referenced by bank-v
+bank	v	3	family	done	2026-09-16	referenced by bank-n
 bankable	adj	3	family	pending	2026-09-16	referenced by bank-n
-banker	n	3	family	pending	2026-09-16	referenced by bank-n
-banking	n	3	family	pending	2026-09-16	referenced by bank-n
+banker	n	3	family	pending	2026-09-16	referenced by bank-n; referenced by bank-v
+banking	n	3	family	pending	2026-09-16	referenced by bank-n; referenced by bank-v
 banknote	n	3	family	pending	2026-09-16	referenced by bank-n
 bankruptcy	n	3	family	pending	2026-09-16	referenced by bank-n
 because of	prep	3	crossref	pending	2026-09-16	referenced by because-conj
@@ -4188,7 +4188,7 @@ see off	phrv	3	crossref	pending	2026-09-16	referenced by see-v
 see out	phrv	3	family	pending	2026-09-16	referenced by see-v
 see through	phrv	3	family	pending	2026-09-16	referenced by see-v
 see to	phrv	3	family	pending	2026-09-16	referenced by see-v
-seeing	conj	3	family	pending	2026-09-16	referenced by see-v
+seeing	conj	3	family	done	2026-09-16	referenced by see-v
 seize	v	3	crossref	pending	2026-09-16	referenced by take-v
 self explanatory	adj	3	family	pending	2026-09-16	referenced by explain-v
 shears	n	3	crossref	pending	2026-09-16	referenced by scissors-n
@@ -4346,7 +4346,7 @@ add up	phrv	3	crossref	pending	2026-09-20	referenced by add-v; referenced by cou
 adulthood	n	3	family	pending	2026-09-20	referenced by adult-n; referenced by adult-adj
 apologetic	adj	3	family	pending	2026-09-20	referenced by apologize-v
 apology	n	3	family	pending	2026-09-20	referenced by apologize-v
-awaken	v	3	family	pending	2026-09-20	referenced by awake-adj
+awaken	v	3	family	done	2026-09-20	referenced by awake-adj
 capable	adj	3	crossref	pending	2026-09-20	referenced by able-adj
 eager	adj	3	crossref	done	2026-09-20	referenced by anxious-adj
 imaginary	adj	3	crossref	pending	2026-09-20	referenced by actual-adj; referenced by imagine-v
@@ -4404,8 +4404,8 @@ affecting	adj	3	family	pending	2026-09-21	referenced by affect-v
 aim	v	3	family	done	2026-09-21	referenced by aim-n
 airline	n	3	family	pending	2026-09-21	referenced by air-n; referenced by airport-n
 airplane	n	3	family	pending	2026-09-21	referenced by air-n; referenced by aircraft-n; referenced by airport-n
-alarm	v	3	family	pending	2026-09-21	referenced by alarm-n
-alarmed	adj	3	family	pending	2026-09-21	referenced by alarm-n
+alarm	v	3	family	done	2026-09-21	referenced by alarm-n
+alarmed	adj	3	family	pending	2026-09-21	referenced by alarm-n; referenced by alarm-v
 behave	v	3	crossref	pending	2026-09-21	referenced by act-v
 influence	v	3	crossref	pending	2026-09-21	referenced by affect-v; referenced by inform-v; referenced by shape-v
 promote	v	3	crossref	pending	2026-09-21	referenced by advertise-v; referenced by encourage-v; referenced by push-v
@@ -4764,7 +4764,7 @@ fearless	adj	3	family	pending	2026-09-25	referenced by fear-v
 fed up	adj	3	family	pending	2026-09-25	referenced by feed-v
 feed	n	3	family	pending	2026-09-25	referenced by feed-v
 feel	n	3	family	pending	2026-09-25	referenced by feel-v
-frighten	v	3	crossref	pending	2026-09-25	referenced by fear-v
+frighten	v	3	crossref	pending	2026-09-25	referenced by fear-v; referenced by alarm-v
 unexpected	adj	3	family	pending	2026-09-25	referenced by expect-v
 attach	v	3	crossref	pending	2026-09-25	referenced by fix-v; referenced by enclose-v
 fight back	phrv	3	crossref	pending	2026-09-25	referenced by fight-v
@@ -4803,8 +4803,8 @@ focused	adj	3	family	pending	2026-09-25	referenced by focus-v
 fold	n	3	family	pending	2026-09-25	referenced by fold-v
 folding	adj	3	family	pending	2026-09-25	referenced by fold-v
 follow up	phrv	3	crossref	pending	2026-09-25	referenced by follow-v
-following	n	3	family	pending	2026-09-25	referenced by follow-v
-following	prep	3	family	pending	2026-09-25	referenced by follow-v
+following	n	3	family	pending	2026-09-25	referenced by follow-v; referenced by following-prep
+following	prep	3	family	done	2026-09-25	referenced by follow-v
 forced	adj	3	family	pending	2026-09-25	referenced by force-v
 forceful	adj	3	family	pending	2026-09-25	referenced by force-v
 forgetful	adj	3	family	pending	2026-09-25	referenced by forget-v
@@ -5042,7 +5042,7 @@ pull up	phrv	3	crossref	pending	2026-09-26	referenced by pull-v
 reward	v	3	crossref	pending	2026-09-26	referenced by punish-v
 attraction	n	3	family	pending	2026-09-26	referenced by attractive-adj
 attractively	adv	3	family	pending	2026-09-26	referenced by attractive-adj
-axe	v	3	family	pending	2026-09-26	referenced by axe-n
+axe	v	3	family	done	2026-09-26	referenced by axe-n
 bet	v	3	crossref	pending	2026-09-26	referenced by gamble-v
 biologically	adv	3	family	pending	2026-09-26	referenced by biological-adj
 biologist	n	3	family	pending	2026-09-26	referenced by biological-adj
@@ -5126,7 +5126,7 @@ rub	n	3	family	pending	2026-09-26	referenced by rub-v
 bell	n	3	closure	done	2026-09-26	used in ring-v senses[0].definition; pos guessed (no morphological signal), check before claiming
 motorcycle	n	3	closure	done	2026-09-26	used in ride-v senses[0].definition; pos guessed (no morphological signal), check before claiming
 upward	n	3	closure	declined	2026-09-26	used in rise-v senses[0].definition; pos guessed (no morphological signal), check before claiming; bogus pos guess: upward is an adverb or adjective, not a noun; queued upward|adv instead
-upward	adv	3	closure	pending	2026-09-26	used in rise-v senses[0].definition (replaces bogus upward|n)
+upward	adv	3	closure	done	2026-09-26	used in rise-v senses[0].definition (replaces bogus upward|n)
 achievable	adj	3	family	pending	2026-09-26	referenced by achieve-v
 aimless	adj	3	family	pending	2026-09-26	referenced by aim-v
 doorbell	n	3	crossref	pending	2026-09-26	referenced by bell-n
@@ -5149,7 +5149,7 @@ scorer	n	3	family	pending	2026-09-26	referenced by score-v
 seeming	adj	3	family	pending	2026-09-26	referenced by seem-v
 sell out	phrv	3	crossref	pending	2026-09-26	referenced by sell-v
 sender	n	3	family	pending	2026-09-26	referenced by send-v
-mail	n	3	closure	pending	2026-09-26	used in send-v senses[0].definition; pos guessed (no morphological signal), check before claiming
+mail	n	3	closure	done	2026-09-26	used in send-v senses[0].definition; pos guessed (no morphological signal), check before claiming
 set	n	3	family	pending	2026-09-26	referenced by set-v
 set out	phrv	3	crossref	pending	2026-09-26	referenced by set-v
 setting	n	3	family	pending	2026-09-26	referenced by set-v
@@ -5182,3 +5182,10 @@ breathe out	phrv	3	crossref	pending	2026-09-28	referenced by breathe-v
 broken	adj	3	family	pending	2026-09-28	referenced by break-v
 build on	phrv	3	crossref	pending	2026-09-28	referenced by build-v
 dig up	phrv	3	crossref	pending	2026-09-28	referenced by bury-v
+alarming	adj	3	family	pending	2026-09-28	referenced by alarm-v
+awakening	n	3	family	pending	2026-09-28	referenced by awaken-v
+cancel	v	3	crossref	pending	2026-09-28	referenced by axe-v
+downward	adv	3	crossref	pending	2026-09-28	referenced by upward-adv
+mail	v	3	family	pending	2026-09-28	referenced by mail-n
+mailbox	n	3	family	pending	2026-09-28	referenced by mail-n
+upward	adj	3	family	pending	2026-09-28	referenced by upward-adv
