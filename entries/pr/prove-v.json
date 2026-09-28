@@ -61,7 +61,8 @@
         "patterns": [
           "verb + object",
           "verb + that-clause",
-          "verb + object + adjective"
+          "verb + object + adjective",
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -87,9 +88,22 @@
           "text": "They have no way to prove it.",
           "note": null,
           "pattern": "verb + object"
+        },
+        {
+          "text": "You don't have to prove anything to me.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
         }
       ],
       "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "prove your innocence",
+            "prove a point",
+            "prove a theory"
+          ]
+        },
         {
           "type": "phrase",
           "items": [
@@ -128,6 +142,7 @@
         "codes": [],
         "patterns": [
           "verb + adjective",
+          "verb + noun complement",
           "verb + to-infinitive"
         ]
       },
@@ -149,6 +164,11 @@
           "text": "The new road has proved very useful.",
           "note": null,
           "pattern": "verb + adjective"
+        },
+        {
+          "text": "The trip proved a great success.",
+          "note": null,
+          "pattern": "verb + noun complement"
         },
         {
           "text": "The story proved to be true.",
@@ -240,21 +260,27 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
-  "learner_errors": [],
+  "usage_note": "The past participle is usually **proved**: *They have proved it*. **Proven** is also common, especially in American English, and it is the usual form before a noun: *a proven method*. The fixed phrase *innocent until proven guilty* also uses it.",
+  "learner_errors": [
+    {
+      "incorrect": "Can I prove this dress?",
+      "correct": "Can I try on this dress?",
+      "note": "To test something by using it, eating it, or wearing it is **try** (or **try on** for clothes), not **prove**."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
     "grammar": null,
     "culture": null,
-    "false_friends": null,
+    "false_friends": "\"prove\" means *show that something is true*. It does not mean *try*, *test*, or *taste*, although a word that looks like it has those meanings in several languages.",
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-09-26T20:24:49Z",
-    "modified": "2026-09-26T20:26:02Z",
+    "modified": "2026-09-28T06:46:42Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T202403Z-iujuq0",
     "reviews": [
@@ -276,6 +302,26 @@
         "file": "reviews/20260926T202403Z-iujuq0/prove-v.json",
         "ok": 43,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T064413Z-p4jla1",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T064413Z-p4jla1/prove-v.json",
+        "ok": 43,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T064413Z-p4jla1",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T064413Z-p4jla1/prove-v.json",
+        "ok": 42,
+        "issues": 1,
         "blocking": 0
       }
     ],
