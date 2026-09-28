@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **build** is to make something by putting parts or materials together, to develop something slowly, or to grow stronger or greater over time.",
+  "core_idea": "To **build** is to put things together so that something new stands or grows: a house, a business, a feeling, or a part inside a larger thing.",
   "senses": [
     {
       "n": 1,
@@ -59,7 +59,9 @@
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + preposition + object",
+          "verb + two objects"
         ]
       },
       "labels": {
@@ -82,9 +84,9 @@
           "pattern": "verb + object"
         },
         {
-          "text": "Beavers build dams out of branches and mud.",
+          "text": "He built his daughter a small wooden desk.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + two objects"
         },
         {
           "text": "This bridge was built over a hundred years ago.",
@@ -98,7 +100,15 @@
           "items": [
             "build a house",
             "build a bridge",
-            "build a wall"
+            "build a wall",
+            "build a fire"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "build something out of something",
+            "build something from scratch"
           ]
         }
       ],
@@ -196,7 +206,9 @@
         "countability": null,
         "transitivity": "intransitive",
         "codes": [],
-        "patterns": []
+        "patterns": [
+          "verb + adverb or preposition"
+        ]
       },
       "labels": {
         "register": [],
@@ -230,6 +242,74 @@
             "tension builds",
             "pressure builds",
             "excitement builds"
+          ]
+        },
+        {
+          "type": "verb + adverb",
+          "items": [
+            "build slowly",
+            "build steadily"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "include",
+      "definition": "make something a part of something else from the beginning",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object + preposition + object",
+          "usually passive"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The oven has a timer built into the door.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "We built some extra time into the schedule.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "Safety was built into the design from the start.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "build something into something",
+            "built into the wall"
           ]
         }
       ],
@@ -267,6 +347,11 @@
       "incorrect": "The house is building now.",
       "correct": "The house is being built now.",
       "note": "In sense 1, the thing constructed is the object, not the subject: use the passive, **is being built**."
+    },
+    {
+      "incorrect": "My grandfather builded this house.",
+      "correct": "My grandfather built this house.",
+      "note": "The past tense and past participle are **built**, not **builded**."
     }
   ],
   "etymology": null,
@@ -274,6 +359,10 @@
     {
       "slug": "build-up-phrv",
       "note": "increase slowly, often used with sense 3"
+    },
+    {
+      "slug": "build-on-phrv",
+      "note": "use something as a base for further success: *build on what you have learned*"
     }
   ],
   "adaptation": {
@@ -286,7 +375,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T15:44:00Z",
-    "modified": "2026-09-22T21:44:27Z",
+    "modified": "2026-09-28T19:00:53Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T154320Z-28os9u",
     "reviews": [
@@ -307,6 +396,26 @@
         "date": "2026-09-22",
         "file": "reviews/20260922T154320Z-28os9u/build-v.json",
         "ok": 42,
+        "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T185705Z-5zt820",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T185705Z-5zt820/build-v.json",
+        "ok": 51,
+        "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T185705Z-5zt820",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T185705Z-5zt820/build-v.json",
+        "ok": 51,
         "issues": 1,
         "blocking": 0
       }

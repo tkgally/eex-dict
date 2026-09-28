@@ -47,12 +47,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": null,
+  "core_idea": "To **brush** is to move a brush, or something light such as a hand, quickly across a surface.",
   "senses": [
     {
       "n": 1,
       "signpost": "clean or tidy",
-      "definition": "clean, tidy, or arrange something with a brush",
+      "definition": "clean or tidy something, such as your teeth or hair, with a brush",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -82,12 +82,7 @@
           "pattern": "verb + object"
         },
         {
-          "text": "He brushed the dust off his jacket.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "Brush the crumbs off the table.",
+          "text": "Do you brush your dog every day?",
           "note": null,
           "pattern": "verb + object"
         }
@@ -98,7 +93,79 @@
           "items": [
             "brush your teeth",
             "brush your hair",
-            "brush the dust off"
+            "brush a coat"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [
+        {
+          "slug": "comb-v",
+          "note": "**comb** is done with a comb, a flat tool with a row of thin teeth"
+        }
+      ],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 2,
+      "signpost": "remove",
+      "definition": "remove something from a surface with a brush or with quick, light movements of your hand",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object + adverb",
+          "verb + object + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "He brushed the dust off his jacket.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "Brush the crumbs off the table, please.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "She brushed the hair out of her eyes.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "Let me brush that snow off.",
+          "note": null,
+          "pattern": "verb + object + adverb"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "brush something off",
+            "brush something away",
+            "brush the dust off something"
           ]
         }
       ],
@@ -116,7 +183,7 @@
       "l1": {}
     },
     {
-      "n": 2,
+      "n": 3,
       "signpost": "touch lightly",
       "definition": "touch something lightly while passing",
       "explanation": null,
@@ -175,6 +242,63 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "cooking",
+      "definition": "put a thin layer of a liquid on something with a brush",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [
+          "cooking"
+        ],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Brush the top of the bread with milk.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "Brush the fish with a little oil before you cook it.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "brush something with oil",
+            "brush something with egg"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [],
@@ -187,7 +311,13 @@
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "I wash my teeth every morning.",
+      "correct": "I brush my teeth every morning.",
+      "note": "In English you **brush** your teeth; British English also says **clean** your teeth."
+    }
+  ],
   "etymology": null,
   "see_also": [
     {
@@ -200,7 +330,7 @@
     }
   ],
   "adaptation": {
-    "semantic": null,
+    "semantic": "Many languages use a verb meaning *wash* or *polish* for teeth; English says **brush your teeth**.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -209,7 +339,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T15:44:00Z",
-    "modified": "2026-09-22T16:03:27Z",
+    "modified": "2026-09-28T19:00:26Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T154320Z-28os9u",
     "reviews": [
@@ -230,6 +360,26 @@
         "date": "2026-09-22",
         "file": "reviews/20260922T154320Z-28os9u/brush-v.json",
         "ok": 34,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T185705Z-5zt820",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T185705Z-5zt820/brush-v.json",
+        "ok": 52,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T185705Z-5zt820",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T185705Z-5zt820/brush-v.json",
+        "ok": 52,
         "issues": 0,
         "blocking": 0
       }
