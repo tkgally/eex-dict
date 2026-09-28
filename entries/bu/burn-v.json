@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **burn** is to be destroyed by fire, to damage something with heat, to use something as fuel, or to feel an emotion very strongly.",
+  "core_idea": "To **burn** is to be on fire or to act like fire: to hurt something with heat, to use up fuel, or to feel something hot and strong.",
   "senses": [
     {
       "n": 1,
@@ -85,14 +85,26 @@
           "text": "The candle burned all night.",
           "note": null,
           "pattern": null
+        },
+        {
+          "text": "The old barn burned to the ground.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adverb + verb",
+          "type": "verb + adverb",
           "items": [
             "burn slowly",
             "burn brightly"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "burn to the ground",
+            "burn something to the ground"
           ]
         }
       ],
@@ -142,7 +154,7 @@
           "pattern": "verb + object"
         },
         {
-          "text": "The sun burned her skin.",
+          "text": "I burned my tongue on the hot soup.",
           "note": null,
           "pattern": "verb + object"
         },
@@ -157,13 +169,20 @@
           "type": "verb + noun",
           "items": [
             "burn your hand",
+            "burn your tongue",
             "burn the toast"
           ]
         },
         {
-          "type": "adverb + verb",
+          "type": "verb + adverb",
           "items": [
             "burn easily"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "burn yourself on something"
           ]
         }
       ],
@@ -225,7 +244,37 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "use up energy in the body",
+          "explanation": null,
+          "grammar": null,
+          "labels": null,
+          "examples": [
+            {
+              "text": "Running burns a lot of calories.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "A long walk is a good way to burn fat.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "burn calories",
+                "burn fat",
+                "burn energy"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -237,6 +286,67 @@
     },
     {
       "n": 4,
+      "signpost": "feel hot",
+      "definition": "feel hot and painful, or make part of your body feel this way",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive or intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "My eyes were burning from the smoke.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The spicy sauce burned my mouth.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "Her face burned with embarrassment.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "noun + verb",
+          "items": [
+            "your eyes burn",
+            "your skin burns",
+            "your face burns"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 5,
       "signpost": "strong feeling",
       "definition": "feel an emotion very strongly",
       "explanation": null,
@@ -305,7 +415,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
+  "usage_note": "In American English the past tense and past participle are usually **burned**. British English uses both **burned** and **burnt**. As an adjective, **burnt** is common everywhere: *burnt toast*.",
   "learner_errors": [],
   "etymology": null,
   "see_also": [
@@ -324,7 +434,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T15:44:00Z",
-    "modified": "2026-09-22T16:03:27Z",
+    "modified": "2026-09-28T19:02:41Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T154320Z-28os9u",
     "reviews": [
@@ -345,6 +455,26 @@
         "date": "2026-09-22",
         "file": "reviews/20260922T154320Z-28os9u/burn-v.json",
         "ok": 52,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T185705Z-5zt820",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T185705Z-5zt820/burn-v.json",
+        "ok": 62,
+        "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T185705Z-5zt820",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T185705Z-5zt820/burn-v.json",
+        "ok": 63,
         "issues": 0,
         "blocking": 0
       }
