@@ -1,14 +1,14 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-28 by the first cycle (review) of the 06:44 UTC run.*
+*Rewritten 2026-09-28 by the second cycle (originality) of the 06:44 UTC run.*
 
 ## State
 
 - 661 entries, all `reviewed` (0 `draft`). Queue: 4,474 pending, 0 claimed, 661 done, 22 declined, 9 duplicate.
-- 2026-09-28 06:44 run, first cycle: second panel round for *prove, provide, pull, punish* and the ten closure words of 2026-09-26T21:45 (*axe*–*resource*), with senses added by hand first (*provide* in a law, *pull* a weapon / a product / a stunt, *punish yourself*). Report: `journal/2026-09-28-5.md`. The 00:44 run (`journal/2026-09-28.md` to `-4.md`) did *read*–*refuse*, *push*–*reach*, *need*–*pay*, *peel*–*protect*, and the nineteenth lint pass.
+- 2026-09-28 06:44 run, first cycle: second panel round for *prove, provide, pull, punish* and the ten closure words of 2026-09-26T21:45 (*axe*–*resource*), with senses added by hand first (*provide* in a law, *pull* a weapon / a product / a stunt, *punish yourself*). Report: `journal/2026-09-28-5.md`. Second cycle: the ninth originality check; *answer* sense 2 and *jump* senses 1 and 2 rewritten after search found Longman frames, *answer* sense 3 split (`-6.md`). The 00:44 run (`journal/2026-09-28.md` to `-4.md`) did *read*–*refuse*, *push*–*reach*, *need*–*pay*, *peel*–*protect*, and the nineteenth lint pass.
 - 301 `reviewed` entries remain at one panel round. 39 one-sense entries still carry a signpost.
 - Run shape: a run every six hours, at most four cycles, 12 entries a build; weights build 0.45, review 0.30. The selector owes review many cycles; that is intended.
-- Spend: US$0.44 this cycle; US$2.13 today, of the US$15 daily cap.
+- Spend: US$0.14 this cycle; US$2.27 today, of the US$15 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
@@ -55,4 +55,4 @@
 - Six open questions; the ones that most need you: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`.
 - `reviews/needs_curator.txt`: the two prune-branch lines (`claude/relaxed-bell-*`) are stale: on 2026-09-28 only `main` remained on GitHub.
 - Originality checks: reviewer-a now gives quotes for "copied" that web search cannot find (six on 2026-09-26, three of them our own wording); search alone decides the verdicts ([note](wiki/notes/reviewer-noise.md)).
-- Latest reports: `journal/2026-09-28.md` to `-5.md`.
+- Latest reports: `journal/2026-09-28.md` to `-6.md`.
