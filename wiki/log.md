@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-28] lint | Twenty-first pass; three cross-reference fixes, no switch-offs
+
+Fourth and last cycle of the 2026-09-28 18:43 run, forced by the five-runs rule. Caps, links, unit tests, and gates pass. `crossref --all --apply` added three back-links: `beat-v` <- `destroy-v` (defeat) sat on sense 1 and was moved to sense 2 with a note; `believe-v`/`feel-v` and `arrive-v`/`go-v` are right. Two type mismatches (`but-conj`/`yet-conj`, `if-conj`/`whether-conj`) were a stale `compare` beside a synonym; dropped. `lint_vocab --all --queue`: 0 violations; its one new row, *bubbles* n (a plural), set to duplicate and *bubble* n queued. `claim --prune` removed this run's closure claim file. Precision: no live family under 30 percent at twenty or more decisions; `reviewer-a` `pronunciation` 0.32 (122) stays nearest ([note](notes/reviewer-precision.md)). Index against pages: no orphans, no dead links. `needs_curator.txt`: no duplicates. NEXT.md's one-sense signpost count corrected to 38. Spend US$0.
+
 ## [2026-09-28] closure | Eight new entries: mail-n to bank-v
 
 Third cycle of the 2026-09-28 18:43 run; the selector chose closure. Claimed the last two `closure` rows (*mail* n, *upward* adv) and six `family` rows (the tool's order: *following* prep, *seeing* conj, *alarm*, *awaken*, *axe*, *bank* verbs). Drafted in full: *mail* with its email sense and the *a mail* / *mails* errors; *upward* with British *upwards* and *upward of*; formal *following*; *seeing that/as*; *alarm* with the *alarming/alarmed* error; *awaken* in three formal or literary senses; informal *axe* (variant *ax*, following `axe-n`); *bank* for money and for a plane turning. Panel: 31 issues, 23 applied, 8 rejected (sense labels that repeat entry labels; *axe* stays informal). Both reviewers caught an origin claim in *bank*'s adaptation note; removed. One back-link (*cut* to *axe*) landed on "divide" and was moved to "reduce" by hand; three others checked and correct. Spend US$0.22; day US$5.17.

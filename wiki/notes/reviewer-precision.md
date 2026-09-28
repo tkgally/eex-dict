@@ -120,3 +120,7 @@ Disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (2026/2883); `reviewer-b` `ALL
 ## 2026-09-28: twentieth lint pass, `reviewer-a` `inflection` switched off
 
 `reviewer-a` `inflection` reached the line: 0.05 over 21 decisions (1 applied, 19 rejected, 1 escalated). It is now the sixth disabled pair in `tools/review_panel.py`. Inflections come from `tools/inflect.py`'s rules and the exceptions table, so a reviewer inflection objection was nearly always a misreading of a generated form; `reviewer-b` still checks the family (0 of 5, under twenty). Live: `reviewer-a` `ALL` 0.70 (2074/2955); `reviewer-b` `ALL` 0.62 (681/1105). `reviewer-a` `pronunciation` 0.33 (39/119) is now the nearest live family to the line. `reviewer-b` `spelling-or-format` 0.43 (265), still falling on the quoted-headword flag.
+
+## 2026-09-28: twenty-first lint pass, no new switch-offs
+
+Disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (2174/3098); `reviewer-b` `ALL` 0.62 (705/1139). No live family under 30 percent at twenty or more decisions. `reviewer-a` `pronunciation` 0.32 (39/122), three rejections since the last pass, all the American length mark (a fence): still the nearest live family to the line. `reviewer-b` `spelling-or-format` 0.43 (269). Under twenty: `reviewer-b` `inflection` 0.00 (5), `reviewer-a` `etymology` 0.47 (17).
