@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-28] review | Second round for 10 verbs, assume-v to board-v
+
+Fourth and last cycle of the 2026-09-28 12:44 run: *assume, attack, bake, beat, believe, belong, bite, bleed, blow, board* (2026-09-22T05:12 and 09:50). Added by hand first: *assume* a form or false name; *attack* in sport and a task; *bake* for being very hot; *beat* the traffic and four phrases (*beat it, it beats me, beat someone to it, you can't beat something*); *believe in* something good, three phrases; *belong with*; *bite* of a fish; *bleed* a radiator; *blow* for being moved by wind, explosions; *board* for a flight now boarding and boarding animals; learner errors on all (*won the other team*, *baked some rice*, *blowed*). Fixed wrong synonyms (*beat*/*break*, *beat*/*destroy*, *belong*/*go* moved to the place sense), subject prefixes in definitions (*bite*, *bleed*, *blow*), wrong forms in italics, *assume*'s British length mark. Panel: 63 issues; 49 applied, 14 rejected (*what's biting you?* removed). Spend US$0.46.
+
 ## [2026-09-28] review | Second round for 11 entries: when-conj to yet-conj, appeal-v to arrive-v
 
 Third cycle of the 2026-09-28 12:44 run: the conjunctions of 2026-09-22T03:43 (*when, where, whether, while, yet*) and the oldest one-round verbs (*appeal, appear, apply, argue, arrest, arrive*). Added by hand first: *when* for a sudden event (*I was just leaving when the phone rang*) and reduced clauses (*when necessary*), *say when*; *while* with an *-ing* form and the *during I was* error; *yet* with *although*; *appeal to* a feeling; *appear* for beginning to exist; *arrive* for deliveries, babies, and success; learner errors and usage notes on every verb (*appeals me*, *apply for/to*, *arrive to*). Signposts shortened; *yet*'s one-sense signpost cleared; pos-split pointers moved from word family to see also. Both reviewers moved my new indirect-question senses of *when* and *where* to the adverb entries (queued); fenced in `NEXT.md`. Panel: 43 issues; 33 applied, 10 rejected. Spend US$0.40.

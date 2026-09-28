@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **attack** is to use force against someone, to speak or write strongly against someone or something, or, of a disease, to begin to damage something.",
+  "core_idea": "To **attack** is to act against someone or something with force, with strong words, or with energy, or, of a disease or a pest, to damage something.",
   "senses": [
     {
       "n": 1,
@@ -83,13 +83,13 @@
         },
         {
           "text": "The city was attacked from the sea.",
-          "note": null,
-          "pattern": "verb + object"
+          "note": "passive",
+          "pattern": null
         },
         {
           "text": "She was attacked on her way home.",
-          "note": null,
-          "pattern": "verb + object"
+          "note": "passive",
+          "pattern": null
         }
       ],
       "collocations": [],
@@ -135,19 +135,19 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The senator attacked the new policy in her speech.",
+          "text": "The speaker attacked the new policy in her speech.",
           "note": null,
           "pattern": "verb + object"
         },
         {
           "text": "Critics attacked the film for its slow pace.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
           "text": "He felt attacked by the harsh review.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         },
         {
           "text": "The report attacks the company's safety record.",
@@ -192,7 +192,7 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The virus attacks the immune system.",
+          "text": "Something is attacking the leaves of my roses.",
           "note": null,
           "pattern": "verb + object"
         },
@@ -202,12 +202,111 @@
           "pattern": "verb + object"
         },
         {
-          "text": "The disease attacks the joints first.",
+          "text": "Moths had attacked the old wool coat.",
           "note": null,
           "pattern": "verb + object"
         },
         {
           "text": "Insects had attacked the crop overnight.",
+          "note": null,
+          "pattern": "verb + object"
+        }
+      ],
+      "collocations": [],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "in sport",
+      "definition": "try to score goals or points in a game",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [
+          "sport"
+        ],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The team attacked from the first minute.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We need to attack more in the second half.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [],
+      "synonyms": [],
+      "antonyms": [
+        {
+          "slug": "defend-v",
+          "note": null
+        }
+      ],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "deal with",
+      "definition": "start to deal with a problem or a piece of work with a lot of energy",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "She attacked the pile of dishes as soon as the guests left.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "The plan attacks the problem from two sides.",
           "note": null,
           "pattern": "verb + object"
         }
@@ -242,7 +341,13 @@
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "A dog attacked to my son.",
+      "correct": "A dog attacked my son.",
+      "note": "In its usual sense, **attack** takes the person or thing attacked as a direct object, with no **to** or **on** before it."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
@@ -255,7 +360,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T05:12:20Z",
-    "modified": "2026-09-22T05:21:51Z",
+    "modified": "2026-09-28T13:20:58Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T051159Z-5k35hq",
     "reviews": [
@@ -277,6 +382,26 @@
         "file": "reviews/20260922T051159Z-5k35hq/attack-v.json",
         "ok": 41,
         "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T131138Z-bme1ge",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T131138Z-bme1ge/attack-v.json",
+        "ok": 58,
+        "issues": 7,
+        "blocking": 6
+      },
+      {
+        "run_id": "20260928T131138Z-bme1ge",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T131138Z-bme1ge/attack-v.json",
+        "ok": 60,
+        "issues": 1,
         "blocking": 0
       }
     ],

@@ -79,7 +79,7 @@
           "pattern": "verb + object"
         },
         {
-          "text": "Scientists believe that the disease can be prevented.",
+          "text": "I believe that she's telling the truth.",
           "note": null,
           "pattern": "verb + that-clause"
         },
@@ -101,7 +101,7 @@
             "believe someone",
             "believe a story",
             "hard to believe",
-            "believe it or not"
+            "can't believe"
           ]
         }
       ],
@@ -112,11 +112,7 @@
         },
         {
           "slug": "buy-v",
-          "note": null
-        },
-        {
-          "slug": "feel-v",
-          "note": null
+          "note": "informal: *I don't buy it* means *I don't believe it*"
         }
       ],
       "antonyms": [
@@ -134,7 +130,7 @@
       "subsenses": [
         {
           "letter": "a",
-          "definition": "think that something exists",
+          "definition": "think that something exists or is real",
           "explanation": null,
           "grammar": {
             "countability": null,
@@ -235,7 +231,28 @@
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "think that something is good or right",
+          "explanation": null,
+          "grammar": null,
+          "labels": null,
+          "examples": [
+            {
+              "text": "I believe in hard work.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "She doesn't believe in diets.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -246,7 +263,111 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "believe-it-or-not",
+      "text": "believe it or not",
+      "definition": "used to say that something is true although it is surprising",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Believe it or not, I've never seen the sea.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "He's over seventy, believe it or not.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "believe-me",
+      "text": "believe me",
+      "definition": "used to make someone sure that what you are saying is true",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Believe me, you don't want to go there.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "It was hard work, believe me.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "i-dont-believe-it",
+      "text": "I don't believe it!",
+      "definition": "used to show surprise, or that you are angry about something that has happened",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "I don't believe it! We've won!",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "It's raining again. I don't believe it!",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
       "slug": "belief-n",
@@ -265,7 +386,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Believe** is not normally used with an object and a **that**-clause together, and is not usually used in the continuous (progressive) form: *I believe you*, not normally *I am believing you*.",
+  "usage_note": "**Believe** is not usually used in the continuous form: *I believe you*. English prefers to put the negative on **believe**: *I don't believe he's coming* is more natural than *I believe he isn't coming*. **I believe so** and **I don't believe so** are short answers.",
   "learner_errors": [
     {
       "incorrect": "I don't believe in that he will come.",
@@ -280,12 +401,12 @@
     "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": "The stress is on the second syllable, not the first: *buh-LEEV*, not *BEE-leev*."
+    "pronunciation": "The stress is on the second syllable: *buh-LEEV*."
   },
   "l1": {},
   "provenance": {
     "created": "2026-09-22T09:50:00Z",
-    "modified": "2026-09-25T06:53:58Z",
+    "modified": "2026-09-28T13:20:59Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T094255Z-yqkcrn",
     "reviews": [
@@ -308,6 +429,26 @@
         "ok": 35,
         "issues": 1,
         "blocking": 1
+      },
+      {
+        "run_id": "20260928T131138Z-bme1ge",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T131138Z-bme1ge/believe-v.json",
+        "ok": 49,
+        "issues": 5,
+        "blocking": 5
+      },
+      {
+        "run_id": "20260928T131138Z-bme1ge",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T131138Z-bme1ge/believe-v.json",
+        "ok": 52,
+        "issues": 1,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
