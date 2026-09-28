@@ -41,6 +41,7 @@ DISABLED_FAMILIES = {
     ("reviewer-a", "example-policy"),   # 0.16 over 44
     ("reviewer-a", "grammar-code"),     # 0.27 over 75
     ("reviewer-a", "sense-structure"),  # 0.29 over 48
+    ("reviewer-a", "inflection"),       # 0.05 over 21; switched off by the 2026-09-28 lint run
     ("reviewer-b", "example-policy"),   # 0.05 over 83
     ("reviewer-b", "explanation"),      # 0.24 over 21
 }
