@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **arrive** is to reach a place at the end of a journey, to come to a decision after discussion, or, of a time or event, to begin.",
+  "core_idea": "To **arrive** is to reach a place or a point, such as the end of a journey or a decision, or, of a time or event, to come.",
   "senses": [
     {
       "n": 1,
@@ -77,7 +77,7 @@
           "pattern": "verb + preposition + object"
         },
         {
-          "text": "The train arrives in Boston at noon.",
+          "text": "The train arrives in the city at noon.",
           "note": null,
           "pattern": "verb + preposition + object"
         },
@@ -115,19 +115,51 @@
         {
           "slug": "leave-v",
           "note": null
-        },
-        {
-          "slug": "go-v",
-          "note": null
         }
       ],
       "compare": [
         {
           "slug": "reach-v",
-          "note": null
+          "note": "**reach** takes a direct object: *reach the station*, but *arrive at the station*"
         }
       ],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "of something sent or delivered, reach the person it was sent to",
+          "explanation": null,
+          "grammar": null,
+          "labels": null,
+          "examples": [
+            {
+              "text": "Your package arrived this morning.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "Has the mail arrived yet?",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        },
+        {
+          "letter": "b",
+          "definition": "of a baby, be born",
+          "explanation": null,
+          "grammar": null,
+          "labels": null,
+          "examples": [
+            {
+              "text": "Their baby arrived two weeks early.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -204,9 +236,9 @@
     },
     {
       "n": 3,
-      "signpost": "of a time or event",
-      "definition": "begin, spoken of a time, a season, or an event",
-      "explanation": null,
+      "signpost": "time or event",
+      "definition": "come, or begin to happen",
+      "explanation": "Used of a time, a season, or an event, not a person.",
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -264,6 +296,53 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "become successful",
+      "definition": "become successful and well known",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "With her third album, she had finally arrived.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "You know you've arrived when people start asking for your autograph.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [],
@@ -275,18 +354,24 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
-  "learner_errors": [],
-  "etymology": null,
-  "see_also": [
+  "usage_note": "Use **arrive in** with a city, a country, or a large area (*arrive in the city*, *arrive in a new country*), **arrive at** with a building, a station, or an event (*arrive at the airport*, *arrive at the party*), and no preposition with **home**, **here**, and **there**.",
+  "learner_errors": [
     {
-      "slug": "reach-v",
-      "note": null
+      "incorrect": "We arrived to the hotel at six.",
+      "correct": "We arrived at the hotel at six.",
+      "note": "**Arrive** is followed by **at** or **in**, never **to**."
+    },
+    {
+      "incorrect": "She arrived to home late.",
+      "correct": "She arrived home late.",
+      "note": "**Home**, **here**, and **there** take no preposition after **arrive**."
     }
   ],
+  "etymology": null,
+  "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": null,
+    "grammar": "**Arrive** takes **in** or **at**, never a direct object and never **to**: *arrive at the station*, *arrive in the city*. Many languages use a word meaning *to* after their verb for arriving.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -294,7 +379,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T05:12:20Z",
-    "modified": "2026-09-26T22:01:30Z",
+    "modified": "2026-09-28T13:08:44Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T051159Z-5k35hq",
     "reviews": [
@@ -317,6 +402,26 @@
         "ok": 41,
         "issues": 2,
         "blocking": 1
+      },
+      {
+        "run_id": "20260928T125959Z-bme1ge",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T125959Z-bme1ge/arrive-v.json",
+        "ok": 56,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T125959Z-bme1ge",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T125959Z-bme1ge/arrive-v.json",
+        "ok": 54,
+        "issues": 2,
+        "blocking": 0
       }
     ],
     "status": "reviewed",

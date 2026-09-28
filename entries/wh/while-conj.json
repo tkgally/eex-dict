@@ -46,9 +46,9 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "during the time that",
+      "signpost": "during",
       "definition": "during the time that something is happening",
-      "explanation": "A **while** clause points to a period of time, often with a continuous verb, during which the action in the main clause happens. It can come first, with a comma after it, or after the main clause, with no comma.",
+      "explanation": "A **while** clause points to a period of time, often with a continuous verb, during which the action in the main clause happens. It can come first, with a comma after it, or after the main clause, with no comma. When both clauses have the same subject, the clause can be shortened to an **-ing** form (*while driving*) or a phrase (*while at work*).",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -75,8 +75,8 @@
           "pattern": null
         },
         {
-          "text": "Be careful while you're cutting the bread.",
-          "note": null,
+          "text": "Don't use your phone while driving.",
+          "note": "with an **-ing** form and no subject",
           "pattern": null
         },
         {
@@ -86,12 +86,7 @@
         }
       ],
       "collocations": [],
-      "synonyms": [
-        {
-          "slug": "when-conj",
-          "note": "**while** points to a whole period; **when** can point to a single moment inside it"
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [
         {
@@ -100,7 +95,7 @@
         },
         {
           "slug": "as-conj",
-          "note": null
+          "note": "**as** also joins two actions that happen at the same time, often short ones"
         }
       ],
       "subsenses": [],
@@ -116,7 +111,7 @@
     {
       "n": 2,
       "signpost": "although",
-      "definition": "although, at the same time",
+      "definition": "used to set one fact against another fact that is different or surprising",
       "explanation": "Used to link two facts that go against each other, without suggesting that one causes the other.",
       "grammar": {
         "countability": null,
@@ -174,13 +169,7 @@
     }
   ],
   "phrases": [],
-  "word_family": [
-    {
-      "slug": "while-n",
-      "form": null,
-      "note": "a period of time (*a while*, *worth your while*)"
-    }
-  ],
+  "word_family": [],
   "synonym_discrimination": null,
   "usage_note": null,
   "learner_errors": [
@@ -188,6 +177,11 @@
       "incorrect": "While she will cook, I will clean.",
       "correct": "While she cooks, I will clean.",
       "note": "A **while** clause about the present or future normally uses the present tense, not **will**."
+    },
+    {
+      "incorrect": "During I was waiting, it started to rain.",
+      "correct": "While I was waiting, it started to rain.",
+      "note": "**During** is a preposition and goes before a noun (*during the wait*); before a clause with a subject and verb, use **while**."
     }
   ],
   "etymology": null,
@@ -195,6 +189,10 @@
     {
       "slug": "although-conj",
       "note": "the more general word for a contrast"
+    },
+    {
+      "slug": "while-n",
+      "note": "the noun, a period of time (*a while*, *worth your while*)"
     }
   ],
   "adaptation": {
@@ -207,7 +205,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T03:43:33Z",
-    "modified": "2026-09-23T09:56:42Z",
+    "modified": "2026-09-28T13:08:44Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T034333Z-ait2hr",
     "reviews": [
@@ -229,6 +227,26 @@
         "file": "reviews/20260922T034333Z-ait2hr/while-conj.json",
         "ok": 32,
         "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T125959Z-bme1ge",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T125959Z-bme1ge/while-conj.json",
+        "ok": 33,
+        "issues": 1,
+        "blocking": 1
+      },
+      {
+        "run_id": "20260928T125959Z-bme1ge",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T125959Z-bme1ge/while-conj.json",
+        "ok": 34,
+        "issues": 0,
         "blocking": 0
       }
     ],

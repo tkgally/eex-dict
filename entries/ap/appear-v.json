@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **appear** is to come into sight, to seem a certain way, or to take part in a show, a movie, or a court case.",
+  "core_idea": "To **appear** is to come into sight or begin to exist, to seem a certain way, or to be present in a show, a movie, or a court case.",
   "senses": [
     {
       "n": 1,
@@ -111,6 +111,61 @@
     },
     {
       "n": 2,
+      "signpost": "begin to exist",
+      "definition": "begin to exist, or become available for people to see, read, or use",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Cracks began to appear in the wall.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Her new book will appear next spring.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The problem first appeared a few years ago.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The story appeared in several newspapers.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        }
+      ],
+      "collocations": [],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 3,
       "signpost": "seem",
       "definition": "seem to be true, based on how something looks or what is known",
       "explanation": null,
@@ -179,7 +234,7 @@
       "l1": {}
     },
     {
-      "n": 3,
+      "n": 4,
       "signpost": "perform",
       "definition": "take part in a movie, show, or performance",
       "explanation": null,
@@ -216,9 +271,9 @@
           "pattern": "verb + preposition + object"
         },
         {
-          "text": "The singer appeared live for the first time in years.",
+          "text": "The singer appeared in a concert for the first time in years.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + preposition + object"
         }
       ],
       "collocations": [
@@ -244,7 +299,7 @@
       "l1": {}
     },
     {
-      "n": 4,
+      "n": 5,
       "signpost": "attend court",
       "definition": "be present in court as a required part of a legal case",
       "explanation": null,
@@ -325,8 +380,19 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
-  "learner_errors": [],
+  "usage_note": "In the sense *seem*, **appear** is a little more formal than **seem** and is used most often before an adjective, a to-infinitive (*he appears to have left*), or **that** after **it** (*it appears that...*). It describes how something looks or what the facts suggest, not a personal feeling.",
+  "learner_errors": [
+    {
+      "incorrect": "She appeared nervously before the interview.",
+      "correct": "She appeared nervous before the interview.",
+      "note": "When **appear** means *seem*, it is followed by an adjective, not an adverb."
+    },
+    {
+      "incorrect": "It is appearing that the flight is late.",
+      "correct": "It appears that the flight is late.",
+      "note": "In the sense *seem*, **appear** is not normally used in the continuous form."
+    }
+  ],
   "etymology": null,
   "see_also": [
     {
@@ -335,7 +401,7 @@
     }
   ],
   "adaptation": {
-    "semantic": null,
+    "semantic": "**Appear** covers both coming into sight and seeming; many languages use different words for these, so a translator must check which one each sentence means.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -344,7 +410,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T05:12:20Z",
-    "modified": "2026-09-26T19:15:48Z",
+    "modified": "2026-09-28T13:08:44Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T051159Z-5k35hq",
     "reviews": [
@@ -367,6 +433,26 @@
         "ok": 40,
         "issues": 3,
         "blocking": 1
+      },
+      {
+        "run_id": "20260928T125959Z-bme1ge",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T125959Z-bme1ge/appear-v.json",
+        "ok": 60,
+        "issues": 1,
+        "blocking": 1
+      },
+      {
+        "run_id": "20260928T125959Z-bme1ge",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T125959Z-bme1ge/appear-v.json",
+        "ok": 60,
+        "issues": 1,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
