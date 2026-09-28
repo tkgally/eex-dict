@@ -112,3 +112,7 @@ Disabled pairs unchanged. Live: `reviewer-a` `ALL` 0.71 (1894/2685); `reviewer-b
 ## 2026-09-27: eighteenth lint pass, no new switch-offs
 
 Disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (1948/2766); `reviewer-b` `ALL` 0.65 (660/1018). No live family under 30 percent at twenty or more decisions; `reviewer-a` `pronunciation` 0.32 (36/112). `reviewer-b` `spelling-or-format` 0.50 (220). Under twenty: `reviewer-a` `inflection` 0.06 (16), four decisions from the line; `reviewer-b` `phrase` 0.41 (17).
+
+## 2026-09-28: nineteenth lint pass, no new switch-offs
+
+Disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (2026/2883); `reviewer-b` `ALL` 0.63 (671/1070). No live family under 30 percent at twenty or more decisions; `reviewer-a` `pronunciation` 0.33 (37/113). `reviewer-a` `inflection` 0.06 (1 applied, 17 rejected, 1 escalated): one more rejection reaches twenty and switches it off. `reviewer-b` `spelling-or-format` 0.46 (246), falling on the quoted-headword flag (18 rejections in this run's three review cycles); its `definition-style` 0.65 (117) is being pulled down by objections to the sentence form of `core_idea`, which the style guide requires.

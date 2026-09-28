@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-28] lint | Nineteenth pass: nothing to repair
+
+Fourth cycle of the 2026-09-28 00:44 run, forced by five runs since the last lint. Mechanical: caps and links pass; `crossref --all --apply` wrote no back-links (0 entries updated, 1,794 missing targets, all queued words without entries); `lint_vocab --all --queue` 0 violations; `claim --prune` 0 stale claims. Precision ([note](notes/reviewer-precision.md)): no new switch-off; `reviewer-a` `inflection` is one rejection from the twenty-decision line at 0.06. Judgmental: index lists every page, no dead links; open questions unchanged; `reviews/needs_curator.txt` has no duplicate lines. Two recurring reviewer objections added to `NEXT.md`'s fences: the sentence form of `core_idea`, and the not-continuous code where a learner-error note says "not normally". Next lint due in five runs. Spend: US$0.
+
 ## [2026-09-28] review | Second round for 15 late-cycle verbs, peel-v to protect-v
 
 Third cycle of the 2026-09-28 00:44 run: *peel, perform, pick, place, plan, play, pour, practice, praise, pray, press, prevent, produce, pronounce, protect*. Added by hand first: *pick* sense 5 (*pick at your food*); *place* sense 6 (*she placed third*); *play* sense 8 (*play dead*, *play innocent*) and the phrase *play it cool*; *pour* subsense 1a (*pour money into*); *press* subsense 1a (*press flowers*, *press grapes*). 24 issues, 14 blocking; 24 decisions: 15 applied, 9 rejected. Applied: *peel* sense 2 split (intransitive sense, transitive subsense); *play* senses 4 and 5 and *play it safe* reworded; *practice*'s learner-error note no longer says the verb takes only an **-ing** form; *aim* moved to *plan* sense 2; *pick* sense 2 covers vegetables and leaves; *prevent*'s *guard* synonym kept with a note (both reviewers flagged it; *guard-v* sense 3 is *guard against*). Rejected: British forms in *practice*'s inflections (the *practise* variant is recorded); a literary label on *pray* (hope); the quoted-headword flag (three times). Spend: US$0.55; US$1.69 today.
