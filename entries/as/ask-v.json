@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **ask** is to put a question to someone, to request something, or to invite someone.",
+  "core_idea": "To **ask** is to speak to someone because you want something from them: an answer, help, a thing, their company, or an amount of money.",
   "senses": [
     {
       "n": 1,
@@ -61,8 +61,9 @@
         "patterns": [
           "verb + object",
           "verb + two objects",
+          "verb + object + wh-clause",
           "verb + wh-clause",
-          "verb + object + wh-clause"
+          "verb + direct speech"
         ]
       },
       "labels": {
@@ -85,9 +86,9 @@
           "pattern": "verb + object + wh-clause"
         },
         {
-          "text": "He asked a lot of questions.",
+          "text": "\"Are you feeling okay?\" he asked.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + direct speech"
         },
         {
           "text": "Just ask if you're not sure.",
@@ -99,7 +100,17 @@
         {
           "type": "verb + noun",
           "items": [
-            "ask a question"
+            "ask a question",
+            "ask the way",
+            "ask someone's name",
+            "ask someone's opinion"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "ask about something",
+            "ask around"
           ]
         }
       ],
@@ -113,11 +124,11 @@
       "compare": [
         {
           "slug": "tell-v",
-          "note": null
+          "note": "you **ask** a question and someone **tells** you the answer"
         },
         {
           "slug": "question-v",
-          "note": null
+          "note": "**question** someone is to ask them many questions, often formally, as the police do"
         }
       ],
       "subsenses": [],
@@ -142,8 +153,9 @@
         "patterns": [
           "verb + object + to-infinitive",
           "verb + preposition + object",
-          "verb + two objects",
-          "verb + to-infinitive"
+          "verb + object + preposition + object",
+          "verb + to-infinitive",
+          "verb + two objects"
         ]
       },
       "labels": {
@@ -168,7 +180,7 @@
         {
           "text": "Can you ask him for a favor?",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
           "text": "She asked to see the manager.",
@@ -178,10 +190,21 @@
       ],
       "collocations": [
         {
+          "type": "verb + preposition",
+          "items": [
+            "ask for help",
+            "ask for advice",
+            "ask for permission",
+            "ask for money"
+          ]
+        },
+        {
           "type": "phrase",
           "items": [
+            "ask someone a favor",
             "ask someone for a favor",
-            "ask a favor of someone"
+            "ask someone's permission",
+            "ask someone's advice"
           ]
         }
       ],
@@ -192,7 +215,12 @@
         }
       ],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "tell-v",
+          "note": "*tell someone to do something* is an order; *ask someone to do something* is a request"
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -213,7 +241,8 @@
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object",
+          "verb + object + adverb",
+          "verb + object + preposition + object",
           "verb + object + to-infinitive"
         ]
       },
@@ -227,22 +256,158 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "They asked us to the wedding.",
+          "text": "Sam asked Mari to the school dance.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "She asked him to dinner.",
+          "text": "She asked him to come to dinner on Friday.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + to-infinitive"
         },
         {
-          "text": "Did you ask your friends over this weekend?",
+          "text": "Why don't you ask your friends over this weekend?",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + adverb"
         },
         {
-          "text": "He never asked her out.",
+          "text": "He was too shy to ask her out.",
+          "note": null,
+          "pattern": "verb + object + adverb"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "ask someone out",
+            "ask someone over",
+            "ask someone in",
+            "ask someone to a party",
+            "ask someone to dinner"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "invite-v",
+          "note": "**invite** is a little more formal"
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "price",
+      "definition": "want a particular amount of money for something you are selling",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object",
+          "verb + object + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "How much are they asking for the car?",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "He's asking too much for that old bike.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "They were asking a lot less than the other sellers.",
+          "note": null,
+          "pattern": "verb + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "ask a high price",
+            "ask too much for something",
+            "the asking price"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "charge-v",
+          "note": "**charge** is used for services and for what a shop or business takes; **ask** is common when a person is selling one thing"
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "expect",
+      "definition": "want or expect someone to do or give something, especially something difficult",
+      "explanation": "Often in the phrases *ask a lot of someone* and *too much to ask*.",
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object",
+          "verb + object + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "That's asking a lot of a young child.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "All I ask is that you tell me the truth.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Is it too much to ask for a little quiet?",
           "note": null,
           "pattern": null
         }
@@ -251,8 +416,9 @@
         {
           "type": "phrase",
           "items": [
-            "ask someone out",
-            "ask someone over"
+            "ask a lot of someone",
+            "too much to ask",
+            "all I ask is"
           ]
         }
       ],
@@ -270,21 +436,145 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "if-you-ask-me",
+      "text": "if you ask me",
+      "definition": "used before giving your own opinion",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "If you ask me, the whole plan is a mistake.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The movie was far too long, if you ask me.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "dont-ask-me",
+      "text": "don't ask me",
+      "definition": "used to say that you do not know the answer to something",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Don't ask me why the store closed early; I have no idea.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Where did they go? Don't ask me.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "for-the-asking",
+      "text": "for the asking",
+      "definition": "if you ask for it, without having to pay or work for it",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "The job is yours for the asking.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The old furniture was there for the asking.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": "**Ask** can take two objects when the thing asked is information (**ask him a question**); when requesting something else, use **for**: **ask him for a favor**, not **ask him a favor**.",
-  "learner_errors": [],
+  "usage_note": "**Ask** takes the person directly, with no **to**: *ask your teacher*. Use **for** before a thing you want to be given (*ask for help*, *ask him for the keys*), but not before a question or a piece of information (*ask a question*, *ask the way*). With **a favor**, *ask someone a favor* and *ask someone for a favor* are both common.",
+  "learner_errors": [
+    {
+      "incorrect": "Can I ask to you a question?",
+      "correct": "Can I ask you a question?",
+      "note": "The person you ask is a direct object; do not put **to** before it."
+    },
+    {
+      "incorrect": "He asked me some money.",
+      "correct": "He asked me for some money.",
+      "note": "Use **for** before a thing you want someone to give you."
+    },
+    {
+      "incorrect": "She asked me where did I live.",
+      "correct": "She asked me where I lived.",
+      "note": "In a reported question, the subject comes before the verb, with no **did**."
+    }
+  ],
   "etymology": null,
   "see_also": [
     {
       "slug": "question-n",
       "note": null
+    },
+    {
+      "slug": "ask-out-phrv",
+      "note": null
     }
   ],
   "adaptation": {
-    "semantic": null,
-    "grammar": null,
+    "semantic": "Many languages use one verb for asking a question (sense 1) and another for asking someone to give or do something (sense 2). English uses **ask** for both and adds **for** before the thing wanted.",
+    "grammar": "The person asked is a direct object: *ask the teacher*, not *ask to the teacher*. Many languages mark this person with a word like **to**.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -292,7 +582,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T05:12:20Z",
-    "modified": "2026-09-26T22:01:30Z",
+    "modified": "2026-09-28T18:53:50Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T051159Z-5k35hq",
     "reviews": [
@@ -315,6 +605,26 @@
         "ok": 40,
         "issues": 4,
         "blocking": 2
+      },
+      {
+        "run_id": "20260928T184350Z-5zt820",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T184350Z-5zt820/ask-v.json",
+        "ok": 68,
+        "issues": 8,
+        "blocking": 7
+      },
+      {
+        "run_id": "20260928T184350Z-5zt820",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T184350Z-5zt820/ask-v.json",
+        "ok": 75,
+        "issues": 1,
+        "blocking": 0
       }
     ],
     "status": "reviewed",

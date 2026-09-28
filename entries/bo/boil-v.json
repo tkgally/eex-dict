@@ -47,19 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **boil** is to become so hot that it turns to steam, to cook in boiling water, or, of a strong feeling, to become impossible to control.",
+  "core_idea": "To **boil** is to be or make something so hot that steam comes off it: a liquid, food cooked in a liquid, or, as a picture, strong anger.",
   "senses": [
     {
       "n": 1,
-      "signpost": "of a liquid",
-      "definition": "(of a liquid) become so hot that it changes into steam",
-      "explanation": null,
+      "signpost": "liquid",
+      "definition": "become so hot that bubbles rise and it starts to change into steam, or heat a liquid until this happens",
+      "explanation": "Used of a liquid, or of the container it is in: *the kettle is boiling*. *Boil the kettle* (heat water in it) is mainly British.",
       "grammar": {
         "countability": null,
         "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + adjective"
         ]
       },
       "labels": {
@@ -82,28 +83,37 @@
           "pattern": "verb + object"
         },
         {
-          "text": "Let the soup boil for a minute, then turn down the heat.",
+          "text": "The kettle's boiling. Do you want some coffee?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Milk can boil over quickly if you don't watch it.",
+          "text": "Don't let the pan boil dry.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + adjective"
         }
       ],
       "collocations": [
         {
           "type": "verb + noun",
           "items": [
-            "boil water"
+            "boil water",
+            "boil milk",
+            "boil the kettle"
+          ]
+        },
+        {
+          "type": "verb + adverb",
+          "items": [
+            "boil gently",
+            "boil rapidly"
           ]
         },
         {
           "type": "phrase",
           "items": [
-            "come to a boil",
-            "bring something to a boil"
+            "let something boil",
+            "boil dry"
           ]
         }
       ],
@@ -167,6 +177,11 @@
           "text": "The potatoes are still boiling; give them a few more minutes.",
           "note": null,
           "pattern": null
+        },
+        {
+          "text": "Do you boil your vegetables or steam them?",
+          "note": null,
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
@@ -233,6 +248,11 @@
           "text": "He'd been boiling with resentment for weeks before he finally spoke up.",
           "note": null,
           "pattern": "verb + preposition + object"
+        },
+        {
+          "text": "I was boiling inside, but I didn't say a word.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
@@ -303,11 +323,22 @@
       "slug": "boiler-n",
       "form": null,
       "note": null
+    },
+    {
+      "slug": "boil-n",
+      "form": null,
+      "note": "*bring the water to a boil*"
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "Put the pasta in the boiled water.",
+      "correct": "Put the pasta in the boiling water.",
+      "note": "**boiling** water is boiling now; **boiled** water has boiled and may have become cool again."
+    }
+  ],
   "etymology": null,
   "see_also": [
     {
@@ -320,7 +351,7 @@
     }
   ],
   "adaptation": {
-    "semantic": null,
+    "semantic": "Many languages have one verb for the liquid boiling and another for cooking something in it; English uses **boil** for both (senses 1 and 2).",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -329,7 +360,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T09:50:00Z",
-    "modified": "2026-09-25T12:55:02Z",
+    "modified": "2026-09-28T18:53:50Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T094255Z-yqkcrn",
     "reviews": [
@@ -351,6 +382,26 @@
         "file": "reviews/20260922T094255Z-yqkcrn/boil-v.json",
         "ok": 43,
         "issues": 5,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260928T184350Z-5zt820",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T184350Z-5zt820/boil-v.json",
+        "ok": 46,
+        "issues": 2,
+        "blocking": 2
+      },
+      {
+        "run_id": "20260928T184350Z-5zt820",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-28",
+        "file": "reviews/20260928T184350Z-5zt820/boil-v.json",
+        "ok": 48,
+        "issues": 0,
         "blocking": 0
       }
     ],
