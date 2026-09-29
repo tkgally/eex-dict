@@ -1,41 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "recognize-v",
-  "slug": "recognize-v",
-  "headword": "recognize",
+  "id": "head-v",
+  "slug": "head-v",
+  "headword": "head",
   "pos": "v",
   "homograph": 1,
-  "variants": [
-    {
-      "form": "recognise",
-      "kind": "spelling",
-      "region": "British",
-      "note": null
-    }
-  ],
+  "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈrɛk.əɡ.naɪz",
+      "ipa": "hɛd",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈrek.əɡ.naɪz",
+      "ipa": "hed",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "The stress is on the first part: *REK-ug-nize*. The **g** is said, although many speakers say it very lightly."
+    "notes": null
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "recognizes",
-      "past_tense": "recognized",
-      "past_participle": "recognized",
-      "present_participle": "recognizing"
+      "third_person_singular": "heads",
+      "past_tense": "headed",
+      "past_participle": "headed",
+      "present_participle": "heading"
     },
     "regular": true,
     "source": "rules",
@@ -43,7 +36,7 @@
     "note": null
   },
   "frequency": {
-    "band": 1,
+    "band": 3,
     "basis": "editorial",
     "defining_vocabulary": true
   },
@@ -54,20 +47,19 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To recognize is to know someone or something again, or to accept that something is true, real, or has value.",
+  "core_idea": "To **head** is to go in a direction, or to be at the front or top of something, and so in charge of it.",
   "senses": [
     {
       "n": 1,
-      "signpost": "know again",
-      "definition": "know who someone is or what something is because you have seen, heard, or met them before",
+      "signpost": "go toward",
+      "definition": "go or move in a particular direction",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "not used in continuous tenses"
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
@@ -80,56 +72,85 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I didn't recognize you with short hair!",
+          "text": "We're heading home now.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
+        },
+        {
+          "text": "Where are you heading?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She recognized his voice at once.",
+          "text": "The storm is heading north.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + adverb or preposition"
         },
         {
-          "text": "Do you recognize this song?",
+          "text": "After lunch, they headed for the beach.",
           "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The town had changed so much that I hardly recognized it.",
-          "note": null,
-          "pattern": null
+          "pattern": "verb + adverb or preposition"
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + adverb",
           "items": [
-            "recognize someone at once",
-            "recognize someone immediately"
+            "head home",
+            "head north",
+            "head back",
+            "head off"
           ]
         },
         {
-          "type": "adverb + verb",
+          "type": "verb + preposition",
           "items": [
-            "hardly recognize",
-            "barely recognize",
-            "instantly recognize"
+            "head for something",
+            "head toward something",
+            "head into town"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "know-v",
-          "note": null
-        },
-        {
-          "slug": "identify-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "be likely to reach a particular result, usually a bad one",
+          "explanation": "Usually in the continuous: *be heading for something*; American English also says *be headed for something*.",
+          "grammar": {
+            "countability": null,
+            "transitivity": "intransitive",
+            "codes": [],
+            "patterns": [
+              "verb + preposition + object"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "The company is heading for trouble.",
+              "note": null,
+              "pattern": "verb + preposition + object"
+            },
+            {
+              "text": "If they keep arguing like this, they're headed for a divorce.",
+              "note": null,
+              "pattern": "verb + preposition + object"
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "be heading for trouble",
+                "be heading for disaster"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -141,15 +162,14 @@
     },
     {
       "n": 2,
-      "signpost": "accept",
-      "definition": "accept that something is true, real, or important",
+      "signpost": "lead",
+      "definition": "be in charge of a group, an organization, or an activity",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + that-clause",
           "verb + object"
         ]
       },
@@ -163,17 +183,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We recognize that there is a problem.",
-          "note": null,
-          "pattern": "verb + that-clause"
-        },
-        {
-          "text": "Everyone recognizes the need for change.",
+          "text": "She heads the sales department.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "He was slow to recognize the danger.",
+          "text": "The team is headed by a young engineer.",
+          "note": null,
+          "pattern": "usually passive"
+        },
+        {
+          "text": "He was chosen to head the new project.",
           "note": null,
           "pattern": "verb + object"
         }
@@ -182,19 +202,19 @@
         {
           "type": "verb + noun",
           "items": [
-            "recognize the need for something",
-            "recognize the importance of something",
-            "recognize a problem"
+            "head a team",
+            "head a department",
+            "head a company"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "admit-v",
+          "slug": "lead-v",
           "note": null
         },
         {
-          "slug": "accept-v",
+          "slug": "run-v",
           "note": null
         }
       ],
@@ -212,16 +232,15 @@
     },
     {
       "n": 3,
-      "signpost": "officially",
-      "definition": "accept officially that something is legal, real, or has a particular position",
+      "signpost": "be at the front",
+      "definition": "be at the top or the front of something, such as a list or a line of people",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "usually passive"
+          "verb + object"
         ]
       },
       "labels": {
@@ -234,23 +253,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Her degree is recognized in many countries.",
+          "text": "Her name heads the list of candidates.",
           "note": null,
-          "pattern": "usually passive"
+          "pattern": "verb + object"
         },
         {
-          "text": "The new government was not recognized by its neighbors.",
+          "text": "A marching band headed the parade.",
           "note": null,
-          "pattern": "usually passive"
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "be officially recognized",
-            "be widely recognized",
-            "be recognized as something"
+            "head a list",
+            "head a line"
           ]
         }
       ],
@@ -269,43 +287,46 @@
     },
     {
       "n": 4,
-      "signpost": "praise",
-      "definition": "show in public that you value someone or their work",
+      "signpost": "in soccer",
+      "definition": "hit the ball with your head",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + adverb"
         ]
       },
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "sport"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "She was recognized for her many years of service.",
-          "note": "passive",
-          "pattern": null
+          "text": "He headed the ball into the goal.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "The award recognizes young writers.",
+          "text": "She jumped and headed it away.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + adverb"
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "recognize someone for something",
-            "be recognized for your work"
+            "head the ball",
+            "head it clear"
           ]
         }
       ],
@@ -326,23 +347,29 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "recognition-n",
+      "slug": "head-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "recognizable-adj",
+      "slug": "heading-n",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
-  "learner_errors": [],
+  "usage_note": "In the *go toward* sense, **head** is often in the continuous: *we're heading home*. American English also uses **be headed**: *where are you headed?*. No preposition comes before **home**: *head home*, not *head to home*.",
+  "learner_errors": [
+    {
+      "incorrect": "We're heading to home.",
+      "correct": "We're heading home.",
+      "note": "**Home** after a verb of movement has no **to**."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
-    "semantic": null,
+    "semantic": "Apart from soccer, the verb's senses (*go toward*, *lead*, *be at the front*) are usually translated with verbs that have nothing to do with the body part; translate by sense.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -350,48 +377,28 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T22:15:03Z",
-    "modified": "2026-09-29T01:24:08Z",
+    "created": "2026-09-29T01:18:48Z",
+    "modified": "2026-09-29T01:24:05Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T221313Z-poh5we",
+    "run_id": "20260929T011619Z-4i9pjw",
     "reviews": [
       {
-        "run_id": "20260926T221313Z-poh5we",
+        "run_id": "20260929T011619Z-4i9pjw",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T221313Z-poh5we/recognize-v.json",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T011619Z-4i9pjw/head-v.json",
         "ok": 51,
-        "issues": 2,
-        "blocking": 0
+        "issues": 3,
+        "blocking": 3
       },
       {
-        "run_id": "20260926T221313Z-poh5we",
+        "run_id": "20260929T011619Z-4i9pjw",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T221313Z-poh5we/recognize-v.json",
-        "ok": 52,
-        "issues": 0,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260928T004412Z-jf8wvz",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-28",
-        "file": "reviews/20260928T004412Z-jf8wvz/recognize-v.json",
-        "ok": 50,
-        "issues": 2,
-        "blocking": 2
-      },
-      {
-        "run_id": "20260928T004412Z-jf8wvz",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-28",
-        "file": "reviews/20260928T004412Z-jf8wvz/recognize-v.json",
-        "ok": 52,
+        "date": "2026-09-29",
+        "file": "reviews/20260929T011619Z-4i9pjw/head-v.json",
+        "ok": 54,
         "issues": 0,
         "blocking": 0
       }
