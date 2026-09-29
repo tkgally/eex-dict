@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": null,
+  "core_idea": "To **calculate** is to work something out carefully, whether a number, a risk, or the effect you want something to have.",
   "senses": [
     {
       "n": 1,
@@ -60,7 +60,8 @@
         "codes": [],
         "patterns": [
           "verb + object",
-          "verb + wh-clause"
+          "verb + wh-clause",
+          "verb + that-clause"
         ]
       },
       "labels": {
@@ -83,6 +84,11 @@
           "pattern": "verb + wh-clause"
         },
         {
+          "text": "We calculated that the drive would take about six hours.",
+          "note": null,
+          "pattern": "verb + that-clause"
+        },
+        {
           "text": "The program calculates your monthly payments.",
           "note": null,
           "pattern": "verb + object"
@@ -94,7 +100,15 @@
           "items": [
             "calculate the cost",
             "calculate the distance",
-            "calculate the average"
+            "calculate the average",
+            "calculate a total"
+          ]
+        },
+        {
+          "type": "adverb + verb",
+          "items": [
+            "carefully calculate",
+            "accurately calculate"
           ]
         }
       ],
@@ -105,7 +119,12 @@
         }
       ],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "count-v",
+          "note": "**count** means find how many things there are one by one; **calculate** uses numbers you already have"
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -145,7 +164,7 @@
           "pattern": "verb + object"
         },
         {
-          "text": "We calculated that the plan would take six months.",
+          "text": "She had calculated that nobody would notice she was gone.",
           "note": null,
           "pattern": "verb + that-clause"
         },
@@ -160,7 +179,69 @@
           "type": "verb + noun",
           "items": [
             "calculate the risks",
-            "calculate the odds"
+            "calculate the odds",
+            "calculate the effect"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 3,
+      "signpost": "intended",
+      "definition": "plan or design something so that it has a particular effect",
+      "explanation": "Almost always in the passive, followed by a to-infinitive: *be calculated to do something*.",
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "usually passive",
+          "verb + object + to-infinitive"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "His words were calculated to make her angry.",
+          "note": null,
+          "pattern": "usually passive"
+        },
+        {
+          "text": "The advertisement is calculated to appeal to young parents.",
+          "note": null,
+          "pattern": "usually passive"
+        },
+        {
+          "text": "Nothing could be better calculated to annoy him.",
+          "note": null,
+          "pattern": "usually passive"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "be calculated to do something",
+            "be carefully calculated"
           ]
         }
       ],
@@ -197,21 +278,27 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
-  "learner_errors": [],
+  "usage_note": "The adjective **calculated** describes something done on purpose after careful thought (*a calculated risk*); **calculating**, used about a person, is disapproving and means planning things for your own advantage (*a cold, calculating man*).",
+  "learner_errors": [
+    {
+      "incorrect": "We calculated about the cost of the trip.",
+      "correct": "We calculated the cost of the trip.",
+      "note": "To work out an amount, **calculate** takes the amount as a direct object, with no **about**."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
     "grammar": null,
     "culture": null,
-    "false_friends": null,
+    "false_friends": "In some languages the word that looks like **calculate** also means *guess* or *suppose*. In English, **calculate** normally means working something out carefully, usually with numbers.",
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-09-22T15:44:00Z",
-    "modified": "2026-09-22T16:03:27Z",
+    "modified": "2026-09-29T00:51:32Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T154320Z-28os9u",
     "reviews": [
@@ -232,6 +319,26 @@
         "date": "2026-09-22",
         "file": "reviews/20260922T154320Z-28os9u/calculate-v.json",
         "ok": 34,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260929T004352Z-4i9pjw",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T004352Z-4i9pjw/calculate-v.json",
+        "ok": 41,
+        "issues": 2,
+        "blocking": 1
+      },
+      {
+        "run_id": "20260929T004352Z-4i9pjw",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T004352Z-4i9pjw/calculate-v.json",
+        "ok": 43,
         "issues": 0,
         "blocking": 0
       }

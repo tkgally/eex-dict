@@ -46,9 +46,9 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "multiplied by",
+      "signpost": "multiplying",
       "definition": "multiplied by",
-      "explanation": null,
+      "explanation": "Used when saying a sum aloud. The verb after it may be singular or plural: *three times four is twelve* is more common than *are twelve*.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -77,7 +77,7 @@
           "pattern": null
         },
         {
-          "text": "What is nine times nine?",
+          "text": "What's nine times nine?",
           "note": null,
           "pattern": null
         }
@@ -85,7 +85,12 @@
       "collocations": [],
       "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "multiply-v",
+          "note": "**times** is the everyday word when saying a sum aloud; **multiply** is the verb: *multiply three by four*"
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -98,7 +103,7 @@
     },
     {
       "n": 2,
-      "signpost": "that much more",
+      "signpost": "comparing amounts",
       "definition": "used with a number to show how many times greater, more, or as much something is, compared to something else",
       "explanation": "**Times** goes before a comparative adjective or adverb (*three times faster*), before **as** plus the plain adjective or adverb (*three times as fast*), or directly before a noun or **as many/as much** (*three times the price*, *ten times as many people*).",
       "grammar": {
@@ -144,8 +149,8 @@
             "times as much",
             "times as many",
             "times better",
-            "times higher",
-            "times the size"
+            "times the size",
+            "times more likely"
           ]
         }
       ],
@@ -166,13 +171,23 @@
   "phrases": [],
   "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": null,
-  "learner_errors": [],
+  "usage_note": "For two, **twice** is much more usual than **two times**: *twice as big*, *twice the price*. For one, say **as big as**, not *one time as big*. **Three times bigger** is normally understood to mean the same as **three times as big**, but some careful writers avoid it, because it can also be read as four times the original size.",
+  "learner_errors": [
+    {
+      "incorrect": "This room is three times as bigger as mine.",
+      "correct": "This room is three times as big as mine.",
+      "note": "After **times as**, use the plain adjective, not the comparative; or say *three times bigger than mine*."
+    }
+  ],
   "etymology": null,
   "see_also": [
     {
       "slug": "time-n",
       "note": "the sense of **time** meaning an occasion something happens, which this preposition builds on"
+    },
+    {
+      "slug": "twice-adv",
+      "note": "two times; the usual word instead of **two times**"
     }
   ],
   "adaptation": {
@@ -185,7 +200,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T15:44:00Z",
-    "modified": "2026-09-22T16:03:27Z",
+    "modified": "2026-09-29T00:51:32Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T154320Z-28os9u",
     "reviews": [
@@ -208,10 +223,32 @@
         "ok": 31,
         "issues": 3,
         "blocking": 3
+      },
+      {
+        "run_id": "20260929T004352Z-4i9pjw",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T004352Z-4i9pjw/times-prep.json",
+        "ok": 31,
+        "issues": 3,
+        "blocking": 2
+      },
+      {
+        "run_id": "20260929T004352Z-4i9pjw",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T004352Z-4i9pjw/times-prep.json",
+        "ok": 32,
+        "issues": 2,
+        "blocking": 2
       }
     ],
     "status": "reviewed",
-    "flags": [],
+    "flags": [
+      "grammar-disputed"
+    ],
     "notes": null
   }
 }
