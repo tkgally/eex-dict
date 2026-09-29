@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
+*Append-only, newest first. Header: `## [2026-09-29] review | On, to, with, as, and nine more
+
+First cycle of the 2026-09-29 18:44 run; the selector chose review. Second panel round for the oldest one-round entries: *on, to, with* (prepositions), *as, neither* (conjunctions), and the verbs *care, cause, celebrate, chew, carry, change, charge, check*. Added by hand before the panel: *carry* senses 9 (adding numbers; the *borrow* compare moved there, closing NEXT item 8) and 10 (pregnant), phrases *get carried away*, *carry something too far*, a usage note; *to* sense 11 (toasts); *with* sense 12 (*with all his faults*); *on* sense 5 widened to instruments; learner errors *on the picture*, *fill the glass of water*, *as ... so*; a *neither ... nor* usage note. Panel: 46 issues, 34 blocking; 27 applied, 19 rejected, none escalated. Applied: *on* boats, *to* weak form and *of/till*, *with* *meet with*, *change* plural claims, *charge* core idea, entry-level adaptation notes that duplicated sense notes removed. Rejected: *care for* formal labels, *chew* sense 2, causal *as* formal label. *check*/*examine* compare removed both sides. Spend US$0.74.
+
+## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
 ## [2026-09-29] lint | Twenty-third pass; six back-links moved
 
