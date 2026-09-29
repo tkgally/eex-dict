@@ -1,34 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "imagine-v",
-  "slug": "imagine-v",
-  "headword": "imagine",
+  "id": "suspect-v",
+  "slug": "suspect-v",
+  "headword": "suspect",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ɪ.ˈmæ.dʒɪn",
+      "ipa": "səˈspɛkt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ɪ.ˈmæ.dʒɪn",
+      "ipa": "səˈspekt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "Stress is on the second part: *ih-MAJ-in*. The **g** sounds like the **j** of **jam**."
+    "notes": "The verb is stressed on the second part: *suh-SPECT*. The noun **suspect** is stressed on the first part: *SUS-pect*."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "imagines",
-      "past_tense": "imagined",
-      "past_participle": "imagined",
-      "present_participle": "imagining"
+      "third_person_singular": "suspects",
+      "past_tense": "suspected",
+      "past_participle": "suspected",
+      "present_participle": "suspecting"
     },
     "regular": true,
     "source": "rules",
@@ -47,22 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To imagine is to make a picture or an idea in your mind of something that you cannot see, or that may not be true.",
+  "core_idea": "To **suspect** is to think, without being sure, that something is true, usually something bad.",
   "senses": [
     {
       "n": 1,
-      "signpost": "picture",
-      "definition": "form a picture or idea of something in your mind",
+      "signpost": "think likely",
+      "definition": "think that something is probably true or likely, especially something bad",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "verb + -ing form",
-          "verb + wh-clause",
-          "verb + object + -ing form"
+          "verb + that-clause",
+          "verb + object"
         ]
       },
       "labels": {
@@ -75,63 +73,49 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Imagine a small house by the sea.",
+          "text": "I suspect that he isn't telling the truth.",
+          "note": null,
+          "pattern": "verb + that-clause"
+        },
+        {
+          "text": "I suspect she'll be late again.",
+          "note": null,
+          "pattern": "verb + that-clause"
+        },
+        {
+          "text": "The doctor suspects a broken bone.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "I can't imagine living without music.",
+          "text": "We began to suspect a problem with the engine.",
           "note": null,
-          "pattern": "verb + -ing form"
-        },
-        {
-          "text": "Can you imagine how she felt?",
-          "note": null,
-          "pattern": "verb + wh-clause"
-        },
-        {
-          "text": "Try to imagine yourself lying on a quiet beach.",
-          "note": null,
-          "pattern": "verb + object + -ing form"
+          "pattern": null
         }
       ],
       "collocations": [
         {
           "type": "adverb + verb",
           "items": [
-            "easily imagine",
-            "hardly imagine"
+            "strongly suspect",
+            "rightly suspect",
+            "always suspect"
           ]
         },
         {
           "type": "phrase",
           "items": [
-            "can't imagine",
-            "can you imagine",
-            "just imagine",
-            "try to imagine"
+            "I suspect that",
+            "have reason to suspect"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "picture-v",
-          "note": null
-        },
-        {
-          "slug": "dream-v",
-          "note": null
-        },
-        {
-          "slug": "think-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [
         {
-          "slug": "see-v",
-          "note": null
+          "slug": "doubt-v",
+          "note": "**suspect** means *think it is probably true*; **doubt** means *think it is probably not true*"
         }
       ],
       "subsenses": [],
@@ -146,8 +130,8 @@
     },
     {
       "n": 2,
-      "signpost": "believe wrongly",
-      "definition": "think that something is happening or is true when it is not",
+      "signpost": "think guilty",
+      "definition": "think that someone has probably done something wrong or illegal",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -155,7 +139,7 @@
         "codes": [],
         "patterns": [
           "verb + object",
-          "verb + that-clause"
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -168,27 +152,27 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Nobody is following you. You're imagining things.",
+          "text": "The police suspect him of stealing the car.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "Nobody suspected the quiet man next door.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "I thought I heard a knock, but I must have imagined it.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "She imagined that everyone was laughing at her.",
-          "note": null,
-          "pattern": "verb + that-clause"
+          "text": "She is suspected of lying to the court.",
+          "note": "passive",
+          "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + preposition",
           "items": [
-            "imagine things",
-            "must have imagined it"
+            "suspect someone of something",
+            "be suspected of"
           ]
         }
       ],
@@ -207,15 +191,15 @@
     },
     {
       "n": 3,
-      "signpost": "suppose",
-      "definition": "think that something is probably true",
+      "signpost": "not trust",
+      "definition": "think that something is probably not honest or not what it seems",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + that-clause"
+          "verb + object"
         ]
       },
       "labels": {
@@ -228,41 +212,24 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I imagine you're hungry after your long trip.",
+          "text": "I suspected his reasons for helping us.",
           "note": null,
-          "pattern": "verb + that-clause"
+          "pattern": "verb + object"
         },
         {
-          "text": "I imagine they'll be here soon.",
+          "text": "She had no reason to suspect the offer.",
           "note": null,
-          "pattern": "verb + that-clause"
-        },
-        {
-          "text": "\"Will he come?\" \"I imagine so.\"",
-          "note": "with so",
           "pattern": null
         }
       ],
-      "collocations": [
+      "collocations": [],
+      "synonyms": [],
+      "antonyms": [
         {
-          "type": "phrase",
-          "items": [
-            "I imagine so",
-            "I imagine that"
-          ]
-        }
-      ],
-      "synonyms": [
-        {
-          "slug": "suppose-v",
-          "note": null
-        },
-        {
-          "slug": "expect-v",
+          "slug": "trust-v",
           "note": null
         }
       ],
-      "antonyms": [],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -278,17 +245,17 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "imagination-n",
+      "slug": "suspect-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "imaginary-adj",
+      "slug": "suspicion-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "imaginative-adj",
+      "slug": "suspicious-adj",
       "form": null,
       "note": null
     }
@@ -297,45 +264,45 @@
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "I can't imagine to live there.",
-      "correct": "I can't imagine living there.",
-      "note": "After **imagine**, use an **-ing** form, not a **to** infinitive."
+      "incorrect": "They suspected him for stealing.",
+      "correct": "They suspected him of stealing.",
+      "note": "Use **of** before the wrong thing that someone may have done."
     }
   ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
-    "semantic": "\"imagine\" has a weak use, *I imagine you're tired*, that means *I suppose*. Many languages use a different verb for this than for making a picture in the mind.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
-    "false_friends": null,
-    "pronunciation": null
+    "false_friends": "In some languages the word that looks like **suspect** can also mean *doubt*. In English, *I suspect that he's right* means you think he probably is right.",
+    "pronunciation": "The verb **suspect** is stressed on the second part (*suh-SPECT*); the noun is stressed on the first (*SUS-pect*)."
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T06:46:00Z",
-    "modified": "2026-09-29T13:14:04Z",
+    "created": "2026-09-29T13:05:09Z",
+    "modified": "2026-09-29T13:07:52Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T064312Z-c2ms4g",
+    "run_id": "20260929T130143Z-bffqfz",
     "reviews": [
       {
-        "run_id": "20260926T064312Z-c2ms4g",
+        "run_id": "20260929T130143Z-bffqfz",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T064312Z-c2ms4g/imagine-v.json",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T130143Z-bffqfz/suspect-v.json",
         "ok": 43,
         "issues": 0,
         "blocking": 0
       },
       {
-        "run_id": "20260926T064312Z-c2ms4g",
+        "run_id": "20260929T130143Z-bffqfz",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T064312Z-c2ms4g/imagine-v.json",
-        "ok": 42,
-        "issues": 1,
+        "date": "2026-09-29",
+        "file": "reviews/20260929T130143Z-bffqfz/suspect-v.json",
+        "ok": 43,
+        "issues": 0,
         "blocking": 0
       }
     ],
