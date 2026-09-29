@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "carry-v",
-  "slug": "carry-v",
-  "headword": "carry",
+  "id": "throw-v",
+  "slug": "throw-v",
+  "headword": "throw",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈkɛr.i",
+      "ipa": "θroʊ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈkær.i",
+      "ipa": "θrəʊ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,13 +25,13 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "carries",
-      "past_tense": "carried",
-      "past_participle": "carried",
-      "present_participle": "carrying"
+      "third_person_singular": "throws",
+      "past_tense": "threw",
+      "past_participle": "thrown",
+      "present_participle": "throwing"
     },
-    "regular": true,
-    "source": "rules",
+    "regular": false,
+    "source": "exceptions",
     "status": "verified",
     "note": null
   },
@@ -47,19 +47,21 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **carry** is to hold or support something, usually while it moves from one place to another.",
+  "core_idea": "To **throw** is to send something through the air with your arm, or to move someone or something suddenly and with force; other senses carry this idea into feelings, parties, and light.",
   "senses": [
     {
       "n": 1,
-      "signpost": "hold and move",
-      "definition": "hold something or someone and take them from one place to another",
+      "signpost": "through the air",
+      "definition": "send something through the air by moving your arm quickly and letting go of it",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
           "verb + object",
+          "verb + two objects",
+          "verb + object + preposition + object",
           "verb + object + adverb"
         ]
       },
@@ -73,63 +75,61 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She carried the baby up the stairs.",
+          "text": "Throw the ball to me!",
           "note": null,
-          "pattern": "verb + object + adverb"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Can you carry this bag for me?",
+          "text": "She threw me the keys.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + two objects"
         },
         {
-          "text": "He was carrying a box of books.",
+          "text": "The kids were throwing stones into the lake.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "I'll carry the chairs outside.",
+          "text": "Someone threw an egg at the car.",
           "note": null,
-          "pattern": "verb + object + adverb"
+          "pattern": "verb + object + preposition + object"
         }
       ],
       "collocations": [
         {
           "type": "verb + noun",
           "items": [
-            "carry a bag",
-            "carry a box",
-            "carry a baby"
+            "throw a ball",
+            "throw a stone",
+            "throw a punch"
+          ]
+        },
+        {
+          "type": "verb + preposition",
+          "items": [
+            "throw something to someone",
+            "throw something at someone"
           ]
         },
         {
           "type": "verb + adverb",
           "items": [
-            "carry something upstairs",
-            "carry something inside",
-            "carry something away"
+            "throw something hard",
+            "throw something back"
           ]
         }
       ],
       "synonyms": [],
-      "antonyms": [],
-      "compare": [
+      "antonyms": [
         {
-          "slug": "bring-v",
-          "note": "**carry** is about holding something while you move; **bring** is about moving it toward a place"
-        },
-        {
-          "slug": "take-v",
-          "note": null
-        },
-        {
-          "slug": "hold-v",
+          "slug": "catch-v",
           "note": null
         }
       ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
-        "semantic": "Some languages use one verb for *carry*, *bring*, *take*, and *wear*. In English, **carry** means holding something and supporting its weight while you move; clothes that you have on are **worn**, not carried.",
+        "semantic": null,
         "grammar": null,
         "culture": null,
         "false_friends": null,
@@ -139,15 +139,16 @@
     },
     {
       "n": 2,
-      "signpost": "have with you",
-      "definition": "have something with you, usually in a pocket or a bag",
+      "signpost": "put carelessly",
+      "definition": "put something somewhere quickly and without care",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object + preposition + object",
+          "verb + object + adverb"
         ]
       },
       "labels": {
@@ -160,29 +161,27 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I never carry much cash.",
+          "text": "She threw her bag onto the bed.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "She carries a small notebook everywhere.",
+          "text": "I threw a few clothes into a suitcase and left.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Do you always carry your phone?",
+          "text": "Don't throw your coat on the floor.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "verb + preposition",
           "items": [
-            "carry cash",
-            "carry an umbrella",
-            "carry a phone",
-            "carry identification"
+            "throw something into something",
+            "throw something onto something"
           ]
         }
       ],
@@ -201,15 +200,16 @@
     },
     {
       "n": 3,
-      "signpost": "move people or things",
-      "definition": "move people or things from one place to another",
-      "explanation": "The subject is usually a vehicle, a pipe, water, or the wind, not a person.",
+      "signpost": "move your body",
+      "definition": "move your body or a part of it suddenly and with force",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object + preposition + object",
+          "verb + adverb + object"
         ]
       },
       "labels": {
@@ -222,38 +222,32 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The bus can carry forty passengers.",
+          "text": "She threw her arms around him.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Pipes carry water to the houses on the hill.",
+          "text": "He threw himself onto the sofa.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "The wind carried the smoke across the valley.",
+          "text": "The boy threw back his head and laughed.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + adverb + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "phrase",
           "items": [
-            "carry passengers",
-            "carry goods",
-            "carry water",
-            "carry electricity"
+            "throw your arms around someone",
+            "throw yourself onto something",
+            "throw back your head"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "transport-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -268,15 +262,17 @@
     },
     {
       "n": 4,
-      "signpost": "support weight",
-      "definition": "support the weight of something",
+      "signpost": "make fall",
+      "definition": "make someone or something fall or move suddenly by force",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + preposition + object",
+          "verb + object + adverb"
         ]
       },
       "labels": {
@@ -289,17 +285,31 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The bridge isn't strong enough to carry heavy trucks.",
+          "text": "The horse threw its rider.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "Four thick columns carry the whole roof.",
+          "text": "The explosion threw him to the ground.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "Passengers were thrown forward when the bus stopped suddenly.",
+          "note": "passive",
+          "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "throw someone to the ground",
+            "be thrown forward",
+            "be thrown clear"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -315,40 +325,52 @@
     },
     {
       "n": 5,
-      "signpost": "disease",
-      "definition": "have something in your body, such as a virus or a gene, that can be passed to other people or to your children, sometimes without being sick yourself",
+      "signpost": "into a state",
+      "definition": "suddenly put someone or something into a bad or difficult state",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "medicine"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "The doctor asked whether anyone in the family carried the virus.",
+          "text": "The news threw the whole town into panic.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Some insects carry diseases from one animal to another.",
+          "text": "The storm threw our plans into confusion.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "The loud bang threw the children into a panic.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "throw someone into confusion",
+            "throw someone into a panic",
+            "throw a plan into doubt"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -364,8 +386,8 @@
     },
     {
       "n": 6,
-      "signpost": "have as a part or result",
-      "definition": "have something as a part, a quality, or a result",
+      "signpost": "confuse",
+      "definition": "confuse or surprise someone so that they do not know what to say or do",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -376,7 +398,9 @@
         ]
       },
       "labels": {
-        "register": [],
+        "register": [
+          "informal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -385,29 +409,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The job carries a lot of responsibility.",
+          "text": "The question threw me for a moment.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "In this game, a wrong answer carries a penalty of five points.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "His opinion carries a lot of weight with the team.",
+          "text": "Her answer completely threw him.",
           "note": null,
           "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "adverb + verb",
           "items": [
-            "carry responsibility",
-            "carry a risk",
-            "carry a penalty",
-            "carry weight"
+            "completely throw someone",
+            "really throw someone"
           ]
         }
       ],
@@ -426,8 +443,8 @@
     },
     {
       "n": 7,
-      "signpost": "sell",
-      "definition": "have goods for sale in a store",
+      "signpost": "party",
+      "definition": "have a party or a special meal for people",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -438,7 +455,9 @@
         ]
       },
       "labels": {
-        "register": [],
+        "register": [
+          "informal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -447,17 +466,25 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Do you carry batteries?",
+          "text": "We're throwing a party for Sam's birthday.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "The store carries a wide range of shoes.",
+          "text": "They threw a big dinner for their parents.",
           "note": null,
           "pattern": "verb + object"
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "throw a party",
+            "throw a dinner"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -473,19 +500,21 @@
     },
     {
       "n": 8,
-      "signpost": "of a sound",
-      "definition": "be heard a long way away",
-      "explanation": "The subject is a sound or a voice.",
+      "signpost": "show a feeling",
+      "definition": "suddenly show a strong feeling, such as anger, in a way you cannot control",
+      "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "intransitive",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + adverb or preposition"
+          "verb + object"
         ]
       },
       "labels": {
-        "register": [],
+        "register": [
+          "informal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -494,17 +523,25 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Her voice carried to the back of the room.",
+          "text": "The little boy threw a tantrum in the store.",
           "note": null,
-          "pattern": "verb + adverb or preposition"
+          "pattern": "verb + object"
         },
         {
-          "text": "Sound carries a long way on a quiet night.",
+          "text": "My boss threw a fit when she saw the bill.",
           "note": null,
-          "pattern": "verb + adverb or preposition"
+          "pattern": "verb + object"
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "throw a tantrum",
+            "throw a fit"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -520,56 +557,56 @@
     },
     {
       "n": 9,
-      "signpost": "in adding numbers",
-      "definition": "when adding numbers, move the tens of a total to the next place on the left",
+      "signpost": "light or a look",
+      "definition": "send light, a shadow, or a look in a particular direction",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object + preposition + object",
+          "verb + two objects"
         ]
       },
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "mathematics"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Eight plus five is thirteen, so write three and carry one.",
+          "text": "The lamp threw a soft light over the room.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "You forgot to carry the one.",
+          "text": "The tall trees threw long shadows across the grass.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "She threw me an angry look.",
+          "note": null,
+          "pattern": "verb + two objects"
         }
       ],
       "collocations": [
         {
           "type": "verb + noun",
           "items": [
-            "carry the one",
-            "carry a number"
+            "throw a shadow",
+            "throw a look",
+            "throw a glance"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "borrow-v",
-          "note": "in subtraction you **borrow** from the next column"
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -582,8 +619,8 @@
     },
     {
       "n": 10,
-      "signpost": "be pregnant",
-      "definition": "be pregnant with a baby",
+      "signpost": "switch",
+      "definition": "move a switch or a handle so that a machine starts or stops",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -603,12 +640,12 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She was carrying twins.",
+          "text": "He threw the switch and the lights came on.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "She's carrying her second child.",
+          "text": "Someone threw the lever by mistake.",
           "note": null,
           "pattern": "verb + object"
         }
@@ -617,8 +654,8 @@
         {
           "type": "verb + noun",
           "items": [
-            "carry twins",
-            "carry a child"
+            "throw a switch",
+            "throw a lever"
           ]
         }
       ],
@@ -636,163 +673,92 @@
       "l1": {}
     }
   ],
-  "phrases": [
-    {
-      "sub_id": "get-carried-away",
-      "text": "get carried away",
-      "definition": "become so excited or interested that you stop thinking clearly and do too much",
-      "explanation": null,
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "I got carried away and bought five pairs of shoes.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Don't get carried away; it's only a small prize.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "carry-something-too-far",
-      "text": "carry something too far",
-      "definition": "continue doing something, such as a joke, until it is no longer acceptable",
-      "explanation": "**Take something too far** means the same.",
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "It was funny at first, but he carried the joke too far.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "I know you're angry, but don't carry it too far.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    }
-  ],
+  "phrases": [],
   "word_family": [
     {
-      "slug": "carrier-n",
+      "slug": "throw-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "carriage-n",
+      "slug": "thrower-n",
       "form": null,
       "note": null
     }
   ],
-  "synonym_discrimination": null,
-  "usage_note": "**Carry** is about holding something while you move, and it can go with any direction: *carry the chairs outside*. **Bring** and **take** are about where something goes, toward the speaker or away, and do not say how it gets there: *Bring a friend to the party*.",
+  "synonym_discrimination": {
+    "words": [
+      "throw-v",
+      "toss-v",
+      "hurl-v"
+    ],
+    "note": "**Throw** is the general word. **Toss** means throw lightly, often a short way: *toss the keys onto the table*. **Hurl** means throw with great force, often in anger: *hurl a rock at the window*."
+  },
+  "usage_note": "Plain **throw** means send something through the air. Getting rid of something you do not want is **throw away** or **throw out**, which have their own entries: *Throw away that old newspaper*.",
   "learner_errors": [
     {
-      "incorrect": "She carried me to the station in her car.",
-      "correct": "She drove me to the station.",
-      "note": "**Carry** a person means hold them in your arms or on your back; in a car you **drive** or **take** someone."
+      "incorrect": "She threw the ball at me so I could catch it.",
+      "correct": "She threw the ball to me so I could catch it.",
+      "note": "**Throw to** is for someone to catch; **throw at** means aim at someone or something, often to hit them."
     },
     {
-      "incorrect": "I carried a blue shirt to the party.",
-      "correct": "I wore a blue shirt to the party.",
-      "note": "Clothes that you have on your body are **worn**, not carried."
+      "incorrect": "He throwed the ball over the fence.",
+      "correct": "He threw the ball over the fence.",
+      "note": "The past tense is **threw** and the past participle is **thrown**."
+    },
+    {
+      "incorrect": "Please throw this old box.",
+      "correct": "Please throw this old box away.",
+      "note": "To get rid of something, use **throw away** or **throw out**."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "carry-on-phrv",
-      "note": "continue doing something"
+      "slug": "throw-away-phrv",
+      "note": null
     },
     {
-      "slug": "carry-out-phrv",
-      "note": "do a task or a plan"
+      "slug": "throw-out-phrv",
+      "note": null
+    },
+    {
+      "slug": "throw-up-phrv",
+      "note": null
     }
   ],
   "adaptation": {
-    "semantic": null,
-    "grammar": null,
+    "semantic": "In some languages one verb covers both *throw* and *throw away*. In English, plain **throw** means send something through the air; getting rid of something needs **away** or **out**.",
+    "grammar": "**Throw to** someone is for them to catch; **throw at** someone is aimed at them, often to hit them.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-23T18:46:47Z",
-    "modified": "2026-09-29T19:13:01Z",
+    "created": "2026-09-29T19:05:23Z",
+    "modified": "2026-09-29T19:12:05Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260923T184257Z-zd7zll",
+    "run_id": "20260929T190010Z-y7kyhk",
     "reviews": [
       {
-        "run_id": "20260923T184257Z-zd7zll",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-23",
-        "file": "reviews/20260923T184257Z-zd7zll/carry-v.json",
-        "ok": 86,
-        "issues": 2,
-        "blocking": 2
-      },
-      {
-        "run_id": "20260923T184257Z-zd7zll",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-23",
-        "file": "reviews/20260923T184257Z-zd7zll/carry-v.json",
-        "ok": 88,
-        "issues": 0,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260929T184404Z-y7kyhk",
+        "run_id": "20260929T190010Z-y7kyhk",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-09-29",
-        "file": "reviews/20260929T184404Z-y7kyhk/carry-v.json",
-        "ok": 114,
-        "issues": 2,
-        "blocking": 2
+        "file": "reviews/20260929T190010Z-y7kyhk/throw-v.json",
+        "ok": 91,
+        "issues": 8,
+        "blocking": 4
       },
       {
-        "run_id": "20260929T184404Z-y7kyhk",
+        "run_id": "20260929T190010Z-y7kyhk",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-29",
-        "file": "reviews/20260929T184404Z-y7kyhk/carry-v.json",
-        "ok": 116,
-        "issues": 0,
+        "file": "reviews/20260929T190010Z-y7kyhk/throw-v.json",
+        "ok": 98,
+        "issues": 1,
         "blocking": 0
       }
     ],
