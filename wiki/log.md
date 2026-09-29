@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-29] originality | Tenth check: one rewrite (hold-v)
+
+Second cycle of the 2026-09-29 12:44 run, forced (run 130). Ten sampled fields, exact-phrase web searches, and one reviewer-a call ([record](../reviews/originality/2026-09-29.md)). Verdicts: original 5, generic-overlap 4, rewrite 1. Search result summaries twice gave *hold* sense 7's wording ("wait on the phone until someone can speak to you") as a learner dictionary's meaning of *hold the line*; it now reads "stay on a phone call without speaking until the other person is ready to talk". The panel read *hold*: one blocking issue, applied (sense 6 split: *the weather holds* stays in the sense, *the rope held* becomes subsense b). reviewer-a's one "copied" call (*say*) quoted our own wording again ([note](notes/reviewer-noise.md)). Spend: US$0.10; US$3.32 today.
+
 ## [2026-09-29] review | Fourteen function words, so to such as
 
 First cycle of the 2026-09-29 12:44 run; the selector chose review. Second panel round for the oldest one-round entries: *so, than, that* (conjunctions), the prepositions *through, throughout, toward, under, upon, via, within, without, until, up*, and *such as*. Added by hand before the panel: collocations on eleven entries, a subsense of *that* for *it's strange that...*, a core idea for *that*, and learner errors (*so to catch*, *prefer tea than coffee*, *He told that*, *under the rain*, *under zero*, *Upon I arrived*, *via bus*, *without you come*, *ran up to the stairs*). The panel raised 32 issues, 26 blocking; 24 applied, 8 rejected, none escalated. Applied: sharper definitions for *toward* senses 2 and 4, *under* sense 5, *through* sense 3 and subsense 1b, *until*; softened absolute claims (*so*, *that*, *upon*, *without*). Rejected: the *than* preposition/conjunction split, *up* predicative adjective, the *such as* restriction. Spend US$0.49.
