@@ -1,41 +1,34 @@
 {
   "schema_version": "1.0",
-  "id": "recognize-v",
-  "slug": "recognize-v",
-  "headword": "recognize",
+  "id": "identify-v",
+  "slug": "identify-v",
+  "headword": "identify",
   "pos": "v",
   "homograph": 1,
-  "variants": [
-    {
-      "form": "recognise",
-      "kind": "spelling",
-      "region": "British",
-      "note": null
-    }
-  ],
+  "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈrɛk.əɡ.naɪz",
+      "ipa": "aɪˈdɛn.tə.faɪ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈrek.əɡ.naɪz",
+      "ipa": "aɪˈden.tɪ.faɪ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "The stress is on the first part: *REK-ug-nize*. The **g** is said, although many speakers say it very lightly."
+    "notes": "The stress is on the second part: *eye-DEN-tuh-fye*."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "recognizes",
-      "past_tense": "recognized",
-      "past_participle": "recognized",
-      "present_participle": "recognizing"
+      "third_person_singular": "identifies",
+      "past_tense": "identified",
+      "past_participle": "identified",
+      "present_participle": "identifying"
     },
     "regular": true,
     "source": "rules",
@@ -43,9 +36,9 @@
     "note": null
   },
   "frequency": {
-    "band": 1,
+    "band": 3,
     "basis": "editorial",
-    "defining_vocabulary": true
+    "defining_vocabulary": false
   },
   "labels": {
     "register": [],
@@ -54,12 +47,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To recognize is to know someone or something again, or to accept that something is true, real, or has value.",
+  "core_idea": "To **identify** someone or something is to say exactly who or what they are; the word is also used for feeling or seeing a close link with someone or something.",
   "senses": [
     {
       "n": 1,
-      "signpost": "know again",
-      "definition": "know who someone is or what something is because you have seen, heard, or met them before",
+      "signpost": "recognize",
+      "definition": "recognize someone or something and say who or what they are",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -67,7 +60,7 @@
         "codes": [],
         "patterns": [
           "verb + object",
-          "not used in continuous tenses"
+          "verb + object + as + noun or adjective"
         ]
       },
       "labels": {
@@ -80,51 +73,46 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I didn't recognize you with short hair!",
+          "text": "She was able to identify the man who took her bag.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         },
         {
-          "text": "She recognized his voice at once.",
+          "text": "Can you identify this bird?",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         },
         {
-          "text": "Do you recognize this song?",
+          "text": "The police have not yet identified the driver.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         },
         {
-          "text": "The town had changed so much that I hardly recognized it.",
+          "text": "He identified himself as a doctor.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object + as + noun or adjective"
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + noun",
           "items": [
-            "recognize someone at once",
-            "recognize someone immediately"
+            "identify a body",
+            "identify a suspect"
           ]
         },
         {
-          "type": "adverb + verb",
+          "type": "phrase",
           "items": [
-            "hardly recognize",
-            "barely recognize",
-            "instantly recognize"
+            "identify someone as something",
+            "be easily identified"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "know-v",
-          "note": null
-        },
-        {
-          "slug": "identify-v",
-          "note": null
+          "slug": "recognize-v",
+          "note": "**recognize** is knowing someone you have seen before; **identify** is saying who or what they are"
         }
       ],
       "antonyms": [],
@@ -141,15 +129,14 @@
     },
     {
       "n": 2,
-      "signpost": "accept",
-      "definition": "accept that something is true, real, or important",
+      "signpost": "find",
+      "definition": "find or discover something such as a problem, a cause, or a need",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + that-clause",
           "verb + object"
         ]
       },
@@ -163,17 +150,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We recognize that there is a problem.",
-          "note": null,
-          "pattern": "verb + that-clause"
-        },
-        {
-          "text": "Everyone recognizes the need for change.",
+          "text": "We need to identify the cause of the problem.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "He was slow to recognize the danger.",
+          "text": "The report identifies three main risks.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "Doctors identified the illness early.",
           "note": null,
           "pattern": "verb + object"
         }
@@ -182,22 +169,14 @@
         {
           "type": "verb + noun",
           "items": [
-            "recognize the need for something",
-            "recognize the importance of something",
-            "recognize a problem"
+            "identify a problem",
+            "identify the cause",
+            "identify a need",
+            "identify risks"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "admit-v",
-          "note": null
-        },
-        {
-          "slug": "accept-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -212,16 +191,15 @@
     },
     {
       "n": 3,
-      "signpost": "officially",
-      "definition": "accept officially that something is legal, real, or has a particular position",
-      "explanation": null,
+      "signpost": "feel close to",
+      "definition": "feel that you understand someone and share their feelings",
+      "explanation": "Always followed by **with**.",
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "usually passive"
+          "verb + preposition + object"
         ]
       },
       "labels": {
@@ -234,23 +212,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Her degree is recognized in many countries.",
+          "text": "Many readers identify with the main character.",
           "note": null,
-          "pattern": "usually passive"
+          "pattern": "verb + preposition + object"
         },
         {
-          "text": "The new government was not recognized by its neighbors.",
+          "text": "I could really identify with her problems.",
           "note": null,
-          "pattern": "usually passive"
+          "pattern": "verb + preposition + object"
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + preposition",
           "items": [
-            "be officially recognized",
-            "be widely recognized",
-            "be recognized as something"
+            "identify with someone",
+            "identify with a character"
           ]
         }
       ],
@@ -269,15 +246,16 @@
     },
     {
       "n": 4,
-      "signpost": "praise",
-      "definition": "show in public that you value someone or their work",
+      "signpost": "connect",
+      "definition": "think of one person or thing as closely connected with another",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object + preposition + object",
+          "usually passive"
         ]
       },
       "labels": {
@@ -290,26 +268,31 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She was recognized for her many years of service.",
-          "note": "passive",
-          "pattern": null
+          "text": "He is closely identified with the peace movement.",
+          "note": null,
+          "pattern": "usually passive"
         },
         {
-          "text": "The award recognizes young writers.",
+          "text": "People often identify money with happiness.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "recognize someone for something",
-            "be recognized for your work"
+            "be identified with something",
+            "identify something with something"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "associate-v",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -326,19 +309,35 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "recognition-n",
+      "slug": "identity-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "recognizable-adj",
+      "slug": "identification-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "identifiable-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "I identify to the main character.",
+      "correct": "I identify with the main character.",
+      "note": "Feeling close to someone is **identify with**."
+    },
+    {
+      "incorrect": "The police identified the thief like a local man.",
+      "correct": "The police identified the thief as a local man.",
+      "note": "Saying who someone is uses **identify someone as**."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
@@ -346,53 +345,33 @@
     "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": null
+    "pronunciation": "The stress is on the second part, *eye-DEN-tuh-fye*; the last part rhymes with **fly**."
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T22:15:03Z",
-    "modified": "2026-09-29T01:24:08Z",
+    "created": "2026-09-29T01:19:12Z",
+    "modified": "2026-09-29T01:24:05Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T221313Z-poh5we",
+    "run_id": "20260929T011619Z-4i9pjw",
     "reviews": [
       {
-        "run_id": "20260926T221313Z-poh5we",
+        "run_id": "20260929T011619Z-4i9pjw",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T221313Z-poh5we/recognize-v.json",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T011619Z-4i9pjw/identify-v.json",
+        "ok": 49,
+        "issues": 3,
+        "blocking": 1
+      },
+      {
+        "run_id": "20260929T011619Z-4i9pjw",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T011619Z-4i9pjw/identify-v.json",
         "ok": 51,
-        "issues": 2,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260926T221313Z-poh5we",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T221313Z-poh5we/recognize-v.json",
-        "ok": 52,
-        "issues": 0,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260928T004412Z-jf8wvz",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-28",
-        "file": "reviews/20260928T004412Z-jf8wvz/recognize-v.json",
-        "ok": 50,
-        "issues": 2,
-        "blocking": 2
-      },
-      {
-        "run_id": "20260928T004412Z-jf8wvz",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-28",
-        "file": "reviews/20260928T004412Z-jf8wvz/recognize-v.json",
-        "ok": 52,
-        "issues": 0,
+        "issues": 1,
         "blocking": 0
       }
     ],
