@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-29] lint | Twenty-third pass; six back-links moved
+
+Fourth and last cycle of the 2026-09-29 12:44 run, forced (five runs since the last lint). Caps, links, the vocabulary scan (0 violations), and `claim.py --prune` (three old claim files) were clean. `crossref --all --apply` wrote 21 back-links; 15 were right and 6 sat on the wrong sense and were moved by hand: *break* on *stop* (to sense 1), *exist* on *survive* (1), *imagine* and *say* on *suppose* (1 and 3), *reflect* on *think* (2), *run* on *stretch* (3). A re-run wrote nothing. Reviewer precision: no new switch-offs ([note](notes/reviewer-precision.md)). The index matches the pages; the log has no gaps; the curator file has no duplicates; open questions unchanged. Spend: none.
+
 ## [2026-09-29] build | Twelve verbs, surprise to think
 
 Third cycle of the 2026-09-29 12:44 run; the selector chose build. Drafted the next band-1 verbs: *surprise, survive, suspect, swallow, sweep, swell, swim, taste, teach, tear, test, think* (46 senses, 7 phrases, 24 learner errors). All inflections came from rules or the exceptions table; all 24 transcriptions verified. The panel raised 46 issues, 27 blocking; 35 applied, 11 rejected, none escalated. Applied: *surprise* sense 2 no longer only "nice"; *sweep* senses 3 and 4 widened; *swell* notes on **swollen**/**swelled** made to agree; *tear* sense 3 "without care" to "with energy"; *test* sense 3 reworded, `medicine` label. Rejected under fences: *swip* length mark, not-continuous code on *taste* and *think*. `crossref --apply` put *think* on *remember* "honor the dead" and *imagine* "believe wrongly"; both moved to sense 1 by hand. Spend US$0.52.
