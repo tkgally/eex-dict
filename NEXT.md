@@ -1,14 +1,14 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-29 by the first cycle (review) of the 12:44 UTC run.*
+*Rewritten 2026-09-29 by the second cycle (originality) of the 12:44 UTC run (PR #134 merged the first).*
 
 ## State
 
 - 717 entries, all `reviewed` (0 `draft`). Queue: 4,529 pending, 0 claimed, 717 done, 22 declined, 11 duplicate.
-- 2026-09-29 00:43 run: (1) review of *buy, calculate, call, calm, either* (conj), *times* (prep), senses and errors added by hand (`journal/2026-09-29.md`); (2) review of the nouns *aircraft*–*shelter* (`-2.md`); (3) build: twelve verbs *shave*–*slide* (`-3.md`); (4) closure: *bubble-n*, *committee-n*, and ten family verbs *border*–*monetize* (`-4.md`). 06:43 run: (1) review of the twelve 2026-09-23 conjunctions *after*–*until* (`-5.md`); (2) the twenty-second lint pass (`-6.md`); (3) build: twelve verbs *smell*–*steal* (`-7.md`); (4) build: twelve verbs *stick*–*suppose* (`-8.md`). 12:44 run: (1) review of *so, than, that* (conj), *through*–*without*, *until, up, such as* (prep) (`-9.md`). The 2026-09-28 runs (`journal/2026-09-28.md` to `-15.md`) came before.
+- 2026-09-29 00:43 run: (1) review of *buy, calculate, call, calm, either* (conj), *times* (prep), senses and errors added by hand (`journal/2026-09-29.md`); (2) review of the nouns *aircraft*–*shelter* (`-2.md`); (3) build: twelve verbs *shave*–*slide* (`-3.md`); (4) closure: *bubble-n*, *committee-n*, and ten family verbs *border*–*monetize* (`-4.md`). 06:43 run: (1) review of the twelve 2026-09-23 conjunctions *after*–*until* (`-5.md`); (2) the twenty-second lint pass (`-6.md`); (3) build: twelve verbs *smell*–*steal* (`-7.md`); (4) build: twelve verbs *stick*–*suppose* (`-8.md`). 12:44 run: (1) review of *so, than, that* (conj), *through*–*without*, *until, up, such as* (prep) (`-9.md`); (2) the tenth originality check, *hold* sense 7 rewritten (`-10.md`). The 2026-09-28 runs (`journal/2026-09-28.md` to `-15.md`) came before.
 - 251 `reviewed` entries remain at one panel round. 36 one-sense entries still carry a signpost.
 - Run shape: a run every six hours, at most four cycles, 12 entries a build; weights build 0.45, review 0.30.
-- Spend: US$3.21 today, of the US$15 daily cap.
+- Spend: US$3.32 today, of the US$15 daily cap.
 
 ## Queue (work top-down, one unit at a time)
 
@@ -56,4 +56,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Six open questions; the ones that most need you: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`. New in `reviews/needs_curator.txt` (2026-09-29): is *three times bigger* a use of `times-prep` or of the noun *time*? Kept in `times-prep`, flagged.
 - Originality checks: reviewer-a now gives quotes for "copied" that web search cannot find (six on 2026-09-26, three of them our own wording); search alone decides the verdicts ([note](wiki/notes/reviewer-noise.md)).
-- Latest reports: `journal/2026-09-29.md` to `-9.md`.
+- Latest reports: `journal/2026-09-29.md` to `-10.md`.
