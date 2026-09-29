@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "share-v",
-  "slug": "share-v",
-  "headword": "share",
+  "id": "split-v",
+  "slug": "split-v",
+  "headword": "split",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ʃɛr",
+      "ipa": "splɪt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ʃeə",
+      "ipa": "splɪt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,13 +25,13 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "shares",
-      "past_tense": "shared",
-      "past_participle": "shared",
-      "present_participle": "sharing"
+      "third_person_singular": "splits",
+      "past_tense": "split",
+      "past_participle": "split",
+      "present_participle": "splitting"
     },
-    "regular": true,
-    "source": "rules",
+    "regular": false,
+    "source": "exceptions",
     "status": "verified",
     "note": null
   },
@@ -47,20 +47,21 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To share is to have, use, give, or tell something together with other people.",
+  "core_idea": "To **split** is to divide something, or become divided, into separate parts or groups.",
   "senses": [
     {
       "n": 1,
-      "signpost": "use together",
-      "definition": "have or use something at the same time as someone else",
+      "signpost": "divide",
+      "definition": "divide something into two or more parts or groups, or become divided in this way",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
           "verb + object",
-          "verb + object + preposition + object"
+          "verb + object + preposition + object",
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
@@ -73,37 +74,33 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I share a room with my sister.",
+          "text": "Split the class into three groups.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "We shared a taxi to the airport.",
+          "text": "The group split into two teams.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + adverb or preposition"
         },
         {
-          "text": "The two families share a garden.",
+          "text": "She split the cake in half.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "share a room",
-            "share a flat",
-            "share something with someone"
+            "split in half",
+            "split in two",
+            "split into groups",
+            "split something down the middle"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "split-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -118,8 +115,8 @@
     },
     {
       "n": 2,
-      "signpost": "divide",
-      "definition": "divide something between two or more people",
+      "signpost": "share",
+      "definition": "divide something such as money or a cost among people",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -140,40 +137,35 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "They shared the cake between them.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "Let's share the cost of the meal.",
+          "text": "Let's split the bill.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "We share the housework equally.",
+          "text": "They split the money equally between them.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
+        },
+        {
+          "text": "We split the cost of the taxi.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
         {
           "type": "verb + noun",
           "items": [
-            "share the cost",
-            "share the work"
-          ]
-        },
-        {
-          "type": "phrase",
-          "items": [
-            "share something between people",
-            "share something equally"
+            "split the bill",
+            "split the cost",
+            "split the profits",
+            "split the work"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "divide-v",
+          "slug": "share-v",
           "note": null
         }
       ],
@@ -191,16 +183,15 @@
     },
     {
       "n": 3,
-      "signpost": "give some",
-      "definition": "let someone have or use part of something that you have",
+      "signpost": "break open",
+      "definition": "break or tear something along a line, or break or tear in this way",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "verb + object + preposition + object"
+          "verb + object"
         ]
       },
       "labels": {
@@ -213,17 +204,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Will you share your fries with me?",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "Children have to learn to share.",
+          "text": "The bag split, and the apples fell out.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There's only one book, so you'll have to share.",
+          "text": "He split his pants when he bent down.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The old wood had split in the sun.",
           "note": null,
           "pattern": null
         }
@@ -232,15 +223,49 @@
         {
           "type": "phrase",
           "items": [
-            "share something with someone",
-            "learn to share"
+            "split open",
+            "split down the middle"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "cut or break the skin so that it bleeds",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "She fell and split her lip.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "He split his head open on the edge of the table.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -252,16 +277,16 @@
     },
     {
       "n": 4,
-      "signpost": "tell",
-      "definition": "tell other people about your ideas, feelings, or experiences, or show them something",
+      "signpost": "disagree",
+      "definition": "divide a group into smaller groups that disagree, or become divided in this way",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
           "verb + object",
-          "verb + object + preposition + object"
+          "usually passive"
         ]
       },
       "labels": {
@@ -274,35 +299,46 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Thank you for sharing your story with us.",
+          "text": "The decision split the family.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         },
         {
-          "text": "She shared the good news with her family.",
+          "text": "The town was split over the new road.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         },
         {
-          "text": "He shared some photos of the trip online.",
+          "text": "The club split after a long argument.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "verb + preposition",
           "items": [
-            "share news",
-            "share ideas",
-            "share an experience",
-            "share a photo"
+            "split over something",
+            "split on something"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "be deeply split",
+            "be bitterly split",
+            "be split down the middle"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "divide-v",
+          "note": null
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -315,20 +351,19 @@
     },
     {
       "n": 5,
-      "signpost": "have the same",
-      "definition": "have the same feeling, opinion, or interest as someone else",
+      "signpost": "end a relationship",
+      "definition": "end a marriage or a relationship in which two people love each other",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "intransitive",
         "codes": [],
-        "patterns": [
-          "verb + object",
-          "not used in continuous tenses"
-        ]
+        "patterns": []
       },
       "labels": {
-        "register": [],
+        "register": [
+          "informal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -337,26 +372,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I share your worries about the plan.",
+          "text": "Her parents split when she was ten.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         },
         {
-          "text": "The two sisters share a love of music.",
+          "text": "They split after five years together.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         }
       ],
-      "collocations": [
-        {
-          "type": "verb + noun",
-          "items": [
-            "share someone's view",
-            "share someone's concern",
-            "share an interest"
-          ]
-        }
-      ],
+      "collocations": [],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -374,79 +400,71 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "share-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "shared-adj",
+      "slug": "split-n",
       "form": null,
       "note": null
     }
   ],
-  "synonym_discrimination": null,
-  "usage_note": null,
+  "synonym_discrimination": {
+    "words": [
+      "split-v",
+      "divide-v",
+      "separate-v"
+    ],
+    "note": "**Divide** is the general word for making parts or groups, and is a little more formal: *Divide the class into four groups*. **Split** is common in everyday speech, especially for breaking something along a line and for sharing money: *Let's split the bill*. **Separate** means keep or move things or people apart: *Separate the white clothes from the dark ones*."
+  },
+  "usage_note": "For the end of a relationship, the phrasal verb **split up** is more common than **split** alone.",
   "learner_errors": [
     {
-      "incorrect": "Can you share me your notes?",
-      "correct": "Can you share your notes with me?",
-      "note": "Say *share something with someone*; **share** does not take two objects."
+      "incorrect": "He splitted the wood.",
+      "correct": "He split the wood.",
+      "note": "**Split** does not change in the past tense or past participle."
+    },
+    {
+      "incorrect": "The class split in three groups.",
+      "correct": "The class split into three groups.",
+      "note": "Use **into** to name the parts or groups."
     }
   ],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "split-up-phrv",
+      "note": "end a relationship; divide into groups"
+    }
+  ],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"share\": in the sense *let someone have part of something*, the other person comes after **with** (*share it with me*), not straight after the verb.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T23:13:02Z",
-    "modified": "2026-09-29T07:11:14Z",
+    "created": "2026-09-29T07:02:05Z",
+    "modified": "2026-09-29T07:11:44Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T231200Z-poh5we",
+    "run_id": "20260929T065741Z-tgblpw",
     "reviews": [
       {
-        "run_id": "20260926T231200Z-poh5we",
+        "run_id": "20260929T065741Z-tgblpw",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T231200Z-poh5we/share-v.json",
-        "ok": 59,
-        "issues": 2,
-        "blocking": 2
+        "date": "2026-09-29",
+        "file": "reviews/20260929T065741Z-tgblpw/split-v.json",
+        "ok": 56,
+        "issues": 7,
+        "blocking": 7
       },
       {
-        "run_id": "20260926T231200Z-poh5we",
+        "run_id": "20260929T065741Z-tgblpw",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T231200Z-poh5we/share-v.json",
-        "ok": 59,
-        "issues": 2,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260927T184359Z-zkagg1",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-27",
-        "file": "reviews/20260927T184359Z-zkagg1/share-v.json",
-        "ok": 61,
+        "date": "2026-09-29",
+        "file": "reviews/20260929T065741Z-tgblpw/split-v.json",
+        "ok": 63,
         "issues": 0,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260927T184359Z-zkagg1",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-27",
-        "file": "reviews/20260927T184359Z-zkagg1/share-v.json",
-        "ok": 60,
-        "issues": 1,
         "blocking": 0
       }
     ],

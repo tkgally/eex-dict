@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "pass-v",
-  "slug": "pass-v",
-  "headword": "pass",
+  "id": "start-v",
+  "slug": "start-v",
+  "headword": "start",
   "pos": "v",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "pæs",
+      "ipa": "stɑrt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "pɑːs",
+      "ipa": "stɑːt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,10 +25,10 @@
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "passes",
-      "past_tense": "passed",
-      "past_participle": "passed",
-      "present_participle": "passing"
+      "third_person_singular": "starts",
+      "past_tense": "started",
+      "past_participle": "started",
+      "present_participle": "starting"
     },
     "regular": true,
     "source": "rules",
@@ -47,18 +47,20 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To pass is to go by or past something, or to go from one person, state, or stage to the next.",
+  "core_idea": "To **start** is to make something begin, or to begin: an action, an event, a business, or a machine.",
   "senses": [
     {
       "n": 1,
-      "signpost": "go past",
-      "definition": "go past someone or something",
+      "signpost": "begin doing",
+      "definition": "begin doing something",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
+          "verb + to-infinitive",
+          "verb + -ing form",
           "verb + object"
         ]
       },
@@ -72,23 +74,23 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We passed a gas station a mile back.",
+          "text": "It started to rain.",
+          "note": null,
+          "pattern": "verb + to-infinitive"
+        },
+        {
+          "text": "She started working here last year.",
+          "note": null,
+          "pattern": "verb + -ing form"
+        },
+        {
+          "text": "Let's start the meeting.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "Turn left after you pass the bank.",
+          "text": "When do you start your new job?",
           "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "A truck passed us on the hill.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "Let me pass, please.",
-          "note": "no object",
           "pattern": null
         }
       ],
@@ -96,20 +98,37 @@
         {
           "type": "verb + noun",
           "items": [
-            "pass a car",
-            "pass a building"
+            "start work",
+            "start school",
+            "start a conversation",
+            "start a family"
           ]
         },
         {
-          "type": "phrase",
+          "type": "verb + adverb",
           "items": [
-            "pass each other",
-            "pass by"
+            "start again",
+            "start early",
+            "start slowly"
           ]
         }
       ],
-      "synonyms": [],
-      "antonyms": [],
+      "synonyms": [
+        {
+          "slug": "begin-v",
+          "note": null
+        }
+      ],
+      "antonyms": [
+        {
+          "slug": "stop-v",
+          "note": null
+        },
+        {
+          "slug": "finish-v",
+          "note": null
+        }
+      ],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -123,16 +142,14 @@
     },
     {
       "n": 2,
-      "signpost": "go in a direction",
-      "definition": "go or move in a particular direction",
+      "signpost": "begin happening",
+      "definition": "begin to happen or exist",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
         "codes": [],
-        "patterns": [
-          "verb + adverb or preposition"
-        ]
+        "patterns": []
       },
       "labels": {
         "register": [],
@@ -144,33 +161,39 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The road passes through three small villages.",
+          "text": "The movie starts at eight.",
           "note": null,
-          "pattern": "verb + adverb or preposition"
+          "pattern": null
         },
         {
-          "text": "A cloud passed over the sun.",
+          "text": "The fire started in the kitchen.",
           "note": null,
-          "pattern": "verb + adverb or preposition"
-        }
-      ],
-      "collocations": [
+          "pattern": null
+        },
         {
-          "type": "verb + preposition",
-          "items": [
-            "pass through",
-            "pass over",
-            "pass under"
-          ]
+          "text": "School starts next week.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "How did the argument start?",
+          "note": null,
+          "pattern": null
         }
       ],
+      "collocations": [],
       "synonyms": [
         {
-          "slug": "run-v",
+          "slug": "begin-v",
           "note": null
         }
       ],
-      "antonyms": [],
+      "antonyms": [
+        {
+          "slug": "end-v",
+          "note": null
+        }
+      ],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -184,16 +207,15 @@
     },
     {
       "n": 3,
-      "signpost": "give",
-      "definition": "give something to someone by holding it out, or kick or throw a ball to someone on your team",
+      "signpost": "create",
+      "definition": "create a business, an organization, or a group",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + two objects",
-          "verb + object + preposition + object"
+          "verb + object"
         ]
       },
       "labels": {
@@ -206,49 +228,39 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Could you pass me the salt?",
+          "text": "She started her own company at twenty-five.",
           "note": null,
-          "pattern": "verb + two objects"
+          "pattern": null
         },
         {
-          "text": "Pass the ball to Omar!",
+          "text": "They started a club for new parents.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         },
         {
-          "text": "He passed the letter across the table.",
+          "text": "My grandfather started this shop.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         }
       ],
       "collocations": [
         {
           "type": "verb + noun",
           "items": [
-            "pass the salt",
-            "pass the ball"
-          ]
-        },
-        {
-          "type": "phrase",
-          "items": [
-            "pass something to someone"
+            "start a business",
+            "start a company",
+            "start a club"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "give-v",
+          "slug": "set-up-phrv",
           "note": null
         }
       ],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "hand-v",
-          "note": null
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -261,14 +273,16 @@
     },
     {
       "n": 4,
-      "signpost": "of time",
-      "definition": "go by",
-      "explanation": "Used of time, days, years, and so on.",
+      "signpost": "machine",
+      "definition": "make an engine, a car, or a machine begin to work, or begin to work",
+      "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "intransitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
-        "patterns": []
+        "patterns": [
+          "verb + object"
+        ]
       },
       "labels": {
         "register": [],
@@ -280,33 +294,37 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Three weeks passed before we heard from him.",
+          "text": "I can't start the car.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "The engine won't start.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The hours passed slowly.",
+          "text": "Press this button to start the washing machine.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + verb",
+          "type": "verb + noun",
           "items": [
-            "time passes",
-            "years pass",
-            "days pass"
+            "start the car",
+            "start the engine"
           ]
         }
       ],
-      "synonyms": [
+      "synonyms": [],
+      "antonyms": [
         {
-          "slug": "go-v",
+          "slug": "stop-v",
           "note": null
         }
       ],
-      "antonyms": [],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -320,15 +338,16 @@
     },
     {
       "n": 5,
-      "signpost": "spend time",
-      "definition": "spend time doing something, especially while you wait",
+      "signpost": "cause",
+      "definition": "cause something to begin, especially something bad",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + -ing form"
         ]
       },
       "labels": {
@@ -341,32 +360,35 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We played cards to pass the time.",
+          "text": "Who started the fight?",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "How did you pass the long winter evenings?",
+          "text": "A candle started the fire.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
+        },
+        {
+          "text": "His joke started everyone laughing.",
+          "note": null,
+          "pattern": "verb + object + -ing form"
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "verb + noun",
           "items": [
-            "pass the time"
+            "start a fight",
+            "start a fire",
+            "start a rumor",
+            "start trouble"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "spend-v",
-          "note": null
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -379,15 +401,15 @@
     },
     {
       "n": 6,
-      "signpost": "a test",
-      "definition": "succeed in an exam or a test",
+      "signpost": "from a point",
+      "definition": "begin at a particular point, level, or price",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive or intransitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + preposition + object"
         ]
       },
       "labels": {
@@ -400,44 +422,27 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Did you pass your driving test?",
+          "text": "Prices start at ten dollars.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         },
         {
-          "text": "She passed all her exams.",
+          "text": "The path starts behind the school.",
           "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "I studied hard, and I passed!",
-          "note": "no object",
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "verb + preposition",
           "items": [
-            "pass an exam",
-            "pass a test",
-            "pass a course"
-          ]
-        },
-        {
-          "type": "adverb + verb",
-          "items": [
-            "easily pass"
+            "start at something",
+            "start from something"
           ]
         }
       ],
       "synonyms": [],
-      "antonyms": [
-        {
-          "slug": "fail-v",
-          "note": null
-        }
-      ],
+      "antonyms": [],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -451,73 +456,21 @@
     },
     {
       "n": 7,
-      "signpost": "a law",
-      "definition": "officially accept a law or a plan by voting",
-      "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "transitive",
-        "codes": [],
-        "patterns": [
-          "verb + object"
-        ]
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "The city council passed the new rule last night.",
-          "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "The law was passed by a large majority.",
-          "note": "passive",
-          "pattern": "verb + object"
-        }
-      ],
-      "collocations": [
-        {
-          "type": "verb + noun",
-          "items": [
-            "pass a law",
-            "pass a bill",
-            "pass a rule"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 8,
-      "signpost": "go away",
-      "definition": "come to an end",
+      "signpost": "jump",
+      "definition": "move suddenly because you are surprised or afraid",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
         "codes": [],
-        "patterns": []
+        "patterns": [
+          "verb + adverb or preposition"
+        ]
       },
       "labels": {
-        "register": [],
+        "register": [
+          "literary"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -526,12 +479,12 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Don't worry. The pain will pass.",
+          "text": "She started at the sound of the door.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The storm passed during the night.",
+          "text": "He started when I touched his arm.",
           "note": null,
           "pattern": null
         }
@@ -539,7 +492,7 @@
       "collocations": [],
       "synonyms": [
         {
-          "slug": "end-v",
+          "slug": "jump-v",
           "note": null
         }
       ],
@@ -554,20 +507,47 @@
         "pronunciation": null
       },
       "l1": {}
+    }
+  ],
+  "phrases": [
+    {
+      "sub_id": "to-start-with",
+      "text": "to start with",
+      "definition": "used to give the first of several reasons or points",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "To start with, the hotel was too far from the beach.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "I don't want to go. To start with, I have no money.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     },
     {
-      "n": 9,
-      "signpost": "say no",
-      "definition": "decide not to take something that is offered, or not to take your turn",
+      "sub_id": "dont-start",
+      "text": "don't start",
+      "definition": "used to tell someone not to begin to argue or say that they are unhappy about something",
       "explanation": null,
-      "grammar": {
-        "countability": null,
-        "transitivity": "intransitive",
-        "codes": [],
-        "patterns": [
-          "verb + preposition + object"
-        ]
-      },
       "labels": {
         "register": [
           "informal"
@@ -577,42 +557,18 @@
         "currency": [],
         "attitude": []
       },
-      "pronunciation": null,
       "examples": [
         {
-          "text": "\"More cake?\" \"I'll pass, thanks.\"",
+          "text": "Don't start. I've had a long day.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "I think I'll pass on the party tonight; I'm really tired.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "If you don't know the answer, you can pass.",
+          "text": "Oh, don't start again!",
           "note": null,
           "pattern": null
         }
       ],
-      "collocations": [
-        {
-          "type": "verb + preposition",
-          "items": [
-            "pass on something"
-          ]
-        },
-        {
-          "type": "phrase",
-          "items": [
-            "I'll pass"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -623,105 +579,86 @@
       "l1": {}
     }
   ],
-  "phrases": [],
   "word_family": [
     {
-      "slug": "pass-n",
+      "slug": "start-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "passage-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "passing-adj",
+      "slug": "starter-n",
       "form": null,
       "note": null
     }
   ],
-  "synonym_discrimination": null,
-  "usage_note": "The past form is **passed**: *he passed me the salt*. **Past** is a different word, used after a verb of movement: *he walked past me*.",
+  "synonym_discrimination": {
+    "words": [
+      "start-v",
+      "begin-v",
+      "commence-v"
+    ],
+    "note": "**Start** and **begin** are often both possible: *It started/began to rain*. **Start** is the usual word for machines (*start the car*), and is much more common than **begin** for creating something (*start a business*); **begin** is a little more formal. **Commence** is very formal and is used for official events: *The ceremony will commence at noon*."
+  },
+  "usage_note": "**Start** can be followed by a **to** infinitive or an **-ing** form with little difference in meaning: *start to cry* or *start crying*. After a continuous form of **start**, the **to** infinitive is usual, because two **-ing** forms together sound awkward: *It's starting to rain*. American English also uses **start over** for *start again*.",
   "learner_errors": [
     {
-      "incorrect": "I passed an exam yesterday, but I failed.",
-      "correct": "I took an exam yesterday, but I failed.",
-      "note": "**Pass** an exam means *succeed*; to say you did it, use **take**."
+      "incorrect": "The car does not begin.",
+      "correct": "The car won't start.",
+      "note": "Use **start**, not **begin**, for engines and machines."
     },
     {
-      "incorrect": "She past me the salt.",
-      "correct": "She passed me the salt.",
-      "note": "The past form of the verb is spelled **passed**."
+      "incorrect": "I started to working here in May.",
+      "correct": "I started working here in May.",
+      "note": "After **start**, use either an **-ing** form or a **to** infinitive, not both."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "pass-away-phrv",
-      "note": null
+      "slug": "start-over-phrv",
+      "note": "start again"
     },
     {
-      "slug": "pass-out-phrv",
-      "note": null
+      "slug": "start-out-phrv",
+      "note": "begin a trip or a career"
     },
     {
-      "slug": "pass-on-phrv",
+      "slug": "begin-v",
       "note": null
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": null,
+    "grammar": "After a continuous form of **start**, the **to** infinitive is usual: *It's starting to rain*. Two **-ing** forms together (*starting raining*) sound awkward to most speakers.",
     "culture": null,
-    "false_friends": "\"pass\" an exam means *succeed in it*. In some languages the look-alike verb means *take* or *sit* an exam, with no result implied. English uses **take** for that.",
+    "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T19:54:40Z",
-    "modified": "2026-09-29T07:11:14Z",
+    "created": "2026-09-29T07:02:51Z",
+    "modified": "2026-09-29T07:11:44Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T195326Z-iujuq0",
+    "run_id": "20260929T065741Z-tgblpw",
     "reviews": [
       {
-        "run_id": "20260926T195326Z-iujuq0",
+        "run_id": "20260929T065741Z-tgblpw",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T195326Z-iujuq0/pass-v.json",
-        "ok": 86,
-        "issues": 2,
-        "blocking": 1
+        "date": "2026-09-29",
+        "file": "reviews/20260929T065741Z-tgblpw/start-v.json",
+        "ok": 85,
+        "issues": 4,
+        "blocking": 4
       },
       {
-        "run_id": "20260926T195326Z-iujuq0",
+        "run_id": "20260929T065741Z-tgblpw",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T195326Z-iujuq0/pass-v.json",
-        "ok": 87,
-        "issues": 1,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260928T005620Z-jf8wvz",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-28",
-        "file": "reviews/20260928T005620Z-jf8wvz/pass-v.json",
-        "ok": 97,
-        "issues": 1,
-        "blocking": 1
-      },
-      {
-        "run_id": "20260928T005620Z-jf8wvz",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-28",
-        "file": "reviews/20260928T005620Z-jf8wvz/pass-v.json",
-        "ok": 96,
-        "issues": 1,
+        "date": "2026-09-29",
+        "file": "reviews/20260929T065741Z-tgblpw/start-v.json",
+        "ok": 89,
+        "issues": 0,
         "blocking": 0
       }
     ],
