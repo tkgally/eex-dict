@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-09-29] build | Twelve verbs, try to warm
+*Append-only, newest first. Header: `## [2026-09-29] review | Ten verbs, choose to compete
+
+Fourth and last cycle of the 2026-09-29 18:44 run; the selector chose review. Second panel round for the 2026-09-24 verbs *choose, chop, clean, climb, close, collect, come, communicate, compare, compete*. Added by hand before the panel: *collect* sense 6 (*collect yourself*); *come* phrases *come in handy*, *come to nothing* and the total use (*the bill came to forty dollars*); *chop and change*; learner errors for *climb*; a *clean your teeth* usage note; headword marks in seven core ideas; a science-fact example on *communicate* replaced. Panel: 18 issues, 12 blocking; 13 applied, 5 rejected, none escalated. Applied: *collect* "go and get" is mainly British (American **pick up**); *close* sense 8 covers *closing on him*; *come* sense 5 names a total; *pick* and *shut* formality claims dropped; a *clean* clothes learner error removed. Rejected: *elect to do* is a real synonym of *choose to*; the *communicate* error kept. Spend US$0.44; day US$6.05.
+
+## [2026-09-29] build | Twelve verbs, try to warm
 
 Third cycle of the 2026-09-29 18:44 run; the selector chose build. Drafted the next band-1 verbs: *try, turn, understand, upset, use, visit, vote, wait, wake, walk, want, warm* (50 senses, 3 phrases, 24 learner errors). *turn* has eight senses; discriminations *try/attempt*, *understand/realize/know*, *wait/expect/await*, *walk/stroll/march/wander*, *want/would like/wish/desire*. All transcriptions verified. reviewer-b failed to parse on *wait* twice (finish=error); the third call parsed. Panel: 47 issues, 32 blocking; 33 applied, 14 rejected, none escalated. Applied: *turn* page sense widened, the *become* comparison no longer "sudden"; *want* phone use moved to a subsense and the police sense narrowed; *wake* now calls **waked** rare; *vote*/*elect* note. Rejected under fences: not-continuous notes on *understand* and *want*. Type mismatches settled as synonyms: *turn*/*become*, *upset*/*hurt*, *warm*/*heat*. Spend US$0.52.
 
