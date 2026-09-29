@@ -95,6 +95,14 @@
             "walk up",
             "carry something up"
           ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "up the stairs",
+            "up the hill",
+            "up a ladder"
+          ]
         }
       ],
       "synonyms": [],
@@ -211,7 +219,13 @@
   "word_family": [],
   "synonym_discrimination": null,
   "usage_note": "**Up** with no noun after it (*Stand up*, *Look up*) is an adverb, and **up** meaning *out of bed* or *finished* (*Are you up yet?*, *Time's up*) is an adjective; this entry covers only the preposition. Phrasal verbs such as **give up**, **get up**, and **pick up** have their own entries.",
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "She ran up to the stairs.",
+      "correct": "She ran up the stairs.",
+      "note": "Before the thing that is climbed, **up** comes directly; **up to** means *as far as* a place or person: *He came up to me*."
+    }
+  ],
   "etymology": null,
   "see_also": [
     {
@@ -233,7 +247,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-23T09:48:40Z",
-    "modified": "2026-09-23T15:43:11Z",
+    "modified": "2026-09-29T12:52:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260923T094302Z-pe3poz",
     "reviews": [
@@ -253,6 +267,26 @@
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-23",
         "file": "reviews/20260923T094302Z-pe3poz/up-prep.json",
+        "ok": 36,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260929T124417Z-bffqfz",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T124417Z-bffqfz/up-prep.json",
+        "ok": 34,
+        "issues": 2,
+        "blocking": 2
+      },
+      {
+        "run_id": "20260929T124417Z-bffqfz",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-29",
+        "file": "reviews/20260929T124417Z-bffqfz/up-prep.json",
         "ok": 36,
         "issues": 0,
         "blocking": 0
