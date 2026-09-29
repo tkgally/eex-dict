@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-09-29] build | Twelve verbs, threaten to trust
+*Append-only, newest first. Header: `## [2026-09-29] build | Twelve verbs, try to warm
+
+Third cycle of the 2026-09-29 18:44 run; the selector chose build. Drafted the next band-1 verbs: *try, turn, understand, upset, use, visit, vote, wait, wake, walk, want, warm* (50 senses, 3 phrases, 24 learner errors). *turn* has eight senses; discriminations *try/attempt*, *understand/realize/know*, *wait/expect/await*, *walk/stroll/march/wander*, *want/would like/wish/desire*. All transcriptions verified. reviewer-b failed to parse on *wait* twice (finish=error); the third call parsed. Panel: 47 issues, 32 blocking; 33 applied, 14 rejected, none escalated. Applied: *turn* page sense widened, the *become* comparison no longer "sudden"; *want* phone use moved to a subsense and the police sense narrowed; *wake* now calls **waked** rare; *vote*/*elect* note. Rejected under fences: not-continuous notes on *understand* and *want*. Type mismatches settled as synonyms: *turn*/*become*, *upset*/*hurt*, *warm*/*heat*. Spend US$0.52.
+
+## [2026-09-29] build | Twelve verbs, threaten to trust
 
 Second cycle of the 2026-09-29 18:44 run; the selector chose build. Drafted the next band-1 verbs: *threaten, throw, tie, tire, touch, trade, train, translate, transport, travel, treat, trust* (47 senses, 2 phrases, 23 learner errors). *throw* has ten senses; discriminations *throw/toss/hurl* and *trade/exchange/swap*. Inflections from rules or the exceptions table; all 24 transcriptions verified (*translate* 2/4 and 2/3 plus CMU). Panel: 38 issues, 21 blocking; 26 applied, 12 rejected, none escalated. Applied: *throw a tantrum* made its own sense; *throw someone out of work* example replaced; *tie* tie/draw note moved to the usage note; *translate*/*interpret* note; *transport* dropped the *export* stress comparison. Rejected under fences: *tire* one syllable, *treat* length mark. Back-links: *connect* <- *tie* moved to "related", *carry* <- *transport* to "move people or things"; type mismatches settled (*travel*/*go* synonyms, *trust*/*believe* synonyms). Lint-vocab: six definition words replaced (*knot*, *prepare*, *target* and others). Spend US$0.52.
 
