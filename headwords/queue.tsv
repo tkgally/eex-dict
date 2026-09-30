@@ -209,7 +209,7 @@ before	conj	1	defining	done	2026-09-16	votes 3; referenced by before-prep; stale
 before	prep	1	defining	done	2026-09-16	votes 3; referenced by after-prep
 begin	v	1	defining	done	2026-09-16	votes 3; released, not drafted this run (fewer/better)
 beginning	n	1	defining	pending	2026-09-16	votes 3; referenced by begin-v
-behavior	n	1	defining	pending	2026-09-16	votes 2
+behavior	n	1	defining	pending	2026-09-16	votes 2; referenced by behave-v
 behind	prep	1	defining	done	2026-09-16	votes 3
 belief	n	1	defining	pending	2026-09-16	votes 3; referenced by believe-v
 believe	v	1	defining	done	2026-09-16	votes 3; released, not drafted this run (fewer/better)
@@ -1559,7 +1559,7 @@ page	n	1	defining	pending	2026-09-16	votes 2
 paid	adj	1	defining	pending	2026-09-16	votes 1; referenced by pay-v
 pain	n	1	defining	pending	2026-09-16	votes 3
 painful	adj	1	defining	pending	2026-09-16	votes 1
-paint	n	1	defining	pending	2026-09-16	votes 2; referenced by paint-v
+paint	n	1	defining	pending	2026-09-16	votes 2; referenced by paint-v; referenced by painting-n
 paint	v	1	defining	done	2026-09-16	votes 3; referenced by draw-v
 pair	n	1	defining	pending	2026-09-16	votes 1
 pale	adj	1	defining	pending	2026-09-16	votes 2
@@ -4377,7 +4377,7 @@ angrily	adv	3	family	pending	2026-09-21	referenced by angry-adj; referenced by a
 availability	n	3	family	pending	2026-09-21	referenced by available-adj
 furious	adj	3	crossref	pending	2026-09-21	referenced by angry-adj
 mad	adj	3	crossref	pending	2026-09-21	referenced by angry-adj
-permit	v	3	crossref	pending	2026-09-21	referenced by allow-v; referenced by permission-n; referenced by let-v
+permit	v	3	crossref	pending	2026-09-21	referenced by allow-v; referenced by permission-n; referenced by let-v; referenced by authorize-v
 unavailable	adj	3	family	pending	2026-09-21	referenced by available-adj
 unaware	adj	3	crossref	pending	2026-09-21	referenced by aware-adj
 the	adv	1	crossref	pending	2026-09-21	correlative comparative use (the more..., the better...) split from the-det, review run 20260921T123329Z-8t05x6; referenced by the-det
@@ -4406,7 +4406,7 @@ airline	n	3	family	pending	2026-09-21	referenced by air-n; referenced by airport
 airplane	n	3	family	pending	2026-09-21	referenced by air-n; referenced by aircraft-n; referenced by airport-n
 alarm	v	3	family	done	2026-09-21	referenced by alarm-n
 alarmed	adj	3	family	pending	2026-09-21	referenced by alarm-n; referenced by alarm-v
-behave	v	3	crossref	pending	2026-09-21	referenced by act-v
+behave	v	3	crossref	done	2026-09-21	referenced by act-v
 influence	v	3	crossref	pending	2026-09-21	referenced by affect-v; referenced by inform-v; referenced by shape-v
 promote	v	3	crossref	pending	2026-09-21	referenced by advertise-v; referenced by encourage-v; referenced by push-v
 stillness	n	3	crossref	pending	2026-09-21	referenced by activity-n
@@ -4691,7 +4691,7 @@ doubtless	adv	3	family	pending	2026-09-24	referenced by doubt-v
 draw	n	3	family	pending	2026-09-24	referenced by draw-v
 draw on	phrv	3	crossref	pending	2026-09-24	referenced by draw-v
 draw up	phrv	3	crossref	pending	2026-09-24	referenced by draw-v
-drawing	n	3	family	pending	2026-09-24	referenced by draw-v
+drawing	n	3	family	done	2026-09-24	referenced by draw-v
 dream up	phrv	3	crossref	pending	2026-09-24	referenced by dream-v
 dreamer	n	3	family	pending	2026-09-24	referenced by dream-v
 dreamy	adj	3	family	pending	2026-09-24	referenced by dream-v
@@ -5006,8 +5006,8 @@ design	v	3	crossref	pending	2026-09-26	referenced by plan-v
 pack up	phrv	3	crossref	pending	2026-09-26	referenced by pack-v
 packed	adj	3	family	pending	2026-09-26	referenced by pack-v
 packing	n	3	family	pending	2026-09-26	referenced by pack-v
-painter	n	3	family	pending	2026-09-26	referenced by paint-v; referenced by artist-n
-painting	n	3	family	pending	2026-09-26	referenced by paint-v
+painter	n	3	family	pending	2026-09-26	referenced by paint-v; referenced by artist-n; referenced by painting-n
+painting	n	3	family	done	2026-09-26	referenced by paint-v
 pass	n	3	family	pending	2026-09-26	referenced by pass-v
 passage	n	3	family	pending	2026-09-26	referenced by pass-v
 passing	adj	3	family	pending	2026-09-26	referenced by pass-v
@@ -5278,9 +5278,9 @@ suffering	n	3	family	pending	2026-09-29	referenced by suffer-v
 suggestive	adj	3	family	pending	2026-09-29	referenced by suggest-v
 supporter	n	3	family	pending	2026-09-29	referenced by support-v
 supposition	n	3	family	pending	2026-09-29	referenced by suppose-v
-amazed	v	3	closure	pending	2026-09-29	used in surprise-v senses[0].definition
-amaze	v	3	crossref	pending	2026-09-29	referenced by surprise-v
-astonish	v	3	crossref	pending	2026-09-29	referenced by surprise-v
+amazed	v	3	closure	duplicate	2026-09-29	used in surprise-v senses[0].definition; participle of amaze; the entry is amaze-v (queued)
+amaze	v	3	crossref	done	2026-09-29	referenced by surprise-v
+astonish	v	3	crossref	pending	2026-09-29	referenced by surprise-v; referenced by amaze-v
 surprising	adj	3	family	pending	2026-09-29	referenced by surprise-v
 surprisingly	adv	3	family	pending	2026-09-29	referenced by surprise-v
 survivor	n	3	family	pending	2026-09-29	referenced by survive-v
@@ -5335,7 +5335,7 @@ treat	n	3	family	pending	2026-09-29	referenced by treat-v
 trusting	adj	3	family	pending	2026-09-29	referenced by trust-v
 trustworthy	adj	3	family	pending	2026-09-29	referenced by trust-v
 untouched	adj	3	family	pending	2026-09-29	referenced by touch-v
-behave	n	3	closure	pending	2026-09-29	used in treat-v senses[0].definition; pos guessed (no morphological signal), check before claiming; used in attitude-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+behave	n	3	closure	declined	2026-09-29	used in treat-v senses[0].definition; pos guessed (no morphological signal), check before claiming; used in attitude-n senses[0].definition; pos guessed (no morphological signal), check before claiming; no noun use; the word is the verb behave-v (queued)
 attempt	v	3	crossref	pending	2026-09-29	referenced by try-v; referenced by attempt-n
 await	v	3	crossref	pending	2026-09-29	referenced by wait-v
 march	v	3	crossref	pending	2026-09-29	referenced by walk-v
@@ -5409,18 +5409,18 @@ work off	phrv	3	crossref	pending	2026-09-30	referenced by work-v
 work up	phrv	3	crossref	pending	2026-09-30	referenced by work-v
 workable	adj	3	family	pending	2026-09-30	referenced by work-v
 working	adj	3	family	pending	2026-09-30	referenced by work-v
-avoid	n	3	closure	pending	2026-09-30	used in warn-v senses[0].definition; pos guessed (no morphological signal), check before claiming
+avoid	n	3	closure	declined	2026-09-30	used in warn-v senses[0].definition; pos guessed (no morphological signal), check before claiming; no noun use; the word is the verb avoid-v, queued
 accessibility	n	3	family	pending	2026-09-30	referenced by access-n
 acid	adj	3	family	pending	2026-09-30	referenced by acid-n
 acidic	adj	3	family	pending	2026-09-30	referenced by acid-n
 acidity	n	3	family	pending	2026-09-30	referenced by acid-n
 alkali	n	3	crossref	pending	2026-09-30	referenced by acid-n
-alphabetical	adj	3	family	pending	2026-09-30	referenced by alphabet-n
+alphabetical	adj	3	family	pending	2026-09-30	referenced by alphabet-n; referenced by alphabetize-v
 alphabetically	adv	3	family	pending	2026-09-30	referenced by alphabet-n
-alphabetize	v	3	family	pending	2026-09-30	referenced by alphabet-n
+alphabetize	v	3	family	done	2026-09-30	referenced by alphabet-n
 angel	n	3	crossref	pending	2026-09-30	referenced by angle-n
-anger	v	3	family	pending	2026-09-30	referenced by anger-n
-angle	v	3	family	pending	2026-09-30	referenced by angle-n
+anger	v	3	family	done	2026-09-30	referenced by anger-n
+angle	v	3	family	done	2026-09-30	referenced by angle-n
 angular	adj	3	family	pending	2026-09-30	referenced by angle-n
 animal	adj	3	family	pending	2026-09-30	referenced by animal-n
 approach	n	3	crossref	pending	2026-09-30	referenced by angle-n
@@ -5455,20 +5455,20 @@ navy	n	3	crossref	pending	2026-09-30	referenced by army-n
 quarrel	n	3	crossref	pending	2026-09-30	referenced by argument-n
 region	n	3	crossref	pending	2026-09-30	referenced by area-n
 response	n	3	crossref	pending	2026-09-30	referenced by answer-n
-drawings	n	3	closure	pending	2026-09-30	used in art-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming
-paintings	n	3	closure	pending	2026-09-30	used in art-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming
+drawings	n	3	closure	duplicate	2026-09-30	used in art-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming; plural of drawing; the entry is drawing-n (queued)
+paintings	n	3	closure	duplicate	2026-09-30	used in art-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming; plural of painting; the entry is painting-n (queued)
 aptitude	n	3	crossref	pending	2026-09-30	referenced by attitude-n
 attempted	adj	3	family	pending	2026-09-30	referenced by attempt-n
-attend	v	3	family	pending	2026-09-30	referenced by attention-n
-attentive	adj	3	family	pending	2026-09-30	referenced by attention-n
+attend	v	3	family	done	2026-09-30	referenced by attention-n
+attentive	adj	3	family	pending	2026-09-30	referenced by attention-n; referenced by attend-v
 auntie	n	3	family	pending	2026-09-30	referenced by aunt-n
-author	v	3	family	pending	2026-09-30	referenced by author-n
+author	v	3	family	done	2026-09-30	referenced by author-n
 authoritarian	adj	3	family	pending	2026-09-30	referenced by authority-n
 authoritative	adj	3	family	pending	2026-09-30	referenced by authority-n
-authorize	v	3	family	pending	2026-09-30	referenced by authority-n
-authorship	n	3	family	pending	2026-09-30	referenced by author-n
+authorize	v	3	family	done	2026-09-30	referenced by authority-n
+authorship	n	3	family	pending	2026-09-30	referenced by author-n; referenced by author-v
 autumnal	adj	3	family	pending	2026-09-30	referenced by autumn-n
-baby	v	3	family	pending	2026-09-30	referenced by baby-n
+baby	v	3	family	done	2026-09-30	referenced by baby-n
 babyish	adj	3	family	pending	2026-09-30	referenced by baby-n
 babysit	v	3	family	pending	2026-09-30	referenced by baby-n
 babysitter	n	3	family	pending	2026-09-30	referenced by baby-n
@@ -5482,3 +5482,20 @@ expert	n	3	crossref	pending	2026-09-30	referenced by authority-n
 great aunt	n	3	family	pending	2026-09-30	referenced by aunt-n
 sack	n	3	crossref	pending	2026-09-30	referenced by bag-n
 viewer	n	3	crossref	pending	2026-09-30	referenced by audience-n
+avoid	v	2	closure	done	2026-09-30	used in warn-v and attitude-n drafts; replaces bogus avoid-n
+amazed	adj	3	family	pending	2026-09-30	referenced by amaze-v
+amazement	n	3	family	pending	2026-09-30	referenced by amaze-v
+amazing	adj	3	family	pending	2026-09-30	referenced by amaze-v
+amazingly	adv	3	family	pending	2026-09-30	referenced by amaze-v
+attendance	n	3	family	pending	2026-09-30	referenced by attend-v
+attendant	n	3	family	pending	2026-09-30	referenced by attend-v
+authorization	n	3	family	pending	2026-09-30	referenced by authorize-v
+authorized	adj	3	family	pending	2026-09-30	referenced by authorize-v
+avoidable	adj	3	family	pending	2026-09-30	referenced by avoid-v
+avoidance	n	3	family	pending	2026-09-30	referenced by avoid-v
+badly behaved	adj	3	family	pending	2026-09-30	referenced by behave-v
+misbehave	v	3	family	pending	2026-09-30	referenced by behave-v
+spoil	v	3	crossref	pending	2026-09-30	referenced by baby-v
+unauthorized	adj	3	family	pending	2026-09-30	referenced by authorize-v
+unavoidable	adj	3	family	pending	2026-09-30	referenced by avoid-v
+well behaved	adj	3	family	pending	2026-09-30	referenced by behave-v
