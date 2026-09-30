@@ -1,6 +1,12 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-09-30] originality | Eleventh check: two rewrites (look after, wait)
+*Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
+
+## [2026-09-30] build | Twelve entries, worry to animal
+
+First cycle of the 2026-09-30 06:43 run; the selector chose build. Drafted the last band-1 verbs in queue order, *worry, wrap, write*, then the first nine nouns, *access, acid, afternoon, alphabet, ambulance, amount, anger, angle, animal* (37 senses, 8 phrases, 16 learner errors). *write* has seven senses; discriminations *worry/anxious/concerned*, *amount/number/quantity*, *anger/rage/fury*. All transcriptions and inflections verified. Panel: 49 issues; 23 applied, 26 rejected (twelve the quoted-headword fence), none escalated. Applied: *animal* senses 1 to 3 redefined (the loose *birds and animals* sense is no longer a mammal definition; the biological sense no longer claims every non-plant); *acid* sense 1 ties burning to strong acids; *write* sense 5 drops *sign*; *worry* usage note allows *I'm worrying*. Repaired this log's header line, split by an earlier insertion. Spend US$0.46.
+
+## [2026-09-30] originality | Eleventh check: two rewrites (look after, wait)
 
 Fourth and last cycle of the 2026-09-30 00:43 run, forced (run 140). Ten sampled fields, exact-phrase web searches, and one reviewer-a call ([record](../reviews/originality/2026-09-30.md)). Verdicts: original 5, generic-overlap 3, rewrite 2. Search result summaries gave a learner dictionary's *look after* in nearly our words (*giving them what they need, or keeping them safe*) and *wait*'s frame (*stay ... or not do something until something happens*, *until someone comes*) across two dictionaries. New wording: *be responsible for someone or something and make sure they are safe and well*; *stay in a place or delay an action until a person arrives or an expected thing happens*. Panel on both: two issues, both rejected (*care for* lives in `care-v`; *hold* mirrors `hold-v`). reviewer-a answered "cannot tell" ten times ([note](notes/reviewer-noise.md)). Spend: US$0.13; US$0.67 today.
 
@@ -31,8 +37,6 @@ Second cycle of the 2026-09-29 18:44 run; the selector chose build. Drafted the 
 ## [2026-09-29] review | On, to, with, as, and nine more
 
 First cycle of the 2026-09-29 18:44 run; the selector chose review. Second panel round for the oldest one-round entries: *on, to, with* (prepositions), *as, neither* (conjunctions), and the verbs *care, cause, celebrate, chew, carry, change, charge, check*. Added by hand before the panel: *carry* senses 9 (adding numbers; the *borrow* compare moved there, closing NEXT item 8) and 10 (pregnant), phrases *get carried away*, *carry something too far*, a usage note; *to* sense 11 (toasts); *with* sense 12 (*with all his faults*); *on* sense 5 widened to instruments; learner errors *on the picture*, *fill the glass of water*, *as ... so*; a *neither ... nor* usage note. Panel: 46 issues, 34 blocking; 27 applied, 19 rejected, none escalated. Applied: *on* boats, *to* weak form and *of/till*, *with* *meet with*, *change* plural claims, *charge* core idea, entry-level adaptation notes that duplicated sense notes removed. Rejected: *care for* formal labels, *chew* sense 2, causal *as* formal label. *check*/*examine* compare removed both sides. Spend US$0.74.
-
-## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
 ## [2026-09-29] lint | Twenty-third pass; six back-links moved
 
