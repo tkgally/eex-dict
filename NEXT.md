@@ -1,14 +1,14 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-09-30 by the third cycle (build) of the 00:43 UTC run (PRs #142 and #143 merged the first two).*
+*Rewritten 2026-09-30 by the fourth and last cycle (originality) of the 00:43 UTC run (PRs #142 to #144 merged the first three).*
 
 ## State
 
 - 765 entries, all `reviewed` (0 `draft`). Queue: 4,613 pending, 0 claimed, 765 done, 22 declined, 11 duplicate.
-- 2026-09-29 00:43 run: (1) review of *buy, calculate, call, calm, either* (conj), *times* (prep), senses and errors added by hand (`journal/2026-09-29.md`); (2) review of the nouns *aircraft*–*shelter* (`-2.md`); (3) build: twelve verbs *shave*–*slide* (`-3.md`); (4) closure: *bubble-n*, *committee-n*, and ten family verbs *border*–*monetize* (`-4.md`). 06:43 run: (1) review of the twelve 2026-09-23 conjunctions *after*–*until* (`-5.md`); (2) the twenty-second lint pass (`-6.md`); (3) build: twelve verbs *smell*–*steal* (`-7.md`); (4) build: twelve verbs *stick*–*suppose* (`-8.md`). 12:44 run: (1) review of *so, than, that* (conj), *through*–*without*, *until, up, such as* (prep) (`-9.md`); (2) the tenth originality check, *hold* sense 7 rewritten (`-10.md`); (3) build: twelve verbs *surprise*–*think* (`-11.md`); (4) the twenty-third lint pass (`-12.md`). 18:44 run: (1) review of *on, to, with*, *as, neither* (conj), *care*–*check* (`-13.md`); (2) build: twelve verbs *threaten*–*trust* (`-14.md`); (3) build: twelve verbs *try*–*warm* (`-15.md`); (4) review of the verbs *choose*–*compete* (`-16.md`). The 2026-09-28 runs (`journal/2026-09-28.md` to `-15.md`) came before. 2026-09-30 00:43 run: (1) site build and browser check, one journal autolink made relative (`journal/2026-09-30.md`). (2) the twenty-fourth lint pass (`-2.md`). (3) build: twelve verbs *warn*–*work* (`-3.md`).
+- 2026-09-29 00:43 run: (1) review of *buy, calculate, call, calm, either* (conj), *times* (prep), senses and errors added by hand (`journal/2026-09-29.md`); (2) review of the nouns *aircraft*–*shelter* (`-2.md`); (3) build: twelve verbs *shave*–*slide* (`-3.md`); (4) closure: *bubble-n*, *committee-n*, and ten family verbs *border*–*monetize* (`-4.md`). 06:43 run: (1) review of the twelve 2026-09-23 conjunctions *after*–*until* (`-5.md`); (2) the twenty-second lint pass (`-6.md`); (3) build: twelve verbs *smell*–*steal* (`-7.md`); (4) build: twelve verbs *stick*–*suppose* (`-8.md`). 12:44 run: (1) review of *so, than, that* (conj), *through*–*without*, *until, up, such as* (prep) (`-9.md`); (2) the tenth originality check, *hold* sense 7 rewritten (`-10.md`); (3) build: twelve verbs *surprise*–*think* (`-11.md`); (4) the twenty-third lint pass (`-12.md`). 18:44 run: (1) review of *on, to, with*, *as, neither* (conj), *care*–*check* (`-13.md`); (2) build: twelve verbs *threaten*–*trust* (`-14.md`); (3) build: twelve verbs *try*–*warm* (`-15.md`); (4) review of the verbs *choose*–*compete* (`-16.md`). The 2026-09-28 runs (`journal/2026-09-28.md` to `-15.md`) came before. 2026-09-30 00:43 run: (1) site build and browser check, one journal autolink made relative (`journal/2026-09-30.md`). (2) the twenty-fourth lint pass (`-2.md`). (3) build: twelve verbs *warn*–*work* (`-3.md`). (4) the eleventh originality check, *look after* and *wait* sense 1 rewritten (`-4.md`).
 - 275 `reviewed` entries remain at one panel round (the 36 new verbs *threaten*–*work* included). 36 one-sense entries still carry a signpost.
 - Run shape: a run every six hours, at most four cycles, 12 entries a build; weights build 0.45, review 0.30.
-- Spend: US$0.54 today (2026-09-30), of the US$15 daily cap. Site: last built and checked 2026-09-30, 54 of 54.
+- Spend: US$0.67 today (2026-09-30), of the US$15 daily cap. Site: last built and checked 2026-09-30, 54 of 54.
 
 ## Queue (work top-down, one unit at a time)
 
@@ -56,4 +56,4 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - Six open questions; the ones that most need you: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), and 6 (should infinitive *to* get an entry, and under what part of speech?). See `wiki/open-questions.md`. New in `reviews/needs_curator.txt` (2026-09-29): is *three times bigger* a use of `times-prep` or of the noun *time*? Kept in `times-prep`, flagged.
 - Originality checks: reviewer-a now gives quotes for "copied" that web search cannot find (six on 2026-09-26, three of them our own wording); search alone decides the verdicts ([note](wiki/notes/reviewer-noise.md)).
-- Latest reports: `journal/2026-09-30.md` to `-3.md`; before them `journal/2026-09-29.md` to `-16.md`.
+- Latest reports: `journal/2026-09-30.md` to `-4.md`; before them `journal/2026-09-29.md` to `-16.md`.
