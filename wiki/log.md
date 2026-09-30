@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-09-30] site | Site rebuilt; journal link to the site made relative
+*Append-only, newest first. Header: `## [2026-09-30] lint | Twenty-fourth lint pass: 23 back-links checked, four moved
+
+Second cycle of the 2026-09-30 00:43 run; the selector forced lint (five cycles since the last). `crossref --all --apply` wrote 23 back-links onto the 24 verbs *threaten*–*warm* and none of type mismatch. I checked each: 19 right, four moved by hand to the sense the source means: *exercise* to `train-v` sense 3 (sport), *get* to `turn-v` sense 5 (become), *see* to `understand-v` sense 1, *see* to `visit-v` sense 1. A second pass re-created none. Caps, links, index and pages, log against journal and metrics: clean. `lint_vocab --all --queue` queued nothing new; `claim --prune` removed two merged claim files. Precision: no live family under 30 percent at twenty or more decisions; `reviewer-a` `pronunciation` 0.32 (137). Open question 2's update refreshed (reviewer-b 0.62 against 0.71). Spend US$0.
+
+## [2026-09-30] site | Site rebuilt; journal link to the site made relative
 
 First cycle of the 2026-09-30 00:43 run; the selector chose site (last site build 2026-09-22). Pre-flight: no open pull requests, no orphan branches, empty inbox. `build_site.py` rendered 753 entries on 708 headword pages; `site_check.py` failed one of 54 checks: `journal/2026-09-25-4.md` has an autolink `<https://tkgally.github.io/eex-dict/>`, which rendered as an absolute link. Fixed in `tools/build_site.py`: autolinks now pass through the page's link rewriter, and the journal rewriter turns a link to the site's own address (`SITE_URL`) into a relative one (`../index.html`). One unit test added. Rebuilt and rechecked: 54 of 54. No entries changed. Spend US$0.
 
