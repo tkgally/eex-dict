@@ -136,3 +136,7 @@ Disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (2388/3364); `reviewer-b` `ALL
 ## 2026-09-30: twenty-fourth lint pass, no new switch-offs
 
 Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (2474/3493); `reviewer-b` `ALL` 0.62 (738/1190). No live family under 30 percent at twenty or more decisions. `reviewer-a` `pronunciation` 0.32 (44/137), still the nearest live family to the line. `reviewer-b` `spelling-or-format` 0.42 (274). Under twenty: `reviewer-a` `etymology` 0.47 (17); `reviewer-b` `inflection` 0.00 (5), `phrase` 0.39 (18).
+
+## 2026-09-30: twenty-fifth lint pass, no new switch-offs
+
+Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (2556/3614); `reviewer-b` `ALL` 0.61 (750/1229). No live family under 30 percent at twenty or more decisions. `reviewer-a` `spelling-or-format` 0.34 (11/32) is now the nearest live family to the line: five rejections this run, all the quoted-headword fence it has started to repeat. `reviewer-a` `pronunciation` 0.32 (44/137), unchanged. `reviewer-b` `spelling-or-format` 0.39 (297), 23 fence rejections this run. Under twenty: `reviewer-a` `etymology` 0.47 (17); `reviewer-b` `phrase` 0.39 (18), `inflection` 0.00 (5).
