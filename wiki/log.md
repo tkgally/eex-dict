@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-30] review | Second round for *disappoint* to *drive*
+
+Fourth and last cycle of the 18:43 UTC run. Second panel round for twelve 2026-09-24 verbs: *disappoint, discover, discuss, dislike, divide, divorce, doubt, draw, dream, dress, drink, drive*. Read by hand first; the entries were full, so only a *disappoint* learner error (*disappointed of*) and *drive away*, *drive off* in *drive*'s see-also (queued) were added. Panel: 19 issues (11 blocking); 9 applied, 10 rejected. Applied: *divide and conquer* redefined and its examples replaced (one showed the unrelated problem-solving use); *divide* sense 4 collocations made passive; *draw*'s *I was drawn to her* no longer coded as an active pattern; *not dream of doing something* widened; *drive*'s synonym *run* marked informal. Rejected: *did not disappoint* as unnatural; the American length mark on *dream* and quoted headwords in adaptation notes (fences); *doubt whether* in negatives. Spend US$0.47; day US$5.40.
+
 ## [2026-09-30] build | Twelve nouns, *beauty* to *berry*
 
 Third cycle of the 18:43 UTC run. Drafted twelve band-1 nouns: *beauty, bed, bedroom, bee, beer, beginning, behavior, belief, belt, bench, benefit, berry*, with idioms under their keyword (*beauty is in the eye of the beholder*, *have a bee in your bonnet*, *tighten your belt*, *give someone the benefit of the doubt*). Panel: 31 issues (17 blocking); 25 applied, 6 rejected. Applied: *belief*'s three senses redefined as accepting or trusting, not a feeling, with the core idea and usage note to match; *behavior*'s plural rule softened (*behaviors* for kinds of behavior in writing); *bee* no longer says every bee makes honey; *beginning* sense 2 redefined; *bench* sport sense includes coaches. Rejected: *spelling bee* as not mainly American (region fence); *fifty different beers* as outside the drink sense. Eleven defining-vocabulary violations fixed before review closed. Back-links *origin/beginning* and *advantage/benefit* correct. Spend US$0.46; day US$4.93.
