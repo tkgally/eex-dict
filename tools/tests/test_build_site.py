@@ -304,6 +304,15 @@ class MarkdownTests(unittest.TestCase):
         self.assertIn("<blockquote><p>quoted</p></blockquote>", html)
         self.assertIn("<hr>", html)
 
+    def test_journal_link_to_the_site_is_relative(self):
+        rewrite = build_site.journal_link_rewriter
+        self.assertEqual(rewrite(build_site.SITE_URL), "../index.html")
+        self.assertEqual(rewrite(build_site.SITE_URL + "w/run.html"), "../w/run.html")
+        self.assertEqual(rewrite("2026-09-25.md"), "2026-09-25.html")
+        self.assertEqual(rewrite("https://example.org/"), "https://example.org/")
+        html = build_site.md_inline("<%s>" % build_site.SITE_URL, link=rewrite)
+        self.assertIn('href="../index.html"', html)
+
 
 if __name__ == "__main__":
     unittest.main()

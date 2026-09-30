@@ -54,6 +54,7 @@ import link_words  # noqa: E402
 
 SITE_NAME = "TKG English Learner's Dictionary"
 GITHUB_URL = "https://github.com/tkgally/eex-dict"
+SITE_URL = "https://tkgally.github.io/eex-dict/"
 DISCLOSURE = ("Every entry was written by language models and reviewed by other language models; "
               "no human has checked most entries.")
 BAND_TITLE = "Frequency bands are this dictionary's own editorial estimates, not counts from a corpus."
@@ -163,7 +164,9 @@ def md_inline(text, link=None):
         return '<a href="%s">%s</a>' % (html.escape(url, quote=True), m.group(1))
 
     text = re.sub(r"\[([^\]]+)\]\(([^)\s]+)(?:\s+&quot;[^&]*&quot;)?\)", make_link, text)
-    text = re.sub(r"&lt;(https?://[^\s&]+)&gt;", r'<a href="\1">\1</a>', text)
+    text = re.sub(r"&lt;(https?://[^\s&]+)&gt;",
+                  lambda m: '<a href="%s">%s</a>' % (html.escape(link(m.group(1)) if link else m.group(1), quote=True),
+                                                     m.group(1)), text)
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"(?<!\w)__(.+?)__(?!\w)", r"<strong>\1</strong>", text)
     text = re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])", r"<em>\1</em>", text)
@@ -340,7 +343,10 @@ def repo_link_rewriter(from_dir):
 
 
 def journal_link_rewriter(url):
-    """A journal report's link to another report opens the rendered page."""
+    """A journal report's link to another report opens the rendered page;
+    a link to the public site itself becomes relative (journal/ is one level down)."""
+    if url.startswith(SITE_URL):
+        return "../" + (url[len(SITE_URL):] or "index.html")
     if re.match(r"^[a-zA-Z][a-zA-Z0-9+.-]*:", url) or url.startswith("#") or url.startswith("/"):
         return url
     if url.endswith(".md") and "/" not in url:
