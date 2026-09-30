@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-09-29] review | Ten verbs, choose to compete
+*Append-only, newest first. Header: `## [2026-09-30] site | Site rebuilt; journal link to the site made relative
+
+First cycle of the 2026-09-30 00:43 run; the selector chose site (last site build 2026-09-22). Pre-flight: no open pull requests, no orphan branches, empty inbox. `build_site.py` rendered 753 entries on 708 headword pages; `site_check.py` failed one of 54 checks: `journal/2026-09-25-4.md` has an autolink `<https://tkgally.github.io/eex-dict/>`, which rendered as an absolute link. Fixed in `tools/build_site.py`: autolinks now pass through the page's link rewriter, and the journal rewriter turns a link to the site's own address (`SITE_URL`) into a relative one (`../index.html`). One unit test added. Rebuilt and rechecked: 54 of 54. No entries changed. Spend US$0.
+
+## [2026-09-29] review | Ten verbs, choose to compete
 
 Fourth and last cycle of the 2026-09-29 18:44 run; the selector chose review. Second panel round for the 2026-09-24 verbs *choose, chop, clean, climb, close, collect, come, communicate, compare, compete*. Added by hand before the panel: *collect* sense 6 (*collect yourself*); *come* phrases *come in handy*, *come to nothing* and the total use (*the bill came to forty dollars*); *chop and change*; learner errors for *climb*; a *clean your teeth* usage note; headword marks in seven core ideas; a science-fact example on *communicate* replaced. Panel: 18 issues, 12 blocking; 13 applied, 5 rejected, none escalated. Applied: *collect* "go and get" is mainly British (American **pick up**); *close* sense 8 covers *closing on him*; *come* sense 5 names a total; *pick* and *shut* formality claims dropped; a *clean* clothes learner error removed. Rejected: *elect to do* is a real synonym of *choose to*; the *communicate* error kept. Spend US$0.44; day US$6.05.
 
