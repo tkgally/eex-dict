@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-09-30] lint | Twenty-fourth lint pass: 23 back-links checked, four moved
+*Append-only, newest first. Header: `## [2026-09-30] build | Twelve verbs, warn to work
+
+Third cycle of the 2026-09-30 00:43 run; the selector chose build. Drafted the next band-1 verbs: *warn, wash, watch, water, wear, weigh, whisper, win, wipe, wish, wonder, work* (51 senses, 9 phrases, 22 learner errors). *work* has nine senses; discriminations *warn/caution/alert*, *wash/clean/rinse*, *watch/look/see*, *wear/put on/dress*, *whisper/murmur/mutter*, *win/beat/earn*, *wish/hope/want*, *work/function/operate*. All transcriptions and inflections verified. Panel: 41 issues; 29 applied, 12 rejected (seven the quoted-headword fence), none escalated. Applied: *warn* sense 3 narrowed to an unwelcome thing; *watch* "take care of" loses its time limit; *water* no longer excludes tears of feeling; *wipe* memory use moved out of the computing sense into sense 4; *work* sense 8 covers farming land. Back-links: two of eight moved (*dress*, *rub*); three type mismatches settled as compare. Spend US$0.54.
+
+## [2026-09-30] lint | Twenty-fourth lint pass: 23 back-links checked, four moved
 
 Second cycle of the 2026-09-30 00:43 run; the selector forced lint (five cycles since the last). `crossref --all --apply` wrote 23 back-links onto the 24 verbs *threaten*–*warm* and none of type mismatch. I checked each: 19 right, four moved by hand to the sense the source means: *exercise* to `train-v` sense 3 (sport), *get* to `turn-v` sense 5 (become), *see* to `understand-v` sense 1, *see* to `visit-v` sense 1. A second pass re-created none. Caps, links, index and pages, log against journal and metrics: clean. `lint_vocab --all --queue` queued nothing new; `claim --prune` removed two merged claim files. Precision: no live family under 30 percent at twenty or more decisions; `reviewer-a` `pronunciation` 0.32 (137). Open question 2's update refreshed (reviewer-b 0.62 against 0.71). Spend US$0.
 

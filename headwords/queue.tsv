@@ -1741,7 +1741,7 @@ put away	phrv	1	defining	pending	2026-09-16	votes 2; referenced by put-v
 put back	phrv	1	defining	pending	2026-09-16	votes 1; referenced by put-v
 put down	phrv	1	defining	pending	2026-09-16	votes 2; referenced by pick-up-phrv; referenced by destroy-v; referenced by put-v
 put off	phrv	1	defining	pending	2026-09-16	votes 1; referenced by put-v
-put on	phrv	1	defining	pending	2026-09-16	votes 3; referenced by dress-v; referenced by put-v
+put on	phrv	1	defining	pending	2026-09-16	votes 3; referenced by dress-v; referenced by put-v; referenced by wear-v
 put together	phrv	1	defining	pending	2026-09-16	votes 1; referenced by put-v
 put up	phrv	1	defining	pending	2026-09-16	votes 1; referenced by put-v
 quality	n	1	defining	pending	2026-09-16	votes 2
@@ -2470,18 +2470,18 @@ want	v	1	defining	done	2026-09-16	votes 3; referenced by like-v
 war	n	1	defining	pending	2026-09-16	votes 3
 warm	adj	1	defining	pending	2026-09-16	votes 3; referenced by warm-v
 warm	v	1	defining	done	2026-09-16	votes 2; referenced by cool-v; referenced by heat-v
-warn	v	1	defining	pending	2026-09-16	votes 2; referenced by threaten-v
-warning	n	1	defining	pending	2026-09-16	votes 2
-wash	n	1	defining	pending	2026-09-16	votes 2
-wash	v	1	defining	pending	2026-09-16	votes 3; referenced by clean-v
-wash up	phrv	1	defining	pending	2026-09-16	votes 1
+warn	v	1	defining	done	2026-09-16	votes 2; referenced by threaten-v
+warning	n	1	defining	pending	2026-09-16	votes 2; referenced by warn-v
+wash	n	1	defining	pending	2026-09-16	votes 2; referenced by wash-v
+wash	v	1	defining	done	2026-09-16	votes 3; referenced by clean-v
+wash up	phrv	1	defining	pending	2026-09-16	votes 1; referenced by wash-v
 washing machine	n	1	defining	pending	2026-09-16	votes 1
 waste	n	1	defining	pending	2026-09-16	votes 2
-watch	n	1	defining	pending	2026-09-16	votes 3
-watch	v	1	defining	pending	2026-09-16	votes 3; referenced by see-v; referenced by look-v; referenced by observe-v
-watch out	phrv	1	defining	pending	2026-09-16	votes 2
+watch	n	1	defining	pending	2026-09-16	votes 3; referenced by watch-v
+watch	v	1	defining	done	2026-09-16	votes 3; referenced by see-v; referenced by look-v; referenced by observe-v
+watch out	phrv	1	defining	pending	2026-09-16	votes 2; referenced by watch-v
 water	n	1	defining	done	2026-09-16	votes 3
-water	v	1	defining	pending	2026-09-16	votes 2; referenced by water-n
+water	v	1	defining	done	2026-09-16	votes 2; referenced by water-n
 waterfall	n	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech; referenced by water-n
 wave	n	1	defining	pending	2026-09-16	votes 2
 wax	n	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
@@ -2493,7 +2493,7 @@ weakness	n	1	defining	pending	2026-09-16	votes 3
 wealth	n	1	defining	pending	2026-09-16	votes 1
 wealthy	adj	1	defining	pending	2026-09-16	votes 1
 weapon	n	1	defining	pending	2026-09-16	votes 2
-wear	v	1	defining	pending	2026-09-16	votes 3; referenced by dress-v
+wear	v	1	defining	done	2026-09-16	votes 3; referenced by dress-v
 weather	n	1	defining	pending	2026-09-16	votes 2
 web	n	1	defining	pending	2026-09-16	votes 1
 website	n	1	defining	pending	2026-09-16	votes 1
@@ -2503,8 +2503,8 @@ weed	v	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of 
 week	n	1	defining	pending	2026-09-16	votes 3
 weekend	n	1	defining	pending	2026-09-16	votes 2
 weekly	adj	1	defining	pending	2026-09-16	votes 2
-weigh	v	1	defining	pending	2026-09-16	votes 3
-weight	n	1	defining	pending	2026-09-16	votes 3
+weigh	v	1	defining	done	2026-09-16	votes 3
+weight	n	1	defining	pending	2026-09-16	votes 3; referenced by weigh-v
 welcome	interj	1	defining	pending	2026-09-16	votes 3
 well	adj	1	defining	pending	2026-09-16	votes 2; referenced by well-interj
 well	adv	1	defining	pending	2026-09-16	votes 3; referenced by good-adj; referenced by well-interj
@@ -2525,7 +2525,7 @@ whether	conj	1	defining	done	2026-09-16	votes 3
 which	det	1	defining	done	2026-09-16	votes 3
 which	pron	1	defining	done	2026-09-16	votes 3; referenced by which-det
 while	conj	1	defining	done	2026-09-16	votes 3
-whisper	v	1	defining	pending	2026-09-16	votes 2; referenced by breathe-v
+whisper	v	1	defining	done	2026-09-16	votes 2; referenced by breathe-v
 white	adj	1	defining	pending	2026-09-16	votes 2
 who	pron	1	defining	done	2026-09-16	votes 3
 whole	adj	1	defining	pending	2026-09-16	votes 3; referenced by all-det
@@ -2541,36 +2541,36 @@ width	n	1	defining	pending	2026-09-16	votes 3
 wife	n	1	defining	pending	2026-09-16	votes 3
 wild	adj	1	defining	pending	2026-09-16	votes 3
 will	modal	1	defining	done	2026-09-16	votes 3; referenced by go-v
-win	v	1	defining	pending	2026-09-16	votes 3; referenced by take-v; referenced by earn-v; referenced by lose-v; referenced by beat-v
+win	v	1	defining	done	2026-09-16	votes 3; referenced by take-v; referenced by earn-v; referenced by lose-v; referenced by beat-v
 wind	n	1	defining	pending	2026-09-16	votes 2
 window	n	1	defining	pending	2026-09-16	votes 2
 wine	n	1	defining	pending	2026-09-16	votes 2
 wing	n	1	defining	pending	2026-09-16	votes 2
-winner	n	1	defining	pending	2026-09-16	votes 1
+winner	n	1	defining	pending	2026-09-16	votes 1; referenced by win-v
 winter	n	1	defining	pending	2026-09-16	votes 3
-wipe	v	1	defining	pending	2026-09-16	votes 2; referenced by clean-v
+wipe	v	1	defining	done	2026-09-16	votes 2; referenced by clean-v
 wire	n	1	defining	pending	2026-09-16	votes 2
 wisdom	n	1	defining	pending	2026-09-16	votes 1
 wise	adj	1	defining	pending	2026-09-16	votes 3
-wish	n	1	defining	pending	2026-09-16	votes 2
-wish	v	1	defining	pending	2026-09-16	votes 2; referenced by dream-v; referenced by hope-v; referenced by want-v
+wish	n	1	defining	pending	2026-09-16	votes 2; referenced by wish-v
+wish	v	1	defining	done	2026-09-16	votes 2; referenced by dream-v; referenced by hope-v; referenced by want-v
 with	prep	1	defining	done	2026-09-16	votes 3; referenced by along-prep; stale claim, no backing file, see queue-stale-claimed-rows.md; referenced by without-prep
 within	prep	1	defining	done	2026-09-16	votes 3; referenced by inside-prep; stale claim, no backing file, see queue-stale-claimed-rows.md
 without	prep	1	defining	done	2026-09-16	votes 3; referenced by minus-prep; stale claim, no backing file, see queue-stale-claimed-rows.md
 witness	n	1	defining	pending	2026-09-16	votes 1
 woman	n	1	defining	pending	2026-09-16	votes 3
-wonder	v	1	defining	pending	2026-09-16	votes 1
-wonderful	adj	1	defining	pending	2026-09-16	votes 1
+wonder	v	1	defining	done	2026-09-16	votes 1
+wonderful	adj	1	defining	pending	2026-09-16	votes 1; referenced by wonder-v
 wood	n	1	defining	pending	2026-09-16	votes 3
 wool	n	1	defining	pending	2026-09-16	votes 2
 word	n	1	defining	pending	2026-09-16	votes 2
-work	n	1	defining	pending	2026-09-16	votes 3
-work	v	1	defining	pending	2026-09-16	votes 3; referenced by go-v; referenced by operate-v
-work out	phrv	1	defining	pending	2026-09-16	votes 3; referenced by solve-v
-worker	n	1	defining	pending	2026-09-16	votes 2; referenced by hand-n
+work	n	1	defining	pending	2026-09-16	votes 3; referenced by work-v
+work	v	1	defining	done	2026-09-16	votes 3; referenced by go-v; referenced by operate-v
+work out	phrv	1	defining	pending	2026-09-16	votes 3; referenced by solve-v; referenced by work-v
+worker	n	1	defining	pending	2026-09-16	votes 2; referenced by hand-n; referenced by work-v
 world	n	1	defining	pending	2026-09-16	votes 2
 worm	n	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
-worn	adj	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
+worn	adj	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech; referenced by wear-v
 worried	adj	1	defining	pending	2026-09-16	votes 1; referenced by afraid-adj; referenced by anxious-adj; referenced by concerning-adj
 worry	n	1	defining	pending	2026-09-16	votes 3
 worry	v	1	defining	pending	2026-09-16	votes 3; referenced by fear-v; referenced by alarm-v
@@ -3087,7 +3087,7 @@ frequently	adv	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2
 freshly	adv	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 friction	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 frustrated	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
-function	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by run-v
+function	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by run-v; referenced by work-v
 fundamental	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
 fundamentally	adv	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 fungus	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
@@ -3342,7 +3342,7 @@ moderately	adv	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2
 moist	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 moisture	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3)
 mole	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=4)
-monitor	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
+monitor	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by watch-v
 monument	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 mop	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 mop	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
@@ -3358,7 +3358,7 @@ mrs	abbr	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=1,wor
 mug	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=3)
 municipal	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 murmur	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
-murmur	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
+murmur	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3); referenced by whisper-v
 muscular	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 my pleasure	phr	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=5)
 naive	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=4)
@@ -3580,7 +3580,7 @@ revolution	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2
 revolve	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 rib	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 ridge	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
-rinse	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
+rinse	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by wash-v
 rip	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=4)
 ritual	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 roar	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
@@ -3910,7 +3910,7 @@ accompany	v	3	crossref	pending	2026-09-16	referenced by see-v
 account for	phrv	3	crossref	pending	2026-09-16	referenced by explain-v
 address	v	3	crossref	pending	2026-09-16	referenced by speak-v; referenced by address-n
 advisable	adj	3	family	pending	2026-09-16	referenced by advice-n
-advise	v	3	crossref	pending	2026-09-16	referenced by advice-n
+advise	v	3	crossref	pending	2026-09-16	referenced by advice-n; referenced by warn-v
 adviser	n	3	family	pending	2026-09-16	referenced by advice-n
 advisory	adj	3	family	pending	2026-09-16	referenced by advice-n
 ancient	adj	3	crossref	pending	2026-09-16	referenced by old-adj
@@ -4096,7 +4096,7 @@ manufacture	v	3	crossref	pending	2026-09-16	referenced by make-v
 means	n	3	crossref	pending	2026-09-16	referenced by way-n
 meantime	n	3	family	pending	2026-09-16	referenced by time-n
 midway	adv	3	family	pending	2026-09-16	referenced by way-n
-mind	v	3	crossref	pending	2026-09-16	referenced by look-after-phrv; referenced by care-v
+mind	v	3	crossref	pending	2026-09-16	referenced by look-after-phrv; referenced by care-v; referenced by watch-v
 misinformation	n	3	family	pending	2026-09-16	referenced by information-n
 miss	v	3	crossref	pending	2026-09-16	referenced by make-v; referenced by catch-v
 monetary	adj	3	family	pending	2026-09-16	referenced by money-n
@@ -4268,7 +4268,7 @@ very	adj	3	family	pending	2026-09-16	referenced by very-adv
 walkway	n	3	family	pending	2026-09-16	referenced by way-n
 watercolor	n	3	family	pending	2026-09-16	referenced by color-n
 waterway	n	3	family	pending	2026-09-16	referenced by way-n
-watery	adj	3	family	pending	2026-09-16	referenced by water-n
+watery	adj	3	family	pending	2026-09-16	referenced by water-n; referenced by water-v
 way	adv	3	family	pending	2026-09-16	referenced by way-n
 whatever	pron	3	crossref	pending	2026-09-16	referenced by however-adv; referenced by whatever-det; referenced by what-pron
 whenever	conj	3	crossref	pending	2026-09-16	referenced by however-adv; referenced by when-conj
@@ -4656,7 +4656,7 @@ dependence	n	3	family	pending	2026-09-24	referenced by depend-v
 descriptive	adj	3	family	pending	2026-09-24	referenced by describe-v
 destroyer	n	3	family	pending	2026-09-24	referenced by destroy-v
 destructive	adj	3	family	pending	2026-09-24	referenced by destroy-v
-erase	v	3	crossref	pending	2026-09-24	referenced by delete-v
+erase	v	3	crossref	pending	2026-09-24	referenced by delete-v; referenced by wipe-v
 go down	phrv	3	crossref	pending	2026-09-24	referenced by decrease-v
 prosecute	v	3	crossref	pending	2026-09-24	referenced by defend-v
 rely	v	3	crossref	pending	2026-09-24	referenced by depend-v; referenced by trust-v
@@ -4710,7 +4710,7 @@ earner	n	3	family	pending	2026-09-24	referenced by earn-v
 earnings	n	3	family	pending	2026-09-24	referenced by earn-v
 eat out	phrv	3	crossref	pending	2026-09-24	referenced by eat-v
 eater	n	3	family	pending	2026-09-24	referenced by eat-v
-gain	v	3	crossref	pending	2026-09-24	referenced by earn-v; referenced by lose-v
+gain	v	3	crossref	pending	2026-09-24	referenced by earn-v; referenced by lose-v; referenced by win-v
 sketch	v	3	crossref	pending	2026-09-24	referenced by draw-v
 toast	v	3	crossref	pending	2026-09-24	referenced by drink-v
 undoubtedly	adv	3	family	pending	2026-09-24	referenced by doubt-v
@@ -4798,7 +4798,7 @@ concentrate	v	3	crossref	pending	2026-09-25	referenced by focus-v
 deep fry	v	3	crossref	pending	2026-09-25	referenced by fry-v
 defrost	v	3	crossref	pending	2026-09-25	referenced by freeze-v
 excuse	v	3	crossref	pending	2026-09-25	referenced by forgive-v
-fail	v	3	crossref	pending	2026-09-25	referenced by fold-v; referenced by pass-v
+fail	v	3	crossref	pending	2026-09-25	referenced by fold-v; referenced by pass-v; referenced by work-v
 focused	adj	3	family	pending	2026-09-25	referenced by focus-v
 fold	n	3	family	pending	2026-09-25	referenced by fold-v
 folding	adj	3	family	pending	2026-09-25	referenced by fold-v
@@ -5370,3 +5370,43 @@ walking	n	3	family	pending	2026-09-29	referenced by walk-v
 want	n	3	family	pending	2026-09-29	referenced by want-v
 wanted	adj	3	family	pending	2026-09-29	referenced by want-v
 warmly	adv	3	family	pending	2026-09-29	referenced by warm-v
+alert	v	3	crossref	pending	2026-09-30	referenced by warn-v
+caution	v	3	crossref	pending	2026-09-30	referenced by warn-v
+labor	v	3	crossref	pending	2026-09-30	referenced by work-v
+mutter	v	3	crossref	pending	2026-09-30	referenced by whisper-v
+rumor	v	3	crossref	pending	2026-09-30	referenced by whisper-v
+succeed	v	3	crossref	pending	2026-09-30	referenced by work-v
+view	v	3	crossref	pending	2026-09-30	referenced by watch-v
+wash off	phrv	3	crossref	pending	2026-09-30	referenced by wash-v
+washable	adj	3	family	pending	2026-09-30	referenced by wash-v
+washer	n	3	family	pending	2026-09-30	referenced by wash-v
+washing	n	3	family	pending	2026-09-30	referenced by wash-v
+watch over	phrv	3	crossref	pending	2026-09-30	referenced by watch-v
+watcher	n	3	family	pending	2026-09-30	referenced by watch-v
+watchful	adj	3	family	pending	2026-09-30	referenced by watch-v
+water down	phrv	3	crossref	pending	2026-09-30	referenced by water-v
+wear down	phrv	3	crossref	pending	2026-09-30	referenced by wear-v
+wear	n	3	family	pending	2026-09-30	referenced by wear-v
+wear off	phrv	3	crossref	pending	2026-09-30	referenced by wear-v
+wear out	phrv	3	crossref	pending	2026-09-30	referenced by wear-v
+wearer	n	3	family	pending	2026-09-30	referenced by wear-v
+weigh down	phrv	3	crossref	pending	2026-09-30	referenced by weigh-v
+weigh in	phrv	3	crossref	pending	2026-09-30	referenced by weigh-v
+weigh up	phrv	3	crossref	pending	2026-09-30	referenced by weigh-v
+whisper	n	3	family	pending	2026-09-30	referenced by whisper-v
+win back	phrv	3	crossref	pending	2026-09-30	referenced by win-v
+win	n	3	family	pending	2026-09-30	referenced by win-v
+win over	phrv	3	crossref	pending	2026-09-30	referenced by win-v
+winning	adj	3	family	pending	2026-09-30	referenced by win-v
+winnings	n	3	family	pending	2026-09-30	referenced by win-v
+wipe	n	3	family	pending	2026-09-30	referenced by wipe-v
+wipe out	phrv	3	crossref	pending	2026-09-30	referenced by wipe-v
+wipe up	phrv	3	crossref	pending	2026-09-30	referenced by wipe-v
+wiper	n	3	family	pending	2026-09-30	referenced by wipe-v
+wishful	adj	3	family	pending	2026-09-30	referenced by wish-v
+wonder	n	3	family	pending	2026-09-30	referenced by wonder-v
+work off	phrv	3	crossref	pending	2026-09-30	referenced by work-v
+work up	phrv	3	crossref	pending	2026-09-30	referenced by work-v
+workable	adj	3	family	pending	2026-09-30	referenced by work-v
+working	adj	3	family	pending	2026-09-30	referenced by work-v
+avoid	n	3	closure	pending	2026-09-30	used in warn-v senses[0].definition; pos guessed (no morphological signal), check before claiming
