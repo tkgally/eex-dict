@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-30] build | Twelve nouns, answer to attack
+
+Third cycle of the 2026-09-30 06:43 run; the selector chose build. Drafted the next band-1 nouns: *answer, apartment, appearance, appointment, area, argument, arm, army, arrest, art, artist, attack* (41 senses, 13 phrases, 13 learner errors). Discriminations *answer/reply/response*, *area/region/district*. British *argument* was disputed 0/3 as `ˈɑː.ɡjə.mənt`; revised to `ˈɑː.ɡjʊ.mənt`, verified 2/3. Panel: 41 issues; 26 applied, 15 rejected, none escalated. Applied: *appointment* sense 2 split into choosing someone and the job itself, and its "only professionals" claims softened; *arrest* now officially hold, not take away; *arm* of the sea corrected; *artist* sense 3 loses *con artist*, which the definition did not cover; *attack* of illness no longer always short. Spend US$0.48.
+
 ## [2026-09-30] review | Twelve 2026-09-24 verbs, confuse to cough
 
 Second cycle of the 2026-09-30 06:43 run; the selector chose review. Second panel round for the oldest one-round entries: *confuse, connect, consider, consist, contain, continue, control, cook, cool, copy, cost, cough*. Added by hand before the panel: *cough* senses 2 (bring blood up) and 3 (of an engine) with a core idea; learner errors *consider about*, *the price contains breakfast*, *controled*, *cooked a cake*; phrase *what's cooking?*; a *confuse* false-friend note; `count-v` moved from *consider* sense 1 to sense 2, where its mirror points. reviewer-b's first reply on *contain* failed to parse and was re-run. Panel: 27 issues; 16 applied, 11 rejected, none escalated. Applied: *continue* usage note no longer ties the **to**-infinitive to non-person subjects; *connect with* named the usual relation form; *cool it* given a phrasal definition; *cooker* note covers American devices; *copy someone in* loses its British claim. Spend US$0.44.
