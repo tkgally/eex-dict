@@ -10,13 +10,13 @@
     "american": {
       "ipa": "dɪ.ˈskraɪb",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/3;cmudict:agree",
+      "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
       "ipa": "dɪ.ˈskraɪb",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:2/2",
+      "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
@@ -51,7 +51,7 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "say what it is like",
+      "signpost": "give details",
       "definition": "say or write what someone or something is like, or what happened",
       "explanation": null,
       "grammar": {
@@ -122,7 +122,7 @@
       "synonyms": [
         {
           "slug": "call-v",
-          "note": null
+          "note": "in *describe someone as something*"
         }
       ],
       "antonyms": [],
@@ -226,6 +226,11 @@
       "incorrect": "She described about her new job.",
       "correct": "She described her new job.",
       "note": "**Describe** takes a direct object with no **about**."
+    },
+    {
+      "incorrect": "Can you describe how does it work?",
+      "correct": "Can you describe how it works?",
+      "note": "After **describe**, a clause with **how**, **what**, or **where** keeps the normal order of a statement."
     }
   ],
   "etymology": null,
@@ -240,7 +245,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-24T12:46:36Z",
-    "modified": "2026-09-29T00:51:34Z",
+    "modified": "2026-09-30T18:51:21Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260924T124322Z-0jqi0i",
     "reviews": [
@@ -263,6 +268,26 @@
         "ok": 34,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20260930T184350Z-bhydso",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-30",
+        "file": "reviews/20260930T184350Z-bhydso/describe-v.json",
+        "ok": 34,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260930T184350Z-bhydso",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-30",
+        "file": "reviews/20260930T184350Z-bhydso/describe-v.json",
+        "ok": 32,
+        "issues": 2,
+        "blocking": 1
       }
     ],
     "status": "reviewed",

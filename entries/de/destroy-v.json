@@ -10,13 +10,13 @@
     "american": {
       "ipa": "dɪ.ˈstrɔɪ",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/3;cmudict:agree",
+      "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
       "ipa": "dɪ.ˈstrɔɪ",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:2/2",
+      "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To destroy something is to harm it so badly that it can no longer exist or work as it did before.",
+  "core_idea": "To destroy something or someone is to harm them so badly that they can no longer exist, work, or feel as they did before.",
   "senses": [
     {
       "n": 1,
@@ -340,6 +340,66 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "upset badly",
+      "definition": "make someone so unhappy or upset that they find it very hard to go on as before",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Losing his job completely destroyed him.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "It would destroy her if she ever found out.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "She was destroyed when her best friend moved away.",
+          "note": "passive",
+          "pattern": "verb + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "adverb + verb",
+          "items": [
+            "completely destroy someone",
+            "totally destroy someone"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [],
@@ -369,7 +429,13 @@
     "note": "**Damage** means harm something so that it is less good but still exists: *The rain damaged the roof*. **Destroy** means harm it so badly that it cannot be used or repaired: *The fire destroyed the house*. **Ruin** is often used for plans, days, clothes, and chances: *The rain ruined our picnic*."
   },
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "My phone is destroyed; the screen has a small crack.",
+      "correct": "My phone is damaged; the screen has a small crack.",
+      "note": "**Destroy** means harmed so badly that it cannot be used or repaired; for smaller harm, use **damage** or **break**."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
@@ -382,7 +448,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-24T12:46:36Z",
-    "modified": "2026-09-26T18:53:36Z",
+    "modified": "2026-09-30T18:48:46Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260924T124322Z-0jqi0i",
     "reviews": [
@@ -404,6 +470,26 @@
         "file": "reviews/20260924T124322Z-0jqi0i/destroy-v.json",
         "ok": 51,
         "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260930T184350Z-bhydso",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-30",
+        "file": "reviews/20260930T184350Z-bhydso/destroy-v.json",
+        "ok": 60,
+        "issues": 1,
+        "blocking": 1
+      },
+      {
+        "run_id": "20260930T184350Z-bhydso",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-30",
+        "file": "reviews/20260930T184350Z-bhydso/destroy-v.json",
+        "ok": 59,
+        "issues": 2,
         "blocking": 0
       }
     ],
