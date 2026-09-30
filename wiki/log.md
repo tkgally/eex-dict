@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-30] lint | Twenty-fifth lint pass; five of ten back-links moved
+
+Fourth and last cycle of the 2026-09-30 06:43 run, forced (five runs since the last lint). Caps, links, `lint_vocab --all --queue` (0 violations), `claim --prune` (three claim files), index against pages (no orphans, no dead links), curator queue (no duplicates), open questions (none stale): clean. `crossref --all --apply` wrote ten back-links from today's new entries; five landed on the wrong sense and were moved: *alarm* to *worry* "make anxious", *dream* to *wish* "wish for", *go* and *run* to *work* "machine", *take* to *win* "get a prize". No type mismatches. Precision: no live family under 30 percent at twenty or more decisions; `reviewer-a` `spelling-or-format` 0.34 over 32 is now nearest the line ([note](notes/reviewer-precision.md)). This run's first cycle also repaired the log's format line. Spend US$0.
+
 ## [2026-09-30] build | Twelve nouns, answer to attack
 
 Third cycle of the 2026-09-30 06:43 run; the selector chose build. Drafted the next band-1 nouns: *answer, apartment, appearance, appointment, area, argument, arm, army, arrest, art, artist, attack* (41 senses, 13 phrases, 13 learner errors). Discriminations *answer/reply/response*, *area/region/district*. British *argument* was disputed 0/3 as `ˈɑː.ɡjə.mənt`; revised to `ˈɑː.ɡjʊ.mənt`, verified 2/3. Panel: 41 issues; 26 applied, 15 rejected, none escalated. Applied: *appointment* sense 2 split into choosing someone and the job itself, and its "only professionals" claims softened; *arrest* now officially hold, not take away; *arm* of the sea corrected; *artist* sense 3 loses *con artist*, which the definition did not cover; *attack* of illness no longer always short. Spend US$0.48.
