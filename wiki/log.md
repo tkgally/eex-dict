@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-30] review | Second round for twelve verbs, *count* to *decide*
+
+Review cycle (first of the 12:43 UTC run) on the twelve oldest one-round entries: *count, cover, crash, create, cross, crush, cure, cut, damage, dance, date, decide* (2026-09-24). Added by hand before the panel: new senses *cover* "protect yourself" (*cover yourself*), *cut* "stop" (*cut the engine*), *dance* "not talk about directly" (*dance around a question*); learner errors on *count* (*count as*), *create* (*create a cake*), *cross* (*walk cross the street*), *cut* (*I cut my hair* at a hairdresser's), *date* (*is dating from*). Panel: 32 issues (15 blocking); 12 applied, 20 rejected, none escalated. Applied: *crash* sense 1 covers crashing a car; *cross* breeding and "oppose" senses redefined; *heal* in *cure*'s discrimination; *decide*'s compare to `make-up-phrv` replaced by a see-also to `mind-n`. Rejected: core-idea style (fence), *counter* as family, freeze/hang and chop synonyms (mirrored in the targets). No back-links changed. Spend US$0.58; day US$2.63. Orphan branch `claude/intelligent-ride-oikyxz` (no residue) logged for pruning.
+
 ## [2026-09-30] lint | Twenty-fifth lint pass; five of ten back-links moved
 
 Fourth and last cycle of the 2026-09-30 06:43 run, forced (five runs since the last lint). Caps, links, `lint_vocab --all --queue` (0 violations), `claim --prune` (three claim files), index against pages (no orphans, no dead links), curator queue (no duplicates), open questions (none stale): clean. `crossref --all --apply` wrote ten back-links from today's new entries; five landed on the wrong sense and were moved: *alarm* to *worry* "make anxious", *dream* to *wish* "wish for", *go* and *run* to *work* "machine", *take* to *win* "get a prize". No type mismatches. Precision: no live family under 30 percent at twenty or more decisions; `reviewer-a` `spelling-or-format` 0.34 over 32 is now nearest the line ([note](notes/reviewer-precision.md)). This run's first cycle also repaired the log's format line. Spend US$0.

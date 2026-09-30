@@ -244,7 +244,12 @@
         {
           "type": "adverb + verb",
           "items": [
-            "really count",
+            "really count"
+          ]
+        },
+        {
+          "type": "verb + preposition",
+          "items": [
             "count for a lot",
             "count for nothing"
           ]
@@ -571,6 +576,11 @@
       "incorrect": "Can you count until ten?",
       "correct": "Can you count to ten?",
       "note": "To say the numbers from one up to ten, use **to** before the last number. **Until** is for time: *wait until ten o'clock*."
+    },
+    {
+      "incorrect": "Does a phone call count a visit?",
+      "correct": "Does a phone call count as a visit?",
+      "note": "In the sense *be accepted as*, **count** needs **as** before the thing it is accepted as."
     }
   ],
   "etymology": null,
@@ -590,7 +600,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-24T06:47:41Z",
-    "modified": "2026-09-29T00:51:34Z",
+    "modified": "2026-09-30T12:53:49Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260924T064310Z-hlbtu6",
     "reviews": [
@@ -612,6 +622,26 @@
         "file": "reviews/20260924T064310Z-hlbtu6/count-v.json",
         "ok": 80,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20260930T124353Z-qqfjxv",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-09-30",
+        "file": "reviews/20260930T124353Z-qqfjxv/count-v.json",
+        "ok": 79,
+        "issues": 1,
+        "blocking": 1
+      },
+      {
+        "run_id": "20260930T124353Z-qqfjxv",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-09-30",
+        "file": "reviews/20260930T124353Z-qqfjxv/count-v.json",
+        "ok": 78,
+        "issues": 2,
         "blocking": 0
       }
     ],
