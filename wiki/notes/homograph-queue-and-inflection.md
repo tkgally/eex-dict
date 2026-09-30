@@ -11,3 +11,4 @@ A second problem waits for the drafter: `tools/inflect.py` looks up `schema/infl
 **Possible fix (a later run, with a logged reason).** A homograph column (or a slug column) in `queue.tsv`, and slug-keyed exceptions (`"lie-v-2": {...}`) that take precedence over the headword key.
 
 **2026-09-30.** `angle-v` was drafted with the direction senses only; *angle* meaning *fish with a hook* and *angle for something* are a separate homograph (`angle-v-2`), waiting for the same hand claim.
+The same day `ball-n` left out *ball* the formal dance party and *have a ball*, a separate homograph (`ball-n-2`).
