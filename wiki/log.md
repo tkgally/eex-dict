@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-09-30] build | Twelve verbs, warn to work
+*Append-only, newest first. Header: `## [2026-09-30] originality | Eleventh check: two rewrites (look after, wait)
+
+Fourth and last cycle of the 2026-09-30 00:43 run, forced (run 140). Ten sampled fields, exact-phrase web searches, and one reviewer-a call ([record](../reviews/originality/2026-09-30.md)). Verdicts: original 5, generic-overlap 3, rewrite 2. Search result summaries gave a learner dictionary's *look after* in nearly our words (*giving them what they need, or keeping them safe*) and *wait*'s frame (*stay ... or not do something until something happens*, *until someone comes*) across two dictionaries. New wording: *be responsible for someone or something and make sure they are safe and well*; *stay in a place or delay an action until a person arrives or an expected thing happens*. Panel on both: two issues, both rejected (*care for* lives in `care-v`; *hold* mirrors `hold-v`). reviewer-a answered "cannot tell" ten times ([note](notes/reviewer-noise.md)). Spend: US$0.13; US$0.67 today.
+
+## [2026-09-30] build | Twelve verbs, warn to work
 
 Third cycle of the 2026-09-30 00:43 run; the selector chose build. Drafted the next band-1 verbs: *warn, wash, watch, water, wear, weigh, whisper, win, wipe, wish, wonder, work* (51 senses, 9 phrases, 22 learner errors). *work* has nine senses; discriminations *warn/caution/alert*, *wash/clean/rinse*, *watch/look/see*, *wear/put on/dress*, *whisper/murmur/mutter*, *win/beat/earn*, *wish/hope/want*, *work/function/operate*. All transcriptions and inflections verified. Panel: 41 issues; 29 applied, 12 rejected (seven the quoted-headword fence), none escalated. Applied: *warn* sense 3 narrowed to an unwelcome thing; *watch* "take care of" loses its time limit; *water* no longer excludes tears of feeling; *wipe* memory use moved out of the computing sense into sense 4; *work* sense 8 covers farming land. Back-links: two of eight moved (*dress*, *rub*); three type mismatches settled as compare. Spend US$0.54.
 
