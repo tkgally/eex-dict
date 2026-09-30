@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-30] review | Twelve 2026-09-24 verbs, confuse to cough
+
+Second cycle of the 2026-09-30 06:43 run; the selector chose review. Second panel round for the oldest one-round entries: *confuse, connect, consider, consist, contain, continue, control, cook, cool, copy, cost, cough*. Added by hand before the panel: *cough* senses 2 (bring blood up) and 3 (of an engine) with a core idea; learner errors *consider about*, *the price contains breakfast*, *controled*, *cooked a cake*; phrase *what's cooking?*; a *confuse* false-friend note; `count-v` moved from *consider* sense 1 to sense 2, where its mirror points. reviewer-b's first reply on *contain* failed to parse and was re-run. Panel: 27 issues; 16 applied, 11 rejected, none escalated. Applied: *continue* usage note no longer ties the **to**-infinitive to non-person subjects; *connect with* named the usual relation form; *cool it* given a phrasal definition; *cooker* note covers American devices; *copy someone in* loses its British claim. Spend US$0.44.
+
 ## [2026-09-30] build | Twelve entries, worry to animal
 
 First cycle of the 2026-09-30 06:43 run; the selector chose build. Drafted the last band-1 verbs in queue order, *worry, wrap, write*, then the first nine nouns, *access, acid, afternoon, alphabet, ambulance, amount, anger, angle, animal* (37 senses, 8 phrases, 16 learner errors). *write* has seven senses; discriminations *worry/anxious/concerned*, *amount/number/quantity*, *anger/rage/fury*. All transcriptions and inflections verified. Panel: 49 issues; 23 applied, 26 rejected (twelve the quoted-headword fence), none escalated. Applied: *animal* senses 1 to 3 redefined (the loose *birds and animals* sense is no longer a mammal definition; the biological sense no longer claims every non-plant); *acid* sense 1 ties burning to strong acids; *write* sense 5 drops *sign*; *worry* usage note allows *I'm worrying*. Repaired this log's header line, split by an earlier insertion. Spend US$0.46.
