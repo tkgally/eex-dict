@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-30] review | Second round for *decrease* to *disappear*
+
+First cycle of the 18:43 UTC run. Second panel round for twelve 2026-09-24 verbs: *decrease, defend, define, delete, deliver, depend, describe, destroy, develop, die, disagree, disappear*. Added by hand: *destroy* sense 5 "upset badly" (core idea widened) and a learner error (*destroyed* for small harm); learner errors on *decrease* (*by*, not *of*) and *describe* (question order in a *how* clause); a *develop* example for situations; *die-out-phrv* and *die-down-phrv* in *die*'s see-also (queued). Panel: 22 issues (9 blocking); 8 applied, 14 rejected. Applied: *delete*'s antonym *add* replaced by *recover* (back-link moved by hand from *recover* sense 1 to sense 3); *deliver* sense 5 example; *depend* sense 3 now says the continuous is possible; *describe* signpost shortened; *develop* film definition; *disagree*'s *argue* note. Rejected: *depending on* kept under *depend*; *kill hopes* as a synonym; syllable breaks (fence). Spend US$0.47; day US$4.47.
+
 ## [2026-09-30] build | Twelve nouns, *ball* to *beat*
 
 Fourth and last cycle of the 12:43 UTC run. Drafted twelve band-1 nouns: *ball, band, basis, basket, bath, bathroom, battery, battle, beach, bean, beard, beat*. *ball* leaves out the dance party and *have a ball*, a separate homograph (`ball-n-2`, note updated); its vulgar senses are labeled. *band* is kept as one entry (music group and strip). Panel: 41 issues (27 blocking); one reviewer-b reply unreadable and re-run (*bath*); 29 applied, 12 rejected. Applied: *basket*'s online-shop sense labeled British (American *cart*), its basketball score moved to a subsense; *battery*'s core idea, legal and farming senses rewritten; *band*'s strip and line senses widened; *bathroom* "toilet" sense redefined as a toilet room with no bath. Rejected: American IPA without length marks on *beach*, *beat* (fence); *drop the ball* as not chiefly American. No back-links added. Spend US$0.48; day US$4.00.
