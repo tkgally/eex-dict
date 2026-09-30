@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-30] build | Twelve nouns, *beauty* to *berry*
+
+Third cycle of the 18:43 UTC run. Drafted twelve band-1 nouns: *beauty, bed, bedroom, bee, beer, beginning, behavior, belief, belt, bench, benefit, berry*, with idioms under their keyword (*beauty is in the eye of the beholder*, *have a bee in your bonnet*, *tighten your belt*, *give someone the benefit of the doubt*). Panel: 31 issues (17 blocking); 25 applied, 6 rejected. Applied: *belief*'s three senses redefined as accepting or trusting, not a feeling, with the core idea and usage note to match; *behavior*'s plural rule softened (*behaviors* for kinds of behavior in writing); *bee* no longer says every bee makes honey; *beginning* sense 2 redefined; *bench* sport sense includes coaches. Rejected: *spelling bee* as not mainly American (region fence); *fifty different beers* as outside the drink sense. Eleven defining-vocabulary violations fixed before review closed. Back-links *origin/beginning* and *advantage/benefit* correct. Spend US$0.46; day US$4.93.
+
 ## [2026-09-30] lint | Twenty-sixth lint pass
 
 Second cycle of the 18:43 UTC run, forced after five cycles. Caps, wiki links (234 pages), the defining-vocabulary check (0 violations in 825 entries), claim pruning (three files), the index against the pages, the log against the journals (13 of 13 for the day), the curator queue (no duplicates), and open questions (none stale): all clean. `crossref --all --apply` wrote four back-links; three were right (*beach/bank*, *baby/child*, *audience/house*). The fourth re-created *delete*'s antonym *add*, which the first cycle's review had removed without removing the mirror on *add-v*; both sides are now gone, and a second run changes nothing. Reviewer precision: no live family under the line; `reviewer-a` `pronunciation` 0.31 (146) and `spelling-or-format` 0.32 (34) are nearest ([note](notes/reviewer-precision.md)). No spend.
