@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-09-30] lint | Twenty-sixth lint pass
+
+Second cycle of the 18:43 UTC run, forced after five cycles. Caps, wiki links (234 pages), the defining-vocabulary check (0 violations in 825 entries), claim pruning (three files), the index against the pages, the log against the journals (13 of 13 for the day), the curator queue (no duplicates), and open questions (none stale): all clean. `crossref --all --apply` wrote four back-links; three were right (*beach/bank*, *baby/child*, *audience/house*). The fourth re-created *delete*'s antonym *add*, which the first cycle's review had removed without removing the mirror on *add-v*; both sides are now gone, and a second run changes nothing. Reviewer precision: no live family under the line; `reviewer-a` `pronunciation` 0.31 (146) and `spelling-or-format` 0.32 (34) are nearest ([note](notes/reviewer-precision.md)). No spend.
+
 ## [2026-09-30] review | Second round for *decrease* to *disappear*
 
 First cycle of the 18:43 UTC run. Second panel round for twelve 2026-09-24 verbs: *decrease, defend, define, delete, deliver, depend, describe, destroy, develop, die, disagree, disappear*. Added by hand: *destroy* sense 5 "upset badly" (core idea widened) and a learner error (*destroyed* for small harm); learner errors on *decrease* (*by*, not *of*) and *describe* (question order in a *how* clause); a *develop* example for situations; *die-out-phrv* and *die-down-phrv* in *die*'s see-also (queued). Panel: 22 issues (9 blocking); 8 applied, 14 rejected. Applied: *delete*'s antonym *add* replaced by *recover* (back-link moved by hand from *recover* sense 1 to sense 3); *deliver* sense 5 example; *depend* sense 3 now says the continuous is possible; *describe* signpost shortened; *develop* film definition; *disagree*'s *argue* note. Rejected: *depending on* kept under *depend*; *kill hopes* as a synonym; syllable breaks (fence). Spend US$0.47; day US$4.47.
