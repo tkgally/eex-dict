@@ -144,3 +144,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (2556/3614); `reviewer-b
 ## 2026-09-30: twenty-sixth lint pass, no new switch-offs
 
 Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.70 (2636/3742); `reviewer-b` `ALL` 0.60 (769/1276). No live family under 30 percent at twenty or more decisions. `reviewer-a` `pronunciation` 0.31 (45/146) and `spelling-or-format` 0.32 (11/34) are the nearest live families to the line; both fall mainly on fence rejections (American length marks, syllable breaks, quoted headwords). `reviewer-b` `spelling-or-format` 0.38 (315). Under twenty: `reviewer-a` `etymology` 0.50 (18); `reviewer-b` `phrase` 0.37 (19), `inflection` 0.00 (5).
+
+## 2026-10-01: twenty-seventh lint pass, no new switch-offs
+
+Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (2788/3931); `reviewer-b` `ALL` 0.60 (801/1333). No live family under 30 percent at twenty or more decisions. `reviewer-a` `pronunciation` 0.30 (47/156) sits exactly on the line, falling on the American length-mark fence (*wiv*, *but* this run); one more rejection without an apply puts it under. `reviewer-a` `spelling-or-format` rose to 0.39 (16/41): its *roadblock* and *bookshelf* calls were right. `reviewer-b` `spelling-or-format` 0.39 (322). Under twenty: `reviewer-a` `etymology` 0.53 (19); `reviewer-b` `inflection` 0.00 (5).
