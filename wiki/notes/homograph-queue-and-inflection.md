@@ -14,3 +14,4 @@ A second problem waits for the drafter: `tools/inflect.py` looks up `schema/infl
 The same day `ball-n` left out *ball* the formal dance party and *have a ball*, a separate homograph (`ball-n-2`).
 
 **2026-10-01.** `bill-n` left out the beak of a bird (`bill-n-2`), and `bit-n` the computing unit, a short form of *binary digit* (`bit-n-2`); both are unrelated words waiting for the same hand claim.
+The same day `case-n` left out *case* the container (*a pencil case*, *a phone case*, and a suitcase), a separate word (`case-n-2`) waiting for the same hand claim.
