@@ -389,7 +389,7 @@
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
           "verb + that-clause",
@@ -465,16 +465,14 @@
       "explanation": "Used as **feel like** + a noun or an **-ing** form, never **feel like** + **to** + verb. Common in questions and with **not**.",
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
           "verb + preposition + object"
         ]
       },
       "labels": {
-        "register": [
-          "informal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -552,6 +550,60 @@
             "feel for something",
             "feel around",
             "feel in something"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 9,
+      "signpost": "sympathy",
+      "definition": "understand how unhappy someone is and feel sorry for them",
+      "explanation": "Used as **feel for** + a person: *I really feel for you*.",
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "I really feel for you; it must be very hard.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        },
+        {
+          "text": "We all felt for her when she lost her job.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "adverb + verb",
+          "items": [
+            "really feel for someone"
           ]
         }
       ],
@@ -667,10 +719,20 @@
       "incorrect": "I felt like to cry.",
       "correct": "I felt like crying.",
       "note": "**Feel like** is followed by an **-ing** form or a noun, not by **to**."
+    },
+    {
+      "incorrect": "I feel boring at home on Sundays.",
+      "correct": "I feel bored at home on Sundays.",
+      "note": "After **feel**, use **bored**, **tired**, **interested** for how you feel; **boring** describes the thing that causes it."
     }
   ],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "feel-up-to-phrv",
+      "note": null
+    }
+  ],
   "adaptation": {
     "semantic": null,
     "grammar": "\"feel\" + adjective takes no **myself** or **yourself**: *I feel tired*, not *I feel myself tired*. **Feel like** takes an **-ing** form: *I feel like dancing*.",
@@ -681,7 +743,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-25T06:47:55Z",
-    "modified": "2026-09-26T23:16:14Z",
+    "modified": "2026-10-01T07:21:10Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260925T064323Z-r23b83",
     "reviews": [
@@ -704,6 +766,26 @@
         "ok": 97,
         "issues": 1,
         "blocking": 0
+      },
+      {
+        "run_id": "20261001T071332Z-hclmfl",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-01",
+        "file": "reviews/20261001T071332Z-hclmfl/feel-v.json",
+        "ok": 106,
+        "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261001T071332Z-hclmfl",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-01",
+        "file": "reviews/20261001T071332Z-hclmfl/feel-v.json",
+        "ok": 104,
+        "issues": 3,
+        "blocking": 2
       }
     ],
     "status": "reviewed",
