@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-10-01] build | Twelve nouns, *cheese* to *client*
+*Append-only, newest first. Header: `## [2026-10-01] lint | Twenty-ninth lint pass
+
+Fourth and last cycle of the 18:43 UTC run, forced by the selector after five runs. Mechanical checks clean: caps, links (254 pages), validation (933 entries), vocabulary gate (no new queue rows). `crossref --all --apply` made one back-link, `money-n` onto `cash-n` sense 1 "coins and paper money"; moved by hand to sense 2 "money in general", which matches *money*'s single broad sense, and a re-run left it there. Three claim files pruned. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.29 (47/163) stays live pending the owner's ruling ([note](notes/reviewer-precision.md)). Reading: index and pages match, every journal has a log entry, no duplicate or stale curator lines, no contradictions found. Spend nil; day US$6.35.
+
+## [2026-10-01] build | Twelve nouns, *cheese* to *client*
 
 Third cycle of the 18:43 UTC run. Drafted *cheese, chest, chicken, choice, church, circle, citizen, city, claim, class, clay, client* (band 1, queue order). Idioms under their first noun: *say cheese*, *big cheese*, *chest of drawers*, *get something off your chest*, *don't count your chickens*, *play chicken*, *of your choice*, *spoiled for choice*, *come full circle*, *a vicious circle*, *senior citizen*, *claim to fame*, *stake a claim*, *in a class of its own*. Fourteen definitions reworded for the defining vocabulary; *Christian* is not on the list, so `church-n` sense 3 says "Christian groups only" in its explanation and the core idea points to sense 1. Pronunciation: 24 of 24 verified. Panel: 25 issues (14 blocking); 17 applied, 8 rejected. Applied: *church* no longer compared with *hospital* (American *in the hospital*); *play chicken* covers arguments; the learner error *Osaka city* replaced (*Osaka City* is an official name); two *class* examples where *class* was not the noun replaced. Rejected: *a chicken* for a meal as correct, *stomach* in the *chest* definition. Spend US$0.46; day US$6.35.
 
