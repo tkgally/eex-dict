@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-01] build | Twelve nouns, *bicycle* to *blood*
+
+First cycle of the 00:43 UTC run. Drafted twelve band-1 nouns: *bicycle, bike, bill, bird, birth, birthday, bit, blade, blame, blanket, block, blood*, with idioms under their keyword (*kill two birds with one stone*, *foot the bill*, *bit by bit*, *wet blanket*, *in cold blood*). *make someone's blood boil* moved from `boil-v` to `blood-n` (keyword rule; `boil-v` re-panelled, three old objections rejected). Panel: 74 issues (49 blocking); 55 applied, 19 rejected. Applied: *bike* no longer says it means a motorcycle as often as a bicycle; *bill*'s restaurant sense unlabelled; *block*'s street sense American and Canadian, *roadblock* examples replaced; four doubtful learner errors removed. Rejected: *a bit* and *not a bit* moved to an adverb (idiom fence); *bicycle*'s *y* note (correct). The computing *bit* and the beak *bill* are unrelated homographs, left for `bit-n-2` and `bill-n-2`. A *blood/family* synonym back-link removed on both sides. Spend US$0.61; day US$0.61.
+
 ## [2026-09-30] review | Second round for *disappoint* to *drive*
 
 Fourth and last cycle of the 18:43 UTC run. Second panel round for twelve 2026-09-24 verbs: *disappoint, discover, discuss, dislike, divide, divorce, doubt, draw, dream, dress, drink, drive*. Read by hand first; the entries were full, so only a *disappoint* learner error (*disappointed of*) and *drive away*, *drive off* in *drive*'s see-also (queued) were added. Panel: 19 issues (11 blocking); 9 applied, 10 rejected. Applied: *divide and conquer* redefined and its examples replaced (one showed the unrelated problem-solving use); *divide* sense 4 collocations made passive; *draw*'s *I was drawn to her* no longer coded as an active pattern; *not dream of doing something* widened; *drive*'s synonym *run* marked informal. Rejected: *did not disappoint* as unnatural; the American length mark on *dream* and quoted headwords in adaptation notes (fences); *doubt whether* in negatives. Spend US$0.47; day US$5.40.
