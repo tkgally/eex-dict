@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-01] originality | Twelfth check: one rewrite (land)
+
+Fourth and last cycle of the 06:44 UTC run, forced (run 160). Ten sampled fields, exact-phrase web searches, and one reviewer-a call ([record](../reviews/originality/2026-10-01.md)). Verdicts: original 5, generic-overlap 4, rewrite 1. *land* sense 1, *come down from the air onto the ground or water*, shared a learner dictionary's frame (*come down through the air onto the ground*), and the core idea echoed its *onto the ground or another surface*; both rewritten (*arrive on the ground or on water at the end of a flight*), the core idea also given its missing bold mark. Panel on *land*: 5 issues (4 blocking); 3 applied (sense 2 no longer brings a boat *down*; a time phrase no longer coded as a complement), 2 rejected (core-idea fence; *take off* is the right antonym). reviewer-a answered "original" on all ten. Spend US$0.06; day US$3.20.
+
 ## [2026-10-01] review | Twelve verbs, *examine* to *feel*
 
 Third cycle of the 06:44 UTC run. Second panel round for *examine, excite, exercise, exist, expand, expect, express, fall, farm, fear, feed, feel* (created 2026-09-24/25). Added by hand: *feel* sense 9 (*I really feel for you*), its learner error *I feel boring*, a see-also to *feel up to* (queued); *examine*'s error *I have to examine next week*. Fixed unasked: *exist*'s adaptation note had a wrong form in italics (fence). Panel: 29 issues (16 blocking); 12 applied, 17 rejected. Applied: *excite*'s false-friend note no longer calls the word safe (it can be sexual too); *exercise*'s learner-error note limited to the body sense; *decrease* removed as compare on *fall* sense 3 and its mirror; *feel like* unlabelled and intransitive. Rejected: length marks on *feed* (fence), quoted opening headwords in five adaptation notes (fence), the British label on *I expect you're hungry* (mainly British), *fall asleep* as linking. reviewer-b precision 0.22, nearly all fence repeats. Spend US$0.49; day US$3.14.
