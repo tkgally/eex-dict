@@ -152,3 +152,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (2788/3931); `reviewer-b
 ## 2026-10-01: twenty-eighth lint pass, `reviewer-a` `pronunciation` under the line, switch-off held
 
 `reviewer-a` `pronunciation` fell to 0.29 (47 applied, 113 rejected, 160 decisions) on one more fence rejection (*button*'s syllabic n). The 30-percent rule calls for switching it off. This run's attempt to add the pair to `DISABLED_FAMILIES` was refused by the session's safety check as a reduction of review, so the change was reverted and the decision is left to the owner (`reviews/needs_curator.txt`). Until then the family stays live; its rejections are almost all settled fences (American length marks, syllable breaks), cheap to reject. Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (2873/4054); `reviewer-b` `ALL` 0.60 (815/1356). `reviewer-b` `phrase` 0.32 (7/22) is the next nearest live family. Under twenty: `reviewer-a` `etymology` 0.53 (19).
+
+## 2026-10-01: twenty-ninth lint pass, no new switch-offs
+
+Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (2967/4199); `reviewer-b` `ALL` 0.59 (830/1396). `reviewer-a` `pronunciation` 0.29 (47/163), three more fence rejections (*friz*, the American length mark, among them); its switch-off still waits on the owner (`reviews/needs_curator.txt`), so it stays live. `reviewer-b` `phrase` 0.32 (7/22) is the next nearest live family; `reviewer-b` `spelling-or-format` 0.37 (349), still falling on the quoted-headword fence (fifteen rejections in this run's cycles). Under twenty: `reviewer-a` `etymology` 0.53 (19).
