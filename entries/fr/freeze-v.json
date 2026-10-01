@@ -97,10 +97,9 @@
           ]
         },
         {
-          "type": "adverb + verb",
+          "type": "phrase",
           "items": [
-            "freeze solid",
-            "freeze over"
+            "freeze solid"
           ]
         }
       ],
@@ -278,7 +277,7 @@
           "pattern": null
         },
         {
-          "text": "\"Freeze! Nobody move!\"",
+          "text": "We all froze and listened.",
           "note": null,
           "pattern": null
         },
@@ -313,7 +312,7 @@
     {
       "n": 5,
       "signpost": "computer",
-      "definition": "suddenly stop working so that nothing on the screen moves",
+      "definition": "suddenly stop working, so that nothing on the screen moves and nothing you do has any effect",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -355,16 +354,17 @@
       ],
       "synonyms": [
         {
-          "slug": "crash-v",
-          "note": null
-        },
-        {
           "slug": "hang-v",
           "note": null
         }
       ],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "crash-v",
+          "note": "a program that **crashes** stops and closes; one that **freezes** stays open but does not move"
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -463,9 +463,25 @@
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "The lake freezed last night.",
+      "correct": "The lake froze last night.",
+      "note": "The past form is **froze** and the past participle is **frozen**."
+    },
+    {
+      "incorrect": "It's freeze outside.",
+      "correct": "It's freezing outside.",
+      "note": "To say the weather is very cold, use the adjective **freezing**."
+    }
+  ],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "freeze-over-phrv",
+      "note": "*the lake froze over*: become covered with ice"
+    }
+  ],
   "adaptation": {
     "semantic": "\"freeze\": turning into ice, keeping food in a freezer, and stopping suddenly in fear are separate verbs in many languages; translate by sense.",
     "grammar": null,
@@ -476,7 +492,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-25T12:47:34Z",
-    "modified": "2026-09-25T18:54:58Z",
+    "modified": "2026-10-01T19:08:33Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260925T124333Z-ea4ckf",
     "reviews": [
@@ -498,6 +514,26 @@
         "file": "reviews/20260925T124333Z-ea4ckf/freeze-v.json",
         "ok": 70,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261001T190003Z-2m4hjf",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-01",
+        "file": "reviews/20261001T190003Z-2m4hjf/freeze-v.json",
+        "ok": 62,
+        "issues": 8,
+        "blocking": 6
+      },
+      {
+        "run_id": "20261001T190003Z-2m4hjf",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-01",
+        "file": "reviews/20261001T190003Z-2m4hjf/freeze-v.json",
+        "ok": 69,
+        "issues": 1,
         "blocking": 0
       }
     ],
