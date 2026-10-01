@@ -53,3 +53,5 @@ This is a third, different shape of the same underlying pattern (see the two ent
 **2026-09-29, tenth originality check (`20260929T125629Z-bffqfz`).** reviewer-a answered "copied" once (*say*, Cambridge), quoting our own wording with *to* added; search found only a shorter generic frame. The one rewrite (*hold* on the phone) came from search result summaries naming a learner dictionary's *hold the line* page, which the reviewer had marked "cannot tell". Search stays the deciding evidence.
 
 **2026-09-30, eleventh originality check (`20260930T010853Z-73imgw`).** reviewer-a answered "cannot tell" on all ten and made no "copied" call; a first call with a 1,500-token limit spent it all on hidden reasoning and returned nothing (use at least 6,000). Both rewrites (*look after*, *wait*) came from search result summaries alone.
+
+**2026-10-01, twelfth originality check (`20261001T072400Z-hclmfl`).** reviewer-a answered "original" on all ten, a first; it made no "copied" call. The one rewrite (*land* sense 1, whose frame matched a learner dictionary's *come down through the air onto the ground*) came from search alone, as in the last four checks.
