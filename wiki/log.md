@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
+*Append-only, newest first. Header: `## [2026-10-01] build | Twelve nouns, *cave* to *charge*
+
+First cycle of the 18:43 UTC run. Drafted *cave, ceiling, cell, center, century, chain, chair, chance, change, chapter, character, charge* (band 1, queue order). Idioms under their first noun: *hit the ceiling*, *the center of attention*, *take center stage*, *a chain reaction*, *chain of command*, six under *chance* (*take a chance*, *stand a chance*, *by any chance*...), *for a change*, *a change of heart*, *chapter and verse*, *out of character*, *in charge*, *take charge*, *free of charge*, *press charges*. Twelve definitions reworded for the defining vocabulary. Pronunciation: 24 of 24 verified. reviewer-b's reply failed to parse on *cave* and *century*; re-run clean. Panel: 30 issues (23 blocking); 23 applied, 7 rejected. Applied: *on charge* (British) removed; *charge* sense 2 no longer "by the police"; the cricket *century* is one turn at batting, not one game; *center*/*middle* for times softened to "normally". Rejected: an American label off *chapter* (fence: mainly used there), *a change* for coins as natural. Spend US$0.56; day US$5.34.
+
+## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
 ## [2026-10-01] review | Twelve verbs, *fight* to *fold*
 
