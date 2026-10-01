@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-01] lint | Twenty-seventh lint pass
+
+Fourth and last cycle of the 00:43 UTC run, forced after five cycles without one. Mechanical checks clean: caps, links (240 pages), 873 entries valid, defining-vocabulary gate 0 failing, no queue additions. `crossref --all --apply` made three back-links, all checked and correct: *bed/bottom* (under water), *head/boss* (leader), *head/bottom* (top versus lowest part). Four merged claim files pruned. Precision: no live family under 30 percent at twenty decisions; `reviewer-a` `pronunciation` sits on the line at 0.30 (47/156) on fence rejections. Index matches the pages; the log has an entry for every journal. Curator line for the gone branch `claude/intelligent-ride-oikyxz` closed. The homograph note and its index line now list `bill-n-2` and `bit-n-2`. No spend; day US$1.67.
+
 ## [2026-10-01] build | Twelve nouns, *boat* to *boy*
 
 Third cycle of the 00:43 UTC run. Drafted twelve band-1 nouns: *boat, body, bomb, bone, book, boot, boss, bottle, bottom, bowl, box, boy*, with idioms under their keyword (*in the same boat*, *a bone of contention*, *by the book*, *get to the bottom of something*, *think outside the box*). Seventeen defining-vocabulary violations reworded before review. Panel: 71 issues (39 blocking); 56 applied, 15 rejected. Applied: *boat* for a ferry is standard, not informal, and the *in/on* rule no longer turns on size; *boss* sense 2 unlabelled; four doubtful learner errors removed (*water bottle*, *soup bowl*, *my chief*, *in the big boat*); British *witness box*, *tracksuit bottoms*, *tick a box* replaced. Rejected: a British label on *bottom* (the body; used in American English with children); silent **b** in *bomber* (it is silent); American *but* for *boot* (length-mark fence); *hit the books* as not mainly American. Back-link *organization/body* correct. Spend US$0.66; day US$1.67.
