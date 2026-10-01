@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-01] review | Twelve verbs, *drop* to *entertain*
+
+First cycle of the 06:44 UTC run. Second panel round for the oldest one-round entries, the 2026-09-24 verbs *drop, dry, earn, eat, elect, employ, empty, encourage, end, enjoy, enter, entertain*. Added by hand before review: *enter* sense 5 (*it never entered my head*), a usage-note line on *enter into*, and see-also links to *enter into*, *drop by*, *drop in* (all three queued). Panel: 28 issues (13 blocking); 22 applied, 6 rejected. Applied: core ideas of *drop, eat, entertain* reworded; *eat someone alive* made one definition; *enter* sense 4 covers *enter college*; *feed* (under *eat*) and *pass* (under *end*) kept as synonyms with limiting notes, since both mirrors are real senses; *drop off* moved from compare to synonyms; *enjoy*'s adaptation note no longer says the verb is never used alone. Rejected: the American length mark on *eat* (fence), an informal label dispute on *drop dead*, three collocation-type flags. Spend US$0.45; day US$2.13.
+
 ## [2026-10-01] lint | Twenty-seventh lint pass
 
 Fourth and last cycle of the 00:43 UTC run, forced after five cycles without one. Mechanical checks clean: caps, links (240 pages), 873 entries valid, defining-vocabulary gate 0 failing, no queue additions. `crossref --all --apply` made three back-links, all checked and correct: *bed/bottom* (under water), *head/boss* (leader), *head/bottom* (top versus lowest part). Four merged claim files pruned. Precision: no live family under 30 percent at twenty decisions; `reviewer-a` `pronunciation` sits on the line at 0.30 (47/156) on fence rejections. Index matches the pages; the log has an entry for every journal. Curator line for the gone branch `claude/intelligent-ride-oikyxz` closed. The homograph note and its index line now list `bill-n-2` and `bit-n-2`. No spend; day US$1.67.
