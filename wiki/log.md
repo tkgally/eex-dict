@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] closure | Twelve closure words, amuse to slightly
+
+Fourth and last cycle of the 16:43 UTC run. Of twelve claimed closure rows, five were plurals or wrong parts of speech (*amused* v, *signals*, *singers*, *sleeves*, *slightly* n): marked duplicate and the real lemmas drafted instead; *Christian* released again (open question 7). Drafted *amuse-v, amused-adj, enforce-v, affair-n, gray-n, lack-n, signal-n, singer-n, skate-n, skater-n, sleeve-n, slightly-adv*. `enforce-v` American IPA was disputed (1 of 4); CMU and the panel give **ɛn-**, so it was corrected and verified 3/4. Panel: 44 issues, 23 blocking; 30 applied, 14 rejected, 0 escalated. Applied: British variant *grey* added to `gray-n`; *signal* radio and traffic senses redefined; *skater* now includes skateboards; "not used in continuous tenses" removed from *amuse*. Eight definitions reworded for the defining vocabulary. Spend US$0.36.
+
 ## [2026-10-02] build | Twelve entries, switch to deal
 
 Third cycle of the 16:43 UTC run. Drafted *switch-v*, *wave-v* (the last two hand-queued core verbs) and the band 1 nouns *cut, damage, dance, danger, dark, data, date, daughter, day, deal*. Keyword rule: *call it a day* moved from `call-v` to `day-n` and *big deal* from `big-adj` to `deal-n` (rewritten, not copied). *date* the fruit is an unrelated homograph (`date-n-2`), left out. All inflections and 24 transcriptions verified. Panel: 72 issues, 38 blocking; 49 applied, 23 rejected, 0 escalated. Applied: *dark* "after dark" is nightfall, not night; *data* claims softened to ordinary use; *deal* "price" sense rewritten and *a bad deal* moved to "treatment"; *damage* sense 1 covers body parts. Back-links: `switch-v` moved from *change* "become different" to "replace"; `data-n` cross-reference made a compare to match `information-n`. A drafting slip briefly overwrote `cut-v` and `damage-v` locally; both were restored from git before any check ran. Spend US$0.57.
