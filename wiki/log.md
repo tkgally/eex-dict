@@ -1,10 +1,14 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-10-02] closure | Ten words from the dictionary's own definitions
+*Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
+
+## [2026-10-02] lint | Thirtieth lint pass
+
+Second cycle of the 06:44 UTC run; forced after five cycles. Mechanical checks clean: caps, links (262 pages), validation (967 entries), no definition violations, nothing new queued; three spent claim files pruned. Back-links: three made and checked by hand (*bank* onto `coast-n`, *cabinet* onto `closet-n`, *house* onto `company-n` sense 1), all on the right sense. `wiki/log.md`'s format line had been split again, by this run's own first cycle; repaired, and the recurring fault recorded ([note](notes/log-format-line-split.md)). `reviewer-b` `phrase` fell to 0.29 over 24 decisions; its switch-off is held with `reviewer-a` `pronunciation` (0.28) for the owner (`reviews/needs_curator.txt`). New open question 7: proper names in definitions (*Christian*). Index, open questions, and curator list checked; no duplicates, no stale questions. Spend nil.
+
+## [2026-10-02] closure | Ten words from the dictionary's own definitions
 
 First cycle of the 06:44 UTC run. Claimed twelve closure rows; six were plurals or guessed parts of speech (*bricks, christians, fibers, oars, shelves*, *explode* as a noun), marked `duplicate` with the lemma drafted; *gray* the noun went back to `pending` and the adjective was drafted. Drafted *ankle, brick, cream, explode* (verb), *fiber, frame, gray* (adjective), *oar, propeller, shelf*. *Christian* was drafted and reviewed but withdrawn before merge: its definition needs *Jesus Christ*, and `lint_vocab.py --gate` has no way to accept a proper name ([note](notes/lint-vocab-proper-names.md)). Pronunciation 20 of 20 verified. Panel (with *Christian*): 39 issues (21 blocking); 25 applied, 14 rejected (six of them reviewer-b's quoted-headword flag). Applied: *on the shelf* dropped from `shelf-n`; the rock sense of *shelf* narrowed; *frame* of glasses redefined; *heavy/double cream* equivalence claims removed; *blow up* described as also intransitive. reviewer-b's reply on *shelf* failed to parse; re-run. Spend US$0.40; day US$1.80.
-
-## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
 ## [2026-10-02] build | Twelve nouns, *cold* to *condition*
 
