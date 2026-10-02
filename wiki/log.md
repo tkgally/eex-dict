@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] build | Twelve entries, switch to deal
+
+Third cycle of the 16:43 UTC run. Drafted *switch-v*, *wave-v* (the last two hand-queued core verbs) and the band 1 nouns *cut, damage, dance, danger, dark, data, date, daughter, day, deal*. Keyword rule: *call it a day* moved from `call-v` to `day-n` and *big deal* from `big-adj` to `deal-n` (rewritten, not copied). *date* the fruit is an unrelated homograph (`date-n-2`), left out. All inflections and 24 transcriptions verified. Panel: 72 issues, 38 blocking; 49 applied, 23 rejected, 0 escalated. Applied: *dark* "after dark" is nightfall, not night; *data* claims softened to ordinary use; *deal* "price" sense rewritten and *a bad deal* moved to "treatment"; *damage* sense 1 covers body parts. Back-links: `switch-v` moved from *change* "become different" to "replace"; `data-n` cross-reference made a compare to match `information-n`. A drafting slip briefly overwrote `cut-v` and `damage-v` locally; both were restored from git before any check ran. Spend US$0.57.
+
 ## [2026-10-02] review | Second panel round for twelve verbs, invest to lead
 
 Second cycle of the 16:43 UTC run. The oldest one-round entries: *invest, invite, involve, join, judge, keep, kick, kill, kiss, know, lay, lead*. Added by hand: usage notes on *invest, invite, join, judge, kick, kill, know, lead*; learner errors on *invite* (*invited me at*), *join* (*joined her party* for a guest), *judge*, *kick*; phrases *alive and kicking*, *kick someone when they're down*, *it won't kill you*, *kiss and make up*, *you never know*, *who knows*, *know better*, *not that I know of*, *lead someone to believe something*. Panel: 52 issues, 22 blocking; 25 applied, 27 rejected, 0 escalated. Applied: all five *judge* definitions narrowed or widened (court sense now *decide a question or a case*), *kill* "be angry" now includes punishing and is "usually" an exaggeration, *lay* notes allow egg-laying without an object. reviewer-a asked to change `lead-v`'s American IPA to the value it already has (rejected). Spend US$0.59.
