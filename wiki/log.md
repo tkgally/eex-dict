@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] build | Twelve nouns, department to dictionary
+
+Fourth and last cycle of the 20:44 UTC run. Drafted *department, depth, description, desert, design, desire, desk, destruction, detail, development, device, dictionary* with 11 phrases (*in depth*, *out of your depth*, *beyond description*, *a desert island*, *by design*, *have designs on something*, *in detail*, *go into detail*, *leave someone to their own devices*...). `dictionary-n` British IPA disputed (1/3) as four syllables; changed to the panel's *ˈdɪk.ʃən.ri* (verified 2/3), four syllables kept as a variant. reviewer-b returned no verdicts on `depth-n` once; re-run for that role. Panel: 44 issues, 19 blocking; 24 applied, 20 rejected, 0 escalated. Applied: *detail* American stress variant added, sense 2 reworded; *device* senses 2 and 4 widened; *destruction* now "almost always" uncountable; *development* and *department* learner errors replaced or removed. Spend US$0.46.
+
 ## [2026-10-02] build | Twelve nouns, death to democracy
 
 Third cycle of the 20:44 UTC run. Drafted *death, debate, debt, decade, decision, decrease, defense, definition, degree, delay, demand, democracy* (band 1, queue order), with 16 phrases (*to death*, *at death's door*, *open to debate*, *in someone's debt*, *on the decrease*, *come to someone's defense*, *by definition*, *give someone the third degree*, *without delay*, *in demand*, *on demand*...). *sign your own death warrant* stays in `sign-v` until `warrant-n` (NEXT keyword note). Panel: 43 issues, 23 blocking; 31 applied, 12 rejected, 0 escalated. Applied: *delay* no longer says a person cannot have a delay (*sorry for the delay*); its learner error removed; *degree* sense 3 now the title first, British *do a degree* removed; *defense* sense 3, *decade* sense 2, *democracy* sense 1, *debate* sense 1 and two phrase definitions reworded. Back-link `debate-n` moved from *argument* sense 1 (quarrel) to sense 3. Spend US$0.45.
