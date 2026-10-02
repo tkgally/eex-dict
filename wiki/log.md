@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] review | Second panel round for twelve verbs, learn to lock
+
+First cycle of the 20:44 UTC run. Took the twelve oldest one-round entries: *learn, leave, let, lie, lift, light, like, limit, list, listen, live, lock*. Added by hand before the panel: senses *leave* 10 (mark or effect), *lift* 6 (steal, informal), *live* 6 (*live with*, accept); ten phrases (*let alone*, which `alone-adj` already pointed to, *let's say*, *let something slide*, *leave a lot to be desired*, *leave well enough alone*, *lie low*, *like it or not*, *I'd like to think*, *live and learn*, *live it up*); usage notes for six entries; nine learner errors; a *lift/raise/pick up* discrimination. Panel: 38 issues, 22 blocking; 18 applied, 20 rejected, 0 escalated. Applied: *lie* sense 4, *limit* sense 2, *list* sense 2, *leave* sense 4 and *lift* sense 3 reworded; two learner errors that marked correct English as wrong (*I forgot my keys at home*, *He lighted a cigarette*) removed. Back-link `live-v` moved from *accept* sense 1 to sense 2. Spend US$0.56.
+
 ## [2026-10-02] closure | Twelve closure words, amuse to slightly
 
 Fourth and last cycle of the 16:43 UTC run. Of twelve claimed closure rows, five were plurals or wrong parts of speech (*amused* v, *signals*, *singers*, *sleeves*, *slightly* n): marked duplicate and the real lemmas drafted instead; *Christian* released again (open question 7). Drafted *amuse-v, amused-adj, enforce-v, affair-n, gray-n, lack-n, signal-n, singer-n, skate-n, skater-n, sleeve-n, slightly-adv*. `enforce-v` American IPA was disputed (1 of 4); CMU and the panel give **ɛn-**, so it was corrected and verified 3/4. Panel: 44 issues, 23 blocking; 30 applied, 14 rejected, 0 escalated. Applied: British variant *grey* added to `gray-n`; *signal* radio and traffic senses redefined; *skater* now includes skateboards; "not used in continuous tenses" removed from *amuse*. Eight definitions reworded for the defining vocabulary. Spend US$0.36.
