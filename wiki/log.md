@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] build | Twelve nouns, death to democracy
+
+Third cycle of the 20:44 UTC run. Drafted *death, debate, debt, decade, decision, decrease, defense, definition, degree, delay, demand, democracy* (band 1, queue order), with 16 phrases (*to death*, *at death's door*, *open to debate*, *in someone's debt*, *on the decrease*, *come to someone's defense*, *by definition*, *give someone the third degree*, *without delay*, *in demand*, *on demand*...). *sign your own death warrant* stays in `sign-v` until `warrant-n` (NEXT keyword note). Panel: 43 issues, 23 blocking; 31 applied, 12 rejected, 0 escalated. Applied: *delay* no longer says a person cannot have a delay (*sorry for the delay*); its learner error removed; *degree* sense 3 now the title first, British *do a degree* removed; *defense* sense 3, *decade* sense 2, *democracy* sense 1, *debate* sense 1 and two phrase definitions reworded. Back-link `debate-n` moved from *argument* sense 1 (quarrel) to sense 3. Spend US$0.45.
+
 ## [2026-10-02] lint | Thirty-second lint pass
 
 Second cycle of the 20:44 UTC run, forced (five runs since the last lint). Caps and links clean. `crossref --all --apply` added three back-links: *appointment* on `date-n` sense 4 and *child* on `daughter-n` right; *run* on `print-v` went to sense 1 and was moved to sense 2 (newspapers). Three claim files pruned. Precision: no new switch-offs; `reviewer-b` `spelling-or-format` now on the line (0.30 over 436); the two held families unchanged. Ran the reverse part-of-speech scans the thirty-first pass left: queued 19 nouns (*phone, request, slice, stick, lie, fly* at band 1) and 9 adjectives (*firm, tense, key, standard*...) by hand; `phone|abbr` marked duplicate. Index, log, open questions, and curator list consistent. No spend.
