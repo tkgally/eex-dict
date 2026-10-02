@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] build | Twelve core verbs, cry to smoke
+
+First cycle of the 16:43 UTC run. Drafted the twelve band 1 verbs queued by hand in the thirty-first lint: *cry, escape, knock, laugh, plant, print, promise, report, shake, sign, smile, smoke* (3 to 6 senses each, phrases under the keyword rule, learner errors, usage notes). Inflections and all 24 transcriptions verified. Panel: 68 issues, 38 blocking; 46 applied, 22 rejected, 0 escalated. reviewer-a was right on four over-strong "literary" labels (*cry*, *escape*, *laugh*, *smile*) and on the *knock it* collocation. Idioms whose first noun has an entry were kept out (*laugh your head off* is in `head-n`); *shake hands* and *shake your head* are collocations here and belong in `hand-n` and `head-n` as phrases when a review opens them. One back-link moved by hand (`cry-v` from *call* "visit" to *call* "shout"). Spend US$0.60.
+
 ## [2026-10-02] lint | Thirty-first lint pass, 43 missing verb rows queued
 
 Fourth cycle of the 12:43 UTC run. Mechanical checks clean (caps, links, validate). `crossref --all --apply` added five back-links (*belief* to *confidence* sense 2, *bottle* to *courage*, *bowl* to *cup*, *client* to *customer*, *hand* to *control*), all checked and correct. Three claim files pruned. No reviewer family newly under the line; `reviewer-b` `spelling-or-format` fell to 0.33 on quoted-headword fence rejections. Judgmental finding: the band 1 queue had only noun rows for lemmas the founding models proposed as nouns, so *cry, laugh, smile, shake, knock, smoke* and other core verbs were never queued. 926 defining lemmas have a noun row and no verb; 43 verbs were queued by hand (12 at band 1, 31 at band 2), and *print* raised to band 1 ([note](notes/queue-missing-verb-rows.md)). Index, log, open questions, and the curator file checked: no gaps, no duplicates, no contradictions. Spend US$0.
