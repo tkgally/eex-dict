@@ -134,7 +134,7 @@
     {
       "n": 2,
       "signpost": "end a rule",
-      "definition": "end a rule or a law that stopped people from doing something",
+      "definition": "end a rule, a law, or a limit that stopped people from doing something",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -190,7 +190,7 @@
     {
       "n": 3,
       "signpost": "cloud or fog",
-      "definition": "rise and disappear",
+      "definition": "slowly become less thick and then disappear",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -361,6 +361,61 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 6,
+      "signpost": "steal",
+      "definition": "steal something, especially something small",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object",
+          "verb + object + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Someone lifted my wallet on the train.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "He was caught lifting candy from the store.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        }
+      ],
+      "collocations": [],
+      "synonyms": [
+        {
+          "slug": "steal-v",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [],
@@ -371,9 +426,22 @@
       "note": null
     }
   ],
-  "synonym_discrimination": null,
+  "synonym_discrimination": {
+    "words": [
+      "lift-v",
+      "raise-v",
+      "pick-up-phrv"
+    ],
+    "note": "**Lift** is about the physical effort of moving something up, often something heavy: *I can't lift this suitcase*. **Raise** is a little more formal and is also used for levels and amounts: *raise your hand*, *raise prices*. **Pick up** is for taking something from a surface into your hands: *pick up your toys*."
+  },
   "usage_note": null,
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "He rose the heavy box onto the shelf.",
+      "correct": "He lifted the heavy box onto the shelf.",
+      "note": "**Rise** has no object; to move something up, use **lift** or **raise**."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
@@ -386,7 +454,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T18:59:48Z",
-    "modified": "2026-09-26T19:05:35Z",
+    "modified": "2026-10-02T20:53:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T185648Z-iujuq0",
     "reviews": [
@@ -408,6 +476,26 @@
         "file": "reviews/20260926T185648Z-iujuq0/lift-v.json",
         "ok": 60,
         "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261002T204414Z-ex25pd",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-02",
+        "file": "reviews/20261002T204414Z-ex25pd/lift-v.json",
+        "ok": 68,
+        "issues": 2,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261002T204414Z-ex25pd",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-02",
+        "file": "reviews/20261002T204414Z-ex25pd/lift-v.json",
+        "ok": 70,
+        "issues": 0,
         "blocking": 0
       }
     ],
