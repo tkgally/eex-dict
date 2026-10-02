@@ -131,7 +131,7 @@
     {
       "n": 2,
       "signpost": "feel pain",
-      "definition": "give you a feeling of pain",
+      "definition": "be painful",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -288,8 +288,7 @@
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object",
-          "verb + to-infinitive"
+          "verb + object"
         ]
       },
       "labels": {
@@ -310,11 +309,6 @@
           "text": "A little rain won't hurt the garden.",
           "note": null,
           "pattern": "verb + object"
-        },
-        {
-          "text": "It doesn't hurt to ask.",
-          "note": "it does no harm",
-          "pattern": "verb + to-infinitive"
         }
       ],
       "collocations": [
@@ -357,7 +351,41 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "it-wont-hurt-to-do-something",
+      "text": "it won't hurt to do something",
+      "definition": "used to say that doing something is a good idea, or will not cause problems",
+      "explanation": "Also **it wouldn't hurt someone to do something**, which often criticizes the person: they should do it.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "It won't hurt to ask.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "It wouldn't hurt you to say thank you once in a while.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
       "slug": "hurt-adj",
@@ -394,6 +422,11 @@
       "incorrect": "I fell and I hurt.",
       "correct": "I fell and hurt myself.",
       "note": "When you cause pain to your own body, **hurt** needs an object: **hurt myself**, **hurt my arm**, or use **get hurt**."
+    },
+    {
+      "incorrect": "My stomach hurts since this morning.",
+      "correct": "My stomach has been hurting since this morning.",
+      "note": "With **since** or **for**, use the present perfect for pain that started in the past and is still there: *has hurt* or *has been hurting*, not *hurts*."
     }
   ],
   "etymology": null,
@@ -408,7 +441,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T00:46:48Z",
-    "modified": "2026-10-01T01:11:33Z",
+    "modified": "2026-10-02T07:20:44Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T004257Z-f05pzl",
     "reviews": [
@@ -429,6 +462,26 @@
         "date": "2026-09-26",
         "file": "reviews/20260926T004257Z-f05pzl/hurt-v.json",
         "ok": 50,
+        "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261002T071428Z-3z9r8m",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-02",
+        "file": "reviews/20261002T071428Z-3z9r8m/hurt-v.json",
+        "ok": 54,
+        "issues": 3,
+        "blocking": 2
+      },
+      {
+        "run_id": "20261002T071428Z-3z9r8m",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-02",
+        "file": "reviews/20261002T071428Z-3z9r8m/hurt-v.json",
+        "ok": 55,
         "issues": 2,
         "blocking": 0
       }
