@@ -55,3 +55,5 @@ This is a third, different shape of the same underlying pattern (see the two ent
 **2026-09-30, eleventh originality check (`20260930T010853Z-73imgw`).** reviewer-a answered "cannot tell" on all ten and made no "copied" call; a first call with a 1,500-token limit spent it all on hidden reasoning and returned nothing (use at least 6,000). Both rewrites (*look after*, *wait*) came from search result summaries alone.
 
 **2026-10-01, twelfth originality check (`20261001T072400Z-hclmfl`).** reviewer-a answered "original" on all ten, a first; it made no "copied" call. The one rewrite (*land* sense 1, whose frame matched a learner dictionary's *come down through the air onto the ground*) came from search alone, as in the last four checks.
+
+**2026-10-02, thirteenth originality check (`20261002T005959Z-2sgl1j`).** reviewer-a answered "copied" on all ten, naming the same learner dictionary each time and "quoting" our own wording word for word; search found none of the ten. The quote requirement no longer stops false calls on its own: a quote that equals our text is no evidence. No rewrites; search decided every verdict.

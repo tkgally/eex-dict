@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] originality | Thirteenth originality check
+
+Second cycle of the 00:43 UTC run, forced by the selector (run 170). Ten sampled definitions: *represent* sense 4, *quit* sense 3, *cure* sense 2, *all* (pronoun) sense 2, *family* sense 2, *either* (pronoun) sense 1, *aircraft*, *upon* sense 4, *without* sense 2, *clean* sense 1. Exact-phrase web search found none of them. Verdicts: original 7, generic-overlap 3 (*quit*, *either*, *aircraft*, whose summaries showed the same plain frame in other words), rewrite 0. reviewer-a answered "copied" on all ten, "quoting" our own wording as a learner dictionary's; search decided every verdict ([note](notes/reviewer-noise.md)). Record: `reviews/originality/2026-10-02.md`. Spend US$0.04; day US$0.49.
+
 ## [2026-10-02] build | Twelve nouns, *climate* to *coin*
 
 First cycle of the 00:43 UTC run. Drafted *climate, clock, closet, cloth, clothes, cloud, club, coast, coat, code, coffee, coin* (band 1, queue order). Idioms under their first noun: *around the clock*, *against the clock*, *turn back the clock*, *watch the clock*, *the clock is ticking*, *come out of the closet*, *in the closet*, *cut from the same cloth*, *out of whole cloth*, *a man of the cloth*, *in plain clothes*, *on cloud nine*, *under a cloud*, *every cloud has a silver lining*, *join the club*, *the coast is clear*, *from coast to coast*, *coat of arms*, *wake up and smell the coffee*, *flip a coin*. Nine definitions reworded for the defining vocabulary (*golf*, *shield*, *gay*, *instructions*). Pronunciation 24 of 24 verified. Panel: 27 issues (20 blocking); 15 applied, 12 rejected. Applied: *cloud* covers ice and the computing sense is a system, not storage; *coffee* beans are roasted; *at the coast* replaced; *closet*'s British note softened. Rejected: British *clock* (mileometer) as the instrument, *climates* as regions. One back-link moved: `coin-n` onto `bill-n` sense 4 *paper money*. The log's format line, split again by an insertion, repaired. Spend US$0.45.
