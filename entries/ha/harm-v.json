@@ -158,12 +158,18 @@
   ],
   "synonym_discrimination": null,
   "usage_note": "**Harm** is a little more formal than **hurt**. It is common for damage to health, the environment, or someone's chances, and less common for pain in a particular part of the body: *My back hurts*, not *My back harms*.",
-  "learner_errors": [],
+  "learner_errors": [
+    {
+      "incorrect": "Smoking harms to your health.",
+      "correct": "Smoking harms your health.",
+      "note": "**Harm** takes a direct object, with no **to**."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": null,
+    "grammar": "\"harm\" takes a direct object: *harm your health*, not *harm to your health*. The noun is used with **do**: *do harm to something*.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -171,7 +177,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-25T18:47:58Z",
-    "modified": "2026-09-25T18:52:47Z",
+    "modified": "2026-10-02T01:06:38Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260925T184328Z-ho9l34",
     "reviews": [
@@ -193,6 +199,26 @@
         "file": "reviews/20260925T184328Z-ho9l34/harm-v.json",
         "ok": 25,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261002T010345Z-2sgl1j",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-02",
+        "file": "reviews/20261002T010345Z-2sgl1j/harm-v.json",
+        "ok": 25,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261002T010345Z-2sgl1j",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-02",
+        "file": "reviews/20261002T010345Z-2sgl1j/harm-v.json",
+        "ok": 24,
+        "issues": 1,
         "blocking": 0
       }
     ],

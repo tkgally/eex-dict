@@ -76,7 +76,7 @@
         {
           "text": "She hid the money under the bed.",
           "note": null,
-          "pattern": "verb + object + adverb"
+          "pattern": "verb + object + preposition + object"
         },
         {
           "text": "Where did you hide the key?",
@@ -316,6 +316,11 @@
       "incorrect": "The children hided in the garden.",
       "correct": "The children hid in the garden.",
       "note": "**Hide** is irregular: the past tense is **hid** and the past participle is **hidden**."
+    },
+    {
+      "incorrect": "She hid me the truth.",
+      "correct": "She hid the truth from me.",
+      "note": "The person who must not know comes after **from**: *hide something from someone*."
     }
   ],
   "etymology": null,
@@ -330,7 +335,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T00:45:54Z",
-    "modified": "2026-09-28T19:02:42Z",
+    "modified": "2026-10-02T01:11:01Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T004257Z-f05pzl",
     "reviews": [
@@ -352,6 +357,26 @@
         "file": "reviews/20260926T004257Z-f05pzl/hide-v.json",
         "ok": 42,
         "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261002T010345Z-2sgl1j",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-02",
+        "file": "reviews/20261002T010345Z-2sgl1j/hide-v.json",
+        "ok": 42,
+        "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261002T010345Z-2sgl1j",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-02",
+        "file": "reviews/20261002T010345Z-2sgl1j/hide-v.json",
+        "ok": 41,
+        "issues": 2,
         "blocking": 0
       }
     ],

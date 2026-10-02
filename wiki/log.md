@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] review | Twelve verbs, *handle* to *hope*
+
+Third cycle of the 00:43 UTC run. Second panel round for the oldest one-round entries: *handle, hang, happen, harm, hate, hear, heat, help, hide, hire, hit, hope* (2026-09-25 and -26). Added by hand before the panel: *hate* sense 3 (*I'd hate to*), *hit* sense 6 (*hit Enter*, *hit the brakes*), *happen* 3a (*happen on*), phrases *too hot to handle*, *hang tough*, *these things happen*, *it can't be helped*, *hit home*, and five learner errors. Panel: 41 issues (18 blocking); 18 applied, 23 rejected (ten of them reviewer-b's quoted-headword format flag). Applied: *hit* sense 4 covers *hit traffic*; *hope*'s note on *I hope not* corrected; *hear* no longer requires *can hear*; *hire*'s British contrast softened; *hate when* moved from a learner error to the usage note; *dream-v* dropped as a synonym of *hope* with its mirror. reviewer-b's reply on *help* failed to parse; re-run. Spend US$0.48; day US$0.97.
+
 ## [2026-10-02] originality | Thirteenth originality check
 
 Second cycle of the 00:43 UTC run, forced by the selector (run 170). Ten sampled definitions: *represent* sense 4, *quit* sense 3, *cure* sense 2, *all* (pronoun) sense 2, *family* sense 2, *either* (pronoun) sense 1, *aircraft*, *upon* sense 4, *without* sense 2, *clean* sense 1. Exact-phrase web search found none of them. Verdicts: original 7, generic-overlap 3 (*quit*, *either*, *aircraft*, whose summaries showed the same plain frame in other words), rewrite 0. reviewer-a answered "copied" on all ten, "quoting" our own wording as a learner dictionary's; search decided every verdict ([note](notes/reviewer-noise.md)). Record: `reviews/originality/2026-10-02.md`. Spend US$0.04; day US$0.49.
