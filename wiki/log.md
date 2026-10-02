@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] review | Second panel round for twelve verbs, invest to lead
+
+Second cycle of the 16:43 UTC run. The oldest one-round entries: *invest, invite, involve, join, judge, keep, kick, kill, kiss, know, lay, lead*. Added by hand: usage notes on *invest, invite, join, judge, kick, kill, know, lead*; learner errors on *invite* (*invited me at*), *join* (*joined her party* for a guest), *judge*, *kick*; phrases *alive and kicking*, *kick someone when they're down*, *it won't kill you*, *kiss and make up*, *you never know*, *who knows*, *know better*, *not that I know of*, *lead someone to believe something*. Panel: 52 issues, 22 blocking; 25 applied, 27 rejected, 0 escalated. Applied: all five *judge* definitions narrowed or widened (court sense now *decide a question or a case*), *kill* "be angry" now includes punishing and is "usually" an exaggeration, *lay* notes allow egg-laying without an object. reviewer-a asked to change `lead-v`'s American IPA to the value it already has (rejected). Spend US$0.59.
+
 ## [2026-10-02] build | Twelve core verbs, cry to smoke
 
 First cycle of the 16:43 UTC run. Drafted the twelve band 1 verbs queued by hand in the thirty-first lint: *cry, escape, knock, laugh, plant, print, promise, report, shake, sign, smile, smoke* (3 to 6 senses each, phrases under the keyword rule, learner errors, usage notes). Inflections and all 24 transcriptions verified. Panel: 68 issues, 38 blocking; 46 applied, 22 rejected, 0 escalated. reviewer-a was right on four over-strong "literary" labels (*cry*, *escape*, *laugh*, *smile*) and on the *knock it* collocation. Idioms whose first noun has an entry were kept out (*laugh your head off* is in `head-n`); *shake hands* and *shake your head* are collocations here and belong in `hand-n` and `head-n` as phrases when a review opens them. One back-link moved by hand (`cry-v` from *call* "visit" to *call* "shout"). Spend US$0.60.
