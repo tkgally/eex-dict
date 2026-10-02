@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-02] review | Twelve entries, *relevant* to *introduce*
+
+Second cycle of the 12:43 UTC run. Second panel round for the oldest one-round entries: *relevant, urgent, imagine, improve, include, increase, inform, injure, install, intend, interest, introduce*. Added by hand before the panel: learner errors on *urgent* (*urgent* for *urgently*), *inform* (*inform me of*), *install* (*on my phone*); a synonym discrimination *injure / hurt / wound / damage*; *interest-v*'s grammar adaptation note no longer puts a wrong form in italics. Panel: 21 issues, 6 blocking; 5 applied, 16 rejected, 0 escalated. Applied: *include*'s continuous-tense note now says "not normally" (fence); *intend*'s formal that-clause example replaced by *intended anyone to get hurt*; collocation fixes on *inform*, *injure*. Rejected: merging *relevant* sense 2 (*the relevant department*) into sense 1 (different grammar and translation), quoted-headword and core-idea-sentence flags (fences), British *instal*. Spend US$0.36.
+
 ## [2026-10-02] build | Twelve nouns, *cost* to *crack*
 
 First cycle of the 12:43 UTC run. Drafted *cost, cotton, cough, council, country, couple, courage, course, court, cousin, cow, crack* (band 1, queue order). Idioms: *at all costs*, *the cost of living*, *of course*, *in due course*, *run its course*, *take someone to court*, *hold court*, *pluck up the courage*, *till the cows come home*, *a sacred cow*, *at the crack of dawn*, *fall through the cracks*. Panel: 47 issues, 27 blocking; 32 applied, 15 rejected, 0 escalated. Reviewer-a was right that bare American *cotton* (for cotton wool) is not the usual term: that sense was removed. Two learner errors removed as too absolute (*What is the cost of...?*, *a crack on the glass*). Rejected: quoted-headword adaptation flags (fence), a drug domain (none in the vocabulary), a historical label on royal *court*. Plural closure rows *affairs*, *lectures* marked duplicate; *affair* queued. All 24 transcriptions verified. Spend US$0.57.
