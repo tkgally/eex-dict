@@ -1,6 +1,6 @@
 # Queue: missing verb rows for noun-first lemmas
 
-*Observed 2026-10-02 (thirty-first lint pass). Status: rows added by hand; a check for other parts of speech is due a later lint.*
+*Observed 2026-10-02 (thirty-first lint pass). Status: rows added by hand; the reverse scans were run 2026-10-02 (thirty-second lint pass).*
 
 ## What happened
 
@@ -14,6 +14,10 @@ The band 1 rows were built in 2026-09-16 from three models' proposals, one row p
 
 A scan of the defining list on 2026-10-02 found 926 lemmas with a noun row, no verb row, and no verb entry. Most are rightly noun-only (*aunt*, *bathroom*). By judgment, 43 verbs were queued by hand with source `defining`. Band 1 (12): *laugh, smile, shake, knock, smoke, plant, promise, report, sign, wave, escape, switch*. Band 2 (31): *frown, scratch, flood, glue, risk, sweat, trap, trick, display, demand, deal, debate, file, plug, pause, schedule, stress, tip, tour, track, upload, download, value, dust, joke, load, fish, drill, stroke, experiment, protest*. `cry|v` and `print|v` were raised to band 1. Each added row carries a note saying so.
 
-## Still to do
+## The reverse scans (thirty-second lint pass)
 
-The same gap probably exists the other way (verb-first lemmas missing a noun row) and for adjectives (*cold*, *dark*). A later lint should run the same scan for those pairs and judge each lemma by hand. No tool change is proposed: the judgment of which lemmas need a second part of speech is editorial.
+Verb-first lemmas with no noun row: 237 on the defining list. By judgment, 19 nouns queued: band 1 *phone, request, slice, stick, lie* (an untruth), *fly* (the insect); band 2 *blow, strip, spell, leak, glow, climb, shave, sneeze, roast, chop, bore, decay, plow*. The row `phone|abbr` was marked duplicate: *phone* is an ordinary noun.
+
+Lemmas with a noun or verb row and no adjective row: 1,544. Most adjective pairs (*cold*, *dark*, *dry*, *open*) were already queued. By judgment, 9 adjectives queued: band 2 *firm, tense, key, standard, plural, singular*; band 3 *joint, routine, minute* (*my-NOOT*, a different pronunciation from the noun).
+
+No tool change is proposed: which lemmas need a second part of speech is editorial. `phone|v` stays at band 3 though it is common; a build may raise it.
