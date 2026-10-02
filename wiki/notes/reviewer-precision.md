@@ -164,3 +164,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (2967/4199); `reviewer-b
 ## 2026-10-02: thirty-first lint pass, no new switch-offs
 
 Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3134/4429); `reviewer-b` `ALL` 0.58 (849/1475). `reviewer-a` `pronunciation` 0.28 (47/165) and `reviewer-b` `phrase` 0.29 (7/24) are unchanged since the last pass and still held for the owner (`reviews/needs_curator.txt`). `reviewer-b` `spelling-or-format` fell to 0.33 (130/400): this run's three cycles rejected eighteen of its flags, nearly all the quoted-headword fence, and accepted one (*racecourse*), so it is now the nearest live family to the line after the two held ones. Under twenty: `reviewer-a` `etymology` 0.53 (19).
+
+## 2026-10-02: thirty-second lint pass, no new switch-offs
+
+Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3271/4624); `reviewer-b` `ALL` 0.57 (880/1554). `reviewer-a` `pronunciation` 0.28 (49/174) and `reviewer-b` `phrase` 0.28 (7/25) are still held for the owner (`reviews/needs_curator.txt`). `reviewer-b` `spelling-or-format` is at 0.30 (132/436), on the line but not under it; nearly all its rejections are the quoted-headword fence. One more rejection without an apply puts it under; it would then be held with the other two. Under twenty: `reviewer-a` `etymology` 0.53 (19); `reviewer-b` `inflection` 0.00 (6).
