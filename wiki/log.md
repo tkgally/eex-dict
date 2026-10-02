@@ -1,6 +1,12 @@
 # Log
 
-*Append-only, newest first. Header: `## [2026-10-01] lint | Twenty-ninth lint pass
+*Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
+
+## [2026-10-02] build | Twelve nouns, *climate* to *coin*
+
+First cycle of the 00:43 UTC run. Drafted *climate, clock, closet, cloth, clothes, cloud, club, coast, coat, code, coffee, coin* (band 1, queue order). Idioms under their first noun: *around the clock*, *against the clock*, *turn back the clock*, *watch the clock*, *the clock is ticking*, *come out of the closet*, *in the closet*, *cut from the same cloth*, *out of whole cloth*, *a man of the cloth*, *in plain clothes*, *on cloud nine*, *under a cloud*, *every cloud has a silver lining*, *join the club*, *the coast is clear*, *from coast to coast*, *coat of arms*, *wake up and smell the coffee*, *flip a coin*. Nine definitions reworded for the defining vocabulary (*golf*, *shield*, *gay*, *instructions*). Pronunciation 24 of 24 verified. Panel: 27 issues (20 blocking); 15 applied, 12 rejected. Applied: *cloud* covers ice and the computing sense is a system, not storage; *coffee* beans are roasted; *at the coast* replaced; *closet*'s British note softened. Rejected: British *clock* (mileometer) as the instrument, *climates* as regions. One back-link moved: `coin-n` onto `bill-n` sense 4 *paper money*. The log's format line, split again by an insertion, repaired. Spend US$0.45.
+
+## [2026-10-01] lint | Twenty-ninth lint pass
 
 Fourth and last cycle of the 18:43 UTC run, forced by the selector after five runs. Mechanical checks clean: caps, links (254 pages), validation (933 entries), vocabulary gate (no new queue rows). `crossref --all --apply` made one back-link, `money-n` onto `cash-n` sense 1 "coins and paper money"; moved by hand to sense 2 "money in general", which matches *money*'s single broad sense, and a re-run left it there. Three claim files pruned. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.29 (47/163) stays live pending the owner's ruling ([note](notes/reviewer-precision.md)). Reading: index and pages match, every journal has a log entry, no duplicate or stale curator lines, no contradictions found. Spend nil; day US$6.35.
 
@@ -15,8 +21,6 @@ Second cycle of the 18:43 UTC run. Second panel round for *follow, force, forget
 ## [2026-10-01] build | Twelve nouns, *cave* to *charge*
 
 First cycle of the 18:43 UTC run. Drafted *cave, ceiling, cell, center, century, chain, chair, chance, change, chapter, character, charge* (band 1, queue order). Idioms under their first noun: *hit the ceiling*, *the center of attention*, *take center stage*, *a chain reaction*, *chain of command*, six under *chance* (*take a chance*, *stand a chance*, *by any chance*...), *for a change*, *a change of heart*, *chapter and verse*, *out of character*, *in charge*, *take charge*, *free of charge*, *press charges*. Twelve definitions reworded for the defining vocabulary. Pronunciation: 24 of 24 verified. reviewer-b's reply failed to parse on *cave* and *century*; re-run clean. Panel: 30 issues (23 blocking); 23 applied, 7 rejected. Applied: *on charge* (British) removed; *charge* sense 2 no longer "by the police"; the cricket *century* is one turn at batting, not one game; *center*/*middle* for times softened to "normally". Rejected: an American label off *chapter* (fence: mainly used there), *a change* for coins as natural. Spend US$0.56; day US$5.34.
-
-## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
 ## [2026-10-01] review | Twelve verbs, *fight* to *fold*
 
