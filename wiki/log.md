@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] build | Twelve nouns, exchange to factory
+
+Third cycle of the 12:44 UTC run. Drafted *exchange, excitement, exercise, exit, experience, experiment, explanation, eye, fabric, face, fact, factory*: 35 senses, 33 phrases (13 under *eye*, 12 under *face*, six under *fact*), 18 learner errors (*in exchange of*, *excitation*, *do more exercises*, *made an experiment*, *works in a fabric*, *lose my face*, *on fact*). Keyword rule: *cry your eyes out* moved from `cry-v` to `eye-n` and *laugh in someone's face* from `laugh-v` to `face-n`; both verbs now point to the nouns in see-also. All 24 transcriptions verified. Panel: 37 issues, 20 blocking; applied 24, rejected 13. Applied: *exchange* money sense countable or uncountable and *foreign exchange* removed; *fact* phrase definitions (*in fact*, *a fact of life*, *after the fact*) made less absolute; *exit door* learner error and *experience of* regional claim dropped. Rejected: *eye* as "part of the face" (plain learner wording), gerund definitions called non-nominal, quoted-headword fence flags. Spend US$0.52.
+
 ## [2026-10-03] review | Second reading of committee to snow
 
 Second cycle of the 12:44 UTC run. The twelve oldest entries with one panel round, all 2026-09-29 closure and build words: *committee, discolor, foresee, foretell, hand* (verb), *head* (verb), *house* (verb), *identify, mail* (verb), *monetize, smell* (verb), *snow* (verb). Added by hand before the panel: collocations on four empty *smell* senses and *mail* sense 2; see-also links to *head off/out/up*, *hand down*, *smell out*, *fade*, *stain*; head-v sense 4 patterns aligned with its examples. Panel: 14 issues, 6 blocking; applied 9, rejected 5. Applied: British *discolor* re-broken after *dis-* (re-verified 3/3); *discolor*'s doubtful learner error and its "usually passive" pattern removed; *smell* and *snow* restrictions softened to "not normally" and "normally". Rejected: *committee* code objection, *snow under* as idiom, duplicate-note flags on *identify*. Spend US$0.33.
