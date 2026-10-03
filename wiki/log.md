@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] lint | Thirty-sixth lint pass
+
+Second cycle of the 20:43 UTC run, forced (five runs since the last lint). Caps, links, and the vocabulary scan are clean (0 definition violations over 1,168 entries). `crossref --all --apply` added fifteen back-links; eleven were right. Three re-created pairs the previous cycle's review had removed on one side only (*break*/*stop*, *feed*/*supply*, *exist*/*survive*): *break* and *feed* lost their links too, and *exist* moved to `survive-v` sense 1 (*survive on little*). `work-v` "succeed" now mirrors on `fail-v` sense 1, not "stop working". No TYPE-MISMATCH lines. `claim.py --prune` cleared three claim files. Precision: no new pairs under the line; `reviewer-a` `pronunciation` 0.28 and `reviewer-b` `spelling-or-format` 0.28 stay held for the owner. Index, log, and journals agree; no orphan pages. Spend US$0.
+
 ## [2026-10-03] review | Second reading of stop to survive
 
 First cycle of the 20:43 UTC run; selector chose review. The twelve oldest one-round entries (*stop, strengthen, stretch, strip, study, suffer, suggest, supply, support, suppose, surprise, survive*, 2026-09-29 verbs) were read in full and filled by hand before the panel: a British *stay* sense and a *stop a check* subsense on `stop-v`; *stretch back* and *stretch someone* subsenses; an *empty a place* sense on `strip-v`; subsenses for *study* (go over notes), *suffer for*, *suggest itself*, and *supply* as a source; collocations on every bare sense; usage notes on *strengthen, stretch, study, supply, survive*; a synonym discrimination on *support*; ten learner errors. Panel: 30 issues, 21 blocking; 21 applied, 9 rejected (house-rule fences, the closed pattern list, *suggest* + ordinary present as mainly British). `stripper-n` queued (band 3). Spend US$0.51; day US$7.09.
