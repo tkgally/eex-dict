@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] build | Twelve nouns, enemy to example
+
+First cycle of the 12:44 UTC run. Drafted *enemy, energy, engine, entrance, equality, equipment, error, escape, evening, event, evidence, example*: 27 senses, 11 phrases (*be your own worst enemy*, *in error*, *good evening*, *in the event of something*, *in any event*, *in evidence*, *for example*, *make an example of someone*, *lead by example* and others), discriminations for *error/mistake* and *evidence/proof*, 19 learner errors (*equipments*, *evidences*, *I did an error*, *by error*, *in Friday evening*, *as for example*). All 24 transcriptions verified. Panel: 46 issues, 21 blocking; applied 28, rejected 18. Applied: `escape-n` lost its gas-leak sense (mainly technical; *leak* is the word); `enemy-n` sense 2 made countable (*an enemy* can be one soldier); the *eventually* false-friends note dropped (an origin claim). Rejected: the American length mark on *evening*, *energies* against the uncountable-plural gap, quoted-headword fence flags. Back-link on `afternoon-n` checked. Spend US$0.42.
+
 ## [2026-10-03] originality | Fifteenth originality check: one rewrite
 
 Fourth and last cycle of the 08:43 UTC run, forced (run 200). Ten sampled definitions: *examine*, *arrive*, *cut*, *hug*, *give*, *continue*, *skater*, *creature comforts*, *bill*, *it's not someone's day*. Exact-phrase searches: original 6, generic overlap 3, rewrite 1. *creature comforts* (`creature-n`) shared a published learner-dictionary frame (*make life easy and pleasant*, *such as good food and ...*) and now reads *simple physical things, like food, heat, hot water, and a soft place to sleep, that help your body feel comfortable*; its own search finds nothing. Panel on `creature-n`: 2 blocking, both applied (sense 3's explanation now points to *a creature of habit* in the phrases). reviewer-a, reasoning off: eight "copied", four conceded as not verbatim; its one exact claim was the real catch. Recorded as `reviews/originality/2026-10-03-2.md`. Spend US$0.05.
