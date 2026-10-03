@@ -17,3 +17,5 @@ The same day `ball-n` left out *ball* the formal dance party and *have a ball*, 
 The same day `case-n` left out *case* the container (*a pencil case*, *a phone case*, and a suitcase), a separate word (`case-n-2`) waiting for the same hand claim.
 
 **2026-10-03.** `fan-n` was drafted as the object or machine that moves air (the queue row is referenced by `propeller-n`); *fan* the supporter of a team or a singer, a common word, is a separate homograph (`fan-n-2`) waiting for the same hand claim. It should be drafted soon.
+
+The same day `file-n` left out *file* the tool with a rough surface (*a nail file*), a separate word (`file-n-2`) waiting for the same hand claim.
