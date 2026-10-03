@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] lint | Thirty-fifth lint pass, reviewer-b phrase back above the line
+
+Fourth and last cycle of the 12:44 UTC run, forced (five runs since the last lint). Caps, links, and the vocabulary scan are clean (0 definition violations over 1,135 entries). `crossref --all --apply` added four back-links, all checked and correct: `bug-n` on `error-n` sense 2 (computer), `case-n` on `example-n` sense 1, `effort-n` on `energy-n` sense 1, `electricity-n` on `excitement-n` sense 1; no TYPE-MISMATCH lines. `claim.py --prune` cleared three claim files. Precision: `reviewer-b` `phrase` rose to 0.36 (10/28), so its curator line moved to Resolved; `reviewer-a` `pronunciation` 0.28 and `reviewer-b` `spelling-or-format` 0.28 stay held for the owner. Index, log, and journals agree (fifteen entries and journals for 2026-10-03 before this one); no orphan pages. Spend US$0.
+
 ## [2026-10-03] build | Twelve nouns, exchange to factory
 
 Third cycle of the 12:44 UTC run. Drafted *exchange, excitement, exercise, exit, experience, experiment, explanation, eye, fabric, face, fact, factory*: 35 senses, 33 phrases (13 under *eye*, 12 under *face*, six under *fact*), 18 learner errors (*in exchange of*, *excitation*, *do more exercises*, *made an experiment*, *works in a fabric*, *lose my face*, *on fact*). Keyword rule: *cry your eyes out* moved from `cry-v` to `eye-n` and *laugh in someone's face* from `laugh-v` to `face-n`; both verbs now point to the nouns in see-also. All 24 transcriptions verified. Panel: 37 issues, 20 blocking; applied 24, rejected 13. Applied: *exchange* money sense countable or uncountable and *foreign exchange* removed; *fact* phrase definitions (*in fact*, *a fact of life*, *after the fact*) made less absolute; *exit door* learner error and *experience of* regional claim dropped. Rejected: *eye* as "part of the face" (plain learner wording), gerund definitions called non-nominal, quoted-headword fence flags. Spend US$0.52.
