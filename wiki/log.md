@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] site | Site rebuilt and checked, 54 of 54
+
+First cycle of the 08:43 UTC run; the selector picked site (highest scheduler debt; last build 2026-09-30). `build_site.py` wrote 1,099 entries on 1,018 headword pages (0 drafts withheld, 0 redirects, 2,276 files). `site_check.py` passed all 54 checks at phone and desktop width: no overflow or script errors, the search for *ran* finds *run*, link previews, the translator's view toggle, dark mode. A spot check of five newly built or reviewed pages (*economy, dream, disease, bubble, shock*) found no unrendered `**` or `*` marks. No tool changes; no paid calls; no entries changed.
+
 ## [2026-10-03] review | Second reading of twelve entries, shock to bubble
 
 Fourth and last cycle of the 04:43 UTC run. The next oldest one-round entries: the verbs *shock, shop, shout, show, shrink, shut, sing, sit, sleep, slide, border* and the noun *bubble*. These were already full; added by hand: the phrase *shop till you drop*, usage notes on *slide* (*slid*; against *slip*) and *shock* (*get a shock*), collocations on *sing*, a note on *cry* as a synonym of *shout*. *represent* moved from *show* sense 8 (films) to sense 7 (pictures). Panel: 27 issues, 21 blocking; applied 16, rejected 11. Applied: *sleep* sense 1 and core idea (eyes "usually" closed; sense 3 is sex, not sharing a bed); *bubble* core idea, senses 2 and 3, adaptation note; *shut* sense 3 and books; *run* removed as a synonym of *slide* sense 2, with its mirror in `run-v` sense 9. Rejected: the *sleep* length mark, *shut* sense 2's British label, *say*/*tell* in *show* sense 4. Spend US$0.49.
