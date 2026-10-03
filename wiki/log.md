@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] review | Second reading of twelve entries, multiply to shine
+
+First cycle of the 04:43 UTC run. The oldest one-round entries: *multiply, name* (verb), *following* (preposition), *mail* (noun), *seeing* (conjunction), *upward, alarm, awaken, axe, bank* (verb), *shave, shine*. Added by hand: a second sense of *alarm* (fit with an alarm, usually passive), the phrase *to name a few*, usage notes on *multiply* (*times*), *mail* (against *email*), *seeing as*, *bank with*; learner errors *multiply with*, *How are you named?*, *awakened up*, *shinning*; the *wake/awaken* discrimination; the *upwards* and American *ax* variants. Panel: 22 issues, 16 blocking; applied 11, rejected 11. Applied: *awaken* core idea and usage note (feelings), *upward* sense 2 (no longer overlaps sense 1), *alarm* sense 2 broadened, two adaptation notes freed of history claims. Rejected: *ax* as headword (matches `axe-n`), an informal label on *seeing that*. Spend US$0.38.
+
 ## [2026-10-03] lint | Thirty-third lint pass
 
 Fourth and last cycle of the 00:43 UTC run, forced after five runs. Caps, links, and the index all clean. `crossref --all --apply` added two back-links, both right: *benefit* to `disadvantage-n` (antonym) and *way* sense 3 to `direction-n` sense 1. `lint_vocab --all --queue` refreshed the closure rows; `claim.py --prune` removed three spent claim files. Precision: `reviewer-b` `spelling-or-format` fell to 0.28 over 468, nearly all quoted-headword fence rejections; the switch-off is held for the owner with the other two (`reviews/needs_curator.txt`, `wiki/notes/reviewer-precision.md`). The index lines for the precision and reviewer-noise notes were brought up to date. No spend.
