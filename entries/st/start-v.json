@@ -181,7 +181,16 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "start on time",
+            "start late",
+            "start soon"
+          ]
+        }
+      ],
       "synonyms": [
         {
           "slug": "begin-v",
@@ -507,6 +516,63 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 8,
+      "signpost": "sports",
+      "definition": "be one of the players who are in a game when it begins",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive or intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [
+          "sport"
+        ],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "He started every game last season.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "She will start in goal on Saturday.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "start every game",
+            "start in goal"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [
@@ -637,7 +703,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-29T07:02:51Z",
-    "modified": "2026-09-29T07:11:44Z",
+    "modified": "2026-10-03T16:53:25Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260929T065741Z-tgblpw",
     "reviews": [
@@ -659,6 +725,26 @@
         "file": "reviews/20260929T065741Z-tgblpw/start-v.json",
         "ok": 89,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261003T164359Z-scyche",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T164359Z-scyche/start-v.json",
+        "ok": 95,
+        "issues": 3,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261003T164359Z-scyche",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T164359Z-scyche/start-v.json",
+        "ok": 97,
+        "issues": 1,
         "blocking": 0
       }
     ],
