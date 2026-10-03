@@ -168,3 +168,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3134/4429); `reviewer-b
 ## 2026-10-02: thirty-second lint pass, no new switch-offs
 
 Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3271/4624); `reviewer-b` `ALL` 0.57 (880/1554). `reviewer-a` `pronunciation` 0.28 (49/174) and `reviewer-b` `phrase` 0.28 (7/25) are still held for the owner (`reviews/needs_curator.txt`). `reviewer-b` `spelling-or-format` is at 0.30 (132/436), on the line but not under it; nearly all its rejections are the quoted-headword fence. One more rejection without an apply puts it under; it would then be held with the other two. Under twenty: `reviewer-a` `etymology` 0.53 (19); `reviewer-b` `inflection` 0.00 (6).
+
+## 2026-10-03: thirty-third lint pass, `reviewer-b` `spelling-or-format` under the line, switch-off held
+
+Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3367/4748); `reviewer-b` `ALL` 0.56 (890/1605). `reviewer-b` `spelling-or-format` fell to 0.28 (133 applied, 335 rejected, 468 decisions): nearly every rejection this run was the quoted-headword fence in adaptation notes (eleven in this run's first and third cycles). The 30-percent rule calls for a switch-off; it is held with `reviewer-a` `pronunciation` 0.28 (51/180) and `reviewer-b` `phrase` 0.28 (7/25) for the owner, for the reason given on 2026-10-01 (`reviews/needs_curator.txt`). A narrower fix is possible later: tell reviewer-b in its prompt that an opening quoted headword is house style.
