@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] build | Twelve nouns, fee to finger
+
+Fourth and last cycle of the 16:43 UTC run. Drafted *fee, feeling, fence, festival, fever, field, fight, figure, file, film, finance, finger* (band 1). *hurt someone's feelings* and *no hard feelings* now live under `feeling-n` (the keyword rule). `file-n` left out the tool (`file-n-2`, added to the homograph note). Pronunciation 24 of 24 verified. Panel: 34 issues, 22 blocking; 17 applied, 17 rejected. Applied: British *fish fingers* replaced, the six-figure example (an adjective use) replaced, *finger* now excludes the thumb, camera film no longer called only historical. Rejected: reviewer-a's claim that a file is never a container (seven flags); `finance-n` "no plural" (the known `inflect.py` gap, noted). `fight-n` dropped its compare link to `battle-n` to match the mirror. Spend US$0.54; day US$6.58.
+
 ## [2026-10-03] closure | Nine closure words, ignore to practical
 
 Third cycle of the 16:43 UTC run. The ten closure rows the claim tool gave were checked first: four were inflected or mis-tagged (*ignored-v*, *furthest-n*, *threads-n*, *document-adj*) and marked duplicate; *Christian*, *cheat-n*, *fail-n*, *hollow-n* were released. Drafted the real words instead: *ignore-v*, *cheat-v*, *fail-v*, *far-adj*, *hollow-adj*, *planet-n*, *thread-n*, *document-n*, *practical-adj*. Pronunciation 18 of 18 verified. Panel: 48 issues, 35 blocking; 34 applied, 14 rejected. Most fixes were over-absolute notes (*fail*, *cheat*, *far* usage), definitions that missed an example (*fail* crops, *hollow* laugh), and two weak learner errors removed. *Far* keeps "mainly in questions and negatives" for predicative use. Spend US$0.34.

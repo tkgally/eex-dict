@@ -6,3 +6,5 @@ Caught 2026-09-21 (review run) on `money-n`: `inflections.note` said flatly "no 
 
 Fix due a later run (about a fifth of a build or lint run at most): let a nouns-table entry with an explicit `"plural"` value override `NO_PLURAL` for that headword only, keeping the short-circuit for every noun with no table entry.
 - 2026-10-03: `energy-n` (uncountable, with a plural-only subsense *energies*) drew a reviewer-b blocking flag for "no plural"; rejected as this gap.
+
+**2026-10-03.** `finance-n` hit the same gap: sense 1 is uncountable, so `inflect.py` records no plural, though sense 2 is the plural-only **finances**; both reviewers flagged it, rejected as this tool gap, and the examples mark **finances** by hand.
