@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] build | Twelve nouns, difference to discussion
+
+Third cycle of the 00:43 UTC run. Drafted *difference, difficulty, dinner, direction, director, dirt, disability, disadvantage, disappointment, discount, discovery, discussion* with 12 phrases (*make a difference*, *split the difference*, *in difficulty*, *a sense of direction*, *dirt cheap*, *treat someone like dirt*, *at a disadvantage*, *up for discussion* and others), usage notes on all twelve, and 19 learner errors. Pronunciation: British *direction*, *director* disputed at *daɪ-* (1/3); primary changed to *dɪ-* (verified 3/3), *daɪ-* kept as a variant. Panel: 30 issues, 17 blocking; applied 20, rejected 10. Applied: absolute rules softened (no *the* with *dinner*, no plural of *dirt*, *to* with *direction*, the article before job titles), *difficulty* sense 2, *disability* sense 2. Back-links on *conversation*, *argument* checked: right. Spend US$0.40.
+
 ## [2026-10-03] originality | Fourteenth originality check: two rewrites
 
 Second cycle of the 00:43 UTC run, forced (run 190). Ten sampled definitions searched by exact phrase: 3 original, 5 generic overlap (*fly*, *brush*, *until*, *origin*, *awaken*), 2 rewrites. *make sure* (`make-v`) matched a published two-part definition in shape and first half; now *find out whether something is right or finished, or do what is needed so that something will happen*. `weave-v` sense 1 matched a learner dictionary's *crossing ... over and under each other*; now *passing ... in turn above and below other pieces that go the other way*. Panel: `make-v` 0 issues; `weave-v` 3 blocking, 2 applied (participle collocations retyped as phrases, an editorial sentence cut from an adaptation note), 1 rejected (length mark fence). reviewer-a answered copied on all ten; search decided. Record: `reviews/originality/2026-10-03.md`. Spend US$0.19.
