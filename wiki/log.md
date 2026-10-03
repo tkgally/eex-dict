@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] review | Second reading of solve to stir
+
+First cycle of the 16:43 UTC run; selector chose review. The twelve oldest one-round entries (*solve, sound, spell, spend, spill, split, stand, start, stay, steal, stick, stir*, all 2026-09-29 verbs) were read in full and filled by hand before the panel: new senses on `stand-v` (*situation*: *as things stand*, *stand accused*), `start-v` (sport), `steal-v` (*steal a look*; sport), `stick-v` (*be stuck on* a task, subsense *be stuck with*); a *spill blood* subsense; *stay tuned* phrase; collocations on eleven bare senses; usage notes on *solve*, *stay*, *stick*; a learner error on *sound*; adaptation notes on *split*, *stir*. Panel: 34 issues, 20 blocking; 22 applied, 12 rejected (region-label, pattern-vocabulary, and house-rule fences). Spend US$0.57.
+
 ## [2026-10-03] lint | Thirty-fifth lint pass, reviewer-b phrase back above the line
 
 Fourth and last cycle of the 12:44 UTC run, forced (five runs since the last lint). Caps, links, and the vocabulary scan are clean (0 definition violations over 1,135 entries). `crossref --all --apply` added four back-links, all checked and correct: `bug-n` on `error-n` sense 2 (computer), `case-n` on `example-n` sense 1, `effort-n` on `energy-n` sense 1, `electricity-n` on `excitement-n` sense 1; no TYPE-MISMATCH lines. `claim.py --prune` cleared three claim files. Precision: `reviewer-b` `phrase` rose to 0.36 (10/28), so its curator line moved to Resolved; `reviewer-a` `pronunciation` 0.28 and `reviewer-b` `spelling-or-format` 0.28 stay held for the owner. Index, log, and journals agree (fifteen entries and journals for 2026-10-03 before this one); no orphan pages. Spend US$0.
