@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] lint | Thirty-fourth lint pass
+
+Second cycle of the 08:43 UTC run, forced after five runs without a lint. Caps and links clean. `crossref --all --apply` added three back-links; two right (*dirt* on *dust* sense 1, *way* on *distance* sense 1), one moved by hand: *dirt* on *earth* went to sense 1 (the planet) and now sits on sense 3 (soil), matching *dirt* sense 2. No TYPE-MISMATCH lines. Two stale claim files pruned. Precision: no new family under 30 percent; the three held pairs unchanged (`wiki/notes/reviewer-precision.md`). Found and fixed: the three held switch-off questions in `reviews/needs_curator.txt` had been appended under the Resolved heading; moved to Open. Open question 2 (reviewer-b's tier) updated: 0.55 against reviewer-a's 0.71. Index matches the pages; log complete; no duplicate curator lines. No spend.
+
 ## [2026-10-03] site | Site rebuilt and checked, 54 of 54
 
 First cycle of the 08:43 UTC run; the selector picked site (highest scheduler debt; last build 2026-09-30). `build_site.py` wrote 1,099 entries on 1,018 headword pages (0 drafts withheld, 0 redirects, 2,276 files). `site_check.py` passed all 54 checks at phone and desktop width: no overflow or script errors, the search for *ran* finds *run*, link previews, the translator's view toggle, dark mode. A spot check of five newly built or reviewed pages (*economy, dream, disease, bubble, shock*) found no unrendered `**` or `*` marks. No tool changes; no paid calls; no entries changed.

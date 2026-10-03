@@ -172,3 +172,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3271/4624); `reviewer-b
 ## 2026-10-03: thirty-third lint pass, `reviewer-b` `spelling-or-format` under the line, switch-off held
 
 Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3367/4748); `reviewer-b` `ALL` 0.56 (890/1605). `reviewer-b` `spelling-or-format` fell to 0.28 (133 applied, 335 rejected, 468 decisions): nearly every rejection this run was the quoted-headword fence in adaptation notes (eleven in this run's first and third cycles). The 30-percent rule calls for a switch-off; it is held with `reviewer-a` `pronunciation` 0.28 (51/180) and `reviewer-b` `phrase` 0.28 (7/25) for the owner, for the reason given on 2026-10-01 (`reviews/needs_curator.txt`). A narrower fix is possible later: tell reviewer-b in its prompt that an opening quoted headword is house style.
+
+## 2026-10-03: thirty-fourth lint pass, no new switch-offs
+
+Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3426/4834); `reviewer-b` `ALL` 0.55 (900/1626). The three held pairs are unchanged in standing and still wait on the owner (`reviews/needs_curator.txt`): `reviewer-a` `pronunciation` 0.28 (51/181), `reviewer-b` `phrase` 0.28 (7/25), `reviewer-b` `spelling-or-format` 0.28 (135/474). No other live family at twenty or more decisions is under 30 percent; the nearest is `reviewer-a` `spelling-or-format` 0.38 (23/60). Under twenty: `reviewer-a` `etymology` 0.55 (20 decisions, now at the threshold); `reviewer-b` `inflection` 0.00 (6).
