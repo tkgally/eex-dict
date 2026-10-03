@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] build | Twelve nouns, failure to feather
+
+Second cycle of the 16:43 UTC run. Drafted *failure, faith, fall, fan, farm, farmer, fashion, fat, father, fault, fear, feather* (band 1). `fan-n` is the object that moves air (the queue row is referenced by `propeller-n`); *fan* the supporter is a separate homograph, `fan-n-2`, added to the homograph note. Pronunciation: 24 of 24 verified. Panel: 24 issues, 19 blocking; 16 applied, 8 rejected (region labels, the CMU-backed American *fall* /fɔl/, `old-fashioned` as a currency value). Five definition words outside the vocabulary (*criticize*, *oily*, two core ideas) reworded. `fault-n` now names `blame-n` under compare to match the mirror; `courage-n` gained the antonym back-link to `fear-n`. Spend US$0.45.
+
 ## [2026-10-03] review | Second reading of solve to stir
 
 First cycle of the 16:43 UTC run; selector chose review. The twelve oldest one-round entries (*solve, sound, spell, spend, spill, split, stand, start, stay, steal, stick, stir*, all 2026-09-29 verbs) were read in full and filled by hand before the panel: new senses on `stand-v` (*situation*: *as things stand*, *stand accused*), `start-v` (sport), `steal-v` (*steal a look*; sport), `stick-v` (*be stuck on* a task, subsense *be stuck with*); a *spill blood* subsense; *stay tuned* phrase; collocations on eleven bare senses; usage notes on *solve*, *stay*, *stick*; a learner error on *sound*; adaptation notes on *split*, *stir*. Panel: 34 issues, 20 blocking; 22 applied, 12 rejected (region-label, pattern-vocabulary, and house-rule fences). Spend US$0.57.
