@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] originality | Fifteenth originality check: one rewrite
+
+Fourth and last cycle of the 08:43 UTC run, forced (run 200). Ten sampled definitions: *examine*, *arrive*, *cut*, *hug*, *give*, *continue*, *skater*, *creature comforts*, *bill*, *it's not someone's day*. Exact-phrase searches: original 6, generic overlap 3, rewrite 1. *creature comforts* (`creature-n`) shared a published learner-dictionary frame (*make life easy and pleasant*, *such as good food and ...*) and now reads *simple physical things, like food, heat, hot water, and a soft place to sleep, that help your body feel comfortable*; its own search finds nothing. Panel on `creature-n`: 2 blocking, both applied (sense 3's explanation now points to *a creature of habit* in the phrases). reviewer-a, reasoning off: eight "copied", four conceded as not verbatim; its one exact claim was the real catch. Recorded as `reviews/originality/2026-10-03-2.md`. Spend US$0.05.
+
 ## [2026-10-03] build | Twelve nouns, edge to end
 
 Third cycle of the 08:43 UTC run. Drafted *edge, effect, effort, egg, election, electricity, email, emergency, emotion, employee, employer, end*: 30 senses, 22 phrases (*on edge*, *take effect*, *be in effect*, *make ends meet*, *in the end*, *put all your eggs in one basket*, *throw someone in at the deep end* and others), discriminations for *effect/result/consequence*, *emotion/feeling*, *end/ending/finish*, 17 learner errors (*a big affect on*, *do an effort*, *in the end of the month*, *a happy end*). All 24 transcriptions verified. Panel: 30 issues, 15 blocking; applied 20, rejected 10. Applied: adjective *cutting-edge* split out of `edge-n` (queued); *in effect* and *be in effect* split; *egg on* out of egg's family (separate origin); `end-n` sense 5 redefined. Rejected: the *electric* /s/ claim (it ends in a *k* sound), five quoted-headword fence flags. Back-link on `border-n` moved from sense 2 to sense 1. Spend US$0.46.
