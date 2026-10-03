@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] build | Twelve nouns, fire to focus
+
+Third cycle of the 20:43 UTC run. Drafted *fire, firm, fish, flame, flavor, flight, flood, floor, flower, flu, fly, focus* (band 1). Keyword-rule phrases now live here: *catch fire*, *set fire to something*, *on fire*, *open fire*, *under fire*, *play with fire* (`fire-n`); *in flames*, *go up in flames*, *an old flame* (`flame-n`); *take the floor*, *wipe the floor with someone* (`floor-n`); *a fly on the wall* (`fly-n`); *a fish out of water* (`fish-n`). Pronunciation 24 of 24 verified. Panel: 44 issues, 28 blocking; 37 applied, 7 rejected. Applied: *fire* sense 3 now the burning, not the fuel; *go up in flames* covers failure; *flight* subsense the trip, not the plane; the meeting sense of *floor* split from *give someone the floor*; *flower* no longer circular; *flu* redefined; *caught the flu*. Rejected: one-syllable *fire* (fence), the stove-*fire* learner error, *What taste of ice cream*. Spend US$0.51; day US$7.60.
+
 ## [2026-10-03] lint | Thirty-sixth lint pass
 
 Second cycle of the 20:43 UTC run, forced (five runs since the last lint). Caps, links, and the vocabulary scan are clean (0 definition violations over 1,168 entries). `crossref --all --apply` added fifteen back-links; eleven were right. Three re-created pairs the previous cycle's review had removed on one side only (*break*/*stop*, *feed*/*supply*, *exist*/*survive*): *break* and *feed* lost their links too, and *exist* moved to `survive-v` sense 1 (*survive on little*). `work-v` "succeed" now mirrors on `fail-v` sense 1, not "stop working". No TYPE-MISMATCH lines. `claim.py --prune` cleared three claim files. Precision: no new pairs under the line; `reviewer-a` `pronunciation` 0.28 and `reviewer-b` `spelling-or-format` 0.28 stay held for the owner. Index, log, and journals agree; no orphan pages. Spend US$0.
