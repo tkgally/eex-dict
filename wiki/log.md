@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] review | Second reading of committee to snow
+
+Second cycle of the 12:44 UTC run. The twelve oldest entries with one panel round, all 2026-09-29 closure and build words: *committee, discolor, foresee, foretell, hand* (verb), *head* (verb), *house* (verb), *identify, mail* (verb), *monetize, smell* (verb), *snow* (verb). Added by hand before the panel: collocations on four empty *smell* senses and *mail* sense 2; see-also links to *head off/out/up*, *hand down*, *smell out*, *fade*, *stain*; head-v sense 4 patterns aligned with its examples. Panel: 14 issues, 6 blocking; applied 9, rejected 5. Applied: British *discolor* re-broken after *dis-* (re-verified 3/3); *discolor*'s doubtful learner error and its "usually passive" pattern removed; *smell* and *snow* restrictions softened to "not normally" and "normally". Rejected: *committee* code objection, *snow under* as idiom, duplicate-note flags on *identify*. Spend US$0.33.
+
 ## [2026-10-03] build | Twelve nouns, enemy to example
 
 First cycle of the 12:44 UTC run. Drafted *enemy, energy, engine, entrance, equality, equipment, error, escape, evening, event, evidence, example*: 27 senses, 11 phrases (*be your own worst enemy*, *in error*, *good evening*, *in the event of something*, *in any event*, *in evidence*, *for example*, *make an example of someone*, *lead by example* and others), discriminations for *error/mistake* and *evidence/proof*, 19 learner errors (*equipments*, *evidences*, *I did an error*, *by error*, *in Friday evening*, *as for example*). All 24 transcriptions verified. Panel: 46 issues, 21 blocking; applied 28, rejected 18. Applied: `escape-n` lost its gas-leak sense (mainly technical; *leak* is the word); `enemy-n` sense 2 made countable (*an enemy* can be one soldier); the *eventually* false-friends note dropped (an origin claim). Rejected: the American length mark on *evening*, *energies* against the uncountable-plural gap, quoted-headword fence flags. Back-link on `afternoon-n` checked. Spend US$0.42.
