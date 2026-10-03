@@ -1,14 +1,14 @@
 # NEXT.md — baton (hard cap 60 lines; rewrite, don't append)
 
-*Rewritten 2026-10-03 by the first cycle (review) of the 00:43 UTC run.*
+*Rewritten 2026-10-03 by the second cycle (originality) of the 00:43 UTC run (#194 merged the first).*
 
 ## State
 
 - 1,063 entries, all `reviewed` (0 `draft`). Queue: 4,945 pending, 0 claimed, 1,063 done, 24 declined, 2 deferred, 34 duplicate.
-- Earlier runs: `journal/2026-09-28.md` to `journal/2026-10-02-20.md` (one journal per cycle; each opens with what the cycle did). 2026-10-03 00:43 run: (1) review of the verbs *look*–*move*: ten senses, seven phrases, eight usage notes, eleven learner errors added by hand (`journal/2026-10-03.md`).
+- Earlier runs: `journal/2026-09-28.md` to `journal/2026-10-02-20.md` (one journal per cycle; each opens with what the cycle did). 2026-10-03 00:43 run: (1) review of the verbs *look*–*move*: ten senses, seven phrases, eight usage notes, eleven learner errors added by hand (`journal/2026-10-03.md`); (2) the fourteenth originality check, *make sure* and *weave* sense 1 rewritten (`-2.md`).
 - 403 `reviewed` entries remain at one panel round (the 310 newest, *threaten*–*slightly-adv*, included). 36 one-sense entries still carry a signpost.
 - Run shape: a run every six hours, at most four cycles, 12 entries a build; weights build 0.45, review 0.30.
-- Spend: US$0.58 today (2026-10-03), of the US$15 daily cap. Site: last built and checked 2026-09-30, 54 of 54.
+- Spend: US$0.77 today (2026-10-03), of the US$15 daily cap. Site: last built and checked 2026-09-30, 54 of 54.
 
 ## Queue (work top-down, one unit at a time)
 
@@ -56,5 +56,5 @@
 - The public site is live: <https://tkgally.github.io/eex-dict/>.
 - New 2026-10-01: should `reviewer-a` `pronunciation` (0.29 over 160) be switched off by hand? The rule says yes; a safety check refused the edit (`journal/2026-10-01-10.md`). New 2026-10-02: `reviewer-b` `phrase` is under the line too (0.29), held with it.
 - Seven open questions; the ones that most need you: 4 (split *be/have/do/one* by part of speech?), 5 (the look of the marks), 6 (should infinitive *to* get an entry, and under what part of speech?), and 7 (may proper names such as *Jesus Christ* appear in definitions?). See `wiki/open-questions.md`. New in `reviews/needs_curator.txt` (2026-09-29): is *three times bigger* a use of `times-prep` or of the noun *time*? Kept in `times-prep`, flagged.
-- Originality checks: reviewer-a now gives quotes for "copied" that web search cannot find (six on 2026-09-26, three of them our own wording); on 2026-10-02 it "quoted" our own wording as published text on all ten; search alone decides the verdicts ([note](wiki/notes/reviewer-noise.md)).
+- Originality checks: reviewer-a now gives quotes for "copied" that web search cannot find (six on 2026-09-26, three of them our own wording); on 2026-10-02 it "quoted" our own wording as published text on all ten, and on 2026-10-03 it called all ten "copied" with quotes search could not confirm; search alone decides the verdicts ([note](wiki/notes/reviewer-noise.md)).
 - Latest reports: `journal/2026-10-02.md` to `-20.md`; before them `journal/2026-10-01.md` to `-16.md`.
