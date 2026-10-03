@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] originality | Fourteenth originality check: two rewrites
+
+Second cycle of the 00:43 UTC run, forced (run 190). Ten sampled definitions searched by exact phrase: 3 original, 5 generic overlap (*fly*, *brush*, *until*, *origin*, *awaken*), 2 rewrites. *make sure* (`make-v`) matched a published two-part definition in shape and first half; now *find out whether something is right or finished, or do what is needed so that something will happen*. `weave-v` sense 1 matched a learner dictionary's *crossing ... over and under each other*; now *passing ... in turn above and below other pieces that go the other way*. Panel: `make-v` 0 issues; `weave-v` 3 blocking, 2 applied (participle collocations retyped as phrases, an editorial sentence cut from an adaptation note), 1 rejected (length mark fence). reviewer-a answered copied on all ten; search decided. Record: `reviews/originality/2026-10-03.md`. Spend US$0.19.
+
 ## [2026-10-03] review | Second reading of twelve verbs, look to move
 
 First cycle of the 00:43 UTC run. Second panel round for *look, lose, love, manage, marry, mean, measure, meet, melt, mention, mix, move* (drafted 2026-09-26). Added by hand: ten senses (*look at* examine, *lose* confuse someone, *manage* be able to, *marry* combine, *mean* be meant to, *meet* experience opposition, *melt* disappear, *mix* prepare a drink, *move* change the time and suggest formally), seven phrases (*look who's talking*, *never look back*, *not look yourself*, *lose it*, *lose yourself in something*, *nice to meet you*, *mix and match*), eight usage notes, eleven learner errors. Panel: 57 issues, 32 blocking; 29 applied, 26 rejected, 0 escalated. Applied: *melt* core idea and two definitions, *meet* sense 6 (deadlines), *mix* music sense, *measure* weigh note softened and its new learner error withdrawn; antonym *get* and synonym *transport* removed on both sides. Rejections mostly fences (American length marks, quoted headwords in adaptation notes). Spend US$0.58.

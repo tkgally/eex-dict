@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-10-03",
-  "spent_usd": 0.582347,
+  "spent_usd": 0.769303,
   "calls": [
     {
       "ts": "2026-10-03T00:50:04Z",
@@ -219,6 +219,60 @@
       "cost_usd": 0.018039,
       "tokens_in": 5982,
       "tokens_out": 3614
+    },
+    {
+      "ts": "2026-10-03T01:06:46Z",
+      "run_id": "20261003T010507Z-ds9q0e",
+      "purpose": "originality:2026-10-03",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.036496,
+      "tokens_in": 248,
+      "tokens_out": 3000
+    },
+    {
+      "ts": "2026-10-03T01:06:56Z",
+      "run_id": "20261003T010507Z-ds9q0e",
+      "purpose": "originality:2026-10-03",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.003664,
+      "tokens_in": 248,
+      "tokens_out": 264
+    },
+    {
+      "ts": "2026-10-03T01:07:36Z",
+      "run_id": "20261003T010507Z-ds9q0e",
+      "purpose": "review:weave-v:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.025322,
+      "tokens_in": 3711,
+      "tokens_out": 1571
+    },
+    {
+      "ts": "2026-10-03T01:07:47Z",
+      "run_id": "20261003T010507Z-ds9q0e",
+      "purpose": "review:weave-v:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.009737,
+      "tokens_in": 3963,
+      "tokens_out": 1804
+    },
+    {
+      "ts": "2026-10-03T01:08:09Z",
+      "run_id": "20261003T010507Z-ds9q0e",
+      "purpose": "review:make-v:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.080516,
+      "tokens_in": 10966,
+      "tokens_out": 4659
+    },
+    {
+      "ts": "2026-10-03T01:08:41Z",
+      "run_id": "20261003T010507Z-ds9q0e",
+      "purpose": "review:make-v:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.031221,
+      "tokens_in": 12108,
+      "tokens_out": 5904
     }
   ],
   "history": {
