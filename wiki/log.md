@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] build | Twelve nouns, disease to dream
+
+Second cycle of the 04:43 UTC run. Drafted *disease, dish, display, distance, divorce, doctor, dog, door, doubt, download, drawer, dream* with 25 phrases (*on display*, *keep your distance*, *go the distance*, *just what the doctor ordered*, *let sleeping dogs lie*, *next door*, *behind closed doors*, *no doubt*, *without a doubt*, *a dream come true*, *in your dreams* and others), usage notes on all twelve, a *disease/illness/sickness* discrimination, and 18 learner errors (*I saw a dream*, *How much distance is it*, *I have a doubt* for a question). All 24 transcriptions verified. Panel: 21 issues, 9 blocking; applied 14, rejected 7. Applied: *meal* removed as a synonym of *dish* sense 3; *doctor* sense 2 no longer says "the highest degree"; two learner errors removed as sometimes correct (*wash the dish*, *closed the door with the key*). Two definitions reworded for the defining vocabulary (*separation*, *advanced*). Spend US$0.42.
+
 ## [2026-10-03] review | Second reading of twelve entries, multiply to shine
 
 First cycle of the 04:43 UTC run. The oldest one-round entries: *multiply, name* (verb), *following* (preposition), *mail* (noun), *seeing* (conjunction), *upward, alarm, awaken, axe, bank* (verb), *shave, shine*. Added by hand: a second sense of *alarm* (fit with an alarm, usually passive), the phrase *to name a few*, usage notes on *multiply* (*times*), *mail* (against *email*), *seeing as*, *bank with*; learner errors *multiply with*, *How are you named?*, *awakened up*, *shinning*; the *wake/awaken* discrimination; the *upwards* and American *ax* variants. Panel: 22 issues, 16 blocking; applied 11, rejected 11. Applied: *awaken* core idea and usage note (feelings), *upward* sense 2 (no longer overlaps sense 1), *alarm* sense 2 broadened, two adaptation notes freed of history claims. Rejected: *ax* as headword (matches `axe-n`), an informal label on *seeing that*. Spend US$0.38.
