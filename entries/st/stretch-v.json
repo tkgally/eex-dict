@@ -151,6 +151,11 @@
           "text": "Always stretch before you run.",
           "note": null,
           "pattern": null
+        },
+        {
+          "text": "Let's stop the car for a few minutes and stretch our legs.",
+          "note": "here, go for a short walk after sitting for a long time",
+          "pattern": null
         }
       ],
       "collocations": [
@@ -272,7 +277,49 @@
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "have existed or continued since a time long ago",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "intransitive",
+            "codes": [],
+            "patterns": [
+              "verb + adverb or preposition"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "Their friendship stretches back to their school days.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The history of the town stretches back hundreds of years.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "stretch back to something",
+                "stretch back many years"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -284,16 +331,17 @@
     },
     {
       "n": 4,
-      "signpost": "money or ability",
-      "definition": "make money or supplies last as long as possible, or give someone work that tests what they can do",
+      "signpost": "money or time",
+      "definition": "make money or supplies last as long as possible, use them almost to their limit, or be enough to pay for something",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
           "verb + object",
-          "usually passive"
+          "usually passive",
+          "verb + preposition + object"
         ]
       },
       "labels": {
@@ -313,10 +361,10 @@
         {
           "text": "The school's budget is already stretched.",
           "note": null,
-          "pattern": null
+          "pattern": "usually passive"
         },
         {
-          "text": "This job doesn't really stretch her. She's bored.",
+          "text": "Our budget won't stretch to a new car this year.",
           "note": null,
           "pattern": null
         }
@@ -335,12 +383,60 @@
             "be stretched thin",
             "be stretched to the limit"
           ]
+        },
+        {
+          "type": "verb + preposition",
+          "items": [
+            "stretch to something"
+          ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "give someone work that makes them use all of their skill or ability",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "This job doesn't really stretch her. She's bored.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "A good teacher stretches the strongest students as well as helping the weakest.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "stretch yourself",
+                "stretch someone"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -353,7 +449,7 @@
     {
       "n": 5,
       "signpost": "truth or rules",
-      "definition": "say something that is not completely true, or use a rule in a wider way than it was meant",
+      "definition": "make a fact seem better, bigger, or different from what it really is, or use a rule in a wider way than it was meant",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -421,12 +517,17 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
+  "usage_note": "**Stretch** is often used with **out**: *stretch out your arms*; *stretch out on the sofa* (lie down and make yourself comfortable). Adverbs such as **up**, **across**, and **back** show the direction: *stretch up to the top shelf*.",
   "learner_errors": [
     {
       "incorrect": "The road stretches until the river.",
       "correct": "The road stretches as far as the river.",
       "note": "Use **as far as** or **to** for a place; **until** is for time."
+    },
+    {
+      "incorrect": "I stretched myself to the shelf.",
+      "correct": "I stretched up to reach the shelf.",
+      "note": "For reaching, use **stretch** without **myself**, often with **up**, **out**, or **across**."
     }
   ],
   "etymology": null,
@@ -446,7 +547,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-29T07:16:47Z",
-    "modified": "2026-09-29T13:16:54Z",
+    "modified": "2026-10-03T20:52:46Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260929T071408Z-tgblpw",
     "reviews": [
@@ -468,6 +569,26 @@
         "file": "reviews/20260929T071408Z-tgblpw/stretch-v.json",
         "ok": 63,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261003T204400Z-vfp904",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T204400Z-vfp904/stretch-v.json",
+        "ok": 63,
+        "issues": 4,
+        "blocking": 3
+      },
+      {
+        "run_id": "20261003T204400Z-vfp904",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T204400Z-vfp904/stretch-v.json",
+        "ok": 66,
+        "issues": 1,
         "blocking": 0
       }
     ],
