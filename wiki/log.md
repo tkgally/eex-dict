@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] review | Second reading of twelve verbs, look to move
+
+First cycle of the 00:43 UTC run. Second panel round for *look, lose, love, manage, marry, mean, measure, meet, melt, mention, mix, move* (drafted 2026-09-26). Added by hand: ten senses (*look at* examine, *lose* confuse someone, *manage* be able to, *marry* combine, *mean* be meant to, *meet* experience opposition, *melt* disappear, *mix* prepare a drink, *move* change the time and suggest formally), seven phrases (*look who's talking*, *never look back*, *not look yourself*, *lose it*, *lose yourself in something*, *nice to meet you*, *mix and match*), eight usage notes, eleven learner errors. Panel: 57 issues, 32 blocking; 29 applied, 26 rejected, 0 escalated. Applied: *melt* core idea and two definitions, *meet* sense 6 (deadlines), *mix* music sense, *measure* weigh note softened and its new learner error withdrawn; antonym *get* and synonym *transport* removed on both sides. Rejections mostly fences (American length marks, quoted headwords in adaptation notes). Spend US$0.58.
+
 ## [2026-10-02] build | Twelve nouns, department to dictionary
 
 Fourth and last cycle of the 20:44 UTC run. Drafted *department, depth, description, desert, design, desire, desk, destruction, detail, development, device, dictionary* with 11 phrases (*in depth*, *out of your depth*, *beyond description*, *a desert island*, *by design*, *have designs on something*, *in detail*, *go into detail*, *leave someone to their own devices*...). `dictionary-n` British IPA disputed (1/3) as four syllables; changed to the panel's *ˈdɪk.ʃən.ri* (verified 2/3), four syllables kept as a variant. reviewer-b returned no verdicts on `depth-n` once; re-run for that role. Panel: 44 issues, 19 blocking; 24 applied, 20 rejected, 0 escalated. Applied: *detail* American stress variant added, sense 2 reworded; *device* senses 2 and 4 widened; *destruction* now "almost always" uncountable; *development* and *department* learner errors replaced or removed. Spend US$0.46.

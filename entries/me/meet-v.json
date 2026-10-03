@@ -332,7 +332,7 @@
     {
       "n": 6,
       "signpost": "needs",
-      "definition": "reach the level that a need, a rule, or a plan asks for",
+      "definition": "do or reach what a need, a rule, a time limit, or a plan asks for",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -390,6 +390,68 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 7,
+      "signpost": "experience",
+      "definition": "be treated in a particular way by other people, or have to deal with a difficulty",
+      "explanation": "Often in the passive with **with** (*was met with*), or with **meet with** in more formal English.",
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object",
+          "verb + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The plan met strong opposition from parents.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "Her idea was met with silence.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The new rules have met with a lot of criticism.",
+          "note": null,
+          "pattern": "verb + preposition + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "meet opposition",
+            "be met with",
+            "meet with approval"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [
@@ -420,6 +482,39 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "sub_id": "nice-to-meet-you",
+      "text": "nice to meet you",
+      "definition": "said when you meet someone for the first time",
+      "explanation": "Said when you are introduced to someone. To someone you already know, say **nice to see you**. When you leave, **nice meeting you** is also common.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "\"This is my sister, Ana.\" \"Hi, Ana. Nice to meet you.\"",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "It was nice to meet you. I hope we see each other again.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "word_family": [
@@ -430,8 +525,19 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "In American English, **meet with** someone is common for a planned meeting to talk about something: *the manager met with the workers*. **Meet** alone is used for every kind of meeting, planned or not.",
-  "learner_errors": [],
+  "usage_note": "In American English, **meet with** someone is common for a planned meeting to talk about something: *the manager met with the workers*. **Meet** alone can be used for every kind of meeting, planned or not.",
+  "learner_errors": [
+    {
+      "incorrect": "Nice to meet you again.",
+      "correct": "Nice to see you again.",
+      "note": "**Nice to meet you** is only for the first time you meet someone."
+    },
+    {
+      "incorrect": "I met with an old friend in the street.",
+      "correct": "I met an old friend in the street.",
+      "note": "**Meet with** is mainly for a planned meeting to talk about something; a meeting by chance is just **meet**."
+    }
+  ],
   "etymology": null,
   "see_also": [
     {
@@ -449,7 +555,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T19:29:23Z",
-    "modified": "2026-09-26T19:37:25Z",
+    "modified": "2026-10-03T00:56:02Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T192801Z-iujuq0",
     "reviews": [
@@ -471,6 +577,26 @@
         "file": "reviews/20260926T192801Z-iujuq0/meet-v.json",
         "ok": 73,
         "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261003T004332Z-ds9q0e",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T004332Z-ds9q0e/meet-v.json",
+        "ok": 87,
+        "issues": 4,
+        "blocking": 2
+      },
+      {
+        "run_id": "20261003T004332Z-ds9q0e",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T004332Z-ds9q0e/meet-v.json",
+        "ok": 88,
+        "issues": 1,
         "blocking": 0
       }
     ],
