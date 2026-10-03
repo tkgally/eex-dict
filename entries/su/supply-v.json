@@ -109,21 +109,64 @@
             "supply something to someone",
             "supply someone with something"
           ]
+        },
+        {
+          "type": "adverb + verb",
+          "items": [
+            "regularly supply",
+            "supply directly"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "be well supplied with something"
+          ]
         }
       ],
       "synonyms": [
         {
           "slug": "provide-v",
           "note": null
-        },
-        {
-          "slug": "feed-v",
-          "note": null
         }
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "provide something that the body, a plant, or a machine needs in order to live or work",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "Fruit and vegetables supply many of the vitamins we need.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "One large battery supplies all the power for the boat.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -167,9 +210,24 @@
           "text": "The police asked him to supply more details.",
           "note": null,
           "pattern": null
+        },
+        {
+          "text": "Can anyone supply the missing word?",
+          "note": null,
+          "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "supply details",
+            "supply information",
+            "supply evidence",
+            "supply an answer"
+          ]
+        }
+      ],
       "synonyms": [
         {
           "slug": "provide-v",
@@ -213,12 +271,17 @@
     ],
     "note": "**Provide** is the general word for giving what is needed: *provide help*, *provide a service*. **Supply** is used especially for goods, food, water, and power given regularly and in large amounts, often as a business: *They supply the stores with bread*."
   },
-  "usage_note": null,
+  "usage_note": "**Supply** is common in the passive: *Water is supplied by the city*. Both patterns are normal: *supply bread to stores* and *supply stores with bread*. The noun **supply** (*a supply of water*; *food supplies*) is more common than the verb in everyday speech.",
   "learner_errors": [
     {
       "incorrect": "The company supplies computers the schools.",
       "correct": "The company supplies computers to schools.",
       "note": "Use **supply something to someone** or **supply someone with something**."
+    },
+    {
+      "incorrect": "They supplied us of fresh water.",
+      "correct": "They supplied us with fresh water.",
+      "note": "With the person as the object, use **with** before the thing."
     }
   ],
   "etymology": null,
@@ -233,7 +296,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-29T07:17:37Z",
-    "modified": "2026-09-29T13:16:54Z",
+    "modified": "2026-10-03T20:52:46Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260929T071408Z-tgblpw",
     "reviews": [
@@ -254,6 +317,26 @@
         "date": "2026-09-29",
         "file": "reviews/20260929T071408Z-tgblpw/supply-v.json",
         "ok": 34,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261003T204400Z-vfp904",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T204400Z-vfp904/supply-v.json",
+        "ok": 34,
+        "issues": 2,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261003T204400Z-vfp904",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T204400Z-vfp904/supply-v.json",
+        "ok": 36,
         "issues": 0,
         "blocking": 0
       }

@@ -114,10 +114,6 @@
         {
           "slug": "quit-v",
           "note": null
-        },
-        {
-          "slug": "break-v",
-          "note": null
         }
       ],
       "antonyms": [
@@ -240,7 +236,23 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "noun + verb",
+          "items": [
+            "the rain stops",
+            "the noise stops",
+            "the bleeding stops"
+          ]
+        },
+        {
+          "type": "verb + adverb",
+          "items": [
+            "stop abruptly",
+            "stop altogether"
+          ]
+        }
+      ],
       "synonyms": [
         {
           "slug": "end-v",
@@ -315,7 +327,49 @@
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "tell a bank not to pay a check, or not to make a payment",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "I lost my checkbook, so I called the bank and stopped payment on the checks.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "Can you stop a payment once it has been sent?",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "stop a check",
+                "stop payment on something"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -420,8 +474,87 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "verb + preposition",
+          "items": [
+            "stop at a store",
+            "stop at a friend's house",
+            "stop for the night"
+          ]
+        }
+      ],
       "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 7,
+      "signpost": "stay",
+      "definition": "stay somewhere for a short time, especially as a guest",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + adverb or preposition"
+        ]
+      },
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [
+          "British"
+        ],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Are you stopping for dinner?",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We stopped at my aunt's for a week in the summer.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "I can't stop long. I have to get back to work.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "stop for dinner",
+            "stop the night",
+            "stop long"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "stay-v",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -531,8 +664,8 @@
       "note": "Use **stop someone from doing something**, not a **to** infinitive."
     },
     {
-      "incorrect": "The bus stoped at the station.",
-      "correct": "The bus stopped at the station.",
+      "incorrect": "He stoped to buy a newspaper.",
+      "correct": "He stopped to buy a newspaper.",
       "note": "Double the **p** before **-ed** and **-ing**: **stopped**, **stopping**."
     }
   ],
@@ -553,7 +686,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-29T07:16:47Z",
-    "modified": "2026-09-29T13:16:54Z",
+    "modified": "2026-10-03T20:52:46Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260929T071408Z-tgblpw",
     "reviews": [
@@ -575,6 +708,26 @@
         "file": "reviews/20260929T071408Z-tgblpw/stop-v.json",
         "ok": 77,
         "issues": 3,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261003T204400Z-vfp904",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T204400Z-vfp904/stop-v.json",
+        "ok": 88,
+        "issues": 3,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261003T204400Z-vfp904",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-03",
+        "file": "reviews/20261003T204400Z-vfp904/stop-v.json",
+        "ok": 91,
+        "issues": 0,
         "blocking": 0
       }
     ],

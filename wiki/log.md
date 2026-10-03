@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] review | Second reading of stop to survive
+
+First cycle of the 20:43 UTC run; selector chose review. The twelve oldest one-round entries (*stop, strengthen, stretch, strip, study, suffer, suggest, supply, support, suppose, surprise, survive*, 2026-09-29 verbs) were read in full and filled by hand before the panel: a British *stay* sense and a *stop a check* subsense on `stop-v`; *stretch back* and *stretch someone* subsenses; an *empty a place* sense on `strip-v`; subsenses for *study* (go over notes), *suffer for*, *suggest itself*, and *supply* as a source; collocations on every bare sense; usage notes on *strengthen, stretch, study, supply, survive*; a synonym discrimination on *support*; ten learner errors. Panel: 30 issues, 21 blocking; 21 applied, 9 rejected (house-rule fences, the closed pattern list, *suggest* + ordinary present as mainly British). `stripper-n` queued (band 3). Spend US$0.51; day US$7.09.
+
 ## [2026-10-03] build | Twelve nouns, fee to finger
 
 Fourth and last cycle of the 16:43 UTC run. Drafted *fee, feeling, fence, festival, fever, field, fight, figure, file, film, finance, finger* (band 1). *hurt someone's feelings* and *no hard feelings* now live under `feeling-n` (the keyword rule). `file-n` left out the tool (`file-n-2`, added to the homograph note). Pronunciation 24 of 24 verified. Panel: 34 issues, 22 blocking; 17 applied, 17 rejected. Applied: British *fish fingers* replaced, the six-figure example (an adjective use) replaced, *finger* now excludes the thumb, camera film no longer called only historical. Rejected: reviewer-a's claim that a file is never a container (seven flags); `finance-n` "no plural" (the known `inflect.py` gap, noted). `fight-n` dropped its compare link to `battle-n` to match the mirror. Spend US$0.54; day US$6.58.
