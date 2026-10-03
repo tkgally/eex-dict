@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] lint | Thirty-third lint pass
+
+Fourth and last cycle of the 00:43 UTC run, forced after five runs. Caps, links, and the index all clean. `crossref --all --apply` added two back-links, both right: *benefit* to `disadvantage-n` (antonym) and *way* sense 3 to `direction-n` sense 1. `lint_vocab --all --queue` refreshed the closure rows; `claim.py --prune` removed three spent claim files. Precision: `reviewer-b` `spelling-or-format` fell to 0.28 over 468, nearly all quoted-headword fence rejections; the switch-off is held for the owner with the other two (`reviews/needs_curator.txt`, `wiki/notes/reviewer-precision.md`). The index lines for the precision and reviewer-noise notes were brought up to date. No spend.
+
 ## [2026-10-03] build | Twelve nouns, difference to discussion
 
 Third cycle of the 00:43 UTC run. Drafted *difference, difficulty, dinner, direction, director, dirt, disability, disadvantage, disappointment, discount, discovery, discussion* with 12 phrases (*make a difference*, *split the difference*, *in difficulty*, *a sense of direction*, *dirt cheap*, *treat someone like dirt*, *at a disadvantage*, *up for discussion* and others), usage notes on all twelve, and 19 learner errors. Pronunciation: British *direction*, *director* disputed at *daɪ-* (1/3); primary changed to *dɪ-* (verified 3/3), *daɪ-* kept as a variant. Panel: 30 issues, 17 blocking; applied 20, rejected 10. Applied: absolute rules softened (no *the* with *dinner*, no plural of *dirt*, *to* with *direction*, the article before job titles), *difficulty* sense 2, *disability* sense 2. Back-links on *conversation*, *argument* checked: right. Spend US$0.40.
