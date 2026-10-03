@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-03] closure | Nine closure words, ignore to practical
+
+Third cycle of the 16:43 UTC run. The ten closure rows the claim tool gave were checked first: four were inflected or mis-tagged (*ignored-v*, *furthest-n*, *threads-n*, *document-adj*) and marked duplicate; *Christian*, *cheat-n*, *fail-n*, *hollow-n* were released. Drafted the real words instead: *ignore-v*, *cheat-v*, *fail-v*, *far-adj*, *hollow-adj*, *planet-n*, *thread-n*, *document-n*, *practical-adj*. Pronunciation 18 of 18 verified. Panel: 48 issues, 35 blocking; 34 applied, 14 rejected. Most fixes were over-absolute notes (*fail*, *cheat*, *far* usage), definitions that missed an example (*fail* crops, *hollow* laugh), and two weak learner errors removed. *Far* keeps "mainly in questions and negatives" for predicative use. Spend US$0.34.
+
 ## [2026-10-03] build | Twelve nouns, failure to feather
 
 Second cycle of the 16:43 UTC run. Drafted *failure, faith, fall, fan, farm, farmer, fashion, fat, father, fault, fear, feather* (band 1). `fan-n` is the object that moves air (the queue row is referenced by `propeller-n`); *fan* the supporter is a separate homograph, `fan-n-2`, added to the homograph note. Pronunciation: 24 of 24 verified. Panel: 24 issues, 19 blocking; 16 applied, 8 rejected (region labels, the CMU-backed American *fall* /fɔl/, `old-fashioned` as a currency value). Five definition words outside the vocabulary (*criticize*, *oily*, two core ideas) reworded. `fault-n` now names `blame-n` under compare to match the mirror; `courage-n` gained the antonym back-link to `fear-n`. Spend US$0.45.
