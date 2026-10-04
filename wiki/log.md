@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] originality | Sixteenth originality check
+
+Fourth and last cycle of the 04:43 UTC run, forced (run 220 is a multiple of ten). Sampled ten fields; exact-phrase web search on each; reviewer-a asked the checklist question once, reasoning off. Verdicts: original 5, generic-overlap 4 (*person of color*, *chilled to the bone*, *bury*, *count me in*), rewrite 1: `money-n#throw-money-at-something` matched a learner dictionary's distinctive frame and now reads *spend more and more money on a difficult situation, expecting the money alone to make it better* (no search match), with a second example. Panel round on `money-n`: one minor label flag on *money talks*, rejected (only *often* disapproving). reviewer-a answered "cannot tell" on all ten with no quotes ([note](notes/reviewer-noise.md)). Record: `reviews/originality/2026-10-04.md`. Spend US$0.06.
+
 ## [2026-10-04] review | Second reading of understand to watch
 
 Third cycle of the 04:43 UTC run. Second panel round on *understand, upset, use, visit, vote, wake, walk, want, warm, warn, wash, watch* (verbs of 2026-09-29), all already full. Added by hand: `walk-v` sense 4, *walk someone through something* (explain step by step), with the core idea widened; *vote by hand* replaced with *vote by mail*. Panel: 27 issues, 19 blocking; 16 applied, 11 rejected. Real catches: `wake-v`'s learner error called **waked** wrong though `inflect.py` records it (replaced with *was woke up*); `want-v` sense 3 defined with a modal, sense 4 too narrow; *could use* works in questions; `understand-v` sense 3 lost its formal label. Rejected: the drug sense of `use-v` (reviewer misread the transitivity), `use-v`/`exercise-v` and `understand-v`'s *read/take/see* links (mirrors), the quoted-headword fence. `understand-v` reviewer-b replies failed to parse twice; the third run passed. The `explain-v` back-link got a note naming *walk someone through something*. Spend US$0.53.
