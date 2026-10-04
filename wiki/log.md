@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] review | Second reading of twelve entries, audience to anger
+
+Fourth and last cycle of the 20:44 UTC run. Second panel round for the twelve oldest one-round entries: *audience, aunt, author, authority, autumn, baby, back, bacteria, bag* (created 2026-09-30 13:00) and *alphabetize, amaze, anger*. All were already full; by hand I added two idioms to `back-n` (*see the back of someone*, *the back of beyond*) and the British spelling *alphabetise* with a usage note to `alphabetize-v`. Adjudication: 24 issues (12 blocking), 8 applied, 16 rejected; six of the rejections were reviewer-b's quoted-headword flag (fence). Applied: *author* sense 2 widened to "creates or is responsible for", the chiefly British *local authority* replaced, the American label removed from *have someone's back*, *bag* sense 3 reworded. Kept: *author of a painting* as a learner error (unidiomatic), *be born* "always passive". Spend US$0.46.
+
 ## [2026-10-04] build | Twelve nouns, issue to juice
 
 Third cycle of the 20:44 UTC run. Drafted *issue, item, jacket, jail, job, joint, joke, journey, joy, judge, judgment, juice*; all twelve reviewed. `job-n` has five senses and six phrases (*good job*, *on the job*, *out of a job*, *it's a good job*, *just the job*, *make the best of a bad job*); `issue-n` four senses and four phrases; `judgment-n` takes the British variant *judgement*, `jail-n` the old spelling *gaol*. Adjudication: 37 issues (26 blocking), 25 applied, 12 rejected. Wiktionary, checked at run time, settled two disputes for the draft: *jacket* as the skin of a baked potato, and informal *juice* as gasoline. Region rejections followed the "mainly used" fence (*good job*, *have a job doing something*). Back-link `job-n` moved from `duty-n` sense 2 to sense 1. All 24 transcriptions verified. Spend US$0.50.
