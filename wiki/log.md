@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] lint | Thirty-ninth lint pass, two back-links moved
+
+Fourth cycle of the 12:44 UTC run (forced: five runs since the last lint). Caps and links clean. `crossref --all --apply` added eleven back-links to the twenty-four new nouns of this run; nine were right, two were moved by hand: `block-n` from `group-n` sense 4 (companies) to sense 1, and `cave-n` from `hole-n` sense 5 (golf) to sense 1. `way-n` now appears in `highway-n`'s word family again as a mirror, although the panel had removed it; kept for symmetry. `lint_vocab --all --queue` and `claim.py --prune` (three claim files) ran. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.26 (54/205) and `reviewer-b` `spelling-or-format` 0.28 (145/524) stay held for the owner. Index, open questions, and the curator file checked: no orphan pages, no duplicates, nothing stale. Spend US$0.
+
 ## [2026-10-04] build | Twelve nouns, hobby to hour
 
 Third cycle of the 12:44 UTC run. Drafted *hobby, hole, holiday, home, honey, hope, horn, horse, hospital, host, hotel, hour*; all twelve reviewed. `home-n` has seven senses and six phrases and points to the adverb (*go home*), queued as `home-adv` (band 3 by the crossref tool; it is a core word). *blow your own horn* moved from `blow-v` to `horn-n` under the keyword rule. Adjudication: 72 issues, 47 blocking; 47 applied, 25 rejected (*hope against hope* stays under the noun, since the second *hope* is the first noun; *at home* in sport is preposition plus noun; *hole in one* open spelling). Applied: the gymnastics *horse*, *a hole in the wall* no longer "very good", `hour-n` sense 3 now usually plural rather than plural only, `hobby-n` no longer rules out television. Two type mismatches fixed by hand (`home-n`/`house-n`, `host-n`/`guest-n` now compare links). Spend US$0.59.
