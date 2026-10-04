@@ -192,3 +192,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3732/5233); `reviewer-b
 ## 2026-10-04: thirty-eighth lint pass, no new switch-offs
 
 Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3824/5362); `reviewer-b` `ALL` 0.55 (959/1731). Two pairs stay held for the owner (`reviews/needs_curator.txt`): `reviewer-a` `pronunciation` 0.26 (53/202) and `reviewer-b` `spelling-or-format` 0.29 (144/501). No other live family at twenty or more decisions is under 30 percent. Under twenty: `reviewer-b` `inflection` 0.00 (8).
+
+## 2026-10-04: thirty-ninth lint pass, no new switch-offs
+
+Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3973/5570); `reviewer-b` `ALL` 0.55 (973/1776). Two pairs stay held for the owner (`reviews/needs_curator.txt`): `reviewer-a` `pronunciation` 0.26 (54/205) and `reviewer-b` `spelling-or-format` 0.28 (145/524); the latter fell again because the 13:01 review cycle rejected nine quoted-headword flags in one block of twelve. No other live family at twenty or more decisions is under 30 percent. Under twenty: `reviewer-b` `inflection` 0.11 (9).
