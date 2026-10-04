@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "cup-n",
-  "slug": "cup-n",
-  "headword": "cup",
+  "id": "generation-n",
+  "slug": "generation-n",
+  "headword": "generation",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "kʌp",
+      "ipa": "ˌdʒɛn.əˈreɪ.ʃən",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "kʌp",
+      "ipa": "ˌdʒen.əˈreɪ.ʃən",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "One part. The **u** sounds like the **u** in **up**."
+    "notes": null
   },
   "inflections": {
     "forms": {
-      "plural": "cups"
+      "plural": "generations"
     },
     "regular": true,
     "source": "rules",
@@ -44,17 +44,19 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A cup is a small round container for drinking, or what it holds, or a prize with the same shape.",
+  "core_idea": "A **generation** is one step in a line: the people born at about the same time, the years between parents and children, or one stage of a product; it is also the act of producing something.",
   "senses": [
     {
       "n": 1,
-      "signpost": "container",
-      "definition": "a small round container with a handle, used for drinking hot drinks",
+      "signpost": "people of an age",
+      "definition": "all the people in a society or a family who were born at about the same time",
       "explanation": null,
       "grammar": {
         "countability": "countable",
         "transitivity": null,
-        "codes": [],
+        "codes": [
+          "singular or plural verb"
+        ],
         "patterns": []
       },
       "labels": {
@@ -67,58 +69,47 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Can I have a clean cup?",
+          "text": "My parents' generation grew up without the internet.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She put the cups and plates on the table.",
+          "text": "Three generations of the family live in the same house.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He broke my favorite cup.",
+          "text": "The younger generation has different ideas about work.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "We drink from paper cups at work.",
+          "text": "We must protect the land for future generations.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "adjective + noun",
           "items": [
-            "a coffee cup",
-            "a paper cup",
-            "a plastic cup"
+            "the younger generation",
+            "the older generation",
+            "future generations",
+            "the next generation"
           ]
         },
         {
           "type": "phrase",
           "items": [
-            "a cup and saucer"
+            "from generation to generation",
+            "a generation of something"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "mug-n",
-          "note": "a mug is larger, with straight sides and no saucer"
-        },
-        {
-          "slug": "bowl-n",
-          "note": null
-        },
-        {
-          "slug": "glass-n",
-          "note": null
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -131,8 +122,8 @@
     },
     {
       "n": 2,
-      "signpost": "amount",
-      "definition": "the amount that a cup holds, or the drink in it",
+      "signpost": "period of time",
+      "definition": "the period of about thirty years that it takes for children to grow up and have children of their own",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -150,17 +141,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Would you like a cup of coffee?",
+          "text": "A generation ago, few families had a car.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "I've had three cups of tea today.",
+          "text": "The house has been in the family for generations.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She drank a whole cup of hot milk.",
+          "text": "Prices have risen a lot in a single generation.",
           "note": null,
           "pattern": null
         }
@@ -169,17 +160,9 @@
         {
           "type": "phrase",
           "items": [
-            "a cup of tea",
-            "a cup of coffee",
-            "a hot cup of something"
-          ]
-        },
-        {
-          "type": "verb + noun",
-          "items": [
-            "make a cup of tea",
-            "have a cup of coffee",
-            "pour a cup of tea"
+            "a generation ago",
+            "for generations",
+            "within a generation"
           ]
         }
       ],
@@ -198,8 +181,8 @@
     },
     {
       "n": 3,
-      "signpost": "in cooking",
-      "definition": "a unit for measuring food in cooking",
+      "signpost": "stage of a product",
+      "definition": "a stage in the development of a type of machine or technology, or all the products made at that stage",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -210,21 +193,24 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "cooking"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Add two cups of flour and one cup of sugar.",
+          "text": "The new generation of phones is much faster.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Stir in half a cup of milk.",
+          "text": "This is the third generation of the car.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The company is working on the next generation of its software.",
           "note": null,
           "pattern": null
         }
@@ -233,9 +219,14 @@
         {
           "type": "phrase",
           "items": [
-            "a cup of flour",
-            "half a cup",
-            "a quarter cup"
+            "the next generation of something",
+            "a new generation of something"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "the latest generation"
           ]
         }
       ],
@@ -254,50 +245,43 @@
     },
     {
       "n": 4,
-      "signpost": "prize",
-      "definition": "a large metal cup given as a prize in a sports competition, or the competition itself",
+      "signpost": "producing",
+      "definition": "the process of producing something, especially electricity or heat",
       "explanation": null,
       "grammar": {
-        "countability": "countable",
+        "countability": "uncountable",
         "transitivity": null,
         "codes": [],
         "patterns": []
       },
       "labels": {
-        "register": [],
-        "region": [],
-        "domain": [
-          "sport"
+        "register": [
+          "formal"
         ],
+        "region": [],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Our school won the cup again this year.",
+          "text": "The river is used for the generation of electricity.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "They were knocked out of the cup in the first round.",
+          "text": "The plan should lead to the generation of new jobs.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
-          "items": [
-            "win the cup",
-            "lift the cup"
-          ]
-        },
-        {
           "type": "noun + noun",
           "items": [
-            "a cup final",
-            "a cup match"
+            "power generation",
+            "electricity generation"
           ]
         }
       ],
@@ -315,64 +299,35 @@
       "l1": {}
     }
   ],
-  "phrases": [
+  "phrases": [],
+  "word_family": [
     {
-      "sub_id": "not-someones-cup-of-tea",
-      "text": "not someone's cup of tea",
-      "definition": "not the kind of thing that someone likes",
-      "explanation": null,
-      "labels": {
-        "register": [
-          "informal"
-        ],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "Horror movies are not my cup of tea.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Camping isn't really her cup of tea.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
+      "slug": "generate-v",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "generational-adj",
+      "form": null,
+      "note": null
     }
   ],
-  "word_family": [],
-  "synonym_discrimination": {
-    "words": [
-      "cup-n",
-      "mug-n",
-      "glass-n"
-    ],
-    "note": "A **cup** is small and round, often stands on a saucer, and is used especially for hot drinks such as tea and coffee; paper and plastic cups are used for cold drinks too. A **mug** is larger, with straight sides and no saucer. A **glass** is made of glass, has no handle, and is used for cold drinks such as water and juice."
-  },
-  "usage_note": null,
-  "learner_errors": [
-    {
-      "incorrect": "Would you like a cup tea?",
-      "correct": "Would you like a cup of tea?",
-      "note": "Use **of** between **cup** and the drink."
-    }
-  ],
+  "synonym_discrimination": null,
+  "usage_note": "When **generation** means a group of people, American English uses a singular verb (*The younger generation is...*); British English also uses a plural verb (*The younger generation are...*).",
+  "learner_errors": [],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "generation-gap-n",
+      "note": null
+    },
+    {
+      "slug": "age-n",
+      "note": null
+    }
+  ],
   "adaptation": {
-    "semantic": "\"cup\": English **cup** is used especially for hot drinks, while a cold drink at home is usually served in **a glass**. Some languages use one word for both.",
+    "semantic": "The sense of producing something (*the generation of electricity*) comes from **generate** and is a different word in many languages from the sense of people born at the same time.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -380,29 +335,29 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-02T13:09:38Z",
-    "modified": "2026-10-04T05:07:51Z",
+    "created": "2026-10-04T05:00:53Z",
+    "modified": "2026-10-04T05:07:50Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261002T130924Z-cjp1fw",
+    "run_id": "20261004T045652Z-qusupg",
     "reviews": [
       {
-        "run_id": "20261002T130924Z-cjp1fw",
+        "run_id": "20261004T045652Z-qusupg",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T130924Z-cjp1fw/cup-n.json",
-        "ok": 53,
-        "issues": 4,
-        "blocking": 4
+        "date": "2026-10-04",
+        "file": "reviews/20261004T045652Z-qusupg/generation-n.json",
+        "ok": 51,
+        "issues": 1,
+        "blocking": 1
       },
       {
-        "run_id": "20261002T130924Z-cjp1fw",
+        "run_id": "20261004T045652Z-qusupg",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T130924Z-cjp1fw/cup-n.json",
-        "ok": 55,
-        "issues": 2,
+        "date": "2026-10-04",
+        "file": "reviews/20261004T045652Z-qusupg/generation-n.json",
+        "ok": 52,
+        "issues": 0,
         "blocking": 0
       }
     ],
