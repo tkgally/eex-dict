@@ -1,31 +1,38 @@
 {
   "schema_version": "1.0",
-  "id": "duty-n",
-  "slug": "duty-n",
-  "headword": "duty",
+  "id": "judgment-n",
+  "slug": "judgment-n",
+  "headword": "judgment",
   "pos": "n",
   "homograph": 1,
-  "variants": [],
+  "variants": [
+    {
+      "form": "judgement",
+      "kind": "spelling",
+      "region": "British",
+      "note": "common in British English; legal writing often keeps **judgment**"
+    }
+  ],
   "pronunciation": {
     "american": {
-      "ipa": "ˈdu.ti",
+      "ipa": "ˈdʒʌdʒ.mənt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈdjuː.ti",
+      "ipa": "ˈdʒʌdʒ.mənt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "American English usually says *DOO-tee*; British English says *DYOO-tee*, with the **y** sound of **you**."
+    "notes": "Two parts, with the stress on the first: *JUDJ-ment*. The **d** and the **g** make one sound together, as in **judge**."
   },
   "inflections": {
     "forms": {
-      "plural": "duties"
+      "plural": "judgments"
     },
     "regular": true,
     "source": "rules",
@@ -44,15 +51,14 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A **duty** is something that you must do or pay, because it is right, because of your job, or because of the law.",
+  "core_idea": "Judgment is deciding what is right, true, or best: the ability to decide well, the opinion you reach, or the official decision of a court.",
   "senses": [
     {
-      "n": 1,
-      "signpost": "what is right",
-      "definition": "something that you must do because it is right or because the law says so",
+      "signpost": "ability",
+      "definition": "the ability to make good decisions or to form sensible opinions",
       "explanation": null,
       "grammar": {
-        "countability": "countable or uncountable",
+        "countability": "uncountable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -67,17 +73,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Parents have a duty to protect their children.",
+          "text": "I trust your judgment.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "It's my duty to tell you the truth.",
+          "text": "She showed good judgment in a difficult situation.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He stayed out of a sense of duty.",
+          "text": "Use your own judgment.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Tiredness can affect your judgment.",
           "note": null,
           "pattern": null
         }
@@ -86,35 +97,29 @@
         {
           "type": "adjective + noun",
           "items": [
-            "a moral duty",
-            "a legal duty"
+            "good judgment",
+            "poor judgment",
+            "bad judgment",
+            "sound judgment"
           ]
         },
         {
           "type": "verb + noun",
           "items": [
-            "do your duty",
-            "have a duty"
+            "trust someone's judgment",
+            "use your judgment",
+            "show good judgment",
+            "affect someone's judgment"
           ]
         },
         {
           "type": "phrase",
           "items": [
-            "a sense of duty",
-            "a duty to do something"
+            "an error of judgment"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "responsibility-n",
-          "note": null
-        },
-        {
-          "slug": "job-n",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -125,84 +130,12 @@
         "false_friends": null,
         "pronunciation": null
       },
-      "l1": {}
+      "l1": {},
+      "n": 1
     },
     {
-      "n": 2,
-      "signpost": "at work",
-      "definition": "a task that is part of your job",
-      "explanation": null,
-      "grammar": {
-        "countability": "countable",
-        "transitivity": null,
-        "codes": [
-          "usually plural"
-        ],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "Her duties include answering the phone and meeting visitors.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "He was given light duties after he hurt his back.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "A manager's first duty is to the team.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "verb + noun",
-          "items": [
-            "carry out your duties",
-            "perform your duties"
-          ]
-        },
-        {
-          "type": "adjective + noun",
-          "items": [
-            "daily duties",
-            "main duties"
-          ]
-        }
-      ],
-      "synonyms": [
-        {
-          "slug": "task-n",
-          "note": null
-        }
-      ],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 3,
-      "signpost": "tax",
-      "definition": "a tax that you pay on things brought into a country or on some things you buy",
+      "signpost": "opinion",
+      "definition": "an opinion that you form after thinking carefully",
       "explanation": null,
       "grammar": {
         "countability": "countable or uncountable",
@@ -220,12 +153,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "You have to pay duty on cigarettes.",
+          "text": "It's hard to make a judgment without all the facts.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The government raised the duty on fuel.",
+          "text": "In my judgment, the plan won't work.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Try not to make quick judgments about people.",
           "note": null,
           "pattern": null
         }
@@ -234,25 +172,28 @@
         {
           "type": "verb + noun",
           "items": [
-            "pay duty"
+            "make a judgment",
+            "form a judgment"
           ]
         },
         {
-          "type": "noun + noun",
+          "type": "adjective + noun",
           "items": [
-            "import duty"
+            "a fair judgment",
+            "a moral judgment",
+            "a value judgment"
           ]
         },
         {
-          "type": "noun + preposition",
+          "type": "preposition + noun",
           "items": [
-            "duty on something"
+            "in my judgment"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "tax-n",
+          "slug": "opinion-n",
           "note": null
         }
       ],
@@ -266,15 +207,89 @@
         "false_friends": null,
         "pronunciation": null
       },
-      "l1": {}
+      "l1": {},
+      "n": 2
+    },
+    {
+      "signpost": "in a court",
+      "definition": "an official decision made by a judge or a court",
+      "explanation": null,
+      "grammar": {
+        "countability": "countable",
+        "transitivity": null,
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [
+          "law"
+        ],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The court will give its judgment next week.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The judgment was in her favor.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "They plan to fight the judgment.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "issue a judgment",
+            "accept a judgment",
+            "fight a judgment"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "a judgment against someone",
+            "a judgment in someone's favor"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "decision-n",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {},
+      "n": 3
     }
   ],
   "phrases": [
     {
-      "sub_id": "on-duty",
-      "text": "on duty",
-      "definition": "working at a particular time, especially in a job such as a nurse or a police officer",
-      "explanation": null,
+      "sub_id": "pass-judgment",
+      "text": "pass judgment",
+      "definition": "give an opinion about someone or something, especially a bad one",
+      "explanation": "Often *pass judgment on someone*.",
       "labels": {
         "register": [],
         "region": [],
@@ -284,12 +299,12 @@
       },
       "examples": [
         {
-          "text": "Which doctor is on duty tonight?",
+          "text": "It's not my place to pass judgment on how they raise their kids.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Two guards are on duty at the gate.",
+          "text": "Don't pass judgment until you've heard both sides.",
           "note": null,
           "pattern": null
         }
@@ -304,9 +319,9 @@
       "l1": {}
     },
     {
-      "sub_id": "off-duty",
-      "text": "off duty",
-      "definition": "not working at a particular time",
+      "sub_id": "against-your-better-judgment",
+      "text": "against your better judgment",
+      "definition": "even though you think it is not wise",
       "explanation": null,
       "labels": {
         "register": [],
@@ -317,12 +332,47 @@
       },
       "examples": [
         {
-          "text": "She goes off duty at six.",
+          "text": "Against my better judgment, I lent him the money.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He was off duty when he saw the accident.",
+          "text": "She agreed to go, against her better judgment.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "sit-in-judgment",
+      "text": "sit in judgment",
+      "definition": "say bad things about other people as if you were better than them",
+      "explanation": "Usually *sit in judgment on someone*.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": [
+          "disapproving"
+        ]
+      },
+      "examples": [
+        {
+          "text": "Who are you to sit in judgment on me?",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "He sits in judgment on everyone else's choices.",
           "note": null,
           "pattern": null
         }
@@ -339,28 +389,28 @@
   ],
   "word_family": [
     {
-      "slug": "dutiful-adj",
+      "slug": "judge-v",
       "form": null,
       "note": null
     },
     {
-      "slug": "duty-free-adj",
+      "slug": "judge-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "judgmental-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**On duty** and **off duty** are used mainly for people who work in shifts, such as nurses, police officers, and soldiers. **Duty** (sense 1) is stronger than **job** or **task**: it is what you must do because it is right.",
+  "usage_note": "American English writes **judgment**. British English often writes **judgement**, though legal writing in both varieties usually keeps **judgment**.",
   "learner_errors": [
     {
-      "incorrect": "I have a lot of duties to finish for school tomorrow.",
-      "correct": "I have a lot of homework to finish for tomorrow.",
-      "note": "**Duties** are the tasks of a job or the things you must do; for school work, say **homework**."
-    },
-    {
-      "incorrect": "The police officer was in duty.",
-      "correct": "The police officer was on duty.",
-      "note": "The phrase is **on duty**, with **on**."
+      "incorrect": "She has a very good judgment.",
+      "correct": "She has very good judgment.",
+      "note": "In the meaning of an ability, **judgment** is uncountable and takes no **a**."
     }
   ],
   "etymology": null,
@@ -370,32 +420,32 @@
     "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": null
+    "pronunciation": "The spelling **dg** in **judgment** is one sound, the same as the **j** at the start: *JUDJ-ment*. Learners sometimes say a separate **d** and a hard **g**."
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-03T05:10:43Z",
-    "modified": "2026-10-04T21:13:14Z",
+    "created": "2026-10-04T21:07:01Z",
+    "modified": "2026-10-04T21:13:04Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261003T050722Z-kur5kk",
+    "run_id": "20261004T210256Z-sej1s0",
     "reviews": [
       {
-        "run_id": "20261003T050722Z-kur5kk",
+        "run_id": "20261004T210256Z-sej1s0",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T050722Z-kur5kk/duty-n.json",
-        "ok": 53,
-        "issues": 0,
+        "date": "2026-10-04",
+        "file": "reviews/20261004T210256Z-sej1s0/judgment-n.json",
+        "ok": 57,
+        "issues": 1,
         "blocking": 0
       },
       {
-        "run_id": "20261003T050722Z-kur5kk",
+        "run_id": "20261004T210256Z-sej1s0",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T050722Z-kur5kk/duty-n.json",
-        "ok": 53,
+        "date": "2026-10-04",
+        "file": "reviews/20261004T210256Z-sej1s0/judgment-n.json",
+        "ok": 58,
         "issues": 0,
         "blocking": 0
       }
