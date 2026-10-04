@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-10-04",
-  "spent_usd": 5.212415,
+  "spent_usd": 5.649361,
   "calls": [
     {
       "ts": "2026-10-04T00:49:24Z",
@@ -2523,6 +2523,222 @@
       "cost_usd": 0.017798,
       "tokens_in": 4996,
       "tokens_out": 3747
+    },
+    {
+      "ts": "2026-10-04T13:02:51Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:write-v:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.04743,
+      "tokens_in": 5887,
+      "tokens_out": 2960
+    },
+    {
+      "ts": "2026-10-04T13:03:09Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:write-v:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.018454,
+      "tokens_in": 6471,
+      "tokens_out": 3627
+    },
+    {
+      "ts": "2026-10-04T13:03:20Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:wrap-v:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.031709,
+      "tokens_in": 4264,
+      "tokens_out": 1988
+    },
+    {
+      "ts": "2026-10-04T13:03:35Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:wrap-v:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.01284,
+      "tokens_in": 4625,
+      "tokens_out": 2499
+    },
+    {
+      "ts": "2026-10-04T13:03:47Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:worry-v:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.031234,
+      "tokens_in": 4343,
+      "tokens_out": 1932
+    },
+    {
+      "ts": "2026-10-04T13:04:01Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:worry-v:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.01214,
+      "tokens_in": 4732,
+      "tokens_out": 2291
+    },
+    {
+      "ts": "2026-10-04T13:04:06Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:ambulance-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.012929,
+      "tokens_in": 2512,
+      "tokens_out": 788
+    },
+    {
+      "ts": "2026-10-04T13:04:14Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:ambulance-n:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.007271,
+      "tokens_in": 2655,
+      "tokens_out": 1408
+    },
+    {
+      "ts": "2026-10-04T13:04:25Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:amount-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.023655,
+      "tokens_in": 3241,
+      "tokens_out": 1530
+    },
+    {
+      "ts": "2026-10-04T13:04:33Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:amount-n:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.008632,
+      "tokens_in": 3465,
+      "tokens_out": 1609
+    },
+    {
+      "ts": "2026-10-04T13:04:38Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:alphabet-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.012391,
+      "tokens_in": 2556,
+      "tokens_out": 734
+    },
+    {
+      "ts": "2026-10-04T13:04:43Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:alphabet-n:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.005752,
+      "tokens_in": 2715,
+      "tokens_out": 991
+    },
+    {
+      "ts": "2026-10-04T13:04:53Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:angle-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.030014,
+      "tokens_in": 4148,
+      "tokens_out": 1871
+    },
+    {
+      "ts": "2026-10-04T13:05:06Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:angle-n:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.012576,
+      "tokens_in": 4508,
+      "tokens_out": 2452
+    },
+    {
+      "ts": "2026-10-04T13:05:19Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:animal-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.035752,
+      "tokens_in": 4283,
+      "tokens_out": 2321
+    },
+    {
+      "ts": "2026-10-04T13:05:34Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:animal-n:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.013886,
+      "tokens_in": 4639,
+      "tokens_out": 2775
+    },
+    {
+      "ts": "2026-10-04T13:05:39Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:anger-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.013167,
+      "tokens_in": 2761,
+      "tokens_out": 756
+    },
+    {
+      "ts": "2026-10-04T13:05:47Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:anger-n:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.007598,
+      "tokens_in": 2935,
+      "tokens_out": 1439
+    },
+    {
+      "ts": "2026-10-04T13:05:58Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:attack-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.030114,
+      "tokens_in": 3991,
+      "tokens_out": 1912
+    },
+    {
+      "ts": "2026-10-04T13:06:14Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:attack-n:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.015254,
+      "tokens_in": 4324,
+      "tokens_out": 3203
+    },
+    {
+      "ts": "2026-10-04T13:06:18Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:apartment-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.012734,
+      "tokens_in": 2631,
+      "tokens_out": 747
+    },
+    {
+      "ts": "2026-10-04T13:06:26Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:apartment-n:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.007221,
+      "tokens_in": 2788,
+      "tokens_out": 1368
+    },
+    {
+      "ts": "2026-10-04T13:06:33Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:appointment-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.023837,
+      "tokens_in": 3693,
+      "tokens_out": 1451
+    },
+    {
+      "ts": "2026-10-04T13:06:44Z",
+      "run_id": "20261004T130151Z-q1o26y",
+      "purpose": "review:appointment-n:reviewer-b",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.010356,
+      "tokens_in": 3983,
+      "tokens_out": 1965
     }
   ],
   "history": {
