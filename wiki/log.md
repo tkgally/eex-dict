@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] review | Second reading of twelve entries, answer to attitude
+
+Third cycle of the 16:44 UTC run. The twelve oldest one-round entries (created 2026-09-30): *answer, appearance, area, argument, arm, army, arrest, art, artist, attempt, attention, attitude*. Added by hand: *in answer to something* (`answer-n`), *arm in arm* (`arm-n`); *to all appearances* was added to `appearance-n` and taken out again on the panel's word (sense 4 already holds it). Adjudication: 23 issues, 10 blocking; 12 applied, 11 rejected (opening quoted headwords in adaptation notes are house style; *often before another noun* is a closed-list code; *in the area of* means roughly, not only more). Applied: `attention-n` now uncountable "in ordinary use", naming the rare plural *attentions*; `attitude-n` core idea and a translation claim rewritten; `art-n` sense 5. No back-links. Spend US$0.50.
+
 ## [2026-10-04] originality | Seventeenth originality check, two rewrites
 
 Second cycle of the 16:44 UTC run (forced every tenth run). Ten fields sampled; exact-phrase web searches decided: original 5, generic-overlap 3, rewrite 2. `close-v` sense 2 echoed Longman's *stops being open to the public for a period of time*; `wave-v` sense 3 echoed Oxford Learner's *hold something in your hand and move it from side to side*. Both rewritten; panel round on both: six issues, one applied (a `wave-v` example), five rejected. reviewer-a, reasoning off, said "copied" on nine of ten with Cambridge quotations search could not confirm. Record: `reviews/originality/2026-10-04-2.md`. Spend US$0.13 (a reasoning-on call returned nothing; asked again with reasoning off).
