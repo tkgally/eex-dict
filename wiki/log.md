@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] review | Second reading of tie to turn
+
+First cycle of the 04:43 UTC run. Second panel round on the twelve oldest one-round verbs: *tie, tire, touch, trade, train, translate, transport, travel, treat, trust, try, turn*. Added by hand before the panel: `touch-v` sense 6 (*reach a level*), phrases *fit to be tied*, *travel light* (moved out of a collocation list), *trust someone to do something*; *trade insults*, *trade blows*; the *open the light* learner error in `turn-v`; a missing pattern on `turn-v` sense 1. Panel: 40 issues, 30 blocking; 24 applied, 16 rejected, none escalated. Real catches: `try-v` *to not be late* is not an error (removed); `train-v`'s practice/train note overstated; `touch-v` *feel kind*; `tie-v` sense 5 now covers *tie the game*. Rejected: `usually passive` flags (a closed-list value), *tire* one-syllable (fence), *touch and go* placement (fence), `doubt-v` as antonym (its sense 2 is the opposite). `crossref` put the `reach-v` mirror on *stretch out your arm*; moved by hand to *get to a level*. Spend US$0.54.
+
 ## [2026-10-04] lint | Thirty-seventh lint pass
 
 Fourth and last cycle of the 00:43 UTC run, forced at five cycles since the last pass. Caps, links, and the vocabulary gate were clean. `crossref --all --apply` printed four BACKLINK lines and one TYPE-MISMATCH; two back-links were wrong and were moved by hand: `head-n` (*top or front*) now mirrors onto `front-n` sense 2 (*forward position*, the head of a line), not sense 1, and its *foot* antonym onto `foot-n` sense 3 (*bottom part*), not the body part. `ceiling-n` on `floor-n` and `house-n` on `firm-n` were right. The `folder-n`/`file-n` mismatch was settled as `compare` on both sides, matching the usage note on their overlap. `claim.py --prune` removed four claim files. Reviewer precision: no new pair under the line; the two held pairs are unchanged ([note](notes/reviewer-precision.md)). Index, open questions, and the curator file were read; nothing stale or duplicated. Spend US$0.
