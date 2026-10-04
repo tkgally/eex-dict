@@ -217,7 +217,7 @@
       "n": 3,
       "signpost": "machine",
       "definition": "do its job correctly",
-      "explanation": "The subject is a machine, a piece of equipment, or a part of the body.",
+      "explanation": "The subject is usually a machine, a piece of equipment, a system, or a part of the body.",
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -266,14 +266,6 @@
         },
         {
           "slug": "operate-v",
-          "note": null
-        },
-        {
-          "slug": "go-v",
-          "note": null
-        },
-        {
-          "slug": "run-v",
           "note": null
         }
       ],
@@ -535,7 +527,7 @@
     {
       "n": 8,
       "signpost": "material or land",
-      "definition": "shape or press a material such as clay or metal, or use land to grow food",
+      "definition": "shape or mix a material such as clay, metal, or butter by pressing, bending, or hitting it",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -564,27 +556,58 @@
           "text": "Work the butter into the flour with your fingers.",
           "note": null,
           "pattern": "verb + object + preposition + object"
-        },
-        {
-          "text": "Their family has worked the land for many years.",
-          "note": null,
-          "pattern": "verb + object"
         }
       ],
       "collocations": [
         {
           "type": "verb + noun",
           "items": [
-            "work the land",
-            "work the soil",
-            "work clay"
+            "work clay",
+            "work metal",
+            "work the dough"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "use land to grow crops or keep animals",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "Their family has worked the land for many years.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The farmers worked the soil by hand.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "work the land",
+                "work the soil"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -692,6 +715,11 @@
       "incorrect": "I worked very hardly.",
       "correct": "I worked very hard.",
       "note": "The adverb is **hard**; **hardly** means *almost not*."
+    },
+    {
+      "incorrect": "Where do you work in?",
+      "correct": "Where do you work?",
+      "note": "**Where** already includes the idea of **in**; do not add a preposition at the end."
     }
   ],
   "etymology": null,
@@ -719,7 +747,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-30T00:58:19Z",
-    "modified": "2026-09-30T07:21:58Z",
+    "modified": "2026-10-04T09:25:07Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260930T005148Z-73imgw",
     "reviews": [
@@ -739,6 +767,26 @@
         "model": "google/gemini-3.8-flash",
         "date": "2026-09-30",
         "file": "reviews/20260930T005148Z-73imgw/work-v.json",
+        "ok": 96,
+        "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261004T091857Z-vka7g0",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-04",
+        "file": "reviews/20261004T091857Z-vka7g0/work-v.json",
+        "ok": 91,
+        "issues": 7,
+        "blocking": 6
+      },
+      {
+        "run_id": "20261004T091857Z-vka7g0",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-04",
+        "file": "reviews/20261004T091857Z-vka7g0/work-v.json",
         "ok": 96,
         "issues": 1,
         "blocking": 0

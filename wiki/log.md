@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] review | Second reading of water to afternoon
+
+Fourth and last cycle of the 08:44 UTC run. Second panel round on the twelve oldest one-round entries: *water, wear, weigh, whisper, win, wipe, wish, wonder, work* (verbs of 2026-09-30) and *access, acid, afternoon*. Added by hand before the panel: `wear-v` sense 1 now covers makeup and perfume (its own collocation); `work-v` gained the learner error *Where do you work in?*. Adjudication: 35 issues, 19 blocking; 14 applied, 21 rejected (eleven quoted-headword fence flags, *work* and *bird* share the British vowel, stranded *wish for*, *good afternoon* stays a phrase like *good evening*). Applied: the *weigh* continuous rule now allows a changing weight; `work-v` sense 8 split (shaping material; farming land as subsense a); *wonder at* no longer means "think it is very good"; a clearer *wear*/*put on* error. Removed synonyms *go* and *run* from `work-v` sense 3 and *take* from `win-v` sense 2, with their mirrors on `go-v`, `run-v`, `take-v`. Spend US$0.51.
+
 ## [2026-10-04] build | Twelve nouns, group to handle
 
 Third cycle of the 08:44 UTC run. Drafted *group, growth, guard, guess, guest, guide, gun, habit, hair, half, hall, handle*; all twelve reviewed, all 24 transcriptions verified. `half-n` holds the noun uses only (*a half*, *two halves*, the game half, *half past*), pointing to `half-det`, `half-pron`, and `half-adv`. `hall-n` gained a fifth sense, the government building (*city hall*, *town hall*), after reviewer-a showed they did not fit the events sense. Adjudication: 47 issues, 34 blocking; 37 applied, 10 rejected (region fences on *by a hair* and the passage sense of *hall*, lowercase definitions, the respelling asterisks, *and so on*). A real error caught: the `guest-n` adaptation note said *guest* does not rhyme with *quest*; it does. The *group* agreement notes were reworded (singular normal in American writing). `hair-n` names `fur-n` under compare, matching `fur-n`, to avoid a cross-type mismatch. Spend US$0.54.
