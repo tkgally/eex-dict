@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] build | Twelve nouns, goat to ground
+
+First cycle of the 08:44 UTC run. Drafted *goat, god, goods, government, governor, grain, grammar, grandfather, grandmother, grass, grave, ground*; all twelve reviewed. `ground-n` has nine senses (electrical ground and coffee grounds included) and ten phrases; *break new ground* moved there from `break-v` under the keyword rule. `god-n` holds the one-God and many-gods senses plus six phrases. The British panel disputed *grandfather* and *grandmother* (1/3, likely the d-less form): d-less variants added, flagged, curator line. Adjudication: 37 issues, 26 blocking; 29 applied, 8 rejected (fences: *against the grain* literal, *grammar school* culture note, *take something to the grave*). Fixed the American electrical *ground* (a connection, not a wire) and the third sense of `government-n` (in power, not public service). `ground-n` names *earth* in an explanation, not a compare link, to avoid a cross-type mismatch with `earth-n`. Spend US$0.53.
+
 ## [2026-10-04] originality | Sixteenth originality check
 
 Fourth and last cycle of the 04:43 UTC run, forced (run 220 is a multiple of ten). Sampled ten fields; exact-phrase web search on each; reviewer-a asked the checklist question once, reasoning off. Verdicts: original 5, generic-overlap 4 (*person of color*, *chilled to the bone*, *bury*, *count me in*), rewrite 1: `money-n#throw-money-at-something` matched a learner dictionary's distinctive frame and now reads *spend more and more money on a difficult situation, expecting the money alone to make it better* (no search match), with a second example. Panel round on `money-n`: one minor label flag on *money talks*, rejected (only *often* disapproving). reviewer-a answered "cannot tell" on all ten with no quotes ([note](notes/reviewer-noise.md)). Record: `reviews/originality/2026-10-04.md`. Spend US$0.06.
