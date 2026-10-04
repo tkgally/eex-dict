@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] build | Twelve nouns, hobby to hour
+
+Third cycle of the 12:44 UTC run. Drafted *hobby, hole, holiday, home, honey, hope, horn, horse, hospital, host, hotel, hour*; all twelve reviewed. `home-n` has seven senses and six phrases and points to the adverb (*go home*), queued as `home-adv` (band 3 by the crossref tool; it is a core word). *blow your own horn* moved from `blow-v` to `horn-n` under the keyword rule. Adjudication: 72 issues, 47 blocking; 47 applied, 25 rejected (*hope against hope* stays under the noun, since the second *hope* is the first noun; *at home* in sport is preposition plus noun; *hole in one* open spelling). Applied: the gymnastics *horse*, *a hole in the wall* no longer "very good", `hour-n` sense 3 now usually plural rather than plural only, `hobby-n` no longer rules out television. Two type mismatches fixed by hand (`home-n`/`house-n`, `host-n`/`guest-n` now compare links). Spend US$0.59.
+
 ## [2026-10-04] review | Second reading of write to appointment
 
 Second cycle of the 12:44 UTC run. Second panel round on the twelve oldest one-round entries: *write, wrap, worry* (verbs of 2026-09-30) and *ambulance, amount, alphabet, angle, animal, anger, attack, apartment, appointment*. Added by hand before the panel: learner errors on `wrap-v` (*wrap a scarf her neck*) and `animal-n` (generic plural without **the**), and the phrase *by appointment* in `appointment-n`. Adjudication: 39 issues, 20 blocking; 16 applied, 23 rejected (ten quoted-headword fence flags, the *not to worry* region fence, *amount* is itself countable, the everyday *birds and animals* sense kept). Applied: `write-v` sense 5 redefined (check or prescription); *amount* with plural nouns now "careful English" rather than wrong; `attack-n` grammar note gives **of** for illness; the rare British sheep use of *worry* removed. Spend US$0.44.
