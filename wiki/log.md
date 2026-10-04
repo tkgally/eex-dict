@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] originality | Seventeenth originality check, two rewrites
+
+Second cycle of the 16:44 UTC run (forced every tenth run). Ten fields sampled; exact-phrase web searches decided: original 5, generic-overlap 3, rewrite 2. `close-v` sense 2 echoed Longman's *stops being open to the public for a period of time*; `wave-v` sense 3 echoed Oxford Learner's *hold something in your hand and move it from side to side*. Both rewritten; panel round on both: six issues, one applied (a `wave-v` example), five rejected. reviewer-a, reasoning off, said "copied" on nine of ten with Cambridge quotations search could not confirm. Record: `reviews/originality/2026-10-04-2.md`. Spend US$0.13 (a reasoning-on call returned nothing; asked again with reasoning off).
+
 ## [2026-10-04] build | Twelve nouns, humor to industry
 
 First cycle of the 16:44 UTC run. Drafted *humor, husband, ice, idea, illness, image, impact, importance, improvement, income, increase, industry*; all twelve reviewed. *break the ice* moved from `break-v` to `ice-n` under the keyword rule, reworded. Adjudication: 34 issues, 20 blocking; 24 applied, 10 rejected (the British adjective is *humorous*, not *humourous*; *no idea* is a countable singular use; lowercase bold headwords open notes by house style). Applied: `ice-n` no longer calls the British dessert *an ice* simply old, its *an ice* learner error dropped; `illness-n` definition no longer equates illness with a disease; `impact-n` sense 2 redefined. Back-links: six added, `aim-n` from `idea-n` removed by hand with its forward link; `disease-n` now names `illness-n` under compare (type mismatch fixed). Spend US$0.39.
