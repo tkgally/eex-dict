@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] build | Twelve nouns, humor to industry
+
+First cycle of the 16:44 UTC run. Drafted *humor, husband, ice, idea, illness, image, impact, importance, improvement, income, increase, industry*; all twelve reviewed. *break the ice* moved from `break-v` to `ice-n` under the keyword rule, reworded. Adjudication: 34 issues, 20 blocking; 24 applied, 10 rejected (the British adjective is *humorous*, not *humourous*; *no idea* is a countable singular use; lowercase bold headwords open notes by house style). Applied: `ice-n` no longer calls the British dessert *an ice* simply old, its *an ice* learner error dropped; `illness-n` definition no longer equates illness with a disease; `impact-n` sense 2 redefined. Back-links: six added, `aim-n` from `idea-n` removed by hand with its forward link; `disease-n` now names `illness-n` under compare (type mismatch fixed). Spend US$0.39.
+
 ## [2026-10-04] lint | Thirty-ninth lint pass, two back-links moved
 
 Fourth cycle of the 12:44 UTC run (forced: five runs since the last lint). Caps and links clean. `crossref --all --apply` added eleven back-links to the twenty-four new nouns of this run; nine were right, two were moved by hand: `block-n` from `group-n` sense 4 (companies) to sense 1, and `cave-n` from `hole-n` sense 5 (golf) to sense 1. `way-n` now appears in `highway-n`'s word family again as a mirror, although the panel had removed it; kept for symmetry. `lint_vocab --all --queue` and `claim.py --prune` (three claim files) ran. Precision: no new switch-offs; `reviewer-a` `pronunciation` 0.26 (54/205) and `reviewer-b` `spelling-or-format` 0.28 (145/524) stay held for the owner. Index, open questions, and the curator file checked: no orphan pages, no duplicates, nothing stale. Spend US$0.
