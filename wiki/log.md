@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] lint | Fortieth lint pass
+
+Second cycle of the 20:44 UTC run, forced after five cycles without one. Caps, links, and the unit tests pass. `crossref --all --apply` added six back-links (*brain* on *intelligence*, *come* on *income*, *cut* and *gain* on *increase*, *harm* on *injury*, *inside-prep* on *inside-n*, *per* on *according to* sense 2); all six fit, no TYPE-MISMATCH lines. `claim.py --prune` removed three spent claim files. Reviewer precision: no new switch-offs; the two held pairs (`reviewer-a` `pronunciation` 0.27, `reviewer-b` `spelling-or-format` 0.28) still wait on the owner. The index matches the pages; log and journals agree (21 cycles today). Open question 7 now names *Islam* and *Judaism*; their queue rows were capitalized by hand. Curator file: 21 open lines, no duplicates. No spend.
+
 ## [2026-10-04] closure | Twelve words the dictionary already uses, apple to block
 
 First cycle of the 20:44 UTC run. The closure source gave *according* (verb), *settings*, *visitors* (plurals) and *Christian*, *islam*, *judaism* besides four real nouns: the first three were marked duplicate and drafted as *according to* (preposition), *setting*, *visitor*; the three religion words were left pending (open question 7, proper names). Drafted *apple, banana, coal, tube, according to, setting, visitor*, then from the family source the verbs *bicycle, bike, bill, blanket, block*; all twelve reviewed. Adjudication: 35 issues (27 blocking), 24 applied, 11 rejected. Notable: three learner errors removed as grammatical (*blanketed by snow*, *bill something to someone*, *by biking*); the transitive *bike* (carry by bike) kept on open data, its British label dropped. `according-to-prep` is flagged pronunciation-disputed on punctuation alone ([pronounce-check-word-break](notes/pronounce-check-word-break.md)). `blanket-v` back-link moved to `cover-v` sense 2. Spend US$0.39.
