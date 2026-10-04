@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] lint | Thirty-seventh lint pass
+
+Fourth and last cycle of the 00:43 UTC run, forced at five cycles since the last pass. Caps, links, and the vocabulary gate were clean. `crossref --all --apply` printed four BACKLINK lines and one TYPE-MISMATCH; two back-links were wrong and were moved by hand: `head-n` (*top or front*) now mirrors onto `front-n` sense 2 (*forward position*, the head of a line), not sense 1, and its *foot* antonym onto `foot-n` sense 3 (*bottom part*), not the body part. `ceiling-n` on `floor-n` and `house-n` on `firm-n` were right. The `folder-n`/`file-n` mismatch was settled as `compare` on both sides, matching the usage note on their overlap. `claim.py --prune` removed four claim files. Reviewer precision: no new pair under the line; the two held pairs are unchanged ([note](notes/reviewer-precision.md)). Index, open questions, and the curator file were read; nothing stale or duplicated. Spend US$0.
+
 ## [2026-10-04] build | Twelve nouns, friendship to garage
 
 Third cycle of the 00:43 UTC run. Drafted *friendship, front, fruit, fuel, fun, funeral, fur, furniture, future, gain, game, garage* (band 1, queue order) with 26 phrases (*make fun of someone*, *bear fruit*, *add fuel to the fire*, *up front*, *give the game away*, *fair game*, *in future*...). `front-n` points to the queued `in-front-of-prep` and carries the *in front of* / *opposite* learner error. Panel: 46 issues, 32 blocking; 43 applied, 3 rejected. Applied: `game-n` lost a "games" sports-event sense (it only fits named events); `fruit-n` no longer says fruit is soft; `future-n` grammar sense now names the tense or verb forms, not one form; `garage-n` repair sense labeled British; `fun-n` usage note no longer forbids *a fun* (the adjective). Rejected: *rhymes* as a technical term, a translator-addressed adaptation note, and a learner-error note that was accurate. Reviewer-b failed to parse twice on `future-n`; the third call worked ([note](notes/review-panel-parse-failures.md)). Spend US$0.54; day US$1.41.

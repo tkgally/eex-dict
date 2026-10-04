@@ -184,3 +184,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3496/4927); `reviewer-b
 ## 2026-10-03: thirty-sixth lint pass, no new switch-offs
 
 Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3593/5068); `reviewer-b` `ALL` 0.55 (926/1688). Two pairs stay held for the owner (`reviews/needs_curator.txt`): `reviewer-a` `pronunciation` 0.28 (52/189) and `reviewer-b` `spelling-or-format` 0.28 (138/493). No other live family at twenty or more decisions is under 30 percent; the nearest is `reviewer-a` `spelling-or-format` 0.38 (24/64). Under twenty: `reviewer-b` `inflection` 0.00 (8).
+
+## 2026-10-04: thirty-seventh lint pass, no new switch-offs
+
+Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (3732/5233); `reviewer-b` `ALL` 0.55 (948/1714). Two pairs stay held for the owner (`reviews/needs_curator.txt`): `reviewer-a` `pronunciation` 0.27 (53/199), still falling on the American length-mark fence (three more rejections this run, on *food* and *beach*), and `reviewer-b` `spelling-or-format` 0.29 (142/498), which rose slightly because this run accepted two of its asterisk-style flags. No other live family at twenty or more decisions is under 30 percent. Under twenty: `reviewer-b` `inflection` 0.00 (8).
