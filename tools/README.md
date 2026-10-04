@@ -9,6 +9,7 @@ All tools are Python 3 standard library only and run from the repository root. E
 | `python3 tools/entry_path.py <slug>` | the file path for a slug; `--slug "<headword>" <pos> [homograph]` computes the slug; `--sub-id "<phrase>"` a phrase sub_id; `--shard <slug>` the shard |
 | `python3 tools/validate.py [files] [--all] [--changed] [--gate] [--fix-format]` | schema, vocabularies, slug and path agreement, no abbreviations, well-formed inline marks, an example that lacks the headword (warning), plain words in pronunciation notes, example counts, adaptation caps, pronunciation presence, reviewed-status requirements, draft ceiling (`--gate`); `--fix-format` normalizes key order |
 | `python3 tools/schema_check.py <file>` | the JSON-schema-subset checker validate.py uses (no external library) |
+| `tools/eexlib.py` | the shared library the other tools import: the repository root, house-format JSON, vocabularies, slug and shard rules, prose fields and marks, key order (no command line) |
 | `python3 tools/inflect.py <slugs> [--dry-run]` | writes `inflections` from the rules and `schema/inflection-exceptions.json`; `--word W --pos P [--code C]` shows forms; `--confirm <slugs>` marks them verified after review |
 | `python3 tools/queue.py stamp <slugs>` | writes `frequency.band` and `frequency.defining_vocabulary` from the queue and the defining vocabulary |
 

@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] lint | Thirty-eighth lint pass
+
+Second cycle of the 08:44 UTC run, forced at five cycles since the last pass. Caps, links, and the vocabulary gate were clean. `crossref --all --apply` printed two BACKLINK lines: `good-adj` on `goods-n` word family is right; `fuel-n` on `gas-n` landed on sense 2 (*for heat*) although *fuel* names *gas* "American, for cars", so it was moved by hand to sense 3 (*for cars*). No TYPE-MISMATCH. `claim.py --prune` removed two claim files. Reviewer precision: no new pair under the line; the two held pairs are unchanged ([note](notes/reviewer-precision.md)). Index against pages: no orphan or dead entry. The open questions and the curator file have nothing stale or duplicated. `tools/README.md` did not list `tools/eexlib.py`, the shared library; one line was added. The one-sense signpost count (36) and the queued `the-adv` row agree with `NEXT.md` and the style guide. Spend US$0.
+
 ## [2026-10-04] build | Twelve nouns, goat to ground
 
 First cycle of the 08:44 UTC run. Drafted *goat, god, goods, government, governor, grain, grammar, grandfather, grandmother, grass, grave, ground*; all twelve reviewed. `ground-n` has nine senses (electrical ground and coffee grounds included) and ten phrases; *break new ground* moved there from `break-v` under the keyword rule. `god-n` holds the one-God and many-gods senses plus six phrases. The British panel disputed *grandfather* and *grandmother* (1/3, likely the d-less form): d-less variants added, flagged, curator line. Adjudication: 37 issues, 26 blocking; 29 applied, 8 rejected (fences: *against the grain* literal, *grammar school* culture note, *take something to the grave*). Fixed the American electrical *ground* (a connection, not a wire) and the third sense of `government-n` (in power, not public service). `ground-n` names *earth* in an explanation, not a compare link, to avoid a cross-type mismatch with `earth-n`. Spend US$0.53.
