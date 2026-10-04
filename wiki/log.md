@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] closure | Twelve words the dictionary already uses, apple to block
+
+First cycle of the 20:44 UTC run. The closure source gave *according* (verb), *settings*, *visitors* (plurals) and *Christian*, *islam*, *judaism* besides four real nouns: the first three were marked duplicate and drafted as *according to* (preposition), *setting*, *visitor*; the three religion words were left pending (open question 7, proper names). Drafted *apple, banana, coal, tube, according to, setting, visitor*, then from the family source the verbs *bicycle, bike, bill, blanket, block*; all twelve reviewed. Adjudication: 35 issues (27 blocking), 24 applied, 11 rejected. Notable: three learner errors removed as grammatical (*blanketed by snow*, *bill something to someone*, *by biking*); the transitive *bike* (carry by bike) kept on open data, its British label dropped. `according-to-prep` is flagged pronunciation-disputed on punctuation alone ([pronounce-check-word-break](notes/pronounce-check-word-break.md)). `blanket-v` back-link moved to `cover-v` sense 2. Spend US$0.39.
+
 ## [2026-10-04] build | Twelve nouns, infection to island
 
 Fourth cycle of the 16:44 UTC run. Drafted *infection, influence, injury, insect, inside, instrument, intelligence, intention, interest, internet, iron, island*; all twelve reviewed. `interest-n` has six senses and two phrases; `intelligence-n` was split by the panel into the information and the organization senses. Adjudication: 33 issues, 26 blocking; 31 applied, 2 rejected. Applied: `injury-n` lost its rare feelings sense; *damage* is now "mostly" for things (medical *brain damage* named); `iron-n` no longer says the **r** is written after the **o**; *under the influence* split in two. `iron-n`'s golf sense became a usage note (*golf* is outside the defining vocabulary). `inside-n` pronunciation disputed by the panel, CMU agrees with the draft; flagged, curator line. Type mismatches fixed by hand (`bug-n`, `hobby-n`). Spend US$0.40.

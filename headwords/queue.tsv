@@ -1628,7 +1628,7 @@ pig	n	1	defining	pending	2026-09-16	votes 2
 pill	n	1	defining	pending	2026-09-16	votes 3
 pilot	n	1	defining	pending	2026-09-16	votes 1
 pink	adj	1	defining	pending	2026-09-16	votes 1
-pipe	n	1	defining	pending	2026-09-16	votes 1
+pipe	n	1	defining	pending	2026-09-16	votes 1; referenced by tube-n
 pity	n	1	defining	pending	2026-09-16	votes 1
 place	n	1	defining	pending	2026-09-16	votes 2; referenced by place-v
 place	v	1	defining	done	2026-09-16	votes 2
@@ -2242,7 +2242,7 @@ teenager	n	1	defining	pending	2026-09-16	votes 1; referenced by child-n
 tel.	abbr	4	defining	pending	2026-09-16	votes 2; panel median 4, secondary part of speech
 tele-	comb	5	defining	pending	2026-09-16	votes 2; panel median 5, secondary part of speech
 telephone	n	1	defining	pending	2026-09-16	votes 1
-television	n	1	defining	pending	2026-09-16	votes 2; referenced by tv-abbr
+television	n	1	defining	pending	2026-09-16	votes 2; referenced by tv-abbr; referenced by tube-n
 tell	v	1	defining	done	2026-09-16	votes 3
 temper	n	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
 temperature	n	1	defining	pending	2026-09-16	votes 3; referenced by degree-n; referenced by fever-n; referenced by heat-n
@@ -2450,7 +2450,7 @@ violence	n	1	defining	pending	2026-09-16	votes 3; referenced by force-n
 violent	adj	1	defining	pending	2026-09-16	votes 3
 virus	n	1	defining	pending	2026-09-16	votes 1; referenced by bacteria-n; referenced by infection-n
 visible	adj	1	defining	pending	2026-09-16	votes 1
-visit	n	1	defining	pending	2026-09-16	votes 2; referenced by visit-v
+visit	n	1	defining	pending	2026-09-16	votes 2; referenced by visit-v; referenced by visitor-n
 visit	v	1	defining	done	2026-09-16	votes 3; referenced by see-v
 voice	n	1	defining	pending	2026-09-16	votes 3
 volume	n	1	defining	pending	2026-09-16	votes 2
@@ -2902,7 +2902,7 @@ customs	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wo
 cute	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=1,wordlist-3=2)
 cutlery	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 cv	abbr	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=4)
-cycle	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
+cycle	v	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by bicycle-v
 cyclist	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3); referenced by bicycle-n
 cyclone	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 dairy	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
@@ -4339,7 +4339,7 @@ next to	prep	3	crossref	pending	2026-09-20	referenced by beside-prep
 arrangement	adj	3	closure	declined	2026-09-20	used in account-n senses[0].definition; arrangement is a noun; wrong pos from suffix-guess bug, requeued as arrangement-n
 acceptable	adj	3	family	pending	2026-09-20	referenced by accept-v
 acceptance	n	3	family	pending	2026-09-20	referenced by accept-v
-according to	prep	3	crossref	pending	2026-09-20	referenced by per-prep
+according to	prep	3	crossref	done	2026-09-20	referenced by per-prep
 accountant	n	3	family	pending	2026-09-20	referenced by account-n
 accounting	n	3	family	pending	2026-09-20	referenced by account-n
 add up	phrv	3	crossref	pending	2026-09-20	referenced by add-v; referenced by count-v
@@ -5152,7 +5152,7 @@ sender	n	3	family	pending	2026-09-26	referenced by send-v
 mail	n	3	closure	done	2026-09-26	used in send-v senses[0].definition; pos guessed (no morphological signal), check before claiming
 set	n	3	family	pending	2026-09-26	referenced by set-v; referenced by game-n
 set out	phrv	3	crossref	pending	2026-09-26	referenced by set-v
-setting	n	3	family	pending	2026-09-26	referenced by set-v
+setting	n	3	family	done	2026-09-26	referenced by set-v
 shaped	adj	3	family	pending	2026-09-26	referenced by shape-v
 share	n	3	family	pending	2026-09-26	referenced by share-v; referenced by cut-n
 shared	adj	3	family	pending	2026-09-26	referenced by share-v
@@ -5354,7 +5354,7 @@ upset	n	3	family	pending	2026-09-29	referenced by upset-v
 upsetting	adj	3	family	pending	2026-09-29	referenced by upset-v
 usage	n	3	family	pending	2026-09-29	referenced by use-v
 utilize	v	3	crossref	pending	2026-09-29	referenced by use-v
-visitor	n	3	family	pending	2026-09-29	referenced by visit-v; referenced by guest-n; referenced by host-n
+visitor	n	3	family	done	2026-09-29	referenced by visit-v; referenced by guest-n; referenced by host-n
 voter	n	3	family	pending	2026-09-29	referenced by vote-v
 voting	n	3	family	pending	2026-09-29	referenced by vote-v
 wait	n	3	family	pending	2026-09-29	referenced by wait-v
@@ -5547,20 +5547,20 @@ waist	n	3	closure	done	2026-09-30	used in belt-n senses[0].definition; pos guess
 drive away	phrv	3	crossref	pending	2026-09-30	referenced by drive-v
 drive off	phrv	3	crossref	pending	2026-09-30	referenced by drive-v
 barrier	n	3	crossref	pending	2026-10-01	referenced by block-n
-bicycle	v	3	family	pending	2026-10-01	referenced by bicycle-n
-bicyclist	n	3	family	pending	2026-10-01	referenced by bicycle-n
-bike	v	3	family	pending	2026-10-01	referenced by bike-n
-biker	n	3	family	pending	2026-10-01	referenced by bike-n
-bill	v	3	family	pending	2026-10-01	referenced by bill-n
-billing	n	3	family	pending	2026-10-01	referenced by bill-n
+bicycle	v	3	family	done	2026-10-01	referenced by bicycle-n
+bicyclist	n	3	family	pending	2026-10-01	referenced by bicycle-n; referenced by bicycle-v
+bike	v	3	family	done	2026-10-01	referenced by bike-n
+biker	n	3	family	pending	2026-10-01	referenced by bike-n; referenced by bike-v
+bill	v	3	family	done	2026-10-01	referenced by bill-n
+billing	n	3	family	pending	2026-10-01	referenced by bill-n; referenced by bill-v
 birdie	n	3	family	pending	2026-10-01	referenced by bird-n
 birthplace	n	3	family	pending	2026-10-01	referenced by birth-n
 blame	v	3	crossref	pending	2026-10-01	referenced by blame-n
 blameless	adj	3	family	pending	2026-10-01	referenced by blame-n
-blanket	adj	3	family	pending	2026-10-01	referenced by blanket-n
-blanket	v	3	family	pending	2026-10-01	referenced by blanket-n
-block	v	3	family	pending	2026-10-01	referenced by block-n
-blockage	n	3	family	pending	2026-10-01	referenced by block-n
+blanket	adj	3	family	pending	2026-10-01	referenced by blanket-n; referenced by blanket-v
+blanket	v	3	family	done	2026-10-01	referenced by blanket-n
+block	v	3	family	done	2026-10-01	referenced by block-n
+blockage	n	3	family	pending	2026-10-01	referenced by block-n; referenced by block-v
 bloody	adj	3	family	pending	2026-10-01	referenced by blood-n
 brick	n	3	crossref	done	2026-10-01	referenced by block-n
 cycle	n	3	crossref	pending	2026-10-01	referenced by bicycle-n
@@ -6306,10 +6306,10 @@ refuel	v	3	family	pending	2026-10-04	referenced by fuel-n
 repair shop	n	3	crossref	pending	2026-10-04	referenced by garage-n
 reward	n	3	crossref	pending	2026-10-04	referenced by fruit-n
 seafront	n	3	crossref	pending	2026-10-04	referenced by front-n
-according	v	3	closure	pending	2026-10-04	used in game-n senses[0].definition
-apple	n	3	closure	pending	2026-10-04	used in fruit-n senses[0].definition; pos guessed (no morphological signal), check before claiming
-banana	n	3	closure	pending	2026-10-04	used in fruit-n senses[0].definition; pos guessed (no morphological signal), check before claiming
-coal	n	3	closure	pending	2026-10-04	used in fuel-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+according	v	3	closure	duplicate	2026-10-04	used in game-n senses[0].definition; the word is the preposition according to (queued); closure row guessed v
+apple	n	3	closure	done	2026-10-04	used in fruit-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+banana	n	3	closure	done	2026-10-04	used in fruit-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+coal	n	3	closure	done	2026-10-04	used in fuel-n senses[0].definition; pos guessed (no morphological signal), check before claiming
 garden	v	3	family	pending	2026-10-04	referenced by garden-n
 gardener	n	3	family	pending	2026-10-04	referenced by garden-n
 gardening	n	3	family	pending	2026-10-04	referenced by garden-n
@@ -6329,7 +6329,7 @@ mitten	n	3	crossref	pending	2026-10-04	referenced by glove-n
 spectacles	n	3	crossref	pending	2026-10-04	referenced by glasses-n
 sunglasses	n	3	crossref	pending	2026-10-04	referenced by glasses-n
 target	n	3	crossref	pending	2026-10-04	referenced by goal-n
-settings	n	3	closure	pending	2026-10-04	used in gear-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+settings	n	3	closure	duplicate	2026-10-04	used in gear-n senses[0].definition; pos guessed (no morphological signal), check before claiming; plural of setting-n (family row)
 administration	n	3	crossref	pending	2026-10-04	referenced by government-n
 background	n	3	family	pending	2026-10-04	referenced by ground-n
 freight	n	3	crossref	pending	2026-10-04	referenced by goods-n
@@ -6399,8 +6399,8 @@ lifeguard	n	3	family	pending	2026-10-04	referenced by guard-n
 pistol	n	3	crossref	pending	2026-10-04	referenced by gun-n
 rifle	n	3	crossref	pending	2026-10-04	referenced by gun-n
 safeguard	n	3	family	pending	2026-10-04	referenced by guard-n
-tube	n	3	closure	pending	2026-10-04	used in gun-n senses[0].definition; pos guessed (no morphological signal), check before claiming
-visitors	n	3	closure	pending	2026-10-04	used in guide-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+tube	n	3	closure	done	2026-10-04	used in gun-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+visitors	n	3	closure	duplicate	2026-10-04	used in guide-n senses[0].definition; pos guessed (no morphological signal), check before claiming; plural of visitor-n (family row)
 aid	n	3	crossref	pending	2026-10-04	referenced by help-n
 assistance	n	3	crossref	pending	2026-10-04	referenced by help-n
 cap	n	3	crossref	pending	2026-10-04	referenced by hat-n
@@ -6510,3 +6510,8 @@ steel	n	3	crossref	pending	2026-10-04	referenced by iron-n; used in iron-n sense
 unintelligent	adj	3	family	pending	2026-10-04	referenced by intelligence-n
 unintentional	adj	3	family	pending	2026-10-04	referenced by intention-n
 uninterested	adj	3	family	pending	2026-10-04	referenced by interest-n
+accordingly	adv	3	family	pending	2026-10-04	referenced by according-to-prep
+block off	phrv	3	crossref	pending	2026-10-04	referenced by block-v
+block out	phrv	3	crossref	pending	2026-10-04	referenced by block-v
+tourist	n	3	crossref	pending	2026-10-04	referenced by visitor-n
+unblock	v	3	crossref	pending	2026-10-04	referenced by block-v
