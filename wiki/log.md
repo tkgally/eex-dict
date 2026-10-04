@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] build | Twelve nouns, infection to island
+
+Fourth cycle of the 16:44 UTC run. Drafted *infection, influence, injury, insect, inside, instrument, intelligence, intention, interest, internet, iron, island*; all twelve reviewed. `interest-n` has six senses and two phrases; `intelligence-n` was split by the panel into the information and the organization senses. Adjudication: 33 issues, 26 blocking; 31 applied, 2 rejected. Applied: `injury-n` lost its rare feelings sense; *damage* is now "mostly" for things (medical *brain damage* named); `iron-n` no longer says the **r** is written after the **o**; *under the influence* split in two. `iron-n`'s golf sense became a usage note (*golf* is outside the defining vocabulary). `inside-n` pronunciation disputed by the panel, CMU agrees with the draft; flagged, curator line. Type mismatches fixed by hand (`bug-n`, `hobby-n`). Spend US$0.40.
+
 ## [2026-10-04] review | Second reading of twelve entries, answer to attitude
 
 Third cycle of the 16:44 UTC run. The twelve oldest one-round entries (created 2026-09-30): *answer, appearance, area, argument, arm, army, arrest, art, artist, attempt, attention, attitude*. Added by hand: *in answer to something* (`answer-n`), *arm in arm* (`arm-n`); *to all appearances* was added to `appearance-n` and taken out again on the panel's word (sense 4 already holds it). Adjudication: 23 issues, 10 blocking; 12 applied, 11 rejected (opening quoted headwords in adaptation notes are house style; *often before another noun* is a closed-list code; *in the area of* means roughly, not only more). Applied: `attention-n` now uncountable "in ordinary use", naming the rare plural *attentions*; `attitude-n` core idea and a translation claim rewritten; `art-n` sense 5. No back-links. Spend US$0.50.
