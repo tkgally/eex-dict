@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] build | Twelve nouns, group to handle
+
+Third cycle of the 08:44 UTC run. Drafted *group, growth, guard, guess, guest, guide, gun, habit, hair, half, hall, handle*; all twelve reviewed, all 24 transcriptions verified. `half-n` holds the noun uses only (*a half*, *two halves*, the game half, *half past*), pointing to `half-det`, `half-pron`, and `half-adv`. `hall-n` gained a fifth sense, the government building (*city hall*, *town hall*), after reviewer-a showed they did not fit the events sense. Adjudication: 47 issues, 34 blocking; 37 applied, 10 rejected (region fences on *by a hair* and the passage sense of *hall*, lowercase definitions, the respelling asterisks, *and so on*). A real error caught: the `guest-n` adaptation note said *guest* does not rhyme with *quest*; it does. The *group* agreement notes were reworded (singular normal in American writing). `hair-n` names `fur-n` under compare, matching `fur-n`, to avoid a cross-type mismatch. Spend US$0.54.
+
 ## [2026-10-04] lint | Thirty-eighth lint pass
 
 Second cycle of the 08:44 UTC run, forced at five cycles since the last pass. Caps, links, and the vocabulary gate were clean. `crossref --all --apply` printed two BACKLINK lines: `good-adj` on `goods-n` word family is right; `fuel-n` on `gas-n` landed on sense 2 (*for heat*) although *fuel* names *gas* "American, for cars", so it was moved by hand to sense 3 (*for cars*). No TYPE-MISMATCH. `claim.py --prune` removed two claim files. Reviewer precision: no new pair under the line; the two held pairs are unchanged ([note](notes/reviewer-precision.md)). Index against pages: no orphan or dead entry. The open questions and the curator file have nothing stale or duplicated. `tools/README.md` did not list `tools/eexlib.py`, the shared library; one line was added. The one-sense signpost count (36) and the queued `the-adv` row agree with `NEXT.md` and the style guide. Spend US$0.
