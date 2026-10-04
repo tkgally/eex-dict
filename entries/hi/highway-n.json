@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "sleeve-n",
-  "slug": "sleeve-n",
-  "headword": "sleeve",
+  "id": "highway-n",
+  "slug": "highway-n",
+  "headword": "highway",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "sliv",
+      "ipa": "ˈhaɪ.weɪ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "sliːv",
+      "ipa": "ˈhaɪ.weɪ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,7 +25,7 @@
   },
   "inflections": {
     "forms": {
-      "plural": "sleeves"
+      "plural": "highways"
     },
     "regular": true,
     "source": "rules",
@@ -33,9 +33,9 @@
     "note": null
   },
   "frequency": {
-    "band": 2,
+    "band": 1,
     "basis": "editorial",
-    "defining_vocabulary": false
+    "defining_vocabulary": true
   },
   "labels": {
     "register": [],
@@ -48,8 +48,8 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "part of clothing",
-      "definition": "the part of a shirt, a coat, or a dress that covers all or part of your arm",
+      "signpost": "main road",
+      "definition": "a wide main road for traveling fast between cities",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -67,17 +67,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "He rolled up his sleeves and started washing the dishes.",
+          "text": "Take the highway north for about an hour.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The shirt has short sleeves.",
+          "text": "There was an accident on the highway this morning.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There's a hole in my sleeve.",
+          "text": "The new highway goes around the town.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We drove along a four-lane highway.",
           "note": null,
           "pattern": null
         }
@@ -86,29 +91,45 @@
         {
           "type": "adjective + noun",
           "items": [
-            "long sleeves",
-            "short sleeves",
-            "a loose sleeve"
+            "a busy highway",
+            "a main highway",
+            "a four-lane highway",
+            "a divided highway"
           ]
         },
         {
-          "type": "verb + noun",
+          "type": "preposition + noun",
           "items": [
-            "roll up your sleeves",
-            "pull at someone's sleeve"
+            "on the highway",
+            "along the highway",
+            "off the highway"
           ]
         },
         {
-          "type": "phrase",
+          "type": "noun + noun",
           "items": [
-            "a long-sleeved shirt",
-            "a short-sleeved dress"
+            "highway traffic",
+            "a highway exit",
+            "the highway patrol"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "motorway-n",
+          "note": "the British word for a wide road for fast traffic"
+        },
+        {
+          "slug": "freeway-n",
+          "note": "in American English, a highway with no crossings or stop lights"
+        },
+        {
+          "slug": "road-n",
+          "note": null
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -121,9 +142,9 @@
     },
     {
       "n": 2,
-      "signpost": "cover",
-      "definition": "a paper or plastic cover that protects a record or a photograph",
-      "explanation": null,
+      "signpost": "public road",
+      "definition": "a public road",
+      "explanation": "Used mainly in laws and official notices.",
       "grammar": {
         "countability": "countable",
         "transitivity": null,
@@ -131,8 +152,12 @@
         "patterns": []
       },
       "labels": {
-        "register": [],
-        "region": [],
+        "register": [
+          "formal"
+        ],
+        "region": [
+          "British"
+        ],
         "domain": [],
         "currency": [],
         "attitude": []
@@ -140,22 +165,21 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The record was still in its original sleeve.",
+          "text": "It is against the law to park on the highway here.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Put the disc back in its sleeve.",
+          "text": "Animals must not be left on the public highway.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "adjective + noun",
           "items": [
-            "a record sleeve",
-            "a paper sleeve"
+            "the public highway"
           ]
         }
       ],
@@ -175,10 +199,10 @@
   ],
   "phrases": [
     {
-      "sub_id": "have-something-up-your-sleeve",
-      "text": "have something up your sleeve",
-      "definition": "have a secret plan or idea that you can use later",
-      "explanation": null,
+      "sub_id": "highway-robbery",
+      "text": "highway robbery",
+      "definition": "a price that is far too high",
+      "explanation": "British English also says **daylight robbery**.",
       "labels": {
         "register": [
           "informal"
@@ -186,44 +210,18 @@
         "region": [],
         "domain": [],
         "currency": [],
-        "attitude": []
+        "attitude": [
+          "disapproving"
+        ]
       },
       "examples": [
         {
-          "text": "Don't worry, I still have a few tricks up my sleeve.",
+          "text": "Eight dollars for a coffee? That's highway robbery!",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She always has something up her sleeve.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "roll-up-your-sleeves",
-      "text": "roll up your sleeves",
-      "definition": "get ready to work hard",
-      "explanation": null,
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "It's time to roll up our sleeves and get this job done.",
+          "text": "The parking charges are highway robbery.",
           "note": null,
           "pattern": null
         }
@@ -238,68 +236,62 @@
       "l1": {}
     }
   ],
-  "word_family": [
-    {
-      "slug": "sleeveless-adj",
-      "form": null,
-      "note": null
-    }
-  ],
+  "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": "**Long-sleeved** and **short-sleeved** describe clothes (*a short-sleeved shirt*); a piece of clothing with no sleeves is **sleeveless**.",
+  "usage_note": "In American English a **highway** is a main road, usually between towns; a **freeway** or **interstate** is a large highway with no crossings or stop lights. In British English the large fast road is a **motorway**, and **highway** is mostly a formal word for any public road.",
   "learner_errors": [
     {
-      "incorrect": "I need a shirt with long arms.",
-      "correct": "I need a shirt with long sleeves.",
-      "note": "The part of the shirt is a **sleeve**; your **arm** is inside it."
+      "incorrect": "We drove in the highway for three hours.",
+      "correct": "We drove on the highway for three hours.",
+      "note": "Cars travel **on** a road or a highway, not **in** it."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "shirt-n",
+      "slug": "road-n",
       "note": null
     },
     {
-      "slug": "arm-n",
+      "slug": "street-n",
       "note": null
     },
     {
-      "slug": "heart-n",
+      "slug": "traffic-n",
       "note": null
     }
   ],
   "adaptation": {
-    "semantic": "Some languages use the word for *arm* for the part of a shirt; English uses **sleeve**.",
+    "semantic": null,
     "grammar": null,
-    "culture": null,
+    "culture": "Road words differ between countries: an American **highway** may be an ordinary main road or a large fast road like a British **motorway**. Translate by the kind of road.",
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-02T17:31:52Z",
-    "modified": "2026-10-04T12:49:57Z",
+    "created": "2026-10-04T12:49:47Z",
+    "modified": "2026-10-04T12:57:36Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261002T172947Z-1u1dzs",
+    "run_id": "20261004T124408Z-q1o26y",
     "reviews": [
       {
-        "run_id": "20261002T172947Z-1u1dzs",
+        "run_id": "20261004T124408Z-q1o26y",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T172947Z-1u1dzs/sleeve-n.json",
-        "ok": 45,
-        "issues": 4,
-        "blocking": 2
+        "date": "2026-10-04",
+        "file": "reviews/20261004T124408Z-q1o26y/highway-n.json",
+        "ok": 32,
+        "issues": 8,
+        "blocking": 5
       },
       {
-        "run_id": "20261002T172947Z-1u1dzs",
+        "run_id": "20261004T124408Z-q1o26y",
         "role": "reviewer-b",
         "model": "google/gemini-3.8-flash",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T172947Z-1u1dzs/sleeve-n.json",
-        "ok": 49,
+        "date": "2026-10-04",
+        "file": "reviews/20261004T124408Z-q1o26y/highway-n.json",
+        "ok": 39,
         "issues": 0,
         "blocking": 0
       }

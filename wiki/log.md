@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-04] build | Twelve nouns, harm to hit
+
+First cycle of the 12:44 UTC run. Drafted *harm, hat, hate, health, hearing, heart, heat, height, help, highway, hill, hit*; all twelve reviewed. `heart-n` has seven senses and seventeen phrases; *break someone's heart* (from `break-v`) and *wear your heart on your sleeve* (from `sleeve-n`) moved there under the keyword rule, and both entries now point to `heart-n` in see-also. *a heart-to-heart* went to the word family as `heart-to-heart-n` (a compound noun, reviewer-b). Adjudication: 60 issues, 42 blocking; 49 applied, 11 rejected (fences: American length mark on *heat*, lowercase opening headword in an adaptation note; *healths* is archaic; the road sense of *hill* kept). `help-n` sense 2 made singular only, so it has no plural. The back-link from `hit-n` moved to `failure-n` sense 2. Pronunciation: all 24 verified. Spend US$0.66.
+
 ## [2026-10-04] review | Second reading of water to afternoon
 
 Fourth and last cycle of the 08:44 UTC run. Second panel round on the twelve oldest one-round entries: *water, wear, weigh, whisper, win, wipe, wish, wonder, work* (verbs of 2026-09-30) and *access, acid, afternoon*. Added by hand before the panel: `wear-v` sense 1 now covers makeup and perfume (its own collocation); `work-v` gained the learner error *Where do you work in?*. Adjudication: 35 issues, 19 blocking; 14 applied, 21 rejected (eleven quoted-headword fence flags, *work* and *bird* share the British vowel, stranded *wish for*, *good afternoon* stays a phrase like *good evening*). Applied: the *weigh* continuous rule now allows a changing weight; `work-v` sense 8 split (shaping material; farming land as subsense a); *wonder at* no longer means "think it is very good"; a clearer *wear*/*put on* error. Removed synonyms *go* and *run* from `work-v` sense 3 and *take* from `win-v` sense 2, with their mirrors on `go-v`, `run-v`, `take-v`. Spend US$0.51.
