@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | Twelve nouns, lip to lung
+
+Third cycle of the 04:44 UTC run. Twelve band-1 nouns drafted and reviewed: *lip, list, liver, load, loan, lock, look, loss, lot, love, lunch, lung*. `lot-n` holds *a lot (of)* and *lots (of)* as a quantity noun with an explanation of agreement; adverbial *a lot* (*I like it a lot*) is pointed to `a-lot-adv`, queued at band 3 by crossref (a core word: raise or hand-claim it). All 24 transcriptions verified. Panel: 35 issues, 22 blocking; 27 applied, 8 rejected (quoted-headword fence, *make love* placement by keyword, *used to* for vocative and sign-off *love*, *lend* in `loan-n` family). Applied: region labels removed from *stiff upper lip*, *top of your lungs*, and the *lot* group sense; a wrong form taken out of italics in `loan-n`. Spend US$0.52; day US$3.07.
+
 ## [2026-10-05] review | Second reading of twelve entries, basket to bedroom
 
 Second cycle of the 04:44 UTC run. The twelve oldest one-round entries (*basket, bath, bathroom, battery, battle, beach, bean, beard, beat, beauty, bed, bedroom*) read by hand, then by both reviewers. Added by hand: *a basket case*, *pick your battles*, *get up on the wrong side of the bed*, *a bed of roses*, a new *beat* sense (*a short pause*), a pronunciation note on `bed-n`, bold headwords in two core ideas, `cart-n` compared with the online *basket*. Panel: 31 issues, 17 blocking; 16 applied, 15 rejected. Rejected: reviewer-a said American *beat* /bit/ is *bit* (fence: no length mark) and that *beard* and *bird* sound the same in America (they do not); quoted-headword flags; a hyphen in predicative *skin deep*. Spend US$0.46; day US$2.55.
