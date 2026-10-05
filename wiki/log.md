@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] lint | Forty-second lint pass
+
+Third cycle of the 08:43 UTC run, forced (six runs since the last lint). Caps, links: clean. `crossref --all --apply` made seven back-links and four type mismatches. Two back-links moved: *appearance* from `look-n` "on a face" to "appearance", *hate* from `love-n` "romantic" to "caring". The mismatches were settled as synonyms both ways (*lesson/class*, *level/floor*). `lint_vocab --all --queue`: 0 violations, nothing queued. `claim.py --prune`: three claim files. Precision: no new pair under the line. The upgraded reviewer-b was 2 of 8 on its first day, too few to judge ([reviewer-precision](notes/reviewer-precision.md)). Drift fixed: `pronunciation-pipeline` now says reviewer A's pronunciation flags are off; `tools/README.md` documents `--owner-ruling` and the proper-names list. Index, curator file (three open lines), and open questions (none open) checked. No spend.
+
 ## [2026-10-05] review | The owner's rulings: pronunciations, beat, times
 
 Second cycle of the 08:43 UTC run. Items 6, 7, and 8 of the rulings, through the pipeline on 17 entries. New British forms: *themselves* ðəmˈselvz (American changed to match), *accept* ək.ˈsept, *beyond* bɪˈjɒnd. Variants added to *several*, *ourselves*, *per*, *adult-n*, *inside-n*. The other disputes were kept as ruled. `pronounce_check.py --owner-ruling` (new, tested) marks a ruled transcription verified and keeps it so while its ipa is unchanged. All flags cleared except *several-det* American (still disputed, new curator line). The multiplier moved from `times-prep` to `time-n` sense 7. `beat-v` gained a usage note on **beat** as past participle. Adjudication: 44 decisions, 13 applied, 31 rejected (mostly reviewer-a against the ruling and the keyword fence). The upgraded reviewer-b returned only issues on 3 of 11 entries ([note](notes/reviewer-b-partial-verdicts.md)). Spend US$0.83.
