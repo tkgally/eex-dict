@@ -152,7 +152,7 @@ def cmd_set(a) -> int:
     return 1
 
 
-POS_ORDER = ["det", "pron", "prep", "conj", "modal", "aux", "v", "n", "adj", "adv", "num", "interj", "phrv",
+POS_ORDER = ["det", "pron", "prep", "conj", "modal", "aux", "inf", "v", "n", "adj", "adv", "num", "interj", "phrv",
              "phr", "prefix", "suffix", "comb", "abbr"]   # queue order within a band: function words and
                                                             # light verbs first, affixes and abbreviations last
 

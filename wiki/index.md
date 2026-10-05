@@ -42,6 +42,7 @@
 - [part-of-speech-and-consistency](decisions/part-of-speech-and-consistency.md) — one part of speech per entry, the entry agrees with itself, origin claims only in etymology, grammar exceptions named as such, pronunciation notes in plain words (from the seed-set feedback of 2026-09-18).
 - [proper-names-in-definitions](decisions/proper-names-in-definitions.md) — the owner's ruling of 2026-10-05: a closed list of proper names (`proper_names` in `schema/vocabularies.json`) may appear in definitions; `lint_vocab.py` accepts them and never queues them.
 - [reviewer-b-upgrade](decisions/reviewer-b-upgrade.md) — the owner's ruling of 2026-10-05: the `reviewer-b` role moves to the Pro-class Google model; only that role; the cap stays US$15.
+- [infinitive-marker](decisions/infinitive-marker.md) — the owner's ruling of 2026-10-05: a part-of-speech value `inf` (infinitive marker) and one entry, `to-inf`.
 
 ## Notes (observed problems, method records, experiment results)
 

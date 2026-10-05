@@ -6,6 +6,8 @@
 
 **The ruling.** A short, closed list of proper names may appear in definitions. It is the vocabulary `proper_names` in `schema/vocabularies.json`, starting with three names: **Jesus Christ**, **Muhammad**, **Buddha**. A name is added only when an entry needs it, as a logged decision in the same pull request as that entry, like any other closed-vocabulary value.
 
+**Added.** **Moses**, 2026-10-05, for `judaism-n`: the plain accurate definition (*the religion of the Jewish people*) needs a word with no entry, and the alternative names the law that, Jews believe, God gave to Moses.
+
 **What the tools do.** `tools/lint_vocab.py` reads the list and accepts each word of a listed name wherever it meets it in prose, so `--gate` passes a definition that uses one, and `--queue` never queues one as a headword. A name not on the list is still reported. The names are not headwords and get no entries.
 
 **Writing with them.** Use a listed name only where no plain wording is accurate (a religion and its followers, defined by the person it is named after or follows). Keep the definition neutral: what followers believe or follow, not whether it is true.
