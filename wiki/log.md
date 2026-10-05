@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] originality | eighteenth check, no rewrites
+
+Second cycle of the 12:44 UTC run (forced: every tenth run). Ten fields sampled (`reviews/originality/2026-10-05.md`); exact-phrase searches found no distinctive match: eight original, two generic overlaps (*day-n* *the other day* "a few days ago"; *drive-v* sense 2 "travel somewhere in a car", Cambridge's five-word opening). reviewer-a with reasoning on returned an empty reply at its token limit; with reasoning off it said "original" on all ten. Nothing rewritten. Spend US$0.04.
+
 ## [2026-10-05] build | twelve entries, machine to material, with home and a lot
 
 First cycle of the 12:44 UTC run. The claim tool picked `be-aux`, `do-aux`, `have-aux` first; they were released (owner's ruling item 5 keeps them for review runs) and replaced by `home-adv` and `a-lot-adv` (both long flagged as core) and `material-n`. Drafted and reviewed: *machine, man, manager, manner, map, mark, market, marriage, mass, material* (nouns), *home*, *a lot* (adverbs). Inflections and all 24 transcriptions verified. Panel: 41 decisions (30 apply, 11 reject, 0 escalate); reviewer-a's main catches were *marriage* "for life" and *market* sense 4 describing only a free market. reviewer-b again answered three entries with partial verdict lists; a re-run of both roles fixed *man* and *manner*, not *a lot* (5 of 43 fields). Back-links on `crowd-n`, `lot-n`, `equipment-n`. *Mass* the church service is an unrelated homograph, left out. Spend US$1.23.
