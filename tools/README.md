@@ -18,6 +18,7 @@ All tools are Python 3 standard library only and run from the repository root. E
 | Command | Job |
 |---|---|
 | `python3 tools/pronounce_check.py <slugs> [--no-cmu] [--threshold N]` | panel of models plus a run-time CMU consultation; sets each transcription's `status` and `checked_by` |
+| `python3 tools/pronounce_check.py <slugs> --owner-ruling YYYY-MM-DD --variety american\|british` | records an owner's ruling on a disputed transcription (no paid call): `verified`, with `owner-ruling:<date>:<ipa>` in `checked_by`; kept on later checks while the ipa is unchanged |
 | `python3 tools/review_panel.py <slugs>` | both reviewers, every field, closed verdicts; writes `reviews/<run-id>/<slug>.json` and the provenance record |
 | `python3 tools/review_panel.py --report <slug>` | the open issues from the latest review file |
 | `python3 tools/review_panel.py --decide <slug> --field F --role R --decision apply\|reject\|escalate --note "..."` | one adjudication line in `reviews/decisions.jsonl` |

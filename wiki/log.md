@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] review | The owner's rulings: pronunciations, beat, times
+
+Second cycle of the 08:43 UTC run. Items 6, 7, and 8 of the rulings, through the pipeline on 17 entries. New British forms: *themselves* ðəmˈselvz (American changed to match), *accept* ək.ˈsept, *beyond* bɪˈjɒnd. Variants added to *several*, *ourselves*, *per*, *adult-n*, *inside-n*. The other disputes were kept as ruled. `pronounce_check.py --owner-ruling` (new, tested) marks a ruled transcription verified and keeps it so while its ipa is unchanged. All flags cleared except *several-det* American (still disputed, new curator line). The multiplier moved from `times-prep` to `time-n` sense 7. `beat-v` gained a usage note on **beat** as past participle. Adjudication: 44 decisions, 13 applied, 31 rejected (mostly reviewer-a against the ruling and the keyword fence). The upgraded reviewer-b returned only issues on 3 of 11 entries ([note](notes/reviewer-b-partial-verdicts.md)). Spend US$0.83.
+
 ## [2026-10-05] setup | The owner's rulings of 2026-10-05, first part
 
 First cycle of the 08:43 UTC run, on `inbox/20261005_owner_rulings.txt` (archived). Done: `reviewer-a` `pronunciation` switched off; the reviewer prompt now names the opening quoted headword of an adaptation note as house style (`reviewer-b` `spelling-or-format` stays live); `reviewer-b` moved to the Pro-class Google model, slug re-verified ([reviewer-b-upgrade](decisions/reviewer-b-upgrade.md)); proper names allowed in definitions through a closed `proper_names` vocabulary that `lint_vocab.py` accepts ([proper-names-in-definitions](decisions/proper-names-in-definitions.md)); the *beat* note in `schema/inflection-exceptions.json` changed; queue rows *be, have, do* (aux) reset to `pending`; all seven open questions answered; six curator lines closed. Queued for later cycles: the pronunciation edits, *beat-v*, the *times* move, `to-inf`, *Christian* and the religion words, and `be-aux`, `have-aux`, `do-aux` (one per run). No entries changed; no spend.

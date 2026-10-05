@@ -1,0 +1,271 @@
+{
+  "run_id": "20261005T085206Z-cp7jp7",
+  "slug": "time-n",
+  "entry_modified": "2026-10-05T09:00:49Z",
+  "reviewers": [
+    {
+      "role": "reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "requested_at": "2026-10-05T09:02:06Z",
+      "cost_usd": 0.028101,
+      "tokens_in": 17119,
+      "tokens_out": 2056,
+      "verdicts": [
+        {
+          "field": "senses[2].subsenses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[4].definition",
+          "verdict": "issue",
+          "quote": "\"a particular point in the day, the year, or someone's life, when something happens or should happen\"",
+          "severity": "minor",
+          "family": "definition-style",
+          "reason": "The definition is assigned countable or uncountable, but it defines only the countable use; the uncountable use in \"It's time to go\" needs coverage."
+        },
+        {
+          "field": "senses[4].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[6].definition",
+          "verdict": "issue",
+          "quote": "\"used after a number to compare two amounts, saying how many of the smaller amount would make the larger one\"",
+          "severity": "blocking",
+          "family": "definition-style",
+          "reason": "This is a noun definition but begins with a participial construction and is unclear about the meaning of plural \"times\" in multiplier expressions."
+        },
+        {
+          "field": "senses[6].examples",
+          "verdict": "issue",
+          "quote": "\"This car is three times faster than the old one.\"",
+          "severity": "minor",
+          "family": "example-unnatural",
+          "reason": "The example is potentially ambiguous because \"three times faster\" is often interpreted differently from \"three times as fast\"; the entry itself notes this ambiguity in the usage note."
+        },
+        {
+          "field": "senses[6].adaptation",
+          "verdict": "issue",
+          "quote": "\"many languages use only one of these patterns\"",
+          "severity": "blocking",
+          "family": "adaptation",
+          "reason": "The adaptation note makes an unsupported broad claim about other languages rather than giving language-neutral learner guidance."
+        },
+        {
+          "field": "senses[7].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[7].collocations",
+          "verdict": "issue",
+          "quote": "\"beat time\"",
+          "severity": "blocking",
+          "family": "collocation",
+          "reason": "\"Beat time\" is not a typical general collocation for this musical sense; \"keep time\" is standard."
+        },
+        {
+          "field": "phrases[2].text_and_placement",
+          "verdict": "issue",
+          "quote": "\"at the same time\"",
+          "severity": "blocking",
+          "family": "phrase",
+          "reason": "The entry combines the temporal phrase with the discourse-marker use, which belongs in a separate discourse-marker entry or separately defined phrase use."
+        },
+        {
+          "field": "phrases[2].definition",
+          "verdict": "issue",
+          "quote": "\"together, or during one period\"",
+          "severity": "minor",
+          "family": "definition-meaning",
+          "reason": "The definition does not cover the contrastive discourse-marker use shown in the explanation and third example."
+        },
+        {
+          "field": "phrases[2].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "phrases[10].definition",
+          "verdict": "issue",
+          "quote": "\"in the past, but not now\"",
+          "severity": "blocking",
+          "family": "definition-meaning",
+          "reason": "\"At one time\" can mean simply \"at a particular time in the past\" and does not always imply that the situation is no longer true."
+        },
+        {
+          "field": "phrases[14].definition",
+          "verdict": "issue",
+          "quote": null,
+          "severity": "minor",
+          "family": "other",
+          "reason": null
+        },
+        {
+          "field": "phrases[14].definition",
+          "verdict": "issue",
+          "quote": "\"used to say that time seems to pass very quickly\"",
+          "severity": "minor",
+          "family": "definition-style",
+          "reason": "This is acceptable function-word style only for function words, discourse markers, and interjections; \"time flies\" is an idiomatic clause and should be defined directly."
+        },
+        {
+          "field": "phrases[18].definition",
+          "verdict": "issue",
+          "quote": "\"used to say that something should have happened before now\"",
+          "severity": "minor",
+          "family": "definition-style",
+          "reason": "This is an idiomatic clause rather than a function word or discourse marker, so it should have a direct definition."
+        },
+        {
+          "field": "phrases[27].definition",
+          "verdict": "issue",
+          "quote": "\"used to say that wasting time costs money, so people should work quickly\"",
+          "severity": "minor",
+          "family": "definition-style",
+          "reason": "This proverb should have a direct definition rather than the function-word formula."
+        },
+        {
+          "field": "phrases[32].definition",
+          "verdict": "issue",
+          "quote": "\"used to say that the result of something will be known only later\"",
+          "severity": "minor",
+          "family": "definition-style",
+          "reason": "This idiomatic clause should be defined directly rather than with the function-word formula."
+        },
+        {
+          "field": "phrases[33].definition",
+          "verdict": "issue",
+          "quote": "\"used when meeting someone you have not seen for a long time\"",
+          "severity": "minor",
+          "family": "definition-style",
+          "reason": "This greeting is an interjection-like formula, so the style is acceptable; however, it should be labeled as a greeting or interjection to distinguish its grammatical status."
+        },
+        {
+          "field": "word_family",
+          "verdict": "issue",
+          "quote": "\"timetable-n\"",
+          "severity": "minor",
+          "family": "cross-reference",
+          "reason": "The word-family item is valid, but the note \"schedule is more common in American English\" is overbroad: timetable remains common in American English in transport and educational contexts."
+        },
+        {
+          "field": "usage_note",
+          "verdict": "issue",
+          "quote": "\"**three times bigger** is normally understood to mean the same as **three times as big**, but some careful writers avoid it, because it can also be read as four times the original size.\"",
+          "severity": "blocking",
+          "family": "usage-note",
+          "reason": "The statement is misleading: \"three times bigger\" is genuinely ambiguous and is often understood as four times the original size, not normally as equivalent to \"three times as big.\""
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "issue",
+          "quote": "\"After **the first time** and **the last time**, English uses the present perfect, not the present.\"",
+          "severity": "blocking",
+          "family": "learner-error",
+          "reason": "The claim about \"the last time\" is false: \"The last time I saw her, she was living in Boston\" is standard, and the present perfect pattern is specifically common after \"This is the first time\" and related present-reference frames."
+        },
+        {
+          "field": "adaptation",
+          "verdict": "issue",
+          "quote": "\"English uses one word where many languages use three\"",
+          "severity": "blocking",
+          "family": "adaptation",
+          "reason": "This broad cross-linguistic claim is unsupported and inaccurate as a generalization."
+        },
+        {
+          "field": "adaptation",
+          "verdict": "issue",
+          "quote": "\"the plural **times** usually means occasions or a period in history\"",
+          "severity": "blocking",
+          "family": "adaptation",
+          "reason": "Plural \"times\" has several common meanings beyond these, including multiplier expressions and repeated musical or race results; \"usually\" is an unsupported frequency claim."
+        },
+        {
+          "field": "adaptation",
+          "verdict": "issue",
+          "quote": "\"In English-speaking countries clock times are usually given with the twelve-hour clock, *seven in the evening* rather than *nineteen hundred*\"",
+          "severity": "blocking",
+          "family": "adaptation",
+          "reason": "This is an overgeneralization: twenty-four-hour time is common in many English-speaking settings, especially transport, military, medical, and formal contexts."
+        },
+        {
+          "field": "adaptation",
+          "verdict": "issue",
+          "quote": "\"being **on time** for work and for appointments is expected; lateness needs a warning or an apology.\"",
+          "severity": "blocking",
+          "family": "adaptation",
+          "reason": "This is an overly broad cultural claim that presents variable social norms as universal."
+        },
+        {
+          "field": "adaptation",
+          "verdict": "issue",
+          "quote": "\"In many languages the word for **time** also means weather; English **time** never does.\"",
+          "severity": "blocking",
+          "family": "adaptation",
+          "reason": "The cross-linguistic claim is unsupported and unsuitable for a language-neutral adaptation note."
+        },
+        {
+          "field": "adaptation",
+          "verdict": "issue",
+          "quote": "\"Several languages ask the clock time with their word for **hour**\"",
+          "severity": "blocking",
+          "family": "adaptation",
+          "reason": "The note makes an unsupported broad claim about other languages rather than providing language-neutral guidance."
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "issue",
+          "quote": "\"three times faster\" / \"three times bigger\"",
+          "severity": "blocking",
+          "family": "other",
+          "reason": "Sense 7 presents potentially ambiguous comparative multiplier wording as straightforward, while the usage note acknowledges an ambiguity but misstates its usual interpretation."
+        }
+      ],
+      "summary": "The entry is broadly strong, but it contains important grammar and sense-structure problems around countability and multiplier expressions. Several adaptation statements make unsupported cross-linguistic or cultural generalizations, and the learner-error note about \"the last time\" is incorrect.",
+      "error": "no verdict for 259 field(s): headword_and_pos, variants, pronunciation.american, pronunciation.british, inflections, labels..."
+    },
+    {
+      "role": "reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "requested_at": "2026-10-05T09:02:23Z",
+      "cost_usd": 0.026655,
+      "tokens_in": 19227,
+      "tokens_out": 1461,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "issue",
+          "quote": "big time",
+          "severity": "blocking",
+          "family": "other",
+          "reason": "The phrase 'big time' as used in the examples ('I owe you big time', 'He messed up big time') functions as an adverb, so it belongs in its own entry or an adverb entry, not under the noun 'time'."
+        }
+      ],
+      "summary": "The entry is exceptionally well-crafted, with clear definitions, natural examples, and excellent notes. The only blocking issue is the inclusion of the adverbial phrase 'big time' in this noun entry.",
+      "error": "no verdict for 280 field(s): variants, pronunciation.american, pronunciation.british, inflections, labels, core_idea..."
+    }
+  ]
+}
