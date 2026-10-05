@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] originality | nineteenth check, no rewrites
+
+Fourth cycle of the 20:43 UTC run (forced: every tenth run). Ten fields sampled (`reviews/originality/2026-10-05-2.md`); exact-phrase searches found no distinctive match: eight original, two generic overlaps (*beard-n* sense 1, close to Collins's plain gloss; *hour-n* sense 2, *a particular time of the day or night*, the obvious wording). reviewer-a (reasoning off) answered "copied" on four with quotes; search confirmed none, and two quotes did not even match our wording ([note](notes/reviewer-noise.md)). Nothing rewritten. Spend US$0.004.
+
 ## [2026-10-05] lint | Forty-fourth lint pass; reviewer-b partial-verdict fix
 
 Third cycle of the 20:43 UTC run (forced lint). No paid calls. Caps and links clean. `crossref --all --apply` added seven back-links on six entries (*mind* from *body* and *head*, *milk* from *cream*, *middle* from *heart*, *mouth* from *lip*, *moment* from *time*, *birthday* family from *day*); all seven checked and on the right sense. No type mismatches. `claim.py --prune` cleared four claim files. Precision ([note](notes/reviewer-precision.md)): no new switch-offs; upgraded reviewer-b 0.44 since 09:00, its `spelling-or-format` 6 of 9 since the new prompt line. Tool fix, logged reason: [reviewer-b-partial-verdicts](notes/reviewer-b-partial-verdicts.md) recurred in every cycle today (up to six of ten entries), so `review_panel.py` now states the required verdict count in the prompt and keeps the other role's partial record on a `--roles` re-run; three unit tests. Index, open questions, and curator file checked; nothing stale. Next lint due in about five runs.
