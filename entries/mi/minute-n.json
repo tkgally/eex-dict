@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "hour-n",
-  "slug": "hour-n",
-  "headword": "hour",
+  "id": "minute-n",
+  "slug": "minute-n",
+  "headword": "minute",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈaʊ.ɚ",
+      "ipa": "ˈmɪn.ɪt",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:2/4;cmudict:agree",
+      "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈaʊ.ə",
+      "ipa": "ˈmɪn.ɪt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "The **h** is silent, so **hour** sounds like **our**."
+    "notes": null
   },
   "inflections": {
     "forms": {
-      "plural": "hours"
+      "plural": "minutes"
     },
     "regular": true,
     "source": "rules",
@@ -44,12 +44,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "An **hour** is a period of sixty minutes; the word also means a time of day, the hours when people work or a place is open, and an important moment.",
+  "core_idea": "A minute is sixty seconds or, more loosely, any short time or one moment; the minutes of a meeting are the written record of it.",
   "senses": [
     {
       "n": 1,
-      "signpost": "sixty minutes",
-      "definition": "a period of sixty minutes",
+      "signpost": "sixty seconds",
+      "definition": "one of the sixty parts of an hour; sixty seconds",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -67,52 +67,49 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The trip takes about two hours.",
+          "text": "The train leaves in ten minutes.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "I'll be back in an hour.",
+          "text": "Boil the eggs for six minutes.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She works eight hours a day.",
+          "text": "It's a five-minute walk to the station.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "We waited for half an hour.",
+          "text": "The bus comes every fifteen minutes.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
-          "items": [
-            "an hour",
-            "half an hour",
-            "a quarter of an hour",
-            "a full hour",
-            "the next hour"
-          ]
-        },
-        {
-          "type": "verb + noun",
-          "items": [
-            "take an hour",
-            "spend an hour",
-            "wait an hour"
-          ]
-        },
-        {
           "type": "preposition + noun",
           "items": [
-            "for hours",
-            "in an hour",
-            "an hour ago",
-            "per hour"
+            "in five minutes",
+            "for a few minutes",
+            "every ten minutes",
+            "within minutes"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a few minutes",
+            "the last few minutes",
+            "the next twenty minutes"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "a five-minute walk",
+            "minutes later"
           ]
         }
       ],
@@ -120,14 +117,18 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "minute-n",
+          "slug": "hour-n",
+          "note": null
+        },
+        {
+          "slug": "second-n",
           "note": null
         }
       ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "Because the **h** is silent, use **an**: *an hour*, *half an hour*.",
+        "grammar": null,
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -136,151 +137,8 @@
     },
     {
       "n": 2,
-      "signpost": "time of day",
-      "definition": "a particular time of the day or night",
-      "explanation": null,
-      "grammar": {
-        "countability": "countable",
-        "transitivity": null,
-        "codes": [],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "Who's calling at this hour?",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The clock struck the hour.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Buses leave every hour on the hour.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "phrase",
-          "items": [
-            "at this hour",
-            "at that hour",
-            "at a late hour",
-            "strike the hour"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [
-        {
-          "slug": "time-n",
-          "note": null
-        }
-      ],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 3,
-      "signpost": "time for something",
-      "definition": "the time that someone spends working, or the time each day when a place is open or something happens",
-      "explanation": null,
-      "grammar": {
-        "countability": "countable",
-        "transitivity": null,
-        "codes": [
-          "usually plural"
-        ],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "The store's opening hours are nine to five.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Doctors often work long hours.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Visiting hours end at eight.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "noun + noun",
-          "items": [
-            "opening hours",
-            "working hours",
-            "office hours",
-            "visiting hours",
-            "business hours"
-          ]
-        },
-        {
-          "type": "adjective + noun",
-          "items": [
-            "long hours",
-            "regular hours",
-            "flexible hours"
-          ]
-        },
-        {
-          "type": "verb + noun",
-          "items": [
-            "work long hours",
-            "keep regular hours"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 4,
-      "signpost": "important moment",
-      "definition": "a particular time or moment, especially an important one",
+      "signpost": "short time",
+      "definition": "a very short time",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -300,13 +158,95 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She helped me in my hour of need.",
+          "text": "I'll be with you in a minute.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Their finest hour came in the last game of the season.",
+          "text": "Have you got a minute? I need to ask you something.",
           "note": null,
+          "pattern": null
+        },
+        {
+          "text": "It only takes a minute to fill in the form.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Could you watch my bag for a minute?",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "preposition + noun",
+          "items": [
+            "in a minute",
+            "for a minute"
+          ]
+        },
+        {
+          "type": "verb + noun",
+          "items": [
+            "have a minute",
+            "take a minute",
+            "spare a minute"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "moment-n",
+          "note": null
+        },
+        {
+          "slug": "second-n",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 3,
+      "signpost": "exact moment",
+      "definition": "a particular point in time",
+      "explanation": null,
+      "grammar": {
+        "countability": "countable",
+        "transitivity": null,
+        "codes": [
+          "usually singular"
+        ],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "At that minute, the door opened.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Come inside this minute!",
+          "note": "= immediately",
           "pattern": null
         }
       ],
@@ -314,9 +254,74 @@
         {
           "type": "phrase",
           "items": [
-            "your hour of need",
-            "someone's finest hour",
-            "the hour has come"
+            "at that minute",
+            "this minute",
+            "at the same minute"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "moment-n",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "of a meeting",
+      "definition": "a written record of what people said and decided at a meeting",
+      "explanation": "Always **the minutes** or **minutes**, with a plural verb.",
+      "grammar": {
+        "countability": "plural only",
+        "transitivity": null,
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Who's taking the minutes today?",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The minutes of the last meeting were sent to everyone.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "take the minutes",
+            "read the minutes",
+            "approve the minutes"
+          ]
+        },
+        {
+          "type": "noun + preposition",
+          "items": [
+            "the minutes of a meeting"
           ]
         }
       ],
@@ -336,10 +341,10 @@
   ],
   "phrases": [
     {
-      "sub_id": "on-the-hour",
-      "text": "on the hour",
-      "definition": "at exactly one o'clock, two o'clock, and so on",
-      "explanation": null,
+      "sub_id": "wait-a-minute",
+      "text": "wait a minute",
+      "definition": "used to ask someone to wait for a short time, or to say that you have suddenly noticed something wrong",
+      "explanation": "Also *just a minute* and *hang on a minute*.",
       "labels": {
         "register": [],
         "region": [],
@@ -349,12 +354,12 @@
       },
       "examples": [
         {
-          "text": "Trains leave on the hour.",
+          "text": "Wait a minute, I'm almost ready.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The news is broadcast every hour on the hour.",
+          "text": "Wait a minute! That's not my bag.",
           "note": null,
           "pattern": null
         }
@@ -369,10 +374,10 @@
       "l1": {}
     },
     {
-      "sub_id": "at-all-hours",
-      "text": "at all hours",
-      "definition": "at any time of the day or night, including times that are not normal",
-      "explanation": null,
+      "sub_id": "at-the-last-minute",
+      "text": "at the last minute",
+      "definition": "at the latest possible time, just before something happens or must be done",
+      "explanation": "Before a noun the form is **last-minute**: *a last-minute change*.",
       "labels": {
         "register": [],
         "region": [],
@@ -382,12 +387,12 @@
       },
       "examples": [
         {
-          "text": "The neighbors play music at all hours.",
+          "text": "She always does her homework at the last minute.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He calls me at all hours.",
+          "text": "He changed his plans at the last minute and stayed home.",
           "note": null,
           "pattern": null
         }
@@ -402,27 +407,25 @@
       "l1": {}
     },
     {
-      "sub_id": "the-small-hours",
-      "text": "the small hours",
-      "definition": "the early hours of the morning, soon after midnight",
-      "explanation": "American English also says **the wee hours**.",
+      "sub_id": "any-minute-now",
+      "text": "any minute now",
+      "definition": "very soon",
+      "explanation": "Also *any minute*.",
       "labels": {
         "register": [],
-        "region": [
-          "British"
-        ],
+        "region": [],
         "domain": [],
         "currency": [],
         "attitude": []
       },
       "examples": [
         {
-          "text": "We talked until the small hours.",
+          "text": "Hurry up! The taxi will be here any minute now.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She woke in the small hours and couldn't get back to sleep.",
+          "text": "Our guests should arrive any minute.",
           "note": null,
           "pattern": null
         }
@@ -437,10 +440,10 @@
       "l1": {}
     },
     {
-      "sub_id": "after-hours",
-      "text": "after hours",
-      "definition": "after the normal time when a business or an office closes",
-      "explanation": null,
+      "sub_id": "not-for-a-minute",
+      "text": "not for a minute",
+      "definition": "not at all",
+      "explanation": "Used with verbs like *think*, *believe*, and *doubt*: *I didn't believe him for a minute.*",
       "labels": {
         "register": [],
         "region": [],
@@ -450,12 +453,12 @@
       },
       "examples": [
         {
-          "text": "Some staff stay after hours to finish their work.",
+          "text": "I never thought for a minute that he would leave.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The bar serves drinks after hours.",
+          "text": "Not for a minute did she doubt her friend.",
           "note": null,
           "pattern": null
         }
@@ -470,10 +473,10 @@
       "l1": {}
     },
     {
-      "sub_id": "at-the-eleventh-hour",
-      "text": "at the eleventh hour",
-      "definition": "at the last possible moment",
-      "explanation": null,
+      "sub_id": "the-minute-that",
+      "text": "the minute (that)",
+      "definition": "as soon as",
+      "explanation": "Used before a clause: *Call me the minute you arrive.* **The moment (that)** is used in the same way.",
       "labels": {
         "register": [],
         "region": [],
@@ -483,12 +486,12 @@
       },
       "examples": [
         {
-          "text": "The deal was saved at the eleventh hour.",
+          "text": "Call me the minute you get home.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "They changed the plans at the eleventh hour.",
+          "text": "I knew the minute I saw him that something was wrong.",
           "note": null,
           "pattern": null
         }
@@ -503,10 +506,10 @@
       "l1": {}
     },
     {
-      "sub_id": "for-hours-on-end",
-      "text": "for hours on end",
-      "definition": "for many hours without stopping",
-      "explanation": null,
+      "sub_id": "up-to-the-minute",
+      "text": "up to the minute",
+      "definition": "having or showing the newest information or styles",
+      "explanation": "Before a noun the form is **up-to-the-minute**: *up-to-the-minute news*.",
       "labels": {
         "register": [],
         "region": [],
@@ -516,12 +519,12 @@
       },
       "examples": [
         {
-          "text": "The children played in the snow for hours on end.",
+          "text": "The app keeps you up to the minute with the weather.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He can read for hours on end.",
+          "text": "Her clothes are always up to the minute.",
           "note": null,
           "pattern": null
         }
@@ -538,101 +541,68 @@
   ],
   "word_family": [
     {
-      "slug": "hourly-adj",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "hourly-adv",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "rush-hour-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "hourglass-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "half-hour-n",
+      "slug": "last-minute-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "Say *an hour and a half* (or *one and a half hours*), not *one and half hour*. *Half an hour* is usual everywhere; American English also says *a half hour*.",
+  "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "I waited a hour for the bus.",
-      "correct": "I waited an hour for the bus.",
-      "note": "The **h** in **hour** is silent, so it takes **an**."
+      "incorrect": "It's a five minutes walk from here.",
+      "correct": "It's a five-minute walk from here.",
+      "note": "Before another noun, **minute** has no **s** and is joined to the number with a hyphen: *a ten-minute break*."
     },
     {
-      "incorrect": "The film is one and half hour long.",
-      "correct": "The film is an hour and a half long.",
-      "note": "Say **an hour and a half** or **one and a half hours**."
-    },
-    {
-      "incorrect": "I studied during three hours.",
-      "correct": "I studied for three hours.",
-      "note": "Use **for**, not **during**, to say how long something lasts."
+      "incorrect": "I'll call you after five minutes.",
+      "correct": "I'll call you in five minutes.",
+      "note": "For a time in the future counted from now, use **in**. **After five minutes** describes the past or a series of steps: *After five minutes, the water boiled.*"
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "minute-n",
+      "slug": "hour-n",
       "note": null
     },
     {
       "slug": "time-n",
       "note": null
-    },
-    {
-      "slug": "day-n",
-      "note": null
-    },
-    {
-      "slug": "clock-n",
-      "note": null
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "In sense 3 the word is usually plural: *opening hours*, *work long hours*.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": "**hour** has a silent **h** and sounds the same as **our**. It takes **an**: *an hour*."
+    "pronunciation": "\"minute\" the noun is said *MIN-it*. A different word with the same spelling, an adjective meaning *very small*, is said *my-NOOT*; check which one a sentence needs before translating."
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-04T13:13:57Z",
-    "modified": "2026-10-05T17:04:38Z",
+    "created": "2026-10-05T16:53:42Z",
+    "modified": "2026-10-05T17:03:51Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261004T131007Z-q1o26y",
+    "run_id": "20261005T164836Z-kb063q",
     "reviews": [
       {
-        "run_id": "20261004T131007Z-q1o26y",
+        "run_id": "20261005T164836Z-kb063q",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-04",
-        "file": "reviews/20261004T131007Z-q1o26y/hour-n.json",
-        "ok": 76,
-        "issues": 6,
-        "blocking": 6
+        "date": "2026-10-05",
+        "file": "reviews/20261005T164836Z-kb063q/minute-n.json",
+        "ok": 74,
+        "issues": 4,
+        "blocking": 3
       },
       {
-        "run_id": "20261004T131007Z-q1o26y",
+        "run_id": "20261005T164836Z-kb063q",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-04",
-        "file": "reviews/20261004T131007Z-q1o26y/hour-n.json",
-        "ok": 82,
-        "issues": 0,
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-05",
+        "file": "reviews/20261005T164836Z-kb063q/minute-n.json",
+        "ok": 2,
+        "issues": 1,
         "blocking": 0
       }
     ],

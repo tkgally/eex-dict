@@ -15,3 +15,5 @@ Possible fixes, for a later run with a logged reason:
 Until then, adjudicate whatever issues a partial record holds. A review run counts the entry as read by that role, but says in its journal how many fields the reply covered.
 
 **Recurrence, 2026-10-05 12:44 (`20261005T124424Z-wa1mcj`).** Three of twelve new entries again: *a-lot-adv* (2 of 43 fields), *man-n* (4 of 94), *manner-n* (17 of 58). Re-running both roles together gave full lists for *man-n* and *manner-n*; *a-lot-adv* stayed partial (5 of 43). Twice in one day: the fix should come in the next lint run.
+
+**Recurrence, 2026-10-05 16:48 (`20261005T164836Z-kb063q`).** Worse: six of ten new nouns on the first pass, two of them (*middle-n*, *midnight-n*) with no verdict list at all (`finish=error`, the reply cut off mid-list). One re-run of both roles filled *midnight* and *milk*; *middle* needed a third call. *message-n* (0 of 38), *minister-n* (0 of 34), and *minute-n* (2 of 77) stayed partial, issues only. Three runs running: fix 2 (a stronger prompt) or fix 1 should be the next lint's first job.

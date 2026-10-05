@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | ten nouns, message to mirror
+
+Second cycle of the 16:43 UTC run. `claim.py` picked the pending `do-aux` and `have-aux` first; both released (owner's ruling: one per review run). Ten nouns, not twelve, because *mind* (fifteen phrases) and *minute* (six phrases, four senses) are large: *message, metal, method, middle, midnight, milk, mind, minister, minute, mirror*. All verified by the pronunciation panel and CMU. Panel: reviewer-b answered six entries with partial or no verdicts; a re-run of both roles filled *midnight*, *milk*, and *middle* (third try); *message*, *minister*, *minute* stay partial. 20 decisions: 15 applied, 5 rejected, 0 escalated. Main fix: *the minute (that)* moved from a noun sense to its own phrase. Back-links: `waist-n` got *middle* on its clothing sense (moved to the body sense); *middle*/*center* made synonyms both ways. Spend US$0.91.
+
 ## [2026-10-05] lint | Forty-third lint pass
 
 Forced lint (five runs since the last). No paid calls. Caps and links clean. `crossref --all --apply` added one back-link: `air-n` (appearance or manner) put `manner-n` back on sense 1, "the way something is done"; moved by hand to sense 2, "the way someone behaves". No type mismatches. `lint_vocab --all --queue` queued nothing new; `claim.py --prune` cleared four claim files. Precision ([note](notes/reviewer-precision.md)): no new switch-offs; reviewer-a 0.71, reviewer-b 0.54; upgraded reviewer-b 8 of 24 (0.33) since 09:00. Index lists every page; no open questions; curator file: two old decline records (*additional*, *upward*, both drafted long ago) moved to Resolved, three open lines remain. One-sense signposts still 36. Next lint due in about five runs.
