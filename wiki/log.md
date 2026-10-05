@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | twelve nouns, match to menu
+
+Fourth cycle of the 12:44 UTC run. Claimed by hand (the queue's pending auxiliaries left alone): *match, matter, mayor, meal, meaning, measure, measurement, meat, medicine, member, memory, menu*. Inflections verified; 23 of 24 transcriptions verified, British *medicine* disputed (panel split three ways) and flagged, with a curator line. Panel: 35 decisions (23 apply, 12 reject); fixes to *matter* (physical sense, *only a matter of time*), *memory* (computer sense), *meal*, *mayor* usage note, a *medicine* learner error (*drink your medicine* is fine). reviewer-b partial on five entries; a re-run filled three. Back-links: *action*, *competition*, *affair* moved to the right sense. *Match* (for fire) and *meal* (ground grain) are unrelated homographs, left out. Spend US$1.07.
+
 ## [2026-10-05] review | be-aux split from be-v; bee to berry
 
 Third cycle of the 12:44 UTC run. Owner's ruling 5, first part: new entry `be-aux` (three senses: -ing tenses, passive, *be to* for plans and orders; three learner errors), moved out of `be-v`, which keeps its three linking senses with a new core idea and a pointer in the usage note, adaptation note, and see-also. Second panel round for the nine oldest one-round entries, *bee*–*berry*: added *small beer*, *belt and suspenders*, *warm the bench*, a *seat belt* learner error, collocations. Panel: 25 decisions (18 apply, 7 reject); fixes to *berry*, *bench* (core idea), *behavior*, *benefit* (British *housing benefit* replaced). reviewer-b partial again on *bee*, *beer*, *behavior*; a re-run of both roles filled *bee* only. Spend US$0.89.
