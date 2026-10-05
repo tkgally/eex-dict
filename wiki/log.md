@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] setup | The owner's rulings of 2026-10-05, first part
+
+First cycle of the 08:43 UTC run, on `inbox/20261005_owner_rulings.txt` (archived). Done: `reviewer-a` `pronunciation` switched off; the reviewer prompt now names the opening quoted headword of an adaptation note as house style (`reviewer-b` `spelling-or-format` stays live); `reviewer-b` moved to the Pro-class Google model, slug re-verified ([reviewer-b-upgrade](decisions/reviewer-b-upgrade.md)); proper names allowed in definitions through a closed `proper_names` vocabulary that `lint_vocab.py` accepts ([proper-names-in-definitions](decisions/proper-names-in-definitions.md)); the *beat* note in `schema/inflection-exceptions.json` changed; queue rows *be, have, do* (aux) reset to `pending`; all seven open questions answered; six curator lines closed. Queued for later cycles: the pronunciation edits, *beat-v*, the *times* move, `to-inf`, *Christian* and the religion words, and `be-aux`, `have-aux`, `do-aux` (one per run). No entries changed; no spend.
+
 ## [2026-10-05] closure | alike and eleven verbs, bomb to bubble
 
 Fourth and last cycle of the 04:44 UTC run. `--source closure` gave four rows: *Christian, Islam, Judaism* released unchanged (open question 7); *alike* (row guessed as a noun, used in `kind-n`) marked duplicate and drafted as `alike-adj` (predicative only; `alike-adv` queued). Then `--source family`: eleven verbs, *bomb, bone, book, boot, boss, bottle, box, brainstorm, branch, bridge, bubble*. All 24 transcriptions verified. Panel: 35 issues, 20 blocking; 27 applied, 8 rejected (American *boot* /but/ by the length-mark fence; *boss* /bɔs/ kept as panel and CMU agreed; British label on *book* in sport kept). Applied: `book-v` police and sport senses, `boot-v` clamp sense labelled American, three learner-error notes narrowed. Spend US$0.35; day US$3.42.

@@ -6,7 +6,7 @@
 
 - [conventions](conventions.md) — the schema of this knowledge base and every file format the tools read or write: slugs, shards, run ids, claims, the queue, review files, the decision ledger, the budget ledger, metrics.
 - [style-guide](style-guide.md) — the house style every drafting session reads: definitions, senses, examples, the inline marks, grammar, labels, boxes, phrases, adaptation notes, originality; three model entries (section 17).
-- [open-questions](open-questions.md) — questions for the owner with the working assumption in force.
+- [open-questions](open-questions.md) — questions for the owner with the working assumption in force; all seven answered 2026-10-05.
 
 ## Decisions (one page each; binding)
 
@@ -40,6 +40,8 @@
 - [site](decisions/site.md) — static, mobile-first, built by CI, checked by a Routine mode.
 - [inline-markup](decisions/inline-markup.md) — the owner's ruling of 2026-09-18: words named as words and quoted illustrations are marked in the prose (`**word**`, `*phrase*`); the headword in examples is marked by the site; how the seed set is converted.
 - [part-of-speech-and-consistency](decisions/part-of-speech-and-consistency.md) — one part of speech per entry, the entry agrees with itself, origin claims only in etymology, grammar exceptions named as such, pronunciation notes in plain words (from the seed-set feedback of 2026-09-18).
+- [proper-names-in-definitions](decisions/proper-names-in-definitions.md) — the owner's ruling of 2026-10-05: a closed list of proper names (`proper_names` in `schema/vocabularies.json`) may appear in definitions; `lint_vocab.py` accepts them and never queues them.
+- [reviewer-b-upgrade](decisions/reviewer-b-upgrade.md) — the owner's ruling of 2026-10-05: the `reviewer-b` role moves to the Pro-class Google model; only that role; the cap stays US$15.
 
 ## Notes (observed problems, method records, experiment results)
 
@@ -52,7 +54,7 @@
 - [review-panel-parse-failures](notes/review-panel-parse-failures.md) — `review_panel.py` recorded a hollow, zero-verdict "pass" when a reviewer's reply was truncated. Fixed 2026-09-20: `validate.py`'s `reviewed` gate now rejects a reviewer record that logged an error with zero verdicts instead of silently counting it.
 - [review-panel-decide-collisions](notes/review-panel-decide-collisions.md) — `--decide` matched the last verdict for a field/role, so two distinct issues on the same field collided in the decision ledger. Fixed 2026-09-20: `--decide --quote "<text>"` disambiguates; ambiguous with no `--quote` now errors and logs nothing.
 - [lint-vocab-pos-guess-gap](notes/lint-vocab-pos-guess-gap.md) — `lint_vocab.py --queue`'s `pos_guess` defaulted an unrecognized base form to noun with no signal it was a guess (caught when *additional*, an adjective, was queued as `additional-n`). Fixed 2026-09-20: a closed adjective-suffix list catches more cases directly; the remaining noun default is flagged in the queue row's note.  Recurred 2026-09-26: a regular plural (*packages*) queued as its own lemma.
-- [lint-vocab-proper-names](notes/lint-vocab-proper-names.md) — `lint_vocab.py --gate` fails on a proper name in a definition (no entry can exist for one); *Christian* was withdrawn 2026-10-02 because its definition needs *Jesus Christ*. Fix due a later run (an allowlist added by decision).
+- [lint-vocab-proper-names](notes/lint-vocab-proper-names.md) — `lint_vocab.py --gate` failed on a proper name in a definition (no entry can exist for one); *Christian* was withdrawn 2026-10-02 because its definition needs *Jesus Christ*. Fixed 2026-10-05 by the owner's ruling (a closed list of names).
 - [log-format-line-split](notes/log-format-line-split.md) — new `wiki/log.md` entries keep landing inside the format line on line 3, which itself contains `## [`; split three times by 2026-10-02 and repaired by hand. Fix due a later run.
 - [pronounce-check-stale-flag](notes/pronounce-check-stale-flag.md) — `pronounce_check.py` added `pronunciation-disputed` to `provenance.flags` on a disputed verdict but never removed it once a later run re-verified the transcription; caught 2026-09-20 on `nobody-pron`. Fixed 2026-09-20: a new `update_disputed_flag` helper syncs the flag once both varieties are checked.
 - [review-panel-decide-substring-collision](notes/review-panel-decide-substring-collision.md) — `--decide --quote` could not disambiguate two issues on the same field when one's quote was a substring of the other's; caught 2026-09-20 adjudicating `pick-up-phrv`, worked around with a manual decisions.jsonl line. Fixed 2026-09-20: `--decide --index N` selects by position among the numbered candidates.

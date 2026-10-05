@@ -6,7 +6,7 @@ Code refers to roles; only this file names model slugs. Every slug below was che
 |---|---|---|---|---|
 | drafter | anthropic/claude-sonnet-5 | 2026-09-16 | 2.00 / 10.00 | Drafts in-session. Used through OpenRouter only in the pronunciation experiment and when `drafter_via_openrouter` is true. |
 | reviewer-a | openai/gpt-5.6-terra | 2026-09-16 | 2.00 / 12.00 | Field-by-field reviewer, OpenAI. |
-| reviewer-b | google/gemini-3.8-flash | 2026-09-16 | 0.75 / 3.75 | Field-by-field reviewer, Google. Upgrade candidate if its precision is low: google/gemini-3.1-pro-preview (2.00 / 12.00). |
+| reviewer-b | google/gemini-3.1-pro-preview | 2026-10-05 | 2.00 / 12.00 | Field-by-field reviewer, Google. Upgraded from google/gemini-3.8-flash (0.75 / 3.75) by the owner's ruling of 2026-10-05; precision is reported in the lint passes from then on. |
 | pronunciation-1 | openai/gpt-5.6-terra | 2026-09-16 | 2.00 / 12.00 | Pronunciation panel member. |
 | pronunciation-2 | google/gemini-3.8-flash | 2026-09-16 | 0.75 / 3.75 | Pronunciation panel member. |
 | pronunciation-3 | deepseek/deepseek-v4-pro | 2026-09-16 | 1.60 / 3.20 | Pronunciation panel member, DeepSeek; kept or dropped by the result in `wiki/notes/pronunciation-model-test-v1.md`. |

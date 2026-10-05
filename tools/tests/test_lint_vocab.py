@@ -154,6 +154,11 @@ class CheckTests(TempRepo):
         self.assertEqual(res["violations"], [])
         self.assertEqual([(v["field"], v["lemma"]) for v in res["relaxed"]], [("senses[0].definition", "liquid")])
 
+    def test_listed_proper_names_pass(self):
+        self.assertIn("christ", self.lem.proper_names)        # schema/vocabularies.json proper_names
+        self.assertEqual(lint_vocab.out_of_vocabulary(self.lem, "the sea of Jesus Christ"), [])
+        self.assertEqual([lemma for lemma, _ in lint_vocab.out_of_vocabulary(self.lem, "the sea of Zeus")], ["zeus"])
+
     def test_multi_word_lemma_and_hyphen_parts(self):
         lem = lint_vocab.Lemmatizer({"in spite of", "well-known"}, root=self.root)
         self.assertEqual(lint_vocab.out_of_vocabulary(lem, "in spite of the sea"), [])
