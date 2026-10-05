@@ -70,5 +70,18 @@ class DisputedFlagTests(unittest.TestCase):
         self.assertEqual(flags, [])
 
 
+class OwnerRulingTests(unittest.TestCase):
+    def test_ruling_applies_only_to_the_ruled_ipa(self):
+        cb = pc.with_owner_ruling("agreement:0/3", "2026-10-05", "ˈlɔɪ.ə")
+        self.assertEqual(cb, "agreement:0/3;owner-ruling:2026-10-05:ˈlɔɪ.ə")
+        self.assertEqual(pc.owner_ruling(cb, "ˈlɔɪ.ə"), "2026-10-05")
+        self.assertIsNone(pc.owner_ruling(cb, "ˈlɔː.jə"))
+        self.assertIsNone(pc.owner_ruling("agreement:2/3", "ˈlɔɪ.ə"))
+
+    def test_a_new_ruling_replaces_the_old(self):
+        cb = pc.with_owner_ruling("agreement:1/3;owner-ruling:2026-10-05:a", "2026-11-01", "b")
+        self.assertEqual(cb, "agreement:1/3;owner-ruling:2026-11-01:b")
+
+
 if __name__ == "__main__":
     unittest.main()

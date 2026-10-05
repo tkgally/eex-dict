@@ -10,8 +10,8 @@
     "american": {
       "ipa": "pɝ",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:1/4;cmudict:agree",
-      "status": "disputed"
+      "checked_by": "agreement:2/4;cmudict:agree",
+      "status": "verified"
     },
     "british": {
       "ipa": "pɜː",
@@ -19,9 +19,15 @@
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
-    "variants": [],
+    "variants": [
+      {
+        "ipa": "pɚ",
+        "region": "American",
+        "note": "the weak form, usual inside a phrase"
+      }
+    ],
     "audio": null,
-    "notes": null
+    "notes": "Inside a phrase it is usually weak, like the **er** of **teacher**: *ten dollars per hour*. The full form, like **purr**, is used when the word is said alone or stressed."
   },
   "inflections": {
     "forms": {},
@@ -200,7 +206,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-20T21:35:16Z",
-    "modified": "2026-09-26T22:45:16Z",
+    "modified": "2026-10-05T08:57:46Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260920T213316Z-u156ny",
     "reviews": [
@@ -243,12 +249,30 @@
         "ok": 32,
         "issues": 2,
         "blocking": 0
+      },
+      {
+        "run_id": "20261005T085206Z-cp7jp7",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-05",
+        "file": "reviews/20261005T085206Z-cp7jp7/per-prep.json",
+        "ok": 34,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261005T085206Z-cp7jp7",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-05",
+        "file": "reviews/20261005T085206Z-cp7jp7/per-prep.json",
+        "ok": 34,
+        "issues": 0,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
-    "flags": [
-      "pronunciation-disputed"
-    ],
+    "flags": [],
     "notes": null
   }
 }

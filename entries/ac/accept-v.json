@@ -10,18 +10,24 @@
     "american": {
       "ipa": "æk.ˈsɛpt",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "æk.ˈsept",
+      "ipa": "ək.ˈsept",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:1/3",
-      "status": "disputed"
+      "checked_by": "agreement:3/3",
+      "status": "verified"
     },
-    "variants": [],
+    "variants": [
+      {
+        "ipa": "æk.ˈsept",
+        "region": "British",
+        "note": "with the **a** of **cat**, heard in careful speech"
+      }
+    ],
     "audio": null,
-    "notes": null
+    "notes": "The stress falls on the second part: *ak-SEPT*. British speakers often make the first part weak: *uhk-SEPT*."
   },
   "inflections": {
     "forms": {
@@ -182,7 +188,7 @@
         },
         {
           "slug": "live-v",
-          "note": null
+          "note": "in the phrase **live with** something: *learn to live with the pain*"
         }
       ],
       "antonyms": [],
@@ -304,7 +310,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-20T21:35:16Z",
-    "modified": "2026-10-02T20:53:45Z",
+    "modified": "2026-10-05T09:01:49Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260920T213316Z-u156ny",
     "reviews": [
@@ -347,12 +353,30 @@
         "ok": 43,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261005T085206Z-cp7jp7",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-05",
+        "file": "reviews/20261005T085206Z-cp7jp7/accept-v.json",
+        "ok": 42,
+        "issues": 1,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261005T085206Z-cp7jp7",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-05",
+        "file": "reviews/20261005T085206Z-cp7jp7/accept-v.json",
+        "ok": 42,
+        "issues": 1,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
-    "flags": [
-      "pronunciation-disputed"
-    ],
+    "flags": [],
     "notes": null
   }
 }

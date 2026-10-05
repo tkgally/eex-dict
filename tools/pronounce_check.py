@@ -5,6 +5,12 @@ transcription's ``status`` and ``checked_by``.
 
     python3 tools/pronounce_check.py <slug> [<slug> ...] [--threshold 2] [--no-cmu] [--dry-run]
     python3 tools/pronounce_check.py --panel-only <slug> ...      # skip the CMU consultation
+    python3 tools/pronounce_check.py <slug> --owner-ruling 2026-10-05 --variety british
+        # the owner settled a dispute: mark that transcription verified, no paid call
+
+An owner's ruling is recorded in ``checked_by`` as ``owner-ruling:<date>:<ipa>``.  A later
+check keeps the transcription ``verified`` while its ``ipa`` is still the one the owner
+ruled on; once the ipa changes, the ruling no longer applies and the panel decides again.
 
 The rule (wiki/decisions/pronunciation-pipeline.md, pre-registered in
 experiments/pronunciation-model-test-v1/design.md section 6): votes are the panel
@@ -247,6 +253,48 @@ def cmu_votes(word: str, cmu: dict[str, list[str]] | None, drafter: str) -> str:
     return forms[0]
 
 
+OWNER_RE = re.compile(r"owner-ruling:(\d{4}-\d{2}-\d{2}):(.+)$")
+
+
+def owner_ruling(checked_by: str, ipa: str) -> str | None:
+    """The date of an owner's ruling recorded in ``checked_by`` for exactly this ``ipa``, else None."""
+    for part in (checked_by or "").split(";"):
+        m = OWNER_RE.match(part)
+        if m and m.group(2) == ipa:
+            return m.group(1)
+    return None
+
+
+def with_owner_ruling(checked_by: str, date: str, ipa: str) -> str:
+    """``checked_by`` with any earlier owner ruling replaced by one for ``ipa`` on ``date``."""
+    parts = [x for x in (checked_by or "").split(";") if x and not OWNER_RE.match(x)]
+    return ";".join(parts + [f"owner-ruling:{date}:{ipa}"])
+
+
+def apply_owner_ruling(slugs, variety: str, date: str, dry_run: bool = False) -> int:
+    import eexlib
+    for slug in slugs:
+        p = eexlib.entry_path(slug)
+        if not p.exists():
+            print(f"ERROR no such entry: {slug}")
+            return 2
+        e = eexlib.load_json(p)
+        tr = e["pronunciation"].get(variety)
+        if not tr:
+            print(f"ERROR {slug} has no {variety} transcription")
+            return 2
+        tr["status"], tr["checked_by"] = "verified", with_owner_ruling(tr.get("checked_by", ""), date, tr["ipa"])
+        print(f"{slug:24s} {variety:9s} {tr['ipa']:22s} -> verified   {tr['checked_by']}")
+        both = [t for t in (e["pronunciation"].get(v) for v in ("american", "british")) if isinstance(t, dict)]
+        for kind in ("disputed", "unverified"):
+            update_disputed_flag(e["provenance"].setdefault("flags", []),
+                                 any(t.get("status") == kind for t in both), flag=f"pronunciation-{kind}")
+        if not dry_run:
+            e["provenance"]["modified"] = eexlib.utcnow_iso()
+            eexlib.save_json(p, e)
+    return 0
+
+
 # --- CLI ----------------------------------------------------------------------
 
 def main() -> int:
@@ -256,7 +304,13 @@ def main() -> int:
     ap.add_argument("--no-cmu", "--panel-only", action="store_true", dest="no_cmu")
     ap.add_argument("--dry-run", action="store_true", help="print verdicts; write nothing")
     ap.add_argument("--roles", default=",".join(PANEL_ROLES))
+    ap.add_argument("--owner-ruling", metavar="DATE", help="record an owner's ruling (with --variety); no panel call")
+    ap.add_argument("--variety", choices=["american", "british"])
     a = ap.parse_args()
+    if a.owner_ruling:
+        if not a.variety or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", a.owner_ruling):
+            ap.error("--owner-ruling needs a YYYY-MM-DD date and --variety")
+        return apply_owner_ruling(a.slugs, a.variety, a.owner_ruling, a.dry_run)
     import eexlib
     entries = []
     for slug in a.slugs:
@@ -287,6 +341,9 @@ def main() -> int:
             if variety == "american" and cmu is not None and " " not in key[0]:
                 votes["cmudict"] = cmu_votes(key[0], cmu, tr["ipa"])
             status, checked_by = verdict(tr["ipa"], votes, variety, a.threshold)
+            ruled = owner_ruling(tr.get("checked_by", ""), tr["ipa"])
+            if ruled and status != "verified":
+                status, checked_by = "verified", with_owner_ruling(checked_by, ruled, tr["ipa"])
             print(f"{e['slug']:24s} {variety:9s} {tr['ipa']:22s} -> {status:10s} {checked_by}")
             any_checked = True
             if status == "disputed":
