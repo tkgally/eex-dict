@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] review | Second reading of twelve entries, angle to basis
+
+Second cycle of the 00:44 UTC run. Second panel round for the twelve oldest one-round entries (created 2026-09-30 13:17-13:29): *angle-v, attend-v, author-v, authorize-v, avoid-v, baby-v, behave-v, drawing-n, painting-n, ball-n, band-n, basis-n*. Added by hand before the panel: a sport sense of *ball* (*a long ball*) and a learner error on *painting* (*a paint of the sea*). Panel: 20 issues, 13 blocking; 7 applied, 6 rejected (the fishing *angle* is a separate homograph; *usually passive* is a listed pattern; *attention* stays in *attend*'s family; *It takes balls* agrees with *it*). Applied: *drawing* no longer limited to pencil and pen; the ball of the hand; the marching-band subsense; the group sense of *band* now takes a singular or plural verb. Minor: 1 applied, 6 rejected (quoted-headword fence). Spend US$0.41.
+
 ## [2026-10-05] build | Twelve nouns, justice to land
 
 First cycle of the 00:44 UTC run. Twelve band 1 nouns drafted and reviewed: *justice, key, keyboard, kind, king, kitchen, knee, knife, knowledge, lake, lamp, land*. Inflections from rules (*knives* from the exceptions table; *knowledge* no plural) and all 24 transcriptions verified. Panel: 51 issues, 37 blocking; 31 blocking applied, 6 rejected (the *kind of* hedge stays a phrase of the noun by the keyword fence; hedged "some languages" adaptation claims kept); 6 minor applied, 7 rejected. Notable fixes: *in kind* split into *in kind* and *respond in kind*; the chess sense of *king* no longer says "caught"; *knee* "lap" sense not British; the staff reading taken out of *kitchen*. Eight definitions reworded for the defining vocabulary (*piano*, *chess*, *region*, *defeat*). One back-link moved: `land-n` on `country-n` from "outside towns" to "nation". Spend US$0.49.
