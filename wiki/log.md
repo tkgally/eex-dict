@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | ten nouns, motor to musician
+
+Second cycle of the 20:43 UTC run. `claim.py --from-queue` now starts with nouns (the auxiliaries are done): *motor, move, movement, movie, mud, murder, muscle, museum, music, musician*. All 20 transcriptions and the inflections verified. Panel: 30 decisions, 22 applied, 8 rejected. Main fixes: `movie-n` *the movies* split into the theater and the business; *make a move* (leave) moved to the explanation as informal British; *motor*/*engine* notes no longer claim engine is British only; *murder* usage note says killing that the law does not allow; *manslaughter* note corrected. Rejected: four flags against a double-asterisk headword opening an adaptation note (house practice), and *murder* "needs unlawful" (crime already says so). Back-links: `move-n` moved from `action-n` sense 1 to sense 2 (a thing someone does); `car-n` mirror of `motor-n` noted as British informal. reviewer-b partial on *move*, *music*. Spend US$0.59.
+
 ## [2026-10-05] review | do-aux split from do-v; blame to pedal
 
 First cycle of the 20:43 UTC run. Owner's ruling item 5, third and last auxiliary: new entry `do-aux` (questions and negatives; negative orders, *Don't be late*; emphasis; standing in for a verb, with short answers, tags, *so do I*; formal *Rarely do we*), learner errors *I no like it*, *Does she likes*, *Who did tell you*. `do-v` lost those senses and gained *job or study* (*What do you do?*), *everyday jobs* (*do the dishes*; the old subsense merged in), *have an effect* (*do you good*, *do damage*), *speed*, and the phrase *do well to do something*. Second reading of *blame, blanket, block, blood, alcohol, cheek, chin, pedal*: sports sense of *block*, *blood, sweat, and tears*, *cheek to cheek*, British label on *cheek* (rudeness). 29 decisions: 14 applied, 15 rejected. reviewer-b partial on five. Spend US$0.75.
