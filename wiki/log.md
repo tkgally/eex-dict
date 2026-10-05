@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] lint | Forty-first lint pass
+
+Fourth and last cycle of the 00:44 UTC run, forced (five runs since the last lint). Caps, links, the gate, and the unit tests clean. `crossref --all --apply` wrote eight back-links onto this run's new nouns; six were right, two moved by hand: `act-n` on `law-n` from "system of rules" to "one rule", and `information-n` on `knowledge-n` from "what is known" to "what you know" (its note is about what a person understands). No TYPE-MISMATCH lines. `lint_vocab --all --queue` queued nothing new; `claim.py --prune` removed three spent claim files. Precision: no new family under the line; the two held pairs unchanged in standing ([note](notes/reviewer-precision.md)). Curator file: no duplicates; open questions unchanged. Spend US$0.
+
 ## [2026-10-05] build | Twelve nouns, lane to length
 
 Third cycle of the 00:44 UTC run. Twelve band 1 nouns drafted and reviewed: *lane, language, laugh, law, lawyer, layer, leader, leaf, leather, leg, leisure, length*. Keyword rule: *break a leg* (from `break-v`) and *shake a leg* (from `shake-v`) moved to `leg-n`. Inflections from rules (*leaves*; *leather* and *leisure* no plural). 23 of 24 transcriptions verified; British `lawyer-n` disputed 0/3 (likely *LAW-yuh*): draft kept, ˈlɔː.jə added as a variant, flagged, curator line. Panel: 40 issues, 24 blocking; 18 applied, 6 rejected (*leathers* against the no-plural inflection is the known `inflect-uncountable-plural-gap`; *law* study and profession kept as one sense; *leaf* American length mark by fence); minor 8 applied, 8 rejected. Applied: *air lane* dropped; *language* covers signed languages; *laugh* fun sense split with a subsense for a fun person; *length* race sense; *lawyer* solicitor and barrister note hedged. Two back-links (`boss-n`, `fur-n`) checked, both right. Spend US$0.50.
