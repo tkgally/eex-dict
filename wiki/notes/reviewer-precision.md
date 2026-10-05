@@ -212,3 +212,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (4149/5816); `reviewer-b
 ## 2026-10-05: forty-second lint pass
 
 Seven disabled pairs (`reviewer-a` `pronunciation` joined them by the owner's ruling, frozen at 0.25 over 217). `reviewer-a` `ALL` 0.71 (4244/5958); `reviewer-b` `ALL` 0.54 (1012/1879). `reviewer-b` `spelling-or-format` 0.27 (155/568), kept live by the owner: measure again after a few cycles of the new prompt line. Nothing else live crossed under 30 percent at twenty or more decisions; `reviewer-b` `phrase` 0.37 (35). Upgraded reviewer-b, decisions from 2026-10-05 09:00 only: 2 applied of 8 (0.25), six of the rejections on the keyword-rule fence. Too few to judge; it also answered three of eleven entries with only its issues ([note](reviewer-b-partial-verdicts.md)).
+
+## 2026-10-05: forty-third lint pass, no new switch-offs
+
+Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (4317/6054); `reviewer-b` `ALL` 0.54 (1018/1895). `reviewer-b` `spelling-or-format` 0.27 (155/568), unchanged since the last pass (no new decisions in that family), so the new prompt line cannot be judged yet. `reviewer-b` `phrase` 0.36 (36). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 8 applied of 24 (0.33). Nothing else live is under 30 percent at twenty or more decisions; under twenty: `reviewer-b` `inflection` 0.08 (12).
