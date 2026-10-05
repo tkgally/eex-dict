@@ -1,0 +1,38 @@
+Owner rulings, 2026-10-05 (given by Tom one at a time in an interactive session between scheduled runs; written down by that session, which changed nothing else)
+
+Process each item as usual: act on it, or record the answer (wiki/open-questions.md "Answered", with the date and the files updated; resolved curator lines move under "## Resolved" in reviews/needs_curator.txt with the ruling). Every change to a model-owned field goes through the full pipeline, entry by entry, under the normal per-run caps. Several items are multi-run work; queue what does not fit in one cycle in NEXT.md.
+
+(1) Stale branches. The owner deleted claude/wonderful-bardeen-ftblhl, claude/wonderful-bardeen-vka7g0, and claude/wonderful-bardeen-sej1s0 (all their content was already on main). Checked afterwards: the remote holds only main. Close the three prune-branch curator lines.
+
+(2) Reviewer families under the 30-percent line.
+- reviewer-a pronunciation (0.26 over 208): switch it off now (add it to DISABLED_FAMILIES in tools/review_panel.py). The pronunciation panel and the CMU check in tools/pronounce_check.py remain the check on transcriptions.
+- reviewer-b spelling-or-format (0.27 over 554): keep it live. Its accepted flags are real typo and format catches that nothing else makes. Strengthen the reviewer prompt's line on the quoted-headword convention in adaptation notes (an opening quoted headword is allowed), then re-measure in later lint passes. If it stays under the line after that, raise it again.
+Close both curator lines with this ruling.
+
+(3) Proper names in definitions (open question 7): yes. Allow a short, closed list of proper names in definitions: a logged decision and a closed vocabulary, starting with Jesus Christ, Muhammad, and Buddha, a name added only when an entry needs it. tools/lint_vocab.py --gate accepts listed names; --queue never queues them as headwords. Then christian-n and the skipped words (Christianity, Muslim, Buddhist, Islam, Judaism) may be built. See wiki/notes/lint-vocab-proper-names.md.
+
+(4) Infinitive to (open question 6): yes. Add a part-of-speech value "inf" (label: infinitive marker) to schema/vocabularies.json, as a logged decision in the same pull request as the first entry that uses it, and build to-inf as a normal entry: to + base verb, in order to, too ... to, want/need/try to, clause-final to (I didn't want to), and the learner errors (I want go; I must to go) in the learner-error box. Cross-reference to-prep for look forward to + -ing. Remove the fence in NEXT.md that says not to add it, and the curator line.
+
+(5) be, have, do, one (open question 4): split them. New entries be-aux, have-aux, do-aux, and one-pron, one per run in review mode, each through the full pipeline. Move the auxiliary senses (be: -ing tenses, passive, be to for plans and orders; have: perfect tenses; do: questions and negatives, emphasis, standing in for a verb) and the pronoun uses of one out of be-v, have-v, do-v, and one-num, with cross-references both ways. Reset the four queue rows now marked duplicate (be aux, have aux, do aux, one pron).
+
+(6) times-prep: move sense 2, the multiplier (three times faster, ten times as much), to time-n as a noun sense used after a number in comparisons. times-prep keeps only "multiplied by". Cross-references both ways; clear the grammar-disputed flag; close the curator line.
+
+(7) Pronunciation disputes. Approved as follows; a review run makes the edits through the pipeline, then clears the pronunciation-disputed flags and closes each curator line:
+- themselves-pron, British: change to ðəmˈselvz; mention the strong form with ðem- in the notes.
+- accept-v, British: change to əkˈsept; ækˈsept as a variant.
+- beyond-prep, British: change to bɪˈjɒnd.
+- several-det, British: keep ˈsev.rəl; add ˈsev.ər.əl as a variant.
+- ourselves-pron, American: keep; add ɑrˈsɛlvz and aʊ.ɚˈsɛlvz as variants.
+- per-prep, American: keep the strong citation form pɝ; note the weak form pɚ.
+- adult-n and adult-adj, American: keep ˈæd.ʌlt; add əˈdʌlt as a variant.
+- admire-v, American: keep as it is.
+- inside-n: keep ɪn.ˈsaɪd; add ˈɪn.saɪd as a variant.
+- grandfather-n, grandmother-n, British: keep (the forms without d are already variants).
+- lawyer-n, British: keep (ˈlɔː.jə is already a variant).
+- according-to-prep: close; the difference is only the word-break punctuation (wiki/notes/pronounce-check-word-break.md).
+
+(8) beat-v: change the note in schema/inflection-exceptions.json to "also beat as past participle, especially in American English, mainly informal; usual in can't be beat". The next review run checks that beat-v says the same, then clears the inflection-disputed flag. Close the curator line.
+
+(9) Reviewer-b tier (open question 2): upgrade reviewer-b now to the Pro-class candidate named in config/models.md (google/gemini-3.1-pro-preview, last verified 2026-09-16). Re-verify the slug against the OpenRouter model list first; if it is gone, use the nearest current Gemini Pro model and log it. Change only the reviewer-b role; pronunciation-2 and wordlist-2 stay as they are. The daily cap stays US$15; the owner accepts the higher spend. Update config/models.md and the price estimate the tools use, log the decision, and report reviewer-b's precision after the change in the lint passes.
+
+(10) Confirmed as standing rulings (move to Answered): open question 1, drafting stays in-session (drafter_via_openrouter stays false); open question 3, queue order; open question 5, the marks stay bold and italic as they are.
