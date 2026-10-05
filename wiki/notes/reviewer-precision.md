@@ -204,3 +204,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (4055/5678); `reviewer-b
 ## 2026-10-05: forty-first lint pass, no new switch-offs
 
 Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (4149/5816); `reviewer-b` `ALL` 0.54 (993/1832). Two pairs stay held for the owner (`reviews/needs_curator.txt`): `reviewer-a` `pronunciation` 0.26 (55/208), one more length-mark rejection (*leaf*), and `reviewer-b` `spelling-or-format` 0.27 (152/554), still mostly the quoted-headword fence. `reviewer-b` `phrase` 0.33 (11/33) stays above the line. No other live family at twenty or more decisions is under 30 percent. Under twenty: `reviewer-b` `inflection` 0.10 (10).
+
+## 2026-10-05: the owner's rulings
+
+`reviewer-a` `pronunciation` (0.26 over 208) is switched off (seven disabled pairs); the pronunciation panel and the CMU check stay the check on transcriptions. `reviewer-b` `spelling-or-format` (0.27 over 554) stays live: the reviewer prompt now names the opening quoted headword of an adaptation note as house style; re-measure it, and raise it with the owner again if it stays under the line. `reviewer-b` moved to the Pro-class Google model the same day ([reviewer-b-upgrade](../decisions/reviewer-b-upgrade.md)): from the next pass, report its precision on decisions dated 2026-10-05 or later beside the all-time figure.

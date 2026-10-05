@@ -50,12 +50,12 @@ class TestFamilySwitchOff(unittest.TestCase):
         self.assertEqual(v["family"], family)
 
     def test_unrelated_family_is_unaffected(self):
-        verdicts, err = review_panel.normalize_verdicts(raw_reply("senses[0].examples", "pronunciation"),
+        verdicts, err = review_panel.normalize_verdicts(raw_reply("senses[0].examples", "collocation"),
                                                           FIELDS, "reviewer-a")
         self.assertIsNone(err)
         v = next(v for v in verdicts if v["field"] == "senses[0].examples")
         self.assertEqual(v["verdict"], "issue")
-        self.assertEqual(v["family"], "pronunciation")
+        self.assertEqual(v["family"], "collocation")
 
 
 class TestDecideCollisions(unittest.TestCase):

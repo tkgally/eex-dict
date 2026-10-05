@@ -290,6 +290,7 @@ class Lemmatizer:
                     _add_form(self.forms, form, headword, "variant")
         else:
             self.known.update(_norm(h) for h in headwords if isinstance(h, str) and _norm(h))
+        self.proper_names = load_proper_names(self.root)
         self._load_tables()
         for form, lemma in BUILTIN_FORMS.items():
             _add_form(self.forms, form, lemma, None)
@@ -501,6 +502,17 @@ def tokenize(text):
     return out
 
 
+def load_proper_names(root):
+    """The lowercase word tokens of the closed ``proper_names`` vocabulary (owner's ruling of
+    2026-10-05): a definition may use them, and they are never queued as headwords."""
+    try:
+        vocab = eexlib.load_json(Path(root) / "schema" / "vocabularies.json")
+    except (OSError, ValueError):
+        return frozenset()
+    table = vocab.get("proper_names") or {}
+    return frozenset(_norm(word) for name in table if not name.startswith("_") for word in name.split())
+
+
 def out_of_vocabulary(lem, text, skip=frozenset()):
     """[(lemma, kind), ...] for every token of ``text`` that is neither a vocabulary word nor a known
     headword, nor a form of one.  ``kind`` says how the lemma was reached (None when unknown)."""
@@ -513,7 +525,7 @@ def out_of_vocabulary(lem, text, skip=frozenset()):
             i += n
             continue
         for part in lem.parts(tokens[i]):
-            if part in skip or len(part) < 2:
+            if part in skip or len(part) < 2 or part in getattr(lem, "proper_names", ()):
                 continue
             found = lem.resolve(part)
             if not found:

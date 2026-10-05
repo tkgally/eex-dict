@@ -42,6 +42,7 @@ DISABLED_FAMILIES = {
     ("reviewer-a", "grammar-code"),     # 0.27 over 75
     ("reviewer-a", "sense-structure"),  # 0.29 over 48
     ("reviewer-a", "inflection"),       # 0.05 over 21; switched off by the 2026-09-28 lint run
+    ("reviewer-a", "pronunciation"),    # 0.26 over 208; switched off by the owner's ruling of 2026-10-05
     ("reviewer-b", "example-policy"),   # 0.05 over 83
     ("reviewer-b", "explanation"),      # 0.24 over 21
 }
@@ -58,6 +59,7 @@ House rules you check against:
 - Collocations must be genuinely typical; cross-references must be real synonyms, antonyms, or confusable words; learner errors must be errors learners actually make and the correction must be right.
 - Notes of every kind (usage note, synonym discrimination, etymology, adaptation notes) must be factually true; adaptation notes must be language-neutral (never naming a language) and at most 60 words.
 - No abbreviations anywhere in prose: never sb, sth, e.g., i.e., etc.
+- An adaptation note may open with the headword in plain quotation marks and a colon ("feed": the one who eats is the object ...); that opening quoted headword is house style and never a spelling-or-format issue, so do not ask for it to become **feed**. Only words named later in the sentence take double asterisks.
 - Inline marks in prose are house style, not an issue: double asterisks around a word named as a word (**all** goes before a plural noun), single asterisks around a phrase quoted as an illustration (*all the students*). Example sentences carry no marks (the site marks the headword itself) unless the headword appears in an irregular or separated form, which is then marked with double asterisks. A plainly wrong mark (a quoted phrase in double asterisks, a mention in single ones) is a minor spelling-or-format issue.
 - One entry per headword and part of speech: a use that belongs to another part of speech (a determiner's pronoun use, an adjective's adverb use, a noun's verb use) is not a sense, a subsense, or an example of this entry; it belongs in its own entry, and this entry may only point to it in one clause. Flag such a use under headword_and_pos.
 - The fields of an entry must agree with each other: what an explanation, a usage note, a synonym-discrimination note, a learner-error note, or an adaptation note says about the word must not contradict another field or the grammar values. A statement about where a word comes from belongs only in the etymology field; elsewhere it is an issue.
