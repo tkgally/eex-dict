@@ -180,5 +180,28 @@ class RerunProvenanceTest(unittest.TestCase):
         self.assertEqual(lines[-1]["ok"], 2)
 
 
+class PartialVerdictsTest(unittest.TestCase):
+    """reviewer-b's partial replies (wiki/notes/reviewer-b-partial-verdicts.md): the prompt names the
+    required count, and a --roles re-run keeps the other role's partial record."""
+
+    def test_prompt_states_the_required_number_of_verdicts(self):
+        entry = {"slug": "x-n", "headword": "x", "pos": "n", "senses": [{"examples": []}], "phrases": [], "provenance": {}}
+        n = len(review_panel.checklist(entry))
+        self.assertIn(f"at least {n} objects", review_panel.user_prompt(entry))
+
+    def test_merge_keeps_partial_record_of_other_role(self):
+        old = [{"role": "reviewer-a", "verdicts": [{"verdict": "issue"}], "error": "no verdict for 9 field(s)"},
+               {"role": "reviewer-b", "verdicts": [], "error": "no verdicts list in the reply"}]
+        new = [{"role": "reviewer-b", "verdicts": [{"verdict": "ok"}], "error": None}]
+        merged = review_panel.merge_reviewers(old, new)
+        self.assertEqual([r["role"] for r in merged], ["reviewer-a", "reviewer-b"])
+        self.assertIsNone(merged[1]["error"])
+
+    def test_merge_drops_empty_record_of_other_role(self):
+        old = [{"role": "reviewer-a", "verdicts": [], "error": "no verdicts list in the reply"}]
+        new = [{"role": "reviewer-b", "verdicts": [{"verdict": "ok"}], "error": None}]
+        self.assertEqual([r["role"] for r in review_panel.merge_reviewers(old, new)], ["reviewer-b"])
+
+
 if __name__ == "__main__":
     unittest.main()

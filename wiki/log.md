@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] lint | Forty-fourth lint pass; reviewer-b partial-verdict fix
+
+Third cycle of the 20:43 UTC run (forced lint). No paid calls. Caps and links clean. `crossref --all --apply` added seven back-links on six entries (*mind* from *body* and *head*, *milk* from *cream*, *middle* from *heart*, *mouth* from *lip*, *moment* from *time*, *birthday* family from *day*); all seven checked and on the right sense. No type mismatches. `claim.py --prune` cleared four claim files. Precision ([note](notes/reviewer-precision.md)): no new switch-offs; upgraded reviewer-b 0.44 since 09:00, its `spelling-or-format` 6 of 9 since the new prompt line. Tool fix, logged reason: [reviewer-b-partial-verdicts](notes/reviewer-b-partial-verdicts.md) recurred in every cycle today (up to six of ten entries), so `review_panel.py` now states the required verdict count in the prompt and keeps the other role's partial record on a `--roles` re-run; three unit tests. Index, open questions, and curator file checked; nothing stale. Next lint due in about five runs.
+
 ## [2026-10-05] build | ten nouns, motor to musician
 
 Second cycle of the 20:43 UTC run. `claim.py --from-queue` now starts with nouns (the auxiliaries are done): *motor, move, movement, movie, mud, murder, muscle, museum, music, musician*. All 20 transcriptions and the inflections verified. Panel: 30 decisions, 22 applied, 8 rejected. Main fixes: `movie-n` *the movies* split into the theater and the business; *make a move* (leave) moved to the explanation as informal British; *motor*/*engine* notes no longer claim engine is British only; *murder* usage note says killing that the law does not allow; *manslaughter* note corrected. Rejected: four flags against a double-asterisk headword opening an adaptation note (house practice), and *murder* "needs unlawful" (crime already says so). Back-links: `move-n` moved from `action-n` sense 1 to sense 2 (a thing someone does); `car-n` mirror of `motor-n` noted as British informal. reviewer-b partial on *move*, *music*. Spend US$0.59.

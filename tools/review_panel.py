@@ -114,7 +114,9 @@ def strip_for_review(entry: dict) -> dict:
 def user_prompt(entry: dict) -> str:
     fields = checklist(entry)
     return (
-        "Check every field of this entry. For EACH field name in the checklist return one verdict object. "
+        "Check every field of this entry. For EACH field name in the checklist return one verdict object, "
+        "including every field that is fine (verdict \"ok\"): your verdicts list must contain at least " + str(len(fields)) + " objects, "
+        "one or more per field. A reply that lists only the issues is incomplete and cannot be used. "
         "Fields: " + ", ".join(fields) + ".\n\n"
         "Return JSON of the form {\"verdicts\": [{\"field\": \"<name from the checklist>\", \"verdict\": \"ok\" | \"issue\", "
         "\"quote\": \"<exact text objected to, or null>\", \"severity\": \"blocking\" | \"minor\" | null, "
@@ -223,14 +225,19 @@ def record_provenance(entry: dict, record: dict, file: str) -> None:
             "blocking": sum(1 for v in issues if v["severity"] == "blocking")})
 
 
+def merge_reviewers(old: list[dict], new: list[dict]) -> list[dict]:
+    """Records of a re-run replace that role's earlier record; other roles' earlier records are kept when
+    they hold any verdicts, partial ones included, so their issues stay open to --report and --decide
+    (wiki/notes/reviewer-b-partial-verdicts.md, fix 3). A record with no verdicts at all is dropped."""
+    new_roles = {r["role"] for r in new}
+    return [r for r in old if r["role"] not in new_roles and r.get("verdicts")] + new
+
+
 def write_record(record: dict, entry_path: Path, entry: dict) -> Path:
     out = eexlib.ROOT / "reviews" / record["run_id"] / f"{record['slug']}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
-    if out.exists():                                   # merge: keep earlier successful records of other roles
-        old = eexlib.load_json(out)
-        new_roles = {r["role"] for r in record["reviewers"]}
-        kept = [r for r in old.get("reviewers", []) if r["role"] not in new_roles and not r.get("error")]
-        record["reviewers"] = kept + record["reviewers"]
+    if out.exists():                                   # merge: keep earlier records of other roles
+        record["reviewers"] = merge_reviewers(eexlib.load_json(out).get("reviewers", []), record["reviewers"])
     eexlib.save_json(out, record)
     record_provenance(entry, record, str(out.relative_to(eexlib.ROOT)))
     entry["provenance"]["modified"] = eexlib.utcnow_iso()

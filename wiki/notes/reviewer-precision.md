@@ -216,3 +216,7 @@ Seven disabled pairs (`reviewer-a` `pronunciation` joined them by the owner's ru
 ## 2026-10-05: forty-third lint pass, no new switch-offs
 
 Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (4317/6054); `reviewer-b` `ALL` 0.54 (1018/1895). `reviewer-b` `spelling-or-format` 0.27 (155/568), unchanged since the last pass (no new decisions in that family), so the new prompt line cannot be judged yet. `reviewer-b` `phrase` 0.36 (36). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 8 applied of 24 (0.33). Nothing else live is under 30 percent at twenty or more decisions; under twenty: `reviewer-b` `inflection` 0.08 (12).
+
+## 2026-10-05: forty-fourth lint pass, no new switch-offs
+
+Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.71; `reviewer-b` `ALL` 0.54 (1034/1923). `reviewer-b` `spelling-or-format` 0.28 (161/577): since the new prompt line it is 6 applied of 9, up from the old rate, so it stays live as the owner asked. `reviewer-b` `phrase` 0.35 (37). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 24 applied of 54 (0.44). Nothing else live is under 30 percent at twenty or more decisions; under twenty: `reviewer-b` `inflection` 0.07 (15).
