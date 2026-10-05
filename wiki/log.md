@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] lint | Forty-third lint pass
+
+Forced lint (five runs since the last). No paid calls. Caps and links clean. `crossref --all --apply` added one back-link: `air-n` (appearance or manner) put `manner-n` back on sense 1, "the way something is done"; moved by hand to sense 2, "the way someone behaves". No type mismatches. `lint_vocab --all --queue` queued nothing new; `claim.py --prune` cleared four claim files. Precision ([note](notes/reviewer-precision.md)): no new switch-offs; reviewer-a 0.71, reviewer-b 0.54; upgraded reviewer-b 8 of 24 (0.33) since 09:00. Index lists every page; no open questions; curator file: two old decline records (*additional*, *upward*, both drafted long ago) moved to Resolved, three open lines remain. One-sense signposts still 36. Next lint due in about five runs.
+
 ## [2026-10-05] build | twelve nouns, match to menu
 
 Fourth cycle of the 12:44 UTC run. Claimed by hand (the queue's pending auxiliaries left alone): *match, matter, mayor, meal, meaning, measure, measurement, meat, medicine, member, memory, menu*. Inflections verified; 23 of 24 transcriptions verified, British *medicine* disputed (panel split three ways) and flagged, with a curator line. Panel: 35 decisions (23 apply, 12 reject); fixes to *matter* (physical sense, *only a matter of time*), *memory* (computer sense), *meal*, *mayor* usage note, a *medicine* learner error (*drink your medicine* is fine). reviewer-b partial on five entries; a re-run filled three. Back-links: *action*, *competition*, *affair* moved to the right sense. *Match* (for fire) and *meal* (ground grain) are unrelated homographs, left out. Spend US$1.07.
