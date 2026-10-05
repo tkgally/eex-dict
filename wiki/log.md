@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | ten nouns, mistake to mouth
+
+Fourth cycle of the 16:43 UTC run. `claim.py` picked `do-aux` first (released), and `motor-n` and `move-n` were released to keep the cycle at ten full entries: *mistake, moment, month, mood, moon, morning, mother, mountain, mouse, mouth*. Keyword rule: *promise the moon* moved from `promise-v` to `moon-n` (`promise-v` now points there in see-also). All transcriptions verified; *mice* from the exceptions table. Reviewer-b partial or failed on three; one re-run filled *mouth*, *moon* needed a third call, *mother* stayed partial. 26 decisions: 18 applied, 8 rejected. Main fixes: *next/this/last month* and *this morning* collocations retyped as phrases (not adjective + noun); the moons of other planets no longer "round"; *mistake* in work widened. Rejected: *mother tongue* as a separate headword (kept as a phrase under the keyword). Spend US$0.80.
+
 ## [2026-10-05] review | have-aux split from have-v; bicycle to blade
 
 Third cycle of the 16:43 UTC run. Owner's ruling item 5, second part: new entry `have-aux` (perfect tenses; after modals and *to*; formal *Had I known*), with three learner errors (*I have seen him yesterday*, *should of*, *since five years*). `have-v` lost its perfect sense; its core idea, usage note, translator notes, and pronunciation note now point to `have-aux`. `do-aux` is next. Second reading of the eight oldest one-round entries: *bicycle, bike, bill, bird, birth, birthday, bit, blade*; *a bird's-eye view* added. 44 decisions: 32 applied, 12 rejected. Main fixes: *bill* restaurant check/bill claim softened; *birthday* now allows companies' birthdays; *love someone to bits* labeled British. Reviewer-b partial on five of ten (have-aux stayed partial after a re-run). `claim.py` refused `have|aux` because the entry file already existed locally; no claim file this cycle. Spend US$0.81.
