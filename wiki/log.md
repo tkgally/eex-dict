@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] closure | alike and eleven verbs, bomb to bubble
+
+Fourth and last cycle of the 04:44 UTC run. `--source closure` gave four rows: *Christian, Islam, Judaism* released unchanged (open question 7); *alike* (row guessed as a noun, used in `kind-n`) marked duplicate and drafted as `alike-adj` (predicative only; `alike-adv` queued). Then `--source family`: eleven verbs, *bomb, bone, book, boot, boss, bottle, box, brainstorm, branch, bridge, bubble*. All 24 transcriptions verified. Panel: 35 issues, 20 blocking; 27 applied, 8 rejected (American *boot* /but/ by the length-mark fence; *boss* /bɔs/ kept as panel and CMU agreed; British label on *book* in sport kept). Applied: `book-v` police and sport senses, `boot-v` clamp sense labelled American, three learner-error notes narrowed. Spend US$0.35; day US$3.42.
+
 ## [2026-10-05] build | Twelve nouns, lip to lung
 
 Third cycle of the 04:44 UTC run. Twelve band-1 nouns drafted and reviewed: *lip, list, liver, load, loan, lock, look, loss, lot, love, lunch, lung*. `lot-n` holds *a lot (of)* and *lots (of)* as a quantity noun with an explanation of agreement; adverbial *a lot* (*I like it a lot*) is pointed to `a-lot-adv`, queued at band 3 by crossref (a core word: raise or hand-claim it). All 24 transcriptions verified. Panel: 35 issues, 22 blocking; 27 applied, 8 rejected (quoted-headword fence, *make love* placement by keyword, *used to* for vocative and sign-off *love*, *lend* in `loan-n` family). Applied: region labels removed from *stiff upper lip*, *top of your lungs*, and the *lot* group sense; a wrong form taken out of italics in `loan-n`. Spend US$0.52; day US$3.07.
