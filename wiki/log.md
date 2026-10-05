@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | Twelve nouns, justice to land
+
+First cycle of the 00:44 UTC run. Twelve band 1 nouns drafted and reviewed: *justice, key, keyboard, kind, king, kitchen, knee, knife, knowledge, lake, lamp, land*. Inflections from rules (*knives* from the exceptions table; *knowledge* no plural) and all 24 transcriptions verified. Panel: 51 issues, 37 blocking; 31 blocking applied, 6 rejected (the *kind of* hedge stays a phrase of the noun by the keyword fence; hedged "some languages" adaptation claims kept); 6 minor applied, 7 rejected. Notable fixes: *in kind* split into *in kind* and *respond in kind*; the chess sense of *king* no longer says "caught"; *knee* "lap" sense not British; the staff reading taken out of *kitchen*. Eight definitions reworded for the defining vocabulary (*piano*, *chess*, *region*, *defeat*). One back-link moved: `land-n` on `country-n` from "outside towns" to "nation". Spend US$0.49.
+
 ## [2026-10-04] review | Second reading of twelve entries, audience to anger
 
 Fourth and last cycle of the 20:44 UTC run. Second panel round for the twelve oldest one-round entries: *audience, aunt, author, authority, autumn, baby, back, bacteria, bag* (created 2026-09-30 13:00) and *alphabetize, amaze, anger*. All were already full; by hand I added two idioms to `back-n` (*see the back of someone*, *the back of beyond*) and the British spelling *alphabetise* with a usage note to `alphabetize-v`. Adjudication: 24 issues (12 blocking), 8 applied, 16 rejected; six of the rejections were reviewer-b's quoted-headword flag (fence). Applied: *author* sense 2 widened to "creates or is responsible for", the chiefly British *local authority* replaced, the American label removed from *have someone's back*, *bag* sense 3 reworded. Kept: *author of a painting* as a learner error (unidiomatic), *be born* "always passive". Spend US$0.46.
