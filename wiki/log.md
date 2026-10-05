@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] review | do-aux split from do-v; blame to pedal
+
+First cycle of the 20:43 UTC run. Owner's ruling item 5, third and last auxiliary: new entry `do-aux` (questions and negatives; negative orders, *Don't be late*; emphasis; standing in for a verb, with short answers, tags, *so do I*; formal *Rarely do we*), learner errors *I no like it*, *Does she likes*, *Who did tell you*. `do-v` lost those senses and gained *job or study* (*What do you do?*), *everyday jobs* (*do the dishes*; the old subsense merged in), *have an effect* (*do you good*, *do damage*), *speed*, and the phrase *do well to do something*. Second reading of *blame, blanket, block, blood, alcohol, cheek, chin, pedal*: sports sense of *block*, *blood, sweat, and tears*, *cheek to cheek*, British label on *cheek* (rudeness). 29 decisions: 14 applied, 15 rejected. reviewer-b partial on five. Spend US$0.75.
+
 ## [2026-10-05] build | ten nouns, mistake to mouth
 
 Fourth cycle of the 16:43 UTC run. `claim.py` picked `do-aux` first (released), and `motor-n` and `move-n` were released to keep the cycle at ten full entries: *mistake, moment, month, mood, moon, morning, mother, mountain, mouse, mouth*. Keyword rule: *promise the moon* moved from `promise-v` to `moon-n` (`promise-v` now points there in see-also). All transcriptions verified; *mice* from the exceptions table. Reviewer-b partial or failed on three; one re-run filled *mouth*, *moon* needed a third call, *mother* stayed partial. 26 decisions: 18 applied, 8 rejected. Main fixes: *next/this/last month* and *this morning* collocations retyped as phrases (not adjective + noun); the moons of other planets no longer "round"; *mistake* in work widened. Rejected: *mother tongue* as a separate headword (kept as a phrase under the keyword). Spend US$0.80.
