@@ -22,7 +22,7 @@ All tools are Python 3 standard library only and run from the repository root. E
 | `python3 tools/review_panel.py <slugs>` | both reviewers, every field, closed verdicts; writes `reviews/<run-id>/<slug>.json` and the provenance record |
 | `python3 tools/review_panel.py --report <slug>` | the open issues from the latest review file |
 | `python3 tools/review_panel.py --decide <slug> --field F --role R --decision apply\|reject\|escalate --note "..."` | one adjudication line in `reviews/decisions.jsonl` |
-| `python3 tools/lint_vocab.py [files] [--changed --gate] [--all --queue]` | definition words outside the defining vocabulary with no entry; `--gate` is the CI ratchet on changed entries; `--queue` files closure candidates |
+| `python3 tools/lint_vocab.py [files] [--changed --gate] [--all --queue]` | definition words outside the defining vocabulary with no entry; `--gate` is the CI ratchet on changed entries; `--queue` files closure candidates; the words of a listed proper name (`proper_names` in `schema/vocabularies.json`) pass and are never queued |
 | `python3 tools/crossref.py [slugs] [--apply] [--queue] [--gate]` | referenced slugs exist; symmetric back-links added with `--apply`; missing targets queued |
 | `python3 tools/originality_check.py sample [--n N]` / `record <date> --file F` | the periodic originality checklist and its record in `reviews/originality/` |
 

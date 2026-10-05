@@ -208,3 +208,7 @@ Disabled pairs unchanged (six). `reviewer-a` `ALL` 0.71 (4149/5816); `reviewer-b
 ## 2026-10-05: the owner's rulings
 
 `reviewer-a` `pronunciation` (0.26 over 208) is switched off (seven disabled pairs); the pronunciation panel and the CMU check stay the check on transcriptions. `reviewer-b` `spelling-or-format` (0.27 over 554) stays live: the reviewer prompt now names the opening quoted headword of an adaptation note as house style; re-measure it, and raise it with the owner again if it stays under the line. `reviewer-b` moved to the Pro-class Google model the same day ([reviewer-b-upgrade](../decisions/reviewer-b-upgrade.md)): from the next pass, report its precision on decisions dated 2026-10-05 or later beside the all-time figure.
+
+## 2026-10-05: forty-second lint pass
+
+Seven disabled pairs (`reviewer-a` `pronunciation` joined them by the owner's ruling, frozen at 0.25 over 217). `reviewer-a` `ALL` 0.71 (4244/5958); `reviewer-b` `ALL` 0.54 (1012/1879). `reviewer-b` `spelling-or-format` 0.27 (155/568), kept live by the owner: measure again after a few cycles of the new prompt line. Nothing else live crossed under 30 percent at twenty or more decisions; `reviewer-b` `phrase` 0.37 (35). Upgraded reviewer-b, decisions from 2026-10-05 09:00 only: 2 applied of 8 (0.25), six of the rejections on the keyword-rule fence. Too few to judge; it also answered three of eleven entries with only its issues ([note](reviewer-b-partial-verdicts.md)).
