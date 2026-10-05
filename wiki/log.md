@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | Twelve nouns, lane to length
+
+Third cycle of the 00:44 UTC run. Twelve band 1 nouns drafted and reviewed: *lane, language, laugh, law, lawyer, layer, leader, leaf, leather, leg, leisure, length*. Keyword rule: *break a leg* (from `break-v`) and *shake a leg* (from `shake-v`) moved to `leg-n`. Inflections from rules (*leaves*; *leather* and *leisure* no plural). 23 of 24 transcriptions verified; British `lawyer-n` disputed 0/3 (likely *LAW-yuh*): draft kept, ˈlɔː.jə added as a variant, flagged, curator line. Panel: 40 issues, 24 blocking; 18 applied, 6 rejected (*leathers* against the no-plural inflection is the known `inflect-uncountable-plural-gap`; *law* study and profession kept as one sense; *leaf* American length mark by fence); minor 8 applied, 8 rejected. Applied: *air lane* dropped; *language* covers signed languages; *laugh* fun sense split with a subsense for a fun person; *length* race sense; *lawyer* solicitor and barrister note hedged. Two back-links (`boss-n`, `fur-n`) checked, both right. Spend US$0.50.
+
 ## [2026-10-05] review | Second reading of twelve entries, angle to basis
 
 Second cycle of the 00:44 UTC run. Second panel round for the twelve oldest one-round entries (created 2026-09-30 13:17-13:29): *angle-v, attend-v, author-v, authorize-v, avoid-v, baby-v, behave-v, drawing-n, painting-n, ball-n, band-n, basis-n*. Added by hand before the panel: a sport sense of *ball* (*a long ball*) and a learner error on *painting* (*a paint of the sea*). Panel: 20 issues, 13 blocking; 7 applied, 6 rejected (the fishing *angle* is a separate homograph; *usually passive* is a listed pattern; *attention* stays in *attend*'s family; *It takes balls* agrees with *it*). Applied: *drawing* no longer limited to pencil and pen; the ball of the hand; the marching-band subsense; the group sense of *band* now takes a singular or plural verb. Minor: 1 applied, 6 rejected (quoted-headword fence). Spend US$0.41.
