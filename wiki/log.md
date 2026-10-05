@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] review | have-aux split from have-v; bicycle to blade
+
+Third cycle of the 16:43 UTC run. Owner's ruling item 5, second part: new entry `have-aux` (perfect tenses; after modals and *to*; formal *Had I known*), with three learner errors (*I have seen him yesterday*, *should of*, *since five years*). `have-v` lost its perfect sense; its core idea, usage note, translator notes, and pronunciation note now point to `have-aux`. `do-aux` is next. Second reading of the eight oldest one-round entries: *bicycle, bike, bill, bird, birth, birthday, bit, blade*; *a bird's-eye view* added. 44 decisions: 32 applied, 12 rejected. Main fixes: *bill* restaurant check/bill claim softened; *birthday* now allows companies' birthdays; *love someone to bits* labeled British. Reviewer-b partial on five of ten (have-aux stayed partial after a re-run). `claim.py` refused `have|aux` because the entry file already existed locally; no claim file this cycle. Spend US$0.81.
+
 ## [2026-10-05] build | ten nouns, message to mirror
 
 Second cycle of the 16:43 UTC run. `claim.py` picked the pending `do-aux` and `have-aux` first; both released (owner's ruling: one per review run). Ten nouns, not twelve, because *mind* (fifteen phrases) and *minute* (six phrases, four senses) are large: *message, metal, method, middle, midnight, milk, mind, minister, minute, mirror*. All verified by the pronunciation panel and CMU. Panel: reviewer-b answered six entries with partial or no verdicts; a re-run of both roles filled *midnight*, *milk*, and *middle* (third try); *message*, *minister*, *minute* stay partial. 20 decisions: 15 applied, 5 rejected, 0 escalated. Main fix: *the minute (that)* moved from a noun sense to its own phrase. Back-links: `waist-n` got *middle* on its clothing sense (moved to the body sense); *middle*/*center* made synonyms both ways. Spend US$0.91.
