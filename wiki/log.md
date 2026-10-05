@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] review | be-aux split from be-v; bee to berry
+
+Third cycle of the 12:44 UTC run. Owner's ruling 5, first part: new entry `be-aux` (three senses: -ing tenses, passive, *be to* for plans and orders; three learner errors), moved out of `be-v`, which keeps its three linking senses with a new core idea and a pointer in the usage note, adaptation note, and see-also. Second panel round for the nine oldest one-round entries, *bee*–*berry*: added *small beer*, *belt and suspenders*, *warm the bench*, a *seat belt* learner error, collocations. Panel: 25 decisions (18 apply, 7 reject); fixes to *berry*, *bench* (core idea), *behavior*, *benefit* (British *housing benefit* replaced). reviewer-b partial again on *bee*, *beer*, *behavior*; a re-run of both roles filled *bee* only. Spend US$0.89.
+
 ## [2026-10-05] originality | eighteenth check, no rewrites
 
 Second cycle of the 12:44 UTC run (forced: every tenth run). Ten fields sampled (`reviews/originality/2026-10-05.md`); exact-phrase searches found no distinctive match: eight original, two generic overlaps (*day-n* *the other day* "a few days ago"; *drive-v* sense 2 "travel somewhere in a car", Cambridge's five-word opening). reviewer-a with reasoning on returned an empty reply at its token limit; with reasoning off it said "original" on all ten. Nothing rewritten. Spend US$0.04.
