@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | to-inf and seven religion words
+
+Fourth cycle of the 08:43 UTC run, on the owner's rulings 4 and 3. New part of speech `inf` (infinitive marker; [infinitive-marker](decisions/infinitive-marker.md)); `inflect.py` and `queue.py` learned it. Eight entries drafted and reviewed: `to-inf` (six senses: after verbs, purpose, after adjectives, after nouns, after question words, standing for a verb; learner errors *I want go*, *must to*, *for learn*), *Christian*, *Christianity*, *Islam*, *Muslim*, *Judaism*, *Buddhism*, *Buddhist*. **Moses** joined `proper_names` for *Judaism*. The pronunciation panel set the main form of `to-inf` to weak tə (full tu a variant), and set *Islam* and *Judaism*. `to-prep`'s usage note now points to `to-inf`; its review gave four more decisions. Adjudication: 11 decisions, 8 applied, 3 rejected. The row `christianity|n` kept its slug; headword capitalized in the entry. Spend US$0.49.
+
 ## [2026-10-05] lint | Forty-second lint pass
 
 Third cycle of the 08:43 UTC run, forced (six runs since the last lint). Caps, links: clean. `crossref --all --apply` made seven back-links and four type mismatches. Two back-links moved: *appearance* from `look-n` "on a face" to "appearance", *hate* from `love-n` "romantic" to "caring". The mismatches were settled as synonyms both ways (*lesson/class*, *level/floor*). `lint_vocab --all --queue`: 0 violations, nothing queued. `claim.py --prune`: three claim files. Precision: no new pair under the line. The upgraded reviewer-b was 2 of 8 on its first day, too few to judge ([reviewer-precision](notes/reviewer-precision.md)). Drift fixed: `pronunciation-pipeline` now says reviewer A's pronunciation flags are off; `tools/README.md` documents `--owner-ruling` and the proper-names list. Index, curator file (three open lines), and open questions (none open) checked. No spend.
