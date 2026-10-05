@@ -176,7 +176,12 @@
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "cart-n",
+          "note": "American English often uses **cart** on shopping websites"
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -190,7 +195,7 @@
     {
       "n": 3,
       "signpost": "basketball",
-      "definition": "the high ring that players throw the ball through to score points in some ball games",
+      "definition": "the high ring, with an open bag of string hanging below it, that players throw the ball through to score points",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -224,9 +229,8 @@
         {
           "type": "verb + noun",
           "items": [
-            "score a basket",
-            "make a basket",
-            "shoot at the basket"
+            "shoot at the basket",
+            "miss the basket"
           ]
         }
       ],
@@ -252,7 +256,15 @@
               "pattern": null
             }
           ],
-          "collocations": []
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "score a basket",
+                "make a basket"
+              ]
+            }
+          ]
         }
       ],
       "adaptation": {
@@ -266,8 +278,8 @@
     },
     {
       "n": 4,
-      "signpost": "group of prices",
-      "definition": "a fixed group of goods, or of other things such as kinds of money, whose total price is compared over time or between places",
+      "signpost": "group of goods",
+      "definition": "a fixed group of goods, or of other things such as kinds of money, that are treated together as one unit, for example to compare prices",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -321,7 +333,45 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "a-basket-case",
+      "text": "a basket case",
+      "definition": "a person who is so nervous or upset that they cannot deal with things, or a country, a company, or a system that has stopped working well",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": [
+          "disapproving"
+        ]
+      },
+      "examples": [
+        {
+          "text": "I was a basket case before my exams.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Ten years ago the company was a basket case.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
       "slug": "basketball-n",
@@ -344,7 +394,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-30T13:29:06Z",
-    "modified": "2026-09-30T13:38:14Z",
+    "modified": "2026-10-05T05:08:30Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260930T132619Z-qqfjxv",
     "reviews": [
@@ -366,6 +416,26 @@
         "file": "reviews/20260930T132619Z-qqfjxv/basket-n.json",
         "ok": 53,
         "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261005T050209Z-37z8zt",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-05",
+        "file": "reviews/20261005T050209Z-37z8zt/basket-n.json",
+        "ok": 57,
+        "issues": 4,
+        "blocking": 4
+      },
+      {
+        "run_id": "20261005T050209Z-37z8zt",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.8-flash",
+        "date": "2026-10-05",
+        "file": "reviews/20261005T050209Z-37z8zt/basket-n.json",
+        "ok": 59,
+        "issues": 2,
         "blocking": 0
       }
     ],
