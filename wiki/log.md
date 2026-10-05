@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | twelve entries, machine to material, with home and a lot
+
+First cycle of the 12:44 UTC run. The claim tool picked `be-aux`, `do-aux`, `have-aux` first; they were released (owner's ruling item 5 keeps them for review runs) and replaced by `home-adv` and `a-lot-adv` (both long flagged as core) and `material-n`. Drafted and reviewed: *machine, man, manager, manner, map, mark, market, marriage, mass, material* (nouns), *home*, *a lot* (adverbs). Inflections and all 24 transcriptions verified. Panel: 41 decisions (30 apply, 11 reject, 0 escalate); reviewer-a's main catches were *marriage* "for life" and *market* sense 4 describing only a free market. reviewer-b again answered three entries with partial verdict lists; a re-run of both roles fixed *man* and *manner*, not *a lot* (5 of 43 fields). Back-links on `crowd-n`, `lot-n`, `equipment-n`. *Mass* the church service is an unrelated homograph, left out. Spend US$1.23.
+
 ## [2026-10-05] build | to-inf and seven religion words
 
 Fourth cycle of the 08:43 UTC run, on the owner's rulings 4 and 3. New part of speech `inf` (infinitive marker; [infinitive-marker](decisions/infinitive-marker.md)); `inflect.py` and `queue.py` learned it. Eight entries drafted and reviewed: `to-inf` (six senses: after verbs, purpose, after adjectives, after nouns, after question words, standing for a verb; learner errors *I want go*, *must to*, *for learn*), *Christian*, *Christianity*, *Islam*, *Muslim*, *Judaism*, *Buddhism*, *Buddhist*. **Moses** joined `proper_names` for *Judaism*. The pronunciation panel set the main form of `to-inf` to weak tə (full tu a variant), and set *Islam* and *Judaism*. `to-prep`'s usage note now points to `to-inf`; its review gave four more decisions. Adjudication: 11 decisions, 8 applied, 3 rejected. The row `christianity|n` kept its slug; headword capitalized in the entry. Spend US$0.49.
