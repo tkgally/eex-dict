@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] build | Twelve nouns, lesson to link
+
+First cycle of the 04:44 UTC run. Twelve band-1 nouns drafted and reviewed: *lesson, letter, level, library, lid, lie, life, lift, light, limit, line, link*. `lie-n` is the untruth noun (family `lie-v-2`, see-also `lie-v` noted as a different verb). *teach someone a lesson* moved from `teach-v` to `lesson-n` under the keyword rule (`teach-v` see-also points there). All 24 transcriptions verified by the panel and CMU; inflections by rule (*lives*). Panel: 44 issues, 26 blocking; 31 applied, 13 rejected (quoted-headword fence, compounds in word family, keyword placement of *thumb a lift*, the two *lie* verbs, predicative *off limits*). `lift-n` sense 1 (*a ride*) now labelled British. Crossref queued 10 missing targets. Spend US$0.68; day US$2.09.
+
 ## [2026-10-05] lint | Forty-first lint pass
 
 Fourth and last cycle of the 00:44 UTC run, forced (five runs since the last lint). Caps, links, the gate, and the unit tests clean. `crossref --all --apply` wrote eight back-links onto this run's new nouns; six were right, two moved by hand: `act-n` on `law-n` from "system of rules" to "one rule", and `information-n` on `knowledge-n` from "what is known" to "what you know" (its note is about what a person understands). No TYPE-MISMATCH lines. `lint_vocab --all --queue` queued nothing new; `claim.py --prune` removed three spent claim files. Precision: no new family under the line; the two held pairs unchanged in standing ([note](notes/reviewer-precision.md)). Curator file: no duplicates; open questions unchanged. Spend US$0.
