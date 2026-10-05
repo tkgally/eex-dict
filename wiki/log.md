@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-05] review | Second reading of twelve entries, basket to bedroom
+
+Second cycle of the 04:44 UTC run. The twelve oldest one-round entries (*basket, bath, bathroom, battery, battle, beach, bean, beard, beat, beauty, bed, bedroom*) read by hand, then by both reviewers. Added by hand: *a basket case*, *pick your battles*, *get up on the wrong side of the bed*, *a bed of roses*, a new *beat* sense (*a short pause*), a pronunciation note on `bed-n`, bold headwords in two core ideas, `cart-n` compared with the online *basket*. Panel: 31 issues, 17 blocking; 16 applied, 15 rejected. Rejected: reviewer-a said American *beat* /bit/ is *bit* (fence: no length mark) and that *beard* and *bird* sound the same in America (they do not); quoted-headword flags; a hyphen in predicative *skin deep*. Spend US$0.46; day US$2.55.
+
 ## [2026-10-05] build | Twelve nouns, lesson to link
 
 First cycle of the 04:44 UTC run. Twelve band-1 nouns drafted and reviewed: *lesson, letter, level, library, lid, lie, life, lift, light, limit, line, link*. `lie-n` is the untruth noun (family `lie-v-2`, see-also `lie-v` noted as a different verb). *teach someone a lesson* moved from `teach-v` to `lesson-n` under the keyword rule (`teach-v` see-also points there). All 24 transcriptions verified by the panel and CMU; inflections by rule (*lives*). Panel: 44 issues, 26 blocking; 31 applied, 13 rejected (quoted-headword fence, compounds in word family, keyword placement of *thumb a lift*, the two *lie* verbs, predicative *off limits*). `lift-n` sense 1 (*a ride*) now labelled British. Crossref queued 10 missing targets. Spend US$0.68; day US$2.09.
