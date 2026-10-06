@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] build | twelve nouns partner to pay
+
+Fourth cycle of the 08:44 UTC run. Twelve band-1 nouns: *partner, party, passenger, passion, password, past, path, patience, patient, pattern, pause, pay*. Inflections and all 24 transcriptions verified (`patience-n` and `pay-n` no plural). Panel: 24 issues (21 reviewer-a, 3 reviewer-b; one reviewer-b reply cut off on `passion-n`, re-run complete); 17 applied, 7 rejected. Applied: business *partner* widened to members of firms, *party* in law widened to any agreement, *passion* (interest) no longer "the activity", *past* (someone's life) loses "secret", two weak learner errors removed (*passenger*, *password*), *solitaire* named on `patience-n` sense 2, the *pay*/*salary*/*wage* note softened. Rejected: region labels (*off the beaten path*), article-bearing collocations, *make a pause* as a non-error, *to* in verb definitions. TYPE-MISMATCH *break*/*pause* fixed by making them synonyms. Spend US$0.79; day US$8.21.
+
 ## [2026-10-06] lint | Forty-sixth lint pass; reviewer-b prompt softened
 
 Third cycle of the 08:44 UTC run. Caps and links clean. `crossref --all --apply` wrote ten back-links on five entries; three were on the wrong sense of `opinion-n` (*belief*, *idea*, *judgment* landed on the group-opinion and expert-advice senses) and were moved to sense 1; no TYPE-MISMATCH. `lint_vocab --all --queue`: 0 violations, nothing new queued. Two old claim files pruned. Precision: no new pair under 30 percent; seven disabled pairs unchanged. reviewer-b's applied issues fell from 0.26 to 0.10 per entry after the 2026-10-05 prompt fix while reviewer-a held (1.69 to 1.81); as the note planned, the review prompt keeps the field count but drops the "cannot be used" warning for a line asking for equal scrutiny on every field. Index, log, open questions, and curator lines checked (four open, no duplicates). No spend.
