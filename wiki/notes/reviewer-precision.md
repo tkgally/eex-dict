@@ -220,3 +220,7 @@ Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (4317/6054); `reviewer-b
 ## 2026-10-05: forty-fourth lint pass, no new switch-offs
 
 Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.71; `reviewer-b` `ALL` 0.54 (1034/1923). `reviewer-b` `spelling-or-format` 0.28 (161/577): since the new prompt line it is 6 applied of 9, up from the old rate, so it stays live as the owner asked. `reviewer-b` `phrase` 0.35 (37). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 24 applied of 54 (0.44). Nothing else live is under 30 percent at twenty or more decisions; under twenty: `reviewer-b` `inflection` 0.07 (15).
+
+## 2026-10-06: forty-fifth lint pass, no new switch-offs
+
+Seven disabled pairs unchanged. `reviewer-b` `ALL` 0.54 (1039/1930). `reviewer-b` `spelling-or-format` 0.28 (161/577), no new decisions since the last pass; 6 applied of 9 since the prompt line, so it stays live. `reviewer-b` `phrase` 0.35 (37). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 29 applied of 59 (0.49). Nothing else live is under 30 percent at twenty or more decisions; under twenty: `reviewer-b` `inflection` 0.07 (15).
