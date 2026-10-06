@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] build | twelve nouns noon to officer
+
+Third cycle of the 00:43 UTC run. Twelve band-1 nouns: *noon, nose, note, novel, number, nurse, nut, object, ocean, offer, office, officer*, with 20 phrases and 12 learner errors; a *number/amount* discrimination. British *object* was disputed at `ˈɒb.dʒekt` (1/3) and verified at `ˈɒb.dʒɪkt` (2/3). Panel: 34 issues; 31 applied (*novel* no longer says every event is unreal; *nuts* adjective material cut to a pointer, both reviewers; *officer* not "high position"; *number* sense 4 covers acts), 3 rejected. Eight definition words outside the list reworded. crossref put `nut-n`'s *fan* synonym on `fan-n` the machine: pointed at `fan-n-2` (still unqueued) and the mirror reverted. reviewer-b complete again. Spend US$0.94.
+
 ## [2026-10-06] review | waist to book
 
 Second cycle of the 00:43 UTC run. A second panel round for the twelve oldest one-round entries: *waist-n, babysit-v, bag-v, band-v, base-v, bathe-v, sting-v, boat-n, body-n, bomb-n, bone-n, book-n*. Before the panel: a city name removed from a *base-v* example (style breach), a reflexive *base yourself in* example added, empty collocation boxes filled in *bathe*, *body*, *bomb*, *book*, one example added to *waist*. Panel: 29 issues; 20 applied (definitions of *babysit* 2, *sting* 4, *the bomb*; *bathe* explanation now agrees with its usage note; *boat* sense 1 no longer "small"; *body* usage note), 9 rejected (*boat* ferry sense kept: own collocations; region labels per the fence). *bone dry* removed from `bone-n` phrases (both reviewers: an adjective) and queued as `bone-dry-adj`. reviewer-b again returned full verdict sets. Spend US$0.98.

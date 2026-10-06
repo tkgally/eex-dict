@@ -1,31 +1,37 @@
 {
   "schema_version": "1.0",
-  "id": "goal-n",
-  "slug": "goal-n",
-  "headword": "goal",
+  "id": "offer-n",
+  "slug": "offer-n",
+  "headword": "offer",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ɡoʊl",
+      "ipa": "ˈɔ.fɚ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ɡəʊl",
+      "ipa": "ˈɒf.ə",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
-    "variants": [],
+    "variants": [
+      {
+        "ipa": "ˈɑ.fɚ",
+        "region": "American",
+        "note": "also common, with the **o** of **hot**"
+      }
+    ],
     "audio": null,
     "notes": null
   },
   "inflections": {
     "forms": {
-      "plural": "goals"
+      "plural": "offers"
     },
     "regular": true,
     "source": "rules",
@@ -44,12 +50,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A **goal** is something you aim at: a result you want to achieve, or, in sport, the place you try to send the ball into and the point you win when it goes in.",
+  "core_idea": "An offer is a statement that you will give something or do something, or an amount you will pay, or a price lower than usual.",
   "senses": [
     {
       "n": 1,
-      "signpost": "aim",
-      "definition": "something that you hope to achieve, especially after a long time or a lot of effort",
+      "signpost": "to give or do",
+      "definition": "a statement that you are willing to give someone something or do something for them",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -67,22 +73,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "My goal is to run a marathon one day.",
+          "text": "Thanks for your offer of help.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "We set ourselves clear goals for the year.",
+          "text": "I accepted his offer to drive me home.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She finally achieved her goal of becoming a doctor.",
+          "text": "She turned down the job offer because the pay was too low.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The main goal of the plan is to cut costs.",
+          "text": "That's a very kind offer, but I can manage.",
           "note": null,
           "pattern": null
         }
@@ -91,42 +97,35 @@
         {
           "type": "verb + noun",
           "items": [
-            "set a goal",
-            "achieve a goal",
-            "reach a goal",
-            "have a goal"
+            "accept an offer",
+            "refuse an offer",
+            "turn down an offer",
+            "make an offer",
+            "take someone up on an offer"
           ]
         },
         {
           "type": "adjective + noun",
           "items": [
-            "the main goal",
-            "a long-term goal",
-            "a realistic goal",
-            "a common goal"
+            "a kind offer",
+            "a generous offer"
           ]
         },
         {
-          "type": "phrase",
+          "type": "noun + noun",
           "items": [
-            "a goal of doing something"
+            "a job offer"
+          ]
+        },
+        {
+          "type": "noun + preposition",
+          "items": [
+            "an offer of help",
+            "an offer of a job"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "aim-n",
-          "note": null
-        },
-        {
-          "slug": "target-n",
-          "note": null
-        },
-        {
-          "slug": "object-n",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -141,8 +140,8 @@
     },
     {
       "n": 2,
-      "signpost": "point in sport",
-      "definition": "a point that a team wins in some ball games when the ball goes into a particular space",
+      "signpost": "price",
+      "definition": "an amount of money that someone says they will pay for something",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -153,26 +152,24 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "sport"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "He scored two goals in the first half.",
+          "text": "They made an offer on the house, but it was too low.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Our team won by three goals to one.",
+          "text": "Someone made me an offer of five hundred dollars for the car.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "That was a great goal!",
+          "text": "We'll accept the best offer.",
           "note": null,
           "pattern": null
         }
@@ -181,20 +178,35 @@
         {
           "type": "verb + noun",
           "items": [
-            "score a goal",
-            "let in a goal"
+            "make an offer",
+            "accept an offer",
+            "reject an offer",
+            "get an offer"
           ]
         },
         {
           "type": "adjective + noun",
           "items": [
-            "the winning goal",
-            "an early goal",
-            "a late goal"
+            "a good offer",
+            "a final offer",
+            "a higher offer",
+            "a fair offer"
+          ]
+        },
+        {
+          "type": "noun + preposition",
+          "items": [
+            "an offer on something",
+            "an offer for something"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "bid-n",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -209,9 +221,9 @@
     },
     {
       "n": 3,
-      "signpost": "net in sport",
-      "definition": "the frame or the space that players try to send the ball into in some ball games",
-      "explanation": "*In goal*, with no article, means playing as the player who guards the goal; it is mainly British.",
+      "signpost": "low price",
+      "definition": "a price lower than usual, or something more that you get free when you buy something",
+      "explanation": null,
       "grammar": {
         "countability": "countable",
         "transitivity": null,
@@ -221,41 +233,39 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "sport"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "He kicked the ball into the goal.",
+          "text": "This week's special offer is two for the price of one.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The ball hit the side of the goal and went out.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Who's playing in goal today?",
+          "text": "There are some good offers in the shops this weekend.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "adjective + noun",
           "items": [
-            "in goal",
-            "in front of the goal",
-            "a shot at goal"
+            "a special offer",
+            "a good offer",
+            "a limited offer"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "deal-n",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -271,10 +281,10 @@
   ],
   "phrases": [
     {
-      "sub_id": "an-own-goal",
-      "text": "an own goal",
-      "definition": "a goal that a player scores by accident against their own team; also, something you do that harms yourself",
-      "explanation": "The second meaning, something that harms yourself, is mainly British.",
+      "sub_id": "on-offer",
+      "text": "on offer",
+      "definition": "available to be had or used",
+      "explanation": "In British English it also means *being sold at a lower price than usual*: *Coffee is on offer this week*.",
       "labels": {
         "register": [],
         "region": [],
@@ -284,12 +294,45 @@
       },
       "examples": [
         {
-          "text": "The defender scored an own goal in the last minute.",
+          "text": "There's a wide range of activities on offer at the camp.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Raising prices now would be an own goal for the company.",
+          "text": "Is that job still on offer?",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "open-to-offers",
+      "text": "open to offers",
+      "definition": "willing to listen to any amount of money someone suggests paying",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "The car is for sale, and I'm open to offers.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We'd like about ten thousand dollars, but we're open to offers.",
           "note": null,
           "pattern": null
         }
@@ -306,81 +349,73 @@
   ],
   "word_family": [
     {
-      "slug": "goalkeeper-n",
+      "slug": "offer-v",
       "form": null,
       "note": null
     },
     {
-      "slug": "goalie-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "goalpost-n",
+      "slug": "offering-n",
       "form": null,
       "note": null
     }
   ],
-  "synonym_discrimination": {
-    "words": [
-      "goal-n",
-      "aim-n",
-      "target-n"
-    ],
-    "note": "**Goal** is something you work toward over time, often a personal one: *my goal is to finish college*. **Aim** is the purpose of an action or a plan and is a little formal: *the aim of the meeting*. **Target** is usually a fixed amount or level to reach by a certain time, often a number: *a sales target*."
-  },
+  "synonym_discrimination": null,
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "He made a goal in the last minute.",
-      "correct": "He scored a goal in the last minute.",
-      "note": "In sport you **score** a goal."
+      "incorrect": "I received a job proposal from the bank.",
+      "correct": "I received a job offer from the bank.",
+      "note": "When a company offers you a job, English says **job offer**."
     },
     {
-      "incorrect": "My goal is become a doctor.",
-      "correct": "My goal is to become a doctor.",
-      "note": "After **goal is**, use **to** before the verb."
+      "incorrect": "He made me an offer for helping.",
+      "correct": "He made me an offer of help.",
+      "note": "Use **an offer of** + a noun, or **an offer to** do something."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "score-v",
+      "slug": "deal-n",
+      "note": null
+    },
+    {
+      "slug": "proposal-n",
       "note": null
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "After **my goal is**, the verb takes **to** (*my goal is to win*). In sport, the verb is **score**: *score a goal*.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-04T05:01:33Z",
-    "modified": "2026-10-06T01:23:14Z",
+    "created": "2026-10-06T01:14:25Z",
+    "modified": "2026-10-06T01:22:48Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261004T045652Z-qusupg",
+    "run_id": "20261006T011043Z-rm8z5o",
     "reviews": [
       {
-        "run_id": "20261004T045652Z-qusupg",
+        "run_id": "20261006T011043Z-rm8z5o",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-04",
-        "file": "reviews/20261004T045652Z-qusupg/goal-n.json",
-        "ok": 45,
-        "issues": 3,
-        "blocking": 3
+        "date": "2026-10-06",
+        "file": "reviews/20261006T011043Z-rm8z5o/offer-n.json",
+        "ok": 52,
+        "issues": 1,
+        "blocking": 0
       },
       {
-        "run_id": "20261004T045652Z-qusupg",
+        "run_id": "20261006T011043Z-rm8z5o",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-04",
-        "file": "reviews/20261004T045652Z-qusupg/goal-n.json",
-        "ok": 47,
-        "issues": 1,
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T011043Z-rm8z5o/offer-n.json",
+        "ok": 53,
+        "issues": 0,
         "blocking": 0
       }
     ],
