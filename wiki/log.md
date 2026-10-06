@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] review | button to care, second reading
+
+First cycle of the 12:44 UTC run. Twelve one-round nouns from 2026-10-01: *button, cabinet, cable, cake, calendar, camera, cancer, candy, capital, car, card, care*. Hand additions: `card-n` new sense *in sports* (yellow and red cards); usage notes on `cabinet-n` (American *cabinet*, British *cupboard*) and `calendar-n` (British *diary*); `camera-n` phrase *off camera*; region notes on *have your cake and eat it (too)*, *in the cards* / *on the cards*, *care of* / *in care of*; `car-n` train sense labeled American with a note on British *carriage*. Panel: 27 issues (25 reviewer-a, 2 reviewer-b), 20 blocking; 15 applied, 12 rejected, none escalated. Rejected: a British label on *on the button*, `lowercase-n` as antonym of the letter sense, the `old-fashioned` currency label, the *cable* telegram definition. Spend US$0.92; day US$9.12. Next review: *career-n*, *carpet-n*, *cartoon-n*, *case-n* and on.
+
 ## [2026-10-06] build | twelve nouns partner to pay
 
 Fourth cycle of the 08:44 UTC run. Twelve band-1 nouns: *partner, party, passenger, passion, password, past, path, patience, patient, pattern, pause, pay*. Inflections and all 24 transcriptions verified (`patience-n` and `pay-n` no plural). Panel: 24 issues (21 reviewer-a, 3 reviewer-b; one reviewer-b reply cut off on `passion-n`, re-run complete); 17 applied, 7 rejected. Applied: business *partner* widened to members of firms, *party* in law widened to any agreement, *passion* (interest) no longer "the activity", *past* (someone's life) loses "secret", two weak learner errors removed (*passenger*, *password*), *solitaire* named on `patience-n` sense 2, the *pay*/*salary*/*wage* note softened. Rejected: region labels (*off the beaten path*), article-bearing collocations, *make a pause* as a non-error, *to* in verb definitions. TYPE-MISMATCH *break*/*pause* fixed by making them synonyms. Spend US$0.79; day US$8.21.
