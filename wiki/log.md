@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] originality | twentieth check, one rewrite
+
+Second cycle of the 08:44 UTC run. Ten sampled fields (`reviews/originality/2026-10-06.md`): original 7, generic-overlap 2 (*enclose*, *examine*), rewrite 1. Search tied `joint-n` sense 3 (*a large piece of meat for cooking, usually with a bone in it*) to a learner's dictionary page; it now reads *a big piece of meat, often still on the bone, that is cooked whole in an oven and then cut into slices*. Panel re-run on `joint-n`: one issue, applied (*out of joint* now names a bone). reviewer-a, reasoning off, said "copied" on nine of ten with "quotes" that were our own wording; noted in `wiki/notes/reviewer-noise.md`. Spend about US$0.09; day US$7.42.
+
 ## [2026-10-06] review | second round for breath to butter
 
 First cycle of the 08:44 UTC run. Second panel round for the twelve oldest one-round entries: *breath, bridge, brother, brush, bucket, bug, building, burn, bus, bush, business, butter*. Added by hand first: *save your breath* and *in the same breath* (`breath-n`), a music sense (`bridge-n` 7), *funny business*, the British *beat about the bush* in an explanation; a `building-n` activity example no longer names a bridge. Panel: 34 issues (31 blocking; 32 reviewer-a, 2 reviewer-b); 13 applied, 21 rejected, 0 escalated. Applied: `building-n` activity sense widened to roads and bridges, dental bridge and *under your breath* reworded, `brother-n` sense 2 loses *literary*, `bug-n` usage note softened, `butter-n` adaptation agrees with its no-plural inflection. Rejected: region labels (house rule), explanation-field objections on form restrictions, *rain/cry buckets* as non-idioms, *to* in verb definitions. Spend US$1.04; day US$7.33. `button-n` is next.
