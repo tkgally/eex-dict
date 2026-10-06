@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] lint | Forty-sixth lint pass; reviewer-b prompt softened
+
+Third cycle of the 08:44 UTC run. Caps and links clean. `crossref --all --apply` wrote ten back-links on five entries; three were on the wrong sense of `opinion-n` (*belief*, *idea*, *judgment* landed on the group-opinion and expert-advice senses) and were moved to sense 1; no TYPE-MISMATCH. `lint_vocab --all --queue`: 0 violations, nothing new queued. Two old claim files pruned. Precision: no new pair under 30 percent; seven disabled pairs unchanged. reviewer-b's applied issues fell from 0.26 to 0.10 per entry after the 2026-10-05 prompt fix while reviewer-a held (1.69 to 1.81); as the note planned, the review prompt keeps the field count but drops the "cannot be used" warning for a line asking for equal scrutiny on every field. Index, log, open questions, and curator lines checked (four open, no duplicates). No spend.
+
 ## [2026-10-06] originality | twentieth check, one rewrite
 
 Second cycle of the 08:44 UTC run. Ten sampled fields (`reviews/originality/2026-10-06.md`): original 7, generic-overlap 2 (*enclose*, *examine*), rewrite 1. Search tied `joint-n` sense 3 (*a large piece of meat for cooking, usually with a bone in it*) to a learner's dictionary page; it now reads *a big piece of meat, often still on the bone, that is cooked whole in an oven and then cut into slices*. Panel re-run on `joint-n`: one issue, applied (*out of joint* now names a bone). reviewer-a, reasoning off, said "copied" on nine of ten with "quotes" that were our own wording; noted in `wiki/notes/reviewer-noise.md`. Spend about US$0.09; day US$7.42.
