@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] build | twelve nouns pain to part
+
+Fourth cycle of the 04:44 UTC run. Twelve band-1 nouns: *pain, paint, pair, pan, pants, paper, paragraph, parent, park, parking, parliament, part*. Inflections and all 24 transcriptions verified (`pants-n` plural only, `parking-n` no plural). Keyword rule: *no pain, no gain* moved from `gain-n` to `pain-n`. Panel: 56 issues (53 reviewer-a, 3 reviewer-b); 42 applied, 14 rejected. Applied: *on paper* split into two phrases (both reviewers), *Parliament* capitalized where it means one country's parliament, tighter definitions for three `park-n` senses, the `part-n` agreement claim replaced (both reviewers). Rejected: house collocation types (*a pair of shoes*, *in pairs*), region-label objections (*pants*, *part* in hair, exam *paper*). *baseball* moved from a definition into an explanation. Back-link `part-n` added on `role-n` sense 1 by hand. Spend US$0.92; day US$6.29.
+
 ## [2026-10-06] build | twelve nouns official to page
 
 Third cycle of the 04:44 UTC run. Twelve band-1 nouns: *official, oil, operation, opinion, opportunity, order, organ, outside, oven, owner, pack, page*. Inflections all verified; pronunciations verified except `outside-n`, where the panel prefers first-syllable stress: kept ˌaʊtˈsaɪd to match the owner's `inside-n` ruling, variant added, flagged, curator line. Panel: 45 issues, all from reviewer-a; 29 applied, 16 rejected (keyword-rule placements of *in order to*, *in order that*; region-label fence on *out of order*, *take a page from someone's book*). Six definition words outside the list replaced (*monks, nuns, piano, wolves, hunt, instruction*). Back-link `pack-n` moved to `package-n` sense 2. reviewer-b answered every field but raised no issues; its issue rate has fallen since the 2026-10-05 fix ([note](notes/reviewer-b-partial-verdicts.md)). Also: the `bottom-n` label rejection of the last cycle corrected (`polite` exists). Spend about US$0.93; day US$5.37.

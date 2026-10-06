@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "document-n",
-  "slug": "document-n",
-  "headword": "document",
+  "id": "parent-n",
+  "slug": "parent-n",
+  "headword": "parent",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈdɑk.jə.mənt",
+      "ipa": "ˈpɛr.ənt",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/4;cmudict:disagree",
+      "checked_by": "agreement:3/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈdɒk.jʊ.mənt",
+      "ipa": "ˈpeə.rənt",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:2/3",
+      "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "Three syllables, *DOCK-yuh-ment*, with the stress on the first."
+    "notes": null
   },
   "inflections": {
     "forms": {
-      "plural": "documents"
+      "plural": "parents"
     },
     "regular": true,
     "source": "rules",
@@ -33,9 +33,9 @@
     "note": null
   },
   "frequency": {
-    "band": 2,
+    "band": 1,
     "basis": "editorial",
-    "defining_vocabulary": false
+    "defining_vocabulary": true
   },
   "labels": {
     "register": [],
@@ -44,12 +44,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A **document** is a piece of writing that records information, on paper or on a computer.",
+  "core_idea": "A **parent** is one that produces or controls another: a mother or father, an animal or plant with young, or a company that owns another.",
   "senses": [
     {
       "n": 1,
-      "signpost": "official paper",
-      "definition": "an official paper that gives information or proves something",
+      "signpost": "mother or father",
+      "definition": "a person's mother or father",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -67,17 +67,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Please bring your passport and other travel documents.",
+          "text": "My parents live in a small town by the sea.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She signed the documents at the bank.",
+          "text": "She's going to be a parent for the first time.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The police found important documents in his car.",
+          "text": "Parents should read to their children.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Both of his parents are doctors.",
           "note": null,
           "pattern": null
         }
@@ -86,35 +91,33 @@
         {
           "type": "adjective + noun",
           "items": [
-            "an official document",
-            "a legal document",
-            "an important document"
+            "a single parent",
+            "a working parent",
+            "a new parent",
+            "a proud parent"
           ]
         },
         {
           "type": "verb + noun",
           "items": [
-            "sign a document",
-            "read a document",
-            "prepare a document"
+            "become a parent"
           ]
         },
         {
           "type": "noun + noun",
           "items": [
-            "travel documents",
-            "identity documents"
+            "a parent-teacher meeting"
           ]
         }
       ],
-      "synonyms": [
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [
         {
-          "slug": "paper-n",
+          "slug": "relative-n",
           "note": null
         }
       ],
-      "antonyms": [],
-      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -127,8 +130,8 @@
     },
     {
       "n": 2,
-      "signpost": "computer file",
-      "definition": "a piece of writing that you make and save on a computer",
+      "signpost": "animal or plant",
+      "definition": "an animal or a plant that has produced young animals or new plants",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -139,44 +142,29 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "computing"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Save the document before you close it.",
+          "text": "The young birds are fed by both parents.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "I'll send you the document by email.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Open a new document and type your name at the top.",
+          "text": "Seeds were taken from the parent plant.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
-          "items": [
-            "save a document",
-            "open a document",
-            "edit a document",
-            "share a document"
-          ]
-        },
-        {
           "type": "noun + noun",
           "items": [
-            "a text document"
+            "the parent plant",
+            "the parent bird"
           ]
         }
       ],
@@ -195,49 +183,44 @@
     },
     {
       "n": 3,
-      "signpost": "record",
-      "definition": "something written, filmed, or recorded that gives information about a time or an event",
+      "signpost": "company",
+      "definition": "a company that owns or controls smaller companies",
       "explanation": null,
       "grammar": {
         "countability": "countable",
         "transitivity": null,
-        "codes": [],
+        "codes": [
+          "often before another noun"
+        ],
         "patterns": []
       },
       "labels": {
-        "register": [
-          "formal"
-        ],
+        "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "business"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Her letters are a valuable document of village life fifty years ago.",
+          "text": "The bank's parent company is in another country.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The film is an honest document of their journey.",
+          "text": "The parent company decided to sell the shop.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adjective + noun",
+          "type": "noun + noun",
           "items": [
-            "a historical document",
-            "a valuable document"
-          ]
-        },
-        {
-          "type": "noun + preposition",
-          "items": [
-            "a document of something"
+            "a parent company"
           ]
         }
       ],
@@ -258,62 +241,84 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "document-v",
+      "slug": "parental-adj",
       "form": null,
       "note": null
     },
     {
-      "slug": "documentary-n",
+      "slug": "parenthood-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "documentation-n",
+      "slug": "parenting-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "grandparent-n",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
+  "usage_note": "In everyday speech, the plural **parents** is much more common than **parent**; the singular is used for one mother or father (*a single parent*) and in general statements (*every parent knows this*). **Parents** never means other relatives.",
   "learner_errors": [
     {
-      "incorrect": "I have to fill this document.",
-      "correct": "I have to fill out this form.",
-      "note": "A paper with spaces to write in is a **form**, and you **fill out** or **fill in** a form."
+      "incorrect": "All my parents came to the wedding, even my cousins.",
+      "correct": "All my relatives came to the wedding, even my cousins.",
+      "note": "**Parents** means only your mother and father; other family members are **relatives**."
     }
   ],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "mother-n",
+      "note": null
+    },
+    {
+      "slug": "father-n",
+      "note": null
+    },
+    {
+      "slug": "child-n",
+      "note": null
+    },
+    {
+      "slug": "family-n",
+      "note": null
+    }
+  ],
   "adaptation": {
     "semantic": null,
     "grammar": null,
     "culture": null,
-    "false_friends": "In some languages a word like **document** is used alone to mean an identity card. In English, **documents** is general; an identity card is an **ID** or an **ID card**.",
+    "false_friends": "In some languages a word like **parent** means any relative. In English **parents** are only a mother and a father; aunts, uncles, and cousins are **relatives**.",
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-03T17:13:37Z",
-    "modified": "2026-10-06T05:30:55Z",
+    "created": "2026-10-06T05:21:53Z",
+    "modified": "2026-10-06T05:27:02Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261003T171003Z-scyche",
+    "run_id": "20261006T051846Z-favc2y",
     "reviews": [
       {
-        "run_id": "20261003T171003Z-scyche",
+        "run_id": "20261006T051846Z-favc2y",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T171003Z-scyche/document-n.json",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T051846Z-favc2y/parent-n.json",
         "ok": 43,
         "issues": 0,
         "blocking": 0
       },
       {
-        "run_id": "20261003T171003Z-scyche",
+        "run_id": "20261006T051846Z-favc2y",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T171003Z-scyche/document-n.json",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T051846Z-favc2y/parent-n.json",
         "ok": 43,
         "issues": 0,
         "blocking": 0
