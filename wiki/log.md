@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] build | twelve nouns payment to pig
+
+Second cycle of the 12:44 UTC run. Twelve band-1 nouns: *payment, peace, performance, perfume, period, personality, pet, phone, photograph, picture, piece, pig*. Inflections and all 24 transcriptions verified (`peace-n` no plural; `perfume-n` American 2/4 with CMU agreeing). `piece-n` now holds *a piece of cake* (the target of `cake-n`'s usage note). Panel: 33 issues (32 reviewer-a, 1 reviewer-b), 27 blocking; 24 applied, 9 rejected, none escalated. `phone-n` sense 2 (*on the phone*) merged into sense 1. Rejected: a British label on `picture-n` "movie" (old-fashioned, not regional), *a pet store* as an adjective use, countable `peace-n`. Queued by crossref: `period-interj` (*I'm not going, period*), `pet-adj` (*pet project*). Spend US$0.90; day US$10.02.
+
 ## [2026-10-06] review | button to care, second reading
 
 First cycle of the 12:44 UTC run. Twelve one-round nouns from 2026-10-01: *button, cabinet, cable, cake, calendar, camera, cancer, candy, capital, car, card, care*. Hand additions: `card-n` new sense *in sports* (yellow and red cards); usage notes on `cabinet-n` (American *cabinet*, British *cupboard*) and `calendar-n` (British *diary*); `camera-n` phrase *off camera*; region notes on *have your cake and eat it (too)*, *in the cards* / *on the cards*, *care of* / *in care of*; `car-n` train sense labeled American with a note on British *carriage*. Panel: 27 issues (25 reviewer-a, 2 reviewer-b), 20 blocking; 15 applied, 12 rejected, none escalated. Rejected: a British label on *on the button*, `lowercase-n` as antonym of the letter sense, the `old-fashioned` currency label, the *cable* telegram definition. Spend US$0.92; day US$9.12. Next review: *career-n*, *carpet-n*, *cartoon-n*, *case-n* and on.
