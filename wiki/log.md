@@ -1,6 +1,10 @@
 # Log
 
-*Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
+*Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
+
+## [2026-10-06] lint | Forty-seventh lint pass; log format line fixed
+
+Mechanical checks clean: caps, links (379 pages), lint_vocab, claim prune (three spent claim files). `crossref --all --apply` added sixteen back-links on eleven new nouns (*party* to *plan*); each was checked against its sense and all sixteen stand; no type mismatches. Precision: no new switch-offs; `reviewer-b` `spelling-or-format` 0.28 (161/578), 6 of 10 since the prompt line, kept live; upgraded reviewer-b 42 of 84 applied. reviewer-b replies since the softened line: 48 of 48 complete, 0.19 applied per entry (was 0.10). The log's format line was reworded so it no longer contains the header pattern ([note](notes/log-format-line-split.md)). One stale curator line (branch `cp7jp7`, already deleted) moved to Resolved. No spend.
 
 ## [2026-10-06] build | twelve nouns pill to play
 
