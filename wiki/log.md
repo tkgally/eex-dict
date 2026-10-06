@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] review | second reading of career to century
+
+Twelve nouns from 2026-10-01 (*career, carpet, cartoon, case, cash, cat, cause, cave, ceiling, cell, center, century*). Hand additions first: *pursue a career* and a false-friend note on *career*; a learner error on *in case* used for *if*; *cat got your tongue?* and a usage note on *he*/*she*/*it* for cats; *cause and effect*. Two wrong forms shown in italics in prose (*case*, *cash*) were reworded. Panel: 38 issues (25 blocking), 20 applied, 18 rejected, none escalated; reviewer-b raised 7 (2 applied), including the container *case*, rejected as the unrelated homograph `case-n-2`. Spend US$0.97; the day stands at US$12.08.
+
 ## [2026-10-06] lint | Forty-seventh lint pass; log format line fixed
 
 Mechanical checks clean: caps, links (379 pages), lint_vocab, claim prune (three spent claim files). `crossref --all --apply` added sixteen back-links on eleven new nouns (*party* to *plan*); each was checked against its sense and all sixteen stand; no type mismatches. Precision: no new switch-offs; `reviewer-b` `spelling-or-format` 0.28 (161/578), 6 of 10 since the prompt line, kept live; upgraded reviewer-b 42 of 84 applied. reviewer-b replies since the softened line: 48 of 48 complete, 0.19 applied per entry (was 0.10). The log's format line was reworded so it no longer contains the header pattern ([note](notes/log-format-line-split.md)). One stale curator line (branch `cp7jp7`, already deleted) moved to Resolved. No spend.
