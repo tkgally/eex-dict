@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] build | twelve nouns name to noise
+
+First cycle of the 00:43 UTC run. Twelve band-1 nouns drafted and reviewed: *name, nation, nature, neck, need, neighbor, nephew, nerve, network, niece, night, noise*, with 27 phrases (*make a name for yourself*, *get on someone's nerves*, *call it a night*...), 13 learner errors, two synonym discriminations (*country/nation/state*, *noise/sound*). All 24 transcriptions and 12 plurals verified. reviewer-a raised 25 issues (17 blocking): 19 applied (a brand-name example under *name* sense 3, *get nerves*, the network-ownership claim, collocation types in *night*), 6 rejected. reviewer-b returned a full verdict set on all twelve entries, no partial replies, and no issues. Six out-of-list definition words reworded. Back-links on *character*, *courage*, *midnight*. Spend US$0.92.
+
 ## [2026-10-05] originality | nineteenth check, no rewrites
 
 Fourth cycle of the 20:43 UTC run (forced: every tenth run). Ten fields sampled (`reviews/originality/2026-10-05-2.md`); exact-phrase searches found no distinctive match: eight original, two generic overlaps (*beard-n* sense 1, close to Collins's plain gloss; *hour-n* sense 2, *a particular time of the day or night*, the obvious wording). reviewer-a (reasoning off) answered "copied" on four with quotes; search confirmed none, and two quotes did not even match our wording ([note](notes/reviewer-noise.md)). Nothing rewritten. Spend US$0.004.
