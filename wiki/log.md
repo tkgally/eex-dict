@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] review | waist to book
+
+Second cycle of the 00:43 UTC run. A second panel round for the twelve oldest one-round entries: *waist-n, babysit-v, bag-v, band-v, base-v, bathe-v, sting-v, boat-n, body-n, bomb-n, bone-n, book-n*. Before the panel: a city name removed from a *base-v* example (style breach), a reflexive *base yourself in* example added, empty collocation boxes filled in *bathe*, *body*, *bomb*, *book*, one example added to *waist*. Panel: 29 issues; 20 applied (definitions of *babysit* 2, *sting* 4, *the bomb*; *bathe* explanation now agrees with its usage note; *boat* sense 1 no longer "small"; *body* usage note), 9 rejected (*boat* ferry sense kept: own collocations; region labels per the fence). *bone dry* removed from `bone-n` phrases (both reviewers: an adjective) and queued as `bone-dry-adj`. reviewer-b again returned full verdict sets. Spend US$0.98.
+
 ## [2026-10-06] build | twelve nouns name to noise
 
 First cycle of the 00:43 UTC run. Twelve band-1 nouns drafted and reviewed: *name, nation, nature, neck, need, neighbor, nephew, nerve, network, niece, night, noise*, with 27 phrases (*make a name for yourself*, *get on someone's nerves*, *call it a night*...), 13 learner errors, two synonym discriminations (*country/nation/state*, *noise/sound*). All 24 transcriptions and 12 plurals verified. reviewer-a raised 25 issues (17 blocking): 19 applied (a brand-name example under *name* sense 3, *get nerves*, the network-ownership claim, collocation types in *night*), 6 rejected. reviewer-b returned a full verdict set on all twelve entries, no partial replies, and no issues. Six out-of-list definition words reworded. Back-links on *character*, *courage*, *midnight*. Spend US$0.92.
