@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] build | twelve nouns post–pride
+
+Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *post, pot, potato, powder, power, practice, prayer, pregnancy, present, president, price, pride*. `post-n` holds the mail, job, and place-of-duty senses (the words `mail-n` and `position-n` point to); the pole and the web message are an unrelated homograph, `post-n-2`, waiting with the others on the queue gap. Panel: 48 issues (34 blocking), all from reviewer-a except two from reviewer-b; 37 applied, 11 rejected, none escalated. Fixes include the *power* mathematics sense, *put a price on something* (now explained for its negative use), *prayers* the service, and the origin claim removed from the `post-n` usage note. All 24 transcriptions verified. Two type mismatches (`post-n`/`mail-n`, `price-n`/`cost-n`) fixed by using `compare` on our side. Spend about US$1.00; the day stands at US$14.17.
+
 ## [2026-10-06] originality | twenty-first check, one rewrite
 
 Ten sampled fields (`reviews/originality/2026-10-06-2.md`): six original, three generic overlaps (*throw* "confuse or surprise", *hour* "a particular time", *cut* "stop a supply"), one rewrite: *out to lunch* (under `lunch-n`), whose wording the search summaries of dictionary-style pages gave almost exactly. It now reads *with your mind somewhere else, so that you do not notice what is going on around you*, with an explanation and a second example. Panel re-run on `lunch-n`: one issue, applied (the *dinner*/*tea* culture note was too broad). reviewer-a, reasoning off, answered "cannot tell" on all ten ([note](notes/reviewer-noise.md)). Spend about US$0.05; the day stands at US$13.17.

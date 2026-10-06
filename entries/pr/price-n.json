@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "dust-n",
-  "slug": "dust-n",
-  "headword": "dust",
+  "id": "price-n",
+  "slug": "price-n",
+  "headword": "price",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "dʌst",
+      "ipa": "praɪs",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "dʌst",
+      "ipa": "praɪs",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,12 +25,12 @@
   },
   "inflections": {
     "forms": {
-      "plural": null
+      "plural": "prices"
     },
     "regular": true,
     "source": "rules",
     "status": "verified",
-    "note": "no plural"
+    "note": null
   },
   "frequency": {
     "band": 1,
@@ -48,11 +48,11 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "dirt indoors",
-      "definition": "very small, dry pieces of dirt that collect on surfaces inside buildings or float in the air",
+      "signpost": "money",
+      "definition": "the amount of money that you have to pay for something",
       "explanation": null,
       "grammar": {
-        "countability": "uncountable",
+        "countability": "countable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -67,17 +67,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The shelves were covered in dust.",
+          "text": "What's the price of this jacket?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There was a thick layer of dust on the piano.",
+          "text": "Prices have gone up again.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Dust makes me sneeze.",
+          "text": "We bought the car at a good price.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "House prices fell last year.",
           "note": null,
           "pattern": null
         }
@@ -86,35 +91,48 @@
         {
           "type": "adjective + noun",
           "items": [
-            "thick dust"
+            "a high price",
+            "a low price",
+            "a fair price",
+            "half price",
+            "full price"
           ]
         },
         {
           "type": "verb + noun",
           "items": [
-            "wipe off the dust",
-            "collect dust"
+            "raise prices",
+            "cut prices",
+            "pay a price"
           ]
         },
         {
-          "type": "phrase",
+          "type": "noun + verb",
           "items": [
-            "covered in dust",
-            "a layer of dust"
+            "prices rise",
+            "prices fall"
+          ]
+        },
+        {
+          "type": "noun + noun",
+          "items": [
+            "a price list",
+            "a price tag"
+          ]
+        },
+        {
+          "type": "noun + preposition",
+          "items": [
+            "the price of something"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "powder-n",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [
         {
-          "slug": "dirt-n",
-          "note": null
+          "slug": "cost-n",
+          "note": "a price is what a seller asks; a cost is what you must spend"
         }
       ],
       "subsenses": [],
@@ -129,11 +147,11 @@
     },
     {
       "n": 2,
-      "signpost": "powder",
-      "definition": "fine, dry powder of earth or sand, or of another material",
+      "signpost": "bad result",
+      "definition": "something bad that you must accept or suffer in order to get or do something",
       "explanation": null,
       "grammar": {
-        "countability": "uncountable",
+        "countability": "singular only",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -148,17 +166,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The car raised a cloud of dust on the dry road.",
+          "text": "Losing his old friends was the price he paid for fame.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Their faces were black with coal dust.",
+          "text": "There is a high price to pay for success.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The wind blew dust into our eyes.",
+          "text": "A few hours of waiting is a small price to pay for a good seat.",
           "note": null,
           "pattern": null
         }
@@ -167,13 +185,15 @@
         {
           "type": "phrase",
           "items": [
-            "a cloud of dust"
+            "pay the price",
+            "a small price to pay",
+            "a high price to pay"
           ]
         },
         {
-          "type": "noun + noun",
+          "type": "adjective + noun",
           "items": [
-            "coal dust"
+            "a heavy price"
           ]
         }
       ],
@@ -193,14 +213,12 @@
   ],
   "phrases": [
     {
-      "sub_id": "bite-the-dust",
-      "text": "bite the dust",
-      "definition": "stop working, come to an end, or be beaten",
+      "sub_id": "at-any-price",
+      "text": "at any price",
+      "definition": "whatever it costs or whatever must be done",
       "explanation": null,
       "labels": {
-        "register": [
-          "informal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -208,12 +226,12 @@
       },
       "examples": [
         {
-          "text": "My old laptop finally bit the dust.",
+          "text": "They want peace at any price.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Another small shop on our street has bitten the dust.",
+          "text": "He was determined to win at any price.",
           "note": null,
           "pattern": null
         }
@@ -228,9 +246,9 @@
       "l1": {}
     },
     {
-      "sub_id": "gather-dust",
-      "text": "gather dust",
-      "definition": "not be used for a long time",
+      "sub_id": "at-a-price",
+      "text": "at a price",
+      "definition": "for a lot of money, or with something bad as a result",
       "explanation": null,
       "labels": {
         "register": [],
@@ -241,7 +259,12 @@
       },
       "examples": [
         {
-          "text": "The bike has been gathering dust in the garage for years.",
+          "text": "You can get good seats, at a price.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "She got the job she wanted, but at a price.",
           "note": null,
           "pattern": null
         }
@@ -256,10 +279,10 @@
       "l1": {}
     },
     {
-      "sub_id": "let-the-dust-settle",
-      "text": "let the dust settle",
-      "definition": "wait until a confused or exciting situation becomes calm before you act",
-      "explanation": "Also **when the dust settles**.",
+      "sub_id": "put-a-price-on-something",
+      "text": "put a price on something",
+      "definition": "say how much money something is worth",
+      "explanation": "Usually used in negative sentences, to say that something is too valuable to be measured in money: *You can't put a price on good health*.",
       "labels": {
         "register": [],
         "region": [],
@@ -269,12 +292,12 @@
       },
       "examples": [
         {
-          "text": "Let the dust settle before you make any decisions.",
+          "text": "You can't put a price on good health.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "When the dust settled, we saw how much damage had been done.",
+          "text": "It's hard to put a price on the time we spent together.",
           "note": null,
           "pattern": null
         }
@@ -291,57 +314,75 @@
   ],
   "word_family": [
     {
-      "slug": "dust-v",
+      "slug": "price-v",
       "form": null,
       "note": null
     },
     {
-      "slug": "dusty-adj",
+      "slug": "priceless-adj",
+      "form": null,
+      "note": "so valuable that no price would be enough"
+    },
+    {
+      "slug": "pricey-adj",
       "form": null,
       "note": null
     }
   ],
-  "synonym_discrimination": null,
-  "usage_note": "In ordinary use **dust** is uncountable: *a lot of dust*, *some dust*, *a layer of dust*; the plural **dusts** belongs to technical writing about kinds of dust. The verb **dust** means to clean the dust off something: *I dusted the shelves*.",
+  "synonym_discrimination": {
+    "words": [
+      "price-n",
+      "cost-n",
+      "charge-n",
+      "fee-n"
+    ],
+    "note": "**Price** is the amount of money a seller asks for a thing (*the price of a ticket*). **Cost** is the amount you must spend to get or do something, and is usual for services and totals (*the cost of repairs*). A **charge** is the amount asked for a service or for using something (*a delivery charge*). A **fee** is paid for professional work or to join or enter something (*a doctor's fee*)."
+  },
+  "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "There are many dusts on the table.",
-      "correct": "There is a lot of dust on the table.",
-      "note": "In ordinary use **dust** is uncountable: no plural, and **a lot of** or **much** before it."
+      "incorrect": "The price is very expensive.",
+      "correct": "The price is very high.",
+      "note": "Prices are *high* or *low*; things are *expensive* or *cheap*."
+    },
+    {
+      "incorrect": "How much is the price?",
+      "correct": "What is the price?",
+      "note": "Ask *How much is it?* or *What is the price?*, not both together."
     }
   ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": null,
+    "grammar": "A **price** is *high* or *low*, never *expensive* or *cheap*; those words describe the thing that is sold.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-03T05:10:43Z",
-    "modified": "2026-10-06T21:03:18Z",
+    "created": "2026-10-06T20:49:40Z",
+    "modified": "2026-10-06T21:03:43Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261003T050722Z-kur5kk",
+    "run_id": "20261006T204405Z-drbl4m",
     "reviews": [
       {
-        "run_id": "20261003T050722Z-kur5kk",
+        "run_id": "20261006T204405Z-drbl4m",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T050722Z-kur5kk/dust-n.json",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T204405Z-drbl4m/price-n.json",
         "ok": 45,
-        "issues": 4,
-        "blocking": 3
+        "issues": 5,
+        "blocking": 5
       },
       {
-        "run_id": "20261003T050722Z-kur5kk",
+        "run_id": "20261006T204405Z-drbl4m",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T050722Z-kur5kk/dust-n.json",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T204405Z-drbl4m/price-n.json",
         "ok": 49,
         "issues": 0,
         "blocking": 0
