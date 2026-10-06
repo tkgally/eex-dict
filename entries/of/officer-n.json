@@ -1,31 +1,37 @@
 {
   "schema_version": "1.0",
-  "id": "item-n",
-  "slug": "item-n",
-  "headword": "item",
+  "id": "officer-n",
+  "slug": "officer-n",
+  "headword": "officer",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈaɪ.təm",
+      "ipa": "ˈɔ.fɪ.sɚ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈaɪ.təm",
+      "ipa": "ˈɒf.ɪ.sə",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
-    "variants": [],
+    "variants": [
+      {
+        "ipa": "ˈɑ.fɪ.sɚ",
+        "region": "American",
+        "note": "also common, with the **o** of **hot**"
+      }
+    ],
     "audio": null,
     "notes": null
   },
   "inflections": {
     "forms": {
-      "plural": "items"
+      "plural": "officers"
     },
     "regular": true,
     "source": "rules",
@@ -44,11 +50,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "An item is one single thing or unit taken from a larger set: a thing on a list, a piece of news, or two people seen as a pair.",
+  "core_idea": "An officer is a person with a position of authority: in the armed forces, in the police, or in an organization.",
   "senses": [
     {
-      "signpost": "one thing",
-      "definition": "one thing in a list, a group, or a set, or one thing that you can buy",
+      "n": 1,
+      "signpost": "military",
+      "definition": "a person in the army, the navy, or the air force who is in charge of other people and gives them orders",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -59,112 +66,26 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "military"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "The first item on the list is milk.",
+          "text": "Her father was an officer in the navy.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Every item in the shop has a price on it.",
+          "text": "The officers and their families lived near the base.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She bought several items of clothing.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Keep valuable items in a safe place.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "adjective + noun",
-          "items": [
-            "a valuable item",
-            "a single item",
-            "household items",
-            "food items",
-            "personal items"
-          ]
-        },
-        {
-          "type": "noun + preposition",
-          "items": [
-            "an item of clothing",
-            "an item of furniture"
-          ]
-        },
-        {
-          "type": "phrase",
-          "items": [
-            "the next item on the list",
-            "an item on the agenda"
-          ]
-        }
-      ],
-      "synonyms": [
-        {
-          "slug": "thing-n",
-          "note": null
-        },
-        {
-          "slug": "article-n",
-          "note": null
-        },
-        {
-          "slug": "object-n",
-          "note": null
-        }
-      ],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {},
-      "n": 1
-    },
-    {
-      "signpost": "news",
-      "definition": "a short piece of news in a newspaper or on television, radio, or a website",
-      "explanation": null,
-      "grammar": {
-        "countability": "countable",
-        "transitivity": null,
-        "codes": [],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "There was an item about the fire on the local news.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "I read a short item about it online.",
+          "text": "A young officer led the soldiers across the river.",
           "note": null,
           "pattern": null
         }
@@ -173,19 +94,29 @@
         {
           "type": "noun + noun",
           "items": [
-            "a news item"
+            "an army officer",
+            "a navy officer",
+            "an air force officer"
           ]
         },
         {
-          "type": "noun + preposition",
+          "type": "adjective + noun",
           "items": [
-            "an item about something"
+            "a senior officer",
+            "a junior officer",
+            "a commanding officer",
+            "a naval officer"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "soldier-n",
+          "note": null
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -194,25 +125,21 @@
         "false_friends": null,
         "pronunciation": null
       },
-      "l1": {},
-      "n": 2
+      "l1": {}
     },
     {
-      "signpost": "couple",
-      "definition": "two people who are in a love relationship",
-      "explanation": "Used with **be**: *They're an item*.",
+      "n": 2,
+      "signpost": "police",
+      "definition": "a member of the police",
+      "explanation": "**Officer** is also a polite way to speak to a police officer, in place of a name: *Thank you, officer.*",
       "grammar": {
         "countability": "countable",
         "transitivity": null,
-        "codes": [
-          "usually singular"
-        ],
+        "codes": [],
         "patterns": []
       },
       "labels": {
-        "register": [
-          "informal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -221,18 +148,43 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Are Sam and Ana an item?",
+          "text": "An officer stopped my car and asked to see my license.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "They've been an item for about a year.",
+          "text": "Two officers came to the house to ask questions.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Excuse me, officer, can you tell me where the station is?",
           "note": null,
           "pattern": null
         }
       ],
-      "collocations": [],
-      "synonyms": [],
+      "collocations": [
+        {
+          "type": "noun + noun",
+          "items": [
+            "a police officer"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "an armed officer",
+            "an off-duty officer",
+            "a uniformed officer"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "police-officer-n",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -243,64 +195,137 @@
         "false_friends": null,
         "pronunciation": null
       },
-      "l1": {},
-      "n": 3
+      "l1": {}
+    },
+    {
+      "n": 3,
+      "signpost": "official",
+      "definition": "a person who has a position of responsibility in a government department or an organization",
+      "explanation": null,
+      "grammar": {
+        "countability": "countable",
+        "transitivity": null,
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Show your passport to the customs officer.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The company's press officer answered our questions.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "She works as a health officer for the city.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "noun + noun",
+          "items": [
+            "a customs officer",
+            "a press officer",
+            "a prison officer",
+            "a health officer"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a chief executive officer",
+            "a senior officer"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "official-n",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [],
   "word_family": [
     {
-      "slug": "itemize-v",
+      "slug": "office-n",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [
+  "learner_errors": [],
+  "etymology": null,
+  "see_also": [
     {
-      "incorrect": "I read an interesting news.",
-      "correct": "I read an interesting news item.",
-      "note": "**News** is uncountable; use *a news item* or *a piece of news* for one."
+      "slug": "police-n",
+      "note": null
     },
     {
-      "incorrect": "We bought many furnitures.",
-      "correct": "We bought many items of furniture.",
-      "note": "**Furniture** is uncountable; count it with **items of** or **pieces of**."
+      "slug": "army-n",
+      "note": null
+    },
+    {
+      "slug": "official-n",
+      "note": null
     }
   ],
-  "etymology": null,
-  "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": "**Item of** is a common way to count uncountable nouns in English: *an item of clothing*, *two items of furniture*. A translator may need a different counting word.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-04T21:05:45Z",
-    "modified": "2026-10-06T01:23:14Z",
+    "created": "2026-10-06T01:14:25Z",
+    "modified": "2026-10-06T01:22:48Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261004T210256Z-sej1s0",
+    "run_id": "20261006T011043Z-rm8z5o",
     "reviews": [
       {
-        "run_id": "20261004T210256Z-sej1s0",
+        "run_id": "20261006T011043Z-rm8z5o",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-04",
-        "file": "reviews/20261004T210256Z-sej1s0/item-n.json",
-        "ok": 43,
-        "issues": 0,
-        "blocking": 0
+        "date": "2026-10-06",
+        "file": "reviews/20261006T011043Z-rm8z5o/officer-n.json",
+        "ok": 41,
+        "issues": 2,
+        "blocking": 1
       },
       {
-        "run_id": "20261004T210256Z-sej1s0",
+        "run_id": "20261006T011043Z-rm8z5o",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-04",
-        "file": "reviews/20261004T210256Z-sej1s0/item-n.json",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T011043Z-rm8z5o/officer-n.json",
         "ok": 43,
         "issues": 0,
         "blocking": 0
