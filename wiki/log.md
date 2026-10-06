@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] closure | history, two months, and six family words
+
+Fourth cycle of the 00:43 UTC run. The closure source gave five rows: *history* (drafted; stamped band 3 though core), *january* and *june* (drafted as *January*, *June*, like `christian-n`; definitions avoid the other month names, which are outside the list), and *rocky*, *shiny* (guessed nouns: marked duplicate, the pending adjective rows drafted). Family rows: *bug-v, bus-v, butter-v, capitalize-v*; `cable-v` released (thin). Nine entries, all 18 transcriptions verified. Panel: 15 decisions, 13 applied (*capitalize* notes said "always **on**", false for the finance sense; *be history* no longer means losing a job; *historic/historical* note removed from the noun, reviewer-b), 2 rejected (*bus tables* is transitive; *Junes* exists). Spend US$0.49.
+
 ## [2026-10-06] build | twelve nouns noon to officer
 
 Third cycle of the 00:43 UTC run. Twelve band-1 nouns: *noon, nose, note, novel, number, nurse, nut, object, ocean, offer, office, officer*, with 20 phrases and 12 learner errors; a *number/amount* discrimination. British *object* was disputed at `ˈɒb.dʒekt` (1/3) and verified at `ˈɒb.dʒɪkt` (2/3). Panel: 34 issues; 31 applied (*novel* no longer says every event is unreal; *nuts* adjective material cut to a pointer, both reviewers; *officer* not "high position"; *number* sense 4 covers acts), 3 rejected. Eight definition words outside the list reworded. crossref put `nut-n`'s *fan* synonym on `fan-n` the machine: pointed at `fan-n-2` (still unqueued) and the mirror reverted. reviewer-b complete again. Spend US$0.94.
