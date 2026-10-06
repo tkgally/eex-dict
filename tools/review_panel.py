@@ -116,7 +116,7 @@ def user_prompt(entry: dict) -> str:
     return (
         "Check every field of this entry. For EACH field name in the checklist return one verdict object, "
         "including every field that is fine (verdict \"ok\"): your verdicts list must contain at least " + str(len(fields)) + " objects, "
-        "one or more per field. A reply that lists only the issues is incomplete and cannot be used. "
+        "one or more per field. Check each field as closely as if you were listing only problems: \"ok\" means you found nothing wrong. "
         "Fields: " + ", ".join(fields) + ".\n\n"
         "Return JSON of the form {\"verdicts\": [{\"field\": \"<name from the checklist>\", \"verdict\": \"ok\" | \"issue\", "
         "\"quote\": \"<exact text objected to, or null>\", \"severity\": \"blocking\" | \"minor\" | null, "
