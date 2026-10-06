@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] review | boot to breakfast
+
+Second panel round for the twelve oldest one-round entries: *boot, boss, bottle, bottom, bowl, box, boy, brain, branch, bread, break, breakfast* (all created 2026-10-01). Hand fixes before the panel: a non-list name (*Max*) and *film star* out of `boy-n` examples, the circular *a bottle with a soft top* definition, an unnatural `brain-n` example, *branch of the armed forces*, a `boss-n` and a `breakfast-n` collocation. Panel: 31 issues, 12 applied, 19 rejected, 0 escalated. Applied: `chapter-n` removed as a synonym of `branch-n` sense 3 (both reviewers; mirror removed too), `boy-n` sense 4 narrowed to pet dogs, *boss* as a form of address no longer called rare, fixed verbs added to `bottle-n` senses 4 and 5. Rejected: moving *to boot* (keyword fence), *a bread* objections, singular-only flags on `bottom-n`. reviewer-b: 12 of 12 replies complete. Spend US$1.10; day US$4.44.
+
 ## [2026-10-06] lint | Forty-fifth lint pass
 
 Mechanical checks clean (caps, links). `crossref --all --apply` added five back-links to four entries (*nerve* from *bottle* and *cheek*, *novel* from *book*, *number* from *figure*, *officer* from *police*); one misplaced: *figure* moved from `number-n` sense 2 (an amount) to sense 1 (a numeral). No TYPE-MISMATCH lines. `lint_vocab --all --queue` and `claim.py --prune` (three claim files) ran. Precision: no new switch-offs; upgraded reviewer-b 29 of 59 applied since 2026-10-05 09:00. The reviewer-b partial-verdict fix holds: 45 of 45 replies complete in the four batches since. Index, log, open questions, curator file read: no gaps, no duplicates. No spend.
