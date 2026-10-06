@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] build | twelve nouns player to possibility
+
+Twelve band-1 nouns: *player, pleasure, plug, pocket, point, poison, policy, politics, pool, port, position, possibility*. *point* has nine senses and nine phrases; *beside the point* moved there from `beside-prep` by the keyword rule. `pool-n` holds only the water senses: the shared-group and game senses are an unrelated homograph (`pool-n-2`, not queued; the queue has no homograph column). Pronunciations all verified (CMU agrees). Panel: 34 issues (26 blocking), 25 applied, 9 rejected, none escalated; reviewer-b 7 (3 applied). Main fixes: *drum player* replaced, the money sense and *out of pocket* (British label, American *unavailable* use noted) on *pocket*, the *possibility to* rule narrowed. Spend US$1.04; the day stands at US$13.12.
+
 ## [2026-10-06] review | second reading of career to century
 
 Twelve nouns from 2026-10-01 (*career, carpet, cartoon, case, cash, cat, cause, cave, ceiling, cell, center, century*). Hand additions first: *pursue a career* and a false-friend note on *career*; a learner error on *in case* used for *if*; *cat got your tongue?* and a usage note on *he*/*she*/*it* for cats; *cause and effect*. Two wrong forms shown in italics in prose (*case*, *cash*) were reworded. Panel: 38 issues (25 blocking), 20 applied, 18 rejected, none escalated; reviewer-b raised 7 (2 applied), including the container *case*, rejected as the unrelated homograph `case-n-2`. Spend US$0.97; the day stands at US$12.08.
