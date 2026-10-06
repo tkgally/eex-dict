@@ -69,3 +69,5 @@ This is a third, different shape of the same underlying pattern (see the two ent
 **Second originality check 2026-10-05 (`20261005T212151Z-kp6zeo`).** Reasoning off, one numbered prompt: four "copied" calls, each with a quote. Search confirmed none; two quotes (*myself*, *cell*) differ from our wording even as quoted, and the other two (*beard*, *hour*) are plain glosses close to ours. Verdicts from search: eight original, two generic overlaps, no rewrites.
 
 **Originality check 2026-10-06 (`20261006T085705Z-b1xhaa`).** Reasoning off: "copied" on nine of ten, each attributed to one learner's dictionary and each "quote" our own wording (with *to* or *somebody* added) or a different one. Search confirmed only *joint* (meat), which was rewritten. Blanket "copied" calls are back; search still decides.
+
+**Second originality check 2026-10-06 (`20261006T171831Z-n2nh3n`).** Reasoning off, one numbered prompt: "cannot tell" on all ten, no quotes. Search alone found the one close match (*out to lunch*, under `lunch-n`), which was rewritten.
