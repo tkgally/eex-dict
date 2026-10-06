@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] build | twelve nouns official to page
+
+Third cycle of the 04:44 UTC run. Twelve band-1 nouns: *official, oil, operation, opinion, opportunity, order, organ, outside, oven, owner, pack, page*. Inflections all verified; pronunciations verified except `outside-n`, where the panel prefers first-syllable stress: kept ˌaʊtˈsaɪd to match the owner's `inside-n` ruling, variant added, flagged, curator line. Panel: 45 issues, all from reviewer-a; 29 applied, 16 rejected (keyword-rule placements of *in order to*, *in order that*; region-label fence on *out of order*, *take a page from someone's book*). Six definition words outside the list replaced (*monks, nuns, piano, wolves, hunt, instruction*). Back-link `pack-n` moved to `package-n` sense 2. reviewer-b answered every field but raised no issues; its issue rate has fallen since the 2026-10-05 fix ([note](notes/reviewer-b-partial-verdicts.md)). Also: the `bottom-n` label rejection of the last cycle corrected (`polite` exists). Spend about US$0.93; day US$5.37.
+
 ## [2026-10-06] review | boot to breakfast
 
 Second panel round for the twelve oldest one-round entries: *boot, boss, bottle, bottom, bowl, box, boy, brain, branch, bread, break, breakfast* (all created 2026-10-01). Hand fixes before the panel: a non-list name (*Max*) and *film star* out of `boy-n` examples, the circular *a bottle with a soft top* definition, an unnatural `brain-n` example, *branch of the armed forces*, a `boss-n` and a `breakfast-n` collocation. Panel: 31 issues, 12 applied, 19 rejected, 0 escalated. Applied: `chapter-n` removed as a synonym of `branch-n` sense 3 (both reviewers; mirror removed too), `boy-n` sense 4 narrowed to pet dogs, *boss* as a form of address no longer called rare, fixed verbs added to `bottle-n` senses 4 and 5. Rejected: moving *to boot* (keyword fence), *a bread* objections, singular-only flags on `bottom-n`. reviewer-b: 12 of 12 replies complete. Spend US$1.10; day US$4.44.
