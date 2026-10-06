@@ -411,7 +411,16 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "Book One",
+            "the first book",
+            "the last book"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -731,7 +740,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-01T01:16:32Z",
-    "modified": "2026-10-01T01:27:34Z",
+    "modified": "2026-10-06T01:07:15Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261001T011412Z-qqiz7l",
     "reviews": [
@@ -753,6 +762,26 @@
         "file": "reviews/20261001T011412Z-qqiz7l/book-n.json",
         "ok": 108,
         "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261006T005934Z-rm8z5o",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T005934Z-rm8z5o/book-n.json",
+        "ok": 109,
+        "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261006T005934Z-rm8z5o",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T005934Z-rm8z5o/book-n.json",
+        "ok": 110,
+        "issues": 0,
         "blocking": 0
       }
     ],
