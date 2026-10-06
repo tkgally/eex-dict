@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] originality | twenty-first check, one rewrite
+
+Ten sampled fields (`reviews/originality/2026-10-06-2.md`): six original, three generic overlaps (*throw* "confuse or surprise", *hour* "a particular time", *cut* "stop a supply"), one rewrite: *out to lunch* (under `lunch-n`), whose wording the search summaries of dictionary-style pages gave almost exactly. It now reads *with your mind somewhere else, so that you do not notice what is going on around you*, with an explanation and a second example. Panel re-run on `lunch-n`: one issue, applied (the *dinner*/*tea* culture note was too broad). reviewer-a, reasoning off, answered "cannot tell" on all ten ([note](notes/reviewer-noise.md)). Spend about US$0.05; the day stands at US$13.17.
+
 ## [2026-10-06] build | twelve nouns player to possibility
 
 Twelve band-1 nouns: *player, pleasure, plug, pocket, point, poison, policy, politics, pool, port, position, possibility*. *point* has nine senses and nine phrases; *beside the point* moved there from `beside-prep` by the keyword rule. `pool-n` holds only the water senses: the shared-group and game senses are an unrelated homograph (`pool-n-2`, not queued; the queue has no homograph column). Pronunciations all verified (CMU agrees). Panel: 34 issues (26 blocking), 25 applied, 9 rejected, none escalated; reviewer-b 7 (3 applied). Main fixes: *drum player* replaced, the money sense and *out of pocket* (British label, American *unavailable* use noted) on *pocket*, the *possibility to* rule narrowed. Spend US$1.04; the day stands at US$13.12.
