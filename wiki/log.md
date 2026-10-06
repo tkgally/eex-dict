@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] review | second round for breath to butter
+
+First cycle of the 08:44 UTC run. Second panel round for the twelve oldest one-round entries: *breath, bridge, brother, brush, bucket, bug, building, burn, bus, bush, business, butter*. Added by hand first: *save your breath* and *in the same breath* (`breath-n`), a music sense (`bridge-n` 7), *funny business*, the British *beat about the bush* in an explanation; a `building-n` activity example no longer names a bridge. Panel: 34 issues (31 blocking; 32 reviewer-a, 2 reviewer-b); 13 applied, 21 rejected, 0 escalated. Applied: `building-n` activity sense widened to roads and bridges, dental bridge and *under your breath* reworded, `brother-n` sense 2 loses *literary*, `bug-n` usage note softened, `butter-n` adaptation agrees with its no-plural inflection. Rejected: region labels (house rule), explanation-field objections on form restrictions, *rain/cry buckets* as non-idioms, *to* in verb definitions. Spend US$1.04; day US$7.33. `button-n` is next.
+
 ## [2026-10-06] build | twelve nouns pain to part
 
 Fourth cycle of the 04:44 UTC run. Twelve band-1 nouns: *pain, paint, pair, pan, pants, paper, paragraph, parent, park, parking, parliament, part*. Inflections and all 24 transcriptions verified (`pants-n` plural only, `parking-n` no plural). Keyword rule: *no pain, no gain* moved from `gain-n` to `pain-n`. Panel: 56 issues (53 reviewer-a, 3 reviewer-b); 42 applied, 14 rejected. Applied: *on paper* split into two phrases (both reviewers), *Parliament* capitalized where it means one country's parliament, tighter definitions for three `park-n` senses, the `part-n` agreement claim replaced (both reviewers). Rejected: house collocation types (*a pair of shoes*, *in pairs*), region-label objections (*pants*, *part* in hair, exam *paper*). *baseball* moved from a definition into an explanation. Back-link `part-n` added on `role-n` sense 1 by hand. Spend US$0.92; day US$6.29.
