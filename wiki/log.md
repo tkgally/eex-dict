@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] review | chain–cheese, second panel round
+
+Second reading of the eight oldest one-round entries: *chain, chair, chance, change, chapter, character, charge, cheese* (all nouns, created 2026-10-01). Added by hand before the panel: the idiom *pull someone's chain* (`chain-n`), learner errors on *in the armchair* (`chair-n`) and *in chapter 3* (`chapter-n`), and `cheesy-adj` in the cheese word family. Panel: 11 issues (9 blocking), all from reviewer-a, all applied: the *change* train-change sense is now labelled British, the American label came off the *chapter* club sense, the *character*/*personality* note no longer limits *character* to moral qualities, and the doubtful *big chance* learner error was removed. One back-link was added (`price-n` compare to `charge-n`). Spend about US$0.79; the day stands at US$14.97, so the run ends after this cycle.
+
 ## [2026-10-06] build | twelve nouns post–pride
 
 Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *post, pot, potato, powder, power, practice, prayer, pregnancy, present, president, price, pride*. `post-n` holds the mail, job, and place-of-duty senses (the words `mail-n` and `position-n` point to); the pole and the web message are an unrelated homograph, `post-n-2`, waiting with the others on the queue gap. Panel: 48 issues (34 blocking), all from reviewer-a except two from reviewer-b; 37 applied, 11 rejected, none escalated. Fixes include the *power* mathematics sense, *put a price on something* (now explained for its negative use), *prayers* the service, and the origin claim removed from the `post-n` usage note. All 24 transcriptions verified. Two type mismatches (`post-n`/`mail-n`, `price-n`/`cost-n`) fixed by using `compare` on our side. Spend about US$1.00; the day stands at US$14.17.
