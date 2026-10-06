@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] site | rebuilt and checked, 54 of 54
+
+Third cycle of the 12:44 UTC run. `build_site.py` wrote 1,530 entries on 1,370 headword pages (0 drafts withheld, 0 redirects; 3,058 files in `docs/`, not committed). `site_check.py` at phone and desktop width: 54 checks, 0 failed (home page, three entry pages, *ran* finding *run*, a hover preview, the translator's view, dark mode). Spot check: `piece` shows *a piece of cake*; `card` shows the new *in sport* sense. No tool changes. Spend US$0.
+
 ## [2026-10-06] build | twelve nouns payment to pig
 
 Second cycle of the 12:44 UTC run. Twelve band-1 nouns: *payment, peace, performance, perfume, period, personality, pet, phone, photograph, picture, piece, pig*. Inflections and all 24 transcriptions verified (`peace-n` no plural; `perfume-n` American 2/4 with CMU agreeing). `piece-n` now holds *a piece of cake* (the target of `cake-n`'s usage note). Panel: 33 issues (32 reviewer-a, 1 reviewer-b), 27 blocking; 24 applied, 9 rejected, none escalated. `phone-n` sense 2 (*on the phone*) merged into sense 1. Rejected: a British label on `picture-n` "movie" (old-fashioned, not regional), *a pet store* as an adjective use, countable `peace-n`. Queued by crossref: `period-interj` (*I'm not going, period*), `pet-adj` (*pet project*). Spend US$0.90; day US$10.02.
