@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] build | twelve nouns pill to play
+
+Fourth cycle of the 12:44 UTC run. Twelve band-1 nouns: *pill, pilot, pipe, pity, place, plan, plane, plant, plastic, plate, platform, play*. Inflections and all 24 transcriptions verified. `place-n` holds eleven idioms (*take place*, *in the first place*, *fall into place*...); `play-n` holds *fair play* and *a play on words*. Panel: 35 issues (31 reviewer-a, 4 reviewer-b), 25 blocking; 23 applied, 12 rejected, none escalated. `pill-n` sense 2 set `singular only`; `pilot-adj` queued (*a pilot project*). Rejected: label objections against the closed sets (`old-fashioned` currency, no *woodworking* domain, no *impolite* attitude) and region labels meaning *mainly*. Back-link check: `crossref` put `play-n` on `game-n` sense 2 (*one occasion*); moved to sense 1 (*activity*). `plant-n`/`factory-n` now both `compare`. Spend US$1.08; day US$11.11.
+
 ## [2026-10-06] site | rebuilt and checked, 54 of 54
 
 Third cycle of the 12:44 UTC run. `build_site.py` wrote 1,530 entries on 1,370 headword pages (0 drafts withheld, 0 redirects; 3,058 files in `docs/`, not committed). `site_check.py` at phone and desktop width: 54 checks, 0 failed (home page, three entry pages, *ran* finding *run*, a hover preview, the translator's view, dark mode). Spot check: `piece` shows *a piece of cake*; `card` shows the new *in sport* sense. No tool changes. Spend US$0.
