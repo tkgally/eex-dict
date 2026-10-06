@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Header: `## [YYYY-MM-DD] <operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-06] lint | Forty-fifth lint pass
+
+Mechanical checks clean (caps, links). `crossref --all --apply` added five back-links to four entries (*nerve* from *bottle* and *cheek*, *novel* from *book*, *number* from *figure*, *officer* from *police*); one misplaced: *figure* moved from `number-n` sense 2 (an amount) to sense 1 (a numeral). No TYPE-MISMATCH lines. `lint_vocab --all --queue` and `claim.py --prune` (three claim files) ran. Precision: no new switch-offs; upgraded reviewer-b 29 of 59 applied since 2026-10-05 09:00. The reviewer-b partial-verdict fix holds: 45 of 45 replies complete in the four batches since. Index, log, open questions, curator file read: no gaps, no duplicates. No spend.
+
 ## [2026-10-06] closure | history, two months, and six family words
 
 Fourth cycle of the 00:43 UTC run. The closure source gave five rows: *history* (drafted; stamped band 3 though core), *january* and *june* (drafted as *January*, *June*, like `christian-n`; definitions avoid the other month names, which are outside the list), and *rocky*, *shiny* (guessed nouns: marked duplicate, the pending adjective rows drafted). Family rows: *bug-v, bus-v, butter-v, capitalize-v*; `cable-v` released (thin). Nine entries, all 18 transcriptions verified. Panel: 15 decisions, 13 applied (*capitalize* notes said "always **on**", false for the finance sense; *be history* no longer means losing a job; *historic/historical* note removed from the noun, reviewer-b), 2 rejected (*bus tables* is transitive; *Junes* exists). Spend US$0.49.
