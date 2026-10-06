@@ -401,10 +401,10 @@
     {
       "n": 6,
       "signpost": "in grammar",
-      "definition": "the form of a noun or pronoun that shows its job in a sentence, such as **I** and **me**",
+      "definition": "the form a noun or pronoun takes to show its job in a sentence, for example whether it is the subject or the object",
       "explanation": null,
       "grammar": {
-        "countability": "countable or uncountable",
+        "countability": "countable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -437,8 +437,8 @@
         {
           "type": "adjective + noun",
           "items": [
-            "the subject case",
-            "the object case"
+            "the nominative case",
+            "the accusative case"
           ]
         }
       ],
@@ -688,7 +688,7 @@
   ],
   "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": "**In case** means *because something might happen*: you act now to be ready (*Take a coat in case it gets cold*). **If** means *only when it happens* (*Call me if you need help*). After **in case**, use the present tense for the future: *in case it rains*, not *in case it will rain*.",
+  "usage_note": "**In case** means *because something might happen*: you act now to be ready (*Take a coat in case it gets cold*). **If** means *only when it happens* (*Call me if you need help*). After **in case**, use the present tense for the future: *in case it rains*, with no **will**.",
   "learner_errors": [
     {
       "incorrect": "I'll take my umbrella in case it will rain.",
@@ -699,6 +699,11 @@
       "incorrect": "Bring a jacket in case of it gets cold.",
       "correct": "Bring a jacket in case it gets cold.",
       "note": "**In case of** comes before a noun (*in case of rain*); before a clause, use **in case**."
+    },
+    {
+      "incorrect": "In case you see Ana, tell her I said hello.",
+      "correct": "If you see Ana, tell her I said hello.",
+      "note": "Use **if** when you mean *only when it happens*; **in case** means doing something now to be ready."
     }
   ],
   "etymology": null,
@@ -718,7 +723,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-01T13:07:30Z",
-    "modified": "2026-10-01T13:16:26Z",
+    "modified": "2026-10-06T16:58:26Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261001T130345Z-jf46i6",
     "reviews": [
@@ -741,6 +746,26 @@
         "ok": 105,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261006T164838Z-n2nh3n",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T164838Z-n2nh3n/case-n.json",
+        "ok": 98,
+        "issues": 7,
+        "blocking": 3
+      },
+      {
+        "run_id": "20261006T164838Z-n2nh3n",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-06",
+        "file": "reviews/20261006T164838Z-n2nh3n/case-n.json",
+        "ok": 103,
+        "issues": 2,
+        "blocking": 2
       }
     ],
     "status": "reviewed",
