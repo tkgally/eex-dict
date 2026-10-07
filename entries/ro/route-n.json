@@ -1,31 +1,37 @@
 {
   "schema_version": "1.0",
-  "id": "path-n",
-  "slug": "path-n",
-  "headword": "path",
+  "id": "route-n",
+  "slug": "route-n",
+  "headword": "route",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "pæθ",
+      "ipa": "rut",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "pɑːθ",
+      "ipa": "ruːt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
-    "variants": [],
+    "variants": [
+      {
+        "ipa": "raʊt",
+        "region": "American",
+        "note": "also common; rhymes with **out**"
+      }
+    ],
     "audio": null,
-    "notes": "In American English it rhymes with **math**. The plural **paths** often ends with the **th** of **this**, followed by a **z** sound."
+    "notes": "Said like **root** everywhere; many Americans also say it to rhyme with **out**, especially for a delivery route or a road number."
   },
   "inflections": {
     "forms": {
-      "plural": "paths"
+      "plural": "routes"
     },
     "regular": true,
     "source": "rules",
@@ -44,12 +50,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A **path** is a way from one place to another, on the ground or through the air, and so also a way of living that leads somewhere.",
+  "core_idea": "A **route** is the way that someone or something travels, or the way to reach a goal.",
   "senses": [
     {
       "n": 1,
-      "signpost": "way to walk",
-      "definition": "a narrow way that people walk along, often made by people walking over the ground",
+      "signpost": "way to a place",
+      "definition": "the roads or paths that you take to get from one place to another",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -67,59 +73,62 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We followed a path through the woods.",
+          "text": "What's the quickest route to the airport?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "A stone path leads to the front door.",
+          "text": "We took the long route home along the coast.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The path goes along the river.",
+          "text": "Police closed the road, so drivers had to find another route.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Stay on the path; the ground is wet.",
+          "text": "The map shows the route from the station to the hotel.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adjective + noun",
-          "items": [
-            "a narrow path",
-            "a stone path",
-            "a steep path"
-          ]
-        },
-        {
           "type": "verb + noun",
           "items": [
-            "follow a path",
-            "take a path"
+            "take a route",
+            "follow a route",
+            "plan a route",
+            "find a route"
           ]
         },
         {
-          "type": "noun + noun",
+          "type": "adjective + noun",
           "items": [
-            "a garden path",
-            "a bike path"
+            "the quickest route",
+            "the shortest route",
+            "an alternative route",
+            "the scenic route",
+            "a main route"
+          ]
+        },
+        {
+          "type": "noun + preposition",
+          "items": [
+            "the route to somewhere",
+            "the route from somewhere"
+          ]
+        },
+        {
+          "type": "preposition + noun",
+          "items": [
+            "on the route",
+            "along the route"
           ]
         }
       ],
       "synonyms": [
-        {
-          "slug": "track-n",
-          "note": null
-        },
-        {
-          "slug": "trail-n",
-          "note": null
-        },
         {
           "slug": "way-n",
           "note": null
@@ -130,10 +139,6 @@
         {
           "slug": "road-n",
           "note": null
-        },
-        {
-          "slug": "lane-n",
-          "note": null
         }
       ],
       "subsenses": [],
@@ -141,15 +146,15 @@
         "semantic": null,
         "grammar": null,
         "culture": null,
-        "false_friends": null,
+        "false_friends": "\"route\" is the way you travel, not the road itself: *take a different route* means go a different way, which may use several roads.",
         "pronunciation": null
       },
       "l1": {}
     },
     {
       "n": 2,
-      "signpost": "line of movement",
-      "definition": "the line along which something moves",
+      "signpost": "bus, train, plane",
+      "definition": "the fixed way that a bus, train, plane, or ship regularly travels, or the fixed set of places that a person regularly visits for work",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -167,32 +172,59 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The storm destroyed everything in its path.",
+          "text": "This bus route goes past the hospital.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "A car pulled out into the path of the bus.",
+          "text": "The airline is adding new routes to Asia.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Our house is right on the school bus route.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "He has a delivery route in the north of the city.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + preposition",
+          "type": "noun + noun",
           "items": [
-            "the path of something"
+            "a bus route",
+            "a train route",
+            "a flight route",
+            "a delivery route",
+            "a mail route",
+            "a trade route"
+          ]
+        },
+        {
+          "type": "verb + noun",
+          "items": [
+            "operate a route",
+            "run a route",
+            "cut a route"
           ]
         },
         {
           "type": "preposition + noun",
           "items": [
-            "in its path",
-            "in the path of something"
+            "on a route"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "course-n",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -207,8 +239,8 @@
     },
     {
       "n": 3,
-      "signpost": "way of living",
-      "definition": "a way of living, or a series of actions that leads to a result",
+      "signpost": "way to a result",
+      "definition": "a way of reaching a particular result or goal",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -226,17 +258,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She chose a different path from her parents.",
+          "text": "Hard work is the surest route to success.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Hard work is the path to success.",
+          "text": "Some students take the college route, and others go straight to work.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He's on the right path now.",
+          "text": "We could go the legal route, but it would be slow and expensive.",
           "note": null,
           "pattern": null
         }
@@ -245,27 +277,29 @@
         {
           "type": "noun + preposition",
           "items": [
-            "the path to something"
-          ]
-        },
-        {
-          "type": "adjective + noun",
-          "items": [
-            "the right path",
-            "a career path"
+            "a route to success",
+            "a route into a job",
+            "a route out of poverty"
           ]
         },
         {
           "type": "verb + noun",
           "items": [
-            "choose a path",
-            "follow a path"
+            "take a route",
+            "offer a route"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "the only route",
+            "an easy route"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "route-n",
+          "slug": "path-n",
           "note": null
         }
       ],
@@ -280,47 +314,18 @@
         "pronunciation": null
       },
       "l1": {}
-    }
-  ],
-  "phrases": [
-    {
-      "sub_id": "cross-someones-path",
-      "text": "cross someone's path",
-      "definition": "meet someone, usually by chance",
-      "explanation": null,
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "I hope I never cross his path again.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Our paths crossed again many years later.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
     },
     {
-      "sub_id": "off-the-beaten-path",
-      "text": "off the beaten path",
-      "definition": "in or to a place that few people visit",
-      "explanation": "British English usually says *off the beaten track*.",
+      "n": 4,
+      "signpost": "road number",
+      "definition": "used before a number in the name of a road",
+      "explanation": "Written with a capital letter: *Route 9*, *Route 30*.",
+      "grammar": {
+        "countability": "countable",
+        "transitivity": null,
+        "codes": [],
+        "patterns": []
+      },
       "labels": {
         "register": [],
         "region": [
@@ -330,18 +335,37 @@
         "currency": [],
         "attitude": []
       },
+      "pronunciation": null,
       "examples": [
         {
-          "text": "We found a little restaurant off the beaten path.",
+          "text": "Take Route 9 north for about ten miles.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "They like to travel off the beaten path.",
+          "text": "There's a gas station just off Route 30.",
           "note": null,
           "pattern": null
         }
       ],
+      "collocations": [
+        {
+          "type": "preposition + noun",
+          "items": [
+            "on Route 9",
+            "off Route 9"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [
+        {
+          "slug": "highway-n",
+          "note": null
+        }
+      ],
+      "subsenses": [],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -352,29 +376,21 @@
       "l1": {}
     }
   ],
+  "phrases": [],
   "word_family": [
     {
-      "slug": "pathway-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "footpath-n",
+      "slug": "route-v",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
+  "usage_note": "When you stop someone in the street to ask for directions, **the way** is more usual than **the route**: *Can you tell me the way to the station?* **Route** is common when you are planning or comparing ways (*the quickest route*), when driving, and for buses, trains, and planes.",
   "learner_errors": [],
   "etymology": null,
   "see_also": [
     {
-      "slug": "road-n",
-      "note": null
-    },
-    {
-      "slug": "way-n",
+      "slug": "en-route-adv",
       "note": null
     }
   ],
@@ -383,34 +399,34 @@
     "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": null
+    "pronunciation": "\"route\" is said like **root**; in American English it often rhymes with **out** as well. Both are correct."
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-06T09:09:02Z",
-    "modified": "2026-10-07T13:09:04Z",
+    "created": "2026-10-07T12:52:10Z",
+    "modified": "2026-10-07T12:59:21Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261006T090554Z-b1xhaa",
+    "run_id": "20261007T125006Z-l40e1c",
     "reviews": [
       {
-        "run_id": "20261006T090554Z-b1xhaa",
+        "run_id": "20261007T125006Z-l40e1c",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-06",
-        "file": "reviews/20261006T090554Z-b1xhaa/path-n.json",
-        "ok": 51,
-        "issues": 2,
-        "blocking": 0
+        "date": "2026-10-07",
+        "file": "reviews/20261007T125006Z-l40e1c/route-n.json",
+        "ok": 45,
+        "issues": 7,
+        "blocking": 6
       },
       {
-        "run_id": "20261006T090554Z-b1xhaa",
+        "run_id": "20261007T125006Z-l40e1c",
         "role": "reviewer-b",
         "model": "google/gemini-3.1-pro-preview",
-        "date": "2026-10-06",
-        "file": "reviews/20261006T090554Z-b1xhaa/path-n.json",
+        "date": "2026-10-07",
+        "file": "reviews/20261007T125006Z-l40e1c/route-n.json",
         "ok": 52,
-        "issues": 1,
-        "blocking": 1
+        "issues": 0,
+        "blocking": 0
       }
     ],
     "status": "reviewed",

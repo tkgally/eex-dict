@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] build | twelve nouns rope–salt
+
+Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *rope, route, routine, rubber, rug, ruin, rule, safety, sail, salary, sale, salt*. Pronunciations verified; British *salt* came back disputed as `sɔːlt` (1/3) and was verified as `sɒlt` (2/3), with `sɔːlt` kept as a variant. Panel: 46 issues (reviewer-a 42, reviewer-b 4); 38 applied, 8 rejected. Fixes: *show someone the ropes* split into its own phrase; *route* sense 2 now covers delivery routes, its learner error removed; *rubber* condom sense given a plain definition; *salary* no longer says monthly; *on sale* now defined as available, especially cheaper; *salt* chemistry sense redefined. Rejected: a region label on *at the end of your rope* (mainly American), `old-fashioned` as currency (it is), *often before another noun* as a grammar code (it is). Eight definition words outside the vocabulary rewritten. Back-links: fourteen; four moved by hand (`path-n` 1→3, `act-n` 3→4, `control-n` 4→1, `government-n` 1→2). Spend US$1.09.
+
 ## [2026-10-07] lint | fiftieth pass: nine back-links, three misplaced
 
 Mechanical checks clean: caps, links (399 pages), `lint_vocab --all --queue` (no violations, nothing queued), claims (two spent claim files pruned), queue sync. `crossref --all --apply` added nine back-links to six entries from the *relief*–*root* builds; six right, three on the wrong sense and left in place for a later run to move by hand, because this session's permission check refused the scripted move: `report-n` *record* belongs on sense 2, `respect-n` *way* on sense 4, `roof-n` *ceiling* on sense 1. Precision: seven disabled pairs unchanged, nothing new under 30 percent; `reviewer-b` `phrase` 0.36. Index, open questions, curator file: no contradictions or duplicates. No spend. Next lint due in about five cycles.
