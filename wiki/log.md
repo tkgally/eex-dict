@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] build | twelve nouns promise–question
+
+Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *promise, proof, protection, protest, public, punishment, purpose, purse, quality, quarter, queen, question*. Pronunciations all verified. Panel: 65 issues (reviewer-a 62, reviewer-b 3); 52 applied, 13 rejected. Main fixes: *purse* no longer ties either variety's meaning to women only (eleven issues, all but one applied); *protection* lost its insurance sense and its "thing that protects" sense was made countable; *proof*/*evidence* softened (proof need not be beyond all doubt); *quarter* no longer models *at quarter to nine* without *a*; *queen* sense 3 lost its informal label and *homecoming queen*. Rejected: *hold promise*, *early promise*, *avoid the question* as untypical; *question* sense 4 as countable. Eleven definition words outside the vocabulary rewritten (*chess* is described, then named in the explanation). Back-links: two of ten moved by hand (*public* on `audience-n` to sense 2, *quarter* on `area-n` to sense 1). Spend US$1.05.
+
 ## [2026-10-07] review | chest–client, second panel round
 
 Second reading of the eleven oldest one-round entries: *chest, chicken, choice, church, circle, citizen, city, claim, class, clay, client* (nouns, created 2026-10-01). Added by hand before the panel: phrases *chicken feed*, *like a chicken with its head cut off*, *by choice*, *church and state*, *you can't fight city hall*, *a class act*; learner errors on *chest*, *chicken*, *circle*, *claim*, *class*; a *citizen*/*resident* usage note; *church* family and see-also; *client* widened to services not paid for. Panel: 32 issues (reviewer-a 28, reviewer-b 4); 24 applied, 8 rejected. Main fixes: *church* sense 3 limited to Christian groups, *citizen* sense 2 and its *resident* link (no longer a synonym), *senior citizen*, *class* sense 5 now covers travel classes, a merged *breast* note on *chest*. No back-links needed. Spend US$0.90.
