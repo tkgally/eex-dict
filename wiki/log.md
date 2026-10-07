@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] build | twelve nouns priest–progress
+
+Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *priest, print, prison, prisoner, prize, problem, process, product, profession, profit, program, progress*. Pronunciations all verified (CMU agrees on every American form). Panel: 37 issues (reviewer-a 33, reviewer-b 4); 27 applied, 10 rejected (the house fence on quoted headwords in adaptation notes, *high priest* kept as a phrase under the keyword rule, the printed concert *program* kept unlabeled as American usage, the *profit*/*prophet* homophone note kept). `prize-adj` queued for the attributive use (*a prize cow*). Back-links: two of eleven moved by hand (*print* on `mark-n` to sense 1, *problem* on `exercise-n` to sense 3); three TYPE-MISMATCH pairs settled on the older side's type (*jail*, *issue*, *development*). Six definition words outside the vocabulary rewritten. Spend US$0.86.
+
 ## [2026-10-07] lint | forty-eighth pass: one back-link moved, reviewer-b rate recovered
 
 Mechanical checks clean: caps, links (386 pages), claims (two spent claim files pruned), `lint_vocab --all --queue`, queue sync. `crossref --all --apply` added four back-links from the last two builds; three were right (*fun* under *pleasure* sense 1, *exercise* under *practice* sense 1, *fee* under *price* sense 1; *please* in *pleasure*'s family), one wrong: *time* landed on `point-n` sense 2 (the main part) and was moved by hand to sense 4 (a moment). No TYPE-MISMATCH lines. Precision: seven disabled pairs unchanged, nothing new under 30 percent; `reviewer-b` `spelling-or-format` 0.28, no new decisions. reviewer-b's applied issues per entry rose to 0.24 over 45 complete replies (0.19 at the last pass), so the prompt line stays. Index, open questions, curator file: no contradictions or duplicates found. No spend. Next lint due in about five cycles.
