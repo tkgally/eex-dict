@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "range-n",
-  "slug": "range-n",
-  "headword": "range",
+  "id": "score-n",
+  "slug": "score-n",
+  "headword": "score",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "reɪndʒ",
+      "ipa": "skɔr",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "reɪndʒ",
+      "ipa": "skɔː",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "Rhymes with **change**. The **a** sounds like the **a** in **day**."
+    "notes": null
   },
   "inflections": {
     "forms": {
-      "plural": "ranges"
+      "plural": "scores"
     },
     "regular": true,
     "source": "rules",
@@ -44,19 +44,17 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A **range** is a set of different things of one kind, the limits between which something can change, or the distance something can reach.",
+  "core_idea": "A **score** is a number that shows how well someone has done, or a written record of a piece of music.",
   "senses": [
     {
       "n": 1,
-      "signpost": "variety",
-      "definition": "a number of different things of the same general type",
+      "signpost": "in a game",
+      "definition": "the number of points or goals that each player or team has in a game or a competition",
       "explanation": null,
       "grammar": {
         "countability": "countable",
         "transitivity": null,
-        "codes": [
-          "usually singular"
-        ],
+        "codes": [],
         "patterns": []
       },
       "labels": {
@@ -69,17 +67,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The store sells a wide range of shoes.",
+          "text": "What's the score?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "We discussed a range of topics.",
+          "text": "The final score was three to one.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The course covers a broad range of subjects.",
+          "text": "At halftime the score was tied.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Can you keep score while we play?",
           "note": null,
           "pattern": null
         }
@@ -88,31 +91,35 @@
         {
           "type": "adjective + noun",
           "items": [
-            "a wide range",
-            "a broad range",
-            "a full range",
-            "a narrow range"
+            "the final score",
+            "a high score",
+            "a low score"
           ]
         },
         {
-          "type": "noun + preposition",
+          "type": "verb + noun",
           "items": [
-            "a range of something"
+            "keep score",
+            "level the score",
+            "tie the score"
+          ]
+        },
+        {
+          "type": "noun + verb",
+          "items": [
+            "the score is tied",
+            "the score stands at something"
           ]
         }
       ],
-      "synonyms": [
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [
         {
-          "slug": "variety-n",
-          "note": null
-        },
-        {
-          "slug": "choice-n",
-          "note": null
+          "slug": "result-n",
+          "note": "the **result** is who won or lost"
         }
       ],
-      "antonyms": [],
-      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -125,8 +132,8 @@
     },
     {
       "n": 2,
-      "signpost": "limits",
-      "definition": "the amounts or numbers between the lowest and the highest level that something can have",
+      "signpost": "in a test",
+      "definition": "the number of points that someone gets in a test or an exam",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -144,46 +151,59 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The age range of the students is 18 to 25.",
+          "text": "She got a perfect score on the math test.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Prices are in the range of ten to twenty dollars.",
+          "text": "You need a score of at least seventy to pass.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "That's outside my price range.",
+          "text": "Test scores at the school have improved this year.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "adjective + noun",
           "items": [
-            "age range",
-            "price range",
-            "temperature range"
+            "a perfect score",
+            "a high score",
+            "a low score",
+            "an average score",
+            "a passing score"
           ]
         },
         {
-          "type": "preposition + noun",
+          "type": "noun + noun",
           "items": [
-            "in the range of something",
-            "within the range of something"
+            "a test score",
+            "an exam score"
+          ]
+        },
+        {
+          "type": "verb + noun",
+          "items": [
+            "get a score",
+            "improve your score"
           ]
         }
       ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [
+      "synonyms": [
         {
-          "slug": "scale-n",
+          "slug": "mark-n",
+          "note": "the usual British word for a score on a piece of school work"
+        },
+        {
+          "slug": "grade-n",
           "note": null
         }
       ],
+      "antonyms": [],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -196,76 +216,8 @@
     },
     {
       "n": 3,
-      "signpost": "distance",
-      "definition": "the distance at which something can be reached, seen, heard, or used",
-      "explanation": null,
-      "grammar": {
-        "countability": "countable or uncountable",
-        "transitivity": null,
-        "codes": [],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "The phone has a range of about fifty meters.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The boat was out of range of the radio.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "They fired at close range.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "preposition + noun",
-          "items": [
-            "in range",
-            "within range",
-            "out of range",
-            "at close range"
-          ]
-        },
-        {
-          "type": "adjective + noun",
-          "items": [
-            "long range",
-            "short range",
-            "close range"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 4,
-      "signpost": "products",
-      "definition": "a set of products of a particular type made by one company",
+      "signpost": "music",
+      "definition": "a written copy of a piece of music that shows all the parts for the different instruments and voices",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -277,7 +229,7 @@
         "register": [],
         "region": [],
         "domain": [
-          "business"
+          "music"
         ],
         "currency": [],
         "attitude": []
@@ -285,35 +237,78 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "They've launched a new range of skin creams.",
+          "text": "The conductor studied the score before the concert.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "This chair is part of our garden range.",
+          "text": "Can you read a musical score?",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "read a score",
+            "write a score"
+          ]
+        },
         {
           "type": "adjective + noun",
           "items": [
-            "a new range",
-            "a full range"
-          ]
-        },
-        {
-          "type": "noun + noun",
-          "items": [
-            "product range"
+            "a musical score",
+            "a full score"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "the music written for a movie or a play",
+          "explanation": null,
+          "grammar": {
+            "countability": "countable",
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [
+              "film and television"
+            ],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "The movie won a prize for its score.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "He wrote the score for several famous movies.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "noun + noun",
+              "items": [
+                "a movie score",
+                "a film score"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -324,12 +319,12 @@
       "l1": {}
     },
     {
-      "n": 5,
-      "signpost": "mountains",
-      "definition": "a line of mountains or hills",
-      "explanation": null,
+      "n": 4,
+      "signpost": "a large number",
+      "definition": "a large number of people or things",
+      "explanation": "Used in the plural, in **scores of**.",
       "grammar": {
-        "countability": "countable",
+        "countability": "plural only",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -344,136 +339,26 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We could see a range of mountains in the distance.",
+          "text": "Scores of people waited outside the store.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The village is at the foot of a mountain range.",
+          "text": "I've seen that movie scores of times.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "phrase",
           "items": [
-            "mountain range"
-          ]
-        }
-      ],
-      "synonyms": [
-        {
-          "slug": "chain-n",
-          "note": null
-        }
-      ],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 6,
-      "signpost": "for shooting",
-      "definition": "an area where people practice firing guns or hitting balls",
-      "explanation": null,
-      "grammar": {
-        "countability": "countable",
-        "transitivity": null,
-        "codes": [],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "He goes to the shooting range on Saturdays.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "They hit golf balls at the driving range.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "noun + noun",
-          "items": [
-            "shooting range",
-            "driving range",
-            "firing range"
+            "scores of people",
+            "scores of times"
           ]
         }
       ],
       "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 7,
-      "signpost": "cooker",
-      "definition": "a large stove for cooking, with an oven and places on top to heat pans",
-      "explanation": null,
-      "grammar": {
-        "countability": "countable",
-        "transitivity": null,
-        "codes": [],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [
-          "American"
-        ],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "The kitchen has a new gas range.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "She put the pot on the range.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [],
-      "synonyms": [
-        {
-          "slug": "stove-n",
-          "note": null
-        }
-      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -487,10 +372,122 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "settle-a-score",
+      "text": "settle a score",
+      "definition": "do something bad to someone who has hurt you in the past",
+      "explanation": "Also **settle an old score**.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "He came back to the town to settle an old score.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "I think she has a score to settle with her old boss.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "know-the-score",
+      "text": "know the score",
+      "definition": "understand the true facts of a situation, especially when they are unpleasant",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "You know the score: if you're late again, you're out.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "She knew the score when she took the job.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "on-that-score",
+      "text": "on that score",
+      "definition": "about the thing that has just been mentioned",
+      "explanation": "Also **on this score**, **on either score**.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "The hotel is clean, so you don't need to worry on that score.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We have no problems on that score.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
-      "slug": "range-v",
+      "slug": "score-v",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "scorer-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "scoreboard-n",
       "form": null,
       "note": null
     }
@@ -499,25 +496,20 @@
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "The phone is out of the range.",
-      "correct": "The phone is out of range.",
-      "note": "**Out of range** and **in range** have no article."
+      "incorrect": "I got full score on the test.",
+      "correct": "I got a perfect score on the test.",
+      "note": "In English, say **a perfect score**, or in British English **full marks**."
     },
     {
-      "incorrect": "A range of products are on sale.",
-      "correct": "A range of products is on sale.",
-      "note": "In careful writing, **a range of** takes a singular verb; in everyday speech, a plural verb is also common."
+      "incorrect": "Who is winning? What is the point?",
+      "correct": "Who is winning? What's the score?",
+      "note": "To ask about the numbers in a game, ask for **the score**, not **the point**."
     }
   ],
   "etymology": null,
-  "see_also": [
-    {
-      "slug": "variety-n",
-      "note": null
-    }
-  ],
+  "see_also": [],
   "adaptation": {
-    "semantic": null,
+    "semantic": "\"score\" for a game, for a test, and for written music are different words in many languages.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -525,28 +517,28 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-07T04:59:56Z",
-    "modified": "2026-10-07T13:42:54Z",
+    "created": "2026-10-07T13:24:45Z",
+    "modified": "2026-10-07T13:42:52Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261007T045732Z-hpvo8n",
+    "run_id": "20261007T132419Z-l40e1c",
     "reviews": [
       {
-        "run_id": "20261007T045732Z-hpvo8n",
+        "run_id": "20261007T132419Z-l40e1c",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
         "date": "2026-10-07",
-        "file": "reviews/20261007T045732Z-hpvo8n/range-n.json",
-        "ok": 76,
-        "issues": 3,
+        "file": "reviews/20261007T132419Z-l40e1c/score-n.json",
+        "ok": 63,
+        "issues": 8,
         "blocking": 3
       },
       {
-        "run_id": "20261007T045732Z-hpvo8n",
+        "run_id": "20261007T132419Z-l40e1c",
         "role": "reviewer-b",
         "model": "google/gemini-3.1-pro-preview",
         "date": "2026-10-07",
-        "file": "reviews/20261007T045732Z-hpvo8n/range-n.json",
-        "ok": 79,
+        "file": "reviews/20261007T132419Z-l40e1c/score-n.json",
+        "ok": 69,
         "issues": 0,
         "blocking": 0
       }
