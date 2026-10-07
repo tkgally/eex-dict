@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] lint | fifty-first pass: three back-links moved by hand
+
+Cycle 3 of the 16:43 run (forced: five runs since the last lint). Caps, links, `crossref --all --apply` (no new back-links, no type mismatches), `lint_vocab --all --queue` (0 violations, nothing queued), and `claim.py --prune` (three claim files) all clean. The three back-links the fiftieth pass could not move were moved by hand: `report-n` compare *record* 1→2, `respect-n` synonym *way* 1→4, `roof-n` compare *ceiling* 3→1; a fresh `crossref --all --apply` left them in place. Precision: no new switch-offs; reviewer-b since its upgrade 0.54 (73/136), `spelling-or-format` unchanged and live by the owner's ruling. Curator file: three open lines, no duplicates; index and pages agree; no log gaps since the fiftieth pass. Next lint forced in five cycles. Spend US$0.00.
+
 ## [2026-10-07] originality | twenty-third check, two rewrites
 
 Cycle 2 of the 16:43 run (forced: run 300). Ten sampled fields searched by exact phrase; reviewer-a asked with reasoning off answered *original* on all ten, no quotes. Search found two close frames in a learner's dictionary: `bag-n` sense 1 (material list and *used to carry things*) and `package-n` sense 1 (*something wrapped in paper ... so that it can be sent*). Both rewritten and re-reviewed (record `reviews/originality/2026-10-07-2.md`). Re-review: 6 issues, all reviewer-a; 4 applied, 2 rejected. `package-n` sense 2 now includes the contents and lost its American label (its own note says British uses it too); sense 3 *as one* became *for one price*. Rejected: `suitcase-n` as a synonym of travel *bags*, and the *parcel* note. Verdicts: original 6, generic-overlap 2, rewrite 2. Spend US$0.18.
