@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] originality | twenty-second check, no rewrites
+
+Ten sampled fields (definitions of *fire-v*, *business-n*, *gas-n* phrase, *battery-n*, *economy-n*, *passion-n*, *head-n* phrase, *some-det*; usage notes of *patient-n*, *beauty-n*) searched as exact phrases: no published dictionary wording found for any. Verdicts: original 8, generic-overlap 2 (*economy-n* shares the frame *the system by which ... goods and services are produced*; *beauty-n* shares the grammar frame *in its main sense ... uncountable*). reviewer-a (reasoning off) answered *cannot tell* on seven, *original* on two, and *copied* on *economy-n* with a near quote it withdrew itself; search did not find that quote. Record: `reviews/originality/2026-10-07.md`. Spend under US$0.01.
+
 ## [2026-10-07] lint | forty-ninth pass: five back-links moved, one repointed
 
 Mechanical checks clean: caps, links (392 pages), `lint_vocab --all --queue` (no violations), claims (four spent claim files pruned), queue sync. `crossref --all --apply` added fourteen back-links from the last two cycles; eight right, five moved by hand to the right sense (*child* on `product-n` to sense 2, *emotion* on `reason-n` to sense 3, *ground* on `reason-n` to sense 2, *meaning* on `purpose-n` to sense 2, *paragraph* on `section-n` to sense 1), and one wrong in kind: `color-n` sense 2 (skin) compared itself with `race-n`, which now holds only the contest, so its reference was repointed to `race-n-2` (not yet drafted) and the back-link removed. One TYPE-MISMATCH (*part*/*section*) settled on the older side (compare). Precision: seven disabled pairs unchanged, nothing new under 30 percent; `reviewer-b` `phrase` back to 0.37. Index, open questions, curator file: no contradictions or duplicates. No spend. Next lint due in about five cycles.

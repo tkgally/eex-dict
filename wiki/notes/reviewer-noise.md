@@ -71,3 +71,5 @@ This is a third, different shape of the same underlying pattern (see the two ent
 **Originality check 2026-10-06 (`20261006T085705Z-b1xhaa`).** Reasoning off: "copied" on nine of ten, each attributed to one learner's dictionary and each "quote" our own wording (with *to* or *somebody* added) or a different one. Search confirmed only *joint* (meat), which was rewritten. Blanket "copied" calls are back; search still decides.
 
 **Second originality check 2026-10-06 (`20261006T171831Z-n2nh3n`).** Reasoning off, one numbered prompt: "cannot tell" on all ten, no quotes. Search alone found the one close match (*out to lunch*, under `lunch-n`), which was rewritten.
+
+**2026-10-07 check (twenty-second).** reviewer-a, reasoning off: seven *cannot tell*, two *original*, one *copied* (`economy-n`) with a near quote that it withdrew in the same line; search did not find the quoted wording. No rewrites.
