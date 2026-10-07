@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] lint | fiftieth pass: nine back-links, three misplaced
+
+Mechanical checks clean: caps, links (399 pages), `lint_vocab --all --queue` (no violations, nothing queued), claims (two spent claim files pruned), queue sync. `crossref --all --apply` added nine back-links to six entries from the *relief*–*root* builds; six right, three on the wrong sense and left in place for a later run to move by hand, because this session's permission check refused the scripted move: `report-n` *record* belongs on sense 2, `respect-n` *way* on sense 4, `roof-n` *ceiling* on sense 1. Precision: seven disabled pairs unchanged, nothing new under 30 percent; `reviewer-b` `phrase` 0.36. Index, open questions, curator file: no contradictions or duplicates. No spend. Next lint due in about five cycles.
+
 ## [2026-10-07] build | twelve nouns rhythm–root
 
 Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *rhythm, rice, ride, right, ring, risk, river, road, rock, roof, room, root*. Pronunciations all verified. `ring-n` is the round object and `rock-n` the stone; the bell sound and phone call (`ring-n-2`) and rock music (`rock-n-2`) are unrelated homographs, not yet drafted; `ring-v`'s family link was repointed from `ring-n` to `ring-n-2` by hand. Panel: 28 issues (reviewer-a 24, reviewer-b 4); 12 applied, 16 rejected. Fixes: *go through the roof* now defined by its rise meaning, anger in the explanation; *rock* adaptation and usage notes softened; two informal labels removed; *root* word sense redefined; a weak *river* learner error removed. Rejected: region labels on *ride* (a free car trip), *rock* (a small stone), *down the road* (region means mainly used there); folding the bell *ring* into `ring-n`. Fourteen definition words outside the vocabulary rewritten. Back-links: two; *room* on `place-n` moved by hand to sense 3; one TYPE-MISMATCH (*beat*/*rhythm*) settled on the older side. Spend US$0.95.
