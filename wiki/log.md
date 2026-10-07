@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] build | ten nouns shadow–shoe
+
+Build, cycle 2 of the 20:43 run. Ten band 1 nouns (not twelve, to fit the day's last US$1.01): *shadow, shame, shape, sheep, sheet, shell, ship, shirt, shock, shoe*. All pronunciations verified; `sheep` plural from the exceptions table. Panel: 16 issues, all reviewer-a (reviewer-b complete, none); 13 applied, 3 rejected. Fixes: *put someone to shame*, *lose your shirt*, *give someone the shirt off your back*, *abandon ship* redefined; *shell* the weapon is the fired object, not its case; *sheet* rain sense; *ship*/*boat* note hedged; the *shoe* learner error made unambiguous. Rejected: *have a shock* as uncommon (three flags). Four definition words outside the vocabulary rewritten before the panel (*spoils*, *embarrassed*, *triangle*, *bet*). Back-links: four, all checked. Queued: `t shirt|n` (hyphen lost again) and `underneath|n` (guessed part of speech). *a shock of hair* is an unrelated homograph left out. Spend US$0.82; the day closes at US$14.80, so the run ends here.
+
 ## [2026-10-07] review | second reading of confusion–cotton
 
 Review, cycle 1 of the 20:43 run. Twelve one-round nouns from 2026-10-02: *confusion, connection, container, contest, contract, control, conversation, copy, corn, corner, cost, cotton*. By hand: *no contest* moved from a collocation of `contest-n` to a phrase (informal); *conversation* lost *informal* from its definition. Panel: 26 issues (reviewer-a 21, reviewer-b 5); 15 applied, 11 rejected. Fixes: `control-n` passport control checks papers, not bags; `copy-n` sense 1 now *exactly the same* (covers copies of letters); `cost-n` legal costs redefined; `corn-n` British note softened; `corner-n` core idea, corner kick, and the in/on/at adaptation note; `contract-n` usage note. Rejected: four reviewer-b "not phrasal" flags on `corner-n` phrases; `fog-n` and `print-n` cross-references (both fit); British *corn* as grain. Spend US$0.88.
