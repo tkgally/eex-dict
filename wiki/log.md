@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] lint | forty-eighth pass: one back-link moved, reviewer-b rate recovered
+
+Mechanical checks clean: caps, links (386 pages), claims (two spent claim files pruned), `lint_vocab --all --queue`, queue sync. `crossref --all --apply` added four back-links from the last two builds; three were right (*fun* under *pleasure* sense 1, *exercise* under *practice* sense 1, *fee* under *price* sense 1; *please* in *pleasure*'s family), one wrong: *time* landed on `point-n` sense 2 (the main part) and was moved by hand to sense 4 (a moment). No TYPE-MISMATCH lines. Precision: seven disabled pairs unchanged, nothing new under 30 percent; `reviewer-b` `spelling-or-format` 0.28, no new decisions. reviewer-b's applied issues per entry rose to 0.24 over 45 complete replies (0.19 at the last pass), so the prompt line stays. Index, open questions, curator file: no contradictions or duplicates found. No spend. Next lint due in about five cycles.
+
 ## [2026-10-06] review | chain–cheese, second panel round
 
 Second reading of the eight oldest one-round entries: *chain, chair, chance, change, chapter, character, charge, cheese* (all nouns, created 2026-10-01). Added by hand before the panel: the idiom *pull someone's chain* (`chain-n`), learner errors on *in the armchair* (`chair-n`) and *in chapter 3* (`chapter-n`), and `cheesy-adj` in the cheese word family. Panel: 11 issues (9 blocking), all from reviewer-a, all applied: the *change* train-change sense is now labelled British, the American label came off the *chapter* club sense, the *character*/*personality* note no longer limits *character* to moral qualities, and the doubtful *big chance* learner error was removed. One back-link was added (`price-n` compare to `charge-n`). Spend about US$0.79; the day stands at US$14.97, so the run ends after this cycle.
