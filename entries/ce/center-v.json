@@ -1,34 +1,41 @@
 {
   "schema_version": "1.0",
-  "id": "paint-v",
-  "slug": "paint-v",
-  "headword": "paint",
+  "id": "center-v",
+  "slug": "center-v",
+  "headword": "center",
   "pos": "v",
   "homograph": 1,
-  "variants": [],
+  "variants": [
+    {
+      "form": "centre",
+      "kind": "spelling",
+      "region": "British",
+      "note": null
+    }
+  ],
   "pronunciation": {
     "american": {
-      "ipa": "peɪnt",
+      "ipa": "ˈsɛn.tɚ",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "peɪnt",
+      "ipa": "ˈsen.tə",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "Stress the first part: *SEN-ter*. The **c** sounds like **s**."
   },
   "inflections": {
     "forms": {
-      "third_person_singular": "paints",
-      "past_tense": "painted",
-      "past_participle": "painted",
-      "present_participle": "painting"
+      "third_person_singular": "centers",
+      "past_tense": "centered",
+      "past_participle": "centered",
+      "present_participle": "centering"
     },
     "regular": true,
     "source": "rules",
@@ -36,7 +43,7 @@
     "note": null
   },
   "frequency": {
-    "band": 1,
+    "band": 3,
     "basis": "editorial",
     "defining_vocabulary": true
   },
@@ -47,12 +54,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To paint is to put paint on something, or to make a picture with paint or with words.",
+  "core_idea": "To **center** something is to put it in the middle, or to make it the main point that other things are around.",
   "senses": [
     {
       "n": 1,
-      "signpost": "cover with paint",
-      "definition": "cover a surface with paint",
+      "signpost": "put in the middle",
+      "definition": "put something in the middle of a space or an object",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -60,7 +67,7 @@
         "codes": [],
         "patterns": [
           "verb + object",
-          "verb + object + adjective"
+          "verb + adverb or preposition"
         ]
       },
       "labels": {
@@ -73,50 +80,39 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We're painting the kitchen yellow.",
+          "text": "Center the title at the top of the page.",
           "note": null,
-          "pattern": "verb + object + adjective"
+          "pattern": null
         },
         {
-          "text": "He spent the weekend painting the fence.",
+          "text": "He centered the picture on the wall.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         },
         {
-          "text": "Careful: the door has just been painted.",
-          "note": "passive",
-          "pattern": "verb + object"
-        },
-        {
-          "text": "She painted her nails bright red.",
+          "text": "Make sure the text is centered.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "verb + adverb",
           "items": [
-            "paint a wall",
-            "paint a room",
-            "paint a house"
+            "center something exactly",
+            "center something carefully"
           ]
         },
         {
-          "type": "phrase",
+          "type": "verb + preposition",
           "items": [
-            "paint something white"
+            "center something on something"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "coat-v",
-          "note": null
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -129,15 +125,17 @@
     },
     {
       "n": 2,
-      "signpost": "pictures",
-      "definition": "make a picture using paint",
-      "explanation": null,
+      "signpost": "have as main subject",
+      "definition": "have something or someone as the main subject or the most important part",
+      "explanation": "Usually used with **on**, **around**, or **upon**, and often in the passive: *be centered on*.",
       "grammar": {
         "countability": null,
         "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + preposition + object",
+          "verb + object + preposition + object",
+          "usually passive"
         ]
       },
       "labels": {
@@ -150,38 +148,44 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She paints flowers and landscapes.",
+          "text": "The story centers on a family who move to a new town.",
           "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "He has been painting since he was a child.",
-          "note": "no object",
           "pattern": null
         },
         {
-          "text": "Who painted this portrait?",
+          "text": "Our discussion centered around the cost of the project.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
+        },
+        {
+          "text": "Her life is centered on her children.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "verb + preposition",
           "items": [
-            "paint a picture",
-            "paint a portrait"
+            "center on something",
+            "center around something"
+          ]
+        },
+        {
+          "type": "adverb + verb",
+          "items": [
+            "mainly center on something"
           ]
         }
       ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [
+      "synonyms": [
         {
-          "slug": "draw-v",
+          "slug": "focus-v",
           "note": null
         }
       ],
+      "antonyms": [],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -194,16 +198,15 @@
     },
     {
       "n": 3,
-      "signpost": "describe",
-      "definition": "describe someone or something in a particular way",
+      "signpost": "be based in a place",
+      "definition": "have a particular place as the main area of activity",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object + as + noun or adjective",
-          "verb + object"
+          "usually passive"
         ]
       },
       "labels": {
@@ -216,22 +219,21 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The report paints a worrying picture of the town's future.",
+          "text": "The company is centered in the north of the country.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         },
         {
-          "text": "The newspapers painted him as a hero.",
+          "text": "Most of the fighting was centered in the old town.",
           "note": null,
-          "pattern": "verb + object + as + noun or adjective"
+          "pattern": null
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "paint a picture of something",
-            "paint someone as something"
+            "be centered in a place"
           ]
         }
       ],
@@ -252,28 +254,23 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "paint-n",
+      "slug": "center-n",
       "form": null,
       "note": null
     },
     {
-      "slug": "painter-n",
-      "form": null,
-      "note": null
-    },
-    {
-      "slug": "painting-n",
+      "slug": "central-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
+  "usage_note": "Some careful writers dislike **center around**, because a center is a single point; **center on** is accepted by everyone and is the safer choice in formal writing.",
   "learner_errors": [
     {
-      "incorrect": "She painted the wall with yellow.",
-      "correct": "She painted the wall yellow.",
-      "note": "To name the color, put it directly after the object: *paint the wall yellow*."
+      "incorrect": "The film is centered at a young doctor.",
+      "correct": "The film is centered on a young doctor.",
+      "note": "Use **on** or **around**, not **at**, for the main subject."
     }
   ],
   "etymology": null,
@@ -287,47 +284,27 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T19:54:40Z",
-    "modified": "2026-10-07T04:54:54Z",
+    "created": "2026-10-07T04:47:33Z",
+    "modified": "2026-10-07T04:51:06Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T195326Z-iujuq0",
+    "run_id": "20261007T044419Z-hpvo8n",
     "reviews": [
       {
-        "run_id": "20260926T195326Z-iujuq0",
+        "run_id": "20261007T044419Z-hpvo8n",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T195326Z-iujuq0/paint-v.json",
+        "date": "2026-10-07",
+        "file": "reviews/20261007T044419Z-hpvo8n/center-v.json",
         "ok": 42,
         "issues": 1,
         "blocking": 1
       },
       {
-        "run_id": "20260926T195326Z-iujuq0",
+        "run_id": "20261007T044419Z-hpvo8n",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T195326Z-iujuq0/paint-v.json",
-        "ok": 40,
-        "issues": 3,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260928T005620Z-jf8wvz",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-28",
-        "file": "reviews/20260928T005620Z-jf8wvz/paint-v.json",
-        "ok": 42,
-        "issues": 1,
-        "blocking": 1
-      },
-      {
-        "run_id": "20260928T005620Z-jf8wvz",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-28",
-        "file": "reviews/20260928T005620Z-jf8wvz/paint-v.json",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-07",
+        "file": "reviews/20261007T044419Z-hpvo8n/center-v.json",
         "ok": 43,
         "issues": 0,
         "blocking": 0
