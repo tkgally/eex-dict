@@ -1,20 +1,27 @@
 {
   "schema_version": "1.0",
-  "id": "exercise-n",
-  "slug": "exercise-n",
-  "headword": "exercise",
+  "id": "program-n",
+  "slug": "program-n",
+  "headword": "program",
   "pos": "n",
   "homograph": 1,
-  "variants": [],
+  "variants": [
+    {
+      "form": "programme",
+      "kind": "spelling",
+      "region": "British",
+      "note": "used in British English for every sense except in computing"
+    }
+  ],
   "pronunciation": {
     "american": {
-      "ipa": "ˈɛk.sɚ.saɪz",
+      "ipa": "ˈproʊ.ɡræm",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈek.sə.saɪz",
+      "ipa": "ˈprəʊ.ɡræm",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,7 +32,7 @@
   },
   "inflections": {
     "forms": {
-      "plural": "exercises"
+      "plural": "programs"
     },
     "regular": true,
     "source": "rules",
@@ -44,15 +51,15 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "Exercise is activity done to make the body or the mind stronger, to practice something, or to use a power or a right.",
+  "core_idea": "A program is a planned set of things: steps for a computer to follow, the parts of a show, or a set of activities.",
   "senses": [
     {
       "n": 1,
-      "signpost": "for the body",
-      "definition": "physical activity that you do to stay healthy and strong",
+      "signpost": "computer",
+      "definition": "a set of instructions that makes a computer do a particular job",
       "explanation": null,
       "grammar": {
-        "countability": "uncountable",
+        "countability": "countable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -60,29 +67,26 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "computing"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Swimming is good exercise.",
+          "text": "You need to install the program before you can use it.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "You should get more exercise.",
+          "text": "He wrote a program that sorts the photos by date.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "A little exercise every day makes a big difference.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The doctor told him to get regular exercise.",
+          "text": "The program stopped working after the update.",
           "note": null,
           "pattern": null
         }
@@ -91,24 +95,18 @@
         {
           "type": "verb + noun",
           "items": [
-            "get exercise",
-            "do exercise"
-          ]
-        },
-        {
-          "type": "adjective + noun",
-          "items": [
-            "regular exercise",
-            "gentle exercise",
-            "hard exercise",
-            "physical exercise"
+            "install a program",
+            "run a program",
+            "write a program",
+            "download a program",
+            "open a program"
           ]
         },
         {
           "type": "noun + noun",
           "items": [
-            "an exercise bike",
-            "an exercise class"
+            "a computer program",
+            "a software program"
           ]
         }
       ],
@@ -116,8 +114,12 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "sport-n",
-          "note": "a **sport** is a game or competition with rules; **exercise** is any activity that keeps you fit"
+          "slug": "app-n",
+          "note": null
+        },
+        {
+          "slug": "software-n",
+          "note": null
         }
       ],
       "subsenses": [],
@@ -132,9 +134,9 @@
     },
     {
       "n": 2,
-      "signpost": "movement",
-      "definition": "a movement or a set of movements that you do to make a part of your body stronger",
-      "explanation": null,
+      "signpost": "TV or radio",
+      "definition": "something that is shown on television or heard on the radio, such as a show or the news",
+      "explanation": "In American English **show** is more usual for most programs that people watch for fun.",
       "grammar": {
         "countability": "countable",
         "transitivity": null,
@@ -151,38 +153,52 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Do these exercises every morning to help your back.",
+          "text": "What's your favorite TV program?",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The teacher showed us some breathing exercises.",
+          "text": "There's a program about wild animals on tonight.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Stretching exercises can stop you from getting hurt.",
+          "text": "She works on a radio program for young people.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "verb + noun",
           "items": [
-            "breathing exercises",
-            "stretching exercises",
-            "leg exercises"
+            "watch a program",
+            "make a program",
+            "present a program"
           ]
         },
         {
-          "type": "verb + noun",
+          "type": "noun + noun",
           "items": [
-            "do an exercise"
+            "a TV program",
+            "a radio program",
+            "a news program"
+          ]
+        },
+        {
+          "type": "noun + preposition",
+          "items": [
+            "a program about something",
+            "a program on something"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "show-n",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -197,8 +213,8 @@
     },
     {
       "n": 3,
-      "signpost": "for learning",
-      "definition": "a set of questions or a task that helps you practice what you are learning",
+      "signpost": "plan",
+      "definition": "a planned set of activities with a particular aim, often over a long time",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -216,50 +232,51 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Do exercise 3 on page 20 for homework.",
+          "text": "The school has a new reading program for young children.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The book has grammar exercises at the end of each unit.",
+          "text": "He follows a strict exercise program.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "We did a short listening exercise in class.",
+          "text": "The government started a program to build cheaper homes.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
-          "items": [
-            "a grammar exercise",
-            "a writing exercise",
-            "a listening exercise"
-          ]
-        },
-        {
           "type": "verb + noun",
           "items": [
-            "do an exercise",
-            "complete an exercise"
+            "start a program",
+            "run a program",
+            "follow a program"
+          ]
+        },
+        {
+          "type": "noun + noun",
+          "items": [
+            "a training program",
+            "an exercise program",
+            "an exchange program"
           ]
         }
       ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [
+      "synonyms": [
         {
-          "slug": "practice-n",
+          "slug": "plan-n",
           "note": null
         },
         {
-          "slug": "problem-n",
+          "slug": "scheme-n",
           "note": null
         }
       ],
+      "antonyms": [],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -272,20 +289,20 @@
     },
     {
       "n": 4,
-      "signpost": "activity with a purpose",
-      "definition": "an activity that is planned to achieve a particular result",
+      "signpost": "study",
+      "definition": "a course of study at a college or university",
       "explanation": null,
       "grammar": {
         "countability": "countable",
         "transitivity": null,
-        "codes": [
-          "usually singular"
-        ],
+        "codes": [],
         "patterns": []
       },
       "labels": {
         "register": [],
-        "region": [],
+        "region": [
+          "American"
+        ],
         "domain": [],
         "currency": [],
         "attitude": []
@@ -293,39 +310,39 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The meeting was a useful exercise in teamwork.",
+          "text": "She is in a two-year nursing program.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Waiting for the bus every morning is an exercise in patience.",
+          "text": "The master's program accepts thirty students a year.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The whole thing was a pointless exercise.",
+          "text": "He applied to three graduate programs.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "noun + noun",
           "items": [
-            "an exercise in something"
-          ]
-        },
-        {
-          "type": "adjective + noun",
-          "items": [
-            "a useful exercise",
-            "a pointless exercise"
+            "a degree program",
+            "a master's program",
+            "a graduate program"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "course-n",
+          "note": null
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -338,76 +355,17 @@
     },
     {
       "n": 5,
-      "signpost": "military",
-      "definition": "a set of activities that soldiers do to practice for war",
+      "signpost": "event list",
+      "definition": "a small printed paper or book that tells you about a play, concert, or sports event, such as who is performing",
       "explanation": null,
       "grammar": {
         "countability": "countable",
-        "transitivity": null,
-        "codes": [
-          "usually plural"
-        ],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [
-          "military"
-        ],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "The army is holding exercises near the coast.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The ships took part in a training exercise.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "noun + noun",
-          "items": [
-            "a training exercise",
-            "military exercises"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "n": 6,
-      "signpost": "use",
-      "definition": "the use of a power, a right, or a quality",
-      "explanation": null,
-      "grammar": {
-        "countability": "uncountable",
         "transitivity": null,
         "codes": [],
         "patterns": []
       },
       "labels": {
-        "register": [
-          "formal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -416,22 +374,33 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The court must allow the free exercise of religion.",
+          "text": "We bought a program and found our seats.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Good leaders need the exercise of judgment.",
+          "text": "The singers' names are in the program.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The program of events for the weekend is on the website.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "noun + preposition",
           "items": [
-            "the exercise of power",
-            "the exercise of a right"
+            "a program of events"
+          ]
+        },
+        {
+          "type": "verb + noun",
+          "items": [
+            "buy a program",
+            "look at the program"
           ]
         }
       ],
@@ -449,70 +418,104 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "get-with-the-program",
+      "text": "get with the program",
+      "definition": "start doing what other people expect or what the situation needs",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [
+          "American"
+        ],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Everyone else has finished: get with the program!",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The new manager told us to get with the program.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
-      "slug": "exercise-v",
+      "slug": "program-v",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "programmer-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "programming-n",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "In the first sense **exercise** is uncountable: *get more exercise*, *a lot of exercise*. Use the countable form only for particular movements (*leg exercises*) or tasks (*a grammar exercise*). The usual verbs are **get**, **do**, and, in British English, **take**: you do not **make** exercise.",
+  "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "I need to do more exercises.",
-      "correct": "I need to get more exercise.",
-      "note": "For physical activity in general, **exercise** is uncountable."
-    },
-    {
-      "incorrect": "I make exercise every day.",
-      "correct": "I exercise every day.",
-      "note": "Use the verb **exercise**, or **do** or **get exercise**; not **make exercise**."
+      "incorrect": "I watched an interesting program in TV.",
+      "correct": "I watched an interesting program on TV.",
+      "note": "Programs are *on* television or the radio."
     }
   ],
   "etymology": null,
-  "see_also": [
-    {
-      "slug": "fitness-n",
-      "note": null
-    },
-    {
-      "slug": "training-n",
-      "note": null
-    }
-  ],
+  "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"exercise\": physical activity in general is uncountable (*more exercise*), but particular movements and school tasks are countable (*two exercises*).",
-    "culture": null,
-    "false_friends": null,
-    "pronunciation": "\"exercise\": stress on the first syllable, *EK-ser-size*; the last part rhymes with **size**."
+    "grammar": null,
+    "culture": "British English spells the word **programme** except in computing, where **program** is used; American English uses **program** for everything.",
+    "false_friends": "In some languages a word like **program** also means a TV channel or a timetable. In English a **program** is one show; the station that broadcasts it is a **channel**.",
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-03T13:13:28Z",
-    "modified": "2026-10-07T01:01:14Z",
+    "created": "2026-10-07T00:53:14Z",
+    "modified": "2026-10-07T01:00:08Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261003T130902Z-nnlpte",
+    "run_id": "20261007T004900Z-0g9zmp",
     "reviews": [
       {
-        "run_id": "20261003T130902Z-nnlpte",
+        "run_id": "20261007T004900Z-0g9zmp",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T130902Z-nnlpte/exercise-n.json",
-        "ok": 68,
-        "issues": 2,
-        "blocking": 2
+        "date": "2026-10-07",
+        "file": "reviews/20261007T004900Z-0g9zmp/program-n.json",
+        "ok": 62,
+        "issues": 5,
+        "blocking": 5
       },
       {
-        "run_id": "20261003T130902Z-nnlpte",
+        "run_id": "20261007T004900Z-0g9zmp",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T130902Z-nnlpte/exercise-n.json",
-        "ok": 70,
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-07",
+        "file": "reviews/20261007T004900Z-0g9zmp/program-n.json",
+        "ok": 66,
         "issues": 0,
         "blocking": 0
       }
