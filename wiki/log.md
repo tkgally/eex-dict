@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] review | second reading of climate–coin
+
+Twelve one-round nouns from 2026-10-02 reread: *climate, clock, closet, cloth, clothes, cloud, club, coast, coat, code, coffee, coin*. Added by hand before the panel: six phrases (*beat the clock*, *the clothes on your back*, *a cloud on the horizon*, *cut your coat according to your cloth*, *the other side of the coin*, *two sides of the same coin*), five learner errors (one later removed), a *cloth* countability usage note, a *climate* pronunciation note, collocations. Panel: 30 issues (reviewer-a 29, reviewer-b 1); 16 applied, 14 rejected. Fixes: the *closet* phrases now cover bisexual people; British *wardrobe*/*cupboard* softened; the new *closet* kitchen learner error removed; *cloud* computing sense and core idea no longer say it replaces your own computer; *from coast to coast*; *clock* sense 1 includes screens. Rejected: *clock* for a British mileage meter, the *climate* place subsense, *old-fashioned* as currency, *piece* as a coin synonym, *I played a club*. No definition words outside the vocabulary; no back-links. Spend US$0.96.
+
 ## [2026-10-07] originality | twenty-second check, no rewrites
 
 Ten sampled fields (definitions of *fire-v*, *business-n*, *gas-n* phrase, *battery-n*, *economy-n*, *passion-n*, *head-n* phrase, *some-det*; usage notes of *patient-n*, *beauty-n*) searched as exact phrases: no published dictionary wording found for any. Verdicts: original 8, generic-overlap 2 (*economy-n* shares the frame *the system by which ... goods and services are produced*; *beauty-n* shares the grammar frame *in its main sense ... uncountable*). reviewer-a (reasoning off) answered *cannot tell* on seven, *original* on two, and *copied* on *economy-n* with a near quote it withdrew itself; search did not find that quote. Record: `reviews/originality/2026-10-07.md`. Spend under US$0.01.
