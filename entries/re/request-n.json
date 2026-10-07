@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "pause-n",
-  "slug": "pause-n",
-  "headword": "pause",
+  "id": "request-n",
+  "slug": "request-n",
+  "headword": "request",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "pɔz",
+      "ipa": "rɪˈkwɛst",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "pɔːz",
+      "ipa": "rɪˈkwest",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "It sounds the same as **paws**, the feet of an animal."
+    "notes": "Stress the second part: *ri-KWEST*."
   },
   "inflections": {
     "forms": {
-      "plural": "pauses"
+      "plural": "requests"
     },
     "regular": true,
     "source": "rules",
@@ -48,8 +48,8 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "short stop",
-      "definition": "a short time when you stop speaking or doing something before you start again",
+      "signpost": "asking",
+      "definition": "a polite or formal message in which you ask for something",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -67,60 +67,59 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "There was a long pause before she answered.",
+          "text": "They made a request for more time.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "After a short pause, he went on with his story.",
+          "text": "The manager agreed to my request.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "We worked for three hours without a pause.",
+          "text": "We received hundreds of requests for information.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There was an awkward pause in the conversation.",
+          "text": "Her request to work from home was turned down.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
+          "type": "verb + noun",
+          "items": [
+            "make a request",
+            "receive a request",
+            "agree to a request",
+            "refuse a request",
+            "turn down a request"
+          ]
+        },
+        {
           "type": "adjective + noun",
           "items": [
-            "a short pause",
-            "a long pause",
-            "an awkward pause",
-            "a brief pause"
+            "a formal request",
+            "an urgent request",
+            "a polite request",
+            "a special request"
           ]
         },
         {
           "type": "noun + preposition",
           "items": [
-            "a pause in something"
-          ]
-        },
-        {
-          "type": "preposition + noun",
-          "items": [
-            "without a pause"
+            "a request for something"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "break-n",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [
         {
-          "slug": "rest-n",
-          "note": null
+          "slug": "demand-n",
+          "note": "a firm request, made as if the person has a right to what they ask for"
         }
       ],
       "subsenses": [],
@@ -135,11 +134,11 @@
     },
     {
       "n": 2,
-      "signpost": "on a machine",
-      "definition": "the button or control that stops a recording, a video, or a game for a time",
+      "signpost": "thing asked for",
+      "definition": "something that someone asks for, for example a song that they ask a band to play",
       "explanation": null,
       "grammar": {
-        "countability": "uncountable",
+        "countability": "countable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -154,12 +153,17 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Press pause when you want to stop the video.",
+          "text": "The band played a few requests at the end of the night.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "I hit pause to answer the phone.",
+          "text": "Do you have any special requests for the meal?",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The radio station takes requests on Friday nights.",
           "note": null,
           "pattern": null
         }
@@ -168,14 +172,8 @@
         {
           "type": "verb + noun",
           "items": [
-            "press pause",
-            "hit pause"
-          ]
-        },
-        {
-          "type": "noun + noun",
-          "items": [
-            "the pause button"
+            "take requests",
+            "play a request"
           ]
         }
       ],
@@ -195,9 +193,9 @@
   ],
   "phrases": [
     {
-      "sub_id": "give-someone-pause",
-      "text": "give someone pause",
-      "definition": "make someone stop and think carefully before doing something",
+      "sub_id": "on-request",
+      "text": "on request",
+      "definition": "when someone asks",
       "explanation": null,
       "labels": {
         "register": [
@@ -210,12 +208,45 @@
       },
       "examples": [
         {
-          "text": "The high price gave us pause.",
+          "text": "Vegetarian meals are available on request.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "His warning should give anyone pause.",
+          "text": "We can send you a free copy on request.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "at-someones-request",
+      "text": "at someone's request",
+      "definition": "because someone has asked for it",
+      "explanation": "Also **at the request of someone**.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "I'm calling at the request of my manager.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "At her request, the meeting was moved to Friday.",
           "note": null,
           "pattern": null
         }
@@ -232,7 +263,7 @@
   ],
   "word_family": [
     {
-      "slug": "pause-v",
+      "slug": "request-v",
       "form": null,
       "note": null
     }
@@ -241,51 +272,46 @@
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "Let's make a pause.",
-      "correct": "Let's take a short break.",
-      "note": "You do not **make** a pause; say *Let's take a short break* or use the verb: *Let's pause for a moment*."
+      "incorrect": "She sent a request of help.",
+      "correct": "She sent a request for help.",
+      "note": "You make a request **for** something."
     }
   ],
   "etymology": null,
-  "see_also": [
-    {
-      "slug": "rest-n",
-      "note": null
-    }
-  ],
+  "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": null,
+    "grammar": "\"request\": the noun takes **for** before the thing asked for (*a request for help*); the verb takes a direct object with no preposition (*request help*).",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-06T09:09:23Z",
-    "modified": "2026-10-07T09:09:39Z",
+    "created": "2026-10-07T09:01:51Z",
+    "modified": "2026-10-07T09:09:12Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261006T090554Z-b1xhaa",
+    "run_id": "20261007T085725Z-cdk3nt",
     "reviews": [
       {
-        "run_id": "20261006T090554Z-b1xhaa",
+        "run_id": "20261007T085725Z-cdk3nt",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-06",
-        "file": "reviews/20261006T090554Z-b1xhaa/pause-n.json",
-        "ok": 38,
-        "issues": 1,
-        "blocking": 0
+        "date": "2026-10-07",
+        "file": "reviews/20261007T085725Z-cdk3nt/request-n.json",
+        "ok": 42,
+        "issues": 2,
+        "blocking": 2
       },
       {
-        "run_id": "20261006T090554Z-b1xhaa",
+        "run_id": "20261007T085725Z-cdk3nt",
         "role": "reviewer-b",
         "model": "google/gemini-3.1-pro-preview",
-        "date": "2026-10-06",
-        "file": "reviews/20261006T090554Z-b1xhaa/pause-n.json",
-        "ok": 39,
-        "issues": 0,
-        "blocking": 0
+        "date": "2026-10-07",
+        "file": "reviews/20261007T085725Z-cdk3nt/request-n.json",
+        "ok": 43,
+        "issues": 1,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
