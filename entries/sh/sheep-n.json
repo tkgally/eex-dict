@@ -1,41 +1,41 @@
 {
   "schema_version": "1.0",
-  "id": "bullet-n",
-  "slug": "bullet-n",
-  "headword": "bullet",
+  "id": "sheep-n",
+  "slug": "sheep-n",
+  "headword": "sheep",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈbʊl.ɪt",
+      "ipa": "ʃip",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈbʊl.ɪt",
+      "ipa": "ʃiːp",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "The **u** sounds like the **u** in **put**, not the **u** in **but**: *BUL-it*."
+    "notes": "Rhymes with **keep**; do not say it like **ship**."
   },
   "inflections": {
     "forms": {
-      "plural": "bullets"
+      "plural": "sheep"
     },
-    "regular": true,
-    "source": "rules",
+    "regular": false,
+    "source": "exceptions",
     "status": "verified",
     "note": null
   },
   "frequency": {
-    "band": 3,
+    "band": 1,
     "basis": "editorial",
-    "defining_vocabulary": false
+    "defining_vocabulary": true
   },
   "labels": {
     "register": [],
@@ -48,8 +48,8 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "from a gun",
-      "definition": "a small piece of metal that comes out of a gun when it is fired",
+      "signpost": "animal",
+      "definition": "a farm animal with a thick coat of wool, kept for its wool and its meat",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -60,48 +60,55 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "animals"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "The bullet missed him by a few inches.",
+          "text": "A farmer was moving his sheep to another field.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Police found three bullets near the car.",
+          "text": "There were hundreds of sheep on the hill.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There was a bullet hole in the window.",
+          "text": "The sheep were eating grass beside the road.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
+          "type": "phrase",
+          "items": [
+            "a flock of sheep"
+          ]
+        },
+        {
           "type": "verb + noun",
           "items": [
-            "fire a bullet",
-            "be hit by a bullet"
+            "keep sheep",
+            "raise sheep"
           ]
         },
         {
           "type": "noun + noun",
           "items": [
-            "bullet hole",
-            "bullet wound"
+            "a sheep farm",
+            "a sheep farmer"
           ]
         },
         {
-          "type": "adjective + noun",
+          "type": "noun + verb",
           "items": [
-            "a stray bullet",
-            "a rubber bullet"
+            "sheep graze"
           ]
         }
       ],
@@ -109,7 +116,11 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "shell-n",
+          "slug": "goat-n",
+          "note": null
+        },
+        {
+          "slug": "lamb-n",
           "note": null
         }
       ],
@@ -125,8 +136,8 @@
     },
     {
       "n": 2,
-      "signpost": "in a list",
-      "definition": "a small round mark or other sign at the start of each item in a list",
+      "signpost": "follower",
+      "definition": "a person who does what other people do or say, without thinking for themselves",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -139,27 +150,29 @@
         "region": [],
         "domain": [],
         "currency": [],
-        "attitude": []
+        "attitude": [
+          "disapproving"
+        ]
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Put each idea on a new line with a bullet in front of it.",
+          "text": "People just followed him like sheep.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The slides use bullets to make the list easier to read.",
+          "text": "Don't be a sheep; make up your own mind.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "phrase",
           "items": [
-            "bullet point",
-            "bullet list"
+            "like sheep",
+            "follow like sheep"
           ]
         }
       ],
@@ -179,80 +192,10 @@
   ],
   "phrases": [
     {
-      "sub_id": "bite-the-bullet",
-      "text": "bite the bullet",
-      "definition": "finally decide to do something unpleasant that has to be done",
+      "sub_id": "the-black-sheep",
+      "text": "the black sheep",
+      "definition": "a member of a family or group whom the others think of as a failure or a cause of shame",
       "explanation": null,
-      "labels": {
-        "register": [
-          "informal"
-        ],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "I hated the idea, but in the end I bit the bullet and called the bank.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "We'll have to bite the bullet and pay for a new roof.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "dodge-a-bullet",
-      "text": "dodge a bullet",
-      "definition": "just manage to escape something bad that nearly happened to you",
-      "explanation": null,
-      "labels": {
-        "register": [
-          "informal"
-        ],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "The company I almost joined closed a month later, so I really dodged a bullet.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "We dodged a bullet when the storm turned away from the coast.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "silver-bullet",
-      "text": "silver bullet",
-      "definition": "a simple answer that will quickly solve a difficult problem",
-      "explanation": "Usually used with a negative, to say that no such answer exists.",
       "labels": {
         "register": [],
         "region": [],
@@ -262,12 +205,45 @@
       },
       "examples": [
         {
-          "text": "There is no silver bullet for losing weight.",
+          "text": "He was always the black sheep of the family.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The new software is useful, but it isn't a silver bullet.",
+          "text": "My uncle was the black sheep who never wrote home.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "count-sheep",
+      "text": "count sheep",
+      "definition": "imagine sheep jumping over a fence one at a time and count them, in order to fall asleep",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "When I can't sleep, I try counting sheep.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "I counted sheep for an hour and was still awake.",
           "note": null,
           "pattern": null
         }
@@ -284,67 +260,67 @@
   ],
   "word_family": [
     {
-      "slug": "bulletproof-adj",
+      "slug": "sheepish-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
-  "learner_errors": [],
+  "usage_note": "The plural of **sheep** is **sheep**: *one sheep*, *ten sheep*. A young sheep is a **lamb**, and its meat is also called **lamb**; the meat of an older sheep is **mutton**, which is less common now.",
+  "learner_errors": [
+    {
+      "incorrect": "There were many sheeps in the field.",
+      "correct": "There were many sheep in the field.",
+      "note": "**Sheep** has the same form for one and for more than one."
+    },
+    {
+      "incorrect": "We had sheep for dinner.",
+      "correct": "We had lamb for dinner.",
+      "note": "The meat is usually called **lamb**, not **sheep**."
+    }
+  ],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "wool-n",
+      "note": null
+    },
+    {
+      "slug": "lamb-n",
+      "note": null
+    }
+  ],
   "adaptation": {
-    "semantic": null,
-    "grammar": null,
+    "semantic": "\"sheep\" is the animal; its meat is **lamb** or **mutton**. Some languages use one word for the animal and its meat.",
+    "grammar": "\"sheep\" does not change in the plural: *one sheep*, *two sheep*.",
     "culture": null,
     "false_friends": null,
-    "pronunciation": null
+    "pronunciation": "\"sheep\" has the long **ee** of **see**; with a short vowel it becomes **ship**."
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T03:47:14Z",
-    "modified": "2026-10-07T21:10:51Z",
+    "created": "2026-10-07T21:01:04Z",
+    "modified": "2026-10-07T21:10:44Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T034315Z-ynmbny",
+    "run_id": "20261007T205623Z-jumwa2",
     "reviews": [
       {
-        "run_id": "20260926T034315Z-ynmbny",
+        "run_id": "20261007T205623Z-jumwa2",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T034315Z-ynmbny/bullet-n.json",
-        "ok": 48,
-        "issues": 1,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260926T034315Z-ynmbny",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T034315Z-ynmbny/bullet-n.json",
-        "ok": 49,
-        "issues": 0,
-        "blocking": 0
-      },
-      {
-        "run_id": "20261002T071428Z-3z9r8m",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T071428Z-3z9r8m/bullet-n.json",
-        "ok": 48,
+        "date": "2026-10-07",
+        "file": "reviews/20261007T205623Z-jumwa2/sheep-n.json",
+        "ok": 43,
         "issues": 1,
         "blocking": 1
       },
       {
-        "run_id": "20261002T071428Z-3z9r8m",
+        "run_id": "20261007T205623Z-jumwa2",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T071428Z-3z9r8m/bullet-n.json",
-        "ok": 49,
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-07",
+        "file": "reviews/20261007T205623Z-jumwa2/sheep-n.json",
+        "ok": 44,
         "issues": 0,
         "blocking": 0
       }

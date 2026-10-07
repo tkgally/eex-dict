@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "bullet-n",
-  "slug": "bullet-n",
-  "headword": "bullet",
+  "id": "shoe-n",
+  "slug": "shoe-n",
+  "headword": "shoe",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈbʊl.ɪt",
+      "ipa": "ʃu",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈbʊl.ɪt",
+      "ipa": "ʃuː",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "The **u** sounds like the **u** in **put**, not the **u** in **but**: *BUL-it*."
+    "notes": "Rhymes with **do** and **two**."
   },
   "inflections": {
     "forms": {
-      "plural": "bullets"
+      "plural": "shoes"
     },
     "regular": true,
     "source": "rules",
@@ -33,9 +33,9 @@
     "note": null
   },
   "frequency": {
-    "band": 3,
+    "band": 1,
     "basis": "editorial",
-    "defining_vocabulary": false
+    "defining_vocabulary": true
   },
   "labels": {
     "register": [],
@@ -48,8 +48,8 @@
   "senses": [
     {
       "n": 1,
-      "signpost": "from a gun",
-      "definition": "a small piece of metal that comes out of a gun when it is fired",
+      "signpost": "for the foot",
+      "definition": "a covering for the foot, usually of leather or plastic, with a hard part underneath",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -60,24 +60,31 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "clothing"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "The bullet missed him by a few inches.",
+          "text": "I need a new pair of shoes.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Police found three bullets near the car.",
+          "text": "Please take your shoes off before you come in.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There was a bullet hole in the window.",
+          "text": "These shoes are too tight.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "She wore black shoes with high heels.",
           "note": null,
           "pattern": null
         }
@@ -86,22 +93,35 @@
         {
           "type": "verb + noun",
           "items": [
-            "fire a bullet",
-            "be hit by a bullet"
-          ]
-        },
-        {
-          "type": "noun + noun",
-          "items": [
-            "bullet hole",
-            "bullet wound"
+            "put on your shoes",
+            "take off your shoes",
+            "wear shoes",
+            "try on shoes",
+            "tie your shoes"
           ]
         },
         {
           "type": "adjective + noun",
           "items": [
-            "a stray bullet",
-            "a rubber bullet"
+            "comfortable shoes",
+            "flat shoes",
+            "high-heeled shoes",
+            "new shoes"
+          ]
+        },
+        {
+          "type": "noun + noun",
+          "items": [
+            "running shoes",
+            "tennis shoes",
+            "a shoe store",
+            "shoe size"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "a pair of shoes"
           ]
         }
       ],
@@ -109,7 +129,7 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "shell-n",
+          "slug": "boot-n",
           "note": null
         }
       ],
@@ -125,8 +145,8 @@
     },
     {
       "n": 2,
-      "signpost": "in a list",
-      "definition": "a small round mark or other sign at the start of each item in a list",
+      "signpost": "for a horse",
+      "definition": "a curved piece of metal fixed to the bottom of a horse's foot",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -137,29 +157,31 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "animals"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Put each idea on a new line with a bullet in front of it.",
+          "text": "The horse lost a shoe on the road.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The slides use bullets to make the list easier to read.",
+          "text": "A man came to fit new shoes on the horses.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "verb + noun",
           "items": [
-            "bullet point",
-            "bullet list"
+            "lose a shoe",
+            "fit a shoe"
           ]
         }
       ],
@@ -179,80 +201,10 @@
   ],
   "phrases": [
     {
-      "sub_id": "bite-the-bullet",
-      "text": "bite the bullet",
-      "definition": "finally decide to do something unpleasant that has to be done",
-      "explanation": null,
-      "labels": {
-        "register": [
-          "informal"
-        ],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "I hated the idea, but in the end I bit the bullet and called the bank.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "We'll have to bite the bullet and pay for a new roof.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "dodge-a-bullet",
-      "text": "dodge a bullet",
-      "definition": "just manage to escape something bad that nearly happened to you",
-      "explanation": null,
-      "labels": {
-        "register": [
-          "informal"
-        ],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "The company I almost joined closed a month later, so I really dodged a bullet.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "We dodged a bullet when the storm turned away from the coast.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "silver-bullet",
-      "text": "silver bullet",
-      "definition": "a simple answer that will quickly solve a difficult problem",
-      "explanation": "Usually used with a negative, to say that no such answer exists.",
+      "sub_id": "in-someones-shoes",
+      "text": "in someone's shoes",
+      "definition": "in another person's situation",
+      "explanation": "Most often in *if I were in your shoes* and *put yourself in someone's shoes*.",
       "labels": {
         "register": [],
         "region": [],
@@ -262,12 +214,75 @@
       },
       "examples": [
         {
-          "text": "There is no silver bullet for losing weight.",
+          "text": "If I were in your shoes, I'd take the job.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The new software is useful, but it isn't a silver bullet.",
+          "text": "Put yourself in her shoes; how would you feel?",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "fill-someones-shoes",
+      "text": "fill someone's shoes",
+      "definition": "do a job as well as the person who did it before you",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "It won't be easy to fill her shoes when she leaves.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Nobody thought the new manager could fill his shoes.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "the-shoe-is-on-the-other-foot",
+      "text": "the shoe is on the other foot",
+      "definition": "the situation is now the opposite of what it was before",
+      "explanation": "British English usually says **the boot is on the other foot**.",
+      "labels": {
+        "register": [],
+        "region": [
+          "American"
+        ],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "He used to be my boss, but now the shoe is on the other foot.",
           "note": null,
           "pattern": null
         }
@@ -282,68 +297,57 @@
       "l1": {}
     }
   ],
-  "word_family": [
+  "word_family": [],
+  "synonym_discrimination": null,
+  "usage_note": "Shoes come in pairs, so the word is most often plural: *a pair of shoes*, *new shoes*. Use **shoe** for one of them: *I lost a shoe*. Soft shoes for sport are **sneakers** or **tennis shoes** in American English and **trainers** in British English.",
+  "learner_errors": [
     {
-      "slug": "bulletproof-adj",
-      "form": null,
+      "incorrect": "Every morning I wear my shoes and leave the house.",
+      "correct": "Every morning I put on my shoes and leave the house.",
+      "note": "**Put on** is the action of getting dressed; **wear** is the state of having something on."
+    }
+  ],
+  "etymology": null,
+  "see_also": [
+    {
+      "slug": "boot-n",
+      "note": null
+    },
+    {
+      "slug": "sock-n",
       "note": null
     }
   ],
-  "synonym_discrimination": null,
-  "usage_note": null,
-  "learner_errors": [],
-  "etymology": null,
-  "see_also": [],
   "adaptation": {
     "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": null
+    "pronunciation": "\"shoe\" rhymes with **do** and **two**; the **oe** is not said like the **o** of **go**."
   },
   "l1": {},
   "provenance": {
-    "created": "2026-09-26T03:47:14Z",
-    "modified": "2026-10-07T21:10:51Z",
+    "created": "2026-10-07T21:01:04Z",
+    "modified": "2026-10-07T21:10:44Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20260926T034315Z-ynmbny",
+    "run_id": "20261007T205623Z-jumwa2",
     "reviews": [
       {
-        "run_id": "20260926T034315Z-ynmbny",
+        "run_id": "20261007T205623Z-jumwa2",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T034315Z-ynmbny/bullet-n.json",
-        "ok": 48,
-        "issues": 1,
-        "blocking": 0
-      },
-      {
-        "run_id": "20260926T034315Z-ynmbny",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-09-26",
-        "file": "reviews/20260926T034315Z-ynmbny/bullet-n.json",
-        "ok": 49,
-        "issues": 0,
-        "blocking": 0
-      },
-      {
-        "run_id": "20261002T071428Z-3z9r8m",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T071428Z-3z9r8m/bullet-n.json",
+        "date": "2026-10-07",
+        "file": "reviews/20261007T205623Z-jumwa2/shoe-n.json",
         "ok": 48,
         "issues": 1,
         "blocking": 1
       },
       {
-        "run_id": "20261002T071428Z-3z9r8m",
+        "run_id": "20261007T205623Z-jumwa2",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T071428Z-3z9r8m/bullet-n.json",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-07",
+        "file": "reviews/20261007T205623Z-jumwa2/shoe-n.json",
         "ok": 49,
         "issues": 0,
         "blocking": 0
