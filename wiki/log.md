@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-07] review | chest–client, second panel round
+
+Second reading of the eleven oldest one-round entries: *chest, chicken, choice, church, circle, citizen, city, claim, class, clay, client* (nouns, created 2026-10-01). Added by hand before the panel: phrases *chicken feed*, *like a chicken with its head cut off*, *by choice*, *church and state*, *you can't fight city hall*, *a class act*; learner errors on *chest*, *chicken*, *circle*, *claim*, *class*; a *citizen*/*resident* usage note; *church* family and see-also; *client* widened to services not paid for. Panel: 32 issues (reviewer-a 28, reviewer-b 4); 24 applied, 8 rejected. Main fixes: *church* sense 3 limited to Christian groups, *citizen* sense 2 and its *resident* link (no longer a synonym), *senior citizen*, *class* sense 5 now covers travel classes, a merged *breast* note on *chest*. No back-links needed. Spend US$0.90.
+
 ## [2026-10-07] build | twelve nouns priest–progress
 
 Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *priest, print, prison, prisoner, prize, problem, process, product, profession, profit, program, progress*. Pronunciations all verified (CMU agrees on every American form). Panel: 37 issues (reviewer-a 33, reviewer-b 4); 27 applied, 10 rejected (the house fence on quoted headwords in adaptation notes, *high priest* kept as a phrase under the keyword rule, the printed concert *program* kept unlabeled as American usage, the *profit*/*prophet* homophone note kept). `prize-adj` queued for the attributive use (*a prize cow*). Back-links: two of eleven moved by hand (*print* on `mark-n` to sense 1, *problem* on `exercise-n` to sense 3); three TYPE-MISMATCH pairs settled on the older side's type (*jail*, *issue*, *development*). Six definition words outside the vocabulary rewritten. Spend US$0.86.
