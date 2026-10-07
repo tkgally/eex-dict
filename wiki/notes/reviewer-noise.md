@@ -73,3 +73,5 @@ This is a third, different shape of the same underlying pattern (see the two ent
 **Second originality check 2026-10-06 (`20261006T171831Z-n2nh3n`).** Reasoning off, one numbered prompt: "cannot tell" on all ten, no quotes. Search alone found the one close match (*out to lunch*, under `lunch-n`), which was rewritten.
 
 **2026-10-07 check (twenty-second).** reviewer-a, reasoning off: seven *cannot tell*, two *original*, one *copied* (`economy-n`) with a near quote that it withdrew in the same line; search did not find the quoted wording. No rewrites.
+
+**Second 2026-10-07 check (twenty-third).** reviewer-a, reasoning off: *original* on all ten, no quotes. Search alone found two close matches with a learner's dictionary (`bag-n` sense 1, `package-n` sense 1), both rewritten. A uniform *original* is no more evidence than a uniform *copied*.
