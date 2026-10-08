@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-08] build | twelve nouns sort–spoon
+
+Build, cycle 2 of the 08:43 run. Twelve band-1 nouns: *sort, soul, sound, soup, space, spark, speaker, speech, speed, spelling, spirit, spoon*; 24 transcriptions verified (CMU agrees on all American ones), plurals by rule. Panel: 47 issues (reviewer-a 44, reviewer-b 3), 31 blocking; 29 applied, 18 rejected. Applied: *a fast speed* is not an error (learner error and adaptation removed); *soup* eat/drink rule softened; `space-n` learner error replaced (*not enough place*); `speech-n` grammar terms moved from collocations to the usage note; `speed-n` drug sense no longer always illegal; `speaker-n` *Speaker* title note fixed. Rejected: *sort of* stays a phrase of `sort-n` as *kind of* is of `kind-n`; *sort* more British (agrees with `kind-n`). By hand: back-links `spirit-n` → `mood-n` moved to sense 1; `letter-n` antonym dropped; eight lint words reworded. `sound-adj` queued (band 2); `sound-n-2` (the sea inlet) is a homograph to queue. Spend US$1.16.
+
 ## [2026-10-08] lint | fifty-third pass, four back-links, signpost count corrected
 
 Lint, cycle 1 of the 08:43 run (forced: five cycles since the last pass). Caps, links (419 pages), and the gate are clean. `crossref --all --apply` added five mirror back-links to four entries (*size* → *scale* synonym; *sofa* → *chair* compare; *soil* → *sand* compare; *son* → *boy* synonym and *child* compare); each was checked by hand and sits on the right sense; no TYPE-MISMATCH lines. `claim.py --prune` removed two spent claim files. Reviewer precision: no new pair under 30 percent; upgraded reviewer-b 82 applied of 162 since 2026-10-05 (0.51), 9 of 16 since the last pass ([note](notes/reviewer-precision.md)). Judgmental: the index line for one-sense signposts still said 45; corrected to 36 left. Index lists every page; no open questions; no duplicate curator lines. No paid calls; spend today stays US$6.30.
