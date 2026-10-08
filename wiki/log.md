@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-08] review | debate to defense, a small block
+
+Review, cycle 4 of the 16:44 run. Only US$0.54 of the day's budget was left, so the block was six entries, not twelve: *debate, debt, decade, decision, decrease, defense*, the next oldest one-round entries (created 2026-10-02 21:04). By hand: pronunciation notes for *debate* and *decision*. Panel: 6 issues, 2 applied, 4 rejected, none escalated. Applied: the `debt-n` adaptation note no longer reads as if *doubt* rhymes with *get*; `decision-n` sense 2 now says *the person in charge of a game*. Rejected: `decade-n` sense 2 (named calendar decades) stays; *decision making* stays a collocation; `decrease-n` stays countable. Spend US$0.36; the day stands at US$14.82. The run ends here (four-cycle cap).
+
 ## [2026-10-08] build | twelve nouns, style to support
 
 Build, cycle 3 of the 16:44 run. Twelve band 1 nouns drafted and reviewed: *style, subject, substance, success, sugar, suggestion, suit, summer, sun, supper, supply, support*; 16 phrases (*cramp someone's style*, *on the subject of something*, *make a success of something*, *follow suit*, *someone's strong suit*, *under the sun*, *in short supply*, *supply and demand*). Pronunciations 24 of 24 verified. Panel: 50 issues, all reviewer-a; 35 applied, 15 rejected, none escalated. Reviewer-b returned complete verdicts with no issues on all twelve. Applied: core ideas of *style*, *subject*, *suggestion*; the grammar subject and the king's subject redefined; *substance* (drug) widened; *sun* article notes no longer absolute; *support* sense 4 made countable only. Rejected: the British before-bed *supper*; *store* and *demand* links on `supply-n` (they mirror `store-n` and `demand-n`). The `hit-n` back-link moved by hand from *blow* to *success*. Spend US$0.96; the day stands at US$14.46.
