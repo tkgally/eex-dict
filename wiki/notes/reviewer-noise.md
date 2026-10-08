@@ -75,3 +75,5 @@ This is a third, different shape of the same underlying pattern (see the two ent
 **2026-10-07 check (twenty-second).** reviewer-a, reasoning off: seven *cannot tell*, two *original*, one *copied* (`economy-n`) with a near quote that it withdrew in the same line; search did not find the quoted wording. No rewrites.
 
 **Second 2026-10-07 check (twenty-third).** reviewer-a, reasoning off: *original* on all ten, no quotes. Search alone found two close matches with a learner's dictionary (`bag-n` sense 1, `package-n` sense 1), both rewritten. A uniform *original* is no more evidence than a uniform *copied*.
+
+**2026-10-08 check (twenty-fourth).** reviewer-a, reasoning off: *copied* on eight, each naming one dictionary and "quoting" our own wording back; *cannot tell* on the two usage notes. Search confirmed none of the quotes. Search alone found the *box* frame (stiff sides, a lid) in two learner's dictionaries; `box-n` sense 1 was rewritten.

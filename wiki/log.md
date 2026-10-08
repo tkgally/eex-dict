@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-08] originality | twenty-fourth check, one rewrite
+
+Originality, cycle 2 of the 04:44 run (forced: run 310). Ten sampled fields: *potato* and *set* usage notes; definitions from *box, write, call, buy, place, consider, joint, day*. Exact-phrase searches: no published match for eight; `buy-v` sense 1 (*get something by paying money for it*) shares a short plain frame with a learner's dictionary (generic overlap); `box-n` sense 1 shared the *stiff sides and a lid* frame with two learner's dictionaries and was rewritten (*a container with corners and a flat bottom, often closed at the top, for keeping, carrying, or sending things*). Reviewer-a (reasoning off): eight *copied*, each quoting our own wording back; none confirmed. Panel on `box-n`: 6 issues; 4 applied (*P.O. Box* given beside *PO Box*, collocations added), 2 rejected (stadium boxes exist). Record: `reviews/originality/2026-10-08.md`. Spend US$0.12.
+
 ## [2026-10-08] review | second reading of crime–promise
 
 Review, cycle 1 of the 04:44 run. Twelve one-round entries from 2026-10-02: *crime, criminal, crop, crowd, cry, cup, curtain, custom, customer* (nouns) and *plant, print, promise* (verbs). By hand: `crop-n` gained a hair sense (*a thick crop of curly hair*); `cup-n` sense 1 no longer requires a handle or hot drinks; *a curtain call* added to `curtain-n`. Panel: 25 issues (reviewer-a 24, reviewer-b 1); 13 applied, 12 rejected. Fixes: `cup-n` cooking cup a fixed amount, trophy usually metal, *mug* and *glass* notes softened; `cry-n` *a good cry* unlabeled; `print-v` newspaper-content use split into subsense a, *run* scoped; `promise-v` reported *would* and the future *will* notes softened, passive example noted. Rejected: British label on `custom-n` sense 3 (five issues; region means mainly); *promise the moon* matches `moon-n`; informal *it's a crime to* kept. Spend US$0.86.
