@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-08] build | twelve nouns snake–song
+
+Build, cycle 3 of the 04:44 run. Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *snake, snow, soap, society, sock, sofa, software, soil, soldier, solution, son, song*. All pronunciations and inflections verified (*software* no plural). Phrases: *a snake in the grass*, *as white as snow*, *knock someone's socks off*, *pull your socks up* (British), *for a song*, *make a song and dance about something* (British). Panel: 28 issues (reviewer-a 21, reviewer-b 7); 21 applied, 7 rejected. Fixes: *snow* falls when cold enough, not very cold; *soap opera* out of the collocations; *soap* learner error corrected to *some soap*; *high society* not necessarily rich; *soldier* includes officers; *problem* is no antonym of *solution*; *hardware* out of the family of *software*. Rejected: British labels on the two idioms (region means mainly); gas and solid solutions too technical; *son* as a term of address keeps *used when*. Type mismatches cleared: `soil-n` lists *dirt*, *ground* as synonyms. Spend US$0.66.
+
 ## [2026-10-08] originality | twenty-fourth check, one rewrite
 
 Originality, cycle 2 of the 04:44 run (forced: run 310). Ten sampled fields: *potato* and *set* usage notes; definitions from *box, write, call, buy, place, consider, joint, day*. Exact-phrase searches: no published match for eight; `buy-v` sense 1 (*get something by paying money for it*) shares a short plain frame with a learner's dictionary (generic overlap); `box-n` sense 1 shared the *stiff sides and a lid* frame with two learner's dictionaries and was rewritten (*a container with corners and a flat bottom, often closed at the top, for keeping, carrying, or sending things*). Reviewer-a (reasoning off): eight *copied*, each quoting our own wording back; none confirmed. Panel on `box-n`: 6 issues; 4 applied (*P.O. Box* given beside *PO Box*, collocations added), 2 rejected (stadium boxes exist). Record: `reviews/originality/2026-10-08.md`. Spend US$0.12.
