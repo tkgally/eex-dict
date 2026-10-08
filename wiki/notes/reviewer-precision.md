@@ -248,3 +248,7 @@ Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (4948/6949); `reviewer-b
 ## 2026-10-07: fifty-first lint pass, no new switch-offs
 
 Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5096/7125); `reviewer-b` `ALL` 0.54 (1083/2007). `reviewer-b` `spelling-or-format` 0.28 (161/578), no new decisions since the last pass; it stays live. `reviewer-b` `phrase` 0.36 (15/42). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 73 applied of 136 (0.54); since the last pass 9 of 12. Nothing else live is under 30 percent at twenty or more decisions.
+
+## 2026-10-08: fifty-second lint pass, no new switch-offs
+
+Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (5189/7259); `reviewer-b` `ALL` 0.54 (1083/2017). `reviewer-b` `spelling-or-format` 0.28 (161/578), no new decisions since the last pass; it stays live. `reviewer-b` `phrase` 0.36 (15/42). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 73 applied of 146 (0.50); since the last pass 0 of 10 (four "not phrasal" flags on `corner-n` phrases, two that withdrew themselves inside the same comment, one grammar-code consistency claim on `council-n`). Nothing else live is under 30 percent at twenty or more decisions. Watch reviewer-b `definition-style` (0.56 over 213) if self-withdrawn flags continue.

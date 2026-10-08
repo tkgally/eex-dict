@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-08] lint | fifty-second pass, five back-links moved
+
+Lint, cycle 3 of the 00:43 run (forced at five cycles). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (three claim files removed): clean. `crossref --all --apply` added 19 back-links, mostly mirrors for the new *s* nouns; five of sixteen sense-level ones were on the wrong sense and moved by hand: `show-n` *display* to the event sense, `side-n` *face* to the surface sense, `sign-n` *mark* to the evidence sense, `sheet-n` *page* to the paper sense, `shame-n` antonym *pride* to the feeling sense. One TYPE-MISMATCH (`second-n`/`minute-n`) cleared by adding *compare minute* to `second-n` sense 1, matching `minute-n`. Precision: no new switch-offs; upgraded reviewer-b 0 applied of 10 since the last pass (note). Index, log, open questions (none open), curator file (three pronunciation lines, no duplicates): consistent. Spend US$0.
+
 ## [2026-10-08] build | twelve nouns shop–sister
 
 Build, cycle 2 of the 00:43 run. Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *shop, shore, shoulder, show, shower, side, sight, sign, silence, silk, sink, sister*. All pronunciations verified (*shower* two syllables). Keyword rule: *a shoulder to cry on* moved from `cry-v` to `shoulder-n` (`cry-v` see-also points there). Panel: 51 issues (reviewer-a 48, reviewer-b 3); 36 applied, 15 rejected. Fixes: *shore* allows a very wide river (learner error dropped); *shower* party sense for anyone, not only a woman; *side* surfaces not only flat; *sign* star sign is a part of the year, not a group of stars; *sister* half-sister named, the nurse sense narrowed; *look over your shoulder* redefined. Rejected: American label on the road *shoulder* kept; *big sister* as an age word kept; *sister company* stays a noun. Type mismatches fixed by hand: `bank-n` now compares *shore*; `show-n` lists *program* as a synonym. Spend US$1.18.
