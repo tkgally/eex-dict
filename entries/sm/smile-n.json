@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "meal-n",
-  "slug": "meal-n",
-  "headword": "meal",
+  "id": "smile-n",
+  "slug": "smile-n",
+  "headword": "smile",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "mil",
+      "ipa": "smaɪl",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "miːl",
+      "ipa": "smaɪl",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "One part, rhyming with **mile**."
   },
   "inflections": {
     "forms": {
-      "plural": "meals"
+      "plural": "smiles"
     },
     "regular": true,
     "source": "rules",
@@ -47,8 +47,9 @@
   "core_idea": null,
   "senses": [
     {
+      "n": 1,
       "signpost": null,
-      "definition": "an occasion when people eat food, such as breakfast, lunch, or dinner, or the food that is eaten then",
+      "definition": "an expression on your face in which the corners of your mouth turn up, usually to show that you are happy or friendly or think something is funny",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -66,22 +67,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "We usually have three meals a day.",
+          "text": "She gave me a big smile.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Let's go out for a meal tonight.",
+          "text": "He had a smile on his face all day.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She cooked a wonderful meal for her parents.",
+          "text": "\"Thank you,\" she said with a smile.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Try not to eat between meals.",
+          "text": "His warm smile made everyone feel welcome.",
           "note": null,
           "pattern": null
         }
@@ -90,29 +91,31 @@
         {
           "type": "adjective + noun",
           "items": [
-            "a big meal",
-            "a light meal",
-            "a hot meal",
-            "a delicious meal",
-            "the main meal"
+            "a big smile",
+            "a warm smile",
+            "a friendly smile",
+            "a shy smile",
+            "a sad smile"
           ]
         },
         {
           "type": "verb + noun",
           "items": [
-            "have a meal",
-            "eat a meal",
-            "cook a meal",
-            "make a meal",
-            "skip a meal"
+            "give someone a smile",
+            "force a smile",
+            "crack a smile"
+          ]
+        },
+        {
+          "type": "preposition + noun",
+          "items": [
+            "with a smile"
           ]
         },
         {
           "type": "phrase",
           "items": [
-            "go out for a meal",
-            "between meals",
-            "after a meal"
+            "a smile on your face"
           ]
         }
       ],
@@ -120,15 +123,11 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "food-n",
+          "slug": "grin-n",
           "note": null
         },
         {
-          "slug": "dish-n",
-          "note": null
-        },
-        {
-          "slug": "snack-n",
+          "slug": "laugh-n",
           "note": null
         }
       ],
@@ -140,15 +139,49 @@
         "false_friends": null,
         "pronunciation": null
       },
-      "l1": {},
-      "n": 1
+      "l1": {}
     }
   ],
   "phrases": [
     {
-      "sub_id": "a-square-meal",
-      "text": "a square meal",
-      "definition": "a big, healthy meal",
+      "sub_id": "be-all-smiles",
+      "text": "be all smiles",
+      "definition": "look very happy and friendly",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "The children were all smiles when they saw the presents.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "After the good news, the boss was all smiles.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "put-a-smile-on-someones-face",
+      "text": "put a smile on someone's face",
+      "definition": "make someone happy",
       "explanation": null,
       "labels": {
         "register": [],
@@ -159,39 +192,12 @@
       },
       "examples": [
         {
-          "text": "The kids haven't had a square meal all week.",
+          "text": "Your letter really put a smile on my face.",
           "note": null,
           "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "make-a-meal-of-something",
-      "text": "make a meal of something",
-      "definition": "spend more time or effort on something than is needed",
-      "explanation": null,
-      "labels": {
-        "register": [
-          "informal"
-        ],
-        "region": [
-          "British"
-        ],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
+        },
         {
-          "text": "It's a simple job. Don't make a meal of it.",
+          "text": "The good news put a smile on everyone's face.",
           "note": null,
           "pattern": null
         }
@@ -206,9 +212,9 @@
       "l1": {}
     },
     {
-      "sub_id": "meal-ticket",
-      "text": "meal ticket",
-      "definition": "a person or thing that you depend on to give you money or a living",
+      "sub_id": "wipe-the-smile-off-someones-face",
+      "text": "wipe the smile off someone's face",
+      "definition": "make someone stop feeling pleased with themselves",
       "explanation": null,
       "labels": {
         "register": [
@@ -217,13 +223,11 @@
         "region": [],
         "domain": [],
         "currency": [],
-        "attitude": [
-          "disapproving"
-        ]
+        "attitude": []
       },
       "examples": [
         {
-          "text": "She thinks he only married her because she was his meal ticket.",
+          "text": "The bad result soon wiped the smile off his face.",
           "note": null,
           "pattern": null
         }
@@ -240,23 +244,25 @@
   ],
   "word_family": [
     {
-      "slug": "mealtime-n",
+      "slug": "smile-v",
       "form": null,
       "note": null
     }
   ],
-  "synonym_discrimination": null,
-  "usage_note": "**Meal** meaning grain crushed into a rough powder (as in **cornmeal** and **oatmeal**) is a different word with the same spelling.",
+  "synonym_discrimination": {
+    "words": [
+      "smile-n",
+      "grin-n",
+      "laugh-n"
+    ],
+    "note": "A **smile** shows that you are happy or friendly; the mouth turns up, often without any sound. A **grin** is a wide smile that shows the teeth, often because something is funny or because you are very pleased. A **laugh** makes a sound."
+  },
+  "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "I eat three foods a day.",
-      "correct": "I eat three meals a day.",
-      "note": "One time of eating is a **meal**; **food** is what you eat."
-    },
-    {
-      "incorrect": "We took our meal at seven.",
-      "correct": "We had our meal at seven.",
-      "note": "Use **have** or **eat** a meal; **take** a meal is not natural in modern English."
+      "incorrect": "She did a smile to me.",
+      "correct": "She gave me a smile.",
+      "note": "Use **give** with **smile** (*give someone a smile*), or the verb: *she smiled at me*. Not **do** or **make**."
     }
   ],
   "etymology": null,
@@ -264,33 +270,33 @@
   "adaptation": {
     "semantic": null,
     "grammar": null,
-    "culture": null,
+    "culture": "\"smile\": in many English-speaking places, people smile at strangers to be polite; a smile does not always show real pleasure.",
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-05T13:23:43Z",
-    "modified": "2026-10-08T01:27:08Z",
+    "created": "2026-10-08T01:20:09Z",
+    "modified": "2026-10-08T01:27:19Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261005T132155Z-wa1mcj",
+    "run_id": "20261008T011656Z-fvsnbv",
     "reviews": [
       {
-        "run_id": "20261005T132155Z-wa1mcj",
+        "run_id": "20261008T011656Z-fvsnbv",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-05",
-        "file": "reviews/20261005T132155Z-wa1mcj/meal-n.json",
-        "ok": 39,
-        "issues": 1,
+        "date": "2026-10-08",
+        "file": "reviews/20261008T011656Z-fvsnbv/smile-n.json",
+        "ok": 40,
+        "issues": 0,
         "blocking": 0
       },
       {
-        "run_id": "20261005T132155Z-wa1mcj",
+        "run_id": "20261008T011656Z-fvsnbv",
         "role": "reviewer-b",
         "model": "google/gemini-3.1-pro-preview",
-        "date": "2026-10-05",
-        "file": "reviews/20261005T132155Z-wa1mcj/meal-n.json",
+        "date": "2026-10-08",
+        "file": "reviews/20261008T011656Z-fvsnbv/smile-n.json",
         "ok": 40,
         "issues": 0,
         "blocking": 0

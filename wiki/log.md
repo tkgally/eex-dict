@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-08] build | twelve nouns situation–snack
+
+Build, cycle 4 of the 00:43 run. Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *situation, size, skill, skin, skirt, sky, sleep, slice, smell, smile, smoke, snack*. All pronunciations verified. Panel: 24 issues (reviewer-a 22, reviewer-b 2); 17 applied, 7 rejected. Fixes: *smoke* is a cloud, not a gas; *no smoke without fire* redefined without *if*; *a slice of life* widened; *situation* formal sense given natural examples; *odor* softened; a *size* learner error that was not an error removed; the regional note on *have a sleep* dropped. Rejected: *go to sleep*, *get to sleep* belong under the noun by the keyword rule (*put an animal to sleep* renamed *put something to sleep*); *size* "being big" kept as a sense. *cigarette* is outside the defining vocabulary, so the *smoke* "act of smoking" definition names a pipe and the explanation names cigarettes. Back-links: five, all checked. Spend US$0.83.
+
 ## [2026-10-08] lint | fifty-second pass, five back-links moved
 
 Lint, cycle 3 of the 00:43 run (forced at five cycles). Caps, links, `lint_vocab --all --queue` (0 violations), `claim.py --prune` (three claim files removed): clean. `crossref --all --apply` added 19 back-links, mostly mirrors for the new *s* nouns; five of sixteen sense-level ones were on the wrong sense and moved by hand: `show-n` *display* to the event sense, `side-n` *face* to the surface sense, `sign-n` *mark* to the evidence sense, `sheet-n` *page* to the paper sense, `shame-n` antonym *pride* to the feeling sense. One TYPE-MISMATCH (`second-n`/`minute-n`) cleared by adding *compare minute* to `second-n` sense 1, matching `minute-n`. Precision: no new switch-offs; upgraded reviewer-b 0 applied of 10 since the last pass (note). Index, log, open questions (none open), curator file (three pronunciation lines, no duplicates): consistent. Spend US$0.
