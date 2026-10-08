@@ -94,7 +94,9 @@
             "the next day",
             "the following day",
             "the previous day",
-            "a whole day"
+            "a whole day",
+            "a sunny day",
+            "a rainy day"
           ]
         },
         {
@@ -159,15 +161,6 @@
       ],
       "collocations": [
         {
-          "type": "adjective + noun",
-          "items": [
-            "a sunny day",
-            "a cold day",
-            "a rainy day",
-            "a hot day"
-          ]
-        },
-        {
           "type": "phrase",
           "items": [
             "during the day",
@@ -198,7 +191,7 @@
     {
       "n": 3,
       "signpost": "working hours",
-      "definition": "the part of a day when you are at work or school",
+      "definition": "a day thought of as the time when you work, study, or do your usual activities",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -816,6 +809,107 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "sub_id": "in-this-day-and-age",
+      "text": "in this day and age",
+      "definition": "in the modern world, at the present time",
+      "explanation": "Often used to say that something seems old-fashioned or surprising now.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "In this day and age, everyone needs to know how to use a computer.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "It's surprising that people still write checks in this day and age.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "save-the-day",
+      "text": "save the day",
+      "definition": "do something that stops a situation from going badly, at a moment when that seemed likely",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "The goalkeeper saved the day with a great stop in the last minute.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We forgot the plates, but Ana saved the day by bringing paper ones.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "from-day-one",
+      "text": "from day one",
+      "definition": "from the very beginning",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "She loved the job from day one.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "I told you from day one that the plan would not work.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "word_family": [
@@ -890,7 +984,7 @@
   ],
   "adaptation": {
     "semantic": "\"day\" can mean twenty-four hours (*three days*) or only the hours of light (*day and night*). Many languages have separate words for these two meanings.",
-    "grammar": "Days and dates take **on** (*on Friday*); **every day**, **next day**, **one day**, and **the other day** take no preposition. **Every day** (adverb) and **everyday** (adjective) are different.",
+    "grammar": "Days and dates take **on** (*on Friday*); **every day**, **the next day**, **one day**, and **the other day** take no preposition. **Every day** (adverb) and **everyday** (adjective) are different.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -898,7 +992,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-02T17:18:24Z",
-    "modified": "2026-10-02T17:27:10Z",
+    "modified": "2026-10-08T09:43:36Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261002T171414Z-1u1dzs",
     "reviews": [
@@ -920,6 +1014,26 @@
         "file": "reviews/20261002T171414Z-1u1dzs/day-n.json",
         "ok": 123,
         "issues": 3,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261008T093247Z-sdawid",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-08",
+        "file": "reviews/20261008T093247Z-sdawid/day-n.json",
+        "ok": 135,
+        "issues": 6,
+        "blocking": 6
+      },
+      {
+        "run_id": "20261008T093247Z-sdawid",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-08",
+        "file": "reviews/20261008T093247Z-sdawid/day-n.json",
+        "ok": 141,
+        "issues": 0,
         "blocking": 0
       }
     ],
