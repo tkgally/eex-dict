@@ -260,3 +260,7 @@ Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (5275/7382); `reviewer-b
 ## 2026-10-08: fifty-fourth lint pass, no new switch-offs
 
 Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5417/7576); `reviewer-b` `ALL` 0.54 (1101/2054). `reviewer-b` `spelling-or-format` 0.28 (161/580): two new decisions since the last pass, both rejections (hand marks asked for in examples of `sound-n`); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.36 (15/42). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 91 applied of 183 (0.50); since the last pass 9 of 21. Nothing else live is under 30 percent at twenty or more decisions; under twenty: `reviewer-b` `inflection` 0.12 (17).
+
+## 2026-10-08: fifty-fifth lint pass, no new switch-offs, reviewer-b yield falling
+
+Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5511/7703); `reviewer-b` `ALL` 0.53 (1104/2067). `reviewer-b` `spelling-or-format` 0.28 (161/581); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.36 (15/42). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 94 applied of 198 (0.47); since the last pass 3 of 15. It raised 15 issues over the 42 entries of the four cycles since the last pass (two builds of twelve gave 2 and 0), so 0.07 applied per entry against 0.24 at the forty-eighth pass. If the next lint finds it still under 0.10, write the observation up as a note before any prompt change. Under twenty: `reviewer-b` `inflection` 0.11 (18).
