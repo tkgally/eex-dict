@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-08] originality | twenty-fifth check, four rewrites
+
+Originality, cycle 4 of the 12:43 run (forced: every tenth run). Ten sampled fields; exact-phrase web searches; reviewer-a asked with reasoning off. Verdicts: original 6, generic-overlap 0, rewrite 4. Search found near matches in published learner's dictionaries for `pants-n` senses 1 and 2, `animal-n` sense 2, and `flight-n` sense 3; all four rewritten and the three entries re-reviewed by the panel: 9 issues (all reviewer-a), 5 applied, 4 rejected (the `animal-n` adaptation note is accurate; *flee* stays in `flight-n`'s family). `animal-n` sense 2 is now *any creature that moves and eats food, people included*, after reviewer-a showed that *not a plant* would take in fungi. Reviewer-a's five "copied" calls quoted our own wording, but four pointed at real near matches ([note](notes/reviewer-noise.md)). Record: `reviews/originality/2026-10-08-2.md`. Spend US$0.26; the day stands at US$11.71.
+
 ## [2026-10-08] lint | fifty-fourth pass, eight back-links, all placed right
 
 Lint, cycle 3 of the 12:43 run (forced: five cycles since the last). Caps, links (425 pages), and the defining-vocabulary scan are clean; nothing new queued. `crossref --all --apply` added eight back-links to seven entries built today (*brick* to `stone-n`, *coin* and *develop* to `invent-v`, *market* to `store-n`, *move* to `step-n` sense 4, *novel* to `story-n`, *range* to `stove-n`, *smoke* to `steam-n`); all eight sit on the right sense; no type mismatches. Four merged claim files pruned. Reviewer precision: no new switch-offs; reviewer-b `spelling-or-format` 0.28 (two new rejections), kept live by the owner's ruling. Index, log, open questions, and the curator list read through: no dead or missing pages, no gaps, no duplicates; the index line for reviewer precision updated. 36 one-sense entries still carry a signpost. No spend; the day stands at US$11.45.
