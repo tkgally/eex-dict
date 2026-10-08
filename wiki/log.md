@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-08] review | second reading of crime–promise
+
+Review, cycle 1 of the 04:44 run. Twelve one-round entries from 2026-10-02: *crime, criminal, crop, crowd, cry, cup, curtain, custom, customer* (nouns) and *plant, print, promise* (verbs). By hand: `crop-n` gained a hair sense (*a thick crop of curly hair*); `cup-n` sense 1 no longer requires a handle or hot drinks; *a curtain call* added to `curtain-n`. Panel: 25 issues (reviewer-a 24, reviewer-b 1); 13 applied, 12 rejected. Fixes: `cup-n` cooking cup a fixed amount, trophy usually metal, *mug* and *glass* notes softened; `cry-n` *a good cry* unlabeled; `print-v` newspaper-content use split into subsense a, *run* scoped; `promise-v` reported *would* and the future *will* notes softened, passive example noted. Rejected: British label on `custom-n` sense 3 (five issues; region means mainly); *promise the moon* matches `moon-n`; informal *it's a crime to* kept. Spend US$0.86.
+
 ## [2026-10-08] build | twelve nouns situation–snack
 
 Build, cycle 4 of the 00:43 run. Twelve band 1 nouns drafted, reviewed, and set `reviewed`: *situation, size, skill, skin, skirt, sky, sleep, slice, smell, smile, smoke, snack*. All pronunciations verified. Panel: 24 issues (reviewer-a 22, reviewer-b 2); 17 applied, 7 rejected. Fixes: *smoke* is a cloud, not a gas; *no smoke without fire* redefined without *if*; *a slice of life* widened; *situation* formal sense given natural examples; *odor* softened; a *size* learner error that was not an error removed; the regional note on *have a sleep* dropped. Rejected: *go to sleep*, *get to sleep* belong under the noun by the keyword rule (*put an animal to sleep* renamed *put something to sleep*); *size* "being big" kept as a sense. *cigarette* is outside the defining vocabulary, so the *smoke* "act of smoking" definition names a pipe and the explanation names cigarettes. Back-links: five, all checked. Spend US$0.83.
