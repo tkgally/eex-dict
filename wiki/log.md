@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-08] lint | fifty-fifth pass, five back-links, one moved
+
+Lint, cycle 1 of the 20:43 run, forced after five cycles; unpaid. Caps, links, defining vocabulary: clean. Two merged claim files pruned. `crossref --all --apply` added five back-links: `supply-n` 1 <- `bank-n`, `strength-n` 1 <- `energy-n`, `force-n`, `power-n`, `stuff-n` 1 <- `shit-n`. Moved by hand: `power-n` (sense 5, *the power of the waves*) to `strength-n` sense 4 (how powerful something is). The `shit-n` mirror on `stuff-n` got a hand-written note marking it vulgar. Queue: the closure row `hips` (from `pants-n`) marked duplicate; `hip-n` is already queued. Precision: no new switch-offs; upgraded reviewer-b 94 of 198 applied, but only 3 applied of 15 issues over the last 42 entries (0.07 per entry; watch at the next lint). Index, log, open questions, curator list: no gaps, duplicates, or contradictions; 36 one-sense signposts. The day's budget has US$0.18 left, so the run ends after this cycle.
+
 ## [2026-10-08] review | debate to defense, a small block
 
 Review, cycle 4 of the 16:44 run. Only US$0.54 of the day's budget was left, so the block was six entries, not twelve: *debate, debt, decade, decision, decrease, defense*, the next oldest one-round entries (created 2026-10-02 21:04). By hand: pronunciation notes for *debate* and *decision*. Panel: 6 issues, 2 applied, 4 rejected, none escalated. Applied: the `debt-n` adaptation note no longer reads as if *doubt* rhymes with *get*; `decision-n` sense 2 now says *the person in charge of a game*. Rejected: `decade-n` sense 2 (named calendar decades) stays; *decision making* stays a collocation; `decrease-n` stays countable. Spend US$0.36; the day stands at US$14.82. The run ends here (four-cycle cap).
