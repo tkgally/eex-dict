@@ -268,3 +268,7 @@ Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5511/7703); `reviewer-b
 ## 2026-10-09: fifty-sixth lint pass, no new switch-offs, reviewer-b low-yield note
 
 Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5630/7853); `reviewer-b` `ALL` 0.53 (1107/2074). `reviewer-b` `spelling-or-format` 0.28 (161/581), no new decisions; it stays live by the owner's ruling. `reviewer-b` `phrase` 0.36 (15/42). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 97 applied of 203 (0.48); since the last pass 3 of 5. It raised 5 issues over 50 entries (0.06 applied per entry), still under 0.10: written up in [reviewer-b-low-yield](reviewer-b-low-yield.md). Under twenty: `reviewer-b` `inflection` 0.11 (18).
+
+## 2026-10-09: fifty-seventh lint pass, no new switch-offs, reviewer-b yield recovered
+
+Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5729/7984); `reviewer-b` `ALL` 0.53 (1122/2104). `reviewer-b` `spelling-or-format` 0.28 (161/581), no new decisions; it stays live by the owner's ruling. `reviewer-b` `phrase` 0.35 (15/43). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 112 applied of 233 (0.48); since the last pass 15 of 30, over 58 entries (0.26 applied per entry), back above the 0.10 line of [reviewer-b-low-yield](reviewer-b-low-yield.md); most of its rejected flags asked for a bare *verb* pattern that the closed list lacks. Under twenty: `reviewer-b` `inflection` 0.11 (19).
