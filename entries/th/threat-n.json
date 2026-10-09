@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "risk-n",
-  "slug": "risk-n",
-  "headword": "risk",
+  "id": "threat-n",
+  "slug": "threat-n",
+  "headword": "threat",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "rɪsk",
+      "ipa": "θrɛt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "rɪsk",
+      "ipa": "θret",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": null
+    "notes": "It rhymes with **wet** and **get**. The **ea** is short, as in **bread**."
   },
   "inflections": {
     "forms": {
-      "plural": "risks"
+      "plural": "threats"
     },
     "regular": true,
     "source": "rules",
@@ -44,11 +44,95 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A **risk** is the chance that something bad will happen, or a thing or an action that brings this chance.",
+  "core_idea": "A threat is a sign or a warning of possible harm, or the person or thing that may cause it.",
   "senses": [
     {
       "n": 1,
-      "signpost": "chance of harm",
+      "signpost": "warning",
+      "definition": "a statement that someone will hurt you or cause problems for you if you do not do what they want",
+      "explanation": null,
+      "grammar": {
+        "countability": "countable",
+        "transitivity": null,
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "He made threats against his neighbors.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "She received several threats after the article.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The police take every threat seriously.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "They carried out their threat and closed the factory.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "make a threat",
+            "receive a threat",
+            "carry out a threat",
+            "take a threat seriously"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a serious threat",
+            "an empty threat",
+            "a death threat"
+          ]
+        },
+        {
+          "type": "noun + preposition",
+          "items": [
+            "a threat against someone"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "warning-n",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 2,
+      "signpost": "possible danger",
       "definition": "the possibility that something bad will happen",
       "explanation": null,
       "grammar": {
@@ -67,55 +151,50 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "There is a risk of fire if you leave the heater on.",
+          "text": "There's a threat of rain this afternoon.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Is there any risk of flooding here?",
+          "text": "The threat of war hung over the country.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The doctors said the risk was very small.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Every new business involves some risk.",
+          "text": "Many people now live under the threat of floods.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adjective + noun",
-          "items": [
-            "a high risk",
-            "a low risk",
-            "a small risk",
-            "a serious risk"
-          ]
-        },
-        {
-          "type": "verb + noun",
-          "items": [
-            "increase the risk",
-            "reduce the risk",
-            "carry a risk"
-          ]
-        },
-        {
           "type": "noun + preposition",
           "items": [
-            "a risk of something",
-            "a risk to something"
+            "the threat of something"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a real threat",
+            "a growing threat",
+            "a constant threat"
+          ]
+        },
+        {
+          "type": "preposition + noun",
+          "items": [
+            "under threat"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "threat-n",
+          "slug": "danger-n",
+          "note": null
+        },
+        {
+          "slug": "risk-n",
           "note": null
         }
       ],
@@ -132,9 +211,9 @@
       "l1": {}
     },
     {
-      "n": 2,
-      "signpost": "danger",
-      "definition": "something or someone that may cause danger or harm",
+      "n": 3,
+      "signpost": "person or thing",
+      "definition": "someone or something that may cause harm or danger",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -152,35 +231,41 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Those old wires are a fire risk.",
+          "text": "Pollution is a serious threat to the river.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Doctors say the drug is a health risk.",
+          "text": "The new shop is a threat to small businesses.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The company thought he was a security risk.",
+          "text": "The police did not think he was a threat.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "noun + preposition",
           "items": [
-            "a fire risk",
-            "a health risk",
-            "a security risk"
+            "a threat to something",
+            "a threat to someone"
+          ]
+        },
+        {
+          "type": "verb + noun",
+          "items": [
+            "pose a threat",
+            "see someone as a threat"
           ]
         },
         {
           "type": "adjective + noun",
           "items": [
-            "a big risk",
-            "a serious risk"
+            "a major threat",
+            "a direct threat"
           ]
         }
       ],
@@ -201,79 +286,14 @@
         "pronunciation": null
       },
       "l1": {}
-    },
-    {
-      "n": 3,
-      "signpost": "action",
-      "definition": "an action that might have a bad result",
-      "explanation": null,
-      "grammar": {
-        "countability": "countable",
-        "transitivity": null,
-        "codes": [],
-        "patterns": []
-      },
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "pronunciation": null,
-      "examples": [
-        {
-          "text": "You're taking a big risk by driving so fast.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "It's a risk, but I think it's worth it.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "She took a risk and started her own company.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "collocations": [
-        {
-          "type": "verb + noun",
-          "items": [
-            "take a risk",
-            "be worth the risk"
-          ]
-        },
-        {
-          "type": "adjective + noun",
-          "items": [
-            "a big risk",
-            "a calculated risk"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
     }
   ],
   "phrases": [
     {
-      "sub_id": "at-risk",
-      "text": "at risk",
-      "definition": "in danger of being harmed, damaged, or lost",
-      "explanation": "Often **at risk of** something: *at risk of losing their homes*.",
+      "sub_id": "under-threat",
+      "text": "under threat",
+      "definition": "in danger of being harmed or of ending",
+      "explanation": "Often followed by **from something**.",
       "labels": {
         "register": [],
         "region": [],
@@ -283,78 +303,12 @@
       },
       "examples": [
         {
-          "text": "Children who live near the busy road are at risk.",
+          "text": "Many jobs are under threat.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Hundreds of jobs are at risk.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "at-your-own-risk",
-      "text": "at your own risk",
-      "definition": "with no one else to blame if something bad happens",
-      "explanation": null,
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "Swimming here is at your own risk.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "You can park here, but it's at your own risk.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "run-the-risk-of-something",
-      "text": "run the risk of something",
-      "definition": "be in a situation where something bad could happen",
-      "explanation": null,
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "If you don't book now, you run the risk of not getting a seat.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "He didn't want to run the risk of being late.",
+          "text": "The forest is under threat from new roads.",
           "note": null,
           "pattern": null
         }
@@ -371,65 +325,74 @@
   ],
   "word_family": [
     {
-      "slug": "risk-v",
+      "slug": "threaten-v",
       "form": null,
       "note": null
     },
     {
-      "slug": "risky-adj",
+      "slug": "threatening-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": null,
+  "usage_note": "When someone or something may cause harm, it is **a threat to** someone or something: *a threat to health*. The possibility of something bad happening is **the threat of** it: *the threat of rain*.",
   "learner_errors": [
     {
-      "incorrect": "I don't want to make a risk.",
-      "correct": "I don't want to take a risk.",
-      "note": "You **take** a risk, not **make** one."
+      "incorrect": "Smoking is a threat for your health.",
+      "correct": "Smoking is a threat to your health.",
+      "note": "Use **a threat to** someone or something, not **for**."
     },
     {
-      "incorrect": "There is a risk to lose everything.",
-      "correct": "There is a risk of losing everything.",
-      "note": "After **risk**, use **of** and the **-ing** form."
+      "incorrect": "He did a threat to call the police.",
+      "correct": "He threatened to call the police.",
+      "note": "People **make** threats, not **do** them; the verb **threaten** is often more natural."
     }
   ],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "danger-n",
+      "note": null
+    },
+    {
+      "slug": "risk-n",
+      "note": null
+    }
+  ],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"risk\": the noun is followed by **of** and an **-ing** form (*the risk of losing*), not by **to** and a verb.",
+    "grammar": "\"threat\": *a threat to* someone or something (a possible cause of harm), but *the threat of* something (a possible bad event).",
     "culture": null,
     "false_friends": null,
-    "pronunciation": null
+    "pronunciation": "\"threat\": the **ea** is short, like the **e** in **wet**; the word begins with the **th** of **thin**."
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-07T09:25:18Z",
-    "modified": "2026-10-09T01:37:09Z",
+    "created": "2026-10-09T01:28:13Z",
+    "modified": "2026-10-09T01:36:52Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261007T092223Z-cdk3nt",
+    "run_id": "20261009T012500Z-7mgq5n",
     "reviews": [
       {
-        "run_id": "20261007T092223Z-cdk3nt",
+        "run_id": "20261009T012500Z-7mgq5n",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-07",
-        "file": "reviews/20261007T092223Z-cdk3nt/risk-n.json",
-        "ok": 58,
-        "issues": 0,
-        "blocking": 0
+        "date": "2026-10-09",
+        "file": "reviews/20261009T012500Z-7mgq5n/threat-n.json",
+        "ok": 46,
+        "issues": 2,
+        "blocking": 2
       },
       {
-        "run_id": "20261007T092223Z-cdk3nt",
+        "run_id": "20261009T012500Z-7mgq5n",
         "role": "reviewer-b",
         "model": "google/gemini-3.1-pro-preview",
-        "date": "2026-10-07",
-        "file": "reviews/20261007T092223Z-cdk3nt/risk-n.json",
-        "ok": 57,
-        "issues": 1,
-        "blocking": 1
+        "date": "2026-10-09",
+        "file": "reviews/20261009T012500Z-7mgq5n/threat-n.json",
+        "ok": 48,
+        "issues": 0,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
