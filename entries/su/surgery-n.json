@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "id": "desk-n",
-  "slug": "desk-n",
-  "headword": "desk",
+  "id": "surgery-n",
+  "slug": "surgery-n",
+  "headword": "surgery",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "dɛsk",
+      "ipa": "ˈsɝ.dʒɚ.i",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "desk",
+      "ipa": "ˈsɜː.dʒər.i",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
@@ -25,7 +25,7 @@
   },
   "inflections": {
     "forms": {
-      "plural": "desks"
+      "plural": "surgeries"
     },
     "regular": true,
     "source": "rules",
@@ -44,15 +44,15 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A **desk** is a piece of furniture or a place where people work or serve the public: at home, in an office, at a hotel, or at a newspaper.",
+  "core_idea": "Surgery is medical treatment in which a doctor cuts into the body, or a place where a doctor sees patients.",
   "senses": [
     {
       "n": 1,
-      "signpost": "furniture",
-      "definition": "a piece of furniture like a table, often with drawers, that you sit at to write, read, or work",
+      "signpost": "treatment",
+      "definition": "medical treatment in which a doctor cuts open a part of the body to repair or remove something inside it",
       "explanation": null,
       "grammar": {
-        "countability": "countable",
+        "countability": "uncountable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -60,29 +60,31 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "medicine"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "She sat at her desk all morning.",
+          "text": "She needs surgery on her knee.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Put the letters on my desk.",
+          "text": "He had heart surgery last year.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "My desk is by the window.",
+          "text": "The doctors decided that surgery was too dangerous.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He cleared his desk before he went on vacation.",
+          "text": "My father is still in surgery.",
           "note": null,
           "pattern": null
         }
@@ -91,36 +93,42 @@
         {
           "type": "verb + noun",
           "items": [
-            "sit at a desk",
-            "clear your desk",
-            "tidy your desk"
+            "have surgery",
+            "need surgery",
+            "perform surgery",
+            "recover from surgery",
+            "undergo surgery"
           ]
         },
         {
           "type": "adjective + noun",
           "items": [
-            "a wooden desk",
-            "an office desk",
-            "a school desk"
+            "major surgery",
+            "minor surgery",
+            "emergency surgery",
+            "plastic surgery"
           ]
         },
         {
           "type": "noun + noun",
           "items": [
-            "a desk lamp",
-            "a desk drawer",
-            "a desk job"
+            "heart surgery",
+            "knee surgery",
+            "eye surgery"
+          ]
+        },
+        {
+          "type": "preposition + noun",
+          "items": [
+            "in surgery",
+            "after surgery",
+            "before surgery"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "table-n",
-          "note": "a **table** is for eating as well as working and usually has no drawers"
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -133,8 +141,8 @@
     },
     {
       "n": 2,
-      "signpost": "service point",
-      "definition": "a place in a hotel, an airport, or another public building where you can get information or help",
+      "signpost": "one operation",
+      "definition": "a single medical treatment in which a doctor cuts open a part of the body",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -144,43 +152,37 @@
       },
       "labels": {
         "register": [],
-        "region": [],
-        "domain": [],
+        "region": [
+          "American"
+        ],
+        "domain": [
+          "medicine"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Please leave your key at the front desk.",
+          "text": "He has had three surgeries on his back.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Ask at the information desk.",
+          "text": "The surgery took four hours.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There was a long line at the check-in desk.",
+          "text": "Many surgeries were canceled because of the storm.",
           "note": null,
           "pattern": null
         }
       ],
-      "collocations": [
-        {
-          "type": "noun + noun",
-          "items": [
-            "the front desk",
-            "the reception desk",
-            "the information desk",
-            "the check-in desk"
-          ]
-        }
-      ],
+      "collocations": [],
       "synonyms": [
         {
-          "slug": "counter-n",
+          "slug": "operation-n",
           "note": null
         }
       ],
@@ -198,8 +200,8 @@
     },
     {
       "n": 3,
-      "signpost": "news section",
-      "definition": "a part of a newspaper or a news company that deals with one subject",
+      "signpost": "doctor's office",
+      "definition": "a place where a doctor sees patients",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -209,22 +211,27 @@
       },
       "labels": {
         "register": [],
-        "region": [],
-        "domain": [
-          "media"
+        "region": [
+          "British"
         ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "She works on the sports desk.",
+          "text": "I phoned the surgery to make an appointment.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The story came in to the news desk late at night.",
+          "text": "The dentist's surgery is on the first floor.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "There's a new surgery near the station.",
           "note": null,
           "pattern": null
         }
@@ -233,15 +240,19 @@
         {
           "type": "noun + noun",
           "items": [
-            "the news desk",
-            "the sports desk",
-            "the business desk"
+            "doctor's surgery",
+            "dentist's surgery"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "office-n",
+          "note": "American English says **doctor's office**"
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -256,52 +267,66 @@
   "phrases": [],
   "word_family": [
     {
-      "slug": "desktop-n",
+      "slug": "surgeon-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "surgical-adj",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "You sit **at** a desk to work; things lie **on** a desk: *she was at her desk*, *the keys are on the desk*. *A desk job* is work done mainly sitting in an office.",
+  "usage_note": "In the treatment sense, **surgery** is usually uncountable: *She had surgery on her knee*. American English often also counts single operations (*two surgeries*, *a surgery*); British English more often says **an operation**. In British English, **a surgery** is also a doctor's or a dentist's place of work.",
   "learner_errors": [
     {
-      "incorrect": "He was sitting on his desk, writing a letter.",
-      "correct": "He was sitting at his desk, writing a letter.",
-      "note": "To work at a desk, use **at**; **on** means on top of it."
+      "incorrect": "The doctor made a surgery on his leg.",
+      "correct": "The doctor operated on his leg.",
+      "note": "Doctors **perform** surgery or **operate on** a person; they do not **make** a surgery."
     }
   ],
   "etymology": null,
-  "see_also": [],
+  "see_also": [
+    {
+      "slug": "surgeon-n",
+      "note": null
+    },
+    {
+      "slug": "doctor-n",
+      "note": null
+    }
+  ],
   "adaptation": {
-    "semantic": null,
-    "grammar": null,
+    "semantic": "\"surgery\": many languages use one word for the medical treatment and a separate word for the British meaning *a doctor's place of work*.",
+    "grammar": "\"surgery\": uncountable in *have surgery* and *need surgery*, with no article; American English also counts single operations (*three surgeries*).",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-02T21:16:59Z",
+    "created": "2026-10-09T00:46:43Z",
     "modified": "2026-10-09T00:57:55Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261002T211439Z-ex25pd",
+    "run_id": "20261009T004356Z-7mgq5n",
     "reviews": [
       {
-        "run_id": "20261002T211439Z-ex25pd",
+        "run_id": "20261009T004356Z-7mgq5n",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T211439Z-ex25pd/desk-n.json",
-        "ok": 41,
-        "issues": 2,
-        "blocking": 0
+        "date": "2026-10-09",
+        "file": "reviews/20261009T004356Z-7mgq5n/surgery-n.json",
+        "ok": 33,
+        "issues": 11,
+        "blocking": 10
       },
       {
-        "run_id": "20261002T211439Z-ex25pd",
+        "run_id": "20261009T004356Z-7mgq5n",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-02",
-        "file": "reviews/20261002T211439Z-ex25pd/desk-n.json",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-09",
+        "file": "reviews/20261009T004356Z-7mgq5n/surgery-n.json",
         "ok": 43,
         "issues": 0,
         "blocking": 0
