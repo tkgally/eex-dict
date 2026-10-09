@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-09] lint | the fifty-seventh pass
+
+Fourth cycle of the 08:43 UTC run, forced at five cycles since the last pass. Caps, links, and the vocabulary gate were clean (0 definition violations over 1,872 entries). `crossref --all --apply` printed two BACKLINK lines, both acceptable: `top-n` sense 1 <- `foot-n` (lowest part) and sense 2 <- `head-n` (most important position). `claim.py --prune` removed three claim files. Reviewer precision: no new pair under the line; reviewer-b's yield since the last pass was 0.26 applied per entry, back above the 0.10 line of the low-yield note ([note](notes/reviewer-precision.md)). Index against pages: no orphan or dead entry; `tools/README.md` lists every tool. The open questions and the curator file have nothing stale or duplicated. A word-family link removed on one side comes back from the other; noted in [crossref-first-sense-backlinks](notes/crossref-first-sense-backlinks.md). Spend US$0.
+
 ## [2026-10-09] review | disadvantage to dog, the oldest one-round entries
 
 Review, cycle 3 of the 08:43 run. Second panel round for the twelve oldest one-round entries (created 2026-10-03 01:17 to 04:58): *disadvantage, disappointment, discount, discovery, discussion, disease, dish, display, distance, divorce, doctor, dog*. By hand before the panel: `disadvantage-n` gained a second sense (social disadvantage, uncountable); `dog-n` gained *a dog's life* and *every dog has its day*. Panel: 14 issues (reviewer-a 9, reviewer-b 5), 10 blocking; 9 applied, 5 rejected. Applied: `disadvantage-n` learner-error note contradicted its usage note; `doctor-n` sense 2 no longer research-only and its *Dr.* note softened; `distance-n` sense 3 now countable or uncountable. Rejected: removing *way* as a synonym of *distance* (it mirrors `way-n` sense 4), moving *get divorced* and *She is divorce* out of `divorce-n`, and dropping the American label on `dog-n` sense 2. Spend US$0.81; the day stands at US$8.35.

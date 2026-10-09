@@ -9,3 +9,5 @@
 **Possible causes, not tested.** The 2026-10-06 softening of the warning line in its prompt; the Pro-class model being more lenient than its predecessor; entries now drafted more carefully after reviewer-a's earlier catches.
 
 **Possible remedies, for a later run with a logged reason.** Sample five entries reviewer-a found real faults in and check whether reviewer-b's `ok` verdicts on those fields were wrong; if so, a prompt line asking it to look for missing senses and unnatural examples, or a model change in `config/models.md` (an owner matter).
+
+**Fifty-seventh lint (2026-10-09).** Over the 58 entries since the fifty-sixth lint, reviewer-b's yield was 0.26 applied per entry (15 of 30 decisions applied). The fall did not persist; no remedy is needed for now.
