@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-09] lint | the fifty-sixth pass, reviewer-b low-yield note
+
+Lint, cycle 2 of the 04:43 run (forced: five cycles since the last). Caps, links, gates clean. `crossref --all --apply` added 9 back-links on 7 entries; each checked by hand. Eight stand (*teenager*/*child*, *tea*/*coffee*, *team*/*club*, *surface*/*face*, *system*/*network*, *television*/*tube*, *TV* twice). One was wrong: `experiment-n` still named `test-n` as a synonym though the 01:37 build had removed the reverse link, so the mirror landed on the knowledge-test sense; the link was removed from `experiment-n` by hand and the back-link dropped. `lint_vocab --all --queue` touched two queue notes (the known duplication). Three spent claim files pruned. Precision: seven disabled pairs unchanged; reviewer-b raised 5 issues over 50 entries (0.06 applied per entry), complete replies; written up in `wiki/notes/reviewer-b-low-yield.md`. Index, log, open questions, curator file consistent. No spend.
+
 ## [2026-10-09] originality | the twenty-sixth check, two rewrites
 
 Originality, cycle 1 of the 04:43 run (forced: run 330). Ten fields sampled; exact-phrase web searches plus reviewer-a (reasoning off). Verdicts: original 5, generic-overlap 3 (*country* sense 1, *come into effect*, *hit rock bottom*), rewrite 2. Rewritten from search alone: `break-n` *a clean break* (near a dictionary's "a sudden complete end to something such as a relationship") and `frame-n` sense 3 (near a learner's dictionary's *physique*). Reviewer-a said "copied" for *hope*, *may*, *frame*, each with a quote it admitted did not match; none confirmed. Re-review of both entries: 6 reviewer-a issues (4 blocking on parts of `break-n` not rewritten), all rejected: a bone's *clean break* is a real collocation; *a pause of ten minutes between classes* is a real word-choice error. Branch `claude/wonderful-bardeen-7mgq5n` had no residue; prune line added for the curator. Spend US$0.25; the day stands at US$3.97.
