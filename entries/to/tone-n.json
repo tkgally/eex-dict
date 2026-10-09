@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "language-n",
-  "slug": "language-n",
-  "headword": "language",
+  "id": "tone-n",
+  "slug": "tone-n",
+  "headword": "tone",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "ˈlæŋ.ɡwɪdʒ",
+      "ipa": "toʊn",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "ˈlæŋ.ɡwɪdʒ",
+      "ipa": "təʊn",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "Say *LANG-gwij*: the **u** sounds like **w**."
+    "notes": "It rhymes with **phone** and **bone**."
   },
   "inflections": {
     "forms": {
-      "plural": "languages"
+      "plural": "tones"
     },
     "regular": true,
     "source": "rules",
@@ -44,15 +44,15 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**Language** is a system of words or signs for communicating, and the particular words that someone chooses.",
+  "core_idea": "A **tone** is the quality of a voice, a sound, a color, or a piece of writing, especially the feeling it gives.",
   "senses": [
     {
       "n": 1,
-      "signpost": "of a people",
-      "definition": "the system of words and grammar used by the people of a country or a group",
+      "signpost": "of a voice",
+      "definition": "the quality of someone's voice that shows what they are feeling or thinking",
       "explanation": null,
       "grammar": {
-        "countability": "countable",
+        "countability": "countable or uncountable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -67,58 +67,45 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "How many languages do you speak?",
+          "text": "I don't like your tone.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "English is not her first language.",
+          "text": "She spoke in a calm tone.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She's learning a foreign language at night school.",
+          "text": "His tone of voice showed that he was angry.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "It's a difficult language to learn.",
+          "text": "Her tone changed when she saw the bill.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
+          "type": "phrase",
+          "items": [
+            "tone of voice",
+            "in a calm tone"
+          ]
+        },
+        {
           "type": "adjective + noun",
           "items": [
-            "a foreign language",
-            "your first language",
-            "a second language",
-            "an official language"
-          ]
-        },
-        {
-          "type": "verb + noun",
-          "items": [
-            "speak a language",
-            "learn a language",
-            "teach a language"
-          ]
-        },
-        {
-          "type": "noun + noun",
-          "items": [
-            "a language school",
-            "language skills"
+            "a friendly tone",
+            "an angry tone",
+            "a serious tone",
+            "a calm tone"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "tongue-n",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -133,13 +120,15 @@
     },
     {
       "n": 2,
-      "signpost": "communication",
-      "definition": "the use of words or signs to communicate, as a human ability",
+      "signpost": "general feeling",
+      "definition": "the general feeling or attitude of a piece of writing, a speech, or an event",
       "explanation": null,
       "grammar": {
-        "countability": "uncountable",
+        "countability": "countable or uncountable",
         "transitivity": null,
-        "codes": [],
+        "codes": [
+          "usually singular"
+        ],
         "patterns": []
       },
       "labels": {
@@ -152,22 +141,35 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Children pick up language very quickly.",
+          "text": "The tone of the letter was very polite.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She studies how language changes over time.",
+          "text": "The meeting had a positive tone.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The first scene sets the tone for the whole film.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + preposition",
+          "type": "verb + noun",
           "items": [
-            "the study of language",
-            "the development of language"
+            "set the tone",
+            "change the tone"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a positive tone",
+            "a formal tone",
+            "a light tone"
           ]
         }
       ],
@@ -186,11 +188,11 @@
     },
     {
       "n": 3,
-      "signpost": "kind of words",
-      "definition": "the kind of words that someone uses, or the way they use them",
+      "signpost": "single sound",
+      "definition": "a sound of one fixed note, made by a phone or another machine",
       "explanation": null,
       "grammar": {
-        "countability": "uncountable",
+        "countability": "countable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -205,35 +207,33 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The letter was written in very simple language.",
+          "text": "Please leave a message after the tone.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Please use clear language in your report.",
+          "text": "I picked up the phone, but there was no dial tone.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Legal language can be hard to understand.",
+          "text": "The machine gives three short tones when it is ready.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "adjective + noun",
+          "type": "noun + noun",
           "items": [
-            "simple language",
-            "plain language",
-            "formal language",
-            "legal language"
+            "a dial tone"
           ]
         },
         {
-          "type": "noun + preposition",
+          "type": "adjective + noun",
           "items": [
-            "the language of business"
+            "a short tone",
+            "a long tone"
           ]
         }
       ],
@@ -252,11 +252,11 @@
     },
     {
       "n": 4,
-      "signpost": "rude words",
-      "definition": "rude words, or words that upset people",
+      "signpost": "quality of sound",
+      "definition": "the quality of a musical sound, or of the sound an instrument or a voice makes",
       "explanation": null,
       "grammar": {
-        "countability": "uncountable",
+        "countability": "countable or uncountable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -264,19 +264,21 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [],
+        "domain": [
+          "music"
+        ],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Watch your language!",
+          "text": "The piano has a beautiful tone.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There's a lot of bad language in the film.",
+          "text": "Her voice has a rich, warm tone.",
           "note": null,
           "pattern": null
         }
@@ -285,15 +287,9 @@
         {
           "type": "adjective + noun",
           "items": [
-            "bad language",
-            "strong language",
-            "foul language"
-          ]
-        },
-        {
-          "type": "phrase",
-          "items": [
-            "watch your language"
+            "a warm tone",
+            "a rich tone",
+            "a clear tone"
           ]
         }
       ],
@@ -312,11 +308,11 @@
     },
     {
       "n": 5,
-      "signpost": "signs",
-      "definition": "a way of communicating with movements, signs, or sounds instead of spoken words",
+      "signpost": "color",
+      "definition": "a lighter or darker form of a color",
       "explanation": null,
       "grammar": {
-        "countability": "countable or uncountable",
+        "countability": "countable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -331,17 +327,12 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "They talked to each other in sign language.",
+          "text": "The room is painted in soft tones of green.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "His body language showed that he was nervous.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Bees have a language of their own.",
+          "text": "Choose a shirt that suits your skin tone.",
           "note": null,
           "pattern": null
         }
@@ -350,8 +341,79 @@
         {
           "type": "noun + noun",
           "items": [
-            "sign language",
-            "body language"
+            "skin tone"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "warm tones",
+            "soft tones",
+            "dark tones"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "shade-n",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 6,
+      "signpost": "of muscles",
+      "definition": "how firm and strong the muscles of your body are",
+      "explanation": null,
+      "grammar": {
+        "countability": "uncountable",
+        "transitivity": null,
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Swimming improves muscle tone.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Exercise helps you keep good tone as you get older.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "noun + noun",
+          "items": [
+            "muscle tone"
+          ]
+        },
+        {
+          "type": "verb + noun",
+          "items": [
+            "improve tone",
+            "lose tone"
           ]
         }
       ],
@@ -369,9 +431,9 @@
       "l1": {}
     },
     {
-      "n": 6,
-      "signpost": "for computers",
-      "definition": "a system of words and signs used to write computer programs",
+      "n": 7,
+      "signpost": "in language",
+      "definition": "a rise or fall of the voice on a word, which in some languages changes the word's meaning",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -380,10 +442,12 @@
         "patterns": []
       },
       "labels": {
-        "register": [],
+        "register": [
+          "technical"
+        ],
         "region": [],
         "domain": [
-          "computing"
+          "grammar"
         ],
         "currency": [],
         "attitude": []
@@ -391,22 +455,24 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She can write code in several languages.",
+          "text": "In some languages, the same sounds have different meanings in different tones.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Which programming language should I learn first?",
+          "text": "Learners must learn to hear the tones clearly.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "adjective + noun",
           "items": [
-            "a programming language",
-            "a computer language"
+            "a high tone",
+            "a low tone",
+            "a rising tone",
+            "a falling tone"
           ]
         }
       ],
@@ -426,25 +492,24 @@
   ],
   "phrases": [
     {
-      "sub_id": "speak-the-same-language",
-      "text": "speak the same language",
-      "definition": "have the same ideas and understand each other well",
+      "sub_id": "lower-the-tone",
+      "text": "lower the tone",
+      "definition": "make a place or a conversation less polite or less pleasant",
       "explanation": null,
       "labels": {
-        "register": [],
-        "region": [],
+        "register": [
+          "informal"
+        ],
+        "region": [
+          "British"
+        ],
         "domain": [],
         "currency": [],
         "attitude": []
       },
       "examples": [
         {
-          "text": "We get along well because we speak the same language.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The two managers just don't speak the same language.",
+          "text": "Stop telling those jokes; you're lowering the tone!",
           "note": null,
           "pattern": null
         }
@@ -461,65 +526,52 @@
   ],
   "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": "With the name of a language, use no article and no **language**: *I speak French*. *The French language* is more formal and is used mainly when the language itself is the topic: *the history of the French language*.",
+  "usage_note": "**I don't like your tone** and **Don't use that tone with me** are common ways to tell someone that they sound rude. With the voice, say **in a ... tone**: *in a quiet tone*.",
   "learner_errors": [
     {
-      "incorrect": "I am studying English language.",
-      "correct": "I am studying English.",
-      "note": "Use the name alone, or *the English language* with **the**."
-    },
-    {
-      "incorrect": "He used a bad language.",
-      "correct": "He used bad language.",
-      "note": "In the sense *rude words*, **language** is uncountable."
+      "incorrect": "She said it with an angry voice tone.",
+      "correct": "She said it in an angry tone.",
+      "note": "Say **in a ... tone** or **tone of voice**; **with** and **voice tone** are not usual."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "word-n",
-      "note": null
-    },
-    {
-      "slug": "grammar-n",
-      "note": null
-    },
-    {
-      "slug": "speech-n",
+      "slug": "tone-down-phrv",
       "note": null
     }
   ],
   "adaptation": {
-    "semantic": null,
-    "grammar": "\"language\": names of languages take no article (*She speaks Spanish*); *the Spanish language* is more formal and used mainly when the language itself is discussed.",
+    "semantic": "\"tone\" covers the feeling in a voice or a text, a single sound from a machine, the quality of a musical sound, a form of a color, and the firmness of muscles. Many languages use different words for some of these.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": "\"language\" has two syllables, *LANG-gwij*; the **u** is said like **w**, and the end sounds like **bridge** without the **br**."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-05T01:10:13Z",
-    "modified": "2026-10-09T05:24:12Z",
+    "created": "2026-10-09T05:14:21Z",
+    "modified": "2026-10-09T05:23:37Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261005T010643Z-s1dgld",
+    "run_id": "20261009T050854Z-jdpis4",
     "reviews": [
       {
-        "run_id": "20261005T010643Z-s1dgld",
+        "run_id": "20261009T050854Z-jdpis4",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-05",
-        "file": "reviews/20261005T010643Z-s1dgld/language-n.json",
-        "ok": 68,
-        "issues": 7,
-        "blocking": 7
+        "date": "2026-10-09",
+        "file": "reviews/20261009T050854Z-jdpis4/tone-n.json",
+        "ok": 82,
+        "issues": 2,
+        "blocking": 1
       },
       {
-        "run_id": "20261005T010643Z-s1dgld",
+        "run_id": "20261009T050854Z-jdpis4",
         "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-05",
-        "file": "reviews/20261005T010643Z-s1dgld/language-n.json",
-        "ok": 74,
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-09",
+        "file": "reviews/20261009T050854Z-jdpis4/tone-n.json",
+        "ok": 83,
         "issues": 1,
         "blocking": 0
       }
