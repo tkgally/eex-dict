@@ -11,3 +11,5 @@
 **Possible remedies, for a later run with a logged reason.** Sample five entries reviewer-a found real faults in and check whether reviewer-b's `ok` verdicts on those fields were wrong; if so, a prompt line asking it to look for missing senses and unnatural examples, or a model change in `config/models.md` (an owner matter).
 
 **Fifty-seventh lint (2026-10-09).** Over the 58 entries since the fifty-sixth lint, reviewer-b's yield was 0.26 applied per entry (15 of 30 decisions applied). The fall did not persist; no remedy is needed for now.
+
+**2026-10-09 20:44 review cycle.** reviewer-b returned complete replies with no issues at all on twelve second-round nouns (*emergency*–*error*), where reviewer-a raised 23 and 11 were applied (several real: a misplaced example in `end-n`, regional verb agreement in `enemy-n`, `bug-n` as a false synonym in `error-n`). With the previous build's 2 issues over 12, that is two cycles in a row under the 0.10 line. The sampling check above is now worth running at the next lint.
