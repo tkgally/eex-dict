@@ -45,6 +45,7 @@ DISABLED_FAMILIES = {
     ("reviewer-a", "pronunciation"),    # 0.26 over 208; switched off by the owner's ruling of 2026-10-05
     ("reviewer-b", "example-policy"),   # 0.05 over 83
     ("reviewer-b", "explanation"),      # 0.24 over 21
+    ("reviewer-b", "inflection"),       # 0.10 over 21; switched off by the 2026-10-09 lint run
 }
 
 SYSTEM = """You are a senior lexicographer checking an entry of an English-English learner's dictionary for intermediate and advanced learners (CEFR B1 to C2). American English is the dictionary's primary variety; British forms are recorded in variant fields. The entry was written by a language model and must be checked field by field for factual and linguistic correctness, not for taste. You answer with JSON only.
