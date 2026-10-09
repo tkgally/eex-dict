@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-09] build | twelve nouns, track to trick
+
+Build, cycle 1 of the 12:45 UTC run. Twelve band-1 nouns in queue order: *track, trade, traffic, train, training, transport, trap, travel, treatment, tree, trial, trick*. All 24 transcriptions verified (panel and CMU); inflections from rules. Panel: 47 issues (40 blocking); 33 applied, 15 rejected, 0 escalated. Main fixes: *trial* senses widened (civil cases, testing periods, selection for an event); *trade* and *training* lost verb-like illustrations; *transport* usage note now says American English prefers *transportation* for goods too. Rejections: noun + preposition collocations (*travel to a place*, *trade with someone*) are noun uses; *travel-n* "no plural" is the known inflect gap (**travels** marked by hand). Three definition words outside the list fixed after review (*robe*, *refusal*, *Halloween*). Back-links checked by hand: *profession*, *exchange*, *instruction*, *experiment*, all on the right sense. Spend $0.95.
+
 ## [2026-10-09] lint | the fifty-seventh pass
 
 Fourth cycle of the 08:43 UTC run, forced at five cycles since the last pass. Caps, links, and the vocabulary gate were clean (0 definition violations over 1,872 entries). `crossref --all --apply` printed two BACKLINK lines, both acceptable: `top-n` sense 1 <- `foot-n` (lowest part) and sense 2 <- `head-n` (most important position). `claim.py --prune` removed three claim files. Reviewer precision: no new pair under the line; reviewer-b's yield since the last pass was 0.26 applied per entry, back above the 0.10 line of the low-yield note ([note](notes/reviewer-precision.md)). Index against pages: no orphan or dead entry; `tools/README.md` lists every tool. The open questions and the curator file have nothing stale or duplicated. A word-family link removed on one side comes back from the other; noted in [crossref-first-sense-backlinks](notes/crossref-first-sense-backlinks.md). Spend US$0.
