@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-09] build | twelve nouns, uniform to video
+
+Build, cycle 1 of the 16:44 UTC run. Twelve band-1 nouns: *uniform, unit, university, use, user, valley, value, vegetable, vehicle, verb, victim, video*. All 24 transcriptions verified; plurals from rules. Panel: 53 issues (45 blocking); 46 applied, 7 rejected, 0 escalated; reviewer-b raised 2. Main fixes: *university* rewritten for American use (articleless *at university* now marked British; American *college* explained); *value* sense 2 now gives American *a good value*; *video* sense 3 is the tape only; *vehicle* no longer limited to wheels or engines. Rejected: a regional label on *unit* as a dwelling (*rental unit* is ordinary American housing language); article-free collocation items for *verb*. Vocabulary fixes: *textbook*, *respond*, *recordings*, *tape*. Spend $0.82.
+
 ## [2026-10-09] build | twelve nouns, trip to underwear
 
 Build, cycle 4 of the 12:45 UTC run (the last; four-cycle cap). Twelve band-1 nouns: *trip, trouble, truck, trust, truth, tune, turn, twin, type, umbrella, uncle, underwear*. All 24 transcriptions verified; plurals from rules. Panel: 43 issues (33 blocking); 37 applied, 6 rejected, 0 escalated. Main fixes: *trip* no longer claims a trip must include coming back; *in turn* now gives both meanings; *uncle* gained a family-friend sense; *trust* senses 2 and 3 made legal and exact; *twin* lost attributive *twin beds* (adjective use). Rejected: the British label on *truck* sense 2 (an American freight car is a *car*). Vocabulary fixes after review: *balance*, *extra*, *railway*, *relying*, *property*, *principle*. `trip-n` names `journey-n` as a synonym to match `journey-n` (TYPE-MISMATCH fixed). Spend $0.88.
