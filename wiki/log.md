@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-09] build | twelve nouns, trip to underwear
+
+Build, cycle 4 of the 12:45 UTC run (the last; four-cycle cap). Twelve band-1 nouns: *trip, trouble, truck, trust, truth, tune, turn, twin, type, umbrella, uncle, underwear*. All 24 transcriptions verified; plurals from rules. Panel: 43 issues (33 blocking); 37 applied, 6 rejected, 0 escalated. Main fixes: *trip* no longer claims a trip must include coming back; *in turn* now gives both meanings; *uncle* gained a family-friend sense; *trust* senses 2 and 3 made legal and exact; *twin* lost attributive *twin beds* (adjective use). Rejected: the British label on *truck* sense 2 (an American freight car is a *car*). Vocabulary fixes after review: *balance*, *extra*, *railway*, *relying*, *property*, *principle*. `trip-n` names `journey-n` as a synonym to match `journey-n` (TYPE-MISMATCH fixed). Spend $0.88.
+
 ## [2026-10-09] originality | the twenty-seventh check, one rewrite
 
 Originality, cycle 3 of the 12:45 UTC run (forced: run 340). Ten sampled definitions searched as exact phrases. Verdicts: 4 original, 5 generic overlap, 1 rewrite. *joint-n* sense 3 (meat) shared its core words with a learner's dictionary's *roast* and was rewritten; the re-review moved a subject prefix out of the *out of joint* definition (1 applied). Reviewer-a, reasoning off, said "original" for all ten and missed the match. Record: `reviews/originality/2026-10-09-2.md` (a same-day check must be recorded with a `-2` date, or `record` overwrites the morning's file; caught and restored before commit). Spend $0.09.
