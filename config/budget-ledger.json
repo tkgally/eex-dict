@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-10-09",
-  "spent_usd": 10.131676,
+  "spent_usd": 10.221636,
   "calls": [
     {
       "ts": "2026-10-09T00:48:27Z",
@@ -2703,6 +2703,60 @@
       "cost_usd": 0.043818,
       "tokens_in": 3573,
       "tokens_out": 3056
+    },
+    {
+      "ts": "2026-10-09T13:15:19Z",
+      "run_id": "20261009T131429Z-hjmbqk",
+      "purpose": "originality",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.002724,
+      "tokens_in": 306,
+      "tokens_out": 176
+    },
+    {
+      "ts": "2026-10-09T13:15:33Z",
+      "run_id": "20261009T131429Z-hjmbqk",
+      "purpose": "pronounce_check:pronunciation-1",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.001018,
+      "tokens_in": 263,
+      "tokens_out": 41
+    },
+    {
+      "ts": "2026-10-09T13:15:35Z",
+      "run_id": "20261009T131429Z-hjmbqk",
+      "purpose": "pronounce_check:pronunciation-2",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.000302,
+      "tokens_in": 223,
+      "tokens_out": 36
+    },
+    {
+      "ts": "2026-10-09T13:15:38Z",
+      "run_id": "20261009T131429Z-hjmbqk",
+      "purpose": "pronounce_check:pronunciation-3",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 5.3e-05,
+      "tokens_in": 234,
+      "tokens_out": 52
+    },
+    {
+      "ts": "2026-10-09T13:15:53Z",
+      "run_id": "20261009T131429Z-hjmbqk",
+      "purpose": "review:joint-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.032601,
+      "tokens_in": 4432,
+      "tokens_out": 2041
+    },
+    {
+      "ts": "2026-10-09T13:16:15Z",
+      "run_id": "20261009T131429Z-hjmbqk",
+      "purpose": "review:joint-n:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.053262,
+      "tokens_in": 4791,
+      "tokens_out": 3640
     }
   ],
   "history": {

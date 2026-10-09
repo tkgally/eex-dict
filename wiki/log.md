@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-09] originality | the twenty-seventh check, one rewrite
+
+Originality, cycle 3 of the 12:45 UTC run (forced: run 340). Ten sampled definitions searched as exact phrases. Verdicts: 4 original, 5 generic overlap, 1 rewrite. *joint-n* sense 3 (meat) shared its core words with a learner's dictionary's *roast* and was rewritten; the re-review moved a subject prefix out of the *out of joint* definition (1 applied). Reviewer-a, reasoning off, said "original" for all ten and missed the match. Record: `reviews/originality/2026-10-09-2.md` (a same-day check must be recorded with a `-2` date, or `record` overwrites the morning's file; caught and restored before commit). Spend $0.09.
+
 ## [2026-10-09] review | door to duck, the oldest one-round entries
 
 Review, cycle 2 of the 12:45 UTC run. Second panel round for the twelve oldest one-round entries (created 2026-10-03 04:58 to 05:10): *door, doubt, download, drawer, dream, dress, drink, drive, driver, drug, drum, duck*. Added by hand before the panel: *drive-n* senses *natural need* (*sex drive*), *in a vehicle* (*four-wheel drive*), *in sport*; *driver-n* the golf club sense and the phrase *in the driver's seat*; phrases *out of doors* and *if in doubt*. Panel: 33 issues (27 blocking); 18 applied, 15 rejected, 0 escalated. Applied: *dream* sense 3 now covers predicative *a dream* (wonderful); verb material removed from *dream*'s notes; *drink* sense 2 adds heavy drinking; *drawer*'s pronunciation note lost a doubtful contrast. Rejected: a brake drum does turn with the wheel; adjective-phrase definitions for *beyond doubt*, *in doubt*. *golf* and *tennis* kept out of definitions (no entries). Spend $0.83.
