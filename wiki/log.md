@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-09] review | dust to email, twelve entries
+
+Review, cycle 3 of the 16:44 UTC run: the twelve oldest one-round entries, nouns of 2026-10-03 (*dust, duty, ear, earth, economy, edge, effect, effort, egg, election, electricity, email*). Added before the panel: phrases *duty calls*, *keep your ear to the ground*, *from ear to ear*, *lend an ear*, *come back down to earth*, *push someone over the edge*; `earth-n` sense 4, the British electric *earth* wire. Panel: 30 issues (24 blocking); 22 applied, 8 rejected, 0 escalated. Main fixes: *down-to-earth* left `earth-n` (adjective; queued as `down-to-earth-adj`); `earth-n` learner error and adaptation no longer ban *around the earth*; `inflect.py` re-run on `earth-n` (plural **earths** now that sense 4 is countable); `egg-n` sense 3 now accurate about how a baby starts; *fly economy* example (adverb use) replaced; `email-n` claims about *a mail* narrowed. Rejected: verb definitions with *to*, article-free collocations, *make a big effort* as unidiomatic. Spend $0.95.
+
 ## [2026-10-09] lint | the fifty-eighth pass, reviewer-b inflection switched off
 
 Lint, cycle 2 of the 16:44 UTC run (forced: five runs since the last lint). Caps, links, vocabulary (0 violations over 1,908 entries) clean; three old claim files pruned. `crossref --all --apply` wrote eleven back-links into the day's new entries from older ones; nine were right, two were moved by hand off the wrong sense (`form-n` onto `type-n` sense 1, not "person"; `market-n` onto `trade-n` sense 1, not "kind of business"). One TYPE-MISMATCH fixed: `university-n` now names `college-n` as a synonym, as `college-n` does. Precision: `reviewer-b` `inflection` reached 0.10 over 21 decisions and is switched off in `tools/review_panel.py` (eighth disabled pair; the family is now off for both roles). Index, log, open questions, curator file: no gaps or duplicates. Spend $0.
