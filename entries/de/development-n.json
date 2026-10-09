@@ -250,10 +250,10 @@
     {
       "n": 4,
       "signpost": "new buildings",
-      "definition": "a group of new buildings, or the building of new houses, offices, or roads on land",
+      "definition": "a group of new buildings, such as houses or offices, built together on one piece of land",
       "explanation": null,
       "grammar": {
-        "countability": "countable or uncountable",
+        "countability": "countable",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -268,17 +268,12 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "They live on a new housing development.",
+          "text": "They live in a new housing development.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The land has been sold for development.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The council stopped the development of the park.",
+          "text": "The development has three hundred homes and a small park.",
           "note": null,
           "pattern": null
         }
@@ -288,14 +283,55 @@
           "type": "noun + noun",
           "items": [
             "a housing development",
-            "property development"
+            "an office development"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a new development",
+            "a large development"
           ]
         }
       ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "the work of putting up new buildings or roads on land",
+          "explanation": null,
+          "grammar": {
+            "countability": "uncountable",
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "The land has been sold for development.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The council stopped the development of the park.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "noun + noun",
+              "items": [
+                "property development",
+                "land development"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -330,8 +366,19 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Development** is uncountable when it means growth or making something new (*a child's development*) and countable when it means a new event (*a new development*) or a group of new buildings (*a housing development*).",
-  "learner_errors": [],
+  "usage_note": "**Development** is uncountable when it means growth (*a child's development*), making something new (*software development*), or the work of building on land (*land for development*). It is countable when it means a new event (*a new development*) or a group of new buildings (*a housing development*).",
+  "learner_errors": [
+    {
+      "incorrect": "Many development countries need clean water.",
+      "correct": "Many developing countries need clean water.",
+      "note": "Before **country** or **nation**, use the adjective **developing**, not the noun **development**."
+    },
+    {
+      "incorrect": "There is a new develop in the story.",
+      "correct": "There is a new development in the story.",
+      "note": "**Develop** is the verb; the noun for a new event is **development**."
+    }
+  ],
   "etymology": null,
   "see_also": [],
   "adaptation": {
@@ -344,7 +391,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-02T21:17:31Z",
-    "modified": "2026-10-02T21:23:52Z",
+    "modified": "2026-10-09T05:05:50Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261002T211439Z-ex25pd",
     "reviews": [
@@ -364,6 +411,26 @@
         "model": "google/gemini-3.8-flash",
         "date": "2026-10-02",
         "file": "reviews/20261002T211439Z-ex25pd/development-n.json",
+        "ok": 51,
+        "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261009T045606Z-jdpis4",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-09",
+        "file": "reviews/20261009T045606Z-jdpis4/development-n.json",
+        "ok": 50,
+        "issues": 2,
+        "blocking": 2
+      },
+      {
+        "run_id": "20261009T045606Z-jdpis4",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-09",
+        "file": "reviews/20261009T045606Z-jdpis4/development-n.json",
         "ok": 51,
         "issues": 1,
         "blocking": 0

@@ -10,13 +10,13 @@
     "american": {
       "ipa": "dəˈrɛk.ʃən",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
       "ipa": "dɪˈrek.ʃən",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/3",
+      "checked_by": "agreement:2/3",
       "status": "verified"
     },
     "variants": [
@@ -485,7 +485,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "Say **in the direction of**, not **to the direction of**: *walk in the direction of the lake*. In the same way, use **in** with *this direction*, *the opposite direction*, *the wrong direction*. To ask how to get somewhere, use the plural: *ask for directions*.",
+  "usage_note": "Say **in the direction of**, not **to the direction of**: *walk in the direction of the lake*. Movement *in this direction*, *in the opposite direction*, or *in the wrong direction* also takes **in**; informal American English sometimes leaves it out (*go that direction*). To ask how to get somewhere, use the plural: *ask for directions*.",
   "learner_errors": [
     {
       "incorrect": "He went to the direction of the park.",
@@ -502,7 +502,7 @@
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"direction\" takes **in** (*in this direction*), where many languages use a word meaning *to* or *toward*.",
+    "grammar": "Movement toward a direction takes **in** in English (*go in this direction*, *in the direction of the lake*), where many languages use a word meaning *to* or *toward*.",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -510,7 +510,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-03T01:17:11Z",
-    "modified": "2026-10-03T01:26:20Z",
+    "modified": "2026-10-09T05:05:50Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261003T011326Z-ds9q0e",
     "reviews": [
@@ -532,6 +532,26 @@
         "file": "reviews/20261003T011326Z-ds9q0e/direction-n.json",
         "ok": 70,
         "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261009T045606Z-jdpis4",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-09",
+        "file": "reviews/20261009T045606Z-jdpis4/direction-n.json",
+        "ok": 67,
+        "issues": 4,
+        "blocking": 4
+      },
+      {
+        "run_id": "20261009T045606Z-jdpis4",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-09",
+        "file": "reviews/20261009T045606Z-jdpis4/direction-n.json",
+        "ok": 71,
+        "issues": 0,
         "blocking": 0
       }
     ],

@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-09] review | destruction to disability, the oldest one-round entries
+
+Review, cycle 3 of the 04:43 run. Second panel round for the twelve oldest one-round entries (created 2026-10-02 21:16 to 2026-10-03 01:17): *destruction, detail, development, device, dictionary, difference, difficulty, dinner, direction, director, dirt, disability*. By hand before the panel: `detail-n` sense 5 (*a security detail*) and collocations for sense 4; two learner errors on `development-n` (*development countries*, *a new develop*); noun + noun collocations on `dinner-n`; the phrase *dish the dirt*. Panel: 24 issues (22 reviewer-a, 2 reviewer-b), 9 applied, 15 rejected, none escalated. Applied: `development-n` sense 4 split into countable buildings and an uncountable building-work subsense; `direction-n` notes now limit **in** to movement; `director-n` gains the theatre domain. Rejected: *dirt cheap* moved to *cheap* (keyword rule); subject dictionaries explain topics too. Spend US$0.92; the day stands at US$4.90.
+
 ## [2026-10-09] lint | the fifty-sixth pass, reviewer-b low-yield note
 
 Lint, cycle 2 of the 04:43 run (forced: five cycles since the last). Caps, links, gates clean. `crossref --all --apply` added 9 back-links on 7 entries; each checked by hand. Eight stand (*teenager*/*child*, *tea*/*coffee*, *team*/*club*, *surface*/*face*, *system*/*network*, *television*/*tube*, *TV* twice). One was wrong: `experiment-n` still named `test-n` as a synonym though the 01:37 build had removed the reverse link, so the mirror landed on the knowledge-test sense; the link was removed from `experiment-n` by hand and the back-link dropped. `lint_vocab --all --queue` touched two queue notes (the known duplication). Three spent claim files pruned. Precision: seven disabled pairs unchanged; reviewer-b raised 5 issues over 50 entries (0.06 applied per entry), complete replies; written up in `wiki/notes/reviewer-b-low-yield.md`. Index, log, open questions, curator file consistent. No spend.
