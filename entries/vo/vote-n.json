@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "id": "bug-n",
-  "slug": "bug-n",
-  "headword": "bug",
+  "id": "vote-n",
+  "slug": "vote-n",
+  "headword": "vote",
   "pos": "n",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "bʌɡ",
+      "ipa": "voʊt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "bʌɡ",
+      "ipa": "vəʊt",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "It rhymes with **rug** and **hug**."
+    "notes": "One part, rhyming with **boat**."
   },
   "inflections": {
     "forms": {
-      "plural": "bugs"
+      "plural": "votes"
     },
     "regular": true,
     "source": "rules",
@@ -44,12 +44,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A **bug** is a small thing that causes trouble or interest: an insect, an illness that is not serious, a fault in a computer program, a hidden device for listening, or a strong interest in something.",
+  "core_idea": "A vote is a formal choice that someone makes, or a way of deciding something by counting people's choices.",
   "senses": [
     {
       "n": 1,
-      "signpost": "insect",
-      "definition": "an insect or other very small creature",
+      "signpost": "one choice",
+      "definition": "a formal choice that a person makes in an election or at a meeting, by marking a paper, raising a hand, or pressing a button",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -67,36 +67,53 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "There's a bug in my soup!",
+          "text": "She won by twenty votes.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "The kids were looking for bugs under the rocks.",
+          "text": "Each member has one vote.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "I got a lot of bug bites in the woods.",
+          "text": "I'm going to cast my vote early.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "He got more votes than anyone else.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "noun + noun",
+          "type": "verb + noun",
           "items": [
-            "a bug bite",
-            "bug spray"
+            "cast a vote",
+            "get votes",
+            "win votes",
+            "count the votes",
+            "lose votes"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a single vote",
+            "the deciding vote"
+          ]
+        },
+        {
+          "type": "noun + preposition",
+          "items": [
+            "a vote for someone",
+            "a vote against something"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "insect-n",
-          "note": "more exact and more formal"
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -111,8 +128,8 @@
     },
     {
       "n": 2,
-      "signpost": "illness",
-      "definition": "an illness that is not serious, often one that many people are catching at the same time",
+      "signpost": "way of deciding",
+      "definition": "a time when a group decides something by counting people's choices",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -121,9 +138,7 @@
         "patterns": []
       },
       "labels": {
-        "register": [
-          "informal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -132,17 +147,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "I think I've caught a bug.",
+          "text": "Let's have a vote on it.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There's a stomach bug going around the office.",
+          "text": "The workers held a vote and agreed to the new contract.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "She picked up a bug on vacation.",
+          "text": "The plan was accepted by a vote of ten to two.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We'll put it to a vote at the next meeting.",
           "note": null,
           "pattern": null
         }
@@ -151,28 +171,30 @@
         {
           "type": "verb + noun",
           "items": [
-            "catch a bug",
-            "pick up a bug"
+            "have a vote",
+            "hold a vote",
+            "take a vote",
+            "put something to a vote"
           ]
         },
         {
-          "type": "noun + noun",
+          "type": "noun + preposition",
           "items": [
-            "a stomach bug",
-            "a flu bug"
+            "a vote on something"
           ]
         },
         {
-          "type": "phrase",
+          "type": "adjective + noun",
           "items": [
-            "a bug going around"
+            "a close vote",
+            "a secret vote"
           ]
         }
       ],
       "synonyms": [
         {
-          "slug": "virus-n",
-          "note": null
+          "slug": "election-n",
+          "note": "an **election** is a vote to choose a person for a position"
         }
       ],
       "antonyms": [],
@@ -189,11 +211,11 @@
     },
     {
       "n": 3,
-      "signpost": "in a computer",
-      "definition": "a mistake in a computer program that stops it from working correctly",
-      "explanation": null,
+      "signpost": "right to vote",
+      "definition": "the right to vote in elections",
+      "explanation": "Always **the vote**.",
       "grammar": {
-        "countability": "countable",
+        "countability": "singular only",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -201,26 +223,19 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "computing"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "The new version fixes several bugs.",
+          "text": "Women fought hard for the vote.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "A bug in the software made the phone turn off.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "Please report any bugs that you find.",
+          "text": "At what age do people get the vote?",
           "note": null,
           "pattern": null
         }
@@ -229,28 +244,13 @@
         {
           "type": "verb + noun",
           "items": [
-            "fix a bug",
-            "find a bug",
-            "report a bug"
-          ]
-        },
-        {
-          "type": "noun + preposition",
-          "items": [
-            "a bug in something"
+            "have the vote",
+            "get the vote",
+            "be given the vote"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "error-n",
-          "note": null
-        },
-        {
-          "slug": "fault-n",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -265,11 +265,11 @@
     },
     {
       "n": 4,
-      "signpost": "microphone",
-      "definition": "a very small hidden device used for listening secretly to what people say",
-      "explanation": null,
+      "signpost": "all the votes",
+      "definition": "the votes or support of a particular group of people, or the total number of votes in an election",
+      "explanation": "Usually **the** + a word for a group + **vote**: *the student vote*. **The popular vote** is the total number of votes made by all the people.",
       "grammar": {
-        "countability": "countable",
+        "countability": "singular only",
         "transitivity": null,
         "codes": [],
         "patterns": []
@@ -284,22 +284,22 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The police hid a bug in his office.",
+          "text": "The party lost much of the young vote.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "They searched the room for bugs.",
+          "text": "They are trying to win the women's vote.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "adjective + noun",
           "items": [
-            "plant a bug",
-            "hide a bug"
+            "the young vote",
+            "the popular vote"
           ]
         }
       ],
@@ -315,62 +315,63 @@
         "pronunciation": null
       },
       "l1": {}
+    }
+  ],
+  "phrases": [
+    {
+      "sub_id": "a-vote-of-thanks",
+      "text": "a vote of thanks",
+      "definition": "a formal statement at a meeting that thanks someone, usually a speaker or an organizer",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [
+          "British"
+        ],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "She gave a vote of thanks to the organizers.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     },
     {
-      "n": 5,
-      "signpost": "strong interest",
-      "definition": "a strong interest in doing something",
-      "explanation": "Usually **the** plus an activity plus **bug**: *the travel bug*, *the acting bug*.",
-      "grammar": {
-        "countability": "countable",
-        "transitivity": null,
-        "codes": [
-          "usually singular"
-        ],
-        "patterns": []
-      },
+      "sub_id": "vote-of-confidence",
+      "text": "vote of confidence",
+      "definition": "a sign that people trust and support someone",
+      "explanation": "Also a formal vote that shows whether a government or leader still has support.",
       "labels": {
-        "register": [
-          "informal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
         "attitude": []
       },
-      "pronunciation": null,
       "examples": [
         {
-          "text": "She caught the travel bug in college and has never stopped.",
+          "text": "The new contract is a vote of confidence in the team.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "He's been bitten by the gardening bug.",
+          "text": "Thanks for the vote of confidence!",
           "note": null,
           "pattern": null
         }
       ],
-      "collocations": [
-        {
-          "type": "verb + noun",
-          "items": [
-            "catch the bug",
-            "be bitten by the bug"
-          ]
-        },
-        {
-          "type": "noun + noun",
-          "items": [
-            "the travel bug",
-            "the acting bug"
-          ]
-        }
-      ],
-      "synonyms": [],
-      "antonyms": [],
-      "compare": [],
-      "subsenses": [],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -381,31 +382,41 @@
       "l1": {}
     }
   ],
-  "phrases": [],
   "word_family": [
     {
-      "slug": "bug-v",
+      "slug": "vote-v",
       "form": null,
       "note": null
     },
     {
-      "slug": "buggy-adj",
+      "slug": "voter-n",
       "form": null,
       "note": null
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "In American English **bug** is the everyday word for any small insect, and even for spiders. In both American and British English, **insect** is the more usual word in science and in careful writing.",
-  "learner_errors": [],
+  "usage_note": "You **cast** your vote (*cast your vote early*). A group **has**, **holds**, or **takes** a vote on something (*hold a vote on the plan*), and **puts** something **to a vote**. **Win** or **lose a vote** usually means the result of a whole vote.",
+  "learner_errors": [
+    {
+      "incorrect": "We made a vote about the plan.",
+      "correct": "We had a vote on the plan.",
+      "note": "Use **have**, **hold**, or **take** a vote, and say **a vote on** a subject."
+    },
+    {
+      "incorrect": "He gave his vote to the election.",
+      "correct": "He voted in the election.",
+      "note": "The verb **vote** is usually simpler: *vote in an election*, *vote for someone*."
+    }
+  ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "insect-n",
+      "slug": "election-n",
       "note": null
     }
   ],
   "adaptation": {
-    "semantic": "The insect, the illness, and the computer fault are all called **bug** in English. A translator will usually need a different word for each.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -413,48 +424,28 @@
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-01T07:01:06Z",
-    "modified": "2026-10-09T17:31:40Z",
+    "created": "2026-10-09T17:20:49Z",
+    "modified": "2026-10-09T17:30:34Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261001T065618Z-hclmfl",
+    "run_id": "20261009T171744Z-xcqumb",
     "reviews": [
       {
-        "run_id": "20261001T065618Z-hclmfl",
+        "run_id": "20261009T171744Z-xcqumb",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-01",
-        "file": "reviews/20261001T065618Z-hclmfl/bug-n.json",
-        "ok": 55,
+        "date": "2026-10-09",
+        "file": "reviews/20261009T171744Z-xcqumb/vote-n.json",
+        "ok": 56,
         "issues": 6,
         "blocking": 6
       },
       {
-        "run_id": "20261001T065618Z-hclmfl",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-01",
-        "file": "reviews/20261001T065618Z-hclmfl/bug-n.json",
-        "ok": 61,
-        "issues": 0,
-        "blocking": 0
-      },
-      {
-        "run_id": "20261006T084405Z-b1xhaa",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-06",
-        "file": "reviews/20261006T084405Z-b1xhaa/bug-n.json",
-        "ok": 58,
-        "issues": 3,
-        "blocking": 3
-      },
-      {
-        "run_id": "20261006T084405Z-b1xhaa",
+        "run_id": "20261009T171744Z-xcqumb",
         "role": "reviewer-b",
         "model": "google/gemini-3.1-pro-preview",
-        "date": "2026-10-06",
-        "file": "reviews/20261006T084405Z-b1xhaa/bug-n.json",
-        "ok": 61,
+        "date": "2026-10-09",
+        "file": "reviews/20261009T171744Z-xcqumb/vote-n.json",
+        "ok": 63,
         "issues": 0,
         "blocking": 0
       }
