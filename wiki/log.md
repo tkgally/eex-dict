@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-10] build | twelve nouns wind–wood
+
+Build, cycle 3 of the 04:43 UTC run. Twelve band-1 nouns drafted and reviewed: *wind* (three senses, four phrases), *window* (four senses), *wine*, *wing* (six senses, three phrases), *winner*, *winter*, *wire* (three senses, three phrases), *wisdom*, *wish*, *witness*, *woman*, *wood* (*knock on wood* American, *touch wood* British). All 24 transcriptions and inflections (*women* from the exceptions table) verified. Panel: 29 issues (13 blocking); 18 applied (*wind* sense 2 widened; *wine* subsense now fruit or rice; `female-n` moved from *woman*'s family to see-also), 11 rejected (both reviewers wanted *grape* in *wine*'s definition, but *grape* has no entry yet; *bear witness* stays under *witness* by the keyword rule). One decision line for `wood-n` was logged twice by mistake. Back-link: `gas-n` sense 4 now names `wind-n`. Spend US$0.94.
+
 ## [2026-10-10] review | escape–explanation
 
 Review, cycle 2 of the 04:43 UTC run: the twelve oldest one-round entries (*escape, evening, event, evidence, example, exchange, excitement, exercise, exit, experience, experiment, explanation*). Eleven lacked pronunciation notes; all now have them. Added: `escape-n` sense 3, the computer key; `event-n` phrase *in the event* (British); `evening-n` learner error *Good night* as a greeting. Panel: 21 issues (15 blocking); 12 applied (*do exercise* removed; *get* is the neutral verb, *do some exercise* and *take exercise* British; `exit-n` sense 3 and `exchange-n` sense 3 redefined; `example-n` usage note reworded), 9 rejected (the *music evening* sense stands; `excitement-n` keeps `electricity-n` as the mirror of its sense 2). All transcriptions and inflections verified. Spend US$0.85.
