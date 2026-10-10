@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-10] build | twelve nouns wool–youth
+
+Build, cycle 4 of the 04:43 UTC run (the last: four-cycle cap). Twelve band-1 nouns drafted and reviewed: *wool*, *word* (six senses, eleven phrases), *work* (four senses, seven phrases, a *work*/*job* discrimination), *worker*, *world* (six senses, eight phrases), *worry*, *wound*, *writer*, *yard* (four senses), *year* (five senses, four phrases, three learner errors), *yesterday* (noun), *youth*. *not breathe a word* moved from `breathe-v` to `word-n` as the queue asked (`breathe-v` gained a see-also to `word-n`). All transcriptions and inflections verified. Panel: 35 issues (21 blocking); 25 applied (*youth* sense 3 lost its disapproving label; *year* senses 2 and 4 redefined; *worry* and *writer* usage notes corrected), 10 rejected (reviewer-b again misread three base-form phrase definitions; *no worries* stays under *worry* by the keyword rule). Back-link `promise-n` sense 1 checked. Spend US$1.06.
+
 ## [2026-10-10] build | twelve nouns wind–wood
 
 Build, cycle 3 of the 04:43 UTC run. Twelve band-1 nouns drafted and reviewed: *wind* (three senses, four phrases), *window* (four senses), *wine*, *wing* (six senses, three phrases), *winner*, *winter*, *wire* (three senses, three phrases), *wisdom*, *wish*, *witness*, *woman*, *wood* (*knock on wood* American, *touch wood* British). All 24 transcriptions and inflections (*women* from the exceptions table) verified. Panel: 29 issues (13 blocking); 18 applied (*wind* sense 2 widened; *wine* subsense now fruit or rice; `female-n` moved from *woman*'s family to see-also), 11 rejected (both reviewers wanted *grape* in *wine*'s definition, but *grape* has no entry yet; *bear witness* stays under *witness* by the keyword rule). One decision line for `wood-n` was logged twice by mistake. Back-link: `gas-n` sense 4 now names `wind-n`. Spend US$0.94.
