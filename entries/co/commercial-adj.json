@@ -1,37 +1,37 @@
 {
   "schema_version": "1.0",
-  "id": "far-adj",
-  "slug": "far-adj",
-  "headword": "far",
+  "id": "commercial-adj",
+  "slug": "commercial-adj",
+  "headword": "commercial",
   "pos": "adj",
   "homograph": 1,
   "variants": [],
   "pronunciation": {
     "american": {
-      "ipa": "fɑr",
+      "ipa": "kəˈmɝ.ʃəl",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:4/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
-      "ipa": "fɑː",
+      "ipa": "kəˈmɜː.ʃəl",
       "source": "model:anthropic/claude-sonnet-5",
       "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
     "audio": null,
-    "notes": "One syllable; in British English the **r** is not said."
+    "notes": "Said *kuh-MUR-shul*, with the stress on the second part."
   },
   "inflections": {
     "forms": {
-      "comparative": "farther",
-      "superlative": "farthest"
+      "comparative": null,
+      "superlative": null
     },
-    "regular": false,
-    "source": "exceptions",
+    "regular": true,
+    "source": "rules",
     "status": "verified",
-    "note": "also further, furthest"
+    "note": "comparative with more"
   },
   "frequency": {
     "band": 1,
@@ -45,18 +45,17 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**Far** describes something at a long distance, or the more distant or most distant part of something.",
+  "core_idea": "**Commercial** is about buying, selling, and making money.",
   "senses": [
     {
       "n": 1,
-      "signpost": "more distant",
-      "definition": "being the more distant one of two sides, ends, or parts",
+      "signpost": "business",
+      "definition": "connected with buying and selling things, or with business in general",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": null,
         "codes": [
-          "attributive only",
           "not gradable"
         ],
         "patterns": []
@@ -71,43 +70,35 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "She sat at the far end of the table.",
+          "text": "The port is an important commercial center.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "There's a door on the far side of the room.",
+          "text": "He studied commercial law.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "They swam to the far bank of the river.",
+          "text": "The area has many commercial buildings.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "adjective + noun",
           "items": [
-            "the far side",
-            "the far end",
-            "the far corner",
-            "the far bank"
+            "commercial activity",
+            "a commercial center",
+            "commercial law",
+            "commercial buildings",
+            "commercial property"
           ]
         }
       ],
       "synonyms": [],
-      "antonyms": [
-        {
-          "slug": "near-adj",
-          "note": null
-        },
-        {
-          "slug": "close-adj",
-          "note": null
-        }
-      ],
+      "antonyms": [],
       "compare": [],
       "subsenses": [],
       "adaptation": {
@@ -121,14 +112,13 @@
     },
     {
       "n": 2,
-      "signpost": "most distant part",
-      "definition": "being the most distant part of an area",
+      "signpost": "making money",
+      "definition": "making or intended to make a profit",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": null,
         "codes": [
-          "attributive only",
           "not gradable"
         ],
         "patterns": []
@@ -143,23 +133,29 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "They live in the far north of the country.",
+          "text": "The movie was a huge commercial success.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "In the far distance we could see the mountains.",
+          "text": "The product was never a commercial success.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The airline flies for commercial reasons only.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "adjective + noun",
           "items": [
-            "the far north",
-            "the far south",
-            "in the far distance"
+            "a commercial success",
+            "a commercial failure",
+            "commercial interests",
+            "commercial value"
           ]
         }
       ],
@@ -178,14 +174,14 @@
     },
     {
       "n": 3,
-      "signpost": "a long way",
-      "definition": "a long distance away",
-      "explanation": "Used after **be** and other linking verbs such as **seem**, mainly in questions and negative sentences: *It isn't far*. In positive sentences, *a long way* is more usual: *It's a long way*.",
+      "signpost": "only for money",
+      "definition": "more interested in making money than in quality",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": null,
         "codes": [
-          "predicative only"
+          "comparative with more"
         ],
         "patterns": []
       },
@@ -194,33 +190,30 @@
         "region": [],
         "domain": [],
         "currency": [],
-        "attitude": []
+        "attitude": [
+          "disapproving"
+        ]
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "Is the station far?",
+          "text": "Their music has become too commercial.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "It's not far from here to the beach.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The hotel was farther than we thought.",
+          "text": "The festival is much more commercial than it used to be.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "adverb + adjective",
           "items": [
-            "not far",
-            "not far from something",
-            "too far"
+            "very commercial",
+            "too commercial",
+            "highly commercial"
           ]
         }
       ],
@@ -239,8 +232,8 @@
     },
     {
       "n": 4,
-      "signpost": "politics",
-      "definition": "holding the strongest political opinions, much stronger than those of most people, on the left or the right",
+      "signpost": "television and radio",
+      "definition": "paid for with money from companies whose products are shown or talked about",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -254,31 +247,30 @@
       "labels": {
         "register": [],
         "region": [],
-        "domain": [
-          "politics"
-        ],
+        "domain": [],
         "currency": [],
         "attitude": []
       },
       "pronunciation": null,
       "examples": [
         {
-          "text": "The far right won more votes this time.",
+          "text": "She works for a commercial radio station.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Some voters are moving to the far left.",
+          "text": "Commercial television shows a lot of advertisements.",
           "note": null,
           "pattern": null
         }
       ],
       "collocations": [
         {
-          "type": "phrase",
+          "type": "adjective + noun",
           "items": [
-            "the far left",
-            "the far right"
+            "commercial television",
+            "commercial radio",
+            "a commercial channel"
           ]
         }
       ],
@@ -294,86 +286,139 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "not private",
+      "definition": "used for business, such as carrying goods or paying passengers, not for private or military use",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": null,
+        "codes": [
+          "attributive only",
+          "not gradable"
+        ],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Commercial flights were stopped because of the storm.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "You need a special license to drive commercial vehicles.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a commercial flight",
+            "a commercial airline",
+            "commercial vehicles",
+            "a commercial pilot"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [
+        {
+          "slug": "private-adj",
+          "note": null
+        }
+      ],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [],
-  "word_family": [],
-  "synonym_discrimination": null,
-  "usage_note": "For distance, both **farther** and **further** are used; **further** is more common in British English. **Further** is also the usual word for *more* or *added*: *further information*. **Far** as an adverb (*We didn't walk far*) has its own entry.",
-  "learner_errors": [
+  "word_family": [
     {
-      "incorrect": "My house is far.",
-      "correct": "My house is a long way from here.",
-      "note": "In positive sentences, **a long way** sounds more natural than **far** alone."
-    },
-    {
-      "incorrect": "It's more far than I thought.",
-      "correct": "It's farther than I thought.",
-      "note": "The comparative is **farther** or **further**, not **more far**."
-    }
-  ],
-  "etymology": null,
-  "see_also": [
-    {
-      "slug": "far-adv",
+      "slug": "commerce-n",
+      "form": null,
       "note": null
     },
     {
-      "slug": "near-adj",
+      "slug": "commercial-n",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "commercially-adv",
+      "form": null,
+      "note": null
+    },
+    {
+      "slug": "commercialize-v",
+      "form": null,
+      "note": null
+    }
+  ],
+  "synonym_discrimination": null,
+  "usage_note": null,
+  "learner_errors": [],
+  "etymology": null,
+  "see_also": [
+    {
+      "slug": "business-n",
+      "note": null
+    },
+    {
+      "slug": "trade-n",
       "note": null
     }
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "After **be** and similar verbs, **far** is used mainly in questions and negatives (*Is it far?*, *It isn't far*). Positive sentences prefer *a long way*: *It's a long way*.",
+    "grammar": null,
     "culture": null,
-    "false_friends": null,
+    "false_friends": "In some languages a word that looks like **commercial** is used as a noun for a salesperson. In English the adjective describes business; the noun **commercial** is an advertisement on television or radio.",
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
-    "created": "2026-10-03T17:13:02Z",
-    "modified": "2026-10-10T13:28:50Z",
+    "created": "2026-10-10T13:17:38Z",
+    "modified": "2026-10-10T13:28:59Z",
     "drafted_by": "anthropic/claude-sonnet-5",
-    "run_id": "20261003T171003Z-scyche",
+    "run_id": "20261010T131426Z-9zjnpp",
     "reviews": [
       {
-        "run_id": "20261003T171003Z-scyche",
+        "run_id": "20261010T131426Z-9zjnpp",
         "role": "reviewer-a",
         "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T171003Z-scyche/far-adj.json",
-        "ok": 43,
-        "issues": 10,
-        "blocking": 8
-      },
-      {
-        "run_id": "20261003T171003Z-scyche",
-        "role": "reviewer-b",
-        "model": "google/gemini-3.8-flash",
-        "date": "2026-10-03",
-        "file": "reviews/20261003T171003Z-scyche/far-adj.json",
-        "ok": 49,
-        "issues": 3,
+        "date": "2026-10-10",
+        "file": "reviews/20261010T131426Z-9zjnpp/commercial-adj.json",
+        "ok": 60,
+        "issues": 1,
         "blocking": 1
       },
       {
-        "run_id": "20261010T092035Z-22po9n",
-        "role": "reviewer-a",
-        "model": "openai/gpt-5.6-terra",
-        "date": "2026-10-10",
-        "file": "reviews/20261010T092035Z-22po9n/far-adj.json",
-        "ok": 45,
-        "issues": 7,
-        "blocking": 6
-      },
-      {
-        "run_id": "20261010T092035Z-22po9n",
+        "run_id": "20261010T131426Z-9zjnpp",
         "role": "reviewer-b",
         "model": "google/gemini-3.1-pro-preview",
         "date": "2026-10-10",
-        "file": "reviews/20261010T092035Z-22po9n/far-adj.json",
-        "ok": 52,
+        "file": "reviews/20261010T131426Z-9zjnpp/commercial-adj.json",
+        "ok": 61,
         "issues": 0,
         "blocking": 0
       }
