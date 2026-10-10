@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-10] site | Site rebuilt and checked, 54 of 54
+
+Site, cycle 1 of the 20:44 UTC run, and its only cycle: the day's budget was spent (US$0.02 of US$15 left), so the selector blocked build, review, and closure and chose site as the unpaid mode furthest behind. Pre-flight: no open pull requests; the one leftover branch, `claude/wonderful-bardeen-22po9n`, has no residue and already has a prune line in `reviews/needs_curator.txt`; `inbox/` empty. `build_site.py` wrote 2,016 entries on 1,762 headword pages (0 drafts withheld, 0 redirects; 3,931 files). `site_check.py` passed all 54 checks at phone and desktop width: no JavaScript errors or horizontal overflow, *ran* finds *run*, link previews, the translator's-view toggle, dark mode. Nothing needed fixing. No entries changed. Spend US$0. The next run (00:43 UTC) starts on a fresh day's budget; the review queue starts with *figure-n*.
+
 ## [2026-10-10] review | practical, thread, fee–film
 
 Review, cycle 1 of the 16:43 UTC run, and its only cycle: the day's budget ran out (US$0.02 left of US$15). The oldest one-round entries: *practical*, *thread*, *fee*, *feeling*, *fence*, *festival*, *fever*, *field*, *fight*, *file*, *film*; *figure* was next but its panel was not affordable, so it is first in the next review. Added by hand: phrases *lose the thread* (`thread-n`; its collocation entry removed), *pick a fight*, *have mixed feelings about something*; `file-n` usage note no longer says the tool *file* has its own entry (`file-n-2` joins the homograph list). All 22 transcriptions verified. Panel: 20 issues (16 blocking); 9 applied (`fever-n` *have a temperature* now "especially British", bare *fever* explained in symptom lists; `field-n` sense 5 redefined, *have a field day* redefined; `film-n` discrimination: *movie* also common in Britain), 11 rejected (reviewer-a wanted the tool *file* inside `file-n` five times; reviewer-b misread two base-form verb definitions in `fence-n`). Spend US$0.95.
