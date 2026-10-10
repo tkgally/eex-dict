@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-10] build | twelve nouns website–wife
+
+Build, cycle 1 of the 04:43 UTC run. Twelve band-1 nouns drafted and reviewed: *website*, *wedding*, *week* (three senses, four phrases), *weekend*, *weight* (six senses, four phrases), *wheat*, *wheel* (three senses, two phrases), *wheelchair*, *whole* (two senses; *as a whole*, *on the whole*), *widow*, *width*, *wife* (*an old wives' tale*). All 24 transcriptions and all inflections verified. Panel: 22 issues (15 blocking); 11 applied (*weekend* now covers Friday evening; *in the week* kept only in the explanation as British; *weight* usage note softened; adaptation-note quotes turned into marks in all twelve), 11 rejected (reviewer-a called *the whole of* a determiner; reviewer-b misread two base-form phrase definitions). Back-links checked: `web-n`, `importance-n` sense 2, `depth-n`, `chair-n`, all right. The metrics row says 18 changed; the true count is 16. Spend US$0.65.
+
 ## [2026-10-10] experiment | decision models v1
 
 Owner-requested trial of OpenRouter's decision models (typed yes/no or choice answers with probabilities, input-only billing) for checking tasks. Eight test sets from reviewed entries and the adjudication log (1,280 items); a ten-item screen kept 13 of 16 models; GPT-5.6 Terra, Step 5 Preview, Claude Haiku 5.5, GPT-6 Luna and the pronunciation panel as baselines. The best decision models match Terra on example-to-sense, example quality, link target and see-also at about a hundredth of the cost; none can check IPA, countability or predict adjudications. Real-data pilots: example-to-sense flagged 28 of 1,500 examples, 8 real misfilings; see-also flagged 100 links, none clearly wrong. No pipeline change; an advisory example-to-sense flag is the candidate for the owner ([note](notes/decision-models-v1.md)). Spend US$3.71.
