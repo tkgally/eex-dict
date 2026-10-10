@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-10] originality | twenty-eighth check, one rewrite
+
+Originality, cycle 4 of the 00:43 UTC run (forced: every tenth run), the run's last cycle. Ten sampled fields searched as exact phrases: 6 original, 3 generic overlap, 1 rewrite. `promise-v` sense 1 followed a learner's dictionary's frame for *promise* (*certainly* for *definitely*); senses 1 and 2 were reworded, re-reviewed (one minor see-also flag, rejected: it matches the phrase filed in `moon-n`), and set back to `reviewed`. reviewer-a, asked the checklist question in one call with reasoning off, answered "cannot tell" on nine and named no source. Record: `reviews/originality/2026-10-10.md`. Spend: US$0.07.
+
 ## [2026-10-10] lint | fifty-ninth pass, reviewer-b sampling check
 
 Lint, cycle 3 of the 00:43 UTC run (forced: five cycles since the last). Mechanical: caps, links, `crossref --all --apply` (six back-links from the 2026-10-09 review and build cycles: `violence-n`, `wage-n`, `email-n`, `view-n`, `voice-n`, `volume-n`; all six checked by hand and on the right sense; no type mismatches), `lint_vocab --all --queue` (0 violations), `claim --prune` (three claim files). Precision: no new switch-offs ([note](notes/reviewer-precision.md)). The sampling check of [reviewer-b-low-yield](notes/reviewer-b-low-yield.md): on 36 fields where reviewer-a's applied blocking fault was real, reviewer-b said `ok` on 34; a prompt remedy is proposed for a later run. Index against pages: no orphans, no dead links. `needs_curator.txt`: no duplicates. Open questions: none open. Found: `us-pron` sense 1 lacks a signpost in a two-sense entry (queued for review in `NEXT.md`); 36 one-sense entries still carry one. Spend: US$0.
