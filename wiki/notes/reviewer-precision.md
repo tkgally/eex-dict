@@ -281,3 +281,7 @@ Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5729/7984); `reviewer-b
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5967/8293); `reviewer-b` `ALL` 0.54 (1148/2142). `reviewer-b` `spelling-or-format` 0.28 (161/581), no new decisions; it stays live by the owner's ruling. `reviewer-b` `phrase` 0.38 (17/45). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 138 applied of 271 (0.51); since the last pass 15 of 22 over 60 entries (0.25 applied per entry). But the sampling check of [reviewer-b-low-yield](reviewer-b-low-yield.md) found it marked `ok` on 34 of 36 fields where reviewer-a's blocking fault was real: its yield figure hides misses. Nothing else live is under 30 percent at twenty or more decisions.
 
+
+## 2026-10-10: sixtieth lint pass, no new switch-offs
+
+Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (6031/8388); `reviewer-b` `ALL` 0.54 (1153/2154). `reviewer-b` `spelling-or-format` 0.28 (161/582): one new decision, a rejection (*Way Out* on `exit-n` is a sign's words, so double marks are right); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.38 (17/45). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 143 applied of 283 (0.51); since the last pass 5 of 12 over about 37 entries (0.14 applied per entry), against reviewer-a's 64 of 94. Nothing else live is under 30 percent at twenty or more decisions.
