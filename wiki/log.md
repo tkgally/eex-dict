@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-10] experiment | decision models v1
+
+Owner-requested trial of OpenRouter's decision models (typed yes/no or choice answers with probabilities, input-only billing) for checking tasks. Eight test sets from reviewed entries and the adjudication log (1,280 items); a ten-item screen kept 13 of 16 models; GPT-5.6 Terra, Step 5 Preview, Claude Haiku 5.5, GPT-6 Luna and the pronunciation panel as baselines. The best decision models match Terra on example-to-sense, example quality, link target and see-also at about a hundredth of the cost; none can check IPA, countability or predict adjudications. Real-data pilots: example-to-sense flagged 28 of 1,500 examples, 8 real misfilings; see-also flagged 100 links, none clearly wrong. No pipeline change; an advisory example-to-sense flag is the candidate for the owner ([note](notes/decision-models-v1.md)). Spend US$3.71.
+
 ## [2026-10-10] originality | twenty-eighth check, one rewrite
 
 Originality, cycle 4 of the 00:43 UTC run (forced: every tenth run), the run's last cycle. Ten sampled fields searched as exact phrases: 6 original, 3 generic overlap, 1 rewrite. `promise-v` sense 1 followed a learner's dictionary's frame for *promise* (*certainly* for *definitely*); senses 1 and 2 were reworded, re-reviewed (one minor see-also flag, rejected: it matches the phrase filed in `moon-n`), and set back to `reviewed`. reviewer-a, asked the checklist question in one call with reasoning off, answered "cannot tell" on nine and named no source. Record: `reviews/originality/2026-10-10.md`. Spend: US$0.07.
