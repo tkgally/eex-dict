@@ -1,0 +1,3431 @@
+{
+ "anthropic__claude-haiku-5.5": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0062796,
+   "cost_per_item": 3.92475e-05,
+   "lat_median": 1.179,
+   "tok_in_mean": 251.63125,
+   "acc": 0.70625,
+   "auc": 0.715546875,
+   "cv": {
+    "auto_share": 0.175,
+    "auto_error": 0.14285714285714285
+   },
+   "cascade_cov": 0.05625,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.02,
+   "bad_recall": 0.625,
+   "by_kind": {
+    "positive": 0.7875,
+    "consonant-voicing": 0.5769230769230769,
+    "vowel-swap": 0.6296296296296297,
+    "stress-shift": 0.6666666666666666
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0054679,
+   "cost_per_item": 3.4174375e-05,
+   "lat_median": 1.1755,
+   "tok_in_mean": 220.18125,
+   "acc": 0.8625,
+   "auc": 0.89109375,
+   "cv": {
+    "auto_share": 0.39375,
+    "auto_error": 0.047619047619047616
+   },
+   "cascade_cov": 0.40625,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 0.9538461538461539,
+   "hi": 1.01,
+   "lo": 0.8,
+   "bad_recall": 0.7375,
+   "by_kind": {
+    "random-other-word": 0.975,
+    "positive": 0.9875,
+    "related-word": 0.5
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0060707,
+   "cost_per_item": 4.047133333333333e-05,
+   "lat_median": 1.1625,
+   "tok_in_mean": 279.5466666666667,
+   "acc": 0.9733333333333334,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.984375,
+    "6-senses": 1.0,
+    "4-senses": 0.9512195121951219,
+    "5-senses": 0.9642857142857143
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0066883,
+   "cost_per_item": 4.1801875e-05,
+   "lat_median": 1.1465,
+   "tok_in_mean": 286.425,
+   "acc": 0.95625,
+   "auc": 0.975625,
+   "cv": {
+    "auto_share": 0.775,
+    "auto_error": 0.024193548387096774
+   },
+   "cascade_cov": 0.7875,
+   "cascade_acc_prec": 0.9591836734693877,
+   "cascade_flag_prec": 0.974025974025974,
+   "hi": 0.95,
+   "lo": 0.85,
+   "bad_recall": 0.925,
+   "by_kind": {
+    "positive": 0.9875,
+    "wrong-verb-form": 0.8518518518518519,
+    "word-order": 0.9259259259259259,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0063675,
+   "cost_per_item": 4.245e-05,
+   "lat_median": 1.1575,
+   "tok_in_mean": 313.73333333333335,
+   "acc": 0.96,
+   "auc": 0.9970666666666667,
+   "cv": {
+    "auto_share": 0.7533333333333333,
+    "auto_error": 0.04424778761061947
+   },
+   "cascade_cov": 0.5066666666666667,
+   "cascade_acc_prec": 0.9736842105263158,
+   "cascade_flag_prec": null,
+   "hi": 0.12,
+   "lo": -0.01,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "other-entry-link-target": 1.0,
+    "positive": 0.92
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0053375,
+   "cost_per_item": 3.5583333333333335e-05,
+   "lat_median": 1.1404999999999998,
+   "tok_in_mean": 212.4,
+   "acc": 0.9866666666666667,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "2-entries": 0.9866666666666667
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.0087548,
+   "cost_per_item": 4.3774e-05,
+   "lat_median": 1.1925,
+   "tok_in_mean": 331.34,
+   "acc": 0.57,
+   "auc": 0.6124,
+   "cv": {
+    "auto_share": 0.005,
+    "auto_error": 1.0
+   },
+   "cascade_cov": 0.005,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.04,
+   "bad_recall": 0.79,
+   "by_kind": {
+    "spelling-or-format": 0.875,
+    "adaptation": 0.7857142857142857,
+    "explanation": 0.7,
+    "sense-structure": 0.0,
+    "label": 0.5384615384615384,
+    "collocation": 0.3333333333333333,
+    "learner-error": 0.5,
+    "grammar-code": 0.5714285714285714,
+    "usage-note": 1.0,
+    "etymology": 1.0,
+    "definition-meaning": 0.32,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.65,
+    "example-unnatural": 0.4,
+    "example-policy": 0.2857142857142857,
+    "definition-style": 0.6666666666666666,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.6666666666666666,
+    "cross-reference": 0.4,
+    "definition-vocabulary": 0.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0074898,
+   "cost_per_item": 4.9931999999999996e-05,
+   "lat_median": 1.161,
+   "tok_in_mean": 348.88666666666666,
+   "acc": 0.6466666666666666,
+   "cascade_cov": 0.04666666666666667,
+   "by_kind": {
+    "uncountable": 0.9666666666666667,
+    "countable or uncountable": 0.26666666666666666,
+    "countable": 0.9666666666666667,
+    "plural only": 0.6333333333333333,
+    "singular only": 0.4
+   }
+  }
+ },
+ "cloudflare__clef": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0080832,
+   "cost_per_item": 5.0520000000000004e-05,
+   "lat_median": 0.511,
+   "tok_in_mean": 210.5,
+   "acc": 0.575,
+   "auc": 0.743984375,
+   "cv": {
+    "auto_share": 0.1,
+    "auto_error": 0.1875
+   },
+   "cascade_cov": 0.05,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.9252,
+   "lo": 0.1413,
+   "bad_recall": 0.2,
+   "by_kind": {
+    "positive": 0.95,
+    "vowel-swap": 0.1111111111111111,
+    "stress-shift": 0.25925925925925924,
+    "consonant-voicing": 0.23076923076923078
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00754632,
+   "cost_per_item": 4.71645e-05,
+   "lat_median": 0.442,
+   "tok_in_mean": 196.51875,
+   "acc": 0.85625,
+   "auc": 0.892890625,
+   "cv": {
+    "auto_share": 0.46875,
+    "auto_error": 0.06666666666666667
+   },
+   "cascade_cov": 0.4625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.953125,
+   "hi": 0.9506,
+   "lo": 0.4017,
+   "bad_recall": 0.7875,
+   "by_kind": {
+    "related-word": 0.575,
+    "positive": 0.925,
+    "random-other-word": 1.0
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00948888,
+   "cost_per_item": 6.32592e-05,
+   "lat_median": 0.4065,
+   "tok_in_mean": 263.58,
+   "acc": 0.9266666666666666,
+   "cascade_cov": 0.94,
+   "by_kind": {
+    "3-senses": 0.921875,
+    "6-senses": 1.0,
+    "4-senses": 0.926829268292683,
+    "5-senses": 0.8928571428571429
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0089004,
+   "cost_per_item": 5.5627499999999996e-05,
+   "lat_median": 0.3685,
+   "tok_in_mean": 231.78125,
+   "acc": 0.91875,
+   "auc": 0.95125,
+   "cv": {
+    "auto_share": 0.73125,
+    "auto_error": 0.06837606837606838
+   },
+   "cascade_cov": 0.65625,
+   "cascade_acc_prec": 0.9696969696969697,
+   "cascade_flag_prec": 0.9583333333333334,
+   "hi": 0.8917,
+   "lo": 0.5487,
+   "bad_recall": 0.85,
+   "by_kind": {
+    "positive": 0.9875,
+    "word-order": 0.8888888888888888,
+    "wrong-verb-form": 0.7037037037037037,
+    "wrong-word": 0.9615384615384616
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00907848,
+   "cost_per_item": 6.05232e-05,
+   "lat_median": 0.3655,
+   "tok_in_mean": 252.18,
+   "acc": 0.9533333333333334,
+   "auc": 0.9989333333333333,
+   "cv": {
+    "auto_share": 0.5133333333333333,
+    "auto_error": 0.025974025974025976
+   },
+   "cascade_cov": 0.52,
+   "cascade_acc_prec": 0.9615384615384616,
+   "cascade_flag_prec": null,
+   "hi": 0.1336,
+   "lo": -0.01,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "other-entry-link-target": 1.0,
+    "positive": 0.9066666666666666
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00682344,
+   "cost_per_item": 4.54896e-05,
+   "lat_median": 0.4205,
+   "tok_in_mean": 189.54,
+   "acc": 0.92,
+   "cascade_cov": 0.8466666666666667,
+   "by_kind": {
+    "2-entries": 0.92
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.01228728,
+   "cost_per_item": 6.14364e-05,
+   "lat_median": 0.375,
+   "tok_in_mean": 255.985,
+   "acc": 0.56,
+   "auc": 0.58675,
+   "cv": {
+    "auto_share": 0.015,
+    "auto_error": 0.3333333333333333
+   },
+   "cascade_cov": 0.015,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.904,
+   "lo": 0.1437,
+   "bad_recall": 0.24,
+   "by_kind": {
+    "adaptation": 0.42857142857142855,
+    "spelling-or-format": 0.25,
+    "explanation": 0.4,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.6923076923076923,
+    "collocation": 0.9333333333333333,
+    "learner-error": 0.7,
+    "grammar-code": 0.7142857142857143,
+    "usage-note": 0.6666666666666666,
+    "etymology": 1.0,
+    "definition-meaning": 0.8,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.45,
+    "example-unnatural": 0.8,
+    "example-policy": 0.14285714285714285,
+    "definition-style": 0.5,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 0.0,
+    "pronunciation": 0.0,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.01171176,
+   "cost_per_item": 7.80784e-05,
+   "lat_median": 0.369,
+   "tok_in_mean": 325.32666666666665,
+   "acc": 0.6266666666666667,
+   "cascade_cov": 0.16666666666666666,
+   "by_kind": {
+    "uncountable": 0.6333333333333333,
+    "countable or uncountable": 0.36666666666666664,
+    "plural only": 0.6,
+    "countable": 0.8666666666666667,
+    "singular only": 0.6666666666666666
+   }
+  }
+ },
+ "cloudflare__clef-flash": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00127984,
+   "cost_per_item": 7.998999999999999e-06,
+   "lat_median": 0.4375,
+   "tok_in_mean": 210.5,
+   "acc": 0.64375,
+   "auc": 0.693828125,
+   "cv": {
+    "auto_share": 0.0875,
+    "auto_error": 0.14285714285714285
+   },
+   "cascade_cov": 0.05625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.8549,
+   "lo": 0.153,
+   "bad_recall": 0.5875,
+   "by_kind": {
+    "positive": 0.7,
+    "vowel-swap": 0.6296296296296297,
+    "stress-shift": 0.48148148148148145,
+    "consonant-voicing": 0.6538461538461539
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.001194834,
+   "cost_per_item": 7.4677125000000005e-06,
+   "lat_median": 0.425,
+   "tok_in_mean": 196.51875,
+   "acc": 0.84375,
+   "auc": 0.893828125,
+   "cv": {
+    "auto_share": 0.525,
+    "auto_error": 0.08333333333333333
+   },
+   "cascade_cov": 0.4625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9655172413793104,
+   "hi": 0.9137,
+   "lo": 0.339,
+   "bad_recall": 0.75,
+   "by_kind": {
+    "related-word": 0.525,
+    "positive": 0.9375,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.001502406,
+   "cost_per_item": 1.001604e-05,
+   "lat_median": 0.388,
+   "tok_in_mean": 263.58,
+   "acc": 0.9333333333333333,
+   "cascade_cov": 0.9466666666666667,
+   "by_kind": {
+    "3-senses": 0.9375,
+    "6-senses": 1.0,
+    "4-senses": 0.926829268292683,
+    "5-senses": 0.8928571428571429
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00140923,
+   "cost_per_item": 8.8076875e-06,
+   "lat_median": 0.381,
+   "tok_in_mean": 231.78125,
+   "acc": 0.73125,
+   "auc": 0.90703125,
+   "cv": {
+    "auto_share": 0.525,
+    "auto_error": 0.09523809523809523
+   },
+   "cascade_cov": 0.55625,
+   "cascade_acc_prec": 0.9583333333333334,
+   "cascade_flag_prec": 0.9512195121951219,
+   "hi": 0.9227,
+   "lo": 0.5255,
+   "bad_recall": 0.475,
+   "by_kind": {
+    "positive": 0.9875,
+    "word-order": 0.4074074074074074,
+    "wrong-verb-form": 0.2222222222222222,
+    "wrong-word": 0.8076923076923077
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0014374260000000001,
+   "cost_per_item": 9.58284e-06,
+   "lat_median": 0.366,
+   "tok_in_mean": 252.18,
+   "acc": 0.9133333333333333,
+   "auc": 0.9863111111111111,
+   "cv": {
+    "auto_share": 0.6933333333333334,
+    "auto_error": 0.04807692307692308
+   },
+   "cascade_cov": 0.9666666666666667,
+   "cascade_acc_prec": 0.9594594594594594,
+   "cascade_flag_prec": 0.9577464788732394,
+   "hi": 0.1437,
+   "lo": 0.1073,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "other-entry-link-target": 1.0,
+    "positive": 0.8266666666666667
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.001080378,
+   "cost_per_item": 7.202519999999999e-06,
+   "lat_median": 0.365,
+   "tok_in_mean": 189.54,
+   "acc": 0.84,
+   "cascade_cov": 0.56,
+   "by_kind": {
+    "2-entries": 0.84
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.001945486,
+   "cost_per_item": 9.72743e-06,
+   "lat_median": 0.3505,
+   "tok_in_mean": 255.985,
+   "acc": 0.505,
+   "auc": 0.5398,
+   "cv": {
+    "auto_share": 0.015,
+    "auto_error": 1.0
+   },
+   "cascade_cov": 0.0,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": null,
+   "hi": 1.01,
+   "lo": -0.01,
+   "bad_recall": 0.24,
+   "by_kind": {
+    "adaptation": 0.42857142857142855,
+    "spelling-or-format": 0.16666666666666666,
+    "explanation": 0.5,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.5384615384615384,
+    "collocation": 0.5333333333333333,
+    "learner-error": 0.6,
+    "grammar-code": 0.5714285714285714,
+    "usage-note": 0.6666666666666666,
+    "etymology": 0.0,
+    "definition-meaning": 0.76,
+    "example-grammar": 0.14285714285714285,
+    "other": 0.5,
+    "example-unnatural": 1.0,
+    "example-policy": 0.2857142857142857,
+    "definition-style": 0.5555555555555556,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.0,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 0.6666666666666666
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.001854362,
+   "cost_per_item": 1.2362413333333334e-05,
+   "lat_median": 0.349,
+   "tok_in_mean": 325.32666666666665,
+   "acc": 0.5066666666666667,
+   "cascade_cov": 0.02,
+   "by_kind": {
+    "uncountable": 0.9,
+    "countable or uncountable": 0.4,
+    "plural only": 0.6,
+    "countable": 0.3,
+    "singular only": 0.3333333333333333
+   }
+  }
+ },
+ "cloudflare__clef-omni": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00491505,
+   "cost_per_item": 3.0719062499999996e-05,
+   "lat_median": 0.301,
+   "tok_in_mean": 204.79375,
+   "acc": 0.59375,
+   "auc": 0.744609375,
+   "cv": {
+    "auto_share": 0.11875,
+    "auto_error": 0.15789473684210525
+   },
+   "cascade_cov": 0.0875,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.9235,
+   "lo": 0.3088,
+   "bad_recall": 0.25,
+   "by_kind": {
+    "positive": 0.9375,
+    "vowel-swap": 0.2962962962962963,
+    "stress-shift": 0.1111111111111111,
+    "consonant-voicing": 0.34615384615384615
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00464505,
+   "cost_per_item": 2.9031562500000002e-05,
+   "lat_median": 0.308,
+   "tok_in_mean": 193.54375,
+   "acc": 0.8375,
+   "auc": 0.858671875,
+   "cv": {
+    "auto_share": 0.46875,
+    "auto_error": 0.16
+   },
+   "cascade_cov": 0.3875,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.95,
+   "hi": 0.9793,
+   "lo": 0.4676,
+   "bad_recall": 0.7125,
+   "by_kind": {
+    "related-word": 0.45,
+    "positive": 0.9625,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00586365,
+   "cost_per_item": 3.9090999999999996e-05,
+   "lat_median": 0.3105,
+   "tok_in_mean": 260.6066666666667,
+   "acc": 0.8933333333333333,
+   "cascade_cov": 0.8866666666666667,
+   "by_kind": {
+    "3-senses": 0.890625,
+    "6-senses": 0.9411764705882353,
+    "4-senses": 0.8780487804878049,
+    "5-senses": 0.8928571428571429
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0054909,
+   "cost_per_item": 3.4318125e-05,
+   "lat_median": 0.303,
+   "tok_in_mean": 228.7875,
+   "acc": 0.6625,
+   "auc": 0.90390625,
+   "cv": {
+    "auto_share": 0.40625,
+    "auto_error": 0.07692307692307693
+   },
+   "cascade_cov": 0.4125,
+   "cascade_acc_prec": 0.9615384615384616,
+   "cascade_flag_prec": 0.95,
+   "hi": 0.9619,
+   "lo": 0.6232,
+   "bad_recall": 0.35,
+   "by_kind": {
+    "positive": 0.975,
+    "word-order": 0.25925925925925924,
+    "wrong-verb-form": 0.07407407407407407,
+    "wrong-word": 0.7307692307692307
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00560715,
+   "cost_per_item": 3.7381e-05,
+   "lat_median": 0.2915,
+   "tok_in_mean": 249.20666666666668,
+   "acc": 0.9333333333333333,
+   "auc": 0.9964444444444445,
+   "cv": {
+    "auto_share": 0.5066666666666667,
+    "auto_error": 0.039473684210526314
+   },
+   "cascade_cov": 0.5133333333333333,
+   "cascade_acc_prec": 0.961038961038961,
+   "cascade_flag_prec": null,
+   "hi": 0.1032,
+   "lo": -0.01,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "other-entry-link-target": 1.0,
+    "positive": 0.8666666666666667
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00419715,
+   "cost_per_item": 2.7981000000000002e-05,
+   "lat_median": 0.2985,
+   "tok_in_mean": 186.54,
+   "acc": 0.86,
+   "cascade_cov": 0.74,
+   "by_kind": {
+    "2-entries": 0.86
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.0075952500000000004,
+   "cost_per_item": 3.797625e-05,
+   "lat_median": 0.2835,
+   "tok_in_mean": 253.175,
+   "acc": 0.58,
+   "auc": 0.6455,
+   "cv": {
+    "auto_share": 0.02,
+    "auto_error": 0.25
+   },
+   "cascade_cov": 0.025,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.9279,
+   "lo": 0.0922,
+   "bad_recall": 0.25,
+   "by_kind": {
+    "adaptation": 0.42857142857142855,
+    "spelling-or-format": 0.20833333333333334,
+    "explanation": 0.6,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.46153846153846156,
+    "collocation": 0.8,
+    "learner-error": 0.9,
+    "grammar-code": 0.7142857142857143,
+    "usage-note": 0.8333333333333334,
+    "etymology": 0.0,
+    "definition-meaning": 0.84,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.35,
+    "example-unnatural": 0.8,
+    "example-policy": 1.0,
+    "definition-style": 0.5,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.0,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00725235,
+   "cost_per_item": 4.8349e-05,
+   "lat_median": 0.284,
+   "tok_in_mean": 322.32666666666665,
+   "acc": 0.49333333333333335,
+   "cascade_cov": 0.02666666666666667,
+   "by_kind": {
+    "uncountable": 0.8333333333333334,
+    "countable or uncountable": 0.3,
+    "plural only": 0.3333333333333333,
+    "countable": 0.43333333333333335,
+    "singular only": 0.5666666666666667
+   }
+  }
+ },
+ "ensemble__top3": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00941808,
+   "cost_per_item": 5.8863e-05,
+   "lat_median": 0.53,
+   "tok_in_mean": 499.5,
+   "acc": 0.65,
+   "auc": 0.8703125,
+   "cv": {
+    "auto_share": 0.39375,
+    "auto_error": 0.07936507936507936
+   },
+   "cascade_cov": 0.35,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9555555555555556,
+   "hi": 0.9547962685699543,
+   "lo": 0.6784772744872316,
+   "bad_recall": 0.3125,
+   "by_kind": {
+    "positive": 0.9875,
+    "vowel-swap": 0.07407407407407407,
+    "stress-shift": 0.3333333333333333,
+    "consonant-voicing": 0.5384615384615384
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.008742506,
+   "cost_per_item": 5.46406625e-05,
+   "lat_median": 0.4815,
+   "tok_in_mean": 457.55625,
+   "acc": 0.8625,
+   "auc": 0.91125,
+   "cv": {
+    "auto_share": 0.5,
+    "auto_error": 0.075
+   },
+   "cascade_cov": 0.45625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.953125,
+   "hi": 0.9824457165180608,
+   "lo": 0.5581439561559796,
+   "bad_recall": 0.7375,
+   "by_kind": {
+    "related-word": 0.5,
+    "positive": 0.9875,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.011035996,
+   "cost_per_item": 7.357330666666667e-05,
+   "lat_median": 0.471,
+   "tok_in_mean": 618.9933333333333,
+   "acc": 0.9733333333333334,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.953125,
+    "6-senses": 1.0,
+    "4-senses": 1.0,
+    "5-senses": 0.9642857142857143
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.01046209,
+   "cost_per_item": 6.53880625e-05,
+   "lat_median": 0.3945,
+   "tok_in_mean": 567.21875,
+   "acc": 0.95,
+   "auc": 0.96640625,
+   "cv": {
+    "auto_share": 0.81875,
+    "auto_error": 0.04580152671755725
+   },
+   "cascade_cov": 0.69375,
+   "cascade_acc_prec": 0.9705882352941176,
+   "cascade_flag_prec": 0.961038961038961,
+   "hi": 0.9563745952758532,
+   "lo": 0.7778842354223491,
+   "bad_recall": 0.9,
+   "by_kind": {
+    "positive": 1.0,
+    "word-order": 0.8888888888888888,
+    "wrong-verb-form": 0.8148148148148148,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.010735554,
+   "cost_per_item": 7.157035999999999e-05,
+   "lat_median": 0.379,
+   "tok_in_mean": 630.54,
+   "acc": 0.9733333333333334,
+   "auc": 0.9987555555555555,
+   "cv": {
+    "auto_share": 0.5133333333333333,
+    "auto_error": 0.03896103896103896
+   },
+   "cascade_cov": 0.52,
+   "cascade_acc_prec": 0.9615384615384616,
+   "cascade_flag_prec": null,
+   "hi": 0.07387011513359354,
+   "lo": -0.01,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "other-entry-link-target": 1.0,
+    "positive": 0.9466666666666667
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.007883502,
+   "cost_per_item": 5.255668e-05,
+   "lat_median": 0.441,
+   "tok_in_mean": 437.87333333333333,
+   "acc": 0.9466666666666667,
+   "cascade_cov": 0.9866666666666667,
+   "by_kind": {
+    "2-entries": 0.9466666666666667
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.014541134,
+   "cost_per_item": 7.270567000000001e-05,
+   "lat_median": 0.389,
+   "tok_in_mean": 641.265,
+   "acc": 0.59,
+   "auc": 0.6509,
+   "cv": {
+    "auto_share": 0.08,
+    "auto_error": 0.3125
+   },
+   "cascade_cov": 0.045,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.32627816246214497,
+   "bad_recall": 0.29,
+   "by_kind": {
+    "adaptation": 0.42857142857142855,
+    "spelling-or-format": 0.125,
+    "explanation": 0.5,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.7692307692307693,
+    "collocation": 0.9333333333333333,
+    "learner-error": 0.7,
+    "grammar-code": 0.7142857142857143,
+    "usage-note": 0.6666666666666666,
+    "etymology": 1.0,
+    "definition-meaning": 0.84,
+    "example-grammar": 0.2857142857142857,
+    "other": 0.65,
+    "example-unnatural": 0.8,
+    "example-policy": 0.14285714285714285,
+    "definition-style": 0.6666666666666666,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.0,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 0.6666666666666666
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.013749338,
+   "cost_per_item": 9.166225333333333e-05,
+   "lat_median": 0.384,
+   "tok_in_mean": 788.56,
+   "acc": 0.72,
+   "cascade_cov": 0.23333333333333334,
+   "by_kind": {
+    "uncountable": 0.9,
+    "countable or uncountable": 0.3333333333333333,
+    "plural only": 0.7,
+    "countable": 1.0,
+    "singular only": 0.6666666666666666
+   }
+  }
+ },
+ "inception__mercury-decide": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00047424,
+   "cost_per_item": 2.964e-06,
+   "lat_median": 0.642,
+   "tok_in_mean": 148.2,
+   "acc": 0.64375,
+   "auc": 0.77609375,
+   "cv": {
+    "auto_share": 0.275,
+    "auto_error": 0.09090909090909091
+   },
+   "cascade_cov": 0.2625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9722222222222222,
+   "hi": 0.9953904271198194,
+   "lo": 0.8807970748488297,
+   "bad_recall": 0.3,
+   "by_kind": {
+    "positive": 0.9875,
+    "vowel-swap": 0.037037037037037035,
+    "stress-shift": 0.2962962962962963,
+    "consonant-voicing": 0.5769230769230769
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00043058,
+   "cost_per_item": 2.691125e-06,
+   "lat_median": 0.6805000000000001,
+   "tok_in_mean": 134.55625,
+   "acc": 0.825,
+   "auc": 0.8884375,
+   "cv": {
+    "auto_share": 0.575,
+    "auto_error": 0.07608695652173914
+   },
+   "cascade_cov": 0.425,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9508196721311475,
+   "hi": 0.9964063975119536,
+   "lo": 0.2689414272294874,
+   "bad_recall": 0.725,
+   "by_kind": {
+    "related-word": 0.475,
+    "positive": 0.925,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00058878,
+   "cost_per_item": 3.9252e-06,
+   "lat_median": 0.6735,
+   "tok_in_mean": 196.26,
+   "acc": 0.9733333333333334,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.953125,
+    "6-senses": 1.0,
+    "4-senses": 1.0,
+    "5-senses": 0.9642857142857143
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00054884,
+   "cost_per_item": 3.43025e-06,
+   "lat_median": 0.6725000000000001,
+   "tok_in_mean": 171.5125,
+   "acc": 0.93125,
+   "auc": 0.97671875,
+   "cv": {
+    "auto_share": 0.8875,
+    "auto_error": 0.04929577464788732
+   },
+   "cascade_cov": 0.9,
+   "cascade_acc_prec": 0.9552238805970149,
+   "cascade_flag_prec": 0.961038961038961,
+   "hi": 0.9840936103874667,
+   "lo": 0.8933094060543487,
+   "bad_recall": 0.875,
+   "by_kind": {
+    "positive": 0.9875,
+    "word-order": 0.8888888888888888,
+    "wrong-verb-form": 0.7407407407407407,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00058436,
+   "cost_per_item": 3.895733333333333e-06,
+   "lat_median": 0.7304999999999999,
+   "tok_in_mean": 194.78666666666666,
+   "acc": 0.9333333333333333,
+   "auc": 0.9921777777777778,
+   "cv": {
+    "auto_share": 0.9666666666666667,
+    "auto_error": 0.041379310344827586
+   },
+   "cascade_cov": 0.9733333333333334,
+   "cascade_acc_prec": 0.958904109589041,
+   "cascade_flag_prec": 0.958904109589041,
+   "hi": 0.07585817584273653,
+   "lo": 0.037326887879581695,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "other-entry-link-target": 1.0,
+    "positive": 0.8666666666666667
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00038348,
+   "cost_per_item": 2.5565333333333334e-06,
+   "lat_median": 0.7175,
+   "tok_in_mean": 127.82666666666667,
+   "acc": 0.9333333333333333,
+   "cascade_cov": 0.9733333333333334,
+   "by_kind": {
+    "2-entries": 0.9333333333333333
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.00078558,
+   "cost_per_item": 3.9279e-06,
+   "lat_median": 0.7505,
+   "tok_in_mean": 196.395,
+   "acc": 0.56,
+   "auc": 0.50255,
+   "cv": {
+    "auto_share": 0.07,
+    "auto_error": 0.35714285714285715
+   },
+   "cascade_cov": 0.045,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.08509903920620716,
+   "bad_recall": 0.25,
+   "by_kind": {
+    "adaptation": 0.5714285714285714,
+    "spelling-or-format": 0.20833333333333334,
+    "explanation": 0.4,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.46153846153846156,
+    "collocation": 0.7333333333333333,
+    "learner-error": 0.8,
+    "grammar-code": 0.42857142857142855,
+    "usage-note": 0.8333333333333334,
+    "etymology": 1.0,
+    "definition-meaning": 0.8,
+    "example-grammar": 0.2857142857142857,
+    "other": 0.55,
+    "example-unnatural": 0.8,
+    "example-policy": 0.14285714285714285,
+    "definition-style": 0.6111111111111112,
+    "phrase": 1.0,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.3333333333333333,
+    "cross-reference": 0.4,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0007914,
+   "cost_per_item": 5.276e-06,
+   "lat_median": 0.6825000000000001,
+   "tok_in_mean": 263.8,
+   "acc": 0.7466666666666667,
+   "cascade_cov": 0.34,
+   "by_kind": {
+    "uncountable": 0.8666666666666667,
+    "countable or uncountable": 0.3333333333333333,
+    "plural only": 0.8666666666666667,
+    "countable": 1.0,
+    "singular only": 0.6666666666666666
+   }
+  }
+ },
+ "liquid__d1": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00082768,
+   "cost_per_item": 5.173e-06,
+   "lat_median": 0.247,
+   "tok_in_mean": 129.325,
+   "acc": 0.51875,
+   "auc": 0.771328125,
+   "cv": {
+    "auto_share": 0.1375,
+    "auto_error": 0.2727272727272727
+   },
+   "cascade_cov": 0.03125,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.9933071481903328,
+   "lo": 0.46879062662624377,
+   "bad_recall": 0.0375,
+   "by_kind": {
+    "positive": 1.0,
+    "vowel-swap": 0.037037037037037035,
+    "stress-shift": 0.0,
+    "consonant-voicing": 0.07692307692307693
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00074796,
+   "cost_per_item": 4.67475e-06,
+   "lat_median": 0.252,
+   "tok_in_mean": 116.86875,
+   "acc": 0.825,
+   "auc": 0.896015625,
+   "cv": {
+    "auto_share": 0.46875,
+    "auto_error": 0.08
+   },
+   "cascade_cov": 0.48125,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9516129032258065,
+   "hi": 0.9981897889973572,
+   "lo": 0.7549149868676283,
+   "bad_recall": 0.6625,
+   "by_kind": {
+    "related-word": 0.375,
+    "positive": 0.9875,
+    "random-other-word": 0.95
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00091592,
+   "cost_per_item": 6.106133333333333e-06,
+   "lat_median": 0.257,
+   "tok_in_mean": 152.65333333333334,
+   "acc": 0.9466666666666667,
+   "cascade_cov": 0.9933333333333333,
+   "by_kind": {
+    "3-senses": 0.96875,
+    "6-senses": 1.0,
+    "4-senses": 0.975609756097561,
+    "5-senses": 0.8214285714285714
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00099272,
+   "cost_per_item": 6.2045000000000005e-06,
+   "lat_median": 0.27,
+   "tok_in_mean": 155.1125,
+   "acc": 0.91875,
+   "auc": 0.9765625,
+   "cv": {
+    "auto_share": 0.81875,
+    "auto_error": 0.03816793893129771
+   },
+   "cascade_cov": 0.86875,
+   "cascade_acc_prec": 0.9516129032258065,
+   "cascade_flag_prec": 0.961038961038961,
+   "hi": 0.9940889306512247,
+   "lo": 0.9579122708828604,
+   "bad_recall": 0.8375,
+   "by_kind": {
+    "positive": 1.0,
+    "word-order": 0.7407407407407407,
+    "wrong-verb-form": 0.7777777777777778,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00108976,
+   "cost_per_item": 7.265066666666667e-06,
+   "lat_median": 0.2505,
+   "tok_in_mean": 181.62666666666667,
+   "acc": 0.9666666666666667,
+   "auc": 0.9969777777777777,
+   "cv": {
+    "auto_share": 0.5133333333333333,
+    "auto_error": 0.05194805194805195
+   },
+   "cascade_cov": 0.5066666666666667,
+   "cascade_acc_prec": 0.9605263157894737,
+   "cascade_flag_prec": null,
+   "hi": 0.5,
+   "lo": -0.01,
+   "bad_recall": 0.96,
+   "by_kind": {
+    "other-entry-link-target": 0.96,
+    "positive": 0.9733333333333334
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00063576,
+   "cost_per_item": 4.2384e-06,
+   "lat_median": 0.2365,
+   "tok_in_mean": 105.96,
+   "acc": 0.9466666666666667,
+   "cascade_cov": 0.9933333333333333,
+   "by_kind": {
+    "2-entries": 0.9466666666666667
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.00153632,
+   "cost_per_item": 7.681600000000001e-06,
+   "lat_median": 0.241,
+   "tok_in_mean": 192.04,
+   "acc": 0.565,
+   "auc": 0.64175,
+   "cv": {
+    "auto_share": 0.065,
+    "auto_error": 0.23076923076923078
+   },
+   "cascade_cov": 0.05,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.986777176935292,
+   "lo": 0.11920291576401235,
+   "bad_recall": 0.22,
+   "by_kind": {
+    "adaptation": 0.42857142857142855,
+    "spelling-or-format": 0.3333333333333333,
+    "explanation": 0.4,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.5384615384615384,
+    "collocation": 0.7333333333333333,
+    "learner-error": 0.7,
+    "grammar-code": 0.7142857142857143,
+    "usage-note": 0.8333333333333334,
+    "etymology": 1.0,
+    "definition-meaning": 0.88,
+    "example-grammar": 0.5714285714285714,
+    "other": 0.45,
+    "example-unnatural": 0.6,
+    "example-policy": 0.14285714285714285,
+    "definition-style": 0.5,
+    "phrase": 1.0,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.0,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 0.6666666666666666
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00124864,
+   "cost_per_item": 8.324266666666668e-06,
+   "lat_median": 0.2425,
+   "tok_in_mean": 208.10666666666665,
+   "acc": 0.7,
+   "cascade_cov": 0.21333333333333335,
+   "by_kind": {
+    "uncountable": 0.8333333333333334,
+    "countable or uncountable": 0.23333333333333334,
+    "plural only": 0.8666666666666667,
+    "countable": 0.8,
+    "singular only": 0.7666666666666667
+   }
+  }
+ },
+ "microsoft__microsoft-decision-1": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00078288,
+   "cost_per_item": 4.893e-06,
+   "lat_median": 0.3305,
+   "tok_in_mean": 116.5,
+   "acc": 0.675,
+   "auc": 0.8575,
+   "cv": {
+    "auto_share": 0.31875,
+    "auto_error": 0.058823529411764705
+   },
+   "cascade_cov": 0.30625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9555555555555556,
+   "hi": 0.9902915115994105,
+   "lo": 0.7549171524680169,
+   "bad_recall": 0.3625,
+   "by_kind": {
+    "positive": 0.9875,
+    "vowel-swap": 0.18518518518518517,
+    "stress-shift": 0.2962962962962963,
+    "consonant-voicing": 0.6153846153846154
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.000688926,
+   "cost_per_item": 4.3057874999999995e-06,
+   "lat_median": 0.337,
+   "tok_in_mean": 102.51875,
+   "acc": 0.8125,
+   "auc": 0.89203125,
+   "cv": {
+    "auto_share": 0.575,
+    "auto_error": 0.08695652173913043
+   },
+   "cascade_cov": 0.40625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9607843137254902,
+   "hi": 0.9975273749803386,
+   "lo": 0.015906561206799372,
+   "bad_recall": 0.775,
+   "by_kind": {
+    "related-word": 0.575,
+    "positive": 0.85,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.000918036,
+   "cost_per_item": 6.12024e-06,
+   "lat_median": 0.354,
+   "tok_in_mean": 145.72,
+   "acc": 0.9866666666666667,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.96875,
+    "6-senses": 1.0,
+    "4-senses": 1.0,
+    "5-senses": 1.0
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00093219,
+   "cost_per_item": 5.826187499999999e-06,
+   "lat_median": 0.3245,
+   "tok_in_mean": 138.71875,
+   "acc": 0.91875,
+   "auc": 0.9759375,
+   "cv": {
+    "auto_share": 0.8375,
+    "auto_error": 0.03731343283582089
+   },
+   "cascade_cov": 0.8875,
+   "cascade_acc_prec": 0.9552238805970149,
+   "cascade_flag_prec": 0.96,
+   "hi": 0.9859363509093638,
+   "lo": 0.7310619311496167,
+   "bad_recall": 0.85,
+   "by_kind": {
+    "positive": 0.9875,
+    "word-order": 0.8518518518518519,
+    "wrong-verb-form": 0.7037037037037037,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.000996534,
+   "cost_per_item": 6.643560000000001e-06,
+   "lat_median": 0.315,
+   "tok_in_mean": 158.18,
+   "acc": 0.9666666666666667,
+   "auc": 0.9973333333333333,
+   "cv": {
+    "auto_share": 0.5,
+    "auto_error": 0.02666666666666667
+   },
+   "cascade_cov": 0.5066666666666667,
+   "cascade_acc_prec": 0.9605263157894737,
+   "cascade_flag_prec": null,
+   "hi": 0.07585959743082007,
+   "lo": -0.01,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "other-entry-link-target": 1.0,
+    "positive": 0.9333333333333333
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.000601482,
+   "cost_per_item": 4.00988e-06,
+   "lat_median": 0.318,
+   "tok_in_mean": 95.47333333333333,
+   "acc": 0.9133333333333333,
+   "cascade_cov": 0.8533333333333334,
+   "by_kind": {
+    "2-entries": 0.9133333333333333
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.001360674,
+   "cost_per_item": 6.80337e-06,
+   "lat_median": 0.313,
+   "tok_in_mean": 161.985,
+   "acc": 0.6,
+   "auc": 0.6543,
+   "cv": {
+    "auto_share": 0.07,
+    "auto_error": 0.14285714285714285
+   },
+   "cascade_cov": 0.05,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.9706877877888811,
+   "lo": 0.0534037857857148,
+   "bad_recall": 0.47,
+   "by_kind": {
+    "adaptation": 0.5,
+    "spelling-or-format": 0.4583333333333333,
+    "explanation": 0.5,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.6923076923076923,
+    "collocation": 0.4,
+    "learner-error": 0.8,
+    "grammar-code": 0.5714285714285714,
+    "usage-note": 0.6666666666666666,
+    "etymology": 1.0,
+    "definition-meaning": 0.76,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.6,
+    "example-unnatural": 0.6,
+    "example-policy": 0.42857142857142855,
+    "definition-style": 0.7777777777777778,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.3333333333333333,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 0.6666666666666666
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.001236858,
+   "cost_per_item": 8.24572e-06,
+   "lat_median": 0.311,
+   "tok_in_mean": 196.32666666666665,
+   "acc": 0.5933333333333334,
+   "cascade_cov": 0.13333333333333333,
+   "by_kind": {
+    "uncountable": 0.8666666666666667,
+    "countable or uncountable": 0.23333333333333334,
+    "plural only": 0.4,
+    "countable": 1.0,
+    "singular only": 0.4666666666666667
+   }
+  }
+ },
+ "nace-ai__drex-v1.5": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00066684,
+   "cost_per_item": 4.16775e-06,
+   "lat_median": 0.4485,
+   "tok_in_mean": 104.19375,
+   "acc": 0.55625,
+   "auc": 0.720703125,
+   "cv": {
+    "auto_share": 0.1,
+    "auto_error": 0.25
+   },
+   "cascade_cov": 0.03125,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.991,
+   "lo": 0.0065,
+   "bad_recall": 0.1375,
+   "by_kind": {
+    "positive": 0.975,
+    "vowel-swap": 0.1111111111111111,
+    "stress-shift": 0.07407407407407407,
+    "consonant-voicing": 0.23076923076923078
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0005704799999999999,
+   "cost_per_item": 3.5654999999999996e-06,
+   "lat_median": 0.424,
+   "tok_in_mean": 89.1375,
+   "acc": 0.74375,
+   "auc": 0.815078125,
+   "cv": {
+    "auto_share": 0.2375,
+    "auto_error": 0.13157894736842105
+   },
+   "cascade_cov": 0.15625,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 0.96,
+   "hi": 1.01,
+   "lo": 0.0263,
+   "bad_recall": 0.6375,
+   "by_kind": {
+    "related-word": 0.325,
+    "positive": 0.85,
+    "random-other-word": 0.95
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00080656,
+   "cost_per_item": 5.377066666666666e-06,
+   "lat_median": 0.426,
+   "tok_in_mean": 134.42666666666668,
+   "acc": 0.9066666666666666,
+   "cascade_cov": 0.8733333333333333,
+   "by_kind": {
+    "3-senses": 0.921875,
+    "6-senses": 0.8823529411764706,
+    "4-senses": 0.926829268292683,
+    "5-senses": 0.8571428571428571
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00080156,
+   "cost_per_item": 5.00975e-06,
+   "lat_median": 0.356,
+   "tok_in_mean": 125.24375,
+   "acc": 0.8875,
+   "auc": 0.960546875,
+   "cv": {
+    "auto_share": 0.7375,
+    "auto_error": 0.05084745762711865
+   },
+   "cascade_cov": 0.8375,
+   "cascade_acc_prec": 0.95,
+   "cascade_flag_prec": 0.9594594594594594,
+   "hi": 0.9847,
+   "lo": 0.9172,
+   "bad_recall": 0.775,
+   "by_kind": {
+    "positive": 1.0,
+    "word-order": 0.7037037037037037,
+    "wrong-verb-form": 0.6296296296296297,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00086616,
+   "cost_per_item": 5.7744e-06,
+   "lat_median": 0.3655,
+   "tok_in_mean": 144.36,
+   "acc": 0.9533333333333334,
+   "auc": 0.9872888888888889,
+   "cv": {
+    "auto_share": 0.64,
+    "auto_error": 0.03125
+   },
+   "cascade_cov": 0.9666666666666667,
+   "cascade_acc_prec": 0.9594594594594594,
+   "cascade_flag_prec": 0.9577464788732394,
+   "hi": 0.4259,
+   "lo": 0.3144,
+   "bad_recall": 0.9733333333333334,
+   "by_kind": {
+    "other-entry-link-target": 0.9733333333333334,
+    "positive": 0.9333333333333333
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00049192,
+   "cost_per_item": 3.2794666666666663e-06,
+   "lat_median": 0.4665,
+   "tok_in_mean": 81.98666666666666,
+   "acc": 0.8333333333333334,
+   "cascade_cov": 0.5533333333333333,
+   "by_kind": {
+    "2-entries": 0.8333333333333334
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.00119276,
+   "cost_per_item": 5.9637999999999995e-06,
+   "lat_median": 0.3545,
+   "tok_in_mean": 149.095,
+   "acc": 0.525,
+   "auc": 0.53875,
+   "cv": {
+    "auto_share": 0.03,
+    "auto_error": 0.6666666666666666
+   },
+   "cascade_cov": 0.005,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.0063,
+   "bad_recall": 0.24,
+   "by_kind": {
+    "adaptation": 0.35714285714285715,
+    "spelling-or-format": 0.20833333333333334,
+    "explanation": 0.4,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.6923076923076923,
+    "collocation": 0.26666666666666666,
+    "learner-error": 0.8,
+    "grammar-code": 0.5714285714285714,
+    "usage-note": 0.8333333333333334,
+    "etymology": 0.0,
+    "definition-meaning": 0.84,
+    "example-grammar": 0.2857142857142857,
+    "other": 0.6,
+    "example-unnatural": 0.4,
+    "example-policy": 0.14285714285714285,
+    "definition-style": 0.7222222222222222,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.0,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 0.6666666666666666
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0011808,
+   "cost_per_item": 7.872e-06,
+   "lat_median": 0.361,
+   "tok_in_mean": 196.8,
+   "acc": 0.54,
+   "cascade_cov": 0.06666666666666667,
+   "by_kind": {
+    "uncountable": 0.7666666666666667,
+    "countable or uncountable": 0.3333333333333333,
+    "plural only": 0.06666666666666667,
+    "countable": 0.9,
+    "singular only": 0.6333333333333333
+   }
+  }
+ },
+ "openai__gpt-5.6-terra": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.086806,
+   "cost_per_item": 0.0005425375,
+   "lat_median": 0.9935,
+   "tok_in_mean": 175.26875,
+   "acc": 0.61875,
+   "auc": 0.616953125,
+   "cv": {
+    "auto_share": 0.11875,
+    "auto_error": 0.0
+   },
+   "cascade_cov": 0.11875,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.02,
+   "bad_recall": 0.2375,
+   "by_kind": {
+    "positive": 1.0,
+    "vowel-swap": 0.14814814814814814,
+    "stress-shift": 0.14814814814814814,
+    "consonant-voicing": 0.4230769230769231
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.082388,
+   "cost_per_item": 0.0005149250000000001,
+   "lat_median": 0.9635,
+   "tok_in_mean": 161.4625,
+   "acc": 0.8625,
+   "auc": 0.913125,
+   "cv": {
+    "auto_share": 0.45625,
+    "auto_error": 0.1232876712328767
+   },
+   "cascade_cov": 0.41875,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.96875,
+   "hi": 1.0,
+   "lo": 0.93,
+   "bad_recall": 0.7375,
+   "by_kind": {
+    "related-word": 0.5,
+    "positive": 0.9875,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.09093,
+   "cost_per_item": 0.0006062,
+   "lat_median": 0.979,
+   "tok_in_mean": 203.34,
+   "acc": 0.98,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.96875,
+    "6-senses": 1.0,
+    "4-senses": 1.0,
+    "5-senses": 0.9642857142857143
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.09391,
+   "cost_per_item": 0.0005869375,
+   "lat_median": 0.9535,
+   "tok_in_mean": 197.46875,
+   "acc": 0.95625,
+   "auc": 0.962421875,
+   "cv": {
+    "auto_share": 0.7125,
+    "auto_error": 0.043859649122807015
+   },
+   "cascade_cov": 0.475,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9866666666666667,
+   "hi": 1.0,
+   "lo": 0.98,
+   "bad_recall": 0.9125,
+   "by_kind": {
+    "positive": 1.0,
+    "word-order": 0.9259259259259259,
+    "wrong-verb-form": 0.8148148148148148,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.095676,
+   "cost_per_item": 0.00063784,
+   "lat_median": 0.987,
+   "tok_in_mean": 222.92,
+   "acc": 0.9333333333333333,
+   "auc": 0.9867555555555556,
+   "cv": {
+    "auto_share": 0.6066666666666667,
+    "auto_error": 0.02197802197802198
+   },
+   "cascade_cov": 0.9266666666666666,
+   "cascade_acc_prec": 0.958904109589041,
+   "cascade_flag_prec": 0.9696969696969697,
+   "hi": 0.72,
+   "lo": 0.010000000000000009,
+   "bad_recall": 0.9333333333333333,
+   "by_kind": {
+    "other-entry-link-target": 0.9333333333333333,
+    "positive": 0.9333333333333333
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.072198,
+   "cost_per_item": 0.00048132,
+   "lat_median": 0.9764999999999999,
+   "tok_in_mean": 148.54,
+   "acc": 0.9866666666666667,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "2-entries": 0.9866666666666667
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.129438,
+   "cost_per_item": 0.00064719,
+   "lat_median": 0.997,
+   "tok_in_mean": 227.595,
+   "acc": 0.66,
+   "auc": 0.7068,
+   "cv": {
+    "auto_share": 0.105,
+    "auto_error": 0.14285714285714285
+   },
+   "cascade_cov": 0.0,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": null,
+   "hi": 1.01,
+   "lo": -0.01,
+   "bad_recall": 0.66,
+   "by_kind": {
+    "adaptation": 0.5,
+    "spelling-or-format": 0.875,
+    "explanation": 0.6,
+    "sense-structure": 0.0,
+    "label": 0.5384615384615384,
+    "collocation": 0.8,
+    "learner-error": 0.7,
+    "grammar-code": 0.5714285714285714,
+    "usage-note": 0.5,
+    "etymology": 1.0,
+    "definition-meaning": 0.6,
+    "example-grammar": 0.7142857142857143,
+    "other": 0.65,
+    "example-unnatural": 0.6,
+    "example-policy": 0.8571428571428571,
+    "definition-style": 0.6666666666666666,
+    "phrase": 1.0,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.6666666666666666,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 0.3333333333333333
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.106388,
+   "cost_per_item": 0.0007092533333333333,
+   "lat_median": 0.989,
+   "tok_in_mean": 255.46666666666667,
+   "acc": 0.76,
+   "cascade_cov": 0.06,
+   "by_kind": {
+    "uncountable": 0.9666666666666667,
+    "countable or uncountable": 0.3333333333333333,
+    "plural only": 0.9333333333333333,
+    "countable": 1.0,
+    "singular only": 0.5666666666666667
+   }
+  }
+ },
+ "openai__gpt-6-luna": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0040833,
+   "cost_per_item": 2.5520625e-05,
+   "lat_median": 0.9384999999999999,
+   "tok_in_mean": 175.26875,
+   "acc": 0.65,
+   "auc": 0.71328125,
+   "cv": {
+    "auto_share": 0.0,
+    "auto_error": null
+   },
+   "cascade_cov": 0.00625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": null,
+   "hi": 1.0,
+   "lo": -0.01,
+   "bad_recall": 0.3375,
+   "by_kind": {
+    "positive": 0.9625,
+    "vowel-swap": 0.3333333333333333,
+    "stress-shift": 0.18518518518518517,
+    "consonant-voicing": 0.5
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0038644,
+   "cost_per_item": 2.41525e-05,
+   "lat_median": 0.949,
+   "tok_in_mean": 161.4625,
+   "acc": 0.89375,
+   "auc": 0.89421875,
+   "cv": {
+    "auto_share": 0.4,
+    "auto_error": 0.015625
+   },
+   "cascade_cov": 0.40625,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 0.9846153846153847,
+   "hi": 1.01,
+   "lo": 0.020000000000000018,
+   "bad_recall": 0.8,
+   "by_kind": {
+    "related-word": 0.625,
+    "positive": 0.9875,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0042391,
+   "cost_per_item": 2.8260666666666665e-05,
+   "lat_median": 0.915,
+   "tok_in_mean": 203.34,
+   "acc": 0.98,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.984375,
+    "6-senses": 1.0,
+    "4-senses": 1.0,
+    "5-senses": 0.9285714285714286
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0044395,
+   "cost_per_item": 2.7746875e-05,
+   "lat_median": 0.9175,
+   "tok_in_mean": 197.46875,
+   "acc": 0.9625,
+   "auc": 0.96203125,
+   "cv": {
+    "auto_share": 0.45625,
+    "auto_error": 0.0
+   },
+   "cascade_cov": 0.46875,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 0.9866666666666667,
+   "hi": 1.01,
+   "lo": 0.98,
+   "bad_recall": 0.925,
+   "by_kind": {
+    "positive": 1.0,
+    "word-order": 0.9629629629629629,
+    "wrong-verb-form": 0.8148148148148148,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0045438,
+   "cost_per_item": 3.0291999999999997e-05,
+   "lat_median": 0.927,
+   "tok_in_mean": 222.92,
+   "acc": 0.9533333333333334,
+   "auc": 0.9872,
+   "cv": {
+    "auto_share": 0.9533333333333334,
+    "auto_error": 0.027972027972027972
+   },
+   "cascade_cov": 0.9266666666666666,
+   "cascade_acc_prec": 0.9726027397260274,
+   "cascade_flag_prec": 0.9848484848484849,
+   "hi": 0.030000000000000027,
+   "lo": 0.010000000000000009,
+   "bad_recall": 0.9866666666666667,
+   "by_kind": {
+    "other-entry-link-target": 0.9866666666666667,
+    "positive": 0.92
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0033546,
+   "cost_per_item": 2.2364e-05,
+   "lat_median": 0.9504999999999999,
+   "tok_in_mean": 148.54,
+   "acc": 0.98,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "2-entries": 0.98
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.0061519,
+   "cost_per_item": 3.07595e-05,
+   "lat_median": 0.951,
+   "tok_in_mean": 227.595,
+   "acc": 0.685,
+   "auc": 0.7178,
+   "cv": {
+    "auto_share": 0.0,
+    "auto_error": null
+   },
+   "cascade_cov": 0.0,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": null,
+   "hi": 1.01,
+   "lo": -0.01,
+   "bad_recall": 0.62,
+   "by_kind": {
+    "adaptation": 0.5,
+    "spelling-or-format": 0.875,
+    "explanation": 0.8,
+    "sense-structure": 0.0,
+    "label": 0.5384615384615384,
+    "collocation": 0.8,
+    "learner-error": 0.7,
+    "grammar-code": 0.42857142857142855,
+    "usage-note": 0.8333333333333334,
+    "etymology": 1.0,
+    "definition-meaning": 0.8,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.7,
+    "example-unnatural": 0.4,
+    "example-policy": 0.7142857142857143,
+    "definition-style": 0.6111111111111112,
+    "phrase": 1.0,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.6666666666666666,
+    "cross-reference": 0.4,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0062955,
+   "cost_per_item": 4.197e-05,
+   "lat_median": 1.034,
+   "tok_in_mean": 255.46666666666667,
+   "acc": 0.6133333333333333,
+   "cascade_cov": 0.013333333333333334,
+   "by_kind": {
+    "uncountable": 0.8333333333333334,
+    "countable or uncountable": 0.36666666666666664,
+    "plural only": 0.6333333333333333,
+    "countable": 1.0,
+    "singular only": 0.23333333333333334
+   }
+  }
+ },
+ "openai__gpt-6-luna-decisions": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0039563,
+   "cost_per_item": 2.4726875e-05,
+   "lat_median": 0.257,
+   "tok_in_mean": 247.26875,
+   "acc": 0.65,
+   "auc": 0.77234375,
+   "cv": {
+    "auto_share": 0.20625,
+    "auto_error": 0.06060606060606061
+   },
+   "cascade_cov": 0.225,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 0.9722222222222222,
+   "hi": 1.01,
+   "lo": 0.87,
+   "bad_recall": 0.3,
+   "by_kind": {
+    "positive": 1.0,
+    "vowel-swap": 0.3333333333333333,
+    "stress-shift": 0.1111111111111111,
+    "consonant-voicing": 0.46153846153846156
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0037194,
+   "cost_per_item": 2.3246249999999998e-05,
+   "lat_median": 0.258,
+   "tok_in_mean": 232.4625,
+   "acc": 0.84375,
+   "auc": 0.910703125,
+   "cv": {
+    "auto_share": 0.41875,
+    "auto_error": 0.05970149253731343
+   },
+   "cascade_cov": 0.425,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 0.9558823529411765,
+   "hi": 1.01,
+   "lo": 0.91,
+   "bad_recall": 0.6875,
+   "by_kind": {
+    "related-word": 0.4,
+    "positive": 1.0,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0034549,
+   "cost_per_item": 2.3032666666666667e-05,
+   "lat_median": 0.27,
+   "tok_in_mean": 230.32666666666665,
+   "acc": 0.9533333333333334,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.953125,
+    "6-senses": 1.0,
+    "4-senses": 1.0,
+    "5-senses": 0.8571428571428571
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0042635,
+   "cost_per_item": 2.6646875e-05,
+   "lat_median": 0.28049999999999997,
+   "tok_in_mean": 266.46875,
+   "acc": 0.95625,
+   "auc": 0.9659375,
+   "cv": {
+    "auto_share": 0.48125,
+    "auto_error": 0.025974025974025976
+   },
+   "cascade_cov": 0.4875,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 0.9615384615384616,
+   "hi": 1.01,
+   "lo": 0.93,
+   "bad_recall": 0.9125,
+   "by_kind": {
+    "positive": 1.0,
+    "word-order": 0.9259259259259259,
+    "wrong-verb-form": 0.8148148148148148,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0043188,
+   "cost_per_item": 2.8792e-05,
+   "lat_median": 0.2575,
+   "tok_in_mean": 287.92,
+   "acc": 0.9466666666666667,
+   "auc": 0.9869333333333333,
+   "cv": {
+    "auto_share": 0.72,
+    "auto_error": 0.046296296296296294
+   },
+   "cascade_cov": 1.0,
+   "cascade_acc_prec": 0.96,
+   "cascade_flag_prec": 0.96,
+   "hi": 0.72,
+   "lo": 0.54,
+   "bad_recall": 0.9333333333333333,
+   "by_kind": {
+    "other-entry-link-target": 0.9333333333333333,
+    "positive": 0.96
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0026331,
+   "cost_per_item": 1.7554e-05,
+   "lat_median": 0.245,
+   "tok_in_mean": 175.54,
+   "acc": 0.92,
+   "cascade_cov": 0.96,
+   "by_kind": {
+    "2-entries": 0.92
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.0058657,
+   "cost_per_item": 2.93285e-05,
+   "lat_median": 0.248,
+   "tok_in_mean": 293.285,
+   "acc": 0.615,
+   "auc": 0.7303,
+   "cv": {
+    "auto_share": 0.02,
+    "auto_error": 0.0
+   },
+   "cascade_cov": 0.025,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 1,
+   "lo": 0,
+   "bad_recall": 0.35,
+   "by_kind": {
+    "adaptation": 0.35714285714285715,
+    "spelling-or-format": 0.7916666666666666,
+    "explanation": 0.4,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.38461538461538464,
+    "collocation": 0.8,
+    "learner-error": 0.7,
+    "grammar-code": 0.7142857142857143,
+    "usage-note": 1.0,
+    "etymology": 0.0,
+    "definition-meaning": 0.88,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.45,
+    "example-unnatural": 0.4,
+    "example-policy": 0.2857142857142857,
+    "definition-style": 0.5,
+    "phrase": 1.0,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.3333333333333333,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0042433,
+   "cost_per_item": 2.828866666666667e-05,
+   "lat_median": 0.2525,
+   "tok_in_mean": 282.88666666666666,
+   "acc": 0.4866666666666667,
+   "cascade_cov": 0.02,
+   "by_kind": {
+    "uncountable": 0.9333333333333333,
+    "countable or uncountable": 0.16666666666666666,
+    "plural only": 0.26666666666666666,
+    "countable": 1.0,
+    "singular only": 0.06666666666666667
+   }
+  }
+ },
+ "panel__pronunciation-3": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0,
+   "cost_per_item": 0.0,
+   "lat_median": 1.0015640720725059,
+   "tok_in_mean": 0,
+   "acc": 1.0,
+   "auc": 1.0,
+   "cv": {
+    "auto_share": 0.9875,
+    "auto_error": 0.0
+   },
+   "cascade_cov": 0.5,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": null,
+   "hi": 0.6666666666666666,
+   "lo": -0.01,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "positive": 1.0,
+    "vowel-swap": 1.0,
+    "stress-shift": 1.0,
+    "consonant-voicing": 1.0
+   }
+  },
+  "defs": null,
+  "exsense": null,
+  "exok": null,
+  "xref": null,
+  "link": null,
+  "triage": null,
+  "count": null
+ },
+ "perplexity__pplx-decider-v1.1-27b": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.000552,
+   "cost_per_item": 3.45e-06,
+   "lat_median": 0.291,
+   "tok_in_mean": 172.5,
+   "acc": 0.69375,
+   "auc": 0.8303125,
+   "cv": {
+    "auto_share": 0.3,
+    "auto_error": 0.08333333333333333
+   },
+   "cascade_cov": 0.2875,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9705882352941176,
+   "hi": 0.997040048733729,
+   "lo": 0.4499741485070339,
+   "bad_recall": 0.4125,
+   "by_kind": {
+    "positive": 0.975,
+    "vowel-swap": 0.14814814814814814,
+    "stress-shift": 0.5925925925925926,
+    "consonant-voicing": 0.5
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00050726,
+   "cost_per_item": 3.170375e-06,
+   "lat_median": 0.2845,
+   "tok_in_mean": 158.51875,
+   "acc": 0.8625,
+   "auc": 0.9421875,
+   "cv": {
+    "auto_share": 0.775,
+    "auto_error": 0.10483870967741936
+   },
+   "cascade_cov": 0.51875,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9577464788732394,
+   "hi": 0.9989198687028963,
+   "lo": 0.9172403384900155,
+   "bad_recall": 0.725,
+   "by_kind": {
+    "related-word": 0.475,
+    "positive": 1.0,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00062908,
+   "cost_per_item": 4.193866666666666e-06,
+   "lat_median": 0.2985,
+   "tok_in_mean": 209.69333333333333,
+   "acc": 0.98,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.96875,
+    "6-senses": 1.0,
+    "4-senses": 1.0,
+    "5-senses": 0.9642857142857143
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0006295,
+   "cost_per_item": 3.934375e-06,
+   "lat_median": 0.3025,
+   "tok_in_mean": 196.71875,
+   "acc": 0.95,
+   "auc": 0.98203125,
+   "cv": {
+    "auto_share": 0.66875,
+    "auto_error": 0.037383177570093455
+   },
+   "cascade_cov": 0.50625,
+   "cascade_acc_prec": 0.9506172839506173,
+   "cascade_flag_prec": null,
+   "hi": 0.8754099003119375,
+   "lo": -0.01,
+   "bad_recall": 0.9,
+   "by_kind": {
+    "positive": 1.0,
+    "word-order": 0.8518518518518519,
+    "wrong-verb-form": 0.8518518518518519,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00066054,
+   "cost_per_item": 4.4036000000000005e-06,
+   "lat_median": 0.26,
+   "tok_in_mean": 220.18,
+   "acc": 0.96,
+   "auc": 0.9960888888888889,
+   "cv": {
+    "auto_share": 0.49333333333333335,
+    "auto_error": 0.013513513513513514
+   },
+   "cascade_cov": 0.5066666666666667,
+   "cascade_acc_prec": 0.9605263157894737,
+   "cascade_flag_prec": null,
+   "hi": 0.07346516790136677,
+   "lo": -0.01,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "other-entry-link-target": 1.0,
+    "positive": 0.92
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00045858,
+   "cost_per_item": 3.0572e-06,
+   "lat_median": 0.2645,
+   "tok_in_mean": 152.86,
+   "acc": 0.9266666666666666,
+   "cascade_cov": 0.94,
+   "by_kind": {
+    "2-entries": 0.9266666666666666
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.00089318,
+   "cost_per_item": 4.4659e-06,
+   "lat_median": 0.273,
+   "tok_in_mean": 223.295,
+   "acc": 0.57,
+   "auc": 0.6015,
+   "cv": {
+    "auto_share": 0.07,
+    "auto_error": 0.35714285714285715
+   },
+   "cascade_cov": 0.02,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.20021096400860228,
+   "bad_recall": 0.26,
+   "by_kind": {
+    "adaptation": 0.42857142857142855,
+    "spelling-or-format": 0.16666666666666666,
+    "explanation": 0.4,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.5384615384615384,
+    "collocation": 0.8666666666666667,
+    "learner-error": 0.5,
+    "grammar-code": 0.7142857142857143,
+    "usage-note": 0.5,
+    "etymology": 1.0,
+    "definition-meaning": 0.8,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.75,
+    "example-unnatural": 0.8,
+    "example-policy": 0.14285714285714285,
+    "definition-style": 0.5555555555555556,
+    "phrase": 1.0,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.3333333333333333,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00080072,
+   "cost_per_item": 5.338133333333333e-06,
+   "lat_median": 0.261,
+   "tok_in_mean": 266.9066666666667,
+   "acc": 0.72,
+   "cascade_cov": 0.28,
+   "by_kind": {
+    "uncountable": 0.9,
+    "countable or uncountable": 0.43333333333333335,
+    "plural only": 0.7666666666666667,
+    "countable": 1.0,
+    "singular only": 0.5
+   }
+  }
+ },
+ "respan__span-01": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00056224,
+   "cost_per_item": 3.5139999999999997e-06,
+   "lat_median": 0.486,
+   "tok_in_mean": 175.7,
+   "acc": 0.58125,
+   "auc": 0.7,
+   "cv": {
+    "auto_share": 0.14375,
+    "auto_error": 0.2608695652173913
+   },
+   "cascade_cov": 0.10625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.8849558,
+   "lo": 0.15051867,
+   "bad_recall": 0.2375,
+   "by_kind": {
+    "positive": 0.925,
+    "vowel-swap": 0.25925925925925924,
+    "stress-shift": 0.1111111111111111,
+    "consonant-voicing": 0.34615384615384615
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00049864,
+   "cost_per_item": 3.1164999999999997e-06,
+   "lat_median": 0.3715,
+   "tok_in_mean": 155.825,
+   "acc": 0.71875,
+   "auc": 0.77484375,
+   "cv": {
+    "auto_share": 0.11875,
+    "auto_error": 0.10526315789473684
+   },
+   "cascade_cov": 0.14375,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9545454545454546,
+   "hi": 0.9399688,
+   "lo": 0.050427306,
+   "bad_recall": 0.625,
+   "by_kind": {
+    "related-word": 0.35,
+    "positive": 0.8125,
+    "random-other-word": 0.9
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 150,
+   "unsupported": true
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0007055399999999999,
+   "cost_per_item": 4.409624999999999e-06,
+   "lat_median": 0.4965,
+   "tok_in_mean": 220.48125,
+   "acc": 0.8875,
+   "auc": 0.9240625,
+   "cv": {
+    "auto_share": 0.54375,
+    "auto_error": 0.06896551724137931
+   },
+   "cascade_cov": 0.43125,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9558823529411765,
+   "hi": 0.9437488,
+   "lo": 0.26612154,
+   "bad_recall": 0.825,
+   "by_kind": {
+    "positive": 0.95,
+    "word-order": 0.9259259259259259,
+    "wrong-verb-form": 0.6666666666666666,
+    "wrong-word": 0.8846153846153846
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00071164,
+   "cost_per_item": 4.744266666666667e-06,
+   "lat_median": 0.481,
+   "tok_in_mean": 237.21333333333334,
+   "acc": 0.8266666666666667,
+   "auc": 0.9754666666666667,
+   "cv": {
+    "auto_share": 0.9266666666666666,
+    "auto_error": 0.050359712230215826
+   },
+   "cascade_cov": 0.96,
+   "cascade_acc_prec": 0.9583333333333334,
+   "cascade_flag_prec": 0.9583333333333334,
+   "hi": 0.90856695,
+   "lo": 0.841202,
+   "bad_recall": 0.68,
+   "by_kind": {
+    "other-entry-link-target": 0.68,
+    "positive": 0.9733333333333334
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 150,
+   "unsupported": true
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.00097488,
+   "cost_per_item": 4.8744e-06,
+   "lat_median": 0.488,
+   "tok_in_mean": 243.72,
+   "acc": 0.515,
+   "auc": 0.608,
+   "cv": {
+    "auto_share": 0.05,
+    "auto_error": 0.4
+   },
+   "cascade_cov": 0.02,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.9086776,
+   "lo": 0.081877135,
+   "bad_recall": 0.07,
+   "by_kind": {
+    "adaptation": 0.35714285714285715,
+    "spelling-or-format": 0.20833333333333334,
+    "explanation": 0.3,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.46153846153846156,
+    "collocation": 0.7333333333333333,
+    "learner-error": 0.9,
+    "grammar-code": 0.7142857142857143,
+    "usage-note": 0.8333333333333334,
+    "etymology": 0.0,
+    "definition-meaning": 0.88,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.4,
+    "example-unnatural": 0.6,
+    "example-policy": 0.14285714285714285,
+    "definition-style": 0.3333333333333333,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.0,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 150,
+   "unsupported": true
+  }
+ },
+ "respan__span-01-lite": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0,
+   "cost_per_item": 0.0,
+   "lat_median": 0.4905,
+   "tok_in_mean": 175.7,
+   "acc": 0.58125,
+   "auc": 0.698125,
+   "cv": {
+    "auto_share": 0.15,
+    "auto_error": 0.25
+   },
+   "cascade_cov": 0.10625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.88443995,
+   "lo": 0.15051867,
+   "bad_recall": 0.2375,
+   "by_kind": {
+    "positive": 0.925,
+    "vowel-swap": 0.25925925925925924,
+    "stress-shift": 0.1111111111111111,
+    "consonant-voicing": 0.34615384615384615
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0,
+   "cost_per_item": 0.0,
+   "lat_median": 0.364,
+   "tok_in_mean": 155.825,
+   "acc": 0.71875,
+   "auc": 0.77453125,
+   "cv": {
+    "auto_share": 0.11875,
+    "auto_error": 0.10526315789473684
+   },
+   "cascade_cov": 0.14375,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9545454545454546,
+   "hi": 0.9399688,
+   "lo": 0.050427306,
+   "bad_recall": 0.625,
+   "by_kind": {
+    "related-word": 0.35,
+    "positive": 0.8125,
+    "random-other-word": 0.9
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 150,
+   "unsupported": true
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0,
+   "cost_per_item": 0.0,
+   "lat_median": 0.493,
+   "tok_in_mean": 220.48125,
+   "acc": 0.8875,
+   "auc": 0.92453125,
+   "cv": {
+    "auto_share": 0.55,
+    "auto_error": 0.06818181818181818
+   },
+   "cascade_cov": 0.4375,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9558823529411765,
+   "hi": 0.9423036,
+   "lo": 0.26612154,
+   "bad_recall": 0.825,
+   "by_kind": {
+    "positive": 0.95,
+    "word-order": 0.9259259259259259,
+    "wrong-verb-form": 0.6666666666666666,
+    "wrong-word": 0.8846153846153846
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0,
+   "cost_per_item": 0.0,
+   "lat_median": 0.478,
+   "tok_in_mean": 237.21333333333334,
+   "acc": 0.8333333333333334,
+   "auc": 0.9751111111111112,
+   "cv": {
+    "auto_share": 0.92,
+    "auto_error": 0.043478260869565216
+   },
+   "cascade_cov": 0.9466666666666667,
+   "cascade_acc_prec": 0.9577464788732394,
+   "cascade_flag_prec": 0.9577464788732394,
+   "hi": 0.90856,
+   "lo": 0.83919346,
+   "bad_recall": 0.6933333333333334,
+   "by_kind": {
+    "other-entry-link-target": 0.6933333333333334,
+    "positive": 0.9733333333333334
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 150,
+   "unsupported": true
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0,
+   "cost_per_item": 0.0,
+   "lat_median": 0.486,
+   "tok_in_mean": 243.72,
+   "acc": 0.515,
+   "auc": 0.6087,
+   "cv": {
+    "auto_share": 0.05,
+    "auto_error": 0.4
+   },
+   "cascade_cov": 0.015,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.9089652,
+   "lo": 0.082805865,
+   "bad_recall": 0.07,
+   "by_kind": {
+    "adaptation": 0.35714285714285715,
+    "spelling-or-format": 0.20833333333333334,
+    "explanation": 0.3,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.46153846153846156,
+    "collocation": 0.7333333333333333,
+    "learner-error": 0.9,
+    "grammar-code": 0.7142857142857143,
+    "usage-note": 0.8333333333333334,
+    "etymology": 0.0,
+    "definition-meaning": 0.88,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.4,
+    "example-unnatural": 0.6,
+    "example-policy": 0.14285714285714285,
+    "definition-style": 0.3333333333333333,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.0,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 150,
+   "unsupported": true
+  }
+ },
+ "stepfun__step-5-preview": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.1346682,
+   "cost_per_item": 0.00084167625,
+   "lat_median": 1.1684999999999999,
+   "tok_in_mean": 183.95625,
+   "acc": 0.975,
+   "auc": 0.99765625,
+   "cv": {
+    "auto_share": 0.5125,
+    "auto_error": 0.036585365853658534
+   },
+   "cascade_cov": 0.525,
+   "cascade_acc_prec": 0.9523809523809523,
+   "cascade_flag_prec": null,
+   "hi": 0.1,
+   "lo": -0.01,
+   "bad_recall": 0.975,
+   "by_kind": {
+    "positive": 0.975,
+    "vowel-swap": 0.9629629629629629,
+    "stress-shift": 0.9629629629629629,
+    "consonant-voicing": 1.0
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 1,
+   "cost": 0.1702106,
+   "cost_per_item": 0.0010705069182389937,
+   "lat_median": 1.507,
+   "tok_in_mean": 173.72955974842768,
+   "acc": 0.9433962264150944,
+   "auc": 0.9454113924050633,
+   "cv": {
+    "auto_share": 0.5471698113207547,
+    "auto_error": 0.12643678160919541
+   },
+   "cascade_cov": 0.46540880503144655,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 0.9594594594594594,
+   "hi": 1.01,
+   "lo": 0.9,
+   "bad_recall": 0.8875,
+   "by_kind": {
+    "related-word": 0.8,
+    "positive": 1.0,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.1126635,
+   "cost_per_item": 0.00075109,
+   "lat_median": 1.6139999999999999,
+   "tok_in_mean": 216.94,
+   "acc": 0.9866666666666667,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.96875,
+    "6-senses": 1.0,
+    "4-senses": 1.0,
+    "5-senses": 1.0
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.1426483,
+   "cost_per_item": 0.0008915518750000001,
+   "lat_median": 1.8,
+   "tok_in_mean": 211.84375,
+   "acc": 0.9625,
+   "auc": 0.9625,
+   "cv": {
+    "auto_share": 0.48125,
+    "auto_error": 0.03896103896103896
+   },
+   "cascade_cov": 0.46875,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 0.9866666666666667,
+   "hi": 1.01,
+   "lo": 0.9,
+   "bad_recall": 0.925,
+   "by_kind": {
+    "positive": 1.0,
+    "word-order": 0.9259259259259259,
+    "wrong-verb-form": 0.8518518518518519,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.126563,
+   "cost_per_item": 0.0008437533333333334,
+   "lat_median": 1.5394999999999999,
+   "tok_in_mean": 235.17333333333335,
+   "acc": 0.9333333333333333,
+   "auc": 0.9954666666666667,
+   "cv": {
+    "auto_share": 0.9733333333333334,
+    "auto_error": 0.0273972602739726
+   },
+   "cascade_cov": 0.9466666666666667,
+   "cascade_acc_prec": 0.9859154929577465,
+   "cascade_flag_prec": 0.9859154929577465,
+   "hi": 0.15,
+   "lo": 0.05,
+   "bad_recall": 1.0,
+   "by_kind": {
+    "other-entry-link-target": 1.0,
+    "positive": 0.8666666666666667
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0924926,
+   "cost_per_item": 0.0006166173333333333,
+   "lat_median": 1.3305,
+   "tok_in_mean": 161.79333333333332,
+   "acc": 0.9866666666666667,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "2-entries": 0.9866666666666667
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 32,
+   "cost": 0.8627014,
+   "cost_per_item": 0.0051351273809523805,
+   "lat_median": 7.645,
+   "tok_in_mean": 241.42857142857142,
+   "acc": 0.6190476190476191,
+   "auc": 0.6560374149659864,
+   "cv": {
+    "auto_share": 0.05357142857142857,
+    "auto_error": 0.2222222222222222
+   },
+   "cascade_cov": 0.011904761904761904,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.05,
+   "bad_recall": 0.6666666666666666,
+   "by_kind": {
+    "adaptation": 0.6363636363636364,
+    "spelling-or-format": 0.5882352941176471,
+    "explanation": 0.6666666666666666,
+    "sense-structure": 0.3333333333333333,
+    "collocation": 0.6,
+    "learner-error": 0.6,
+    "label": 0.45454545454545453,
+    "usage-note": 0.3333333333333333,
+    "etymology": 1.0,
+    "definition-meaning": 0.55,
+    "grammar-code": 0.6,
+    "example-grammar": 0.8571428571428571,
+    "other": 0.8235294117647058,
+    "example-unnatural": 0.8,
+    "example-policy": 0.6666666666666666,
+    "definition-style": 0.6875,
+    "phrase": 1.0,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.5,
+    "cross-reference": 0.2,
+    "definition-vocabulary": 0.3333333333333333
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 2,
+   "cost": 0.1980303,
+   "cost_per_item": 0.0013380425675675676,
+   "lat_median": 2.0675,
+   "tok_in_mean": 265.9054054054054,
+   "acc": 0.8378378378378378,
+   "cascade_cov": 0.04054054054054054,
+   "by_kind": {
+    "uncountable": 0.9333333333333333,
+    "countable or uncountable": 0.5666666666666667,
+    "plural only": 1.0,
+    "countable": 0.9655172413793104,
+    "singular only": 0.7333333333333333
+   }
+  }
+ },
+ "typesafe__jev-1.13": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0026145,
+   "cost_per_item": 1.6340625e-05,
+   "lat_median": 0.299,
+   "tok_in_mean": 389.0625,
+   "acc": 0.59375,
+   "auc": 0.63734375,
+   "cv": {
+    "auto_share": 0.1375,
+    "auto_error": 0.36363636363636365
+   },
+   "cascade_cov": 0.01875,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.2,
+   "bad_recall": 0.3125,
+   "by_kind": {
+    "positive": 0.875,
+    "vowel-swap": 0.37037037037037035,
+    "stress-shift": 0.1111111111111111,
+    "consonant-voicing": 0.46153846153846156
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.00251097,
+   "cost_per_item": 1.56935625e-05,
+   "lat_median": 0.308,
+   "tok_in_mean": 373.65625,
+   "acc": 0.86875,
+   "auc": 0.91390625,
+   "cv": {
+    "auto_share": 0.56875,
+    "auto_error": 0.0989010989010989
+   },
+   "cascade_cov": 0.4625,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9552238805970149,
+   "hi": 0.99,
+   "lo": 0.6,
+   "bad_recall": 0.7625,
+   "by_kind": {
+    "related-word": 0.55,
+    "positive": 0.975,
+    "random-other-word": 0.975
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.002815638,
+   "cost_per_item": 1.877092e-05,
+   "lat_median": 0.3195,
+   "tok_in_mean": 446.9266666666667,
+   "acc": 0.9533333333333334,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "3-senses": 0.9375,
+    "6-senses": 1.0,
+    "4-senses": 0.975609756097561,
+    "5-senses": 0.9285714285714286
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.002794806,
+   "cost_per_item": 1.74675375e-05,
+   "lat_median": 0.322,
+   "tok_in_mean": 415.89375,
+   "acc": 0.95625,
+   "auc": 0.960078125,
+   "cv": {
+    "auto_share": 0.65625,
+    "auto_error": 0.047619047619047616
+   },
+   "cascade_cov": 0.49375,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.961038961038961,
+   "hi": 0.98,
+   "lo": 0.74,
+   "bad_recall": 0.9125,
+   "by_kind": {
+    "positive": 1.0,
+    "word-order": 0.9259259259259259,
+    "wrong-verb-form": 0.8148148148148148,
+    "wrong-word": 1.0
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00280098,
+   "cost_per_item": 1.86732e-05,
+   "lat_median": 0.31,
+   "tok_in_mean": 444.6,
+   "acc": 0.96,
+   "auc": 0.9964444444444445,
+   "cv": {
+    "auto_share": 0.52,
+    "auto_error": 0.05128205128205128
+   },
+   "cascade_cov": 0.5133333333333333,
+   "cascade_acc_prec": 0.961038961038961,
+   "cascade_flag_prec": null,
+   "hi": 0.33,
+   "lo": -0.01,
+   "bad_recall": 0.9866666666666667,
+   "by_kind": {
+    "other-entry-link-target": 0.9866666666666667,
+    "positive": 0.9333333333333333
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.002378922,
+   "cost_per_item": 1.5859479999999998e-05,
+   "lat_median": 0.289,
+   "tok_in_mean": 377.6066666666667,
+   "acc": 0.9733333333333334,
+   "cascade_cov": 1.0,
+   "by_kind": {
+    "2-entries": 0.9733333333333334
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.003814062,
+   "cost_per_item": 1.907031e-05,
+   "lat_median": 0.2915,
+   "tok_in_mean": 454.055,
+   "acc": 0.61,
+   "auc": 0.67835,
+   "cv": {
+    "auto_share": 0.04,
+    "auto_error": 0.375
+   },
+   "cascade_cov": 0.01,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": null,
+   "hi": 0.89,
+   "lo": -0.01,
+   "bad_recall": 0.29,
+   "by_kind": {
+    "adaptation": 0.35714285714285715,
+    "spelling-or-format": 0.6666666666666666,
+    "explanation": 0.2,
+    "sense-structure": 0.6666666666666666,
+    "label": 0.46153846153846156,
+    "collocation": 0.8,
+    "learner-error": 0.8,
+    "grammar-code": 0.8571428571428571,
+    "usage-note": 0.8333333333333334,
+    "etymology": 1.0,
+    "definition-meaning": 0.88,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.4,
+    "example-unnatural": 0.6,
+    "example-policy": 0.14285714285714285,
+    "definition-style": 0.6666666666666666,
+    "phrase": 1.0,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.0,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.003284484,
+   "cost_per_item": 2.189656e-05,
+   "lat_median": 0.289,
+   "tok_in_mean": 521.3466666666667,
+   "acc": 0.7133333333333334,
+   "cascade_cov": 0.18,
+   "by_kind": {
+    "uncountable": 0.9,
+    "countable or uncountable": 0.26666666666666666,
+    "plural only": 0.8333333333333334,
+    "countable": 1.0,
+    "singular only": 0.5666666666666667
+   }
+  }
+ },
+ "upstage__solar-decide": {
+  "pron": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0037142,
+   "cost_per_item": 2.321375e-05,
+   "lat_median": 0.7505,
+   "tok_in_mean": 464.275,
+   "acc": 0.51875,
+   "auc": 0.7228125,
+   "cv": {
+    "auto_share": 0.1,
+    "auto_error": 0.1875
+   },
+   "cascade_cov": 0.025,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.000749,
+   "bad_recall": 0.075,
+   "by_kind": {
+    "positive": 0.9625,
+    "vowel-swap": 0.037037037037037035,
+    "stress-shift": 0.07407407407407407,
+    "consonant-voicing": 0.11538461538461539
+   }
+  },
+  "defs": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0036275500000000002,
+   "cost_per_item": 2.2672187500000002e-05,
+   "lat_median": 0.677,
+   "tok_in_mean": 453.44375,
+   "acc": 0.725,
+   "auc": 0.8234375,
+   "cv": {
+    "auto_share": 0.36875,
+    "auto_error": 0.1016949152542373
+   },
+   "cascade_cov": 0.33125,
+   "cascade_acc_prec": 1.0,
+   "cascade_flag_prec": 0.9555555555555556,
+   "hi": 0.990248,
+   "lo": 0.909419,
+   "bad_recall": 0.45,
+   "by_kind": {
+    "related-word": 0.225,
+    "positive": 1.0,
+    "random-other-word": 0.675
+   }
+  },
+  "exsense": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00343185,
+   "cost_per_item": 2.2879000000000002e-05,
+   "lat_median": 0.7905,
+   "tok_in_mean": 457.58,
+   "acc": 0.94,
+   "cascade_cov": 0.96,
+   "by_kind": {
+    "3-senses": 0.921875,
+    "6-senses": 1.0,
+    "4-senses": 0.975609756097561,
+    "5-senses": 0.8928571428571429
+   }
+  },
+  "exok": {
+   "n": 160,
+   "errors": 0,
+   "cost": 0.0038937,
+   "cost_per_item": 2.4335625e-05,
+   "lat_median": 0.829,
+   "tok_in_mean": 486.7125,
+   "acc": 0.9,
+   "auc": 0.922109375,
+   "cv": {
+    "auto_share": 0.5625,
+    "auto_error": 0.022222222222222223
+   },
+   "cascade_cov": 0.60625,
+   "cascade_acc_prec": 0.9642857142857143,
+   "cascade_flag_prec": 0.9565217391304348,
+   "hi": 0.959362,
+   "lo": 0.806427,
+   "bad_recall": 0.825,
+   "by_kind": {
+    "positive": 0.975,
+    "word-order": 0.8888888888888888,
+    "wrong-verb-form": 0.6296296296296297,
+    "wrong-word": 0.9615384615384616
+   }
+  },
+  "xref": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0038185,
+   "cost_per_item": 2.5456666666666666e-05,
+   "lat_median": 1.008,
+   "tok_in_mean": 509.1333333333333,
+   "acc": 0.9333333333333333,
+   "auc": 0.9452444444444444,
+   "cv": {
+    "auto_share": 0.6133333333333333,
+    "auto_error": 0.043478260869565216
+   },
+   "cascade_cov": 0.52,
+   "cascade_acc_prec": 0.9577464788732394,
+   "cascade_flag_prec": 1.0,
+   "hi": 0.821765,
+   "lo": 0.000235,
+   "bad_recall": 0.9333333333333333,
+   "by_kind": {
+    "other-entry-link-target": 0.9333333333333333,
+    "positive": 0.9333333333333333
+   }
+  },
+  "link": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.0030219,
+   "cost_per_item": 2.0146e-05,
+   "lat_median": 0.857,
+   "tok_in_mean": 402.92,
+   "acc": 0.9,
+   "cascade_cov": 0.7333333333333333,
+   "by_kind": {
+    "2-entries": 0.9
+   }
+  },
+  "triage": {
+   "n": 200,
+   "errors": 0,
+   "cost": 0.0051332,
+   "cost_per_item": 2.5666e-05,
+   "lat_median": 12.256499999999999,
+   "tok_in_mean": 513.32,
+   "acc": 0.595,
+   "auc": 0.6395,
+   "cv": {
+    "auto_share": 0.05,
+    "auto_error": 0.3
+   },
+   "cascade_cov": 0.035,
+   "cascade_acc_prec": null,
+   "cascade_flag_prec": 1.0,
+   "hi": 1.01,
+   "lo": 0.000774,
+   "bad_recall": 0.47,
+   "by_kind": {
+    "adaptation": 0.5,
+    "spelling-or-format": 0.5416666666666666,
+    "explanation": 0.7,
+    "sense-structure": 0.0,
+    "label": 0.6923076923076923,
+    "collocation": 0.8,
+    "learner-error": 0.5,
+    "grammar-code": 0.42857142857142855,
+    "usage-note": 0.6666666666666666,
+    "etymology": 0.0,
+    "definition-meaning": 0.68,
+    "example-grammar": 0.42857142857142855,
+    "other": 0.55,
+    "example-unnatural": 0.4,
+    "example-policy": 0.5714285714285714,
+    "definition-style": 0.6666666666666666,
+    "phrase": 0.6666666666666666,
+    "synonym-discrimination": 1.0,
+    "pronunciation": 0.3333333333333333,
+    "cross-reference": 0.6,
+    "definition-vocabulary": 1.0
+   }
+  },
+  "count": {
+   "n": 150,
+   "errors": 0,
+   "cost": 0.00377495,
+   "cost_per_item": 2.5166333333333333e-05,
+   "lat_median": 9.371500000000001,
+   "tok_in_mean": 503.32666666666665,
+   "acc": 0.6666666666666666,
+   "cascade_cov": 0.02,
+   "by_kind": {
+    "uncountable": 0.9333333333333333,
+    "countable or uncountable": 0.13333333333333333,
+    "plural only": 0.8,
+    "countable": 0.9666666666666667,
+    "singular only": 0.5
+   }
+  }
+ }
+}
