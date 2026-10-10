@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-10] review | escape–explanation
+
+Review, cycle 2 of the 04:43 UTC run: the twelve oldest one-round entries (*escape, evening, event, evidence, example, exchange, excitement, exercise, exit, experience, experiment, explanation*). Eleven lacked pronunciation notes; all now have them. Added: `escape-n` sense 3, the computer key; `event-n` phrase *in the event* (British); `evening-n` learner error *Good night* as a greeting. Panel: 21 issues (15 blocking); 12 applied (*do exercise* removed; *get* is the neutral verb, *do some exercise* and *take exercise* British; `exit-n` sense 3 and `exchange-n` sense 3 redefined; `example-n` usage note reworded), 9 rejected (the *music evening* sense stands; `excitement-n` keeps `electricity-n` as the mirror of its sense 2). All transcriptions and inflections verified. Spend US$0.85.
+
 ## [2026-10-10] build | twelve nouns website–wife
 
 Build, cycle 1 of the 04:43 UTC run. Twelve band-1 nouns drafted and reviewed: *website*, *wedding*, *week* (three senses, four phrases), *weekend*, *weight* (six senses, four phrases), *wheat*, *wheel* (three senses, two phrases), *wheelchair*, *whole* (two senses; *as a whole*, *on the whole*), *widow*, *width*, *wife* (*an old wives' tale*). All 24 transcriptions and all inflections verified. Panel: 22 issues (15 blocking); 11 applied (*weekend* now covers Friday evening; *in the week* kept only in the explanation as British; *weight* usage note softened; adaptation-note quotes turned into marks in all twelve), 11 rejected (reviewer-a called *the whole of* a determiner; reviewer-b misread two base-form phrase definitions). Back-links checked: `web-n`, `importance-n` sense 2, `depth-n`, `chair-n`, all right. The metrics row says 18 changed; the true count is 16. Spend US$0.65.
