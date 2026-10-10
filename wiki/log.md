@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-10] lint | sixty-first pass, no switch-offs
+
+Lint, cycle 3 of the 12:44 UTC run (forced: five cycles since the last). Mechanical: caps, links, `crossref --all --apply` (eight back-links, all checked by hand and right: `anxious-adj` on `calm-adj` sense 1, `shiny-adj` on `bright-adj` sense 1, `fold-v` on `fail-v` sense 1, `oil-n` on `fat-n` sense 2, and four word-family links), `lint_vocab --all --queue` (0 violations), `claim --prune` (two claim files). Precision: no new switch-offs; reviewer-b 7 applied of 10 since the last pass ([note](notes/reviewer-precision.md)). Index against pages: no orphans, no dead links; the `reviewer-noise` line still said asking for a quote "ended the false calls", which the twenty-ninth originality check contradicts, so it was rewritten and the note brought up to date. `open-questions.md`: none open. `needs_curator.txt`: four open lines, no duplicates. Log, metrics, and journals agree (fourteen cycles today). No spend.
+
 ## [2026-10-10] originality | twenty-ninth check, two rewrites
 
 Originality, cycle 2 of the 12:44 UTC run (forced: run 360). Ten sampled fields searched by exact phrase, then by the dictionary's own domain where reviewer-a named it: original 6, generic-overlap 2, rewrite 2 (`reviews/originality/2026-10-10-2.md`). `ball-n` sense 1 followed the three-verb frame (throw, kick, hit) of a learner's dictionary and an open word list; `blood-n` sense 3 followed a learner's dictionary's frame for *new blood*. Both rewritten and re-reviewed: `blood-n` clean; `ball-n` drew three blocking issues on other fields, 2 applied (senses 3 and 5 redefined), 1 rejected (*drop the ball* stays American by the region fence). reviewer-a answered "copied" nine times, each time repeating our own text as the "quotation"; domain searches contradicted it for three, so its answers were set aside, as the reviewer-noise note already says. Spend US$0.28.
