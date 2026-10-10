@@ -276,3 +276,8 @@ Seven disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5729/7984); `reviewer-b
 ## 2026-10-09: fifty-eighth lint pass, `reviewer-b` `inflection` switched off
 
 `reviewer-b` `inflection` reached the line: 0.10 over 21 decisions (2 applied, 19 rejected). It is now the eighth disabled pair in `tools/review_panel.py`, and the family is off for both roles. Its rejected flags asked for plurals that `tools/inflect.py` owns or cannot yet write (the known gap in [inflect-uncountable-plural-gap](inflect-uncountable-plural-gap.md)), or for forms on auxiliaries, which carry none by schema. `reviewer-a` `ALL` 0.72 (5853/8146); `reviewer-b` `ALL` 0.53 (1133/2120). `reviewer-b` `spelling-or-format` 0.28 (161/581), no new decisions; it stays live by the owner's ruling. `reviewer-b` `phrase` 0.35 (15/43). Upgraded reviewer-b since the last pass: 1 applied of 2 over 12 entries (0.08 applied per entry), under the 0.10 line of [reviewer-b-low-yield](reviewer-b-low-yield.md) again, on one build only: watch it.
+
+## 2026-10-10: fifty-ninth lint pass, no new switch-offs
+
+Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (5967/8293); `reviewer-b` `ALL` 0.54 (1148/2142). `reviewer-b` `spelling-or-format` 0.28 (161/581), no new decisions; it stays live by the owner's ruling. `reviewer-b` `phrase` 0.38 (17/45). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 138 applied of 271 (0.51); since the last pass 15 of 22 over 60 entries (0.25 applied per entry). But the sampling check of [reviewer-b-low-yield](reviewer-b-low-yield.md) found it marked `ok` on 34 of 36 fields where reviewer-a's blocking fault was real: its yield figure hides misses. Nothing else live is under 30 percent at twenty or more decisions.
+
