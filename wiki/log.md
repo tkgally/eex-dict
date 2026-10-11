@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] originality | thirty-first check, one rewrite
+
+Thirty-first check, run 380: ten sampled fields (`reviews/originality/2026-10-11-2.md`). Exact-phrase searches: eight original, one generic overlap (`hall-n` sense 4, near a learner's dictionary's *hall of residence*), one rewrite: `common-adj` sense 1 matched a learner's dictionary's first sense almost word for word; rewritten as *seen, done, or found a lot, by many people or in many places*. reviewer-a (reasoning off) answered "original" for all ten and missed the match; search decides. Panel on `common-adj`: reviewer-b clean; reviewer-a one blocking issue, applied (the *mutual* compare note widened). Spend US$0.08 (day US$9.76). Run ends: four-cycle cap.
+
 ## [2026-10-11] lint | sixty-fourth pass, one open question recorded
 
 The sixty-fourth judgmental and mechanical pass. Caps and links clean. `crossref --all --apply` added five mirror cross-references on three entries (`friendly-adj` three, `fine-adj` sense 3, `former-adj` sense 1); each checked by hand, all on the right sense. `lint_vocab --all --queue`: no violations, nothing queued. Three stale claim files pruned. Reviewer precision: no new switch-offs (eight pairs stay off; [note](notes/reviewer-precision.md)); upgraded reviewer-b 189/378 since 2026-10-05, 17 of 19 since the last pass. Index line for reviewer-precision brought up to date. New open question recorded in [open-questions](open-questions.md): noun or pronoun for *the former*, *the following* standing alone (working assumption: noun, as `following-n`). Metrics line says five entries changed; the true count is three. Spend none.
