@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-10-11",
-  "spent_usd": 14.819624,
+  "spent_usd": 14.984649,
   "calls": [
     {
       "ts": "2026-10-11T00:48:44Z",
@@ -4107,6 +4107,69 @@
       "cost_usd": 0.029516,
       "tokens_in": 3580,
       "tokens_out": 1863
+    },
+    {
+      "ts": "2026-10-11T21:18:32Z",
+      "run_id": "20261011T211708Z-y3yezp",
+      "purpose": "pronounce_check:pronunciation-1",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.001268,
+      "tokens_in": 268,
+      "tokens_out": 61
+    },
+    {
+      "ts": "2026-10-11T21:18:36Z",
+      "run_id": "20261011T211708Z-y3yezp",
+      "purpose": "pronounce_check:pronunciation-2",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.00055,
+      "tokens_in": 228,
+      "tokens_out": 101
+    },
+    {
+      "ts": "2026-10-11T21:18:37Z",
+      "run_id": "20261011T211708Z-y3yezp",
+      "purpose": "pronounce_check:pronunciation-3",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.000725,
+      "tokens_in": 239,
+      "tokens_out": 70
+    },
+    {
+      "ts": "2026-10-11T21:18:53Z",
+      "run_id": "20261011T211708Z-y3yezp",
+      "purpose": "review:flesh-n:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.02925,
+      "tokens_in": 4138,
+      "tokens_out": 1823
+    },
+    {
+      "ts": "2026-10-11T21:19:34Z",
+      "run_id": "20261011T211708Z-y3yezp",
+      "purpose": "review:flesh-n:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.06709,
+      "tokens_in": 4457,
+      "tokens_out": 4848
+    },
+    {
+      "ts": "2026-10-11T21:19:44Z",
+      "run_id": "20261011T211708Z-y3yezp",
+      "purpose": "review:extra-adj:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.022368,
+      "tokens_in": 3377,
+      "tokens_out": 1408
+    },
+    {
+      "ts": "2026-10-11T21:20:11Z",
+      "run_id": "20261011T211708Z-y3yezp",
+      "purpose": "review:extra-adj:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.043774,
+      "tokens_in": 3605,
+      "tokens_out": 3047
     }
   ],
   "history": {
