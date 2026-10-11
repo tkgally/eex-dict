@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] originality | thirtieth check, three rewrites
+
+Originality, cycle 2 of the 04:43 UTC run (forced: every tenth run). Ten sampled fields searched by exact phrase (`reviews/originality/2026-10-11.md`): six original, one generic overlap (*boil* "cook food in boiling water"), three rewrites, each following a learner's dictionary's frame: `egg-n` sense 1, `weekend-n` sense 1, `confuse-v` sense 1. The three went back through the panel: `weekend-n` clean; `egg-n` eight issues (four applied: not every egg holds a baby; four rejected, *egg on your chin* is natural); `confuse-v` four (one applied, three rejected, `mix-up-phrv` by the fence). reviewer-a answered "original" nine times and missed all three matches: its answer stays weak evidence. Spend US$0.18 (panel US$0.176, question US$0.004).
+
 ## [2026-10-11] build | twelve adjectives disabled–easy
 
 Build, cycle 1 of the 04:43 UTC run. Twelve band-1 adjectives drafted and reviewed: *disabled* (usage note on *disabled people*, *people with disabilities*; *the disabled* left to the note), *disappointed* (preposition note; *-ed*/*-ing* error), *distant* (five senses; *distant*/*far*/*remote*), *divorced* (*get divorced*; *divorced from*), *domestic* (four senses), *double* (four senses; *double the price* points to `double-det`, as `half-det`), *drunk* (*drunk*/*drunken*), *dry* (six senses), *dull* (five senses), *dumb* (the *cannot speak* sense labelled offensive and old-fashioned), *early* (*at the earliest*), *easy* (four senses after review added *not strict*; *I'm easy*). Panel: 42 issues, 32 applied, 10 rejected, none escalated; *disappointed*, *divorced*, *early* came back clean. Two back-links moved by hand (`clever-adj` and `far-adj` onto the right senses). Spend US$0.92.
@@ -284,7 +288,7 @@ Cycle 3 of the 16:43 run (forced: five runs since the last lint). Caps, links, `
 
 ## [2026-10-07] originality | twenty-third check, two rewrites
 
-Cycle 2 of the 16:43 run (forced: run 300). Ten sampled fields searched by exact phrase; reviewer-a asked with reasoning off answered *original* on all ten, no quotes. Search found two close frames in a learner's dictionary: `bag-n` sense 1 (material list and *used to carry things*) and `package-n` sense 1 (*something wrapped in paper ... so that it can be sent*). Both rewritten and re-reviewed (record `reviews/originality/2026-10-07-2.md`). Re-review: 6 issues, all reviewer-a; 4 applied, 2 rejected. `package-n` sense 2 now includes the contents and lost its American label (its own note says British uses it too); sense 3 *as one* became *for one price*. Rejected: `suitcase-n` as a synonym of travel *bags*, and the *parcel* note. Verdicts: original 6, generic-overlap 2, rewrite 2. Spend US$0.18.
+Cycle 2 of the 16:43 run (forced: run 300). Ten sampled fields searched by exact phrase; reviewer-a asked with reasoning off answered *original* on all ten, no quotes. Search found two close frames in a learner's dictionary: `bag-n` sense 1 (material list and *used to carry things*) and `package-n` sense 1 (*something wrapped in paper ... so that it can be sent*). Both rewritten and re-reviewed (record `reviews/originality/2026-10-07-2.md`). Re-review: 6 issues, all reviewer-a; 4 applied, 2 rejected. `package-n` sense 2 now includes the contents and lost its American label (its own note says British uses it too); sense 3 *as one* became *for one price*. Rejected: `suitcase-n` as a synonym of travel *bags*, and the *parcel* note. Verdicts: original 6, generic-overlap 2, rewrite 2. Spend US$0.18 (panel US$0.176, question US$0.004).
 
 ## [2026-10-07] closure | prepare and ten family verbs carpet–conflict
 
