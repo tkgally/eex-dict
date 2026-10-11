@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] lint | sixty-second pass, one open question recorded
+
+Lint, cycle 3 of the 00:43 UTC run (forced: five cycles since the last). Mechanical: caps and links clean; `crossref --all --apply` added one back-link, `old-adj` on `current-adj` sense 1 (*former* against *now*: right); no type mismatches; `lint_vocab --all --queue` and `claim --prune` (two spent claim files removed) ran. Precision: no new switch-offs; the eight disabled pairs stand ([reviewer-precision](notes/reviewer-precision.md)). Judgment: the index matches the pages; `wiki/open-questions.md` said no question was open while `NEXT.md` asked the owner about continent names in definitions, so the question is now recorded there with its working assumption (no; use the explanation, as `black-adj` sense 2 does), and its index line updated. Curator file: five open lines, no duplicates. Next lint due in about five cycles. No spend.
+
 ## [2026-10-11] review | figure–flu
 
 Review, cycle 2 of the 00:43 UTC run: the twelve oldest one-round entries, *figure*, *finance*, *finger*, *fire*, *firm*, *fish*, *flame*, *flavor*, *flood*, *floor*, *flower*, *flu*. Added by hand before the panel: `finger-n` phrases *put your finger on something* and *get your fingers burned*; `figure-n` sense 2 examples (*six-figure salary*) and, after review, subsense 2a for arithmetic (*good with figures*); a *stomach flu* line in `flu-n`. Panel: 32 issues, 28 blocking; 19 applied, 13 rejected, 0 escalated. Rejected: *take the floor* for starting to dance (standard), *what taste of ice cream* (a real learner error), the `finance-n` "no plural" note (the known `inflect-uncountable-plural-gap`), a *to*-infinitive phrase definition. Applied: `flower-n` senses 1 and 2, `flu-n` symptoms hedged, `flood-n` sense 2 widened, *under fire* one meaning, `firm-n` adaptation no longer says "only". Next oldest: *fly-n*, *focus-n*, *fog-n*, *folder-n*. Spend US$1.03.

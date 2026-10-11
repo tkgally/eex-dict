@@ -289,3 +289,7 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (6031/8388); `reviewer-b
 ## 2026-10-10: sixty-first lint pass, no new switch-offs
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (6118/8509); `reviewer-b` `ALL` 0.53 (1161/2178). `reviewer-b` `spelling-or-format` 0.28 (161/582), no new decisions; it stays live by the owner's ruling. `reviewer-b` `phrase` 0.38 (17/45). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 151 applied of 307 (0.49); since the last pass 7 of 10 over 26 entries (0.27 applied per entry), most of them on `brown-adj`, `busy-adj` and `calm-adj`; its one new sense-structure call (a skin-color sense for `brown-adj`) was applied. Nothing else live is under 30 percent at twenty or more decisions.
+
+## 2026-10-11: sixty-second lint pass, no new switch-offs
+
+Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (6215/8631); `reviewer-b` `ALL` 0.53 (1170/2200). `reviewer-b` `spelling-or-format` 0.28 (161/583), no new applied decisions; it stays live by the owner's ruling. `reviewer-b` `phrase` 0.37 (17/46). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 160 applied of 329 (0.49); this run's two cycles 2 of 9 (it asked four times to drop the house gradability codes and once for a *to* before a phrase definition). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, which the owner kept.
