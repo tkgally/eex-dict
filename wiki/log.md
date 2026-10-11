@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] lint | sixty-fifth pass, one back-link moved, one pair made compare
+
+Cycle 1 of the 20:43 run. Caps and links clean (500 pages). `crossref --all --apply` added fifteen mirror cross-references on ten entries (the adjectives built today and `garden-n`); each checked by hand. Fourteen were on the right sense; `large-adj` got *generous* on sense 1 (size), moved by hand to sense 2 (amount), matching `generous-adj` sense 2. The tool reported one TYPE-MISMATCH: `ashamed-adj` named *guilty* as a synonym, while `guilty-adj` sense 1 named *ashamed* as both synonym and compare. Both entries carry a discrimination contrasting the two words, so the pair is now `compare` on both sides. `lint_vocab --all --queue`: no violations, nothing queued. Three stale claim files pruned. Reviewer precision: no new switch-offs ([note](notes/reviewer-precision.md)); upgraded reviewer-b 17 of 25 since the last pass. Index, open questions, curator file: no stale lines or duplicates. No spend.
+
 ## [2026-10-11] build | twelve adjectives, impossible–lazy
 
 Cycle 4 of the 16:43 run. Drafted, reviewed, and published twelve band-1 adjectives: *impossible*, *individual*, *industrial*, *informal*, *innocent*, *interested*, *international*, *kind*, *large*, *last*, *late*, *lazy*. All 24 transcriptions verified on the first pass. Reviewers raised 43 issues (37 blocking); 32 applied, 11 rejected, none escalated. Main fixes: `kind-adj` polite-request subsense folded into sense 1; `informal-adj` senses 2 and 3 redefined and its note about the dictionary's own label removed; `large-adj` *at large* defined with both meanings, a noun-use example (*small, medium, and large*) replaced; `last-adj` usage note and learner error on *last week* / *the last week* corrected. Rejected: moving *at last*, *last but not least*, *every last* out of `last-adj` (the keyword fence); *national* and *domestic* kept as opposites of *international*. Spend: US$0.85. Run total four cycles, US$3.51.
