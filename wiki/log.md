@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] review | second reading of fly–freedom
+
+Review, cycle 3 of the 04:43 UTC run. The twelve oldest one-round entries (*fly*, *focus*, *fog*, *folder*, *food*, *fool*, *foot*, *force*, *forest*, *fork*, *form*, *freedom*, all from 2026-10-03/04) read by hand, then by the panel. Added: *shoot yourself in the foot* and *have one foot in the grave* to `foot-n`. Panel: 20 issues, 19 logged decisions (7 applied, 12 rejected, none escalated); *focus*, *folder*, *fool*, *freedom* clean. Applied: `food-n` usage note no longer says "never *a food*"; `force-n` sense 5 is now a push or pull; *by force of habit*; `form-n` *bad form* marked British and its false-friends note softened. Rejected: British plural **flies** for one opening (accurate), *ft* named as a form, the American label on *not see the forest for the trees* (region fence). reviewer-b's first reply on `form-n` was cut off; a re-run completed it. Spend US$1.13.
+
 ## [2026-10-11] originality | thirtieth check, three rewrites
 
 Originality, cycle 2 of the 04:43 UTC run (forced: every tenth run). Ten sampled fields searched by exact phrase (`reviews/originality/2026-10-11.md`): six original, one generic overlap (*boil* "cook food in boiling water"), three rewrites, each following a learner's dictionary's frame: `egg-n` sense 1, `weekend-n` sense 1, `confuse-v` sense 1. The three went back through the panel: `weekend-n` clean; `egg-n` eight issues (four applied: not every egg holds a baby; four rejected, *egg on your chin* is natural); `confuse-v` four (one applied, three rejected, `mix-up-phrv` by the fence). reviewer-a answered "original" nine times and missed all three matches: its answer stays weak evidence. Spend US$0.18 (panel US$0.176, question US$0.004).
