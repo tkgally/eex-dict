@@ -5,6 +5,7 @@
 ## Open
 
 - **Continent names in definitions** (raised 2026-10-10 by the build of `black-adj`; recorded here by the sixty-second lint pass, 2026-10-11). Should continent names such as *Africa* join the proper names allowed in definitions (`schema/vocabularies.json`, `proper_names`)? *Working assumption:* no; a definition that would need one puts the name in its `explanation` instead, as `black-adj` sense 2 does.
+- **Noun or pronoun for *the former*, *the latter*, *the following* standing alone** (raised 2026-10-11 by the build of `former-adj`; recorded by the sixty-fourth lint pass). reviewer-a calls these pronouns. *Working assumption:* nouns, queued as `former-n` and `following-n`, so the three are treated alike; a ruling either way would fix the part of speech before those rows are drafted.
 
 ## Answered
 
