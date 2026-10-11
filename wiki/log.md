@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] build | twelve adjectives confident–current
+
+Build, cycle 1 of the 00:43 UTC run. Twelve band-1 adjectives drafted and reviewed: *confident*, *confused* (with a *confused*/*confusing* usage note), *connected* (*well connected*), *conscious* (four senses; *conscience* compared), *convenient* (four senses; *if it is convenient for you*), *cool* (six senses, a *cool*/*cold*/*chilly* discrimination, the phrase *cool, calm, and collected*), *correct* (*correct*/*right*/*accurate*), *creative* (the rule-bending use became a subsense after review), *criminal*, *crowded*, *curious*, *current* (*actual* as a false friend). All 24 transcriptions verified first time. Panel: 36 issues, 28 blocking; 26 applied, 10 rejected, 0 escalated (reviewer-b precision 0.29 this cycle: four of its six issues asked to drop the house gradability codes). Back-links: three of five moved by hand (`busy-adj` to sense 2, `certain-adj` to sense 1, `clear-adj` to sense 1); `conscious-adj` now lists `aware-adj` under compare to match its mirror. Spend US$0.82.
+
 ## [2026-10-10] site | Site rebuilt and checked, 54 of 54
 
 Site, cycle 1 of the 20:44 UTC run, and its only cycle: the day's budget was spent (US$0.02 of US$15 left), so the selector blocked build, review, and closure and chose site as the unpaid mode furthest behind. Pre-flight: no open pull requests; the one leftover branch, `claude/wonderful-bardeen-22po9n`, has no residue and already has a prune line in `reviews/needs_curator.txt`; `inbox/` empty. `build_site.py` wrote 2,016 entries on 1,762 headword pages (0 drafts withheld, 0 redirects; 3,931 files). `site_check.py` passed all 54 checks at phone and desktop width: no JavaScript errors or horizontal overflow, *ran* finds *run*, link previews, the translator's-view toggle, dark mode. Nothing needed fixing. No entries changed. Spend US$0. The next run (00:43 UTC) starts on a fresh day's budget; the review queue starts with *figure-n*.
