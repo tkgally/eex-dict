@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] build | twelve adjectives, future–healthy
+
+Cycle 1 of the 16:43 run. Drafted, reviewed, and published twelve band-1 adjectives: *future*, *general*, *generous*, *gentle*, *gold*, *grateful*, *great*, *green*, *guilty*, *handsome*, *hard*, *healthy*. All 24 transcriptions verified on the first pass. `handsome` got a line in `schema/inflection-exceptions.json` (*handsomer*, with *more handsome* noted), replacing a usage note that contradicted null forms. Reviewers raised 65 issues (51 blocking); 52 applied, 13 rejected, none escalated. Main fixes: `great-adj` senses 3 and 4 narrowed (*great friends* moved to sense 1), its discrimination no longer claims *great* avoids countable nouns; `hard-adj` sense 8 split into drugs and a drinks subsense; `healthy-adj` senses 3 and 4 redefined to fit *a healthy relationship* and *a healthy attitude*; `guilty-adj` legal sense covers being judged guilty. Rejected: `comparative with more` called invalid (it is in the closed list), subject restrictions in explanations. Two back-links (`fine-adj`, `gentle-adj`) moved by hand onto the right senses. reviewer-b's first reply on *grateful* had no verdicts; one re-run fixed it. Spend: US$0.95.
+
 ## [2026-10-11] originality | thirty-first check, one rewrite
 
 Thirty-first check, run 380: ten sampled fields (`reviews/originality/2026-10-11-2.md`). Exact-phrase searches: eight original, one generic overlap (`hall-n` sense 4, near a learner's dictionary's *hall of residence*), one rewrite: `common-adj` sense 1 matched a learner's dictionary's first sense almost word for word; rewritten as *seen, done, or found a lot, by many people or in many places*. reviewer-a (reasoning off) answered "original" for all ten and missed the match; search decides. Panel on `common-adj`: reviewer-b clean; reviewer-a one blocking issue, applied (the *mutual* compare note widened). Spend US$0.08 (day US$9.76). Run ends: four-cycle cap.
