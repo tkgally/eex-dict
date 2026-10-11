@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] build | twelve adjectives economic–fair
+
+Build, cycle 4 of the 04:43 UTC run (the last: four-cycle cap). Twelve band-1 adjectives drafted and reviewed: *economic* (*economic*/*economical*), *effective* (three senses; *effective*/*efficient*), *elderly* (politeness note), *electric* (*electric*/*electrical*), *electronic*, *emotional*, *empty* (four senses; *empty*/*vacant*; *empty time* error), *equal*, *exact* (two senses after review), *excited* (*-ed*/*-ing*; prepositions), *expensive* (*the price is expensive* error), *fair* (six senses; *fair enough*, *to be fair*, *fair and square*). Panel: 43 issues, 25 applied, 18 rejected, none escalated; *emotional* clean. `exact-adj` lost its "careful" sense and *the exact same* (reviewer-b: adverbial). Rejected: four core-idea "padding" flags (fence), *comparative with more* called invalid three times (it is a listed code), *fair and square* moved to an adverb (keyword fence). `dark-adj` back-link moved by hand to sense 2 (color). Spend US$0.80.
+
 ## [2026-10-11] review | second reading of fly–freedom
 
 Review, cycle 3 of the 04:43 UTC run. The twelve oldest one-round entries (*fly*, *focus*, *fog*, *folder*, *food*, *fool*, *foot*, *force*, *forest*, *fork*, *form*, *freedom*, all from 2026-10-03/04) read by hand, then by the panel. Added: *shoot yourself in the foot* and *have one foot in the grave* to `foot-n`. Panel: 20 issues, 19 logged decisions (7 applied, 12 rejected, none escalated); *focus*, *folder*, *fool*, *freedom* clean. Applied: `food-n` usage note no longer says "never *a food*"; `force-n` sense 5 is now a push or pull; *by force of habit*; `form-n` *bad form* marked British and its false-friends note softened. Rejected: British plural **flies** for one opening (accurate), *ft* named as a form, the American label on *not see the forest for the trees* (region fence). reviewer-b's first reply on `form-n` was cut off; a re-run completed it. Spend US$1.13.
