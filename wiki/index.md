@@ -6,7 +6,7 @@
 
 - [conventions](conventions.md) — the schema of this knowledge base and every file format the tools read or write: slugs, shards, run ids, claims, the queue, review files, the decision ledger, the budget ledger, metrics.
 - [style-guide](style-guide.md) — the house style every drafting session reads: definitions, senses, examples, the inline marks, grammar, labels, boxes, phrases, adaptation notes, originality; three model entries (section 17).
-- [open-questions](open-questions.md) — questions for the owner with the working assumption in force; all seven answered 2026-10-05.
+- [open-questions](open-questions.md) — questions for the owner with the working assumption in force; the first seven answered 2026-10-05; one open (continent names in definitions, 2026-10-10).
 
 ## Decisions (one page each; binding)
 
