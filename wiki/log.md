@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] build | twelve adjectives following–funny
+
+Build cycle, band-1 adjectives in queue order: *following*, *foreign*, *formal*, *former*, *free*, *frequent*, *fresh*, *friendly*, *frozen*, *full*, *fun*, *funny*, all now `reviewed`; all 24 transcriptions verified on the first pass; `foreign-adj` sense 3 gained *comparative with more* so its forms verified. Panel: 58 issues (51 blocking); 42 applied, 16 rejected. Applied: `full-adj` sense 6 widened to experiences, *full moon* moved to subsense 4a, *full with* called rare, *to the full* British; `free-adj` adverb example replaced (`free-adv` queued); `frozen-adj` passive examples rewritten; `fun-adj` lost its entry-level informal label; `funny-adj` *go funny* moved to sense 2. Rejected: *the former* stays a noun (`former-n` queued) to match `following-n`; *Skiing is fun* stays at `fun-n`. Six out-of-vocabulary definition words reworded. Back-links: four of seven moved by hand (`busy-adj` sense 3, `cold-adj` 2, `empty-adj` 2, `old-adj` 2). 26 rows queued. Spend US$1.07 (day US$8.85).
+
 ## [2026-10-11] review | second reading of fridge–deliberately
 
 Review cycle: the twelve oldest one-round entries (`fridge-n`, `friend-n`, the verbs `battle-v` to `benefit-v`, `cheat-n`, `deliberately-adv`), all created 2026-10-04. Read by hand first: `fridge-n` gained a see-also to `refrigerator-n`; `befriend-v` lost a see-also that repeated its word family. Panel: 26 issues; `bed-v`, `benefit-v`, `deliberately-adv` clean. 26 decisions, 17 applied, 9 rejected. Applied: `cheat-n` lost its infidelity subsense and its verb learner error; `beach-v` sense 1 redefined, sense 2 transitive; `bench-v` sense 2 redefined; `battle-v` and `beautify-v` usage notes no longer overstate register. Rejected: `bench-v` sense 1 stays American (region fence); beached whales stay stranded sea animals; no proverb label exists. Spend US$0.63.
