@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] lint | sixty-third pass, one back-link moved
+
+The sixty-third judgmental and mechanical pass. `crossref --all --apply` added eight mirror cross-references on seven entries (`dark-adj`, `deaf-adj`, `different-adj`, `difficult-adj`, `dull-adj`, `empty-adj` twice, `fair-adj`); each was checked by hand. One was wrong and moved: `black-adj` sense 4 (*black humor*) had landed on `dark-adj` sense 2 (the color); it now sits on sense 3 (the cruel or frightening side). `lint_vocab --all --queue` queued `oval-n` (from `egg-n`). Three stale claim files pruned. Reviewer precision: no new switch-offs (eight pairs stay off; [note](notes/reviewer-precision.md)). Caps, links, index, open questions, and curator lines checked: no contradictions, orphans, or duplicates. Both orphan `claude/*` branches still have no residue (curator lines exist). Spend: none. Next lint due in about five cycles.
+
 ## [2026-10-11] build | twelve adjectives economic–fair
 
 Build, cycle 4 of the 04:43 UTC run (the last: four-cycle cap). Twelve band-1 adjectives drafted and reviewed: *economic* (*economic*/*economical*), *effective* (three senses; *effective*/*efficient*), *elderly* (politeness note), *electric* (*electric*/*electrical*), *electronic*, *emotional*, *empty* (four senses; *empty*/*vacant*; *empty time* error), *equal*, *exact* (two senses after review), *excited* (*-ed*/*-ing*; prepositions), *expensive* (*the price is expensive* error), *fair* (six senses; *fair enough*, *to be fair*, *fair and square*). Panel: 43 issues, 25 applied, 18 rejected, none escalated; *emotional* clean. `exact-adj` lost its "careful" sense and *the exact same* (reviewer-b: adverbial). Rejected: four core-idea "padding" flags (fence), *comparative with more* called invalid three times (it is a listed code), *fair and square* moved to an adverb (keyword fence). `dark-adj` back-link moved by hand to sense 2 (color). Spend US$0.80.
