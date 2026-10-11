@@ -1860,7 +1860,7 @@ root	n	1	defining	done	2026-09-16	votes 3
 rope	n	1	defining	done	2026-09-16	votes 2
 rot	v	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
 rough	adj	1	defining	pending	2026-09-16	votes 3; referenced by calm-adj
-round	adj	1	defining	pending	2026-09-16	votes 3
+round	adj	1	defining	pending	2026-09-16	votes 3; referenced by oval-adj
 route	n	1	defining	done	2026-09-16	votes 3; referenced by way-n; referenced by course-n
 routine	n	1	defining	done	2026-09-16	votes 3; referenced by habit-n
 rub	v	1	defining	done	2026-09-16	votes 2
@@ -3984,9 +3984,9 @@ explanatory	adj	3	family	pending	2026-09-16	referenced by explain-v; referenced 
 extend	v	3	crossref	pending	2026-09-16	referenced by run-v; referenced by expand-v; referenced by reach-v; referenced by stretch-v
 familial	adj	3	family	pending	2026-09-16	referenced by family-n
 farmhouse	n	3	family	pending	2026-09-16	referenced by house-n; referenced by farm-n
-favor	n	3	family	pending	2026-09-16	referenced by favorite-adj
+favor	n	3	family	done	2026-09-16	referenced by favorite-adj
 favorite	n	3	family	pending	2026-09-16	referenced by favorite-adj
-favoritism	n	3	family	pending	2026-09-16	referenced by favorite-adj
+favoritism	n	3	family	pending	2026-09-16	referenced by favorite-adj; referenced by favor-n
 fetch	v	3	crossref	pending	2026-09-16	referenced by take-v; referenced by collect-v
 film	v	3	crossref	pending	2026-09-16	referenced by record-v; referenced by film-n
 firsthand	adj	3	family	pending	2026-09-16	referenced by hand-n
@@ -7404,16 +7404,16 @@ bride	n	3	crossref	pending	2026-10-10	referenced by wedding-n
 ex wife	n	3	family	pending	2026-10-10	referenced by wife-n
 overweight	adj	3	family	pending	2026-10-10	referenced by weight-n
 wed	v	3	family	pending	2026-10-10	referenced by wedding-n
-weekday	n	3	family	pending	2026-10-10	referenced by week-n
+weekday	n	3	family	pending	2026-10-10	referenced by week-n; referenced by monday-n
 wheel	v	3	family	pending	2026-10-10	referenced by wheel-n
 wholly	adv	3	family	pending	2026-10-10	referenced by whole-n
 widen	v	3	family	pending	2026-10-10	referenced by width-n
 widowed	adj	3	family	pending	2026-10-10	referenced by widow-n
 widower	n	3	crossref	pending	2026-10-10	referenced by widow-n
-friday	n	3	closure	pending	2026-10-10	used in weekend-n senses[0].definition; pos guessed (no morphological signal), check before claiming
-monday	n	3	closure	pending	2026-10-10	used in week-n senses[0].definition; pos guessed (no morphological signal), check before claiming
-saturday	n	3	closure	pending	2026-10-10	used in week-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming
-sunday	n	3	closure	pending	2026-10-10	used in week-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming
+friday	n	3	closure	done	2026-10-10	used in weekend-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+monday	n	3	closure	done	2026-10-10	used in week-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+saturday	n	3	closure	done	2026-10-10	used in week-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming
+sunday	n	3	closure	done	2026-10-10	used in week-n senses[0].definition; also in 1 other entry; pos guessed (no morphological signal), check before claiming
 eyewitness	n	3	family	pending	2026-10-10	referenced by witness-n
 female	n	3	crossref	pending	2026-10-10	referenced by woman-n
 grape	n	3	crossref	pending	2026-10-10	referenced by wine-n
@@ -7424,7 +7424,7 @@ winged	adj	3	family	pending	2026-10-10	referenced by wing-n
 wiring	n	3	family	pending	2026-10-10	referenced by wire-n
 wooden	adj	3	family	pending	2026-10-10	referenced by wood-n
 woodland	n	3	family	pending	2026-10-10	referenced by wood-n
-bunches	n	3	closure	pending	2026-10-10	used in wine-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+bunches	n	3	closure	duplicate	2026-10-10	used in wine-n senses[0].definition; pos guessed (no morphological signal), check before claiming; plural; drafted as bunch-n
 backyard	n	3	family	pending	2026-10-10	referenced by yard-n
 woolly	adj	3	family	pending	2026-10-10	referenced by wool-n
 wordy	adj	3	family	pending	2026-10-10	referenced by word-n
@@ -7595,5 +7595,16 @@ expensively	adv	3	family	pending	2026-10-11	referenced by expensive-adj
 unemotional	adj	3	family	pending	2026-10-11	referenced by emotional-adj
 unequal	adj	3	crossref	pending	2026-10-11	referenced by equal-adj
 vacant	adj	3	crossref	pending	2026-10-11	referenced by empty-adj
-favoring	v	3	closure	pending	2026-10-11	used in fair-adj senses[0].definition
-oval	n	3	closure	pending	2026-10-11	used in egg-n senses[0].definition; pos guessed (no morphological signal), check before claiming
+favoring	v	3	closure	duplicate	2026-10-11	used in fair-adj senses[0].definition; inflected form; drafted as favor-v
+oval	n	3	closure	pending	2026-10-11	used in egg-n senses[0].definition; pos guessed (no morphological signal), check before claiming; egg-n uses the adjective; drafted as oval-adj; the noun (the shape); oval-adj drafted 2026-10-11 points to it; referenced by oval-adj
+favor	v	3	closure	done	2026-10-11	lemma of favoring, used in fair-adj senses[0].definition
+bunch	n	3	closure	done	2026-10-11	lemma of bunches, used in wine-n senses[0].definition
+oval	adj	3	closure	done	2026-10-11	used in egg-n senses[0].definition
+tuesday	n	3	closure	done	2026-10-11	day name; drafted with the other days of the week
+wednesday	n	3	closure	done	2026-10-11	day name; drafted with the other days of the week
+thursday	n	3	closure	done	2026-10-11	day name; drafted with the other days of the week
+bunch	v	3	family	pending	2026-10-11	referenced by bunch-n
+bundle	n	3	crossref	pending	2026-10-11	referenced by bunch-n
+favorable	adj	3	family	pending	2026-10-11	referenced by favor-n
+prefer	v	3	crossref	pending	2026-10-11	referenced by favor-v
+unfavorable	adj	3	family	pending	2026-10-11	referenced by favor-n

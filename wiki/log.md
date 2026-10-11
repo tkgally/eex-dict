@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] closure | the seven days of the week, favor, bunch, oval
+
+Closure cycle (`--source closure`). The claim gave *favoring* (v), *bunches*, *oval* (n), and four day names. *Favoring* and *bunches* were marked duplicate and drafted as `favor-v` and `bunch-n`; `favor-n` (family row) joined them. `oval-n` became `oval-adj` (the use in `egg-n`); the noun went back to pending after reviewer-b objected to a usage note describing it. `tuesday-n`, `wednesday-n`, `thursday-n` added by hand so all seven days landed together (headwords capitalized). Eleven entries, all `reviewed`; all 22 transcriptions verified. Adjudication: 8 decisions, 4 applied (*Sunday best* not old-fashioned; `oval-adj` usage note dropped; `favor-v` discrimination softened), 4 rejected (*ask someone a favor* is standard; `bunch-n` *a lot* stays American by the region fence). Two definition words replaced (*gift*, *occasions*). Five back-links checked: all on the right sense. Spend US$0.54.
+
 ## [2026-10-11] lint | sixty-third pass, one back-link moved
 
 The sixty-third judgmental and mechanical pass. `crossref --all --apply` added eight mirror cross-references on seven entries (`dark-adj`, `deaf-adj`, `different-adj`, `difficult-adj`, `dull-adj`, `empty-adj` twice, `fair-adj`); each was checked by hand. One was wrong and moved: `black-adj` sense 4 (*black humor*) had landed on `dark-adj` sense 2 (the color); it now sits on sense 3 (the cruel or frightening side). `lint_vocab --all --queue` queued `oval-n` (from `egg-n`). Three stale claim files pruned. Reviewer precision: no new switch-offs (eight pairs stay off; [note](notes/reviewer-precision.md)). Caps, links, index, open questions, and curator lines checked: no contradictions, orphans, or duplicates. Both orphan `claude/*` branches still have no residue (curator lines exist). Spend: none. Next lint due in about five cycles.
