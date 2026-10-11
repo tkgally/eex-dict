@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] review | second reading of fridge–deliberately
+
+Review cycle: the twelve oldest one-round entries (`fridge-n`, `friend-n`, the verbs `battle-v` to `benefit-v`, `cheat-n`, `deliberately-adv`), all created 2026-10-04. Read by hand first: `fridge-n` gained a see-also to `refrigerator-n`; `befriend-v` lost a see-also that repeated its word family. Panel: 26 issues; `bed-v`, `benefit-v`, `deliberately-adv` clean. 26 decisions, 17 applied, 9 rejected. Applied: `cheat-n` lost its infidelity subsense and its verb learner error; `beach-v` sense 1 redefined, sense 2 transitive; `bench-v` sense 2 redefined; `battle-v` and `beautify-v` usage notes no longer overstate register. Rejected: `bench-v` sense 1 stays American (region fence); beached whales stay stranded sea animals; no proverb label exists. Spend US$0.63.
+
 ## [2026-10-11] build | eleven adjectives false–flexible
 
 Build cycle, band-1 adjectives in queue order. Claimed twelve; `first-adj` set `deferred` (its ordinal uses belong to `first-num`, still pending; decide after that is drafted). Drafted *false*, *familiar*, *fast*, *fat*, *female*, *final*, *financial*, *fine*, *fit*, *flat*, *flexible*, all now `reviewed`. British *false* was disputed (1/3) as `fɔːls`; swapped with its variant to `fɒls`, which verified 2/3. Adjudication: 48 decisions, 41 applied, 7 rejected. Applied: `fast-adj` lost its rare *made fast* sense and its *fastly* error (now `fast-adv`'s); `fat-adj` sense 1 gained `disapproving`, *heavy* left its discrimination; `flat-adj` sense 2 redefined, *fall flat* removed (an idiom under *fall*), usage note dropped; `financial-adj` and `fit-adj` sense 2 lost wrong position codes. Rejected: *fine day* stays British (region fence); `female-adj` sense 1 defines the sex as a class. Six back-links checked; `dead-adj`'s moved by hand to sense 2. Spend US$0.83.
