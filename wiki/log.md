@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-11] lint | sixty-fourth pass, one open question recorded
+
+The sixty-fourth judgmental and mechanical pass. Caps and links clean. `crossref --all --apply` added five mirror cross-references on three entries (`friendly-adj` three, `fine-adj` sense 3, `former-adj` sense 1); each checked by hand, all on the right sense. `lint_vocab --all --queue`: no violations, nothing queued. Three stale claim files pruned. Reviewer precision: no new switch-offs (eight pairs stay off; [note](notes/reviewer-precision.md)); upgraded reviewer-b 189/378 since 2026-10-05, 17 of 19 since the last pass. Index line for reviewer-precision brought up to date. New open question recorded in [open-questions](open-questions.md): noun or pronoun for *the former*, *the following* standing alone (working assumption: noun, as `following-n`). Metrics line says five entries changed; the true count is three. Spend none.
+
 ## [2026-10-11] review | second reading of fail–gain
 
 Review cycle: the twelve oldest one-round entries (`fail-n`, `hollow-n`, `friendship-n`, `front-n`, `fruit-n`, `fuel-n`, `fun-n`, `funeral-n`, `fur-n`, `furniture-n`, `future-n`, `gain-n`), all created 2026-10-04. Read by hand first: `fun-n` usage note no longer calls the adjective informal (matches `fun-adj` after its review). reviewer-b's first reply on `friendship-n` had no verdicts; re-run clean. Panel: 30 issues (27 blocking); `funeral-n`, `furniture-n` clean. 30 decisions, 21 applied, 9 rejected. Applied: `gain-n` sense 3 widened to any benefit for yourself; `fur-n` garment split to subsense 2a; `fuel-n` sense 2 narrowed; `front-n` senses 4 and 7 redefined; `future-n` futures definition, `tomorrow-n` see-also dropped. Rejected: *in front*, *up front* and two more stay under `front-n` (keyword rule); `tomorrow-n` stays a synonym (its sense 2). No back-links, no vocabulary violations. Spend US$0.83 (day US$9.68).
