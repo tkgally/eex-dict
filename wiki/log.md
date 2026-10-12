@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] build | twelve adjectives pure–regular
+
+Cycle 4 of the 12:44 run: twelve band-1 adjectives, *pure*, *purple*, *quick*, *quiet*, *rare*, *raw*, *ready*, *real*, *reasonable*, *recent*, *red*, *regular*, all `reviewed`. American `real-adj` `ril` disputed by the panel (1/4) but CMU agrees: kept with the flag, as for `detail-n`. 54 issues (50 blocking): 40 applied, 14 rejected. Main fixes: `quiet-adj` sense 4 split into *private* and *small event*; `real-adj` sense 2 redefined, `realize-v` dropped from its family; `purple-adj` writing sense now *trying too hard to sound beautiful*; `raw-adj` codes removed so rules give *rawer*. Rejected: reviewer-b's *purpler* and *readier* (house *more* forms); *in the red* moved to a noun (keyword fence); the hair explanation on `red-adj` (house rule). Twelve back-links; four moved by hand to the right sense (`complete-adj` 3, `long-adj` 2, `new-adj` 1, `clean-adj` 3). Panel $1.03; day $10.43 of $15.
+
 ## [2026-10-12] lint | sixty-eighth pass
 
 Cycle 3 of the 12:44 run (forced: five runs since the last lint). Caps, links, and the vocabulary lint clean (0 definition violations in 2,215 entries; one row queued). `crossref --all --apply` added seven back-links in five entries; each was checked by hand. Two were wrong: it put `come-v` back into `income-n`'s word family because `come-v` still listed `income-n`, so the pair was removed on both sides (the review of 13:25 had dropped it from one side only); and the `personal-adj` mirror on `public-adj` was moved from sense 1 to sense 4 (*public life* against *private life*). The rest (`important-adj`, `commercial-adj`, `last-adj`, `old-adj`, `past-adj`) are on the right senses. No reviewer family switched off ([reviewer-precision](notes/reviewer-precision.md)). Two stale claim files pruned. `needs_curator.txt` has no duplicate lines; both open questions are still open. Unpaid.
