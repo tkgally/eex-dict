@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] originality | thirty-third check, one rewrite
+
+Cycle 4 of the 08:44 run (forced: run 400). Ten sampled fields, each searched as an exact phrase: six original (*thumbs up*, `negative-adj` sense 3, *your loss*, `damage-v`, `back-n` sense 4, *on the tip of your tongue*), three generic overlaps (`aim-v` sense 3, `try-v` sense 1, `do-v` sense 5). One rewrite: `lung-n` sense 1 followed a learner's dictionary's frame (*two organs in your chest that fill with air when you breathe*); it now reads *one of a pair of soft body parts behind the ribs that you use to take in air*, and the panel found no issues. reviewer-a, asked with reasoning off, answered *copied* for all ten by quoting our own text; set aside ([note](notes/reviewer-noise.md)). Checklist: `reviews/originality/2026-10-12-2.md`. Spend US$0.04.
+
 ## [2026-10-12] build | twelve adjectives perfect–popular
 
 Cycle 3 of the 08:44 run: twelve band-1 adjectives, *perfect*, *permanent*, *personal*, *physical*, *pink*, *plain*, *pleasant*, *pleased*, *polite*, *political*, *poor*, *popular*, all `reviewed`; every transcription verified on the first pass. 47 issues (44 blocking): 32 applied, 15 rejected. Main fixes: `perfect-adj` grammar sense now covers the past perfect; `permanent-adj` notes no longer say *for always* only; `polite-adj` learner error replaced (*polite with* is possible; *polite for us* is the error), *polite society* dropped from the formal-only sense; `political-adj` sense 3 lost its disapproving label; `poor-adj` sense 4 now phrasal. Rejected: reviewer-b calling `comparative with more` an invalid code (four times); *plain* (not beautiful) kept `euphemistic`. Back-links: `complete-adj`, `direct-adj`, `honest-adj` mirrors moved by hand off sense 1. `physical-n`, `personnel-n`, `plain-adv`, `pleasing-adj` and others queued by crossref. Drafting timestamps were first set ahead of the clock and reset from `date -u`. Spend US$0.85.
