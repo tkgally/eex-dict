@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] review | island to visitor
+
+Cycle 3 of the 20:44 run: a second panel round for the thirteen oldest one-round entries, *island* and the 2026-10-04 20:47 batch (*according to*, *apple*, *banana*, *bicycle* (v), *bike* (v), *bill* (v), *blanket* (v), *block* (v), *coal*, *setting*, *tube*, *visitor*). 20 issues (16 blocking): 10 applied, 10 rejected, none escalated. Fixed: `island-n` road sense (often raised; example says *traffic island*) and kitchen sense (furniture with cupboards and a flat top); `blanket-v` lost *thick* and now collocates *blanketed in fog*; `block-v` sense 1 is one transitive verb phrase; `visitor-n` website sense and core idea. Five entries came back clean. Spend US$0.83; the day stands at US$14.79 of 15, under the US$0.50 floor, so the run ends after this cycle.
+
 ## [2026-10-12] originality | thirty-fourth check, two rewrites
 
 Cycle 2 of the 20:44 run, forced (run 410). Ten sampled fields, each searched as an exact phrase: original 5, generic-overlap 3, rewrite 2. `spark-n` sense 3 ("a small amount of a feeling or a quality") was a learner's dictionary's wording reordered; now *a very small sign that a feeling or quality is there*. `town-n` *out of town* followed the same kind of dictionary's frame; now *not at home because you have gone to another city or area for a few days*. Panel on both: 7 issues, all reviewer-a; 4 applied (a phrase collocation on *spark*; *in town* redefined and dropped from the usage note), 3 rejected. reviewer-a answered the originality question *copied* five times; two "quotations" were our own text. Spend US$0.23 (day US$13.96). Record: `reviews/originality/2026-10-12-3.md`.
