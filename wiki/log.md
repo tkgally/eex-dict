@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] build | eleven adjectives open–patient
+
+Cycle 4 of the 04:43 run, the last (the four-cycle cap): eleven band-1 adjectives, *open*, *opposite*, *orange*, *outdoor*, *paid*, *painful*, *pale*, *part-time*, *particular*, *past*, *patient*, all `reviewed`; the twelfth claim, *other* (adj), was marked `duplicate` because `other-det` covers every use before a noun. 29 issues (22 blocking): 22 applied, 7 rejected. Main fixes: `open-adj` examples now fit their senses (*keep your options open*, *an open mind* dropped); learner errors in `opposite-adj`, `paid-adj`, `part-time-adj` moved off other parts of speech. `part-time-adj` IPA disputed (panel votes changed between calls; flag and curator line). Queue hyphen loss recurred on *part-time* ([note](notes/queue-hyphen-loss.md)): rows fixed by hand, stamped band stays 3. Back-links: `last-adj` mirror moved by hand; `past-adj`/`former-adj` made synonyms. Spend US$0.72.
+
 ## [2026-10-12] review | second reading of growth–highway
 
 Cycle 3 of the 04:43 run: a second panel round on the twelve oldest one-round entries, nouns from 2026-10-04: *growth*, *group*, *hat*, *hate*, *harm*, *health*, *hearing*, *height*, *heat*, *heart*, *help*, *highway*. 31 issues (22 blocking): 17 applied, 14 rejected, none escalated; *hate*, *harm*, *heart* came back clean. Main fixes: `group-n` now says both verb forms are common after *a group of* + plural noun; *block* and *team* dropped as synonyms of `group-n`, with both mirrors removed by hand (`block-n` sense 4, `team-n` sense 2); `hearing-n` sense 2 lost its *law* domain (public hearings); `help-n` says *a help* comes mostly, not only, after **be**. Rejected: *hard of hearing* kept under `hearing-n` (keyword fence), *health and safety* kept British (region fence), *a fear of heights* kept plural. Spend US$1.26.
