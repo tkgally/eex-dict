@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] originality | thirty-second check, no rewrites
+
+Cycle 2 of the 00:43 run (run 390, forced every tenth run). Ten sampled fields (`reviews/originality/2026-10-12.md`): eight sense or phrase definitions and two idiom definitions. Exact-phrase searches: six original, four generic overlaps (`hill-n` *over the hill*, `ground-n` sense 2, `nephew-n` sense 1, `bit-n` *love someone to bits*), no rewrites. reviewer-a answered *copied* for all ten, naming one learner's dictionary and quoting our own wording back; no search confirmed any, so search decides ([note](notes/reviewer-noise.md)). Spend US$0.02 (day US$0.87).
+
 ## [2026-10-12] build | twelve adjectives, long–mental
 
 Cycle 1 of the 00:43 run. Drafted, reviewed, and published twelve band-1 adjectives: *long*, *loose*, *loud*, *low*, *loyal*, *magic*, *major*, *male*, *married*, *mean*, *medical*, *mental*. All 24 transcriptions verified on the first pass. `inflect.py` first gave *loyaller*; a `comparative with more` code on `loyal-adj` (and on one sense each of *magic*, *married*, *mental*) fixed the forms. Reviewers raised 42 issues (34 blocking); 30 applied, 12 rejected, none escalated. Main fixes: `mean-adj` aggressive and mathematical senses redefined, *average* dropped as a synonym, an origin claim removed from its adaptation note; `male-adj` defined positively (to match `female-adj`); `major-adj` lost *attributive only* (both reviewers); `medical-adj` note now admits the noun *a medical*; a *cheap prices* learner error dropped from `low-adj`. Rejected: the British label on *mean with money* (the region fence); *keep the TV low* as an adverb; *tall* and *high* as opposites of *low*. Five definitions reworded after `lint_vocab` (*rank*, *pollen*, *aggressive*, *impressive*, *crazy*). Spend: US$0.85.
