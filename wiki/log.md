@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] review | second reading of growth–highway
+
+Cycle 3 of the 04:43 run: a second panel round on the twelve oldest one-round entries, nouns from 2026-10-04: *growth*, *group*, *hat*, *hate*, *harm*, *health*, *hearing*, *height*, *heat*, *heart*, *help*, *highway*. 31 issues (22 blocking): 17 applied, 14 rejected, none escalated; *hate*, *harm*, *heart* came back clean. Main fixes: `group-n` now says both verb forms are common after *a group of* + plural noun; *block* and *team* dropped as synonyms of `group-n`, with both mirrors removed by hand (`block-n` sense 4, `team-n` sense 2); `hearing-n` sense 2 lost its *law* domain (public hearings); `help-n` says *a help* comes mostly, not only, after **be**. Rejected: *hard of hearing* kept under `hearing-n` (keyword fence), *health and safety* kept British (region fence), *a fear of heights* kept plural. Spend US$1.26.
+
 ## [2026-10-12] build | twelve adjectives necessary–online
 
 Cycle 2 of the 04:43 run: twelve band-1 adjectives, *necessary*, *negative*, *nervous*, *new*, *next*, *nice*, *noisy*, *normal*, *obvious*, *odd*, *official*, *online*, all `reviewed`; all 24 transcriptions verified first time. 38 issues (29 blocking): 30 applied, 8 rejected, none escalated. Main fixes: `negative-adj` lost a false claim that every negative sentence needs **do** and a temperature example; `nervous-adj` moved *nervous energy* to the feeling sense; `next-adj` no longer calls *in the next week* wrong; `odd-adj` lost an *after the noun* code; `new-adj` dropped *news* from its family. Rejected: *next to nothing* kept under `next-adj` (keyword fence), the British label on *odd socks* (region fence). Back-links: `bad-adj` and `fine-adj` mirrors moved by hand; `next-adj`/`following-adj` made synonyms on both sides after a TYPE-MISMATCH. Spend US$0.84 for the cycle.
