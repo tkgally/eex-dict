@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] lint | sixty-seventh pass, one back-link pair moved, one pair made compare
+
+Cycle 1 of the 08:44 run, forced by the selector (five runs since the last lint). `crossref --all --apply` wrote fourteen back-links over the day's new adjectives; all checked by hand. Twelve were on the right sense; `official-adj`'s new mirrors of `formal-adj` (synonym) and `informal-adj` (antonym) were moved from sense 1 (government work) to sense 2 (done or agreed by people in authority), which is what those senses mean. A new TYPE-MISMATCH: `international-adj` named `national-adj` as an antonym, `national-adj` named it under compare; `national-adj` sense 1 contrasts a whole country with one part of it, so the pair is not opposite, and both sides are now `compare`. `alone-adj`/`lonely-adj` stays as recorded. Two open curator lines (*military*, *part-time* pronunciation) had landed below `## Resolved` again; moved up. Reviewer precision: no new switch-offs ([note](notes/reviewer-precision.md)). Index, notes, and open questions agree. No paid calls.
+
 ## [2026-10-12] build | eleven adjectives open–patient
 
 Cycle 4 of the 04:43 run, the last (the four-cycle cap): eleven band-1 adjectives, *open*, *opposite*, *orange*, *outdoor*, *paid*, *painful*, *pale*, *part-time*, *particular*, *past*, *patient*, all `reviewed`; the twelfth claim, *other* (adj), was marked `duplicate` because `other-det` covers every use before a noun. 29 issues (22 blocking): 22 applied, 7 rejected. Main fixes: `open-adj` examples now fit their senses (*keep your options open*, *an open mind* dropped); learner errors in `opposite-adj`, `paid-adj`, `part-time-adj` moved off other parts of speech. `part-time-adj` IPA disputed (panel votes changed between calls; flag and curator line). Queue hyphen loss recurred on *part-time* ([note](notes/queue-hyphen-loss.md)): rows fixed by hand, stamped band stays 3. Back-links: `last-adj` mirror moved by hand; `past-adj`/`former-adj` made synonyms. Spend US$0.72.
