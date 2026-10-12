@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] build | twelve adjectives positive–public
+
+Cycle 1 of the 12:44 run: twelve band-1 adjectives, *positive*, *possible*, *powerful*, *pregnant*, *present*, *pretty*, *previous*, *private*, *professional*, *proper*, *proud*, *public*, all `reviewed`; every transcription verified on the first pass. 38 issues (33 blocking): 27 applied, 11 rejected, none escalated. Main fixes: `pretty-adj` sense 2 is now *pleasant to look at or listen to* and its notes say *often* delicate, not always; `private-adj` sense 5 is *away from other people*, not *quiet*; `previous-adj` notes now allow counting from now except with words of time; `present-adj` grammar sense covers every present form; `public-adj` sense 2 is *people in general*. Rejected: *test positive* as a phrase collocation, the subject-restriction explanation on `pretty-adj` (house rule), *in public* as a noun (it lives in `public-n`). Back-links on `certain-adj`, `general-adj`, `official-adj`, `profession-n` all checked: right senses. `positive-adj` needed `not gradable` on its *certain* sense for `inflect.py`. Panel spend $0.94; day $8.64 of $15.
+
 ## [2026-10-12] originality | thirty-third check, one rewrite
 
 Cycle 4 of the 08:44 run (forced: run 400). Ten sampled fields, each searched as an exact phrase: six original (*thumbs up*, `negative-adj` sense 3, *your loss*, `damage-v`, `back-n` sense 4, *on the tip of your tongue*), three generic overlaps (`aim-v` sense 3, `try-v` sense 1, `do-v` sense 5). One rewrite: `lung-n` sense 1 followed a learner's dictionary's frame (*two organs in your chest that fill with air when you breathe*); it now reads *one of a pair of soft body parts behind the ribs that you use to take in air*, and the panel found no issues. reviewer-a, asked with reasoning off, answered *copied* for all ten by quoting our own text; set aside ([note](notes/reviewer-noise.md)). Checklist: `reviews/originality/2026-10-12-2.md`. Spend US$0.04.
