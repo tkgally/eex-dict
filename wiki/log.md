@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] lint | sixty-sixth pass, no changes needed
+
+Cycle 3 of the 00:43 run (forced: five runs since the last lint). Caps and links clean (507 pages). `crossref --all --apply` added four mirror cross-references on three entries built this morning (`major-adj` from *big* and *important*, `mean-adj` from *cheap*, `loose-adj` from *free*); each checked by hand and all sit on the right sense (*mean* not-generous, *loose* free). The known `alone-adj`/`lonely-adj` TYPE-MISMATCH stays. `lint_vocab --all --queue`: no violations, nothing queued. Three stale claim files pruned. Reviewer precision: no new switch-offs ([note](notes/reviewer-precision.md)). Index: every page listed; two catalog lines brought up to date. Open questions: two, both current. Curator file: no duplicates. `NEXT.md` said `deep-adj` had no entry; it has one, so the line was corrected. No spend.
+
 ## [2026-10-12] originality | thirty-second check, no rewrites
 
 Cycle 2 of the 00:43 run (run 390, forced every tenth run). Ten sampled fields (`reviews/originality/2026-10-12.md`): eight sense or phrase definitions and two idiom definitions. Exact-phrase searches: six original, four generic overlaps (`hill-n` *over the hill*, `ground-n` sense 2, `nephew-n` sense 1, `bit-n` *love someone to bits*), no rewrites. reviewer-a answered *copied* for all ten, naming one learner's dictionary and quoting our own wording back; no search confirmed any, so search decides ([note](notes/reviewer-noise.md)). Spend US$0.02 (day US$0.87).
