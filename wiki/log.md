@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] review | second reading of ground–guess
+
+Cycle 4 of the 00:43 run, the last (the four-cycle cap): a second panel round on the twelve oldest one-round entries, nouns from 2026-10-04: *ground*, *grandmother*, *habit*, *hall*, *handle*, *half*, *hair*, *guard*, *gun*, *guest*, *guide*, *guess*. 43 issues: 27 applied, 16 rejected, none escalated; *guide* and *guess* came back clean. Main fixes: `habit-n` sense 2 is now a need for a drug (the smoking example and collocation moved out), its notes no longer claim *of* + -ing is the only pattern; `half-n` sense 5 redefined without *pint* (named in its explanation), *the bigger half* example dropped; `gun-n` *shoot at* / *fire at* notes narrowed; `hall-n` core idea covers students' and town halls, *hall of fame* redefined; `guest-n` learner-error note softened. Rejected: four region labels kept by the fence (*thin on the ground*, *go halves*, *by a hair*, *hall* as a passage); the pointer from `half-n` to its other parts of speech. Spend: US$1.08 (day US$1.94).
+
 ## [2026-10-12] lint | sixty-sixth pass, no changes needed
 
 Cycle 3 of the 00:43 run (forced: five runs since the last lint). Caps and links clean (507 pages). `crossref --all --apply` added four mirror cross-references on three entries built this morning (`major-adj` from *big* and *important*, `mean-adj` from *cheap*, `loose-adj` from *free*); each checked by hand and all sit on the right sense (*mean* not-generous, *loose* free). The known `alone-adj`/`lonely-adj` TYPE-MISMATCH stays. `lint_vocab --all --queue`: no violations, nothing queued. Three stale claim files pruned. Reviewer precision: no new switch-offs ([note](notes/reviewer-precision.md)). Index: every page listed; two catalog lines brought up to date. Open questions: two, both current. Curator file: no duplicates. `NEXT.md` said `deep-adj` had no entry; it has one, so the line was corrected. No spend.
