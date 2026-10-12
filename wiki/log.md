@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] build | twelve adjectives necessary–online
+
+Cycle 2 of the 04:43 run: twelve band-1 adjectives, *necessary*, *negative*, *nervous*, *new*, *next*, *nice*, *noisy*, *normal*, *obvious*, *odd*, *official*, *online*, all `reviewed`; all 24 transcriptions verified first time. 38 issues (29 blocking): 30 applied, 8 rejected, none escalated. Main fixes: `negative-adj` lost a false claim that every negative sentence needs **do** and a temperature example; `nervous-adj` moved *nervous energy* to the feeling sense; `next-adj` no longer calls *in the next week* wrong; `odd-adj` lost an *after the noun* code; `new-adj` dropped *news* from its family. Rejected: *next to nothing* kept under `next-adj` (keyword fence), the British label on *odd socks* (region fence). Back-links: `bad-adj` and `fine-adj` mirrors moved by hand; `next-adj`/`following-adj` made synonyms on both sides after a TYPE-MISMATCH. Spend US$0.84 for the cycle.
+
 ## [2026-10-12] build | twelve adjectives messy–neat
 
 Cycle 1 of the 04:43 run: twelve band-1 adjectives, *messy*, *military*, *modern*, *monthly*, *musical*, *naked*, *narrow*, *national*, *natural*, *near*, *nearby*, *neat*, all `reviewed`. 39 issues (30 blocking): 31 applied, 8 rejected, none escalated. Main fixes: `monthly-adj` sense 2 is now *per month*, and sense 1 lost *attributive only*; `narrow-adj` sense 3 now covers *a narrow escape*; `near-adj` box and error notes no longer say plain **near** never goes before a noun. `nearby-adj` IPA changed to stress on *by* after the panel and CMU disagreed; `military-adj` British is disputed three ways (flag and curator line). The *near* adjective row of `schema/inflection-exceptions.json` lost a stray note about *next*. Five back-links moved by hand to the right sense (`false-adj`, `clever-adj`, `cool-adj`, `annual-adj`, `difficult-adj`). Spend US$0.81 for the cycle.
