@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] build | twelve adjectives messy–neat
+
+Cycle 1 of the 04:43 run: twelve band-1 adjectives, *messy*, *military*, *modern*, *monthly*, *musical*, *naked*, *narrow*, *national*, *natural*, *near*, *nearby*, *neat*, all `reviewed`. 39 issues (30 blocking): 31 applied, 8 rejected, none escalated. Main fixes: `monthly-adj` sense 2 is now *per month*, and sense 1 lost *attributive only*; `narrow-adj` sense 3 now covers *a narrow escape*; `near-adj` box and error notes no longer say plain **near** never goes before a noun. `nearby-adj` IPA changed to stress on *by* after the panel and CMU disagreed; `military-adj` British is disputed three ways (flag and curator line). The *near* adjective row of `schema/inflection-exceptions.json` lost a stray note about *next*. Five back-links moved by hand to the right sense (`false-adj`, `clever-adj`, `cool-adj`, `annual-adj`, `difficult-adj`). Spend US$0.81 for the cycle.
+
 ## [2026-10-12] review | second reading of ground–guess
 
 Cycle 4 of the 00:43 run, the last (the four-cycle cap): a second panel round on the twelve oldest one-round entries, nouns from 2026-10-04: *ground*, *grandmother*, *habit*, *hall*, *handle*, *half*, *hair*, *guard*, *gun*, *guest*, *guide*, *guess*. 43 issues: 27 applied, 16 rejected, none escalated; *guide* and *guess* came back clean. Main fixes: `habit-n` sense 2 is now a need for a drug (the smoking example and collocation moved out), its notes no longer claim *of* + -ing is the only pattern; `half-n` sense 5 redefined without *pint* (named in its explanation), *the bigger half* example dropped; `gun-n` *shoot at* / *fire at* notes narrowed; `hall-n` core idea covers students' and town halls, *hall of fame* redefined; `guest-n` learner-error note softened. Rejected: four region labels kept by the fence (*thin on the ground*, *go halves*, *by a hair*, *hall* as a passage); the pointer from `half-n` to its other parts of speech. Spend: US$1.08 (day US$1.94).
