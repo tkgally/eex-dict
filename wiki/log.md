@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] lint | sixty-ninth lint pass
+
+Cycle 1 of the 20:44 run, forced by five runs since the last lint. Caps, links (526 pages), vocabulary (0 violations in 2,262 entries), and the claim prune (four claim files) all clean. `crossref.py --all --apply` added 25 back-links in 18 entries from the adjective builds; seven sat on the wrong sense and were moved one by one (`quick-adj`, `real-adj`, `rich-adj`, `separate-adj`, three on `serious-adj`; [note](notes/crossref-first-sense-backlinks.md)). Reviewer precision: no new switch-offs; reviewer-a 0.72, reviewer-b 0.53 ([note](notes/reviewer-precision.md)). Index matches the pages; the curator file has no duplicates; both open questions still open. Spend: none (day total US$13.74 of 15). Next lint due in about five cycles.
+
 ## [2026-10-12] build | eleven adjectives secret–sick
 
 Cycle 4 of the 16:43 run: eleven band-1 adjectives, *secret*, *secure*, *sensible*, *sensitive*, *separate*, *serious*, *shallow*, *sharp*, *short*, *shy*, *sick*, all `reviewed`; all transcriptions verified. `second-adj` set `deferred` (ordinal uses belong to `second-num`, as for `first-adj`). 46 issues (38 blocking): 34 applied, 12 rejected. `sharp-adj` restructured (22 issues): direction change now subsense 2a, contrast subsense 5a, music split into sense 8 (named note) and sense 9 (too high). Rejected: reviewer-b's claims that *comparative with more* is not a grammar code and that *keep this secret* is a noun use. Three back-links moved by hand off sense 1 (`open-adj` to 4, `quick-adj` to 3, `cool-adj` to 4). Spend US$1.01; day US$13.74.
