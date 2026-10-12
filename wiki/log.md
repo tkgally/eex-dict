@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] lint | sixty-eighth pass
+
+Cycle 3 of the 12:44 run (forced: five runs since the last lint). Caps, links, and the vocabulary lint clean (0 definition violations in 2,215 entries; one row queued). `crossref --all --apply` added seven back-links in five entries; each was checked by hand. Two were wrong: it put `come-v` back into `income-n`'s word family because `come-v` still listed `income-n`, so the pair was removed on both sides (the review of 13:25 had dropped it from one side only); and the `personal-adj` mirror on `public-adj` was moved from sense 1 to sense 4 (*public life* against *private life*). The rest (`important-adj`, `commercial-adj`, `last-adj`, `old-adj`, `past-adj`) are on the right senses. No reviewer family switched off ([reviewer-precision](notes/reviewer-precision.md)). Two stale claim files pruned. `needs_curator.txt` has no duplicate lines; both open questions are still open. Unpaid.
+
 ## [2026-10-12] review | second reading of hotel–income
 
 Cycle 2 of the 12:44 run: the twelve oldest one-round entries, nouns from 2026-10-04 (*hotel*, *hour*, *humor*, *husband*, *ice*, *idea*, *illness*, *image*, *impact*, *importance*, *improvement*, *income*). 31 issues (24 blocking): 18 applied, 13 rejected, none escalated; *hotel* and *improvement* came back clean. Applied: `ice-n` sense 2 (the frozen sweet) now names sugar, is labelled American, compares `ice-cream-n` (queued), and the adaptation note no longer forbids *ices* outright; `illness-n` learner error replaced (*has been illness* to *has been ill*); `importance-n` both senses redefined; `income-n` lost `come-v` from its word family and a learner error that repeated the usage note; *after hours* example no longer about a bar. Rejected: reviewer-a's claim that British spells *humourous* (it is *humorous* in both); *no idea* as uncountable; *make little impact on* as ungrammatical. No back-links were added. Panel spend $0.75.
