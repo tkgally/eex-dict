@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] closure | five closure nouns, seven family verbs
+
+Cycle 3 of the 16:43 run: closure words *decoration*, *extra* (n), *oval* (n), *rib*, *sperm*, and family verbs *average*, *belittle*, *blacken*, *blind*, *brave*, *brief*, *brown*, all `reviewed`; all transcriptions verified. The closure row *ribs* was a plural: marked `duplicate`, `rib-n` claimed by hand. `sperm` plural added to `schema/inflection-exceptions.json` (*sperm*, also *sperms*). 39 issues (32 blocking): 29 applied, 10 rejected. Main fixes: `sperm-n` cut to one sense (the liquid is *semen*); British `decoration-n` subsense redefined as decorating work; `extra-n` film sense widened; `rib-n` raised line made subsense 3a. Rejected: reviewer-b's call for an intransitive pattern (none exists in the closed list). Vocabulary lint forced five rewordings. Back-links moved by hand: `addition-n` to sense 2, `avoid-v` to sense 2. Spend US$0.60; day US$12.73.
+
 ## [2026-10-12] build | twelve adjectives related–scientific
 
 Cycle 2 of the 16:43 run: twelve band-1 adjectives, *related*, *religious*, *rich*, *right*, *rough*, *round*, *rude*, *sad*, *safe*, *same*, *satisfied*, *scientific*, all `reviewed`; every transcription verified on the first pass. 43 issues (36 blocking): 24 applied, 19 rejected, none escalated. Main fixes: `round-adj` number sense redefined (a round number can be exact) and *exact* antonym dropped; `sad-adj` British informal sense 4 redefined; `rich-adj` food sense now opposes *plain*. Rejected: reviewer-a's claims that *get something right*, *that's right*, and *got home safe* are adverbs. Vocabulary lint forced `right-adj` sense 4 (no *east*/*north*) and `rude-adj` sense 2 (no *offensive*) rewordings. Three back-links moved by hand off sense 1 (`complete-adj` to 3, `deep-adj` to 7, `hard-adj` to 4). `same-pron` queued. Spend US$0.96; day US$12.13.
