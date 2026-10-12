@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] build | twelve adjectives related–scientific
+
+Cycle 2 of the 16:43 run: twelve band-1 adjectives, *related*, *religious*, *rich*, *right*, *rough*, *round*, *rude*, *sad*, *safe*, *same*, *satisfied*, *scientific*, all `reviewed`; every transcription verified on the first pass. 43 issues (36 blocking): 24 applied, 19 rejected, none escalated. Main fixes: `round-adj` number sense redefined (a round number can be exact) and *exact* antonym dropped; `sad-adj` British informal sense 4 redefined; `rich-adj` food sense now opposes *plain*. Rejected: reviewer-a's claims that *get something right*, *that's right*, and *got home safe* are adverbs. Vocabulary lint forced `right-adj` sense 4 (no *east*/*north*) and `rude-adj` sense 2 (no *offensive*) rewordings. Three back-links moved by hand off sense 1 (`complete-adj` to 3, `deep-adj` to 7, `hard-adj` to 4). `same-pron` queued. Spend US$0.96; day US$12.13.
+
 ## [2026-10-12] review | second reading of increase–iron
 
 Cycle 1 of the 16:43 run: the twelve oldest one-round entries, nouns from 2026-10-04 (*increase*, *industry*, *infection*, *influence*, *injury*, *insect*, *instrument*, *intelligence*, *intention*, *interest*, *internet*, *iron*). 25 issues (20 blocking): 16 applied, 9 rejected, none escalated; *industry* and *insect* clean. `iron-n` gained sense 3 (the golf club, from its usage note) and a core idea; `infection-n` senses 1 and 2 redefined; `instrument-n` lost its weapon example and *blunt instrument*; `intention-n`/`mind-n` synonym removed on both sides; italicized wrong forms removed from `influence-n` and `intelligence-n` adaptation notes. Rejected: reviewer-a's noun-phrase objection to *physical harm*, its *under the influence* narrowing claim. Panel run in the background (about nine minutes). Spend US$0.73; day US$11.17.
