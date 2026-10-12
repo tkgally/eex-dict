@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] review | second reading of increase–iron
+
+Cycle 1 of the 16:43 run: the twelve oldest one-round entries, nouns from 2026-10-04 (*increase*, *industry*, *infection*, *influence*, *injury*, *insect*, *instrument*, *intelligence*, *intention*, *interest*, *internet*, *iron*). 25 issues (20 blocking): 16 applied, 9 rejected, none escalated; *industry* and *insect* clean. `iron-n` gained sense 3 (the golf club, from its usage note) and a core idea; `infection-n` senses 1 and 2 redefined; `instrument-n` lost its weapon example and *blunt instrument*; `intention-n`/`mind-n` synonym removed on both sides; italicized wrong forms removed from `influence-n` and `intelligence-n` adaptation notes. Rejected: reviewer-a's noun-phrase objection to *physical harm*, its *under the influence* narrowing claim. Panel run in the background (about nine minutes). Spend US$0.73; day US$11.17.
+
 ## [2026-10-12] build | twelve adjectives pure–regular
 
 Cycle 4 of the 12:44 run: twelve band-1 adjectives, *pure*, *purple*, *quick*, *quiet*, *rare*, *raw*, *ready*, *real*, *reasonable*, *recent*, *red*, *regular*, all `reviewed`. American `real-adj` `ril` disputed by the panel (1/4) but CMU agrees: kept with the flag, as for `detail-n`. 54 issues (50 blocking): 40 applied, 14 rejected. Main fixes: `quiet-adj` sense 4 split into *private* and *small event*; `real-adj` sense 2 redefined, `realize-v` dropped from its family; `purple-adj` writing sense now *trying too hard to sound beautiful*; `raw-adj` codes removed so rules give *rawer*. Rejected: reviewer-b's *purpler* and *readier* (house *more* forms); *in the red* moved to a noun (keyword fence); the hair explanation on `red-adj` (house rule). Twelve back-links; four moved by hand to the right sense (`complete-adj` 3, `long-adj` 2, `new-adj` 1, `clean-adj` 3). Panel $1.03; day $10.43 of $15.
