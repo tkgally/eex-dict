@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] originality | thirty-fourth check, two rewrites
+
+Cycle 2 of the 20:44 run, forced (run 410). Ten sampled fields, each searched as an exact phrase: original 5, generic-overlap 3, rewrite 2. `spark-n` sense 3 ("a small amount of a feeling or a quality") was a learner's dictionary's wording reordered; now *a very small sign that a feeling or quality is there*. `town-n` *out of town* followed the same kind of dictionary's frame; now *not at home because you have gone to another city or area for a few days*. Panel on both: 7 issues, all reviewer-a; 4 applied (a phrase collocation on *spark*; *in town* redefined and dropped from the usage note), 3 rejected. reviewer-a answered the originality question *copied* five times; two "quotations" were our own text. Spend US$0.23 (day US$13.96). Record: `reviews/originality/2026-10-12-3.md`.
+
 ## [2026-10-12] lint | sixty-ninth lint pass
 
 Cycle 1 of the 20:44 run, forced by five runs since the last lint. Caps, links (526 pages), vocabulary (0 violations in 2,262 entries), and the claim prune (four claim files) all clean. `crossref.py --all --apply` added 25 back-links in 18 entries from the adjective builds; seven sat on the wrong sense and were moved one by one (`quick-adj`, `real-adj`, `rich-adj`, `separate-adj`, three on `serious-adj`; [note](notes/crossref-first-sense-backlinks.md)). Reviewer precision: no new switch-offs; reviewer-a 0.72, reviewer-b 0.53 ([note](notes/reviewer-precision.md)). Index matches the pages; the curator file has no duplicates; both open questions still open. Spend: none (day total US$13.74 of 15). Next lint due in about five cycles.
