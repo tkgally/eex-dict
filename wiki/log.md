@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-12] build | eleven adjectives secret–sick
+
+Cycle 4 of the 16:43 run: eleven band-1 adjectives, *secret*, *secure*, *sensible*, *sensitive*, *separate*, *serious*, *shallow*, *sharp*, *short*, *shy*, *sick*, all `reviewed`; all transcriptions verified. `second-adj` set `deferred` (ordinal uses belong to `second-num`, as for `first-adj`). 46 issues (38 blocking): 34 applied, 12 rejected. `sharp-adj` restructured (22 issues): direction change now subsense 2a, contrast subsense 5a, music split into sense 8 (named note) and sense 9 (too high). Rejected: reviewer-b's claims that *comparative with more* is not a grammar code and that *keep this secret* is a noun use. Three back-links moved by hand off sense 1 (`open-adj` to 4, `quick-adj` to 3, `cool-adj` to 4). Spend US$1.01; day US$13.74.
+
 ## [2026-10-12] closure | five closure nouns, seven family verbs
 
 Cycle 3 of the 16:43 run: closure words *decoration*, *extra* (n), *oval* (n), *rib*, *sperm*, and family verbs *average*, *belittle*, *blacken*, *blind*, *brave*, *brief*, *brown*, all `reviewed`; all transcriptions verified. The closure row *ribs* was a plural: marked `duplicate`, `rib-n` claimed by hand. `sperm` plural added to `schema/inflection-exceptions.json` (*sperm*, also *sperms*). 39 issues (32 blocking): 29 applied, 10 rejected. Main fixes: `sperm-n` cut to one sense (the liquid is *semen*); British `decoration-n` subsense redefined as decorating work; `extra-n` film sense widened; `rib-n` raised line made subsense 3a. Rejected: reviewer-b's call for an intransitive pattern (none exists in the closed list). Vocabulary lint forced five rewordings. Back-links moved by hand: `addition-n` to sense 2, `avoid-v` to sense 2. Spend US$0.60; day US$12.73.
