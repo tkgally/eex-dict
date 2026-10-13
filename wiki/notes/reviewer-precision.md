@@ -321,3 +321,7 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (6810/9477); `reviewer-b
 ## 2026-10-12: sixty-ninth lint pass, no new switch-offs
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (6939/9652); `reviewer-b` `ALL` 0.53 (1259/2367). `reviewer-b` `spelling-or-format` 0.28 (162/584), no new decisions; it stays live by the owner's ruling. `reviewer-b` `phrase` 0.33 (17/52). Upgraded reviewer-b, decisions from 2026-10-05 09:00: 249 applied of 496 (0.50); since the last pass 14 of 32 over four cycles (two builds, a review, and a closure). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, which the owner kept.
+
+## 2026-10-13: seventieth lint pass, no new switch-offs
+
+Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (7055/9812); `reviewer-b` `ALL` 0.53 (1275/2393). `reviewer-b` `spelling-or-format` 0.28 (163/585); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.32 (17/53), the nearest live pair to the line. Since the last pass reviewer-b had 16 of 24 applied over three cycles (two builds, one review), most of them adverb uses caught in adjective examples. No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, which the owner kept.
