@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-13] lint | seventieth lint pass
+
+Cycle 4 of the 00:44 run, forced by five runs since the last lint. Caps, links (533 pages), vocabulary (0 violations in 2,286 entries), and the claim prune (two claim files) all clean. `crossref.py --all --apply` added 17 back-links in 12 of the new adjectives; six sat on the wrong sense and were fixed by hand: `simple-adj` (*busy* to sense 2), `single-adj` (*divorced* to sense 3), `special-adj` (*general* to sense 2), `strict-adj` (*loose* to sense 3), `square-adj` (*round* to sense 1), and the `neat-adj`/`straight-adj` compare removed on both sides (*neat* drink sense; *straight* has no drink sense). Reviewer precision: no switch-offs; reviewer-a 0.72, reviewer-b 0.53 ([note](notes/reviewer-precision.md)). Index matches the pages; the curator file has no duplicates; both open questions still open. Spend: none (day total US$3.55 of 15). Next lint due in about five cycles.
+
 ## [2026-10-13] build | twelve adjectives, social to strict
 
 Cycle 3 of the 00:44 run. Twelve band-1 adjectives drafted and reviewed: *social*, *soft*, *solid*, *special*, *specific*, *spicy*, *spiritual*, *square*, *stiff*, *straight*, *strange*, *strict*. All 24 transcriptions verified first time; `special-adj`, `specific-adj`, and `spiritual-adj` needed `comparative with more` on every sense for `inflect.py`. Panel: 52 issues (46 blocking): 45 applied, 7 rejected, none escalated; *spiritual* came back clean. Adverb uses crept into examples three times (*sit up straight*, *acting strange*, the *bored stiff* note) and were removed or reduced to a pointer. `straight-adj` sense 6 relabeled (no `informal`, signpost *opposite sex*); `strange-adj` no longer suggests *foreign* for people. Back-links on `cool-adj` (to sense 4) and `direct-adj` (to sense 3) moved by hand. Spend US$1.04 (day US$3.55 of 15).
