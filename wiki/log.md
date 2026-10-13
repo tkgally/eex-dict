@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-13] review | lesson to love
+
+Cycle 4 of the 12:44 run (`20261013T131414Z-3vvjdp`): second panel round on the sixteen oldest one-round entries, `lesson-n` to `love-n` (the 2026-10-05 04:51 and 05:16 batches). 32 issues (22 blocking): 21 applied, 11 rejected, none escalated. `library-n`, `life-n`, `light-n` came back clean. Main changes: `lot-n` *the lot* now mainly British, with American *the whole lot*; `love-n` term-of-address explanation and culture note no longer generalize about older people; `lift-n` ski-lift sense covers small cars; `level-n` class example made natural; `look-n` face example moved to sense 2; `loss-n` money use now *sell something at a loss*. Rejected: reviewer-b's two flags on `lot-n` phrase definitions (already base-form verb phrases), `thumb a lift` placement (keyword rule), the British label on `lift-n` (region fence). No back-links added. Spend US$1.70 (day US$9.97 of 15).
+
 ## [2026-10-13] build | twelve adjectives, used to wet
 
 Cycle 3 of the 12:44 run (`20261013T125514Z-3vvjdp`): `used`, `useful`, `useless`, `usual`, `violent`, `visible`, `warm`, `weak`, `wealthy`, `weekly`, `well`, `wet`. All 24 transcriptions verified first time; `well-adj` takes **better**, **best** from the exceptions table. Panel: 24 issues (17 blocking): 16 applied, 8 rejected, none escalated; reviewer-b truncated on `weak-adj` and was re-run (complete, no issues). Main changes: `violent-adj` sense 3 widened to strong feelings (*violent argument* dropped), `weak-adj` senses 4, 5, 8 redefined, four synonym-discrimination notes corrected. The *used to* sound (*YOOST*) is in the pronunciation note, not a sense-level transcription: `pronounce_check.py` does not check sense-level fields. Queued `usual-n`, `weekly-adv`, `weekly-n`. Back-links on `clear-adj` (to sense 2), `good-adj` (sense 2), `strong-adj` (sense 3) moved by hand. Spend US$0.95 (day US$8.26 of 15).
