@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-13] build | twelve adjectives, used to wet
+
+Cycle 3 of the 12:44 run (`20261013T125514Z-3vvjdp`): `used`, `useful`, `useless`, `usual`, `violent`, `visible`, `warm`, `weak`, `wealthy`, `weekly`, `well`, `wet`. All 24 transcriptions verified first time; `well-adj` takes **better**, **best** from the exceptions table. Panel: 24 issues (17 blocking): 16 applied, 8 rejected, none escalated; reviewer-b truncated on `weak-adj` and was re-run (complete, no issues). Main changes: `violent-adj` sense 3 widened to strong feelings (*violent argument* dropped), `weak-adj` senses 4, 5, 8 redefined, four synonym-discrimination notes corrected. The *used to* sound (*YOOST*) is in the pronunciation note, not a sense-level transcription: `pronounce_check.py` does not check sense-level fields. Queued `usual-n`, `weekly-adv`, `weekly-n`. Back-links on `clear-adj` (to sense 2), `good-adj` (sense 2), `strong-adj` (sense 3) moved by hand. Spend US$0.95 (day US$8.26 of 15).
+
 ## [2026-10-13] lint | seventy-first lint pass
 
 Cycle 2 of the 12:44 run (`20261013T125149Z-3vvjdp`). Caps, links (540 pages), and the defining-vocabulary lint over all 2,315 entries clean. `crossref --all --apply` added six back-links on four entries: four in the right place; on `strong-adj` the *healthy* mirror moved by hand from sense 1 (body) to sense 7 (successful) and the *stiff* mirror to sense 4 (a lot of it: a strong drink). Three finished claim files pruned. Precision: no new switch-offs; reviewer-b `phrase` 0.32 (18/57), nearest to the line. Index lists every page; the two open questions stand. Cycle 1 had re-added three `prune-branch` lines for `claude/wonderful-bardeen-*` branches already listed on 2026-10-10 and -11 (its duplicate check missed lines with a colon after the name); the duplicates were removed. No spend (day US$7.32 of 15).
