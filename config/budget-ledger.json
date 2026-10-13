@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-10-13",
-  "spent_usd": 7.163834,
+  "spent_usd": 7.31518,
   "calls": [
     {
       "ts": "2026-10-13T00:49:41Z",
@@ -1749,6 +1749,51 @@
       "cost_usd": 0.028896,
       "tokens_in": 3054,
       "tokens_out": 1899
+    },
+    {
+      "ts": "2026-10-13T12:45:25Z",
+      "run_id": "20261013T124415Z-3vvjdp",
+      "purpose": "originality",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.003202,
+      "tokens_in": 347,
+      "tokens_out": 209
+    },
+    {
+      "ts": "2026-10-13T12:46:12Z",
+      "run_id": "20261013T124415Z-3vvjdp",
+      "purpose": "review:public-adj:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.034589,
+      "tokens_in": 4092,
+      "tokens_out": 2030
+    },
+    {
+      "ts": "2026-10-13T12:46:53Z",
+      "run_id": "20261013T124415Z-3vvjdp",
+      "purpose": "review:public-adj:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.065764,
+      "tokens_in": 4430,
+      "tokens_out": 4742
+    },
+    {
+      "ts": "2026-10-13T12:47:01Z",
+      "run_id": "20261013T124415Z-3vvjdp",
+      "purpose": "review:deliberately-adv:reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.018383,
+      "tokens_in": 3319,
+      "tokens_out": 1088
+    },
+    {
+      "ts": "2026-10-13T12:47:19Z",
+      "run_id": "20261013T124415Z-3vvjdp",
+      "purpose": "review:deliberately-adv:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.029408,
+      "tokens_in": 3538,
+      "tokens_out": 1861
     }
   ],
   "history": {
