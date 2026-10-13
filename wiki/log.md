@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-13] review | issue to kitchen
+
+Cycle 2 of the 00:44 run: a second panel round for the seventeen oldest one-round entries, the 2026-10-04 21:05 and 2026-10-05 00:48 batches (*issue*, *item*, *jacket*, *jail*, *job*, *joke*, *journey*, *joy*, *judge*, *judgment*, *juice*, *justice*, *key*, *keyboard*, *kind*, *king*, *kitchen*). 47 issues (39 blocking): 24 applied, 23 rejected, none escalated. Fixed: `judge-n` sense 3 (deciding well how good or true), `juice-n` sense 3 (electric power or fuel), `justice-n` sense 2, `king-n` sense 2, `jacket-n` potato sense labeled British and *life jacket* dropped, `kind-n` *respond in kind* no longer circular; `joke-n`/`crack-n` compare removed on both sides. `kind-n` *kind of* stays under the noun by the keyword fence (both reviewers wanted an adverb entry). Three entries came back clean. Spend US$1.42 (day US$2.51 of 15).
+
 ## [2026-10-13] build | twelve adjectives, silent to smooth
 
 Cycle 1 of the 00:44 run. Twelve band-1 adjectives drafted and reviewed: *silent*, *silly*, *silver*, *similar*, *simple*, *single*, *skilled*, *slim*, *slow*, *small*, *smart*, *smooth*. All 24 transcriptions verified on the first pass; `silent-adj` and `skilled-adj` needed a `comparative with more` code on every sense before `inflect.py` would decide. Panel: 60 issues (54 blocking): 49 applied, 11 rejected, none escalated. Most work fell on `simple-adj` (15 issues: the *simple life* sense redefined as modest, the *simple truth* sense reworded, the grammar sense now contrasts only with continuous forms) and `small-adj` (12: business and *feel small* senses redefined). Rejected: `offensive` called an attitude (it is a register value), two region labels on `smart-adj` (region fence), `smoothie-n` as family. Back-links on `busy-adj` and `serious-adj` moved by hand to sense 3; `single-adj`/`one-num` synonym dropped. Spend US$1.10 (day US$1.10 of 15).
