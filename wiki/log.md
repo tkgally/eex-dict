@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-13] build | twelve adjectives, silent to smooth
+
+Cycle 1 of the 00:44 run. Twelve band-1 adjectives drafted and reviewed: *silent*, *silly*, *silver*, *similar*, *simple*, *single*, *skilled*, *slim*, *slow*, *small*, *smart*, *smooth*. All 24 transcriptions verified on the first pass; `silent-adj` and `skilled-adj` needed a `comparative with more` code on every sense before `inflect.py` would decide. Panel: 60 issues (54 blocking): 49 applied, 11 rejected, none escalated. Most work fell on `simple-adj` (15 issues: the *simple life* sense redefined as modest, the *simple truth* sense reworded, the grammar sense now contrasts only with continuous forms) and `small-adj` (12: business and *feel small* senses redefined). Rejected: `offensive` called an attitude (it is a register value), two region labels on `smart-adj` (region fence), `smoothie-n` as family. Back-links on `busy-adj` and `serious-adj` moved by hand to sense 3; `single-adj`/`one-num` synonym dropped. Spend US$1.10 (day US$1.10 of 15).
+
 ## [2026-10-12] review | island to visitor
 
 Cycle 3 of the 20:44 run: a second panel round for the thirteen oldest one-round entries, *island* and the 2026-10-04 20:47 batch (*according to*, *apple*, *banana*, *bicycle* (v), *bike* (v), *bill* (v), *blanket* (v), *block* (v), *coal*, *setting*, *tube*, *visitor*). 20 issues (16 blocking): 10 applied, 10 rejected, none escalated. Fixed: `island-n` road sense (often raised; example says *traffic island*) and kitchen sense (furniture with cupboards and a flat top); `blanket-v` lost *thick* and now collocates *blanketed in fog*; `block-v` sense 1 is one transitive verb phrase; `visitor-n` website sense and core idea. Five entries came back clean. Spend US$0.83; the day stands at US$14.79 of 15, under the US$0.50 floor, so the run ends after this cycle.
