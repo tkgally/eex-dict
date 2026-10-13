@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-13] lint | seventy-first lint pass
+
+Cycle 2 of the 12:44 run (`20261013T125149Z-3vvjdp`). Caps, links (540 pages), and the defining-vocabulary lint over all 2,315 entries clean. `crossref --all --apply` added six back-links on four entries: four in the right place; on `strong-adj` the *healthy* mirror moved by hand from sense 1 (body) to sense 7 (successful) and the *stiff* mirror to sense 4 (a lot of it: a strong drink). Three finished claim files pruned. Precision: no new switch-offs; reviewer-b `phrase` 0.32 (18/57), nearest to the line. Index lists every page; the two open questions stand. Cycle 1 had re-added three `prune-branch` lines for `claude/wonderful-bardeen-*` branches already listed on 2026-10-10 and -11 (its duplicate check missed lines with a colon after the name); the duplicates were removed. No spend (day US$7.32 of 15).
+
 ## [2026-10-13] originality | thirty-fifth check, two rewrites
 
 Cycle 1 of the 12:44 run (run id `20261013T124415Z-3vvjdp`). Ten sampled fields: original 6, generic-overlap 2 (*butter* v, *exchange* n), rewrite 2. Search showed `public-adj` sense 2 (*connected with people in general*) trimmed from a learner's dictionary's wording, and `deliberately-adv` sense 1 following a learner's dictionary frame (*in a way that is planned or intended*); both rewritten. Panel on the two: `deliberately-adv` clean; `public-adj` 12 issues (11 blocking): 1 applied (sense 3, government, redefined), 11 rejected (synonym, antonym, *public figure*, the noun-pointer usage note and learner error), none escalated. reviewer-a answered *copied* eight times, quoting our own text back; search decided. Three fully absorbed `claude/wonderful-bardeen-*` branches listed for pruning. Spend US$0.15 (day US$7.32 of 15).
