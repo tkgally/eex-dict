@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-13] build | twelve adjectives, social to strict
+
+Cycle 3 of the 00:44 run. Twelve band-1 adjectives drafted and reviewed: *social*, *soft*, *solid*, *special*, *specific*, *spicy*, *spiritual*, *square*, *stiff*, *straight*, *strange*, *strict*. All 24 transcriptions verified first time; `special-adj`, `specific-adj`, and `spiritual-adj` needed `comparative with more` on every sense for `inflect.py`. Panel: 52 issues (46 blocking): 45 applied, 7 rejected, none escalated; *spiritual* came back clean. Adverb uses crept into examples three times (*sit up straight*, *acting strange*, the *bored stiff* note) and were removed or reduced to a pointer. `straight-adj` sense 6 relabeled (no `informal`, signpost *opposite sex*); `strange-adj` no longer suggests *foreign* for people. Back-links on `cool-adj` (to sense 4) and `direct-adj` (to sense 3) moved by hand. Spend US$1.04 (day US$3.55 of 15).
+
 ## [2026-10-13] review | issue to kitchen
 
 Cycle 2 of the 00:44 run: a second panel round for the seventeen oldest one-round entries, the 2026-10-04 21:05 and 2026-10-05 00:48 batches (*issue*, *item*, *jacket*, *jail*, *job*, *joke*, *journey*, *joy*, *judge*, *judgment*, *juice*, *justice*, *key*, *keyboard*, *kind*, *king*, *kitchen*). 47 issues (39 blocking): 24 applied, 23 rejected, none escalated. Fixed: `judge-n` sense 3 (deciding well how good or true), `juice-n` sense 3 (electric power or fuel), `justice-n` sense 2, `king-n` sense 2, `jacket-n` potato sense labeled British and *life jacket* dropped, `kind-n` *respond in kind* no longer circular; `joke-n`/`crack-n` compare removed on both sides. `kind-n` *kind of* stays under the noun by the keyword fence (both reviewers wanted an adverb entry). Three entries came back clean. Spend US$1.42 (day US$2.51 of 15).
