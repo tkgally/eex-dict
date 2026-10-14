@@ -329,3 +329,7 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (7055/9812); `reviewer-b
 ## 2026-10-13: seventy-first lint pass, no new switch-offs
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (7146/9937); `reviewer-b` `ALL` 0.53 (1284/2417). `reviewer-b` `spelling-or-format` 0.28 (163/585); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.32 (18/57), still the nearest live pair to the line. Since the last pass reviewer-b had 9 of 24 applied over four cycles (two builds, a review, a closure) and the originality cycle's panel (3 rejected on *public*). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, which the owner kept.
+
+## 2026-10-14: seventy-second lint pass, no new switch-offs
+
+Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (7263/10088); `reviewer-b` `ALL` 0.53 (1296/2446). `reviewer-b` `spelling-or-format` 0.28 (163/585); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.32 (18/57), still the nearest live pair to the line. In this run's three cycles reviewer-b had 11 of 26 applied (two builds and one review; 1 of 7 on the review). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, which the owner kept.
