@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-14] build | twelve adverbs, abroad to anywhere
+
+Cycle 3 of the 00:44 run (`20261014T012309Z-5i4a71`): the first band-1 adverbs in queue order: `abroad`, `absolutely`, `across`, `after`, `again`, `all`, `almost`, `alone`, `already`, `also`, `always`, `anywhere`. All 24 transcriptions verified (`again` British 2/3; the *rain* rhyme is a pronunciation variant). Panel: 44 issues (35 blocking): 38 applied, 6 rejected, none escalated; `absolutely` and `always` clean. Main changes: `alone-adv` lost its *only* sense (`alone-adj` sense 3 already holds *Sara alone knew*); absolute claims softened in `almost` (*nearly no*, *not almost*), `again` (medial *again* is formal, not wrong; that learner error removed), `already` (new *yet*-for-*already* error), `anywhere` (range use no longer American or informal). `all-adv` holds *at all*, *all in all*, *all along*, *all over*, *all but*, as `all-det` points. Seven back-links added, all checked and right. Spend US$0.75 (day US$2.75 of 15).
+
 ## [2026-10-14] review | lip to bubble
 
 Cycle 2 of the 00:44 run (`20261014T010740Z-5i4a71`): second panel round on the eighteen oldest one-round entries, `lip-n` to `lock-n` (2026-10-05 05:16) and the family verbs `alike-adj` to `bubble-v` (05:27). Before the panel: `liver-n` sense 2 no longer uses the headword in its definition; `bomb-v` gained a usage note on British *go down a bomb*. 30 issues (23 blocking): 17 applied, 13 rejected, none escalated. `list-n` came back clean. Main changes: `liver-n` sense 1, `load-n` sense 4, `bridge-v` sense 2, `bubble-v` sense 2, `book-v` sense 3 redefined; `lock-n` phone-lock subsense covers passwords and faces; `bomb-v` American label now only on the test subsense; `alike` adverb note says *equally*. Rejected: a `literary` label on all of `lock-n` sense 3 (only plural *locks* is), reviewer-b's two flags on one-clause phrasal-verb pointers (house practice), `brainstorm-v`/`brain-n` family link (mirrored). Spend US$1.12 (day US$2.00 of 15).
