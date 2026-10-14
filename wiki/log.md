@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-14] build | twelve adjectives, white to young
+
+Cycle 1 of the 00:44 run (`20261014T004427Z-5i4a71`): `white`, `whole`, `wide`, `wild`, `wise`, `wonderful`, `worried`, `worth`, `written`, `wrong`, `yellow`, `young`. All 24 transcriptions verified first time; all inflections from the rules or the exceptions table. Panel: 53 issues (41 blocking): 37 applied, 16 rejected, none escalated. Main changes: `white-adj` people sense now *a group of people who have light skin*, with a note that the group depends on society and time; `whole-adj` sense 2 lost the depictive *swallow it whole* examples (both reviewers called them adverbs); `wonderful-adj` no longer calls *very wonderful* wrong; `young-adj` senses 2 and 3 redefined. Rejected: `wild-adj` storm sense kept (standard), `wide-adj`/`narrow-adj` antonym kept, the *the whole of* noun pointer kept, reviewer-b's nonexistent *usually before noun* code. Return links set by hand before crossref; four back-links checked, all on the right sense. Spend US$0.89 (day US$0.89 of 15).
+
 ## [2026-10-13] review | lesson to love
 
 Cycle 4 of the 12:44 run (`20261013T131414Z-3vvjdp`): second panel round on the sixteen oldest one-round entries, `lesson-n` to `love-n` (the 2026-10-05 04:51 and 05:16 batches). 32 issues (22 blocking): 21 applied, 11 rejected, none escalated. `library-n`, `life-n`, `light-n` came back clean. Main changes: `lot-n` *the lot* now mainly British, with American *the whole lot*; `love-n` term-of-address explanation and culture note no longer generalize about older people; `lift-n` ski-lift sense covers small cars; `level-n` class example made natural; `look-n` face example moved to sense 2; `loss-n` money use now *sell something at a loss*. Rejected: reviewer-b's two flags on `lot-n` phrase definitions (already base-form verb phrases), `thumb a lift` placement (keyword rule), the British label on `lift-n` (region fence). No back-links added. Spend US$1.70 (day US$9.97 of 15).
