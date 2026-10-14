@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-14] lint | seventy-second lint pass
+
+Cycle 4 of the 00:44 run (forced: five cycles since the last pass). Caps, links (546 pages), `lint_vocab --all --queue` (0 violations, nothing queued) clean; three spent claim files pruned. `crossref --all --apply` added no back-links but reported three TYPE-MISMATCH groups among the adjectives of 2026-10-11 to 13, each settled on the older side: `single-adj` sense 4 now compares `double-adj`; `previous-adj` compares `following-adj`; `present-adj` names `former-adj`, `past-adj`, `future-adj` as antonyms (senses 2 and 4). The known `alone-adj`/`lonely-adj` pair stays. Precision: no new switch-offs ([note](notes/reviewer-precision.md)). Index: the reviewer-precision line still said sixty-ninth pass; corrected. Open questions (two) and curator file: current, no duplicates. Contradiction left for a review: `black-adj` sense 2 says *a race of people*, `white-adj` sense 3 now says *a group of people*. No spend.
+
 ## [2026-10-14] build | twelve adverbs, abroad to anywhere
 
 Cycle 3 of the 00:44 run (`20261014T012309Z-5i4a71`): the first band-1 adverbs in queue order: `abroad`, `absolutely`, `across`, `after`, `again`, `all`, `almost`, `alone`, `already`, `also`, `always`, `anywhere`. All 24 transcriptions verified (`again` British 2/3; the *rain* rhyme is a pronunciation variant). Panel: 44 issues (35 blocking): 38 applied, 6 rejected, none escalated; `absolutely` and `always` clean. Main changes: `alone-adv` lost its *only* sense (`alone-adj` sense 3 already holds *Sara alone knew*); absolute claims softened in `almost` (*nearly no*, *not almost*), `again` (medial *again* is formal, not wrong; that learner error removed), `already` (new *yet*-for-*already* error), `anywhere` (range use no longer American or informal). `all-adv` holds *at all*, *all in all*, *all along*, *all over*, *all but*, as `all-det` points. Seven back-links added, all checked and right. Spend US$0.75 (day US$2.75 of 15).
