@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-15] build | twelve adverbs, downstairs to everywhere
+
+Cycle 3 of the 00:43 run (`20261015T010338Z-p9d6ya`): band-1 adverbs in queue order: `downstairs`, `early`, `easily`, `effectively`, `either`, `else`, `enough`, `especially`, `even`, `eventually`, `ever`, `everywhere`. All 24 transcriptions verified first time; `early` comparatives come from the exceptions table. Panel: 28 issues (21 blocking): 20 applied, 8 rejected, none escalated. reviewer-b's reply on `ever-adv` was empty and was re-run (0 issues). Main fixes: `easily-adv` sense 2 is *with little cause*, not *quickly*, and informal American *easy* after verbs is now named; `enough-adv` sense 2 is an acceptable degree, not a low one; `either-adv` explanation reworded; `else-adv` definition in the *used after* formula; `even-adv` *still* moved to compare. Rejected: `everywhere-adv` *in a lot of places* (a real use), the noun `downstairs-n` in the family. Back-link: `always-adv` sense 1 gained `ever-adv`. Spend US$0.70. Next adverb after *everywhere* in queue order.
+
 ## [2026-10-15] lint | seventy-third lint pass
 
 Cycle 2 of the 00:43 run (`20261015T005958Z-p9d6ya`), forced by five cycles since the last lint. Mechanical checks clean: caps, links, unit tests. `crossref --all --apply` added six back-links (`basically-adv`, `briefly-adv`, `carefully-adv`, `completely-adv`, `deeply-adv`, `directly-adv`); the `deliberately-adv` synonym on `carefully-adv` landed on sense 1 and was moved by hand to sense 2 (*with attention*). One TYPE-MISMATCH (`lonely-adj` compare, `alone-adj` synonym) left as is: the two sides are different senses of `alone-adj`. `claim.py --prune` removed two claim files. Reviewer precision: no live pair newly under 30 percent; eight disabled pairs unchanged. Index lists every page. `NEXT.md` corrected: `deeply-adv` and `definitely-adv` exist, `black-adj` was already aligned, two open questions remain open. No spend.
