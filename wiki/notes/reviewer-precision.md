@@ -337,3 +337,7 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (7263/10088); `reviewer-
 ## 2026-10-15: seventy-third lint pass, no new switch-offs
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (7357/10240); `reviewer-b` `ALL` 0.53 (1300/2461). `reviewer-b` `spelling-or-format` 0.28 (163/585); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (18/59; two `meal-n` rejections on 2026-10-15), still the nearest live pair to the line. No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, which the owner kept.
+
+## 2026-10-15: seventy-fourth lint pass, no new switch-offs
+
+Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (7472/10412); `reviewer-b` `ALL` 0.53 (1314/2476). `reviewer-b` `spelling-or-format` 0.28 (164/586); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (18/59), still the nearest live pair to the line. In this run's three cycles reviewer-b had 4 of 5 applied (one review, one closure, one build). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, which the owner kept.
