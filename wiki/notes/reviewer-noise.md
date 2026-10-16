@@ -95,3 +95,5 @@ This is a third, different shape of the same underlying pattern (see the two ent
 **2026-10-13 check (thirty-fifth).** reviewer-a, reasoning off, ten fields in one prompt: *copied* eight times, all naming the same learner's dictionary and "quoting" our own text back. Search confirmed two frames (*public* sense 2, *deliberately*), both rewritten; search still decides.
 
 **2026-10-14 check (thirty-sixth).** reviewer-a, reasoning off: *copied* seven times. This time it quoted wording other than our own, but search found none of five quotes; for *as always* it named the right dictionary and the wrong headword (the wording is that dictionary's **usually**), and for *play* its quote was close to a real frame. Two rewrites; search still decides.
+
+**2026-10-16 check (thirty-seventh).** reviewer-a, reasoning off: no *copied* answers at all (original 3, cannot tell 7). Search found one real case it missed: `research-n` sense 1 followed a learner's dictionary's wording, now rewritten. Silence from the reviewer is no evidence of originality; search still decides.

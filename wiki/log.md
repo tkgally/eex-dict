@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-16] originality | thirty-seventh originality check, one rewrite
+
+Cycle 1 of the 00:44 run (`20261016T004414Z-9rfk2s`), forced at run 440. Ten fields sampled (`reviews/originality/2026-10-16.md`): original 8, generic overlap 1 (`court-n` sense 1), rewrite 1. `research-n` sense 1 was a learner's dictionary's wording with two words changed; now *organized work in which someone studies a subject closely, by reading, testing, or asking questions, to learn more than is already known about it*. Panel on `research-n`: reviewer-a 1 blocking (*decide something* called ungrammatical; rejected), reviewer-b 1 blocking (no plural in the script-owned inflections against the rare-plural note; rejected). reviewer-a answered no *copied* this time and missed the real case ([note](notes/reviewer-noise.md)). Spend about US$0.07. Next originality check due at run 450.
+
 ## [2026-10-15] lint | seventy-fourth lint pass
 
 Cycle 4 of the 12:43 run (`20261015T133009Z-xeqhmd`), forced by five cycles since the last lint. Mechanical checks clean: caps, links, unit tests. `crossref --all --apply` added two back-links, both on the right sense (`forward-adv` sense 1 antonym `back-adv`; `downstairs-adv` family `down-adv`). The `lonely-adj`/`alone-adj` TYPE-MISMATCH stays as settled on 2026-10-15. `lint_vocab --all --queue` ran; `claim.py --prune` removed four claim files. Queue row *good morning* (phr) marked duplicate: the phrase lives under `morning-n` by the keyword rule (raised by this run's review). Reviewer precision: no live pair newly under 30 percent; eight disabled pairs unchanged. Index lists every page; no duplicate lines in `reviews/needs_curator.txt`; both open questions still open. No spend.
