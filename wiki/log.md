@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-16] lint | seventy-fifth lint pass
+
+The mechanical checks all pass: caps, links, the vocabulary queue (nothing new queued), and two spent claim files pruned. `crossref --all --apply` added one back-link, `near-prep` to the word family of `nearly-adv`, which is right (the family box is entry level). The known TYPE-MISMATCH (`lonely-adj` and `alone-adj`) stays as is, for the reason the seventy-third pass gave. Reviewer precision: no live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, kept by the owner's ruling; `reviewer-b` `phrase` stays the nearest at 0.31. The wiki index matches the pages; the log has no gaps since the last pass; the two open questions are still open; `reviews/needs_curator.txt` has no duplicate lines. No spend.
+
 ## [2026-10-16] review | niece to officer, and five 2026-10-06 verbs and nouns, second round
 
 Twenty one-round entries (`niece-n` to `officer-n`, `bug-v`, `bus-v`, `butter-v`, `capitalize-v`, `history-n`) went to both reviewers again. reviewer-a raised 30 issues (16 applied, 14 rejected); reviewer-b raised 1, rejected (it called the definition fine in its own reason). Applied: `nut-n` sense 2 (the bolt now described correctly), `object-n` grammar sense adds clauses, `novel-n` learner error and usage note (*a nonfiction book*), `nurse-n` childcare collocations removed (old-fashioned label kept), `history-n` *be history* one phrasal definition with the person use in an explanation, `capitalize-v` redundant explanation removed. Rejected: *follow your nose* (go straight ahead is real), *on the nose* American label (house fence). Added by hand: *keep your nose to the grindstone*, a semantic adaptation note on `niece-n`, plain pronunciation notes on fifteen entries. No back-links created. Spend about US$1.51; the day stands at about US$4.67.
