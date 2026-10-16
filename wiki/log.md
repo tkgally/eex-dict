@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-16] review | do (auxiliary) and motor to network
+
+Cycle 3 of the 00:44 run (`20261016T010621Z-9rfk2s`): second panel round on the twenty oldest one-round entries, `do-aux` and *motor*–*network* (nouns). reviewer-a 36 issues, reviewer-b 2 (both on `motor-n`); 21 applied, 15 rejected. `do-aux` sense 4 and core idea now say *a verb and the words after it*; `motor-n` engine/motor contrast corrected; `murder-n` *commit* no longer the only verb; `need-n` sense 3 narrowed to poverty; `musician-n`/`musical-adj` compare removed on both sides; `nerve-n` *bottle* synonym noted British. Rejected: *the movies* stays American (region fence); *school*/*movement* compare kept. Added by hand: *the name of the game* (`name-n`), *risk your neck* (`neck-n`), pronunciation notes on five entries. Spend about US$1.45.
+
 ## [2026-10-16] build | twelve adverbs, largely to most
 
 Cycle 2 of the 00:44 run (`20261016T004925Z-9rfk2s`): band-1 adverbs in queue order: `largely`, `last`, `late`, `later`, `least`, `left`, `less`, `mainly`, `maybe`, `merely`, `more`, `most`. All 24 transcriptions verified first time; `late` comparatives from the exceptions table, the rest `not gradable`. Panel: reviewer-a 24 issues (20 blocking), reviewer-b 5 (all on *late*); 15 applied, 14 rejected. Rejected: *at last* and *at least* belong to the adjective and determiner entries (keyword fence); *running late* is an adverb use; *more clearer* is not standard. Applied: `more-adv` sense 2 was circular, sense 3 no longer offers *no more*, phrase recast as *more than* (+ adjective); `most-adv` *almost* sense widened; signposts on the four degree words now say *adjectives and adverbs*. `merely-adv` back-link moved by hand to `just-adv` sense 3. Spend about US$0.79.
