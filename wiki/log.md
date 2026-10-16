@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-16] build | twelve adverbs, nowhere to over
+
+Twelve band-1 adverbs drafted and reviewed: *nowhere, obviously, off, often, okay, on, once, only, otherwise, out, outside, over*. All 24 transcriptions verified (`outside-adv` American 3/4, CMU disagreeing on stress; kept). reviewer-a raised 76 issues (56 applied, 20 rejected); reviewer-b 4, all applied (an adjective use mentioned in `otherwise-adv`, the prepositional *off of* error in `off-adv`, a before-noun stress note on `outside-adv`). reviewer-b's first reply on `only-adv` was empty and needed a solo re-run. Rejected: phrasal-verb pairs as verb + adverb collocations (house practice, as in `down-adv`); *be on* (working) and *be over* (finished) stay adjective uses; *start over* and *cold out* keep American labels. Eight back-links added, all on the right sense. Queued: `okay-adj`, `off-adj`, `on-adj`, `outer-adj`, `overly-adv`, `all-right-adv`. Spend about US$1.09; the day stands at about US$5.76.
+
 ## [2026-10-16] lint | seventy-fifth lint pass
 
 The mechanical checks all pass: caps, links, the vocabulary queue (nothing new queued), and two spent claim files pruned. `crossref --all --apply` added one back-link, `near-prep` to the word family of `nearly-adv`, which is right (the family box is entry level). The known TYPE-MISMATCH (`lonely-adj` and `alone-adj`) stays as is, for the reason the seventy-third pass gave. Reviewer precision: no live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, kept by the owner's ruling; `reviewer-b` `phrase` stays the nearest at 0.31. The wiki index matches the pages; the log has no gaps since the last pass; the two open questions are still open; `reviews/needs_curator.txt` has no duplicate lines. No spend.
