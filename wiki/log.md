@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-16] build | twelve adverbs, largely to most
+
+Cycle 2 of the 00:44 run (`20261016T004925Z-9rfk2s`): band-1 adverbs in queue order: `largely`, `last`, `late`, `later`, `least`, `left`, `less`, `mainly`, `maybe`, `merely`, `more`, `most`. All 24 transcriptions verified first time; `late` comparatives from the exceptions table, the rest `not gradable`. Panel: reviewer-a 24 issues (20 blocking), reviewer-b 5 (all on *late*); 15 applied, 14 rejected. Rejected: *at last* and *at least* belong to the adjective and determiner entries (keyword fence); *running late* is an adverb use; *more clearer* is not standard. Applied: `more-adv` sense 2 was circular, sense 3 no longer offers *no more*, phrase recast as *more than* (+ adjective); `most-adv` *almost* sense widened; signposts on the four degree words now say *adjectives and adverbs*. `merely-adv` back-link moved by hand to `just-adv` sense 3. Spend about US$0.79.
+
 ## [2026-10-16] originality | thirty-seventh originality check, one rewrite
 
 Cycle 1 of the 00:44 run (`20261016T004414Z-9rfk2s`), forced at run 440. Ten fields sampled (`reviews/originality/2026-10-16.md`): original 8, generic overlap 1 (`court-n` sense 1), rewrite 1. `research-n` sense 1 was a learner's dictionary's wording with two words changed; now *organized work in which someone studies a subject closely, by reading, testing, or asking questions, to learn more than is already known about it*. Panel on `research-n`: reviewer-a 1 blocking (*decide something* called ungrammatical; rejected), reviewer-b 1 blocking (no plural in the script-owned inflections against the rare-plural note; rejected). reviewer-a answered no *copied* this time and missed the real case ([note](notes/reviewer-noise.md)). Spend about US$0.07. Next originality check due at run 450.
