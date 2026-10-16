@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-16] build | eleven adverbs, particularly to rather
+
+Eleven band-1 adverbs drafted and reviewed: *particularly, partly, perfectly, perhaps, personally, possibly, probably, properly, quite, rarely, rather*. The twelfth claim, `please-adv`, was marked duplicate in the queue: every use is already in `please-interj`. All 22 transcriptions verified. reviewer-a raised 29 issues (21 applied, 8 rejected); reviewer-b 1, applied (*perhaps* sense 3 definition). Applied: `personally-adv` senses 2 and 3 rebuilt (*personally responsible* moved to *as one person*); `perfectly-adv` sense 2 no longer *very*; `properly-adv` British sense now *very*; `probably-adv` learner-error note gave a self-contradicting rule. Rejected: the stress claim on British *quite* (stressed *quite* weakens it); *more rarely* is normal; *rather* (fairly) gets no region label. Six back-links added, all on the right sense. Spend about US$0.69; the day stands at about US$6.45.
+
 ## [2026-10-16] build | twelve adverbs, nowhere to over
 
 Twelve band-1 adverbs drafted and reviewed: *nowhere, obviously, off, often, okay, on, once, only, otherwise, out, outside, over*. All 24 transcriptions verified (`outside-adv` American 3/4, CMU disagreeing on stress; kept). reviewer-a raised 76 issues (56 applied, 20 rejected); reviewer-b 4, all applied (an adjective use mentioned in `otherwise-adv`, the prepositional *off of* error in `off-adv`, a before-noun stress note on `outside-adv`). reviewer-b's first reply on `only-adv` was empty and needed a solo re-run. Rejected: phrasal-verb pairs as verb + adverb collocations (house practice, as in `down-adv`); *be on* (working) and *be over* (finished) stay adjective uses; *start over* and *cold out* keep American labels. Eight back-links added, all on the right sense. Queued: `okay-adj`, `off-adj`, `on-adj`, `outer-adj`, `overly-adv`, `all-right-adv`. Spend about US$1.09; the day stands at about US$5.76.
