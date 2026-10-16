@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-16] build | twelve adverbs, mostly to now
+
+Cycle 4 of the 00:44 run (`20261016T012258Z-9rfk2s`): band-1 adverbs `mostly`, `much`, `naturally`, `near`, `nearly`, `necessarily`, `never`, `next`, `no`, `normally`, `not`, `now`. All 24 transcriptions verified first time; `much` (more, most) and `near` (nearer, nearest) from the exceptions table. Panel: reviewer-a 41 issues, reviewer-b 7; 24 applied, 24 rejected. reviewer-a's first reply on `near-adv` was partial (14 fields without a verdict); re-run alone, complete, its eight objections that *near impossible* and *the next best* are adjective uses rejected (a word modifying an adjective is an adverb). Applied: `never-adv` sense 2 now *did not*; `next-adv` core idea; `no-adv` explains *no more than*, *no less than*; `now-adv` *then* antonym removed, `now-that-conj` queued. `much-adv`/`a-lot-adv` TYPE-MISMATCH settled as synonyms on the older side. Spend about US$0.86.
+
 ## [2026-10-16] review | do (auxiliary) and motor to network
 
 Cycle 3 of the 00:44 run (`20261016T010621Z-9rfk2s`): second panel round on the twenty oldest one-round entries, `do-aux` and *motor*–*network* (nouns). reviewer-a 36 issues, reviewer-b 2 (both on `motor-n`); 21 applied, 15 rejected. `do-aux` sense 4 and core idea now say *a verb and the words after it*; `motor-n` engine/motor contrast corrected; `murder-n` *commit* no longer the only verb; `need-n` sense 3 narrowed to poverty; `musician-n`/`musical-adj` compare removed on both sides; `nerve-n` *bottle* synonym noted British. Rejected: *the movies* stays American (region fence); *school*/*movement* compare kept. Added by hand: *the name of the game* (`name-n`), *risk your neck* (`neck-n`), pronunciation notes on five entries. Spend about US$1.45.
