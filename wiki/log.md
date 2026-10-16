@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-16] review | niece to officer, and five 2026-10-06 verbs and nouns, second round
+
+Twenty one-round entries (`niece-n` to `officer-n`, `bug-v`, `bus-v`, `butter-v`, `capitalize-v`, `history-n`) went to both reviewers again. reviewer-a raised 30 issues (16 applied, 14 rejected); reviewer-b raised 1, rejected (it called the definition fine in its own reason). Applied: `nut-n` sense 2 (the bolt now described correctly), `object-n` grammar sense adds clauses, `novel-n` learner error and usage note (*a nonfiction book*), `nurse-n` childcare collocations removed (old-fashioned label kept), `history-n` *be history* one phrasal definition with the person use in an explanation, `capitalize-v` redundant explanation removed. Rejected: *follow your nose* (go straight ahead is real), *on the nose* American label (house fence). Added by hand: *keep your nose to the grindstone*, a semantic adaptation note on `niece-n`, plain pronunciation notes on fifteen entries. No back-links created. Spend about US$1.51; the day stands at about US$4.67.
+
 ## [2026-10-16] build | twelve adverbs, mostly to now
 
 Cycle 4 of the 00:44 run (`20261016T012258Z-9rfk2s`): band-1 adverbs `mostly`, `much`, `naturally`, `near`, `nearly`, `necessarily`, `never`, `next`, `no`, `normally`, `not`, `now`. All 24 transcriptions verified first time; `much` (more, most) and `near` (nearer, nearest) from the exceptions table. Panel: reviewer-a 41 issues, reviewer-b 7; 24 applied, 24 rejected. reviewer-a's first reply on `near-adv` was partial (14 fields without a verdict); re-run alone, complete, its eight objections that *near impossible* and *the next best* are adjective uses rejected (a word modifying an adjective is an adverb). Applied: `never-adv` sense 2 now *did not*; `next-adv` core idea; `no-adv` explains *no more than*, *no less than*; `now-adv` *then* antonym removed, `now-that-conj` queued. `much-adv`/`a-lot-adv` TYPE-MISMATCH settled as synonyms on the older side. Spend about US$0.86.
