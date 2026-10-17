@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-17] lint | seventy-sixth lint pass
+
+Cycle 4 of the 00:44 run (`20261017T012708Z-z6n4wd`). The mechanical checks pass: caps, links, the vocabulary queue (nothing new), three spent claim files pruned. `crossref --all --apply` added ten back-links, most to the new adverbs (*really*, *sometimes*, *somewhere*); checked each: nine on the right sense, but `quite-adv`'s mirror of `very-adv` landed on sense 3 (*unusual*) and was moved by hand to sense 2 (*fairly or very*). The known TYPE-MISMATCH (`lonely-adj` and `alone-adj`) stays, for the reason the seventy-third pass gave. Reviewer precision: no change; `reviewer-b` `phrase` stays the nearest live pair at 0.31 ([note](notes/reviewer-precision.md)). The wiki index matches the pages; the log has no gaps; the two open questions are still open; `reviews/needs_curator.txt` has no duplicate lines. No spend.
+
 ## [2026-10-17] originality | thirty-eighth originality check, two rewrites
 
 Cycle 3 of the 00:44 run (`20261017T012100Z-z6n4wd`), forced at run 450: ten sampled fields searched phrase by phrase. Original 5, generic-overlap 3, rewrite 2 (`reviews/originality/2026-10-17.md`). `supper-n` sense 1 followed a learner's dictionary's frame (*especially ... eaten at home*); now *the meal that you eat in the evening*. `rule-n` sense 1 followed the *instruction that tells you what you are allowed or not allowed to do* frame; now *something that people in a game, a place, or a group must do or must not do*. Panel on the two rewrites: 14 issues, 3 applied (`supper-n` explanation removed and *dinner* note widened; *everyone* dropped from `rule-n`), 11 rejected (British *supper* as a bedtime snack is real; *during his rule* is uncountable). reviewer-a answered *copied* on all ten; search decided ([note](notes/reviewer-noise.md)). Next due at run 460. Spend about US$0.20; the day stands at about US$2.34.
