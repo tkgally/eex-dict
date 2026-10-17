@@ -97,3 +97,5 @@ This is a third, different shape of the same underlying pattern (see the two ent
 **2026-10-14 check (thirty-sixth).** reviewer-a, reasoning off: *copied* seven times. This time it quoted wording other than our own, but search found none of five quotes; for *as always* it named the right dictionary and the wrong headword (the wording is that dictionary's **usually**), and for *play* its quote was close to a real frame. Two rewrites; search still decides.
 
 **2026-10-16 check (thirty-seventh).** reviewer-a, reasoning off: no *copied* answers at all (original 3, cannot tell 7). Search found one real case it missed: `research-n` sense 1 followed a learner's dictionary's wording, now rewritten. Silence from the reviewer is no evidence of originality; search still decides.
+
+**2026-10-17 check (thirty-eighth).** reviewer-a, reasoning off: *copied* on all ten, naming one learner's dictionary nine times with "quotes" search could not find. Its *rule* quote was close to a real frame, which search confirmed; search also found the *supper* frame. Two rewrites; search still decides.
