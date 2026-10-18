@@ -99,3 +99,5 @@ This is a third, different shape of the same underlying pattern (see the two ent
 **2026-10-16 check (thirty-seventh).** reviewer-a, reasoning off: no *copied* answers at all (original 3, cannot tell 7). Search found one real case it missed: `research-n` sense 1 followed a learner's dictionary's wording, now rewritten. Silence from the reviewer is no evidence of originality; search still decides.
 
 **2026-10-17 check (thirty-eighth).** reviewer-a, reasoning off: *copied* on all ten, naming one learner's dictionary nine times with "quotes" search could not find. Its *rule* quote was close to a real frame, which search confirmed; search also found the *supper* frame. Two rewrites; search still decides.
+
+**2026-10-18 check (thirty-ninth).** reviewer-a, reasoning off: *copied* on eight of ten, always naming Cambridge and "quoting" our own wording back (once with *bicycle* for *bike*). Search found three exact or one-word matches, all in other dictionaries (`access-n` senses 1 and 2, *or else*), plus two one-word-swap frames (`lift-n`, `employer-n`): five rewrites, the most in one check. Its quotes are an echo of the input; search still decides.
