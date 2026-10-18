@@ -349,3 +349,7 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (7543/10542); `reviewer-
 ## 2026-10-17: seventy-sixth lint pass, no new switch-offs
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (7672/10758); `reviewer-b` `ALL` 0.53 (1326/2499). `reviewer-b` `spelling-or-format` 0.28 (164/587); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (18/59), still the nearest live pair to the line. In the three cycles since the last pass reviewer-b had 1 of 2 applied (it raised nothing on twenty review entries and one on twelve builds). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, which the owner kept.
+
+## 2026-10-18: seventy-seventh lint pass, no new switch-offs
+
+Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (7762/10915); `reviewer-b` `ALL` 0.53 (1335/2522). `reviewer-b` `spelling-or-format` 0.28 (164/587); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (18/59), still the nearest live pair to the line. In the five cycles since the last pass reviewer-b had 1 of 4 applied on the one review cycle (*peace*–*plastic*; its two noun-adjunct calls on `pilot-n` rejected). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`.
