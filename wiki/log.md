@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-19] build | nine phrasal verbs from catch up to come up with
+
+Cycle 4 of the 12:44 run (`20261019T130643Z-moqfpw`): ten band-1 phrasal verbs claimed; `come from` marked duplicate (it is `come-v` sense 6; fence on verb + preposition). Nine drafted and reviewed: `catch-up`, `check-out`, `clean-up`, `clear-up`, `come-back`, `come-in`, `come-on`, `come-out`, `come-up-with` (all `-phrv`). Pronunciation: only `come-up-with` verified; the other eight disputed (panel 1 of 3, two members agreeing on another stress), flagged, one curator line; stress kept on the particle. reviewer-b failed to reply on `catch-up` once; a re-run was clean. Panel: 50 decisions, 16 applied, 34 rejected; 19 of the rejections are reviewer-b's *verb + adverb* pattern (fence). Applied: `check-out` sense 2 widened to *visit or try*; `come-out` sense 7 widened beyond *gay*; core ideas of `catch-up`, `clean-up`, `come-on` reworded. Rejected: a British-only label objection on `come-on` sense 5 (region means mainly). Six definitions reworded for the vocabulary check. `enter-v` back-link moved by hand to sense 1. Spend US$0.89.
+
 ## [2026-10-19] originality | fortieth originality check, no rewrites
 
 Cycle 3 of the 12:44 run (`20261019T130236Z-moqfpw`). Ten sampled fields: `tip-n` 1, `joy-n` 3, `field-n` usage note, `shut-v` usage note, `survive-v` 4, `sentence-v` 1, `rise-v` 3, `happen-v` 2, and the phrase definitions in `ever-adv` (*ever so*) and `foot-n` (*put your feet up*). Exact-phrase searches found no published match: 2 original, 8 generic-overlap (plain wording any dictionary shares, such as *very* for *ever so*), 0 rewrite. reviewer-a answered *cannot tell* for all ten; its first call spent its whole token allowance on hidden reasoning and returned nothing, so the question was re-sent with reasoning off. Record: `reviews/originality/2026-10-19.md`. Spend US$0.02.
