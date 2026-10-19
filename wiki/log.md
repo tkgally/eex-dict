@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-19] originality | fortieth originality check, no rewrites
+
+Cycle 3 of the 12:44 run (`20261019T130236Z-moqfpw`). Ten sampled fields: `tip-n` 1, `joy-n` 3, `field-n` usage note, `shut-v` usage note, `survive-v` 4, `sentence-v` 1, `rise-v` 3, `happen-v` 2, and the phrase definitions in `ever-adv` (*ever so*) and `foot-n` (*put your feet up*). Exact-phrase searches found no published match: 2 original, 8 generic-overlap (plain wording any dictionary shares, such as *very* for *ever so*), 0 rewrite. reviewer-a answered *cannot tell* for all ten; its first call spent its whole token allowance on hidden reasoning and returned nothing, so the question was re-sent with reasoning off. Record: `reviews/originality/2026-10-19.md`. Spend US$0.02.
+
 ## [2026-10-19] lint | seventy-ninth lint pass
 
 Cycle 2 of the 12:44 run (`20261019T125856Z-moqfpw`). Caps and links clean. `crossref --all --apply` added three back-links: `do-v` on `carry-out-phrv` sense 1 (right sense), `sorry-adj` on `sorry-interj` (family), and `body-n` on `embody-v` (family). The last re-adds a link the closure cycle removed at a reviewer's minor request; it was kept, since `body-n` lists `embody-v` and the family is real in form. Six type mismatches (synonym on one side, compare on the other) left as written: each side is a fair reading. `lint_vocab --all --queue`: 0 violations, nothing new queued. `claim --prune` removed three claim files. Precision: eight disabled pairs unchanged; `reviewer-b` `phrase` 0.31, still the nearest live pair to the line ([note](notes/reviewer-precision.md)). Index, open questions, and curator file read: no duplicates, no stale lines. Next lint due in about five cycles. No spend.
