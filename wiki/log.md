@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-20] build | eleven phrasal verbs from go out to lie down
+
+Cycle 2 of the 12:44 run (`20261020T131155Z-6s5qm1`): twelve band-1 phrasal verbs claimed; `lead to` marked duplicate (`lead-v` senses 4 and 5; verb + preposition fence). Eleven drafted and reviewed: `go-out`, `go-over`, `go-through`, `grow-up`, `hand-over`, `hang-up`, `hold-on`, `keep-on`, `keep-up`, `leave-out`, `lie-down` (all `-phrv`). All 22 transcriptions verified. Panel: 42 decisions, 22 applied, 20 rejected (reviewer-b's pattern and "to" calls by the fences). reviewer-a left one field of `hold-on` without a verdict; the partial record was adjudicated as it stands. `wait-v` back-link moved by hand from sense 3 to sense 1. The ten disputed 2026-10-19 phrasal verbs were re-checked after `break-up` gained its `ˌ`: still disputed, flags kept (note updated). Spend US$0.81.
+
 ## [2026-10-20] review | second panel round for request to routine
 
 Cycle 1 of the 12:44 run (`20261020T124442Z-6s5qm1`). The twenty oldest one-round entries, nouns from 2026-10-07: `request`–`result`, `rhythm`–`root`, `rope`, `route`, `routine`. Seven drew no issues (`restaurant`, `result`, `rhythm`, `rice`, `ride`, `rock`, `routine`). 35 decisions, 20 applied, 15 rejected, none escalated. Applied: `respect-n` *pay your respects* narrowed and the uncountable note limited to the feeling senses; `rest-n` and `ring-n` usage notes cover all their senses; `rope-n` gains a *learn the ropes* phrase; `route-n` sense 4 is now a noun phrase; `right-n` learner error corrected with the noun (*turn to the right*). Rejected: keyword-rule placement of *come to rest*, *at rest*, *lay someone to rest*; reviewer-b's "to" infinitive calls on phrase definitions; region labels on *room and board*, *down the road*, *by rights*. The first panel call was stopped by a 10-minute background limit after thirteen entries; the remaining seven were re-run. Spend US$1.68.
