@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-20] review | second panel round for rubber to search
+
+Cycle 3 of the 12:44 run (`20261020T133128Z-6s5qm1`). The twenty oldest one-round entries, nouns from 2026-10-07: `rubber`, `rug`, `ruin`, `safety`–`sand`, `satisfaction`–`search`. Three drew no issues (`ruin`, `sail`, `sale`). 39 decisions, 24 applied, 15 rejected, none escalated. Applied: core ideas of `school-n` and `sea-n` rewritten to cover their senses; synonym links `school-n`/`department-n` and `science-n`/`art-n` moved to compare on both sides by hand; `sea-n` American *ocean* note softened and its duplicate removed; *set the scene* redefined; doubtful *What is the point?* learner error removed from `score-n`; *cut a rug* now `dated`; `screen-n` subsense 2a redefined. Rejected: *go to sea* `old-fashioned` is a currency value; *built on sand* is the usual form; `sand-n` "no plural" is script-written (known inflect gap); acid-plus-base account of a salt stands. The next block starts at `carpet-v` (2026-10-07 verbs). Spend US$1.75.
+
 ## [2026-10-20] build | eleven phrasal verbs from go out to lie down
 
 Cycle 2 of the 12:44 run (`20261020T131155Z-6s5qm1`): twelve band-1 phrasal verbs claimed; `lead to` marked duplicate (`lead-v` senses 4 and 5; verb + preposition fence). Eleven drafted and reviewed: `go-out`, `go-over`, `go-through`, `grow-up`, `hand-over`, `hang-up`, `hold-on`, `keep-on`, `keep-up`, `leave-out`, `lie-down` (all `-phrv`). All 22 transcriptions verified. Panel: 42 decisions, 22 applied, 20 rejected (reviewer-b's pattern and "to" calls by the fences). reviewer-a left one field of `hold-on` without a verdict; the partial record was adjudicated as it stands. `wait-v` back-link moved by hand from sense 3 to sense 1. The ten disputed 2026-10-19 phrasal verbs were re-checked after `break-up` gained its `ˌ`: still disputed, flags kept (note updated). Spend US$0.81.
