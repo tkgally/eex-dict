@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-20] build | seven phrasal verbs from look forward to to move on
+
+Cycle 4 of the 12:44 run (`20261020T135108Z-6s5qm1`): ten band-1 phrasal verbs claimed; `listen to`, `look at`, `look for` marked duplicate (`listen-v` senses 1 and 2, `look-v` senses 1, 2, 6; verb + preposition fence). Seven drafted and reviewed: `look-forward-to`, `look-like`, `look-out`, `look-up`, `make-up`, `move-in`, `move-on` (all `-phrv`). All 14 transcriptions verified (`look-like` front stress, 3 of 3). Panel: 45 decisions, 31 applied, 14 rejected; reviewer-a's fifteen issues on `make-up` were mostly right (over-absolute grammar notes, a mixed sense). Two back-links moved by hand: `visit-v` to sense 1, `continue-v` to sense 3 (*go further*). Spend US$0.51.
+
 ## [2026-10-20] review | second panel round for rubber to search
 
 Cycle 3 of the 12:44 run (`20261020T133128Z-6s5qm1`). The twenty oldest one-round entries, nouns from 2026-10-07: `rubber`, `rug`, `ruin`, `safety`–`sand`, `satisfaction`–`search`. Three drew no issues (`ruin`, `sail`, `sale`). 39 decisions, 24 applied, 15 rejected, none escalated. Applied: core ideas of `school-n` and `sea-n` rewritten to cover their senses; synonym links `school-n`/`department-n` and `science-n`/`art-n` moved to compare on both sides by hand; `sea-n` American *ocean* note softened and its duplicate removed; *set the scene* redefined; doubtful *What is the point?* learner error removed from `score-n`; *cut a rug* now `dated`; `screen-n` subsense 2a redefined. Rejected: *go to sea* `old-fashioned` is a currency value; *built on sand* is the usual form; `sand-n` "no plural" is script-written (known inflect gap); acid-plus-base account of a salt stands. The next block starts at `carpet-v` (2026-10-07 verbs). Spend US$1.75.
