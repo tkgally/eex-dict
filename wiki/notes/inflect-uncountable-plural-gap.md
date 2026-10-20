@@ -8,3 +8,5 @@ Fix due a later run (about a fifth of a build or lint run at most): let a nouns-
 - 2026-10-03: `energy-n` (uncountable, with a plural-only subsense *energies*) drew a reviewer-b blocking flag for "no plural"; rejected as this gap.
 
 **2026-10-03.** `finance-n` hit the same gap: sense 1 is uncountable, so `inflect.py` records no plural, though sense 2 is the plural-only **finances**; both reviewers flagged it, rejected as this tool gap, and the examples mark **finances** by hand.
+
+- 2026-10-20: `rain-n` (sense 1 uncountable, sense 2 plural-only *the rains*) drew "no plural" flags from both reviewers; rejected as this gap.
