@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-21] review | second panel round for service to sight
+
+Cycle 2 of the 12:44 run (`20261021T130320Z-wepupa`). The twenty oldest one-round entries, nouns from 2026-10-07 and 2026-10-08, `service`–`sight`. Three drew no issues (`sheet`, `ship`, `shore`). 45 decisions, 27 applied, 18 rejected, none escalated; every issue came from reviewer-a, as reviewer-b raised none on twenty full replies. Applied: `service-n` senses 3, 4, 7 reworded and *a service charge* moved out of sense 1; `sex-n` usage and adaptation notes describe **gender** as identity and social role; `shower-n` party sense broadened and labelled Canadian too; `sight-n` *lose sight of* holds both meanings; `shoe-n` learner error made unambiguous. Rejected: region-label objections on `shoulder-n` (road), `side-n` (team, side dish) by the region fence; *What form is it?* kept as an error for outer form. Spend US$1.97.
+
 ## [2026-10-21] build | twelve phrasal verbs from run away to stand up
 
 Cycle 1 of the 12:44 run (`20261021T124424Z-wepupa`). Twelve band-1 phrasal verbs drafted and reviewed: `run-away`, `run-out`, `set-off`, `set-up`, `show-up`, `shut-up`, `sit-down`, `slow-down`, `speed-up`, `split-up`, `stand-for`, `stand-up` (all `-phrv`). All 24 transcriptions verified (3 of 3, `stand-for` 2 of 3), so the notation split of the previous build did not recur. Panel: 65 issues and decisions, 39 applied, 27 rejected, none escalated. Applied: `stand-up` sense 2 (*stay upright*) removed as the plain verb; a *surprise* sense 4 added to `shut-up`; `slow-down` sense 2 no longer *relax*; `set-up` sense 5 narrowed. Rejected: reviewer-b's *verb + adverb* patterns (fence), the infinitive core-idea objection, *show up to* as an error. Back-links on `avoid-v` and `rise-v` moved by hand to senses 3 and 5. `run-away-with-phrv` queued. Spend US$0.94.
