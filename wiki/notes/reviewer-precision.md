@@ -369,3 +369,7 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (8031/11346); `reviewer-
 ## 2026-10-21: eighty-first lint pass, no new switch-offs
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (8123/11479); `reviewer-b` `ALL` 0.51 (1375/2671). `reviewer-b` `spelling-or-format` 0.28 (165/588); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (19/61), unchanged and still the nearest live pair to the line. In the five cycles since the last pass reviewer-b had 7 of 34 applied. No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`.
+
+## 2026-10-21: eighty-second lint pass, no new switch-offs
+
+Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (8252/11660); `reviewer-b` `ALL` 0.51 (1388/2723). `reviewer-b` `spelling-or-format` 0.28 (165/588); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (19/61), unchanged and still the nearest live pair to the line. In the five cycles since the last pass reviewer-b had 13 of 50 applied, and none of its issues came on the twenty-noun review cycle (*service*–*sight*), where it raised nothing on twenty full replies; most of its rejections were the *verb + adverb* pattern fence on phrasal verbs (`grammar-code` 0.39 over 524). reviewer-a had 129 of 181 applied. No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`.

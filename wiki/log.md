@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-21] lint | eighty-second lint pass, six back-links
+
+Cycle 4 of the 12:44 run (`20261021T133717Z-wepupa`), forced after five runs. Caps and links pass. `crossref --all --apply` added six back-links, all onto this run's new phrasal verbs; five landed on the right sense, and `take-v` sense 3's mirror on `take-away-phrv` was moved by hand from sense 4 (food) to sense 1 (remove). The four known TYPE-MISMATCH pairs (*cause*/*bring about*, *relax*/*calm down*, *um*/*er*, *put off*/*put back*) are unchanged. `lint_vocab --all --queue` queued nothing new; `claim.py --prune` removed three merged claim files. Precision: no new switch-offs (`reviewer-a` 0.71, `reviewer-b` 0.51; [note](notes/reviewer-precision.md)). The index line for that note was stale (seventy-sixth pass) and now names this pass. The stress note records that the next twenty phrasal verbs all verified. Index, log, open questions, and curator file: no gaps or duplicates. No spend.
+
 ## [2026-10-21] build | eight phrasal verbs from take away to try on
 
 Cycle 3 of the 12:44 run (`20261021T132439Z-wepupa`). Twelve band-1 phrasal verbs claimed; four marked duplicate: `take place` (a phrase of `place-n`), `talk to`, `think about`, `think of` (verb + preposition fence; `talk-v`, `think-v` cover them). Eight drafted and reviewed: `take-away`, `take-back`, `take-off`, `take-out`, `take-over`, `take-up`, `throw-away`, `try-on` (all `-phrv`). All 16 transcriptions verified 3 of 3. Panel: 33 issues and decisions, 23 applied, 10 rejected. Applied: `take-away` food sense made transitive or intransitive (*to take away*); `take-up` antonym `let-down-phrv` (not `let-out`); core ideas on four entries. Rejected: reviewer-b's patterns (fence) and its objection to noun notes (*takeaway*, *takeout*) in usage notes. Back-links on `return-v` and `keep-v` moved by hand to senses 2 and 4. Spend US$0.68.
