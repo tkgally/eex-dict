@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-21] build | eleven phrasal verbs from move out to put up
+
+Cycle 3 of the 00:43 run (`20261021T005524Z-fgmmrm`): twelve band-1 phrasal verbs claimed; `result in` marked duplicate (`result-v` sense 2; verb + preposition fence). Eleven drafted and reviewed: `move-out`, `pass-away`, `pass-on`, `point-out`, `put-away`, `put-back`, `put-down`, `put-off`, `put-on`, `put-together`, `put-up` (all `-phrv`). All 22 transcriptions disputed (1 of 3); a diagnostic showed one panel member writes primary stress on both words, a notation split ([note](notes/phrasal-verb-stress-recheck.md)); flagged, curator line. Panel: 45 decisions, 26 applied, 19 rejected; the `put-together` *more than all of us put together* sense became a usage note. Five back-links moved by hand off the wrong sense (`lose-v`, `show-v`, `prepare-v`, `provide-v`, `increase-v`). Spend US$0.83.
+
 ## [2026-10-21] lint | eighty-first lint pass, one back-link
 
 Cycle 2 of the 00:43 run (`20261021T005214Z-fgmmrm`). Caps and links clean. `crossref --all --apply` added one back-link, `drop-v` as a synonym on `leave-out-phrv` sense 1 (*not include*), mirroring `drop-v` sense 6: the right sense. The six known TYPE-MISMATCH pairs left as they are. `lint_vocab --all`: no violations. Two claim files pruned. Precision: no new switch-offs; `reviewer-b` `phrase` 0.31 (19/61) still nearest the line ([note](notes/reviewer-precision.md)). Index, log, open questions (two, both open) and `reviews/needs_curator.txt` (51 lines, no duplicates; the four leftover branch lines still match the remote) read: no contradictions. No spend.
