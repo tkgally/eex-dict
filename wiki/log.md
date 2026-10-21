@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-21] lint | eighty-first lint pass, one back-link
+
+Cycle 2 of the 00:43 run (`20261021T005214Z-fgmmrm`). Caps and links clean. `crossref --all --apply` added one back-link, `drop-v` as a synonym on `leave-out-phrv` sense 1 (*not include*), mirroring `drop-v` sense 6: the right sense. The six known TYPE-MISMATCH pairs left as they are. `lint_vocab --all`: no violations. Two claim files pruned. Precision: no new switch-offs; `reviewer-b` `phrase` 0.31 (19/61) still nearest the line ([note](notes/reviewer-precision.md)). Index, log, open questions (two, both open) and `reviews/needs_curator.txt` (51 lines, no duplicates; the four leftover branch lines still match the remote) read: no contradictions. No spend.
+
 ## [2026-10-21] originality | forty-first check, three rewrites
 
 Cycle 1 of the 00:43 run (`20261021T004353Z-fgmmrm`), forced at run 480. Ten sampled fields (`reviews/originality/2026-10-21.md`): original 4, generic overlap 3, rewrite 3. No exact web match, but three definitions followed a learner's dictionary's frame and were rewritten in my own words: `bunch-n` sense 4 (the hairstyle), `spring-n` sense 3 (water from the ground), `pipe-n` sense 3 (the instrument and organ pipe). Panel on the three: 7 decisions, 2 applied (`bunch-n` usage note now covers *a bunch of* before an uncountable noun; *put that in your pipe and smoke it* labelled old-fashioned), 5 rejected (the American label on *a bunch of*, per the region-label fence). reviewer-a answered *copied* on eight, echoing our text as Oxford's ([note](notes/reviewer-noise.md)). Spend US$0.27.
