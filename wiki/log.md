@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-21] originality | forty-first check, three rewrites
+
+Cycle 1 of the 00:43 run (`20261021T004353Z-fgmmrm`), forced at run 480. Ten sampled fields (`reviews/originality/2026-10-21.md`): original 4, generic overlap 3, rewrite 3. No exact web match, but three definitions followed a learner's dictionary's frame and were rewritten in my own words: `bunch-n` sense 4 (the hairstyle), `spring-n` sense 3 (water from the ground), `pipe-n` sense 3 (the instrument and organ pipe). Panel on the three: 7 decisions, 2 applied (`bunch-n` usage note now covers *a bunch of* before an uncountable noun; *put that in your pipe and smoke it* labelled old-fashioned), 5 rejected (the American label on *a bunch of*, per the region-label fence). reviewer-a answered *copied* on eight, echoing our text as Oxford's ([note](notes/reviewer-noise.md)). Spend US$0.27.
+
 ## [2026-10-20] build | seven phrasal verbs from look forward to to move on
 
 Cycle 4 of the 12:44 run (`20261020T135108Z-6s5qm1`): ten band-1 phrasal verbs claimed; `listen to`, `look at`, `look for` marked duplicate (`listen-v` senses 1 and 2, `look-v` senses 1, 2, 6; verb + preposition fence). Seven drafted and reviewed: `look-forward-to`, `look-like`, `look-out`, `look-up`, `make-up`, `move-in`, `move-on` (all `-phrv`). All 14 transcriptions verified (`look-like` front stress, 3 of 3). Panel: 45 decisions, 31 applied, 14 rejected; reviewer-a's fifteen issues on `make-up` were mostly right (over-absolute grammar notes, a mixed sense). Two back-links moved by hand: `visit-v` to sense 1, `continue-v` to sense 3 (*go further*). Spend US$0.51.
