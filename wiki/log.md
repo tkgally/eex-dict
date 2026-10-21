@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-21] build | eight phrasal verbs from take away to try on
+
+Cycle 3 of the 12:44 run (`20261021T132439Z-wepupa`). Twelve band-1 phrasal verbs claimed; four marked duplicate: `take place` (a phrase of `place-n`), `talk to`, `think about`, `think of` (verb + preposition fence; `talk-v`, `think-v` cover them). Eight drafted and reviewed: `take-away`, `take-back`, `take-off`, `take-out`, `take-over`, `take-up`, `throw-away`, `try-on` (all `-phrv`). All 16 transcriptions verified 3 of 3. Panel: 33 issues and decisions, 23 applied, 10 rejected. Applied: `take-away` food sense made transitive or intransitive (*to take away*); `take-up` antonym `let-down-phrv` (not `let-out`); core ideas on four entries. Rejected: reviewer-b's patterns (fence) and its objection to noun notes (*takeaway*, *takeout*) in usage notes. Back-links on `return-v` and `keep-v` moved by hand to senses 2 and 4. Spend US$0.68.
+
 ## [2026-10-21] review | second panel round for service to sight
 
 Cycle 2 of the 12:44 run (`20261021T130320Z-wepupa`). The twenty oldest one-round entries, nouns from 2026-10-07 and 2026-10-08, `service`–`sight`. Three drew no issues (`sheet`, `ship`, `shore`). 45 decisions, 27 applied, 18 rejected, none escalated; every issue came from reviewer-a, as reviewer-b raised none on twenty full replies. Applied: `service-n` senses 3, 4, 7 reworded and *a service charge* moved out of sense 1; `sex-n` usage and adaptation notes describe **gender** as identity and social role; `shower-n` party sense broadened and labelled Canadian too; `sight-n` *lose sight of* holds both meanings; `shoe-n` learner error made unambiguous. Rejected: region-label objections on `shoulder-n` (road), `side-n` (team, side dish) by the region fence; *What form is it?* kept as an error for outer form. Spend US$1.97.
