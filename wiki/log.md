@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-21] review | second panel round for carpet to conflict and season to server
+
+Cycle 4 of the 00:43 run (`20261021T011433Z-fgmmrm`). The twenty oldest one-round entries: the 2026-10-07 verbs `carpet`–`conflict` and `prepare`, and the nouns `season`–`server`. Four drew no issues. 42 decisions, 27 applied, 15 rejected, none escalated. Applied: `security-n` airport checking place split into a subsense; `coin-v` sense 2 and its example; `condition-v` core idea; formality notes on `chance-v` and `clothe-v`; `server-n` tool sense; synonym links `confide-v`/`trust-v` and `seed-n`/`grain-n` removed on both sides. Rejected: British *series* for a TV season (true), *club together* British, the singular-verb claim on *Security asked us*. A container restart killed the background panel after three entries; it was finished in foreground chunks. Spend US$1.49.
+
 ## [2026-10-21] build | eleven phrasal verbs from move out to put up
 
 Cycle 3 of the 00:43 run (`20261021T005524Z-fgmmrm`): twelve band-1 phrasal verbs claimed; `result in` marked duplicate (`result-v` sense 2; verb + preposition fence). Eleven drafted and reviewed: `move-out`, `pass-away`, `pass-on`, `point-out`, `put-away`, `put-back`, `put-down`, `put-off`, `put-on`, `put-together`, `put-up` (all `-phrv`). All 22 transcriptions disputed (1 of 3); a diagnostic showed one panel member writes primary stress on both words, a notation split ([note](notes/phrasal-verb-stress-recheck.md)); flagged, curator line. Panel: 45 decisions, 26 applied, 19 rejected; the `put-together` *more than all of us put together* sense became a usage note. Five back-links moved by hand off the wrong sense (`lose-v`, `show-v`, `prepare-v`, `provide-v`, `increase-v`). Spend US$0.83.
