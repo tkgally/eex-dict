@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-21] build | twelve phrasal verbs from run away to stand up
+
+Cycle 1 of the 12:44 run (`20261021T124424Z-wepupa`). Twelve band-1 phrasal verbs drafted and reviewed: `run-away`, `run-out`, `set-off`, `set-up`, `show-up`, `shut-up`, `sit-down`, `slow-down`, `speed-up`, `split-up`, `stand-for`, `stand-up` (all `-phrv`). All 24 transcriptions verified (3 of 3, `stand-for` 2 of 3), so the notation split of the previous build did not recur. Panel: 65 issues and decisions, 39 applied, 27 rejected, none escalated. Applied: `stand-up` sense 2 (*stay upright*) removed as the plain verb; a *surprise* sense 4 added to `shut-up`; `slow-down` sense 2 no longer *relax*; `set-up` sense 5 narrowed. Rejected: reviewer-b's *verb + adverb* patterns (fence), the infinitive core-idea objection, *show up to* as an error. Back-links on `avoid-v` and `rise-v` moved by hand to senses 3 and 5. `run-away-with-phrv` queued. Spend US$0.94.
+
 ## [2026-10-21] review | second panel round for carpet to conflict and season to server
 
 Cycle 4 of the 00:43 run (`20261021T011433Z-fgmmrm`). The twenty oldest one-round entries: the 2026-10-07 verbs `carpet`–`conflict` and `prepare`, and the nouns `season`–`server`. Four drew no issues. 42 decisions, 27 applied, 15 rejected, none escalated. Applied: `security-n` airport checking place split into a subsense; `coin-v` sense 2 and its example; `condition-v` core idea; formality notes on `chance-v` and `clothe-v`; `server-n` tool sense; synonym links `confide-v`/`trust-v` and `seed-n`/`grain-n` removed on both sides. Rejected: British *series* for a TV season (true), *club together* British, the singular-verb claim on *Security asked us*. A container restart killed the background panel after three entries; it was finished in foreground chunks. Spend US$1.49.
