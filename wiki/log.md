@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-22] build | eleven phrasal verbs from turn down to work out
+
+Cycle 2 of the 00:44 run (`20261022T010139Z-83i5eu`). Twelve band-1 phrasal verbs claimed; `wait for` marked duplicate (verb + preposition fence; `wait-v` sense 1). Eleven drafted and reviewed: `turn-down`, `turn-into`, `turn-off`, `turn-on`, `turn-over`, `turn-up`, `use-up`, `wake-up`, `wash-up`, `watch-out`, `work-out` (all `-phrv`). Pronunciation: ten of eleven disputed 1 of 3 by the known notation split ([note](notes/phrasal-verb-stress-recheck.md)); flagged, one curator line; `turn-into` verified. Panel: 28 decisions, 15 applied, 13 rejected (reviewer-b's pattern objections, fence). Applied: core ideas of `turn-down` and `turn-up`; `turn-off` road examples; the *waked* learner error dropped from `wake-up` (the inflection note allows it); `work-out` *at*/*to* regional claim hedged. `change-v` back-link moved by hand to sense 2. Spend US$0.72.
+
 ## [2026-10-22] closure | balance, excuse, hurry, and nine more
 
 Cycle 1 of the 00:44 run (`20261022T004435Z-83i5eu`). `--source closure` held four rows, all core words without entries (*balance*, *excuse*, *hurry*, and *misunderstanding*, guessed as a verb and marked duplicate). Drafted with their verbs (`balance-v` queued by hand), then `--source family` from *entertainer*: twelve entries, `balance-n`, `balance-v`, `excuse-n`, `excuse-v`, `hurry-n`, `hurry-v`, `misunderstanding-n`, `misunderstand-v`, `entertainer-n`, `entertaining-adj`, `entertainment-n`, `entry-n`. All 24 transcriptions verified. Panel: 37 decisions, 27 applied, 10 rejected (reviewer-b's phrase-definition objections, the opening-headword fence). Removed after `crossref` misplaced their back-links: `rest-n` and `scale-n` links on `balance-n`, whose remainder and weighing senses are unwritten homographs ([note](notes/homograph-queue-and-inflection.md)); `entry-n`/`entrance-n` type mismatch resolved. Spend US$0.80.
