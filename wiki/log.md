@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-22] closure | balance, excuse, hurry, and nine more
+
+Cycle 1 of the 00:44 run (`20261022T004435Z-83i5eu`). `--source closure` held four rows, all core words without entries (*balance*, *excuse*, *hurry*, and *misunderstanding*, guessed as a verb and marked duplicate). Drafted with their verbs (`balance-v` queued by hand), then `--source family` from *entertainer*: twelve entries, `balance-n`, `balance-v`, `excuse-n`, `excuse-v`, `hurry-n`, `hurry-v`, `misunderstanding-n`, `misunderstand-v`, `entertainer-n`, `entertaining-adj`, `entertainment-n`, `entry-n`. All 24 transcriptions verified. Panel: 37 decisions, 27 applied, 10 rejected (reviewer-b's phrase-definition objections, the opening-headword fence). Removed after `crossref` misplaced their back-links: `rest-n` and `scale-n` links on `balance-n`, whose remainder and weighing senses are unwritten homographs ([note](notes/homograph-queue-and-inflection.md)); `entry-n`/`entrance-n` type mismatch resolved. Spend US$0.80.
+
 ## [2026-10-21] lint | eighty-second lint pass, six back-links
 
 Cycle 4 of the 12:44 run (`20261021T133717Z-wepupa`), forced after five runs. Caps and links pass. `crossref --all --apply` added six back-links, all onto this run's new phrasal verbs; five landed on the right sense, and `take-v` sense 3's mirror on `take-away-phrv` was moved by hand from sense 4 (food) to sense 1 (remove). The four known TYPE-MISMATCH pairs (*cause*/*bring about*, *relax*/*calm down*, *um*/*er*, *put off*/*put back*) are unchanged. `lint_vocab --all --queue` queued nothing new; `claim.py --prune` removed three merged claim files. Precision: no new switch-offs (`reviewer-a` 0.71, `reviewer-b` 0.51; [note](notes/reviewer-precision.md)). The index line for that note was stale (seventy-sixth pass) and now names this pass. The stress note records that the next twenty phrasal verbs all verified. Index, log, open questions, and curator file: no gaps or duplicates. No spend.
