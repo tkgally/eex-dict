@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-22] review | second panel round for sign to soap
+
+Cycle 4 of the 00:44 run (`20261022T012015Z-83i5eu`). Second panel round for twenty one-round nouns in creation order: *sign*, *silence*, *silk*, *sink*, *sister*, *situation*, *size*, *skill*, *skin*, *skirt*, *sky*, *sleep*, *slice*, *smell*, *smile*, *smoke*, *snack*, *snake*, *snow*, *soap*. A container restart stopped the panel after five entries; the rest ran in foreground chunks of five. 35 decisions, 14 applied, 21 rejected, all from reviewer-a except three. Applied: `sister-n` sense 1 and core idea now include half-sisters, the British nurse sense reworded; `sign-n` zodiac sense; `smell-n` *have a smell* labelled British; `soap-n` *short for* reworded (origin fence). Rejected: the four keyword-rule objections on `sleep-n` phrases; splitting `sky-n` (the plural weather use differs in grammar). Spend US$1.42.
+
 ## [2026-10-22] originality | forty-second check, three rewrites
 
 Cycle 3 of the 00:44 run (`20261022T011444Z-83i5eu`), forced at run 490. Ten sampled fields (`reviews/originality/2026-10-22.md`): original 6, generic overlap 1 (`nor-conj` *and also not*), rewrite 3. No exact web match, but `simply-adv` sense 3 and `race-n` sense 1 followed a learner's dictionary's frame, and `drunk-adj` sense 2 came close to the usual frame for *drunk with power*; all three rewritten in my own words. Panel on the three: 3 decisions, 1 applied (`drunk-adj` broadened from pride to any strong happy feeling), 2 rejected (*singular only* allows *a race against time*; *used to* is fine for an intensifier). reviewer-a answered *cannot tell* on all ten with reasoning off; with reasoning on it returned nothing ([note](notes/reviewer-noise.md)). Spend US$0.23.
