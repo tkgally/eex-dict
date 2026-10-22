@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-22] review | second panel round for society to spoon
+
+Cycle 4 of the 12:44 run (`20261022T132337Z-fgynwy`), the run's last. Second panel round for twenty one-round nouns in creation order: *society*, *sock*, *sofa*, *software*, *soil*, *soldier*, *solution*, *son*, *song*, *sort*, *soul*, *sound*, *soup*, *space*, *speaker*, *speech*, *speed*, *spelling*, *spirit*, *spoon*. 52 decisions, 18 applied, 34 rejected; all issues but four came from reviewer-a, and reviewer-b raised nothing on seventeen entries. Applied: `solution-n` sense 2 no longer says the mixed substance cannot be seen, and sense 1 covers mathematics; `sort-n` loses the claim that *sort* is more informal than *kind*; `speech-n` and `speaker-n` now point to each other under see also, not compare. Rejected: eight objections to the theatre sense of `speech-n`, and reviewer-a's claim that *something that you hear* is too broad for `sound-n`. Six panel calls ran in chunks of five without a restart. Spend US$1.50.
+
 ## [2026-10-22] build | twelve suffixes, -er to -ize
 
 Cycle 3 of the 12:44 run (`20261022T130741Z-fgynwy`). New: `er-suffix`, `ful-suffix`, `hood-suffix`, `ic-suffix`, `ify-suffix`, `ing-suffix`, `ish-suffix`, `ism-suffix`, `ist-suffix`, `ity-suffix`, `ive-suffix`, `ize-suffix` (with the British variant *-ise*). All 24 transcriptions verified, British *-ity* after a change to `ɪ.ti`. 67 decisions, 36 applied, 31 rejected; most rejections were reviewer-a's historical-morphology objections (*act* to *active* not "direct") and reviewer-b's affix-definition and suffix-countability calls, against the house model entries. The queue-hyphen-loss bug recurred: cross-references had queued *ic*, *ing*, *ity*, *less* without the hyphen; those rows were marked duplicate (band 1 forced so `stamp` reads the right band) and the real rows set done. *ible*, *ee*, *est* exist only as hyphenless rows: draft them as *-ible*, *-ee*, *-est*. Spend US$0.69.
