@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-22] build | twelve suffixes, -er to -ize
+
+Cycle 3 of the 12:44 run (`20261022T130741Z-fgynwy`). New: `er-suffix`, `ful-suffix`, `hood-suffix`, `ic-suffix`, `ify-suffix`, `ing-suffix`, `ish-suffix`, `ism-suffix`, `ist-suffix`, `ity-suffix`, `ive-suffix`, `ize-suffix` (with the British variant *-ise*). All 24 transcriptions verified, British *-ity* after a change to `ɪ.ti`. 67 decisions, 36 applied, 31 rejected; most rejections were reviewer-a's historical-morphology objections (*act* to *active* not "direct") and reviewer-b's affix-definition and suffix-countability calls, against the house model entries. The queue-hyphen-loss bug recurred: cross-references had queued *ic*, *ing*, *ity*, *less* without the hyphen; those rows were marked duplicate (band 1 forced so `stamp` reads the right band) and the real rows set done. *ible*, *ee*, *est* exist only as hyphenless rows: draft them as *-ible*, *-ee*, *-est*. Spend US$0.69.
+
 ## [2026-10-22] lint | eighty-third pass
 
 Cycle 2 of the 12:44 run (`20261022T130343Z-fgynwy`), forced at five runs since the last lint. Caps, links, index, log, open questions, and the curator file are in order (no orphan pages, no duplicate curator lines, two open questions unchanged). `crossref.py --all --apply` added six back-links (`hurry-v` from `race-v` and `run-v`, `turn-off-phrv`, `turn-on-phrv`, `write-down-phrv`, `thank-you-interj`), all on the right sense. `lint_vocab --all --queue`: no definition violations. Three claim files pruned. Precision: no new switch-offs; eight disabled pairs unchanged. The queue's `phr` rows were checked against keyword entries: *by the way*, *my pleasure*, *go to bed* marked duplicate; `bless-v` queued as the home for *bless you*; new note `queue-phrase-rows`. Next lint due in about five cycles. Spend: none.
