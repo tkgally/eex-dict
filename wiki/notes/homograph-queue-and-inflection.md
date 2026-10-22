@@ -19,3 +19,5 @@ The same day `case-n` left out *case* the container (*a pencil case*, *a phone c
 **2026-10-03.** `fan-n` was drafted as the object or machine that moves air (the queue row is referenced by `propeller-n`); *fan* the supporter of a team or a singer, a common word, is a separate homograph (`fan-n-2`) waiting for the same hand claim. It should be drafted soon.
 
 The same day `file-n` left out *file* the tool with a rough surface (*a nail file*), a separate word (`file-n-2`) waiting for the same hand claim.
+
+**2026-10-22.** Drafting `balance-n`, a synonym link to `rest-n` (*pay the rest later*) and a compare link to `scale-n` (weighing scales) were removed after `crossref.py` put their back-links on the wrong senses: *rest* the remainder (`rest-n-2`) and *scale* the weighing tool (`scale-n-2`) are separate homographs with no entries yet.
