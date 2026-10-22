@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-22] build | write down, thank you, thank, and seven affixes
+
+Cycle 1 of the 12:44 run (`20261022T124509Z-fgynwy`). The queue's next twelve held eight band-1 phrase rows. Five already live as phrases under their keyword (*for example*, *in fact*, *of course*, *see you*, *take care*) and were marked duplicate; *excuse me* and *good night* were added as phrases to `excuse-v` and `night-n` (keyword rule, as *good morning* under `morning-n`), and the dangling `excuse-me-phr` reference on `excuse-v` was replaced; *thank you* was drafted as `thank-you-interj`, like `thanks-interj`, with `thank-v`. New: `write-down-phrv`, `thank-you-interj`, `thank-v`, `co-prefix`, `re-prefix`, `able-suffix`, `al-suffix`, `ation-suffix`, `ed-suffix`, `en-suffix`. All 18 transcriptions verified (`ed-suffix` has none by design). 56 decisions, 34 applied, 22 rejected; reviewer-b's six "affix definitions belong in the explanation" calls rejected (house style is *added to...*, as `un-prefix`). Queue bands of `thank-you-interj` and `thank-v` forced from 3 to 1. Spend US$0.78.
+
 ## [2026-10-22] review | second panel round for sign to soap
 
 Cycle 4 of the 00:44 run (`20261022T012015Z-83i5eu`). Second panel round for twenty one-round nouns in creation order: *sign*, *silence*, *silk*, *sink*, *sister*, *situation*, *size*, *skill*, *skin*, *skirt*, *sky*, *sleep*, *slice*, *smell*, *smile*, *smoke*, *snack*, *snake*, *snow*, *soap*. A container restart stopped the panel after five entries; the rest ran in foreground chunks of five. 35 decisions, 14 applied, 21 rejected, all from reviewer-a except three. Applied: `sister-n` sense 1 and core idea now include half-sisters, the British nurse sense reworded; `sign-n` zodiac sense; `smell-n` *have a smell* labelled British; `soap-n` *short for* reworded (origin fence). Rejected: the four keyword-rule objections on `sleep-n` phrases; splitting `sky-n` (the plural weather use differs in grammar). Spend US$1.42.
