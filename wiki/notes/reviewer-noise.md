@@ -104,4 +104,6 @@ This is a third, different shape of the same underlying pattern (see the two ent
 
 **2026-10-21 check (forty-first).** reviewer-a, reasoning off: *copied* on eight of ten, each time naming Oxford and "quoting" our own text back; *cannot tell* on the two usage notes. Search found no exact match but three learner's-dictionary frames (`bunch-n`, `spring-n`, `pipe-n`): three rewrites; search still decides.
 
+**2026-10-22 check (forty-second).** reviewer-a, reasoning off after a first call with reasoning on spent all its tokens and returned nothing: *cannot tell* on all ten, no *copied* calls. Search showed two learner's-dictionary frames (`simply-adv`, `race-n`) and one near frame (`drunk-adj`): three rewrites.
+
 **[tooling] 2026-10-18, interjections.** On the greeting interjections both reviewers flagged *say hello*, *say goodbye*, *say hi*, *say bye*, and *wave goodbye* as noun uses, field by field: twelve issues on `goodbye-interj`, ten on `hello-interj`, most of them this one claim repeated across examples, collocations, notes, and consistency. `yes-interj` (*he said yes*, *say yes*) set the house reading: after *say* the word is the quoted interjection. All such flags rejected; the true noun uses (*our goodbyes*, *a warm hello*) now point to `goodbye-n` and `hello-n` in one clause.

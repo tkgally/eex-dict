@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-22] originality | forty-second check, three rewrites
+
+Cycle 3 of the 00:44 run (`20261022T011444Z-83i5eu`), forced at run 490. Ten sampled fields (`reviews/originality/2026-10-22.md`): original 6, generic overlap 1 (`nor-conj` *and also not*), rewrite 3. No exact web match, but `simply-adv` sense 3 and `race-n` sense 1 followed a learner's dictionary's frame, and `drunk-adj` sense 2 came close to the usual frame for *drunk with power*; all three rewritten in my own words. Panel on the three: 3 decisions, 1 applied (`drunk-adj` broadened from pride to any strong happy feeling), 2 rejected (*singular only* allows *a race against time*; *used to* is fine for an intensifier). reviewer-a answered *cannot tell* on all ten with reasoning off; with reasoning on it returned nothing ([note](notes/reviewer-noise.md)). Spend US$0.23.
+
 ## [2026-10-22] build | eleven phrasal verbs from turn down to work out
 
 Cycle 2 of the 00:44 run (`20261022T010139Z-83i5eu`). Twelve band-1 phrasal verbs claimed; `wait for` marked duplicate (verb + preposition fence; `wait-v` sense 1). Eleven drafted and reviewed: `turn-down`, `turn-into`, `turn-off`, `turn-on`, `turn-over`, `turn-up`, `use-up`, `wake-up`, `wash-up`, `watch-out`, `work-out` (all `-phrv`). Pronunciation: ten of eleven disputed 1 of 3 by the known notation split ([note](notes/phrasal-verb-stress-recheck.md)); flagged, one curator line; `turn-into` verified. Panel: 28 decisions, 15 applied, 13 rejected (reviewer-b's pattern objections, fence). Applied: core ideas of `turn-down` and `turn-up`; `turn-off` road examples; the *waked* learner error dropped from `wake-up` (the inflection note allows it); `work-out` *at*/*to* regional claim hedged. `change-v` back-link moved by hand to sense 2. Spend US$0.72.
