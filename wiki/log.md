@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-22] lint | eighty-third pass
+
+Cycle 2 of the 12:44 run (`20261022T130343Z-fgynwy`), forced at five runs since the last lint. Caps, links, index, log, open questions, and the curator file are in order (no orphan pages, no duplicate curator lines, two open questions unchanged). `crossref.py --all --apply` added six back-links (`hurry-v` from `race-v` and `run-v`, `turn-off-phrv`, `turn-on-phrv`, `write-down-phrv`, `thank-you-interj`), all on the right sense. `lint_vocab --all --queue`: no definition violations. Three claim files pruned. Precision: no new switch-offs; eight disabled pairs unchanged. The queue's `phr` rows were checked against keyword entries: *by the way*, *my pleasure*, *go to bed* marked duplicate; `bless-v` queued as the home for *bless you*; new note `queue-phrase-rows`. Next lint due in about five cycles. Spend: none.
+
 ## [2026-10-22] build | write down, thank you, thank, and seven affixes
 
 Cycle 1 of the 12:44 run (`20261022T124509Z-fgynwy`). The queue's next twelve held eight band-1 phrase rows. Five already live as phrases under their keyword (*for example*, *in fact*, *of course*, *see you*, *take care*) and were marked duplicate; *excuse me* and *good night* were added as phrases to `excuse-v` and `night-n` (keyword rule, as *good morning* under `morning-n`), and the dangling `excuse-me-phr` reference on `excuse-v` was replaced; *thank you* was drafted as `thank-you-interj`, like `thanks-interj`, with `thank-v`. New: `write-down-phrv`, `thank-you-interj`, `thank-v`, `co-prefix`, `re-prefix`, `able-suffix`, `al-suffix`, `ation-suffix`, `ed-suffix`, `en-suffix`. All 18 transcriptions verified (`ed-suffix` has none by design). 56 decisions, 34 applied, 22 rejected; reviewer-b's six "affix definitions belong in the explanation" calls rejected (house style is *added to...*, as `un-prefix`). Queue bands of `thank-you-interj` and `thank-v` forced from 3 to 1. Spend US$0.78.
