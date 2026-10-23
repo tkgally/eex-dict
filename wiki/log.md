@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-23] originality | forty-third check, three rewrites
+
+Cycle 1 of the 12:43 run (`20261023T124420Z-x3gcgf`), forced by the selector (run 500, a multiple of ten). Ten fields sampled; exact-phrase searches found no word-for-word match but three learner's-dictionary frames: `rule-n` *rule of thumb*, `effectively-adv` sense 2 (*in fact, although not officially*), and `close-adj` sense 8 (the stuffy-air sense). All three rewritten; `girl-n` (*a female child*) and `disagree-v` sense 1 are generic overlaps; five original. reviewer-a (reasoning off) answered *copied* on seven, naming Cambridge and quoting our own text back. The panel on the three entries raised ten issues (all reviewer-a; reviewer-b none): seven applied (the first *effectively* rewrite was too narrow; its false-friend note named a language group; its learner error was ambiguous; *against the rules* softened from *fixed* to *usual*; `close-adj` sense 5 now covers undecided contests), three rejected. Record: `reviews/originality/2026-10-23.md`. Spend US$0.31.
+
 ## [2026-10-23] lint | eighty-fourth pass
 
 Cycle 4 of the 00:44 run (`20261023T013045Z-rm5wd1`), the run's last. Mechanical checks clean (caps, links, vocabulary gate, claims pruned). `crossref --all --apply` added one back-link (`consider-v` in `considering-prep`'s word family, whose duplicate see-also was removed) and reported five type mismatches; four were made one type on both sides by hand (`cause-v`/`bring-about-phrv` and `um-interj`/`er-interj` synonyms, `put-off-phrv`/`put-back-phrv` synonyms, `relax-v`/`calm-down-phrv` compare); `alone-adj`/`lonely-adj` is sense-specific and kept. Precision: no switch-offs; `reviewer-b` `phrase` 0.30 (19/63), one rejection from the line. `reviewer-precision` passes eleven to nineteen condensed to free wiki words (29,480 of 30,000). Index line for that note was stale and is fixed; `queue-hyphen-loss` records the period loss. No spend.
