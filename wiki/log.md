@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-23] build | eight abbreviations and clippings, four prepositions
+
+Cycle 3 of the 00:44 run (`20261023T011806Z-rm5wd1`). New: `ad-n`, `app-n`, `info-n`, `cm-abbr`, `dr-abbr`, `no-abbr`, `oz-abbr`, `pm-abbr`, `alongside-prep`, `besides-prep`, `considering-prep`, `given-prep`. *ad*, *app*, *info* were queued as abbreviations; both reviewers called them clipped nouns, which matches `bike-n`, `fridge-n`, `phone-n`, so they were renamed to nouns before merge (abbr rows marked duplicate, noun rows at band 1). `ok` (abbr) marked duplicate of the *okay* entries; `etc.` deferred ([note](notes/etc-deny-list.md)). The duplicate `pm` row took band 1 so stamping reads the real band. All 16 transcriptions verified. 44 decisions, 25 applied, 19 rejected (reviewer-a's plural *infos*). Back-links: `dr-abbr` moved by hand to `doctor-n` sense 1; `app-n`/`program-n` made a compare pair. Spend US$0.49.
+
 ## [2026-10-23] review | second panel round for sport to station, contest to invention
 
 Cycle 2 of the 00:44 run (`20261023T005916Z-rm5wd1`). Second panel round for the twenty oldest one-round entries: *sport*, *spread*, *square*, *staff*, *stage*, *stairs*, *standard*, *star*, *state*, *statement*, *station* (nouns), *contest*, *contract*, *corner*, *crack*, *credit*, *crowd* (verbs), *famous*, *invent*, *invention*. Panel in four foreground chunks of five, none cut off. 62 decisions, 24 applied, 38 rejected. Changes: `square-n` and `staff-n` core ideas corrected; `star-n` horoscope sense no longer uses mainly British *read your stars*; *crack a smile* removed from `crack-v` sense 8 (it lives under `smile-n`, now a see-also); `statement-n` sense 3 no longer says only written; `contest-v`, `credit-v`, `crowd-v` definitions widened or reworded; `corner-v` sense 2 lost its informal label. Rejected: reviewer-a's call that `state-n` sense 6 (*lie in state*) is an adjective. No back-links changed. Spend US$1.63.
