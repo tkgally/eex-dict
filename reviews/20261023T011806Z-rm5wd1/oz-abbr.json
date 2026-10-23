@@ -1,0 +1,439 @@
+{
+  "run_id": "20261023T011806Z-rm5wd1",
+  "slug": "oz-abbr",
+  "entry_modified": "2026-10-23T01:21:11Z",
+  "reviewers": [
+    {
+      "role": "reviewer-a",
+      "model": "openai/gpt-5.6-terra",
+      "requested_at": "2026-10-23T01:23:17Z",
+      "cost_usd": 0.015235,
+      "tokens_in": 2463,
+      "tokens_out": 1004,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "issue",
+          "quote": "An ounce is a small unit of weight, a little less than 30 grams.",
+          "severity": "blocking",
+          "family": "explanation",
+          "reason": "The definition covers both ounce and ounces, but the explanation identifies only the weight unit; oz is also used for fluid ounces, which are units of volume."
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "issue",
+          "quote": "It has the same form for one and for more than one.",
+          "severity": "minor",
+          "family": "explanation",
+          "reason": "The pronoun has no clear antecedent because the entry concerns the abbreviation oz, while the preceding sentence discusses fluid ounces."
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "issue",
+          "quote": "Ounces are part of the system used in the United States for everyday weights; most other countries use grams.",
+          "severity": "blocking",
+          "family": "adaptation",
+          "reason": "This is misleading because oz also commonly denotes fluid ounces, a volume measure, and the note discusses only weights and grams."
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "issue",
+          "quote": "\"definition\": \"ounce or ounces, used in writing after a number\"",
+          "severity": "blocking",
+          "family": "other",
+          "reason": "The broad definition includes fluid-ounce use, but the explanation, examples, and entry-level adaptation describe only weight ounces."
+        }
+      ],
+      "summary": "The entry is largely well formed, but it treats oz as though it only meant a weight ounce despite defining it broadly enough to include fluid ounces. The explanation, adaptation note, and sense structure need revision to cover the volume use accurately.",
+      "error": null
+    },
+    {
+      "role": "reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "requested_at": "2026-10-23T01:23:24Z",
+      "cost_usd": 0.02149,
+      "tokens_in": 2579,
+      "tokens_out": 1361,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry is well-formed and accurate. The explanation and notes are helpful for learners.",
+      "error": null
+    }
+  ]
+}
