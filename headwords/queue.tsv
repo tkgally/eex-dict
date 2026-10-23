@@ -16,19 +16,19 @@ headword	pos	band	source	status	added	note
 -ity	suffix	1	defining	done	2026-09-16	votes 2
 -ive	suffix	1	defining	done	2026-09-16	votes 2
 -ize	suffix	1	defining	done	2026-09-16	votes 2
--less	suffix	1	defining	pending	2026-09-16	votes 2
--like	suffix	1	defining	pending	2026-09-16	votes 1
--ly	suffix	1	defining	pending	2026-09-16	votes 2
--ment	suffix	1	defining	pending	2026-09-16	votes 2
+-less	suffix	1	defining	done	2026-09-16	votes 2
+-like	suffix	1	defining	done	2026-09-16	votes 1
+-ly	suffix	1	defining	done	2026-09-16	votes 2
+-ment	suffix	1	defining	done	2026-09-16	votes 2
 -ness	suffix	1	defining	done	2026-09-16	votes 2
--ous	suffix	1	defining	pending	2026-09-16	votes 2
--ship	suffix	1	defining	pending	2026-09-16	votes 2
--tion	suffix	1	defining	pending	2026-09-16	votes 2
--ward	suffix	1	defining	pending	2026-09-16	votes 1
--wise	suffix	1	defining	pending	2026-09-16	votes 1
--y	suffix	1	defining	pending	2026-09-16	votes 1
+-ous	suffix	1	defining	done	2026-09-16	votes 2
+-ship	suffix	1	defining	done	2026-09-16	votes 2
+-tion	suffix	1	defining	done	2026-09-16	votes 2
+-ward	suffix	1	defining	done	2026-09-16	votes 1
+-wise	suffix	1	defining	done	2026-09-16	votes 1
+-y	suffix	1	defining	done	2026-09-16	votes 1
 a	det	1	defining	done	2026-09-16	votes 3; referenced by one-num
-a.m.	abbr	1	defining	pending	2026-09-16	votes 2
+a.m.	abbr	1	defining	done	2026-09-16	votes 2
 ability	n	1	defining	done	2026-09-16	votes 3; referenced by able-adj
 able	adj	1	defining	done	2026-09-16	votes 2; referenced by can-modal
 about	prep	1	defining	done	2026-09-16	votes 3
@@ -95,7 +95,7 @@ already	adv	1	defining	done	2026-09-16	votes 3
 also	adv	1	defining	done	2026-09-16	votes 3
 although	conj	1	defining	done	2026-09-16	votes 3; referenced by in-spite-of-prep; referenced by despite-prep; referenced by when-conj; stale claim, no backing file, see queue-stale-claimed-rows.md
 always	adv	1	defining	done	2026-09-16	votes 3
-am	abbr	1	defining	pending	2026-09-16	votes 2
+am	abbr	1	defining	duplicate	2026-09-16	votes 2; period loss: the real row is a.m. (am-abbr), built 2026-10-23
 ambulance	n	1	defining	done	2026-09-16	votes 2
 among	prep	1	defining	done	2026-09-16	votes 3
 amount	n	1	defining	done	2026-09-16	votes 3
@@ -1652,7 +1652,7 @@ plow	v	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of 
 plug	n	1	defining	done	2026-09-16	votes 1
 plural	n	3	defining	pending	2026-09-16	votes 1; panel median 3, secondary part of speech
 plus	prep	1	defining	done	2026-09-16	votes 1
-pm	abbr	3	defining	pending	2026-09-16	votes 2; panel median 3, secondary part of speech
+pm	abbr	3	defining	duplicate	2026-09-16	votes 2; panel median 3, secondary part of speech; referenced by am-abbr; period loss: the real row is p.m. (pm-abbr, band 1); referenced by am-abbr
 pocket	n	1	defining	done	2026-09-16	votes 3
 point	n	1	defining	done	2026-09-16	votes 3; referenced by time-n
 point out	phrv	1	defining	done	2026-09-16	votes 3; referenced by point-n
@@ -2607,8 +2607,8 @@ zip	n	3	defining	pending	2026-09-16	votes 3; panel median 3, secondary part of s
 zip	v	3	defining	pending	2026-09-16	votes 3; panel median 3, secondary part of speech
 -ance	suffix	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
 -ation	suffix	1	band	done	2026-09-16	panel median 1 (wordlist-1=1,wordlist-2=1,wordlist-3=1)
--s	suffix	1	band	pending	2026-09-16	panel median 1 (wordlist-1=1,wordlist-2=1,wordlist-3=1)
--sion	suffix	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
+-s	suffix	1	band	done	2026-09-16	panel median 1 (wordlist-1=1,wordlist-2=1,wordlist-3=1)
+-sion	suffix	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2); panel median 2; referenced by tion-suffix
 abstract	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
 abstract	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 academic	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2)
@@ -8354,3 +8354,4 @@ ee	suffix	3	crossref	pending	2026-10-22	referenced by er-suffix
 est	suffix	3	crossref	pending	2026-10-22	referenced by er-suffix
 less	suffix	1	crossref	duplicate	2026-10-22	referenced by ful-suffix; hyphen lost (queue-hyphen-loss); the real row is -less; build 2026-10-22; band 1 as the real -less row
 tending	v	3	closure	pending	2026-10-22	used in ive-suffix senses[0].definition
+sion	suffix	3	crossref	duplicate	2026-10-23	referenced by tion-suffix; hyphen lost (queue-hyphen-loss); the real row is -sion; referenced by tion-suffix
