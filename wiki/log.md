@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-23] lint | eighty-fourth pass
+
+Cycle 4 of the 00:44 run (`20261023T013045Z-rm5wd1`), the run's last. Mechanical checks clean (caps, links, vocabulary gate, claims pruned). `crossref --all --apply` added one back-link (`consider-v` in `considering-prep`'s word family, whose duplicate see-also was removed) and reported five type mismatches; four were made one type on both sides by hand (`cause-v`/`bring-about-phrv` and `um-interj`/`er-interj` synonyms, `put-off-phrv`/`put-back-phrv` synonyms, `relax-v`/`calm-down-phrv` compare); `alone-adj`/`lonely-adj` is sense-specific and kept. Precision: no switch-offs; `reviewer-b` `phrase` 0.30 (19/63), one rejection from the line. `reviewer-precision` passes eleven to nineteen condensed to free wiki words (29,480 of 30,000). Index line for that note was stale and is fixed; `queue-hyphen-loss` records the period loss. No spend.
+
 ## [2026-10-23] build | eight abbreviations and clippings, four prepositions
 
 Cycle 3 of the 00:44 run (`20261023T011806Z-rm5wd1`). New: `ad-n`, `app-n`, `info-n`, `cm-abbr`, `dr-abbr`, `no-abbr`, `oz-abbr`, `pm-abbr`, `alongside-prep`, `besides-prep`, `considering-prep`, `given-prep`. *ad*, *app*, *info* were queued as abbreviations; both reviewers called them clipped nouns, which matches `bike-n`, `fridge-n`, `phone-n`, so they were renamed to nouns before merge (abbr rows marked duplicate, noun rows at band 1). `ok` (abbr) marked duplicate of the *okay* entries; `etc.` deferred ([note](notes/etc-deny-list.md)). The duplicate `pm` row took band 1 so stamping reads the real band. All 16 transcriptions verified. 44 decisions, 25 applied, 19 rejected (reviewer-a's plural *infos*). Back-links: `dr-abbr` moved by hand to `doctor-n` sense 1; `app-n`/`program-n` made a compare pair. Spend US$0.49.

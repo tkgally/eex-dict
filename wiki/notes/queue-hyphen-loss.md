@@ -9,3 +9,5 @@ Handled by hand so far: the wrong row is marked `duplicate` when a correct one e
 Recurred 2026-10-12 on `part-time-adj`: the old wrong row *part time* (adj, band 3) was marked `done` by `queue.py sync` instead of the right row, `crossref.py --queue` added *part time* (adv), and `queue.py stamp` still writes band 3 from the wrong row although the right row is band 1 (a validator warning). Rows fixed by hand; the stamped band stays wrong until the tool is fixed.
 
 Recurred 2026-10-22 on suffixes: cross-references queued *ic*, *ing*, *ity*, *less* beside *-ic*, *-ing*, *-ity*, *-less*; `sync` left the real rows pending and `stamp` wrote band 3. Fixed by hand (wrong rows `duplicate`, band 1 forced). *ible*, *ee*, *est* have only hyphenless rows.
+
+**2026-10-23.** Periods are lost the same way: rows `am`, `pm` (for *a.m.*, *p.m.*) and `sion` (for *-sion*). `queue.py sync` and `stamp` then read the wrong row: *p.m.* was stamped band 3, and *-less* and *a.m.* were not marked done until set by hand.
