@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-23] review | second panel round, underneath to strike
+
+Cycle 3 of the 12:43 run (`20261023T131127Z-x3gcgf`). Second reading of the twenty oldest one-round entries: `underneath-adv`, `underneath-prep`, and nouns *steam*–*strike*. Panel in four chunks of five, none failed; three entries clean (`underneath-prep`, `stranger-n`, `stream-n`). 38 decisions: 18 applied, 20 rejected. Applied: `stick-n` sense 3 now covers games played with a puck; `stone-n` usage and compare notes agree on American *rock*; `step-n` usage note no longer says *make a step* is impossible; `strike-n` baseball sense split into a short definition and an explanation; `strength-n` lost two *and so on* tails; `put a stop to` widened; `a steam iron` removed from the power sense. Rejected: reviewer-a's *strategy* merge (the uncountable skill sense has its own grammar), *humorous* called non-register (it is in the set), reviewer-b on **St.** named as a word. Spend US$1.74.
+
 ## [2026-10-23] build | three prepositions and nine verbs, regarding to bang
 
 Cycle 2 of the 12:43 run (`20261023T125422Z-x3gcgf`). New, all band 2: `regarding-prep`, `unlike-prep`, `versus-prep`, `access-v`, `adapt-v`, `alter-v`, `analyze-v` (British *analyse*), `appreciate-v`, `assemble-v`, `assess-v`, `associate-v`, `bang-v` (with a vulgar sense). All 24 transcriptions verified after British `associate-v` was changed to *-si-* (`əˈsəʊ.si.eɪt`), where two panel members agreed against the *-shi-* draft. Panel: 25 issues, 9 applied, 16 rejected. Rejected: reviewer-a's seven calls that *it's unlike him* is an adjective (house fence: a preposition with an object stays one); two core-idea "not a sentence" flags (house style). Applied: `adapt-v` sense 3 widened beyond film and television; `associate-v` sense 2 no longer builds disapproval into the definition; *vs.* with a period in American writing. Back-links moved by hand: `change-v` (`adapt-v` to sense 2), `understand-v` (`appreciate-v` to sense 2). Spend US$0.73.
