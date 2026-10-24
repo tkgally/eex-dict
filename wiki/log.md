@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-24] review | owner's appendix (B3), second block: numbers, examples, surnames
+
+Scheduled run 20261024T094302Z-jiwbqq, cycle 4. Twenty entries through the full pipeline, plus a hand-placed antonym back-link on `ceiling-n`. Numbers *two* to *ten*: the shared time-and-age sentence removed from every usage note, a second sense (card, size, or score) added, duplicate notes trimmed; *ten to one* now warns that it is also a time. `deal-n`, `like-prep` (three new senses: typical, describe, about), `just-adv` (polite sense, *just because*), `clean-up-phrv`, `go-on-phrv` (*go on about*), `y-suffix`, `strict-adj` (new sense, secret), `floor-n` (new sense, lowest level) fixed; `certainly-adv`, `naturally-adv`, `obviously-adv` now point at `course-n` for *of course*. Surname cases: `strict-adj` and `floor-n` fixed; the title entries went to the curator queue. Panel: 115 issues, 86 blocking; 30 applied, 57 rejected. Spend US$1.66.
+
 ## [2026-10-24] build | milestone 1: eleven more, from participle to eighteen
 
 Scheduled run 20261024T092841Z-jiwbqq, cycle 3. Built and reviewed eleven milestone-1 entries: *participle*, *countable*, *uncountable* (adjectives), *receive* (five senses), *bar* (eight senses, phrases *behind bars*, *raise the bar*), *exam*, *newspaper*, *series*, *lovely*, *responsible* (five senses), *eighteen*. The claimed row *of course* (adverb) was set `duplicate`: the phrase lives under `course-n`; `certainly-adv`, `naturally-adv`, `obviously-adv` still point at `of-course-adv` and should be repointed in review. All 22 transcriptions verified. Adjudication: 18 applied, 20 rejected, none escalated. Four `NO-SENSE` back-links placed by hand (`accept-v`, `show-n`, `kind-adj`, `sensible-adj`). Spend US$0.82.
