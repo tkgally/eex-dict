@@ -82,5 +82,19 @@ class DisplayFormsTest(unittest.TestCase):
         self.assertEqual(eexlib.guess_display_form("us-pron", ["the U.S. and us"]), "us")
 
 
+class ClosurePauseTest(unittest.TestCase):
+    """The owner's ruling A3 of 2026-10-24: closure sources draw only bands 1 and 2 until band 2 is finished."""
+
+    def test_pause_holds_while_band_2_has_pending_rows(self):
+        import eexlib
+        rows = [row("cat", "n", band="1", status="done"), row("vane", "n", band="4"), row("borrow", "v", band="2")]
+        self.assertTrue(eexlib.closure_paused(rows))
+        self.assertFalse(eexlib.closure_row_allowed(rows[1], True))
+        self.assertTrue(eexlib.closure_row_allowed(rows[2], True))
+        rows[2]["status"] = "done"
+        self.assertFalse(eexlib.closure_paused(rows))
+        self.assertTrue(eexlib.closure_row_allowed(rows[1], False))
+
+
 if __name__ == "__main__":
     unittest.main()

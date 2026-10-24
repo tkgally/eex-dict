@@ -1,6 +1,6 @@
 # crossref puts sense back-links on the target's first sense
 
-*Observed 2026-09-24, tenth lint pass (`20260924T094259Z-l97vvx`). [tooling]*
+*Observed 2026-09-24, tenth lint pass (`20260924T094259Z-l97vvx`). [tooling] Superseded 2026-10-24 by the owner's ruling C1 ([cross-reference-display](../decisions/cross-reference-display.md)): the fallback is gone; a back-link is written only where one sense clearly matches, else a `NO-SENSE` line.*
 
 `crossref.py --all --apply` added 13 sense-level back-links to 11 entries. `add_backlink` puts a back-link on the target sense that already names the source, else on sense 1. Of the 13, five sat on the wrong sense: `get-v` (illness), `pick-up-phrv` (illness), `make-v` (make a train) and `take-v` (travel by bus) all went to `catch-v` sense 1 (catch a ball), and `chop-v` sense 3 (reduce) went to `cut-v` sense 1 (divide with a knife), leaving `chop-v` in both its `synonyms` and `compare`. This run moved the five by hand to `catch-v` senses 5 and 3 and `cut-v` sense 4; `crossref --gate` still passes, since a back-link on any sense counts.
 

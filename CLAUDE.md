@@ -14,7 +14,7 @@
 6. **A refusal is recorded, never argued with.** If the model declines to write an entry, `tools/queue.py set <headword> <pos> declined --note "<reason>"`, one line in `reviews/needs_curator.txt`, move on.
 7. **Never print, log, or commit `OPENROUTER_API_KEY`.** Check `config/budget.md` and the ledger before any paid call and record the billed actual after (`tools/spend.py`).
 8. **No model identifiers** in commit messages, pull-request text, or wiki prose. Model names in entry provenance, review files, and `config/models.md` are data and belong there.
-9. **Caps are enforced by CI** (`tools/check_caps.py`): this file 1,500 words; `resume-prompt.md` 800; `routine-prompt.md` 2,500; `NEXT.md` 60 lines; the style guide 3,500; the wiki 30,000 excluding index, log, and decisions; a log entry 200. Trim before adding.
+9. **Caps are enforced by CI** (`tools/check_caps.py`): this file 1,500 words; `resume-prompt.md` 800; `routine-prompt.md` 2,500; `NEXT.md` 60 lines and 1,000 words (run history lives in `wiki/log.md`, never in `NEXT.md`); the style guide 3,500; the wiki 30,000 excluding index, log, and decisions; a log entry 200. Trim before adding.
 10. **No new machinery on speculation.** An observed problem is written to `wiki/notes/` first; the change comes in a later run with a logged reason.
 
 ## Field ownership
@@ -41,7 +41,7 @@ In this order: `tools/validate.py <files>` → `tools/inflect.py <slugs>` → `t
 
 **Work** on the harness-assigned `claude/*` branch, never on `main`. Claim headwords before drafting (`tools/claim.py`); claims on unmerged branches count as taken.
 
-**Finish, every session.** `python3 tools/validate.py --gate`; `python3 tools/check_caps.py`; `python3 tools/check_links.py`; `python3 -m unittest discover -s tools/tests -t .`; `python3 tools/metrics.py`; update `wiki/index.md` and `wiki/log.md`; rewrite `NEXT.md`; write the journal entry (`clear-reports` style: plain, self-contained English). Commit with an imperative subject prefixed by the mode or stage (`build: …`, `site: …`, `setup: …`). `git push -u origin <branch>` (on network failure retry 4 times: 2, 4, 8, 16 seconds). Then the atomic tail, with no other work in between:
+**Finish, every session.** `python3 tools/validate.py --gate`; `python3 tools/check_caps.py`; `python3 tools/check_links.py`; `python3 -m unittest discover -s tools/tests -t .`; `python3 tools/metrics.py`; update `wiki/index.md` and `wiki/log.md`; rewrite `NEXT.md`; write the journal entry (`clear-reports` style: plain, self-contained English; one file per run, each cycle adding its section). Commit with an imperative subject prefixed by the mode or stage (`build: …`, `site: …`, `setup: …`). `git push -u origin <branch>` (on network failure retry 4 times: 2, 4, 8, 16 seconds). Then the atomic tail, with no other work in between:
 
 1. `mcp__github__create_pull_request` (`owner: "tkgally"`, `repo: "eex-dict"`, `base: "main"`, ready, not draft); the body is a report to the owner in plain English.
 2. Poll `mcp__github__pull_request_read` with `method: "get_check_runs"` (never `get_status`). Green = `total_count >= 1` and every run `completed` with conclusion `success`, `neutral`, or `skipped`; failed = any other completed conclusion; pending = anything else. While pending, `python3 tools/wait.py 60` in the foreground (a backgrounded `sleep` returns at once), then re-poll; at most 15 polls.

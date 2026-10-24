@@ -186,6 +186,10 @@ def cmd_next(a) -> int:
     rows = load()
     taken = taken_slugs()
     existing = {p.stem for p in eexlib.iter_entry_paths()}
+    paused = eexlib.closure_paused(rows)
+    if a.source in eexlib.CLOSURE_SOURCES and paused:
+        print(f"# --source {a.source}: band 2 is unfinished, so only rows at band 1 or 2 (ruling A3, "
+              "wiki/decisions/build-order.md)", file=sys.stderr)
     out = []
     for r in sorted(rows, key=order_key):
         if r["status"] != "pending":
@@ -193,6 +197,8 @@ def cmd_next(a) -> int:
         if a.band and str(r["band"]) != str(a.band):
             continue
         if a.source and r["source"] != a.source:
+            continue
+        if r["source"] in eexlib.CLOSURE_SOURCES and a.source in eexlib.CLOSURE_SOURCES and not eexlib.closure_row_allowed(r, paused):
             continue
         if a.pos and r["pos"] != a.pos:
             continue

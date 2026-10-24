@@ -264,6 +264,58 @@ def guess_display_form(slug, texts=()):
     return name.replace("-", " ")
 
 
+# Cross-reference targets a fence in NEXT.md rules out (the owner's ruling C1 of 2026-10-24,
+# wiki/decisions/cross-reference-display.md): no entry will ever exist for them.
+RULED_OUT = {
+    "out-of-prep": "fence: out-prep holds the out of senses",
+    "look-for-phrv": "fence: verb + preposition covered by look-v sense 2",
+    "care-for-phrv": "fence: verb + preposition covered by care-v",
+}
+
+
+def ruled_out_targets(rows=None, root=None):
+    """``slug -> reason`` for every target a cross-reference must not name: the fenced list above, and
+    every slug whose real queue row (``queue_display_map``'s choice) is ``duplicate``."""
+    rows = load_queue_rows(root) if rows is None else rows
+    out = dict(RULED_OUT)
+    best = {}
+    for r in rows:
+        try:
+            slug = slugify(r["headword"], r["pos"])
+        except (KeyError, ValueError):
+            continue
+        live = r.get("status") != "duplicate"
+        if slug not in best or (live and not best[slug][0]):
+            best[slug] = (live, r)
+    for slug, (live, r) in best.items():
+        if not live and slug not in out:
+            out[slug] = "queue row is duplicate: " + (r.get("note") or "")[-80:]
+    return out
+
+
+CLOSURE_SOURCES = ("closure", "family", "crossref")
+
+
+def _band(r):
+    try:
+        return int(r.get("band") or 0)
+    except ValueError:
+        return 0
+
+
+def closure_paused(rows) -> bool:
+    """True while band 2 is unfinished: some ``pending`` or ``claimed`` row is at band 1 or 2.
+
+    While it holds, the closure sources (``closure``, ``family``, ``crossref``) hand out only rows at
+    band 1 or 2 (the owner's ruling A3 of 2026-10-24, wiki/decisions/build-order.md)."""
+    return any(r.get("status") in ("pending", "claimed") and 1 <= _band(r) <= 2 for r in rows)
+
+
+def closure_row_allowed(r, paused: bool) -> bool:
+    """May a pending row of a closure source be handed out now (ruling A3)?"""
+    return not paused or 1 <= _band(r) <= 2
+
+
 def queue_display_map(rows):
     """``slug -> headword`` from queue rows; where several rows share a slug, a live row
     beats a duplicate and a row with a hyphen or period beats one without."""

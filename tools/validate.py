@@ -335,6 +335,46 @@ def check_prose(ctx, rel, e):
                     err(rel, "%s: %r is a technical term; say the sound in plain words (style guide section 11)" % (field, token))
 
 
+# Notes discipline (the owner's ruling B2 of 2026-10-24, wiki/decisions/notes-discipline.md):
+# two note fields of one entry that share most of their content words probably restate one fact.
+OVERLAP_FIELDS = re.compile(r"(?:explanation|usage_note|synonym_discrimination\.note|learner_errors\[\d+\]\.note|"
+                            r"adaptation\.\w+|pronunciation\.notes|core_idea)$")
+OVERLAP_STOP = frozenset("""a an the and or but of to in on at by for with from as is are was were be been being it its
+this that these those there their they them he she his her we our you your not no so if when which who what how very more
+most usually often also than then can could will would should may might must do does did done has have had just only some
+any such into out up about over one way use used using word words sense means meaning mean say says said like same other
+another many much each both english language languages learner learners something someone""".split())
+OVERLAP_MIN_WORDS = 8
+OVERLAP_SHARE = 0.7
+
+
+def _content_words(text):
+    return {w for w in re.findall(r"[a-z]+", eexlib.strip_markup(str(text)).lower()) if len(w) > 2 and w not in OVERLAP_STOP}
+
+
+def overlapping_notes(e):
+    """``[(field_a, field_b, share)]`` for note fields that share at least OVERLAP_SHARE of the shorter
+    one's content words, both at least OVERLAP_MIN_WORDS long (the headword's own words left out)."""
+    own = _content_words(e.get("headword") or "")
+    fields = [(f, _content_words(t) - own) for f, t in eexlib.iter_prose(e) if OVERLAP_FIELDS.search(f)]
+    out = []
+    for i in range(len(fields)):
+        for j in range(i + 1, len(fields)):
+            a, b = fields[i][1], fields[j][1]
+            if len(a) < OVERLAP_MIN_WORDS or len(b) < OVERLAP_MIN_WORDS:
+                continue
+            share = len(a & b) / min(len(a), len(b))
+            if share >= OVERLAP_SHARE:
+                out.append((fields[i][0], fields[j][0], share))
+    return out
+
+
+def check_overlap(ctx, rel, e):
+    for a, b, share in overlapping_notes(e):
+        ctx.report.warn(rel, "%s and %s share %d%% of their content words: one fact, one field (style guide section 9)"
+                        % (a, b, round(share * 100)))
+
+
 # --------------------------------------------------------------------------
 # Pronunciation
 # --------------------------------------------------------------------------
@@ -519,6 +559,7 @@ def check_file(ctx, path, fix_format=False):
         check_identity(ctx, rel, path, data)
         check_structure(ctx, rel, data)
         check_prose(ctx, rel, data)
+        check_overlap(ctx, rel, data)
         check_pronunciation(ctx, rel, data)
         check_frequency(ctx, rel, data)
         check_provenance(ctx, rel, data)

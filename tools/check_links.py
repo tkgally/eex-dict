@@ -30,6 +30,13 @@ fragment (page.md#section-name) is NOT validated -- only that page.md itself
 exists. A link to an existing page but a wrong or renamed section is not
 caught; check those by hand for anything load-bearing.
 
+Entry cross-references (the owner's ruling C1 of 2026-10-24): with the default
+targets, every cross-reference in entries/ is also checked against the targets
+a fence rules out or whose queue row is ``duplicate`` (eexlib.ruled_out_targets).
+Each is printed as RULED-OUT; one in an entry changed since origin/main counts as
+a broken link, so no new one lands, and the older ones are left for the review
+cycles to remove (they are model-owned fields). ``--no-entries`` skips this.
+
 Exit code 0 when every relative link target exists; 1 otherwise, with one line
 per broken link (BROKEN  file: target); 2 on a usage error. Run before every
 commit (wiki/conventions.md section 1).
@@ -115,6 +122,29 @@ def collect_pages(targets, root: Path):
     return unique
 
 
+def ruled_out_references(root: Path):
+    """``[(slug, where, target, reason, changed)]`` for every entry reference to a ruled-out target."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import eexlib  # noqa: E402
+    import crossref  # noqa: E402
+    entries = {}
+    for _p, e in eexlib.iter_entries(root):
+        if not eexlib.is_redirect_stub(e):
+            entries[e["slug"]] = e
+    ruled = {k: v for k, v in eexlib.ruled_out_targets(root=root).items() if k not in entries}
+    try:
+        changed = {p.stem for p in eexlib.changed_entry_paths(root=root)}
+    except Exception:  # noqa: BLE001 - outside git there is no ratchet
+        changed = set()
+    out = []
+    for slug, e in sorted(entries.items()):
+        for rel_, target, sense_i in crossref.refs_of(e):
+            if target in ruled:
+                where = f"senses[{sense_i}].{rel_}" if sense_i is not None else rel_
+                out.append((slug, where, target, ruled[target], slug in changed))
+    return out
+
+
 def default_targets(root: Path):
     targets = [root / d for d in DEFAULT_DIRS] + [root / f for f in DEFAULT_FILES]
     return [t for t in targets if t.exists()]
@@ -155,6 +185,8 @@ def main(argv=None) -> int:
                         help="repository root (default: parent of tools/)")
     parser.add_argument("-q", "--quiet", action="store_true",
                         help="print only broken links")
+    parser.add_argument("--no-entries", action="store_true",
+                        help="skip the check of entry cross-references against ruled-out targets")
     args = parser.parse_args(argv)
 
     root = args.root.resolve()
@@ -177,10 +209,21 @@ def main(argv=None) -> int:
     for page in pages:
         broken.extend(check_page(page, root))
 
-    if broken:
+    refused = 0
+    if not args.paths and not args.no_entries and (root / "entries").is_dir():
+        refs = ruled_out_references(root)
+        for slug, where, target, reason, changed in refs:
+            if changed or not args.quiet:
+                print(f"RULED-OUT {'(changed entry) ' if changed else ''}{slug} {where}: {target} ({reason})")
+        refused = sum(1 for r in refs if r[4])
+        if refs and not args.quiet:
+            print(f"{len(refs)} reference(s) to ruled-out targets; {refused} in changed entries (those fail).")
+
+    if broken or refused:
         for page, lineno, target in broken:
             print(f"BROKEN  {rel(page, root)}:{lineno}: {target}")
-        print(f"\n{len(broken)} broken link(s) in {len(pages)} page(s).")
+        if broken:
+            print(f"\n{len(broken)} broken link(s) in {len(pages)} page(s).")
         return 1
     if not args.quiet:
         print(f"All relative links resolve ({len(pages)} page(s) checked; "
