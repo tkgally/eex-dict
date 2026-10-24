@@ -256,11 +256,18 @@ def cmu_votes(word: str, cmu: dict[str, list[str]] | None, drafter: str) -> str:
 OWNER_RE = re.compile(r"owner-ruling:(\d{4}-\d{2}-\d{2}):(.+)$")
 
 
+def house_form(ipa: str) -> str:
+    """The IPA house form (ruling B4 (iv) of 2026-10-24): no period beside a stress mark."""
+    import eexlib
+    return eexlib.ipa_house_form(ipa)
+
+
 def owner_ruling(checked_by: str, ipa: str) -> str | None:
-    """The date of an owner's ruling recorded in ``checked_by`` for exactly this ``ipa``, else None."""
+    """The date of an owner's ruling recorded in ``checked_by`` for this ``ipa`` (compared in the
+    house form, so moving a period never loses a ruling), else None."""
     for part in (checked_by or "").split(";"):
         m = OWNER_RE.match(part)
-        if m and m.group(2) == ipa:
+        if m and house_form(m.group(2)) == house_form(ipa):
             return m.group(1)
     return None
 
@@ -268,7 +275,7 @@ def owner_ruling(checked_by: str, ipa: str) -> str | None:
 def with_owner_ruling(checked_by: str, date: str, ipa: str) -> str:
     """``checked_by`` with any earlier owner ruling replaced by one for ``ipa`` on ``date``."""
     parts = [x for x in (checked_by or "").split(";") if x and not OWNER_RE.match(x)]
-    return ";".join(parts + [f"owner-ruling:{date}:{ipa}"])
+    return ";".join(parts + [f"owner-ruling:{date}:{house_form(ipa)}"])
 
 
 def apply_owner_ruling(slugs, variety: str, date: str, dry_run: bool = False) -> int:
@@ -340,6 +347,9 @@ def main() -> int:
             votes = {role: (panel[role].get(key) or {}).get(variety, "") for role in panel}
             if variety == "american" and cmu is not None and " " not in key[0]:
                 votes["cmudict"] = cmu_votes(key[0], cmu, tr["ipa"])
+            if house_form(tr["ipa"]) != tr["ipa"]:
+                print(f"WARN {e['slug']} {variety}: {tr['ipa']!r} is not in the house form (no period beside a stress "
+                      f"mark: {house_form(tr['ipa'])!r}); python3 tools/ipa_format.py --apply fixes it")
             status, checked_by = verdict(tr["ipa"], votes, variety, a.threshold)
             ruled = owner_ruling(tr.get("checked_by", ""), tr["ipa"])
             if ruled and status != "verified":

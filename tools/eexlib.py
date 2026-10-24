@@ -331,6 +331,25 @@ def new_references(path, refs, base="origin/main", root=None):
     return set(refs) - before
 
 
+# --------------------------------------------------------------------------
+# The IPA house form (the owner's ruling B4 (iv) of 2026-10-24, wiki/decisions/consistency-rules.md):
+# a stress mark opens its syllable and is itself the break, so no period stands beside it.
+# --------------------------------------------------------------------------
+
+_IPA_DOT_BESIDE_STRESS = re.compile(r"\.+(?=[ˈˌ])|(?<=[ˈˌ])\.+")
+
+
+def ipa_house_form(ipa):
+    """``ipa`` with every period that stands directly before or after a stress mark removed:
+    ``prɪ.ˈvɛnt`` -> ``prɪˈvɛnt``; ``ˈdɪf.ər.ənt`` is unchanged."""
+    return _IPA_DOT_BESIDE_STRESS.sub("", ipa) if isinstance(ipa, str) else ipa
+
+
+def ipa_only_periods_moved(old, new):
+    """The proof the house-form script must pass: with every period removed, the strings are equal."""
+    return isinstance(old, str) and isinstance(new, str) and old.replace(".", "") == new.replace(".", "")
+
+
 def queue_display_map(rows):
     """``slug -> headword`` from queue rows; where several rows share a slug, a live row
     beats a duplicate and a row with a hyphen or period beats one without."""

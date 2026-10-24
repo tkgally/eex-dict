@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-24] setup | IPA house form (the owner's ruling B4 iv)
+
+Group 5 of the rulings of 2026-10-24 ([consistency-rules](decisions/consistency-rules.md)). House form: the stress mark opens its syllable and is itself the syllable break, so no period stands beside it (`prɪˈvɛnt`, not `prɪ.ˈvɛnt`); periods between unstressed syllables stay as drafted. `tools/ipa_format.py`, the one script the owner allowed to touch IPA, rewrote 292 transcriptions in 147 entries and the four `owner-ruling:` copies in `checked_by`; it proves every change moves only periods and refuses anything else; an independent check of the diff agreed (296 lines). `validate.py` and `pronounce_check.py` now warn on a string not in the house form; owner rulings are compared in the house form. The fence calling stress marks after a syllable break house practice is withdrawn.
+
 ## [2026-10-24] setup | band vote and build order (the owner's rulings A1, A2, A4, D4)
 
 Group 4 of the rulings of 2026-10-24 ([owner-rulings-2026-10-24](decisions/owner-rulings-2026-10-24.md)). `tools/band_vote.py` had the three word-list models band 8,283 items (every pending row and every built entry) on the written scale of [rebanding](decisions/rebanding.md); lower median; the session settled 197 wide splits (eight changed); US$1.03. Result: bands 1 to 5 hold 1,539, 3,157, 2,813, 753, 21; 79 percent the same as the founding votes, 99 percent within one band. `queue.py stamp` restamped all 2,781 entries (1,303 bands changed). Rows tools queue are now `unbanded` (new status) until the next vote. `queue.py next` gives milestone 1 first, the grammar terms first ([build-order](decisions/build-order.md)); fifteen defining-vocabulary words with no row were queued (six grammar terms among them), `like-conj` under A4; closure waits while 284 milestone rows remain. Headword pages order parts of speech by band (D4). The ruled-out check now fails only on references new since `main`. Record: `experiments/band-vote-2026-10-24/README.md`.

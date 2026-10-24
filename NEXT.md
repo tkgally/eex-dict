@@ -1,11 +1,11 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-24 by the interactive session carrying out the owner's rulings of 2026-10-24 (group 3 of 6).*
+*Rewritten 2026-10-24 by the interactive session carrying out the owner's rulings of 2026-10-24 (groups 3 to 5 of 6).*
 
 ## State
 
 - 2,781 entries, all `reviewed`. Queue: about 5,490 pending; 963 entries have had one panel round.
-- The owner's rulings of 2026-10-24 are in progress: status table [owner-rulings-2026-10-24](wiki/decisions/owner-rulings-2026-10-24.md). Groups 1 (rulings), 2 (site), 3 (tools and rules), 4 (band vote, build order) merged; 5 (IPA format), 6 (this file, report) to come in the same session.
+- The owner's rulings of 2026-10-24 are in progress: status table [owner-rulings-2026-10-24](wiki/decisions/owner-rulings-2026-10-24.md). Groups 1 (rulings), 2 (site), 3 (tools and rules), 4 (band vote, build order), 5 (IPA format) merged; 6 (this file, report) to come in the same session.
 - Bands re-voted 2026-10-24 (US$1.03; [record](experiments/band-vote-2026-10-24/README.md)): queue order is now milestone 1 first (284 rows, grammar terms first), and closure waits. Spend 2026-10-24: about US$4.25 of US$15.
 
 ## Queue (top-down)

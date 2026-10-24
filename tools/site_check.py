@@ -390,8 +390,8 @@ def fixture_site(scratch):
     companion = json.loads(json.dumps(fixture))
     companion["id"] = companion["slug"] = "account-n"
     companion["headword"] = "account"
-    companion["pronunciation"]["american"]["ipa"] = "ə.ˈkaʊnt"
-    companion["pronunciation"]["british"]["ipa"] = "ə.ˈkaʊnt"
+    companion["pronunciation"]["american"]["ipa"] = "əˈkaʊnt"
+    companion["pronunciation"]["british"]["ipa"] = "əˈkaʊnt"
     companion["inflections"]["forms"] = {"plural": "accounts"}
     companion["core_idea"] = None
     companion["senses"] = [companion["senses"][0]]
