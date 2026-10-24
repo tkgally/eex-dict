@@ -32,8 +32,9 @@ choice for the session.
 
 A target that a fence rules out or whose queue row is ``duplicate``
 (eexlib.ruled_out_targets) is refused: it is never queued, and a reference to
-it is a RULED-OUT line, an ERROR in an entry changed since origin/main (so no
-new one lands) and a warning in the others (the review cycles remove those).
+it is a RULED-OUT line: an ERROR when the reference is new since origin/main
+(so no new one lands; restamping a band adds none) and a warning otherwise
+(the review cycles remove those).
 --gate exits 1 on ERRORs only (missing targets are the closure queue's job,
 not a gate failure).
 
@@ -172,11 +173,20 @@ def add_backlink(target: dict, rel: str, source_slug: str, source: dict | None =
     return f"senses[{idx}].{rel}"
 
 
-def changed_slugs() -> set[str]:
+def changed_slugs() -> dict[str, Path]:
     try:
-        return {p.stem for p in eexlib.changed_entry_paths()}
+        return {p.stem: p for p in eexlib.changed_entry_paths()}
     except Exception:  # noqa: BLE001 - no git, no ratchet
-        return set()
+        return {}
+
+
+def is_new_reference(changed: dict[str, Path], slug: str, target: str, cache: dict) -> bool:
+    """True when a changed entry names ``target`` and did not at origin/main (the ratchet of ruling C1)."""
+    if slug not in changed:
+        return False
+    if slug not in cache:
+        cache[slug] = eexlib.new_references(changed[slug], {t for _r, t, _i in refs_of(eexlib.load_json(changed[slug]))})
+    return target in cache[slug]
 
 
 def missing_senses(entries: dict, slugs) -> list[str]:
@@ -228,6 +238,7 @@ def main() -> int:
         return 0
     ruled = {k: v for k, v in eexlib.ruled_out_targets().items() if k not in entries}
     changed = changed_slugs()
+    new_refs: dict[str, set[str]] = {}
     no_sense = 0
     errors = warns = 0
     missing: dict[str, tuple[str, str]] = {}
@@ -247,7 +258,7 @@ def main() -> int:
                     continue
                 print(f"ERROR {where}: refers to itself"); errors += 1; continue
             if target in ruled:
-                level = "ERROR" if slug in changed else "WARN"
+                level = "ERROR" if is_new_reference(changed, slug, target, new_refs) else "WARN"
                 print(f"RULED-OUT {level} {where}: {target} ({ruled[target]})")
                 if level == "ERROR":
                     errors += 1
@@ -287,7 +298,7 @@ def main() -> int:
             _hw, pos, _h = eexlib.parse_slug(target)
             # the display form keeps its hyphens and periods (ruling C3): a queue row's, else the referring entry's prose
             hw = known.get(target) or eexlib.guess_display_form(target, eexlib.entry_texts(entries[from_slug][1]))
-            rows.append(f"{hw}\t{pos}\t3\t{src}\treferenced by {from_slug}")
+            rows.append(f"{hw}\t{pos}\t\t{src}\treferenced by {from_slug}")   # no band: unbanded until the next band vote (A1)
         with tempfile.NamedTemporaryFile("w", suffix=".tsv", delete=False, encoding="utf-8") as tf:
             tf.write("\n".join(rows) + "\n")
         r = subprocess.run([sys.executable, str(HERE / "queue.py"), "add-batch", tf.name], capture_output=True, text=True, cwd=eexlib.ROOT)

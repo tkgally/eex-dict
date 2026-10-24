@@ -82,6 +82,16 @@ def budget_remaining() -> tuple[float, float, float]:
     return spent, cap, remaining
 
 
+def milestone_rows(rows: list[dict]) -> int:
+    """Pending or claimed rows of defining-vocabulary words that have no entry in any part of speech."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("eex_queue", HERE / "queue.py")
+    q = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(q)
+    words = q.milestone_words(rows)
+    return sum(1 for r in rows if r.get("status") in ("pending", "claimed") and r.get("headword", "").lower() in words)
+
+
 def signals(cfg: dict) -> dict:
     drafts = reviewed = once_reviewed = 0
     for _p, e in eexlib.iter_entries():
@@ -102,6 +112,7 @@ def signals(cfg: dict) -> dict:
         with q.open(encoding="utf-8", newline="") as f:
             rows = list(csv.DictReader(f, delimiter="\t"))
     paused = eexlib.closure_paused(rows)   # ruling A3: closure draws only bands 1 and 2 until band 2 is finished
+    milestone = milestone_rows(rows)        # ruling A2: milestone 1 before any other new word
     for r in rows:
         if r.get("status") == "pending":
             pending += 1
@@ -118,7 +129,7 @@ def signals(cfg: dict) -> dict:
     import digest
     digest_due = digest.is_due(eexlib.ROOT)
     return {"entries_draft": drafts, "entries_reviewed": reviewed, "reviewed_once_only": once_reviewed,
-            "queue_pending": pending, "queue_closure": closure, "closure_paused_above_band_2": paused, "runs_total": len(hist),
+            "queue_pending": pending, "queue_closure": closure, "milestone_1_rows": milestone, "closure_paused_above_band_2": paused, "runs_total": len(hist),
             "runs_since_lint": runs_since_lint, "last_site_build": last_site,
             "budget_spent_usd": round(spent, 4), "budget_cap_usd": cap, "budget_remaining_usd": round(remaining, 4),
             "last_mode": hist[-1].get("mode") if hist else None, "digest_due": digest_due}
@@ -143,6 +154,9 @@ def eligibility(cfg: dict, sig: dict) -> tuple[dict, dict, str | None]:
     if sig["queue_closure"] == 0:
         elig["closure"] = False
         why["closure"].append("no closure candidates in the queue")
+    if sig.get("milestone_1_rows", 0) > 0:
+        elig["closure"] = False
+        why["closure"].append(f"milestone 1 first: {sig['milestone_1_rows']} defining-vocabulary rows left (ruling A2)")
     if sig["reviewed_once_only"] == 0 and sig["entries_draft"] == 0:
         elig["review"] = False
         why["review"].append("nothing needs a second reading")

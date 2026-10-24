@@ -96,5 +96,27 @@ class ClosurePauseTest(unittest.TestCase):
         self.assertTrue(eexlib.closure_row_allowed(rows[1], False))
 
 
+class BandVoteQueueTest(unittest.TestCase):
+    """The owner's rulings A1 and A2 of 2026-10-24: unbanded rows, voted bands, milestone 1 first."""
+
+    def test_a_row_added_without_a_band_is_unbanded(self):
+        rows = []
+        eex_queue.add_rows(rows, [{"headword": "vane", "pos": "n", "band": "", "source": "crossref"}])
+        self.assertEqual((rows[0]["status"], rows[0]["band"]), ("unbanded", ""))
+
+    def test_set_bands_writes_the_vote_and_releases_unbanded_rows(self):
+        rows = [row("vane", "n", status="unbanded", band=""), row("rug", "n", band="1", status="done")]
+        changed, released, missing = eex_queue.set_bands(rows, {"vane-n": (4, ""), "rug-n": (2, ""), "zzz-n": (3, "")})
+        self.assertEqual((changed, released, missing), (2, 1, ["zzz-n"]))
+        self.assertEqual([(r["band"], r["status"]) for r in rows], [("4", "pending"), ("2", "done")])
+
+    def test_milestone_one_first_and_grammar_terms_first_of_all(self):
+        rows = [row("borrow", "v", band="1", source="band"), row("receive", "v", band="2", source="defining"),
+                row("syllable", "n", band="3", source="defining"), row("tense", "adj", band="2", source="defining")]
+        milestone = eex_queue.milestone_words(rows, entry_headwords={"borrow"}, dv={"receive", "syllable", "tense", "borrow"})
+        order = sorted(rows, key=lambda r: eex_queue.order_key(r, milestone))
+        self.assertEqual([r["headword"] for r in order], ["syllable", "receive", "tense", "borrow"])   # tense (adj) is not the grammar term
+
+
 if __name__ == "__main__":
     unittest.main()

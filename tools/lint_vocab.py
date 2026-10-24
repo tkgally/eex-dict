@@ -613,7 +613,7 @@ def queue_lemmas(lem, results, root):
             note = row["note"] + ("; also in %d other entr%s" % (others, "y" if others == 1 else "ies") if others else "")
             if row["guessed"]:
                 note += "; pos guessed (no morphological signal), check before claiming"
-            fh.write("%s\t%s\t3\tclosure\t%s\n" % (lemma, pos, note))
+            fh.write("%s\t%s\t\tclosure\t%s\n" % (lemma, pos, note))   # no band: unbanded until the next band vote (A1)
     try:
         script = Path(root) / "tools" / "queue.py"
         if not script.is_file():

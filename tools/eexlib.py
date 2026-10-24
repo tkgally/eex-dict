@@ -316,6 +316,21 @@ def closure_row_allowed(r, paused: bool) -> bool:
     return not paused or 1 <= _band(r) <= 2
 
 
+def new_references(path, refs, base="origin/main", root=None):
+    """The references in ``refs`` (an iterable of target slugs) that the entry at ``path`` did not
+    make at ``base``: a script that only restamps a band adds none.  A new file adds all of them."""
+    root = _root(root)
+    try:
+        rel = Path(path).resolve().relative_to(root).as_posix()
+        old_text = _git(["show", "%s:%s" % (base, rel)], root)
+        old = json.loads(old_text)
+    except (RuntimeError, ValueError, OSError):
+        return set(refs)
+    import crossref  # noqa: E402 - tools/ is on the path wherever eexlib is imported
+    before = {t for _rel, t, _i in crossref.refs_of(old)}
+    return set(refs) - before
+
+
 def queue_display_map(rows):
     """``slug -> headword`` from queue rows; where several rows share a slug, a live row
     beats a duplicate and a row with a hyphen or period beats one without."""

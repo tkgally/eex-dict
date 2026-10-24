@@ -33,8 +33,8 @@ caught; check those by hand for anything load-bearing.
 Entry cross-references (the owner's ruling C1 of 2026-10-24): with the default
 targets, every cross-reference in entries/ is also checked against the targets
 a fence rules out or whose queue row is ``duplicate`` (eexlib.ruled_out_targets).
-Each is printed as RULED-OUT; one in an entry changed since origin/main counts as
-a broken link, so no new one lands, and the older ones are left for the review
+Each is printed as RULED-OUT; one that is new since origin/main counts as a broken
+link, so no new one lands (restamping a band adds none), and the older ones are left for the review
 cycles to remove (they are model-owned fields). ``--no-entries`` skips this.
 
 Exit code 0 when every relative link target exists; 1 otherwise, with one line
@@ -133,15 +133,19 @@ def ruled_out_references(root: Path):
             entries[e["slug"]] = e
     ruled = {k: v for k, v in eexlib.ruled_out_targets(root=root).items() if k not in entries}
     try:
-        changed = {p.stem for p in eexlib.changed_entry_paths(root=root)}
+        changed = {p.stem: p for p in eexlib.changed_entry_paths(root=root)}
     except Exception:  # noqa: BLE001 - outside git there is no ratchet
-        changed = set()
+        changed = {}
     out = []
     for slug, e in sorted(entries.items()):
+        fresh = None
         for rel_, target, sense_i in crossref.refs_of(e):
             if target in ruled:
+                if fresh is None:
+                    fresh = (eexlib.new_references(changed[slug], {t for _r, t, _i in crossref.refs_of(e)}, root=root)
+                             if slug in changed else set())
                 where = f"senses[{sense_i}].{rel_}" if sense_i is not None else rel_
-                out.append((slug, where, target, ruled[target], slug in changed))
+                out.append((slug, where, target, ruled[target], target in fresh))
     return out
 
 
