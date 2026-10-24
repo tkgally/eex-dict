@@ -198,7 +198,7 @@ class CommandTests(TempRepo):
         rows = [line.split("\t") for line in queue.read_text(encoding="utf-8").splitlines()]
         self.assertEqual(rows[0], ["headword", "pos", "band", "source", "status", "added", "note"])
         by_word = {r[0]: r for r in rows[1:]}
-        self.assertEqual(by_word["sandy"][1:5], ["n", "3", "closure", "pending"])
+        self.assertEqual(by_word["sandy"][1:5], ["n", "", "closure", "unbanded"])   # ruling A1: no default band
         self.assertEqual(by_word["sandy"][6], "used in shore-n senses[0].definition; pos guessed (no morphological signal), check before claiming")
         self.assertEqual(by_word["liquid"][6], "used in water-n senses[0].definition; pos guessed (no morphological signal), check before claiming")
         quiet_main(["--root", str(self.root), "--queue", "shore-n"])     # a second run adds no duplicate

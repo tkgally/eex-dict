@@ -2,7 +2,8 @@
 """The headword queue: headwords/queue.tsv (see wiki/conventions.md section 3).
 
     python3 tools/queue.py list [--status S] [--band N] [--source S] [--pos P] [--limit N]
-    python3 tools/queue.py add "<headword>" <pos> --band N --source S [--note "..."]
+    python3 tools/queue.py add "<headword>" <pos> [--band N] --source S [--note "..."]   # no band: status unbanded
+    python3 tools/queue.py set-bands <file.tsv>          # columns slug, band[, note]: the band vote's result (unbanded -> pending)
     python3 tools/queue.py add-batch <file.tsv>          # columns headword, pos, band, source[, note]
     python3 tools/queue.py set "<headword>" <pos> <status> [--note "..."]
     python3 tools/queue.py next [--n 20] [--band N] [--source S] [--pos P]   # pending rows not claimed anywhere
@@ -12,6 +13,11 @@
     python3 tools/queue.py repair-forms [--apply]         # rows that lost a hyphen or period (ruling C3): list, or fix
 
 Only this tool edits the queue. Statuses and sources come from schema/vocabularies.json.
+A row added without a band is ``unbanded`` with an empty band: it is never handed out until
+the next band vote (tools/band_vote.py) gives it one (the owner's ruling A1 of 2026-10-24).
+``next`` works milestone 1 first (ruling A2, wiki/decisions/build-order.md): the grammar terms
+of GRAMMAR_TERMS, then every other defining-vocabulary word with no entry in any part of
+speech, then everything else; each group by band, part of speech, and headword.
 A row is one headword plus part of speech; the slug is derived by tools/eexlib.py.
 """
 from __future__ import annotations
@@ -90,8 +96,9 @@ def add_rows(rows: list[dict], new: list[dict], force_band: bool = False) -> tup
         hw, pos = n["headword"].strip(), n["pos"].strip()
         check_value("pos", pos)
         check_value("queue_sources", n["source"])
-        band = int(n["band"])
-        if not 1 <= band <= 5:
+        raw_band = str(n.get("band") or "").strip()
+        band = int(raw_band) if raw_band else None
+        if band is not None and not 1 <= band <= 5:
             raise SystemExit(f"error: band {band} for {hw} is not 1 to 5")
         k = key(hw, pos)
         sl = _slug_or_none(hw, pos)
@@ -100,14 +107,16 @@ def add_rows(rows: list[dict], new: list[dict], force_band: bool = False) -> tup
         if k in index:
             r = index[k]
             changed = False
-            if force_band and str(r["band"]) != str(band):
+            if force_band and band is not None and str(r["band"]) != str(band):
                 r["band"] = str(band); changed = True
+                if r["status"] == "unbanded":
+                    r["status"] = "pending"
             if n.get("note") and n["note"] not in (r.get("note") or ""):
                 r["note"] = ((r.get("note") or "") + "; " + n["note"]).strip("; "); changed = True
             updated += changed
             continue
-        rows.append({"headword": hw, "pos": pos, "band": str(band), "source": n["source"], "status": "pending",
-                     "added": today(), "note": n.get("note", "") or ""})
+        rows.append({"headword": hw, "pos": pos, "band": "" if band is None else str(band), "source": n["source"],
+                     "status": "unbanded" if band is None else "pending", "added": today(), "note": n.get("note", "") or ""})
         index[k] = rows[-1]
         if sl:
             by_slug.setdefault(sl, rows[-1])
@@ -131,7 +140,7 @@ def cmd_list(a) -> int:
     rows = load()
     sel = [r for r in rows if (not a.status or r["status"] == a.status) and (not a.band or str(r["band"]) == str(a.band))
            and (not a.source or r["source"] == a.source) and (not a.pos or r["pos"] == a.pos)]
-    sel.sort(key=lambda r: (int(r["band"]), r["headword"], r["pos"]))
+    sel.sort(key=lambda r: (band_of(r), r["headword"], r["pos"]))
     for r in sel[: a.limit or None]:
         print("\t".join(r.get(c, "") for c in COLUMNS))
     print(f"# {len(sel)} rows", file=sys.stderr)
@@ -177,9 +186,46 @@ POS_ORDER = ["det", "pron", "prep", "conj", "modal", "aux", "inf", "v", "n", "ad
                                                             # light verbs first, affixes and abbreviations last
 
 
-def order_key(r: dict) -> tuple:
+# The grammar terms the dictionary's own notes use: built first (ruling A2 of 2026-10-24).
+GRAMMAR_TERMS = ("noun", "plural", "singular", "syllable", "preposition", "pronoun", "countable", "uncountable",
+                 "infinitive", "participle", "passive", "tense", "vowel", "consonant")
+# The part of speech of each term's grammatical use (*tense* the noun, not *tense* meaning nervous).
+GRAMMAR_TERM_POS = {"noun": ("n",), "plural": ("n", "adj"), "singular": ("n", "adj"), "syllable": ("n",),
+                    "preposition": ("n",), "pronoun": ("n",), "countable": ("adj",), "uncountable": ("adj",),
+                    "infinitive": ("n",), "participle": ("n",), "passive": ("adj", "n"), "tense": ("n",),
+                    "vowel": ("n",), "consonant": ("n",)}
+
+
+def band_of(r: dict) -> int:
+    try:
+        return int(r.get("band") or 9)
+    except ValueError:
+        return 9
+
+
+def defining_vocabulary() -> set[str]:
+    p = eexlib.ROOT / "schema" / "defining-vocabulary.txt"
+    if not p.exists():
+        return set()
+    return {w.strip().lower() for w in p.read_text(encoding="utf-8").splitlines() if w.strip() and not w.startswith("#")}
+
+
+def milestone_words(rows: list[dict], entry_headwords: set[str] | None = None, dv: set[str] | None = None) -> set[str]:
+    """Defining-vocabulary words with no entry in any part of speech: milestone 1's remaining words."""
+    dv = defining_vocabulary() if dv is None else dv
+    if entry_headwords is None:
+        entry_headwords = {str(e.get("headword", "")).lower() for _p, e in eexlib.iter_entries() if not eexlib.is_redirect_stub(e)}
+    return {w for w in dv if w not in entry_headwords}
+
+
+def order_key(r: dict, milestone: set[str] | None = None) -> tuple:
+    """Grammar terms of milestone 1, the rest of milestone 1, everything else; then band, part of speech, headword."""
     pos = r["pos"]
-    return (int(r["band"]), POS_ORDER.index(pos) if pos in POS_ORDER else len(POS_ORDER), r["headword"].lower())
+    hw = r["headword"].lower()
+    group = 2
+    if milestone is not None and hw in milestone:
+        group = 0 if pos in GRAMMAR_TERM_POS.get(hw, ()) else 1
+    return (group, band_of(r), POS_ORDER.index(pos) if pos in POS_ORDER else len(POS_ORDER), hw)
 
 
 def cmd_next(a) -> int:
@@ -187,11 +233,12 @@ def cmd_next(a) -> int:
     taken = taken_slugs()
     existing = {p.stem for p in eexlib.iter_entry_paths()}
     paused = eexlib.closure_paused(rows)
+    milestone = milestone_words(rows)
     if a.source in eexlib.CLOSURE_SOURCES and paused:
         print(f"# --source {a.source}: band 2 is unfinished, so only rows at band 1 or 2 (ruling A3, "
               "wiki/decisions/build-order.md)", file=sys.stderr)
     out = []
-    for r in sorted(rows, key=order_key):
+    for r in sorted(rows, key=lambda r: order_key(r, milestone)):
         if r["status"] != "pending":
             continue
         if a.band and str(r["band"]) != str(a.band):
@@ -264,8 +311,8 @@ def cmd_stamp(a) -> int:
         e = eexlib.load_json(p)
         base = slug if e.get("homograph", 1) == 1 else slug.rsplit("-", 1)[0]
         r = index.get(base)
-        if r is None:
-            print(f"{slug}: no queue row; band left as is ({e['frequency']['band']})")
+        if r is None or not str(r.get("band") or "").strip():
+            print(f"{slug}: no banded queue row; band left as is ({e['frequency']['band']})")
         else:
             e["frequency"]["band"] = int(r["band"])
         e["frequency"]["defining_vocabulary"] = e["headword"].lower() in dv
@@ -353,6 +400,42 @@ def cmd_repair_forms(a) -> int:
     return 0
 
 
+def set_bands(rows: list[dict], bands: dict[str, tuple[int, str]]) -> tuple[int, int, list[str]]:
+    """Write voted bands into the rows (by slug, the real row of each slug); an ``unbanded`` row becomes
+    ``pending``.  Returns (rows changed, rows unbanded -> pending, slugs with no row)."""
+    index = slug_index(rows)
+    changed = released = 0
+    missing = []
+    for slug, (band, note) in bands.items():
+        if not 1 <= int(band) <= 5:
+            raise SystemExit(f"error: band {band} for {slug} is not 1 to 5")
+        r = index.get(slug)
+        if r is None:
+            missing.append(slug)
+            continue
+        if str(r.get("band")) != str(band):
+            r["band"] = str(band); changed += 1
+        if r["status"] == "unbanded":
+            r["status"] = "pending"; released += 1
+        if note and note not in (r.get("note") or ""):
+            r["note"] = ((r.get("note") or "") + "; " + note).strip("; ")
+    return changed, released, missing
+
+
+def cmd_set_bands(a) -> int:
+    rows = load()
+    bands = {}
+    with open(a.file, encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f, delimiter="\t"):
+            bands[r["slug"]] = (int(r["band"]), r.get("note") or "")
+    changed, released, missing = set_bands(rows, bands)
+    save(rows)
+    print(f"bands set: {changed} rows changed, {released} unbanded rows now pending, {len(missing)} slugs with no row")
+    for s in missing[:20]:
+        print("  no row: " + s)
+    return 0
+
+
 def cmd_counts(a) -> int:
     rows = load()
     for name, fn in (("status", lambda r: r["status"]), ("band", lambda r: r["band"]), ("source", lambda r: r["source"]), ("pos", lambda r: r["pos"])):
@@ -366,13 +449,14 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("list"); p.add_argument("--status"); p.add_argument("--band"); p.add_argument("--source"); p.add_argument("--pos"); p.add_argument("--limit", type=int); p.set_defaults(fn=cmd_list)
-    p = sub.add_parser("add"); p.add_argument("headword"); p.add_argument("pos"); p.add_argument("--band", type=int, required=True); p.add_argument("--source", required=True); p.add_argument("--note"); p.add_argument("--force-band", action="store_true"); p.set_defaults(fn=cmd_add)
+    p = sub.add_parser("add"); p.add_argument("headword"); p.add_argument("pos"); p.add_argument("--band", type=int); p.add_argument("--source", required=True); p.add_argument("--note"); p.add_argument("--force-band", action="store_true"); p.set_defaults(fn=cmd_add)
     p = sub.add_parser("add-batch"); p.add_argument("file"); p.add_argument("--force-band", action="store_true"); p.set_defaults(fn=cmd_add_batch)
     p = sub.add_parser("set"); p.add_argument("headword"); p.add_argument("pos"); p.add_argument("status"); p.add_argument("--note"); p.set_defaults(fn=cmd_set)
     p = sub.add_parser("next"); p.add_argument("--n", type=int, default=20); p.add_argument("--band"); p.add_argument("--source"); p.add_argument("--pos"); p.set_defaults(fn=cmd_next)
     p = sub.add_parser("sync"); p.set_defaults(fn=cmd_sync)
     p = sub.add_parser("stamp"); p.add_argument("slugs", nargs="+"); p.set_defaults(fn=cmd_stamp)
     p = sub.add_parser("counts"); p.set_defaults(fn=cmd_counts)
+    p = sub.add_parser("set-bands"); p.add_argument("file"); p.set_defaults(fn=cmd_set_bands)
     p = sub.add_parser("repair-forms"); p.add_argument("--apply", action="store_true"); p.set_defaults(fn=cmd_repair_forms)
     a = ap.parse_args()
     return a.fn(a)

@@ -459,7 +459,13 @@ class Builder:
         return eexlib.guess_display_form(slug, eexlib.entry_texts(context) if context else ())
 
     def entry_sort_key(self, e):
-        return (self.page_of(e), self.pos_order.get(e.get("pos"), 99), int(e.get("homograph") or 1), e["slug"])
+        """Entries of one headword page: higher frequency (lower band) first, ties by the part-of-speech
+        order of the vocabulary (ruling D4 of 2026-10-24), then homograph number."""
+        try:
+            band = int((e.get("frequency") or {}).get("band") or 9)
+        except (TypeError, ValueError):
+            band = 9
+        return (self.page_of(e), band, self.pos_order.get(e.get("pos"), 99), int(e.get("homograph") or 1), e["slug"])
 
     @staticmethod
     def page_of(entry):

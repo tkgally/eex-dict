@@ -6,10 +6,10 @@
 
 | Ruling | What | Recorded in | Status |
 |---|---|---|---|
-| A1 | Re-band every queue row and entry; no default band 3 | [rebanding](rebanding.md) | pending (group 4) |
-| A2 | Finish milestone 1 first; grammar terms first | [build-order](build-order.md) | pending (group 4) |
+| A1 | Re-band every queue row and entry; no default band 3 | [rebanding](rebanding.md) | done 2026-10-24 (group 4): 8,283 items, US$1.03 |
+| A2 | Finish milestone 1 first; grammar terms first | [build-order](build-order.md) | done 2026-10-24 (group 4): the order is in the tools; the building is Routine work |
 | A3 | Closure and family draw only bands 1 and 2 | [build-order](build-order.md) | done 2026-10-24 (group 3) |
-| A4 | Siblings and phrasal verbs banded like the rest | [rebanding](rebanding.md) | pending (group 4) |
+| A4 | Siblings and phrasal verbs banded like the rest | [rebanding](rebanding.md) | done 2026-10-24 (group 4) |
 | B1 | Coverage line in both reviewer prompts; coverage pass | [reviewer-house-rules](reviewer-house-rules.md) | prompt line and `crossref.py --missing-senses` done 2026-10-24 (group 3); the pass is Routine work |
 | B2 | Notes discipline | [notes-discipline](notes-discipline.md), style guide | done 2026-10-24 (group 3); existing entries as reviews open them |
 | B3 | Fix the appendix errors | `NEXT.md` queue | Routine work |
@@ -18,7 +18,7 @@
 | C2 | Missing cross-reference targets on the site | [cross-reference-display](cross-reference-display.md) | done 2026-10-24 (group 2) |
 | C3 | Keep hyphens and periods in display forms and queue rows | [cross-reference-display](cross-reference-display.md) | done 2026-10-24 (group 2): 26 queue rows repaired |
 | C4 | Word links everywhere except a closed list | [word-links](word-links.md) | done 2026-10-24 (group 2) |
-| D1–D4 | Search, sense menu, phones, navigation | [site](site.md) stays; this table | done 2026-10-24 (group 2), except D4's part-of-speech order by band (group 4) |
+| D1–D4 | Search, sense menu, phones, navigation | [site](site.md) stays; this table | done 2026-10-24 (groups 2 and 4) |
 | D5 | No audio for now | — | standing |
 | E1 | House rules for reviewers; two required checks; reviewer-b trial | [reviewer-house-rules](reviewer-house-rules.md) | done 2026-10-24 (group 3); the trial after two lint passes |
 | E2 | Second-round review order | [reviewer-house-rules](reviewer-house-rules.md) | Routine work |

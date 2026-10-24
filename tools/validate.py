@@ -422,7 +422,7 @@ def check_frequency(ctx, rel, e):
     if freq.get("defining_vocabulary") is True and ctx.defining is not None and headword.lower() not in ctx.defining:
         warn(rel, "frequency.defining_vocabulary is true but %r is not in schema/defining-vocabulary.txt" % headword)
     queued = ctx.queue_bands.get((headword.lower(), e.get("pos")))
-    if queued is not None and str(freq.get("band")) != queued:
+    if queued not in (None, "") and str(freq.get("band")) != queued:
         warn(rel, "frequency.band %r differs from the queue band %r" % (freq.get("band"), queued))
 
 

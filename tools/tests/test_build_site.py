@@ -297,6 +297,14 @@ class BuildSiteTests(unittest.TestCase):
         band = self.site.read("browse/band-1.html")
         self.assertIn("bank", band)
 
+    def test_parts_of_speech_ordered_by_band(self):
+        """Ruling D4: on a headword page the more frequent entry comes first, ties by part of speech."""
+        a = {"slug": "x-n", "pos": "n", "frequency": {"band": 3}, "homograph": 1}
+        b = {"slug": "x-v", "pos": "v", "frequency": {"band": 1}, "homograph": 1}
+        c = {"slug": "x-adj", "pos": "adj", "frequency": {"band": 1}, "homograph": 1}
+        order = sorted([a, b, c], key=self.builder.entry_sort_key)
+        self.assertEqual([e["slug"] for e in order], ["x-v", "x-adj", "x-n"])
+
     def test_empty_bands_are_hidden(self):
         self.assertFalse((self.site.out / "browse" / "band-5.html").exists())
         self.assertNotIn("band-5.html", self.site.read("browse/index.html"))

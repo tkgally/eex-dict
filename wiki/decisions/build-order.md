@@ -17,3 +17,7 @@ The order `tools/queue.py next` and `tools/claim.py --from-queue` follow:
 ## A3. Closure of rare words is paused
 
 `claim.py --from-queue --source closure` and `--source family` hand out only rows at band 1 or 2 until band 2 is finished (no `pending` or `claimed` row at band 1 or 2 is left). The session reads the ruling as covering closure mode's third source too, `--source crossref`, so that closure mode builds no band-3 word through it; `tools/next_mode.py` counts only the rows the pause allows as closure candidates. Rows at bands 3 to 5 wait; nothing is deleted. Rows still `unbanded` wait for the next band vote ([rebanding](rebanding.md)). When band 2 is finished, the pause lifts by itself; the tool prints which rule applied.
+
+## Implemented (2026-10-24)
+
+`tools/queue.py next` (and so `claim.py --from-queue`) follows the order above, with `GRAMMAR_TERM_POS` naming the part of speech of each grammar term's grammatical use (*tense* the noun, not the adjective). `tools/next_mode.py` reports `signals.milestone_1_rows` and blocks `closure` while it is above zero (284 pending rows on 2026-10-24, some words having two parts of speech). Six grammar terms (*syllable*, *preposition*, *infinitive*, *participle*, *vowel*, *consonant*) had no queue row at all and were queued, with nine other defining-vocabulary words (*auxiliary*, *bar*, *chase*, *clap*, *conjunction*, *determiner*, *eleven*, *flag*, *lucky*).
