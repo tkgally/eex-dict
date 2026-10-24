@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-24 10:05 UTC by scheduled run 20261024T094302Z-jiwbqq, cycle 4 of 4 (review: the B3 appendix, second block). All four cycles of the run merged.*
+*Rewritten 2026-10-24 by scheduled run 20261024T164356Z-ofeeve, cycle 1 (build: twelve number entries).*
 
 ## State
 
-- 2,804 entries, all `reviewed`. Milestone 1: 258 rows left (the grammar terms are done). The first weekly digest is `journal/digest-2026-10-24.md`.
+- 2,816 entries, all `reviewed`. Milestone 1: 246 rows left (the grammar terms are done). The first weekly digest is `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-24: about US$9.98 of US$15.
+- Spend 2026-10-24: about US$10.68 of US$15.
 
 ## Queue (top-down)
 
@@ -22,7 +22,7 @@
 1. **build**: check a verb + preposition row against the verb's senses and a `phr` row against the keyword entry's phrases (*of course* adverb was such a row: set `duplicate` 2026-10-24); run the panel in chunks of four or five; place every `NO-SENSE` back-link by hand.
 2. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and both reviewers ask for phrasal verbs and compounds as senses; reject both, with the reason. `verb + adjective` is not a collocation type.
 3. **closure**: blocked by milestone 1, then paused above band 2 (A3).
-4. **lint**: every ten runs; next due in about three runs. Add `lint_vocab.py --promises --circular`, `crossref.py --missing-senses`, and `band_vote.py run --unbanded` (rows are unbanded: `passive-n`, `passive-aggressive-adj`, `my-interj`, and others).
+4. **lint**: every ten runs; next due in about three runs. Add `lint_vocab.py --promises --circular`, `crossref.py --missing-senses`, and `band_vote.py run --unbanded` (rows are unbanded: `passive-n`, `my-interj`, `fourth-n`, `fifth-n`, `fifty-fifty-adj`, the ordinals *eleventh* to *ninetieth*, and others).
 5. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`. The wiki is at about 29,500 of 30,000 words: trim before adding.
 
 ## Fences (do not re-grind)
@@ -32,14 +32,14 @@
 - No script writes a model-owned field; the one exception is `tools/ipa_format.py` (periods beside stress marks only, ruling B4 iv).
 - IPA house form: no period beside a stress mark. Bands come only from the band vote; never set one by hand.
 - `crossref.py` no longer guesses a sense: place each `NO-SENSE` pair by hand. A review that removes a cross-reference removes its mirror too.
-- Number entries (`-num`) hold their card, score, and size uses and their uses before **of** (*three of us*); reviewers asking for noun or pronoun entries for these are rejected.
+- Number entries (`-num`) hold their card, score, and size uses and their uses before **of** (*three of us*); reviewers asking for noun or pronoun entries for these are rejected. Tens (*forty* to *ninety*) carry a plural sense, *in her forties*; ordinals keep the date sense (*on the fourth*) but no adverbial *finished fourth*.
 - Cross-references to a slug with no entry are allowed; the site shows them grey or hides them (C2). `no_link_words` changes only by an owner ruling (C4).
 - Rows and drafts keep their hyphens and periods. Unrelated homographs are separate entries (`-n-2`), never senses.
 - Hand-written provenance timestamps come from `date -u`. Call `metrics.py` once per cycle, in wrap-up only.
 
 ## For the owner
 
-- The first weekly digest is ready: `journal/digest-2026-10-24.md` (ten entries to sample). Today's run: `journal/2026-10-24-6.md`.
+- The first weekly digest is ready: `journal/digest-2026-10-24.md` (ten entries to sample). Today's runs: `journal/2026-10-24-6.md`, `journal/2026-10-24-7.md`.
 - New curator line: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; the names policy has no rule for title entries. Working assumption: allowed there until you rule.
 - Still open: continent names in definitions; *the former*/*the following* as nouns or pronouns (`wiki/open-questions.md`); pronunciation disputes in `reviews/needs_curator.txt`.
 - The public site: <https://tkgally.github.io/eex-dict/>.
