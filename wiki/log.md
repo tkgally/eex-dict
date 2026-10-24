@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-24] build | milestone 1: twelve numbers, eleven to ninety
+
+Scheduled run 20261024T164356Z-ofeeve, cycle 1. Built and reviewed twelve number entries: *eleven*, *fourteen*, *fifteen*, *seventeen*, *nineteen* (one sense each, like `eighteen-num`); *forty*, *fifty*, *seventy*, *eighty*, *ninety* (the number, plus a plural sense for ages, temperatures, and the years of a hundred-year period, *in her forties*; *fifty* also has a paper-money sense); *fourth* and *fifth* (order, place in a competition, dates, after `third-num`). Adverbial examples (*finished fourth*) were replaced with *fourth place*; the date sense was kept as the house pattern. Regularized learner errors (*fiveteen*, *fiveth*) were removed; *fourty* and *ninty* kept. Queued `fourth-n`, `fifth-n`, `fifty-fifty-adj` and the ordinals (unbanded). All 24 transcriptions verified. Adjudication: 28 applied, 13 rejected, none escalated. Spend US$0.70.
+
 ## [2026-10-24] review | owner's appendix (B3), second block: numbers, examples, surnames
 
 Scheduled run 20261024T094302Z-jiwbqq, cycle 4. Twenty entries through the full pipeline, plus a hand-placed antonym back-link on `ceiling-n`. Numbers *two* to *ten*: the shared time-and-age sentence removed from every usage note, a second sense (card, size, or score) added, duplicate notes trimmed; *ten to one* now warns that it is also a time. `deal-n`, `like-prep` (three new senses: typical, describe, about), `just-adv` (polite sense, *just because*), `clean-up-phrv`, `go-on-phrv` (*go on about*), `y-suffix`, `strict-adj` (new sense, secret), `floor-n` (new sense, lowest level) fixed; `certainly-adv`, `naturally-adv`, `obviously-adv` now point at `course-n` for *of course*. Surname cases: `strict-adj` and `floor-n` fixed; the title entries went to the curator queue. Panel: 115 issues, 86 blocking; 30 applied, 57 rejected. Spend US$1.66.
