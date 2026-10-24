@@ -409,6 +409,9 @@ def check_pronunciation(ctx, rel, e):
             err(rel, "%s: must not contain %s" % (field, " ".join(bad)))
         if "." in ipa and "ˈ" not in ipa:
             warn(rel, "%s: has syllable breaks but no primary stress mark ˈ" % field)
+        if eexlib.ipa_house_form(ipa) != ipa:
+            warn(rel, "%s: %r is not in the house form: a stress mark is itself the syllable break, so no period "
+                      "beside it (%r; tools/ipa_format.py, style guide section 11)" % (field, ipa, eexlib.ipa_house_form(ipa)))
 
 
 # --------------------------------------------------------------------------
