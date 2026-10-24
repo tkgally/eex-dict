@@ -349,3 +349,7 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (8449/12021); `reviewer-
 ## 2026-10-24: eighty-fifth lint pass, no new switch-offs
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (8539/12160); `reviewer-b` `ALL` 0.50 (1407/2805). `reviewer-b` `spelling-or-format` 0.28 (165/594); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.30 (19/63), unchanged and at the line, not under it. In the four cycles since the last pass reviewer-a had 90 of 139 applied and reviewer-b 5 of 18 (it raised nothing on most of the twelve closure entries of 2026-10-24). No live pair is under 30 percent over twenty or more decisions.
+
+## 2026-10-24: eighty-sixth lint pass, no new switch-offs
+
+Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (8726/12507); `reviewer-b` `ALL` 0.50 (1455/2910). `reviewer-a` `coverage` is now under the line, 0.23 (15/65). It is not switched off: the coverage check is required of both reviewers by the owner's ruling B1. The rejected calls asked for compounds, phrasal verbs, holiday names, and plural number uses as senses. `reviewer-b` `phrase` 0.30 (19/63) and `spelling-or-format` 0.27 (165/608; live by the owner's ruling) are unchanged.
