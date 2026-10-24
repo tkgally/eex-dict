@@ -191,6 +191,105 @@ def parse_slug(slug):
     return "-".join(parts), pos, homograph
 
 
+# --------------------------------------------------------------------------
+# Display forms (the owner's ruling C3 of 2026-10-24, wiki/decisions/cross-reference-display.md):
+# a label keeps its hyphens and periods; a slug alone never decides them.
+# --------------------------------------------------------------------------
+
+_DISPLAY_SKIP_KEYS = frozenset("slug id run_id model file role source checked_by status".split())
+
+
+def entry_texts(entry):
+    """Every string value of an entry (prose, forms, phrases), for finding how a word is written."""
+    out = []
+
+    def walk(x, key=None):
+        if isinstance(x, str):
+            if key not in _DISPLAY_SKIP_KEYS:
+                out.append(x)
+        elif isinstance(x, dict):
+            for k, v in x.items():
+                walk(v, k)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v, key)
+    walk(entry)
+    return out
+
+
+def _display_candidates(name, pos):
+    parts = name.split("-")
+    if pos == "suffix":
+        return ["-" + name]
+    if pos == "prefix":
+        return [name + "-"]
+    cands = []
+    if 1 < len(parts) <= 5:
+        for mask in range(2 ** (len(parts) - 1)):
+            word = parts[0]
+            for i, part in enumerate(parts[1:]):
+                word += ("-" if mask >> i & 1 else " ") + part
+            cands.append(word)
+    else:
+        cands.append(name)
+    return cands
+
+
+def guess_display_form(slug, texts=()):
+    """A display form for ``slug`` when neither an entry nor a queue row gives one.
+
+    The candidates (each hyphen of the slug a hyphen or a space; a short
+    abbreviation with or without periods) are looked for in ``texts``, the
+    prose that names the word; the first one written there wins, in the
+    casing used there.  Affixes keep their hyphen (``-ible``, ``un-``).  With
+    no evidence, hyphens become spaces, as before.
+    """
+    try:
+        name, pos, _h = parse_slug(slug)
+    except ValueError:
+        return slug
+    cands = _display_candidates(name, pos)
+    if pos in ("suffix", "prefix"):
+        return cands[0]
+    blob = "\n".join(str(t) for t in texts or ())
+    patterns = [(c, re.compile(r"(?<![\w-])" + re.escape(c) + r"(?![\w-])", re.IGNORECASE)) for c in cands]
+    if pos == "abbr" and "-" not in name and len(name) <= 5:
+        dotted = r"\.?".join(re.escape(ch) for ch in name) + r"\."
+        patterns.insert(0, (None, re.compile(r"(?<![\w.])" + dotted + r"(?!\w)", re.IGNORECASE)))
+    for cand, rx in patterns:
+        found = rx.findall(blob)
+        if found:
+            lower = [f for f in found if f == f.lower()]
+            return lower[0] if lower else found[0]
+    return name.replace("-", " ")
+
+
+def queue_display_map(rows):
+    """``slug -> headword`` from queue rows; where several rows share a slug, a live row
+    beats a duplicate and a row with a hyphen or period beats one without."""
+    best = {}
+    for r in rows:
+        try:
+            slug = slugify(r["headword"], r["pos"])
+        except (KeyError, ValueError):
+            continue
+        hw = r["headword"]
+        score = (r.get("status") != "duplicate", ("-" in hw) or ("." in hw), hw != hw.lower())
+        if slug not in best or score > best[slug][0]:
+            best[slug] = (score, hw)
+    return {slug: hw for slug, (_score, hw) in best.items()}
+
+
+def load_queue_rows(root=None):
+    """The rows of headwords/queue.tsv as dicts (empty when there is no queue)."""
+    import csv
+    p = _root(root) / "headwords" / "queue.tsv"
+    if not p.is_file():
+        return []
+    with p.open(encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f, delimiter="\t"))
+
+
 def shard(slug):
     """The shard directory of a slug: first two leading ASCII letters, one letter, or ``0-9``."""
     m = re.match(r"[a-z]+", slug)

@@ -9,6 +9,7 @@
     python3 tools/queue.py sync                           # rows whose entry exists become done; claimed rows no claim file lists go back to pending
     python3 tools/queue.py stamp <slug> [<slug> ...]      # write frequency.band and frequency.defining_vocabulary into entries
     python3 tools/queue.py counts                         # rows by status, band, source
+    python3 tools/queue.py repair-forms [--apply]         # rows that lost a hyphen or period (ruling C3): list, or fix
 
 Only this tool edits the queue. Statuses and sources come from schema/vocabularies.json.
 A row is one headword plus part of speech; the slug is derived by tools/eexlib.py.
@@ -68,8 +69,22 @@ def check_value(kind: str, value: str) -> None:
         raise SystemExit(f"error: {value!r} is not a {kind} value; allowed: {', '.join(allowed)}")
 
 
+def _slug_or_none(headword: str, pos: str) -> str | None:
+    try:
+        return eexlib.slugify(headword, pos)
+    except ValueError:
+        return None
+
+
 def add_rows(rows: list[dict], new: list[dict], force_band: bool = False) -> tuple[int, int]:
+    """Add rows, or update the existing row with the same headword and part of speech or the same slug
+    (so ``brother in law`` never lands beside ``brother-in-law``: ruling C3, wiki/notes/queue-hyphen-loss.md)."""
     index = {key(r["headword"], r["pos"]): r for r in rows}
+    by_slug = {}
+    for r in rows:
+        sl = _slug_or_none(r["headword"], r["pos"])
+        if sl and (sl not in by_slug or by_slug[sl]["status"] == "duplicate"):
+            by_slug[sl] = r
     added = updated = 0
     for n in new:
         hw, pos = n["headword"].strip(), n["pos"].strip()
@@ -79,6 +94,9 @@ def add_rows(rows: list[dict], new: list[dict], force_band: bool = False) -> tup
         if not 1 <= band <= 5:
             raise SystemExit(f"error: band {band} for {hw} is not 1 to 5")
         k = key(hw, pos)
+        sl = _slug_or_none(hw, pos)
+        if k not in index and sl in by_slug:
+            k = key(by_slug[sl]["headword"], by_slug[sl]["pos"])
         if k in index:
             r = index[k]
             changed = False
@@ -91,6 +109,8 @@ def add_rows(rows: list[dict], new: list[dict], force_band: bool = False) -> tup
         rows.append({"headword": hw, "pos": pos, "band": str(band), "source": n["source"], "status": "pending",
                      "added": today(), "note": n.get("note", "") or ""})
         index[k] = rows[-1]
+        if sl:
+            by_slug.setdefault(sl, rows[-1])
         added += 1
     return added, updated
 
@@ -205,7 +225,7 @@ def reset_stale_claims(rows: list[dict], taken: set[str]) -> list[str]:
 
 def cmd_sync(a) -> int:
     rows = load()
-    index = {eexlib.slugify(r["headword"], r["pos"]): r for r in rows}
+    index = slug_index(rows)
     done = 0
     missing = []
     for p, e in eexlib.iter_entries():
@@ -230,7 +250,7 @@ def cmd_sync(a) -> int:
 
 def cmd_stamp(a) -> int:
     rows = load()
-    index = {eexlib.slugify(r["headword"], r["pos"]): r for r in rows}
+    index = slug_index(rows)
     dv_path = eexlib.ROOT / "schema" / "defining-vocabulary.txt"
     dv = {w.strip().lower() for w in dv_path.read_text(encoding="utf-8").splitlines() if w.strip() and not w.startswith("#")} if dv_path.exists() else set()
     for slug in a.slugs:
@@ -246,6 +266,84 @@ def cmd_stamp(a) -> int:
         e["frequency"]["basis"] = "editorial"
         eexlib.save_json(p, e)
         print(f"{slug}: band {e['frequency']['band']}, defining {e['frequency']['defining_vocabulary']}")
+    return 0
+
+
+def slug_index(rows: list[dict]) -> dict[str, dict]:
+    """``slug -> row``; where rows share a slug, a live row beats a duplicate and a row with a
+    hyphen or period beats one without (so sync and stamp read the real row, ruling C3)."""
+    out: dict[str, dict] = {}
+    def score(r):
+        return (r["status"] != "duplicate", "-" in r["headword"] or "." in r["headword"])
+    for r in rows:
+        sl = _slug_or_none(r["headword"], r["pos"])
+        if sl and (sl not in out or score(r) > score(out[sl])):
+            out[sl] = r
+    return out
+
+
+def repair_forms(rows: list[dict], entries: dict[str, dict]) -> list[str]:
+    """Fix rows whose headword lost a hyphen or a period (ruling C3 of 2026-10-24). Returns the changes.
+
+    * Rows that share a slug: the live row with the hyphen or period stays; a pending lossy row
+      becomes ``duplicate`` with a note naming the real row.
+    * A lone affix row without its hyphen (``ible`` suffix) gets it (``-ible``).
+    * A lone row queued by ``crossref`` or ``family`` gets the form the referring entry's prose uses
+      (``mother in law`` -> ``mother-in-law`` when that entry writes it so).
+    Only the queue's own ``headword``, ``status``, and ``note`` columns change."""
+    changes = []
+    groups: dict[str, list[dict]] = {}
+    for r in rows:
+        sl = _slug_or_none(r["headword"], r["pos"])
+        if sl:
+            groups.setdefault(sl, []).append(r)
+    live = ("pending", "claimed", "done", "deferred", "declined", "unbanded")
+    for sl, rs in groups.items():
+        if len(rs) < 2:
+            continue
+        best = max(rs, key=lambda r: (r["status"] in live and r["status"] != "duplicate", r["status"] == "done",
+                                      "-" in r["headword"] or "." in r["headword"], r["headword"] != r["headword"].lower()))
+        for r in rs:
+            if r is best or r["status"] not in ("pending", "unbanded"):
+                continue
+            r["status"] = "duplicate"
+            r["note"] = ((r.get("note") or "") + f"; display form lost, the real row is {best['headword']} (queue.py repair-forms)").strip("; ")
+            changes.append(f"duplicate {r['headword']} ({r['pos']}): the real row is {best['headword']}")
+    for sl, rs in groups.items():
+        if len(rs) != 1:
+            continue
+        r = rs[0]
+        if r["status"] not in ("pending", "unbanded"):
+            continue
+        hw, pos = r["headword"], r["pos"]
+        new = hw
+        if pos == "suffix" and not hw.startswith("-"):
+            new = "-" + hw
+        elif pos == "prefix" and not hw.endswith("-"):
+            new = hw + "-"
+        elif r["source"] in ("crossref", "family") and (" " in hw or pos == "abbr"):
+            m = __import__("re").search(r"referenced by ([a-z0-9-]+)", r.get("note") or "")
+            ref = entries.get(m.group(1)) if m else None
+            if ref is not None:
+                guess = eexlib.guess_display_form(sl, eexlib.entry_texts(ref))
+                if guess.lower() != hw.lower() and _slug_or_none(guess, pos) == sl:
+                    new = guess
+        if new != hw:
+            r["headword"] = new
+            r["note"] = ((r.get("note") or "") + f"; display form repaired from {hw} (queue.py repair-forms)").strip("; ")
+            changes.append(f"renamed {hw} ({pos}) -> {new}")
+    return changes
+
+
+def cmd_repair_forms(a) -> int:
+    rows = load()
+    entries = {e["slug"]: e for _p, e in eexlib.iter_entries() if not eexlib.is_redirect_stub(e)}
+    changes = repair_forms(rows, entries)
+    for c in changes:
+        print(c)
+    if a.apply and changes:
+        save(rows)
+    print(f"{len(changes)} change(s){'' if a.apply else ' (dry run; --apply writes them)'}")
     return 0
 
 
@@ -269,6 +367,7 @@ def main() -> int:
     p = sub.add_parser("sync"); p.set_defaults(fn=cmd_sync)
     p = sub.add_parser("stamp"); p.add_argument("slugs", nargs="+"); p.set_defaults(fn=cmd_stamp)
     p = sub.add_parser("counts"); p.set_defaults(fn=cmd_counts)
+    p = sub.add_parser("repair-forms"); p.add_argument("--apply", action="store_true"); p.set_defaults(fn=cmd_repair_forms)
     a = ap.parse_args()
     return a.fn(a)
 

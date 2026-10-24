@@ -30,7 +30,8 @@ All tools are Python 3 standard library only and run from the repository root. E
 
 | Command | Job |
 |---|---|
-| `python3 tools/queue.py list\|add\|add-batch\|set\|next\|sync\|counts` | the headword queue (`headwords/queue.tsv`); only this tool edits it |
+| `python3 tools/queue.py list\|add\|add-batch\|set\|next\|sync\|counts` | the headword queue (`headwords/queue.tsv`); only this tool edits it; a row with the same slug as an existing one updates that row |
+| `python3 tools/queue.py repair-forms [--apply]` | rows that lost a hyphen or period: a lossy twin becomes `duplicate`, an affix gets its hyphen, a crossref row gets the form its referring entry writes (ruling C3) |
 | `python3 tools/claim.py --id` | this run's id (`.tmp/run-id`) |
 | `python3 tools/claim.py --from-queue --n N [--band B] [--source S]` or `"<headword>\|<pos>" ...` | claim slugs for this run in `headwords/claims/<run-id>.json`, skipping slugs claimed on any branch |
 | `python3 tools/claim.py --taken` / `--prune` | every taken slug; delete claim files whose entries exist on main |
@@ -52,8 +53,8 @@ All tools are Python 3 standard library only and run from the repository root. E
 | Command | Job |
 |---|---|
 | `python3 tools/build_site.py [--out docs]` | render the site from `entries/`, `journal/`, and `metrics/` (never committed; GitHub Actions runs it on merge) |
-| `python3 tools/link_words.py` | the build-time linker: links every word that has an entry, renders the inline marks, and marks the headword in example sentences (library used by build_site.py; `--text "..."` shows links for a string) |
-| `python3 tools/site_check.py` | Playwright checks at phone and desktop widths (home page, three entry pages, search of an inflected form, a preview) |
+| `python3 tools/link_words.py` | the build-time linker: links every word that has an entry except the closed list `no_link_words` (ruling C4), out of the Tab order, renders the inline marks, and marks the headword in example sentences (library used by build_site.py; `--text "..."` shows links for a string) |
+| `python3 tools/site_check.py` | Playwright checks at phone and desktop widths (home page, three entry pages, search of an inflected form and of a phrase, "Did you mean", `?q=`, the 404 page, the sense menu, grey missing cross-references, the menu, a preview; no sideways scroll on any entry page at 360 px; no link on a no-link word) |
 
 ## Integrity and caps
 

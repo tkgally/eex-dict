@@ -2,10 +2,13 @@
    dependency, works offline.  Written into docs/site.js by tools/build_site.py
    from tools/site/site.js.
 
-   Jobs: the translator's-view toggle (state in localStorage), the search box
-   (loads search-index.json on the first keystroke, understands inflected
-   forms), previews on linked words (hover on desktop, tap on touch, one small
-   JSON payload per headword under p/), and the random page. */
+   Jobs: the menu button on phones, the translator's-view toggle (state in
+   localStorage), the search box (loads search-index.json on the first
+   keystroke, understands inflected forms; loads phrase-index.json when the
+   query has a space; suggests near spellings; ?q= in the address runs a
+   search; the 404 page searches for the name in the address), previews on
+   linked words (hover on desktop, tap on touch, one small JSON payload per
+   headword under p/), and the random page. */
 (function () {
   'use strict';
 
@@ -50,6 +53,23 @@
     try { localStorage.setItem(STORAGE_KEY, on ? '1' : '0'); } catch (err) { /* private mode: state lasts for the page only */ }
     applyPref(on);
   });
+
+  /* ---- the menu (phones) ---------------------------------------------- */
+
+  var menuButton = document.querySelector('.menu-button');
+  var menu = document.getElementById('site-menu');
+  function setMenu(open) {
+    if (!menuButton || !menu) { return; }
+    if (open) { menu.classList.add('open'); } else { menu.classList.remove('open'); }
+    menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  if (menuButton && menu) {
+    menuButton.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
+    document.addEventListener('click', function (e) {
+      if (!closest(e.target, '.site-menu') && !closest(e.target, '.menu-button')) { setMenu(false); }
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { setMenu(false); } });
+  }
 
   /* ---- the compact index --------------------------------------------- */
 
@@ -103,6 +123,123 @@
     return labels.join(', ');
   }
 
+  /* ---- phrases (ruling D1): loaded only when a query has a space ------- */
+
+  var phrasePromise = null;
+  var STOP = { 'a': 1, 'an': 1, 'the': 1, 'to': 1, 'of': 1, 'and': 1, 'or': 1, 'it': 1, 'be': 1, 'is': 1, 'are': 1 };
+
+  function loadPhrases() {
+    if (!phrasePromise) {
+      phrasePromise = fetch(base + 'phrase-index.json', { cache: 'force-cache' })
+        .then(function (r) { if (!r.ok) { throw new Error('phrase index: HTTP ' + r.status); } return r.json(); })
+        .then(preparePhrases)
+        .catch(function () { return { phrases: [], fillers: {} }; });
+    }
+    return phrasePromise;
+  }
+
+  function tokens(s, fillers) {
+    var out = [];
+    var parts = norm(s).replace(/[^a-z0-9' -]+/g, ' ').split(' ');
+    for (var i = 0; i < parts.length; i++) {
+      if (parts[i] && !fillers[parts[i]]) { out.push(parts[i]); }
+    }
+    return out;
+  }
+
+  function stem(w) {
+    w = w.replace(/'s$/, '');
+    if (w.length > 4) { w = w.replace(/(ing|ed|es|s)$/, ''); }
+    return w;
+  }
+
+  function preparePhrases(data) {
+    var fillers = {};
+    var list = data.fillers || [];
+    for (var i = 0; i < list.length; i++) { fillers[list[i]] = 1; }
+    var phrases = [];
+    var rows = data.phrases || [];
+    for (i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      var toks = tokens(r[0], fillers);
+      var content = [];
+      for (var j = 0; j < toks.length; j++) { if (!STOP[toks[j]]) { content.push(stem(toks[j])); } }
+      phrases.push({ t: r[0], p: r[1], a: r[2], e: r[3], g: r[4], k: toks.join(' '), c: content });
+    }
+    return { phrases: phrases, fillers: fillers };
+  }
+
+  /* Prefix: the phrase, fillers removed, starts with the query, fillers removed.
+     Contains: the query has every content word of a phrase of two content words or more. */
+  function searchPhrases(px, query, limit) {
+    var qt = tokens(query, px.fillers);
+    var qk = qt.join(' ');
+    if (qk.length < 3) { return { prefix: [], contains: [] }; }
+    var qs = {};
+    for (var i = 0; i < qt.length; i++) { qs[stem(qt[i])] = 1; }
+    var prefix = [];
+    var contains = [];
+    for (i = 0; i < px.phrases.length; i++) {
+      var ph = px.phrases[i];
+      if (ph.k.slice(0, qk.length) === qk) { if (prefix.length < limit) { prefix.push(ph); } continue; }
+      if (ph.c.length >= 2 && contains.length < limit) {
+        var all = true;
+        for (var j = 0; j < ph.c.length; j++) { if (!qs[ph.c[j]]) { all = false; break; } }
+        if (all) { contains.push(ph); }
+      }
+    }
+    return { prefix: prefix, contains: contains };
+  }
+
+  /* ---- "Did you mean": spelling distance over headwords and forms ------ */
+
+  function distance(a, b, max) {
+    /* optimal string alignment (Damerau-Levenshtein with adjacent transpositions); gives up past max */
+    var la = a.length, lb = b.length;
+    if (Math.abs(la - lb) > max) { return max + 1; }
+    var prev2 = null, prev = [], cur, i, j;
+    for (j = 0; j <= lb; j++) { prev[j] = j; }
+    for (i = 1; i <= la; i++) {
+      cur = [i];
+      var rowMin = i;
+      for (j = 1; j <= lb; j++) {
+        var cost = a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1;
+        var v = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+        if (prev2 && i > 1 && j > 1 && a.charAt(i - 1) === b.charAt(j - 2) && a.charAt(i - 2) === b.charAt(j - 1)) {
+          v = Math.min(v, prev2[j - 2] + 1);
+        }
+        cur[j] = v;
+        if (v < rowMin) { rowMin = v; }
+      }
+      if (rowMin > max) { return max + 1; }
+      prev2 = prev;
+      prev = cur;
+    }
+    return prev[lb];
+  }
+
+  function suggestions(ix, query, limit) {
+    var q = norm(query);
+    if (q.length < 3) { return []; }
+    var max = q.length <= 4 ? 1 : 2;
+    var best = {};
+    var keys = ix.keys;
+    for (var i = 0; i < keys.length; i++) {
+      var d = distance(q, keys[i], max);
+      if (d > max) { continue; }
+      var idx = ix.forms[keys[i]];
+      for (var j = 0; j < idx.length; j++) {
+        var w = ix.words[idx[j]];
+        var score = d * 10 + (w.k === keys[i] ? 0 : 1) + Math.min(Math.abs(keys[i].length - q.length), 5);
+        if (best[idx[j]] === undefined || score < best[idx[j]].score) { best[idx[j]] = { w: w, score: score, via: w.k === keys[i] ? null : keys[i] }; }
+      }
+    }
+    var out = [];
+    for (var k in best) { if (Object.prototype.hasOwnProperty.call(best, k)) { out.push(best[k]); } }
+    out.sort(function (a, b) { return a.score - b.score || (a.w.k < b.w.k ? -1 : 1); });
+    return out.slice(0, limit);
+  }
+
   /* Rank: exact headword, exact form, headword prefix, form prefix, substring. */
   function search(ix, query, limit) {
     var q = norm(query);
@@ -112,7 +249,7 @@
     function push(tier, i, via) {
       if (seen[i] !== undefined) { return; }
       seen[i] = tier;
-      tiers[tier].push({ w: ix.words[i], via: via });
+      tiers[tier].push({ w: ix.words[i], via: via, tier: tier });
     }
     var exact = ix.forms[q] || [];
     var i, j;
@@ -151,6 +288,48 @@
     return base + 'w/' + encodeURIComponent(word.p) + '.html';
   }
 
+  function phraseHref(ph) {
+    return base + 'w/' + encodeURIComponent(ph.p) + '.html#' + encodeURIComponent(ph.a);
+  }
+
+  /* Words and phrases in one list: exact words, phrases that start with the query, word prefixes,
+     phrases that contain the query's content words, substrings; near spellings when nothing matches. */
+  function combined(ix, px, query, limit) {
+    var words = search(ix, query, limit);
+    var items = [];
+    function addWords(lo, hi) {
+      for (var i = 0; i < words.length; i++) {
+        if (words[i].tier >= lo && words[i].tier <= hi) {
+          items.push({ kind: 'word', href: wordHref(words[i].w), hw: words[i].w.w, pos: posOf(ix, words[i].w),
+                       via: words[i].via && words[i].via !== words[i].w.k ? words[i].via : null, g: words[i].w.g });
+        }
+      }
+    }
+    function addPhrases(list) {
+      for (var i = 0; i < list.length; i++) {
+        items.push({ kind: 'phrase', href: phraseHref(list[i]), hw: list[i].t, pos: 'phrase', via: 'in ' + list[i].e, g: list[i].g });
+      }
+    }
+    var ph = px ? searchPhrases(px, query, limit) : { prefix: [], contains: [] };
+    addWords(0, 1);
+    addPhrases(ph.prefix);
+    addWords(2, 3);
+    addPhrases(ph.contains);
+    var strong = items.length;
+    addWords(4, 4);
+    if (!strong) {
+      var sugg = suggestions(ix, query, 3);
+      if (sugg.length) {
+        var lead = [{ kind: 'suggest-head' }];
+        for (var i = 0; i < sugg.length; i++) {
+          lead.push({ kind: 'suggestion', href: wordHref(sugg[i].w), hw: sugg[i].w.w, pos: posOf(ix, sugg[i].w), via: sugg[i].via, g: sugg[i].w.g });
+        }
+        items = lead.concat(items);
+      }
+    }
+    return items.slice(0, limit + 1);
+  }
+
   /* ---- the search box ------------------------------------------------ */
 
   function setupSearch(form) {
@@ -162,7 +341,8 @@
     var pending = 0;
 
     function render(results, query) {
-      current = results;
+      current = [];
+      for (var c = 0; c < results.length; c++) { if (results[c].href) { current.push(results[c]); } }
       active = -1;
       if (!query) { list.hidden = true; list.innerHTML = ''; return; }
       if (!results.length) {
@@ -171,28 +351,29 @@
         return;
       }
       var html = '';
-      loadIndex().then(function (ix) {
-        for (var i = 0; i < results.length; i++) {
-          var w = results[i].w;
-          html += '<li><a href="' + escapeHtml(wordHref(w)) + '" data-hw="' + escapeHtml(w.w) + '">' +
-            '<span class="hw">' + escapeHtml(w.w) + '</span>' +
-            '<span class="pos">' + escapeHtml(posOf(ix, w)) + '</span>' +
-            (results[i].via && results[i].via !== w.k ? '<span class="via">(' + escapeHtml(results[i].via) + ')</span>' : '') +
-            (w.g ? '<span class="gloss">' + escapeHtml(w.g) + '</span>' : '') +
-            '</a></li>';
-        }
-        list.innerHTML = html;
-        list.hidden = false;
-      });
+      for (var i = 0; i < results.length; i++) {
+        var r = results[i];
+        if (r.kind === 'suggest-head') { html += '<li class="suggest">Did you mean:</li>'; continue; }
+        html += '<li class="' + r.kind + '-result' + (r.kind === 'suggestion' ? ' suggestion' : '') + '"><a href="' + escapeHtml(r.href) +
+          '" data-hw="' + escapeHtml(r.hw) + '" data-kind="' + r.kind + '">' +
+          '<span class="hw">' + escapeHtml(r.hw) + '</span>' +
+          '<span class="pos">' + escapeHtml(r.pos || '') + '</span>' +
+          (r.via ? '<span class="via">(' + escapeHtml(r.via) + ')</span>' : '') +
+          (r.g ? '<span class="gloss">' + escapeHtml(r.g) + '</span>' : '') +
+          '</a></li>';
+      }
+      list.innerHTML = html;
+      list.hidden = false;
     }
 
     function run() {
       var query = input.value;
       var ticket = ++pending;
       if (!norm(query)) { render([], ''); return; }
-      loadIndex().then(function (ix) {
+      var wantPhrases = norm(query).indexOf(' ') > 0;
+      Promise.all([loadIndex(), wantPhrases ? loadPhrases() : Promise.resolve(null)]).then(function (got) {
         if (ticket !== pending) { return; }
-        render(search(ix, query, 30), query);
+        render(combined(got[0], got[1], query, 30), query);
       }).catch(function (err) {
         list.innerHTML = '<li class="none">Search is unavailable: ' + escapeHtml(err.message || err) + '</li>';
         list.hidden = false;
@@ -201,17 +382,23 @@
 
     function openFirst() {
       var target = active >= 0 && current[active] ? current[active] : current[0];
-      if (target) { window.location.href = wordHref(target.w); return; }
-      loadIndex().then(function (ix) {
-        var results = search(ix, input.value, 1);
-        if (results.length) { window.location.href = wordHref(results[0].w); }
+      if (target) { window.location.href = target.href; return; }
+      var query = input.value;
+      if (!norm(query)) { return; }
+      var wantPhrases = norm(query).indexOf(' ') > 0;
+      Promise.all([loadIndex(), wantPhrases ? loadPhrases() : Promise.resolve(null)]).then(function (got) {
+        var results = combined(got[0], got[1], query, 2);
+        for (var i = 0; i < results.length; i++) {
+          if (results[i].href) { window.location.href = results[i].href; return; }
+        }
       });
     }
 
     function highlight() {
-      var items = list.querySelectorAll('li');
+      var items = list.querySelectorAll('li a');
       for (var i = 0; i < items.length; i++) {
-        if (i === active) { items[i].classList.add('active'); } else { items[i].classList.remove('active'); }
+        var li = items[i].parentNode;
+        if (i === active) { li.classList.add('active'); } else { li.classList.remove('active'); }
       }
     }
 
@@ -227,10 +414,38 @@
     document.addEventListener('click', function (e) {
       if (!closest(e.target, '.search')) { list.hidden = true; }
     });
+    return { input: input, run: run };
   }
 
   var forms = document.querySelectorAll('form.search');
-  for (var f = 0; f < forms.length; f++) { setupSearch(forms[f]); }
+  var boxes = [];
+  for (var f = 0; f < forms.length; f++) { var box = setupSearch(forms[f]); if (box) { boxes.push(box); } }
+
+  /* ?q= in the address fills in and runs the search (the main box: the home page's, else the header's);
+     the 404 page searches for the name in the address. */
+  function initialQuery() {
+    var q = null;
+    try { q = new URLSearchParams(window.location.search).get('q'); } catch (e) { q = null; }
+    if (q) { return q; }
+    if (document.body.getAttribute('data-page') === '404') {
+      var m = /([^\/]+?)(?:\.html?)?\/?$/.exec(window.location.pathname);
+      if (m) {
+        var name = m[1];
+        try { name = decodeURIComponent(name); } catch (e) { /* keep it raw */ }
+        return name.replace(/[-_+]+/g, ' ').trim();
+      }
+    }
+    return null;
+  }
+  var q0 = initialQuery();
+  if (q0 && boxes.length) {
+    var mainBox = boxes[boxes.length - 1];
+    var home = document.querySelector('form.home-search .search-input');
+    for (var b = 0; b < boxes.length; b++) { if (boxes[b].input === home) { mainBox = boxes[b]; } }
+    mainBox.input.value = q0;
+    mainBox.run();
+    try { mainBox.input.focus({ preventScroll: true }); } catch (e) { mainBox.input.focus(); }
+  }
 
   /* ---- previews on linked words -------------------------------------- */
 

@@ -47,10 +47,16 @@ The rules
   entry of their own or a listed inflected form, so "is" never becomes "I" and
   "as" never becomes "a".  They are linked like any other word once their entry
   exists.
+* NO_LINK_WORDS, the closed list ``no_link_words`` in schema/vocabularies.json
+  (the owner's ruling of 2026-10-24, wiki/decisions/word-links.md), are never
+  linked as single words, in any capitalization; a multi-word headword that
+  begins with one (``in spite of``) and an explicit override still link.
+* Every word link carries ``tabindex="-1"``: word links are out of the Tab
+  order, so a keyboard user tabs through the page's controls, not every word.
 * A possessive ending ("bank's") is split off and left unlinked.
 * Everything else is HTML-escaped and left as it is.
 
-Output: ``<a class="w" href="<base_rel>w/<headword>.html#<slug>" data-hw="<headword>">word</a>``,
+Output: ``<a class="w" href="<base_rel>w/<headword>.html#<slug>" data-hw="<headword>" tabindex="-1">word</a>``,
 where ``base_rel`` is the path from the current page's directory to the site
 root ("../" for a page under w/, "" for the home page) and ``<headword>`` in the
 URL is the slug without its part-of-speech suffix (``in-spite-of``, ``oclock``).
@@ -86,7 +92,18 @@ WORD_RE = re.compile(r"[^\W_]+(?:['’][^\W_]+)*")
 OVERRIDE_RE = re.compile(r"\[\[([a-z0-9]+(?:-[a-z0-9]+)*)(?:\|([^\]]*))?\]\]")
 SOFT_SEP_RE = re.compile(r"^(?:[\s\-–]+|\.)$")
 POSSESSIVE_RE = re.compile(r"^(.+)(['’]s)$")
-LINK_RE = re.compile(r'<a class="w" href="([^"]*)" data-hw="([^"]*)">([^<]*)</a>')
+LINK_RE = re.compile(r'<a class="w" href="([^"]*)" data-hw="([^"]*)" tabindex="-1">([^<]*)</a>')
+
+
+def load_no_link_words(root=None):
+    """The closed list of words never linked as single words (lowercase keys)."""
+    try:
+        return frozenset(w.lower().replace("’", "'") for w in eexlib.vocab_values("no_link_words", eexlib.load_vocab(root)))
+    except (OSError, KeyError, ValueError):
+        return frozenset()
+
+
+NO_LINK_WORDS = load_no_link_words()
 
 
 # --------------------------------------------------------------------------
@@ -263,7 +280,8 @@ class Index:
     ``"rules"`` (always the built-in rules), or a callable ``word -> [candidates]``.
     """
 
-    def __init__(self, lemmatizer=None):
+    def __init__(self, lemmatizer=None, no_link=None):
+        self.no_link = NO_LINK_WORDS if no_link is None else frozenset(no_link)
         self.headwords = {}    # hw_key -> {"display": str, "page": str, "slugs": [slug, ...]}
         self.forms = {}        # form_key -> {hw_key: set(slugs)}
         self.slug_hw = {}      # slug -> hw_key
@@ -378,7 +396,7 @@ class Index:
         href = "%sw/%s.html" % (base_rel, info["page"])
         if slug:
             href += "#" + slug
-        return '<a class="w" href="%s" data-hw="%s">%s</a>' % (
+        return '<a class="w" href="%s" data-hw="%s" tabindex="-1">%s</a>' % (
             html.escape(href, quote=True), html.escape(info["display"], quote=True), html.escape(visible, quote=False))
 
     def link(self, text, self_slug=None, base_rel="", mark_self=False):
@@ -459,7 +477,7 @@ class Index:
             if pm:
                 base, suffix = pm.group(1), pm.group(2)
             cut = len(tok) - len(suffix)
-            hit = self.resolve(base)
+            hit = None if base in self.no_link else self.resolve(base)
             if hit is not None and hit[0] != self_key:
                 out.append(self.anchor(hit, tok[:cut], base_rel) + html.escape(tok[cut:], quote=False))
             elif mark_self and self._is_self_form(base, self_key):
@@ -513,13 +531,14 @@ def _split_forms(value):
 _DEFAULT = None
 
 
-def build_index(entries, lemmatizer=None):
+def build_index(entries, lemmatizer=None, no_link=None):
     """The form map for ``entries``: an iterable of entry dicts or of ``(path, dict)`` pairs.
 
     Redirect stubs are skipped.  The caller decides which entries to index
-    (the site indexes reviewed entries only).
+    (the site indexes reviewed entries only).  ``no_link`` replaces the closed
+    list of never-linked words (default: ``no_link_words`` in the vocabularies).
     """
-    index = Index(lemmatizer=lemmatizer)
+    index = Index(lemmatizer=lemmatizer, no_link=no_link)
     for item in entries:
         entry = item[1] if isinstance(item, tuple) else item
         index.add_entry(entry)

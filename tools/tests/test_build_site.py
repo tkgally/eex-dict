@@ -69,6 +69,41 @@ class TempSite:
         run["inflections"]["note"] = "past tense **ran**"
         run["provenance"]["created"] = "2026-09-17T01:00:00Z"
         write_json(self.dir / "entries" / "ru" / "run-v.json", run)
+        # a phrasal verb of run (the box on the verb's page, ruling D2)
+        away = copy.deepcopy(run)
+        away["slug"] = away["id"] = "run-away-phrv"
+        away["headword"] = "run away"
+        away["pos"] = "phrv"
+        away["senses"][0].update({"signpost": None, "definition": "leave a place quickly to escape from someone or something"})
+        away["senses"][0]["synonyms"] = [{"slug": "flee-v", "note": None}]       # no entry: grey text (C2)
+        away["see_also"] = [{"slug": "escape-v", "note": None}]                   # no entry: hidden (C2)
+        away["word_family"] = [{"slug": "runaway-n", "form": None, "note": None}]  # no entry: hidden (C2)
+        away["usage_note"] = None
+        away["pronunciation"]["notes"] = None
+        away["phrases"] = [{"sub_id": "run-away-with-someone", "text": "run away with someone", "labels": {},
+                            "definition": "leave home secretly to live with someone", "explanation": None,
+                            "examples": [{"text": "She ran away with her teacher.", "note": None, "pattern": None}],
+                            "adaptation": {"semantic": None, "grammar": None, "culture": None, "false_friends": None, "pronunciation": None},
+                            "l1": {}}]
+        write_json(self.dir / "entries" / "ru" / "run-away-phrv.json", away)
+        # an entry with six senses (the sense menu, ruling D2)
+        big = copy.deepcopy(fixture)
+        big["slug"] = big["id"] = "set-n"
+        big["headword"] = "set"
+        big["phrases"], big["word_family"], big["see_also"] = [], [], []
+        sense = big["senses"][0]
+        big["senses"] = []
+        for n in range(1, 7):
+            x = copy.deepcopy(sense)
+            x.update({"n": n, "signpost": "GROUP" if n == 1 else None, "definition": "meaning number %d of the noun" % n,
+                      "synonyms": [], "antonyms": [], "compare": [{"slug": "brother-in-law-n", "note": None}] if n == 2 else []})
+            big["senses"].append(x)
+        write_json(self.dir / "entries" / "se" / "set-n.json", big)
+        (self.dir / "headwords").mkdir(exist_ok=True)
+        (self.dir / "headwords" / "queue.tsv").write_text(
+            "headword\tpos\tband\tsource\tstatus\tadded\tnote\n"
+            "brother in law\tn\t3\tcrossref\tduplicate\t2026-10-01\t\n"
+            "brother-in-law\tn\t2\tdefining\tpending\t2026-09-16\t\n", encoding="utf-8")
         write_json(self.dir / "entries" / "ba" / "banc-n.json",
                    {"schema_version": "1.0", "slug": "banc-n", "redirect_to": "bank-n", "renamed": "2026-09-16", "reason": "test"})
         write_json(self.dir / "headwords" / "redirects.json", {"banc-n": "bank-n", "old-run-v": "run-v"})
@@ -110,7 +145,7 @@ class BuildSiteTests(unittest.TestCase):
 
     def test_expected_pages_exist(self):
         for rel in ["index.html", "w/bank.html", "w/run.html", "browse/index.html", "browse/b.html", "browse/r.html",
-                    "browse/band-1.html", "browse/band-5.html", "random.html", "recent.html", "journal/index.html",
+                    "browse/band-1.html", "random.html", "recent.html", "journal/index.html", "404.html", "phrase-index.json",
                     "journal/2026-09-16-first.html", "about.html", "grammar-key.html", "labels-key.html",
                     "pronunciation-key.html", "redirect/banc-n.html", "redirect/old-run-v.html", "w/banc.html",
                     "search-index.json", "p/bank.json", "p/run.json", "site.css", "site.js"]:
@@ -122,7 +157,7 @@ class BuildSiteTests(unittest.TestCase):
         self.assertNotIn('id="bank-v"', bank)
         self.assertEqual(self.builder.drafts, 1)
         index = json.loads(self.site.read("search-index.json"))
-        self.assertEqual([w["w"] for w in index["words"]], ["bank", "run"])
+        self.assertEqual([w["w"] for w in index["words"]], ["bank", "run", "run away", "set"])
         self.assertEqual(index["words"][0]["s"], ["bank-n"])
 
     def test_anchors_and_entry_content(self):
@@ -154,7 +189,7 @@ class BuildSiteTests(unittest.TestCase):
     def test_build_time_links_are_placed(self):
         run = self.site.read("w/run.html")
         # "bank" in run's example links to the bank page; run's own forms do not link
-        self.assertIn('<a class="w" href="../w/bank.html#bank-n" data-hw="bank">bank</a>', run)
+        self.assertIn('<a class="w" href="../w/bank.html#bank-n" data-hw="bank" tabindex="-1">bank</a>', run)
         self.assertNotIn('data-hw="run"', run)
         bank = self.site.read("w/bank.html")
         self.assertNotIn('data-hw="bank"', bank)
@@ -164,7 +199,7 @@ class BuildSiteTests(unittest.TestCase):
         self.assertIn('<span class="ex">Sam <b class="ex-hw">ran</b> to', run)
         self.assertIn('<b class="ex-hw">running</b>', run)
         self.assertIn('<b class="mention">Run</b> is irregular: <i class="illus">ran</i>, <i class="illus">run</i>. '
-                      'Compare <b class="mention"><a class="w" href="../w/bank.html#bank-n" data-hw="bank">bank</a></b>.', run)
+                      'Compare <b class="mention"><a class="w" href="../w/bank.html#bank-n" data-hw="bank" tabindex="-1">bank</a></b>.', run)
         self.assertIn('<span class="muted small"><b class="mention">Run</b> rhymes with <i class="illus">fun</i>.</span>', run)
         self.assertIn('<span class="note">past tense <b class="mention">ran</b></span>', run)
         bank = self.site.read("w/bank.html")
@@ -193,6 +228,8 @@ class BuildSiteTests(unittest.TestCase):
             for href in HREF_RE.findall(text):
                 with self.subTest(page=rel, href=href):
                     self.assertFalse(href.startswith("/"), href)
+                    if href.startswith("https://github.com/tkgally/eex-dict/issues/new?"):
+                        continue                                    # the report link (ruling E4)
                     if href.startswith("http"):
                         self.assertEqual(rel, "about.html")
         about = self.site.read("about.html")
@@ -260,6 +297,88 @@ class BuildSiteTests(unittest.TestCase):
         band = self.site.read("browse/band-1.html")
         self.assertIn("bank", band)
 
+    def test_empty_bands_are_hidden(self):
+        self.assertFalse((self.site.out / "browse" / "band-5.html").exists())
+        self.assertNotIn("band-5.html", self.site.read("browse/index.html"))
+
+    def test_missing_cross_references(self):
+        """Ruling C2: grey text with a legend for synonyms; family and see also hidden; no slug in a tooltip."""
+        page = self.site.read("w/run-away.html")
+        self.assertIn('<span class="xref-missing">flee</span>', page)
+        self.assertIn("Grey words have no entry yet.", page)
+        self.assertNotIn("runaway", page)
+        self.assertNotIn("see-also", page)          # its only see-also item has no entry
+        self.assertNotIn('title="no entry yet', page)
+        self.assertNotIn("flee-v", page)
+
+    def test_display_forms_keep_hyphens(self):
+        """Ruling C3: the queue row's headword, a live row before a duplicate; never the slug's hyphens as spaces."""
+        page = self.site.read("w/set.html")
+        self.assertIn('<span class="xref-missing">brother-in-law</span>', page)
+        self.assertNotIn("brother in law", page)
+
+    def test_sense_menu_and_jump_links(self):
+        page = self.site.read("w/set.html")
+        self.assertIn('<nav class="sense-menu"', page)
+        self.assertIn('href="#set-n-s6"', page)
+        self.assertIn('<span class="signpost">GROUP</span>', page)
+        self.assertNotIn('class="sense-menu"', self.site.read("w/bank.html"))     # two senses: no menu
+        bank = self.site.read("w/bank.html")
+        self.assertIn('href="#bank-n-phrases">Phrases (1)</a>', bank)
+        self.assertIn('id="bank-n-phrases"', bank)
+
+    def test_phrasal_verbs_box(self):
+        page = self.site.read("w/run.html")
+        self.assertIn('id="run-v-phrasal-verbs"', page)
+        self.assertIn('href="../w/run-away.html#run-away-phrv">run away</a>', page)
+        self.assertIn('href="#run-v-phrasal-verbs">Phrasal verbs (1)</a>', page)
+        self.assertNotIn("phrasal-verbs", self.site.read("w/bank.html"))
+
+    def test_phrase_index(self):
+        data = json.loads(self.site.read("phrase-index.json"))
+        self.assertIn("someone", data["fillers"])
+        texts = {row[0]: row for row in data["phrases"]}
+        self.assertEqual(texts["break the bank"][1:3], ["bank", "bank-n-break-the-bank"])
+        self.assertEqual(texts["run away with someone"][2], "run-away-phrv-run-away-with-someone")
+
+    def test_report_link(self):
+        page = self.site.read("w/bank.html")
+        self.assertIn("Report a problem with this entry", page)
+        self.assertIn("issues/new?title=Entry%20report%3A%20bank-n", page)
+        self.assertIn("tkgally.github.io/eex-dict/w/bank.html%23bank-n", page)
+
+    def test_home_has_one_search_box_and_journal_is_in_the_footer(self):
+        home = self.site.read("index.html")
+        self.assertEqual(home.count('<form class="search'), 1)
+        self.assertNotIn('<a href="journal/index.html">Journal</a></li>', home)
+        nav = home[home.index('<nav class="site-nav"'):home.index("</nav>")]
+        self.assertNotIn("journal", nav)
+        self.assertIn('href="journal/index.html">Journal</a>', home[home.index("<footer"):])
+        self.assertIn('href="#top">Back to top</a>', home)
+        about = self.site.read("about.html")
+        self.assertLess(about.index("How to read an entry"), about.index("What this dictionary is"))
+        self.assertIn('href="journal/index.html"', about)
+
+    def test_not_found_page(self):
+        page = self.site.read("404.html")
+        self.assertIn('document.write(\'<base href=', page)
+        self.assertIn("'/eex-dict/'", page)
+        self.assertIn('data-page="404"', page)
+        self.assertLess(page.index("<base href"), page.index('rel="stylesheet"'))
+
+    def test_band_split_by_letter(self):
+        old = build_site.BAND_SPLIT_MIN
+        build_site.BAND_SPLIT_MIN = 2
+        try:
+            self.site.build()
+            band = self.site.read("browse/band-1.html")
+            self.assertIn('href="band-1-b.html"', band)
+            self.assertIn('href="../w/bank.html">bank</a>', self.site.read("browse/band-1-b.html"))
+            self.assertIn('href="../w/run.html">run</a>', self.site.read("browse/band-1-r.html"))
+        finally:
+            build_site.BAND_SPLIT_MIN = old
+            self.site.build()
+
     def test_build_is_idempotent(self):
         before = {p.relative_to(self.site.out).as_posix(): p.read_bytes() for p in self.site.out.rglob("*") if p.is_file()}
         self.site.build()
@@ -277,7 +396,7 @@ class CliTests(unittest.TestCase):
         proc = subprocess.run([sys.executable, str(TOOLS / "build_site.py"), "--root", str(site.dir), "--entries", str(scratch),
                                "--out", str(out)], capture_output=True, text=True)
         self.assertEqual(proc.returncode, 0, proc.stderr)
-        self.assertIn("2 entries on 2 headword pages", proc.stdout)
+        self.assertIn("4 entries on 4 headword pages", proc.stdout)
         self.assertTrue((out / "w" / "bank.html").is_file())
 
     def test_refuses_to_clobber_a_foreign_directory(self):
