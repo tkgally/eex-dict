@@ -10,7 +10,7 @@
     "american": {
       "ipa": "flɔr",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/4;cmudict:agree",
       "status": "verified"
     },
     "british": {
@@ -390,6 +390,68 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 6,
+      "signpost": "lowest level",
+      "definition": "the lowest level that a price, a wage, or an amount is allowed to reach",
+      "explanation": null,
+      "grammar": {
+        "countability": "countable",
+        "transitivity": null,
+        "codes": [
+          "usually singular"
+        ],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [
+          "business"
+        ],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The government set a floor on the price of wheat.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The new law puts a floor under wages.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "a floor on something",
+            "put a floor under something"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [
+        {
+          "slug": "ceiling-n",
+          "note": null
+        }
+      ],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [
@@ -440,7 +502,7 @@
       },
       "examples": [
         {
-          "text": "Please wait. Ms. Lee has the floor.",
+          "text": "Please wait. Sara has the floor.",
           "note": null,
           "pattern": null
         }
@@ -544,14 +606,14 @@
   "adaptation": {
     "semantic": "Many languages use one word for the **floor** inside a building and the **ground** outside. English keeps them apart.",
     "grammar": null,
-    "culture": "Floors are numbered differently: in American English the **first floor** is at street level; in British English it is the floor above the **ground floor**. Check which system the text uses.",
+    "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-10-03T21:04:09Z",
-    "modified": "2026-10-11T01:09:07Z",
+    "modified": "2026-10-24T10:01:16Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261003T205944Z-vfp904",
     "reviews": [
@@ -594,6 +656,26 @@
         "ok": 81,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261024T094302Z-jiwbqq",
+        "role": "reviewer-a",
+        "model": "openai/gpt-5.6-terra",
+        "date": "2026-10-24",
+        "file": "reviews/20261024T094302Z-jiwbqq/floor-n.json",
+        "ok": 79,
+        "issues": 8,
+        "blocking": 6
+      },
+      {
+        "run_id": "20261024T094302Z-jiwbqq",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-24",
+        "file": "reviews/20261024T094302Z-jiwbqq/floor-n.json",
+        "ok": 81,
+        "issues": 2,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
