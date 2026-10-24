@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-24] lint | eighty-sixth pass: back-links, promises, band vote
+
+Scheduled run 20261024T171558Z-ofeeve, cycle 4. Caps and links clean. `crossref.py --all --apply` wrote mirror back-links in six entries; six `NO-SENSE` pairs placed by hand (`dismiss-v` senses 1 and 2, `dip-v` 1, `series-n` 2, `whereas-conj` 1). `lint_vocab.py --promises`: queued `oh-boy-interj`, `buddhist-adj`, `muslim-adj`, `double-over-phrv`; the rest already had rows or are homographs (`corn-n`, `school-n`, `story-n`), which the queue cannot name. `--circular`: 325 definitions use their own headword, 83 on a first sense; none fixed. `--missing-senses`: 681 pairs for the C1 audit. Band vote on 49 unbanded rows (US$0.006); thirteen wide splits settled at the lower median; all now pending. The vote overwrote the day's earlier file: rows merged back, note `band-vote-unbanded-overwrite`. Precision: `reviewer-a` `coverage` 0.23 over 65, kept live by ruling B1. Index and log checked; no gaps.
+
 ## [2026-10-24] build | milestone 1: six numbers, -est, whereas, dare, ache, annoy, bore
 
 Scheduled run 20261024T170216Z-ofeeve, cycle 3. Built and reviewed twelve entries: *twelve*, *thirteen*, *sixteen*, *twenty* (with a paper-money sense), *thirty*, *sixty*, in the cycle-1 shapes; `est-suffix`; `whereas-conj` (contrast, and the legal *whereas*); `dare-modal` (*dare not*, *how dare*, phrase *I dare say*); `ache-v`, `annoy-v`, `bore-v` (make bored; make a hole, with *eyes bored into me*). Queued `dare-v`, `annoyed-adj`, `annoying-adj`, `long-v`, and the ordinals (unbanded). Hand-placed back-links: `drill-v` sense 1 synonym, `although-conj` sense 1 compare. Two inconsistencies a later review should fix: `fifty-num` sense 3 still says "marked with the number 50" (now "with a value of 20" in `twenty-num`), and `eleven-num` and `ten-num` list each other as word family with no shared form. Adjudication: 19 applied, 15 rejected, none escalated. Spend about US$0.67.
