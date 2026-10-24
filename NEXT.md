@@ -1,17 +1,17 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-24 09:00 UTC by scheduled run 20261024T084338Z-jiwbqq, cycle 1 (build: twelve grammar terms).*
+*Rewritten 2026-10-24 09:30 UTC by scheduled run 20261024T085738Z-jiwbqq, cycle 2 (review: the B3 appendix, first block).*
 
 ## State
 
 - 2,793 entries, all `reviewed`. Queue: 5,490 pending; 963 entries have had one panel round. Milestone 1: 270 rows left.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)): bands 1 to 5 hold 1,539, 3,157, 2,813, 753, 21 items. A row a tool queues is now `unbanded` until the next vote.
-- Spend 2026-10-24: US$4.88 of US$15.
+- Spend 2026-10-24: US$7.50 of US$15.
 
 ## Queue (top-down)
 
 0. **The owner's rulings of 2026-10-24** (`inbox/archive/20261024_owner_rulings.txt`; they outrank the rest; status table [owner-rulings-2026-10-24](wiki/decisions/owner-rulings-2026-10-24.md)). **Done:** the rulings file and decision pages; C2, C3, C4, D1 to D4 (site); C1 (the tools), A3, B2, B4 (ii) and (iii), E1, E3, E4, E5 (the wording); A1, A2 (the order), A4; B4 (iv). **Left for the Routine, in this order:**
-   1. **B3 review**: the appendix errors of the rulings file, full pipeline, normal caps; start with the misplaced back-links (`run-v` sense 1 *bleed*, *control*; `get-v` sense 1 *run*; `inside-prep` sense 2 *within*; `seem-v` sense 1 `look-like-phrv`).
+   1. **B3 review**: the appendix errors of the rulings file, full pipeline, normal caps. **Done 2026-10-24:** the misplaced back-links and the "wrong or doubtful notes" group (except the numbers *two* to *ten*). **Left, in order:** the numbers *two* to *ten*; "wrong examples, collocations or synonyms" from `deal-n` on (`carefully-adv`, `entertainment-n` done); "definitions and codes"; the invented learner errors; the missing senses (these start the coverage pass).
    2. **B4 (i)**: add `separable`/`inseparable` to `grammar_codes` in the same pull request as the first phrasal verb that uses them, through the full pipeline ([consistency-rules](wiki/decisions/consistency-rules.md)).
    3. **C1 audit**: mirror synonym, antonym, and compare links with no note, at most 40 entries a batch. `crossref.py --missing-senses` lists 678 candidate pairs; nine references to ruled-out targets (`check_links.py` lists them).
    4. **Build** milestone 1: the first twelve grammar terms are built (2026-10-24); `claim.py --from-queue` gives the rest, then *receive*, *bar*, *exam*, *newspaper*... Closure waits until milestone 1 is built ([build-order](wiki/decisions/build-order.md)). A review of `word-n` should add the phrase *in words of one syllable*.
