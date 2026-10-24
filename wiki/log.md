@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-24] build | milestone 1: the first twelve grammar terms
+
+Scheduled run 20261024T084338Z-jiwbqq, cycle 1. Built and reviewed twelve defining-vocabulary entries, the grammar terms first ([build-order](decisions/build-order.md)): *noun*, *pronoun* (with the "their pronouns" sense), *consonant*, *plural* (noun and adjective), *preposition*, *syllable*, *tense*, *vowel*, *passive* (three senses), *singular* (adjective), *infinitive*. All 24 transcriptions verified. Adjudication: 19 applied, 25 rejected, none escalated (the tool's count); the "plural society" sense was dropped as too specialized; *tense* now says English strictly has two tenses. Rejected: sense-level copies of an entry-level label, and quotation marks around words mentioned in examples. Queued: `passive-n`, `passive-aggressive-adj` (unbanded). *In words of one syllable* is not yet a phrase under `word-n`. The first weekly digest, `journal/digest-2026-10-24.md`, was written. Spend US$0.63.
+
 ## [2026-10-24] setup | the owner's rulings of 2026-10-24: wrap-up
 
 Group 6 of the interactive session ([owner-rulings-2026-10-24](decisions/owner-rulings-2026-10-24.md)). Every tooling, site, configuration, and rule part of the rulings is merged (pull requests 515 to 519 and this one). The final site build passed `site_check.py`, 79 of 79. `NEXT.md` was rewritten under its new word cap, with the entry work queued for the Routine in the rulings' order: B3, B4 (i), the C1 audit, milestone 1 (grammar terms first), the B1 coverage pass and E2, the reviewer-b check, the first digest (due), and the E5 notice. Owner report: `journal/2026-10-24-5.md`. Spend for the day: US$4.24.
