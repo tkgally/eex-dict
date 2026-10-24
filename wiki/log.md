@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-24] build | milestone 1: six numbers, -est, whereas, dare, ache, annoy, bore
+
+Scheduled run 20261024T170216Z-ofeeve, cycle 3. Built and reviewed twelve entries: *twelve*, *thirteen*, *sixteen*, *twenty* (with a paper-money sense), *thirty*, *sixty*, in the cycle-1 shapes; `est-suffix`; `whereas-conj` (contrast, and the legal *whereas*); `dare-modal` (*dare not*, *how dare*, phrase *I dare say*); `ache-v`, `annoy-v`, `bore-v` (make bored; make a hole, with *eyes bored into me*). Queued `dare-v`, `annoyed-adj`, `annoying-adj`, `long-v`, and the ordinals (unbanded). Hand-placed back-links: `drill-v` sense 1 synonym, `although-conj` sense 1 compare. Two inconsistencies a later review should fix: `fifty-num` sense 3 still says "marked with the number 50" (now "with a value of 20" in `twenty-num`), and `eleven-num` and `ten-num` list each other as word family with no shared form. Adjudication: 19 applied, 15 rejected, none escalated. Spend about US$0.67.
+
 ## [2026-10-24] site | build and check, all pass
 
 Scheduled run 20261024T165814Z-ofeeve, cycle 2. `tools/build_site.py` wrote 2,816 entries on 2,430 headword pages (no drafts held back, no redirects); `tools/site_check.py` ran 79 checks at phone and desktop widths, all passed, including no sideways scroll at 360 px on all 2,436 pages. The twelve new number pages (*forty*, *fourth*, and the rest) render. No change to the build tool or templates. No spend.
