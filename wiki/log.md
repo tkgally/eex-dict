@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-24] build | milestone 1: eleven more, from participle to eighteen
+
+Scheduled run 20261024T092841Z-jiwbqq, cycle 3. Built and reviewed eleven milestone-1 entries: *participle*, *countable*, *uncountable* (adjectives), *receive* (five senses), *bar* (eight senses, phrases *behind bars*, *raise the bar*), *exam*, *newspaper*, *series*, *lovely*, *responsible* (five senses), *eighteen*. The claimed row *of course* (adverb) was set `duplicate`: the phrase lives under `course-n`; `certainly-adv`, `naturally-adv`, `obviously-adv` still point at `of-course-adv` and should be repointed in review. All 22 transcriptions verified. Adjudication: 18 applied, 20 rejected, none escalated. Four `NO-SENSE` back-links placed by hand (`accept-v`, `show-n`, `kind-adj`, `sensible-adj`). Spend US$0.82.
+
 ## [2026-10-24] review | owner's appendix (B3), first block: back-links and notes
 
 Scheduled run 20261024T085738Z-jiwbqq, cycle 2. Sixteen appendix items fixed through the full pipeline, plus `carefully-adv`, `deliberately-adv` (mirror removed), `entertainment-n`; one hand-placed back-link on `distinguish-v`. Back-links moved to matching senses (`run-v`, `get-v`, `inside-prep`, `seem-v`); wrong notes rewritten or removed (`get-v`, `worry-v`, `soft-adj`, `access-n`, `heart-n`, `house-n`, `life-n`, `tell-v`, `give-up-phrv`, `my-det`, `physical-adj`); `flat-adj` gained *B flat* and *flat sales* senses, lost its invented error; `above-prep` gained a rank sense. Panel: 134 issues, 101 blocking; 66 applied, 53 rejected (phrasal verbs and compounds asked as senses; region-label fence); new from it: `seem-v` 2a *can't seem to*, `get-v` 14 *annoy*, `life-n` phrases. Queued `my-interj`. `verb + adjective` is not a collocation type (used `phrase`). Spend US$2.62. Left of B3: the third and fourth groups (examples, definitions and codes, invented errors, missing senses).

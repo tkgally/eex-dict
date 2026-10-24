@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-24 09:30 UTC by scheduled run 20261024T085738Z-jiwbqq, cycle 2 (review: the B3 appendix, first block).*
+*Rewritten 2026-10-24 09:45 UTC by scheduled run 20261024T092841Z-jiwbqq, cycle 3 (build: eleven milestone-1 entries).*
 
 ## State
 
-- 2,793 entries, all `reviewed`. Queue: 5,490 pending; 963 entries have had one panel round. Milestone 1: 270 rows left.
+- 2,804 entries, all `reviewed`. Milestone 1: 258 rows left (the grammar terms are done).
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)): bands 1 to 5 hold 1,539, 3,157, 2,813, 753, 21 items. A row a tool queues is now `unbanded` until the next vote.
-- Spend 2026-10-24: US$7.50 of US$15.
+- Spend 2026-10-24: US$8.32 of US$15.
 
 ## Queue (top-down)
 
@@ -14,7 +14,7 @@
    1. **B3 review**: the appendix errors of the rulings file, full pipeline, normal caps. **Done 2026-10-24:** the misplaced back-links and the "wrong or doubtful notes" group (except the numbers *two* to *ten*). **Left, in order:** the numbers *two* to *ten*; "wrong examples, collocations or synonyms" from `deal-n` on (`carefully-adv`, `entertainment-n` done); "definitions and codes"; the invented learner errors; the missing senses (these start the coverage pass).
    2. **B4 (i)**: add `separable`/`inseparable` to `grammar_codes` in the same pull request as the first phrasal verb that uses them, through the full pipeline ([consistency-rules](wiki/decisions/consistency-rules.md)).
    3. **C1 audit**: mirror synonym, antonym, and compare links with no note, at most 40 entries a batch. `crossref.py --missing-senses` lists 678 candidate pairs; nine references to ruled-out targets (`check_links.py` lists them).
-   4. **Build** milestone 1: the first twelve grammar terms are built (2026-10-24); `claim.py --from-queue` gives the rest, then *receive*, *bar*, *exam*, *newspaper*... Closure waits until milestone 1 is built ([build-order](wiki/decisions/build-order.md)). A review of `word-n` should add the phrase *in words of one syllable*.
+   4. **Build** milestone 1: the first twelve grammar terms are built (2026-10-24); `claim.py --from-queue` gives the rest, then *receive*, *bar*, *exam*, *newspaper*... Closure waits until milestone 1 is built ([build-order](wiki/decisions/build-order.md)). A review of `word-n` should add the phrase *in words of one syllable*; `certainly-adv`, `naturally-adv`, `obviously-adv` point at `of-course-adv` (a duplicate row: the phrase is `course-n#of-course`), so repoint them.
    5. **Review** (E2): drafts, the B3 list, the B1 coverage pass over the 500 most important band-1 entries (most senses first, then function words; start with `drop-v`, `service-n`, `like-prep`, `into-prep`, `go-on-phrv`, `hard-adj`), then the one-round backlog by band.
    6. **reviewer-b** (E1): after two lint passes under the new prompt, if it raises fewer than about 0.5 issues per entry, trial another non-Anthropic model on 40 entries.
    7. **Weekly digest** (E3, E4): the first was written 2026-10-24 (`journal/digest-2026-10-24.md`); next when `signals.digest_due`. Entry reports: pre-flight step 5 of `routine-prompt.md`.
