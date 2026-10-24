@@ -74,22 +74,45 @@ th { color: var(--muted); font-weight: 600; }
 .muted { color: var(--muted); }
 .small { font-size: 0.88rem; }
 
-/* header ------------------------------------------------------------- */
-.site-header { max-width: 44em; margin: 0 auto; padding: 0.6rem 0 0.4rem; border-bottom: 1px solid var(--line); }
-.masthead { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; flex-wrap: wrap; }
-.site-name { font-weight: 700; text-decoration: none; color: var(--fg); font-size: 1.05rem; }
+/* header: one slim row (name and menu), then the search box (ruling D3) */
+.site-header { max-width: 44em; margin: 0 auto; padding: 0.4rem 0 0.35rem; border-bottom: 1px solid var(--line); }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; position: relative; }
+.site-name { font-weight: 700; text-decoration: none; color: var(--fg); font-size: 0.98rem; line-height: 1.25; }
+.menu-button {
+  font: inherit; font-size: 0.85rem; line-height: 1.3; flex: none;
+  padding: 0.2rem 0.65rem; border: 1px solid var(--line); border-radius: 6px;
+  background: var(--box); color: var(--fg); cursor: pointer; display: none;
+}
+.menu-button::after { content: " \25BE"; color: var(--muted); }
 .translator-toggle {
   font: inherit; font-size: 0.82rem; line-height: 1.3;
   padding: 0.25rem 0.6rem; border: 1px solid var(--line); border-radius: 999px;
   background: var(--box); color: var(--fg); cursor: pointer; white-space: nowrap;
 }
 html.translator-on .translator-toggle { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
-.site-nav { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; margin-top: 0.4rem; font-size: 0.95rem; }
+.site-menu { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 1rem; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; font-size: 0.95rem; }
 .site-nav a { text-decoration: none; }
 .site-nav a:hover { text-decoration: underline; }
+/* phones, with the script running: the menu folds behind its button */
+@media (max-width: 47.99em) {
+  html.js .menu-button { display: inline-block; }
+  html.js .site-menu {
+    display: none; position: absolute; right: 0; top: 100%; z-index: 25; margin-top: 0.3rem;
+    flex-direction: column; align-items: stretch; gap: 0.2rem; min-width: 12em;
+    background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 0.5rem 0.7rem;
+    box-shadow: 0 6px 18px var(--shadow);
+  }
+  html.js .site-menu.open { display: flex; }
+  html.js .site-menu .site-nav { flex-direction: column; gap: 0; }
+  html.js .site-menu .site-nav a { padding: 0.3rem 0; border-bottom: 1px solid var(--line); }
+  html.js .site-menu .translator-toggle { margin-top: 0.4rem; align-self: flex-start; }
+  html:not(.js) .site-menu { margin-top: 0.3rem; }
+  html:not(.js) .masthead { flex-wrap: wrap; }
+}
 
 /* search ------------------------------------------------------------- */
-.search { position: relative; margin: 0.5rem 0 0; }
+.search { position: relative; margin: 0.35rem 0 0; }
 .search-input {
   width: 100%; font: inherit; padding: 0.45rem 0.7rem;
   border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg);
@@ -109,6 +132,9 @@ html.translator-on .translator-toggle { background: var(--accent); color: var(--
 .search-results .via { color: var(--muted); font-size: 0.85rem; margin-left: 0.3rem; }
 .search-results .gloss { display: block; color: var(--muted); font-size: 0.88rem; }
 .search-results .none { padding: 0.4rem 0.7rem; color: var(--muted); }
+.search-results .phrase-result .hw { font-weight: 600; }
+.search-results .suggest { padding: 0.4rem 0.7rem 0.1rem; color: var(--muted); font-size: 0.9rem; border-bottom: 0; }
+.search-results .suggestion a { padding-left: 1.2rem; }
 .home-search .search-input { font-size: 1.1rem; padding: 0.6rem 0.8rem; }
 
 /* linked words and previews ------------------------------------------ */
@@ -158,8 +184,8 @@ a.band:hover { text-decoration: underline; }
 .def-line { margin: 0.1rem 0; }
 .expl { margin: 0.2rem 0; color: var(--fg); }
 .gram-line { margin: 0.15rem 0; font-size: 0.9rem; }
-.gram { color: var(--muted); text-decoration: none; margin-right: 0.6em; white-space: nowrap; }
-.gram .code { font-size: 0.85em; }
+.gram { color: var(--muted); text-decoration: none; margin-right: 0.6em; }   /* labels may wrap (D3) */
+.gram .code { font-size: 0.85em; white-space: nowrap; }                          /* the bracketed code never breaks */
 .gram:hover { text-decoration: underline; }
 .examples { list-style: none; padding-left: 0.9em; margin: 0.3rem 0; }
 .examples li { margin: 0.15rem 0; color: var(--fg); }
@@ -177,7 +203,24 @@ a.band:hover { text-decoration: underline; }
 .xrefs { margin: 0.2rem 0; font-size: 0.95rem; }
 .xref-type { color: var(--muted); font-size: 0.85rem; margin-right: 0.3em; }
 .xref-note { color: var(--muted); font-size: 0.9rem; }
-.xref-missing { border-bottom: 1px dotted var(--line); cursor: help; }
+.xref-missing { color: var(--muted); }   /* no entry yet: plain grey text, not a link (C2) */
+.missing-legend { color: var(--muted); font-size: 0.85rem; margin: 0.6rem 0 0; }
+.report { font-size: 0.85rem; margin: 0.4rem 0 0; }
+.report a { color: var(--muted); }
+.jump-links { font-size: 0.9rem; margin: 0.4rem 0; color: var(--muted); }
+.sense-menu { border: 1px solid var(--line); border-radius: 6px; padding: 0.45rem 0.8rem; margin: 0.6rem 0; }
+.sense-menu h3 { margin: 0 0 0.25rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.sense-menu ol { list-style: none; padding: 0; margin: 0; }
+.sense-menu li { margin: 0.12rem 0; line-height: 1.4; }
+.sense-menu a { text-decoration: none; color: var(--fg); display: block; }
+.sense-menu a:hover .menu-def { text-decoration: underline; }
+.sense-menu .menu-n { display: inline-block; min-width: 1.6em; font-weight: 700; color: var(--link); }
+.sense-menu .signpost { font-size: 0.78rem; }
+.sense-menu .menu-def { color: var(--muted); font-size: 0.93rem; }
+.phrasal-verbs ul { list-style: none; padding: 0; margin: 0.2rem 0; }
+.phrasal-verbs li { margin: 0.15rem 0; break-inside: avoid; }
+.phrasal-verbs .pv-def { color: var(--muted); font-size: 0.9rem; }
+@media (min-width: 40em) { .phrasal-verbs ul { columns: 2; column-gap: 1.5rem; } }
 .subsenses { list-style: none; padding-left: 1.2em; margin: 0.3rem 0; }
 .subsenses > li { margin: 0.3rem 0; }
 .subsense-letter { font-weight: 700; margin-right: 0.4em; }
@@ -219,6 +262,7 @@ html.translator-on .translator { display: block; }
 .letters { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.6rem 0; padding: 0; list-style: none; }
 .letters li a, .letters li span { display: inline-block; min-width: 2em; text-align: center; padding: 0.15rem 0.4rem; border: 1px solid var(--line); border-radius: 4px; text-decoration: none; }
 .letters li span { color: var(--muted); }
+.letters li span.current { color: var(--fg); font-weight: 700; border-color: var(--fg); }
 .recent-list { list-style: none; padding: 0; }
 .recent-list li { margin: 0.35rem 0; }
 .recent-list .date { color: var(--muted); font-size: 0.85rem; margin-right: 0.5em; font-variant-numeric: tabular-nums; }
@@ -238,13 +282,20 @@ html.translator-on .translator { display: block; }
 /* footer ------------------------------------------------------------- */
 .site-footer { max-width: 44em; margin: 0 auto; padding: 1rem 0 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.88rem; }
 .site-footer p { margin: 0.3rem 0; }
+.back-to-top { font-size: 0.92rem; }
+
+/* key tables on phones: each row becomes a small card, so nothing scrolls sideways (D3) */
+@media (max-width: 39.99em) {
+  .key-table thead { display: none; }
+  .key-table, .key-table tbody, .key-table tr, .key-table td { display: block; width: 100%; }
+  .key-table tr { border-bottom: 1px solid var(--line); padding: 0.35rem 0; }
+  .key-table td { border: 0; padding: 0.05rem 0; }
+  .key-table td:first-child { font-weight: 600; }
+}
 
 @media (min-width: 48em) {
   body { font-size: 18px; }
-  .site-header { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "mast mast" "search nav"; align-items: center; column-gap: 1.2rem; }
-  .masthead { grid-area: mast; }
-  .search { grid-area: search; margin-top: 0.3rem; }
-  .site-nav { grid-area: nav; margin-top: 0.3rem; }
+  .site-header .search { margin-top: 0.4rem; }
 }
 @media print {
   .site-header, .site-footer, .preview, .search { display: none; }

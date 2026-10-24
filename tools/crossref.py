@@ -188,9 +188,12 @@ def main() -> int:
         eexlib.save_json(tp, te)
     if a.queue and missing:
         rows = ["headword\tpos\tband\tsource\tnote"]
+        known = eexlib.queue_display_map(eexlib.load_queue_rows())
         for target, (src, from_slug) in sorted(missing.items()):
-            hw, pos, _h = eexlib.parse_slug(target)
-            rows.append(f"{hw.replace('-', ' ')}\t{pos}\t3\t{src}\treferenced by {from_slug}")
+            _hw, pos, _h = eexlib.parse_slug(target)
+            # the display form keeps its hyphens and periods (ruling C3): a queue row's, else the referring entry's prose
+            hw = known.get(target) or eexlib.guess_display_form(target, eexlib.entry_texts(entries[from_slug][1]))
+            rows.append(f"{hw}\t{pos}\t3\t{src}\treferenced by {from_slug}")
         with tempfile.NamedTemporaryFile("w", suffix=".tsv", delete=False, encoding="utf-8") as tf:
             tf.write("\n".join(rows) + "\n")
         r = subprocess.run([sys.executable, str(HERE / "queue.py"), "add-batch", tf.name], capture_output=True, text=True, cwd=eexlib.ROOT)

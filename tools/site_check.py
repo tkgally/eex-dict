@@ -13,9 +13,17 @@ disclosure on every page, that searching for an inflected form of an existing
 entry (a verb's past tense from its inflections, ``ran`` when run-v exists)
 returns that headword first and Enter opens it, that hovering (desktop) or
 tapping (phone: first tap previews, second follows) a linked word opens a
-preview, and that the translator's-view toggle reveals a hidden ``.translator``
-block and remembers its state.  Screenshots go to .tmp/site-check/ (gitignored).
-A few static checks run first without a browser.  Prints a pass/fail table and
+preview, and that the translator's-view toggle (in the menu on phones) reveals
+a hidden ``.translator`` block and remembers its state.  The owner's rulings of
+2026-10-24 added: a phrase found by searching its words with *someone* or
+*something* left out; "Did you mean" for a misspelled headword; ``?q=`` in the
+address filling in and running the search; the 404 page searching for the
+name in the address; the sense menu jumping to a sense; grey, unlinked text
+for a cross-reference with no entry; the menu button on phones; and no
+sideways scroll on any entry page at 360 px.  Screenshots go to
+.tmp/site-check/ (gitignored).  Static checks run first without a browser,
+among them that no word on the closed no-link list is linked and that every
+word link is out of the Tab order.  Prints a pass/fail table and
 exits 1 on any failure.  Standard library only on the Python side.
 
 ``--fixture`` copies tools/tests/fixtures/bank-n.json (marked reviewed) into a
@@ -41,10 +49,15 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
 import eexlib  # noqa: E402
+import html  # noqa: E402
+
+NO_LINK = frozenset(w.lower() for w in eexlib.vocab_values("no_link_words"))
 
 CHECK_SCRIPT = HERE / "site" / "check.mjs"
 SHOTS_DIR = ROOT / ".tmp" / "site-check"
 HREF_RE = re.compile(r'\b(?:href|src)="([^"]*)"')
+WLINK_RE = re.compile(r'<a class="w" ([^>]*)>([^<]*)</a>')
+REPORT_PREFIX = "https://github.com/tkgally/eex-dict/issues/new?"
 
 
 class Row:
@@ -118,6 +131,56 @@ def pick_search(docs, entries_dir):
     return None
 
 
+def pick_phrase(docs):
+    """``(query, anchor)``: a phrase with a filler word (*someone*, *something*) searched without it."""
+    try:
+        data = json.loads((docs / "phrase-index.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    fillers = set(data.get("fillers") or [])
+    words = {w["w"].lower() for w in load_index(docs).get("words") or []}
+    plain = None
+    for text, _page, anchor, _entry, _gloss in data.get("phrases") or []:
+        toks = text.lower().split()
+        kept = [t for t in toks if t not in fillers]
+        if len(kept) < 2 or " ".join(kept) in words:
+            continue
+        if len(kept) < len(toks):
+            return " ".join(kept), anchor
+        plain = plain or (" ".join(kept), anchor)
+    return plain
+
+
+def pick_misspelling(docs):
+    """``(misspelled query, headword)``: a headword of seven letters or more with two letters swapped."""
+    words = load_index(docs).get("words") or []
+    keys = set()
+    for w in words:
+        keys.add(w["w"].lower())
+        keys.update(f.lower() for f in w.get("f") or [])
+    for w in words:
+        hw = w["w"]
+        if len(hw) >= 7 and hw.isalpha() and hw.islower():
+            bad = hw[:3] + hw[4] + hw[3] + hw[5:]
+            if bad != hw and bad not in keys:
+                return bad, hw
+    return None
+
+
+def pick_feature_pages(docs):
+    """Pages for the sense menu and the missing-cross-reference checks."""
+    menu = missing = None
+    for path in html_pages(docs):
+        text = path.read_text(encoding="utf-8")
+        if menu is None and 'class="sense-menu"' in text:
+            menu = path.stem
+        if missing is None and 'class="xref-missing"' in text:
+            missing = path.stem
+        if menu and missing:
+            break
+    return menu, missing
+
+
 # --------------------------------------------------------------------------
 # Static checks (no browser)
 # --------------------------------------------------------------------------
@@ -127,7 +190,7 @@ def static_checks(docs):
     pages = sorted(docs.rglob("*.html"))
     if not pages:
         return [Row("static", "docs", "built pages exist", False, "no .html under %s" % docs)]
-    missing_meta, missing_disclosure, missing_search, absolute = [], [], [], []
+    missing_meta, missing_disclosure, missing_search, absolute, linked_nolink, tabbable = [], [], [], [], [], []
     for path in pages:
         text = path.read_text(encoding="utf-8")
         rel = path.relative_to(docs).as_posix()
@@ -141,12 +204,22 @@ def static_checks(docs):
             if href.startswith("/") or href.startswith("http"):
                 if rel == "about.html" and href.startswith("http"):
                     continue
+                if href.startswith(REPORT_PREFIX):
+                    continue
                 absolute.append("%s: %s" % (rel, href))
+        for attrs, visible in WLINK_RE.findall(text):
+            word = html.unescape(visible).lower().replace("’", "'")
+            if word in NO_LINK:
+                linked_nolink.append("%s: %s" % (rel, visible))
+            if 'tabindex="-1"' not in attrs:
+                tabbable.append("%s: %s" % (rel, visible))
     rows.append(Row("static", "%d pages" % len(pages), "viewport meta on every page", not missing_meta, ", ".join(missing_meta[:3])))
     rows.append(Row("static", "%d pages" % len(pages), "AI-authorship disclosure on every page", not missing_disclosure, ", ".join(missing_disclosure[:3])))
     rows.append(Row("static", "%d pages" % len(pages), "search box on every page", not missing_search, ", ".join(missing_search[:3])))
     rows.append(Row("static", "%d pages" % len(pages), "relative links only (absolute links only on about)", not absolute, "; ".join(absolute[:3])))
-    for name in ("site.css", "site.js", "search-index.json", "index.html"):
+    rows.append(Row("static", "%d pages" % len(pages), "no word on the no-link list is linked", not linked_nolink, "; ".join(linked_nolink[:3])))
+    rows.append(Row("static", "%d pages" % len(pages), "word links are out of the Tab order", not tabbable, "; ".join(tabbable[:3])))
+    for name in ("site.css", "site.js", "search-index.json", "phrase-index.json", "index.html", "404.html"):
         rows.append(Row("static", name, "exists", (docs / name).is_file()))
     return rows
 
@@ -158,6 +231,19 @@ def static_checks(docs):
 class QuietHandler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, fmt, *args):  # noqa: D401 - silence the request log
         pass
+
+    def send_error(self, code, message=None, explain=None):
+        """Serve the site's own 404.html for a missing page, as GitHub Pages does."""
+        page = Path(self.directory) / "404.html"
+        if code == 404 and page.is_file():
+            body = page.read_bytes()
+            self.send_response(404)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        super().send_error(code, message, explain)
 
 
 def start_server(docs, port):
@@ -218,6 +304,13 @@ def run_browser(docs, port, entries_dir, node, npm, timeout):
         "search": {"query": search[0], "expect": search[1], "expect_page": search[2]},
         "preview_page": preview_page,
         "translator_page": translator_page,
+        "phrase": dict(zip(("query", "anchor"), pick_phrase(docs))) if pick_phrase(docs) else None,
+        "misspelling": dict(zip(("query", "expect"), pick_misspelling(docs))) if pick_misspelling(docs) else None,
+        "menu_page": pick_feature_pages(docs)[0],
+        "missing_page": pick_feature_pages(docs)[1],
+        "overflow_pages": ["w/%s.html" % p.stem for p in html_pages(docs)] + ["grammar-key.html", "labels-key.html",
+                                                                                "pronunciation-key.html", "about.html",
+                                                                                "browse/index.html", "index.html"],
         "shots_dir": str(SHOTS_DIR),
         "results_path": str(results_path),
         "executable_path": chromium_executable(os.environ.get("PLAYWRIGHT_BROWSERS_PATH") or "/opt/pw-browsers"),

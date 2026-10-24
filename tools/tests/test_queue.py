@@ -37,5 +37,50 @@ class ResetStaleClaimsTest(unittest.TestCase):
         self.assertEqual(rows[0]["note"].count("stale claim reset"), 1)
 
 
+def row(hw, pos, status="pending", source="crossref", note="", band="3"):
+    return {"headword": hw, "pos": pos, "band": band, "source": source, "status": status, "added": "2026-10-01", "note": note}
+
+
+class DisplayFormsTest(unittest.TestCase):
+    """The owner's ruling C3 of 2026-10-24: queue rows keep their hyphens and periods."""
+
+    def test_add_rows_matches_an_existing_row_by_slug(self):
+        rows = [row("brother-in-law", "n", source="defining")]
+        added, _updated = eex_queue.add_rows(rows, [{"headword": "brother in law", "pos": "n", "band": "3",
+                                                     "source": "crossref", "note": "referenced by brother-n"}])
+        self.assertEqual(added, 0)
+        self.assertEqual(len(rows), 1)
+        self.assertIn("referenced by brother-n", rows[0]["note"])
+
+    def test_repair_marks_the_lossy_twin_duplicate(self):
+        rows = [row("mother-in-law", "n"), row("mother in law", "n")]
+        changes = eex_queue.repair_forms(rows, {})
+        self.assertEqual([r["status"] for r in rows], ["pending", "duplicate"])
+        self.assertIn("the real row is mother-in-law", rows[1]["note"])
+        self.assertEqual(len(changes), 1)
+
+    def test_repair_restores_affix_hyphens_and_prose_forms(self):
+        ref = {"slug": "shirt-n", "senses": [{"definition": "a piece of clothing", "examples": [{"text": "a white T-shirt"}]}]}
+        rows = [row("ible", "suffix", note="referenced by able-suffix"), row("dis", "prefix"),
+                row("t shirt", "n", note="referenced by shirt-n"), row("ice cream", "n", note="referenced by shirt-n")]
+        eex_queue.repair_forms(rows, {"shirt-n": ref})
+        self.assertEqual([r["headword"] for r in rows], ["-ible", "dis-", "T-shirt", "ice cream"])
+        self.assertIn("repaired from t shirt", rows[2]["note"])
+
+    def test_slug_index_prefers_the_real_row(self):
+        rows = [row("-less", "suffix", status="done", band="1"), row("less", "suffix", status="duplicate")]
+        self.assertEqual(eex_queue.slug_index(rows)["less-suffix"]["headword"], "-less")
+        rows.reverse()
+        self.assertEqual(eex_queue.slug_index(rows)["less-suffix"]["headword"], "-less")
+
+    def test_guess_display_form(self):
+        import eexlib
+        self.assertEqual(eexlib.guess_display_form("am-abbr", ["at 9 a.m. today"]), "a.m.")
+        self.assertEqual(eexlib.guess_display_form("look-forward-to-phrv"), "look forward to")
+        self.assertEqual(eexlib.guess_display_form("x-ray-n", ["an X-ray of the chest"]), "X-ray")
+        self.assertEqual(eexlib.guess_display_form("ee-suffix"), "-ee")
+        self.assertEqual(eexlib.guess_display_form("us-pron", ["the U.S. and us"]), "us")
+
+
 if __name__ == "__main__":
     unittest.main()

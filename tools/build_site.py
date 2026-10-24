@@ -16,7 +16,10 @@ Pages written (every link relative, so the site works at any base URL):
                                anchors #<slug> and #<slug>-<sub_id>
     browse/index.html          A to Z and the frequency bands
     browse/<letter>.html       the headwords of one letter (0-9 for digits)
-    browse/band-<n>.html       the headwords of one frequency band
+    browse/band-<n>.html       the headwords of one frequency band (a band of
+                               more than BAND_SPLIT_MIN headwords is split by
+                               letter: browse/band-<n>-<letter>.html); empty
+                               bands get no page
     random.html                picks a random headword client-side
     recent.html                the 100 most recently created entries
     journal/index.html         the owner reports (journal/*.md rendered)
@@ -27,6 +30,8 @@ Pages written (every link relative, so the site works at any base URL):
     pronunciation-key.html     the IPA symbols with key words
     redirect/<old-slug>.html   meta refresh to the new headword page
     search-index.json          the compact client-side index (forms, gloss)
+    phrase-index.json          the phrases, loaded when a query has a space
+    404.html                   page not found: offers a search for the address
     p/<headword>.json          the preview payload of one headword
     site.css, site.js          from tools/site/
 
@@ -46,6 +51,7 @@ import sys
 from collections import OrderedDict
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote, urlsplit
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
@@ -62,6 +68,11 @@ DV_TITLE = "One of the about 2,500 words the definitions are written with"
 TEMPLATE_DIR = HERE / "site"
 RECENT_COUNT = 100
 GLOSS_LIMIT = 80
+SENSE_MENU_MIN = 5          # entries with this many senses open with a sense menu (ruling D2)
+BAND_SPLIT_MIN = 500        # a band page longer than this is split by letter (ruling D4)
+MISSING_LEGEND = "Grey words have no entry yet."
+REPORT_TITLE = "Report a problem with this entry"
+PHRASE_FILLERS = ("someone", "somebody", "something", "one's", "your", "someone's", "somebody's")
 
 FORM_NAMES = OrderedDict([
     ("plural", "plural"),
@@ -376,6 +387,9 @@ class Builder:
         self.redirects = OrderedDict()
         self.index = None
         self.files_written = 0
+        self.display_map = {}        # slug -> headword from the queue (display forms, ruling C3)
+        self.phrasal_by_verb = {}    # verb headword (lowercase) -> published phrasal-verb entries
+        self._missing_seen = False
 
     # -- loading ----------------------------------------------------------
 
@@ -426,6 +440,23 @@ class Builder:
             if isinstance(old, str) and isinstance(new, str) and old not in self.redirects:
                 self.redirects[old] = new
         self.index = link_words.build_index(entries)
+        self.display_map = eexlib.queue_display_map(eexlib.load_queue_rows(self.root))
+        for e in entries:
+            if e.get("pos") == "phrv":
+                verb = str(e["headword"]).split(" ", 1)[0].lower()
+                self.phrasal_by_verb.setdefault(verb, []).append(e)
+        for verb in self.phrasal_by_verb:
+            self.phrasal_by_verb[verb].sort(key=lambda x: x["headword"].lower())
+
+    def display_form(self, slug, context=None):
+        """How to write a slug that has no published entry: the queue row's headword, else the form
+        the referring entry's own prose uses, never just the slug with its hyphens turned into spaces."""
+        e = self.by_slug.get(slug)
+        if e is not None:
+            return e["headword"]
+        if slug in self.display_map:
+            return self.display_map[slug]
+        return eexlib.guess_display_form(slug, eexlib.entry_texts(context) if context else ())
 
     def entry_sort_key(self, e):
         return (self.page_of(e), self.pos_order.get(e.get("pos"), 99), int(e.get("homograph") or 1), e["slug"])
@@ -457,13 +488,22 @@ class Builder:
         depth = relpath.count("/")
         return "../" * depth
 
-    def page(self, relpath, title, content, kind="page", description="", head=""):
+    HEADER_SEARCH = ('  <form class="search" role="search" action="{{base}}index.html" method="get" autocomplete="off">\n'
+                     '    <label class="visually-hidden" for="site-search">Search the dictionary</label>\n'
+                     '    <input id="site-search" class="search-input" type="search" name="q" '
+                     'placeholder="Search a word, a form, or a phrase" spellcheck="false" autocapitalize="none">\n'
+                     '    <ul class="search-results" hidden></ul>\n  </form>\n')
+
+    def page(self, relpath, title, content, kind="page", description="", head="", header_search=True, prehead=""):
+        """Write one page from the shell.  The home page passes ``header_search=False``: it has its own,
+        larger search box and keeps only one (ruling D3)."""
         base = self.base_for(relpath)
         full_title = SITE_NAME if relpath == "index.html" else "%s | %s" % (title, SITE_NAME)
         page = self.template
-        for key, value in (("{{base}}", base), ("{{title}}", esc(full_title)), ("{{description}}", esc(description)),
+        for key, value in (("{{prehead}}", prehead), ("{{header_search}}", self.HEADER_SEARCH if header_search else ""),
+                           ("{{base}}", base), ("{{title}}", esc(full_title)), ("{{description}}", esc(description)),
                            ("{{head}}", head), ("{{kind}}", esc(kind)), ("{{site_name}}", esc(SITE_NAME)),
-                           ("{{search_id}}", "site-search"), ("{{disclosure}}", esc(DISCLOSURE)), ("{{content}}", content)):
+                           ("{{disclosure}}", esc(DISCLOSURE)), ("{{content}}", content)):
             page = page.replace(key, value)
         self.write(relpath, page)
 
@@ -599,23 +639,29 @@ class Builder:
             parts.append('<span class="chip dv" title="%s">defining vocabulary</span>' % esc(DV_TITLE))
         return "".join(parts)
 
-    def xref(self, slug, base, form=None):
-        """A link to an entry that is published, else its headword as plain text."""
+    def xref(self, slug, base, form=None, context=None):
+        """A link to an entry that is published, else its headword as plain muted text with no
+        tooltip (ruling C2: never a slug in a tooltip; the entry carries a one-line legend)."""
         e = self.by_slug.get(slug)
         if e is not None:
             text = form or e["headword"]
             return '<a class="xref" href="%sw/%s.html#%s">%s</a>' % (base, esc(self.page_of(e)), esc(slug), esc(text))
-        text = form or link_words.headword_from_slug(slug)
-        return '<span class="xref-missing" title="no entry yet: %s">%s</span>' % (esc(slug), esc(text))
+        self._missing_seen = True
+        text = form or self.display_form(slug, context)
+        return '<span class="xref-missing">%s</span>' % esc(text)
 
-    def render_xref_list(self, label, refs, slug, base, cls="xrefs"):
+    def render_xref_list(self, label, refs, slug, base, cls="xrefs", hide_missing=False, context=None):
+        """A labelled list of cross-references.  ``hide_missing`` drops targets with no published
+        entry (word family and see also, ruling C2); otherwise they show as muted text."""
         if not refs:
             return ""
         items = []
         for r in refs:
             if not r or not r.get("slug"):
                 continue
-            item = self.xref(r["slug"], base)
+            if hide_missing and r["slug"] not in self.by_slug:
+                continue
+            item = self.xref(r["slug"], base, context=context)
             if r.get("note"):
                 item += ' <span class="xref-note">(%s)</span>' % self.prose(r["note"], slug, base)
             items.append(item)
@@ -678,7 +724,7 @@ class Builder:
 
     # -- senses --------------------------------------------------------------
 
-    def render_sense_body(self, s, slug, base):
+    def render_sense_body(self, s, slug, base, context=None):
         parts = []
         gram = self.render_grammar(s.get("grammar"), base)
         labels = self.render_labels(s.get("labels"), base)
@@ -690,9 +736,9 @@ class Builder:
             parts.append(self.render_pronunciation(s["pronunciation"], slug, base, cls="pron-line sense-pron"))
         parts.append(self.render_examples(s.get("examples"), slug, base))
         parts.append(self.render_collocations(s.get("collocations"), slug, base))
-        parts.append(self.render_xref_list("Synonyms", s.get("synonyms"), slug, base))
-        parts.append(self.render_xref_list("Antonyms", s.get("antonyms"), slug, base))
-        parts.append(self.render_xref_list("Compare", s.get("compare"), slug, base))
+        parts.append(self.render_xref_list("Synonyms", s.get("synonyms"), slug, base, context=context))
+        parts.append(self.render_xref_list("Antonyms", s.get("antonyms"), slug, base, context=context))
+        parts.append(self.render_xref_list("Compare", s.get("compare"), slug, base, context=context))
         return "".join(parts)
 
     def render_sense(self, s, e, base):
@@ -703,13 +749,13 @@ class Builder:
         if s.get("signpost"):
             head += '<span class="signpost">%s</span>' % esc(s["signpost"])
         head += '<span class="def">%s</span>' % self.prose(s.get("definition", ""), slug, base)
-        body = ['<p class="def-line">%s</p>' % head, self.render_sense_body(s, slug, base)]
+        body = ['<p class="def-line">%s</p>' % head, self.render_sense_body(s, slug, base, context=e)]
         subs = []
         for sub in s.get("subsenses") or []:
             letter = sub.get("letter") or ""
             sub_head = '<span class="subsense-letter">%s</span><span class="def">%s</span>' % (
                 esc(letter), self.prose(sub.get("definition", ""), slug, base))
-            subs.append('<li class="subsense"><p class="def-line">%s</p>%s</li>' % (sub_head, self.render_sense_body(sub, slug, base)))
+            subs.append('<li class="subsense"><p class="def-line">%s</p>%s</li>' % (sub_head, self.render_sense_body(sub, slug, base, context=e)))
         if subs:
             body.append('<ol class="subsenses">%s</ol>' % "".join(subs))
         title = "For translators (sense %s)" % n if n else "For translators"
@@ -734,8 +780,62 @@ class Builder:
 
     # -- the entry ------------------------------------------------------------
 
+    def sense_menu(self, e):
+        """Senses at a glance (ruling D2): number, signpost, short definition, a link to each sense."""
+        senses = [s for s in e.get("senses") or [] if s.get("n")]
+        if len(senses) < SENSE_MENU_MIN:
+            return ""
+        items = []
+        for s in senses:
+            sign = '<span class="signpost">%s</span>' % esc(s["signpost"]) if s.get("signpost") else ""
+            items.append('<li><a href="#%s-s%s"><span class="menu-n">%s</span>%s<span class="menu-def">%s</span></a></li>'
+                         % (esc(e["slug"]), esc(s["n"]), esc(s["n"]), sign, esc(gloss(s.get("definition", ""), 60))))
+        return ('<nav class="sense-menu" aria-label="Senses of %s"><h3>%d senses</h3><ol>%s</ol></nav>'
+                % (esc(e["headword"]), len(senses), "".join(items)))
+
+    def phrasal_verbs_for(self, e):
+        if e.get("pos") != "v":
+            return []
+        return self.phrasal_by_verb.get(str(e["headword"]).lower(), [])
+
+    def phrasal_verbs_box(self, e, base):
+        """A script-built box listing the published phrasal verbs of a verb (ruling D2)."""
+        pvs = self.phrasal_verbs_for(e)
+        if not pvs:
+            return ""
+        items = []
+        for pv in pvs:
+            first = (pv.get("senses") or [{}])[0]
+            items.append('<li><a class="xref" href="%sw/%s.html#%s">%s</a> <span class="pv-def">%s</span></li>' % (
+                base, esc(self.page_of(pv)), esc(pv["slug"]), esc(pv["headword"]), esc(gloss(first.get("definition", ""), 70))))
+        return ('<div class="box phrasal-verbs" id="%s-phrasal-verbs"><h3>Phrasal verbs with %s</h3><ul>%s</ul></div>'
+                % (esc(e["slug"]), esc(e["headword"]), "".join(items)))
+
+    def jump_links(self, e, has_family):
+        links = []
+        n_phrases = len(e.get("phrases") or [])
+        if n_phrases:
+            links.append('<a href="#%s-phrases">Phrases (%d)</a>' % (esc(e["slug"]), n_phrases))
+        if self.phrasal_verbs_for(e):
+            links.append('<a href="#%s-phrasal-verbs">Phrasal verbs (%d)</a>' % (esc(e["slug"]), len(self.phrasal_verbs_for(e))))
+        if has_family:
+            links.append('<a href="#%s-family">Word family</a>' % esc(e["slug"]))
+        if not links:
+            return ""
+        return '<p class="jump-links">Jump to: %s</p>' % " · ".join(links)
+
+    def report_link(self, e):
+        """"Report a problem with this entry" (ruling E4): a pre-filled new GitHub issue."""
+        page_url = "%sw/%s.html#%s" % (SITE_URL, self.page_of(e), e["slug"])
+        title = "Entry report: %s" % e["slug"]
+        body = ("Entry: %s\nPage: %s\n\nWhat is wrong with this entry? (Please say which sense, example, or note.)\n\n"
+                % (e["slug"], page_url))
+        href = "%s/issues/new?title=%s&body=%s" % (GITHUB_URL, quote(title), quote(body))
+        return '<p class="report"><a href="%s" rel="nofollow">%s</a></p>' % (esc(href), esc(REPORT_TITLE))
+
     def render_entry(self, e, base):
         slug = e["slug"]
+        self._missing_seen = False
         parts = ['<article class="entry" id="%s">' % esc(slug)]
         homograph = int(e.get("homograph") or 1)
         title = '<span class="hw">%s</span>' % esc(e["headword"])
@@ -751,27 +851,34 @@ class Builder:
             parts.append('<div class="entry-meta">%s</div>' % meta)
         if e.get("core_idea"):
             parts.append('<p class="core-idea">%s</p>' % self.prose(e["core_idea"], slug, base))
+        family = self.render_word_family(e, base)
+        parts.append(self.jump_links(e, bool(family)))
+        parts.append(self.sense_menu(e))
+        parts.append(self.phrasal_verbs_box(e, base))
         senses = [self.render_sense(s, e, base) for s in e.get("senses") or []]
         if senses:
             parts.append('<ol class="senses">%s</ol>' % "".join(senses))
         phrases = [self.render_phrase(ph, e, base) for ph in e.get("phrases") or []]
         if phrases:
-            parts.append('<section class="phrases"><h3>Phrases</h3>%s</section>' % "".join(phrases))
-        parts.append(self.render_word_family(e, base))
+            parts.append('<section class="phrases" id="%s-phrases"><h3>Phrases</h3>%s</section>' % (esc(slug), "".join(phrases)))
+        parts.append(family)
         parts.append(self.render_synonym_discrimination(e, base))
         if e.get("usage_note"):
             parts.append('<div class="box usage"><h3>Usage</h3><p>%s</p></div>' % self.prose(e["usage_note"], slug, base))
         parts.append(self.render_learner_errors(e, base))
         parts.append(self.render_etymology(e, base))
-        see_also = self.render_xref_list("See also", e.get("see_also"), slug, base, cls="xrefs see-also")
+        see_also = self.render_xref_list("See also", e.get("see_also"), slug, base, cls="xrefs see-also", hide_missing=True)
         if see_also:
             parts.append(see_also)
         parts.append(self.render_adaptation(e.get("adaptation"), e.get("l1"), slug, base, "For translators"))
+        if self._missing_seen:
+            parts.append('<p class="missing-legend">%s</p>' % esc(MISSING_LEGEND))
+        parts.append(self.report_link(e))
         parts.append("</article>")
         return "".join(parts)
 
     def render_word_family(self, e, base):
-        members = [m for m in e.get("word_family") or [] if m and m.get("slug")]
+        members = [m for m in e.get("word_family") or [] if m and m.get("slug") in self.by_slug]   # missing items hidden (C2)
         if not members:
             return ""
         items = []
@@ -780,13 +887,13 @@ class Builder:
             if m.get("note"):
                 item += ' <span class="xref-note">(%s)</span>' % self.prose(m["note"], e["slug"], base)
             items.append("<li>%s</li>" % item)
-        return '<div class="box family"><h3>Word family</h3><ul>%s</ul></div>' % "".join(items)
+        return '<div class="box family" id="%s-family"><h3>Word family</h3><ul>%s</ul></div>' % (esc(e["slug"]), "".join(items))
 
     def render_synonym_discrimination(self, e, base):
         sd = e.get("synonym_discrimination")
         if not sd or not sd.get("note"):
             return ""
-        words = " · ".join(self.xref(w, base) for w in sd.get("words") or [])
+        words = " · ".join(self.xref(w, base, context=e) for w in sd.get("words") or [])
         return '<div class="box discrimination"><h3>Choosing between %s</h3><p>%s</p></div>' % (
             words or "similar words", self.prose(sd["note"], e["slug"], base))
 
@@ -868,6 +975,23 @@ class Builder:
         data = OrderedDict([("pos", pos), ("words", words)])
         self.write("search-index.json", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 
+    def phrase_index(self):
+        """phrase-index.json (ruling D1): every phrase with its page, anchor, entry, and a short gloss.
+        site.js loads it only when a query has a space, and matches with the filler words
+        (*someone*, *something*, *one's*, *your*) removed."""
+        phrases = []
+        for e in self.entries:
+            for ph in e.get("phrases") or []:
+                text = (ph or {}).get("text")
+                if not text:
+                    continue
+                anchor = "%s-%s" % (e["slug"], ph.get("sub_id") or slug_text(text))
+                phrases.append([text, self.page_of(e), anchor, "%s (%s)" % (e["headword"], self.pos_label(e.get("pos"))),
+                                gloss(ph.get("definition", ""), 60)])
+        phrases.sort(key=lambda x: (x[0].lower(), x[2]))
+        data = OrderedDict([("fillers", list(PHRASE_FILLERS)), ("phrases", phrases)])
+        self.write("phrase-index.json", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
+
     # -- lists ------------------------------------------------------------------
 
     def word_item(self, page, group, base, with_band=True):
@@ -905,8 +1029,10 @@ class Builder:
             return '<ul class="letters">%s</ul>' % "".join(items)
         self._letter_row = letter_row
 
+        bands = OrderedDict((b, items) for b, items in bands.items() if items)   # empty bands are hidden (D4)
+        self.nonempty_bands = list(bands)
         base = "../"
-        content = ["<h1>Browse</h1>", "<h2>By letter</h2>", letter_row(base), "<h2>By frequency band</h2>", "<ul>"]
+        content = ["<h1>Browse</h1>", "<h2>By letter</h2>", letter_row(base), '<h2 id="by-band">By frequency band</h2>', "<ul>"]
         for band, items in bands.items():
             info = self.vocab_info("frequency_bands", band)
             content.append('<li><a href="band-%s.html">%s</a> <span class="muted">(%d headwords): %s</span></li>' % (
@@ -924,11 +1050,37 @@ class Builder:
 
         for band, items in bands.items():
             info = self.vocab_info("frequency_bands", band)
-            body = ['<h1>%s</h1>' % esc(info.get("label") or band),
-                    '<p>%s <span class="muted">(%s)</span></p>' % (esc(info.get("description", "")), esc(BAND_TITLE)),
-                    '<p class="muted">%d headwords</p>' % len(items),
-                    '<ul class="word-list">%s</ul>' % "".join(self.word_item(p, g, base, with_band=False) for p, g in items)]
-            self.page("browse/band-%s.html" % band, "Frequency band %s: %s" % (band, info.get("label") or ""), "\n".join(body), kind="browse")
+            title = "Frequency band %s: %s" % (band, info.get("label") or "")
+            head = ['<h1>%s</h1>' % esc(info.get("label") or band),
+                    '<p>%s <span class="muted">(%s)</span></p>' % (esc(info.get("description", "")), esc(BAND_TITLE))]
+            if len(items) <= BAND_SPLIT_MIN:
+                body = head + ['<p class="muted">%d headwords</p>' % len(items),
+                               '<ul class="word-list">%s</ul>' % "".join(self.word_item(p, g, base, with_band=False) for p, g in items)]
+                self.page("browse/band-%s.html" % band, title, "\n".join(body), kind="browse")
+                continue
+            by_letter = OrderedDict()
+            for p, g in items:
+                by_letter.setdefault(self.letter_of(p), []).append((p, g))
+
+            def band_letters(current=None, _band=band, _by=by_letter):
+                cells = []
+                for letter in all_letters:
+                    label = letter.upper() if letter != "0-9" else "0-9"
+                    if letter == current:
+                        cells.append('<li><span class="current" aria-current="page">%s</span></li>' % label)
+                    elif letter in _by:
+                        cells.append('<li><a href="band-%s-%s.html">%s</a></li>' % (_band, letter, label))
+                    else:
+                        cells.append('<li><span>%s</span></li>' % label)
+                return '<ul class="letters">%s</ul>' % "".join(cells)
+            body = head + ['<p class="muted">%d headwords, by first letter:</p>' % len(items), band_letters()]
+            self.page("browse/band-%s.html" % band, title, "\n".join(body), kind="browse")
+            for letter, sub in by_letter.items():
+                label = letter.upper() if letter != "0-9" else "0-9"
+                body = ['<h1>%s: %s</h1>' % (esc(info.get("label") or band), esc(label)), band_letters(letter),
+                        '<p class="muted">%d of the %d headwords in this band <a href="band-%s.html">(all letters)</a></p>' % (len(sub), len(items), esc(band)),
+                        '<ul class="word-list">%s</ul>' % "".join(self.word_item(p, g, base, with_band=False) for p, g in sub)]
+                self.page("browse/band-%s-%s.html" % (band, letter), "%s, %s" % (title, label), "\n".join(body), kind="browse")
 
     def recent_entries(self):
         def created(e):
@@ -964,18 +1116,19 @@ class Builder:
             "<h1>%s</h1>" % esc(SITE_NAME),
             '<p class="lead">An original English-English dictionary for intermediate and advanced learners. '
             'Plain definitions, examples that show the grammar and the typical word combinations, notes on the '
-            'mistakes learners make, and, behind the toggle at the top, notes for translators. Every word in an '
-            'entry that has its own entry is a link, and the search box understands inflected forms '
-            '(type <i>ran</i> to find <i>run</i>).</p>',
+            'mistakes learners make, and, behind the translator&rsquo;s view in the menu, notes for translators. '
+            'Words in an entry that have entries of their own are links (all but the commonest little words such as '
+            '<i>the</i>, <i>of</i>, and <i>and</i>), and the search box understands inflected forms and phrases '
+            '(type <i>ran</i> to find <i>run</i>, or <i>break the ice</i>).</p>',
             '<form class="search home-search" role="search" action="index.html" method="get" autocomplete="off">'
             '<label class="visually-hidden" for="home-search">Search the dictionary</label>'
-            '<input id="home-search" class="search-input" type="search" name="q" placeholder="Search a word or any of its forms" '
+            '<input id="home-search" class="search-input" type="search" name="q" placeholder="Search a word, a form, or a phrase" '
             'spellcheck="false" autocapitalize="none"><ul class="search-results" hidden></ul></form>',
             '<ul class="counts"><li><b>%d</b> entries</li><li><b>%d</b> headwords</li><li><b>%d</b> phrases</li></ul>' % (
                 n_entries, n_pages, n_phrases),
             '<ul class="home-links"><li><a href="browse/index.html">Browse A to Z</a></li>'
-            '<li><a href="browse/band-1.html">By frequency band</a></li><li><a href="random.html">Random word</a></li>'
-            '<li><a href="recent.html">Recently added</a></li><li><a href="journal/index.html">Journal</a></li>'
+            '<li><a href="browse/index.html#by-band">By frequency band</a></li><li><a href="random.html">Random word</a></li>'
+            '<li><a href="recent.html">Recently added</a></li>'
             '<li><a href="about.html">About</a></li></ul>',
             "<h2>Browse by letter</h2>", self._letter_row(""),
         ]
@@ -984,7 +1137,7 @@ class Builder:
             body.append('<ul class="recent-list">%s</ul>' % "".join(self.recent_item(e, "") for e in recent))
             body.append('<p><a href="recent.html">All recent entries</a></p>')
         body.append('<p class="muted small">%s <a href="about.html">Read how the dictionary is made.</a></p>' % esc(DISCLOSURE))
-        self.page("index.html", "Home", "\n".join(body), kind="home",
+        self.page("index.html", "Home", "\n".join(body), kind="home", header_search=False,
                   description="An original English-English learner's dictionary written by language models, with plain definitions, "
                               "grammar patterns, collocations, and notes for translators.")
 
@@ -1038,8 +1191,26 @@ class Builder:
         for band in eexlib.vocab_values("frequency_bands", self.vocab):
             by_band[band] = sum(1 for e in self.entries if str((e.get("frequency") or {}).get("band")) == band)
         dv = sum(1 for e in self.entries if (e.get("frequency") or {}).get("defining_vocabulary"))
+        no_link = ", ".join("<i>%s</i>" % esc(w) for w in sorted(link_words.NO_LINK_WORDS))
         body = [
             "<h1>About this dictionary</h1>",
+            '<h2 id="how-to-read">How to read an entry</h2>',
+            '<p>An entry gives the headword and its part of speech, its American and British pronunciations, its inflected forms, '
+            'a frequency band, and then its senses, most common first. An entry with five senses or more opens with a short menu of '
+            'them. Each sense has a definition, sometimes an explanation, its grammar spelled out with a short code in brackets, '
+            'examples, typical word combinations, and related words. Phrases, the word family, usage notes, and common mistakes '
+            'follow. A related word in grey has no entry yet.</p>',
+            '<p>Grammar codes are explained in the <a href="grammar-key.html">grammar key</a>, usage labels in the '
+            '<a href="labels-key.html">labels key</a>, and the phonetic symbols in the <a href="pronunciation-key.html">pronunciation key</a>. '
+            'A word in a definition, explanation, example, or note that has an entry of its own is a link; resting the pointer on it '
+            '(or tapping it once on a phone) shows a preview. The commonest little words are never linked, so that the links stay '
+            'readable: %s. Their entries can still be found with the search box. ' % no_link +
+            'In an explanation or a note, a word in <b class="mention">bold</b> is being talked about as a word, '
+            'and a phrase in <i class="illus">italics</i> is quoted as an illustration of use; in an example sentence the headword itself is in bold. '
+            'The <b>translator\'s view</b>, in the menu at the top, reveals notes written for '
+            'anyone adapting the dictionary into another language: how the senses split across languages, grammar traps, cultural '
+            'background, false friends, and pronunciation traps. Every entry ends with a link for reporting a problem with it.</p>',
+            "<h2>What this dictionary is</h2>",
             "<p>The %s is an original English-English learner's dictionary written by language models under the direction "
             "of Tom Gally, a lexicographer, and published as a static website from the repository "
             '<a href="%s">%s</a>. It is meant for intermediate and advanced learners: the definitions are plain enough for an '
@@ -1102,15 +1273,9 @@ class Builder:
         else:
             body.append('<p class="muted">The register has not been written yet.</p>')
         body += [
-            "<h2>Reading an entry</h2>",
-            '<p>Grammar codes are explained in the <a href="grammar-key.html">grammar key</a>, usage labels in the '
-            '<a href="labels-key.html">labels key</a>, and the phonetic symbols in the <a href="pronunciation-key.html">pronunciation key</a>. '
-            'Every word in a definition, explanation, example, or note that has an entry of its own is a link; resting the pointer on it '
-            '(or tapping it once on a phone) shows a preview. In an explanation or a note, a word in <b class="mention">bold</b> is being talked about as a word, '
-            'and a phrase in <i class="illus">italics</i> is quoted as an illustration of use; in an example sentence the headword itself is in bold. '
-            'The <b>translator\'s view</b> button at the top reveals notes written for '
-            'anyone adapting the dictionary into another language: how the senses split across languages, grammar traps, cultural '
-            'background, false friends, and pronunciation traps.</p>',
+            "<h2>The journal</h2>",
+            '<p>Every run of the project writes a plain-language report for the dictionary\'s owner: what was built and checked, '
+            'what went wrong, and what comes next. The reports are published unchanged in the <a href="journal/index.html">journal</a>.</p>',
             '<p class="muted small">Site built on %s.</p>' % esc(self.date),
         ]
         self.page("about.html", "About", "\n".join(body), kind="about",
@@ -1214,13 +1379,35 @@ class Builder:
             body.append('<p class="muted small">Other symbols that occur in entries: %s.</p>' % ", ".join(esc(s) for s in extra))
         self.page("pronunciation-key.html", "Pronunciation key", "\n".join(body), kind="key")
 
+    # -- page not found --------------------------------------------------------------
+
+    NOT_FOUND_PREHEAD = (r"""<script>(function(){var p=location.pathname,k='%s',"""
+                         r"""m=/^(.*?\/)(?:w|browse|journal|redirect|p)\/[^\/]*$/.exec(p),"""
+                         r"""b=p.indexOf(k)===0?k:(m?m[1]:p.replace(/[^\/]*$/,''));"""
+                         r"""document.write('<base href="'+b.replace(/["<>]/g,'')+'">');})();</script>"""
+                         "\n" % urlsplit(SITE_URL).path)
+
+    def not_found_page(self):
+        """404.html (ruling D1).  GitHub Pages serves it at any missing address, so its relative links
+        are resolved against a <base> the inline script computes from the address; site.js then offers
+        a search for the name in the address."""
+        body = ["<h1>No page here</h1>",
+                '<p class="not-found-note">There is no page at this address. Perhaps the word has no entry yet, '
+                'or the address is mistyped.</p>',
+                '<form class="search home-search not-found-search" role="search" action="index.html" method="get" autocomplete="off">'
+                '<label class="visually-hidden" for="nf-search">Search the dictionary</label>'
+                '<input id="nf-search" class="search-input" type="search" name="q" placeholder="Search a word, a form, or a phrase" '
+                'spellcheck="false" autocapitalize="none"><ul class="search-results" hidden></ul></form>',
+                '<p><a href="index.html">Home</a> · <a href="browse/index.html">Browse A to Z</a></p>']
+        self.page("404.html", "Page not found", "\n".join(body), kind="404", header_search=False, prehead=self.NOT_FOUND_PREHEAD)
+
     # -- redirects -----------------------------------------------------------------
 
     def redirect_page(self, relpath, target_slug, old_slug):
         base = self.base_for(relpath)
         page = link_words.page_name(target_slug)
         target = "%sw/%s.html#%s" % (base, page, target_slug)
-        display = self.by_slug[target_slug]["headword"] if target_slug in self.by_slug else link_words.headword_from_slug(target_slug)
+        display = self.display_form(target_slug)
         head = '<meta http-equiv="refresh" content="0; url=%s">' % esc(target)
         body = ['<h1>Moved</h1>',
                 '<p class="redirect-note">The entry <i>%s</i> is now at <a href="%s">%s</a>.</p>' % (esc(old_slug), esc(target), esc(display))]
@@ -1244,6 +1431,7 @@ class Builder:
             self.headword_page(page, group)
             self.preview_payload(page, group)
         self.search_index()
+        self.phrase_index()
         self.browse_pages()
         self.home_page()
         self.recent_page()
@@ -1254,6 +1442,7 @@ class Builder:
         self.labels_key_page()
         self.pronunciation_key_page()
         self.redirect_pages()
+        self.not_found_page()
         self.log("build_site: %d entries on %d headword pages, %d drafts withheld, %d redirects; %d files written to %s"
                  % (len(self.entries), len(self.pages), self.drafts, len(self.redirects), self.files_written, self.out))
         return self

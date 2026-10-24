@@ -54,26 +54,58 @@ CORPUS = [
 ]
 
 
+class NoLinkWordsTests(unittest.TestCase):
+    """The owner's ruling C4 of 2026-10-24: the closed list never links as single words."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.index = link_words.build_index(CORPUS + [entry("of", "prep"), entry("very", "adv")], lemmatizer="rules")
+
+    def test_the_list_is_the_closed_vocabulary(self):
+        words = set(eexlib.vocab_values("no_link_words"))
+        self.assertEqual(len(words), 39)
+        self.assertTrue({"the", "of", "very", "towards", "unless"} <= words)
+        self.assertEqual(link_words.NO_LINK_WORDS, frozenset(words))
+
+    def test_listed_words_are_not_linked_in_any_capitalization(self):
+        html = self.index.link("The bank OF the town is Very big.", None, "../")
+        self.assertNotIn('data-hw="the"', html)
+        self.assertNotIn('data-hw="of"', html)
+        self.assertNotIn('data-hw="very"', html)
+        self.assertIn('data-hw="bank" tabindex="-1">bank</a>', html)
+        self.assertIn('data-hw="big" tabindex="-1">big</a>', html)
+
+    def test_multi_word_headwords_and_overrides_still_link(self):
+        html = self.index.link("in spite of the rain, [[the-det|the]]", None, "../")
+        self.assertIn('data-hw="in spite of"', html)
+        self.assertIn('href="../w/the.html#the-det" data-hw="the" tabindex="-1">the</a>', html)
+
+    def test_word_links_are_out_of_the_tab_order(self):
+        for m in link_words.LINK_RE.finditer(self.index.link("She ran to the bank.", None, "")):
+            self.assertIn('tabindex="-1"', m.group(0))
+
+
 class LinkerTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.index = link_words.build_index(CORPUS, lemmatizer="rules")
+        # the general linking rules, without the closed no-link list (tested below)
+        cls.index = link_words.build_index(CORPUS, lemmatizer="rules", no_link=())
 
     def link(self, text, self_slug=None, base="../", mark_self=False):
         return self.index.link(text, self_slug, base, mark_self=mark_self)
 
     def test_listed_forms_resolve_to_their_entry(self):
         html = self.link("She ran home.")
-        self.assertIn('<a class="w" href="../w/run.html#run-v" data-hw="run">ran</a>', html)
+        self.assertIn('<a class="w" href="../w/run.html#run-v" data-hw="run" tabindex="-1">ran</a>', html)
         self.assertTrue(html.endswith(" home."))
 
     def test_headword_with_several_entries_links_to_the_page_without_anchor(self):
         html = self.link("two banks")
-        self.assertIn('<a class="w" href="../w/bank.html" data-hw="bank">banks</a>', html)
+        self.assertIn('<a class="w" href="../w/bank.html" data-hw="bank" tabindex="-1">banks</a>', html)
         # a form belonging to one entry only keeps its anchor
         self.assertIn('href="../w/bank.html#bank-v"', self.link("he banked it"))
         # homographs of one headword share the page
-        self.assertIn('<a class="w" href="../w/bat.html" data-hw="bat">bats</a>', self.link("two bats"))
+        self.assertIn('<a class="w" href="../w/bat.html" data-hw="bat" tabindex="-1">bats</a>', self.link("two bats"))
 
     def test_base_rel_is_prefixed(self):
         self.assertIn('href="w/run.html#run-v"', self.link("ran", base=""))
@@ -81,8 +113,8 @@ class LinkerTests(unittest.TestCase):
 
     def test_override_is_honoured(self):
         html = self.link("[[bank-v|banked]] and [[account-n]]")
-        self.assertIn('<a class="w" href="../w/bank.html#bank-v" data-hw="bank">banked</a>', html)
-        self.assertIn('<a class="w" href="../w/account.html#account-n" data-hw="account">account</a>', html)
+        self.assertIn('<a class="w" href="../w/bank.html#bank-v" data-hw="bank" tabindex="-1">banked</a>', html)
+        self.assertIn('<a class="w" href="../w/account.html#account-n" data-hw="account" tabindex="-1">account</a>', html)
 
     def test_override_to_unknown_slug_shows_plain_text(self):
         html = self.link("[[zzz-n|zed <b>]] here")
@@ -97,12 +129,12 @@ class LinkerTests(unittest.TestCase):
 
     def test_multi_word_headwords_match_greedily(self):
         html = self.link("Kim gave up smoking in spite of the rain.")
-        self.assertIn('<a class="w" href="../w/give-up.html#give-up-phrv" data-hw="give up">gave up</a>', html)
-        self.assertIn('<a class="w" href="../w/in-spite-of.html#in-spite-of-prep" data-hw="in spite of">in spite of</a>', html)
+        self.assertIn('<a class="w" href="../w/give-up.html#give-up-phrv" data-hw="give up" tabindex="-1">gave up</a>', html)
+        self.assertIn('<a class="w" href="../w/in-spite-of.html#in-spite-of-prep" data-hw="in spite of" tabindex="-1">in spite of</a>', html)
         self.assertNotIn(">in<", html)
 
     def test_hyphenated_headword_is_matched_as_a_whole(self):
-        self.assertIn('data-hw="x-ray">X-ray</a>', self.link("an X-ray"))
+        self.assertIn('data-hw="x-ray" tabindex="-1">X-ray</a>', self.link("an X-ray"))
 
     def test_escaping(self):
         self.assertEqual(self.link("a < b & c \"d\""), "a &lt; b &amp; c \"d\"")
@@ -112,15 +144,15 @@ class LinkerTests(unittest.TestCase):
 
     def test_function_words_link_only_with_an_entry(self):
         html = self.link("The bank is his.")
-        self.assertIn('data-hw="the">The</a>', html)   # the-det exists: linked, case kept
+        self.assertIn('data-hw="the" tabindex="-1">The</a>', html)   # the-det exists: linked, case kept
         self.assertNotIn("i.html", html)                # "is" never becomes "I", "his" never "hi"
         self.assertIn(" is his.", html)
 
     def test_rule_lemmatizer_accepts_only_known_headwords(self):
         html = self.link("the accounts of the biggest and bigger banks")
-        self.assertIn('href="../w/account.html#account-n" data-hw="account">accounts</a>', html)
-        self.assertIn('data-hw="big">biggest</a>', html)
-        self.assertIn('data-hw="big">bigger</a>', html)
+        self.assertIn('href="../w/account.html#account-n" data-hw="account" tabindex="-1">accounts</a>', html)
+        self.assertIn('data-hw="big" tabindex="-1">biggest</a>', html)
+        self.assertIn('data-hw="big" tabindex="-1">bigger</a>', html)
 
     def test_ambiguous_words_are_not_linked(self):
         self.assertNotIn("<a", self.link("hoping"))       # hop or hope
@@ -128,12 +160,12 @@ class LinkerTests(unittest.TestCase):
 
     def test_possessive_is_split_off(self):
         html = self.link("the bank's door")
-        self.assertIn('data-hw="bank">bank</a>\'s door', html)
+        self.assertIn('data-hw="bank" tabindex="-1">bank</a>\'s door', html)
 
     def test_variant_spellings_and_accents_resolve(self):
-        self.assertIn('data-hw="color">colour</a>', self.link("a colour"))
-        self.assertIn('data-hw="café">cafe</a>', self.link("a cafe"))
-        self.assertIn('data-hw="café">Café</a>', self.link("Café"))
+        self.assertIn('data-hw="color" tabindex="-1">colour</a>', self.link("a colour"))
+        self.assertIn('data-hw="café" tabindex="-1">cafe</a>', self.link("a cafe"))
+        self.assertIn('data-hw="café" tabindex="-1">Café</a>', self.link("Café"))
 
     def test_links_helper_lists_placed_links(self):
         links = self.index.links("Sam ran to the bank", None, "../")
@@ -143,7 +175,7 @@ class LinkerTests(unittest.TestCase):
         index = link_words.build_index([("x.json", entry("dog", "n", {"plural": "dogs"})),
                                         {"schema_version": "1.0", "slug": "old-n", "redirect_to": "dog-n"}], lemmatizer="rules")
         self.assertEqual(sorted(index.headwords), ["dog"])
-        self.assertIn('data-hw="dog">dogs</a>', index.link("dogs", None, ""))
+        self.assertIn('data-hw="dog" tabindex="-1">dogs</a>', index.link("dogs", None, ""))
 
     def test_link_text_uses_the_given_index(self):
         html = link_words.link_text("ran", "bank-n", "../", index=self.index)
@@ -158,15 +190,15 @@ class LinkerTests(unittest.TestCase):
 
     def test_marks_are_rendered_and_linked_inside(self):
         html = self.link("**The** goes before a noun (*the bank*, *the banks*).", "run-v")
-        self.assertIn('<b class="mention"><a class="w" href="../w/the.html#the-det" data-hw="the">The</a></b> goes', html)
-        self.assertIn('(<i class="illus"><a class="w" href="../w/the.html#the-det" data-hw="the">the</a> '
-                      '<a class="w" href="../w/bank.html" data-hw="bank">bank</a></i>, ', html)
+        self.assertIn('<b class="mention"><a class="w" href="../w/the.html#the-det" data-hw="the" tabindex="-1">The</a></b> goes', html)
+        self.assertIn('(<i class="illus"><a class="w" href="../w/the.html#the-det" data-hw="the" tabindex="-1">the</a> '
+                      '<a class="w" href="../w/bank.html" data-hw="bank" tabindex="-1">bank</a></i>, ', html)
         self.assertNotIn("*", html)
 
     def test_example_marks_the_entry_headword_and_its_forms(self):
         html = self.link("Sam ran and runs to the bank.", "run-v", mark_self=True)
         self.assertIn('<b class="ex-hw">ran</b> and <b class="ex-hw">runs</b>', html)
-        self.assertIn('data-hw="bank">bank</a>', html)
+        self.assertIn('data-hw="bank" tabindex="-1">bank</a>', html)
         self.assertNotIn("run.html", html)
         # a multi-word form, and the possessive of a single word
         self.assertIn('<b class="ex-hw">gave up</b>', self.link("Kim gave up.", "give-up-phrv", mark_self=True))
@@ -222,7 +254,7 @@ class CliTests(unittest.TestCase):
             self.assertNotIn("walked", proc.stdout)   # a draft entry is not indexed by default
             proc = subprocess.run([sys.executable, str(TOOLS / "link_words.py"), "--entries", str(entries), "--drafts",
                                    "--html", "--text", "walked"], capture_output=True, text=True)
-            self.assertIn('data-hw="walk">walked</a>', proc.stdout)
+            self.assertIn('data-hw="walk" tabindex="-1">walked</a>', proc.stdout)
 
 
 if __name__ == "__main__":
