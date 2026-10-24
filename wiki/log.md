@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-24] site | build and check, all pass
+
+Scheduled run 20261024T165814Z-ofeeve, cycle 2. `tools/build_site.py` wrote 2,816 entries on 2,430 headword pages (no drafts held back, no redirects); `tools/site_check.py` ran 79 checks at phone and desktop widths, all passed, including no sideways scroll at 360 px on all 2,436 pages. The twelve new number pages (*forty*, *fourth*, and the rest) render. No change to the build tool or templates. No spend.
+
 ## [2026-10-24] build | milestone 1: twelve numbers, eleven to ninety
 
 Scheduled run 20261024T164356Z-ofeeve, cycle 1. Built and reviewed twelve number entries: *eleven*, *fourteen*, *fifteen*, *seventeen*, *nineteen* (one sense each, like `eighteen-num`); *forty*, *fifty*, *seventy*, *eighty*, *ninety* (the number, plus a plural sense for ages, temperatures, and the years of a hundred-year period, *in her forties*; *fifty* also has a paper-money sense); *fourth* and *fifth* (order, place in a competition, dates, after `third-num`). Adverbial examples (*finished fourth*) were replaced with *fourth place*; the date sense was kept as the house pattern. Regularized learner errors (*fiveteen*, *fiveth*) were removed; *fourty* and *ninty* kept. Queued `fourth-n`, `fifth-n`, `fifty-fifty-adj` and the ordinals (unbanded). All 24 transcriptions verified. Adjudication: 28 applied, 13 rejected, none escalated. Spend US$0.70.

@@ -1,6 +1,6 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-24 by scheduled run 20261024T164356Z-ofeeve, cycle 1 (build: twelve number entries).*
+*Rewritten 2026-10-24 by scheduled run 20261024T164356Z-ofeeve, cycle 2 (site: build and check, all 79 checks pass). Cycle 1 (build: twelve numbers) merged.*
 
 ## State
 
