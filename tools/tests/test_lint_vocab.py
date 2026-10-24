@@ -261,3 +261,31 @@ class ChangedEntryPathsTest(unittest.TestCase):
             self.assertEqual(names, ["chew-v.json", "close-v.json"])
         finally:
             shutil.rmtree(tmp)
+
+
+class ConsistencyReportTests(unittest.TestCase):
+    """The owner's ruling B4 (ii) and (iii) of 2026-10-24: promised entries and circular definitions."""
+
+    @staticmethod
+    def entry(slug, headword, pos, usage_note=None, definitions=("a definition",)):
+        return {"slug": slug, "headword": headword, "pos": pos, "usage_note": usage_note,
+                "inflections": {"forms": {}}, "variants": [],
+                "senses": [{"n": i + 1, "definition": d} for i, d in enumerate(definitions)]}
+
+    def test_broken_and_kept_promises(self):
+        import lint_vocab as lv
+        my = self.entry("my-det", "my", "det", "It stands alone as an exclamation (*My, that's big!*); this interjection use is a separate entry.")
+        all_det = self.entry("all-det", "all", "det", "Standing alone it is a pronoun and has its own entry: **[[all-pron|all]]** (pronoun).")
+        phys = self.entry("physical-adj", "physical", "adj", "In American English **a physical** is also a noun; that use has its own entry.")
+        entries = {"my-det": my, "all-det": all_det, "all-pron": self.entry("all-pron", "all", "pron"), "physical-adj": phys}
+        rows = [{"headword": "physical", "pos": "n", "status": "pending"}]
+        found = {(s, tuple(c)) for s, _f, _t, c in lv.broken_promises(entries, rows)}
+        self.assertEqual({s for s, _c in found}, {"my-det"})
+        self.assertIn("my-interj", dict(found)["my-det"])
+        self.assertEqual({s for s, _f, _t, _c in lv.broken_promises(entries, [])}, {"my-det", "physical-adj"})
+
+    def test_circular_definitions(self):
+        import lint_vocab as lv
+        proud = self.entry("proud-adj", "proud", "adj", definitions=("pleased about something you did", "making you feel proud"))
+        found = lv.circular_definitions({"proud-adj": proud})
+        self.assertEqual([(s, f) for s, f, _t in found], [("proud-adj", "senses[1].definition")])

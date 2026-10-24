@@ -98,3 +98,23 @@ class CheckLinksTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RuledOutReferencesTests(unittest.TestCase):
+    """The owner's ruling C1 of 2026-10-24: references to ruled-out targets are refused."""
+
+    def test_reference_to_a_fenced_target_is_reported(self):
+        import json
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "entries" / "fi").mkdir(parents=True)
+            entry = {"slug": "find-v", "headword": "find", "pos": "v",
+                     "senses": [{"n": 1, "definition": "discover", "compare": [{"slug": "look-for-phrv", "note": None}],
+                                 "synonyms": [{"slug": "discover-v", "note": None}]}]}
+            (root / "entries" / "fi" / "find-v.json").write_text(json.dumps(entry), encoding="utf-8")
+            (root / "headwords").mkdir()
+            (root / "headwords" / "queue.tsv").write_text(
+                "headword\tpos\tband\tsource\tstatus\tadded\tnote\ndiscover\tv\t2\tband\tpending\t2026-09-16\t\n", encoding="utf-8")
+            refs = check_links.ruled_out_references(root)
+            self.assertEqual([(r[0], r[1], r[2]) for r in refs], [("find-v", "senses[0].compare", "look-for-phrv")])
+            self.assertFalse(refs[0][4])          # not a changed entry (no git): reported, not failed

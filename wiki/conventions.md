@@ -8,7 +8,7 @@
 - **Naming.** Lowercase, hyphens, `.md`. Decision and note pages are named for their topic, not their date.
 - **Linking.** Relative markdown links; `tools/check_links.py` must pass before every commit. Link to a decision page whenever a rule is cited.
 - **Provenance.** A factual claim on a wiki page cites its source (a decision page, an experiment file, a run's review file, or an external reference with title, URL, and access date) or is labelled as the project's own inference.
-- **Caps** (enforced by `tools/check_caps.py`): the wiki excluding `index.md`, `log.md`, and `decisions/` at most 30,000 words; each log entry at most 200 words; `style-guide.md` at most 3,500 words; `CLAUDE.md` 1,500 words; `resume-prompt.md` 800 words; `routine-prompt.md` 2,500 words; `NEXT.md` 60 lines.
+- **Caps** (enforced by `tools/check_caps.py`): the wiki excluding `index.md`, `log.md`, and `decisions/` at most 30,000 words; each log entry at most 200 words; `style-guide.md` at most 3,500 words; `CLAUDE.md` 1,500 words; `resume-prompt.md` 800 words; `routine-prompt.md` 2,500 words; `NEXT.md` 60 lines and 1,000 words.
 - **What the wiki does not hold.** A research library on lexicography. A principle worth keeping goes into the style guide or a decision page.
 
 ## 2. Entries
@@ -64,7 +64,7 @@ One JSON file per entry at `entries/<shard>/<slug>.json`, shaped by `schema/entr
 ## 6. Metrics, journal, inbox
 
 - `metrics/history.jsonl`: one line per run from `tools/metrics.py`: counts by status and band, defining-vocabulary coverage, closure gap, queue counts, review counts and precision, spend, site build status.
-- `journal/YYYY-MM-DD.md` (a `-2`, `-3` suffix when a day has several sessions): the owner report per `framework.md` section 4, published on the site. A guide for the owner is `journal/<date>-<topic>.md`.
+- `journal/YYYY-MM-DD.md` (a `-2`, `-3` suffix when a day has several sessions): the owner report per `framework.md` section 4, one per run, each cycle adding a `## Cycle N: <mode>` section (`tools/run_clock.py journal`), published on the site. `journal/digest-YYYY-MM-DD.md`: the weekly digest for the owner (`tools/digest.py`, [process-overhead](decisions/process-overhead.md)). A guide for the owner is `journal/<date>-<topic>.md`.
 - `inbox/`: anything there is unprocessed owner input and outranks the queue; processed files move to `inbox/archive/` with a line in `wiki/log.md`.
 - `sources/README.md`: the register of resources consulted at run time. `sources/` holds markdown only; CI rejects anything else.
 

@@ -7,7 +7,8 @@ lines included):
     CLAUDE.md                 <= 1,500 words
     resume-prompt.md          <=   800 words
     routine-prompt.md         <= 2,500 words
-    NEXT.md                   <=    60 lines
+    NEXT.md                   <=    60 lines and <= 1,000 words (the word cap: the
+                                 owner's ruling E3 of 2026-10-24)
     wiki/style-guide.md       <= 3,500 words
     wiki/ total               <= 30,000 words, excluding wiki/index.md,
                                  wiki/log.md and everything under wiki/decisions/
@@ -41,6 +42,7 @@ FILE_CAPS = [
     ("resume-prompt.md", 800, "words"),
     ("routine-prompt.md", 2500, "words"),
     ("NEXT.md", 60, "lines"),
+    ("NEXT.md", 1000, "words"),
     ("wiki/style-guide.md", 3500, "words"),
 ]
 WIKI_TOTAL_CAP = 30000
@@ -120,14 +122,17 @@ def check(root: Path, verbose: bool = False):
         else:
             rows.append((label, str(count), cap_text, "OK"))
 
+    seen_labels = set()
     for rel, cap, unit in FILE_CAPS:
         path = root / rel
+        label = rel if rel not in seen_labels else f"{rel} ({unit})"   # NEXT.md has a line cap and a word cap
+        seen_labels.add(rel)
         if not path.is_file():
-            add(rel, 0, cap, unit, absent=True)
+            add(label, 0, cap, unit, absent=True)
             continue
         text = read(path)
         count = count_lines(text) if unit == "lines" else count_words(text)
-        add(rel, count, cap, unit)
+        add(label, count, cap, unit)
 
     pages = wiki_pages(root)
     label = "wiki/ (excluding index.md, log.md, decisions/)"

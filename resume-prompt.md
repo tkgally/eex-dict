@@ -27,7 +27,7 @@ Questions for the owner cannot be answered mid-session. Record the question and 
 
 1. Run the pipeline's closing checks: `python3 tools/validate.py --gate`, `python3 tools/check_caps.py`, `python3 tools/check_links.py`, `python3 -m unittest discover -s tools/tests -t .`, `python3 tools/metrics.py`.
 2. Update `wiki/index.md` and `wiki/log.md` for anything added or changed (log header `## [YYYY-MM-DD] <operation> | <title>`, at most 200 words).
-3. Rewrite `NEXT.md` from scratch: State, Queue (with the next lint pass's due date), Fences, For the owner. Sixty lines at most.
-4. Write the owner report `journal/YYYY-MM-DD.md` (add `-2` if the day has one): plain, self-contained English, every internal term glossed at first use, dates not session counts, 300 to 800 words: what was done, what was found including failures, what it means, what is next, what needs the owner.
+3. Rewrite `NEXT.md` from scratch: State, Queue (with the next lint pass's due date), Fences, For the owner. Sixty lines and 1,000 words at most; the run-by-run history belongs in `wiki/log.md`, not here.
+4. Write the owner report `journal/YYYY-MM-DD.md` (add `-2` if the day has one; a scheduled run writes one file and each cycle adds a section, `routine-prompt.md` section 6): plain, self-contained English, every internal term glossed at first use, dates not session counts, 300 to 800 words: what was done, what was found including failures, what it means, what is next, what needs the owner.
 5. Commit, push, open a pull request, poll its checks, squash-merge, confirm `main` advanced — the exact procedure is in `CLAUDE.md`. If the merge cannot land, say so at the top of `NEXT.md` before stopping.
 6. Kill background processes. Leave a clean tree.

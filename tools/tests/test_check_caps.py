@@ -50,6 +50,15 @@ class CheckCapsTests(unittest.TestCase):
         self.assertEqual(by["NEXT.md"][1:], ("61", "60 lines", "BREACH"))
         self.assertEqual(quiet_main(["--root", str(self.root)]), 1)
 
+    def test_next_has_a_word_cap_too(self):
+        """The owner's ruling E3 of 2026-10-24: NEXT.md at most 1,000 words as well as 60 lines."""
+        (self.root / "NEXT.md").write_text("".join(words(30) for _ in range(40)), encoding="utf-8")
+        rows, breached = check_caps.check(self.root)
+        by = self.rows_by_label(rows)
+        self.assertTrue(breached)
+        self.assertEqual(by["NEXT.md"][1:], ("40", "60 lines", "OK"))
+        self.assertEqual(by["NEXT.md (words)"][1:], ("1200", "1000 words", "BREACH"))
+
     def test_absent_files_are_skipped_and_compliant_root_passes(self):
         (self.root / "NEXT.md").write_text("\n".join(f"line {i}" for i in range(60)) + "\n",
                                            encoding="utf-8")                      # exactly 60

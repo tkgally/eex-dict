@@ -97,3 +97,31 @@ class RunClockTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class JournalPerRunTests(unittest.TestCase):
+    """The owner's ruling E3 of 2026-10-24: one journal file per run, a section per cycle."""
+
+    def test_the_run_keeps_one_journal_name_across_cycles(self):
+        import contextlib
+        import io
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            jdir = tmp / "journal"
+            jdir.mkdir()
+            day = rc.time.strftime("%Y-%m-%d", rc.time.gmtime())
+            (jdir / f"{day}.md").write_text("an earlier run\n", encoding="utf-8")
+            state = tmp / "state"
+
+            def call(*args):
+                out = io.StringIO()
+                with contextlib.redirect_stdout(out):
+                    rc.main(list(args) + ["--file", str(state), "--journal-dir", str(jdir)])
+                return out.getvalue().strip().splitlines()[-1]
+
+            call("start")
+            self.assertEqual(call("journal"), f"new journal/{day}-2.md")
+            (jdir / f"{day}-2.md").write_text("## Cycle 1: build\n", encoding="utf-8")
+            call("done")
+            self.assertEqual(call("journal"), f"append journal/{day}-2.md")

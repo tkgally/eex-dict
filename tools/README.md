@@ -23,7 +23,9 @@ All tools are Python 3 standard library only and run from the repository root. E
 | `python3 tools/review_panel.py --report <slug>` | the open issues from the latest review file |
 | `python3 tools/review_panel.py --decide <slug> --field F --role R --decision apply\|reject\|escalate --note "..."` | one adjudication line in `reviews/decisions.jsonl` |
 | `python3 tools/lint_vocab.py [files] [--changed --gate] [--all --queue]` | definition words outside the defining vocabulary with no entry; `--gate` is the CI ratchet on changed entries; `--queue` files closure candidates; the words of a listed proper name (`proper_names` in `schema/vocabularies.json`) pass and are never queued |
+| `python3 tools/lint_vocab.py --promises \| --circular` | reports only (ruling B4): prose that promises an entry that neither exists nor is queued; definitions that use their own headword |
 | `python3 tools/crossref.py [slugs] [--apply] [--queue] [--gate]` | referenced slugs exist; symmetric back-links added with `--apply`; missing targets queued |
+| `python3 tools/crossref.py --missing-senses` | report only (ruling B1): incoming synonyms and antonyms that no sense of the target matches; also: back-links only where one sense clearly matches (`NO-SENSE` otherwise), ruled-out targets refused (ruling C1) |
 | `python3 tools/originality_check.py sample [--n N]` / `record <date> --file F` | the periodic originality checklist and its record in `reviews/originality/` |
 
 ## Queue and claims
@@ -41,12 +43,13 @@ All tools are Python 3 standard library only and run from the repository root. E
 | Command | Job |
 |---|---|
 | `python3 tools/next_mode.py [--explain] [--simulate N]` | pick the mode from `config/routine-config.json`, the budget, and the run history |
+| `python3 tools/digest.py due \| data` | the weekly digest for the owner (rulings E3, E4): whether it is due, and its numbers, ten-entry sample, and escalation list |
 | `python3 tools/spend.py check --cost X` / `record --cost X --purpose P --model M` / `status` | the daily OpenRouter ledger (`config/budget-ledger.json`) |
 | `python3 tools/openrouter.py --role R --prompt "..."` / `--list-roles` | the model client; roles from `config/models.md` |
 | `python3 tools/metrics.py --mode M --changed N [--site-build S]` / `--summary` / `--precision` | one metrics line per run; reviewer precision by role and family |
 | `python3 tools/absorb_branch.py <branch> [--pr N]` / `--residue <branch>` | take over a stranded run's branch with a per-file merge policy |
 | `python3 tools/wait.py [seconds]` | foreground wait between CI polls |
-| `python3 tools/run_clock.py [start\|done]` | a Routine run's clock: records the start, counts merged cycles (at most four), then says whether another cycle may begin and when to wrap up |
+| `python3 tools/run_clock.py [start\|done\|journal]` | a Routine run's clock: records the start, counts merged cycles (at most four), then says whether another cycle may begin and when to wrap up | `journal` names the run's one journal file (ruling E3).
 
 ## Site
 
@@ -61,7 +64,7 @@ All tools are Python 3 standard library only and run from the repository root. E
 | Command | Job |
 |---|---|
 | `python3 tools/check_caps.py` | word and line caps on the instruction files and the wiki |
-| `python3 tools/check_links.py [dirs or files]` | every relative markdown link resolves (anchors not validated) |
+| `python3 tools/check_links.py [dirs or files]` | every relative markdown link resolves (anchors not validated); entry cross-references to ruled-out targets are reported, and fail in a changed entry (ruling C1) |
 | `python3 -m unittest discover -s tools/tests -t .` | the unit tests (run in CI) |
 
 ## The local gate (what CI runs on a pull request)

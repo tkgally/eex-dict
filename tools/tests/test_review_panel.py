@@ -205,3 +205,27 @@ class PartialVerdictsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HouseRulesAndRequiredChecksTest(unittest.TestCase):
+    """The owner's rulings B1 and E1 of 2026-10-24."""
+
+    def test_checklist_has_the_two_required_checks(self):
+        import review_panel
+        fields = review_panel.checklist({"senses": [{"subsenses": []}], "phrases": []})
+        self.assertEqual(fields[-2:], ["coverage", "examples_fit"])
+
+    def test_both_reviewers_get_the_house_rules_and_the_coverage_line(self):
+        import review_panel
+        prompt = review_panel.system_prompt()
+        self.assertIn("List the most frequent present-day uses, function-word uses, and idioms of this word.", prompt)
+        self.assertIn("Does every example fit its sense's definition? Name any that does not.", prompt)
+        self.assertIn("Settled questions", prompt)
+        self.assertIn("coverage", review_panel.FAMILIES_HINT)
+
+    def test_coverage_family_is_in_the_vocabulary(self):
+        import review_panel
+        verdicts, _err = review_panel.normalize_verdicts(
+            {"verdicts": [{"field": "coverage", "verdict": "issue", "severity": "blocking", "family": "coverage",
+                           "quote": "drop a hint", "reason": "missing idiom"}]}, ["coverage"], "reviewer-b")
+        self.assertEqual(verdicts[0]["family"], "coverage")

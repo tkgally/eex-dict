@@ -16,4 +16,4 @@ The order `tools/queue.py next` and `tools/claim.py --from-queue` follow:
 
 ## A3. Closure of rare words is paused
 
-`claim.py --from-queue --source closure` and `--source family` hand out only rows at band 1 or 2 until band 2 is finished (no `pending` or `claimed` row at band 1 or 2 is left). Rows at bands 3 to 5 wait; nothing is deleted. Rows still `unbanded` wait for the next band vote ([rebanding](rebanding.md)). When band 2 is finished, the pause lifts by itself; the tool prints which rule applied.
+`claim.py --from-queue --source closure` and `--source family` hand out only rows at band 1 or 2 until band 2 is finished (no `pending` or `claimed` row at band 1 or 2 is left). The session reads the ruling as covering closure mode's third source too, `--source crossref`, so that closure mode builds no band-3 word through it; `tools/next_mode.py` counts only the rows the pause allows as closure candidates. Rows at bands 3 to 5 wait; nothing is deleted. Rows still `unbanded` wait for the next band vote ([rebanding](rebanding.md)). When band 2 is finished, the pause lifts by itself; the tool prints which rule applied.

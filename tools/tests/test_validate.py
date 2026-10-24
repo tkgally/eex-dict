@@ -367,3 +367,20 @@ class ValidateTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OverlappingNotesTests(unittest.TestCase):
+    """The owner's ruling B2 of 2026-10-24: a warning for two note fields that restate one fact."""
+
+    def test_restated_note_is_found_and_distinct_notes_are_not(self):
+        sys.path.insert(0, str(TOOLS))
+        import validate
+        e = json.loads(FIXTURE.read_text(encoding="utf-8"))
+        e["usage_note"] = ("Students frequently drop the article before this noun and write go to bank instead of "
+                           "go to the bank, especially in quick everyday speech and informal writing.")
+        e["adaptation"]["grammar"] = ("Students frequently drop the article before this noun: go to bank instead of "
+                                      "go to the bank, in quick everyday speech and writing.")
+        pairs = validate.overlapping_notes(e)
+        self.assertIn(("usage_note", "adaptation.grammar"), [(a, b) for a, b, _s in pairs])
+        e["adaptation"]["grammar"] = "Countable noun with a regular plural; compare the uncountable use in finance reports."
+        self.assertNotIn(("usage_note", "adaptation.grammar"), [(a, b) for a, b, _s in validate.overlapping_notes(e)])

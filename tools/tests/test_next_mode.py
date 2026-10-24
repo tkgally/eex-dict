@@ -26,3 +26,29 @@ class DedupeRunsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DigestDueTests(unittest.TestCase):
+    """The owner's ruling E3 (iv) of 2026-10-24: a weekly digest, due seven days after the last."""
+
+    def test_due_without_a_digest_and_seven_days_after_one(self):
+        import tempfile
+        from datetime import date
+        import digest
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "journal").mkdir()
+            self.assertTrue(digest.is_due(root, date(2026, 10, 24)))
+            (root / "journal" / "digest-2026-10-20.md").write_text("# Digest\n", encoding="utf-8")
+            self.assertFalse(digest.is_due(root, date(2026, 10, 26)))
+            self.assertTrue(digest.is_due(root, date(2026, 10, 27)))
+
+    def test_escalation_needs_both_reviewers_rejected_on_meaning(self):
+        import digest
+        base = {"run_id": "r1", "slug": "bunch-n", "field": "senses[2].labels", "family": "label", "ts": "2026-10-20T00:00:00Z"}
+        both = [dict(base, role="reviewer-a", decision="reject"), dict(base, role="reviewer-b", decision="reject")]
+        self.assertEqual([x["slug"] for x in digest.escalations(both)], ["bunch-n"])
+        one_applied = [dict(base, role="reviewer-a", decision="apply"), dict(base, role="reviewer-b", decision="reject")]
+        self.assertEqual(digest.escalations(one_applied), [])
+        spelling = [dict(x, family="spelling-or-format") for x in both]
+        self.assertEqual(digest.escalations(spelling), [])

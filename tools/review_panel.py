@@ -68,11 +68,33 @@ House rules you check against:
 - House conventions that are NOT issues: a core-idea line on a two-sense entry (optional there); periods in IPA (they mark syllable breaks); no length marks in General American IPA; one form per inflection slot with alternatives in its note; "online" as a region label; one to three examples on a phrase; "used to ..." definitions for function words; an adaptation note that mentions "some languages", "many languages", a country, or a variety (language-neutral means it is not written for one target language); an entry-level label (vulgar, informal) that covers every sense and phrase without being repeated; no stress mark on a monosyllable; a British transcription with no linking r; a plain-English respelling in a pronunciation note; an etymology that names source languages; an explanation field on a high-frequency verb, modal, or abbreviation whose use is harder than its meaning; grammar patterns only from the closed list (no adjective, noun, or determiner patterns: those go in collocations); compounds in a word family; a subsense with its own countability; a generic example (the wettest spring on record) that states no real-world fact.
 - Etymology appears only when it helps a learner use the word today; a wrong or doubtful origin is an issue.
 
-Severity: "blocking" for anything wrong, misleading, ungrammatical, unnatural, unsafe for a learner to copy, or against the example rules; "minor" for something worth improving that a learner could still safely use. Quote the exact text you object to. Do not flag a definition for being plain, short, or unlike a published dictionary's; plain and short is the house style. Do not flag the absence of a sense unless it is a common current sense a learner would need."""
+Two required checks, each a verdict on its own field (the owner's ruling of 2026-10-24):
+- "coverage": List the most frequent present-day uses, function-word uses, and idioms of this word. Is each covered by a sense, subsense, or phrase? Name any that is missing. Report each missing use as an issue on "coverage" with family "coverage", quoting the missing use itself; a rare, dated, or technical use is not missing. Report missing uses only here.
+- "examples_fit": Does every example fit its sense's definition? Name any that does not. Report each misfit as an issue on "examples_fit" with family "example-unnatural", quoting the example.
+
+Severity: "blocking" for anything wrong, misleading, ungrammatical, unnatural, unsafe for a learner to copy, or against the example rules; "minor" for something worth improving that a learner could still safely use. Quote the exact text you object to. Do not flag a definition for being plain, short, or unlike a published dictionary's; plain and short is the house style."""
+
+HOUSE_RULES_PATH = eexlib.ROOT / "config" / "reviewer-house-rules.md"
+
+
+def house_rules() -> str:
+    """The settled house rulings both reviewers receive (config/reviewer-house-rules.md, ruling E1)."""
+    try:
+        text = HOUSE_RULES_PATH.read_text(encoding="utf-8")
+    except OSError:
+        return ""
+    lines = [ln for ln in text.splitlines() if ln.strip() and not ln.startswith("*")]
+    return "\n".join(lines)
+
+
+def system_prompt() -> str:
+    rules = house_rules()
+    return SYSTEM + ("\n\n" + rules if rules else "")
 
 FAMILIES_HINT = ("definition-meaning, definition-style, definition-vocabulary, explanation, example-unnatural, example-grammar, "
                  "example-policy, grammar-code, label, collocation, cross-reference, learner-error, synonym-discrimination, "
-                 "usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, other")
+                 "usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, "
+                 "coverage, other")
 
 
 def checklist(entry: dict) -> list[str]:
@@ -89,7 +111,7 @@ def checklist(entry: dict) -> list[str]:
         base = f"phrases[{i}]"
         fields += [f"{base}.text_and_placement", f"{base}.definition", f"{base}.labels", f"{base}.examples", f"{base}.adaptation"]
     fields += ["word_family", "synonym_discrimination", "usage_note", "learner_errors", "etymology", "see_also",
-               "adaptation", "sense_structure", "consistency"]
+               "adaptation", "sense_structure", "consistency", "coverage", "examples_fit"]
     return fields
 
 
@@ -128,7 +150,8 @@ def user_prompt(entry: dict) -> str:
         "described belongs to this part of speech; "
         "\"consistency\" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note "
         "against the grammar values, a claim made twice in two ways); "
-        "\"cross_references\" covers synonyms, antonyms, and compare of that sense.\n\n"
+        "\"cross_references\" covers synonyms, antonyms, and compare of that sense; "
+        "\"coverage\" and \"examples_fit\" are the two required checks described in the house rules.\n\n"
         "ENTRY (JSON):\n" + json.dumps(strip_for_review(entry), ensure_ascii=False, indent=1)
     )
 
@@ -170,10 +193,11 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
     import openrouter
     fields = checklist(entry)
     prompt = user_prompt(entry)
+    system = system_prompt()
     record = {"run_id": run_id, "slug": entry["slug"], "entry_modified": entry["provenance"]["modified"], "reviewers": []}
     for role in roles:
         model = openrouter.resolve_role(role)
-        est = openrouter.estimate_cost(model, len(SYSTEM) // 4 + len(prompt) // 4, 40 * len(fields) + 200)
+        est = openrouter.estimate_cost(model, len(system) // 4 + len(prompt) // 4, 40 * len(fields) + 200)
         rev = {"role": role, "model": model, "requested_at": eexlib.utcnow_iso(), "cost_usd": 0.0, "tokens_in": 0,
                "tokens_out": 0, "verdicts": [], "summary": None, "error": None}
         if dry_run:
@@ -181,7 +205,7 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
             record["reviewers"].append(rev)
             continue
         try:
-            res = openrouter.call_with_budget(model, [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}],
+            res = openrouter.call_with_budget(model, [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
                                               purpose=f"review:{entry['slug']}:{role}", estimate_usd=est,
                                               max_tokens=120 * len(fields) + 3000, temperature=0.1,
                                               response_format={"type": "json_object"},

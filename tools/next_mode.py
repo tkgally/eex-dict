@@ -13,6 +13,9 @@ every Nth run; site when the last site build failed; build is blocked when the
 draft ceiling is reached or the day's remaining budget cannot pay for the panel
 (then review or a free mode runs); closure needs closure candidates in the
 queue; review needs entries that have had only one reading, or drafts.
+``signals.digest_due`` is true when the weekly digest for the owner is due (no
+journal/digest-*.md yet, or the last is seven days old or more: the owner's
+ruling E3 of 2026-10-24); pre-flight then writes it before the cycle's unit.
 """
 from __future__ import annotations
 
@@ -94,13 +97,16 @@ def signals(cfg: dict) -> dict:
                 once_reviewed += 1
     q = eexlib.ROOT / "headwords" / "queue.tsv"
     pending = closure = 0
+    rows = []
     if q.exists():
         with q.open(encoding="utf-8", newline="") as f:
-            for r in csv.DictReader(f, delimiter="\t"):
-                if r.get("status") == "pending":
-                    pending += 1
-                    if r.get("source") in ("closure", "family", "crossref"):
-                        closure += 1
+            rows = list(csv.DictReader(f, delimiter="\t"))
+    paused = eexlib.closure_paused(rows)   # ruling A3: closure draws only bands 1 and 2 until band 2 is finished
+    for r in rows:
+        if r.get("status") == "pending":
+            pending += 1
+            if r.get("source") in eexlib.CLOSURE_SOURCES and eexlib.closure_row_allowed(r, paused):
+                closure += 1
     hist = history()
     runs_since_lint = 0
     for r in reversed(hist):
@@ -109,11 +115,13 @@ def signals(cfg: dict) -> dict:
         runs_since_lint += 1
     last_site = next((r.get("site_build") for r in reversed(hist) if r.get("site_build") not in (None, "unknown")), None)
     spent, cap, remaining = budget_remaining()
+    import digest
+    digest_due = digest.is_due(eexlib.ROOT)
     return {"entries_draft": drafts, "entries_reviewed": reviewed, "reviewed_once_only": once_reviewed,
-            "queue_pending": pending, "queue_closure": closure, "runs_total": len(hist),
+            "queue_pending": pending, "queue_closure": closure, "closure_paused_above_band_2": paused, "runs_total": len(hist),
             "runs_since_lint": runs_since_lint, "last_site_build": last_site,
             "budget_spent_usd": round(spent, 4), "budget_cap_usd": cap, "budget_remaining_usd": round(remaining, 4),
-            "last_mode": hist[-1].get("mode") if hist else None}
+            "last_mode": hist[-1].get("mode") if hist else None, "digest_due": digest_due}
 
 
 def eligibility(cfg: dict, sig: dict) -> tuple[dict, dict, str | None]:

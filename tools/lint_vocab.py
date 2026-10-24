@@ -6,6 +6,8 @@
     python3 tools/lint_vocab.py --changed --gate     # CI: exit 1 on a definition violation in a changed entry
     python3 tools/lint_vocab.py --all --queue        # queue every out-of-vocabulary definition lemma (closure)
     python3 tools/lint_vocab.py --json ...           # machine-readable summary on stdout
+    python3 tools/lint_vocab.py --promises           # report: prose that promises an entry that neither exists nor is queued
+    python3 tools/lint_vocab.py --circular           # report: definitions that contain their own headword or a form of it
 
 Every word of a definition (core_idea, senses[].definition, subsenses[].definition,
 phrases[].definition) is lemmatized and must be in schema/defining-vocabulary.txt
@@ -690,6 +692,158 @@ def top_tables(results, limit):
     return {"definition": by_def.most_common(limit), "all": by_all.most_common(limit)}
 
 
+# --------------------------------------------------------------------------
+# Consistency reports (the owner's ruling B4 of 2026-10-24, wiki/decisions/consistency-rules.md).
+# Both only report; a review cycle judges and fixes each case through the pipeline.
+# --------------------------------------------------------------------------
+
+PROMISE_RE = re.compile(r"\b(?:its|their) own entr(?:y|ies)\b|\bseparate entr(?:y|ies)\b|\ban entry of its own\b|"
+                        r"\bentries of their own\b|\bsee the entry for\b", re.I)
+POS_WORDS = [("phrasal verb", "phrv"), ("auxiliary verb", "aux"), ("auxiliary", "aux"), ("helping verb", "aux"),
+             ("infinitive marker", "inf"), ("determiner", "det"), ("pronoun", "pron"), ("preposition", "prep"),
+             ("conjunction", "conj"), ("interjection", "interj"), ("exclamation", "interj"), ("adjective", "adj"),
+             ("adverb", "adv"), ("noun", "n"), ("verb", "v"), ("number", "num"), ("modal", "modal"),
+             ("prefix", "prefix"), ("suffix", "suffix"), ("abbreviation", "abbr")]
+BOLD_RE = re.compile(r"\*\*(?!\[\[)([^*]+?)\*\*")
+OVERRIDE_SLUG_RE = re.compile(r"\[\[([a-z0-9]+(?:-[a-z0-9]+)*)\|")
+KEPT_STATUSES = ("pending", "claimed", "unbanded", "deferred", "done")
+
+
+def _sentences(text):
+    return [x for x in re.split(r"(?<=[.?!])\s+(?=[A-Z*(])", str(text)) if x.strip()]
+
+
+_POS_CONTEXT = r"(?<!without )(?<!before )(?<!after )(?<!following )(?<!by )"
+ITALIC_RE = re.compile(r"(?<!\*)\*(?!\*)([^*]+?)(?<!\*)\*(?!\*)")
+
+
+def named_parts_of_speech(text):
+    """Part-of-speech codes a sentence names as what a word *is* (*is a pronoun*, *as an adverb*,
+    *(noun)*, *this interjection use*), not where it stands (*before a noun*)."""
+    low = text.lower()
+    out = []
+    for word, code in POS_WORDS:
+        if code != "phrv":
+            low_w = low.replace("phrasal verb", "").replace("auxiliary verb", "").replace("helping verb", "") if word == "verb" else low
+        else:
+            low_w = low
+        pat = (r"\(%s\)" % word + "|" + _POS_CONTEXT + r"\b(?:an?|the|this|that)\s+(?:[a-z-]+\s+)?%ss?\b" % word +
+               r"|\b%ss? (?:with (?:its|their) own|use)\b" % word)
+        if (re.search(pat, low_w) or (code == "phrv" and "phrasal verb" in low)) and code not in out:
+            out.append(code)
+    if not out and re.search(r"\bused alone\b|\bstanding alone\b|\bstands alone\b|\bwithout a (?:following )?noun\b", low):
+        out.append("pron")
+    if not out and re.search(r"\bused before a noun\b", low):
+        out.append("adj")
+    return out
+
+
+def _terms(text):
+    terms = [t.strip().lower() for t in BOLD_RE.findall(text)]
+    terms = [re.sub(r"^(?:a|an|the|to) ", "", t) for t in terms]
+    return [t for t in terms if t and not t.startswith("-")]
+
+
+def promise_candidates(sentence, entry, previous=""):
+    """``(slugs, explicit)``: the slugs a promising sentence may mean.  An override names its slug
+    outright.  Otherwise the words in ``**...**`` (in the sentence, else the one before it, else
+    the illustrations in ``*...*`` when the sentence names a part of speech, else the headword
+    itself: *that use has its own entry*) are paired with the parts of speech the sentence names,
+    or with every part of speech when it names none, each also as a second homograph."""
+    for text in (sentence, previous + " " + sentence):
+        explicit = OVERRIDE_SLUG_RE.findall(text)
+        if explicit:
+            return set(explicit), True
+    headword = str(entry.get("headword", "")).lower()
+    terms = _terms(sentence)
+    named = named_parts_of_speech(sentence)
+    italic = [re.sub(r"^(?:a|an|the|to) ", "", t.strip().lower()) for t in ITALIC_RE.findall(sentence) if len(t.split()) <= 4]
+    if "phrv" in named:
+        terms = terms + [t for t in italic if " " in t]    # *kick off*, *wave aside* are the phrasal verbs meant
+    if not terms and named:
+        terms = italic + [headword]                         # *the noun (...)*, *that use*: often the headword itself
+    if not terms:
+        terms = _terms(previous)
+        named = named or named_parts_of_speech(previous + " " + sentence)
+    if not terms:
+        terms = [headword]
+    out = set()
+    for term in terms:
+        codes = named or [c for _w, c in POS_WORDS]
+        if " " in term and "phrv" not in codes:
+            codes = codes + ["phrv"]                            # **turn into** (its own entry)
+        for code in codes:
+            for hom in (1, 2):
+                if hom == 1 and term == headword and code == entry.get("pos"):
+                    continue
+                try:
+                    out.add(eexlib.slugify(term, code, hom))
+                except ValueError:
+                    pass
+    return out, False
+
+
+def broken_promises(entries, rows):
+    """``[(slug, field, sentence, candidates)]`` for every promise none of whose candidates has an
+    entry or a live queue row (candidates empty: a promise the tool could not read; check it by hand)."""
+    kept = set()
+    for r in rows:
+        if r.get("status") in KEPT_STATUSES:
+            try:
+                kept.add(eexlib.slugify(r["headword"], r["pos"]))
+            except (KeyError, ValueError):
+                pass
+    have = set(entries)
+    out = []
+    for slug in sorted(entries):
+        e = entries[slug]
+        for field, text in eexlib.iter_prose(e):
+            sents = _sentences(text)
+            for k, sent in enumerate(sents):
+                if not PROMISE_RE.search(sent):
+                    continue
+                cands, explicit = promise_candidates(sent, e, sents[k - 1] if k else "")
+                cands.discard(slug)
+                ok = (all(c in have or c in kept for c in cands) if explicit else any(c in have or c in kept for c in cands))
+                if not cands or not ok:
+                    out.append((slug, field, sent.strip(), sorted(cands)))
+    return out
+
+
+def circular_definitions(entries):
+    """``[(slug, field, definition)]``: a sense or subsense definition that uses the headword or one of its forms."""
+    out = []
+    for slug in sorted(entries):
+        e = entries[slug]
+        if e.get("pos") in eexlib.AFFIX_POS:
+            continue
+        forms = eexlib.own_forms(e)
+        for field, text in eexlib.iter_prose(e):
+            if re.match(r"^senses\[\d+\]\.(?:subsenses\[\d+\]\.)?definition$", field) and eexlib.contains_form(text, forms):
+                out.append((slug, field, text))
+    return out
+
+
+def report_consistency(root, promises, circular):
+    entries = {}
+    for _p, e in eexlib.iter_entries(root):
+        if not eexlib.is_redirect_stub(e):
+            entries[e["slug"]] = e
+    if promises:
+        found = broken_promises(entries, eexlib.load_queue_rows(root))
+        for slug, field, sent, cands in found:
+            print("PROMISE %s %s: %s | %s" % (slug, field, sent[:160], ", ".join(cands) if cands else "(no word named: check by hand)"))
+        print("lint_vocab --promises: %d promise(s) with no entry and no live queue row (%d entries checked)"
+              % (len(found), len(entries)))
+    if circular:
+        found = circular_definitions(entries)
+        for slug, field, text in found:
+            print("CIRCULAR %s %s: %s" % (slug, field, text[:160]))
+        print("lint_vocab --circular: %d definition(s) use their own headword (%d entries checked; most are harmless; "
+              "a review judges each)" % (len(found), len(entries)))
+    return 0
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Check definition words against the defining vocabulary and the existing entries.")
     parser.add_argument("paths", nargs="*", help="entry files or slugs (default: --all)")
@@ -702,8 +856,12 @@ def main(argv=None):
     parser.add_argument("--root", help="repository root (default: the parent of tools/)")
     parser.add_argument("--dv", help="defining-vocabulary file (default: schema/defining-vocabulary.txt)")
     parser.add_argument("--top", type=int, default=20, help="rows in the summary tables (default 20)")
+    parser.add_argument("--promises", action="store_true", help="report prose that promises an entry that neither exists nor is queued")
+    parser.add_argument("--circular", action="store_true", help="report definitions that contain their own headword or a form of it")
     args = parser.parse_args(argv)
     root = Path(args.root).resolve() if args.root else eexlib.ROOT
+    if args.promises or args.circular:
+        return report_consistency(root, args.promises, args.circular)
 
     changed = changed_paths(root, args.base) if args.changed else None
     if args.paths:
