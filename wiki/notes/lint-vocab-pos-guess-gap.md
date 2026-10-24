@@ -21,3 +21,5 @@ Declined all eight with reasons on each queue row; requeued the corrected slugs 
 ## 2026-09-26: an inflected plural queued as a lemma
 
 The closure queue's top rows still held three bogus guesses: *advanced* as a verb and *eager* as a noun (both already queued correctly as adjectives) and *packages*, a plural queued as its own noun lemma. Set to `duplicate` with reasons; `package-n` queued and drafted. The plural case is new: `pos_guess` does not reduce a regular plural to its base before queueing.
+
+Recurred 2026-10-24: *tending* (from `ive-suffix`) and *ounces* (from `oz-abbr`) were queued as lemmas; both rows were marked duplicate and `tend-v`, `ounce-n` drafted. The `closure` source held no other pending rows afterwards.
