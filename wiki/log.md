@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-24] setup | the owner's rulings of 2026-10-24: wrap-up
+
+Group 6 of the interactive session ([owner-rulings-2026-10-24](decisions/owner-rulings-2026-10-24.md)). Every tooling, site, configuration, and rule part of the rulings is merged (pull requests 515 to 519 and this one). The final site build passed `site_check.py`, 79 of 79. `NEXT.md` was rewritten under its new word cap, with the entry work queued for the Routine in the rulings' order: B3, B4 (i), the C1 audit, milestone 1 (grammar terms first), the B1 coverage pass and E2, the reviewer-b check, the first digest (due), and the E5 notice. Owner report: `journal/2026-10-24-5.md`. Spend for the day: US$4.24.
+
 ## [2026-10-24] setup | IPA house form (the owner's ruling B4 iv)
 
 Group 5 of the rulings of 2026-10-24 ([consistency-rules](decisions/consistency-rules.md)). House form: the stress mark opens its syllable and is itself the syllable break, so no period stands beside it (`prɪˈvɛnt`, not `prɪ.ˈvɛnt`); periods between unstressed syllables stay as drafted. `tools/ipa_format.py`, the one script the owner allowed to touch IPA, rewrote 292 transcriptions in 147 entries and the four `owner-ruling:` copies in `checked_by`; it proves every change moves only periods and refuses anything else; an independent check of the diff agreed (296 lines). `validate.py` and `pronounce_check.py` now warn on a string not in the house form; owner rulings are compared in the house form. The fence calling stress marks after a syllable break house practice is withdrawn.
