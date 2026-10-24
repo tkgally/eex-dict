@@ -6,7 +6,7 @@
 
 - [conventions](conventions.md) — the schema of this knowledge base and every file format the tools read or write: slugs, shards, run ids, claims, the queue, review files, the decision ledger, the budget ledger, metrics.
 - [style-guide](style-guide.md) — the house style every drafting session reads: definitions, senses, examples, the inline marks, grammar, labels, boxes, phrases, adaptation notes, originality; three model entries (section 17).
-- [open-questions](open-questions.md) — questions for the owner with the working assumption in force; the first seven answered 2026-10-05; two open (continent names in definitions, 2026-10-10; noun or pronoun for *the former* and *the following*, 2026-10-11).
+- [open-questions](open-questions.md) — questions for the owner with the working assumption in force; the first seven answered 2026-10-05 (the milestone-1 order superseded 2026-10-24); two open (continent names in definitions, 2026-10-10; noun or pronoun for *the former* and *the following*, 2026-10-11).
 
 ## Decisions (one page each; binding)
 
@@ -43,6 +43,16 @@
 - [proper-names-in-definitions](decisions/proper-names-in-definitions.md) — the owner's ruling of 2026-10-05: a closed list of proper names (`proper_names` in `schema/vocabularies.json`) may appear in definitions; `lint_vocab.py` accepts them and never queues them.
 - [reviewer-b-upgrade](decisions/reviewer-b-upgrade.md) — the owner's ruling of 2026-10-05: the `reviewer-b` role moves to the Pro-class Google model; only that role; the cap stays US$15.
 - [infinitive-marker](decisions/infinitive-marker.md) — the owner's ruling of 2026-10-05: a part-of-speech value `inf` (infinitive marker) and one entry, `to-inf`.
+- [owner-rulings-2026-10-24](decisions/owner-rulings-2026-10-24.md) — the owner's rulings of 2026-10-24 after an outside assessment: where each ruling (A1 to E6) is recorded and whether it is carried out; the full text is `inbox/archive/20261024_owner_rulings.txt`.
+- [rebanding](decisions/rebanding.md) — rulings A1 and A4: the word-list panel re-bands every queue row and entry on one written scale (lower median); defining vocabulary no longer forces band 1; rows queued by tools are `unbanded` until the next vote.
+- [build-order](decisions/build-order.md) — rulings A2 and A3: milestone 1 first (grammar terms, then the other defining-vocabulary words by band), closure suspended until then; closure and family draw only bands 1 and 2 until band 2 is finished.
+- [notes-discipline](decisions/notes-discipline.md) — ruling B2: note fields null by default, one fact one field, real learner errors only, adaptation notes name a trap, fix all copies, a validator warning for overlapping prose fields.
+- [consistency-rules](decisions/consistency-rules.md) — ruling B4: `separable`/`inseparable` codes for phrasal verbs, *look forward to* is transitive; lint reports of promised entries and circular definitions; the IPA house form (no period beside a stress mark) and the one script allowed to move periods.
+- [cross-reference-display](decisions/cross-reference-display.md) — rulings C1 to C3: no fallback back-links, ruled-out targets refused, the audit; missing targets muted or hidden on the site; display forms keep hyphens and periods.
+- [word-links](decisions/word-links.md) — ruling C4: every word with an entry stays linked except the closed list `no_link_words` (39 words); word links out of the Tab order.
+- [reviewer-house-rules](decisions/reviewer-house-rules.md) — rulings B1, E1, E2: a house-rules file for both reviewers, the required `coverage` and example-fit checks, the reviewer-b trial rule, the coverage pass, and the second-round review order.
+- [process-overhead](decisions/process-overhead.md) — rulings E3 and E5: lint every ten runs, originality every twenty; `NEXT.md` capped at 1,000 words; one journal per run with a section per cycle; a weekly digest; nothing depends on the run schedule.
+- [owner-in-the-loop](decisions/owner-in-the-loop.md) — ruling E4: ten entries for the owner to sample in each digest, a "Report a problem" link on every entry handled as untrusted claims, and the list of meaning questions settled against both reviewers.
 
 ## Notes (observed problems, method records, experiment results)
 
