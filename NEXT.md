@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-25 by scheduled run 20261025T011641Z-6h9f7u, cycle 3 (review). Cycles 1 and 2 merged.*
+*Rewritten 2026-10-25 by scheduled run 20261025T013145Z-6h9f7u, cycle 4 of 4 (originality, forty-fourth check). Cycles 1 to 3 merged.*
 
 ## State
 
 - 2,840 entries, all `reviewed`. Milestone 1: about 220 rows left. Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-25 so far: about US$3.23 of US$15.
+- Spend 2026-10-25 so far: about US$3.36 of US$15. Originality: last 2026-10-25, next due in twenty runs.
 
 ## Queue (top-down)
 
@@ -20,10 +20,11 @@
    7. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    8. **E5**: when milestone 1 is built and the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
 1. **build**: check a verb + preposition row against the verb's senses and a `phr` row against the keyword entry's phrases; run the panel in chunks of four or five; place every `NO-SENSE` back-link by hand.
-2. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and both reviewers ask for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*, *travel light*); reject all, with the reason. `verb + adjective` is not a collocation type.
-3. **closure**: blocked by milestone 1, then paused above band 2 (A3).
-4. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in seven runs. `reviewer-a` `coverage` precision is low but stays live (ruling B1).
-5. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`. The wiki is at about 29,800 of 30,000 words: trim before adding.
+2. **originality**: ask reviewer-a with `--reasoning-effort off` (with reasoning on it spends every token before answering); it still quotes our own text back as Cambridge's, so the search decides.
+3. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and both reviewers ask for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*, *travel light*); reject all, with the reason. `verb + adjective` is not a collocation type.
+4. **closure**: blocked by milestone 1, then paused above band 2 (A3).
+5. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in six runs. `reviewer-a` `coverage` precision is low but stays live (ruling B1).
+6. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`. The wiki is at about 29,800 of 30,000 words: trim before adding.
 
 ## Fences (do not re-grind)
 
