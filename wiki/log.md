@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-25] setup | reviewer B and pronunciation-1 move to newer models (owner's ruling)
+
+The owner ruled after `experiments/model-refresh-v1`: `reviewer-b` is now `google/gemini-4-argon` and `pronunciation-1` is `openai/gpt-6.1-sol` ([model-refresh](decisions/model-refresh-2026-10-25.md)). `wordlist-1` keeps GPT-5.6 Terra until a band-vote comparison. GPT-6.1 Sol refuses calls with reasoning off, so `tools/openrouter.py` now runs the endpoints in `REASONING_REQUIRED` (Google, GPT-6.1 Sol) at low effort. Every slug in `config/models.md` was re-verified, and the DeepSeek V4 Pro and Gemini 3.8 Flash prices were updated. Reviewer B's three lint switch-offs (example-policy, explanation, inflection) are live again under the reviewer-A rule, and `metrics.py --precision` reports `reviewer-b:gemini-4-argon` separately. Smoke calls through both roles answered. Spend under one cent.
+
 ## [2026-10-25] experiment | newer OpenRouter models at the same price or less
 
 Owner-requested ([record](../experiments/model-refresh-v1/README.md)). The current model list was checked for newer models at today's prices or less. Reviewers were tested on the 28 entries of `claude-reviewers-v1` (50 planted errors, eight fresh drafts) with the production prompt, and a headless Opus call judged the pooled issues blind. Gemini 3.8 Flash matched Gemini 3.1 Pro on planted errors (49 each) and blocking precision (0.98 against 0.99). It found fewer real blocking problems alone (54 against 58), but paired with the Claude reviewer-a it found the same 63 of 63, at $0.012 an entry against $0.051. Gemini 4 Argon ($2/$10) found the most (50 planted, 59 blocking) at $0.034. GPT-6 Luna is unusable as a reviewer (0.49 blocking precision). Pronunciation: GPT-6.1 Sol beat GPT-5.6 Terra slightly (94.0 against 91.9 percent CMU agreement) at about the same cost. No role changed; the owner decides. Spend US$1.55.

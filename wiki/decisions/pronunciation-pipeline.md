@@ -4,7 +4,7 @@
 
 **Source of transcriptions.** The drafting model writes both transcriptions from its own knowledge, in the symbol set fixed in `tools/pronounce_check.py` (General American and Standard Southern British, primary and secondary stress, syllable breaks). The experiment found the drafter right, at the phoneme level, on 98.5 percent of defining-vocabulary words and 92.6 percent of a stratified 500-word sample against the CMU Pronouncing Dictionary, so drafting stays with the drafter.
 
-**Panel.** The three roles `pronunciation-1` (OpenAI), `pronunciation-2` (Google), `pronunciation-3` (DeepSeek) in `config/models.md`, each of which agreed with the CMU dictionary on more than 90 percent of the sample; a member is dropped when a re-test puts it below 85 percent. Calls run with reasoning switched off (the transcriptions are the same and the cost a third).
+**Panel.** The three roles `pronunciation-1` (OpenAI), `pronunciation-2` (Google), `pronunciation-3` (DeepSeek) in `config/models.md`, each of which agreed with the CMU dictionary on more than 90 percent of the sample; a member is dropped when a re-test puts it below 85 percent. Calls run with reasoning switched off (the transcriptions are the same and the cost a third), except on endpoints that refuse it, which run at low effort ([model-refresh-2026-10-25](model-refresh-2026-10-25.md)).
 
 **Votes.** For American: the three panel transcriptions plus the CMU Pronouncing Dictionary's, fetched at run time to a temporary directory when reachable (ARPAbet converted to IPA by the fixed mapping in the tool; nothing stored). For British: the three panel transcriptions.
 

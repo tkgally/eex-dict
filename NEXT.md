@@ -6,8 +6,9 @@
 
 - 2,900 entries, all `reviewed`. Milestone 1: 145 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); 63 unbanded rows voted 2026-10-25. A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-25: about US$12.95 of US$15 (US$1.55 of it the owner's model test). Originality: last 2026-10-25, next due in twenty runs.
+- Spend 2026-10-25: about US$12.95 of US$15 (US$1.56 of it the owner's model test and switch). Originality: last 2026-10-25, next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md); [experiment](experiments/claude-reviewers-v1/README.md)). Both roles run side by side. A failed `claude -p` call is retried twice, then recorded as an error: re-run `--roles reviewer-a`. Its model label was fixed 2026-10-25 ([claude-cli-model-label](wiki/notes/claude-cli-model-label.md)).
+- **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
 ## Queue (top-down)
 
@@ -24,7 +25,7 @@
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); the old reviewer A quoted our own text back as Cambridge's, so the search decides.
 3. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and reviewers ask for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*, *travel light*); reject all, with the reason. `verb + adjective` is not a collocation type. The new reviewer A raises many minor issues (2026-10-25 builds: 65 of 77 and 29 of 32 applied): fix the clear ones only.
 4. **closure**: blocked by milestone 1, then paused above band 2 (A3).
-5. **lint**: every ten runs; last 2026-10-25 (eighty-seventh pass), next due in ten runs. Judge the new reviewer A by its own rows (`reviewer-a:claude-sonnet-5-5`), not the old model's all-time figures; the four pairs switched off for the old model are live again, and the 30-percent rule applies to them afresh.
+5. **lint**: every ten runs; last 2026-10-25 (eighty-seventh pass), next due in ten runs. Judge both reviewers by their new rows (`reviewer-a:claude-sonnet-5-5`, `reviewer-b:gemini-4-argon`), not the old models' all-time figures; the 30-percent rule applies afresh.
 6. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`. The wiki is at about 29,800 of 30,000 words: trim before adding.
 
 ## Fences (do not re-grind)
@@ -47,5 +48,5 @@
 - Your ruling of 2026-10-25 is in force: reviewer A is the Claude model, and reviewer B is unchanged. `PROJECT.md` still says "two non-Anthropic reviewers"; a session does not edit the charter, so that line is yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); it stays off until you say. The new model caught all four planted IPA errors.
 - Still open: continent names in definitions; *the former*/*the following* as nouns or pronouns (`wiki/open-questions.md`); pronunciation disputes in `reviews/needs_curator.txt`.
-- **Model test 2026-10-25** ([record](experiments/model-refresh-v1/README.md)): reviewer-b could be Gemini 3.8 Flash (same panel result, a quarter of the cost) or Gemini 4 Argon; pronunciation-1 could be GPT-6.1 Sol. Your choice.
+- Reviewer B's old switch-offs were reset under your reviewer-A rule; say if you want them back.
 - The public site: <https://tkgally.github.io/eex-dict/>.
