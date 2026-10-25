@@ -1,0 +1,97 @@
+{
+ "slug": "compare-v",
+ "issues": [
+  {
+   "id": 1,
+   "valid": "no",
+   "finding": null,
+   "planted": [],
+   "note": "Names a specific trap: than instead of with/to after compare."
+  },
+  {
+   "id": 2,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [
+    "compare-v#1"
+   ],
+   "note": "Compare with/to meaning 'be as good as' is intransitive."
+  },
+  {
+   "id": 3,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [
+    "compare-v#2"
+   ],
+   "note": "Compare someone to someone is standard for likening; note is false."
+  },
+  {
+   "id": 4,
+   "valid": "no",
+   "finding": null,
+   "planted": [],
+   "note": "Fronted 'compared to' is a normal participle use of sense 1."
+  },
+  {
+   "id": 5,
+   "valid": "no",
+   "finding": null,
+   "planted": [],
+   "note": "Same as 4; the example fits the comparing sense."
+  },
+  {
+   "id": 6,
+   "valid": "no",
+   "finding": null,
+   "planted": [],
+   "note": "Examining versus likening are distinct definitions; the split is justified."
+  },
+  {
+   "id": 7,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [
+    "compare-v#1"
+   ],
+   "note": "Filed under definition, but correctly flags the wrong transitivity value."
+  },
+  {
+   "id": 8,
+   "valid": "yes",
+   "finding": "F3",
+   "planted": [
+    "compare-v#3"
+   ],
+   "note": "Brand and store names are banned in examples."
+  },
+  {
+   "id": 9,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [
+    "compare-v#2"
+   ],
+   "note": "Note contradicts sense 2 examples, which use compare ... to."
+  }
+ ],
+ "findings": {
+  "F1": "Sense 3 (compare with/to = be as good as) is marked transitive but is intransitive with a prepositional complement.",
+  "F2": "Usage note falsely says only compare with is correct for the 'say similar' sense, contradicting standard use and the entry's own examples.",
+  "F3": "Sense 1 example names real store brands (Walmart, Target)."
+ },
+ "missed": [
+  "'compare favorably' is listed as a sense 1 collocation but belongs to the intransitive sense 3 (compares favorably with something).",
+  "'compare notes' (share information or opinions) is an idiom listed as a plain sense 1 collocation; it should be a phrase with its own definition."
+ ],
+ "_meta": {
+  "seconds": 22.7,
+  "api_equiv_usd": 0.10937380000000001,
+  "tokens_in": 20950,
+  "cache_read": 11869,
+  "tokens_out": 1718,
+  "thinking": 940,
+  "model_used": "claude-opus-5-5",
+  "is_error": false
+ }
+}

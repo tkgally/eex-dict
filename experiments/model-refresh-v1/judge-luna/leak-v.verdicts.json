@@ -1,0 +1,120 @@
+{
+ "slug": "leak-v",
+ "issues": [
+  {
+   "id": 1,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [
+    "leak-v#1"
+   ],
+   "note": "Leaks are usually deliberate; 'usually by mistake' is wrong."
+  },
+  {
+   "id": 2,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "Use is covered by sense 3; real problem is its definition, not coverage."
+  },
+  {
+   "id": 3,
+   "valid": "no",
+   "finding": null,
+   "planted": [],
+   "note": "GA 'lik' is correct; house convention drops length marks."
+  },
+  {
+   "id": 4,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "No contradiction exists; only the transitive mismatch with the definition is real."
+  },
+  {
+   "id": 5,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [],
+   "note": "Stative 'have a hole' misfits progressive and transitive uses; should define letting out."
+  },
+  {
+   "id": 6,
+   "valid": "yes",
+   "finding": "F3",
+   "planted": [
+    "leak-v#2"
+   ],
+   "note": "Impossible passive; rain is not an agent leaking the roof."
+  },
+  {
+   "id": 7,
+   "valid": "yes",
+   "finding": "F3",
+   "planted": [
+    "leak-v#2"
+   ],
+   "note": "Same impossible passive example."
+  },
+  {
+   "id": 8,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [],
+   "note": "Definition as stated does not fit the transitive explanation and examples."
+  },
+  {
+   "id": 9,
+   "valid": "yes",
+   "finding": "F3",
+   "planted": [
+    "leak-v#2"
+   ],
+   "note": "Example misfits sense and is ungrammatical."
+  },
+  {
+   "id": 10,
+   "valid": "no",
+   "finding": null,
+   "planted": [],
+   "note": "Transitive 'leaked the story' is covered by sense 3 and its examples."
+  },
+  {
+   "id": 11,
+   "valid": "no",
+   "finding": null,
+   "planted": [],
+   "note": "Patterns list transitive uses; intransitive use needs no pattern; grammar is consistent."
+  },
+  {
+   "id": 12,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [],
+   "note": "Right: one definition should cover both container uses."
+  },
+  {
+   "id": 13,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "Grammar values are right; the definition is what needs fixing."
+  }
+ ],
+ "findings": {
+  "F1": "Sense 3 definition says leaking secrets is 'usually by mistake'; it is usually deliberate.",
+  "F2": "Sense 1 definition 'have a small hole' is stative and does not fit the progressive or transitive (leaking air) uses.",
+  "F3": "Sense 1 example 'The roof was leaked by the rain.' is an impossible passive."
+ },
+ "missed": [],
+ "_meta": {
+  "seconds": 33.8,
+  "api_equiv_usd": 0.1361618,
+  "tokens_in": 21091,
+  "cache_read": 11869,
+  "tokens_out": 3001,
+  "thinking": 2095,
+  "model_used": "claude-opus-5-5",
+  "is_error": false
+ }
+}

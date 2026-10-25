@@ -1,0 +1,114 @@
+[
+ {
+  "id": 1,
+  "field": "synonym_discrimination",
+  "quote": "**Crash** is used when a vehicle hits something: *The bus crashed into a wall*.",
+  "severity": "blocking",
+  "family": "synonym-discrimination",
+  "reason": "Crash is not restricted to vehicles; people and objects can also crash into things or into each other."
+ },
+ {
+  "id": 2,
+  "field": "phrases[0].labels",
+  "quote": "British",
+  "severity": "blocking",
+  "family": "label",
+  "reason": "The phrase is also current in American English, so marking it as mainly British is inaccurate."
+ },
+ {
+  "id": 3,
+  "field": "adaptation",
+  "quote": "\"smash\": the breaking sense (*smash a glass*) and the hitting sense (*smash into a tree*) are often two different verbs in other languages. In *smash a record* nothing is destroyed: the record is beaten by a lot.",
+  "severity": "minor",
+  "family": "adaptation",
+  "reason": "This gives generic translation advice rather than identifying a specific learner or translator trap, and “the record is beaten by a lot” is an awkward gloss."
+ },
+ {
+  "id": 4,
+  "field": "examples_fit",
+  "quote": "The police smashed a gang that was stealing cars.",
+  "severity": "blocking",
+  "family": "example-unnatural",
+  "reason": "The example does not naturally illustrate the definition because smash does not normally take gang as its object."
+ },
+ {
+  "id": 5,
+  "field": "coverage",
+  "quote": "“smash a success” / “smash it” meaning succeed or perform very well",
+  "severity": "blocking",
+  "family": "coverage",
+  "reason": "The phrase “smash it” is covered, but the common transitive use smash a task, performance, or opportunity meaning do it very successfully is not clearly covered outside that idiom."
+ },
+ {
+  "id": 6,
+  "field": "core_idea",
+  "quote": "To smash is to hit something with great force, so that it breaks or is beaten.",
+  "severity": "blocking",
+  "family": "definition-meaning",
+  "reason": "This does not cover the senses of destroying hopes or plans, exceeding a record or target, or the informal phrase meaning succeed; being beaten is also not the core meaning."
+ },
+ {
+  "id": 7,
+  "field": "sense_structure",
+  "quote": "senses[0] and senses[1]",
+  "severity": "minor",
+  "family": "sense-structure",
+  "reason": "The first two senses overlap substantially: the break sense already includes breaking by force, while the second sense's examples include impacts that break or damage objects. They need a clearer distinction."
+ },
+ {
+  "id": 8,
+  "field": "examples_fit",
+  "quote": "Their hopes of winning were smashed in the last minute.",
+  "severity": "blocking",
+  "family": "example-unnatural",
+  "reason": "The wording is unnatural; the usual expression is at the last minute."
+ },
+ {
+  "id": 9,
+  "field": "consistency",
+  "quote": "smash into pieces",
+  "severity": "minor",
+  "family": "other",
+  "reason": "This listed collocation conflicts with the sense definition's wording about breaking into many pieces, since “smash into pieces” leaves the object unstated and is not the usual complete pattern."
+ },
+ {
+  "id": 10,
+  "field": "senses[2].examples",
+  "quote": "The police smashed a gang that was stealing cars.",
+  "severity": "blocking",
+  "family": "example-unnatural",
+  "reason": "This is not a natural use of smash with gang as the object; police may smash a criminal ring or organization, but they break up or take down a gang."
+ },
+ {
+  "id": 11,
+  "field": "senses[2].collocations",
+  "quote": "smash a gang",
+  "severity": "blocking",
+  "family": "collocation",
+  "reason": "This is not a typical collocation; use smash a criminal ring or organization, or break up a gang."
+ },
+ {
+  "id": 12,
+  "field": "senses[2].examples",
+  "quote": "Their hopes of winning were smashed in the last minute.",
+  "severity": "blocking",
+  "family": "example-unnatural",
+  "reason": "The fixed time expression is normally at the last minute, not in the last minute."
+ },
+ {
+  "id": 13,
+  "field": "senses[1].subsenses[0].definition",
+  "quote": "hit a ball that is high in the air down very hard toward the other player",
+  "severity": "blocking",
+  "family": "definition-meaning",
+  "reason": "The definition is too narrow and misleading: the smash is a shot directed steeply downward, not simply a hard hit toward the other player."
+ },
+ {
+  "id": 14,
+  "field": "senses[1].grammar",
+  "quote": "verb + adverb or preposition",
+  "severity": "blocking",
+  "family": "grammar-code",
+  "reason": "The construction shown in the examples and collocations is verb + preposition; the closed-list code incorrectly includes adverbs."
+ }
+]

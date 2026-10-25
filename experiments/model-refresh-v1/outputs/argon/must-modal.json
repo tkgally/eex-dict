@@ -1,0 +1,400 @@
+{
+ "arm": "argon",
+ "model": "google/gemini-4-argon",
+ "slug": "must-modal",
+ "seconds": 31.5,
+ "cost_usd": 0.036158,
+ "tokens_in": 5699,
+ "tokens_out": 2476,
+ "finish": "stop",
+ "text": "{\"verdicts\": [{\"field\": \"headword_and_pos\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"variants\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"pronunciation.american\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"pronunciation.british\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"inflections\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"core_idea\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].grammar\", \"verdict\": \"issue\", \"quote\": \"verb + to-infinitive\", \"severity\": \"blocking\", \"family\": \"grammar-code\", \"reason\": \"The modal 'must' takes a bare infinitive ('verb + bare infinitive'), never a to-infinitive.\"}, {\"field\": \"senses[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].cross_references\", \"verdict\": \"issue\", \"quote\": \"shall-modal\", \"severity\": \"minor\", \"family\": \"cross-reference\", \"reason\": \"For intermediate/advanced learners in general English, 'shall' is not a true synonym of 'must' (that use is restricted to formal legal/contractual writing) and is misleading without a note.\"}, {\"field\": \"senses[0].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].examples\", \"verdict\": \"issue\", \"quote\": \"You must hand in your homework by Friday.\", \"severity\": \"blocking\", \"family\": \"example-unnatural\", \"reason\": \"This example expresses obligation (sense 1), not logical deduction/certainty (sense 2).\"}, {\"field\": \"senses[1].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].text_and_placement\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].text_and_placement\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"word_family\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"synonym_discrimination\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"usage_note\", \"verdict\": \"issue\", \"quote\": \"e.g. *I had to leave early*\", \"severity\": \"blocking\", \"family\": \"spelling-or-format\", \"reason\": \"House rules forbid abbreviations such as 'e.g.' anywhere in prose.\"}, {\"field\": \"usage_note\", \"verdict\": \"issue\", \"quote\": \"**Must not** (**mustn't**) and **do not have to** are opposite in meaning, and learners often confuse them. *You must not park here* means it is forbidden; *you don't have to park here* means it is not necessary, but you may. **Must** has no past or future form: use **had to** for the past, e.g. *I had to leave early* and **will have to** for the future.\", \"severity\": \"minor\", \"family\": \"usage-note\", \"reason\": \"Notes discipline: every fact in this note (mustn't vs don't have to, no past form / use had to) is also stated in senses[0].explanation, learner_errors, and adaptation.grammar.\"}, {\"field\": \"learner_errors\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"etymology\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"see_also\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"adaptation\", \"verdict\": \"issue\", \"quote\": \"For past necessity English uses **had to**. **Must not** forbids, while **do not have to** means something is not necessary, so the two are opposite.\", \"severity\": \"minor\", \"family\": \"adaptation\", \"reason\": \"Notes discipline: these facts are already stated in senses[0].explanation, usage_note, and learner_errors; one fact should live in one field.\"}, {\"field\": \"sense_structure\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"verb + to-infinitive\", \"severity\": \"blocking\", \"family\": \"grammar-code\", \"reason\": \"senses[0].grammar lists 'verb + to-infinitive', contradicting the examples ('verb + bare infinitive'), learner_errors ('followed by the base form of a verb without to'), and adaptation.grammar ('no to after it').\"}, {\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"**Must** has no past form: for the past, use **had to**.\", \"severity\": \"minor\", \"family\": \"other\", \"reason\": \"The lack of a past form (using 'had to' instead) and the contrast between 'must not' and 'do not have to' are repeated across senses[0].explanation, usage_note, learner_errors, and adaptation.grammar, and similarly the 'cannot' contrast is repeated across senses[1].explanation, senses[1].compare, and adaptation.semantic.\"}, {\"field\": \"coverage\", \"verdict\": \"issue\", \"quote\": \"must not / mustn't (used to say that something is forbidden or must not be done)\", \"severity\": \"minor\", \"family\": \"coverage\", \"reason\": \"While mentioned in notes, negative prohibition ('You must not / mustn't do that') is not explicitly covered in the definition or examples of sense 1, nor is the common spoken emphatic use ('I must say / admit / confess').\"}, {\"field\": \"examples_fit\", \"verdict\": \"issue\", \"quote\": \"You must hand in your homework by Friday.\", \"severity\": \"blocking\", \"family\": \"example-unnatural\", \"reason\": \"Placed under sense 2 ('almost certainly true'), but it expresses obligation (sense 1).\"}], \"summary\": \"Blocking issues: senses[0].grammar wrongly gives the pattern 'verb + to-infinitive' (contradicting the rest of the entry), senses[1].examples includes an obligation example under the deduction sense, and usage_note uses the forbidden abbreviation 'e.g.'. In addition, several grammar and usage facts are repeated across multiple note fields, and 'shall' is listed as an unqualified synonym of 'must'.\"}",
+ "model_used": "google/gemini-4-argon",
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "issue",
+   "quote": "verb + to-infinitive",
+   "severity": "blocking",
+   "family": "grammar-code",
+   "reason": "The modal 'must' takes a bare infinitive ('verb + bare infinitive'), never a to-infinitive."
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "issue",
+   "quote": "shall-modal",
+   "severity": "minor",
+   "family": "cross-reference",
+   "reason": "For intermediate/advanced learners in general English, 'shall' is not a true synonym of 'must' (that use is restricted to formal legal/contractual writing) and is misleading without a note."
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "issue",
+   "quote": "You must hand in your homework by Friday.",
+   "severity": "blocking",
+   "family": "example-unnatural",
+   "reason": "This example expresses obligation (sense 1), not logical deduction/certainty (sense 2)."
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].text_and_placement",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].text_and_placement",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "issue",
+   "quote": "e.g. *I had to leave early*",
+   "severity": "blocking",
+   "family": "spelling-or-format",
+   "reason": "House rules forbid abbreviations such as 'e.g.' anywhere in prose."
+  },
+  {
+   "field": "usage_note",
+   "verdict": "issue",
+   "quote": "**Must not** (**mustn't**) and **do not have to** are opposite in meaning, and learners often confuse them. *You must not park here* means it is forbidden; *you don't have to park here* means it is not necessary, but you may. **Must** has no past or future form: use **had to** for the past, e.g. *I had to leave early* and **will have to** for the future.",
+   "severity": "minor",
+   "family": "usage-note",
+   "reason": "Notes discipline: every fact in this note (mustn't vs don't have to, no past form / use had to) is also stated in senses[0].explanation, learner_errors, and adaptation.grammar."
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "issue",
+   "quote": "For past necessity English uses **had to**. **Must not** forbids, while **do not have to** means something is not necessary, so the two are opposite.",
+   "severity": "minor",
+   "family": "adaptation",
+   "reason": "Notes discipline: these facts are already stated in senses[0].explanation, usage_note, and learner_errors; one fact should live in one field."
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "verb + to-infinitive",
+   "severity": "blocking",
+   "family": "grammar-code",
+   "reason": "senses[0].grammar lists 'verb + to-infinitive', contradicting the examples ('verb + bare infinitive'), learner_errors ('followed by the base form of a verb without to'), and adaptation.grammar ('no to after it')."
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "**Must** has no past form: for the past, use **had to**.",
+   "severity": "minor",
+   "family": "other",
+   "reason": "The lack of a past form (using 'had to' instead) and the contrast between 'must not' and 'do not have to' are repeated across senses[0].explanation, usage_note, learner_errors, and adaptation.grammar, and similarly the 'cannot' contrast is repeated across senses[1].explanation, senses[1].compare, and adaptation.semantic."
+  },
+  {
+   "field": "coverage",
+   "verdict": "issue",
+   "quote": "must not / mustn't (used to say that something is forbidden or must not be done)",
+   "severity": "minor",
+   "family": "coverage",
+   "reason": "While mentioned in notes, negative prohibition ('You must not / mustn't do that') is not explicitly covered in the definition or examples of sense 1, nor is the common spoken emphatic use ('I must say / admit / confess')."
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "issue",
+   "quote": "You must hand in your homework by Friday.",
+   "severity": "blocking",
+   "family": "example-unnatural",
+   "reason": "Placed under sense 2 ('almost certainly true'), but it expresses obligation (sense 1)."
+  }
+ ],
+ "parse_error": null,
+ "summary": "Blocking issues: senses[0].grammar wrongly gives the pattern 'verb + to-infinitive' (contradicting the rest of the entry), senses[1].examples includes an obligation example under the deduction sense, and usage_note uses the forbidden abbreviation 'e.g.'. In addition, several grammar and usage facts are repeated across multiple note fields, and 'shall' is listed as an unqualified synonym of 'must'."
+}
