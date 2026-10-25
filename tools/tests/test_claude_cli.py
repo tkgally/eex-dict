@@ -98,6 +98,12 @@ class ClaudeCliTests(unittest.TestCase):
         self.assertEqual(openrouter.reasoning_for(SLUG, "pronunciation"), {"effort": "low"})
         self.assertEqual(openrouter.reasoning_for("openai/gpt-5.6-terra"), {"enabled": False})
 
+    def test_reasoning_required_endpoints_run_at_low_effort(self):
+        for task in ("review", "pronunciation", "wordlist"):
+            self.assertEqual(openrouter.reasoning_for("google/gemini-4-argon", task), {"effort": "low"})
+            self.assertEqual(openrouter.reasoning_for("openai/gpt-6.1-sol", task), {"effort": "low"})
+            self.assertEqual(openrouter.reasoning_for("deepseek/deepseek-v4-pro", task), {"enabled": False})
+
     def test_budget_records_zero_cost_with_tokens(self):
         with tempfile.TemporaryDirectory() as tmp:
             ledger = Path(tmp) / "ledger.json"

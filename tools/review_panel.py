@@ -41,11 +41,11 @@ DEFAULT_ROLES = ["reviewer-a", "reviewer-b"]
 # reviewer-a changed model on 2026-10-25 (wiki/decisions/reviewer-a-claude.md): the four pairs the lint runs had
 # switched off for its old model (example-policy, grammar-code, sense-structure, inflection) are live again and
 # are measured afresh; the pronunciation pair is the owner's ruling of 2026-10-05 and stays until the owner rules.
+# reviewer-b changed model the same day (wiki/decisions/model-refresh-2026-10-25.md): by the same rule its three
+# lint switch-offs for the old Gemini models (example-policy 0.05 over 83, explanation 0.24 over 21, inflection
+# 0.10 over 21) are live again and measured afresh.
 DISABLED_FAMILIES = {
     ("reviewer-a", "pronunciation"),    # 0.26 over 208 (old model); switched off by the owner's ruling of 2026-10-05
-    ("reviewer-b", "example-policy"),   # 0.05 over 83
-    ("reviewer-b", "explanation"),      # 0.24 over 21
-    ("reviewer-b", "inflection"),       # 0.10 over 21; switched off by the 2026-10-09 lint run
 }
 
 SYSTEM = """You are a senior lexicographer checking an entry of an English-English learner's dictionary for intermediate and advanced learners (CEFR B1 to C2). American English is the dictionary's primary variety; British forms are recorded in variant fields. The entry was written by a language model and must be checked field by field for factual and linguistic correctness, not for taste. You answer with JSON only.

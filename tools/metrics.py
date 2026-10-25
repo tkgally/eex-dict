@@ -115,6 +115,12 @@ def spend_stats(rid: str) -> dict:
     return {"spend_today_usd": round(float(led.get("spent_usd", 0.0)), 4), "spend_run_usd": round(run, 4)}
 
 
+# Models whose decision lines are reported apart from their role's all-time figures, because the role
+# changed model to them: reviewer-a (wiki/decisions/reviewer-a-claude.md) and reviewer-b
+# (wiki/decisions/model-refresh-2026-10-25.md), both on 2026-10-25.
+MODELS_REPORTED_APART = ("claude-cli/", "google/gemini-4-argon")
+
+
 def precision_report() -> None:
     """By role and family. A role whose model changed is reported per model: decision lines carry "model"
     from 2026-10-25; reviewer-a lines without one are its old model (wiki/decisions/reviewer-a-claude.md)."""
@@ -122,8 +128,8 @@ def precision_report() -> None:
     for d in read_jsonl(eexlib.ROOT / "reviews" / "decisions.jsonl"):
         n = int(d.get("n", 1) or 1)
         role = d.get("role", "?")
-        if d.get("model") and str(d["model"]).startswith("claude-cli/"):
-            role = f"{role}:{str(d['model'])[len('claude-cli/'):]}"
+        if d.get("model") and str(d["model"]).startswith(MODELS_REPORTED_APART):
+            role = f"{role}:{str(d['model']).split('/', 1)[1]}"
         by[(role, d.get("family", "?"))][d.get("decision", "")] += n
         by[(role, "ALL")][d.get("decision", "")] += n
     w = max([12] + [len(r) for r, _f in by])

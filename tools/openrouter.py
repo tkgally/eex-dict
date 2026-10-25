@@ -27,7 +27,7 @@ HTTPS_PROXY and the SSL_CERT_FILE bundle by itself; TLS verification stays on.
 
 CLI
     python3 tools/openrouter.py --role reviewer-a --prompt "Say OK" [--max-tokens 20] [--json]
-    python3 tools/openrouter.py --model openai/gpt-5.6-terra --prompt "..."
+    python3 tools/openrouter.py --model openai/gpt-6.1-sol --prompt "..."
     python3 tools/openrouter.py --list-roles
 
 A CLI call goes through call_with_budget, so it is refused when the estimate
@@ -471,6 +471,11 @@ def _load_spend():
     return mod
 
 
+# Slug prefixes whose endpoints answer HTTP 400 to reasoning {"enabled": false}: Google (2026-09-16)
+# and GPT-6.1 Sol ("Reasoning is mandatory for this endpoint", 2026-10-25).
+REASONING_REQUIRED = ("google/", "openai/gpt-6.1-sol")
+
+
 def reasoning_for(model_slug: str, task: str = "review") -> dict:
     """The reasoning setting a call needs to answer within its output budget.
 
@@ -478,20 +483,18 @@ def reasoning_for(model_slug: str, task: str = "review") -> dict:
     listing and transcription tasks ("pronunciation", "wordlist") no reasoning
     is needed and it is switched off for every model (probe of 2026-09-16: GPT-5.6
     Terra then answers at a third of the cost with the same transcriptions).
-    For reviews, DeepSeek models spend the whole output budget on hidden
-    reasoning unless it is switched off; the others review at low effort.
+    For reviews it is switched off too (DeepSeek models otherwise spend the whole
+    output budget on hidden reasoning). Endpoints in REASONING_REQUIRED refuse to
+    switch it off and run at low effort; a claude-cli reviewer runs at high effort.
     """
     if is_claude_cli(model_slug):
         # Claude via `claude -p` (ruling of 2026-10-25): reviews need real thinking; at default effort
         # the experiment's reviewer barely reasoned and its precision fell (experiments/claude-reviewers-v1).
         return {"effort": "low"} if task in ("pronunciation", "wordlist") else {"effort": "high"}
-    if task in ("pronunciation", "wordlist"):
-        # Google endpoints refuse to disable reasoning (HTTP 400, 2026-09-16); at low effort they
-        # answer these tasks with no reasoning tokens anyway.
-        return {"effort": "low"} if model_slug.startswith("google/") else {"enabled": False}
-    # Reviews: hidden reasoning is billed as output and counts against max_tokens; the closed
-    # checklist does not need it. Google endpoints refuse to disable it, so they run at low effort.
-    return {"effort": "low"} if model_slug.startswith("google/") else {"enabled": False}
+    # Reviews and panels: hidden reasoning is billed as output and counts against max_tokens; the
+    # closed checklists and transcriptions do not need it. At low effort the refusing endpoints
+    # answer within the same output budget (experiments/model-refresh-v1).
+    return {"effort": "low"} if model_slug.startswith(REASONING_REQUIRED) else {"enabled": False}
 
 
 def model_for(role_or_model: str, models_md: Path | None = None) -> str:
