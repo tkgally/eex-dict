@@ -1,0 +1,130 @@
+[
+ {
+  "id": 1,
+  "field": "learner_errors",
+  "quote": "I looked for the word in the dictionary.",
+  "severity": "blocking",
+  "family": "learner-error",
+  "reason": "This sentence is grammatical; look for means searching, so it is not an error and the \"incorrect\" label is false."
+ },
+ {
+  "id": 2,
+  "field": "learner_errors",
+  "quote": "I looked for the word in the dictionary.",
+  "severity": "blocking",
+  "family": "learner-error",
+  "reason": "This sentence is correct English meaning a search; it is not a real error, and the 'correction' changes the meaning."
+ },
+ {
+  "id": 3,
+  "field": "senses[0].cross_references",
+  "quote": "look-for-phrv",
+  "severity": "blocking",
+  "family": "cross-reference",
+  "reason": "Look for means try to find, not consult a source; it is not a synonym and the entry's own learner-error note contrasts the two."
+ },
+ {
+  "id": 4,
+  "field": "pronunciation.american",
+  "quote": "ˈlʊk ˌʌp",
+  "severity": "blocking",
+  "family": "pronunciation",
+  "reason": "Primary stress is on look, but house practice and the entry's own note put it on the particle: ˌlʊk ˈʌp."
+ },
+ {
+  "id": 5,
+  "field": "pronunciation.american",
+  "quote": "ˈlʊk ˌʌp",
+  "severity": "blocking",
+  "family": "pronunciation",
+  "reason": "Primary stress falls on look, which contradicts the pronunciation note (\"The stress is on up\") and the house particle-stress practice for phrasal verbs."
+ },
+ {
+  "id": 6,
+  "field": "senses[0].definition",
+  "quote": "look for",
+  "severity": "minor",
+  "family": "definition-vocabulary",
+  "reason": "The definition uses look for, the verb the learner_errors note says is a different meaning, which invites confusion."
+ },
+ {
+  "id": 7,
+  "field": "core_idea",
+  "quote": "or an old friend",
+  "severity": "minor",
+  "family": "other",
+  "reason": "The line lists an old friend under \"finding something\", but that item is the visit sense, so the sentence muddles the senses."
+ },
+ {
+  "id": 8,
+  "field": "adaptation",
+  "quote": "In the find-information and visit senses a pronoun goes in the middle: *look it up*, *look me up*, never *look up it*.",
+  "severity": "minor",
+  "family": "adaptation",
+  "reason": "Restates the learner-error note about pronoun position; one fact should live in one field."
+ },
+ {
+  "id": 9,
+  "field": "senses[0].definition",
+  "quote": "on a computer",
+  "severity": "minor",
+  "family": "definition-meaning",
+  "reason": "The example \"looked his number up in her phone\" falls under this sense, but the definition names only a computer."
+ },
+ {
+  "id": 10,
+  "field": "senses[3].definition",
+  "quote": "visit someone you have not seen for a long time, while you are in the place where they live",
+  "severity": "blocking",
+  "family": "definition-meaning",
+  "reason": "Too narrow: look someone up also applies to people seen recently or never met, and the 'not seen for a long time' condition is not required; it also uses 'visit', which is the head of the synonym."
+ },
+ {
+  "id": 11,
+  "field": "consistency",
+  "quote": "The stress is on **up**.",
+  "severity": "blocking",
+  "family": "pronunciation",
+  "reason": "The note contradicts the American IPA, which puts primary stress on look."
+ },
+ {
+  "id": 12,
+  "field": "learner_errors",
+  "quote": "With a pronoun, the pronoun goes between **look** and **up**.",
+  "severity": "minor",
+  "family": "learner-error",
+  "reason": "The same fact is repeated in the entry-level grammar adaptation note."
+ },
+ {
+  "id": 13,
+  "field": "consistency",
+  "quote": "In the find-information and visit senses a pronoun goes in the middle",
+  "severity": "minor",
+  "family": "usage-note",
+  "reason": "The entry-level grammar adaptation repeats the pronoun-placement fact already stated in learner_errors; one fact should live in one field."
+ },
+ {
+  "id": 14,
+  "field": "core_idea",
+  "quote": "is mainly about raising your eyes or finding something",
+  "severity": "minor",
+  "family": "sense-structure",
+  "reason": "Lists the eye-raising sense first, but the senses start with finding information, the most useful sense."
+ },
+ {
+  "id": 15,
+  "field": "senses[0].cross_references",
+  "quote": "look-for-phrv",
+  "severity": "minor",
+  "family": "cross-reference",
+  "reason": "Look for is a confusable verb, not a synonym of this sense, and the null note leaves the learner without the difference."
+ },
+ {
+  "id": 16,
+  "field": "senses[0].collocations",
+  "quote": "look up the times",
+  "severity": "minor",
+  "family": "collocation",
+  "reason": "\"the times\" reads as the newspaper; the typical phrase is \"look up the train times\" or \"look up a time\"."
+ }
+]

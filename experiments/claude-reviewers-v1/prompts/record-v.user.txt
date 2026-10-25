@@ -1,0 +1,346 @@
+Check every field of this entry. For EACH field name in the checklist return one verdict object, including every field that is fine (verdict "ok"): your verdicts list must contain at least 45 objects, one or more per field. Check each field as closely as if you were listing only problems: "ok" means you found nothing wrong. Fields: headword_and_pos, variants, pronunciation.american, pronunciation.british, inflections, labels, core_idea, senses[0].signpost, senses[0].definition, senses[0].explanation, senses[0].grammar, senses[0].labels, senses[0].examples, senses[0].collocations, senses[0].cross_references, senses[0].adaptation, senses[1].signpost, senses[1].definition, senses[1].explanation, senses[1].grammar, senses[1].labels, senses[1].examples, senses[1].collocations, senses[1].cross_references, senses[1].adaptation, senses[2].signpost, senses[2].definition, senses[2].explanation, senses[2].grammar, senses[2].labels, senses[2].examples, senses[2].collocations, senses[2].cross_references, senses[2].adaptation, word_family, synonym_discrimination, usage_note, learner_errors, etymology, see_also, adaptation, sense_structure, consistency, coverage, examples_fit.
+
+Return JSON of the form {"verdicts": [{"field": "<name from the checklist>", "verdict": "ok" | "issue", "quote": "<exact text objected to, or null>", "severity": "blocking" | "minor" | null, "family": "<one of: definition-meaning, definition-style, definition-vocabulary, explanation, example-unnatural, example-grammar, example-policy, grammar-code, label, collocation, cross-reference, learner-error, synonym-discrimination, usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, coverage, other>" | null, "reason": "<one line, or null>"}], "summary": "<one or two sentences>"}. A field with several problems gets several objects with the same field name. "sense_structure" is the verdict on the set of senses as a whole (missing, over-split, misordered); "headword_and_pos" is whether the headword, part of speech, and homograph split are right and whether every sense and every use described belongs to this part of speech; "consistency" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note against the grammar values, a claim made twice in two ways); "cross_references" covers synonyms, antonyms, and compare of that sense; "coverage" and "examples_fit" are the two required checks described in the house rules.
+
+ENTRY (JSON):
+{
+ "schema_version": "1.0",
+ "slug": "record-v",
+ "headword": "record",
+ "pos": "v",
+ "homograph": 1,
+ "variants": [],
+ "pronunciation": {
+  "american": {
+   "ipa": "ˈrɛk.ɚd"
+  },
+  "british": {
+   "ipa": "rɪˈkɔːd"
+  },
+  "variants": [],
+  "audio": null,
+  "notes": "The verb is stressed on the second syllable; the noun **record** is stressed on the first."
+ },
+ "inflections": {
+  "forms": {
+   "third_person_singular": "records",
+   "past_tense": "recorded",
+   "past_participle": "recorded",
+   "present_participle": "recording"
+  },
+  "note": null
+ },
+ "frequency": {
+  "band": 1,
+  "basis": "editorial",
+  "defining_vocabulary": true
+ },
+ "labels": {
+  "register": [],
+  "region": [],
+  "domain": [],
+  "currency": [],
+  "attitude": []
+ },
+ "core_idea": "To **record** something is to keep it, in writing, in sound or pictures, or as a measured number, so that it can be known later.",
+ "senses": [
+  {
+   "n": 1,
+   "signpost": "write down",
+   "definition": "write down or store information so that it can be known later",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": "transitive",
+    "codes": [],
+    "patterns": [
+     "verb + object",
+     "verb + that-clause",
+     "verb + wh-clause"
+    ]
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "The nurse recorded his temperature every hour.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "Record everything you spend in this notebook.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "The diary records that it rained for a whole week.",
+     "note": null,
+     "pattern": "verb + that-clause"
+    },
+    {
+     "text": "Her name is not recorded anywhere.",
+     "note": "passive",
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "verb + noun",
+     "items": [
+      "record the details",
+      "record the results",
+      "record a temperature",
+      "record a birth"
+     ]
+    },
+    {
+     "type": "adverb + verb",
+     "items": [
+      "officially recorded",
+      "carefully recorded",
+      "accurately recorded"
+     ]
+    }
+   ],
+   "synonyms": [
+    {
+     "slug": "write-down-phrv",
+     "note": null
+    },
+    {
+     "slug": "note-v",
+     "note": null
+    },
+    {
+     "slug": "take-down-phrv",
+     "note": null
+    },
+    {
+     "slug": "take-v",
+     "note": "only in phrases such as *take notes* and *take a measurement*"
+    },
+    {
+     "slug": "document-v",
+     "note": null
+    }
+   ],
+   "antonyms": [],
+   "compare": [
+    {
+     "slug": "register-v",
+     "note": "you **register** a birth or a car with an official body; the official then records it"
+    }
+   ],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 2,
+   "signpost": "sound or video",
+   "definition": "keep a copy of sounds, or of something as it happens, using a phone, a camera, or other equipment, so that people can listen to it or watch it later",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": "transitive or intransitive",
+    "codes": [],
+    "patterns": [
+     "verb + object",
+     "verb + object + -ing form"
+    ]
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "We recorded the whole concert on my phone.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "The band is recording a new album.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "Is this thing recording?",
+     "note": "no object",
+     "pattern": null
+    },
+    {
+     "text": "Sam recorded his grandmother telling stories from her childhood.",
+     "note": null,
+     "pattern": "verb + object + -ing form"
+    }
+   ],
+   "collocations": [
+    {
+     "type": "verb + noun",
+     "items": [
+      "record a song",
+      "record an album",
+      "record a message",
+      "record a conversation",
+      "record a photo",
+      "record a call"
+     ]
+    },
+    {
+     "type": "verb + preposition",
+     "items": [
+      "record something on video",
+      "record something on your phone"
+     ]
+    },
+    {
+     "type": "adverb + verb",
+     "items": [
+      "secretly recorded",
+      "digitally recorded"
+     ]
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "compare": [
+    {
+     "slug": "film-v",
+     "note": "**film** is for moving pictures, with or without sound; record also covers sound alone"
+    },
+    {
+     "slug": "tape-v",
+     "note": "**tape** is the older word, from the days of tape machines"
+    }
+   ],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 3,
+   "signpost": "measure",
+   "definition": "show a measurement, or reach a result that is then noted officially",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": "transitive",
+    "codes": [],
+    "patterns": [
+     "verb + object"
+    ]
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "The thermometer recorded the highest temperature of the year.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "Instruments on the roof record the wind speed all day.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "The company recorded a small loss this year.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "The runner recorded her best time of the season.",
+     "note": null,
+     "pattern": "verb + object"
+    }
+   ],
+   "collocations": [
+    {
+     "type": "verb + noun",
+     "items": [
+      "record a temperature",
+      "record a loss",
+      "record a profit",
+      "record a time",
+      "record a win"
+     ]
+    },
+    {
+     "type": "noun + verb",
+     "items": [
+      "an instrument records",
+      "a sensor records"
+     ]
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  }
+ ],
+ "phrases": [],
+ "word_family": [
+  {
+   "slug": "record-n",
+   "form": null,
+   "note": "the noun, stressed on the first syllable"
+  },
+  {
+   "slug": "recording-n",
+   "form": null,
+   "note": null
+  },
+  {
+   "slug": "recorder-n",
+   "form": null,
+   "note": null
+  }
+ ],
+ "synonym_discrimination": null,
+ "usage_note": "**Record** is stressed on the second syllable as a verb, *re-CORD*, and on the first as a noun, *REC-ord*. In the sound sense, you *record a song, a message, or a conversation*; the thing you make is a **recording**, not a **record**, unless it is a vinyl disc.",
+ "learner_errors": [],
+ "etymology": null,
+ "see_also": [],
+ "adaptation": {
+  "semantic": "Many languages use different verbs for writing something down, for capturing sound or video, and for an instrument measuring a level. Check which verb each sense needs; the sound sense often has a verb of its own.",
+  "grammar": "Transitive in the writing sense: *record something*, *record that something happened*. In the sound sense it is also used without an object: *the camera is recording*. *Record someone doing something* means capture them on sound or video.",
+  "culture": null,
+  "false_friends": "In some languages a look-alike verb means remember or remind. English **record** never means remember; it means keep something in writing, in sound, or in pictures.",
+  "pronunciation": "Stress the second syllable, *re-CORD*, and say the first syllable quickly and lightly. The noun **record** stresses the first syllable instead, *REC-ord*. Do not give both syllables equal weight."
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "slug": "local-adj",
+ "issues": [
+  {
+   "id": 1,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "Note is muddled, but a real trap (home versus place meant) exists."
+  },
+  {
+   "id": 2,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [
+    "local-adj#1"
+   ],
+   "note": "Plural children needs go."
+  },
+  {
+   "id": 3,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "Examples are fine; the reversed definition is the real fault."
+  },
+  {
+   "id": 4,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [
+    "local-adj#3"
+   ],
+   "note": "Medical local means one part only; the definition is reversed."
+  },
+  {
+   "id": 5,
+   "valid": "yes",
+   "finding": "F4",
+   "planted": [],
+   "note": "Duplicates the usage note on the noun local; one fact, one field."
+  },
+  {
+   "id": 6,
+   "valid": "yes",
+   "finding": "F4",
+   "planted": [],
+   "note": "Room-or-building fact stated in three fields."
+  },
+  {
+   "id": 7,
+   "valid": "yes",
+   "finding": "F5",
+   "planted": [],
+   "note": "Four words exceeds the one-to-three-word signpost rule."
+  },
+  {
+   "id": 8,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [
+    "local-adj#3"
+   ],
+   "note": "Same reversed definition, contradicting the core idea, signpost, and examples."
+  },
+  {
+   "id": 9,
+   "valid": "yes",
+   "finding": "F3",
+   "planted": [
+    "local-adj#2"
+   ],
+   "note": "Date and statistic are barred checkable facts."
+  }
+ ],
+ "findings": {
+  "F1": "Subject-verb agreement error in sense 1 example 'Our children goes'.",
+  "F2": "Sense 3 definition reversed: says whole body instead of one part.",
+  "F3": "Sense 2 example contains a checkable date and turnout statistic.",
+  "F4": "The fact that the noun local is not a room or building is repeated across the usage note, learner error, and false-friends adaptation.",
+  "F5": "Sense 3 signpost 'part of the body' is four words, over the limit."
+ },
+ "missed": [
+  "Coverage: the common American use of a local train or bus that stops at every station (versus express) is not covered."
+ ],
+ "_meta": {
+  "seconds": 21.9,
+  "api_equiv_usd": 0.1047138,
+  "tokens_in": 20755,
+  "cache_read": 11869,
+  "tokens_out": 1563,
+  "thinking": 828,
+  "model_used": "opus",
+  "is_error": false
+ }
+}

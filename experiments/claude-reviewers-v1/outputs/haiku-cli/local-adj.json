@@ -1,0 +1,379 @@
+{
+ "arm": "haiku-cli",
+ "model": "claude-haiku-5-5",
+ "slug": "local-adj",
+ "text": "{\"verdicts\": [\n{\"field\": \"headword_and_pos\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Headword local, adjective, homograph 1; all three senses are adjective senses. The noun is handled by local-n in word_family.\"},\n{\"field\": \"variants\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No variant spellings or forms are needed.\"},\n{\"field\": \"pronunciation.american\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"ˈloʊ.kəl is a plausible General American transcription with stress on the first syllable.\"},\n{\"field\": \"pronunciation.british\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"ˈləʊ.kəl is a plausible British transcription.\"},\n{\"field\": \"inflections\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No inflected forms are needed; the note records the comparative with more.\"},\n{\"field\": \"labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No entry-level labels are needed for a neutral, general adjective.\"},\n{\"field\": \"core_idea\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The core idea correctly describes all three senses, including one part of the body. The conflict is with sense 3's definition, which is reported there.\"},\n{\"field\": \"senses[0].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"near you is a short, accurate signpost.\"},\n{\"field\": \"senses[0].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Correct meaning, in plain words, though the or-chain is slightly heavy.\"},\n{\"field\": \"senses[0].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable; no explanation is needed.\"},\n{\"field\": \"senses[0].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Adjective with no countability or transitivity; the comparative code fits a gradable sense.\"},\n{\"field\": \"senses[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All label fields are empty, which is right for this sense.\"},\n{\"field\": \"senses[0].examples\", \"verdict\": \"issue\", \"quote\": \"Our children goes to the local school.\", \"severity\": \"blocking\", \"family\": \"example-grammar\", \"reason\": \"Subject-verb agreement error: plural children needs goes changed to go. Learners would copy it.\"},\n{\"field\": \"senses[0].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The adjective-noun items (local area, local people, local news, local time) are typical.\"},\n{\"field\": \"senses[0].cross_references\", \"verdict\": \"issue\", \"quote\": \"foreign-adj\", \"severity\": \"minor\", \"family\": \"cross-reference\", \"reason\": \"Foreign contrasts with local in a national sense, not with near you. The opposite of this sense is closer to distant or far away.\"},\n{\"field\": \"senses[0].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation fields are null, which is acceptable here.\"},\n{\"field\": \"senses[1].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"government is a clear signpost for this sense.\"},\n{\"field\": \"senses[1].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Accurately states that the sense covers a town or area rather than the whole country.\"},\n{\"field\": \"senses[1].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable.\"},\n{\"field\": \"senses[1].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Attributive-only and not gradable match the sense's use before nouns.\"},\n{\"field\": \"senses[1].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No labels are needed.\"},\n{\"field\": \"senses[1].examples\", \"verdict\": \"issue\", \"quote\": \"Local elections were held on May 5, 2022, and only 31 percent of voters took part.\", \"severity\": \"blocking\", \"family\": \"example-policy\", \"reason\": \"Gives a specific date and a statistic, which are checkable real-world facts the house rules forbid in examples.\"},\n{\"field\": \"senses[1].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"local government, local election, local taxes, local council and local authority are typical collocations.\"},\n{\"field\": \"senses[1].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"National and central are the right contrasts for local government.\"},\n{\"field\": \"senses[1].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation fields are null.\"},\n{\"field\": \"senses[2].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The signpost part of the body is right for the medical sense; the defining problem is in the definition.\"},\n{\"field\": \"senses[2].definition\", \"verdict\": \"issue\", \"quote\": \"affecting the whole body, not only one part\", \"severity\": \"blocking\", \"family\": \"definition-meaning\", \"reason\": \"Inverted meaning. Local in this sense means affecting one part of the body, not the whole body. The definition contradicts the signpost, the core idea, and the examples.\"},\n{\"field\": \"senses[2].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable.\"},\n{\"field\": \"senses[2].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Not gradable is right for this medical sense.\"},\n{\"field\": \"senses[2].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The medicine domain label fits.\"},\n{\"field\": \"senses[2].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Both examples are natural and show the intended one-part meaning. Their fit with the stated definition is judged under examples_fit.\"},\n{\"field\": \"senses[2].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"a local anesthetic and a local infection are typical.\"},\n{\"field\": \"senses[2].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"general is the right contrast for a local anesthetic.\"},\n{\"field\": \"senses[2].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation fields are null.\"},\n{\"field\": \"word_family\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"locally and local-n are the real derived forms that matter for learners.\"},\n{\"field\": \"synonym_discrimination\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable.\"},\n{\"field\": \"usage_note\", \"verdict\": \"issue\", \"quote\": \"Neither means a room or a building.\", \"severity\": \"blocking\", \"family\": \"usage-note\", \"reason\": \"Contradicts the sentence before it, which says that in British English a local can be a bar, and a bar is a building. The note is misleading as written.\"},\n{\"field\": \"learner_errors\", \"verdict\": \"issue\", \"quote\": \"We rented a local for our new shop.\", \"severity\": \"minor\", \"family\": \"learner-error\", \"reason\": \"This is an invented error that learners are unlikely to make. The same non-meaning is already stated in the usage note and the adaptation note, so the field only repeats them.\"},\n{\"field\": \"etymology\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable; no origin is needed.\"},\n{\"field\": \"see_also\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"area, neighborhood and region are real confusable words for local.\"},\n{\"field\": \"adaptation\", \"verdict\": \"issue\", \"quote\": \"English **local** is usually an adjective; the noun **local** means a person who lives in a place.\", \"severity\": \"minor\", \"family\": \"adaptation\", \"reason\": \"This repeats the usage note's point about the noun and the adjective. One fact should live in one field.\"},\n{\"field\": \"sense_structure\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Three distinct senses, ordered from the most common (near you) to the specialist medical sense.\"},\n{\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"affecting the whole body, not only one part\", \"severity\": \"blocking\", \"family\": \"other\", \"reason\": \"Sense 3's definition contradicts its signpost, the core idea's one part of the body, and its examples. The usage note also conflicts with itself about bars and buildings.\"},\n{\"field\": \"coverage\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The main uses are covered: near you, local government, and the medical sense. Local time and local call are covered or rare enough not to count as missing.\"},\n{\"field\": \"examples_fit\", \"verdict\": \"issue\", \"quote\": \"The infection is only local; it hasn't spread.\", \"severity\": \"minor\", \"family\": \"example-unnatural\", \"reason\": \"The example fits the intended one-part meaning but not the definition as written, which says affecting the whole body. The fault lies in the definition, but the example and definition as they stand do not match.\"}\n],\n\"summary\": \"The entry has a blocking inverted definition in sense 3, which contradicts its own signpost, core idea and examples. It also has a blocking example with a date and statistic, an agreement error in the first example, and a usage note that contradicts itself. Several minor cross-reference, duplication and learner-error problems remain.\"}",
+ "seconds": 43.1,
+ "api_equiv_usd": 0.00625956,
+ "tokens_in": 11561,
+ "cache_read": 3626,
+ "tokens_out": 9273,
+ "thinking": 5805,
+ "model_used": "claude-haiku-5-5",
+ "is_error": false,
+ "cost_usd": 0.0,
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "issue",
+   "quote": "Our children goes to the local school.",
+   "severity": "blocking",
+   "family": "example-grammar",
+   "reason": "Subject-verb agreement error: plural children needs goes changed to go. Learners would copy it."
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "issue",
+   "quote": "foreign-adj",
+   "severity": "minor",
+   "family": "cross-reference",
+   "reason": "Foreign contrasts with local in a national sense, not with near you. The opposite of this sense is closer to distant or far away."
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "issue",
+   "quote": "Local elections were held on May 5, 2022, and only 31 percent of voters took part.",
+   "severity": "blocking",
+   "family": "example-policy",
+   "reason": "Gives a specific date and a statistic, which are checkable real-world facts the house rules forbid in examples."
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].definition",
+   "verdict": "issue",
+   "quote": "affecting the whole body, not only one part",
+   "severity": "blocking",
+   "family": "definition-meaning",
+   "reason": "Inverted meaning. Local in this sense means affecting one part of the body, not the whole body. The definition contradicts the signpost, the core idea, and the examples."
+  },
+  {
+   "field": "senses[2].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "issue",
+   "quote": "Neither means a room or a building.",
+   "severity": "blocking",
+   "family": "usage-note",
+   "reason": "Contradicts the sentence before it, which says that in British English a local can be a bar, and a bar is a building. The note is misleading as written."
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "issue",
+   "quote": "We rented a local for our new shop.",
+   "severity": "minor",
+   "family": "learner-error",
+   "reason": "This is an invented error that learners are unlikely to make. The same non-meaning is already stated in the usage note and the adaptation note, so the field only repeats them."
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "issue",
+   "quote": "English **local** is usually an adjective; the noun **local** means a person who lives in a place.",
+   "severity": "minor",
+   "family": "adaptation",
+   "reason": "This repeats the usage note's point about the noun and the adjective. One fact should live in one field."
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "affecting the whole body, not only one part",
+   "severity": "blocking",
+   "family": "other",
+   "reason": "Sense 3's definition contradicts its signpost, the core idea's one part of the body, and its examples. The usage note also conflicts with itself about bars and buildings."
+  },
+  {
+   "field": "coverage",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "issue",
+   "quote": "The infection is only local; it hasn't spread.",
+   "severity": "minor",
+   "family": "example-unnatural",
+   "reason": "The example fits the intended one-part meaning but not the definition as written, which says affecting the whole body. The fault lies in the definition, but the example and definition as they stand do not match."
+  }
+ ],
+ "parse_error": null,
+ "summary": "The entry has a blocking inverted definition in sense 3, which contradicts its own signpost, core idea and examples. It also has a blocking example with a date and statistic, an agreement error in the first example, and a usage note that contradicts itself. Several minor cross-reference, duplication and learner-error problems remain."
+}

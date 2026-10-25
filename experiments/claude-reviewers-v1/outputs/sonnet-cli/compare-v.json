@@ -1,0 +1,379 @@
+{
+ "arm": "sonnet-cli",
+ "model": "claude-sonnet-5-5",
+ "slug": "compare-v",
+ "text": "{\"verdicts\":[\n{\"field\":\"headword_and_pos\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"variants\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"pronunciation.american\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"pronunciation.british\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"inflections\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"core_idea\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].signpost\",\"verdict\":\"issue\",\"quote\":\"look for differences\",\"severity\":\"minor\",\"family\":\"sense-structure\",\"reason\":\"The definition covers similarities as well as differences, so the signpost is too narrow.\"},\n{\"field\":\"senses[0].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].explanation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].grammar\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].examples\",\"verdict\":\"issue\",\"quote\":\"We compared prices at Walmart and Target.\",\"severity\":\"blocking\",\"family\":\"example-policy\",\"reason\":\"Brand names are not allowed in examples.\"},\n{\"field\":\"senses[0].collocations\",\"verdict\":\"issue\",\"quote\":\"compare favorably\",\"severity\":\"blocking\",\"family\":\"collocation\",\"reason\":\"This belongs to the 'be as good as' sense (sense 3), not to the sense of looking at things side by side.\"},\n{\"field\":\"senses[0].cross_references\",\"verdict\":\"issue\",\"quote\":\"against-prep\",\"severity\":\"minor\",\"family\":\"cross-reference\",\"reason\":\"'against' is not a synonym or a confusable word for this verb; it is only a usage pattern.\"},\n{\"field\":\"senses[0].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].signpost\",\"verdict\":\"issue\",\"quote\":\"say similar\",\"severity\":\"minor\",\"family\":\"sense-structure\",\"reason\":\"'similar' is an adjective and does not work as a signpost for a verb; 'liken' or 'say alike' would be better.\"},\n{\"field\":\"senses[1].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].explanation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].grammar\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].examples\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].collocations\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].cross_references\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[2].signpost\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[2].definition\",\"verdict\":\"issue\",\"quote\":\"be as good as, or be similar to, someone or something else\",\"severity\":\"minor\",\"family\":\"definition-meaning\",\"reason\":\"It does not cover the common 'compare well/badly' meaning, and 'or be similar to' blurs it with sense 2. It also does not match the question example.\"},\n{\"field\":\"senses[2].explanation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[2].grammar\",\"verdict\":\"issue\",\"quote\":\"\\\"transitivity\\\": \\\"transitive\\\"\",\"severity\":\"blocking\",\"family\":\"grammar-code\",\"reason\":\"Compare with/to in this sense takes a prepositional object and no direct object, so it is intransitive.\"},\n{\"field\":\"senses[2].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[2].examples\",\"verdict\":\"issue\",\"quote\":\"How does the new phone compare with the old one?\",\"severity\":\"minor\",\"family\":\"example-unnatural\",\"reason\":\"It asks for a comparison of quality; it does not show the 'be as good as' meaning in the definition.\"},\n{\"field\":\"senses[2].collocations\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[2].cross_references\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[2].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"word_family\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"synonym_discrimination\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"usage_note\",\"verdict\":\"issue\",\"quote\":\"In the sense *say similar*, only **compare with** is correct; **compare to** is a mistake.\",\"severity\":\"blocking\",\"family\":\"usage-note\",\"reason\":\"This is reversed and false: compare to is the standard form for likening, and compare with is also used. It also contradicts the sense 2 examples and collocation.\"},\n{\"field\":\"learner_errors\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"etymology\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"see_also\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"sense_structure\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"consistency\",\"verdict\":\"issue\",\"quote\":\"only **compare with** is correct; **compare to** is a mistake\",\"severity\":\"blocking\",\"family\":\"other\",\"reason\":\"The usage note contradicts the sense 2 examples and collocation, which use compare to.\"},\n{\"field\":\"coverage\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"examples_fit\",\"verdict\":\"issue\",\"quote\":\"How does the new phone compare with the old one?\",\"severity\":\"minor\",\"family\":\"example-unnatural\",\"reason\":\"It asks for a comparison and does not clearly show 'be as good as or similar to'.\"}\n],\"summary\":\"The main problems are a reversed and false usage note on compare to/with, sense 3 coded transitive when it is intransitive, and a brand-name example. The 'compare favorably' collocation sits under the wrong sense, and a few signposts, cross-references and sense 3 wording need work.\"}",
+ "seconds": 29.8,
+ "api_equiv_usd": 0.0716446,
+ "tokens_in": 11525,
+ "cache_read": 3626,
+ "tokens_out": 3969,
+ "thinking": 1367,
+ "model_used": "claude-sonnet-5-5",
+ "is_error": false,
+ "cost_usd": 0.0,
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "issue",
+   "quote": "look for differences",
+   "severity": "minor",
+   "family": "sense-structure",
+   "reason": "The definition covers similarities as well as differences, so the signpost is too narrow."
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "issue",
+   "quote": "We compared prices at Walmart and Target.",
+   "severity": "blocking",
+   "family": "example-policy",
+   "reason": "Brand names are not allowed in examples."
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "issue",
+   "quote": "compare favorably",
+   "severity": "blocking",
+   "family": "collocation",
+   "reason": "This belongs to the 'be as good as' sense (sense 3), not to the sense of looking at things side by side."
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "issue",
+   "quote": "against-prep",
+   "severity": "minor",
+   "family": "cross-reference",
+   "reason": "'against' is not a synonym or a confusable word for this verb; it is only a usage pattern."
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "issue",
+   "quote": "say similar",
+   "severity": "minor",
+   "family": "sense-structure",
+   "reason": "'similar' is an adjective and does not work as a signpost for a verb; 'liken' or 'say alike' would be better."
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].definition",
+   "verdict": "issue",
+   "quote": "be as good as, or be similar to, someone or something else",
+   "severity": "minor",
+   "family": "definition-meaning",
+   "reason": "It does not cover the common 'compare well/badly' meaning, and 'or be similar to' blurs it with sense 2. It also does not match the question example."
+  },
+  {
+   "field": "senses[2].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].grammar",
+   "verdict": "issue",
+   "quote": "\"transitivity\": \"transitive\"",
+   "severity": "blocking",
+   "family": "grammar-code",
+   "reason": "Compare with/to in this sense takes a prepositional object and no direct object, so it is intransitive."
+  },
+  {
+   "field": "senses[2].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].examples",
+   "verdict": "issue",
+   "quote": "How does the new phone compare with the old one?",
+   "severity": "minor",
+   "family": "example-unnatural",
+   "reason": "It asks for a comparison of quality; it does not show the 'be as good as' meaning in the definition."
+  },
+  {
+   "field": "senses[2].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "issue",
+   "quote": "In the sense *say similar*, only **compare with** is correct; **compare to** is a mistake.",
+   "severity": "blocking",
+   "family": "usage-note",
+   "reason": "This is reversed and false: compare to is the standard form for likening, and compare with is also used. It also contradicts the sense 2 examples and collocation."
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "only **compare with** is correct; **compare to** is a mistake",
+   "severity": "blocking",
+   "family": "other",
+   "reason": "The usage note contradicts the sense 2 examples and collocation, which use compare to."
+  },
+  {
+   "field": "coverage",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "issue",
+   "quote": "How does the new phone compare with the old one?",
+   "severity": "minor",
+   "family": "example-unnatural",
+   "reason": "It asks for a comparison and does not clearly show 'be as good as or similar to'."
+  }
+ ],
+ "parse_error": null,
+ "summary": "The main problems are a reversed and false usage note on compare to/with, sense 3 coded transitive when it is intransitive, and a brand-name example. The 'compare favorably' collocation sits under the wrong sense, and a few signposts, cross-references and sense 3 wording need work."
+}

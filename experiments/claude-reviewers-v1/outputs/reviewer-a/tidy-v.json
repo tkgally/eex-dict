@@ -1,0 +1,247 @@
+{
+ "arm": "reviewer-a",
+ "model": "openai/gpt-5.6-terra",
+ "slug": "tidy-v",
+ "seconds": 6.7,
+ "cost_usd": 0.01866,
+ "tokens_in": 4216,
+ "tokens_out": 1160,
+ "finish": "stop",
+ "text": "{\"verdicts\":[{\"field\":\"headword_and_pos\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"variants\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"pronunciation.american\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"pronunciation.british\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"inflections\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"labels\",\"verdict\":\"issue\",\"quote\":\"\\\"region\\\": [\\n   \\\"British\\\"\\n  ]\",\"severity\":\"blocking\",\"family\":\"label\",\"reason\":\"The verb is used in both American and British English; it must not carry an entry-level British-only label.\"},{\"field\":\"core_idea\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].signpost\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].explanation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].grammar\",\"verdict\":\"issue\",\"quote\":\"\\\"patterns\\\": [\\n     \\\"verb + object\\\"\\n    ]\",\"severity\":\"minor\",\"family\":\"grammar-code\",\"reason\":\"The sense is marked transitive or intransitive, but its grammar patterns list only the transitive pattern despite the intransitive example.\"},{\"field\":\"senses[0].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].examples\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].collocations\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].cross_references\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].subsenses[0].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].subsenses[0].examples\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"word_family\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"synonym_discrimination\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"usage_note\",\"verdict\":\"issue\",\"quote\":\"\\\"**Tidy** is often followed by **up** (*tidy up the kitchen*, *tidy up after the party*); **tidy up** has an entry of its own. In American English, **clean up**, **straighten up**, and **pick up** are more usual.\\\"\",\"severity\":\"blocking\",\"family\":\"usage-note\",\"reason\":\"This note misleadingly treats **tidy up** as merely **tidy** followed by **up**, although it is a phrasal verb with its own entry; it also makes an unsupported broad claim that the listed alternatives are more usual in American English.\"},{\"field\":\"learner_errors\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"etymology\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"see_also\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"sense_structure\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"consistency\",\"verdict\":\"issue\",\"quote\":\"\\\"region\\\": [\\n   \\\"British\\\"\\n  ]\",\"severity\":\"blocking\",\"family\":\"label\",\"reason\":\"The entry-level British label conflicts with the usage note's treatment of **tidy** as an English verb contrasted with American alternatives and inaccurately restricts the whole entry.\"},{\"field\":\"coverage\",\"verdict\":\"issue\",\"quote\":\"\\\"tidy away\\\"\",\"severity\":\"blocking\",\"family\":\"coverage\",\"reason\":\"The frequent phrasal-verb use meaning put things in their proper places is only cross-referenced and has no phrase or sense coverage in this entry.\"},{\"field\":\"examples_fit\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null}],\"summary\":\"The main definition, forms, pronunciations, examples, and subsense are sound. Remove the inaccurate British-only label, repair the grammar-pattern mismatch, and revise the misleading usage note; coverage also lacks the common phrasal verb **tidy away**.\"}",
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "issue",
+   "quote": "\"region\": [\n   \"British\"\n  ]",
+   "severity": "blocking",
+   "family": "label",
+   "reason": "The verb is used in both American and British English; it must not carry an entry-level British-only label."
+  },
+  {
+   "field": "core_idea",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "issue",
+   "quote": "\"patterns\": [\n     \"verb + object\"\n    ]",
+   "severity": "minor",
+   "family": "grammar-code",
+   "reason": "The sense is marked transitive or intransitive, but its grammar patterns list only the transitive pattern despite the intransitive example."
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].subsenses[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].subsenses[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "issue",
+   "quote": "\"**Tidy** is often followed by **up** (*tidy up the kitchen*, *tidy up after the party*); **tidy up** has an entry of its own. In American English, **clean up**, **straighten up**, and **pick up** are more usual.\"",
+   "severity": "blocking",
+   "family": "usage-note",
+   "reason": "This note misleadingly treats **tidy up** as merely **tidy** followed by **up**, although it is a phrasal verb with its own entry; it also makes an unsupported broad claim that the listed alternatives are more usual in American English."
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "\"region\": [\n   \"British\"\n  ]",
+   "severity": "blocking",
+   "family": "label",
+   "reason": "The entry-level British label conflicts with the usage note's treatment of **tidy** as an English verb contrasted with American alternatives and inaccurately restricts the whole entry."
+  },
+  {
+   "field": "coverage",
+   "verdict": "issue",
+   "quote": "\"tidy away\"",
+   "severity": "blocking",
+   "family": "coverage",
+   "reason": "The frequent phrasal-verb use meaning put things in their proper places is only cross-referenced and has no phrase or sense coverage in this entry."
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  }
+ ],
+ "parse_error": null,
+ "summary": "The main definition, forms, pronunciations, examples, and subsense are sound. Remove the inaccurate British-only label, repair the grammar-pattern mismatch, and revise the misleading usage note; coverage also lacks the common phrasal verb **tidy away**."
+}

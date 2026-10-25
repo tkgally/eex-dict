@@ -1,0 +1,223 @@
+Check every field of this entry. For EACH field name in the checklist return one verdict object, including every field that is fine (verdict "ok"): your verdicts list must contain at least 36 objects, one or more per field. Check each field as closely as if you were listing only problems: "ok" means you found nothing wrong. Fields: headword_and_pos, variants, pronunciation.american, pronunciation.british, inflections, labels, core_idea, senses[0].signpost, senses[0].definition, senses[0].explanation, senses[0].grammar, senses[0].labels, senses[0].examples, senses[0].collocations, senses[0].cross_references, senses[0].adaptation, senses[1].signpost, senses[1].definition, senses[1].explanation, senses[1].grammar, senses[1].labels, senses[1].examples, senses[1].collocations, senses[1].cross_references, senses[1].adaptation, word_family, synonym_discrimination, usage_note, learner_errors, etymology, see_also, adaptation, sense_structure, consistency, coverage, examples_fit.
+
+Return JSON of the form {"verdicts": [{"field": "<name from the checklist>", "verdict": "ok" | "issue", "quote": "<exact text objected to, or null>", "severity": "blocking" | "minor" | null, "family": "<one of: definition-meaning, definition-style, definition-vocabulary, explanation, example-unnatural, example-grammar, example-policy, grammar-code, label, collocation, cross-reference, learner-error, synonym-discrimination, usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, coverage, other>" | null, "reason": "<one line, or null>"}], "summary": "<one or two sentences>"}. A field with several problems gets several objects with the same field name. "sense_structure" is the verdict on the set of senses as a whole (missing, over-split, misordered); "headword_and_pos" is whether the headword, part of speech, and homograph split are right and whether every sense and every use described belongs to this part of speech; "consistency" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note against the grammar values, a claim made twice in two ways); "cross_references" covers synonyms, antonyms, and compare of that sense; "coverage" and "examples_fit" are the two required checks described in the house rules.
+
+ENTRY (JSON):
+{
+ "schema_version": "1.0",
+ "slug": "pregnant-adj",
+ "headword": "pregnant",
+ "pos": "adj",
+ "homograph": 1,
+ "variants": [],
+ "pronunciation": {
+  "american": {
+   "ipa": "ˈprɛɡ.nənt"
+  },
+  "british": {
+   "ipa": "ˈpreɡ.nænt"
+  },
+  "variants": [],
+  "audio": null,
+  "notes": "Stress on the first part: *PREG-nunt*."
+ },
+ "inflections": {
+  "forms": {
+   "comparative": null,
+   "superlative": null
+  },
+  "note": "not gradable"
+ },
+ "frequency": {
+  "band": 2,
+  "basis": "editorial",
+  "defining_vocabulary": true
+ },
+ "labels": {
+  "register": [],
+  "region": [],
+  "domain": [],
+  "currency": [],
+  "attitude": []
+ },
+ "core_idea": null,
+ "senses": [
+  {
+   "n": 1,
+   "signpost": "with a baby",
+   "definition": "having a baby growing inside the body",
+   "explanation": "Used of women and of female animals. The length of time comes before it: *three months pregnant*.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [
+     "not gradable"
+    ],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "She's pregnant with her second child.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "My sister is six months pregnant.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Ana got pregnant soon after they married.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Our cat is pregnant again.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "phrase",
+     "items": [
+      "get pregnant",
+      "become pregnant",
+      "six months pregnant"
+     ]
+    },
+    {
+     "type": "adjective + preposition",
+     "items": [
+      "pregnant with a baby",
+      "pregnant with twins"
+     ]
+    },
+    {
+     "type": "adverb + adjective",
+     "items": [
+      "strongly pregnant"
+     ]
+    },
+    {
+     "type": "adjective + noun",
+     "items": [
+      "pregnant woman"
+     ]
+    }
+   ],
+   "synonyms": [
+    {
+     "slug": "expecting-adj",
+     "note": "a little more polite"
+    }
+   ],
+   "antonyms": [],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 2,
+   "signpost": "full of meaning",
+   "definition": "full of meaning or feeling, especially something that is not said or is about to happen",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [
+     "attributive only",
+     "not gradable"
+    ],
+    "patterns": []
+   },
+   "labels": {
+    "register": [
+     "literary"
+    ],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "There was a pregnant pause before she answered.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "The room fell into a pregnant silence.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "adjective + noun",
+     "items": [
+      "pregnant pause",
+      "pregnant silence"
+     ]
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  }
+ ],
+ "phrases": [],
+ "word_family": [
+  {
+   "slug": "pregnancy-n",
+   "form": null,
+   "note": null
+  }
+ ],
+ "synonym_discrimination": null,
+ "usage_note": "Someone is **pregnant with** a baby, not **pregnant of** it: *pregnant with twins*. *Expecting a baby* is a common, slightly more polite way to say the same thing.",
+ "learner_errors": [
+  {
+   "incorrect": "She is pregnant of twins.",
+   "correct": "She is pregnant with twins.",
+   "note": "Use **with** before the baby or babies."
+  },
+  {
+   "incorrect": "She is pregnant for five months.",
+   "correct": "She is five months pregnant.",
+   "note": "Put the length of time before **pregnant**."
+  }
+ ],
+ "etymology": null,
+ "see_also": [],
+ "adaptation": {
+  "semantic": null,
+  "grammar": "The length of a pregnancy goes before the adjective, like an age: *five months pregnant*, not *pregnant for five months*.",
+  "culture": null,
+  "false_friends": null,
+  "pronunciation": null
+ }
+}

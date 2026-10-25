@@ -1,0 +1,430 @@
+{
+ "planted_total": 50,
+ "union_findings": {
+  "all": 158,
+  "planted_set": 143,
+  "natural_set": 15
+ },
+ "arms": {
+  "reviewer-a": {
+   "entries": 28,
+   "issues": 159,
+   "blocking": 125,
+   "valid": 100,
+   "partly": 18,
+   "invalid": 41,
+   "precision": 0.629,
+   "valid_blocking": 81,
+   "findings": 62,
+   "recall_all": 0.392,
+   "recall_natural": 0.067,
+   "recall_planted_set": 0.427,
+   "unique_findings": 2,
+   "planted_hit": 45,
+   "parse_fail": 0,
+   "missing_fields": 0,
+   "production_filter_drops": 30,
+   "production_filter_drops_valid": 17,
+   "median_seconds": 8.5,
+   "cost_usd": 0.7027,
+   "tokens_in": 136316,
+   "tokens_out": 43692
+  },
+  "reviewer-b": {
+   "entries": 28,
+   "issues": 92,
+   "blocking": 76,
+   "valid": 83,
+   "partly": 3,
+   "invalid": 6,
+   "precision": 0.902,
+   "valid_blocking": 75,
+   "findings": 64,
+   "recall_all": 0.405,
+   "recall_natural": 0.067,
+   "recall_planted_set": 0.441,
+   "unique_findings": 3,
+   "planted_hit": 49,
+   "parse_fail": 0,
+   "missing_fields": 0,
+   "production_filter_drops": 5,
+   "production_filter_drops_valid": 5,
+   "median_seconds": 31.5,
+   "cost_usd": 1.4195,
+   "tokens_in": 144917,
+   "tokens_out": 94140
+  },
+  "sonnet": {
+   "entries": 28,
+   "issues": 270,
+   "blocking": 90,
+   "valid": 198,
+   "partly": 34,
+   "invalid": 38,
+   "precision": 0.733,
+   "valid_blocking": 88,
+   "findings": 135,
+   "recall_all": 0.854,
+   "recall_natural": 0.533,
+   "recall_planted_set": 0.888,
+   "unique_findings": 30,
+   "planted_hit": 50,
+   "parse_fail": 0,
+   "missing_fields": 0,
+   "production_filter_drops": 0,
+   "production_filter_drops_valid": 0,
+   "median_seconds": 53.0,
+   "cost_usd": 0.0,
+   "tokens_in": 0,
+   "tokens_out": 0
+  },
+  "haiku": {
+   "entries": 28,
+   "issues": 244,
+   "blocking": 86,
+   "valid": 155,
+   "partly": 45,
+   "invalid": 44,
+   "precision": 0.635,
+   "valid_blocking": 75,
+   "findings": 117,
+   "recall_all": 0.741,
+   "recall_natural": 0.733,
+   "recall_planted_set": 0.741,
+   "unique_findings": 14,
+   "planted_hit": 48,
+   "parse_fail": 0,
+   "missing_fields": 0,
+   "production_filter_drops": 0,
+   "production_filter_drops_valid": 0,
+   "median_seconds": 85.4,
+   "cost_usd": 0.0,
+   "tokens_in": 0,
+   "tokens_out": 0
+  }
+ },
+ "planted_by_defect": {
+  "local-adj#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "local-adj#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "local-adj#3": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "home-adv#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "home-adv#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "home-adv#3": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "although-conj#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "although-conj#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "although-conj#3": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "few-det#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "few-det#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "few-det#3": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "must-modal#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "must-modal#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "must-modal#3": [
+   "reviewer-b",
+   "sonnet"
+  ],
+  "iron-n#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "iron-n#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "iron-n#3": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "fabric-n#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "fabric-n#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "fabric-n#3": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "turn-off-phrv#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "turn-off-phrv#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "turn-off-phrv#3": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "behind-prep#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "behind-prep#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "behind-prep#3": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "compare-v#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "compare-v#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "compare-v#3": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "pregnant-adj#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "pregnant-adj#2": [
+   "haiku",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "manager-n#1": [
+   "reviewer-b",
+   "sonnet"
+  ],
+  "manager-n#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "leak-v#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "leak-v#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "arrange-v#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "arrange-v#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "also-adv#1": [
+   "haiku",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "also-adv#2": [
+   "haiku",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "since-conj#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "since-conj#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "ought-modal#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "ought-modal#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "look-up-phrv#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "look-up-phrv#2": [
+   "haiku",
+   "reviewer-a",
+   "sonnet"
+  ],
+  "during-prep#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "during-prep#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "record-v#1": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ],
+  "record-v#2": [
+   "haiku",
+   "reviewer-a",
+   "reviewer-b",
+   "sonnet"
+  ]
+ },
+ "panels": {
+  "openrouter-panel": {
+   "findings": 78,
+   "recall_all": 0.494,
+   "recall_natural": 0.133,
+   "planted_hit": 50,
+   "issues_to_adjudicate": 251
+  },
+  "claude-panel": {
+   "findings": 153,
+   "recall_all": 0.968,
+   "recall_natural": 0.933,
+   "planted_hit": 50,
+   "issues_to_adjudicate": 514
+  },
+  "sonnet+reviewer-a": {
+   "findings": 138,
+   "recall_all": 0.873,
+   "recall_natural": 0.6,
+   "planted_hit": 50,
+   "issues_to_adjudicate": 429
+  },
+  "sonnet+reviewer-b": {
+   "findings": 141,
+   "recall_all": 0.892,
+   "recall_natural": 0.533,
+   "planted_hit": 50,
+   "issues_to_adjudicate": 362
+  }
+ }
+}

@@ -1,0 +1,507 @@
+{
+ "arm": "haiku-cli",
+ "model": "claude-haiku-5-5",
+ "slug": "smash-v",
+ "text": "```json\n{\n  \"verdicts\": [\n    {\"field\": \"headword_and_pos\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"variants\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"pronunciation.american\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"pronunciation.british\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"inflections\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"smashes, smashed, smashed, smashing are the correct forms.\"},\n    {\"field\": \"labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"core_idea\", \"verdict\": \"issue\", \"quote\": \"so that it breaks or is beaten\", \"severity\": \"minor\", \"family\": \"definition-meaning\", \"reason\": \"\\\"beaten\\\" is vague here, and the line covers neither the breaking sense in its full form nor the record sense.\"},\n    {\"field\": \"senses[0].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[0].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[0].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[0].grammar\", \"verdict\": \"issue\", \"quote\": \"\\\"patterns\\\": [\\\"verb + object\\\"]\", \"severity\": \"minor\", \"family\": \"grammar-code\", \"reason\": \"transitivity says transitive or intransitive, but the only pattern given is verb + object; the intransitive use has no pattern.\"},\n    {\"field\": \"senses[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[0].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All four examples fit the breaking sense and sound natural.\"},\n    {\"field\": \"senses[0].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[0].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"break-v and shatter-v are real synonyms, and the shatter note matches the synonym discrimination note.\"},\n    {\"field\": \"senses[0].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[1].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[1].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[1].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[1].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[1].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[1].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All four examples fit the hitting sense.\"},\n    {\"field\": \"senses[1].collocations\", \"verdict\": \"issue\", \"quote\": \"smash your fist on something\", \"severity\": \"minor\", \"family\": \"collocation\", \"reason\": \"Listed as verb + noun, but it is a sentence pattern with a prepositional phrase, not a collocation of smash and a noun.\"},\n    {\"field\": \"senses[1].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The crash-v note is accurate and matches the synonym discrimination note.\"},\n    {\"field\": \"senses[1].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[1].subsenses[0].definition\", \"verdict\": \"issue\", \"quote\": \"\\\"transitivity\\\": \\\"transitive or intransitive\\\"\", \"severity\": \"blocking\", \"family\": \"grammar-code\", \"reason\": \"In the subsense for the tennis sense, the definition and all examples use a direct object; the subsense is transitive only, so the intransitive value is wrong.\"},\n    {\"field\": \"senses[1].subsenses[0].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Both examples fit the tennis sense and are natural.\"},\n    {\"field\": \"senses[2].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[2].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[2].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[2].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[2].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[2].examples\", \"verdict\": \"issue\", \"quote\": \"Their hopes of winning were smashed in the last minute.\", \"severity\": \"minor\", \"family\": \"example-unnatural\", \"reason\": \"\\\"in the last minute\\\" is less natural than \\\"in the final minute\\\" for a late reversal.\"},\n    {\"field\": \"senses[2].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[2].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[2].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[3].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[3].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[3].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[3].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[3].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[3].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All three examples fit the record sense.\"},\n    {\"field\": \"senses[3].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[3].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"senses[3].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"phrases[0].text_and_placement\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"phrases[0].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"phrases[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"phrases[0].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"phrases[0].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"word_family\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"synonym_discrimination\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"usage_note\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"learner_errors\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"\\\"smashed with a tree\\\" is a plausible transfer error, and the correction is right.\"},\n    {\"field\": \"etymology\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"see_also\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null},\n    {\"field\": \"adaptation\", \"verdict\": \"issue\", \"quote\": \"the record is beaten by a lot\", \"severity\": \"minor\", \"family\": \"adaptation\", \"reason\": \"This is unnatural English; \\\"beaten by a wide margin\\\" would say it clearly.\"},\n    {\"field\": \"sense_structure\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The four senses are ordered sensibly, and the sport use is correctly nested as a subsense.\"},\n    {\"field\": \"consistency\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The subsense and sense-level issues are reported on their own fields; no further cross-field conflict was found.\"},\n    {\"field\": \"coverage\", \"verdict\": \"issue\", \"quote\": \"smash someone in the face\", \"severity\": \"minor\", \"family\": \"coverage\", \"reason\": \"The common use of hitting a person hard is not covered; sense 2 is worded for something, not someone.\"},\n    {\"field\": \"examples_fit\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Every example fits the definition of its sense or subsense.\"}\n  ],\n  \"summary\": \"The entry is largely sound: the headword, inflections, senses, and examples fit their definitions. The blocking problem is the tennis subsense, which is marked transitive or intransitive although its definition and examples always take a direct object. Minor issues include a restated explanation, a mislabelled collocation, a grammar pattern list that omits the intransitive use, an unnatural adaptation phrase, one awkward example, the core idea's vague \\\"beaten\\\", and a missing use for hitting a person.\"\n}\n```",
+ "seconds": 70.9,
+ "api_equiv_usd": 0.01024486,
+ "tokens_in": 13200,
+ "cache_read": 3626,
+ "tokens_out": 16588,
+ "thinking": 12888,
+ "model_used": "claude-haiku-5-5",
+ "is_error": false,
+ "cost_usd": 0.0,
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "issue",
+   "quote": "so that it breaks or is beaten",
+   "severity": "minor",
+   "family": "definition-meaning",
+   "reason": "\"beaten\" is vague here, and the line covers neither the breaking sense in its full form nor the record sense."
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "issue",
+   "quote": "\"patterns\": [\"verb + object\"]",
+   "severity": "minor",
+   "family": "grammar-code",
+   "reason": "transitivity says transitive or intransitive, but the only pattern given is verb + object; the intransitive use has no pattern."
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "issue",
+   "quote": "smash your fist on something",
+   "severity": "minor",
+   "family": "collocation",
+   "reason": "Listed as verb + noun, but it is a sentence pattern with a prepositional phrase, not a collocation of smash and a noun."
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].subsenses[0].definition",
+   "verdict": "issue",
+   "quote": "\"transitivity\": \"transitive or intransitive\"",
+   "severity": "blocking",
+   "family": "grammar-code",
+   "reason": "In the subsense for the tennis sense, the definition and all examples use a direct object; the subsense is transitive only, so the intransitive value is wrong."
+  },
+  {
+   "field": "senses[1].subsenses[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].examples",
+   "verdict": "issue",
+   "quote": "Their hopes of winning were smashed in the last minute.",
+   "severity": "minor",
+   "family": "example-unnatural",
+   "reason": "\"in the last minute\" is less natural than \"in the final minute\" for a late reversal."
+  },
+  {
+   "field": "senses[2].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].text_and_placement",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "issue",
+   "quote": "the record is beaten by a lot",
+   "severity": "minor",
+   "family": "adaptation",
+   "reason": "This is unnatural English; \"beaten by a wide margin\" would say it clearly."
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "coverage",
+   "verdict": "issue",
+   "quote": "smash someone in the face",
+   "severity": "minor",
+   "family": "coverage",
+   "reason": "The common use of hitting a person hard is not covered; sense 2 is worded for something, not someone."
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  }
+ ],
+ "parse_error": null,
+ "summary": "The entry is largely sound: the headword, inflections, senses, and examples fit their definitions. The blocking problem is the tennis subsense, which is marked transitive or intransitive although its definition and examples always take a direct object. Minor issues include a restated explanation, a mislabelled collocation, a grammar pattern list that omits the intransitive use, an unnatural adaptation phrase, one awkward example, the core idea's vague \"beaten\", and a missing use for hitting a person."
+}

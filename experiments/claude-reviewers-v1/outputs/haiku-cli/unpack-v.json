@@ -1,0 +1,379 @@
+{
+ "arm": "haiku-cli",
+ "model": "claude-haiku-5-5",
+ "slug": "unpack-v",
+ "text": "```json\n{\"verdicts\": [\n{\"field\": \"headword_and_pos\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Verb headword, homograph 1, and all three senses are verb uses.\"},\n{\"field\": \"variants\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No variant forms exist for this verb.\"},\n{\"field\": \"pronunciation.american\", \"verdict\": \"ok\", \"quote\": \"ʌnˈpæk\", \"severity\": null, \"family\": null, \"reason\": \"Two syllables with stress on the second, as expected for un- plus pack.\"},\n{\"field\": \"pronunciation.british\", \"verdict\": \"ok\", \"quote\": \"ʌnˈpæk\", \"severity\": null, \"family\": null, \"reason\": \"Matches the General American form with the same stress pattern.\"},\n{\"field\": \"inflections\", \"verdict\": \"ok\", \"quote\": \"unpacks / unpacked / unpacked / unpacking\", \"severity\": null, \"family\": null, \"reason\": \"All four forms are the regular forms of pack with un-.\"},\n{\"field\": \"labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No entry-level label is needed for this neutral verb.\"},\n{\"field\": \"core_idea\", \"verdict\": \"ok\", \"quote\": \"To unpack is to take out what is inside something, such as a bag, an idea, or a computer file.\", \"severity\": null, \"family\": null, \"reason\": \"Sentence form is correct and it covers the literal, figurative, and computing senses.\"},\n{\"field\": \"senses[0].signpost\", \"verdict\": \"issue\", \"quote\": \"a bag or box\", \"severity\": \"minor\", \"family\": \"other\", \"reason\": \"House style asks for one to three words; this signpost has four.\"},\n{\"field\": \"senses[0].definition\", \"verdict\": \"issue\", \"quote\": \"and put them away\", \"severity\": \"minor\", \"family\": \"definition-meaning\", \"reason\": \"Unpacking does not always include putting things away (for example, unpacking to see what is inside a box), so the added step narrows the meaning.\"},\n{\"field\": \"senses[0].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No explanation is needed for the plain literal sense.\"},\n{\"field\": \"senses[0].grammar\", \"verdict\": \"ok\", \"quote\": \"transitivity: transitive or intransitive; patterns: verb + object\", \"severity\": null, \"family\": null, \"reason\": \"Matches the examples, which include both an object use and a no-object use.\"},\n{\"field\": \"senses[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Neutral, general sense with no register, region, or domain label needed.\"},\n{\"field\": \"senses[0].examples\", \"verdict\": \"ok\", \"quote\": \"We got to the hotel late and were too tired to unpack.\", \"severity\": null, \"family\": null, \"reason\": \"All four examples are natural American English, show typical objects, and state no checkable facts.\"},\n{\"field\": \"senses[0].collocations\", \"verdict\": \"issue\", \"quote\": \"\\\"type\\\": \\\"phrase\\\", \\\"items\\\": [\\\"unpack your things\\\"]\", \"severity\": \"minor\", \"family\": \"collocation\", \"reason\": \"This is a plain verb-plus-object pairing, not a phrase, so it sits under the wrong type label.\"},\n{\"field\": \"senses[0].cross_references\", \"verdict\": \"ok\", \"quote\": \"antonyms: pack-v\", \"severity\": null, \"family\": null, \"reason\": \"Pack is the true antonym of unpack in this sense.\"},\n{\"field\": \"senses[0].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation fields are null, which is acceptable for this sense.\"},\n{\"field\": \"senses[1].signpost\", \"verdict\": \"ok\", \"quote\": \"an idea\", \"severity\": null, \"family\": null, \"reason\": \"Two words, which fits the house signpost style.\"},\n{\"field\": \"senses[1].definition\", \"verdict\": \"ok\", \"quote\": \"look closely at an idea or a statement and explain its parts so that it is easier to understand\", \"severity\": null, \"family\": null, \"reason\": \"Base-form verb phrase, plain words, and accurately describes the analytic sense.\"},\n{\"field\": \"senses[1].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No explanation is needed; the definition is clear.\"},\n{\"field\": \"senses[1].grammar\", \"verdict\": \"ok\", \"quote\": \"transitivity: transitive; patterns: verb + object\", \"severity\": null, \"family\": null, \"reason\": \"Every example takes a direct object of an idea, statement, or meaning.\"},\n{\"field\": \"senses[1].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The figurative analytic sense is neutral in register and needs no label.\"},\n{\"field\": \"senses[1].examples\", \"verdict\": \"ok\", \"quote\": \"There's a lot to unpack in what she just said.\", \"severity\": null, \"family\": null, \"reason\": \"Natural idiomatic use with no object, and the other examples show the verb-plus-object pattern correctly.\"},\n{\"field\": \"senses[1].collocations\", \"verdict\": \"ok\", \"quote\": \"a lot to unpack\", \"severity\": null, \"family\": null, \"reason\": \"The collocations are typical; the consistency question about the idiom is raised under consistency.\"},\n{\"field\": \"senses[1].cross_references\", \"verdict\": \"ok\", \"quote\": \"analyze-v; explain-v\", \"severity\": null, \"family\": null, \"reason\": \"Both are reasonable near-synonyms for the analytic sense.\"},\n{\"field\": \"senses[1].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation fields are null, which is acceptable for this sense.\"},\n{\"field\": \"senses[2].signpost\", \"verdict\": \"ok\", \"quote\": \"a computer file\", \"severity\": null, \"family\": null, \"reason\": \"Three words, within the house limit.\"},\n{\"field\": \"senses[2].definition\", \"verdict\": \"issue\", \"quote\": \"sending back into its usual form\", \"severity\": \"minor\", \"family\": \"definition-meaning\", \"reason\": \"Compressed files are sent forward, not back; the phrase is odd and does not describe the process clearly.\"},\n{\"field\": \"senses[2].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The computing domain label and definition are sufficient without an explanation.\"},\n{\"field\": \"senses[2].grammar\", \"verdict\": \"ok\", \"quote\": \"transitivity: transitive; patterns: verb + object\", \"severity\": null, \"family\": null, \"reason\": \"The computing use takes a file or archive as its direct object.\"},\n{\"field\": \"senses[2].labels\", \"verdict\": \"ok\", \"quote\": \"domain: computing\", \"severity\": null, \"family\": null, \"reason\": \"Domain label is correct for the computing sense.\"},\n{\"field\": \"senses[2].examples\", \"verdict\": \"ok\", \"quote\": \"Download the file and unpack it into a new folder.\", \"severity\": null, \"family\": null, \"reason\": \"Both examples show the decompressing use naturally and state no checkable facts.\"},\n{\"field\": \"senses[2].collocations\", \"verdict\": \"ok\", \"quote\": \"unpack a file; unpack an archive\", \"severity\": null, \"family\": null, \"reason\": \"Typical computing collocations.\"},\n{\"field\": \"senses[2].cross_references\", \"verdict\": \"ok\", \"quote\": \"unzip-v\", \"severity\": null, \"family\": null, \"reason\": \"Unzip is a true synonym in the computing sense.\"},\n{\"field\": \"senses[2].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation fields are null, which is acceptable for this sense.\"},\n{\"field\": \"word_family\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"An empty list is acceptable; no required family member is missing from the house rules.\"},\n{\"field\": \"synonym_discrimination\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable because no single discrimination note is needed.\"},\n{\"field\": \"usage_note\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable; no learner usage fact is missing.\"},\n{\"field\": \"learner_errors\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Empty list; no invented error was added.\"},\n{\"field\": \"etymology\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable; etymology is not needed for current use.\"},\n{\"field\": \"see_also\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Empty list is acceptable.\"},\n{\"field\": \"adaptation\", \"verdict\": \"ok\", \"quote\": \"\\\"unpack\\\": the sense *look closely at an idea and explain it* does not usually carry over from the word for emptying a suitcase in other languages.\", \"severity\": null, \"family\": null, \"reason\": \"Language-neutral, names a specific trap, and is within the word limit; the grammar note is also language-neutral.\"},\n{\"field\": \"sense_structure\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Three senses are distinct, the order is reasonable (literal first, then figurative, then computing), and no sense is missing.\"},\n{\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"\\\"type\\\": \\\"phrase\\\", \\\"items\\\": [\\\"a lot to unpack\\\"]\", \"severity\": \"minor\", \"family\": \"phrase\", \"reason\": \"The idiom appears as a collocation of sense 2 but the phrases field is empty; the entry should record it consistently or explain why it is only a collocation.\"},\n{\"field\": \"coverage\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The literal, intransitive, figurative analytic, idiomatic, and computing uses are all covered.\"},\n{\"field\": \"examples_fit\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Every example matches the definition of the sense under which it appears.\"}\n],\n\"summary\": \"Most fields are accurate and the pronunciation, inflections, examples, and cross-references are correct. Four minor issues remain: the signpost for sense 1 is four words long, sense 1 adds an unnecessary step ('put them away'), sense 3's 'sending back' is misleading, and the idiom 'a lot to unpack' is listed as a collocation but not as a phrase.\"}\n```",
+ "seconds": 48.9,
+ "api_equiv_usd": 0.00716936,
+ "tokens_in": 11390,
+ "cache_read": 3626,
+ "tokens_out": 11161,
+ "thinking": 7579,
+ "model_used": "claude-haiku-5-5",
+ "is_error": false,
+ "cost_usd": 0.0,
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "issue",
+   "quote": "a bag or box",
+   "severity": "minor",
+   "family": "other",
+   "reason": "House style asks for one to three words; this signpost has four."
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "issue",
+   "quote": "and put them away",
+   "severity": "minor",
+   "family": "definition-meaning",
+   "reason": "Unpacking does not always include putting things away (for example, unpacking to see what is inside a box), so the added step narrows the meaning."
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "issue",
+   "quote": "\"type\": \"phrase\", \"items\": [\"unpack your things\"]",
+   "severity": "minor",
+   "family": "collocation",
+   "reason": "This is a plain verb-plus-object pairing, not a phrase, so it sits under the wrong type label."
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].definition",
+   "verdict": "issue",
+   "quote": "sending back into its usual form",
+   "severity": "minor",
+   "family": "definition-meaning",
+   "reason": "Compressed files are sent forward, not back; the phrase is odd and does not describe the process clearly."
+  },
+  {
+   "field": "senses[2].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "\"type\": \"phrase\", \"items\": [\"a lot to unpack\"]",
+   "severity": "minor",
+   "family": "phrase",
+   "reason": "The idiom appears as a collocation of sense 2 but the phrases field is empty; the entry should record it consistently or explain why it is only a collocation."
+  },
+  {
+   "field": "coverage",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  }
+ ],
+ "parse_error": null,
+ "summary": "Most fields are accurate and the pronunciation, inflections, examples, and cross-references are correct. Four minor issues remain: the signpost for sense 1 is four words long, sense 1 adds an unnecessary step ('put them away'), sense 3's 'sending back' is misleading, and the idiom 'a lot to unpack' is listed as a collocation but not as a phrase."
+}

@@ -1,0 +1,411 @@
+{
+ "arm": "sonnet-cli",
+ "model": "claude-sonnet-5-5",
+ "slug": "must-modal",
+ "text": "{\"verdicts\":[\n{\"field\":\"headword_and_pos\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"variants\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"pronunciation.american\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"pronunciation.british\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"pronunciation.american\",\"verdict\":\"issue\",\"quote\":\"the first **t** is silent, so it sounds like *MUHS-uhnt*\",\"severity\":\"minor\",\"family\":\"pronunciation\",\"reason\":\"Respelling is fine, but the 'weak' form claim 'muhst' is ok; mustn't first t silent is accurate. Minor: note could mention nothing wrong; kept as low-risk observation.\"},\n{\"field\":\"inflections\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"core_idea\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].signpost\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].explanation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].grammar\",\"verdict\":\"issue\",\"quote\":\"verb + to-infinitive\",\"severity\":\"blocking\",\"family\":\"grammar-code\",\"reason\":\"Must takes a bare infinitive, not to-infinitive; contradicts the examples and learner error.\"},\n{\"field\":\"senses[0].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].examples\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].collocations\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[0].cross_references\",\"verdict\":\"issue\",\"quote\":\"shall-modal\",\"severity\":\"minor\",\"family\":\"cross-reference\",\"reason\":\"Shall is not a real synonym of must in everyday use; ought/should are comparisons, not synonyms.\"},\n{\"field\":\"senses[0].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].signpost\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].explanation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].grammar\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].examples\",\"verdict\":\"issue\",\"quote\":\"You must hand in your homework by Friday.\",\"severity\":\"blocking\",\"family\":\"example-unnatural\",\"reason\":\"This is an obligation example, belongs to sense 1, not to the 'almost certainly true' sense.\"},\n{\"field\":\"senses[1].examples\",\"verdict\":\"issue\",\"quote\":\"There's no reply, so they must have left already.\",\"severity\":\"minor\",\"family\":\"example-grammar\",\"reason\":\"Uses must have + past participle, but the sense grammar pattern and the example's pattern are null/not covering it.\"},\n{\"field\":\"senses[1].collocations\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"senses[1].cross_references\",\"verdict\":\"issue\",\"quote\":\"will-modal\",\"severity\":\"minor\",\"family\":\"cross-reference\",\"reason\":\"Will is a weak compare for the deduction sense; probably should be a stronger confusable such as may or might, though defensible.\"},\n{\"field\":\"senses[1].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[0].text_and_placement\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[0].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[0].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[0].examples\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[0].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[1].text_and_placement\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[1].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[1].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[1].examples\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"phrases[1].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"word_family\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"synonym_discrimination\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"usage_note\",\"verdict\":\"issue\",\"quote\":\"e.g. *I had to leave early*\",\"severity\":\"blocking\",\"family\":\"spelling-or-format\",\"reason\":\"Abbreviation 'e.g.' is banned in prose.\"},\n{\"field\":\"usage_note\",\"verdict\":\"issue\",\"quote\":\"**Must** has no past or future form: use **had to** for the past\",\"severity\":\"minor\",\"family\":\"usage-note\",\"reason\":\"Repeats the explanation, learner errors and adaptation grammar; one fact stated in several fields.\"},\n{\"field\":\"learner_errors\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"etymology\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"see_also\",\"verdict\":\"issue\",\"quote\":\"**have to** is a common way to express obligation\",\"severity\":\"minor\",\"family\":\"cross-reference\",\"reason\":\"Duplicates the compare entries already given on sense 1.\"},\n{\"field\":\"adaptation\",\"verdict\":\"issue\",\"quote\":\"**Must** has only one form: no **-s**, no **to** after it, and no past or future.\",\"severity\":\"minor\",\"family\":\"adaptation\",\"reason\":\"Restates the usage note and explanation rather than naming a specific trap.\"},\n{\"field\":\"sense_structure\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},\n{\"field\":\"consistency\",\"verdict\":\"issue\",\"quote\":\"verb + to-infinitive\",\"severity\":\"blocking\",\"family\":\"grammar-code\",\"reason\":\"Contradicts the examples' pattern, sense 2 pattern and the learner error saying no to after must.\"},\n{\"field\":\"coverage\",\"verdict\":\"issue\",\"quote\":\"You must be joking / Must you ...? (annoyed question: 'Must you always interrupt?')\",\"severity\":\"minor\",\"family\":\"coverage\",\"reason\":\"The common annoyed 'Must you ...?' use and negative/question forms of must are not covered.\"},\n{\"field\":\"examples_fit\",\"verdict\":\"issue\",\"quote\":\"You must hand in your homework by Friday.\",\"severity\":\"blocking\",\"family\":\"example-unnatural\",\"reason\":\"Shows obligation, not the 'almost certainly true' sense it sits under.\"}\n],\"summary\":\"The main problems are the wrong 'to-infinitive' pattern on sense 1, an obligation example misplaced under the deduction sense, and an 'e.g.' in the usage note. Several facts are repeated across fields, and the annoyed 'Must you ...?' use is not covered.\"}",
+ "seconds": 21.9,
+ "api_equiv_usd": 0.0631226,
+ "tokens_in": 12012,
+ "cache_read": 3626,
+ "tokens_out": 2922,
+ "thinking": 0,
+ "model_used": "claude-sonnet-5-5",
+ "is_error": false,
+ "cost_usd": 0.0,
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "issue",
+   "quote": "the first **t** is silent, so it sounds like *MUHS-uhnt*",
+   "severity": "minor",
+   "family": "pronunciation",
+   "reason": "Respelling is fine, but the 'weak' form claim 'muhst' is ok; mustn't first t silent is accurate. Minor: note could mention nothing wrong; kept as low-risk observation."
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "issue",
+   "quote": "verb + to-infinitive",
+   "severity": "blocking",
+   "family": "grammar-code",
+   "reason": "Must takes a bare infinitive, not to-infinitive; contradicts the examples and learner error."
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "issue",
+   "quote": "shall-modal",
+   "severity": "minor",
+   "family": "cross-reference",
+   "reason": "Shall is not a real synonym of must in everyday use; ought/should are comparisons, not synonyms."
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "issue",
+   "quote": "You must hand in your homework by Friday.",
+   "severity": "blocking",
+   "family": "example-unnatural",
+   "reason": "This is an obligation example, belongs to sense 1, not to the 'almost certainly true' sense."
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "issue",
+   "quote": "There's no reply, so they must have left already.",
+   "severity": "minor",
+   "family": "example-grammar",
+   "reason": "Uses must have + past participle, but the sense grammar pattern and the example's pattern are null/not covering it."
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "issue",
+   "quote": "will-modal",
+   "severity": "minor",
+   "family": "cross-reference",
+   "reason": "Will is a weak compare for the deduction sense; probably should be a stronger confusable such as may or might, though defensible."
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].text_and_placement",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].text_and_placement",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "issue",
+   "quote": "e.g. *I had to leave early*",
+   "severity": "blocking",
+   "family": "spelling-or-format",
+   "reason": "Abbreviation 'e.g.' is banned in prose."
+  },
+  {
+   "field": "usage_note",
+   "verdict": "issue",
+   "quote": "**Must** has no past or future form: use **had to** for the past",
+   "severity": "minor",
+   "family": "usage-note",
+   "reason": "Repeats the explanation, learner errors and adaptation grammar; one fact stated in several fields."
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "issue",
+   "quote": "**have to** is a common way to express obligation",
+   "severity": "minor",
+   "family": "cross-reference",
+   "reason": "Duplicates the compare entries already given on sense 1."
+  },
+  {
+   "field": "adaptation",
+   "verdict": "issue",
+   "quote": "**Must** has only one form: no **-s**, no **to** after it, and no past or future.",
+   "severity": "minor",
+   "family": "adaptation",
+   "reason": "Restates the usage note and explanation rather than naming a specific trap."
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "verb + to-infinitive",
+   "severity": "blocking",
+   "family": "grammar-code",
+   "reason": "Contradicts the examples' pattern, sense 2 pattern and the learner error saying no to after must."
+  },
+  {
+   "field": "coverage",
+   "verdict": "issue",
+   "quote": "You must be joking / Must you ...? (annoyed question: 'Must you always interrupt?')",
+   "severity": "minor",
+   "family": "coverage",
+   "reason": "The common annoyed 'Must you ...?' use and negative/question forms of must are not covered."
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "issue",
+   "quote": "You must hand in your homework by Friday.",
+   "severity": "blocking",
+   "family": "example-unnatural",
+   "reason": "Shows obligation, not the 'almost certainly true' sense it sits under."
+  }
+ ],
+ "parse_error": null,
+ "summary": "The main problems are the wrong 'to-infinitive' pattern on sense 1, an obligation example misplaced under the deduction sense, and an 'e.g.' in the usage note. Several facts are repeated across fields, and the annoyed 'Must you ...?' use is not covered."
+}

@@ -1,0 +1,275 @@
+Check every field of this entry. For EACH field name in the checklist return one verdict object, including every field that is fine (verdict "ok"): your verdicts list must contain at least 45 objects, one or more per field. Check each field as closely as if you were listing only problems: "ok" means you found nothing wrong. Fields: headword_and_pos, variants, pronunciation.american, pronunciation.british, inflections, labels, core_idea, senses[0].signpost, senses[0].definition, senses[0].explanation, senses[0].grammar, senses[0].labels, senses[0].examples, senses[0].collocations, senses[0].cross_references, senses[0].adaptation, senses[1].signpost, senses[1].definition, senses[1].explanation, senses[1].grammar, senses[1].labels, senses[1].examples, senses[1].collocations, senses[1].cross_references, senses[1].adaptation, senses[2].signpost, senses[2].definition, senses[2].explanation, senses[2].grammar, senses[2].labels, senses[2].examples, senses[2].collocations, senses[2].cross_references, senses[2].adaptation, word_family, synonym_discrimination, usage_note, learner_errors, etymology, see_also, adaptation, sense_structure, consistency, coverage, examples_fit.
+
+Return JSON of the form {"verdicts": [{"field": "<name from the checklist>", "verdict": "ok" | "issue", "quote": "<exact text objected to, or null>", "severity": "blocking" | "minor" | null, "family": "<one of: definition-meaning, definition-style, definition-vocabulary, explanation, example-unnatural, example-grammar, example-policy, grammar-code, label, collocation, cross-reference, learner-error, synonym-discrimination, usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, coverage, other>" | null, "reason": "<one line, or null>"}], "summary": "<one or two sentences>"}. A field with several problems gets several objects with the same field name. "sense_structure" is the verdict on the set of senses as a whole (missing, over-split, misordered); "headword_and_pos" is whether the headword, part of speech, and homograph split are right and whether every sense and every use described belongs to this part of speech; "consistency" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note against the grammar values, a claim made twice in two ways); "cross_references" covers synonyms, antonyms, and compare of that sense; "coverage" and "examples_fit" are the two required checks described in the house rules.
+
+ENTRY (JSON):
+{
+ "schema_version": "1.0",
+ "slug": "unpack-v",
+ "headword": "unpack",
+ "pos": "v",
+ "homograph": 1,
+ "variants": [],
+ "pronunciation": {
+  "american": {
+   "ipa": "ʌnˈpæk"
+  },
+  "british": {
+   "ipa": "ʌnˈpæk"
+  },
+  "variants": [],
+  "audio": null,
+  "notes": null
+ },
+ "inflections": {
+  "forms": {
+   "third_person_singular": "unpacks",
+   "past_tense": "unpacked",
+   "past_participle": "unpacked",
+   "present_participle": "unpacking"
+  },
+  "note": null
+ },
+ "frequency": {
+  "band": 2,
+  "basis": "editorial",
+  "defining_vocabulary": false
+ },
+ "labels": {
+  "register": [],
+  "region": [],
+  "domain": [],
+  "currency": [],
+  "attitude": []
+ },
+ "core_idea": "To unpack is to take out what is inside something, such as a bag, an idea, or a computer file.",
+ "senses": [
+  {
+   "n": 1,
+   "signpost": "a bag or box",
+   "definition": "take things out of a bag, a box, or a suitcase and put them away",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": "transitive or intransitive",
+    "codes": [],
+    "patterns": [
+     "verb + object"
+    ]
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "We got to the hotel late and were too tired to unpack.",
+     "note": "no object",
+     "pattern": null
+    },
+    {
+     "text": "Have you unpacked your suitcase yet?",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "He unpacked his clothes and hung them up.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "It took us weeks to unpack all the boxes after we moved.",
+     "note": null,
+     "pattern": "verb + object"
+    }
+   ],
+   "collocations": [
+    {
+     "type": "verb + noun",
+     "items": [
+      "unpack a suitcase",
+      "unpack a bag",
+      "unpack the boxes",
+      "unpack the groceries"
+     ]
+    },
+    {
+     "type": "phrase",
+     "items": [
+      "unpack your things"
+     ]
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [
+    {
+     "slug": "pack-v",
+     "note": null
+    }
+   ],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 2,
+   "signpost": "an idea",
+   "definition": "look closely at an idea or a statement and explain its parts so that it is easier to understand",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": "transitive",
+    "codes": [],
+    "patterns": [
+     "verb + object"
+    ]
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "Let's unpack that idea a little.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "The teacher helped the class unpack the meaning of the poem.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "There's a lot to unpack in what she just said.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "verb + noun",
+     "items": [
+      "unpack an idea",
+      "unpack a statement",
+      "unpack the meaning of something"
+     ]
+    },
+    {
+     "type": "phrase",
+     "items": [
+      "a lot to unpack"
+     ]
+    }
+   ],
+   "synonyms": [
+    {
+     "slug": "analyze-v",
+     "note": null
+    },
+    {
+     "slug": "explain-v",
+     "note": null
+    }
+   ],
+   "antonyms": [],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 3,
+   "signpost": "a computer file",
+   "definition": "change a computer file that was made smaller for storing or sending back into its usual form, so that you can use it",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": "transitive",
+    "codes": [],
+    "patterns": [
+     "verb + object"
+    ]
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [
+     "computing"
+    ],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "Download the file and unpack it into a new folder.",
+     "note": null,
+     "pattern": "verb + object"
+    },
+    {
+     "text": "The program unpacks the files for you.",
+     "note": null,
+     "pattern": "verb + object"
+    }
+   ],
+   "collocations": [
+    {
+     "type": "verb + noun",
+     "items": [
+      "unpack a file",
+      "unpack an archive"
+     ]
+    }
+   ],
+   "synonyms": [
+    {
+     "slug": "unzip-v",
+     "note": null
+    }
+   ],
+   "antonyms": [],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  }
+ ],
+ "phrases": [],
+ "word_family": [],
+ "synonym_discrimination": null,
+ "usage_note": null,
+ "learner_errors": [],
+ "etymology": null,
+ "see_also": [],
+ "adaptation": {
+  "semantic": "\"unpack\": the sense *look closely at an idea and explain it* does not usually carry over from the word for emptying a suitcase in other languages.",
+  "grammar": "\"unpack\" can take the container (*unpack a suitcase*) or the things inside it (*unpack your clothes*) as its object; some languages allow only one of these.",
+  "culture": null,
+  "false_friends": null,
+  "pronunciation": null
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "slug": "during-prep",
+ "issues": [
+  {
+   "id": 1,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [
+    "during-prep#1"
+   ],
+   "note": "A length of time takes for; the example is ungrammatical and misfits the sense."
+  },
+  {
+   "id": 2,
+   "valid": "yes",
+   "finding": "F3",
+   "planted": [],
+   "note": "Four words; signposts are limited to one to three words."
+  },
+  {
+   "id": 3,
+   "valid": "yes",
+   "finding": "F4",
+   "planted": [],
+   "note": "Four words; signposts are limited to one to three words."
+  },
+  {
+   "id": 4,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [
+    "during-prep#2"
+   ],
+   "note": "During cannot take a clause; this contradicts learner_errors[0]."
+  },
+  {
+   "id": 5,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [
+    "during-prep#1",
+    "during-prep#2"
+   ],
+   "note": "Correctly flags both contradictions with the learner errors."
+  },
+  {
+   "id": 6,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [
+    "during-prep#1"
+   ],
+   "note": "Ungrammatical, and it repeats the error the entry itself corrects."
+  },
+  {
+   "id": 7,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "The while claim is correct; only the duplication point is real."
+  }
+ ],
+ "findings": {
+  "F1": "Sense 1 example 'during three hours' is ungrammatical (a length of time needs for) and contradicts the learner error.",
+  "F2": "The usage note falsely says during can take a clause with its own subject, which contradicts learner_errors[0].",
+  "F3": "The sense 1 signpost 'all through a period' exceeds the three-word limit.",
+  "F4": "The sense 2 signpost 'at some point within' exceeds the three-word limit."
+ },
+ "missed": [],
+ "_meta": {
+  "seconds": 15.0,
+  "api_equiv_usd": 0.0854898,
+  "tokens_in": 19797,
+  "cache_read": 11869,
+  "tokens_out": 985,
+  "thinking": 382,
+  "model_used": "opus",
+  "is_error": false
+ }
+}

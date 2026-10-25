@@ -1,0 +1,50 @@
+[
+ {
+  "id": 1,
+  "field": "senses[0].examples",
+  "quote": "It's been two years since I have last seen him.",
+  "severity": "blocking",
+  "family": "example-grammar",
+  "reason": "Not natural English: the since clause takes the past simple (*since I last saw him*), as the explanation and the usage note both say."
+ },
+ {
+  "id": 2,
+  "field": "coverage",
+  "quote": "Since when do you care about that?",
+  "severity": "minor",
+  "family": "coverage",
+  "reason": "The common idiom *since when* (an angry or doubting question) is not covered by any sense or phrase, and phrases is empty."
+ },
+ {
+  "id": 3,
+  "field": "consistency",
+  "quote": "I am living here since I was ten.",
+  "severity": "blocking",
+  "family": "other",
+  "reason": "The same correction is given two ways: *I am living here* in learner_errors but *I have lived here* in the sense 1 adaptation. The example *since I have last seen him* also contradicts the usage note's *since I saw him*."
+ },
+ {
+  "id": 4,
+  "field": "senses[1].adaptation",
+  "quote": "When the main clause is in the past simple, look at the tense to decide: *since he left* after *has been* is about time; after *we took a taxi* it is about a reason.",
+  "severity": "minor",
+  "family": "adaptation",
+  "reason": "Muddled: *has been* is present perfect, not past simple, so the rule does not match its own illustration."
+ },
+ {
+  "id": 5,
+  "field": "learner_errors",
+  "quote": "I am living here since I was ten.",
+  "severity": "blocking",
+  "family": "learner-error",
+  "reason": "The correction is wrong: it should be *I have lived here since I was ten*. The progressive is not the usual fix, and it contradicts the adaptation note."
+ },
+ {
+  "id": 6,
+  "field": "senses[1].cross_references",
+  "quote": "\"slug\": \"because-conj\",\n     \"note\": null",
+  "severity": "minor",
+  "family": "cross-reference",
+  "reason": "because-conj is listed both as a synonym (no note) and under compare (with a note), so the same link is made twice."
+ }
+]
