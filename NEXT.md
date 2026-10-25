@@ -1,28 +1,28 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-25 by scheduled run 20261025T010034Z-6h9f7u, cycle 2 (build). Cycle 1 merged.*
+*Rewritten 2026-10-25 by scheduled run 20261025T011641Z-6h9f7u, cycle 3 (review). Cycles 1 and 2 merged.*
 
 ## State
 
 - 2,840 entries, all `reviewed`. Milestone 1: about 220 rows left. Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-25 so far: about US$2.09 of US$15.
+- Spend 2026-10-25 so far: about US$3.23 of US$15.
 
 ## Queue (top-down)
 
 0. **The owner's rulings of 2026-10-24** (`inbox/archive/20261024_owner_rulings.txt`; status table [owner-rulings-2026-10-24](wiki/decisions/owner-rulings-2026-10-24.md)). Left for the Routine, in this order:
-   1. **B3 review**, the last of the appendix: `drop-v` (the invented *droped* error) and the missing senses, which open the coverage pass: `drop-v` (*drop a hint*, *the call dropped*, ending a relationship, *ready to drop*), `service-n` (phone service, *goods and services*, streaming), `into-prep` (time, *research into*, *look into her eyes*), `hard-adj` (*hard of hearing*, *no hard feelings*, *the hard way*), `word-n` (*have words*, *in words of one syllable*), `low-adj` (*low* = mean), `fly-v` (phrases), `everything-pron` (*Money isn't everything*), `ours-pron` (*a friend of ours*). Done 2026-10-24 and 2026-10-25: everything else in the appendix, and the two small fixes (`fifty-num`, `eleven-num`/`ten-num`).
+   1. **B3 review**: finished 2026-10-25. The missing senses opened the coverage pass; continue it under item 5.
    2. **B4 (i)**: add `separable`/`inseparable` to `grammar_codes` in the same pull request as the first phrasal verb that uses them ([consistency-rules](wiki/decisions/consistency-rules.md)). `go-on-phrv` sense 7 (*go on about*) and `give-up-phrv` are candidates.
-   3. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates; nine references to ruled-out targets (`check_links.py`). The `active-adj`/`passive-adj` and `alone-adj`/`lonely-adj` type mismatches belong here.
+   3. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates; eight references to ruled-out targets (`check_links.py`). The `active-adj`/`passive-adj` and `alone-adj`/`lonely-adj` type mismatches belong here.
    4. **Build** milestone 1 in queue order (`claim.py --from-queue`). Closure waits until it is built ([build-order](wiki/decisions/build-order.md)).
-   5. **Review** (E2): drafts, the rest of the B3 list, the B1 coverage pass over the 500 most important band-1 entries, then the one-round backlog by band.
+   5. **Review** (E2): drafts, open entry reports, the B1 coverage pass over the 500 most important band-1 entries, then the one-round backlog by band.
    6. **reviewer-b** (E1): after two lint passes under the new prompt, if it raises fewer than about 0.5 issues per entry, trial another non-Anthropic model on 40 entries.
    7. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    8. **E5**: when milestone 1 is built and the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
 1. **build**: check a verb + preposition row against the verb's senses and a `phr` row against the keyword entry's phrases; run the panel in chunks of four or five; place every `NO-SENSE` back-link by hand.
 2. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and both reviewers ask for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*, *travel light*); reject all, with the reason. `verb + adjective` is not a collocation type.
 3. **closure**: blocked by milestone 1, then paused above band 2 (A3).
-4. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in eight runs. `reviewer-a` `coverage` precision is low but stays live (ruling B1).
+4. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in seven runs. `reviewer-a` `coverage` precision is low but stays live (ruling B1).
 5. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`. The wiki is at about 29,800 of 30,000 words: trim before adding.
 
 ## Fences (do not re-grind)
