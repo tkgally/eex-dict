@@ -57,7 +57,9 @@
       "grammar": {
         "countability": null,
         "transitivity": "transitive or intransitive",
-        "codes": [],
+        "codes": [
+          "separable"
+        ],
         "patterns": [
           "verb + adverb or preposition",
           "verb + -ing form"
@@ -144,7 +146,9 @@
           "grammar": {
             "countability": null,
             "transitivity": "transitive",
-            "codes": [],
+            "codes": [
+              "inseparable"
+            ],
             "patterns": [
               "verb + preposition + object"
             ]
@@ -187,7 +191,9 @@
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
-        "codes": [],
+        "codes": [
+          "separable"
+        ],
         "patterns": [
           "verb + -ing form",
           "verb + adverb + object",
@@ -215,7 +221,7 @@
         },
         {
           "text": "She tried to **give** it **up**, but she could not.",
-          "note": "a pronoun object goes before **up**",
+          "note": null,
           "pattern": "verb + object + adverb"
         },
         {
@@ -266,7 +272,9 @@
       "grammar": {
         "countability": null,
         "transitivity": "transitive or intransitive",
-        "codes": [],
+        "codes": [
+          "separable"
+        ],
         "patterns": [
           "verb + adverb or preposition",
           "verb + object + adverb"
@@ -314,7 +322,37 @@
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "tell the police where someone is, or hand someone over to them",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [
+              "separable"
+            ],
+            "patterns": [
+              "verb + object + adverb"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "His own brother **gave** him **up** to the police.",
+              "note": null,
+              "pattern": "verb + object + adverb"
+            },
+            {
+              "text": "She would never give up her friends, whatever they did.",
+              "note": null,
+              "pattern": "verb + adverb + object"
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -326,13 +364,15 @@
     },
     {
       "n": 4,
-      "signpost": "let someone have",
-      "definition": "stop having, using, or keeping something, so that someone else can have it, so that you can do something else, or because you have no choice",
+      "signpost": "stop keeping",
+      "definition": "stop having, using, or keeping something, often so that someone else can have it or so that you can do something else",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
-        "codes": [],
+        "codes": [
+          "separable"
+        ],
         "patterns": [
           "verb + adverb + object",
           "verb + object + adverb"
@@ -363,9 +403,9 @@
           "pattern": null
         },
         {
-          "text": "He gives up his weekends to help at the shelter.",
+          "text": "She had to give up her baby for adoption.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + adverb + object"
         }
       ],
       "collocations": [
@@ -383,7 +423,7 @@
       "synonyms": [
         {
           "slug": "sacrifice-v",
-          "note": "**sacrifice** is stronger and more formal"
+          "note": "**sacrifice** is stronger and more formal, for giving up something important"
         }
       ],
       "antonyms": [],
@@ -430,7 +470,7 @@
   "see_also": [],
   "adaptation": {
     "semantic": null,
-    "grammar": "**Give up** is separable: *give up the plan* or *give the plan up*. **Give up on** takes the person or thing you stop hoping for.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -438,7 +478,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-16T14:27:34Z",
-    "modified": "2026-10-24T09:25:32Z",
+    "modified": "2026-10-25T07:56:38Z",
     "drafted_by": "claude-fable-5-1",
     "run_id": "20260916T134425Z-1yir52",
     "reviews": [
@@ -501,6 +541,26 @@
         "ok": 52,
         "issues": 4,
         "blocking": 4
+      },
+      {
+        "run_id": "20261025T073637Z-3r5wmk",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T073637Z-3r5wmk/give-up-phrv.json",
+        "ok": 48,
+        "issues": 8,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261025T073637Z-3r5wmk",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T073637Z-3r5wmk/give-up-phrv.json",
+        "ok": 56,
+        "issues": 0,
+        "blocking": 0
       }
     ],
     "status": "reviewed",

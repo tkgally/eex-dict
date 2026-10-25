@@ -1,22 +1,22 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-25 by scheduled run 20261025T072131Z-3r5wmk, cycle 2 (build: twelve milestone-1 nouns; reviewer A's model label fixed).*
+*Rewritten 2026-10-25 by scheduled run 20261025T073637Z-3r5wmk, cycle 3 (review: B4 (i) codes; coverage pass begun).*
 
 ## State
 
 - 2,864 entries, all `reviewed`. Milestone 1: about 190 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-25: about US$8.07 of US$15. Originality: last 2026-10-25, next due in twenty runs.
+- Spend 2026-10-25: about US$9.1 of US$15. Originality: last 2026-10-25, next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md); [experiment](experiments/claude-reviewers-v1/README.md)). Both roles run side by side. A failed `claude -p` call is retried twice, then recorded as an error: re-run `--roles reviewer-a`. Its model label was fixed 2026-10-25 ([claude-cli-model-label](wiki/notes/claude-cli-model-label.md)).
 
 ## Queue (top-down)
 
 0. **The owner's rulings of 2026-10-24** (`inbox/archive/20261024_owner_rulings.txt`; status table [owner-rulings-2026-10-24](wiki/decisions/owner-rulings-2026-10-24.md)). Left for the Routine, in this order:
    1. **B3 review**: finished 2026-10-25. The missing senses opened the coverage pass; continue it under item 5.
-   2. **B4 (i)**: add `separable`/`inseparable` to `grammar_codes` in the same pull request as the first phrasal verb that uses them ([consistency-rules](wiki/decisions/consistency-rules.md)). `go-on-phrv` sense 7 (*go on about*) and `give-up-phrv` are candidates.
+   2. **B4 (i)**: done 2026-10-25 (codes added with `give-up-phrv`, `go-on-phrv`). Other phrasal verbs get the code when next reviewed.
    3. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates; eight references to ruled-out targets (`check_links.py`). The `active-adj`/`passive-adj` and `alone-adj`/`lonely-adj` type mismatches belong here.
    4. **Build** milestone 1 in queue order (`claim.py --from-queue`). Closure waits until it is built ([build-order](wiki/decisions/build-order.md)).
-   5. **Review** (E2): drafts, open entry reports, the B1 coverage pass over the 500 most important band-1 entries, then the one-round backlog by band.
+   5. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by number of senses, skipping those read since 2026-10-24; next `strong-adj`, `time-n`, `stand-v`, `sharp-adj`, `set-v`, `keep-v`), then the one-round backlog by band.
    6. **reviewer-b** (E1): after two lint passes under the new prompt, if it raises fewer than about 0.5 issues per entry, trial another non-Anthropic model on 40 entries.
    7. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    8. **E5**: when milestone 1 is built and the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
@@ -24,7 +24,7 @@
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); the old reviewer A quoted our own text back as Cambridge's, so the search decides.
 3. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and reviewers ask for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*, *travel light*); reject all, with the reason. `verb + adjective` is not a collocation type. The new reviewer A raises many minor issues (2026-10-25 builds: 65 of 77 and 29 of 32 applied): fix the clear ones only.
 4. **closure**: blocked by milestone 1, then paused above band 2 (A3).
-5. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in four runs. Judge the new reviewer A by its own rows (`reviewer-a:claude-sonnet-5-5`), not the old model's all-time figures; the four pairs switched off for the old model are live again, and the 30-percent rule applies to them afresh.
+5. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in three runs. Judge the new reviewer A by its own rows (`reviewer-a:claude-sonnet-5-5`), not the old model's all-time figures; the four pairs switched off for the old model are live again, and the 30-percent rule applies to them afresh.
 6. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`. The wiki is at about 29,800 of 30,000 words: trim before adding.
 
 ## Fences (do not re-grind)

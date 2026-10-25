@@ -13,7 +13,7 @@
 | B1 | Coverage line in both reviewer prompts; coverage pass | [reviewer-house-rules](reviewer-house-rules.md) | prompt line and `crossref.py --missing-senses` done 2026-10-24 (group 3); the pass is Routine work |
 | B2 | Notes discipline | [notes-discipline](notes-discipline.md), style guide | done 2026-10-24 (group 3); existing entries as reviews open them |
 | B3 | Fix the appendix errors | `NEXT.md` queue | Routine work |
-| B4 | Separable codes, promised entries, circular definitions, IPA format | [consistency-rules](consistency-rules.md) | (i) rule written; the values come with the first phrasal verb (Routine); (ii), (iii) done 2026-10-24 (group 3); (iv) done 2026-10-24 (group 5): 292 transcriptions |
+| B4 | Separable codes, promised entries, circular definitions, IPA format | [consistency-rules](consistency-rules.md) | (i) done 2026-10-25: `separable` and `inseparable` added to `grammar_codes` with `give-up-phrv` and `go-on-phrv` (review run 20261025T073637Z-3r5wmk); (ii), (iii) done 2026-10-24 (group 3); (iv) done 2026-10-24 (group 5): 292 transcriptions |
 | C1 | No fallback back-links; refuse ruled-out targets; audit | [cross-reference-display](cross-reference-display.md) | tools done 2026-10-24 (group 3); audit Routine |
 | C2 | Missing cross-reference targets on the site | [cross-reference-display](cross-reference-display.md) | done 2026-10-24 (group 2) |
 | C3 | Keep hyphens and periods in display forms and queue rows | [cross-reference-display](cross-reference-display.md) | done 2026-10-24 (group 2): 26 queue rows repaired |
