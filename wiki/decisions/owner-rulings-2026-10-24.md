@@ -20,7 +20,7 @@
 | C4 | Word links everywhere except a closed list | [word-links](word-links.md) | done 2026-10-24 (group 2) |
 | D1–D4 | Search, sense menu, phones, navigation | [site](site.md) stays; this table | done 2026-10-24 (groups 2 and 4) |
 | D5 | No audio for now | — | standing |
-| E1 | House rules for reviewers; two required checks; reviewer-b trial | [reviewer-house-rules](reviewer-house-rules.md) | done 2026-10-24 (group 3); the trial after two lint passes |
+| E1 | House rules for reviewers; two required checks; reviewer-b trial | [reviewer-house-rules](reviewer-house-rules.md) | done 2026-10-24 (group 3); trial test at the second pass (2026-10-25): reviewer-b raised 1.09 issues per entry over 171 reviews, above 0.5, so no trial |
 | E2 | Second-round review order | [reviewer-house-rules](reviewer-house-rules.md) | Routine work |
 | E3 | Lint and originality spacing; `NEXT.md` word cap; one journal per run; weekly digest | [process-overhead](process-overhead.md) | done 2026-10-24 (group 3); the first digest is due |
 | E4 | Owner sample, report link, escalation list | [owner-in-the-loop](owner-in-the-loop.md) | done 2026-10-24 (groups 2 and 3) |
