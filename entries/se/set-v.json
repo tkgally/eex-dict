@@ -289,7 +289,48 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "get a trap ready to catch an animal or a person",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "We set a trap for the mice in the kitchen.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The police set a trap to catch the thief.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "set a trap"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -302,7 +343,7 @@
     {
       "n": 4,
       "signpost": "example or record",
-      "definition": "do something that others copy, or that others must try to do better than",
+      "definition": "do something first in a way that other people copy or try to do better",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -520,7 +561,8 @@
         {
           "type": "phrase",
           "items": [
-            "be set in a place",
+            "be set in a small town",
+            "be set in the past",
             "be set in the future"
           ]
         }
@@ -595,7 +637,7 @@
       "n": 9,
       "signpost": "work to do",
       "definition": "give someone a piece of work, a task, or a test to do",
-      "explanation": "American English usually says **give** or **assign**: *The teacher gave us homework*.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -737,13 +779,8 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "The past tense and past participle are both **set**. Do not confuse **set** with **sit**: you *sit down* yourself, but you *set something down*; the sun *sets*, and its past is *set*, not *sat*. *Be set to* (*Prices are set to rise*) and *all set* (*Are you all set?*) are adjective uses; see **set** (adjective).",
+  "usage_note": "Do not confuse **set** with **sit**: you *sit down* yourself, but you *set something down*. *Be set to* (*Prices are set to rise*) and *all set* (*Are you all set?*) are adjective uses; see **set** (adjective).",
   "learner_errors": [
-    {
-      "incorrect": "I setted my alarm for six.",
-      "correct": "I set my alarm for six.",
-      "note": "The past tense and past participle of **set** are both **set**."
-    },
     {
       "incorrect": "The sun sat at seven o'clock.",
       "correct": "The sun set at seven o'clock.",
@@ -774,7 +811,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "\"set\": its senses (put down, decide a date, make a machine ready, go down in the sky, become hard) are separate verbs in many languages; translate each sense on its own.",
+    "semantic": "\"set\": in *the jelly has set*, **set** means become firm, and in *the sun sets* it means go down; neither is *put*. A translator who reads **set** as *put* everywhere will get these senses wrong.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -783,7 +820,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T23:13:02Z",
-    "modified": "2026-10-21T12:59:50Z",
+    "modified": "2026-10-25T12:57:12Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T231200Z-poh5we",
     "reviews": [
@@ -826,6 +863,26 @@
         "ok": 111,
         "issues": 6,
         "blocking": 5
+      },
+      {
+        "run_id": "20261025T124349Z-twauz7",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T124349Z-twauz7/set-v.json",
+        "ok": 103,
+        "issues": 7,
+        "blocking": 2
+      },
+      {
+        "run_id": "20261025T124349Z-twauz7",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T124349Z-twauz7/set-v.json",
+        "ok": 107,
+        "issues": 3,
+        "blocking": 3
       }
     ],
     "status": "reviewed",

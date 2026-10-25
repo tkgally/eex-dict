@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-10-25",
-  "spent_usd": 9.501228,
+  "spent_usd": 10.327136,
   "calls": [
     {
       "ts": "2026-10-25T00:46:13Z",
@@ -1758,6 +1758,132 @@
       "cost_usd": 0.034884,
       "tokens_in": 4128,
       "tokens_out": 2219
+    },
+    {
+      "ts": "2026-10-25T12:45:18Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:centimeter-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 7537,
+      "tokens_out": 1972
+    },
+    {
+      "ts": "2026-10-25T12:45:32Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:centimeter-n:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.040924,
+      "tokens_in": 4058,
+      "tokens_out": 2734
+    },
+    {
+      "ts": "2026-10-25T12:46:30Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:strong-adj:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 13845,
+      "tokens_out": 10166
+    },
+    {
+      "ts": "2026-10-25T12:46:35Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:strong-adj:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.109528,
+      "tokens_in": 9170,
+      "tokens_out": 7599
+    },
+    {
+      "ts": "2026-10-25T12:48:34Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:time-n:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.23159,
+      "tokens_in": 20605,
+      "tokens_out": 15865
+    },
+    {
+      "ts": "2026-10-25T12:48:59Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:time-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 27477,
+      "tokens_out": 25095
+    },
+    {
+      "ts": "2026-10-25T12:50:01Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:stand-v:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.10864,
+      "tokens_in": 9980,
+      "tokens_out": 7390
+    },
+    {
+      "ts": "2026-10-25T12:50:24Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:stand-v:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 14863,
+      "tokens_out": 14642
+    },
+    {
+      "ts": "2026-10-25T12:51:19Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:sharp-adj:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 12938,
+      "tokens_out": 9318
+    },
+    {
+      "ts": "2026-10-25T12:51:28Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:sharp-adj:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.105922,
+      "tokens_in": 8369,
+      "tokens_out": 7432
+    },
+    {
+      "ts": "2026-10-25T12:52:34Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:set-v:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 13468,
+      "tokens_out": 11036
+    },
+    {
+      "ts": "2026-10-25T12:52:39Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:set-v:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.125948,
+      "tokens_in": 8914,
+      "tokens_out": 9010
+    },
+    {
+      "ts": "2026-10-25T12:53:40Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:keep-v:reviewer-b",
+      "model": "google/gemini-3.1-pro-preview",
+      "cost_usd": 0.103356,
+      "tokens_in": 9456,
+      "tokens_out": 7037
+    },
+    {
+      "ts": "2026-10-25T12:53:52Z",
+      "run_id": "20261025T124349Z-twauz7",
+      "purpose": "review:keep-v:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 14259,
+      "tokens_out": 12575
     }
   ],
   "history": {
