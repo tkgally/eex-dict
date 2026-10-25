@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-25] review | owner's appendix (B3), third block: definitions, invented errors, two number fixes
+
+Scheduled run 20261025T004339Z-6h9f7u, cycle 1. Twelve entries through the full pipeline, plus three hand-placed back-links (`slow-adj`, `stupid-adj`, `clever-adj`). `fifty-num` sense 3 now *with a value of 50*; `eleven-num`/`ten-num` moved from word family to see_also. `manner-n` lost the *Dr. Lee* example; `proud-adj` sense 4 is no longer circular; `light-adj` sense 2 no longer defined with the noun *light*; *make light of something* added under `make-v` (keyword rule: the first verb), pointed to from `light-adj`; `dull-adj` sense 4 lost "attributive only" and gained sense 6, *slow to learn or understand* (disapproving). Invented learner errors removed from `transport-v`, `recent-adj`, `well-adj`, `sign-n`. Panel: 44 issues, 33 blocking; 15 applied, 29 rejected (fences on number entries, phrasal verbs as senses, the keyword rule). Spend US$1.15. Left of B3: `drop-v` (*droped*) and the missing senses.
+
 ## [2026-10-24] lint | eighty-sixth pass: back-links, promises, band vote
 
 Scheduled run 20261024T171558Z-ofeeve, cycle 4. Caps and links clean. `crossref.py --all --apply` wrote mirror back-links in six entries; six `NO-SENSE` pairs placed by hand (`dismiss-v` senses 1 and 2, `dip-v` 1, `series-n` 2, `whereas-conj` 1). `lint_vocab.py --promises`: queued `oh-boy-interj`, `buddhist-adj`, `muslim-adj`, `double-over-phrv`; the rest already had rows or are homographs (`corn-n`, `school-n`, `story-n`), which the queue cannot name. `--circular`: 325 definitions use their own headword, 83 on a first sense; none fixed. `--missing-senses`: 681 pairs for the C1 audit. Band vote on 49 unbanded rows (US$0.006); thirteen wide splits settled at the lower median; all now pending. The vote overwrote the day's earlier file: rows merged back, note `band-vote-unbanded-overwrite`. Precision: `reviewer-a` `coverage` 0.23 over 65, kept live by ruling B1. Index and log checked; no gaps.
