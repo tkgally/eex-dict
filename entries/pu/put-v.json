@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To put is to move something or someone into a place, a state, or a form; the other senses carry this idea over to words, money, blame, and values.",
+  "core_idea": "To put is to move something or someone into a place or a state; the other senses carry this idea over to words, money, blame, and values.",
   "senses": [
     {
       "n": 1,
@@ -80,7 +80,7 @@
         {
           "text": "Where did you put my keys?",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         },
         {
           "text": "She put her hand on my shoulder.",
@@ -336,7 +336,8 @@
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + adverb"
         ]
       },
       "labels": {
@@ -445,7 +446,49 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "risk money on the result of a race, a game, or another event",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object + preposition + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "I put twenty dollars on the black horse.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "He puts money on every big game.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "put money on something",
+                "put a bet on something"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -522,7 +565,7 @@
       "n": 8,
       "signpost": "ask or suggest",
       "definition": "offer a question, an idea, or a plan to someone so that they can answer or decide",
-      "explanation": "The person who hears it comes after **to**.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -578,7 +621,7 @@
       "n": 9,
       "signpost": "guess an amount",
       "definition": "guess or judge that something is a particular age, size, or amount",
-      "explanation": "The amount comes after **at**.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -602,7 +645,7 @@
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "Experts put the cost of the repairs at more than we expected.",
+          "text": "Experts put the cost of the repairs at about two thousand dollars.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         }
@@ -611,8 +654,9 @@
         {
           "type": "phrase",
           "items": [
-            "put something at a particular amount",
-            "put someone's age at something"
+            "put someone's age at something",
+            "put the cost at something",
+            "put the number at something"
           ]
         }
       ],
@@ -696,6 +740,41 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "sub_id": "not-put-it-past-someone",
+      "text": "not put it past someone",
+      "definition": "think that someone might really do something bad or surprising",
+      "explanation": "Used with **would not** or **wouldn't**, often followed by **to** and a verb.",
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "He says he didn't take it, but I wouldn't put it past him.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "I wouldn't put it past her to quit without telling anyone.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "word_family": [
@@ -733,6 +812,11 @@
       "slug": "put-up-phrv",
       "form": null,
       "note": null
+    },
+    {
+      "slug": "put-out-phrv",
+      "form": null,
+      "note": null
     }
   ],
   "synonym_discrimination": {
@@ -749,11 +833,6 @@
       "incorrect": "I put my bag.",
       "correct": "I put my bag on the chair.",
       "note": "**Put** in this sense needs both an object and a place."
-    },
-    {
-      "incorrect": "Yesterday I putted the keys in the drawer.",
-      "correct": "Yesterday I put the keys in the drawer.",
-      "note": "The past tense and past participle of **put** are both **put**."
     },
     {
       "incorrect": "Please put attention to the teacher.",
@@ -798,7 +877,7 @@
   ],
   "adaptation": {
     "semantic": "\"put\": the senses *write* (*put your name here*) and *say* (*put it another way*) use a verb of writing or speaking in many languages, not a verb of placing.",
-    "grammar": "\"put\": in the sense *move something to a place*, the verb needs both an object and a place (*put it on the table*); many languages let the place be left out. The present, past, and past participle are all **put**.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -806,7 +885,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T21:56:46Z",
-    "modified": "2026-10-21T01:10:37Z",
+    "modified": "2026-10-25T19:24:28Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T215441Z-poh5we",
     "reviews": [
@@ -848,6 +927,26 @@
         "file": "reviews/20260927T184359Z-zkagg1/put-v.json",
         "ok": 107,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261025T191301Z-ax7wls",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T191301Z-ax7wls/put-v.json",
+        "ok": 105,
+        "issues": 11,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261025T191301Z-ax7wls",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T191301Z-ax7wls/put-v.json",
+        "ok": 112,
+        "issues": 4,
         "blocking": 0
       }
     ],
