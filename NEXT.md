@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-25 by scheduled run 20261025T073637Z-3r5wmk, cycle 3 (review: B4 (i) codes; coverage pass begun).*
+*Rewritten 2026-10-25 by scheduled run 20261025T075936Z-3r5wmk, cycle 4 (build: twelve milestone-1 nouns). The run merged four cycles.*
 
 ## State
 
-- 2,864 entries, all `reviewed`. Milestone 1: about 190 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 2,876 entries, all `reviewed`. Milestone 1: 172 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-25: about US$9.1 of US$15. Originality: last 2026-10-25, next due in twenty runs.
+- Spend 2026-10-25: about US$9.50 of US$15. `centimeter-n` sense 1 has a conversion fact in its definition; move it to the usage note, as `inch-n` now does. Originality: last 2026-10-25, next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md); [experiment](experiments/claude-reviewers-v1/README.md)). Both roles run side by side. A failed `claude -p` call is retried twice, then recorded as an error: re-run `--roles reviewer-a`. Its model label was fixed 2026-10-25 ([claude-cli-model-label](wiki/notes/claude-cli-model-label.md)).
 
 ## Queue (top-down)
@@ -24,7 +24,7 @@
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); the old reviewer A quoted our own text back as Cambridge's, so the search decides.
 3. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and reviewers ask for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*, *travel light*); reject all, with the reason. `verb + adjective` is not a collocation type. The new reviewer A raises many minor issues (2026-10-25 builds: 65 of 77 and 29 of 32 applied): fix the clear ones only.
 4. **closure**: blocked by milestone 1, then paused above band 2 (A3).
-5. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in three runs. Judge the new reviewer A by its own rows (`reviewer-a:claude-sonnet-5-5`), not the old model's all-time figures; the four pairs switched off for the old model are live again, and the 30-percent rule applies to them afresh.
+5. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in two runs. Judge the new reviewer A by its own rows (`reviewer-a:claude-sonnet-5-5`), not the old model's all-time figures; the four pairs switched off for the old model are live again, and the 30-percent rule applies to them afresh.
 6. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`. The wiki is at about 29,800 of 30,000 words: trim before adding.
 
 ## Fences (do not re-grind)
