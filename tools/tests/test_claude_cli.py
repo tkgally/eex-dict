@@ -57,6 +57,15 @@ class ClaudeCliTests(unittest.TestCase):
         self.assertEqual(res["tokens_out"], 2600)
         self.assertEqual(res["model"], SLUG)
 
+    def test_model_is_the_requested_one_not_the_helper(self):
+        body = json.loads(reply(result="{}").stdout)
+        body["modelUsage"] = {"claude-haiku-5-5": {"outputTokens": 16}, "claude-sonnet-5-5": {"outputTokens": 52}}
+        done = subprocess.CompletedProcess(args=[], returncode=0, stdout=json.dumps(body), stderr="")
+        self.assertEqual(self.call(lambda *a, **k: done)["model"], SLUG)
+        body["modelUsage"] = {"claude-haiku-5-5": {"outputTokens": 16}, "claude-sonnet-5-6": {"outputTokens": 52}}
+        done = subprocess.CompletedProcess(args=[], returncode=0, stdout=json.dumps(body), stderr="")
+        self.assertEqual(self.call(lambda *a, **k: done)["model"], "claude-cli/claude-sonnet-5-6")
+
     def test_plain_result_when_no_schema(self):
         seen = {}
 

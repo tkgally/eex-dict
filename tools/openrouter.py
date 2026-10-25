@@ -313,7 +313,11 @@ def chat_claude_cli(model: str, messages, *, response_format: dict | None = None
     usage = res.get("usage") or {}
     structured = res.get("structured_output")
     text = json.dumps(structured, ensure_ascii=False) if structured is not None else (res.get("result") or "")
-    used = list((res.get("modelUsage") or {}).keys())
+    # modelUsage also lists Claude Code's small helper model, often first: name the requested model when
+    # it was used, else the one that wrote the most (wiki/notes/claude-cli-model-label.md)
+    usage_by_model = res.get("modelUsage") or {}
+    used = [model_id] if model_id in usage_by_model else sorted(
+        usage_by_model, key=lambda k: -int((usage_by_model[k] or {}).get("outputTokens") or 0))
     return {
         "text": text,
         "cost": 0.0,
