@@ -1,0 +1,138 @@
+[
+ {
+  "id": 1,
+  "field": "learner_errors",
+  "quote": "I am living here since I was ten.",
+  "severity": "blocking",
+  "family": "learner-error",
+  "reason": "The 'correct' sentence is still incorrect; it should be 'I have lived' or 'I have been living'."
+ },
+ {
+  "id": 2,
+  "field": "senses[1].adaptation",
+  "quote": "When the main clause is in the past simple, look at the tense to decide: *since he left* after *has been* is about time; after *we took a taxi* it is about a reason.",
+  "severity": "minor",
+  "family": "adaptation",
+  "reason": "Muddled: *has been* is present perfect, not past simple, so the rule does not match its own illustration."
+ },
+ {
+  "id": 3,
+  "field": "senses[1].cross_references",
+  "quote": "\"slug\": \"because-conj\",\n     \"note\": null",
+  "severity": "minor",
+  "family": "cross-reference",
+  "reason": "because-conj is listed both as a synonym (no note) and under compare (with a note), so the same link is made twice."
+ },
+ {
+  "id": 4,
+  "field": "senses[0].examples",
+  "quote": "It's been two years since I have last seen him.",
+  "severity": "blocking",
+  "family": "example-unnatural",
+  "reason": "The present perfect 'have last seen' is unnatural here; it should be the past simple 'last saw'."
+ },
+ {
+  "id": 5,
+  "field": "learner_errors",
+  "quote": "I am living here since I was ten.",
+  "severity": "blocking",
+  "family": "learner-error",
+  "reason": "The provided correction uses the present continuous, which is ungrammatical; it should be 'I have lived here since I was ten' (or 'have been living')."
+ },
+ {
+  "id": 6,
+  "field": "examples_fit",
+  "quote": "It's been two years since I have last seen him.",
+  "severity": "blocking",
+  "family": "example-unnatural",
+  "reason": "The example uses an unnatural tense ('have last seen') for the since-clause."
+ },
+ {
+  "id": 7,
+  "field": "senses[0].examples",
+  "quote": "It's been two years since I have last seen him.",
+  "severity": "blocking",
+  "family": "example-grammar",
+  "reason": "Not natural English: the since clause takes the past simple (*since I last saw him*), as the explanation and the usage note both say."
+ },
+ {
+  "id": 8,
+  "field": "learner_errors",
+  "quote": "I am living here since I was ten.",
+  "severity": "blocking",
+  "family": "learner-error",
+  "reason": "The correction is wrong: it should be *I have lived here since I was ten*. The progressive is not the usual fix, and it contradicts the adaptation note."
+ },
+ {
+  "id": 9,
+  "field": "senses[0].examples",
+  "quote": "It's been two years since I have last seen him.",
+  "severity": "blocking",
+  "family": "example-grammar",
+  "reason": "Standard usage requires the past simple in the time clause here ('since I last saw him'), contradicting the explanation and providing an unnatural model for learners."
+ },
+ {
+  "id": 10,
+  "field": "consistency",
+  "quote": "I am living here since I was ten.",
+  "severity": "blocking",
+  "family": "learner-error",
+  "reason": "The note in the learner error specifies that the main clause uses the present perfect, but the supplied correction uses the present continuous ('am living') instead."
+ },
+ {
+  "id": 11,
+  "field": "senses[0].examples",
+  "quote": "It's been two years since I have last seen him.",
+  "severity": "blocking",
+  "family": "example-grammar",
+  "reason": "Combining the present perfect with 'last' ('have last seen') in a 'since' clause is unidiomatic and ungrammatical; it should be the past simple ('since I last saw him')."
+ },
+ {
+  "id": 12,
+  "field": "consistency",
+  "quote": "I am living here since I was ten.",
+  "severity": "blocking",
+  "family": "other",
+  "reason": "The first learner-error correction uses the present continuous ('I am living here'), which contradicts its own accompanying note, `senses[0].explanation`, and `senses[0].adaptation.grammar`, all of which require the present perfect; additionally, example 2 in sense 1 ('since I have last seen him') contradicts `senses[0].explanation` and `usage_note`, which specify the past simple in the *since* clause."
+ },
+ {
+  "id": 13,
+  "field": "learner_errors",
+  "quote": "Since two years I work here.",
+  "severity": "minor",
+  "family": "learner-error",
+  "reason": "In *Since two years*, *since* is misused before a noun phrase (the preposition use, `since-prep`), rather than before a clause (`since-conj`), and it duplicates the `compare` note on sense 1."
+ },
+ {
+  "id": 14,
+  "field": "consistency",
+  "quote": "I am living here since I was ten.",
+  "severity": "blocking",
+  "family": "other",
+  "reason": "The same correction is given two ways: *I am living here* in learner_errors but *I have lived here* in the sense 1 adaptation. The example *since I have last seen him* also contradicts the usage note's *since I saw him*."
+ },
+ {
+  "id": 15,
+  "field": "coverage",
+  "quote": "Since when do you care about that?",
+  "severity": "minor",
+  "family": "coverage",
+  "reason": "The common idiom *since when* (an angry or doubting question) is not covered by any sense or phrase, and phrases is empty."
+ },
+ {
+  "id": 16,
+  "field": "learner_errors",
+  "quote": "I am living here since I was ten.",
+  "severity": "blocking",
+  "family": "learner-error",
+  "reason": "The `correct` field gives a present continuous verb ('I am living here') instead of the present perfect ('I have lived here' / 'I have been living here'), making the correction ungrammatical and directly contradicting its own note."
+ },
+ {
+  "id": 17,
+  "field": "senses[0].adaptation",
+  "quote": "Many languages use the present tense for a situation that began in the past and continues now. English uses the present perfect in the main clause: *I have lived here since I was ten*, not *I live here since I was ten*.",
+  "severity": "minor",
+  "family": "adaptation",
+  "reason": "This note duplicates the exact same point and example given in the first `learner_errors` item, violating the house rule that one fact lives in one field."
+ }
+]

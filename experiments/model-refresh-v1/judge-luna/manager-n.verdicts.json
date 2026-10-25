@@ -1,0 +1,66 @@
+{
+ "slug": "manager-n",
+ "issues": [
+  {
+   "id": 1,
+   "valid": "no",
+   "finding": null,
+   "planted": [],
+   "note": "Claim is accurate; a sense-level usage restriction is acceptable in explanation."
+  },
+  {
+   "id": 2,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "Mild redundancy and vagueness, but the core idea is serviceable; largely taste."
+  },
+  {
+   "id": 3,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [],
+   "note": "Training is a coach's job; a manager need not train the team."
+  },
+  {
+   "id": 4,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [
+    "manager-n#2"
+   ],
+   "note": "Not idiomatic; senior or top manager is the usual collocation."
+  },
+  {
+   "id": 5,
+   "valid": "no",
+   "finding": null,
+   "planted": [],
+   "note": "\"The way his team played\" clearly signals sport; the example fits."
+  },
+  {
+   "id": 6,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [],
+   "note": "Same problem: a definition that includes training clashes with the coach contrast."
+  }
+ ],
+ "findings": {
+  "F1": "Sports-team definition makes training part of the manager's role, which is wrong and clashes with the coach explanation.",
+  "F2": "Collocation 'a high manager' is unidiomatic; should be 'a senior manager' or 'a top manager'."
+ },
+ "missed": [
+  "senses[0].examples: 'She was promoted to a manager last year.' is unidiomatic; the pattern is 'promoted to manager' with no article."
+ ],
+ "_meta": {
+  "seconds": 23.8,
+  "api_equiv_usd": 0.10390179999999999,
+  "tokens_in": 20486,
+  "cache_read": 11869,
+  "tokens_out": 1630,
+  "thinking": 1112,
+  "model_used": "claude-opus-5-5",
+  "is_error": false
+ }
+}

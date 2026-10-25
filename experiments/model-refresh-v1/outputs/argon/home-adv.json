@@ -1,0 +1,528 @@
+{
+ "arm": "argon",
+ "model": "google/gemini-4-argon",
+ "slug": "home-adv",
+ "seconds": 36.9,
+ "cost_usd": 0.040732,
+ "tokens_in": 6101,
+ "tokens_out": 2853,
+ "finish": "stop",
+ "text": "{\"verdicts\": [{\"field\": \"headword_and_pos\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"variants\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"pronunciation.american\", \"verdict\": \"issue\", \"quote\": \"hum\", \"severity\": \"blocking\", \"family\": \"pronunciation\", \"reason\": \"The General American vowel in 'home' is /oʊ/, not /u/; the transcription should be /hoʊm/.\"}, {\"field\": \"pronunciation.british\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"inflections\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"core_idea\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].definition\", \"verdict\": \"issue\", \"quote\": \"used to describe the act of going to or being at the place where you live\", \"severity\": \"blocking\", \"family\": \"definition-style\", \"reason\": \"Uses forbidden padding 'used to describe' on a content word; an adverb should be defined with a prepositional/adverbial phrase such as 'to or at the place where you live'.\"}, {\"field\": \"senses[0].explanation\", \"verdict\": \"issue\", \"quote\": \"No preposition comes before it after verbs of movement: *go home*, *come home*, *get home*. With **be**, it means *at home*: *Is Sam home?* American English also says *stay home*, where British English usually says *stay at home*.\", \"severity\": \"minor\", \"family\": \"explanation\", \"reason\": \"By house rules, an explanation field belongs only on words whose use is easier to explain than to define, and this note also duplicates the usage_note, learner_errors, and adaptation.grammar fields.\"}, {\"field\": \"senses[0].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[0].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[1].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[2].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[2].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[2].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[2].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[2].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[2].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[2].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[2].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[2].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[3].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[3].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[3].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[3].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[3].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[3].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[3].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[3].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"senses[3].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].text_and_placement\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[0].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].text_and_placement\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"phrases[1].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"word_family\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"synonym_discrimination\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"usage_note\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"learner_errors\", \"verdict\": \"issue\", \"quote\": \"She went back to the home.\", \"severity\": \"blocking\", \"family\": \"learner-error\", \"reason\": \"The correction 'She went back to the home' contradicts the note ('No **to** before **home** after **go back** and **come back**') and changes the meaning to a care home; it must be 'She went back home.'\"}, {\"field\": \"etymology\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"see_also\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"adaptation\", \"verdict\": \"issue\", \"quote\": \"**home**: after verbs of movement it needs no preposition (*go home*, *come home*), although many languages use one there. A translator should not add one to the English examples.\", \"severity\": \"minor\", \"family\": \"adaptation\", \"reason\": \"Restates the exact same no-preposition rule already covered in senses[0].explanation, usage_note, and learner_errors.\"}, {\"field\": \"sense_structure\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"She went back to the home.\", \"severity\": \"blocking\", \"family\": \"other\", \"reason\": \"In learner_errors[1], the correction 'She went back to the home' directly contradicts its own note and usage_note, and the no-preposition fact is stated four times across senses[0].explanation, usage_note, learner_errors, and adaptation.grammar.\"}, {\"field\": \"coverage\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}, {\"field\": \"examples_fit\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": null}], \"summary\": \"The entry has three blocking issues: the American IPA is wrong ('hum' instead of 'hoʊm'), sense 1 uses the forbidden definition padding 'used to describe', and the second learner error gives an erroneous correction ('She went back to the home.' instead of 'She went back home.'). In addition, the no-preposition rule is repeated across four different note fields.\"}",
+ "model_used": "google/gemini-4-argon",
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "issue",
+   "quote": "hum",
+   "severity": "blocking",
+   "family": "pronunciation",
+   "reason": "The General American vowel in 'home' is /oʊ/, not /u/; the transcription should be /hoʊm/."
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "issue",
+   "quote": "used to describe the act of going to or being at the place where you live",
+   "severity": "blocking",
+   "family": "definition-style",
+   "reason": "Uses forbidden padding 'used to describe' on a content word; an adverb should be defined with a prepositional/adverbial phrase such as 'to or at the place where you live'."
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "issue",
+   "quote": "No preposition comes before it after verbs of movement: *go home*, *come home*, *get home*. With **be**, it means *at home*: *Is Sam home?* American English also says *stay home*, where British English usually says *stay at home*.",
+   "severity": "minor",
+   "family": "explanation",
+   "reason": "By house rules, an explanation field belongs only on words whose use is easier to explain than to define, and this note also duplicates the usage_note, learner_errors, and adaptation.grammar fields."
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[3].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].text_and_placement",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].text_and_placement",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "phrases[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "issue",
+   "quote": "She went back to the home.",
+   "severity": "blocking",
+   "family": "learner-error",
+   "reason": "The correction 'She went back to the home' contradicts the note ('No **to** before **home** after **go back** and **come back**') and changes the meaning to a care home; it must be 'She went back home.'"
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "issue",
+   "quote": "**home**: after verbs of movement it needs no preposition (*go home*, *come home*), although many languages use one there. A translator should not add one to the English examples.",
+   "severity": "minor",
+   "family": "adaptation",
+   "reason": "Restates the exact same no-preposition rule already covered in senses[0].explanation, usage_note, and learner_errors."
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "She went back to the home.",
+   "severity": "blocking",
+   "family": "other",
+   "reason": "In learner_errors[1], the correction 'She went back to the home' directly contradicts its own note and usage_note, and the no-preposition fact is stated four times across senses[0].explanation, usage_note, learner_errors, and adaptation.grammar."
+  },
+  {
+   "field": "coverage",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  }
+ ],
+ "parse_error": null,
+ "summary": "The entry has three blocking issues: the American IPA is wrong ('hum' instead of 'hoʊm'), sense 1 uses the forbidden definition padding 'used to describe', and the second learner error gives an erroneous correction ('She went back to the home.' instead of 'She went back home.'). In addition, the no-preposition rule is repeated across four different note fields."
+}

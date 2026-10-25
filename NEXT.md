@@ -6,7 +6,7 @@
 
 - 2,900 entries, all `reviewed`. Milestone 1: 145 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); 63 unbanded rows voted 2026-10-25. A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-25: about US$11.40 of US$15. Originality: last 2026-10-25, next due in twenty runs.
+- Spend 2026-10-25: about US$12.95 of US$15 (US$1.55 of it the owner's model test). Originality: last 2026-10-25, next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md); [experiment](experiments/claude-reviewers-v1/README.md)). Both roles run side by side. A failed `claude -p` call is retried twice, then recorded as an error: re-run `--roles reviewer-a`. Its model label was fixed 2026-10-25 ([claude-cli-model-label](wiki/notes/claude-cli-model-label.md)).
 
 ## Queue (top-down)
@@ -17,7 +17,7 @@
    3. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates; eight references to ruled-out targets (`check_links.py`). The `active-adj`/`passive-adj` and `alone-adj`/`lonely-adj` type mismatches belong here.
    4. **Build** milestone 1 in queue order (`claim.py --from-queue`). Closure waits until it is built ([build-order](wiki/decisions/build-order.md)).
    5. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by number of senses, skipping those read since 2026-10-24; twelve done; next `throw-v`, `leave-v`, `cover-v`, `clear-adj`, `carry-v`, `work-v`; add *going strong* to `go-v` and *look sharp* to `look-v` when next read), then the one-round backlog by band.
-   6. **reviewer-b** (E1): settled 2026-10-25 at the second lint under the new prompt: 1.09 issues per entry over 171 reviews, so no trial.
+   6. **reviewer-b** (E1): settled 2026-10-25, no trial.
    7. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    8. **E5**: when milestone 1 is built and the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
 1. **build**: check a verb + preposition row against the verb's senses and a `phr` row against the keyword entry's phrases; run the panel in chunks of four or five; place every `NO-SENSE` back-link by hand.
@@ -47,4 +47,5 @@
 - Your ruling of 2026-10-25 is in force: reviewer A is the Claude model, and reviewer B is unchanged. `PROJECT.md` still says "two non-Anthropic reviewers"; a session does not edit the charter, so that line is yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); it stays off until you say. The new model caught all four planted IPA errors.
 - Still open: continent names in definitions; *the former*/*the following* as nouns or pronouns (`wiki/open-questions.md`); pronunciation disputes in `reviews/needs_curator.txt`.
+- **Model test 2026-10-25** ([record](experiments/model-refresh-v1/README.md)): reviewer-b could be Gemini 3.8 Flash (same panel result, a quarter of the cost) or Gemini 4 Argon; pronunciation-1 could be GPT-6.1 Sol. Your choice.
 - The public site: <https://tkgally.github.io/eex-dict/>.
