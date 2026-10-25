@@ -217,7 +217,7 @@
     },
     {
       "n": 3,
-      "signpost": "pain",
+      "signpost": "pain or sound",
       "definition": "sudden and strong, as if caused by something cutting you",
       "explanation": null,
       "grammar": {
@@ -268,7 +268,48 @@
         }
       ],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "loud, short, and sudden",
+          "explanation": "Used of sounds.",
+          "grammar": {
+            "countability": null,
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "There was a sharp knock at the door.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "She gave a sharp cry and dropped the cup.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "adjective + noun",
+              "items": [
+                "a sharp knock",
+                "a sharp cry",
+                "a sharp noise"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -449,7 +490,7 @@
     {
       "n": 6,
       "signpost": "angry",
-      "definition": "said or done in a strong, angry, or unkind way",
+      "definition": "speaking or acting in a strong, angry, or unkind way, or said in this way",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -590,7 +631,7 @@
     {
       "n": 8,
       "signpost": "music note",
-      "definition": "a half step higher than the note named",
+      "definition": "higher by a half step than the note named",
       "explanation": "Used after the letter that names a note: *C sharp*, *F sharp*.",
       "grammar": {
         "countability": null,
@@ -648,7 +689,7 @@
     {
       "n": 9,
       "signpost": "too high",
-      "definition": "a little higher than the correct note",
+      "definition": "sounding higher than the correct note",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -706,6 +747,73 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 10,
+      "signpost": "stylish",
+      "definition": "stylish, neat, and attractive",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": null,
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "He looked very sharp in his new suit.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "That's a sharp jacket. Where did you get it?",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "She's always a sharp dresser at work.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a sharp suit",
+            "a sharp dresser"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "look sharp",
+            "dress sharp"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [],
@@ -733,13 +841,7 @@
   ],
   "synonym_discrimination": null,
   "usage_note": "**Sharp** is also an adverb meaning *exactly* with times (*at six o'clock sharp*); that is a separate entry. The adverb for most senses here is **sharply**: *Prices rose sharply*.",
-  "learner_errors": [
-    {
-      "incorrect": "There was a sharp increasing in prices.",
-      "correct": "There was a sharp increase in prices.",
-      "note": "After **a sharp**, use the noun **increase**, not the -ing form."
-    }
-  ],
+  "learner_errors": [],
   "etymology": null,
   "see_also": [
     {
@@ -752,16 +854,16 @@
     }
   ],
   "adaptation": {
-    "semantic": "Many languages use different words for a knife that cuts well (sense 1), a sudden rise (sense 2), and a clever mind (sense 4). Translate each sense on its own.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
-    "false_friends": null,
+    "false_friends": "In some languages the word for **sharp** also means hot and spicy, of food with pepper. In English a **sharp** taste is sour or bitter, not hot: use **spicy** or **hot** for pepper.",
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-10-12T17:41:15Z",
-    "modified": "2026-10-12T18:00:45Z",
+    "modified": "2026-10-25T12:57:12Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261012T174049Z-m8x2rl",
     "reviews": [
@@ -782,6 +884,26 @@
         "date": "2026-10-12",
         "file": "reviews/20261012T174049Z-m8x2rl/sharp-adj.json",
         "ok": 86,
+        "issues": 2,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261025T124349Z-twauz7",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T124349Z-twauz7/sharp-adj.json",
+        "ok": 97,
+        "issues": 7,
+        "blocking": 2
+      },
+      {
+        "run_id": "20261025T124349Z-twauz7",
+        "role": "reviewer-b",
+        "model": "google/gemini-3.1-pro-preview",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T124349Z-twauz7/sharp-adj.json",
+        "ok": 101,
         "issues": 2,
         "blocking": 1
       }
