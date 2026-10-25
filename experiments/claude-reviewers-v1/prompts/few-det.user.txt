@@ -1,0 +1,216 @@
+Check every field of this entry. For EACH field name in the checklist return one verdict object, including every field that is fine (verdict "ok"): your verdicts list must contain at least 36 objects, one or more per field. Check each field as closely as if you were listing only problems: "ok" means you found nothing wrong. Fields: headword_and_pos, variants, pronunciation.american, pronunciation.british, inflections, labels, core_idea, senses[0].signpost, senses[0].definition, senses[0].explanation, senses[0].grammar, senses[0].labels, senses[0].examples, senses[0].collocations, senses[0].cross_references, senses[0].adaptation, senses[1].signpost, senses[1].definition, senses[1].explanation, senses[1].grammar, senses[1].labels, senses[1].examples, senses[1].collocations, senses[1].cross_references, senses[1].adaptation, word_family, synonym_discrimination, usage_note, learner_errors, etymology, see_also, adaptation, sense_structure, consistency, coverage, examples_fit.
+
+Return JSON of the form {"verdicts": [{"field": "<name from the checklist>", "verdict": "ok" | "issue", "quote": "<exact text objected to, or null>", "severity": "blocking" | "minor" | null, "family": "<one of: definition-meaning, definition-style, definition-vocabulary, explanation, example-unnatural, example-grammar, example-policy, grammar-code, label, collocation, cross-reference, learner-error, synonym-discrimination, usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, coverage, other>" | null, "reason": "<one line, or null>"}], "summary": "<one or two sentences>"}. A field with several problems gets several objects with the same field name. "sense_structure" is the verdict on the set of senses as a whole (missing, over-split, misordered); "headword_and_pos" is whether the headword, part of speech, and homograph split are right and whether every sense and every use described belongs to this part of speech; "consistency" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note against the grammar values, a claim made twice in two ways); "cross_references" covers synonyms, antonyms, and compare of that sense; "coverage" and "examples_fit" are the two required checks described in the house rules.
+
+ENTRY (JSON):
+{
+ "schema_version": "1.0",
+ "slug": "few-det",
+ "headword": "few",
+ "pos": "det",
+ "homograph": 1,
+ "variants": [],
+ "pronunciation": {
+  "american": {
+   "ipa": "fju"
+  },
+  "british": {
+   "ipa": "fjuː"
+  },
+  "variants": [],
+  "audio": null,
+  "notes": null
+ },
+ "inflections": {
+  "forms": {},
+  "note": null
+ },
+ "frequency": {
+  "band": 1,
+  "basis": "editorial",
+  "defining_vocabulary": true
+ },
+ "labels": {
+  "register": [],
+  "region": [],
+  "domain": [],
+  "currency": [],
+  "attitude": []
+ },
+ "core_idea": "**Few** and **a few** are the same word before a plural noun, but **few** by itself suggests not enough, while **a few** simply reports a small number.",
+ "senses": [
+  {
+   "n": 1,
+   "signpost": "not many",
+   "definition": "used before an uncountable noun to mean not much, less than expected or wanted",
+   "explanation": "Bare **few**, without **a**, has a negative feel: it says the number is smaller than hoped for. Compare this with **a few** (sense 2), which reports a small number in a plain, positive way.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "Few people showed up to the meeting.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "She has few friends in this city.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Very few students finished the exam early.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Few restaurants stay open this late.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "phrase",
+     "items": [
+      "very few",
+      "too few"
+     ]
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [
+    {
+     "slug": "many-det",
+     "note": null
+    }
+   ],
+   "compare": [
+    {
+     "slug": "little-det",
+     "note": "**little** is the uncountable match of **few**: **few** friends, **little** money"
+    },
+    {
+     "slug": "several-det",
+     "note": null
+    }
+   ],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 2,
+   "signpost": "a few: some",
+   "definition": "used with **a** before a plural noun to mean a small number, reported in a plain way",
+   "explanation": "**A few** simply reports a small number, without the disappointed feel of bare **few**; unlike bare **few**, it does not suggest the number is too small.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "I have a few questions for you.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "We invited a few friends over for dinner.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Could I borrow a few money?",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "There are a few things I'd like to change.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "phrase",
+     "items": [
+      "a few minutes",
+      "quite a few",
+      "a few more"
+     ]
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  }
+ ],
+ "phrases": [],
+ "word_family": [],
+ "synonym_discrimination": null,
+ "usage_note": "Bare **few** says not enough; **a few** says a small but real number. The same split applies to **little** and **a little** with uncountable nouns. The comparative of **few** is **less**, and the superlative is **least**: *less people*, *the least mistakes*. **Few** used alone, without a noun, is a separate entry.",
+ "learner_errors": [
+  {
+   "incorrect": "I have few friends, so I'm happy.",
+   "correct": "I have a few friends, so I'm happy.",
+   "note": "Bare **few** sounds negative; a positive sentence about a small, sufficient number needs **a few**."
+  },
+  {
+   "incorrect": "She has a few money.",
+   "correct": "She has a little money.",
+   "note": "**Few** and **a few** go with plural countable nouns; uncountable nouns need **little** and **a little**."
+  }
+ ],
+ "etymology": null,
+ "see_also": [
+  {
+   "slug": "little-det",
+   "note": null
+  },
+  {
+   "slug": "few-pron",
+   "note": "**few** used alone, without a following noun: *very few succeed*"
+  }
+ ],
+ "adaptation": {
+  "semantic": "The difference between bare **few** (not enough) and **a few** (a small but real number) has no equivalent in some languages, where one word covers both; the article carries the meaning in English.",
+  "grammar": "**Few** and **a few** go only with plural countable nouns; the equivalent for uncountable nouns is **little** and **a little**.",
+  "culture": null,
+  "false_friends": null,
+  "pronunciation": null
+ }
+}

@@ -1,0 +1,387 @@
+{
+ "arm": "haiku-cli",
+ "model": "claude-haiku-5-5",
+ "slug": "ought-modal",
+ "text": "```json\n{\n  \"verdicts\": [\n    {\"field\": \"headword_and_pos\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Ought is a defective modal; all three senses and their uses belong to this part of speech.\"},\n    {\"field\": \"variants\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No variant headword; the informal spelling oughta is discussed in usage_note and is not a separate variant entry.\"},\n    {\"field\": \"pronunciation.american\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"ɔt is the correct General American transcription, with no length mark.\"},\n    {\"field\": \"pronunciation.british\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"ɔːt is the correct British transcription.\"},\n    {\"field\": \"inflections\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Modal with no inflected forms; empty forms and null note are correct.\"},\n    {\"field\": \"labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No entry-level label is needed for standard modal use.\"},\n    {\"field\": \"core_idea\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Sentence form is correct and covers the right-thing and likely-true senses; the 'almost always' wording is checked under consistency.\"},\n    {\"field\": \"senses[0].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Three words, plain, and distinct from the other signposts.\"},\n    {\"field\": \"senses[0].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Follows the house style for a modal; plain and not circular.\"},\n    {\"field\": \"senses[0].explanation\", \"verdict\": \"issue\", \"quote\": \"Unlike most modals, **ought** is always followed by **to**.\", \"severity\": \"minor\", \"family\": \"explanation\", \"reason\": \"Overstated: ought can stand alone in ellipsis (Should I? Yes, you ought.), so 'always' conflicts with the core_idea's 'almost always'.\"},\n    {\"field\": \"senses[0].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Transitivity and countability null is correct for a modal; the verb + to-infinitive pattern is right.\"},\n    {\"field\": \"senses[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No register, region, or domain label needed for this neutral modal sense.\"},\n    {\"field\": \"senses[0].examples\", \"verdict\": \"issue\", \"quote\": \"You don't ought to speak to her like that.\", \"severity\": \"blocking\", \"family\": \"example-unnatural\", \"reason\": \"Don't ought is nonstandard; it is the error the learner_errors and grammar notes warn against, so it must not be a model sentence.\"},\n    {\"field\": \"senses[0].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Empty collocation list is acceptable for this modal.\"},\n    {\"field\": \"senses[0].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"should-modal is a true synonym and must-modal is a valid compare; notes match the sense.\"},\n    {\"field\": \"senses[0].adaptation\", \"verdict\": \"issue\", \"quote\": \"The negative keeps **to** as well in careful English: *you ought not to go*.\", \"severity\": \"minor\", \"family\": \"adaptation\", \"reason\": \"Repeats the entry-level adaptation point and the learner_errors negative note; a fact is stated in several places.\"},\n    {\"field\": \"senses[1].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Two words and clearly distinct from sense 1.\"},\n    {\"field\": \"senses[1].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Plain, not circular, and states the confident-guess meaning.\"},\n    {\"field\": \"senses[1].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Accurately distinguishes the guess use from should.\"},\n    {\"field\": \"senses[1].grammar\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Pattern verb + to-infinitive is correct.\"},\n    {\"field\": \"senses[1].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No labels needed.\"},\n    {\"field\": \"senses[1].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Three natural examples that show the guess use and fit the definition.\"},\n    {\"field\": \"senses[1].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Empty list acceptable for a modal sense.\"},\n    {\"field\": \"senses[1].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"should-modal is a valid synonym and the note is accurate.\"},\n    {\"field\": \"senses[1].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation sub-fields are null, which is acceptable.\"},\n    {\"field\": \"senses[2].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Plain and identifies the past form.\"},\n    {\"field\": \"senses[2].definition\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Accurate for both the blame and past-guess uses; long but plain.\"},\n    {\"field\": \"senses[2].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Correctly explains the blame reading and the past guess, parallel to should have.\"},\n    {\"field\": \"senses[2].grammar\", \"verdict\": \"issue\", \"quote\": \"\\\"patterns\\\": []\", \"severity\": \"minor\", \"family\": \"grammar-code\", \"reason\": \"Empty patterns while senses 1 and 2 give a pattern; the construction ought to + have + past participle is not recorded anywhere in the grammar fields.\"},\n    {\"field\": \"senses[2].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No labels needed.\"},\n    {\"field\": \"senses[2].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Natural examples that fit the blame and guess readings.\"},\n    {\"field\": \"senses[2].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Empty list acceptable.\"},\n    {\"field\": \"senses[2].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"should-modal with should have is the correct comparison.\"},\n    {\"field\": \"senses[2].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation sub-fields are null.\"},\n    {\"field\": \"word_family\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Empty list is acceptable for this modal.\"},\n    {\"field\": \"synonym_discrimination\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable because the cross-references cover the contrast with should.\"},\n    {\"field\": \"usage_note\", \"verdict\": \"issue\", \"quote\": \"**ought to** is more common than **should** in everyday American speech, and **should** sounds more formal\", \"severity\": \"blocking\", \"family\": \"usage-note\", \"reason\": \"False: should is far more common in everyday American speech, and ought is the more formal word, as the explanation and synonym notes say.\"},\n    {\"field\": \"learner_errors\", \"verdict\": \"issue\", \"quote\": \"Unlike other modals, **ought** keeps **to** before the base verb.\", \"severity\": \"minor\", \"family\": \"learner-error\", \"reason\": \"The note restates the explanation of senses[0]; the errors themselves are real and their corrections are right.\"},\n    {\"field\": \"etymology\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null; no origin claim is needed for the learner.\"},\n    {\"field\": \"see_also\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"should-modal is the right related entry.\"},\n    {\"field\": \"adaptation\", \"verdict\": \"issue\", \"quote\": \"**Ought** is a modal that, unusually, is followed by **to** plus the base verb rather than the bare base form\", \"severity\": \"minor\", \"family\": \"adaptation\", \"reason\": \"Repeats the same grammar point as senses[0].adaptation; the fact is stated twice.\"},\n    {\"field\": \"sense_structure\", \"verdict\": \"issue\", \"quote\": \"or that something expected in the past probably happened\", \"severity\": \"minor\", \"family\": \"sense-structure\", \"reason\": \"The past-guess meaning of senses[2] duplicates the likely-true sense senses[1]; it should be a subsense or the overlap should be cut.\"},\n    {\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"**ought to** is more common than **should** in everyday American speech, and **should** sounds more formal\", \"severity\": \"blocking\", \"family\": \"usage-note\", \"reason\": \"Contradicts senses[0].explanation and senses[0].cross_references, which say should is more common and ought is more formal.\"},\n    {\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"almost always followed by **to**\", \"severity\": \"minor\", \"family\": \"explanation\", \"reason\": \"core_idea says almost always, while senses[0].explanation says always; the two should agree.\"},\n    {\"field\": \"coverage\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Covers obligation or advice, the likely-true use, and the past forms; negative and question forms are handled in usage_note.\"},\n    {\"field\": \"examples_fit\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Every example matches its sense's meaning; the grammar problem with 'You don't ought to' is recorded under senses[0].examples.\"}\n  ],\n  \"summary\": \"Two blocking problems: the usage note wrongly says ought to is more common than should and more informal, contradicting the sense notes, and the example 'You don't ought to speak to her like that' models nonstandard English. Several minor issues remain, mainly a repeated adaptation point, an overstated 'always followed by to', and an overlap between senses 2 and 3.\"\n}\n```",
+ "seconds": 62.7,
+ "api_equiv_usd": 0.00908166,
+ "tokens_in": 11834,
+ "cache_read": 3626,
+ "tokens_out": 14808,
+ "thinking": 11141,
+ "model_used": "claude-haiku-5-5",
+ "is_error": false,
+ "cost_usd": 0.0,
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "issue",
+   "quote": "Unlike most modals, **ought** is always followed by **to**.",
+   "severity": "minor",
+   "family": "explanation",
+   "reason": "Overstated: ought can stand alone in ellipsis (Should I? Yes, you ought.), so 'always' conflicts with the core_idea's 'almost always'."
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "issue",
+   "quote": "You don't ought to speak to her like that.",
+   "severity": "blocking",
+   "family": "example-unnatural",
+   "reason": "Don't ought is nonstandard; it is the error the learner_errors and grammar notes warn against, so it must not be a model sentence."
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "issue",
+   "quote": "The negative keeps **to** as well in careful English: *you ought not to go*.",
+   "severity": "minor",
+   "family": "adaptation",
+   "reason": "Repeats the entry-level adaptation point and the learner_errors negative note; a fact is stated in several places."
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].grammar",
+   "verdict": "issue",
+   "quote": "\"patterns\": []",
+   "severity": "minor",
+   "family": "grammar-code",
+   "reason": "Empty patterns while senses 1 and 2 give a pattern; the construction ought to + have + past participle is not recorded anywhere in the grammar fields."
+  },
+  {
+   "field": "senses[2].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "issue",
+   "quote": "**ought to** is more common than **should** in everyday American speech, and **should** sounds more formal",
+   "severity": "blocking",
+   "family": "usage-note",
+   "reason": "False: should is far more common in everyday American speech, and ought is the more formal word, as the explanation and synonym notes say."
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "issue",
+   "quote": "Unlike other modals, **ought** keeps **to** before the base verb.",
+   "severity": "minor",
+   "family": "learner-error",
+   "reason": "The note restates the explanation of senses[0]; the errors themselves are real and their corrections are right."
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "issue",
+   "quote": "**Ought** is a modal that, unusually, is followed by **to** plus the base verb rather than the bare base form",
+   "severity": "minor",
+   "family": "adaptation",
+   "reason": "Repeats the same grammar point as senses[0].adaptation; the fact is stated twice."
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "issue",
+   "quote": "or that something expected in the past probably happened",
+   "severity": "minor",
+   "family": "sense-structure",
+   "reason": "The past-guess meaning of senses[2] duplicates the likely-true sense senses[1]; it should be a subsense or the overlap should be cut."
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "**ought to** is more common than **should** in everyday American speech, and **should** sounds more formal",
+   "severity": "blocking",
+   "family": "usage-note",
+   "reason": "Contradicts senses[0].explanation and senses[0].cross_references, which say should is more common and ought is more formal."
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "almost always followed by **to**",
+   "severity": "minor",
+   "family": "explanation",
+   "reason": "core_idea says almost always, while senses[0].explanation says always; the two should agree."
+  },
+  {
+   "field": "coverage",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  }
+ ],
+ "parse_error": null,
+ "summary": "Two blocking problems: the usage note wrongly says ought to is more common than should and more informal, contradicting the sense notes, and the example 'You don't ought to speak to her like that' models nonstandard English. Several minor issues remain, mainly a repeated adaptation point, an overstated 'always followed by to', and an overlap between senses 2 and 3."
+}

@@ -116,16 +116,22 @@ def spend_stats(rid: str) -> dict:
 
 
 def precision_report() -> None:
+    """By role and family. A role whose model changed is reported per model: decision lines carry "model"
+    from 2026-10-25; reviewer-a lines without one are its old model (wiki/decisions/reviewer-a-claude.md)."""
     by = defaultdict(Counter)
     for d in read_jsonl(eexlib.ROOT / "reviews" / "decisions.jsonl"):
         n = int(d.get("n", 1) or 1)
-        by[(d.get("role", "?"), d.get("family", "?"))][d.get("decision", "")] += n
-        by[(d.get("role", "?"), "ALL")][d.get("decision", "")] += n
-    print(f"{'role':12s} {'family':24s} {'apply':>6s} {'reject':>7s} {'escal':>6s} {'precision':>10s}")
+        role = d.get("role", "?")
+        if d.get("model") and str(d["model"]).startswith("claude-cli/"):
+            role = f"{role}:{str(d['model'])[len('claude-cli/'):]}"
+        by[(role, d.get("family", "?"))][d.get("decision", "")] += n
+        by[(role, "ALL")][d.get("decision", "")] += n
+    w = max([12] + [len(r) for r, _f in by])
+    print(f"{'role':{w}s} {'family':24s} {'apply':>6s} {'reject':>7s} {'escal':>6s} {'precision':>10s}")
     for (role, fam), c in sorted(by.items()):
         denom = c["apply"] + c["reject"]
         prec = f"{c['apply'] / denom:.2f}" if denom else "-"
-        print(f"{role:12s} {fam:24s} {c['apply']:6d} {c['reject']:7d} {c['escalate']:6d} {prec:>10s}")
+        print(f"{role:{w}s} {fam:24s} {c['apply']:6d} {c['reject']:7d} {c['escalate']:6d} {prec:>10s}")
 
 
 def main() -> int:

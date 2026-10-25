@@ -32,6 +32,12 @@ CLI
 
 A CLI call goes through call_with_budget, so it is refused when the estimate
 would exceed the daily cap and is recorded in config/budget-ledger.json after.
+
+A slug of the form "claude-cli/<model id>" (config/models.md) is not sent to
+OpenRouter: chat() runs one headless `claude -p` call on the owner's Claude
+subscription instead (no tools, our system prompt, effort from reasoning_for,
+a JSON schema for JSON replies). It costs $0 in the ledger, which still records
+its tokens. Owner's ruling of 2026-10-25 (wiki/decisions/reviewer-a-claude.md).
 """
 
 from __future__ import annotations
@@ -42,7 +48,10 @@ import importlib.util
 import json
 import os
 import re
+import subprocess
 import sys
+import tempfile
+import threading
 import time
 import urllib.error
 import urllib.request
@@ -231,10 +240,98 @@ def _retryable(status: int | None) -> bool:
     return status is None or status in RETRY_STATUSES or 500 <= status < 600
 
 
+# ----------------------------------------------------------------------------
+# headless Claude Code (slugs "claude-cli/<model id>", the owner's ruling of 2026-10-25)
+# ----------------------------------------------------------------------------
+
+CLAUDE_CLI_PREFIX = "claude-cli/"
+CLAUDE_CLI_TIMEOUT = 900
+CLAUDE_CLI_RETRIES = (5, 15)            # seconds before retry 1, 2
+_run = subprocess.run                   # patched by tests
+
+
+def is_claude_cli(model_slug: str) -> bool:
+    return model_slug.startswith(CLAUDE_CLI_PREFIX)
+
+
+def _claude_cli_once(cmd: list[str], user: str, timeout: float) -> dict:
+    # cwd outside the repository, so the reviewer sees only our prompt (no CLAUDE.md auto-discovery).
+    with tempfile.TemporaryDirectory(prefix="eex-claude-") as tmp:
+        try:
+            p = _run(cmd, input=user, capture_output=True, text=True, timeout=timeout, cwd=tmp)
+        except subprocess.TimeoutExpired:
+            raise OpenRouterError(f"claude -p timed out after {timeout:.0f}s") from None
+        except OSError as e:
+            raise OpenRouterError(f"claude -p could not start: {e}", status=400) from None
+    try:
+        res = json.loads(p.stdout)
+    except json.JSONDecodeError:
+        raise OpenRouterError(f"claude -p exit {p.returncode}, non-JSON output: {(p.stdout or p.stderr)[-300:]!r}") from None
+    if not isinstance(res, dict) or res.get("is_error"):
+        raise OpenRouterError(f"claude -p reported an error: {str(res.get('result') if isinstance(res, dict) else res)[:300]}")
+    return res
+
+
+def chat_claude_cli(model: str, messages, *, response_format: dict | None = None,
+                    reasoning: dict | None = None, json_schema: dict | None = None,
+                    timeout: float = CLAUDE_CLI_TIMEOUT, **_ignored) -> dict:
+    """One headless `claude -p` call: no tools, our system prompt in place of Claude Code's, effort from
+    reasoning["effort"], and structured output when a full schema is given (json_schema, or a
+    response_format of type json_schema). A bare json_object request gets no schema: a schema of just
+    {"type": "object"} came back hollow (2026-10-25), so the reply is parsed from text instead. It runs on
+    the owner's Claude subscription, so "cost" is 0.0; "cost_equiv" is Claude Code's list-price figure.
+    Returns the same keys as chat(). max_tokens and temperature do not apply."""
+    if isinstance(messages, str):
+        messages = [{"role": "user", "content": messages}]
+    if any(m.get("role") not in ("system", "user") for m in messages):
+        raise ValueError("chat_claude_cli takes system and user messages only (one turn)")
+    system = "\n\n".join(_content_text(m) for m in messages if m.get("role") == "system")
+    user = "\n\n".join(_content_text(m) for m in messages if m.get("role") == "user")
+    model_id = model[len(CLAUDE_CLI_PREFIX):]
+    cmd = ["claude", "-p", "--model", model_id, "--tools", "", "--output-format", "json", "--no-session-persistence"]
+    if system:
+        cmd += ["--system-prompt", system]
+    effort = (reasoning or {}).get("effort")
+    if effort:
+        cmd += ["--effort", str(effort)]
+    schema = json_schema or ((response_format or {}).get("json_schema") or {}).get("schema")
+    if schema:
+        cmd += ["--json-schema", json.dumps(schema)]
+    last: Exception | None = None
+    for attempt in range(1 + len(CLAUDE_CLI_RETRIES)):
+        try:
+            res = _claude_cli_once(cmd, user, timeout)
+            break
+        except OpenRouterError as e:
+            last = e
+            if e.status == 400 or attempt == len(CLAUDE_CLI_RETRIES):
+                raise
+            print(f"claude-cli: attempt {attempt + 1} failed ({e}); retrying in {CLAUDE_CLI_RETRIES[attempt]}s", file=sys.stderr)
+            _sleep(CLAUDE_CLI_RETRIES[attempt])
+    else:  # pragma: no cover
+        raise OpenRouterError(f"claude -p gave up: {last}")
+    usage = res.get("usage") or {}
+    structured = res.get("structured_output")
+    text = json.dumps(structured, ensure_ascii=False) if structured is not None else (res.get("result") or "")
+    used = list((res.get("modelUsage") or {}).keys())
+    return {
+        "text": text,
+        "cost": 0.0,
+        "cost_equiv": round(float(res.get("total_cost_usd") or 0.0), 6),
+        "tokens_in": int(usage.get("input_tokens") or 0) + int(usage.get("cache_creation_input_tokens") or 0)
+                     + int(usage.get("cache_read_input_tokens") or 0),
+        "tokens_out": int(usage.get("output_tokens") or 0),
+        "tokens_reasoning": int((usage.get("output_tokens_details") or {}).get("thinking_tokens") or 0),
+        "model": CLAUDE_CLI_PREFIX + (used[0] if used else model_id),
+        "finish_reason": res.get("stop_reason"),
+        "raw": res,
+    }
+
+
 def chat(model: str, messages, *, max_tokens: int = DEFAULT_MAX_TOKENS,
          temperature: float = DEFAULT_TEMPERATURE, response_format: dict | None = None,
          reasoning: dict | None = None, timeout: float = DEFAULT_TIMEOUT,
-         extra: dict | None = None) -> dict:
+         extra: dict | None = None, json_schema: dict | None = None) -> dict:
     """One chat completion.
 
     messages: a list of {"role", "content"} dicts, or a plain string (one user turn).
@@ -243,7 +340,11 @@ def chat(model: str, messages, *, max_tokens: int = DEFAULT_MAX_TOKENS,
     reasoning and return an empty "text" with finish_reason "length".
     Retries HTTP 408/429/5xx and transport errors up to 4 times (2, 4, 8, 16 s);
     raises OpenRouterError on any other failure. Never includes the key in errors.
+    A "claude-cli/" slug goes to chat_claude_cli instead of OpenRouter; json_schema is used only there.
     """
+    if is_claude_cli(model):
+        return chat_claude_cli(model, messages, response_format=response_format, reasoning=reasoning,
+                               json_schema=json_schema)
     if isinstance(messages, str):
         messages = [{"role": "user", "content": messages}]
     body: dict = {
@@ -376,6 +477,10 @@ def reasoning_for(model_slug: str, task: str = "review") -> dict:
     For reviews, DeepSeek models spend the whole output budget on hidden
     reasoning unless it is switched off; the others review at low effort.
     """
+    if is_claude_cli(model_slug):
+        # Claude via `claude -p` (ruling of 2026-10-25): reviews need real thinking; at default effort
+        # the experiment's reviewer barely reasoned and its precision fell (experiments/claude-reviewers-v1).
+        return {"effort": "low"} if task in ("pronunciation", "wordlist") else {"effort": "high"}
     if task in ("pronunciation", "wordlist"):
         # Google endpoints refuse to disable reasoning (HTTP 400, 2026-09-16); at low effort they
         # answer these tasks with no reasoning tokens anyway.
@@ -390,6 +495,9 @@ def model_for(role_or_model: str, models_md: Path | None = None) -> str:
     return role_or_model if "/" in role_or_model else resolve_role(role_or_model, models_md)
 
 
+_LEDGER_LOCK = threading.Lock()                 # review_panel.py runs its two roles in parallel threads
+
+
 def call_with_budget(role_or_model: str, messages, purpose: str, estimate_usd: float,
                      *, ledger: Path | None = None, parse_json: bool = False,
                      run_id: str | None = None, models_md: Path | None = None, **kw) -> dict:
@@ -401,7 +509,8 @@ def call_with_budget(role_or_model: str, messages, purpose: str, estimate_usd: f
     spend = _load_spend()
     ledger_path = Path(ledger) if ledger else spend.DEFAULT_LEDGER
     model = model_for(role_or_model, models_md)
-    ok, left, led = spend.check(ledger_path, float(estimate_usd))
+    with _LEDGER_LOCK:
+        ok, left, led = spend.check(ledger_path, float(estimate_usd))
     if not ok:
         raise RuntimeError(
             f"budget check refused: estimated ${float(estimate_usd):.6f} for {purpose!r} would "
@@ -409,8 +518,9 @@ def call_with_budget(role_or_model: str, messages, purpose: str, estimate_usd: f
             f"(spent ${float(led['spent_usd']):.6f} on {led['date']}, "
             f"${spend.remaining(led):.6f} left)")
     result = chat_json(model, messages, **kw) if parse_json else chat(model, messages, **kw)
-    led = spend.record(ledger_path, result["cost"], purpose, result["model"],
-                       result["tokens_in"], result["tokens_out"], run_id)
+    with _LEDGER_LOCK:                           # a claude-cli call is recorded at $0 with its tokens
+        led = spend.record(ledger_path, result["cost"], purpose, result["model"],
+                           result["tokens_in"], result["tokens_out"], run_id)
     result["spent_today_usd"] = led["spent_usd"]
     return result
 

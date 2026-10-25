@@ -31,7 +31,7 @@
 - [pronunciation](decisions/pronunciation.md) — American and British IPA from model knowledge, checked by agreement.
 - [pronunciation-pipeline](decisions/pronunciation-pipeline.md) — the panel, the votes, and the two-vote agreement rule adopted from the experiment.
 - [licence-and-openness](decisions/licence-and-openness.md) — CC0 data, MIT code, nothing vendored.
-- [drafting-and-review](decisions/drafting-and-review.md) — in-session drafting, two non-Anthropic reviewers, closed verdicts.
+- [drafting-and-review](decisions/drafting-and-review.md) — in-session drafting, two reviewers from different labs (both non-Anthropic until the 2026-10-25 amendment), closed verdicts.
 - [verification](decisions/verification.md) — what is checked how; adjudication rules.
 - [cadence-and-model](decisions/cadence-and-model.md) — one to six runs a day; nothing depends on model or cadence.
 - [knowledge-base-and-caps](decisions/knowledge-base-and-caps.md) — the framework and the word caps.
@@ -42,6 +42,7 @@
 - [part-of-speech-and-consistency](decisions/part-of-speech-and-consistency.md) — one part of speech per entry, the entry agrees with itself, origin claims only in etymology, grammar exceptions named as such, pronunciation notes in plain words (from the seed-set feedback of 2026-09-18).
 - [proper-names-in-definitions](decisions/proper-names-in-definitions.md) — the owner's ruling of 2026-10-05: a closed list of proper names (`proper_names` in `schema/vocabularies.json`) may appear in definitions; `lint_vocab.py` accepts them and never queues them.
 - [reviewer-b-upgrade](decisions/reviewer-b-upgrade.md) — the owner's ruling of 2026-10-05: the `reviewer-b` role moves to the Pro-class Google model; only that role; the cap stays US$15.
+- [reviewer-a-claude](decisions/reviewer-a-claude.md) — the owner's ruling of 2026-10-25, after `experiments/claude-reviewers-v1`: `reviewer-a` becomes a Claude model run headless through `claude -p` at high effort on the owner's subscription ($0 in the ledger, tokens recorded); reviewer B unchanged; the old model's lint switch-offs reset, the owner's pronunciation switch-off kept; precision per model from then on.
 - [infinitive-marker](decisions/infinitive-marker.md) — the owner's ruling of 2026-10-05: a part-of-speech value `inf` (infinitive marker) and one entry, `to-inf`.
 - [owner-rulings-2026-10-24](decisions/owner-rulings-2026-10-24.md) — the owner's rulings of 2026-10-24 after an outside assessment: where each ruling (A1 to E6) is recorded and whether it is carried out; the full text is `inbox/archive/20261024_owner_rulings.txt`.
 - [rebanding](decisions/rebanding.md) — rulings A1 and A4: the word-list panel re-bands every queue row and entry on one written scale (lower median); defining vocabulary no longer forces band 1; rows queued by tools are `unbanded` until the next vote.

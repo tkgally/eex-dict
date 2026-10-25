@@ -1,0 +1,212 @@
+Check every field of this entry. For EACH field name in the checklist return one verdict object, including every field that is fine (verdict "ok"): your verdicts list must contain at least 36 objects, one or more per field. Check each field as closely as if you were listing only problems: "ok" means you found nothing wrong. Fields: headword_and_pos, variants, pronunciation.american, pronunciation.british, inflections, labels, core_idea, senses[0].signpost, senses[0].definition, senses[0].explanation, senses[0].grammar, senses[0].labels, senses[0].examples, senses[0].collocations, senses[0].cross_references, senses[0].adaptation, senses[1].signpost, senses[1].definition, senses[1].explanation, senses[1].grammar, senses[1].labels, senses[1].examples, senses[1].collocations, senses[1].cross_references, senses[1].adaptation, word_family, synonym_discrimination, usage_note, learner_errors, etymology, see_also, adaptation, sense_structure, consistency, coverage, examples_fit.
+
+Return JSON of the form {"verdicts": [{"field": "<name from the checklist>", "verdict": "ok" | "issue", "quote": "<exact text objected to, or null>", "severity": "blocking" | "minor" | null, "family": "<one of: definition-meaning, definition-style, definition-vocabulary, explanation, example-unnatural, example-grammar, example-policy, grammar-code, label, collocation, cross-reference, learner-error, synonym-discrimination, usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, coverage, other>" | null, "reason": "<one line, or null>"}], "summary": "<one or two sentences>"}. A field with several problems gets several objects with the same field name. "sense_structure" is the verdict on the set of senses as a whole (missing, over-split, misordered); "headword_and_pos" is whether the headword, part of speech, and homograph split are right and whether every sense and every use described belongs to this part of speech; "consistency" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note against the grammar values, a claim made twice in two ways); "cross_references" covers synonyms, antonyms, and compare of that sense; "coverage" and "examples_fit" are the two required checks described in the house rules.
+
+ENTRY (JSON):
+{
+ "schema_version": "1.0",
+ "slug": "since-conj",
+ "headword": "since",
+ "pos": "conj",
+ "homograph": 1,
+ "variants": [],
+ "pronunciation": {
+  "american": {
+   "ipa": "sɪns"
+  },
+  "british": {
+   "ipa": "sɪns"
+  },
+  "variants": [],
+  "audio": null,
+  "notes": "**Since** rhymes with **prince**."
+ },
+ "inflections": {
+  "forms": {},
+  "note": null
+ },
+ "frequency": {
+  "band": 1,
+  "basis": "editorial",
+  "defining_vocabulary": true
+ },
+ "labels": {
+  "register": [],
+  "region": [],
+  "domain": [],
+  "currency": [],
+  "attitude": []
+ },
+ "core_idea": null,
+ "senses": [
+  {
+   "n": 1,
+   "signpost": "from a time",
+   "definition": "from the time in the past when something happened until now",
+   "explanation": "The main clause usually has the present perfect (*have known*, *has been*), because it describes a situation from a past time up to now. The **since** clause usually has the past simple, naming the moment the situation began.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "I've known her since we were children.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "It's been two years since I have last seen him.",
+     "note": "with a length of time before **since**",
+     "pattern": null
+    },
+    {
+     "text": "Since he moved to the city, he has been much happier.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Things have changed a lot since you left.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "phrase",
+     "items": [
+      "ever since",
+      "it's been years since",
+      "it's been a long time since"
+     ]
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "compare": [
+    {
+     "slug": "for-prep",
+     "note": "**for** gives a length of time (*for two years*); **since** gives the starting point"
+    }
+   ],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": "Many languages use the present tense for a situation that began in the past and continues now. English uses the present perfect in the main clause: *I have lived here since I was ten*, not *I live here since I was ten*.",
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 2,
+   "signpost": "because",
+   "definition": "for the reason that",
+   "explanation": "This **since** gives a reason that the listener probably already knows or will accept easily. It often comes at the start of the sentence.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "Since you are here, you can help me carry these boxes.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "We took a taxi, since it was raining.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Since nobody wanted the last piece, I ate it.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [],
+   "synonyms": [
+    {
+     "slug": "because-conj",
+     "note": null
+    },
+    {
+     "slug": "seeing-conj",
+     "note": null
+    }
+   ],
+   "antonyms": [],
+   "compare": [
+    {
+     "slug": "because-conj",
+     "note": "**because** puts more weight on the reason, and is the usual answer to **why**"
+    },
+    {
+     "slug": "as-conj",
+     "note": null
+    }
+   ],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": "The time sense and the reason sense are expressed by different words in many languages. When the main clause is in the past simple, look at the tense to decide: *since he left* after *has been* is about time; after *we took a taxi* it is about a reason.",
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  }
+ ],
+ "phrases": [],
+ "word_family": [],
+ "synonym_discrimination": null,
+ "usage_note": "**Ever since** is a stronger form of the time use (*She has loved music ever since she was a child*). In the pattern with a length of time, American English usually says *It's been two years since I saw him*; British English also says *It's two years since I saw him*.",
+ "learner_errors": [
+  {
+   "incorrect": "I live here since I was ten.",
+   "correct": "I am living here since I was ten.",
+   "note": "When **since** gives a starting time, the main clause normally uses the present perfect."
+  },
+  {
+   "incorrect": "Since two years I work here.",
+   "correct": "I have worked here for two years.",
+   "note": "Use **for**, not **since**, with a length of time."
+  }
+ ],
+ "etymology": null,
+ "see_also": [
+  {
+   "slug": "since-prep",
+   "note": "before a noun (*since Monday*)"
+  },
+  {
+   "slug": "since-adv",
+   "note": "without a following clause (*I haven't seen him since*)"
+  }
+ ],
+ "adaptation": {
+  "semantic": null,
+  "grammar": null,
+  "culture": null,
+  "false_friends": null,
+  "pronunciation": null
+ }
+}

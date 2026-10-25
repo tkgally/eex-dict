@@ -1,0 +1,307 @@
+Check every field of this entry. For EACH field name in the checklist return one verdict object, including every field that is fine (verdict "ok"): your verdicts list must contain at least 45 objects, one or more per field. Check each field as closely as if you were listing only problems: "ok" means you found nothing wrong. Fields: headword_and_pos, variants, pronunciation.american, pronunciation.british, inflections, labels, core_idea, senses[0].signpost, senses[0].definition, senses[0].explanation, senses[0].grammar, senses[0].labels, senses[0].examples, senses[0].collocations, senses[0].cross_references, senses[0].adaptation, senses[1].signpost, senses[1].definition, senses[1].explanation, senses[1].grammar, senses[1].labels, senses[1].examples, senses[1].collocations, senses[1].cross_references, senses[1].adaptation, senses[2].signpost, senses[2].definition, senses[2].explanation, senses[2].grammar, senses[2].labels, senses[2].examples, senses[2].collocations, senses[2].cross_references, senses[2].adaptation, word_family, synonym_discrimination, usage_note, learner_errors, etymology, see_also, adaptation, sense_structure, consistency, coverage, examples_fit.
+
+Return JSON of the form {"verdicts": [{"field": "<name from the checklist>", "verdict": "ok" | "issue", "quote": "<exact text objected to, or null>", "severity": "blocking" | "minor" | null, "family": "<one of: definition-meaning, definition-style, definition-vocabulary, explanation, example-unnatural, example-grammar, example-policy, grammar-code, label, collocation, cross-reference, learner-error, synonym-discrimination, usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, coverage, other>" | null, "reason": "<one line, or null>"}], "summary": "<one or two sentences>"}. A field with several problems gets several objects with the same field name. "sense_structure" is the verdict on the set of senses as a whole (missing, over-split, misordered); "headword_and_pos" is whether the headword, part of speech, and homograph split are right and whether every sense and every use described belongs to this part of speech; "consistency" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note against the grammar values, a claim made twice in two ways); "cross_references" covers synonyms, antonyms, and compare of that sense; "coverage" and "examples_fit" are the two required checks described in the house rules.
+
+ENTRY (JSON):
+{
+ "schema_version": "1.0",
+ "slug": "local-adj",
+ "headword": "local",
+ "pos": "adj",
+ "homograph": 1,
+ "variants": [],
+ "pronunciation": {
+  "american": {
+   "ipa": "ˈloʊ.kəl"
+  },
+  "british": {
+   "ipa": "ˈləʊ.kəl"
+  },
+  "variants": [],
+  "audio": null,
+  "notes": null
+ },
+ "inflections": {
+  "forms": {
+   "comparative": null,
+   "superlative": null
+  },
+  "note": "comparative with more"
+ },
+ "frequency": {
+  "band": 1,
+  "basis": "editorial",
+  "defining_vocabulary": true
+ },
+ "labels": {
+  "register": [],
+  "region": [],
+  "domain": [],
+  "currency": [],
+  "attitude": []
+ },
+ "core_idea": "Something **local** belongs to one small area: the place near you, the government of a town, or one part of the body.",
+ "senses": [
+  {
+   "n": 1,
+   "signpost": "near you",
+   "definition": "in or belonging to the area near you or the area that you are talking about",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [
+     "comparative with more"
+    ],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "Our children goes to the local school.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "She buys vegetables from local farmers.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "The story was in the local newspaper.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Ask one of the local people for directions.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "adjective + noun",
+     "items": [
+      "the local area",
+      "local people",
+      "the local school",
+      "a local shop",
+      "local news",
+      "local time"
+     ]
+    },
+    {
+     "type": "phrase",
+     "items": [
+      "buy local food"
+     ]
+    }
+   ],
+   "synonyms": [
+    {
+     "slug": "nearby-adj",
+     "note": null
+    }
+   ],
+   "antonyms": [
+    {
+     "slug": "foreign-adj",
+     "note": null
+    }
+   ],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 2,
+   "signpost": "government",
+   "definition": "connected with the government of a town or area, not of the whole country",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [
+     "attributive only",
+     "not gradable"
+    ],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "The local government is building a new road.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Local elections were held on May 5, 2022, and only 31 percent of voters took part.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "He was a member of the local council for many years.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "adjective + noun",
+     "items": [
+      "local government",
+      "a local election",
+      "local taxes",
+      "a local council",
+      "the local authority"
+     ]
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [
+    {
+     "slug": "national-adj",
+     "note": null
+    },
+    {
+     "slug": "central-adj",
+     "note": null
+    }
+   ],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 3,
+   "signpost": "part of the body",
+   "definition": "affecting the whole body, not only one part",
+   "explanation": null,
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [
+     "not gradable"
+    ],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [
+     "medicine"
+    ],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "The dentist gave me a local anesthetic, so I felt nothing.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "The infection is only local; it hasn't spread.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [
+    {
+     "type": "adjective + noun",
+     "items": [
+      "a local anesthetic",
+      "a local infection"
+     ]
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [
+    {
+     "slug": "general-adj",
+     "note": null
+    }
+   ],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  }
+ ],
+ "phrases": [],
+ "word_family": [
+  {
+   "slug": "locally-adv",
+   "form": null,
+   "note": null
+  },
+  {
+   "slug": "local-n",
+   "form": null,
+   "note": null
+  }
+ ],
+ "synonym_discrimination": null,
+ "usage_note": "**Local** is an adjective; the noun **a local** means a person who lives in a place (*ask one of the locals*), and in informal British English also a bar near your home. Neither means a room or a building.",
+ "learner_errors": [
+  {
+   "incorrect": "We rented a local for our new shop.",
+   "correct": "We rented a space for our new shop.",
+   "note": "**Local** is not a noun for a room or a building; say **space**, **room**, or **building**."
+  }
+ ],
+ "etymology": null,
+ "see_also": [
+  {
+   "slug": "area-n",
+   "note": null
+  },
+  {
+   "slug": "neighborhood-n",
+   "note": null
+  },
+  {
+   "slug": "region-n",
+   "note": null
+  }
+ ],
+ "adaptation": {
+  "semantic": "**Local** news, shops, and people belong to the area you are in or talking about, not to *your own* home only; translate it with a word for *of this place* or *of that place*.",
+  "grammar": null,
+  "culture": null,
+  "false_friends": "In some languages a word that looks like **local** is a noun for a room, a shop, or a bar. English **local** is usually an adjective; the noun **local** means a person who lives in a place.",
+  "pronunciation": null
+ }
+}

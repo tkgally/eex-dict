@@ -4,4 +4,6 @@
 
 **Ruling.** The Routine's model drafts entries in-session from its own knowledge and the style guide. Two non-Anthropic reviewers on OpenRouter, from different labs, check every field with closed verdicts. Switching to flagship drafting via OpenRouter is a decision the owner makes after seeing the seed set; the drafter is a configuration setting (`drafter_via_openrouter` in `config/routine-config.json`, roles in `config/models.md`).
 
+**Amended by the owner, 2026-10-25.** Reviewer A is now a Claude model called headless on the owner's subscription; reviewer B stays non-Anthropic on OpenRouter, so the two reviewers still come from different labs ([reviewer-a-claude](reviewer-a-claude.md)).
+
 **Why closed verdicts.** In the earlier project the reviewer's free-text flags ran at 4 to 17 percent precision and never read the notes, where the factual errors were. Here every field gets `ok` or `issue` with the exact claim quoted, a severity, and a family, so precision is measured per family and noise can be switched off.

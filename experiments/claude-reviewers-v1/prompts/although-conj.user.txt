@@ -1,0 +1,234 @@
+Check every field of this entry. For EACH field name in the checklist return one verdict object, including every field that is fine (verdict "ok"): your verdicts list must contain at least 36 objects, one or more per field. Check each field as closely as if you were listing only problems: "ok" means you found nothing wrong. Fields: headword_and_pos, variants, pronunciation.american, pronunciation.british, inflections, labels, core_idea, senses[0].signpost, senses[0].definition, senses[0].explanation, senses[0].grammar, senses[0].labels, senses[0].examples, senses[0].collocations, senses[0].cross_references, senses[0].adaptation, senses[1].signpost, senses[1].definition, senses[1].explanation, senses[1].grammar, senses[1].labels, senses[1].examples, senses[1].collocations, senses[1].cross_references, senses[1].adaptation, word_family, synonym_discrimination, usage_note, learner_errors, etymology, see_also, adaptation, sense_structure, consistency, coverage, examples_fit.
+
+Return JSON of the form {"verdicts": [{"field": "<name from the checklist>", "verdict": "ok" | "issue", "quote": "<exact text objected to, or null>", "severity": "blocking" | "minor" | null, "family": "<one of: definition-meaning, definition-style, definition-vocabulary, explanation, example-unnatural, example-grammar, example-policy, grammar-code, label, collocation, cross-reference, learner-error, synonym-discrimination, usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, coverage, other>" | null, "reason": "<one line, or null>"}], "summary": "<one or two sentences>"}. A field with several problems gets several objects with the same field name. "sense_structure" is the verdict on the set of senses as a whole (missing, over-split, misordered); "headword_and_pos" is whether the headword, part of speech, and homograph split are right and whether every sense and every use described belongs to this part of speech; "consistency" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note against the grammar values, a claim made twice in two ways); "cross_references" covers synonyms, antonyms, and compare of that sense; "coverage" and "examples_fit" are the two required checks described in the house rules.
+
+ENTRY (JSON):
+{
+ "schema_version": "1.0",
+ "slug": "although-conj",
+ "headword": "although",
+ "pos": "conj",
+ "homograph": 1,
+ "variants": [],
+ "pronunciation": {
+  "american": {
+   "ipa": "ɔlˈðoʊ"
+  },
+  "british": {
+   "ipa": "ɔːlˈðəʊ"
+  },
+  "variants": [],
+  "audio": null,
+  "notes": "The stress is on the second part: *awl-THOH*. The **th** is the **th** of **this**, not of **thin**, and the **gh** is silent."
+ },
+ "inflections": {
+  "forms": {},
+  "note": null
+ },
+ "frequency": {
+  "band": 1,
+  "basis": "editorial",
+  "defining_vocabulary": true
+ },
+ "labels": {
+  "register": [],
+  "region": [],
+  "domain": [],
+  "currency": [],
+  "attitude": []
+ },
+ "core_idea": null,
+ "senses": [
+  {
+   "n": 1,
+   "signpost": "despite the fact",
+   "definition": "despite the fact that",
+   "explanation": "An **although** clause gives a fact that makes the main clause surprising. It can come before or after the main clause. Do not add **but** to the main clause: one of the two words is enough.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "Although it was raining, we went for a walk.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "We enjoyed the trip, although the hotel was not very good.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "Although she was tired, but she stayed up to help.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [],
+   "synonyms": [
+    {
+     "slug": "though-conj",
+     "note": null
+    },
+    {
+     "slug": "while-conj",
+     "note": null
+    }
+   ],
+   "antonyms": [],
+   "compare": [
+    {
+     "slug": "even-though-conj",
+     "note": "**even though** makes the contrast stronger"
+    },
+    {
+     "slug": "but-conj",
+     "note": "**but** joins the same two ideas in the other order: *It was raining, but we went out*"
+    },
+    {
+     "slug": "if-conj",
+     "note": null
+    },
+    {
+     "slug": "despite-prep",
+     "note": null
+    },
+    {
+     "slug": "in-spite-of-prep",
+     "note": null
+    },
+    {
+     "slug": "when-conj",
+     "note": null
+    },
+    {
+     "slug": "whereas-conj",
+     "note": "**whereas** only shows that two facts are different"
+    }
+   ],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": "Many languages mark a contrast twice, with one word in each clause. English uses **although** or **but**, not both: *Although it was late, we stayed*, not *Although it was late, but we stayed*.",
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 2,
+   "signpost": "but",
+   "definition": "used to add a statement that makes what you have just said seem less strong or less certain",
+   "explanation": "In this use the **although** clause comes second, often after a comma. A shortened form with no subject or verb is common: *good, although a little expensive*.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "I think the store opens at nine, although I'm not completely sure.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "The food was good, although a little expensive.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "You can come with us, although it might be boring for you.",
+     "note": null,
+     "pattern": null
+    }
+   ],
+   "collocations": [],
+   "synonyms": [
+    {
+     "slug": "though-conj",
+     "note": null
+    },
+    {
+     "slug": "but-conj",
+     "note": null
+    }
+   ],
+   "antonyms": [],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  }
+ ],
+ "phrases": [],
+ "word_family": [],
+ "synonym_discrimination": {
+  "words": [
+   "although-conj",
+   "though-conj",
+   "even-though-conj"
+  ],
+  "note": "**Although** and **though** mean the same as conjunctions; **although** is more common in speech, and **though** is a little more formal (*Although the test was hard, I passed*). Only **though** can also come at the end of a sentence (*The test was hard. I passed, though*). **Even though** makes the contrast stronger and is used when the fact is surprising (*Even though he studied all night, he failed*)."
+ },
+ "usage_note": null,
+ "learner_errors": [
+  {
+   "incorrect": "Although it was cold, but we went swimming.",
+   "correct": "Although it was cold, we went swimming.",
+   "note": "Use **although** or **but**, not both in the same sentence."
+  },
+  {
+   "incorrect": "It was cold. We went swimming, although.",
+   "correct": "It was cold. We went swimming, though.",
+   "note": "**Although** cannot come at the end of a sentence; **though** can."
+  },
+  {
+   "incorrect": "Although the rain, we went out.",
+   "correct": "Despite the rain, we went out.",
+   "note": "**Although** is followed by a clause (*although it rained*) or a short adjective phrase, never by a noun alone. Before a noun, use **despite** or **in spite of**."
+  }
+ ],
+ "etymology": "From the Latin word *alter*, meaning other, which came into English through French.",
+ "see_also": [
+  {
+   "slug": "despite-prep",
+   "note": "before a noun or an **-ing** form (*despite the rain*)"
+  },
+  {
+   "slug": "however-adv",
+   "note": null
+  }
+ ],
+ "adaptation": {
+  "semantic": null,
+  "grammar": null,
+  "culture": null,
+  "false_friends": null,
+  "pronunciation": null
+ }
+}

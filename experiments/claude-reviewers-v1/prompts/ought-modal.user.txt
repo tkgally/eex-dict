@@ -1,0 +1,254 @@
+Check every field of this entry. For EACH field name in the checklist return one verdict object, including every field that is fine (verdict "ok"): your verdicts list must contain at least 45 objects, one or more per field. Check each field as closely as if you were listing only problems: "ok" means you found nothing wrong. Fields: headword_and_pos, variants, pronunciation.american, pronunciation.british, inflections, labels, core_idea, senses[0].signpost, senses[0].definition, senses[0].explanation, senses[0].grammar, senses[0].labels, senses[0].examples, senses[0].collocations, senses[0].cross_references, senses[0].adaptation, senses[1].signpost, senses[1].definition, senses[1].explanation, senses[1].grammar, senses[1].labels, senses[1].examples, senses[1].collocations, senses[1].cross_references, senses[1].adaptation, senses[2].signpost, senses[2].definition, senses[2].explanation, senses[2].grammar, senses[2].labels, senses[2].examples, senses[2].collocations, senses[2].cross_references, senses[2].adaptation, word_family, synonym_discrimination, usage_note, learner_errors, etymology, see_also, adaptation, sense_structure, consistency, coverage, examples_fit.
+
+Return JSON of the form {"verdicts": [{"field": "<name from the checklist>", "verdict": "ok" | "issue", "quote": "<exact text objected to, or null>", "severity": "blocking" | "minor" | null, "family": "<one of: definition-meaning, definition-style, definition-vocabulary, explanation, example-unnatural, example-grammar, example-policy, grammar-code, label, collocation, cross-reference, learner-error, synonym-discrimination, usage-note, etymology, pronunciation, inflection, sense-structure, phrase, adaptation, spelling-or-format, coverage, other>" | null, "reason": "<one line, or null>"}], "summary": "<one or two sentences>"}. A field with several problems gets several objects with the same field name. "sense_structure" is the verdict on the set of senses as a whole (missing, over-split, misordered); "headword_and_pos" is whether the headword, part of speech, and homograph split are right and whether every sense and every use described belongs to this part of speech; "consistency" is whether the fields agree with one another across the whole entry (an explanation against a usage note, a note against the grammar values, a claim made twice in two ways); "cross_references" covers synonyms, antonyms, and compare of that sense; "coverage" and "examples_fit" are the two required checks described in the house rules.
+
+ENTRY (JSON):
+{
+ "schema_version": "1.0",
+ "slug": "ought-modal",
+ "headword": "ought",
+ "pos": "modal",
+ "homograph": 1,
+ "variants": [],
+ "pronunciation": {
+  "american": {
+   "ipa": "ɔt"
+  },
+  "british": {
+   "ipa": "ɔːt"
+  },
+  "variants": [],
+  "audio": null,
+  "notes": "**Ought** rhymes with **sought** and **caught**; the letters **gh** are silent."
+ },
+ "inflections": {
+  "forms": {},
+  "note": null
+ },
+ "frequency": {
+  "band": 2,
+  "basis": "editorial",
+  "defining_vocabulary": true
+ },
+ "labels": {
+  "register": [],
+  "region": [],
+  "domain": [],
+  "currency": [],
+  "attitude": []
+ },
+ "core_idea": "**Ought**, almost always followed by **to**, says that something is or was the right or sensible thing to do, or that it is likely to be true.",
+ "senses": [
+  {
+   "n": 1,
+   "signpost": "the right thing",
+   "definition": "used with **to** and a base verb to say that something is the right, sensible, or expected thing to do",
+   "explanation": "Close in meaning to **should**, though a little more formal and less common in everyday speech. Unlike most modals, **ought** is always followed by **to**.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [],
+    "patterns": [
+     "verb + to-infinitive"
+    ]
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "You ought to apologize to her.",
+     "note": null,
+     "pattern": "verb + to-infinitive"
+    },
+    {
+     "text": "We ought to leave soon if we want to catch the train.",
+     "note": null,
+     "pattern": "verb + to-infinitive"
+    },
+    {
+     "text": "Drivers ought to slow down near schools.",
+     "note": null,
+     "pattern": "verb + to-infinitive"
+    },
+    {
+     "text": "You don't ought to speak to her like that.",
+     "note": "negative",
+     "pattern": "verb + to-infinitive"
+    }
+   ],
+   "collocations": [],
+   "synonyms": [
+    {
+     "slug": "should-modal",
+     "note": "**should** is more common in everyday speech; **ought to** sounds a little more formal"
+    }
+   ],
+   "antonyms": [],
+   "compare": [
+    {
+     "slug": "must-modal",
+     "note": "**must** shows a stronger, often outside obligation; **ought to** is closer to advice"
+    }
+   ],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": "**Ought** is the one common modal followed by **to** before the base verb: *you ought to go*. The negative keeps **to** as well in careful English: *you ought not to go*.",
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 2,
+   "signpost": "likely true",
+   "definition": "used with **to** and a base verb to say that something is likely or expected, based on what is known",
+   "explanation": "Close in meaning to **should** used for a confident guess.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [],
+    "patterns": [
+     "verb + to-infinitive"
+    ]
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "The package ought to arrive by Friday.",
+     "note": null,
+     "pattern": "verb + to-infinitive"
+    },
+    {
+     "text": "That ought to be enough sugar for the recipe.",
+     "note": null,
+     "pattern": "verb + to-infinitive"
+    },
+    {
+     "text": "With the new road, the trip ought to be much faster.",
+     "note": null,
+     "pattern": "verb + to-infinitive"
+    }
+   ],
+   "collocations": [],
+   "synonyms": [
+    {
+     "slug": "should-modal",
+     "note": "**should** is far more common for a confident guess"
+    }
+   ],
+   "antonyms": [],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  },
+  {
+   "n": 3,
+   "signpost": "ought to have",
+   "definition": "used with **to have** and a past participle to say that something was the right thing to do, usually when it was not done, or that something expected in the past probably happened",
+   "explanation": "Like **should have**: *you ought to have called* usually means that you did not call, and says that you were wrong not to. It can also be a confident guess about the past: *they ought to have arrived by now*.",
+   "grammar": {
+    "countability": null,
+    "transitivity": null,
+    "codes": [],
+    "patterns": []
+   },
+   "labels": {
+    "register": [],
+    "region": [],
+    "domain": [],
+    "currency": [],
+    "attitude": []
+   },
+   "pronunciation": null,
+   "examples": [
+    {
+     "text": "You ought to have told me sooner.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "We ought to have left earlier; now we'll be late.",
+     "note": null,
+     "pattern": null
+    },
+    {
+     "text": "The bus ought to have arrived by now.",
+     "note": "a guess about the past",
+     "pattern": null
+    }
+   ],
+   "collocations": [],
+   "synonyms": [
+    {
+     "slug": "should-modal",
+     "note": "**should have** is the more common way to say this"
+    }
+   ],
+   "antonyms": [],
+   "compare": [],
+   "subsenses": [],
+   "adaptation": {
+    "semantic": null,
+    "grammar": null,
+    "culture": null,
+    "false_friends": null,
+    "pronunciation": null
+   }
+  }
+ ],
+ "phrases": [],
+ "word_family": [],
+ "synonym_discrimination": null,
+ "usage_note": "**Ought to** and **should** overlap closely in meaning, but **ought to** is more common than **should** in everyday American speech, and **should** sounds more formal. Questions with **ought** (*ought we to...?*) are rare; **should we...?** is normal. The negative **oughtn't to** is rare and fairly formal, especially in American English; **shouldn't** is far more common. In very informal writing **ought to** is sometimes spelled **oughta**, showing how it sounds.",
+ "learner_errors": [
+  {
+   "incorrect": "You ought go home now.",
+   "correct": "You ought to go home now.",
+   "note": "Unlike other modals, **ought** keeps **to** before the base verb."
+  },
+  {
+   "incorrect": "She ought not worry so much.",
+   "correct": "She ought not to worry so much.",
+   "note": "In careful English, the negative of **ought** also keeps **to**: **ought not to**. Some American speakers leave it out, but **shouldn't** avoids the problem."
+  },
+  {
+   "incorrect": "You ought to told me.",
+   "correct": "You ought to have told me.",
+   "note": "For the past, **ought to** is followed by **have** and a past participle."
+  }
+ ],
+ "etymology": null,
+ "see_also": [
+  {
+   "slug": "should-modal",
+   "note": "the far more common word for the same two meanings"
+  }
+ ],
+ "adaptation": {
+  "semantic": null,
+  "grammar": "**Ought** is a modal that, unusually, is followed by **to** plus the base verb rather than the bare base form; it adds no **-s** and has no infinitive or **-ing** form of its own.",
+  "culture": null,
+  "false_friends": null,
+  "pronunciation": null
+ }
+}

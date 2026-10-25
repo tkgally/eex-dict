@@ -1,0 +1,339 @@
+{
+ "arm": "haiku-cli",
+ "model": "claude-haiku-5-5",
+ "slug": "few-det",
+ "text": "```json\n{\n  \"verdicts\": [\n    {\"field\": \"headword_and_pos\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Determiner headword with homograph 1 is right; the pronoun use is correctly pointed to other entries.\"},\n    {\"field\": \"variants\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No variant spellings exist.\"},\n    {\"field\": \"pronunciation.american\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"/fju/ is the General American form; no stress mark on a monosyllable.\"},\n    {\"field\": \"pronunciation.british\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"/fjuː/ is the standard British form.\"},\n    {\"field\": \"inflections\", \"verdict\": \"issue\", \"quote\": \"\\\"forms\\\": {}\", \"severity\": \"blocking\", \"family\": \"inflection\", \"reason\": \"As a determiner, few has the comparative fewer and the superlative fewest, which are missing; the usage note gives less and least instead.\"},\n    {\"field\": \"labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The entry is neutral in register, region, and domain.\"},\n    {\"field\": \"core_idea\", \"verdict\": \"issue\", \"quote\": \"**Few** and **a few** are the same word before a plural noun\", \"severity\": \"minor\", \"family\": \"other\", \"reason\": \"A few is an article plus few, not one word; the phrase 'before a plural noun' also conflicts with sense 1's uncountable-noun definition.\"},\n    {\"field\": \"senses[0].signpost\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"'not many' is short and matches the meaning.\"},\n    {\"field\": \"senses[0].definition\", \"verdict\": \"issue\", \"quote\": \"used before an uncountable noun to mean not much, less than expected or wanted\", \"severity\": \"blocking\", \"family\": \"definition-meaning\", \"reason\": \"Bare few takes plural countable nouns, as the examples and learner-error note show; 'uncountable' and 'not much' are wrong for this sense.\"},\n    {\"field\": \"senses[0].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The negative feel of bare few and the contrast with a few are accurate.\"},\n    {\"field\": \"senses[0].grammar\", \"verdict\": \"issue\", \"quote\": \"\\\"countability\\\": null\", \"severity\": \"blocking\", \"family\": \"grammar-code\", \"reason\": \"The sense takes plural countable nouns, but countability is left blank, so the grammar does not state the pattern the examples show.\"},\n    {\"field\": \"senses[0].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No labels are needed for this sense.\"},\n    {\"field\": \"senses[0].examples\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The four examples are natural American English, use plural countable nouns, and contain no checkable facts.\"},\n    {\"field\": \"senses[0].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"'very few' and 'too few' are typical.\"},\n    {\"field\": \"senses[0].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"many is the true antonym; the little note correctly contrasts countable and uncountable matches.\"},\n    {\"field\": \"senses[0].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation fields are null, which is acceptable here.\"},\n    {\"field\": \"senses[1].signpost\", \"verdict\": \"issue\", \"quote\": \"a few: some\", \"severity\": \"minor\", \"family\": \"definition-style\", \"reason\": \"'some' is broader and vaguer than the small-number meaning; the signpost should name the small number.\"},\n    {\"field\": \"senses[1].definition\", \"verdict\": \"issue\", \"quote\": \"reported in a plain way\", \"severity\": \"minor\", \"family\": \"definition-style\", \"reason\": \"This phrase gives no meaning a learner can use; the definition should stop at 'a small number'.\"},\n    {\"field\": \"senses[1].explanation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The explanation of a few's neutral tone is accurate; the repetition is reported under consistency.\"},\n    {\"field\": \"senses[1].grammar\", \"verdict\": \"issue\", \"quote\": \"\\\"countability\\\": null\", \"severity\": \"minor\", \"family\": \"grammar-code\", \"reason\": \"Countability is blank, though the sense takes plural countable nouns, which should be recorded.\"},\n    {\"field\": \"senses[1].labels\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No labels are needed.\"},\n    {\"field\": \"senses[1].examples\", \"verdict\": \"issue\", \"quote\": \"Could I borrow a few money?\", \"severity\": \"blocking\", \"family\": \"example-grammar\", \"reason\": \"'money' is uncountable, so 'a few money' is ungrammatical; it also repeats the error the learner-error section warns against.\"},\n    {\"field\": \"senses[1].collocations\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"'a few minutes', 'quite a few', and 'a few more' are typical.\"},\n    {\"field\": \"senses[1].cross_references\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"No cross-references are needed for this sense.\"},\n    {\"field\": \"senses[1].adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"All adaptation fields are null, which is acceptable here.\"},\n    {\"field\": \"word_family\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"An empty word family is acceptable for this entry.\"},\n    {\"field\": \"synonym_discrimination\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable; the contrast is covered in the explanations.\"},\n    {\"field\": \"usage_note\", \"verdict\": \"issue\", \"quote\": \"The comparative of **few** is **less**, and the superlative is **least**: *less people*, *the least mistakes*.\", \"severity\": \"blocking\", \"family\": \"usage-note\", \"reason\": \"The comparative and superlative of few are fewer and fewest; less and least belong to little, and the note endorses the wrong forms.\"},\n    {\"field\": \"learner_errors\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Both errors are real and their corrections are right; the conflict with the examples is reported under consistency.\"},\n    {\"field\": \"etymology\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Null is acceptable; no origin is needed for a learner.\"},\n    {\"field\": \"see_also\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"little-det and few-pron are the right related entries.\"},\n    {\"field\": \"adaptation\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"The note is language-neutral and names a specific trap, the article; the grammar conflict is reported under consistency.\"},\n    {\"field\": \"sense_structure\", \"verdict\": \"ok\", \"quote\": null, \"severity\": null, \"family\": null, \"reason\": \"Bare few and a few are distinct enough in meaning and connotation to justify two senses, in a sensible order.\"},\n    {\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"used before an uncountable noun to mean not much, less than expected or wanted\", \"severity\": \"blocking\", \"family\": \"other\", \"reason\": \"The definition says uncountable, but the core idea, grammar, examples, learner errors, and entry adaptation all say plural countable nouns.\"},\n    {\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"She has a few money.\", \"severity\": \"blocking\", \"family\": \"other\", \"reason\": \"The learner-error note says a few with an uncountable noun is wrong, but sense 2 offers 'a few money' as a correct example.\"},\n    {\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"Bare **few** says not enough; **a few** says a small but real number.\", \"severity\": \"minor\", \"family\": \"other\", \"reason\": \"The bare-few versus a-few contrast is stated in core_idea, both sense explanations, the usage note, and the adaptation note; one field should carry it.\"},\n    {\"field\": \"consistency\", \"verdict\": \"issue\", \"quote\": \"**Few** used alone, without a noun, is a separate entry.\", \"severity\": \"minor\", \"family\": \"other\", \"reason\": \"This fact repeats the see_also note for few-pron, so one field should carry it.\"},\n    {\"field\": \"coverage\", \"verdict\": \"issue\", \"quote\": \"every few\", \"severity\": \"minor\", \"family\": \"coverage\", \"reason\": \"'every few minutes' and 'every few weeks' (every two or three) is a frequent determiner use that no sense or phrase covers.\"},\n    {\"field\": \"examples_fit\", \"verdict\": \"issue\", \"quote\": \"Few people showed up to the meeting.\", \"severity\": \"blocking\", \"family\": \"example-unnatural\", \"reason\": \"Sense 1's definition says it takes an uncountable noun, but this example uses a plural countable noun, so it does not fit the stated definition.\"},\n    {\"field\": \"examples_fit\", \"verdict\": \"issue\", \"quote\": \"Could I borrow a few money?\", \"severity\": \"blocking\", \"family\": \"example-unnatural\", \"reason\": \"Sense 2's definition requires a plural noun, and 'money' is uncountable, so the example does not fit the definition.\"}\n  ],\n  \"summary\": \"The entry has blocking errors: sense 1's definition and the entry's grammar and consistency say uncountable where the examples use plural countable nouns, the usage note gives less and least for few's comparative and superlative (should be fewer and fewest), and the sense 2 example 'a few money' is ungrammatical and contradicts the learner-error note. Smaller issues include a blank countability field, a vague definition phrase, a weak signpost, a missing 'every few' use, and repeated facts across fields.\"\n}\n```",
+ "seconds": 72.2,
+ "api_equiv_usd": 0.00953416,
+ "tokens_in": 11059,
+ "cache_read": 3626,
+ "tokens_out": 16023,
+ "thinking": 12562,
+ "model_used": "claude-haiku-5-5",
+ "is_error": false,
+ "cost_usd": 0.0,
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "issue",
+   "quote": "\"forms\": {}",
+   "severity": "blocking",
+   "family": "inflection",
+   "reason": "As a determiner, few has the comparative fewer and the superlative fewest, which are missing; the usage note gives less and least instead."
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "issue",
+   "quote": "**Few** and **a few** are the same word before a plural noun",
+   "severity": "minor",
+   "family": "other",
+   "reason": "A few is an article plus few, not one word; the phrase 'before a plural noun' also conflicts with sense 1's uncountable-noun definition."
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "issue",
+   "quote": "used before an uncountable noun to mean not much, less than expected or wanted",
+   "severity": "blocking",
+   "family": "definition-meaning",
+   "reason": "Bare few takes plural countable nouns, as the examples and learner-error note show; 'uncountable' and 'not much' are wrong for this sense."
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "issue",
+   "quote": "\"countability\": null",
+   "severity": "blocking",
+   "family": "grammar-code",
+   "reason": "The sense takes plural countable nouns, but countability is left blank, so the grammar does not state the pattern the examples show."
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "issue",
+   "quote": "a few: some",
+   "severity": "minor",
+   "family": "definition-style",
+   "reason": "'some' is broader and vaguer than the small-number meaning; the signpost should name the small number."
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "issue",
+   "quote": "reported in a plain way",
+   "severity": "minor",
+   "family": "definition-style",
+   "reason": "This phrase gives no meaning a learner can use; the definition should stop at 'a small number'."
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "issue",
+   "quote": "\"countability\": null",
+   "severity": "minor",
+   "family": "grammar-code",
+   "reason": "Countability is blank, though the sense takes plural countable nouns, which should be recorded."
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "issue",
+   "quote": "Could I borrow a few money?",
+   "severity": "blocking",
+   "family": "example-grammar",
+   "reason": "'money' is uncountable, so 'a few money' is ungrammatical; it also repeats the error the learner-error section warns against."
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "issue",
+   "quote": "The comparative of **few** is **less**, and the superlative is **least**: *less people*, *the least mistakes*.",
+   "severity": "blocking",
+   "family": "usage-note",
+   "reason": "The comparative and superlative of few are fewer and fewest; less and least belong to little, and the note endorses the wrong forms."
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "used before an uncountable noun to mean not much, less than expected or wanted",
+   "severity": "blocking",
+   "family": "other",
+   "reason": "The definition says uncountable, but the core idea, grammar, examples, learner errors, and entry adaptation all say plural countable nouns."
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "She has a few money.",
+   "severity": "blocking",
+   "family": "other",
+   "reason": "The learner-error note says a few with an uncountable noun is wrong, but sense 2 offers 'a few money' as a correct example."
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "Bare **few** says not enough; **a few** says a small but real number.",
+   "severity": "minor",
+   "family": "other",
+   "reason": "The bare-few versus a-few contrast is stated in core_idea, both sense explanations, the usage note, and the adaptation note; one field should carry it."
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "**Few** used alone, without a noun, is a separate entry.",
+   "severity": "minor",
+   "family": "other",
+   "reason": "This fact repeats the see_also note for few-pron, so one field should carry it."
+  },
+  {
+   "field": "coverage",
+   "verdict": "issue",
+   "quote": "every few",
+   "severity": "minor",
+   "family": "coverage",
+   "reason": "'every few minutes' and 'every few weeks' (every two or three) is a frequent determiner use that no sense or phrase covers."
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "issue",
+   "quote": "Few people showed up to the meeting.",
+   "severity": "blocking",
+   "family": "example-unnatural",
+   "reason": "Sense 1's definition says it takes an uncountable noun, but this example uses a plural countable noun, so it does not fit the stated definition."
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "issue",
+   "quote": "Could I borrow a few money?",
+   "severity": "blocking",
+   "family": "example-unnatural",
+   "reason": "Sense 2's definition requires a plural noun, and 'money' is uncountable, so the example does not fit the definition."
+  }
+ ],
+ "parse_error": null,
+ "summary": "The entry has blocking errors: sense 1's definition and the entry's grammar and consistency say uncountable where the examples use plural countable nouns, the usage note gives less and least for few's comparative and superlative (should be fewer and fewest), and the sense 2 example 'a few money' is ungrammatical and contradicts the learner-error note. Smaller issues include a blank countability field, a vague definition phrase, a weak signpost, a missing 'every few' use, and repeated facts across fields."
+}

@@ -1,0 +1,77 @@
+{
+ "slug": "leak-v",
+ "issues": [
+  {
+   "id": 1,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [
+    "leak-v#2"
+   ],
+   "note": "Container cannot be object of transitive leak; this passive is impossible."
+  },
+  {
+   "id": 2,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [
+    "leak-v#2"
+   ],
+   "note": "Same bad passive example; it contradicts the sense 1 explanation."
+  },
+  {
+   "id": 3,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "Small mismatch with container-subject sense; the core idea is broadly acceptable."
+  },
+  {
+   "id": 4,
+   "valid": "yes",
+   "finding": "F2",
+   "planted": [
+    "leak-v#1"
+   ],
+   "note": "Leaking secrets is usually deliberate, not by mistake."
+  },
+  {
+   "id": 5,
+   "valid": "yes",
+   "finding": "F1",
+   "planted": [
+    "leak-v#2"
+   ],
+   "note": "Same impossible passive example; it does not fit the sense."
+  },
+  {
+   "id": 6,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "Faucet is the more American word, but tap is understood and used in the US."
+  },
+  {
+   "id": 7,
+   "valid": "partly",
+   "finding": null,
+   "planted": [],
+   "note": "Run (liquid flowing) is loosely related; drip or seep are closer neighbors."
+  }
+ ],
+ "findings": {
+  "F1": "Sense 1 example 'The roof was leaked by the rain' is an impossible passive that wrongly makes the container the object.",
+  "F2": "Sense 3 definition says 'usually by mistake', but leaking secrets is usually deliberate."
+ },
+ "missed": [],
+ "_meta": {
+  "seconds": 16.0,
+  "api_equiv_usd": 0.0911258,
+  "tokens_in": 20319,
+  "cache_read": 11869,
+  "tokens_out": 1058,
+  "thinking": 510,
+  "model_used": "opus",
+  "is_error": false
+ }
+}

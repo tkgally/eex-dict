@@ -1,0 +1,375 @@
+{
+ "arm": "reviewer-a",
+ "model": "openai/gpt-5.6-terra",
+ "slug": "leak-v",
+ "seconds": 8.1,
+ "cost_usd": 0.024664,
+ "tokens_in": 4851,
+ "tokens_out": 1528,
+ "finish": "stop",
+ "text": "{\"verdicts\":[{\"field\":\"headword_and_pos\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"variants\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"pronunciation.american\",\"verdict\":\"issue\",\"quote\":\"lik\",\"severity\":\"blocking\",\"family\":\"pronunciation\",\"reason\":\"The General American IPA is wrong; **leak** is /lik/ only if the vowel symbol represents /i/, but the supplied text lacks IPA slashes in the field convention and should be checked against the intended transcription format.\"},{\"field\":\"pronunciation.british\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"inflections\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"core_idea\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].signpost\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].explanation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].grammar\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].examples\",\"verdict\":\"issue\",\"quote\":\"The roof was leaked by the rain.\",\"severity\":\"blocking\",\"family\":\"example-grammar\",\"reason\":\"This passive construction is ungrammatical: rain does not normally take **leak** as an object, and a roof cannot naturally be passivized in this meaning.\"},{\"field\":\"senses[0].collocations\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].cross_references\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[0].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[1].signpost\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[1].definition\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[1].explanation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[1].grammar\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[1].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[1].examples\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[1].collocations\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[1].cross_references\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[1].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[2].signpost\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[2].definition\",\"verdict\":\"issue\",\"quote\":\"give secret information to newspapers or to the public, usually by mistake, or become known in this way\",\"severity\":\"blocking\",\"family\":\"definition-meaning\",\"reason\":\"Leaking secret information is often deliberate, so “usually by mistake” is misleading.\"},{\"field\":\"senses[2].explanation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[2].grammar\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[2].labels\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[2].examples\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[2].collocations\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[2].cross_references\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"senses[2].adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"word_family\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"synonym_discrimination\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"usage_note\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"learner_errors\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"etymology\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"see_also\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"adaptation\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"sense_structure\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"consistency\",\"verdict\":\"issue\",\"quote\":\"usually by mistake\",\"severity\":\"blocking\",\"family\":\"other\",\"reason\":\"The definition conflicts with the typical deliberate-agent use illustrated by “Someone leaked the report to the press.”\"},{\"field\":\"coverage\",\"verdict\":\"ok\",\"quote\":null,\"severity\":null,\"family\":null,\"reason\":null},{\"field\":\"examples_fit\",\"verdict\":\"issue\",\"quote\":\"The roof was leaked by the rain.\",\"severity\":\"blocking\",\"family\":\"example-unnatural\",\"reason\":\"The example does not fit the container sense and is not a natural or grammatical use of **leak**.\"}],\"summary\":\"The entry has a misleading restriction in the secret-information sense and one ungrammatical example. The American pronunciation field also requires correction or verification.\"}",
+ "verdicts": [
+  {
+   "field": "headword_and_pos",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "variants",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "pronunciation.american",
+   "verdict": "issue",
+   "quote": "lik",
+   "severity": "blocking",
+   "family": "pronunciation",
+   "reason": "The General American IPA is wrong; **leak** is /lik/ only if the vowel symbol represents /i/, but the supplied text lacks IPA slashes in the field convention and should be checked against the intended transcription format."
+  },
+  {
+   "field": "pronunciation.british",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "inflections",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "core_idea",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].examples",
+   "verdict": "issue",
+   "quote": "The roof was leaked by the rain.",
+   "severity": "blocking",
+   "family": "example-grammar",
+   "reason": "This passive construction is ungrammatical: rain does not normally take **leak** as an object, and a roof cannot naturally be passivized in this meaning."
+  },
+  {
+   "field": "senses[0].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[0].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].definition",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[1].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].signpost",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].definition",
+   "verdict": "issue",
+   "quote": "give secret information to newspapers or to the public, usually by mistake, or become known in this way",
+   "severity": "blocking",
+   "family": "definition-meaning",
+   "reason": "Leaking secret information is often deliberate, so “usually by mistake” is misleading."
+  },
+  {
+   "field": "senses[2].explanation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].grammar",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].labels",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].examples",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].collocations",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].cross_references",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "senses[2].adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "word_family",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "synonym_discrimination",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "usage_note",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "learner_errors",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "etymology",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "see_also",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "adaptation",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "sense_structure",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "consistency",
+   "verdict": "issue",
+   "quote": "usually by mistake",
+   "severity": "blocking",
+   "family": "other",
+   "reason": "The definition conflicts with the typical deliberate-agent use illustrated by “Someone leaked the report to the press.”"
+  },
+  {
+   "field": "coverage",
+   "verdict": "ok",
+   "quote": null,
+   "severity": null,
+   "family": null,
+   "reason": null
+  },
+  {
+   "field": "examples_fit",
+   "verdict": "issue",
+   "quote": "The roof was leaked by the rain.",
+   "severity": "blocking",
+   "family": "example-unnatural",
+   "reason": "The example does not fit the container sense and is not a natural or grammatical use of **leak**."
+  }
+ ],
+ "parse_error": null,
+ "summary": "The entry has a misleading restriction in the secret-information sense and one ungrammatical example. The American pronunciation field also requires correction or verification."
+}
