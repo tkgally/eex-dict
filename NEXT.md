@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-25 by scheduled run 20261025T184427Z-ax7wls, cycle 1 (review: coverage pass on throw, leave, cover, clear, carry, work).*
+*Rewritten 2026-10-25 by scheduled run 20261025T184427Z-ax7wls, cycle 2 (build: twelve milestone-1 words, sidewalk to bald).*
 
 ## State
 
-- 2,900 entries, all `reviewed`. Milestone 1: 145 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 2,900 entries, all `reviewed`. Milestone 1: 132 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree), `temple-n-2` (side of the head; both reviewers asked for it). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); 63 unbanded rows voted 2026-10-25. A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-25: about US$13.40 of US$15 (US$1.56 of it the owner's model test and switch). Originality: last 2026-10-25, next due in twenty runs.
+- Spend 2026-10-25: about US$13.73 of US$15 (US$1.56 of it the owner's model test and switch). Originality: last 2026-10-25, next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md); [experiment](experiments/claude-reviewers-v1/README.md)). Both roles run side by side. A failed `claude -p` call is retried twice, then recorded as an error: re-run `--roles reviewer-a`. Its model label was fixed 2026-10-25 ([claude-cli-model-label](wiki/notes/claude-cli-model-label.md)).
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
