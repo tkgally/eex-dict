@@ -48,7 +48,7 @@ All tools are Python 3 standard library only and run from the repository root. E
 | `python3 tools/next_mode.py [--explain] [--simulate N]` | pick the mode from `config/routine-config.json`, the budget, and the run history |
 | `python3 tools/digest.py due \| data` | the weekly digest for the owner (rulings E3, E4): whether it is due, and its numbers, ten-entry sample, and escalation list |
 | `python3 tools/spend.py check --cost X` / `record --cost X --purpose P --model M` / `status` | the daily OpenRouter ledger (`config/budget-ledger.json`) |
-| `python3 tools/openrouter.py --role R --prompt "..."` / `--list-roles` | the model client; roles from `config/models.md` |
+| `python3 tools/openrouter.py --role R --prompt "..."` / `--list-roles` | the model client; roles from `config/models.md`; a `claude-cli/` slug runs as a headless `claude -p` call on the owner's subscription instead of OpenRouter ($0 in the ledger, tokens recorded) |
 | `python3 tools/metrics.py --mode M --changed N [--site-build S]` / `--summary` / `--precision` | one metrics line per run; reviewer precision by role and family |
 | `python3 tools/absorb_branch.py <branch> [--pr N]` / `--residue <branch>` | take over a stranded run's branch with a per-file merge policy |
 | `python3 tools/wait.py [seconds]` | foreground wait between CI polls |

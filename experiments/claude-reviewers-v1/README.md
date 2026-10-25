@@ -1,5 +1,7 @@
 # Claude reviewers against the OpenRouter reviewers (experiment, 2026-10-25)
 
+*Adopted by the owner the same day (recommendation 1): `reviewer-a` is now the mid-size Claude model, called headless at high effort, and reviewer B is unchanged ([reviewer-a-claude](../../wiki/decisions/reviewer-a-claude.md)). One finding from implementing it: `--json-schema` needs the full reply schema. A bare `{"type": "object"}` came back as an empty verdict list, so `review_panel.py` passes its verdict schema.*
+
 **Question (the owner's, 2026-10-25):** can the two OpenRouter reviewers (`reviewer-a` GPT-5.6, `reviewer-b` Gemini 3.1 Pro) be replaced by Claude models running inside the owner's Claude subscription (Sonnet or Haiku), and what does it cost in quality, money, subscription tokens, and time?
 
 **Short answer:** yes. Measured on blocking issues, Sonnet reviewed as well as the better OpenRouter reviewer (Gemini) and clearly better than GPT. It caught every planted error, and nearly all its blocking calls were right. The best panel was Sonnet plus Gemini. An all-Claude panel (Sonnet plus Haiku) found as many real blocking problems as today's panel, with far fewer false alarms. The cheap way to call Claude is a headless `claude -p` call from `tools/review_panel.py`, at a high effort setting, not Agent-tool subagents. Subagents used about thirteen times more tokens per review. Nothing here changes `main`: switching reviewers needs the owner's ruling, because the charter (`PROJECT.md`) names "two non-Anthropic reviewers".

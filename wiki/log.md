@@ -2,6 +2,18 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-25] setup | reviewer A becomes a Claude model, called headless
+
+Interactive session 20261025T014638Z-ysf43k, at the owner's request. First an experiment ([claude-reviewers-v1](../experiments/claude-reviewers-v1/README.md)): 28 entries, 50 planted errors, six reviewer setups on the production prompt, every issue judged blind, with two outside judges. The old reviewer A was right on 65–87% of its blocking calls; a mid-size Claude model at high effort was right on 97–99% and found every planted error; that model paired with reviewer B found the most real blocking problems (63 of 71). The owner then ruled ([reviewer-a-claude](decisions/reviewer-a-claude.md)):
+- `config/models.md`: reviewer A is a `claude-cli/` slug.
+- `tools/openrouter.py`: runs such a slug as one headless `claude -p` call (no tools, our prompt, high effort, a JSON schema), with $0 recorded in the ledger along with its tokens.
+- `review_panel.py`: runs the two roles in parallel, and its decision lines carry the model.
+- `metrics.py --precision`: reports the new model's rows apart.
+- The old model's four lint switch-offs are reset; the owner's pronunciation switch-off is kept.
+- New tests: `tools/tests/test_claude_cli.py`.
+
+The experiment billed US$3.60 on OpenRouter, outside the ledger.
+
 ## [2026-10-25] originality | forty-fourth check, one rewrite
 
 Scheduled run 20261025T013145Z-6h9f7u, cycle 4, forced by the selector (run 520, a multiple of twenty). Ten fields sampled; exact-phrase searches found no word-for-word match except short plain glosses. `reason-n` sense 1 followed a learner's-dictionary frame (*a fact or situation that tells you why...*) and was rewritten as *something that explains an event or a person's action; the answer to the question **why***; a first rewrite was dropped because it described a cause, against the entry's own *cause*/*reason* note. `buy-v`, `hear-v` (phrase), `hold-v` sense 1 are generic overlaps; six original. reviewer-a (reasoning off) answered *copied* on nine, naming Cambridge and quoting our own text back; a first call with reasoning on returned nothing. Panel on `reason-n`: 4 decisions, 1 applied (phrase *within reason*), 3 rejected. Record: `reviews/originality/2026-10-25.md`. Spend US$0.13, over the cycle's US$0.10 ceiling by the wasted first call.

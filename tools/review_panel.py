@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import threading
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -37,12 +38,11 @@ DEFAULT_ROLES = ["reviewer-a", "reviewer-b"]
 # reviews/decisions.jsonl. Figures and rationale in wiki/notes/reviewer-precision.md.
 # An issue from a switched-off pair is downgraded to "ok" before it reaches adjudication,
 # so it is never counted, never printed, and never logged as a decision.
+# reviewer-a changed model on 2026-10-25 (wiki/decisions/reviewer-a-claude.md): the four pairs the lint runs had
+# switched off for its old model (example-policy, grammar-code, sense-structure, inflection) are live again and
+# are measured afresh; the pronunciation pair is the owner's ruling of 2026-10-05 and stays until the owner rules.
 DISABLED_FAMILIES = {
-    ("reviewer-a", "example-policy"),   # 0.16 over 44
-    ("reviewer-a", "grammar-code"),     # 0.27 over 75
-    ("reviewer-a", "sense-structure"),  # 0.29 over 48
-    ("reviewer-a", "inflection"),       # 0.05 over 21; switched off by the 2026-09-28 lint run
-    ("reviewer-a", "pronunciation"),    # 0.26 over 208; switched off by the owner's ruling of 2026-10-05
+    ("reviewer-a", "pronunciation"),    # 0.26 over 208 (old model); switched off by the owner's ruling of 2026-10-05
     ("reviewer-b", "example-policy"),   # 0.05 over 83
     ("reviewer-b", "explanation"),      # 0.24 over 21
     ("reviewer-b", "inflection"),       # 0.10 over 21; switched off by the 2026-10-09 lint run
@@ -156,6 +156,23 @@ def user_prompt(entry: dict) -> str:
     )
 
 
+# The reply's shape, given as structured output to a claude-cli reviewer (OpenRouter calls ignore it and
+# keep response_format json_object).
+REPLY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "verdicts": {"type": "array", "items": {
+            "type": "object",
+            "properties": {"field": {"type": "string"}, "verdict": {"type": "string", "enum": ["ok", "issue"]},
+                           "quote": {"type": ["string", "null"]}, "severity": {"type": ["string", "null"]},
+                           "family": {"type": ["string", "null"]}, "reason": {"type": ["string", "null"]}},
+            "required": ["field", "verdict", "quote", "severity", "family", "reason"]}},
+        "summary": {"type": "string"},
+    },
+    "required": ["verdicts", "summary"],
+}
+
+
 def normalize_verdicts(raw: dict, fields: list[str], role: str | None = None) -> tuple[list[dict], str | None]:
     families = set(eexlib.vocab_values("issue_families"))
     out, seen = [], set()
@@ -195,20 +212,20 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
     prompt = user_prompt(entry)
     system = system_prompt()
     record = {"run_id": run_id, "slug": entry["slug"], "entry_modified": entry["provenance"]["modified"], "reviewers": []}
-    for role in roles:
+
+    def review_one(role: str) -> dict | None:
         model = openrouter.resolve_role(role)
         est = openrouter.estimate_cost(model, len(system) // 4 + len(prompt) // 4, 40 * len(fields) + 200)
         rev = {"role": role, "model": model, "requested_at": eexlib.utcnow_iso(), "cost_usd": 0.0, "tokens_in": 0,
                "tokens_out": 0, "verdicts": [], "summary": None, "error": None}
         if dry_run:
             rev["error"] = "dry run"
-            record["reviewers"].append(rev)
-            continue
+            return rev
         try:
             res = openrouter.call_with_budget(model, [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
                                               purpose=f"review:{entry['slug']}:{role}", estimate_usd=est,
                                               max_tokens=120 * len(fields) + 3000, temperature=0.1,
-                                              response_format={"type": "json_object"},
+                                              response_format={"type": "json_object"}, json_schema=REPLY_SCHEMA,
                                               reasoning=openrouter.reasoning_for(model))
             rev.update({"model": res.get("model") or model, "cost_usd": res.get("cost"), "tokens_in": res.get("tokens_in"),
                         "tokens_out": res.get("tokens_out")})
@@ -216,8 +233,7 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
                 raw = openrouter.parse_json_reply(res["text"])
             except ValueError as e:
                 rev["error"] = f"{e} | finish={res.get('finish_reason')} | head={(res.get('text') or '')[:300]!r}"
-                record["reviewers"].append(rev)
-                continue
+                return rev
             verdicts, err = normalize_verdicts(raw, fields, role)
             if err and not verdicts:
                 err = f"{err} | finish={res.get('finish_reason')} | head={(res.get('text') or '')[:300]!r}"
@@ -228,9 +244,31 @@ def run_review(entry: dict, roles: list[str], run_id: str, dry_run: bool) -> dic
             msg = f"{type(e).__name__}: {str(e)[:300]}"
             if "budget check refused" in msg:
                 print(f"  [{role}] skipped: {msg}", file=sys.stderr)
-                continue                                   # no record: the review did not happen
+                return None                                # no record: the review did not happen
             rev["error"] = msg
-        record["reviewers"].append(rev)
+        return rev
+
+    # The roles run side by side (a claude-cli reviewer takes about a minute, an OpenRouter one under half that);
+    # the records keep the order of --roles. Plain threads: concurrent.futures needs the standard `queue`
+    # module, which tools/queue.py shadows when this file runs from tools/.
+    results: dict[str, dict | None] = {}
+
+    def worker(role: str) -> None:
+        try:
+            results[role] = review_one(role)
+        except Exception as e:  # noqa: BLE001 - resolve_role or estimate_cost failed
+            results[role] = {"role": role, "model": None, "requested_at": eexlib.utcnow_iso(), "cost_usd": 0.0,
+                             "tokens_in": 0, "tokens_out": 0, "verdicts": [], "summary": None,
+                             "error": f"{type(e).__name__}: {str(e)[:300]}"}
+
+    threads = [threading.Thread(target=worker, args=(role,)) for role in roles]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
+    for role in roles:
+        if results.get(role) is not None:
+            record["reviewers"].append(results[role])
     return record
 
 
@@ -293,10 +331,11 @@ def decide(a) -> int:
     if f is None:
         print(f"no review file for {a.slug}"); return 1
     rec = eexlib.load_json(f)
-    matches = []
+    matches, model = [], None
     for rev in rec["reviewers"]:
         if rev["role"] != a.role:
             continue
+        model = rev.get("model")
         for v in rev["verdicts"]:
             if v["verdict"] == "issue" and v["field"] == a.field:
                 matches.append(v)
@@ -320,6 +359,8 @@ def decide(a) -> int:
     match = matches[0]
     line = {"ts": eexlib.utcnow_iso(), "run_id": rec["run_id"], "slug": a.slug, "field": a.field, "role": a.role,
             "family": match["family"], "severity": match["severity"], "decision": a.decision, "note": a.note}
+    if model:
+        line["model"] = model                  # precision is measured per model (metrics.py --precision)
     with (eexlib.ROOT / "reviews" / "decisions.jsonl").open("a", encoding="utf-8") as fh:
         fh.write(json.dumps(line, ensure_ascii=False) + "\n")
     print("logged:", json.dumps(line, ensure_ascii=False))
