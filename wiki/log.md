@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-25] build | twelve milestone-1 words, from scratch to adverb
+
+Scheduled run 20261025T065852Z-3r5wmk, cycle 1. No open pull requests, no orphan branches, inbox and entry reports empty. Built eleven verbs (*scratch*, *sew*, *smash*, *sneeze*, *succeed*, *tidy*, *twist*, *unlock*, *unpack*, *upload*, *zip*) and the grammar noun *adverb*; all 24 transcriptions and all inflections verified. First build under the Claude reviewer A: 77 issues (7 blocking), 65 applied, 12 rejected (idioms keyed on another noun, phrasal verbs asked for as senses, a bare intransitive pattern that the closed list lacks). Main fixes: *scratch* sense 5 split, *tidy away* folded into one sense, a record sense for *smash*, phrases *nothing to sneeze at* and *zip it*. Five back-links placed by hand; two type mismatches fixed on our side. Found that reviewer A's calls are recorded under the helper model's name ([claude-cli-model-label](notes/claude-cli-model-label.md)). Spend US$0.59.
+
 ## [2026-10-25] setup | reviewer A becomes a Claude model, called headless
 
 Interactive session 20261025T014638Z-ysf43k, at the owner's request. First an experiment ([claude-reviewers-v1](../experiments/claude-reviewers-v1/README.md)): 28 entries, 50 planted errors, six reviewer setups on the production prompt, every issue judged blind, with two outside judges. The old reviewer A was right on 65–87% of its blocking calls; a mid-size Claude model at high effort was right on 97–99% and found every planted error; that model paired with reviewer B found the most real blocking problems (63 of 71). The owner then ruled ([reviewer-a-claude](decisions/reviewer-a-claude.md)):
