@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-25 by scheduled run 20261025T004339Z-6h9f7u, cycle 1 (review).*
+*Rewritten 2026-10-25 by scheduled run 20261025T010034Z-6h9f7u, cycle 2 (build). Cycle 1 merged.*
 
 ## State
 
-- 2,828 entries, all `reviewed`. Milestone 1: about 232 rows left. Last weekly digest: `journal/digest-2026-10-24.md`.
+- 2,840 entries, all `reviewed`. Milestone 1: about 220 rows left. Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-25 so far: about US$1.15 of US$15.
+- Spend 2026-10-25 so far: about US$2.09 of US$15.
 
 ## Queue (top-down)
 
@@ -22,7 +22,7 @@
 1. **build**: check a verb + preposition row against the verb's senses and a `phr` row against the keyword entry's phrases; run the panel in chunks of four or five; place every `NO-SENSE` back-link by hand.
 2. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and both reviewers ask for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*, *travel light*); reject all, with the reason. `verb + adjective` is not a collocation type.
 3. **closure**: blocked by milestone 1, then paused above band 2 (A3).
-4. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in nine runs. `reviewer-a` `coverage` precision is low but stays live (ruling B1).
+4. **lint**: every ten runs; last 2026-10-24 (eighty-sixth pass), next due in eight runs. `reviewer-a` `coverage` precision is low but stays live (ruling B1).
 5. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`. The wiki is at about 29,800 of 30,000 words: trim before adding.
 
 ## Fences (do not re-grind)
