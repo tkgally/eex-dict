@@ -103,13 +103,6 @@
             "feel sure",
             "feel comfortable"
           ]
-        },
-        {
-          "type": "adverb + verb",
-          "items": [
-            "really feel",
-            "suddenly feel"
-          ]
         }
       ],
       "synonyms": [],
@@ -158,7 +151,7 @@
           "pattern": "verb + object"
         },
         {
-          "text": "You could feel the excitement in the room.",
+          "text": "She felt a moment of fear, then laughed.",
           "note": null,
           "pattern": "verb + object"
         }
@@ -313,7 +306,7 @@
     {
       "n": 5,
       "signpost": "seem",
-      "definition": "give a particular feeling when you touch it or experience it",
+      "definition": "seem to be a particular way, especially when you touch it or are in it",
       "explanation": "The subject is the thing or the situation, not the person: *The room feels warm*.",
       "grammar": {
         "countability": null,
@@ -461,8 +454,8 @@
     {
       "n": 7,
       "signpost": "want",
-      "definition": "want something, or want to do something",
-      "explanation": "Used as **feel like** + a noun or an **-ing** form, never **feel like** + **to** + verb. Common in questions and with **not**.",
+      "definition": "would like to have or do something at a particular time",
+      "explanation": "Used in the pattern *feel like* + a noun or an *-ing* form, often in questions and with **not**.",
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -569,8 +562,8 @@
     {
       "n": 9,
       "signpost": "sympathy",
-      "definition": "understand how unhappy someone is and feel sorry for them",
-      "explanation": "Used as **feel for** + a person: *I really feel for you*.",
+      "definition": "understand how unhappy someone is and be sad that they are in a bad situation",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -604,6 +597,67 @@
           "type": "adverb + verb",
           "items": [
             "really feel for someone"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 10,
+      "signpost": "suffer from",
+      "definition": "suffer because of something, such as a change or a loss",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Small businesses are feeling the effects of higher prices.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We all felt her loss when she left the team.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The whole family felt the strain of the move.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "feel the effects",
+            "feel the loss",
+            "feel the strain"
           ]
         }
       ],
@@ -656,12 +710,14 @@
       "l1": {}
     },
     {
-      "sub_id": "feel-sorry-for-someone",
-      "text": "feel sorry for someone",
-      "definition": "feel sad for someone because they are in a bad situation",
+      "sub_id": "not-feel-yourself",
+      "text": "not feel yourself",
+      "definition": "not feel as well or as happy as usual",
       "explanation": null,
       "labels": {
-        "register": [],
+        "register": [
+          "informal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -669,12 +725,12 @@
       },
       "examples": [
         {
-          "text": "I felt sorry for the new student, who had no friends.",
+          "text": "I'm going home early. I'm not feeling myself today.",
           "note": null,
           "pattern": null
         },
         {
-          "text": "Don't feel sorry for me; I'm fine.",
+          "text": "He hasn't been feeling himself since the accident.",
           "note": null,
           "pattern": null
         }
@@ -735,7 +791,7 @@
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"feel\" + adjective takes no **myself** or **yourself**: *I feel tired*, not *I feel myself tired*. **Feel like** takes an **-ing** form: *I feel like dancing*.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -743,7 +799,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-25T06:47:55Z",
-    "modified": "2026-10-01T07:21:10Z",
+    "modified": "2026-10-25T19:24:28Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260925T064323Z-r23b83",
     "reviews": [
@@ -786,6 +842,26 @@
         "ok": 104,
         "issues": 3,
         "blocking": 2
+      },
+      {
+        "run_id": "20261025T191301Z-ax7wls",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T191301Z-ax7wls/feel-v.json",
+        "ok": 101,
+        "issues": 23,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261025T191301Z-ax7wls",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-25",
+        "file": "reviews/20261025T191301Z-ax7wls/feel-v.json",
+        "ok": 119,
+        "issues": 4,
+        "blocking": 0
       }
     ],
     "status": "reviewed",

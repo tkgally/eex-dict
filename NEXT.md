@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-25 by scheduled run 20261025T184427Z-ax7wls, cycle 2 (build: twelve milestone-1 words, sidewalk to bald).*
+*Rewritten 2026-10-25 by scheduled run 20261025T184427Z-ax7wls, cycle 3 (review: coverage pass on show, put, point, pass, give, feel).*
 
 ## State
 
 - 2,900 entries, all `reviewed`. Milestone 1: 132 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree), `temple-n-2` (side of the head). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); 63 unbanded rows voted 2026-10-25. A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-25: about US$13.73 of US$15 (US$1.56 the owner's model test). Originality: last 2026-10-25, next due in twenty runs.
+- Spend 2026-10-25: about US$14.20 of US$15 (US$1.56 the owner's model test). Originality: last 2026-10-25, next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md); [experiment](experiments/claude-reviewers-v1/README.md)). Both roles run side by side. A failed `claude -p` call is retried twice, then recorded as an error: re-run `--roles reviewer-a`. Its model label was fixed 2026-10-25 ([claude-cli-model-label](wiki/notes/claude-cli-model-label.md)).
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
@@ -17,7 +17,7 @@
    2. **B4 (i)**: done 2026-10-25 (codes added with `give-up-phrv`, `go-on-phrv`). Other phrasal verbs get the code when next reviewed.
    3. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates; eight references to ruled-out targets (`check_links.py`). The `active-adj`/`passive-adj` and `alone-adj`/`lonely-adj` type mismatches belong here.
    4. **Build** milestone 1 in queue order (`claim.py --from-queue`). Closure waits until it is built ([build-order](wiki/decisions/build-order.md)).
-   5. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by number of senses, skipping those read since 2026-10-24; eighteen done; next `show-v`, `put-v`, `point-n`, `pass-v`, `give-v`, `feel-v`, then `fall-v`, `come-v`, `catch-v`, `ground-n`, `fresh-adj`; add *going strong* to `go-v` and *look sharp* to `look-v` when next read), then the one-round backlog by band.
+   5. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by number of senses, skipping those read since 2026-10-24; twenty-four done; next `fall-v`, `come-v`, `catch-v`, `ground-n`, `fresh-adj`, `over-adv`, then eight-sense words such as `wild-adj`; add *going strong* to `go-v` and *look sharp* to `look-v` when next read), then the one-round backlog by band.
    6. **reviewer-b** (E1): settled 2026-10-25, no trial.
    7. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    8. **E5**: when milestone 1 is built and the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
