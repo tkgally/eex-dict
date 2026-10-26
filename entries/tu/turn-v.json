@@ -239,7 +239,7 @@
     {
       "n": 3,
       "signpost": "face another way",
-      "definition": "move something so that it faces or points in a different direction",
+      "definition": "move something so that it faces or points in a different direction, or so that a different side is on top",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -357,8 +357,8 @@
     {
       "n": 5,
       "signpost": "become",
-      "definition": "become different, or change into a different state",
-      "explanation": "Common for changes of color, weather, and mood, and for food that goes bad. **Turn into** (its own entry) is used before a noun: *The rain turned into snow*.",
+      "definition": "become different in color, temperature, mood, or another quality",
+      "explanation": "**Turn into** (its own entry) is used before a noun: *The rain turned into snow*.",
       "grammar": {
         "countability": null,
         "transitivity": "linking",
@@ -407,7 +407,7 @@
       "synonyms": [
         {
           "slug": "become-v",
-          "note": "**become** is the general word; **turn** is common with colors, weather, moods, and food"
+          "note": "the general word, used before any adjective or noun"
         }
       ],
       "antonyms": [],
@@ -441,6 +441,47 @@
             }
           ],
           "collocations": []
+        },
+        {
+          "letter": "b",
+          "definition": "make something become different in this way",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object + adjective"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "The sun had turned the grass brown.",
+              "note": null,
+              "pattern": "verb + object + adjective"
+            },
+            {
+              "text": "Years of worry turned his hair gray.",
+              "note": null,
+              "pattern": "verb + object + adjective"
+            },
+            {
+              "text": "The cold turned her fingers blue.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "turn something brown",
+                "turn something gray",
+                "turn something blue"
+              ]
+            }
+          ]
         }
       ],
       "adaptation": {
@@ -672,11 +713,6 @@
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "Can you open the light?",
-      "correct": "Can you turn on the light?",
-      "note": "Lights, radios, and machines are turned **on** and **off** (or switched on and off), not opened and closed."
-    },
-    {
       "incorrect": "Turn to left at the lights.",
       "correct": "Turn left at the lights.",
       "note": "**Left** and **right** follow **turn** directly, with no **to**."
@@ -684,38 +720,18 @@
     {
       "incorrect": "The weather turned to cold.",
       "correct": "The weather turned cold.",
-      "note": "Before an adjective, **turn** takes no preposition; **turn into** comes before a noun."
+      "note": "Before an adjective, **turn** takes no preposition."
     }
   ],
   "etymology": null,
   "see_also": [
-    {
-      "slug": "turn-on-phrv",
-      "note": null
-    },
-    {
-      "slug": "turn-off-phrv",
-      "note": null
-    },
-    {
-      "slug": "turn-up-phrv",
-      "note": null
-    },
-    {
-      "slug": "turn-down-phrv",
-      "note": null
-    },
-    {
-      "slug": "turn-into-phrv",
-      "note": null
-    },
     {
       "slug": "turn-out-phrv",
       "note": null
     }
   ],
   "adaptation": {
-    "semantic": "English uses **turn** for turning a key, changing direction, and becoming different (*turn red*). Many languages use separate verbs for these, so each sense may need its own translation.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -724,7 +740,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-29T19:20:01Z",
-    "modified": "2026-10-25T07:17:55Z",
+    "modified": "2026-10-26T13:17:49Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260929T191551Z-y7kyhk",
     "reviews": [
@@ -766,6 +782,26 @@
         "file": "reviews/20261004T044332Z-qusupg/turn-v.json",
         "ok": 92,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261026T130512Z-q4jhhd",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-26",
+        "file": "reviews/20261026T130512Z-q4jhhd/turn-v.json",
+        "ok": 84,
+        "issues": 10,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261026T130512Z-q4jhhd",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-26",
+        "file": "reviews/20261026T130512Z-q4jhhd/turn-v.json",
+        "ok": 88,
+        "issues": 6,
         "blocking": 0
       }
     ],
