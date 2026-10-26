@@ -338,13 +338,9 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (8031/11346); `reviewer-
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (8123/11479); `reviewer-b` `ALL` 0.51 (1375/2671). `reviewer-b` `spelling-or-format` 0.28 (165/588); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (19/61), unchanged and still the nearest live pair to the line. In the five cycles since the last pass reviewer-b had 7 of 34 applied. No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`.
 
-## 2026-10-21 and 2026-10-22: eighty-second and eighty-third passes, no new switch-offs
+## 2026-10-21 to 2026-10-23: eighty-second to eighty-fourth passes, no new switch-offs
 
-Eight disabled pairs unchanged; `reviewer-b` `phrase` 0.31 was the nearest live pair to the line; `reviewer-b` `definition-style` fell to 0.46 on rejected calls against the house *added to* wording for affixes.
-
-## 2026-10-23: eighty-fourth lint pass, no new switch-offs
-
-Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (8449/12021); `reviewer-b` `ALL` 0.50 (1402/2787). `reviewer-b` `spelling-or-format` 0.28 (165/593); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.30 (19/63), one rejection from the line. `reviewer-b` `definition-style` 0.45 (147/330): six more rejected calls against the house *added to* wording for affixes. No live pair is under 30 percent over twenty or more decisions.
+Eight disabled pairs unchanged. `reviewer-b` `phrase` 0.30 to 0.31, at the line; `definition-style` 0.45, rejected calls against the house *added to* affix wording; `spelling-or-format` 0.28, live by the owner's ruling.
 
 ## 2026-10-24: eighty-fifth and eighty-sixth passes, no new switch-offs
 
@@ -353,3 +349,7 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.70 (8449/12021); `reviewer-
 ## 2026-10-25: eighty-seventh pass, first figures for the new reviewer A
 
 Disabled pairs unchanged (reviewer-a's old four reset by the 2026-10-25 ruling). `reviewer-a:claude-sonnet-5-5` 0.86 (272/316); lowest `coverage` 0.60 (32/53), `grammar-code` 0.68 (13/19). `reviewer-b` 0.50; `phrase` 0.30 (19/63) at the line, not under; `spelling-or-format` 0.27, live by the owner's ruling. No live pair is under 30 percent over twenty decisions.
+
+## 2026-10-26: eighty-eighth pass, no new switch-offs
+
+`reviewer-a:claude-sonnet-5-5` 0.83 (672/805); lowest `coverage` 0.54 (60/112, mostly keyword-rule idioms), `grammar-code` 0.64 (32/50, gradability codes called duplicates). `reviewer-b:gemini-4-argon` 0.88 (133/152), no pair over twenty decisions. No live pair is under 30 percent.
