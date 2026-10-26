@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-26] review | ordinal dates; coverage: hand, wild, weak
+
+Scheduled run 20261026T064359Z-3ixgni, cycle 4 (run id 20261026T071004Z-3ixgni). The date sense of `first-num` to `fifth-num` no longer uses the headword (*day 1 of a month, as a date*), matching *sixth* to *tenth*. Coverage pass: `hand-n` (new phrase *someone's hands are tied*), `wild-adj` (new senses *untidy*, *surprising*; *a wild throw*), `weak-adj` (new sense *a weak smile*; *the weak* in the usage note). Panel: 122 issues (14 blocking), 74 applied, 48 rejected. Most applied fixes removed facts stated in two fields (ordinal pronunciation and fraction notes, `hand-n` grammar notes, the `wild-adj` wildlife note) and widened phrase definitions to fit their examples. Rejected: ordinal date and order/competition senses (fence); *at first*, *first of all* (in `first-adv`); *wildest dreams*, *take matters into your own hands* (noun keyword). Spend US$0.47.
+
 ## [2026-10-26] build | twelve milestone-1 words, semi- to rot
 
 Scheduled run 20261026T064359Z-3ixgni, cycle 3 (run id 20261026T065938Z-3ixgni). Built `semi-prefix`, `self-comb`, `bind-v`, `decay-v`, `diagnose-v`, `envy-v`, `fasten-v`, `frown-v`, `glow-v`, `infect-v`, `plow-v`, `rot-v`. Panel: 90 issues (16 blocking), 73 applied, 17 rejected. Added from the reviews: *semi-* "twice" (*semiweekly*), *plow* money into and *plow through* work, *bind* a wound and the intransitive *bind*; *not envy someone* became a phrase. Subject restrictions moved out of definitions into explanations (`glow-v`, `infect-v`, `decay-v`). Rejected: marks on listed forms (*bound*, *infected*; the site marks them), a figurative label (none exists). `semi-prefix` American IPA disputed (1/3): flagged, curator line. `frown-v` now names `smile-v` as an antonym to match its mirror. Spend US$0.39.
