@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-26] review | coverage: turn, start, side, hold
+
+Scheduled run 20261026T125121Z-q4jhhd, cycle 2 (run id 20261026T130512Z-q4jhhd). Coverage pass on `turn-v`, `start-v`, `side-n`, `hold-v`. Panel: 65 issues (4 blocking), 54 applied, 11 rejected. Added: `turn-v` subsense *turn the grass brown* (causative); `hold-v` new sense *believe* (*hold an opinion*, *hold someone responsible*, *hold that*) split from the job-or-document sense, and subsense *hold someone's attention*; `side-n` British *team* subsense (was an explanation), phrase *from side to side*; `start-v` *to start with* meaning *at the beginning*. Removed: generic adaptation notes on all four, the regularized *holded* learner error, duplicated facts. Mirrors removed with their references: `conclude-v` antonym `start-v`, `team-n` synonym `side-n`. Rejected: *start from scratch* and *hold your breath* (noun keyword; the latter noted for `breath-n`), reordering `turn-v`. Spend US$0.29.
+
 ## [2026-10-26] build | twelve milestone-1 words, sow to cruelty
 
 Scheduled run 20261026T125121Z-q4jhhd, cycle 1. Built `sow-v`, `subtract-v`, `weaken-v`, `weed-v`, `acquaintance-n`, `ancestor-n`, `beak-n`, `broom-n`, `bruise-n`, `cattle-n`, `clause-n`, `cruelty-n`; all 24 transcriptions verified. Panel: 37 issues (2 blocking), 29 applied, 8 rejected. Applied: `weaken-v` money sense's subject moved into an explanation, its power sense made intransitive too; `acquaintance-n` gained a sense for knowing a person (*on first acquaintance*); `weed-v` and `clause-n` lost a note that named no trap; `livestock-n` moved to see-also in `cattle-n`. Rejected: marks on listed plurals, a script-owned inflection note, *bill* as a synonym of *beak* (`bill-n` is the money word; the bird homograph is not yet queued). `friend-n` sense 1 now compares `acquaintance-n` (placed by hand). Spend US$0.32.
