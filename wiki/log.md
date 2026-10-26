@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-26] site | build and check, all pass
+
+Scheduled run 20261026T004421Z-h5hgye, cycle 1. Pre-flight: no open pull request; no entry reports; one orphan branch (`claude/gallant-carson-ax7wls`, the last run's, fully absorbed) logged for pruning. `tools/build_site.py` wrote 2,924 entries on 2,538 headword pages (no drafts held back, no redirects); `tools/site_check.py` ran 79 checks at phone and desktop widths, all passed, including no sideways scroll at 360 px on all 2,544 pages. The twelve new adjective pages (*bent* to *lucky*) render. No change to the build tool or templates. No spend.
+
 ## [2026-10-25] build | twelve milestone-1 adjectives, from bent to lucky
 
 Scheduled run 20261025T184427Z-ax7wls, cycle 4 (run id 20261025T192737Z-ax7wls). Built *bent*, *cooked*, *cruel*, *curly*, *curved*, *foolish*, *full-time*, *hidden*, *indoor*, *jealous*, *logical*, *lucky*. Inflections verified; 22 of 24 transcriptions verified. *Full-time* is disputed: the panel split, CMU agrees with ˈfʊlˌtaɪm, so it is flagged like `part-time-adj` with a curator line. Panel: 77 issues (5 blocking), 55 applied, 20 rejected, 2 escalated (reviewer B's second-syllable stress for *full-time*). Ten rejections were reviewer A calling `comparative with more` "not a grammar code" (noted in [reviewer-noise](notes/reviewer-noise.md)). New during review: *cooked* = in serious trouble (informal); *lucky for someone*. A grammatical sentence removed from *foolish*'s learner errors. Back-links placed by hand in `visible-adj`, `reasonable-adj`, `sensible-adj`. Spend US$0.35.
