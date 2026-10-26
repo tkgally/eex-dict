@@ -153,9 +153,9 @@
           "pattern": "verb + adverb or preposition"
         },
         {
-          "text": "She moved to another department.",
+          "text": "Our company moved to a new building last year.",
           "note": null,
-          "pattern": "verb + adverb or preposition"
+          "pattern": null
         }
       ],
       "collocations": [
@@ -259,7 +259,8 @@
         "codes": [],
         "patterns": [
           "verb + object",
-          "verb + object + preposition + object"
+          "verb + object + preposition + object",
+          "verb + object + to-infinitive"
         ]
       },
       "labels": {
@@ -280,6 +281,11 @@
           "text": "We were deeply moved by her speech.",
           "note": "passive",
           "pattern": "verb + object"
+        },
+        {
+          "text": "Her story moved him to help.",
+          "note": null,
+          "pattern": "verb + object + to-infinitive"
         }
       ],
       "collocations": [
@@ -316,7 +322,7 @@
     {
       "n": 5,
       "signpost": "in a game",
-      "definition": "change the position of a piece in a board game",
+      "definition": "change the position of a piece in a board game, or take your turn in this way",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -366,7 +372,7 @@
     {
       "n": 6,
       "signpost": "take action",
-      "definition": "start to take action",
+      "definition": "take action, often quickly",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -462,7 +468,7 @@
           "type": "phrase",
           "items": [
             "move a meeting",
-            "move something to",
+            "move something to another day",
             "move something forward",
             "move something back"
           ]
@@ -491,8 +497,7 @@
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + that-clause",
-          "verb + object"
+          "verb + that-clause"
         ]
       },
       "labels": {
@@ -607,7 +612,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T19:29:57Z",
-    "modified": "2026-10-21T01:10:37Z",
+    "modified": "2026-10-26T13:41:41Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T192801Z-iujuq0",
     "reviews": [
@@ -649,6 +654,26 @@
         "file": "reviews/20261003T004332Z-ds9q0e/move-v.json",
         "ok": 86,
         "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261026T133028Z-q4jhhd",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-26",
+        "file": "reviews/20261026T133028Z-q4jhhd/move-v.json",
+        "ok": 81,
+        "issues": 9,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261026T133028Z-q4jhhd",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-26",
+        "file": "reviews/20261026T133028Z-q4jhhd/move-v.json",
+        "ok": 89,
+        "issues": 1,
         "blocking": 0
       }
     ],

@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-26] review | coverage: good, play, find, move
+
+Scheduled run 20261026T125121Z-q4jhhd, cycle 4 (run id 20261026T133028Z-q4jhhd). Coverage pass on `good-adj`, `play-v`, `find-v`, `move-v`. Panel: 74 issues (3 blocking), 51 applied, 23 rejected. Added: `good-adj` subsense *I'm good* (informal, was only in the usage note), phrase *good and* (*good and hot*); `play-v` subsenses *play with your hair* and *what's playing tonight*, *play a team*; `move-v` *moved him to help*. `good-adj` sense 8 subject limits moved into an explanation (blocking); `play-v` *play a joke on* definition rewritten (blocking). Duplicated facts trimmed (`good-adj` well/better five times, `find-v` look for three times). `find-v`: *discover* moved to the by-chance sense, `chance-v` dropped with its mirror. Rejected: marks on *found* (eight), *find fault*, *find your feet* (noun keyword), *no good* as a noun, removing `affect-v` (its sense 2 fits). Spend US$0.27.
+
 ## [2026-10-26] build | twelve milestone-1 words, deodorant to orphan
 
 Scheduled run 20261026T125121Z-q4jhhd, cycle 3 (run id 20261026T132015Z-q4jhhd). Built `deodorant-n`, `disgust-n`, `echo-n`, `enjoyment-n`, `frost-n`, `germ-n`, `grief-n` (phrases *come to grief*, *give someone grief*, *good grief*), `hay-n` (*make hay while the sun shines*, *hit the hay*), `jewel-n` (*the jewel in the crown*), `lever-n`, `mammal-n`, `orphan-n`; all 24 transcriptions verified. Panel: 20 issues (2 blocking), 16 applied, 4 rejected. Applied: collocation types (noun modifiers out of *adjective + noun*), *gear lever* (British) replaced, examples moved to the sense they fit (*frost*, *disgust*), `echo-n` sense 2 tightened. Rejected: marks on the listed plural *echoes* (both blocking), *wheat germ* as a missing sense, an IPA form already verified. Back-links placed by hand on `perfume-n`, `virus-n`, `handle-n`, `switch-n`. Spend US$0.32.
