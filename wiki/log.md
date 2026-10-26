@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-26] build | twelve milestone-1 words, specially to ex-
+
+Scheduled run 20261026T064359Z-3ixgni, cycle 1. Built `specially-adv`, `widely-adv`, `billion-num`, the ordinals `sixth-num` to `tenth-num`, `shh-interj`, `start-over-phrv`, `dis-prefix`, `ex-prefix`. Panel: 107 issues (27 blocking), 57 applied, 50 rejected. Applied: date senses reworded without the headword (*day 6 of a month, as a date*); *An eighth*; the sound count in `sixth-num`; participle collocations typed `phrase`; a phone statistic and a stars claim removed from `billion-num`; *disinfect* replaced; *smile widely* added as a sense; the house r-colored vowel in `start-over-phrv`. Rejected: the ordinal date senses and the order/competition split (house pattern), *sixth sense* and *seventh heaven* (keyword is the noun), adverbial *finished sixth* (fence). `ex-prefix` now names `former-adj` as a synonym to match its mirror. Spend US$0.35.
+
 ## [2026-10-26] lint | eighty-eighth pass: back-links, band vote, precision
 
 Scheduled run 20261026T004421Z-h5hgye, cycle 4 (run id 20261026T012214Z-h5hgye), forced at ten runs since the last lint. Caps and links clean; wiki at 29,872 of 30,000 words after condensing the precision note. `crossref.py --all --apply` wrote mirror back-links in six entries; ten `NO-SENSE` pairs placed by hand, most from this run's new adjectives (`ordinary-adj` three, `unfriendly-adj`, `ripe-adj`, `cruel-adj`, `makeup-n`, `mess-n`, `relative-n`, `laundry-n`). New type mismatch `cut-v`/`chop-v` left for the C1 audit. `--promises`: the same 7 as last pass, all false. `--circular`: 322, mostly secondary senses naming the first. `--missing-senses`: 707 pairs. Band vote on 64 unbanded rows (US$0.011); `shampoo-v` and `thunder-v` settled at 3 ([record](../experiments/band-vote-2026-10-26/README.md)). Precision: reviewer A 0.83 over 805, reviewer B 0.88 over 152; no live pair under the line. Five stale claim files pruned; three branch-prune curator lines resolved.
