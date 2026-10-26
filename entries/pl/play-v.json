@@ -83,14 +83,14 @@
           "pattern": "verb + object"
         },
         {
-          "text": "Our team is playing against the best team in the city.",
+          "text": "He plays for a local club.",
           "note": null,
           "pattern": "verb + preposition + object"
         },
         {
-          "text": "He plays for a local club.",
+          "text": "We play the team from the next town on Saturday.",
           "note": null,
-          "pattern": "verb + preposition + object"
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
@@ -109,6 +109,13 @@
           "items": [
             "play against",
             "play for"
+          ]
+        },
+        {
+          "type": "verb + noun",
+          "items": [
+            "play a team",
+            "play someone at chess"
           ]
         }
       ],
@@ -149,9 +156,9 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The children played in the garden all afternoon.",
+          "text": "The children played in the yard all afternoon.",
           "note": null,
-          "pattern": "verb + adverb or preposition"
+          "pattern": null
         },
         {
           "text": "She was playing with her dolls.",
@@ -182,7 +189,44 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "touch or move something again and again without thinking, often because you are bored or nervous",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "intransitive",
+            "codes": [],
+            "patterns": [
+              "verb + preposition + object"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "Stop playing with your phone and listen.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "She played with her hair while she waited.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + preposition",
+              "items": [
+                "play with your hair",
+                "play with your food",
+                "play with your phone"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -258,7 +302,7 @@
     {
       "n": 4,
       "signpost": "a recording",
-      "definition": "start a recording or a video so that people can hear or see it, or be heard in this way",
+      "definition": "start a recording or a video so that people can hear or see it, or be heard or seen in this way",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -306,7 +350,35 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "be shown at a movie theater or performed at a theater",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "intransitive",
+            "codes": [],
+            "patterns": [
+              "verb + adverb or preposition"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "What's playing at the movie theater tonight?",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The show played in the city for over a year.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -319,7 +391,7 @@
     {
       "n": 5,
       "signpost": "act",
-      "definition": "take the part of a character in a play, a film, or a show",
+      "definition": "take the part of a character in a film, a show, or a theater performance",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -430,7 +502,7 @@
     {
       "n": 7,
       "signpost": "a joke",
-      "definition": "make someone the person that a joke or a trick is on",
+      "definition": "do something to someone as a joke or a trick, so that you can laugh at them",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -485,7 +557,7 @@
     {
       "n": 8,
       "signpost": "pretend",
-      "definition": "act as if you were something that you are not",
+      "definition": "behave as if you are a particular kind of person, or as if something is true, when it is not",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -516,9 +588,9 @@
           "pattern": null
         },
         {
-          "text": "He likes to play the hero.",
+          "text": "He played dumb when I asked about the money.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + adjective"
         }
       ],
       "collocations": [
@@ -687,7 +759,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T20:14:43Z",
-    "modified": "2026-09-28T01:16:13Z",
+    "modified": "2026-10-26T13:40:46Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T201324Z-iujuq0",
     "reviews": [
@@ -728,6 +800,26 @@
         "date": "2026-09-28",
         "file": "reviews/20260928T010625Z-jf8wvz/play-v.json",
         "ok": 103,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261026T133028Z-q4jhhd",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-26",
+        "file": "reviews/20261026T133028Z-q4jhhd/play-v.json",
+        "ok": 92,
+        "issues": 15,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261026T133028Z-q4jhhd",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-26",
+        "file": "reviews/20261026T133028Z-q4jhhd/play-v.json",
+        "ok": 105,
         "issues": 0,
         "blocking": 0
       }
