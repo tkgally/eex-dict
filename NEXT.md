@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-26 by scheduled run 20261026T184417Z-0maqpx, cycle 1 (build: pasture to texture).*
+*Rewritten 2026-10-26 by scheduled run 20261026T184417Z-0maqpx, cycle 2 (build: treaty to tame).*
 
 ## State
 
-- 2,996 entries, all `reviewed`. Site checked 2026-10-26: 79 of 79 pass. Milestone 1: 42 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree), `temple-n-2` (side of the head); not yet queued, so queue by hand: `bill-n-2` (a bird's beak; then point `beak-n` to it), `pulse-n-2` (beans and lentils as food). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 3,008 entries, all `reviewed`. Site checked 2026-10-26: 79 of 79 pass. Milestone 1: 30 rows left. Homographs to claim by hand when their turn comes: `bark-n-2` (a dog's bark), `ash-n-2` (the tree), `temple-n-2` (side of the head); not yet queued, so queue by hand: `bill-n-2` (a bird's beak; then point `beak-n` to it), `pulse-n-2` (beans and lentils as food). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); 64 more voted 2026-10-26 ([record](experiments/band-vote-2026-10-26/README.md)). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-26 so far: US$3.61 of US$15. Originality: last 2026-10-26 (`include-v` rewritten), next due in twenty runs.
+- Spend 2026-10-26 so far: US$3.92 of US$15. Originality: last 2026-10-26 (`include-v` rewritten), next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md); [experiment](experiments/claude-reviewers-v1/README.md)). Both roles run side by side. A failed `claude -p` call is retried twice, then recorded as an error: re-run `--roles reviewer-a`. Its model label was fixed 2026-10-25 ([claude-cli-model-label](wiki/notes/claude-cli-model-label.md)).
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
