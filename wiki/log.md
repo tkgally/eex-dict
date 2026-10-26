@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-26] build | twelve milestone-1 words, semi- to rot
+
+Scheduled run 20261026T064359Z-3ixgni, cycle 3 (run id 20261026T065938Z-3ixgni). Built `semi-prefix`, `self-comb`, `bind-v`, `decay-v`, `diagnose-v`, `envy-v`, `fasten-v`, `frown-v`, `glow-v`, `infect-v`, `plow-v`, `rot-v`. Panel: 90 issues (16 blocking), 73 applied, 17 rejected. Added from the reviews: *semi-* "twice" (*semiweekly*), *plow* money into and *plow through* work, *bind* a wound and the intransitive *bind*; *not envy someone* became a phrase. Subject restrictions moved out of definitions into explanations (`glow-v`, `infect-v`, `decay-v`). Rejected: marks on listed forms (*bound*, *infected*; the site marks them), a figurative label (none exists). `semi-prefix` American IPA disputed (1/3): flagged, curator line. `frown-v` now names `smile-v` as an antonym to match its mirror. Spend US$0.39.
+
 ## [2026-10-26] originality | forty-fourth check: one rewrite (include)
 
 Scheduled run 20261026T064359Z-3ixgni, cycle 2 (run id 20261026T065531Z-3ixgni), forced at run 540. Ten sampled fields searched as exact phrases: 5 original, 4 generic overlap (*concert*, *create*, *save*, *loss* phrase), 1 rewrite: `include-v` sense 1 matched a learner's dictionary's *as part of a group or total*; now *have someone or something in it as one part among others*. Its panel: 4 minor issues, all applied (synonym `embody-v` dropped with its mirror; a passive sense-1 example under sense 2 replaced). Reviewer B, asked the originality question for the first time per `NEXT.md`, answered *cannot tell* six times and named sources without quotes; search decided. [Record](../reviews/originality/2026-10-26.md). Spend US$0.04.
