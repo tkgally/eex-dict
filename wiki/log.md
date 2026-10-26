@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-26] build | twelve milestone-1 words, pasture to texture
+
+Scheduled run 20261026T184417Z-0maqpx, cycle 1. Built `pasture-n` (*greener pastures*, *put someone out to pasture*), `pest-n`, `pulse-n`, `razor-n`, `reptile-n`, `sorrow-n` (*drown your sorrows*, *to someone's sorrow*), `stepdaughter-n`, `stepfather-n`, `stepmother-n`, `stepson-n`, `temper-n` (*lose your temper*, *keep your temper*), `texture-n`; all 24 transcriptions verified. Panel: 35 issues (0 blocking), 30 applied, 5 rejected. Applied: domain labels dropped from everyday senses (`pest-n`, `pulse-n`), `temper-n` sense 1 widened to a person's nature (*an even temper*), `sorrow-n` formal label moved to sense level, three out-of-vocabulary definition words replaced (*burst*, *combine*). Rejected: *drown your sorrows* under *drown* (house rule 7), same-sex wording for step-parents (matches `mother-n`, `father-n`). Back-links placed by hand on `field-n`, `beat-n`, `rhythm-n`, `joy-n`, `mood-n`. `pulse-n-2` (food seeds) needs queuing by hand. Spend US$0.31.
+
 ## [2026-10-26] review | coverage: good, play, find, move
 
 Scheduled run 20261026T125121Z-q4jhhd, cycle 4 (run id 20261026T133028Z-q4jhhd). Coverage pass on `good-adj`, `play-v`, `find-v`, `move-v`. Panel: 74 issues (3 blocking), 51 applied, 23 rejected. Added: `good-adj` subsense *I'm good* (informal, was only in the usage note), phrase *good and* (*good and hot*); `play-v` subsenses *play with your hair* and *what's playing tonight*, *play a team*; `move-v` *moved him to help*. `good-adj` sense 8 subject limits moved into an explanation (blocking); `play-v` *play a joke on* definition rewritten (blocking). Duplicated facts trimmed (`good-adj` well/better five times, `find-v` look for three times). `find-v`: *discover* moved to the by-chance sense, `chance-v` dropped with its mirror. Rejected: marks on *found* (eight), *find fault*, *find your feet* (noun keyword), *no good* as a noun, removing `affect-v` (its sense 2 fits). Spend US$0.27.
