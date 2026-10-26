@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-26] build | twelve milestone-1 words, from ordinary to greatly
+
+Scheduled run 20261026T004421Z-h5hgye, cycle 2 (run id 20261026T004918Z-h5hgye). Built *ordinary*, *ripe*, *salty*, *selfish*, *sour*, *spoken*, *steep*, *sticky*, *temporary*, *unfriendly*, *worn* (adjectives) and *greatly* (adverb). Inflections verified; 24 of 24 transcriptions verified after *salty*'s British form moved to ˈsɒl.ti (ˈsɔːl.ti kept as a variant). Panel: 45 issues (8 blocking), 34 applied, 11 rejected (gradability codes called duplicates; keyword rule for *a ripe old age*, *a steep learning curve*). Fixed: a passive *worn smooth by* example and collocations (verb use); a code clash in *sour*; *unfriendly* now takes *unfriendlier*; *steep*'s core idea now covers the price sense; *greatly* loses an unlabeled "formal" claim. Seven back-links placed or dropped by hand (`fresh-adj`, `sharp-adj`, `sour-adj`). Spend US$0.33.
+
 ## [2026-10-26] site | build and check, all pass
 
 Scheduled run 20261026T004421Z-h5hgye, cycle 1. Pre-flight: no open pull request; no entry reports; one orphan branch (`claude/gallant-carson-ax7wls`, the last run's, fully absorbed) logged for pruning. `tools/build_site.py` wrote 2,924 entries on 2,538 headword pages (no drafts held back, no redirects); `tools/site_check.py` ran 79 checks at phone and desktop widths, all passed, including no sideways scroll at 360 px on all 2,544 pages. The twelve new adjective pages (*bent* to *lucky*) render. No change to the build tool or templates. No spend.
