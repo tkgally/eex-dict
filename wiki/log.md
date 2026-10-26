@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-26] originality | forty-fourth check: one rewrite (include)
+
+Scheduled run 20261026T064359Z-3ixgni, cycle 2 (run id 20261026T065531Z-3ixgni), forced at run 540. Ten sampled fields searched as exact phrases: 5 original, 4 generic overlap (*concert*, *create*, *save*, *loss* phrase), 1 rewrite: `include-v` sense 1 matched a learner's dictionary's *as part of a group or total*; now *have someone or something in it as one part among others*. Its panel: 4 minor issues, all applied (synonym `embody-v` dropped with its mirror; a passive sense-1 example under sense 2 replaced). Reviewer B, asked the originality question for the first time per `NEXT.md`, answered *cannot tell* six times and named sources without quotes; search decided. [Record](../reviews/originality/2026-10-26.md). Spend US$0.04.
+
 ## [2026-10-26] build | twelve milestone-1 words, specially to ex-
 
 Scheduled run 20261026T064359Z-3ixgni, cycle 1. Built `specially-adv`, `widely-adv`, `billion-num`, the ordinals `sixth-num` to `tenth-num`, `shh-interj`, `start-over-phrv`, `dis-prefix`, `ex-prefix`. Panel: 107 issues (27 blocking), 57 applied, 50 rejected. Applied: date senses reworded without the headword (*day 6 of a month, as a date*); *An eighth*; the sound count in `sixth-num`; participle collocations typed `phrase`; a phone statistic and a stars claim removed from `billion-num`; *disinfect* replaced; *smile widely* added as a sense; the house r-colored vowel in `start-over-phrv`. Rejected: the ordinal date senses and the order/competition split (house pattern), *sixth sense* and *seventh heaven* (keyword is the noun), adverbial *finished sixth* (fence). `ex-prefix` now names `former-adj` as a synonym to match its mirror. Spend US$0.35.
