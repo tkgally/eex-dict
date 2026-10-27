@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-27] site | build and check: 79 of 79 pass
+
+Scheduled run 20261027T004409Z-n9o1cm, cycle 4 (run id 20261027T012257Z-n9o1cm). `build_site.py` wrote 3,032 entries on 2,642 headword pages (5,903 files, no drafts withheld, no redirects). `site_check.py` passed all 79 checks at phone and desktop widths: search, phrase search, *Did you mean*, the 404 search, the sense menu, grey missing cross-references, dark mode, and no sideways scroll at 360 px on any of 2,648 pages. The new prefix pages (`sub.html`, `in.html`) and grammar terms render. Nothing to fix. No paid calls.
+
 ## [2026-10-27] build | twelve milestone-1 affixes and grammar terms, sub- to inter-
 
 Scheduled run 20261027T004409Z-n9o1cm, cycle 3 (run id 20261027T011158Z-n9o1cm). Built `sub-prefix`, `super-prefix`, `under-prefix`, `en-prefix`, `in-prefix`, `inter-prefix`, `bio-comb`, `mid-comb`, `multi-comb`, `auxiliary-n`, `conjunction-n`, `determiner-n`. Panel: 80 issues (18 blocking lines), 68 applied, 12 rejected. Coverage added after review: `sub-` *sublet*/*subtropical* senses, `super-` *supernatural* sense, `under-` lower-rank sense, `auxiliary-n` American volunteer group, `conjunction-n` phrase *in conjunction with*. Blocking fixed: `super-` treated the informal adverb (*super easy*) as the prefix; `inter-` called *intercity* a noun; `en-` gave *enjoy* as not containing the prefix; `sub-` filed *subzero* under the wrong sense. `em-`, `il-`, `im-`, `ir-` now variants. Rejected: removing the age sense of `under-` (noun use dropped instead); dropping explanations from grammar terms (`preposition-n` is the model). Disputed British IPA: `auxiliary-n`, `en-prefix` (flagged, curator lines). Milestone 1: 6 rows left. Spend US$0.34.
