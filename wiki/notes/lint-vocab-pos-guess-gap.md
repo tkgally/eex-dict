@@ -23,3 +23,5 @@ Declined all eight with reasons on each queue row; requeued the corrected slugs 
 The closure queue's top rows still held three bogus guesses: *advanced* as a verb and *eager* as a noun (both already queued correctly as adjectives) and *packages*, a plural queued as its own noun lemma. Set to `duplicate` with reasons; `package-n` queued and drafted. The plural case is new: `pos_guess` does not reduce a regular plural to its base before queueing.
 
 Recurred 2026-10-24: *tending* (from `ive-suffix`) and *ounces* (from `oz-abbr`) were queued as lemmas; both rows were marked duplicate and `tend-v`, `ounce-n` drafted. The `closure` source held no other pending rows afterwards.
+
+Recurred 2026-10-27, the first closure cycle after milestone 1: four of the six `closure` rows were inflected forms (*polished*, *candles*, *eyebrows*, *nails*). All four set to `duplicate`; `candle-n`, `eyebrow-n`, `nail-n` drafted instead (`polish-v` is band 3 and waits). A fix that reduces regular plurals and past forms before queueing is now worth a logged decision in a later run.
