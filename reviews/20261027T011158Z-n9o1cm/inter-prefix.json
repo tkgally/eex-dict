@@ -1,0 +1,463 @@
+{
+  "run_id": "20261027T011158Z-n9o1cm",
+  "slug": "inter-prefix",
+  "entry_modified": "2026-10-27T01:14:35Z",
+  "reviewers": [
+    {
+      "role": "reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "requested_at": "2026-10-27T01:16:58Z",
+      "cost_usd": 0.0,
+      "tokens_in": 7381,
+      "tokens_out": 2944,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "issue",
+          "quote": "between or among two or more people, groups, or places",
+          "severity": "minor",
+          "family": "definition-meaning",
+          "reason": "Too narrow: the prefix also applies to things and systems (interconnect, interrelated). \"Between or among two or more\" is also muddled, because between is for two and among is for more."
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "issue",
+          "quote": "and nouns (*intercity*)",
+          "severity": "blocking",
+          "family": "explanation",
+          "reason": "Intercity is an adjective (an intercity train), not a noun. The entry's own example uses it before a noun."
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "coverage",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "issue",
+          "quote": "The two systems are interconnected.",
+          "severity": "minor",
+          "family": "example-unnatural",
+          "reason": "Systems are neither people, groups, nor places, so the example does not fit the definition as written."
+        }
+      ],
+      "summary": "The entry has two real problems. The explanation lists \"intercity\" as a noun, but it is an adjective. The definition's \"people, groups, or places\" is too narrow for the example of interconnected systems. The other fields are fine, though the senses.collocations list is empty.",
+      "error": null
+    },
+    {
+      "role": "reviewer-b",
+      "model": "google/gemini-4-argon",
+      "requested_at": "2026-10-27T01:16:58Z",
+      "cost_usd": 0.022598,
+      "tokens_in": 4024,
+      "tokens_out": 1455,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "issue",
+          "quote": "added to a word to mean between or among two or more people, groups, or places",
+          "severity": "minor",
+          "family": "definition-meaning",
+          "reason": "Saying 'people, groups, or places' is too narrow; 'inter-' also applies to things, systems, and events (as in 'The two systems are interconnected' in the examples), so 'things' should be included."
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "issue",
+          "quote": "It is added to adjectives (*international*, *interstate*), verbs (*interact*, *interconnect*), and nouns (*intercity*).",
+          "severity": "blocking",
+          "family": "explanation",
+          "reason": "This confuses the base words with the resulting words and mixes them up: 'state' and 'city' are nouns that form the adjectives 'interstate' and 'intercity' (as in 'intercity train'), while 'inter-' is added to nouns to form nouns in words like 'intermarriage' or 'interdependence'."
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "issue",
+          "quote": "She works for an international company.",
+          "severity": "minor",
+          "family": "spelling-or-format",
+          "reason": "In all four examples the headword 'inter-' is embedded inside whole words ('international', 'interacting', 'intercity', 'interconnected') rather than standing as a separate word, so the target word or prefix should be marked with double asterisks."
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "issue",
+          "quote": "between-prep",
+          "severity": "minor",
+          "family": "cross-reference",
+          "reason": "Cross-references should point to synonyms, antonyms, or confusable prefixes (such as 'intra-prefix' or 'trans-prefix'), not to full prepositions like 'between' and 'among'."
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "issue",
+          "quote": "In many common words such as **interest**, **interview**, and **interrupt**, the meaning between is not easy to see, so the words are learned as wholes.",
+          "severity": "minor",
+          "family": "spelling-or-format",
+          "reason": "The word 'between' is cited as a word/meaning and needs single asterisks (*between*) or quotation marks to be grammatical and clear."
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "issue",
+          "quote": "and nouns (*intercity*)",
+          "severity": "blocking",
+          "family": "explanation",
+          "reason": "The explanation calls 'intercity' a noun, whereas example 3 uses it as an adjective ('The intercity train') and its base 'city' is a noun from which an adjective is formed."
+        },
+        {
+          "field": "coverage",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry is mostly sound, but `senses[0].explanation` misclassifies how *inter-* combines with parts of speech (calling *intercity* a noun while *interstate* is listed under adjectives, and contradicting the example *The intercity train*). Minor fixes are also needed in the definition's scope, cross-references (compare with *intra-* rather than prepositions), and inline formatting.",
+      "error": null
+    }
+  ]
+}
