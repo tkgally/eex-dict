@@ -26,7 +26,7 @@
 3. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and reviewers ask for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*, *travel light*); reject all, with the reason. `verb + adjective` is not a collocation type. The new reviewer A raises many minor issues: fix the clear ones only; it calls `comparative with more` "not a grammar code": reject.
 4. **closure**: blocked by milestone 1, then paused above band 2 (A3).
 5. **lint**: every ten runs; last 2026-10-26 (eighty-ninth pass), next due in eight runs. Judge both reviewers by their new rows (`reviewer-a:claude-sonnet-5-5`, `reviewer-b:gemini-4-argon`), not the old models' all-time figures; the 30-percent rule applies afresh.
-6. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`. The wiki is near its 30,000-word cap: trim before adding.
+6. **Tooling notes still open** (`wiki/notes/`): `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`. Wiki near its cap: trim before adding.
 
 ## Fences (do not re-grind)
 
@@ -47,5 +47,5 @@
 - Curator line still open: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; working assumption: allowed there until you rule.
 - Your ruling of 2026-10-25 is in force: reviewer A is the Claude model, and reviewer B is unchanged. `PROJECT.md` still says "two non-Anthropic reviewers"; a session does not edit the charter, so that line is yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); it stays off until you say. The new model caught all four planted IPA errors.
-- Still open: continent names in definitions; *the former*/*the following* as nouns or pronouns (`wiki/open-questions.md`); pronunciation disputes in `reviews/needs_curator.txt` (newest: `anti-prefix`).
+- Still open: continent names in definitions; *the former*/*the following* as nouns or pronouns (`wiki/open-questions.md`); pronunciation disputes in `reviews/needs_curator.txt`.
 - The public site: <https://tkgally.github.io/eex-dict/>.
