@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-27] build | twelve milestone-1 words, from thankful to pre-
+
+Scheduled run 20261027T004409Z-n9o1cm, cycle 1. Built `thankful-adj`, `yearly-adj`, `scarcely-adv`, `seldom-adv`, `wrongly-adv`, `take-apart-phrv`, and the prefixes `anti-`, `de-`, `mis-`, `non-`, `post-`, `pre-`. Panel: 106 issues (1 blocking: the `thankful-adj` discrimination example), 79 applied, 14 rejected, none escalated. Main changes: `wrongly-adv` regrouped (mistaken uses into sense 1, sense 2 *unfairly*), now not gradable; `anti-prefix` gained sense 3 (*anticlimax*, *anticlockwise*); `pre-prefix` hyphen note now American solid, British hyphen; duplicated facts trimmed across six entries. `anti-prefix` American IPA disputed (1/3); flagged, curator line, variant `ˈæn.taɪ` kept. Nine `NO-SENSE` back-links placed by hand; `mis-prefix` compare links dropped. Milestone 1: 18 rows left. Spend US$0.36.
+
 ## [2026-10-26] review | coverage: call, draw, close, cut
 
 Scheduled run 20261026T184417Z-0maqpx, cycle 4 (run id 20261026T190836Z-0maqpx). Coverage pass on `call-v`, `draw-v`, `close-v`, `cut-n`. Panel: 65 issues (2 blocking), 54 applied, 11 rejected. Added: `call-v` birds calling (4a), trains *calling at* stations; `draw-v` *draw blood*, *draw a salary* (3a), *draw criticism* (4a), *draw strength from* (6a), breathing in (sense 9); `close-v` fingers closing around something (1a), shares closing higher (sense 9, finance); `cut-n` *power cut* (2a, British), a film's *cut* (7a), phrase *the cut and thrust of something*. `call-v` sense 7 now *decide or say*, so *the referee called a foul* fits (blocking). Generic adaptation notes removed from `draw-v` and `cut-n`; duplicated facts trimmed (`call-v` usage note, `close-v` see-also note, `draw-v` regularized *drawed*). Rejected: *call it a day*, *call the shots*, *draw the line*, *close ranks* (noun keywords). Back-link on `breathe-v` placed by hand. Spend US$0.27.
