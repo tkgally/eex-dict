@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-27] closure | eight family words: reading to amazing
+
+Eight entries (run `20261027T072624Z-tm5zwm`, cycle 4), band 1, from `family` rows: *reading*, *return*, *share*, *shopping*, *start*, *swimming*, *writing* (nouns), *amazing* (adjective). The heavier `run-n` and `set-n` were left for a fuller cycle. Panel: 41 issues, 9 blocking (circular first definitions in *reading*, *writing*, and *share*; a verb-form example in *shopping*, raised five times; the lion's share); 32 applied, 9 rejected. `return-n` gained a sport sense (a hit that sends the ball back); `start-n` sense 3 is now only the place where a race begins. Rejected: *the lion's share* and *the point of no return* (they key on *lion* and *point*), a flap mark in American *writing*, and reviewer A's usual objection to `comparative with more`. The vocabulary gate refused *poem*, *aloud*, *fright*, *tennis*, *net*, and *forth* in draft definitions; all were reworded. Spend US$0.29; day US$2.27 of 15.
+
 ## [2026-10-27] closure | ten family nouns: call to mum
 
 Ten entries (run `20261027T071736Z-tm5zwm`, cycle 3), all band-1 nouns from `family` rows: *call*, *classroom*, *cover*, *gift*, *gold*, *homework*, *ice cream*, *meeting*, *mom*, *mum*. The `closure` source is empty. Panel: 39 issues, 4 blocking (all in `gold-n`: the first-prize sense was two definitions joined by a comma, and the color examples were adjective uses); 30 applied, 9 rejected. `cover-n` gained a layer sense (*cloud cover*) and a British sense for an absent worker's cover. *Wake-up call* and *don't look a gift horse in the mouth* were added as phrases. The capital-M note in *mom* and *mum* moved from the explanations to the usage notes. Rejected: *heart of gold* (it is under `heart-n`), marks on *struck* in phrase examples, and *mum* as a spelling variant of *mom*. The vocabulary gate refused *occasion*, *property*, and *charity* in two definitions after review; they were reworded. Spend US$0.31; day US$1.98.
