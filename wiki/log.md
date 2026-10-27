@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-27] review | coverage: drive, full, front, place
+
+Scheduled run 20261027T004409Z-n9o1cm, cycle 2 (run id 20261027T010312Z-n9o1cm). Coverage pass on `drive-n`, `full-adj`, `front-n`, `place-n`. Panel: 63 issues (5 blocking, all `full-adj`), 58 applied, 5 rejected. Added: `full-adj` 4b *a full member*, 4c *a full hour*, clothes as its own sense 8, phrases *full of it* and *full up*; phrase *to the full* now *to the fullest* (sub_id changed, no inbound links); `place-n` sense 9 decimal places and phrase *in places*; `front-n` sense 9 political front. Blocking fixed: `full-adj` sense 2 was coded predicative only (*a box full of books*), sense 4's code clashed with *the moon is full*, and a present-tense example after *since*. `drive-n` senses reordered (computer sense 2, British road sense 6); street names now its usage note. `front-n`: *tail* antonym removed with its mirror; the in-front-of/opposite fact kept once. Spend US$0.27.
+
 ## [2026-10-27] build | twelve milestone-1 words, from thankful to pre-
 
 Scheduled run 20261027T004409Z-n9o1cm, cycle 1. Built `thankful-adj`, `yearly-adj`, `scarcely-adv`, `seldom-adv`, `wrongly-adv`, `take-apart-phrv`, and the prefixes `anti-`, `de-`, `mis-`, `non-`, `post-`, `pre-`. Panel: 106 issues (1 blocking: the `thankful-adj` discrimination example), 79 applied, 14 rejected, none escalated. Main changes: `wrongly-adv` regrouped (mistaken uses into sense 1, sense 2 *unfairly*), now not gradable; `anti-prefix` gained sense 3 (*anticlimax*, *anticlockwise*); `pre-prefix` hyphen note now American solid, British hyphen; duplicated facts trimmed across six entries. `anti-prefix` American IPA disputed (1/3); flagged, curator line, variant `ˈæn.taɪ` kept. Nine `NO-SENSE` back-links placed by hand; `mis-prefix` compare links dropped. Milestone 1: 18 rows left. Spend US$0.36.
