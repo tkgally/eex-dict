@@ -139,7 +139,7 @@
     {
       "n": 2,
       "signpost": "create",
-      "definition": "create a book, article, song, or other piece of work in words or music",
+      "definition": "create a book, an article, a song, a computer program, or another piece of work in words, music, or code",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -175,7 +175,7 @@
           "pattern": "verb + object"
         },
         {
-          "text": "I have to write a report for my boss.",
+          "text": "She writes software for a bank.",
           "note": null,
           "pattern": "verb + object"
         }
@@ -188,7 +188,8 @@
             "write a song",
             "write an essay",
             "write a report",
-            "write a story"
+            "write a story",
+            "write code"
           ]
         },
         {
@@ -199,12 +200,7 @@
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "author-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -356,9 +352,9 @@
     },
     {
       "n": 5,
-      "signpost": "fill in",
-      "definition": "fill in and sign a check, or give someone a written order for medicine",
-      "explanation": "The second use is said of doctors: *write a prescription*.",
+      "signpost": "a check",
+      "definition": "complete and sign a check so that someone can be paid",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -383,9 +379,9 @@
           "pattern": "verb + two objects"
         },
         {
-          "text": "The doctor wrote me a prescription for the pain.",
+          "text": "She wrote a check for two hundred dollars.",
           "note": null,
-          "pattern": "verb + two objects"
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
@@ -393,7 +389,6 @@
           "type": "verb + noun",
           "items": [
             "write a check",
-            "write a prescription",
             "write someone a check"
           ]
         }
@@ -401,7 +396,44 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "give someone a written order for medicine",
+          "explanation": "Said of doctors.",
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + two objects",
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "The doctor wrote me a prescription for the pain.",
+              "note": null,
+              "pattern": "verb + two objects"
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "write a prescription"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -655,7 +687,7 @@
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"write\" can take two objects (*write someone a letter*). With only the person, American English allows *write me*, but British English usually needs **to**: *write to me*.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": "\"write\": the **w** is silent; the word sounds the same as **right**."
@@ -663,7 +695,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-30T06:48:25Z",
-    "modified": "2026-10-22T13:00:31Z",
+    "modified": "2026-10-27T19:43:45Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260930T064355Z-oikyxz",
     "reviews": [
@@ -704,6 +736,26 @@
         "date": "2026-10-04",
         "file": "reviews/20261004T130151Z-q1o26y/write-v.json",
         "ok": 88,
+        "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261027T193835Z-flwf4a",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-27",
+        "file": "reviews/20261027T193835Z-flwf4a/write-v.json",
+        "ok": 85,
+        "issues": 6,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261027T193835Z-flwf4a",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-27",
+        "file": "reviews/20261027T193835Z-flwf4a/write-v.json",
+        "ok": 90,
         "issues": 1,
         "blocking": 0
       }
