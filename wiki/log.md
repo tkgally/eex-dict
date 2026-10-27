@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-27] build | milestone 1 finished: out- to no one
+
+Twelve entries drafted and reviewed (run `20261027T064413Z-tm5zwm`, cycle 1): prefixes *out-*, *over-*, *trans-*; suffix *-dom*; combining forms *micro-*, *tele-*; pronouns *half*, *many*, *more*, *most*, *much*, *no one*. Milestone 1 now has no rows left (the hand-claimed homographs in `NEXT.md` remain). Panel: 71 issues, 10 blocking; 53 applied, 18 rejected, none escalated. Main changes: *over-* split into five senses (control and turn-or-fall added); *micro-* sense 2 redefined (small details, not local scale) and *microwave* dropped; *tele-* gained a by-telephone sense; *the many* moved out of `many-pron` as a noun use (`many-n` queued, on the analogy of house rule 23); *most* now means more than half, not nearly all. Rejected: marks on affix examples, idioms already held by `more-det`, `more-adv`, `most-det`, `much-adv`, or keyed on *make*. American *trans-* redrafted from *tranz* to *trans* after a 1/3 vote; now verified. Spend US$0.34; day US$1.32 of 15.
+
 ## [2026-10-27] site | build and check: 79 of 79 pass
 
 Scheduled run 20261027T004409Z-n9o1cm, cycle 4 (run id 20261027T012257Z-n9o1cm). `build_site.py` wrote 3,032 entries on 2,642 headword pages (5,903 files, no drafts withheld, no redirects). `site_check.py` passed all 79 checks at phone and desktop widths: search, phrase search, *Did you mean*, the 404 search, the sense menu, grey missing cross-references, dark mode, and no sideways scroll at 360 px on any of 2,648 pages. The new prefix pages (`sub.html`, `in.html`) and grammar terms render. Nothing to fix. No paid calls.
