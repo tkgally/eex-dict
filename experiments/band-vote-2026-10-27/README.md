@@ -1,0 +1,3 @@
+# Band vote, 2026-10-27 (unbanded rows)
+
+The ninetieth lint pass ran `tools/band_vote.py run --unbanded` on the 33 queue rows that tools had queued since the last vote (US$0.006). `votes-unbanded.tsv` holds the three word-list votes and the lower median. Three wide splits were settled at the lower median in `settled.tsv`: `least-pron` 2, `many-n` 3, `relieved-v` 2. Two rows queued by the vocabulary lint were marked `duplicate`: `relieved-v` (an inflected form of *relieve*) and `glad-n` (*glad* is an adjective; the `glad-adj` row is pending). `apply --votes votes-unbanded.tsv` turned the other 31 rows to `pending` with their bands. The scale and the method are in [rebanding](../../wiki/decisions/rebanding.md).
