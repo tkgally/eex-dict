@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-28 by scheduled run 20261028T184451Z-j1rthe, cycle 1 (review: four coverage-pass reads, position to open).*
+*Rewritten 2026-10-28 by scheduled run 20261028T184451Z-j1rthe, cycle 2 (originality: two rewrites).*
 
 ## State
 
 - 3,192 entries, all `reviewed`. Site checked 2026-10-27 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). `queue.py stamp` gave each second homograph the first one's band and defining-vocabulary flag (a known gap, `homograph-queue-and-inflection`). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); later rows voted at each lint (latest [2026-10-28](experiments/band-vote-2026-10-28/README.md); `lentil-n` waits for the next). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-28: US$3.80 of US$15. Originality: last 2026-10-26, next due in twenty runs.
+- Spend 2026-10-28: US$3.89 of US$15. Originality: last 2026-10-28 (two rewrites), next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)). A failed `claude -p` call: re-run `--roles reviewer-a`.
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
