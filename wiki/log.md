@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-28] build | eight band-1 nouns: percent to spot
+
+Scheduled run 20261028T064407Z-hwwdnn, cycle 4 (run id 20261028T071250Z-hwwdnn). Built `percent-n`, `pound-n`, `region-n`, `response-n`, `salad-n`, `shot-n`, `smartphone-n`, `spot-n`; all sixteen transcriptions verified. The exceptions table now has `percent: percent` (no plural after a number). 56 decisions (5 blocking): 52 applied, 4 rejected. Fixes: *a hundred percent* (completely) moved from a `percent-n` example to a phrase (both reviewers, blocking); `response-n` both senses countable or uncountable; `spot-n` position sense moved ahead of the British skin sense, plus *a blind spot*; `shot-n` gained *a cheap shot*. Rejected: the dog-and-car *pound* as a sense (both reviewers; blocking for A), because it is an unrelated homograph: `pound-n-2` is named in `see_also` and must be hand-claimed. Definitions reworded to stay inside the defining vocabulary (*grams*, *kingdom*, *lettuce*, *pasta*, *alcoholic*, *mobile*). Spend US$0.28; day US$2.42 of 15.
+
 ## [2026-10-28] review | four coverage-pass reads: serve to rise
 
 Scheduled run 20261028T064407Z-hwwdnn, cycle 3 (run id 20261028T070437Z-hwwdnn). Read `serve-v`, `school-n`, `save-v`, `rise-v` (B1 coverage pass, sixty-nine done). Added: `serve-v` senses for an area (*serves the whole region*) and law (*served with papers*), and *serve to do something*; `save-v` a religion sense and a semantic adaptation note; `rise-v` 2a (*the wind rose*), *be high* (*mountains rise behind the town*), *rise above something*, and *get out of bed* split off as 5a. `school-n`: the no-article fact cut from four fields to the sense 2 explanation; the fish-homograph line removed as an origin claim. Rejected: *rise to the occasion* (keyword rule), reviewer B's request to hand-mark *rose* and *risen* (listed forms), reordering `serve-v`, a British label on serving customers. 40 decisions (0 blocking): 33 applied, 7 rejected. Spend US$0.24; day US$2.13 of 15.
