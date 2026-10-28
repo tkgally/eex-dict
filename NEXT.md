@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-28 by scheduled run 20261028T125614Z-5rk4ww, cycle 2 (review: six reads).*
+*Rewritten 2026-10-28 by scheduled run 20261028T125614Z-5rk4ww, cycle 3 (closure: eight words).*
 
 ## State
 
-- 3,176 entries, all `reviewed`. Site checked 2026-10-27 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). `queue.py stamp` gave each second homograph the first one's band and defining-vocabulary flag (a known gap, `homograph-queue-and-inflection`). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 3,184 entries, all `reviewed`. Site checked 2026-10-27 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). `queue.py stamp` gave each second homograph the first one's band and defining-vocabulary flag (a known gap, `homograph-queue-and-inflection`). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); later rows voted at each lint (latest [2026-10-28](experiments/band-vote-2026-10-28/README.md); `lentil-n` waits for the next). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-28: US$3.03 of US$15. Originality: last 2026-10-26, next due in twenty runs.
+- Spend 2026-10-28: US$3.27 of US$15. Originality: last 2026-10-26, next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)). A failed `claude -p` call: re-run `--roles reviewer-a`.
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
@@ -22,7 +22,7 @@
 1. **build**: next rows `mad-adj`, `ok-adj`, `okay-adj`, `only-adj`, `scared-adj`. `ok-adj` spells `okay-adj`: build one, mark the other `duplicate`. `worse-adj` is a form of `bad-adj`: check before building. Check `phr` and verb + preposition rows against existing entries; panel in chunks of four or five; place `NO-SENSE` back-links by hand.
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type. Reviewer A: fix only clear minor issues; it calls `comparative with more` "not a grammar code": reject.
-4. **closure**: open since 2026-10-27; paused above band 2 (A3). Next `family` rows: `lack-v`, `level-v`, `market-v`, `number-v`; next `crossref` rows (queue order): `dad-n`, `december-n`, `east-n`, `environment-n`; `bark-v` pairs with `bark-n-2`. Hand-claim `bat-n-2` (animal), `pound-n-2` (for dogs). A comparison form (*better*) takes an exceptions-table line, not `not gradable`.
+4. **closure**: open since 2026-10-27; paused above band 2 (A3). The `closure` source is empty again. Next `family` rows: `oppose-v`, `pair-v`, `part-v`, `position-v`; `crossref` rows are the build rows above. `bark-v` pairs with `bark-n-2`. Hand-claim `bat-n-2` (animal), `pound-n-2` (for dogs). `eye-n` lacks *not bat an eye*. A comparison form (*better*) takes an exceptions-table line, not `not gradable`.
 5. **lint**: every ten runs; last 2026-10-28 (ninety-first pass), next due in ten runs. Reviewer A `inflection` is 0.24 over 17 decisions: switch it off once it passes twenty under the line.
 6. **Tooling notes still open** (`wiki/notes/`): `lint-vocab-pos-guess-gap` (fix due), `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`, `crossref-queue-capitalized-headword`. Wiki near its cap: trim before adding.
 
