@@ -334,17 +334,9 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (7943/11212); `reviewer-
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (8031/11346); `reviewer-b` `ALL` 0.52 (1368/2639). `reviewer-b` `spelling-or-format` 0.28 (165/588); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (19/61), unchanged and still the nearest live pair to the line. In the three cycles since the last pass reviewer-b had 14 of 41 applied; 19 of its rejections were the *verb + adverb* pattern fence on phrasal verbs (`grammar-code`, now 0.42). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`.
 
-## 2026-10-21: eighty-first lint pass, no new switch-offs
+## 2026-10-21 to 2026-10-24: eighty-first to eighty-sixth passes, no new switch-offs
 
-Eight disabled pairs unchanged. `reviewer-b` `phrase` 0.31 (19/61), the nearest live pair to the line; `spelling-or-format` 0.28, live by the owner's ruling.
-
-## 2026-10-21 to 2026-10-23: eighty-second to eighty-fourth passes, no new switch-offs
-
-Eight disabled pairs unchanged. `reviewer-b` `phrase` 0.30 to 0.31, at the line; `definition-style` 0.45, rejected calls against the house *added to* affix wording; `spelling-or-format` 0.28, live by the owner's ruling.
-
-## 2026-10-24: eighty-fifth and eighty-sixth passes
-
-No new switch-offs. The old reviewer-a's `coverage` (0.23) stays live: ruling B1 requires the check.
+Eight disabled pairs unchanged. `reviewer-b` `phrase` 0.30 to 0.31, at the line; `spelling-or-format` 0.28, live by the owner's ruling; the old reviewer-a's `coverage` (0.23) kept live by ruling B1.
 
 ## 2026-10-25: eighty-seventh pass, first figures for the new reviewer A
 
@@ -357,3 +349,7 @@ Disabled pairs unchanged (reviewer-a's old four reset by the 2026-10-25 ruling).
 ## 2026-10-27: ninetieth pass, no new switch-offs
 
 `reviewer-a:claude-sonnet-5-5` 0.80 (1245/1563); lowest `inflection` 0.25 (4/16, under twenty) and `grammar-code` 0.58. `reviewer-b:gemini-4-argon` 0.79 (415/526); `spelling-or-format` 0.28 (19/67), live by the owner's ruling; `phrase` 0.18 (2/11, under twenty, keyword-rule rejections).
+
+## 2026-10-28: ninety-first pass, no new switch-offs
+
+`reviewer-a:claude-sonnet-5-5` 0.80 (1611/2002); `inflection` 0.24 (4/17), the nearest to twenty decisions: switched off at the next pass if still under. `reviewer-b:gemini-4-argon` 0.81 (613/759); `spelling-or-format` 0.31 (23/75); `phrase` 0.17 (2/12, under twenty).

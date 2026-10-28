@@ -1,0 +1,3 @@
+# Band vote, 2026-10-28 (unbanded rows)
+
+The ninety-first lint pass ran `tools/band_vote.py run --unbanded` on the 45 queue rows that tools had queued since the last vote (US$0.008). `votes-unbanded.tsv` holds the three word-list votes and the lower median. Three wide splits were settled at the lower median in `settled.tsv`: `american-n` 2, `august-n` 2, `footballer-n` 3. `apply --votes votes-unbanded.tsv` turned all 45 rows to `pending` with their bands. Afterwards three rows queued by the vocabulary lint were marked `duplicate` as inflected forms (`lentils-n`, `peas-n`, `spoils-n`); `lentil-n` was queued (`unbanded` until the next vote). The scale and the method are in [rebanding](../../wiki/decisions/rebanding.md).
