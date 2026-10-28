@@ -78,11 +78,6 @@
           "pattern": "verb + -ing form"
         },
         {
-          "text": "It has stopped raining.",
-          "note": null,
-          "pattern": null
-        },
-        {
           "text": "Please stop it! That hurts.",
           "note": null,
           "pattern": "verb + object"
@@ -188,7 +183,33 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "of a machine, a clock, or the heart: no longer work",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "intransitive",
+            "codes": [],
+            "patterns": []
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "My watch has stopped.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The engine stopped and wouldn't start again.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -232,6 +253,11 @@
         },
         {
           "text": "The teacher stopped the fight before anyone got hurt.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "It has stopped raining.",
           "note": null,
           "pattern": null
         }
@@ -343,7 +369,9 @@
           "labels": {
             "register": [],
             "region": [],
-            "domain": [],
+            "domain": [
+              "finance"
+            ],
             "currency": [],
             "attitude": []
           },
@@ -382,7 +410,7 @@
     {
       "n": 5,
       "signpost": "pause",
-      "definition": "pause what you are doing for a short time, in order to do something else",
+      "definition": "stop for a short time in order to do something else",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -469,9 +497,9 @@
           "pattern": null
         },
         {
-          "text": "We stopped in a small town for the night.",
+          "text": "We stopped at a coffee shop on the way.",
           "note": null,
-          "pattern": null
+          "pattern": "verb + adverb or preposition"
         }
       ],
       "collocations": [
@@ -479,8 +507,7 @@
           "type": "verb + preposition",
           "items": [
             "stop at a store",
-            "stop at a friend's house",
-            "stop for the night"
+            "stop at a friend's house"
           ]
         }
       ],
@@ -537,12 +564,18 @@
           "text": "I can't stop long. I have to get back to work.",
           "note": null,
           "pattern": null
+        },
+        {
+          "text": "We stopped in a small town for the night.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
+            "stop for the night",
             "stop for dinner",
             "stop the night",
             "stop long"
@@ -649,24 +682,19 @@
       "quit-v",
       "cease-v"
     ],
-    "note": "**Stop** is the general word: *Stop talking*. **Quit** is informal and is used for ending a habit or leaving a job: *He quit smoking*; *She quit her job*. **Cease** is formal and is used in official language: *The factory ceased production*."
+    "note": "**Stop** is the general word: *Stop talking*. **Quit** is common in everyday English, especially for ending a habit or leaving a job: *He quit smoking*; *She quit her job*. **Cease** is formal and is used in official language: *The factory ceased production*."
   },
   "usage_note": "**Stop** followed by an **-ing** form means end an activity: *He stopped smoking* (he no longer smokes). **Stop** followed by a **to** infinitive means stop one thing in order to do another: *He stopped to smoke* (he paused so that he could smoke).",
   "learner_errors": [
     {
       "incorrect": "I stopped to smoke last year.",
       "correct": "I stopped smoking last year.",
-      "note": "To end a habit, use **stop** with an **-ing** form. **Stop to do** means pause in order to do it."
+      "note": "To end a habit, use **stop** with an **-ing** form."
     },
     {
       "incorrect": "Nothing can stop me to go.",
       "correct": "Nothing can stop me from going.",
       "note": "Use **stop someone from doing something**, not a **to** infinitive."
-    },
-    {
-      "incorrect": "He stoped to buy a newspaper.",
-      "correct": "He stopped to buy a newspaper.",
-      "note": "Double the **p** before **-ed** and **-ing**: **stopped**, **stopping**."
     }
   ],
   "etymology": null,
@@ -678,7 +706,7 @@
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "The form after **stop** changes the meaning: *stop doing* (end it) is different from *stop to do* (pause in order to do it). Many languages use one form for both.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -686,7 +714,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-29T07:16:47Z",
-    "modified": "2026-10-03T20:57:02Z",
+    "modified": "2026-10-28T01:40:31Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260929T071408Z-tgblpw",
     "reviews": [
@@ -728,6 +756,26 @@
         "file": "reviews/20261003T204400Z-vfp904/stop-v.json",
         "ok": 91,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261028T013317Z-e7cpi8",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-28",
+        "file": "reviews/20261028T013317Z-e7cpi8/stop-v.json",
+        "ok": 84,
+        "issues": 9,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261028T013317Z-e7cpi8",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-28",
+        "file": "reviews/20261028T013317Z-e7cpi8/stop-v.json",
+        "ok": 88,
+        "issues": 5,
         "blocking": 0
       }
     ],
