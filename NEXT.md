@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-28 by scheduled run 20261028T184451Z-j1rthe, cycle 2 (originality: two rewrites).*
+*Rewritten 2026-10-28 by scheduled run 20261028T184451Z-j1rthe, cycle 3 (build: six band-1 adverbs).*
 
 ## State
 
-- 3,192 entries, all `reviewed`. Site checked 2026-10-27 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). `queue.py stamp` gave each second homograph the first one's band and defining-vocabulary flag (a known gap, `homograph-queue-and-inflection`). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 3,198 entries, all `reviewed`. Site checked 2026-10-27 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). `queue.py stamp` gave each second homograph the first one's band and defining-vocabulary flag (a known gap, `homograph-queue-and-inflection`). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); later rows voted at each lint (latest [2026-10-28](experiments/band-vote-2026-10-28/README.md); `lentil-n` waits for the next). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-28: US$3.89 of US$15. Originality: last 2026-10-28 (two rewrites), next due in twenty runs.
+- Spend 2026-10-28: US$4.09 of US$15. Originality: last 2026-10-28 (two rewrites), next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)). A failed `claude -p` call: re-run `--roles reviewer-a`.
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
@@ -19,7 +19,7 @@
    4. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by number of senses, skipping those read since 2026-10-24; seventy-seven done; next, most senses and subsenses first: `head-n`, `blow-v`, `say-v`, `thing-n`; check a new sense against the entry's subsenses before adding it), then the one-round backlog by band.
    5. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    6. **E5**: milestone 1 is built (2026-10-27); when the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
-1. **build**: next rows `a-bit-adv`, `a-little-adv`, `about-adv`, `all-right-adv`, `along-adv`, `as-adv`: adverbs whose other parts of speech exist; keep each to its own uses. Check `phr` and verb + preposition rows against existing entries; panel in chunks of four or five; place `NO-SENSE` back-links by hand.
+1. **build**: the adverb rows are done except two released as `duplicate` (`a-bit-adv`, `as-well-adv`: phrases under `bit-n`, `well-adv`); repoint `slightly-adv`, `also-adv`, `too-adv`, `as-well-as-prep` in review. Check `phr` and verb + preposition rows against existing entries; panel in chunks of four or five; place `NO-SENSE` back-links by hand.
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type. Reviewer A: fix only clear minor issues; it calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). The `closure` source is empty again. Next `family` rows: `oppose-v`, `pair-v`, `part-v`, `position-v`; `crossref` rows are the build rows above. `bark-v` pairs with `bark-n-2`. Hand-claim `bat-n-2` (animal), `pound-n-2` (for dogs). `eye-n` lacks *not bat an eye*. A comparison form (*better*) takes an exceptions-table line, not `not gradable`.
