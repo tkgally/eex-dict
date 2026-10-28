@@ -6,4 +6,6 @@
 
 A second problem: `apply --votes` takes a path relative to the vote directory, not the working directory. A path from the repository root fails with a doubled path.
 
+Recurred 2026-10-28 (ninety-second pass): the day's second vote overwrote the first lint's 45 rows; the old file was restored from git and the new 54 rows kept as `votes-unbanded-2.tsv`. Fix due.
+
 Possible fix for a later run: append to or merge with an existing file of the same name (new votes win), and accept either kind of path. No change yet.
