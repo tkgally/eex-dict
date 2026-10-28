@@ -1,13 +1,13 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-28 by scheduled run 20261028T064407Z-hwwdnn, cycle 4 (build: eight band-1 nouns).*
+*Rewritten 2026-10-28 by scheduled run 20261028T125614Z-5rk4ww, cycle 1 (build: eleven band-1 words).*
 
 ## State
 
-- 3,165 entries, all `reviewed`. Site checked 2026-10-27 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). `queue.py stamp` gave each second homograph the first one's band and defining-vocabulary flag (a known gap, `homograph-queue-and-inflection`). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 3,176 entries, all `reviewed`. Site checked 2026-10-27 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). `queue.py stamp` gave each second homograph the first one's band and defining-vocabulary flag (a known gap, `homograph-queue-and-inflection`). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); later rows voted at each lint (latest [2026-10-28](experiments/band-vote-2026-10-28/README.md); `lentil-n` waits for the next). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-28: US$2.42 of US$15. Originality: last 2026-10-26, next due in twenty runs.
-- **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)). Both roles run side by side. A failed `claude -p` call is retried twice, then recorded as an error: re-run `--roles reviewer-a`.
+- Spend 2026-10-28: US$2.72 of US$15. Originality: last 2026-10-26, next due in twenty runs.
+- **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)). A failed `claude -p` call: re-run `--roles reviewer-a`.
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
 ## Queue (top-down)
@@ -19,9 +19,9 @@
    4. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by number of senses, skipping those read since 2026-10-24; sixty-nine done; next, most senses first: `regular-adj`, `read-v`, `range-n`, `pull-v`; check a new sense against the entry's subsenses before adding it), then the one-round backlog by band.
    5. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    6. **E5**: milestone 1 is built (2026-10-27); when the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
-1. **build**: next rows `supermarket-n`, `t-shirt-n`, `tonight-n`, `tv-n`. Check a verb + preposition row against the verb's senses and a `phr` row against the keyword entry's phrases; run the panel in chunks of four or five; place every `NO-SENSE` back-link by hand.
+1. **build**: next rows `mad-adj`, `ok-adj`, `okay-adj`, `only-adj`, `scared-adj`. `ok-adj` spells `okay-adj`: build one, mark the other `duplicate`. `worse-adj` is a form of `bad-adj`: check before building. Check `phr` and verb + preposition rows against existing entries; panel in chunks of four or five; place `NO-SENSE` back-links by hand.
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
-3. **review**: reviewer-b keeps objecting to quotation marks around words mentioned in examples, and reviewers ask for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*, *travel light*); reject all, with the reason. `verb + adjective` is not a collocation type. The new reviewer A raises many minor issues: fix the clear ones only; it calls `comparative with more` "not a grammar code": reject.
+3. **review**: `television-n` names `tv-n` (never to exist): drop it. `east-n` lacks *the East* to match `west-n` sense 3. Reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type. Reviewer A: fix only clear minor issues; it calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). Next `family` rows: `lack-v`, `level-v`, `market-v`, `number-v`; next `crossref` rows (queue order): `dad-n`, `december-n`, `east-n`, `environment-n`; `bark-v` pairs with `bark-n-2`. Hand-claim `bat-n-2` (animal), `pound-n-2` (for dogs). A comparison form (*better*) takes an exceptions-table line, not `not gradable`.
 5. **lint**: every ten runs; last 2026-10-28 (ninety-first pass), next due in ten runs. Reviewer A `inflection` is 0.24 over 17 decisions: switch it off once it passes twenty under the line.
 6. **Tooling notes still open** (`wiki/notes/`): `lint-vocab-pos-guess-gap` (fix due), `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite`, `crossref-queue-capitalized-headword`. Wiki near its cap: trim before adding.
@@ -41,7 +41,7 @@
 
 ## For the owner
 
-- Latest run report: `journal/2026-10-28-2.md`. The first weekly digest: `journal/digest-2026-10-24.md` (ten entries to sample).
+- Latest run report: `journal/2026-10-28-3.md`. The first weekly digest: `journal/digest-2026-10-24.md` (ten entries to sample).
 - Curator line still open: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; working assumption: allowed there until you rule.
 - Your ruling of 2026-10-25 is in force: reviewer A is the Claude model, and reviewer B is unchanged. `PROJECT.md` still says "two non-Anthropic reviewers"; a session does not edit the charter, so that line is yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); it stays off until you say. The new model caught all four planted IPA errors.
