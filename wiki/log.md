@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-28] review | four coverage-pass reads: serve to rise
+
+Scheduled run 20261028T064407Z-hwwdnn, cycle 3 (run id 20261028T070437Z-hwwdnn). Read `serve-v`, `school-n`, `save-v`, `rise-v` (B1 coverage pass, sixty-nine done). Added: `serve-v` senses for an area (*serves the whole region*) and law (*served with papers*), and *serve to do something*; `save-v` a religion sense and a semantic adaptation note; `rise-v` 2a (*the wind rose*), *be high* (*mountains rise behind the town*), *rise above something*, and *get out of bed* split off as 5a. `school-n`: the no-article fact cut from four fields to the sense 2 explanation; the fish-homograph line removed as an origin claim. Rejected: *rise to the occasion* (keyword rule), reviewer B's request to hand-mark *rose* and *risen* (listed forms), reordering `serve-v`, a British label on serving customers. 40 decisions (0 blocking): 33 applied, 7 rejected. Spend US$0.24; day US$2.13 of 15.
+
 ## [2026-10-28] build | ten band-1 nouns: kid to passport
 
 Scheduled run 20261028T064407Z-hwwdnn, cycle 2 (run id 20261028T064912Z-hwwdnn). Built `kid-n`, `lady-n`, `living-room-n`, `luck-n`, `magazine-n`, `model-n`, `north-n`, `november-n`, `orange-n`, `passport-n`; all twenty transcriptions verified. 60 decisions (8 blocking): 53 applied, 7 rejected. Fixes: `lady-n` title examples now Lady plus a family name (both reviewers, blocking); `model-n` gained a sense for a way of organizing (*business model*), and *a model student* moved out as an adjective use (`model-adj` queued); `north-n` sense 2 no longer circular; `luck-n` sense 2 redefined as success in something you try, plus *tough luck*, *no such luck*, *the luck of the draw*. Rejected: a figurative label (none in the closed sets), reviewer B's objection to the magazine stress note. Definition-vocabulary gate: *Britain*, *lord*, *knight* and *eleventh* rewritten out of definitions. `advertisements-n` and `eleventh-n` rows marked duplicate. Spend US$0.36; day US$1.89 of 15.
