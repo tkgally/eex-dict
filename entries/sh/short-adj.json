@@ -142,7 +142,7 @@
                 "a short message",
                 "a short story",
                 "a short book",
-                "a short list"
+                "a short letter"
               ]
             }
           ]
@@ -368,7 +368,8 @@
           "items": [
             "short of money",
             "short of time",
-            "short of breath"
+            "short of breath",
+            "short on patience"
           ]
         },
         {
@@ -395,7 +396,7 @@
     {
       "n": 5,
       "signpost": "shorter name",
-      "definition": "being a shorter form of a longer name or word",
+      "definition": "used as a form of a longer name or word, with part of it left out",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -416,7 +417,7 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "Sam is short for Samantha.",
+          "text": "\"Fridge\" is short for \"refrigerator.\"",
           "note": null,
           "pattern": null
         },
@@ -450,7 +451,7 @@
     {
       "n": 6,
       "signpost": "rude",
-      "definition": "speaking to someone in a quick, rather rude way, using few words",
+      "definition": "rude and unfriendly in the way you speak to someone, using few words",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -534,7 +535,7 @@
     {
       "sub_id": "for-short",
       "text": "for short",
-      "definition": "as a shorter form of a name",
+      "definition": "as a form of a name or word with part of it left out",
       "explanation": null,
       "labels": {
         "register": [],
@@ -545,7 +546,12 @@
       },
       "examples": [
         {
-          "text": "His name is Ravindra, but everyone calls him Ravi for short.",
+          "text": "The science laboratory is called the lab for short.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Mathematics is usually called math for short.",
           "note": null,
           "pattern": null
         }
@@ -581,6 +587,39 @@
         },
         {
           "text": "The meeting was short and sweet for once.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "nothing-short-of",
+      "text": "nothing short of",
+      "definition": "used to say that something is completely and really what the following words describe",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Her recovery was nothing short of a miracle.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The service at the hotel was nothing short of terrible.",
           "note": null,
           "pattern": null
         }
@@ -629,14 +668,8 @@
     ],
     "note": "**Short** is the everyday word for length, height, and time: *a short walk*, *a short meeting*. **Brief** is used only for time or for something said or written, and sounds a little more formal: *a brief visit*, *a brief statement*."
   },
-  "usage_note": "For people, **short** describes height; for a person who is not fat, use **thin** or **slim**. **Shortly** does not mean *in a short way*; it means *soon*: *I'll be there shortly*.",
-  "learner_errors": [
-    {
-      "incorrect": "I have short of money.",
-      "correct": "I'm short of money.",
-      "note": "Use **be short of something**, not **have short of**."
-    }
-  ],
+  "usage_note": "**Shortly** does not mean *in a short way*; it means *soon*: *I'll be there shortly*.",
+  "learner_errors": [],
   "etymology": null,
   "see_also": [
     {
@@ -649,8 +682,8 @@
     }
   ],
   "adaptation": {
-    "semantic": "Many languages use different words for short in length (sense 1), short in height (sense 2), and short in time (sense 3). Translate each sense on its own.",
-    "grammar": "In sense 4 the thing that is missing comes after **of**: *short of time*.",
+    "semantic": "Many languages use different words for short in length (sense 1), short in height (sense 2), and short in time (sense 3).",
+    "grammar": "In sense 4 the missing thing follows **of** (*short of time*), or in informal use **on** (*short on patience*); a number can come before **short** (*two players short*).",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -658,7 +691,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-12T17:41:15Z",
-    "modified": "2026-10-12T20:44:36Z",
+    "modified": "2026-10-29T13:11:11Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261012T174049Z-m8x2rl",
     "reviews": [
@@ -681,6 +714,26 @@
         "ok": 87,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261029T130406Z-9p9pcn",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-29",
+        "file": "reviews/20261029T130406Z-9p9pcn/short-adj.json",
+        "ok": 87,
+        "issues": 19,
+        "blocking": 4
+      },
+      {
+        "run_id": "20261029T130406Z-9p9pcn",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-29",
+        "file": "reviews/20261029T130406Z-9p9pcn/short-adj.json",
+        "ok": 99,
+        "issues": 4,
+        "blocking": 3
       }
     ],
     "status": "reviewed",
