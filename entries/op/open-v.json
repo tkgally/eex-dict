@@ -52,7 +52,7 @@
     {
       "n": 1,
       "signpost": "not closed",
-      "definition": "move a door, a window, a lid, or a cover so that it is no longer closed, or become no longer closed",
+      "definition": "make something such as a door, a window, a box, or a letter no longer closed, or become no longer closed",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -94,7 +94,6 @@
             "open a door",
             "open a window",
             "open a box",
-            "open your eyes",
             "open a letter"
           ]
         },
@@ -109,7 +108,7 @@
       "synonyms": [
         {
           "slug": "part-v",
-          "note": null
+          "note": "for curtains or lips"
         }
       ],
       "antonyms": [
@@ -154,7 +153,7 @@
               "pattern": null
             },
             {
-              "text": "Open your books at page ten.",
+              "text": "Open your books to page ten.",
               "note": null,
               "pattern": "verb + object"
             },
@@ -194,10 +193,11 @@
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "intransitive",
+        "transitivity": "transitive or intransitive",
         "codes": [],
         "patterns": [
-          "verb + adverb or preposition"
+          "verb + adverb or preposition",
+          "verb + object"
         ]
       },
       "labels": {
@@ -218,9 +218,29 @@
           "text": "What time does the bank open on Saturdays?",
           "note": null,
           "pattern": "verb + adverb or preposition"
+        },
+        {
+          "text": "Who opens the store in the morning?",
+          "note": null,
+          "pattern": "verb + object"
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "verb + adverb",
+          "items": [
+            "open early",
+            "open late"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "open on Sundays",
+            "open for business"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [
         {
@@ -229,7 +249,36 @@
         }
       ],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "start the day's buying and selling at a particular level of prices",
+          "explanation": null,
+          "grammar": null,
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [
+              "finance"
+            ],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "Prices opened higher this morning.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The market opened lower after the bad news.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -426,7 +475,77 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "open a file",
+            "open an app",
+            "open a link",
+            "open an attachment"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 6,
+      "signpost": "lead to a place",
+      "definition": "lead directly into or onto another place",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The kitchen opens onto a small garden.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Our bedroom opens into the bathroom.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The back door opens onto the street.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + preposition",
+          "items": [
+            "open onto",
+            "open into"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -481,7 +600,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "\"open\": in many languages the verb for *open* is also used for lights, radios, and televisions. English uses **turn on** or **switch on** for those.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -490,7 +609,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T19:42:28Z",
-    "modified": "2026-10-29T07:17:16Z",
+    "modified": "2026-10-29T19:13:41Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T194045Z-iujuq0",
     "reviews": [
@@ -532,6 +651,26 @@
         "file": "reviews/20260928T005620Z-jf8wvz/open-v.json",
         "ok": 65,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261029T190706Z-d74v34",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-29",
+        "file": "reviews/20261029T190706Z-d74v34/open-v.json",
+        "ok": 71,
+        "issues": 6,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261029T190706Z-d74v34",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-29",
+        "file": "reviews/20261029T190706Z-d74v34/open-v.json",
+        "ok": 71,
+        "issues": 5,
         "blocking": 0
       }
     ],
