@@ -37,6 +37,13 @@ class FinalBandsTest(unittest.TestCase):
             key = line.split(":", 1)[1].split("(", 1)[0].strip()[:60]
             self.assertIn(key, page.replace("*", ""))
 
+    def test_a_second_vote_of_the_day_keeps_the_first(self):
+        old = [{"slug": "a-n", "lower_median": "2"}, {"slug": "b-n", "lower_median": "3"}]
+        new = [{"slug": "b-n", "lower_median": "4"}, {"slug": "c-n", "lower_median": "1"}]
+        merged = band_vote.merge_rows(old, new)
+        self.assertEqual([r["slug"] for r in merged], ["a-n", "b-n", "c-n"])
+        self.assertEqual(merged[1]["lower_median"], "4")
+
 
 if __name__ == "__main__":
     unittest.main()
