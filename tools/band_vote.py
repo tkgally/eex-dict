@@ -189,23 +189,41 @@ def cmd_run(a) -> int:
     d = out_dir()
     d.mkdir(parents=True, exist_ok=True)
     path = d / (("votes-unbanded" if a.unbanded else "votes") + (f"-limit{a.limit}" if a.limit else "") + ".tsv")
+    header = ["slug", "headword", "pos", *ROLES, "lower_median", "spread"]
+    new_rows = []
+    for it in its:
+        v = [votes[it["slug"]].get(r) for r in ROLES]
+        got = [x for x in v if x]
+        med = lower_median(got)
+        spread = (max(got) - min(got)) if got else ""
+        new_rows.append(dict(zip(header, [it["slug"], it["headword"], it["pos"], *(str(x or "") for x in v),
+                                          str(med or ""), str(spread)])))
+    old_rows = read_votes(d, path.name) if path.is_file() else []
+    rows = merge_rows(old_rows, new_rows)
     with path.open("w", encoding="utf-8") as f:
-        f.write("slug\theadword\tpos\t" + "\t".join(ROLES) + "\tlower_median\tspread\n")
-        for it in its:
-            v = [votes[it["slug"]].get(r) for r in ROLES]
-            got = [x for x in v if x]
-            med = lower_median(got)
-            spread = (max(got) - min(got)) if got else ""
-            f.write(f"{it['slug']}\t{it['headword']}\t{it['pos']}\t" + "\t".join(str(x or "") for x in v)
-                    + f"\t{med or ''}\t{spread}\n")
+        f.write("\t".join(header) + "\n")
+        for r in rows:
+            f.write("\t".join(r.get(k, "") or "" for k in header) + "\n")
+    if old_rows:
+        print(f"merged with the {len(old_rows)} rows already in {path.name} (new votes win)")
     missing = sum(1 for it in its if len(votes[it["slug"]]) < 2)
     print(f"wrote {path.relative_to(eexlib.ROOT)}: {len(its)} items, billed this invocation ${cost:.4f}; "
           f"{missing} with fewer than two votes (re-run to retry the failed chunks)")
     return 0
 
 
+def merge_rows(old: list[dict], new: list[dict]) -> list[dict]:
+    """Keep the rows of an earlier vote of the same day; a slug voted again takes the new row."""
+    fresh = {r["slug"] for r in new}
+    return [r for r in old if r["slug"] not in fresh] + new
+
+
 def read_votes(d: Path, name: str = "votes.tsv") -> list[dict]:
-    with (d / name).open(encoding="utf-8", newline="") as f:
+    """Read a votes file by its name inside the vote directory, or by a path from the working directory."""
+    p = d / name
+    if not p.is_file() and Path(name).is_file():
+        p = Path(name)
+    with p.open(encoding="utf-8", newline="") as f:
         return list(csv.DictReader(f, delimiter="\t"))
 
 

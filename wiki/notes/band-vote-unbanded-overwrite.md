@@ -8,4 +8,4 @@ A second problem: `apply --votes` takes a path relative to the vote directory, n
 
 Recurred 2026-10-28 (ninety-second pass): the day's second vote overwrote the first lint's 45 rows; the old file was restored from git and the new 54 rows kept as `votes-unbanded-2.tsv`. Fix due.
 
-Possible fix for a later run: append to or merge with an existing file of the same name (new votes win), and accept either kind of path. No change yet.
+Fixed 2026-10-29 (ninety-third pass): `run` merges with an existing file of the same name (new votes win; unit test), and `--votes` also accepts a path from the working directory.
