@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-29] build | twelve band-2 verbs: accuse to attract
+
+Scheduled run started 2026-10-29 12:47 UTC, cycle 1 (run id 20261029T124743Z-9p9pcn). Built `accuse-v`, `address-v`, `adjust-v`, `admit-v`, `advise-v`, `aid-v`, `announce-v`, `applaud-v`, `assist-v`, `attach-v`, `attempt-v`, `attract-v`, all queued as crossref rows. All transcriptions verified; all inflections from rules. Panel: 61 issues, 9 blocking; 47 applied, 14 rejected. Blocking fixes: a circular *address* in the letter sense of `address-v`; `adjust-v` *slowly* contradicting *adjust quickly*; `attach-v` *attach importance to* redefined so the quality is the object; `attract-v` reaction sense, a job example under the romantic sense (sense widened to things), science-claim examples. Added on review: `announce-v` *be a sign* sense, `adjust for`. Three compare/synonym type mismatches with `charge-v`, `recommend-v`, `try-v` resolved as synonyms. Seven NO-SENSE back-links placed by hand. Spend US$0.37.
+
 ## [2026-10-29] review | coverage pass: dry, talk, stick, star
 
 Scheduled run started 2026-10-29 06:44 UTC, cycle 4 (run id 20261029T073317Z-4fb8wy), the run's last. Coverage reading of `dry-adj`, `talk-v`, `stick-v`, `star-n` (eighty-nine done; next by senses and subsenses: `sit-v`, `short-adj`, `rough-adj`, `right-adj`). Added: `dry-adj` food and cough subsenses; `talk-v` *talk sense/nonsense* subsense, *give secrets* as its own sense, *you can talk*, exclamatory *talk about*; `stick-v` *push out or up*, *be stuck with* as its own sense, British informal *can't stick someone*; `star-n` the star symbol on a phone. Panel: 71 issues, 9 blocking; 54 applied, 17 rejected. Most rejections were reviewer B asking for the listed form *stuck* to be marked by hand (eight times), plus *be stuck* as an adjective (house rule 22). Generic adaptation notes on `dry-adj` and `stick-v` now name a specific trap. Two NO-SENSE back-links placed (`stand-v`, `bear-v`). Spend US$0.24.
