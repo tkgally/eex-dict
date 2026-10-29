@@ -114,7 +114,7 @@
           "explanation": null,
           "grammar": {
             "countability": null,
-            "transitivity": "transitive",
+            "transitivity": "intransitive",
             "codes": [],
             "patterns": [
               "verb + preposition + object"
@@ -203,7 +203,7 @@
         {
           "text": "The wind blew the leaves across the yard.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         },
         {
           "text": "Blow the dust off the shelf before you paint it.",
@@ -223,7 +223,7 @@
       "subsenses": [
         {
           "letter": "a",
-          "definition": "force air through your nose to clear it, using a tissue",
+          "definition": "force air out through your nose to clear it",
           "explanation": null,
           "grammar": {
             "countability": null,
@@ -257,7 +257,7 @@
         },
         {
           "letter": "b",
-          "definition": "make something by blowing air into it",
+          "definition": "make something by sending air into it, such as soap bubbles or hot glass",
           "explanation": null,
           "grammar": null,
           "labels": null,
@@ -288,7 +288,7 @@
     {
       "n": 3,
       "signpost": "play an instrument",
-      "definition": "make a sound by blowing air into an instrument or a horn",
+      "definition": "make a sound by sending air into an instrument such as a horn, or, of the instrument, make this sound",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -318,9 +318,14 @@
           "pattern": "verb + object"
         },
         {
-          "text": "He can blow the trumpet beautifully.",
+          "text": "He blew a few notes on his trumpet.",
           "note": null,
           "pattern": "verb + object"
+        },
+        {
+          "text": "The whistle blew and the game began.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
@@ -328,8 +333,7 @@
           "type": "verb + noun",
           "items": [
             "blow a whistle",
-            "blow a horn",
-            "blow a trumpet"
+            "blow a horn"
           ]
         }
       ],
@@ -349,7 +353,7 @@
     {
       "n": 4,
       "signpost": "waste",
-      "definition": "spend money carelessly, or lose a good chance through a mistake",
+      "definition": "lose a good chance through a mistake",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -374,17 +378,17 @@
         {
           "text": "He blew his chance to score in the final minute.",
           "note": null,
-          "pattern": "verb + object"
-        },
-        {
-          "text": "She blew all her savings on a new car.",
-          "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         },
         {
           "text": "Don't blow this interview; you've prepared so well.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
+        },
+        {
+          "text": "I had one chance, and I blew it.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
@@ -393,8 +397,7 @@
           "items": [
             "blow a chance",
             "blow an opportunity",
-            "blow your savings",
-            "blow a fortune"
+            "blow it"
           ]
         }
       ],
@@ -406,7 +409,50 @@
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "spend a lot of money carelessly",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object",
+              "verb + object + preposition + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "She blew all her savings on a new car.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "He blew his whole paycheck in one weekend.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "blow your savings",
+                "blow a fortune"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -420,7 +466,7 @@
       "n": 5,
       "signpost": "burst",
       "definition": "suddenly break, letting the air out",
-      "explanation": "Used of a tire, or of something else filled with air.",
+      "explanation": "Used of a tire.",
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -495,6 +541,46 @@
               ]
             }
           ]
+        },
+        {
+          "letter": "b",
+          "definition": "have a tire break suddenly while you are driving",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "We blew a tire on the way to the airport.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "If you hit that hole fast, you'll blow a tire.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "blow a tire"
+              ]
+            }
+          ]
         }
       ],
       "adaptation": {
@@ -517,7 +603,8 @@
         "codes": [],
         "patterns": [
           "verb + object",
-          "verb + object + preposition + object"
+          "verb + object + preposition + object",
+          "verb + object + adverb"
         ]
       },
       "labels": {
@@ -538,9 +625,23 @@
           "text": "The door was blown off by the blast.",
           "note": "passive",
           "pattern": null
+        },
+        {
+          "text": "The force of the blast blew the windows apart.",
+          "note": null,
+          "pattern": "verb + object + adverb"
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "blow something to pieces",
+            "blow something apart",
+            "blow something open"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -556,41 +657,6 @@
     }
   ],
   "phrases": [
-    {
-      "sub_id": "blow-it",
-      "text": "blow it",
-      "definition": "lose a good chance by making a mistake",
-      "explanation": null,
-      "labels": {
-        "register": [
-          "informal"
-        ],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "This is a great offer; don't blow it.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "He had one shot at the title and he blew it.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
     {
       "sub_id": "blow-the-whistle-on-someone",
       "text": "blow the whistle on someone",
@@ -623,6 +689,39 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "sub_id": "blow-hot-and-cold",
+      "text": "blow hot and cold",
+      "definition": "keep changing your feelings about someone or something, liking it at one time and not at another",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "He's been blowing hot and cold about the job offer for weeks.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "She blows hot and cold, so I never know if she wants to see me.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "word_family": [
@@ -634,13 +733,7 @@
   ],
   "synonym_discrimination": null,
   "usage_note": null,
-  "learner_errors": [
-    {
-      "incorrect": "The wind blowed all night.",
-      "correct": "The wind blew all night.",
-      "note": "The past tense of **blow** is **blew**, and the past participle is **blown**."
-    }
-  ],
+  "learner_errors": [],
   "etymology": null,
   "see_also": [
     {
@@ -662,7 +755,7 @@
   ],
   "adaptation": {
     "semantic": "Many languages need separate verbs for the wind moving (sense 1), a person moving air with the mouth (sense 1a), and a tire or an electrical part suddenly failing (sense 5); English uses **blow** for all of them.",
-    "grammar": "Irregular: *blow, blew, blown*.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -670,7 +763,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T09:50:00Z",
-    "modified": "2026-10-08T13:05:33Z",
+    "modified": "2026-10-29T01:13:27Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T094255Z-yqkcrn",
     "reviews": [
@@ -713,6 +806,26 @@
         "ok": 98,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261029T010115Z-hqzkyu",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-29",
+        "file": "reviews/20261029T010115Z-hqzkyu/blow-v.json",
+        "ok": 84,
+        "issues": 16,
+        "blocking": 3
+      },
+      {
+        "run_id": "20261029T010115Z-hqzkyu",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-29",
+        "file": "reviews/20261029T010115Z-hqzkyu/blow-v.json",
+        "ok": 89,
+        "issues": 10,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
