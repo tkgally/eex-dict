@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-29 by scheduled run 20261029T004352Z-hqzkyu, cycle 2 (review, coverage pass).*
+*Rewritten 2026-10-29 by scheduled run 20261029T004352Z-hqzkyu, cycle 3 (build, eleven band-1 entries).*
 
 ## State
 
-- 3,210 entries, all `reviewed` (twelve built 2026-10-29: `as-long-as-conj` to `all-right-interj`). Site checked 2026-10-27 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). `queue.py stamp` gave each second homograph the first one's band and defining-vocabulary flag (a known gap, `homograph-queue-and-inflection`). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 3,221 entries, all `reviewed` (twenty-three built 2026-10-29). Site checked 2026-10-27 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). `queue.py stamp` gave each second homograph the first one's band and defining-vocabulary flag (a known gap, `homograph-queue-and-inflection`). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); later rows voted at each lint (latest [2026-10-28](experiments/band-vote-2026-10-28/README.md), twice that day; none unbanded now). A row a tool queues is `unbanded` until the next vote.
-- Spend 2026-10-29: US$0.83 of US$15 so far. Originality: last 2026-10-28 (two rewrites), next due in nineteen runs.
+- Spend 2026-10-29: US$1.23 of US$15 so far. Originality: last 2026-10-28 (two rewrites), next due in nineteen runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)). A failed `claude -p` call: re-run `--roles reviewer-a`.
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
@@ -23,7 +23,7 @@
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type. Reviewer A: fix only clear minor issues; it calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). Next `family` rows: `oppose-v`, `pair-v`, `part-v`, `position-v`. `bark-v` pairs with `bark-n-2`. Hand-claim `bat-n-2` (animal), `pound-n-2` (for dogs). Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* (`mind-n`); move *blow the whistle on* to `whistle-n` and add *blow someone a kiss* to `kiss-n` when built. A comparison form (*better*) takes an exceptions-table line, not `not gradable`.
-5. **lint**: every ten runs; last 2026-10-28 (ninety-second pass), next due in eight runs. Reviewer A `inflection` switched off then (0.21 over 24).
+5. **lint**: every ten runs; last 2026-10-28 (ninety-second pass), next due in seven runs. Reviewer A `inflection` switched off then (0.21 over 24).
 6. **Tooling notes still open** (`wiki/notes/`): `lint-vocab-pos-guess-gap` (fix due), `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break`, `phrasal-verb-stress-recheck`, `band-vote-unbanded-overwrite` (recurred 2026-10-28, fix due), `crossref-queue-capitalized-headword`. Wiki near its cap: trim before adding.
 
 ## Fences (do not re-grind)
