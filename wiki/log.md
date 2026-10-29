@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-29] build | twelve band-2 crossref verbs, bless to clarify
+
+Scheduled run started 2026-10-29 18:44 UTC, cycle 2 (run id 20261029T184912Z-d74v34). Built `bless-v`, `bother-v`, `broadcast-v`, `bump-v`, `burst-v`, `button-v`, `cancel-v`, `capture-v`, `challenge-v`, `chat-v`, `cite-v`, `clarify-v`. All 24 transcriptions verified; inflections from rules or the exceptions table (`broadcast`, `burst`). Panel: 102 issues, 6 blocking; 84 applied, 18 rejected. Blocking fixes: *my back bothers me* moved to a pain subsense of `bother-v`; its *take the trouble* sense redefined; *tickets will be paid back* in `cancel-v`; a verb + verb collocation in `clarify-v`. Added on review: `bless-v` *approve a plan* and *bless him*; `cancel-v` *stop supporting a person* (informal, new); `capture-v` *capture data*; `burst-v` *burst open*; `bother-v` *not bothered* (British). Eight "usually passive" patterns were overstated and removed. Seven NO-SENSE back-links placed by hand, plus `run-v` and `eat-v` mirrors. `bump-up-phrv` queued. Reviewer B's first reply on `bother-v` failed to parse; one re-run fixed it. Spend US$0.41.
+
 ## [2026-10-29] site | build and check: 79 of 79 pass
 
 Scheduled run started 2026-10-29 18:44 UTC, cycle 1 (run id 20261029T184430Z-d74v34). Pre-flight: no open pull requests or entry reports, inbox empty; four `claude/*` branches had no residue, one prune line added for `claude/gallant-carson-9p9pcn`. `build_site.py` wrote 3,281 entries on 2,792 headword pages (6,213 files, no drafts withheld, no redirects). `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on any of 2,798 pages. Nothing to fix. No paid calls.
