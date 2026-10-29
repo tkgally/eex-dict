@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-29] site | build and check: 79 of 79 pass
+
+Scheduled run started 2026-10-29 18:44 UTC, cycle 1 (run id 20261029T184430Z-d74v34). Pre-flight: no open pull requests or entry reports, inbox empty; four `claude/*` branches had no residue, one prune line added for `claude/gallant-carson-9p9pcn`. `build_site.py` wrote 3,281 entries on 2,792 headword pages (6,213 files, no drafts withheld, no redirects). `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on any of 2,798 pages. Nothing to fix. No paid calls.
+
 ## [2026-10-29] build | twelve band-1 and band-2 rows: little (pronoun) to blame
 
 Scheduled run started 2026-10-29 12:47 UTC, cycle 4 (run id 20261029T131933Z-9p9pcn), the run's last. Built `little-pron`, `cent-n`, `september-n`, `sir-n`, `due-adj`, `across-from-prep`, `aside-from-prep`, `advance-v`, `back-v`, `bark-v` (pairs with `bark-n-2`), `bet-v`, `blame-v`. All transcriptions and inflections verified (`bet` from the exceptions table). Panel: 59 issues, 17 blocking; 50 applied, 9 rejected. Blocking fixes: `blame-v` sense 2 (*I don't blame you*) was the negative use, now the phrase *not blame someone*, and *be to blame* is a phrase; `back-v` *be backed by* redefined to match the passive; `due-adj` *deserved* sense reworded; an awkward `little-pron` example; a gender-neutral letter example under the *to a man* sense of `sir-n`. Rejected: *put in your two cents* moved to `put-v` (first noun is *cents*); *in due course* (under `course-n`); *due to* meaning *caused by* (covered by `due-to-prep`). `across-from-prep` now names `opposite-prep` under compare, matching its mirror. Spend US$0.38.
