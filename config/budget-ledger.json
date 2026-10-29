@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-10-29",
-  "spent_usd": 2.264973,
+  "spent_usd": 2.606193,
   "calls": [
     {
       "ts": "2026-10-29T00:49:24Z",
@@ -1182,6 +1182,303 @@
       "cost_usd": 0.0,
       "tokens_in": 9396,
       "tokens_out": 5692
+    },
+    {
+      "ts": "2026-10-29T07:22:41Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "pronounce_check:pronunciation-1",
+      "model": "openai/gpt-6.1-sol",
+      "cost_usd": 0.007586,
+      "tokens_in": 323,
+      "tokens_out": 694
+    },
+    {
+      "ts": "2026-10-29T07:22:47Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "pronounce_check:pronunciation-2",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.002629,
+      "tokens_in": 275,
+      "tokens_out": 646
+    },
+    {
+      "ts": "2026-10-29T07:22:52Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "pronounce_check:pronunciation-3",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.00118,
+      "tokens_in": 298,
+      "tokens_out": 608
+    },
+    {
+      "ts": "2026-10-29T07:23:05Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "pronounce_check:pronunciation-1",
+      "model": "openai/gpt-6.1-sol",
+      "cost_usd": 0.007886,
+      "tokens_in": 323,
+      "tokens_out": 724
+    },
+    {
+      "ts": "2026-10-29T07:23:10Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "pronounce_check:pronunciation-2",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.002659,
+      "tokens_in": 275,
+      "tokens_out": 654
+    },
+    {
+      "ts": "2026-10-29T07:23:20Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "pronounce_check:pronunciation-3",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.000882,
+      "tokens_in": 298,
+      "tokens_out": 520
+    },
+    {
+      "ts": "2026-10-29T07:23:32Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "pronunciation:diagnose:pronunciation-1",
+      "model": "openai/gpt-6.1-sol",
+      "cost_usd": 0.002452,
+      "tokens_in": 271,
+      "tokens_out": 191
+    },
+    {
+      "ts": "2026-10-29T07:23:33Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "pronunciation:diagnose:pronunciation-2",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.000592,
+      "tokens_in": 229,
+      "tokens_out": 112
+    },
+    {
+      "ts": "2026-10-29T07:23:35Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "pronunciation:diagnose:pronunciation-3",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.000354,
+      "tokens_in": 242,
+      "tokens_out": 91
+    },
+    {
+      "ts": "2026-10-29T07:24:02Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:compared-to-prep:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.019288,
+      "tokens_in": 4184,
+      "tokens_out": 1092
+    },
+    {
+      "ts": "2026-10-29T07:24:11Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:compared-to-prep:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 19434,
+      "tokens_out": 4242
+    },
+    {
+      "ts": "2026-10-29T07:24:28Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:due-to-prep:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.02056,
+      "tokens_in": 4325,
+      "tokens_out": 1191
+    },
+    {
+      "ts": "2026-10-29T07:24:35Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:due-to-prep:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8179,
+      "tokens_out": 3276
+    },
+    {
+      "ts": "2026-10-29T07:25:00Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:excluding-prep:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.023326,
+      "tokens_in": 4038,
+      "tokens_out": 1525
+    },
+    {
+      "ts": "2026-10-29T07:25:02Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:excluding-prep:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 18098,
+      "tokens_out": 3988
+    },
+    {
+      "ts": "2026-10-29T07:25:19Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:in-addition-to-prep:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.01951,
+      "tokens_in": 4185,
+      "tokens_out": 1114
+    },
+    {
+      "ts": "2026-10-29T07:25:23Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:in-addition-to-prep:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8010,
+      "tokens_out": 2936
+    },
+    {
+      "ts": "2026-10-29T07:25:52Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:opposite-prep:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8534,
+      "tokens_out": 4235
+    },
+    {
+      "ts": "2026-10-29T07:25:58Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:opposite-prep:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.031298,
+      "tokens_in": 4594,
+      "tokens_out": 2211
+    },
+    {
+      "ts": "2026-10-29T07:26:22Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:as-though-conj:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8015,
+      "tokens_out": 3079
+    },
+    {
+      "ts": "2026-10-29T07:26:22Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:as-though-conj:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.018444,
+      "tokens_in": 4207,
+      "tokens_out": 1003
+    },
+    {
+      "ts": "2026-10-29T07:26:44Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:now-that-conj:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.023028,
+      "tokens_in": 4159,
+      "tokens_out": 1471
+    },
+    {
+      "ts": "2026-10-29T07:26:44Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:now-that-conj:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 7964,
+      "tokens_out": 2842
+    },
+    {
+      "ts": "2026-10-29T07:27:02Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:whenever-conj:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.028574,
+      "tokens_in": 4787,
+      "tokens_out": 1900
+    },
+    {
+      "ts": "2026-10-29T07:27:15Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:whenever-conj:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 20098,
+      "tokens_out": 5428
+    },
+    {
+      "ts": "2026-10-29T07:27:36Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:wherever-conj:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.03001,
+      "tokens_in": 4830,
+      "tokens_out": 2035
+    },
+    {
+      "ts": "2026-10-29T07:27:47Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:wherever-conj:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8816,
+      "tokens_out": 4901
+    },
+    {
+      "ts": "2026-10-29T07:28:12Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:need-modal:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8547,
+      "tokens_out": 3540
+    },
+    {
+      "ts": "2026-10-29T07:28:17Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:need-modal:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.031596,
+      "tokens_in": 4633,
+      "tokens_out": 2233
+    },
+    {
+      "ts": "2026-10-29T07:28:44Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:abandon-v:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8615,
+      "tokens_out": 3806
+    },
+    {
+      "ts": "2026-10-29T07:28:50Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:abandon-v:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.033402,
+      "tokens_in": 4671,
+      "tokens_out": 2406
+    },
+    {
+      "ts": "2026-10-29T07:29:11Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:accompany-v:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8933,
+      "tokens_out": 3458
+    },
+    {
+      "ts": "2026-10-29T07:29:12Z",
+      "run_id": "20261029T072013Z-4fb8wy",
+      "purpose": "review:accompany-v:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.035964,
+      "tokens_in": 4917,
+      "tokens_out": 2613
     }
   ],
   "history": {
