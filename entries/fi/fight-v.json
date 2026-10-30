@@ -98,7 +98,7 @@
           ]
         },
         {
-          "type": "adverb + verb",
+          "type": "verb + adverb",
           "items": [
             "fight hard",
             "fight bravely"
@@ -265,7 +265,7 @@
     {
       "n": 4,
       "signpost": "stop something bad",
-      "definition": "try hard to stop something bad or to end it",
+      "definition": "try hard to stop something bad",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -326,7 +326,50 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "try to change or stop a decision or a plan by official or legal means",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "Parents are fighting the plan to close the school.",
+              "note": null,
+              "pattern": "verb + object"
+            },
+            {
+              "text": "He decided to fight the case in court.",
+              "note": null,
+              "pattern": "verb + object"
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "fight a decision",
+                "fight a case",
+                "fight a plan"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -384,7 +427,7 @@
           ]
         },
         {
-          "type": "adverb + verb",
+          "type": "verb + adverb",
           "items": [
             "fight hard"
           ]
@@ -393,7 +436,50 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "move forward with great effort, pushing past people or things",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object + preposition + object",
+              "verb + object + adverb"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "We fought our way through the crowd to the door.",
+              "note": null,
+              "pattern": "verb + object + preposition + object"
+            },
+            {
+              "text": "The firefighters had to fight their way in.",
+              "note": null,
+              "pattern": "verb + object + adverb"
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "fight your way through something",
+                "fight your way out"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -469,7 +555,7 @@
     {
       "n": 7,
       "signpost": "a feeling",
-      "definition": "try hard not to show a feeling or not to do what you want to do",
+      "definition": "try hard not to give in to a feeling or a need",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -523,7 +609,41 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "fight-it-out",
+      "text": "fight it out",
+      "definition": "fight or argue until one side wins",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Let them fight it out between themselves.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The two teams fought it out until the last minute.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
       "slug": "fight-n",
@@ -538,13 +658,7 @@
   ],
   "synonym_discrimination": null,
   "usage_note": "**Fight with someone** can mean fighting against them or fighting on their side: *He fought with the rebels* can mean either. Use **fight against** or **fight alongside** when the meaning must be clear.",
-  "learner_errors": [
-    {
-      "incorrect": "He fighted with his brother.",
-      "correct": "He fought with his brother.",
-      "note": "The past tense and past participle are **fought**."
-    }
-  ],
+  "learner_errors": [],
   "etymology": null,
   "see_also": [
     {
@@ -557,16 +671,16 @@
     }
   ],
   "adaptation": {
-    "semantic": "\"fight\": the senses *use force against someone*, *argue*, and *try hard to stop* something are different words in many languages; choose by sense.",
+    "semantic": null,
     "grammar": "\"fight\" takes a direct object for the enemy or problem (*fight crime*, *fight the champion*); **fight for** names the goal, **fight against** the enemy.",
     "culture": null,
     "false_friends": null,
-    "pronunciation": "\"fight\", \"fought\": the **gh** is silent in both forms."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-09-25T09:45:51Z",
-    "modified": "2026-10-04T01:05:28Z",
+    "modified": "2026-10-30T19:36:38Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260925T094321Z-amtsgs",
     "reviews": [
@@ -608,6 +722,26 @@
         "file": "reviews/20261001T131837Z-jf46i6/fight-v.json",
         "ok": 77,
         "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261030T193033Z-ivde44",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-30",
+        "file": "reviews/20261030T193033Z-ivde44/fight-v.json",
+        "ok": 81,
+        "issues": 8,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261030T193033Z-ivde44",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-30",
+        "file": "reviews/20261030T193033Z-ivde44/fight-v.json",
+        "ok": 85,
+        "issues": 4,
         "blocking": 0
       }
     ],
