@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To mean is to have or show a meaning, to intend something, or to bring about a result.",
+  "core_idea": "To **mean** is to have a meaning, to intend something, to have something as a result, or to be important to someone.",
   "senses": [
     {
       "n": 1,
@@ -101,7 +101,7 @@
       "synonyms": [
         {
           "slug": "stand-for-phrv",
-          "note": null
+          "note": "only for what a letter, a short form, or a symbol shows"
         }
       ],
       "antonyms": [],
@@ -128,7 +128,8 @@
         "patterns": [
           "verb + object",
           "verb + that-clause",
-          "not used in continuous tenses"
+          "not used in continuous tenses",
+          "verb + object + as + noun or adjective"
         ]
       },
       "labels": {
@@ -154,6 +155,11 @@
           "text": "Do you mean that you're not coming?",
           "note": null,
           "pattern": "verb + that-clause"
+        },
+        {
+          "text": "I meant it as a joke.",
+          "note": null,
+          "pattern": "verb + object + as + noun or adjective"
         }
       ],
       "collocations": [
@@ -245,7 +251,8 @@
         "codes": [],
         "patterns": [
           "verb + to-infinitive",
-          "verb + object + to-infinitive"
+          "verb + object + to-infinitive",
+          "verb + for + object + to-infinitive"
         ]
       },
       "labels": {
@@ -266,6 +273,11 @@
           "text": "Sorry, I didn't mean to hurt you.",
           "note": null,
           "pattern": "verb + to-infinitive"
+        },
+        {
+          "text": "I didn't mean for you to see it.",
+          "note": null,
+          "pattern": "verb + for + object + to-infinitive"
         }
       ],
       "collocations": [
@@ -338,7 +350,7 @@
       "synonyms": [
         {
           "slug": "spell-v",
-          "note": null
+          "note": "only in *spell trouble*, *spell disaster*, and similar phrases"
         }
       ],
       "antonyms": [],
@@ -418,7 +430,7 @@
     {
       "n": 7,
       "signpost": "be supposed to",
-      "definition": "be intended or expected to do or be something",
+      "definition": "be intended or expected to do or be something, or be intended for someone",
       "explanation": "Used in the passive: **be meant to** do something says what a rule or a plan expects; **be meant for** someone says who something was made for.",
       "grammar": {
         "countability": null,
@@ -490,7 +502,9 @@
       "definition": "used to explain, add to, or correct what you have just said",
       "explanation": null,
       "labels": {
-        "register": [],
+        "register": [
+          "informal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -564,7 +578,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "The past form and past participle are both **meant**, which rhymes with **sent**. **Mean** in sense 4 (*I meant to call you*) is close to **intend** but much more common in speech.",
+  "usage_note": "The past form and past participle are both **meant**, which rhymes with **sent**.",
   "learner_errors": [
     {
       "incorrect": "What means this word?",
@@ -594,7 +608,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T19:29:23Z",
-    "modified": "2026-10-21T12:59:50Z",
+    "modified": "2026-10-30T01:20:28Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T192801Z-iujuq0",
     "reviews": [
@@ -637,6 +651,26 @@
         "ok": 87,
         "issues": 2,
         "blocking": 1
+      },
+      {
+        "run_id": "20261030T011417Z-r5s4le",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-30",
+        "file": "reviews/20261030T011417Z-r5s4le/mean-v.json",
+        "ok": 85,
+        "issues": 8,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261030T011417Z-r5s4le",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-30",
+        "file": "reviews/20261030T011417Z-r5s4le/mean-v.json",
+        "ok": 89,
+        "issues": 2,
+        "blocking": 0
       }
     ],
     "status": "reviewed",

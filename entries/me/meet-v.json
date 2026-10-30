@@ -93,8 +93,7 @@
           "type": "verb + preposition",
           "items": [
             "meet for",
-            "meet at",
-            "meet with"
+            "meet at"
           ]
         },
         {
@@ -185,7 +184,7 @@
     },
     {
       "n": 3,
-      "signpost": "wait for",
+      "signpost": "greet on arrival",
       "definition": "go to a place and wait for someone who is arriving",
       "explanation": null,
       "grammar": {
@@ -310,8 +309,8 @@
           "pattern": "verb + object"
         },
         {
-          "text": "Their eyes met across the room.",
-          "note": "no object",
+          "text": "The two roads meet just outside the village.",
+          "note": null,
           "pattern": null
         }
       ],
@@ -381,7 +380,44 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "pay a cost or a bill",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "The company will meet the cost of your travel.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "We could not meet the payments on the car.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "meet the cost",
+                "meet the bill",
+                "meet the payments"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -394,8 +430,8 @@
     {
       "n": 7,
       "signpost": "experience",
-      "definition": "be treated in a particular way by other people, or have to deal with a difficulty",
-      "explanation": "Often in the passive with **with** (*was met with*), or with **meet with** in more formal English.",
+      "definition": "be received by people in a particular way, for example with anger or with silence",
+      "explanation": "Used with or without **with**, and often in the passive: *met strong opposition*, *was met with silence*.",
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -452,6 +488,56 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 8,
+      "signpost": "in a game",
+      "definition": "play against someone in a game or a competition",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive or intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + object",
+          "verb + adverb or preposition"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [
+          "sport"
+        ],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The two teams will meet in the final.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
+        },
+        {
+          "text": "Our team meets the champions next week.",
+          "note": null,
+          "pattern": "verb + object"
+        }
+      ],
+      "collocations": [],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [
@@ -487,7 +573,7 @@
       "sub_id": "nice-to-meet-you",
       "text": "nice to meet you",
       "definition": "said when you meet someone for the first time",
-      "explanation": "Said when you are introduced to someone. To someone you already know, say **nice to see you**. When you leave, **nice meeting you** is also common.",
+      "explanation": "Said when you are introduced to someone. When you leave, **nice meeting you** is also common.",
       "labels": {
         "register": [],
         "region": [],
@@ -531,11 +617,6 @@
       "incorrect": "Nice to meet you again.",
       "correct": "Nice to see you again.",
       "note": "**Nice to meet you** is only for the first time you meet someone."
-    },
-    {
-      "incorrect": "I met with an old friend in the street.",
-      "correct": "I met an old friend in the street.",
-      "note": "**Meet with** is mainly for a planned meeting to talk about something; a meeting by chance is just **meet**."
     }
   ],
   "etymology": null,
@@ -555,7 +636,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T19:29:23Z",
-    "modified": "2026-10-03T00:56:02Z",
+    "modified": "2026-10-30T01:20:28Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T192801Z-iujuq0",
     "reviews": [
@@ -597,6 +678,26 @@
         "file": "reviews/20261003T004332Z-ds9q0e/meet-v.json",
         "ok": 88,
         "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261030T011417Z-r5s4le",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-30",
+        "file": "reviews/20261030T011417Z-r5s4le/meet-v.json",
+        "ok": 94,
+        "issues": 8,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261030T011417Z-r5s4le",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-30",
+        "file": "reviews/20261030T011417Z-r5s4le/meet-v.json",
+        "ok": 100,
+        "issues": 2,
         "blocking": 0
       }
     ],
