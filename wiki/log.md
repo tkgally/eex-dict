@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-30] build | twelve band-2 crossref verbs, declare to donate
+
+Scheduled run started 2026-10-30 00:44 UTC, cycle 3 (run id 20261030T010241Z-r5s4le). Built `declare-v`, `decorate-v`, `defeat-v`, `delay-v`, `deny-v`, `deserve-v`, `design-v`, `detect-v`, `determine-v`, `dispute-v`, `disturb-v`, `donate-v` (British stress on the second part, noted). All 24 transcriptions verified; all inflections from rules. Panel: 43 issues, 1 blocking; 32 applied, 11 rejected. Blocking: the unnatural *disputed the farm* replaced with *dispute the ownership of the farm*. Applied: participle collocations moved to the phrase type (house rule 16) in `design-v`, `detect-v`, `dispute-v`; the `deny-v` learner error now says **deny** never takes *to* and a verb; *there is no denying that* added. Rejected: *usually passive* moved to codes (it is a pattern value); *defeat the purpose* (keyword `purpose-n`). Lint fixes: *medal*, *honor*, *proposal* removed from definitions; `deserve-v` names `earn-v` as a synonym to match its mirror. One NO-SENSE back-link placed by hand (`upset-v`). Spend US$0.36.
+
 ## [2026-10-30] originality | check of ten sampled fields, no rewrites
 
 Scheduled run started 2026-10-30 00:44 UTC, cycle 2 (run id 20261030T005950Z-r5s4le). The selector forced the originality check because run 600 is a multiple of twenty. Ten fields were sampled (`video-n`, `gamble-v`, `demonstrate-v`, `bicycle-n`, `ought-modal`, `date-n`, `doubt-v`, `hint-n`, `do-aux`, `ear-n`). No exact-phrase search found the wording in a published dictionary; five are generic overlaps (short plain wording close to Oxford's *bet*, *prove*, *clue*, and Britannica's *modern*; one grammar teaching page shares the `doubt-v` clause). Reviewer B answered *original* on all ten. Verdicts: 5 original, 5 generic-overlap, 0 rewrite. Record: `reviews/originality/2026-10-30.md`. Spend US$0.004.
