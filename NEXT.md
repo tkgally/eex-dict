@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-30 by run 20261030T184341Z-ivde44, cycle 2 (closure).*
+*Rewritten 2026-10-30 by run 20261030T184341Z-ivde44, cycle 3 (build).*
 
 ## State
 
-- 3,381 entries, all `reviewed` (68 band-2 verbs built 2026-10-30, the last `grip-v` to `hum-v`). Site checked 2026-10-29 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 3,389 entries, all `reviewed` (76 band-2 verbs built 2026-10-30, the last `illustrate-v` to `insure-v`). Site checked 2026-10-29 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24; later rows voted at each lint (latest [2026-10-30](experiments/band-vote-2026-10-30/README.md)); newer rows stay `unbanded` until the next vote.
-- Spend 2026-10-30: US$3.60 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
+- Spend 2026-10-30: US$3.84 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
 - Reviewer A is a Claude model via headless `claude -p`, $0 ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)); a failed call: re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -18,12 +18,12 @@
    4. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by senses and subsenses, skipping those read since 2026-10-24; 113 done, the last `level-n`, `life-n`, `body-n`, `bit-n`; next the unread seven-sense entries from `fight-v`, `class-n`, `clean-adj` (list by `modified` date), then six-sense ones; check a new sense against the entry's subsenses before adding it), then the backlog by band.
    5. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    6. **E5**: the first coverage block is done (113 entries by 2026-10-30); report it in the next digest.
-1. **build**: band-2 verbs next in queue order (`grip` to `hum` built 2026-10-30). Add *let's face it* to `let-v` when it is next reviewed (keyword rule; rejected for `face-v`). Check transitivity against every example. Panel in chunks of four; place `NO-SENSE` back-links by hand and check every mirror. 
+1. **build**: band-2 verbs next in queue order (`illustrate` to `insure` built 2026-10-30). Add *let's face it* to `let-v` when it is next reviewed (keyword rule; rejected for `face-v`). Check transitivity against every example. Panel in chunks of four; place `NO-SENSE` back-links by hand and check every mirror. 
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type. Reviewer A: fix only clear minor issues; it calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `accountant-n` (2026-10-30); next in the queue order. Hand-claim `bat-n-2`, `pound-n-2`, `bit-n-2` (computing). Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); move *blow the whistle on* to `whistle-n`, add *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`. A comparison form (*better*) takes an exceptions-table line, not `not gradable`.
-5. **lint**: every ten runs; last 2026-10-30 (ninety-fourth pass), next due in four runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
-6. **Tooling notes still open** (`wiki/notes/`): `lint-vocab-pos-guess-gap` (fix due), `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break` (fix due), `phrasal-verb-stress-recheck`, `crossref-queue-capitalized-headword`.
+5. **lint**: every ten runs; last 2026-10-30 (ninety-fourth pass), next due in three runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
+6. **Tooling notes still open** (`wiki/notes/`): `lint-vocab-pos-guess-gap` (fix due), `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break` (fix due), `phrasal-verb-stress-recheck`, `crossref-queue-capitalized-headword`, `crossref-no-sense-apply-only`.
 
 ## Fences (do not re-grind)
 
@@ -45,5 +45,5 @@
 - Curator line still open: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; working assumption: allowed there until you rule.
 - `PROJECT.md` still says "two non-Anthropic reviewers" (reviewer A is Claude since your 2026-10-25 ruling); the charter line is yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); it stays off until you say. The new model caught all four planted IPA errors.
-- Still open: continent names in definitions; *the former*/*the following* as nouns or pronouns (`wiki/open-questions.md`); pronunciation disputes in `reviews/needs_curator.txt` (new: `ensure-v`).
+- Still open: continent names in definitions; *the former*/*the following* as nouns or pronouns (`wiki/open-questions.md`); pronunciation disputes in `reviews/needs_curator.txt` (new: `ensure-v`, `insure-v`).
 - The public site: <https://tkgally.github.io/eex-dict/>.
