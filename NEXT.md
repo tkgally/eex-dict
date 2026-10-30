@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-30 by run 20261030T070250Z-qyp31h, cycle 2 (lint).*
+*Rewritten 2026-10-30 by run 20261030T070738Z-qyp31h, cycle 3 (review).*
 
 ## State
 
 - 3,341 entries, all `reviewed` (36 band-2 verbs built 2026-10-30, the last `drain-v` to `evaluate-v`). Site checked 2026-10-29 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); later rows voted at each lint (latest [2026-10-30](experiments/band-vote-2026-10-30/README.md)); rows queued since stay `unbanded` until the next vote.
-- Spend 2026-10-30: US$1.44 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
+- Spend 2026-10-30: US$1.71 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)). A failed `claude -p` call: re-run `--roles reviewer-a`.
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
@@ -16,7 +16,7 @@
    1. **B3**, **B4 (i)**: done; phrasal verbs get `separable` codes when next reviewed.
    2. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates. The `active-adj`/`passive-adj`, `alone-adj`/`lonely-adj`, `cut-v`/`chop-v` type mismatches belong here (792 pairs listed 2026-10-30). Five forward references name no real sense: `also-adv`/`too-adv` to `well-adv`, `look-after-phrv` to `look-v`, `slightly-adv` to `bit-n`, `whatever-pron` to `matter-n`.
    3. **Build** milestone 1: done 2026-10-27, and the five hand-claimed homographs; now closure ([build-order](wiki/decisions/build-order.md)).
-   4. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by senses and subsenses, skipping those read since 2026-10-24; 101 done, the last `meet-v`, `mean-v`, `mark-n`, `love-n`; next in the same order; check a new sense against the entry's subsenses before adding it), then the backlog by band.
+   4. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by senses and subsenses, skipping those read since 2026-10-24; 105 done, the last `home-n`, `hole-n`, `force-n`, `fine-adj`; next `fill-v` in the same order; check a new sense against the entry's subsenses before adding it), then the backlog by band.
    5. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    6. **E5**: milestone 1 is built (2026-10-27); when the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
 1. **build**: band-2 verbs next in queue order (`drain` to `evaluate` built 2026-10-30). Check transitivity against every example. Panel in chunks of four; place `NO-SENSE` back-links by hand and check every mirror. 

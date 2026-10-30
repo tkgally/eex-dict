@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-30] review | coverage pass: home, hole, force, fine
+
+Scheduled run started 2026-10-30 06:44 UTC, cycle 3 (run id 20261030T070738Z-qyp31h). Coverage reading of `home-n`, `hole-n`, `force-n`, `fine-adj` (105 done). Added: `home-n` subsense *find a home for something* and phrase *at home with something*; `force-n` subsense for the force of words or feelings and phrase *a force of nature*; `fine-adj` subsense *fine features*, *fine china* and an ironic sense (*a fine time to lose your keys*); `hole-n` golf sense split, with the part of the course as a subsense. Panel: 63 issues, 6 blocking; 58 applied, 5 rejected. Blocking: the golf definition used **hole** and had "Used in golf." explanations (both removed); *come close to home* is no idiom; `fine-adj` lacked the delicate sense. Many one-fact-one-field removals (repeated house/home, strength/force, hole/whole notes). Mirrors removed from `handsome-adj` and `nice-adj` with their synonyms. Spend US$0.27.
+
 ## [2026-10-30] lint | ninety-fourth pass
 
 Scheduled run started 2026-10-30 06:44 UTC, cycle 2 (run id 20261030T070250Z-qyp31h). Caps, links, gates clean. `crossref.py --all --apply` wrote 7 back-links; 18 NO-SENSE pairs: 13 placed by hand (among them `ensure-v` to `see-v` and `embarrass-v` to `show-up-phrv` from cycle 1, and the `declare`-to-`disturb` verbs of the previous run), 5 left for the C1 audit (unchanged). Six spent claim files pruned. Band vote on 81 unbanded rows (US$0.013), two wide splits settled at the lower median ([record](../experiments/band-vote-2026-10-30/README.md)). Precision: reviewer B `phrase` 0.20 over 20, switched off in `tools/review_panel.py`. Reports: 328 circular-definition candidates, 792 missing-sense pairs, 6 promises (unchanged in kind). Index, log dates, open questions, and curator lines checked: no gaps, no duplicates.
