@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-30] lint | ninety-fourth pass
+
+Scheduled run started 2026-10-30 06:44 UTC, cycle 2 (run id 20261030T070250Z-qyp31h). Caps, links, gates clean. `crossref.py --all --apply` wrote 7 back-links; 18 NO-SENSE pairs: 13 placed by hand (among them `ensure-v` to `see-v` and `embarrass-v` to `show-up-phrv` from cycle 1, and the `declare`-to-`disturb` verbs of the previous run), 5 left for the C1 audit (unchanged). Six spent claim files pruned. Band vote on 81 unbanded rows (US$0.013), two wide splits settled at the lower median ([record](../experiments/band-vote-2026-10-30/README.md)). Precision: reviewer B `phrase` 0.20 over 20, switched off in `tools/review_panel.py`. Reports: 328 circular-definition candidates, 792 missing-sense pairs, 6 promises (unchanged in kind). Index, log dates, open questions, and curator lines checked: no gaps, no duplicates.
+
 ## [2026-10-30] build | twelve band-2 verbs, drain to evaluate
 
 Scheduled run started 2026-10-30 06:44 UTC, cycle 1 (run id 20261030T064420Z-qyp31h). Built `drain-v`, `edit-v`, `embarrass-v`, `emerge-v`, `emphasize-v`, `enable-v`, `ensure-v`, `equal-v`, `erase-v`, `establish-v`, `estimate-v`, `evaluate-v`. Panel: 63 issues, 3 blocking; 52 applied, 11 rejected. Blocking: a generic adaptation note on `drain-v` (removed); `help ensure` typed as adverb + verb (moved to phrase); `equal-v` sense 3 joined two meanings (now *be the same in effect or meaning*). `ensure-v` British `ɪnˈʃɔː` disputed 1/3 (panel gave `ɪnˈʃʊə`): kept to match `sure-adj`, variant added, flagged, curator line. Back-links placed by hand on `come-out-phrv`, `allow-v`, `set-up-phrv`, `calculate-v`, `judge-v`, `tire-v`, `appear-v`; `crossref.py` missed the last two without a NO-SENSE line in the shown output. Spend US$0.40.

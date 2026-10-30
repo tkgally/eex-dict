@@ -341,3 +341,8 @@ No switch-offs. `reviewer-a:claude-sonnet-5-5` rose from 0.86 (272/316) to 0.80 
 ## 2026-10-29: ninety-third pass, no new switch-offs
 
 `reviewer-a:claude-sonnet-5-5` 0.83 (2441/2948); lowest live pairs `grammar-code` 0.62 and `coverage` 0.58 (kept live by ruling B1). `reviewer-b:gemini-4-argon` 0.82 (984/1202); `spelling-or-format` 0.30 (31/105), live by the owner's ruling; `phrase` 0.22 (4/18), still under twenty decisions, nearest to the line.
+
+## 2026-10-30: ninety-fourth pass, reviewer B `phrase` switched off
+
+`reviewer-a:claude-sonnet-5-5` 0.83 (2689/3254); no pair newly under the line. `reviewer-b:gemini-4-argon` 0.81 (1110/1365); `phrase` 0.20 (4/20), now at twenty decisions and under the line: added to `DISABLED_FAMILIES`. Its rejected phrase issues were idioms filed under another keyword and phrasal verbs asked for as phrases; reviewer A still checks phrases. `spelling-or-format` 0.26 (32/122), live by the owner's ruling.
+
