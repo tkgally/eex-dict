@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-30] build | twelve band-2 verbs, assure to fish
+
+Scheduled run started 2026-10-30 12:43 UTC, cycle 1 (run id 20261030T124352Z-k21ycc). Built `assure-v`, `exchange-v`, `exclude-v`, `exhaust-v`, `exhibit-v`, `exit-v`, `experience-v`, `face-v`, `fade-v`, `file-v`, `film-v`, `fish-v`. All 24 transcriptions verified; all inflections from rules. Panel: 68 issues, 5 blocking; 56 applied, 13 rejected (one cross-reference decision reversed and logged twice). Blocking: an adjectival *was exhausted* example in `exhaust-v` (replaced with an active one); *in a particular place* in the `film-v` movie sense (removed); *let's face it* missing from `face-v` (rejected: the first verb is **let**, so it belongs in `let-v` beside *let's say*). Signposts over three words shortened. NO-SENSE back-links placed by hand: `ensure-v` sense 1 to `assure-v`, `tire-v` sense 1 to `exhaust-v`. `file-v` points to the unrelated tool verb in its usage note; that homograph is not queued. Spend US$0.39.
+
 ## [2026-10-30] review | coverage pass: home, hole, force, fine
 
 Scheduled run started 2026-10-30 06:44 UTC, cycle 3 (run id 20261030T070738Z-qyp31h). Coverage reading of `home-n`, `hole-n`, `force-n`, `fine-adj` (105 done). Added: `home-n` subsense *find a home for something* and phrase *at home with something*; `force-n` subsense for the force of words or feelings and phrase *a force of nature*; `fine-adj` subsense *fine features*, *fine china* and an ironic sense (*a fine time to lose your keys*); `hole-n` golf sense split, with the part of the course as a subsense. Panel: 63 issues, 6 blocking; 58 applied, 5 rejected. Blocking: the golf definition used **hole** and had "Used in golf." explanations (both removed); *come close to home* is no idiom; `fine-adj` lacked the delicate sense. Many one-fact-one-field removals (repeated house/home, strength/force, hole/whole notes). Mirrors removed from `handsome-adj` and `nice-adj` with their synonyms. Spend US$0.27.
