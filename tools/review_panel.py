@@ -47,6 +47,7 @@ DEFAULT_ROLES = ["reviewer-a", "reviewer-b"]
 DISABLED_FAMILIES = {
     ("reviewer-a", "pronunciation"),    # 0.26 over 208 (old model); switched off by the owner's ruling of 2026-10-05
     ("reviewer-a", "inflection"),       # 0.21 over 24 (Claude model); switched off at the ninety-second lint, 2026-10-28
+    ("reviewer-b", "phrase"),           # 0.20 over 20 (Gemini 4 Argon); switched off at the ninety-fourth lint, 2026-10-30
 }
 
 SYSTEM = """You are a senior lexicographer checking an entry of an English-English learner's dictionary for intermediate and advanced learners (CEFR B1 to C2). American English is the dictionary's primary variety; British forms are recorded in variant fields. The entry was written by a language model and must be checked field by field for factual and linguistic correctness, not for taste. You answer with JSON only.
