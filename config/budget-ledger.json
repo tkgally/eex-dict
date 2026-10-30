@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-10-30",
-  "spent_usd": 0.753364,
+  "spent_usd": 1.029294,
   "calls": [
     {
       "ts": "2026-10-30T00:48:13Z",
@@ -498,6 +498,78 @@
       "cost_usd": 0.029702,
       "tokens_in": 4641,
       "tokens_out": 2042
+    },
+    {
+      "ts": "2026-10-30T01:16:14Z",
+      "run_id": "20261030T011417Z-r5s4le",
+      "purpose": "review:meet-v:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 12796,
+      "tokens_out": 10329
+    },
+    {
+      "ts": "2026-10-30T01:16:24Z",
+      "run_id": "20261030T011417Z-r5s4le",
+      "purpose": "review:meet-v:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.074422,
+      "tokens_in": 7986,
+      "tokens_out": 5845
+    },
+    {
+      "ts": "2026-10-30T01:17:10Z",
+      "run_id": "20261030T011417Z-r5s4le",
+      "purpose": "review:mean-v:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.051524,
+      "tokens_in": 7657,
+      "tokens_out": 3621
+    },
+    {
+      "ts": "2026-10-30T01:17:19Z",
+      "run_id": "20261030T011417Z-r5s4le",
+      "purpose": "review:mean-v:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 12301,
+      "tokens_out": 9108
+    },
+    {
+      "ts": "2026-10-30T01:18:16Z",
+      "run_id": "20261030T011417Z-r5s4le",
+      "purpose": "review:mark-n:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.063412,
+      "tokens_in": 8806,
+      "tokens_out": 4580
+    },
+    {
+      "ts": "2026-10-30T01:18:21Z",
+      "run_id": "20261030T011417Z-r5s4le",
+      "purpose": "review:mark-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 13731,
+      "tokens_out": 10448
+    },
+    {
+      "ts": "2026-10-30T01:19:17Z",
+      "run_id": "20261030T011417Z-r5s4le",
+      "purpose": "review:love-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 13662,
+      "tokens_out": 9786
+    },
+    {
+      "ts": "2026-10-30T01:19:44Z",
+      "run_id": "20261030T011417Z-r5s4le",
+      "purpose": "review:love-n:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.086572,
+      "tokens_in": 8796,
+      "tokens_out": 6898
     }
   ],
   "history": {

@@ -145,12 +145,7 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "They fell in love on holiday.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "I think I'm in love with you.",
+          "text": "They fell in love on vacation.",
           "note": null,
           "pattern": null
         },
@@ -199,7 +194,7 @@
     {
       "n": 3,
       "signpost": "person",
-      "definition": "a person who you love",
+      "definition": "a person whom someone has strong romantic feelings for",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -316,7 +311,7 @@
     },
     {
       "n": 5,
-      "signpost": "to a friend",
+      "signpost": "friendly address",
       "definition": "used to speak to someone in a friendly way",
       "explanation": "In some parts of Britain, some people, such as shop staff, use it to people they do not know. It is meant to be friendly, not romantic, though some people do not like it.",
       "grammar": {
@@ -421,7 +416,7 @@
     },
     {
       "n": 7,
-      "signpost": "in tennis",
+      "signpost": "zero score",
       "definition": "a score of zero in some sports",
       "explanation": null,
       "grammar": {
@@ -468,6 +463,72 @@
     }
   ],
   "phrases": [
+    {
+      "sub_id": "fall-in-love-with-someone",
+      "text": "fall in love with someone",
+      "definition": "begin to have a strong romantic feeling for someone",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "They fell in love with each other at college.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "He falls in love very easily.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "be-in-love-with-someone",
+      "text": "be in love with someone",
+      "definition": "have a strong romantic feeling for someone",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "I think I'm in love with you.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "They were very much in love.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
     {
       "sub_id": "make-love",
       "text": "make love",
@@ -527,7 +588,7 @@
     {
       "sub_id": "not-for-love-or-money",
       "text": "not for love or money",
-      "definition": "not in any way at all",
+      "definition": "not in any way, however hard you try",
       "explanation": null,
       "labels": {
         "register": [],
@@ -640,6 +701,36 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "sub_id": "for-the-love-of-god",
+      "text": "for the love of God",
+      "definition": "used to show that you are angry, annoyed, or surprised",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "For the love of God, turn that music down!",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "word_family": [
@@ -665,7 +756,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "You fall in love **with** someone and are in love **with** them: *She's in love with Omar*. **Love** for a person is different from **like**: *I like him* is friendly; *I love him* is a strong or romantic feeling.",
+  "usage_note": null,
   "learner_errors": [
     {
       "incorrect": "I'm in love of her.",
@@ -692,14 +783,14 @@
   "adaptation": {
     "semantic": "\"love\": English uses one noun for love in a family, romantic love, and a strong liking for things; some languages use different words.",
     "grammar": null,
-    "culture": "\"love\": in some parts of Britain, people such as shop staff may call strangers **love**. It is meant to be friendly, not romantic. Choose a translation that keeps this friendly, everyday tone, or leave the word out.",
+    "culture": "\"love\" said to a stranger (sense 5) has an everyday tone. Choose a word with the same tone, or leave it out; a romantic word would mislead.",
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-10-05T05:16:17Z",
-    "modified": "2026-10-13T13:30:40Z",
+    "modified": "2026-10-30T01:20:28Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261005T051055Z-37z8zt",
     "reviews": [
@@ -741,6 +832,26 @@
         "file": "reviews/20261013T131414Z-3vvjdp/love-n.json",
         "ok": 109,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261030T011417Z-r5s4le",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-30",
+        "file": "reviews/20261030T011417Z-r5s4le/love-n.json",
+        "ok": 114,
+        "issues": 7,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261030T011417Z-r5s4le",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-30",
+        "file": "reviews/20261030T011417Z-r5s4le/love-n.json",
+        "ok": 119,
+        "issues": 2,
         "blocking": 0
       }
     ],
