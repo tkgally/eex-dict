@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-30 by run 20261030T011417Z-r5s4le, cycle 4 (review; the run's last cycle).*
+*Rewritten 2026-10-30 by run 20261030T064420Z-qyp31h, cycle 1 (build).*
 
 ## State
 
-- 3,329 entries, all `reviewed` (24 band-2 verbs built 2026-10-30). Site checked 2026-10-29 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 3,341 entries, all `reviewed` (36 band-2 verbs built 2026-10-30, the last `drain-v` to `evaluate-v`). Site checked 2026-10-29 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); later rows voted at each lint (latest [2026-10-29](experiments/band-vote-2026-10-29/README.md)); rows queued since stay `unbanded` until the next vote.
-- Spend 2026-10-30: US$1.03 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
+- Spend 2026-10-30: US$1.43 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
 - **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)). A failed `claude -p` call: re-run `--roles reviewer-a`.
 - **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
 
@@ -19,11 +19,11 @@
    4. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by senses and subsenses, skipping those read since 2026-10-24; 101 done, the last `meet-v`, `mean-v`, `mark-n`, `love-n`; next in the same order; check a new sense against the entry's subsenses before adding it), then the backlog by band.
    5. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    6. **E5**: milestone 1 is built (2026-10-27); when the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
-1. **build**: band-2 crossref verbs next (`declare` to `donate` built 2026-10-30). Check transitivity against every example. Check `phr` rows against existing entries; panel in chunks of four, one process at a time; place `NO-SENSE` back-links by hand. 
+1. **build**: band-2 verbs next in queue order (`drain` to `evaluate` built 2026-10-30). Check transitivity against every example. Check `phr` rows against existing entries; panel in chunks of four, one process at a time; place `NO-SENSE` back-links by hand. 
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type. Reviewer A: fix only clear minor issues; it calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows `replace-v` to `star-v` built 2026-10-30; next in the queue order. Hand-claim `bat-n-2`, `pound-n-2`. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); move *blow the whistle on* to `whistle-n`, add *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`. A comparison form (*better*) takes an exceptions-table line, not `not gradable`.
-5. **lint**: every ten runs; last 2026-10-29 (ninety-third pass), next due in one run. Reviewer A `inflection` switched off then (0.21 over 24).
+5. **lint**: every ten runs; last 2026-10-29 (ninety-third pass), due now (next run). Reviewer A `inflection` switched off then (0.21 over 24).
 6. **Tooling notes still open** (`wiki/notes/`): `lint-vocab-pos-guess-gap` (fix due), `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break` (fix due), `phrasal-verb-stress-recheck`, `crossref-queue-capitalized-headword`. Wiki near cap.
 
 ## Fences (do not re-grind)
@@ -41,9 +41,10 @@
 
 ## For the owner
 
-- Latest run report: `journal/2026-10-30.md`. The first weekly digest: `journal/digest-2026-10-24.md` (ten entries to sample).
+- Latest run report: `journal/2026-10-30-2.md`. The first weekly digest: `journal/digest-2026-10-24.md` (ten entries to sample).
 - Curator line still open: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; working assumption: allowed there until you rule.
 - Your ruling of 2026-10-25 is in force: reviewer A is the Claude model, and reviewer B is unchanged. `PROJECT.md` still says "two non-Anthropic reviewers"; a session does not edit the charter, so that line is yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); it stays off until you say. The new model caught all four planted IPA errors.
+- New curator line 2026-10-30: `ensure-v` British `ɪnˈʃɔː` disputed; kept to match `sure-adj`, `ɪnˈʃʊə` a variant.
 - Still open: continent names in definitions; *the former*/*the following* as nouns or pronouns (`wiki/open-questions.md`); pronunciation disputes in `reviews/needs_curator.txt`.
 - The public site: <https://tkgally.github.io/eex-dict/>.

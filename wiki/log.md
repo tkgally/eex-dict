@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-30] build | twelve band-2 verbs, drain to evaluate
+
+Scheduled run started 2026-10-30 06:44 UTC, cycle 1 (run id 20261030T064420Z-qyp31h). Built `drain-v`, `edit-v`, `embarrass-v`, `emerge-v`, `emphasize-v`, `enable-v`, `ensure-v`, `equal-v`, `erase-v`, `establish-v`, `estimate-v`, `evaluate-v`. Panel: 63 issues, 3 blocking; 52 applied, 11 rejected. Blocking: a generic adaptation note on `drain-v` (removed); `help ensure` typed as adverb + verb (moved to phrase); `equal-v` sense 3 joined two meanings (now *be the same in effect or meaning*). `ensure-v` British `ɪnˈʃɔː` disputed 1/3 (panel gave `ɪnˈʃʊə`): kept to match `sure-adj`, variant added, flagged, curator line. Back-links placed by hand on `come-out-phrv`, `allow-v`, `set-up-phrv`, `calculate-v`, `judge-v`, `tire-v`, `appear-v`; `crossref.py` missed the last two without a NO-SENSE line in the shown output. Spend US$0.40.
+
 ## [2026-10-30] review | coverage pass: meet, mean, mark, love
 
 Scheduled run started 2026-10-30 00:44 UTC, cycle 4 (run id 20261030T011417Z-r5s4le), the run's last. Coverage reading of `meet-v`, `mean-v`, `mark-n`, `love-n` (101 done). Added: `meet-v` *meet the cost* (subsense) and *meet in a game*; `mean-v` *mean it as a joke*, *mean for someone to do something*; `mark-n` phrases *a black mark*, *quick off the mark*, *up to the mark*; `love-n` phrases *fall in love with someone*, *be in love with someone*, *for the love of God*. Panel: 41 issues, 1 blocking; 36 applied, 5 rejected. Blocking: `meet-v` sense 7 joined two meanings; now one (*be received in a particular way*). Many fixes were one-fact-one-field: duplicated notes removed from `meet-v`, `mark-n`, `love-n` (whose usage note and a sense explanation repeated the culture note). Rejected: *mean business* (keyword `business-n`); moving *nice to meet you* to `nice-adj` (no noun, so the first verb is the keyword). Spend US$0.28.

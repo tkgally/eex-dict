@@ -1,0 +1,463 @@
+{
+  "run_id": "20261030T064420Z-qyp31h",
+  "slug": "estimate-v",
+  "entry_modified": "2026-10-30T06:49:17Z",
+  "reviewers": [
+    {
+      "role": "reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "requested_at": "2026-10-30T06:55:53Z",
+      "cost_usd": 0.0,
+      "tokens_in": 8218,
+      "tokens_out": 3282,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "issue",
+          "quote": "form an idea of the size, cost, or amount of something without measuring or counting it exactly",
+          "severity": "minor",
+          "family": "definition-meaning",
+          "reason": "The definition names only size, cost, and amount, but the sense also covers time and duration (how long a job will take). It also does not say that the result is a rough figure or judgment."
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "issue",
+          "quote": "calculate-v",
+          "severity": "minor",
+          "family": "cross-reference",
+          "reason": "Calculate means to work out exactly, while estimate means to work out roughly, so it is a weak synonym. It is closer to a confusable word than a synonym. Judge is also loose."
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "coverage",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry is mostly sound. I found two minor issues. The definition lists only size, cost, and amount, but two examples are about time. Calculate is a weak synonym because it means working out exactly, not roughly.",
+      "error": null
+    },
+    {
+      "role": "reviewer-b",
+      "model": "google/gemini-4-argon",
+      "requested_at": "2026-10-30T06:55:53Z",
+      "cost_usd": 0.023254,
+      "tokens_in": 4373,
+      "tokens_out": 1569,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "issue",
+          "quote": "verb + object + to-infinitive",
+          "severity": "minor",
+          "family": "grammar-code",
+          "reason": "With 'estimate', the to-infinitive pattern is almost always used in the passive ('be estimated to do something') or with 'be' ('estimate the cost to be...'), whereas unqualified 'verb + object + to-infinitive' implies active uses like '*They estimated the repairs to cost...' which are unnatural."
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "coverage",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry for 'estimate' (verb) is accurate, well-structured, and follows house rules, with only a minor observation regarding the active vs. passive restriction on the to-infinitive grammar pattern.",
+      "error": null
+    }
+  ]
+}
