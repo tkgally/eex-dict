@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-30] originality | check of ten sampled fields, no rewrites
+
+Scheduled run started 2026-10-30 00:44 UTC, cycle 2 (run id 20261030T005950Z-r5s4le). The selector forced the originality check because run 600 is a multiple of twenty. Ten fields were sampled (`video-n`, `gamble-v`, `demonstrate-v`, `bicycle-n`, `ought-modal`, `date-n`, `doubt-v`, `hint-n`, `do-aux`, `ear-n`). No exact-phrase search found the wording in a published dictionary; five are generic overlaps (short plain wording close to Oxford's *bet*, *prove*, *clue*, and Britannica's *modern*; one grammar teaching page shares the `doubt-v` clause). Reviewer B answered *original* on all ten. Verdicts: 5 original, 5 generic-overlap, 0 rewrite. Record: `reviews/originality/2026-10-30.md`. Spend US$0.004.
+
 ## [2026-10-30] closure | twelve band-2 family verbs, replace to star
 
 Scheduled run started 2026-10-30 00:44 UTC, cycle 1 (run id 20261030T004420Z-r5s4le). The `closure` source is empty, so the selector's closure unit drew `family` rows: `replace-v`, `round-v`, `screen-v`, `secure-v`, `ship-v`, `slow-v`, `sort-v`, `specify-v`, `speed-v` (*sped*), `spot-v`, `spring-v` (*sprang*, *sprung*), `star-v`. All 24 transcriptions verified; inflections from rules and the existing exceptions lines. Panel: 61 issues, 5 blocking; 34 applied, 27 rejected. Blocking: circular definitions in `slow-v` and `round-v`; a `get something sorted` pattern wrongly given to `sort-v`; *spring a leak* rejected under the keyword rule (it belongs to `leak-n`, queued band 3). Added on review: `secure-v` the loan sense, `spring-v` *spring for* and *spring someone from jail*, transitive `ship-v` *ship the update*. Rejected: hand marks on *sped* and *sprang* (they are in the inflections table). Two NO-SENSE back-links placed by hand (`get-v`, `fasten-v`). Spend US$0.39.
