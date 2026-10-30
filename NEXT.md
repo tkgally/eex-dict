@@ -1,14 +1,13 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-30 by run 20261030T070738Z-qyp31h, cycle 3 (review).*
+*Rewritten 2026-10-30 by run 20261030T124352Z-k21ycc, cycle 1 (build).*
 
 ## State
 
-- 3,341 entries, all `reviewed` (36 band-2 verbs built 2026-10-30, the last `drain-v` to `evaluate-v`). Site checked 2026-10-29 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). Last weekly digest: `journal/digest-2026-10-24.md`.
+- 3,353 entries, all `reviewed` (48 band-2 verbs built 2026-10-30, the last `assure-v` to `fish-v`). Site checked 2026-10-29 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). Last weekly digest: `journal/digest-2026-10-24.md`.
 - Bands re-voted 2026-10-24 ([record](experiments/band-vote-2026-10-24/README.md)); later rows voted at each lint (latest [2026-10-30](experiments/band-vote-2026-10-30/README.md)); rows queued since stay `unbanded` until the next vote.
-- Spend 2026-10-30: US$1.71 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
-- **Reviewer A is now a Claude model**, headless `claude -p` at high effort, $0 in the ledger ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)). A failed `claude -p` call: re-run `--roles reviewer-a`.
-- **Reviewer B is now Gemini 4 Argon and pronunciation-1 GPT-6.1 Sol** (owner's ruling 2026-10-25, [model-refresh](wiki/decisions/model-refresh-2026-10-25.md)).
+- Spend 2026-10-30: US$2.10 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
+- Reviewer A is a Claude model via headless `claude -p`, $0 ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)); a failed call: re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
 
@@ -19,11 +18,11 @@
    4. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by senses and subsenses, skipping those read since 2026-10-24; 105 done, the last `home-n`, `hole-n`, `force-n`, `fine-adj`; next `fill-v` in the same order; check a new sense against the entry's subsenses before adding it), then the backlog by band.
    5. **Weekly digest**: next when `signals.digest_due`. Entry reports: pre-flight step 5.
    6. **E5**: milestone 1 is built (2026-10-27); when the first coverage block of about 100 entries is reviewed, say so under "For the owner" and in the digest.
-1. **build**: band-2 verbs next in queue order (`drain` to `evaluate` built 2026-10-30). Check transitivity against every example. Panel in chunks of four; place `NO-SENSE` back-links by hand and check every mirror. 
+1. **build**: band-2 verbs next in queue order (`assure` to `fish` built 2026-10-30). Add *let's face it* to `let-v` when it is next reviewed (keyword rule; rejected for `face-v`). Check transitivity against every example. Panel in chunks of four; place `NO-SENSE` back-links by hand and check every mirror. 
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type. Reviewer A: fix only clear minor issues; it calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows `replace-v` to `star-v` built 2026-10-30; next in the queue order. Hand-claim `bat-n-2`, `pound-n-2`. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); move *blow the whistle on* to `whistle-n`, add *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`. A comparison form (*better*) takes an exceptions-table line, not `not gradable`.
-5. **lint**: every ten runs; last 2026-10-30 (ninety-fourth pass), next due in ten runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
+5. **lint**: every ten runs; last 2026-10-30 (ninety-fourth pass), next due in nine runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
 6. **Tooling notes still open** (`wiki/notes/`): `lint-vocab-pos-guess-gap` (fix due), `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break` (fix due), `phrasal-verb-stress-recheck`, `crossref-queue-capitalized-headword`. Wiki near cap.
 
 ## Fences (do not re-grind)
@@ -41,7 +40,7 @@
 
 ## For the owner
 
-- Latest run report: `journal/2026-10-30-2.md`. The first weekly digest: `journal/digest-2026-10-24.md` (ten entries to sample).
+- Latest run report: `journal/2026-10-30-3.md`. The first weekly digest: `journal/digest-2026-10-24.md` (ten entries to sample).
 - Curator line still open: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; working assumption: allowed there until you rule.
 - Your ruling of 2026-10-25 is in force: reviewer A is the Claude model, and reviewer B is unchanged. `PROJECT.md` still says "two non-Anthropic reviewers"; a session does not edit the charter, so that line is yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); it stays off until you say. The new model caught all four planted IPA errors.
