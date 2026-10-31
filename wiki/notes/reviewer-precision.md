@@ -336,7 +336,7 @@ No switch-offs. `reviewer-a:claude-sonnet-5-5` rose from 0.86 (272/316) to 0.80 
 
 ## 2026-10-29: ninety-third pass, no new switch-offs
 
-`reviewer-a:claude-sonnet-5-5` 0.83 (2441/2948); lowest live pairs `grammar-code` 0.62 and `coverage` 0.58 (kept live by ruling B1). `reviewer-b:gemini-4-argon` 0.82 (984/1202); `spelling-or-format` 0.30 (31/105), live by the owner's ruling; `phrase` 0.22 (4/18), still under twenty decisions, nearest to the line.
+Reviewer A 0.83, reviewer B 0.82; nothing newly under the line.
 
 ## 2026-10-30: ninety-fourth pass, reviewer B `phrase` switched off
 
@@ -345,4 +345,8 @@ No switch-offs. `reviewer-a:claude-sonnet-5-5` rose from 0.86 (272/316) to 0.80 
 
 ## 2026-10-31: ninety-fifth pass, no new switch-offs
 
-`reviewer-a:claude-sonnet-5-5` 0.83 (2985/3603); lowest live pairs `coverage` 0.59 (kept live by ruling B1) and `grammar-code` 0.64. `reviewer-b:gemini-4-argon` 0.81 (1246/1540); `spelling-or-format` 0.24 (34/141), live by the owner's ruling; `pronunciation` 0.43 (6/16) and `inflection` 0.33 (3/9), both under twenty decisions, nearest to the line.
+Reviewer A 0.83, reviewer B 0.81; nothing newly under the line.
+
+## 2026-10-31: ninety-sixth pass, no new switch-offs
+
+`reviewer-b:gemini-4-argon` 0.82 (1386/1699); `spelling-or-format` 0.27 (41/153), live by the owner's ruling; `pronunciation` 0.43 (6/16) and `inflection` 0.33 (3/9), still under twenty decisions. `reviewer-a:claude-sonnet-5-5` 0.83 (3244/3908); lowest live pairs `coverage` 0.59 (kept live by ruling B1) and `grammar-code` 0.64.

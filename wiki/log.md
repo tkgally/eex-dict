@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-31] lint | ninety-sixth pass
+
+Run 20261031T192241Z-0rh14y, cycle 4. Caps, links, gates clean. `crossref.py --all --apply` wrote back-links to 6 entries; 21 NO-SENSE pairs: 16 placed by hand in 12 entries, mostly older references to today's verbs (`reject-v` from `approve-v` and `take-v`; `promote-v` from `market-v`, `plug-v`, `push-v`; `predict-v` from `foresee-v`, `foretell-v`; `release-v`, `regard-v`, `pretend-v`, `publish-v`, `persuade-v`, `maintain-v`, `occupy-v`, `permit-v`, `exceed-v`), 5 left for the C1 audit (unchanged). Five spent claim files pruned. Band vote on 84 unbanded rows (US$0.011), one wide split settled at the lower median, `obtainable-adj` 4 ([record](../experiments/band-vote-2026-10-31/README.md)). Precision: no new switch-offs. Reports: 328 circular-definition candidates, 836 missing-sense pairs, 7 promises (unchanged in kind). Index and pages agree; no curator duplicates. The wiki cap was 37 words over; two `reviewer-precision` sections condensed.
+
 ## [2026-10-31] review | coverage pass: club, character, change
 
 Run 20261031T191501Z-0rh14y, cycle 3. Coverage reading of `club-n`, `character-n`, `change-n` (127 done). Added: `character-n` subsense 5a *a suspicious character*, phrase *in character* (collocation copy removed), *a character reference*; `change-n` phrase *a change of pace*, *a change for the better/worse*; `club-n` *health club*, *country club*. Panel: 32 issues, 2 blocking; 27 applied, 5 rejected. Blocking (both `change-n`): the coins sense excluded bills though *change for a twenty* is bills; redefined. Duplicates removed: `change-n` sense 1 and 3 explanations and grammar adaptation (learner errors keep them), `character-n` pronunciation adaptation, `club-n` generic semantic note. `club-n` card sense now *one of four kinds, or one card*. Rejected: *golf* in a definition (outside the vocabulary, no entry), sense reorder of `character-n`, moving *change of scenery* into phrase text (sub_id permanence). Spend US$0.18.
