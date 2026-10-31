@@ -52,7 +52,7 @@
       "definition": "all the qualities that make one person different from other people",
       "explanation": null,
       "grammar": {
-        "countability": "countable",
+        "countability": "countable or uncountable",
         "transitivity": null,
         "codes": [
           "usually singular"
@@ -91,12 +91,6 @@
             "a strong character",
             "a gentle character"
           ]
-        },
-        {
-          "type": "preposition + noun",
-          "items": [
-            "in character"
-          ]
         }
       ],
       "synonyms": [
@@ -124,7 +118,7 @@
     },
     {
       "n": 2,
-      "signpost": "of a place or thing",
+      "signpost": "places and things",
       "definition": "the particular qualities that make a place or thing different from others",
       "explanation": null,
       "grammar": {
@@ -179,8 +173,13 @@
         {
           "letter": "a",
           "definition": "interesting or unusual qualities that make a place or thing special",
-          "explanation": "Uncountable.",
-          "grammar": null,
+          "explanation": null,
+          "grammar": {
+            "countability": "uncountable",
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
           "labels": null,
           "examples": [
             {
@@ -263,6 +262,12 @@
           "items": [
             "a person of character",
             "strength of character"
+          ]
+        },
+        {
+          "type": "noun + noun",
+          "items": [
+            "a character reference"
           ]
         }
       ],
@@ -392,7 +397,42 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "a person of a particular kind, especially one who seems strange or not to be trusted",
+          "explanation": null,
+          "grammar": {
+            "countability": "countable",
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "There were some strange characters waiting outside the station.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "He's a suspicious character, so keep an eye on him.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "adjective + noun",
+              "items": [
+                "a suspicious character",
+                "a strange character",
+                "a shady character"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -440,14 +480,9 @@
       ],
       "collocations": [
         {
-          "type": "noun + noun",
-          "items": [
-            "Chinese characters"
-          ]
-        },
-        {
           "type": "adjective + noun",
           "items": [
+            "Chinese characters",
             "special characters"
           ]
         }
@@ -472,6 +507,39 @@
     }
   ],
   "phrases": [
+    {
+      "sub_id": "in-character",
+      "text": "in character",
+      "definition": "typical of the way someone usually behaves",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "It was in character for her to help without being asked.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Shouting like that isn't in character for him.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
     {
       "sub_id": "out-of-character",
       "text": "out of character",
@@ -544,13 +612,13 @@
     "semantic": null,
     "grammar": null,
     "culture": null,
-    "false_friends": "\"character\": in some languages a similar word means *temper*. In English *a bad character* is a dishonest person, not someone who gets angry quickly; that is *a bad temper*.",
-    "pronunciation": "\"character\": the **ch** is said like **k**, and the stress is on the first part: *KAIR-uk-ter*."
+    "false_friends": "\"character\": in some languages the similar-looking word means *temper* or *mood*, so it is not a safe translation of the personality sense.",
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-10-01T18:50:00Z",
-    "modified": "2026-10-06T21:13:24Z",
+    "modified": "2026-10-31T19:19:41Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261001T184352Z-2m4hjf",
     "reviews": [
@@ -592,6 +660,26 @@
         "file": "reviews/20261006T210625Z-drbl4m/character-n.json",
         "ok": 77,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261031T191501Z-0rh14y",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-31",
+        "file": "reviews/20261031T191501Z-0rh14y/character-n.json",
+        "ok": 76,
+        "issues": 5,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261031T191501Z-0rh14y",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-31",
+        "file": "reviews/20261031T191501Z-0rh14y/character-n.json",
+        "ok": 76,
+        "issues": 6,
         "blocking": 0
       }
     ],
