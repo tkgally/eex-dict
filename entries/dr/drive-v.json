@@ -237,7 +237,7 @@
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "phrase",
           "items": [
             "drive someone home",
             "drive someone to school",
@@ -271,7 +271,7 @@
       "n": 4,
       "signpost": "make someone feel",
       "definition": "force someone into a strong feeling or state, often a bad one, or make them do something they would not normally do",
-      "explanation": "**Drive someone crazy** and **drive someone mad** are informal and very common, often said of small everyday problems.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -318,8 +318,9 @@
           "items": [
             "drive someone crazy",
             "drive someone mad",
-            "drive someone to something",
-            "drive someone to do something"
+            "drive someone up the wall",
+            "drive someone to tears",
+            "drive someone to despair"
           ]
         }
       ],
@@ -401,7 +402,7 @@
     {
       "n": 6,
       "signpost": "power or cause",
-      "definition": "provide the power or the strong reason that makes something move, work, or happen",
+      "definition": "provide the power that makes a machine work, or be the strong reason that makes something happen",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -509,6 +510,98 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "hit a ball hard so that it goes a long way",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive or intransitive",
+            "codes": [],
+            "patterns": [
+              "verb + object",
+              "verb + adverb or preposition"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [
+              "sport"
+            ],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "She drove the ball straight down the middle.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "He drives well but can't putt.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 8,
+      "signpost": "of rain or wind",
+      "definition": "fall or blow with great force",
+      "explanation": "Used of rain, snow, or wind.",
+      "grammar": {
+        "countability": null,
+        "transitivity": "intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + adverb or preposition"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The rain was driving against the windows.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Snow drove into our faces as we walked.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "driving rain",
+            "driving snow"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -535,7 +628,7 @@
       },
       "examples": [
         {
-          "text": "The teacher used a simple example to drive the point home.",
+          "text": "The teacher used a simple example to **drive** the point **home**.",
           "note": null,
           "pattern": null
         },
@@ -589,7 +682,7 @@
     {
       "incorrect": "I drove my bicycle to school.",
       "correct": "I rode my bicycle to school.",
-      "note": "You **ride** a bicycle, a motorcycle, or a horse; you **drive** a car."
+      "note": "A bicycle is ridden, not driven."
     },
     {
       "incorrect": "Can you drive me to home?",
@@ -606,10 +699,14 @@
     {
       "slug": "drive-off-phrv",
       "note": null
+    },
+    {
+      "slug": "drive-at-phrv",
+      "note": null
     }
   ],
   "adaptation": {
-    "semantic": "Many languages use one verb for controlling any vehicle. English uses **drive** for cars, buses, and trucks, and **ride** for bicycles, motorcycles, and horses. **Fly** is used for planes, and **sail** for boats.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -618,7 +715,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-24T18:48:13Z",
-    "modified": "2026-09-30T19:18:34Z",
+    "modified": "2026-10-31T01:21:46Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260924T184311Z-yq3eas",
     "reviews": [
@@ -660,6 +757,26 @@
         "file": "reviews/20260930T191041Z-bhydso/drive-v.json",
         "ok": 84,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261031T011454Z-qmv6j6",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-10-31",
+        "file": "reviews/20261031T011454Z-qmv6j6/drive-v.json",
+        "ok": 78,
+        "issues": 13,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261031T011454Z-qmv6j6",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-10-31",
+        "file": "reviews/20261031T011454Z-qmv6j6/drive-v.json",
+        "ok": 86,
+        "issues": 4,
         "blocking": 0
       }
     ],
