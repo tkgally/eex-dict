@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-31] site | rebuild and browser check, 79 of 79
+
+Run 20261031T070432Z-luf2hh, cycle 2. `build_site.py` wrote 3,423 entries on 2,885 headword pages (no drafts withheld, no redirects); `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll on 2,891 pages. The twelve verbs built in cycle 1 render with their marks and the new phrase *phone it in*. No template or tool changes. Spend US$0.
+
 ## [2026-10-31] build | twelve band-2 verbs, obtain to post
 
 Run 20261031T064407Z-luf2hh, cycle 1. Built `obtain-v`, `occupy-v`, `overcome-v`, `paste-v`, `pause-v`, `permit-v`, `persuade-v`, `phone-v`, `picture-v`, `plug-v`, `pop-v`, `post-v`; all reviewed, all 24 transcriptions verified. Panel: 99 issues, 6 blocking; 92 applied, 7 rejected. Blocking: `occupy-v` *keep the kids occupied* was the adjective (removed) and a sleep statistic (replaced); `overcome-v` adaptation note wrongly kept **by** from feelings; *keep someone posted* rejected for `post-v` (keyword `keep-v`). Coverage added: `pause-v` *pause a project*, `pop-v` *the cork popped*, `post-v` *post bail* (American) and scores, `phone-v` phrase *phone it in*. Most minor issues were adaptation-note marks (house rule 18) and participle collocations (rule 16). Twenty-three NO-SENSE back-links: ten placed by hand, thirteen over-general synonyms (*put*, *send*, *pay*, *stop*) removed instead. Queued `phone-in-phrv`, `plug-away-phrv`. Spend US$0.40.
