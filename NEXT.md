@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-10-31 by run 20261031T010003Z-qmv6j6, cycle 2 (lint).*
+*Rewritten 2026-10-31 by run 20261031T010518Z-qmv6j6, cycle 3 (build).*
 
 ## State
 
-- 3,401 entries, all `reviewed` (band-2 verbs `interpret-v` to `loan-v` built 2026-10-31). Site checked 2026-10-29 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
+- 3,411 entries, all `reviewed` (22 band-2 verbs built 2026-10-31, the last `note-v`). Site checked 2026-10-29 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. The five hand-claimed homographs are built (2026-10-27). Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows voted at each lint (latest [2026-10-31](experiments/band-vote-2026-10-31/README.md)); newer rows stay `unbanded` until the next vote.
-- Spend 2026-10-31: US$0.39 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
+- Spend 2026-10-31: US$0.69 of US$15 so far. Originality: last 2026-10-30 (no rewrites), next due in twenty runs.
 - Reviewer A is a Claude model via headless `claude -p`, $0 ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)); a failed call: re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -18,12 +18,12 @@
    4. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by senses and subsenses, skipping those read since 2026-10-24; 117 done, the last `fight-v`, `class-n`, `clean-adj`, `center-n`; next the unread seven-sense entries from `deep-adj`, `card-n`, `drive-v` (list by `modified` date), then six-sense ones; check a new sense against the entry's subsenses before adding it), then the backlog by band.
    5. **Weekly digest**: written 2026-10-31; next when `signals.digest_due`. Entry reports: pre-flight step 5.
    6. **E5**: the first coverage block is done (117 entries by 2026-10-30); reported in the 2026-10-31 digest.
-1. **build**: band-2 verbs next in queue order (`interpret` to `loan` built 2026-10-31; `load-up-phrv` queued). Add *let's face it* to `let-v` when it is next reviewed (keyword rule; rejected for `face-v`). Check transitivity against every example. Panel in chunks of four; place `NO-SENSE` back-links by hand and check every mirror. 
+1. **build**: band-2 verbs next in queue order (through `note` built 2026-10-31; `load-up-phrv` queued). Add *let's face it* to `let-v` when it is next reviewed (keyword rule; rejected for `face-v`). Check transitivity against every example. Panel in chunks of four; place `NO-SENSE` back-links by hand and check every mirror. 
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type. Reviewer A: fix only clear minor issues; it calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `accountant-n` (2026-10-30); next in the queue order. Hand-claim `bat-n-2`, `pound-n-2`, `bit-n-2` (computing). Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); move *blow the whistle on* to `whistle-n`, add *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`. A comparison form (*better*) takes an exceptions-table line, not `not gradable`.
-5. **lint**: every ten runs; last 2026-10-31 (ninety-fifth pass), next due in ten runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
-6. **Tooling notes still open** (`wiki/notes/`): `lint-vocab-pos-guess-gap` (fix due), `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break` (fix due), `phrasal-verb-stress-recheck`, `crossref-queue-capitalized-headword`, `crossref-no-sense-apply-only`.
+5. **lint**: every ten runs; last 2026-10-31 (ninety-fifth pass), next due in nine runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
+6. **Tooling notes still open** (`wiki/notes/`): `lint-vocab-pos-guess-gap` (fix due), `homograph-queue-and-inflection`, `inflect-uncountable-plural-gap`, `lint-vocab-queue-note-duplication`, `pronounce-check-word-break` (fix due), `phrasal-verb-stress-recheck`, `crossref-queue-capitalized-headword`, `crossref-no-sense-apply-only`, `band-vote-settled-date` (new 2026-10-31).
 
 ## Fences (do not re-grind)
 
