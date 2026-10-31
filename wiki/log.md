@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-31] build | twelve band-2 verbs, postpone to recall
+
+Run 20261031T124436Z-k012k2, cycle 1. Built `postpone-v`, `predict-v`, `present-v`, `pretend-v`, `promote-v`, `propose-v`, `protest-v`, `publish-v`, `purchase-v`, `pursue-v`, `qualify-v`, `recall-v`; all reviewed, all 24 transcriptions verified. Panel: 75 issues, 10 blocking; 69 applied, 6 rejected. Blocking: general-truth examples replaced (`predict-v` reading skills, `qualify-v` tomato); `present-v` gains sense 6 *put on a play or exhibition*; `pretend-v` sense 3 redefined as *claim*, with a matching example; `propose-v` sense 2 transitivity; `pursue-v` chase sense lost *usually passive*, participles retyped (rule 16); `recall-v` lost *not used in continuous tenses*. Coverage added: `pursue-v` romantic subsense, `recall-v` American *recall an official*. Rejected: *propose a toast* (keyword `toast-n`, no entry yet), two explanation objections (rule 15). Nine NO-SENSE back-links placed by hand. Spend US$0.45.
+
 ## [2026-10-31] originality | ten sampled definitions, two rewritten
 
 Run 20261031T070802Z-luf2hh, cycle 3 (forced: run 620). Exact-phrase searches on ten sampled definitions plus reviewer B's verdicts: original 4, generic overlap 4, rewrite 2. Rewritten: `region-n` sense 1 (shared the *without exact limits* turn of two learner's dictionaries) and `religious-adj` sense 2 (shared a closing clause). Reviewer B called `possibility-n` copied from Cambridge; search did not confirm it, and the definition is short and plain. Panel on the two rewrites: 7 issues, none blocking; 5 applied, 2 rejected. `religious-adj` gains sense 3 *religious about* (very regular) and a core idea; its usage note (no trap) removed. Record: `reviews/originality/2026-10-31.md`. Spend US$0.06.
