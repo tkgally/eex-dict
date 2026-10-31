@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-31] review | coverage pass: course, do, bridge
+
+Run 20261031T130227Z-k012k2, cycle 2. Coverage reading of `course-n`, `do-v`, `bridge-n` (124 done). Added: `do-v` subsense *do something with* (what did you do with my keys?), subsense *do a play*, *do an impression*, sense 8 *sell or serve* (*do takeout*, informal), phrase *that does it*; `course-n` *of course* as a concession; `bridge-n` toll and suspension bridges. Panel: 57 issues, 9 blocking; 43 applied, 14 rejected. Blocking: `do-v` sense 3 defined with *do* (circular, reworded), a *that will do* example that meant *enough*, sense 2 transitivity (rejected); `course-n` sense 5 widened to *the period during which*. Rejected by keyword rule: *have to do with* (`have-v`), *make do* (`make-v`), *par for the course* (`par-n`), *water under the bridge* (`water-n`). Duplicated notes trimmed on `do-v` (usage note now a pointer) and `course-n` (homophone note, generic semantic note). Spend US$0.23.
+
 ## [2026-10-31] build | twelve band-2 verbs, postpone to recall
 
 Run 20261031T124436Z-k012k2, cycle 1. Built `postpone-v`, `predict-v`, `present-v`, `pretend-v`, `promote-v`, `propose-v`, `protest-v`, `publish-v`, `purchase-v`, `pursue-v`, `qualify-v`, `recall-v`; all reviewed, all 24 transcriptions verified. Panel: 75 issues, 10 blocking; 69 applied, 6 rejected. Blocking: general-truth examples replaced (`predict-v` reading skills, `qualify-v` tomato); `present-v` gains sense 6 *put on a play or exhibition*; `pretend-v` sense 3 redefined as *claim*, with a matching example; `propose-v` sense 2 transitivity; `pursue-v` chase sense lost *usually passive*, participles retyped (rule 16); `recall-v` lost *not used in continuous tenses*. Coverage added: `pursue-v` romantic subsense, `recall-v` American *recall an official*. Rejected: *propose a toast* (keyword `toast-n`, no entry yet), two explanation objections (rule 15). Nine NO-SENSE back-links placed by hand. Spend US$0.45.
