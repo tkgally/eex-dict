@@ -318,11 +318,7 @@ Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.72 (7543/10542); `reviewer-
 
 Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (7672/10758); `reviewer-b` `ALL` 0.53 (1326/2499). `reviewer-b` `spelling-or-format` 0.28 (164/587); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (18/59), still the nearest live pair to the line. In the three cycles since the last pass reviewer-b had 1 of 2 applied (it raised nothing on twenty review entries and one on twelve builds). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`, which the owner kept.
 
-## 2026-10-18: seventy-seventh lint pass, no new switch-offs
-
-Eight disabled pairs unchanged. `reviewer-a` `ALL` 0.71 (7762/10915); `reviewer-b` `ALL` 0.53 (1335/2522). `reviewer-b` `spelling-or-format` 0.28 (164/587); it stays live by the owner's ruling. `reviewer-b` `phrase` 0.31 (18/59), still the nearest live pair to the line. In the five cycles since the last pass reviewer-b had 1 of 4 applied on the one review cycle (*peace*–*plastic*; its two noun-adjunct calls on `pilot-n` rejected). No live pair is under 30 percent over twenty or more decisions except `reviewer-b` `spelling-or-format`.
-
-## 2026-10-18 to 2026-10-20: seventy-eighth to eightieth passes (condensed)
+## 2026-10-18 to 2026-10-20: seventy-seventh to eightieth passes (condensed)
 
 No switch-offs. `reviewer-a` `ALL` 0.71; `reviewer-b` `ALL` 0.52 to 0.53, `spelling-or-format` 0.28 (live by the owner's ruling), `phrase` 0.31. Most reviewer-b rejections were the *say hello* noun claim and the *verb + adverb* pattern fence on phrasal verbs.
 
@@ -346,3 +342,7 @@ No switch-offs. `reviewer-a:claude-sonnet-5-5` rose from 0.86 (272/316) to 0.80 
 
 `reviewer-a:claude-sonnet-5-5` 0.83 (2689/3254); no pair newly under the line. `reviewer-b:gemini-4-argon` 0.81 (1110/1365); `phrase` 0.20 (4/20), now at twenty decisions and under the line: added to `DISABLED_FAMILIES`. Its rejected phrase issues were idioms filed under another keyword and phrasal verbs asked for as phrases; reviewer A still checks phrases. `spelling-or-format` 0.26 (32/122), live by the owner's ruling.
 
+
+## 2026-10-31: ninety-fifth pass, no new switch-offs
+
+`reviewer-a:claude-sonnet-5-5` 0.83 (2985/3603); lowest live pairs `coverage` 0.59 (kept live by ruling B1) and `grammar-code` 0.64. `reviewer-b:gemini-4-argon` 0.81 (1246/1540); `spelling-or-format` 0.24 (34/141), live by the owner's ruling; `pronunciation` 0.43 (6/16) and `inflection` 0.33 (3/9), both under twenty decisions, nearest to the line.
