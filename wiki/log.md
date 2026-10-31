@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-31] build | ten band-2 verbs, exceed to note
+
+Run 20261031T010518Z-qmv6j6, cycle 3. Built `exceed-v`, `kid-v`, `lower-v`, `maintain-v`, `march-v`, `matter-v`, `mistake-v`, `murder-v`, `nod-v`, `note-v`; all reviewed, all 20 transcriptions verified. Panel: 44 issues, 12 blocking; 33 applied, 11 rejected. Blocking: `kid-v` adaptation note made an origin claim (removed) and lacked *no kidding* (now a phrase); `maintain-v`, `march-v` examples replaced; `murder-v` gains *be angry with* (Mom will murder me); `nod-v` sense 2 signpost *almost asleep*. Reviewer B's four blocking calls to hand-mark *mistook* and *mistaking* rejected (listed forms; the site marks them). `mistake-v` sense 2 folded into a formal subsense. Rejected by keyword rule: *lower your guard*, *time marches on*. Six NO-SENSE back-links placed by hand (`fool-v`, `keep-v`, `support-v`, `kill-v` twice, `shake-v`, `write-down-phrv`). New note: `band-vote-settled-date`. Spend US$0.30.
+
 ## [2026-10-31] lint | ninety-fifth pass
 
 Run 20261031T010003Z-qmv6j6, cycle 2. Caps, links, gates clean. `crossref.py --all --apply` wrote back-links to 4 entries; 16 NO-SENSE pairs: 11 placed by hand (the older references to this morning's verbs: `border-v`, `bother-v`, `code-v`, `cut-off-phrv`, `decode-v`, `read-v`, `take-v`, `sew-v`, `tie-v`, plus `exemplify-v` to `illustrate-v` and `fall-over-phrv` to `trip-v`); `knit-v` and `link-v` dropped `sew-v` and `tie-v` from `see_also` now that they are compare and synonym links. 5 left for the C1 audit (unchanged). Six spent claim files pruned. Band vote on 77 unbanded rows (US$0.012), two wide splits settled at the lower median ([record](../experiments/band-vote-2026-10-31/README.md)). Precision: no new switch-offs. Reports: 330 circular-definition candidates, 813 missing-sense pairs, 7 promises (unchanged in kind). Index, open questions, curator lines checked: no gaps, no duplicates. The wiki cap was 26 words over; `reviewer-precision` condensed.
