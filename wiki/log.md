@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-31] originality | ten sampled definitions, two rewritten
+
+Run 20261031T070802Z-luf2hh, cycle 3 (forced: run 620). Exact-phrase searches on ten sampled definitions plus reviewer B's verdicts: original 4, generic overlap 4, rewrite 2. Rewritten: `region-n` sense 1 (shared the *without exact limits* turn of two learner's dictionaries) and `religious-adj` sense 2 (shared a closing clause). Reviewer B called `possibility-n` copied from Cambridge; search did not confirm it, and the definition is short and plain. Panel on the two rewrites: 7 issues, none blocking; 5 applied, 2 rejected. `religious-adj` gains sense 3 *religious about* (very regular) and a core idea; its usage note (no trap) removed. Record: `reviews/originality/2026-10-31.md`. Spend US$0.06.
+
 ## [2026-10-31] site | rebuild and browser check, 79 of 79
 
 Run 20261031T070432Z-luf2hh, cycle 2. `build_site.py` wrote 3,423 entries on 2,885 headword pages (no drafts withheld, no redirects); `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll on 2,891 pages. The twelve verbs built in cycle 1 render with their marks and the new phrase *phone it in*. No template or tool changes. Spend US$0.
