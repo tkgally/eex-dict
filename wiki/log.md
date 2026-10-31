@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-31] closure | twelve nouns, needle to assistant
+
+Run 20261031T190026Z-0rh14y, cycle 2. The `closure` source held only `needles`, a plural; marked `duplicate` and `needle-n` claimed by hand. Then eleven `family` rows: `acting-n`, `adjustment-n`, `advance-n`, `advertisement-n`, `adviser-n`, `airline-n`, `airplane-n`, `apology-n`, `application-n`, `assembly-n`, `assistant-n`. All reviewed, all 24 transcriptions verified. Panel: 33 issues, 6 blocking; 32 applied, 1 rejected. Blocking: a *needle in a haystack* example equating the search with the needle; a paper-airplane example (a toy, no engine); *assistant manager* moved to subsense 1a (one rank below a job title). Coverage: phrase *my apologies*; `assembly-n` sense 4 now countable (*a large assembly of guests*); `aeroplane` recorded as a form variant (three syllables). Rejected: *an apology for a meal* (rare). Four NO-SENSE back-links placed by hand. Spend US$0.35.
+
 ## [2026-10-31] build | twelve band-2 verbs, recycle to resign
 
 Run 20261031T184344Z-0rh14y, cycle 1. Built `recycle-v`, `reform-v`, `refund-v`, `regard-v`, `register-v`, `reject-v`, `release-v`, `rely-v`, `request-v`, `resemble-v`, `reserve-v`, `resign-v`; all reviewed, all 24 transcriptions verified. Panel: 57 issues, 12 blocking; 45 applied, 12 rejected. Blocking: `reform-v` example and collocations showed the adjective *reformed* (replaced; `reformed-adj` added to the family); `reject-v` sense 3 example about rejecting values belonged to sense 1; `register-v` *notice* sense lost "after a short time", the opinion sense its preposition pattern; `reserve-v` *reserve judgment* redefined as transitive. Coverage added: `release-v` sense 6 *release stress* and subsense *release someone from a contract*. Rejected: *reserve the right to* (keyword `right-n`, both reviewers), three explanation objections (rule 15). Eight NO-SENSE back-links placed by hand; `resign-v` now compares `quit-v`. Spend US$0.36.
