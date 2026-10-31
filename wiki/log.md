@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-10-31] build | twelve band-2 verbs, recycle to resign
+
+Run 20261031T184344Z-0rh14y, cycle 1. Built `recycle-v`, `reform-v`, `refund-v`, `regard-v`, `register-v`, `reject-v`, `release-v`, `rely-v`, `request-v`, `resemble-v`, `reserve-v`, `resign-v`; all reviewed, all 24 transcriptions verified. Panel: 57 issues, 12 blocking; 45 applied, 12 rejected. Blocking: `reform-v` example and collocations showed the adjective *reformed* (replaced; `reformed-adj` added to the family); `reject-v` sense 3 example about rejecting values belonged to sense 1; `register-v` *notice* sense lost "after a short time", the opinion sense its preposition pattern; `reserve-v` *reserve judgment* redefined as transitive. Coverage added: `release-v` sense 6 *release stress* and subsense *release someone from a contract*. Rejected: *reserve the right to* (keyword `right-n`, both reviewers), three explanation objections (rule 15). Eight NO-SENSE back-links placed by hand; `resign-v` now compares `quit-v`. Spend US$0.36.
+
 ## [2026-10-31] review | coverage pass: course, do, bridge
 
 Run 20261031T130227Z-k012k2, cycle 2. Coverage reading of `course-n`, `do-v`, `bridge-n` (124 done). Added: `do-v` subsense *do something with* (what did you do with my keys?), subsense *do a play*, *do an impression*, sense 8 *sell or serve* (*do takeout*, informal), phrase *that does it*; `course-n` *of course* as a concession; `bridge-n` toll and suspension bridges. Panel: 57 issues, 9 blocking; 43 applied, 14 rejected. Blocking: `do-v` sense 3 defined with *do* (circular, reworded), a *that will do* example that meant *enough*, sense 2 transitivity (rejected); `course-n` sense 5 widened to *the period during which*. Rejected by keyword rule: *have to do with* (`have-v`), *make do* (`make-v`), *par for the course* (`par-n`), *water under the bridge* (`water-n`). Duplicated notes trimmed on `do-v` (usage note now a pointer) and `course-n` (homophone note, generic semantic note). Spend US$0.23.
