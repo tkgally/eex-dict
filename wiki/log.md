@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-01] lint | ninety-seventh pass
+
+Run 20261101T184347Z-bzdywi, cycle 1. Caps, links, gates clean. `crossref.py --all --apply` wrote back-links to 7 entries; 24 NO-SENSE pairs: 19 placed by hand in 16 entries, the older references to today's band-2 verbs (`spoil-v` from `baby-v` and `cloud-v`; `suit-v` from `become-v` and `match-v`; `slip-v` from `slide-v` and `trip-v`; `pause-v` into `suspend-v` and `resume-v`; `struggle-v`, `risk-v`, `snap-v`, `pose-v`, `rush-v`, `restore-v`, `swap-v`, `sink-v`, `settle-v`, `separate-v`, `seize-v`), 5 left for the C1 audit (unchanged). Seven spent claim files pruned. Band vote on 133 unbanded rows (US$0.023), three wide splits settled at the lower median ([record](../experiments/band-vote-2026-11-01/README.md)). Precision: no new switch-offs; reviewer B `pronunciation` now over twenty decisions at 0.38. Reports: 329 circular-definition candidates, 904 missing-sense pairs, 7 promises (unchanged in kind). Index and pages agree; five stale prune-branch curator lines marked resolved. `reviewer-precision` condensed for the wiki cap.
+
 ## [2026-11-01] build | six band-2 verbs, suit to swear
 
 Run 20261101T131428Z-vt44yo, cycle 3 (six of twelve allowed, to keep them full late in the run). Built `suit-v` (phrase *suit yourself*; *fit*/*suit*/*match* box), `summarize-v` (British *summarise*), `survey-v` (British sense *survey a house*; stress note and the American variant `ˈsɝ.veɪ`), `suspend-v` (law subsense *suspended sentence*), `swap-v`, `swear-v` (phrase *I could have sworn*). All 12 transcriptions and all inflections verified. Panel: 45 issues, 5 blocking (all `suit-v`); 35 applied, 10 rejected. Blocking: `suit-v` sense 3 rested on the adjective *suited* (rebuilt on active uses), two misplaced examples. Rejected: *suspend disbelief* (keyword rule), hand marks on *swore*, a bare-intransitive pattern for `swap-v`. Four NO-SENSE back-links placed by hand (`examine-v`, `delay-v`, `hang-v`, `exchange-v`). Spend US$0.17.
