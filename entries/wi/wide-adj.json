@@ -93,8 +93,7 @@
           "type": "adverb + adjective",
           "items": [
             "very wide",
-            "quite wide",
-            "wide enough"
+            "quite wide"
           ]
         },
         {
@@ -104,6 +103,12 @@
             "a wide river",
             "a wide street",
             "a wide smile"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "wide enough"
           ]
         }
       ],
@@ -138,7 +143,9 @@
       "grammar": {
         "countability": null,
         "transitivity": null,
-        "codes": [],
+        "codes": [
+          "not gradable"
+        ],
         "patterns": []
       },
       "labels": {
@@ -218,11 +225,6 @@
           "text": "There's a wide choice of food at the market.",
           "note": null,
           "pattern": null
-        },
-        {
-          "text": "The plan has wide support among parents.",
-          "note": null,
-          "pattern": null
         }
       ],
       "collocations": [
@@ -232,7 +234,6 @@
             "a wide range",
             "a wide variety",
             "a wide choice",
-            "wide support",
             "wide experience"
           ]
         }
@@ -250,7 +251,48 @@
         }
       ],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "affecting or including a large area or a lot of people, not only one small part",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "The plan has wide support among parents.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "She wants to reach a wider audience with her music.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "This problem is part of a wider issue in our schools.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "adjective + noun",
+              "items": [
+                "wide support",
+                "a wider audience",
+                "the wider community",
+                "a wider issue"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -263,8 +305,8 @@
     {
       "n": 4,
       "signpost": "big difference",
-      "definition": "large, when talking about a difference or a space between things",
-      "explanation": null,
+      "definition": "large",
+      "explanation": "Used of a difference, a gap, or a space between things.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -322,7 +364,7 @@
       "n": 5,
       "signpost": "eyes",
       "definition": "opened as far as possible",
-      "explanation": "Used of the eyes and the mouth, often because of surprise or fear.",
+      "explanation": "Used of the eyes, often because of surprise or fear.",
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -381,8 +423,7 @@
         "countability": null,
         "transitivity": null,
         "codes": [
-          "predicative only",
-          "not gradable"
+          "predicative only"
         ],
         "patterns": []
       },
@@ -461,17 +502,12 @@
     ],
     "note": "**Wide** is the more common word for distance from side to side: *a wide road*, *a wide door*. **Broad** is used especially of the body and of land (*broad shoulders*, *a broad valley*), and also means general rather than detailed: *a broad outline of the plan*."
   },
-  "usage_note": "**Wide** is also an adverb (*open your mouth wide*, *wide awake*, *wide open*); that is a separate entry. A measurement comes before the adjective: *ten meters wide*.",
+  "usage_note": "**Wide** is also an adverb (*open your mouth wide*, *wide awake*, *wide open*); that is a separate entry.",
   "learner_errors": [
     {
       "incorrect": "The road has ten meters wide.",
       "correct": "The road is ten meters wide.",
       "note": "Use **be**, then the number, then **wide**."
-    },
-    {
-      "incorrect": "The wideness of the room is four meters.",
-      "correct": "The width of the room is four meters.",
-      "note": "The noun is **width**."
     }
   ],
   "etymology": null,
@@ -491,7 +527,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-14T00:48:38Z",
-    "modified": "2026-10-14T01:03:39Z",
+    "modified": "2026-11-01T18:55:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261014T004427Z-5i4a71",
     "reviews": [
@@ -513,6 +549,26 @@
         "file": "reviews/20261014T004427Z-5i4a71/wide-adj.json",
         "ok": 70,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261101T184926Z-bzdywi",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-01",
+        "file": "reviews/20261101T184926Z-bzdywi/wide-adj.json",
+        "ok": 67,
+        "issues": 7,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261101T184926Z-bzdywi",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-01",
+        "file": "reviews/20261101T184926Z-bzdywi/wide-adj.json",
+        "ok": 68,
+        "issues": 6,
         "blocking": 0
       }
     ],
