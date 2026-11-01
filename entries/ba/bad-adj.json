@@ -45,7 +45,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**Bad** describes something of poor quality, unpleasant, harmful, morally wrong, or not done well, and also how a person feels when sorry, guilty, or unwell.",
+  "core_idea": "**Bad** describes something of poor quality, unpleasant, harmful, unsuitable, morally wrong, or not done well, and also how a person feels when sorry, guilty, or unwell.",
   "senses": [
     {
       "n": 1,
@@ -113,14 +113,12 @@
       "subsenses": [
         {
           "letter": "a",
-          "definition": "no longer fresh, safe, or pleasant to eat",
+          "definition": "no longer fresh or safe to eat or drink",
           "explanation": "Said of food or drink that has spoiled.",
           "grammar": {
             "countability": null,
             "transitivity": null,
-            "codes": [
-              "predicative only"
-            ],
+            "codes": [],
             "patterns": []
           },
           "labels": null,
@@ -210,7 +208,7 @@
       "synonyms": [
         {
           "slug": "ill-adj",
-          "note": null
+          "note": "**ill** in this sense is used only in a few fixed phrases (*ill effects*)"
         }
       ],
       "antonyms": [
@@ -277,8 +275,7 @@
           "items": [
             "bad cold",
             "bad accident",
-            "bad headache",
-            "bad back"
+            "bad headache"
           ]
         }
       ],
@@ -290,7 +287,44 @@
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "injured or painful, often for a long time",
+          "explanation": "Used of a part of the body.",
+          "grammar": {
+            "countability": null,
+            "transitivity": null,
+            "codes": [
+              "attributive only"
+            ],
+            "patterns": []
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "He can't play soccer because of his bad knee.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "I can't lift that box with my bad back.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "adjective + noun",
+              "items": [
+                "a bad back",
+                "a bad knee",
+                "a bad leg"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -344,7 +378,8 @@
           "items": [
             "bad behavior",
             "bad manners",
-            "bad habit"
+            "bad habit",
+            "bad language"
           ]
         }
       ],
@@ -499,6 +534,76 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 7,
+      "signpost": "not suitable",
+      "definition": "not suitable or convenient, or not a wise choice",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": null,
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Is this a bad time to call?",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "It was a bad idea to go out without a coat.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Monday is bad for me. Can we meet on Tuesday?",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a bad time",
+            "a bad idea",
+            "a bad moment"
+          ]
+        },
+        {
+          "type": "adjective + preposition",
+          "items": [
+            "bad for"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [
+        {
+          "slug": "good-adj",
+          "note": null
+        }
+      ],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [
@@ -540,7 +645,7 @@
     {
       "sub_id": "too-bad",
       "text": "too bad",
-      "definition": "used to say that something is disappointing",
+      "definition": "used to say that something is disappointing, or, in an unkind way, that nothing can be done about it",
       "explanation": null,
       "labels": {
         "register": [
@@ -559,6 +664,11 @@
         },
         {
           "text": "It's too bad the weather ruined our plans.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Too bad. You'll have to wait like everyone else.",
           "note": null,
           "pattern": null
         }
@@ -591,7 +701,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Bad** has irregular comparative and superlative forms: **worse**, **worst**, never **badder** or **baddest** in standard English.",
+  "usage_note": null,
   "learner_errors": [
     {
       "incorrect": "This is more bad than the last one.",
@@ -611,7 +721,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-20T21:35:16Z",
-    "modified": "2026-10-28T13:43:28Z",
+    "modified": "2026-11-01T07:06:40Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260920T213316Z-u156ny",
     "reviews": [
@@ -653,6 +763,26 @@
         "file": "reviews/20260926T223858Z-poh5we/bad-adj.json",
         "ok": 82,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261101T070209Z-u4ndlj",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-01",
+        "file": "reviews/20261101T070209Z-u4ndlj/bad-adj.json",
+        "ok": 92,
+        "issues": 5,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261101T070209Z-u4ndlj",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-01",
+        "file": "reviews/20261101T070209Z-u4ndlj/bad-adj.json",
+        "ok": 93,
+        "issues": 3,
         "blocking": 0
       }
     ],
