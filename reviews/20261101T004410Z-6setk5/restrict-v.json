@@ -1,0 +1,647 @@
+{
+  "run_id": "20261101T004410Z-6setk5",
+  "slug": "restrict-v",
+  "entry_modified": "2026-11-01T00:48:24Z",
+  "reviewers": [
+    {
+      "role": "reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "requested_at": "2026-11-01T00:53:44Z",
+      "cost_usd": 0.0,
+      "tokens_in": 9232,
+      "tokens_out": 3930,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "issue",
+          "quote": "The talk will be restricted to thirty minutes.",
+          "severity": "minor",
+          "family": "example-grammar",
+          "reason": "This is a passive sentence but it is tagged with the active pattern \"verb + object + preposition + object\"."
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "issue",
+          "quote": "strictly restrict",
+          "severity": "minor",
+          "family": "collocation",
+          "reason": "\"Strictly restrict\" is not a typical pairing (\"strictly restricted\" is the usual form); it pads the list next to \"severely restrict\"."
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "issue",
+          "quote": "**limit** is more common and can mean almost the same",
+          "severity": "minor",
+          "family": "cross-reference",
+          "reason": "The same slug limit-v appears under both synonyms and compare, so the relation is stated twice. The note is also vague and does not say how the two words differ."
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].subsenses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].subsenses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].signpost",
+          "verdict": "issue",
+          "quote": "stop freedom",
+          "severity": "minor",
+          "family": "sense-structure",
+          "reason": "The signpost is awkward and overstated; \"limit freedom\" or \"limit movement\" would be more natural."
+        },
+        {
+          "field": "senses[1].definition",
+          "verdict": "issue",
+          "quote": "stop someone from doing what they want or from moving freely",
+          "severity": "blocking",
+          "family": "definition-meaning",
+          "reason": "\"Restrict\" means to limit, not to stop. The definition also needs a person as object, but the typical objects are things (movement, freedom, growth)."
+        },
+        {
+          "field": "senses[1].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].collocations",
+          "verdict": "issue",
+          "quote": "restrict growth",
+          "severity": "minor",
+          "family": "collocation",
+          "reason": "\"Restrict growth\" does not fit a sense about limiting a person's wishes or free movement; it belongs to the limiting sense."
+        },
+        {
+          "field": "senses[1].cross_references",
+          "verdict": "issue",
+          "quote": "confine-v",
+          "severity": "minor",
+          "family": "cross-reference",
+          "reason": "\"Confine\" means to keep in a place, which is stronger and narrower than restrict. Limit-v also repeats sense 1's synonym with no note."
+        },
+        {
+          "field": "senses[1].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "issue",
+          "quote": "stop someone from doing what they want or from moving freely",
+          "severity": "minor",
+          "family": "sense-structure",
+          "reason": "Sense 2 overlaps heavily with sense 1: restricting movement, freedom or growth is limiting. The split rests on a definition that does not match how the word is actually used."
+        },
+        {
+          "field": "consistency",
+          "verdict": "issue",
+          "quote": "restrict growth",
+          "severity": "minor",
+          "family": "other",
+          "reason": "Sense 2's collocations and examples (movement, freedom, growth) disagree with its definition, which has a person as object and says \"stop\". Limit-v is also given as both synonym and compare for sense 1."
+        },
+        {
+          "field": "coverage",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "issue",
+          "quote": "Tight clothes can restrict your movement.",
+          "severity": "blocking",
+          "family": "example-unnatural",
+          "reason": "The object is movement, not a person, so it does not fit \"stop someone from doing what they want\". The sentence fits a \"limit\" definition."
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "issue",
+          "quote": "New laws restrict the freedom of the press.",
+          "severity": "blocking",
+          "family": "example-unnatural",
+          "reason": "The object is a freedom, not a person who is stopped, so it does not fit the sense 2 definition as written."
+        }
+      ],
+      "summary": "The entry is mostly sound. Sense 2's definition has its object wrong (\"someone\") and overstates with \"stop\", so two of its examples (object \"movement\" and \"freedom\") don't fit it. There are also minor problems: duplicated synonym and compare slugs, a passive example tagged with an active pattern, and one doubtful collocation.",
+      "error": null
+    },
+    {
+      "role": "reviewer-b",
+      "model": "google/gemini-4-argon",
+      "requested_at": "2026-11-01T00:53:44Z",
+      "cost_usd": 0.025658,
+      "tokens_in": 5004,
+      "tokens_out": 1565,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].subsenses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].subsenses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].collocations",
+          "verdict": "issue",
+          "quote": "restrict growth",
+          "severity": "minor",
+          "family": "collocation",
+          "reason": "\"restrict growth\" means limiting the amount or rate of something, so it belongs under sense 1 (limit) rather than sense 2 (stop someone from doing what they want or moving freely)."
+        },
+        {
+          "field": "senses[1].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "coverage",
+          "verdict": "issue",
+          "quote": "restrict yourself to something",
+          "severity": "minor",
+          "family": "coverage",
+          "reason": "The common reflexive pattern \"restrict yourself/itself to something\" (meaning to do or deal with only a particular thing, e.g., \"I'll restrict myself to a few brief comments\") is not covered by the definitions or examples."
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry is solid and well-structured overall. Two minor issues were found: the collocation \"restrict growth\" is misplaced under sense 2 instead of sense 1, and the common reflexive use \"restrict yourself/itself to something\" is not covered.",
+      "error": null
+    }
+  ]
+}

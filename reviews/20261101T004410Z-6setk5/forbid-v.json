@@ -1,0 +1,623 @@
+{
+  "run_id": "20261101T004410Z-6setk5",
+  "slug": "forbid-v",
+  "entry_modified": "2026-11-01T00:48:24Z",
+  "reviewers": [
+    {
+      "role": "reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "requested_at": "2026-11-01T00:50:03Z",
+      "cost_usd": 0.0,
+      "tokens_in": 9022,
+      "tokens_out": 6275,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "issue",
+          "quote": "verb + object + preposition + object",
+          "severity": "minor",
+          "family": "grammar-code",
+          "reason": "The from + -ing pattern is not a preposition plus noun object; it is only shown in a passive example, so the pattern is a poor fit."
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "issue",
+          "quote": "He was forbidden from leaving the country.",
+          "severity": "minor",
+          "family": "example-grammar",
+          "reason": "The example is passive but is tagged with the active pattern 'verb + object + preposition + object'; the tag does not match."
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "issue",
+          "quote": "forbid someone to do something",
+          "severity": "minor",
+          "family": "collocation",
+          "reason": "These are grammar patterns already given in grammar and the learner-error note, not collocations; the typical collocation 'strictly forbidden' is missing."
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "issue",
+          "quote": "**ban** is used mostly for official rules, not for parents or other people",
+          "severity": "minor",
+          "family": "cross-reference",
+          "reason": "ban is already listed as a synonym and is repeated in compare; the claim is overstated since parents can ban things, and the note does not mention that prohibit is formal."
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].definition",
+          "verdict": "issue",
+          "quote": "make it impossible for someone to do something",
+          "severity": "minor",
+          "family": "definition-meaning",
+          "reason": "'Impossible' overstates the sense of 'His pride forbade him to ask' (his pride would not allow it), and the second example has no 'someone' object."
+        },
+        {
+          "field": "senses[1].explanation",
+          "verdict": "issue",
+          "quote": "The subject is usually a thing, such as a feeling, a rule, or a lack of time, not a person.",
+          "severity": "minor",
+          "family": "explanation",
+          "reason": "An explanation field is for function words and similar; this is a content verb, and the subject restriction would go in the grammar or collocations."
+        },
+        {
+          "field": "senses[1].grammar",
+          "verdict": "issue",
+          "quote": "verb + object",
+          "severity": "minor",
+          "family": "grammar-code",
+          "reason": "The object in 'forbids a full discussion' is a thing, not the person in the definition, so the pattern does not match the definition's 'someone'."
+        },
+        {
+          "field": "senses[1].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].examples",
+          "verdict": "issue",
+          "quote": "Lack of space forbids a full discussion here.",
+          "severity": "minor",
+          "family": "example-unnatural",
+          "reason": "Does not match the definition 'make it impossible for someone to do something'; it means space does not allow a discussion."
+        },
+        {
+          "field": "senses[1].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "issue",
+          "quote": "make it impossible for someone to do something",
+          "severity": "minor",
+          "family": "sense-structure",
+          "reason": "Sense 2 is mostly sense 1 with an abstract subject (pride, lack of space) and shares its patterns, so it is weakly separated; the set also lacks the idiom 'God forbid' and 'Heaven forbid'."
+        },
+        {
+          "field": "consistency",
+          "verdict": "issue",
+          "quote": "The subject is usually a thing, such as a feeling, a rule, or a lack of time, not a person.",
+          "severity": "minor",
+          "family": "other",
+          "reason": "A rule or the law as subject is also shown in sense 1 ('The law forbids smoking'), so the sense 2 explanation does not separate the senses."
+        },
+        {
+          "field": "coverage",
+          "verdict": "issue",
+          "quote": "God forbid",
+          "severity": "blocking",
+          "family": "coverage",
+          "reason": "The common expression 'God forbid' / 'Heaven forbid' (used when hoping something will not happen) is not covered by any sense or phrase; phrases is empty."
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "issue",
+          "quote": "Lack of space forbids a full discussion here.",
+          "severity": "minor",
+          "family": "example-unnatural",
+          "reason": "Does not fit the definition 'make it impossible for someone to do something'; there is no person who is prevented."
+        }
+      ],
+      "summary": "The entry is largely sound on forms and sense 1. The main problems are sense 2: a vague definition with a mismatched example, and an explanation field on a content verb. The idiom 'God forbid' / 'Heaven forbid' is missing, and the sense 1 grammar and collocation fields are weak.",
+      "error": null
+    },
+    {
+      "role": "reviewer-b",
+      "model": "google/gemini-4-argon",
+      "requested_at": "2026-11-01T00:50:03Z",
+      "cost_usd": 0.026196,
+      "tokens_in": 4833,
+      "tokens_out": 1653,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "issue",
+          "quote": "My parents forbade me to go to the party.",
+          "severity": "minor",
+          "family": "example-grammar",
+          "reason": "The irregular past form of the headword (**forbade**) should be marked with double asterisks in the example sentence."
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "issue",
+          "quote": "He was forbidden from leaving the country.",
+          "severity": "minor",
+          "family": "example-grammar",
+          "reason": "The irregular past participle of the headword (**forbidden**) should be marked with double asterisks in the example sentence."
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "issue",
+          "quote": "Taking photos inside the museum is strictly forbidden.",
+          "severity": "minor",
+          "family": "example-grammar",
+          "reason": "The irregular past participle of the headword (**forbidden**) should be marked with double asterisks in the example sentence."
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].examples",
+          "verdict": "issue",
+          "quote": "His pride forbade him to ask for help.",
+          "severity": "minor",
+          "family": "example-grammar",
+          "reason": "The irregular past form of the headword (**forbade**) should be marked with double asterisks in the example sentence."
+        },
+        {
+          "field": "senses[1].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[1].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "coverage",
+          "verdict": "issue",
+          "quote": "God forbid / Heaven forbid",
+          "severity": "minor",
+          "family": "coverage",
+          "reason": "The common spoken expression 'God/Heaven forbid (that)...' (used to express hope that something will not happen) is missing from the entry or phrases (unless covered strictly under God/Heaven per keyword rules, though 'forbid' also appears alone in 'forbid the thought')."
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry is solid and accurate overall. Minor issues include missing double-asterisk markup on irregular verb forms (forbade, forbidden) in the example sentences, and the possible omission of the spoken idiom 'God/Heaven forbid'.",
+      "error": null
+    }
+  ]
+}
