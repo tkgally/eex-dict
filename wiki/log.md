@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-01] build | six band-2 verbs, suit to swear
+
+Run 20261101T131428Z-vt44yo, cycle 3 (six of twelve allowed, to keep them full late in the run). Built `suit-v` (phrase *suit yourself*; *fit*/*suit*/*match* box), `summarize-v` (British *summarise*), `survey-v` (British sense *survey a house*; stress note and the American variant `ˈsɝ.veɪ`), `suspend-v` (law subsense *suspended sentence*), `swap-v`, `swear-v` (phrase *I could have sworn*). All 12 transcriptions and all inflections verified. Panel: 45 issues, 5 blocking (all `suit-v`); 35 applied, 10 rejected. Blocking: `suit-v` sense 3 rested on the adjective *suited* (rebuilt on active uses), two misplaced examples. Rejected: *suspend disbelief* (keyword rule), hand marks on *swore*, a bare-intransitive pattern for `swap-v`. Four NO-SENSE back-links placed by hand (`examine-v`, `delay-v`, `hang-v`, `exchange-v`). Spend US$0.17.
+
 ## [2026-11-01] review | coverage pass: feeling, change, world
 
 Run 20261101T130521Z-vt44yo, cycle 2. Coverage reading of three six-sense band-1 entries unread since 2026-10-24 (136 done). Added: `feeling-n` subsense 1a *with feeling*, sense 7 *a feeling for music*, subsense 6a *bad feeling between people*; `change-v` phrase *change for the better* and the *change something into something* pattern; `world-n` subsense 1a *the real world*/*the outside world*, phrases *mean the world to someone* and *do someone a world of good*, `often before another noun` (*world peace*). Removed: duplicated facts (`change-v` sense 3 explanation, the *alter* note, `world-n` usage note and see-also) and two generic adaptation notes (`feeling-n` grammar, `world-n` semantic). Panel: 33 issues, 0 blocking; 28 applied, 5 rejected (*change your mind* is under `mind-n`). Reviewer B's first `world-n` reply had no verdicts; re-run clean. Spend US$0.22.
