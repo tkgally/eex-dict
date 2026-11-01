@@ -94,7 +94,7 @@
       ],
       "collocations": [
         {
-          "type": "adverb + verb",
+          "type": "verb + adverb",
           "items": [
             "change completely",
             "change quickly",
@@ -137,7 +137,8 @@
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object"
+          "verb + object",
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -165,9 +166,9 @@
           "pattern": "verb + object"
         },
         {
-          "text": "Nothing you say will change the way I feel.",
+          "text": "You can change this sofa into a bed in a few seconds.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + preposition + object"
         }
       ],
       "collocations": [
@@ -180,12 +181,19 @@
             "change someone's life",
             "change the world"
           ]
+        },
+        {
+          "type": "verb + preposition",
+          "items": [
+            "change something into something",
+            "change something to something"
+          ]
         }
       ],
       "synonyms": [
         {
           "slug": "alter-v",
-          "note": "more formal, often a small change"
+          "note": null
         },
         {
           "slug": "turn-into-phrv",
@@ -216,7 +224,7 @@
       "n": 3,
       "signpost": "replace",
       "definition": "stop having or using one thing and start having or using another of the same kind",
-      "explanation": "With some nouns, such as **jobs**, **seats**, **schools**, and **trains**, the meaning *leave one and take another of the same kind* uses a plural noun with no **the**: *change jobs*. Other nouns stay singular: *change a tire*.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -278,7 +286,7 @@
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "With some nouns English uses a plural when one thing replaces another of the same kind: *change trains*, *change jobs*, *change seats*.",
+        "grammar": null,
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -515,7 +523,41 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "change-for-the-better",
+      "text": "change for the better",
+      "definition": "become better than before",
+      "explanation": "The opposite is *change for the worse*.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Since she started the new job, her life has changed for the better.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Her health has changed for the better since she moved to the coast.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
       "slug": "change-n",
@@ -571,7 +613,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-23T18:47:25Z",
-    "modified": "2026-11-01T06:58:59Z",
+    "modified": "2026-11-01T13:11:35Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260923T184257Z-zd7zll",
     "reviews": [
@@ -613,6 +655,26 @@
         "file": "reviews/20260929T184404Z-y7kyhk/change-v.json",
         "ok": 72,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261101T130521Z-vt44yo",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-01",
+        "file": "reviews/20261101T130521Z-vt44yo/change-v.json",
+        "ok": 69,
+        "issues": 10,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261101T130521Z-vt44yo",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-01",
+        "file": "reviews/20261101T130521Z-vt44yo/change-v.json",
+        "ok": 76,
+        "issues": 3,
         "blocking": 0
       }
     ],
