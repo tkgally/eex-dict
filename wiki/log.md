@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-01] closure | six nouns, actress to auntie
+
+Run 20261101T072059Z-u4ndlj, cycle 4. The `closure` source was empty, so six `family` rows were built: `actress-n`, `attachment-n`, `attacker-n`, `attendance-n`, `attraction-n`, `auntie-n` (with the spelling variant *aunty*). All 12 transcriptions verified. Panel: 11 issues, 5 blocking; 11 applied, 0 rejected. Blocking: `attacker-n` defined with *attacks* (circular); two physics claims in `attraction-n` examples (replaced with classroom examples); a regional fact stated twice in `auntie-n`. Coverage: `attachment-n` sense 4 *joining* (formal), `attacker-n` computing subsense 1a. `attendance-n` has phrase *in attendance* and a false-friends note on *assistance*. Reviewer B returned an unreadable reply for `auntie-n`; re-run with `--roles reviewer-b`, clean. Two NO-SENSE back-links placed by hand (`actor-n`, `victim-n`). Spend US$0.18.
+
 ## [2026-11-01] build | eight band-2 verbs, shower to soak
 
 Run 20261101T070948Z-u4ndlj, cycle 3. Built `shower-v`, `signal-v`, `sink-v`, `slice-v`, `slip-v`, `snap-v`, `sniff-v`, `soak-v` (eight, not twelve, to leave room in the run); all 16 transcriptions verified; `sink` and `signal` forms from the exceptions table and rules. Panel: 42 issues, 9 blocking; 34 applied, 8 rejected, 0 escalated. Blocking applied: `shower-v` defined without the noun; `sink-v` new sense *ruin* (*the scandal sank his campaign*); finger-snapping moved to `snap-v` subsense 3a. Coverage added: `sink-v` sense *dig* split from *push in*, phrase *sink or swim*; `slice-v` sport sense; `slip-v` sense 7 *slip into bad habits*; `sniff-v` *sniff at the offer* and phrase *not to be sniffed at*. Rejected: *your heart sinks*, *slip someone's mind* (keyword rule; `mind-n` has it, see_also added), *let something slip* (first verb `let`), `usually passive` as a pattern (closed value), a format objection to the script-written inflection note. 10 NO-SENSE back-links placed by hand. Spend US$0.29.
