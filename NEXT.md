@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-01 by run 20261101T184347Z-bzdywi, cycle 1 (lint).*
+*Rewritten 2026-11-01 by run 20261101T184926Z-bzdywi, cycle 2 (review).*
 
 ## State
 
 - 3,527 entries, all `reviewed` (band-2 verbs built through `swear-v`, 2026-11-01). Site checked 2026-10-31 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows voted at each lint (latest [2026-11-01](experiments/band-vote-2026-11-01/README.md), 133 rows); newer rows stay `unbanded` until the next vote.
-- Spend 2026-11-01: US$2.87 of US$15 so far. Originality: last 2026-10-31 (two rewrites), next due in twenty runs.
+- Spend 2026-11-01: US$3.06 of US$15 so far. Originality: last 2026-10-31 (two rewrites), next due in twenty runs.
 - Reviewer A is a Claude model via headless `claude -p`, $0 ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)); a failed call: re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -14,7 +14,7 @@
 0. **The owner's rulings of 2026-10-24** (`inbox/archive/20261024_owner_rulings.txt`; status table [owner-rulings-2026-10-24](wiki/decisions/owner-rulings-2026-10-24.md)). Left for the Routine, in this order:
    1. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates. Type mismatches such as `alone-adj`/`lonely-adj` belong here (904 pairs listed 2026-11-01). Five forward references name no real sense: `also-adv`/`too-adv` to `well-adv`, `look-after-phrv` to `look-v`, `slightly-adv` to `bit-n`, `whatever-pron` to `matter-n`.
    2. **Build**: milestone 1 done; now closure ([build-order](wiki/decisions/build-order.md)).
-   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by senses and subsenses, skipping those read since 2026-10-24; 136 done, the last `feeling-n`, `change-v`, `world-n`; next the unread six-sense entries (`wing-n`, `wide-adj`, `weight-n`, `use-v`, ...), then the five-sense ones; check a new sense against the entry's subsenses before adding it), then the backlog by band.
+   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by senses and subsenses, skipping those read since 2026-10-24; 139 done, the last `wing-n`, `wide-adj`, `weight-n`; next the 63 unread six-sense entries (`use-v`, `unit-n`, `turn-n`, `true-adj`, ...), then the five-sense ones; check a new sense against the entry's subsenses before adding it), then the backlog by band.
    4. **Weekly digest**: written 2026-10-31; next when `signals.digest_due`. Entry reports: pre-flight step 5.
 1. **build**: band-2 verbs next in queue order (through `swear`; `phone-in-phrv`, `plug-away-phrv`, `chord-n` queued). Add *strike a balance* to `balance-n`, *strike fear into someone* to `fear-n`, *stare someone in the face* to `face-n`, *suspend disbelief* to `disbelief-n` when reviewed; give `chord-n` *strike a chord* and `pose-n` *strike a pose* when built. Give `toast-n`, when built, *propose a toast*; add *reserve the right to* to `right-n` when reviewed. Add *let's face it*, *let rip*, *let something slip* to `let-v` and *keep someone posted* to `keep-v` when next reviewed (keyword rule; rejected for `face-v`, `post-v`). Panel in chunks of four; place `NO-SENSE` pairs by hand. Follow house rules 16 and 18; phrasal verbs get `separable` codes when next reviewed (B4 i).
 2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
