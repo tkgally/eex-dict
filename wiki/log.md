@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-01] build | six band-2 verbs, award to react
+
+Run 20261101T185852Z-bzdywi, cycle 3 (six of twelve allowed). Built `award-v`, `ban-v` (synonym discrimination *ban*/*forbid*/*prohibit*), `curse-v` (subsense 3a *be cursed with*), `expose-v` (subsense 2a *expose someone to new ideas*; phrase *expose yourself*), `pressure-v`, `react-v` (four senses). Panel: 30 issues, 5 blocking; 28 applied, 2 rejected (optional syllable periods in IPA). Notable fixes: *pressurize* is a separate verb, not a British variant; `rush-v` and `pressure-v` now *compare*, not synonyms (both sides changed); `curse-v` 3a defined as an active verb; `react-v` sense 4 redefined. Three definition words outside the vocabulary (*honor*, *sexual*, *rash*) reworded. Eight NO-SENSE pairs: seven placed by hand (`allow-v`, `permit-v`, `bless-v`, `cover-v`, `hide-v`, `push-v`, `force-v`), `give-v` dropped from `award-v`. Six family rows queued. Spend US$0.20.
+
 ## [2026-11-01] review | coverage pass: wing, wide, weight
 
 Run 20261101T184926Z-bzdywi, cycle 2. Coverage reading of three six-sense band-1 entries unread since 2026-10-24 (139 done). Added: `wing-n` subsense 1a (wings eaten as food), sense 7 (British car wing, compare `fender-n`), phrase *clip someone's wings*; `wide-adj` subsense 3a (*wide support*, *a wider audience*); `weight-n` subsense 3a (scale weights), phrases *throw your weight behind something*, *take the weight off your feet*, *punch above your weight*, *dead weight*. Fixed: `wing-n` sense 1 said "one of the two" (insects have four); duplicated facts removed (`wide-adj` usage note, `weight-n` adaptation note); `wide-adj` *wideness* learner error dropped. Panel: 43 issues, 10 blocking; 37 applied, 6 rejected (*wide of the mark* belongs under `mark-n`; *went wide* is copular *go* plus adjective). Queued `fender-n`, `wing-v`, `winger-n`. Spend US$0.18.
