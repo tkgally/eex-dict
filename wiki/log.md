@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-01] build | twelve band-2 verbs, specialize to struggle
+
+Run 20261101T124420Z-vt44yo, cycle 1. Built `specialize-v` (British variant *specialise*), `spin-v`, `spoil-v`, `spray-v`, `squeeze-v`, `stare-v`, `state-v`, `store-v`, `straighten-v`, `stress-v`, `strike-v` (eleven senses, phrase *strike it rich*), `struggle-v`. All 24 transcriptions and all inflections verified. Panel: 87 issues, 9 blocking; 61 applied, 26 rejected, 0 escalated. Applied: a sports subsense for `spin-v`, generic adaptation notes removed (`spin-v`, `spoil-v`, `strike-v`), two misplaced examples (`stress-v`, `strike-v`), wider definitions (`squeeze-v`, `struggle-v`, `straighten-v`). Rejected: idioms whose keyword is a noun (*strike a chord*, *strike a balance*, *strike fear into*, *stare someone in the face*) and reviewer B's request to hand-mark *struck*. Queued `chord-n`. Ten NO-SENSE back-links placed by hand; `light-v` and `make-v` synonyms dropped from `strike-v`. Spend US$0.43.
+
 ## [2026-11-01] closure | six nouns, actress to auntie
 
 Run 20261101T072059Z-u4ndlj, cycle 4. The `closure` source was empty, so six `family` rows were built: `actress-n`, `attachment-n`, `attacker-n`, `attendance-n`, `attraction-n`, `auntie-n` (with the spelling variant *aunty*). All 12 transcriptions verified. Panel: 11 issues, 5 blocking; 11 applied, 0 rejected. Blocking: `attacker-n` defined with *attacks* (circular); two physics claims in `attraction-n` examples (replaced with classroom examples); a regional fact stated twice in `auntie-n`. Coverage: `attachment-n` sense 4 *joining* (formal), `attacker-n` computing subsense 1a. `attendance-n` has phrase *in attendance* and a false-friends note on *assistance*. Reviewer B returned an unreadable reply for `auntie-n`; re-run with `--roles reviewer-b`, clean. Two NO-SENSE back-links placed by hand (`actor-n`, `victim-n`). Spend US$0.18.
