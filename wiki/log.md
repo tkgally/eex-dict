@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] review | coverage pass: use, unit, turn, true
+
+Run 20261102T011038Z-gk88ch, cycle 3. Coverage reading of four six-sense band-1 entries unread since 2026-10-24 (143 done). Added: `use-v` subsense 1a (use the time or a chance); `unit-n` sense 7 (a single product sold, *unit price*); `turn-n` phrases *on the turn* (British) and *one good turn deserves another*; `true-adj` sense 7 (*true of*, *hold true*) and sense 8 (*True, but...*), sense 2 widened to *a true professional*. Fixed: a checkable-fact example and British *kitchen units* in `unit-n`; *turn at something* and *miss a turn* misplaced in `turn-n`; `true-adj` sense 1 wrongly coded not gradable; duplicated notes removed in all four; `lesson-n`/`unit-n` moved to *compare* on both sides. Panel: 3 blocking, all applied; 67 decisions, 42 applied, 25 rejected (keyword rule: *too good to be true*, *ring true*, *true to form*). Spend US$0.26.
+
 ## [2026-11-02] build | seven band-2 verbs, review to tip
 
 Run 20261102T005045Z-gk88ch, cycle 2 (seven of twelve allowed). Built `review-v` (American *study again* sense, synonym `revise-v`), `sweat-v` (cooking sense; phrases *sweat it out*, *don't sweat it*; exceptions line for the American past *sweat*), `tackle-v`, `tag-v` (graffiti and baseball uses), `tap-v` (light hit, screen, American *choose*), `tap-v-2` (new homograph: use a supply, a phone, liquid, ask for money), `tip-v`. `tap-n`'s word family now points to `tap-v-2`, and its duplicated usage and adaptation notes were trimmed. Two panel passes: 4 blocking issues, all applied; 66 decisions, 49 applied, 17 rejected (keyword rule for *tip the balance*, *sweat blood*; no closed pattern for intransitive use). NO-SENSE: `assess-v`, `deal-with-phrv` placed by hand; `use-v`, `lean-v` dropped as synonyms. Spend US$0.38.
