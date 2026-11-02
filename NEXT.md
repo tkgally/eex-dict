@@ -1,10 +1,10 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-02 by run 20261102T070821Z-46ckbn, cycle 3 (build).*
+*Rewritten 2026-11-02 by run 20261102T071704Z-46ckbn, cycle 4 (site).*
 
 ## State
 
-- 3,560 entries, all `reviewed`. Site checked 2026-10-31 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source gave three rows on 2026-11-02; `family` and `crossref` rows follow. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
+- 3,560 entries, all `reviewed`. Site checked 2026-11-02 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source gave three rows on 2026-11-02; `family` and `crossref` rows follow. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows voted at each lint (latest [2026-11-01](experiments/band-vote-2026-11-01/README.md)); newer rows stay `unbanded` until then.
 - Spend 2026-11-02: US$1.55 of US$15 so far. Originality: last 2026-11-02 (rewrote `character-n`); next in twenty runs.
 - Reviewer A is a Claude model via headless `claude -p`, $0 ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)); a failed call: re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
