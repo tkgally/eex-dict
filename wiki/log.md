@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] build | seven band-2 verbs, review to tip
+
+Run 20261102T005045Z-gk88ch, cycle 2 (seven of twelve allowed). Built `review-v` (American *study again* sense, synonym `revise-v`), `sweat-v` (cooking sense; phrases *sweat it out*, *don't sweat it*; exceptions line for the American past *sweat*), `tackle-v`, `tag-v` (graffiti and baseball uses), `tap-v` (light hit, screen, American *choose*), `tap-v-2` (new homograph: use a supply, a phone, liquid, ask for money), `tip-v`. `tap-n`'s word family now points to `tap-v-2`, and its duplicated usage and adaptation notes were trimmed. Two panel passes: 4 blocking issues, all applied; 66 decisions, 49 applied, 17 rejected (keyword rule for *tip the balance*, *sweat blood*; no closed pattern for intransitive use). NO-SENSE: `assess-v`, `deal-with-phrv` placed by hand; `use-v`, `lean-v` dropped as synonyms. Spend US$0.38.
+
 ## [2026-11-02] originality | twentieth-run check: one rewrite, character-n
 
 Run 20261102T004425Z-gk88ch, cycle 1 (forced: run 640 is a multiple of 20). Pre-flight clean: no open pull requests, no orphan branches, inbox empty, no entry reports. Sampled 10 fields; exact-phrase search found no match for any. The reviewer question went to reviewer-b for the first time (`openrouter.py --role reviewer-b`, as `NEXT.md` asked): 9 original, 1 cannot tell. It quoted Oxford learner's *character* sense 1 under an *original* answer; search confirmed that wording, and ours was a close paraphrase. Verdicts: 6 original, 3 generic-overlap, 1 rewrite. Rewrote `character-n` senses 1 and 2 (same frame), keeping sense 1 clear of the *personality* synonym note. Panel: 9 issues, 0 blocking; 3 minor applied (television in sense 4, a null phrase explanation, a double colon), 6 rejected. Spend US$0.06.
