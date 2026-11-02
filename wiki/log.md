@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] closure | ten nouns and an adjective, missile to baker
+
+Run 20261102T064420Z-46ckbn, cycle 1. Built three closure words (`missile-n`, `rocket-n` with *it's not rocket science*, `offensive-adj` with an American sports stress variant), the three hand-claimed homographs (`bat-n-2` the animal, `pound-n-2` for animals and cars, `bit-n-2` computing), and four family rows (`average-n` with *on average*, `background-n`, `backyard-n`, `baker-n` with *a baker's dozen*). Panel: 0 blocking; 32 decisions, 27 applied, 5 rejected (phrases named as words take double marks; a form restriction stays in `explanation`). Homograph adaptation notes that only restated the split were removed. Salad-leaf *rocket* (British) needs a hand-claimed `rocket-n-2`; the queue has no homograph column. NO-SENSE pairs placed by hand: `rude-adj` synonym, `garden-n` compare; `shelter-n` dropped (no animal-shelter sense). Spend US$0.32.
+
 ## [2026-11-02] build | four band-2 verbs, toss to trap
 
 Run 20261102T012132Z-gk88ch, cycle 4 (four of twelve allowed). Built `toss-v` (coin, cooking, American *throw away*; phrase *toss and turn*), `tour-v`, `track-v` (online tracking subsense; American *track mud into the house*), `trap-v` (being trapped first, subsense *feel trapped*, British *trap your finger*). Panel: 1 blocking issue (raised twice: `trap-v` 2a defined a passive state, not the verb), applied; 28 decisions, 23 applied, 5 rejected (phrase marks per style guide 6; *usually passive* is a closed pattern; *toss around* is a phrasal verb). `track-v` sense 1 widened to things. Five NO-SENSE back-links placed by hand: `throw-v`, `throw-away-phrv`, `visit-v` (compare), `follow-v`, `catch-v`. Spend US$0.15.
