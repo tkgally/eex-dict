@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] lint | ninety-eighth pass
+
+Run 20261102T124658Z-rscqyg, cycle 1. Pre-flight clean: no open pull requests, no orphan branches, empty inbox, no entry reports. Caps, links, gates clean. `crossref.py --all --apply` wrote one back-link (`ground-n` into `background-n` word family); 9 NO-SENSE pairs: 4 placed by hand from this morning's verbs (`corner-v` as a synonym in `trap-v` sense 1; `revise-v` in `update-v` sense 1; *crop*/*trim* and *enter*/*type* made *compare* on both sides, as loose synonyms), 5 left for the C1 audit (unchanged). Five spent claim files pruned. Band vote on 48 unbanded rows (US$0.008), no wide splits ([record](../experiments/band-vote-2026-11-02/README.md)). Precision: no new switch-offs; reviewer B `pronunciation` down to 0.35 (8/23), nearest the line. Reports: 330 circular-definition candidates, 911 missing-sense pairs, 8 promises. Index and pages agree; no duplicate curator lines.
+
 ## [2026-11-02] site | build and check, 79 of 79
 
 Run 20261102T071704Z-46ckbn, cycle 4. `build_site.py` wrote 3,560 entries on 2,989 headword pages (6,623 files, no drafts withheld); `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on 2,995 pages. Nothing to fix. Spend US$0.
