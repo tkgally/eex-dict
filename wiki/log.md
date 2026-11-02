@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] build | six band-2 verbs, trick to update
+
+Run 20261102T070821Z-46ckbn, cycle 3. Built `trick-v` (*trick someone into doing something*, learner error *tricked me to sign*), `trim-v` (cut, make a little smaller, decorate, including American *trim the tree*), `trouble-v` (worry, polite *could I trouble you for*, health, *didn't trouble to*), `type-v` (keyboard; blood, technical), `unite-v`, `update-v` (verb stress *up-DATE*, first-syllable variant). Panel: 3 blocking, 1 applied (*get my hair trimmed* is a pattern of *get*), 2 rejected (reviewer B called *usually passive* a code; it is a verb pattern in the closed vocabulary); 26 decisions, 22 applied, 4 rejected. NO-SENSE pairs placed by hand in `reduce-v`, `disturb-v`, `write-v`, `combine-v`, `inform-v`; the loose `join-v` synonym dropped from `unite-v`. Spend US$0.17.
+
 ## [2026-11-02] review | coverage pass: touch, title, ticket, think
 
 Run 20261102T065740Z-46ckbn, cycle 2. Coverage reading of four six-sense band-1 entries unread since 2026-10-24 (147 done). Added: `touch-v` sense 7 (affect: *touches all of us*); `title-n` sense 7 (opening and end titles), subsense 4a (titles of old families), subsense 6a (American car title, moved out of an explanation); `ticket-n` phrase *write your own ticket*; `think-v` sense 7 (*be thought to be*, *think of someone as*), subsense 2a (*think of others*), phrase *think nothing of it*. Fixed: duplicated notes in `title-n` and `think-v` (negative rule now in one field); `ticket-n` paid/free contradiction; `handle-v`/`touch-v` synonym pair removed both ways. Panel: 5 blocking, all applied; 49 decisions, 44 applied, 5 rejected. NO-SENSE pairs placed by hand: `affect-v`, `credit-n`. Spend US$0.21.
