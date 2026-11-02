@@ -44,7 +44,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A study is the work of learning or finding out about something, or a place or a piece of work that comes from it.",
+  "core_idea": "**Study** is the work of learning or finding out about something; a study is also a piece of research, a subject taught at a college, a room for work, or a drawing made for practice.",
   "senses": [
     {
       "n": 1,
@@ -104,7 +104,47 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "careful looking at something in order to understand it or to decide about it",
+          "explanation": null,
+          "grammar": {
+            "countability": "uncountable",
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "The plan needs more study before we agree to it.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "After careful study of the map, we chose the shorter path.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "adjective + noun",
+              "items": [
+                "careful study",
+                "further study"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -116,7 +156,7 @@
     },
     {
       "n": 2,
-      "signpost": "time as a student",
+      "signpost": "as a student",
       "definition": "the work that a person does as a student at a college or university",
       "explanation": null,
       "grammar": {
@@ -247,6 +287,13 @@
             "a major study",
             "a detailed study"
           ]
+        },
+        {
+          "type": "noun + noun",
+          "items": [
+            "a case study",
+            "a research study"
+          ]
         }
       ],
       "synonyms": [
@@ -270,7 +317,7 @@
     {
       "n": 4,
       "signpost": "subject",
-      "definition": "a subject or group of subjects that people study, especially at a college or university",
+      "definition": "a subject or group of subjects taught at a college or university",
       "explanation": "Used in the names of subjects: *business studies*, *African studies*.",
       "grammar": {
         "countability": "plural only",
@@ -422,9 +469,7 @@
       "definition": "a very clear example of a particular quality or feeling",
       "explanation": null,
       "labels": {
-        "register": [
-          "literary"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -438,6 +483,43 @@
         },
         {
           "text": "The meeting was a study in bad planning.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "a-quick-study",
+      "text": "a quick study",
+      "definition": "a person who learns new things fast",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [
+          "American"
+        ],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "She's a quick study, so she'll know the job in a week.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "He wasn't a quick study, but he never forgot anything once he learned it.",
           "note": null,
           "pattern": null
         }
@@ -520,7 +602,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "\"study\": the research sense, the room, and the work of a student are often different words in other languages.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -529,7 +611,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-08T16:50:58Z",
-    "modified": "2026-10-24T01:22:29Z",
+    "modified": "2026-11-02T18:52:06Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261008T164430Z-ytfbyc",
     "reviews": [
@@ -572,6 +654,26 @@
         "ok": 80,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261102T184435Z-los030",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-02",
+        "file": "reviews/20261102T184435Z-los030/study-n.json",
+        "ok": 82,
+        "issues": 8,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261102T184435Z-los030",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-02",
+        "file": "reviews/20261102T184435Z-los030/study-n.json",
+        "ok": 86,
+        "issues": 3,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
