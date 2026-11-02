@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] originality | twentieth-run check: one rewrite, character-n
+
+Run 20261102T004425Z-gk88ch, cycle 1 (forced: run 640 is a multiple of 20). Pre-flight clean: no open pull requests, no orphan branches, inbox empty, no entry reports. Sampled 10 fields; exact-phrase search found no match for any. The reviewer question went to reviewer-b for the first time (`openrouter.py --role reviewer-b`, as `NEXT.md` asked): 9 original, 1 cannot tell. It quoted Oxford learner's *character* sense 1 under an *original* answer; search confirmed that wording, and ours was a close paraphrase. Verdicts: 6 original, 3 generic-overlap, 1 rewrite. Rewrote `character-n` senses 1 and 2 (same frame), keeping sense 1 clear of the *personality* synonym note. Panel: 9 issues, 0 blocking; 3 minor applied (television in sense 4, a null phrase explanation, a double colon), 6 rejected. Spend US$0.06.
+
 ## [2026-11-01] build | six band-2 verbs, award to react
 
 Run 20261101T185852Z-bzdywi, cycle 3 (six of twelve allowed). Built `award-v`, `ban-v` (synonym discrimination *ban*/*forbid*/*prohibit*), `curse-v` (subsense 3a *be cursed with*), `expose-v` (subsense 2a *expose someone to new ideas*; phrase *expose yourself*), `pressure-v`, `react-v` (four senses). Panel: 30 issues, 5 blocking; 28 applied, 2 rejected (optional syllable periods in IPA). Notable fixes: *pressurize* is a separate verb, not a British variant; `rush-v` and `pressure-v` now *compare*, not synonyms (both sides changed); `curse-v` 3a defined as an active verb; `react-v` sense 4 redefined. Three definition words outside the vocabulary (*honor*, *sexual*, *rash*) reworded. Eight NO-SENSE pairs: seven placed by hand (`allow-v`, `permit-v`, `bless-v`, `cover-v`, `hide-v`, `push-v`, `force-v`), `give-v` dropped from `award-v`. Six family rows queued. Spend US$0.20.

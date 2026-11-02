@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-01 by run 20261101T185852Z-bzdywi, cycle 3 (build).*
+*Rewritten 2026-11-02 by run 20261102T004425Z-gk88ch, cycle 1 (originality).*
 
 ## State
 
 - 3,533 entries, all `reviewed` (latest band-2 verbs `award-v` to `react-v`). Site checked 2026-10-31 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source is empty, so `family` and `crossref` rows follow. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows voted at each lint (latest [2026-11-01](experiments/band-vote-2026-11-01/README.md), 133 rows); newer rows stay `unbanded` until the next vote.
-- Spend 2026-11-01: US$3.26 of US$15 so far. Originality: last 2026-10-31 (two rewrites), next due in twenty runs.
+- Spend 2026-11-02: US$0.06 of US$15 so far. Originality: last 2026-11-02 (rewrote `character-n`); next in twenty runs.
 - Reviewer A is a Claude model via headless `claude -p`, $0 ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)); a failed call: re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -17,11 +17,11 @@
    3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (begun 2026-10-25: band-1 content words by senses and subsenses, skipping those read since 2026-10-24; 139 done, the last `wing-n`, `wide-adj`, `weight-n`; next the 63 unread six-sense entries (`use-v`, `unit-n`, `turn-n`, `true-adj`, ...), then the five-sense ones; check a new sense against the entry's subsenses before adding it), then the backlog by band.
    4. **Weekly digest**: written 2026-10-31; next when `signals.digest_due`. Entry reports: pre-flight step 5.
 1. **build**: band-2 verbs next in queue order (built through `react`; `phone-in-phrv`, `plug-away-phrv`, `chord-n` queued). Add *strike a balance* to `balance-n`, *strike fear into someone* to `fear-n`, *stare someone in the face* to `face-n`, *suspend disbelief* to `disbelief-n` when reviewed; give `chord-n` *strike a chord* and `pose-n` *strike a pose* when built. Give `toast-n`, when built, *propose a toast*; add *reserve the right to* to `right-n` when reviewed. Add *let's face it*, *let rip*, *let something slip* to `let-v` and *keep someone posted* to `keep-v` when next reviewed (keyword rule; rejected for `face-v`, `post-v`). Panel in chunks; place `NO-SENSE` pairs by hand. Follow house rules 16 and 18; phrasal verbs get `separable` codes when next reviewed (B4 i).
-2. **originality**: ask reviewer-b (`openrouter.py --role reviewer-b`); it names sources without quoting them, so the search decides.
+2. **originality**: ask reviewer-b in one call; search any wording it quotes, whatever its verdict (2026-11-02: an *original* answer quoted the Oxford text behind the rewrite).
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type. Reviewer A: fix only clear minor issues; it calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `auntie-n` (2026-11-01); then queue order. Hand-claim `bat-n-2`, `pound-n-2`, `bit-n-2` (computing). Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); move *blow the whistle on* to `whistle-n`, add *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
 5. **lint**: every ten runs; last 2026-11-01 (ninety-seventh pass), next due in ten runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
-6. **Tooling notes still open** (`wiki/notes/`): fixes due for `lint-vocab-pos-guess-gap` and `pronounce-check-word-break`; seven more listed in `wiki/index.md`.
+6. **Tooling notes** (`wiki/notes/`): fixes due for `lint-vocab-pos-guess-gap`, `pronounce-check-word-break`; seven more in `wiki/index.md`.
 
 ## Fences (do not re-grind)
 
@@ -38,7 +38,7 @@
 
 ## For the owner
 
-- Latest run report: `journal/2026-11-01-4.md`. This week's digest: `journal/digest-2026-10-31.md` (ten entries to sample).
+- Latest report: `journal/2026-11-02.md`. Digest: `journal/digest-2026-10-31.md` (ten entries to sample).
 - Curator line still open: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; working assumption: allowed there until you rule.
 - `PROJECT.md` still says "two non-Anthropic reviewers" (reviewer A is Claude since your 2026-10-25 ruling); the charter line is yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); it stays off until you say. The new model caught all four planted IPA errors.
