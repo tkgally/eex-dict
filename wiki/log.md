@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] review | coverage pass: thin, taste, take off, system
+
+Run 20261102T130416Z-rscqyg, cycle 3. Coverage reading of four six-sense band-1 entries unread since 2026-10-24 (151 done). Added: `thin-adj` subsense 5a (thin air) and sense 7 (a thin voice); `take-off-phrv` subsense 1a (take the lid off), sense 7 (take a player off, a show off the air, someone off a medicine), sense 8 (British *take someone off*, imitate), and `separable` codes (B4 i); `system-n` subsenses 1a (solar and star systems) and 2a (*the metric system*, *a writing system*). Fixed: `thin-adj` core idea (distance *through*, not side to side); a science-fact example and British *transport* in `system-n`; an invented learner error and generic adaptation notes removed; duplicated notes in all four. `system-n` now *compare* with `model-n` and `network-n` both ways; `method-n`/`system-n` duplicate `see_also` removed both ways. Panel: 9 blocking, all applied; 48 decisions, 42 applied, 6 rejected. Spend US$0.26.
+
 ## [2026-11-02] build | six entries, review to urge
 
 Run 20261102T125222Z-rscqyg, cycle 2 (six of twelve allowed). Built `review-n` (four senses plus subsense 1a *literature review*; phrase *under review*), `sweater-n` (British *jumper*, which means a dress in American English), `flip-v` (seven senses: turn over, coin, switch, pages, *get angry*, American *flip houses*, American political *flip a seat*), `offend-v` (learner error *offensive*/*offended*; subsense 2a *offend against*), `trace-v` (five senses, finger tracing split from copying), `urge-v`. All transcriptions and inflections verified. Panel: 36 issues, 1 blocking (a crime-statistic example in `offend-v`, replaced); 34 applied, 2 rejected (the look-again sense of *review* stays first; *review* for study is countable too). Eleven NO-SENSE pairs placed by hand; `switch-v` dropped from `flip-v` (no on/off sense) and *flip*/*turn* made *compare* both ways. Queued `flip-off-phrv`, `flip-out-phrv`. Spend US$0.22.
