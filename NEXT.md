@@ -1,18 +1,18 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-02 by run 20261102T071704Z-46ckbn, cycle 4 (site).*
+*Rewritten 2026-11-02 by run 20261102T124658Z-rscqyg, cycle 1 (lint).*
 
 ## State
 
 - 3,560 entries, all `reviewed`. Site checked 2026-11-02 (79 of 79). **Milestone 1 has no queue rows left** (finished 2026-10-27); closure is open, bands 1 and 2 only (A3); the `closure` source gave three rows on 2026-11-02; `family` and `crossref` rows follow. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
-- Bands re-voted 2026-10-24; later rows voted at each lint (latest [2026-11-01](experiments/band-vote-2026-11-01/README.md)); newer rows stay `unbanded` until then.
-- Spend 2026-11-02: US$1.55 of US$15 so far. Originality: last 2026-11-02 (rewrote `character-n`); next in twenty runs.
+- Bands re-voted 2026-10-24; later rows voted at each lint (latest [2026-11-02](experiments/band-vote-2026-11-02/README.md)).
+- Spend 2026-11-02: US$1.56 of US$15 so far. Originality: last 2026-11-02 (rewrote `character-n`); next in twenty runs.
 - Reviewer A is a Claude model via headless `claude -p`, $0 ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)); a failed call: re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
 
 0. **The owner's rulings of 2026-10-24** (`inbox/archive/20261024_owner_rulings.txt`; status table [owner-rulings-2026-10-24](wiki/decisions/owner-rulings-2026-10-24.md)). Left for the Routine, in this order:
-   1. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates. Type mismatches such as `alone-adj`/`lonely-adj` belong here (904 pairs listed 2026-11-01). Five forward references name no real sense: `also-adv`/`too-adv` to `well-adv`, `look-after-phrv` to `look-v`, `slightly-adv` to `bit-n`, `whatever-pron` to `matter-n`.
+   1. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates. Type mismatches such as `alone-adj`/`lonely-adj` belong here (911 pairs listed 2026-11-02). Five forward references name no real sense: `also-adv`/`too-adv` to `well-adv`, `look-after-phrv` to `look-v`, `slightly-adv` to `bit-n`, `whatever-pron` to `matter-n`.
    2. **Build**: milestone 1 done; now closure ([build-order](wiki/decisions/build-order.md)).
    3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 147 done, the last `touch-v`, `title-n`, `ticket-n`, `think-v`; next the 55 unread six-sense entries (from `thin-adj` back), then the five-sense ones; check a new sense against the entry's subsenses before adding it), then the backlog by band.
    4. **Weekly digest**: written 2026-10-31; next when `signals.digest_due`. Entry reports: pre-flight step 5.
@@ -20,7 +20,7 @@
 2. **originality**: ask reviewer-b in one call; search any wording it quotes, whatever its verdict.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `baker-n` (2026-11-02); then queue order. Hand-claim `rocket-n-2` (salad leaf); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); move *blow the whistle on* to `whistle-n`, add *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
-5. **lint**: every ten runs; last 2026-11-01 (ninety-seventh pass), next due in ten runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
+5. **lint**: every ten runs; last 2026-11-02 (ninety-eighth pass), next due in ten runs. Reviewer B `pronunciation` (0.35) is nearest the line. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
 6. **Tooling notes** (`wiki/notes/`): fixes due for `lint-vocab-pos-guess-gap`, `pronounce-check-word-break`; seven more in `wiki/index.md`.
 
 ## Fences (do not re-grind)
