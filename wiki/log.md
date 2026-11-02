@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] build | five band-2 verbs, value to wander
+
+Run 20261102T131354Z-rscqyg, cycle 4 (five of twelve allowed). Built `value-v` (think important; judge worth), `vary-v` (be different, change, make different; American *vary*/*very* sound note), `view-v` (think of, look at, on a screen, watch, a house to buy or rent), `volunteer-v` (offer, work for free, tell unasked, informal *volunteer someone*), `wander-v` (walk, stray, thoughts with subsense *wander from the point*, a winding path; *wander*/*wonder* sound note). All transcriptions and inflections verified. Panel: 32 issues, 1 blocking (the respelling *WON-der* has the vowel of *sun*; now *WAHN-der*), applied; 30 applied, 2 rejected (*vary*/*range* are true synonyms; the screen and show senses of *view* stay apart). Six NO-SENSE pairs placed by hand (`respect-v`, `differ-v`, `change-v`, `regard-v`, `consider-v`, `see-v`); *range*/*wander* made *compare* both ways; duplicate `differ-v`/`vary-v` see-also removed. Spend US$0.18.
+
 ## [2026-11-02] review | coverage pass: thin, taste, take off, system
 
 Run 20261102T130416Z-rscqyg, cycle 3. Coverage reading of four six-sense band-1 entries unread since 2026-10-24 (151 done). Added: `thin-adj` subsense 5a (thin air) and sense 7 (a thin voice); `take-off-phrv` subsense 1a (take the lid off), sense 7 (take a player off, a show off the air, someone off a medicine), sense 8 (British *take someone off*, imitate), and `separable` codes (B4 i); `system-n` subsenses 1a (solar and star systems) and 2a (*the metric system*, *a writing system*). Fixed: `thin-adj` core idea (distance *through*, not side to side); a science-fact example and British *transport* in `system-n`; an invented learner error and generic adaptation notes removed; duplicated notes in all four. `system-n` now *compare* with `model-n` and `network-n` both ways; `method-n`/`system-n` duplicate `see_also` removed both ways. Panel: 9 blocking, all applied; 48 decisions, 42 applied, 6 rejected. Spend US$0.26.
