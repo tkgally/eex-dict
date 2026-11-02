@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] closure | five nouns, ban to banking
+
+Run 20261102T190556Z-los030, cycle 3 (five of twelve allowed). The `closure` source had no rows left; built five `family` rows: `ban-n` (an official rule; an order keeping someone out of a sport or a place; learner error *ban on*), `bang-n` (noise, hit, American *bangs* for hair, with *fringe* as the British word; phrases *with a bang* and American *more bang for your buck*), `bank-holiday-n` (British; a culture note that it is not a holiday for banks only), `banker-n` (in a bank, in a game), `banking-n` (the business, using a bank). All transcriptions and inflections verified; `bank-holiday-n` now marks secondary stress on *bank*, as other compounds do. Panel: 11 issues, 0 blocking, all applied (a lifetime ban did not fit "for a period of time"; collocation types; the American word for a bank holiday). Spend US$0.14.
+
 ## [2026-11-02] build | six band-2 verbs, waste to wreck
 
 Run 20261102T185448Z-los030, cycle 2 (six of twelve allowed). Built `waste-v` (use badly, a chance, *be wasted on*, American slang *kill*; saying *waste not, want not*), `welcome-v` (a guest, a decision, let in), `wind-v` (the *find* verb: road or river, wrap, a clock, turn a handle; past **wound**), `withdraw-v` (money, take back, soldiers, stop taking part, from people, move back with subsense 6a *leave a room*), `witness-v` (see, a time or place, a signature), `wreck-v` (destroy with subsense 1a *a ship*, spoil). All transcriptions and inflections verified; the `wind` exceptions-table note now marks its words. Panel: 64 issues, 8 blocking, all applied (wrong *usually passive* patterns on four senses; *wind your way* coded intransitive). 53 applied, 11 rejected (the site marks the listed form **wound**; idioms keyed on *time* and *breath*; no *nautical* domain). Seven NO-SENSE pairs placed by hand; *greet*/*welcome* made *compare* both ways. Spend US$0.24.
