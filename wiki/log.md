@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] build | six entries, review to urge
+
+Run 20261102T125222Z-rscqyg, cycle 2 (six of twelve allowed). Built `review-n` (four senses plus subsense 1a *literature review*; phrase *under review*), `sweater-n` (British *jumper*, which means a dress in American English), `flip-v` (seven senses: turn over, coin, switch, pages, *get angry*, American *flip houses*, American political *flip a seat*), `offend-v` (learner error *offensive*/*offended*; subsense 2a *offend against*), `trace-v` (five senses, finger tracing split from copying), `urge-v`. All transcriptions and inflections verified. Panel: 36 issues, 1 blocking (a crime-statistic example in `offend-v`, replaced); 34 applied, 2 rejected (the look-again sense of *review* stays first; *review* for study is countable too). Eleven NO-SENSE pairs placed by hand; `switch-v` dropped from `flip-v` (no on/off sense) and *flip*/*turn* made *compare* both ways. Queued `flip-off-phrv`, `flip-out-phrv`. Spend US$0.22.
+
 ## [2026-11-02] lint | ninety-eighth pass
 
 Run 20261102T124658Z-rscqyg, cycle 1. Pre-flight clean: no open pull requests, no orphan branches, empty inbox, no entry reports. Caps, links, gates clean. `crossref.py --all --apply` wrote one back-link (`ground-n` into `background-n` word family); 9 NO-SENSE pairs: 4 placed by hand from this morning's verbs (`corner-v` as a synonym in `trap-v` sense 1; `revise-v` in `update-v` sense 1; *crop*/*trim* and *enter*/*type* made *compare* on both sides, as loose synonyms), 5 left for the C1 audit (unchanged). Five spent claim files pruned. Band vote on 48 unbanded rows (US$0.008), no wide splits ([record](../experiments/band-vote-2026-11-02/README.md)). Precision: no new switch-offs; reviewer B `pronunciation` down to 0.35 (8/23), nearest the line. Reports: 330 circular-definition candidates, 911 missing-sense pairs, 8 promises. Index and pages agree; no duplicate curator lines.
