@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] review | coverage pass: touch, title, ticket, think
+
+Run 20261102T065740Z-46ckbn, cycle 2. Coverage reading of four six-sense band-1 entries unread since 2026-10-24 (147 done). Added: `touch-v` sense 7 (affect: *touches all of us*); `title-n` sense 7 (opening and end titles), subsense 4a (titles of old families), subsense 6a (American car title, moved out of an explanation); `ticket-n` phrase *write your own ticket*; `think-v` sense 7 (*be thought to be*, *think of someone as*), subsense 2a (*think of others*), phrase *think nothing of it*. Fixed: duplicated notes in `title-n` and `think-v` (negative rule now in one field); `ticket-n` paid/free contradiction; `handle-v`/`touch-v` synonym pair removed both ways. Panel: 5 blocking, all applied; 49 decisions, 44 applied, 5 rejected. NO-SENSE pairs placed by hand: `affect-v`, `credit-n`. Spend US$0.21.
+
 ## [2026-11-02] closure | ten nouns and an adjective, missile to baker
 
 Run 20261102T064420Z-46ckbn, cycle 1. Built three closure words (`missile-n`, `rocket-n` with *it's not rocket science*, `offensive-adj` with an American sports stress variant), the three hand-claimed homographs (`bat-n-2` the animal, `pound-n-2` for animals and cars, `bit-n-2` computing), and four family rows (`average-n` with *on average*, `background-n`, `backyard-n`, `baker-n` with *a baker's dozen*). Panel: 0 blocking; 32 decisions, 27 applied, 5 rejected (phrases named as words take double marks; a form restriction stays in `explanation`). Homograph adaptation notes that only restated the split were removed. Salad-leaf *rocket* (British) needs a hand-claimed `rocket-n-2`; the queue has no homograph column. NO-SENSE pairs placed by hand: `rude-adj` synonym, `garden-n` compare; `shelter-n` dropped (no animal-shelter sense). Spend US$0.32.
