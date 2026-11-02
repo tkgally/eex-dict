@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] site | build and check, 79 of 79
+
+Run 20261102T071704Z-46ckbn, cycle 4. `build_site.py` wrote 3,560 entries on 2,989 headword pages (6,623 files, no drafts withheld); `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on 2,995 pages. Nothing to fix. Spend US$0.
+
 ## [2026-11-02] build | six band-2 verbs, trick to update
 
 Run 20261102T070821Z-46ckbn, cycle 3. Built `trick-v` (*trick someone into doing something*, learner error *tricked me to sign*), `trim-v` (cut, make a little smaller, decorate, including American *trim the tree*), `trouble-v` (worry, polite *could I trouble you for*, health, *didn't trouble to*), `type-v` (keyboard; blood, technical), `unite-v`, `update-v` (verb stress *up-DATE*, first-syllable variant). Panel: 3 blocking, 1 applied (*get my hair trimmed* is a pattern of *get*), 2 rejected (reviewer B called *usually passive* a code; it is a verb pattern in the closed vocabulary); 26 decisions, 22 applied, 4 rejected. NO-SENSE pairs placed by hand in `reduce-v`, `disturb-v`, `write-v`, `combine-v`, `inform-v`; the loose `join-v` synonym dropped from `unite-v`. Spend US$0.17.
