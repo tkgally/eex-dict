@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] build | four entries, yell to administration
+
+Run 20261102T191257Z-los030, cycle 4 (four of twelve allowed). Built `yell-v` (shout; speak angrily, *yell at*; usage note on *yell to*), the last band-2 verb in the queue, then the first band-2 nouns in queue order: `absence-n` (being away; not existing; phrases *in someone's absence* and *absence makes the heart grow fonder*), `ache-n` (a dull pain; a sad feeling; compounds and the British *I've got toothache* in the usage note), `administration-n` (running something, the people, an American government, giving or carrying out). American `administration-n` corrected to *ədˌmɪn.əˈstreɪ.ʃən* after a disputed first check; all transcriptions and inflections verified. Panel: 17 issues, 0 blocking; 15 applied, 2 rejected (the scolding sense of *yell* stays a sense; *leave of absence* keys on *leave*). `government-n` placed by hand; *pain*/*ache* now synonyms both ways. Spend US$0.12.
+
 ## [2026-11-02] closure | five nouns, ban to banking
 
 Run 20261102T190556Z-los030, cycle 3 (five of twelve allowed). The `closure` source had no rows left; built five `family` rows: `ban-n` (an official rule; an order keeping someone out of a sport or a place; learner error *ban on*), `bang-n` (noise, hit, American *bangs* for hair, with *fringe* as the British word; phrases *with a bang* and American *more bang for your buck*), `bank-holiday-n` (British; a culture note that it is not a holiday for banks only), `banker-n` (in a bank, in a game), `banking-n` (the business, using a bank). All transcriptions and inflections verified; `bank-holiday-n` now marks secondary stress on *bank*, as other compounds do. Panel: 11 issues, 0 blocking, all applied (a lifetime ban did not fit "for a period of time"; collocation types; the American word for a bank holiday). Spend US$0.14.
