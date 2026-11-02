@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-02] build | four band-2 verbs, toss to trap
+
+Run 20261102T012132Z-gk88ch, cycle 4 (four of twelve allowed). Built `toss-v` (coin, cooking, American *throw away*; phrase *toss and turn*), `tour-v`, `track-v` (online tracking subsense; American *track mud into the house*), `trap-v` (being trapped first, subsense *feel trapped*, British *trap your finger*). Panel: 1 blocking issue (raised twice: `trap-v` 2a defined a passive state, not the verb), applied; 28 decisions, 23 applied, 5 rejected (phrase marks per style guide 6; *usually passive* is a closed pattern; *toss around* is a phrasal verb). `track-v` sense 1 widened to things. Five NO-SENSE back-links placed by hand: `throw-v`, `throw-away-phrv`, `visit-v` (compare), `follow-v`, `catch-v`. Spend US$0.15.
+
 ## [2026-11-02] review | coverage pass: use, unit, turn, true
 
 Run 20261102T011038Z-gk88ch, cycle 3. Coverage reading of four six-sense band-1 entries unread since 2026-10-24 (143 done). Added: `use-v` subsense 1a (use the time or a chance); `unit-n` sense 7 (a single product sold, *unit price*); `turn-n` phrases *on the turn* (British) and *one good turn deserves another*; `true-adj` sense 7 (*true of*, *hold true*) and sense 8 (*True, but...*), sense 2 widened to *a true professional*. Fixed: a checkable-fact example and British *kitchen units* in `unit-n`; *turn at something* and *miss a turn* misplaced in `turn-n`; `true-adj` sense 1 wrongly coded not gradable; duplicated notes removed in all four; `lesson-n`/`unit-n` moved to *compare* on both sides. Panel: 3 blocking, all applied; 67 decisions, 42 applied, 25 rejected (keyword rule: *too good to be true*, *ring true*, *true to form*). Spend US$0.26.
