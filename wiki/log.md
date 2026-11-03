@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] build | eight band-2 nouns: assault to athlete
+
+Run 20261103T030844Z-r05mxh, cycle 3. Built `assault-n`, `assessment-n`, `asset-n`, `assignment-n`, `assistance-n`, `association-n`, `assumption-n`, `athlete-n` (a smaller batch to leave room for the pipeline); inflections and 16 transcriptions verified. Panel: 14 issues, 0 blocking; all 14 applied. Added from coverage flags: `assessment-n` sense 3 (tax or value), `assignment-n` sense 3 (the act of assigning, *seat assignment*), both with core ideas. Also: `law` label off `assault-n` sense 1 (everyday attacks too); `assignment-n` sense 2 countable; `assumption-n` sense 2 uncountable; British *housing association* removed. Self-fix: *calculation* in `assessment-n` sense 3 was outside the defining vocabulary. Back-links placed by hand in `judgment-n`, `homework-n`, `organization-n`; `task-n` by the tool. Spend US$0.22.
+
 ## [2026-11-03] build | twelve band-2 words: deposit to aspect
 
 Run 20261103T025335Z-r05mxh, cycle 2. Built `deposit-v`, `insult-v`, `agent-n`, `anniversary-n`, `announcement-n`, `ant-n`, `anxiety-n`, `appeal-n`, `approach-n`, `arms-n`, `arrival-n`, `aspect-n`; inflections and all 24 transcriptions verified. Panel: 58 issues, 8 blocking; 50 applied, 8 rejected. Blocking: a false claim in `arms-n`'s usage note (*an arm* has other meanings); a spring example under a "something new" sense of `arrival-n`; `announcement-n` marked uncountable on an act-of example; `deposit-v` sense 2 labelled formal yet humorous; *a free agent* with its sports use hidden in an explanation. Added from coverage flags: `deposit-v` sense 2 (pay first), `agent-n` 1a (ticket agents), `arrival-n` 1a (*arrivals*) and 2a (baby). Rejected: hand marks the site makes, *be up in arms* as neutral, `aspect-n` direction as not British. Back-links placed by hand in `worry-n`, `stress-n`, `feature-n`; `birthday-n` still names `anniversary-n` as a synonym (C1 audit). Spend US$0.39.
