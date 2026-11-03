@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To place is to put someone or something in a position, a situation, or an order of importance.",
+  "core_idea": "To place is to put someone or something in a position or a situation, or to give something its place: an order, a bet, importance, or a position in a race.",
   "senses": [
     {
       "n": 1,
@@ -105,6 +105,10 @@
         {
           "slug": "set-v",
           "note": null
+        },
+        {
+          "slug": "position-v",
+          "note": null
         }
       ],
       "antonyms": [],
@@ -149,8 +153,8 @@
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "The children were placed in the care of their aunt.",
-          "note": "passive",
+          "text": "The storm placed the whole town in danger.",
+          "note": null,
           "pattern": "verb + object + preposition + object"
         }
       ],
@@ -159,7 +163,9 @@
           "type": "phrase",
           "items": [
             "place someone in danger",
-            "place someone under arrest"
+            "place someone under arrest",
+            "place pressure on someone",
+            "place limits on something"
           ]
         }
       ],
@@ -178,8 +184,8 @@
     },
     {
       "n": 3,
-      "signpost": "an order or an ad",
-      "definition": "make an order for something, or put an advertisement somewhere",
+      "signpost": "order or bet",
+      "definition": "make an order for something, put an advertisement somewhere, or risk money on the result of a race or a game",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -207,6 +213,11 @@
           "text": "They placed an ad in the local newspaper.",
           "note": null,
           "pattern": "verb + object"
+        },
+        {
+          "text": "He placed a bet on the black horse.",
+          "note": null,
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
@@ -214,7 +225,9 @@
           "type": "verb + noun",
           "items": [
             "place an order",
-            "place an ad"
+            "place an ad",
+            "place a bet",
+            "place a call"
           ]
         }
       ],
@@ -235,7 +248,7 @@
       "n": 4,
       "signpost": "recognize",
       "definition": "recognize someone and remember where you know them from",
-      "explanation": "Usually used with **can't** or **couldn't**.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -265,7 +278,15 @@
           "pattern": "verb + object"
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "can't place someone",
+            "couldn't place someone"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -282,7 +303,7 @@
     {
       "n": 5,
       "signpost": "importance",
-      "definition": "give something a particular amount of importance or value",
+      "definition": "give a particular amount of importance, value, or trust to something",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -378,12 +399,67 @@
           ]
         }
       ],
-      "synonyms": [
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 7,
+      "signpost": "home or job",
+      "definition": "find a suitable home, job, or school for someone",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object + preposition + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
         {
-          "slug": "position-v",
-          "note": null
+          "text": "The agency placed her with a family in the city.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "The children were placed in the care of their aunt.",
+          "note": "passive",
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "The college helps place its students in good jobs.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
         }
       ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "place someone with a family",
+            "place someone in a job"
+          ]
+        }
+      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -425,7 +501,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T19:55:11Z",
-    "modified": "2026-10-29T07:17:00Z",
+    "modified": "2026-11-03T07:03:06Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T195326Z-iujuq0",
     "reviews": [
@@ -467,6 +543,26 @@
         "file": "reviews/20260928T010625Z-jf8wvz/place-v.json",
         "ok": 70,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261103T065706Z-g0ufhy",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-03",
+        "file": "reviews/20261103T065706Z-g0ufhy/place-v.json",
+        "ok": 67,
+        "issues": 17,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261103T065706Z-g0ufhy",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-03",
+        "file": "reviews/20261103T065706Z-g0ufhy/place-v.json",
+        "ok": 77,
+        "issues": 4,
         "blocking": 0
       }
     ],
