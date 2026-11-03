@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] review | coverage pass: period, on, old, off
+
+Run 20261103T131257Z-dl6vln, cycle 3. Coverage reading of four six-sense band-1 entries (173 done). Added: `off-adv` sense 7 (*finish off*, *pay off*), `on-adv` sense 7 (*pass it on*), `period-n` *period costume* with collocations for the punctuation and game senses. Fixed: duplicated notes in `old-adj` (age with **be**, the politeness of **older**, kept once each); a preposition example in `off-adv` (*off this jar*); an invented learner error (*open off the light*); generic adaptation notes in `period-n` and `off-adv`; `old-adj` senses 3, 4, and 6 redefined. `fresh-adj`/`old-adj` antonym removed both ways. Panel: 44 issues, 4 blocking, all applied; 34 applied, 10 rejected (*go off*, *doze off* are phrasal verbs; *the same old* belongs under `same-adj`; *a three-year-old house* is not predicative). Spend US$0.24.
+
 ## [2026-11-03] build | twelve band-2 nouns: bay to bombing
 
 Run 20261103T125929Z-dl6vln, cycle 2. Built `bay-n`, `bear-n`, `beef-n`, `belly-n`, `belongings-n`, `bin-n`, `blouse-n`, `blow-n`, `blue-n`, `blueberry-n`, `board-game-n`, `bombing-n`; 24 transcriptions verified. `inflect.py` gave *blouse* the plural *blice* (its *louse* rule matched); fixed in data by adding `blouse` to `suffix_regular` in the exceptions table. Panel: 63 issues, 10 blocking; 59 applied, 4 rejected. Blocking: a toy-bear subsense added to `bear-n`, and `bear-v` removed from its family (unrelated homograph); the `blue-n` usage note was wrong about *the*; a music-history example was replaced; *out of the blue* moved from `blue-adj` to `blue-n` (noun keyword, both reviewers). By the same rule, *in black and white* may belong in `black-n`; rejected in cycle 1, so it is left for review. Spend US$0.34.
