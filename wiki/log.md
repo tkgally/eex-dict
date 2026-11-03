@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] lint | ninety-ninth pass
+
+Run 20261103T011616Z-pnlrgs, cycle 4. Caps, links, gates clean. `crossref.py --all --apply` wrote two back-links (`bank-n` into the word families of `bank-holiday-n` and `banker-n`); 11 NO-SENSE pairs: 6 placed by hand from the last two days' entries (`waste-v` sense 2 from `blow-v` and `throw-away-phrv`; `withdraw-v` sense 1 compare `draw-v`; `aid-n` sense 1 from `relief-n`; `yell-v` sense 1 from `roar-v`; `agenda-n` sense 1 compare `schedule-n`), 5 left for the C1 audit (unchanged). Six spent claim files pruned. Band vote on 42 unbanded rows (US$0.007), no wide splits ([record](../experiments/band-vote-2026-11-03/README.md)). Precision: no new switch-offs; reviewer B `pronunciation` up to 0.40. Reports: 330 circular-definition candidates, 923 missing-sense pairs. Index and pages agree; no duplicate curator lines; both open questions still await the owner.
+
 ## [2026-11-03] review | coverage pass: smart, small, serious, second
 
 Run 20261103T010614Z-pnlrgs, cycle 3. Coverage reading of four six-sense band-1 entries (163 done). Added: `smart-adj` sense 7 (British, *a smart pace*), technology sense moved to third; `small-adj` sense 7 (*in a small voice*) and *no small achievement*; `serious-adj` subsense 5a (*a serious candidate*, *a serious threat*); `second-n` senses 7 (British degree, *an upper second*) and 8 (support in a meeting, *Do I have a second?*), family `second-v`. Fixed: circular gear and *seconds* definitions; British *shop*, *have you got*, *change into second*; a misleading *small fortune* example; *attributive only* wrongly on small businesses; duplicated notes (smart, serious); an adverb learner error. Weak cross-references removed both ways (*slim*, *great*, *heavy*, *funny*, *rude*); three NO-SENSE pairs placed by hand. Panel: 56 issues, 5 blocking, all applied; 53 applied, 3 rejected (*a small fortune* keys on *fortune*; *the small hours* is under `hour-n`; dates are in `second-num`). Spend US$0.20.
