@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] build | eight band-2 nouns: bracelet to bride
+
+Run 20261103T191821Z-q07nf2, cycle 4. Built `bracelet-n`, `brake-n`, `breakdown-n`, `breakthrough-n`, `breast-n`, `breathing-n`, `breeze-n`, `bride-n` (eight, not twelve: the run's last cycle, kept short). All 16 transcriptions verified. Phrases: *put the brakes on something*, *shoot the breeze* (American, informal), *make a clean breast of something* (old-fashioned). Panel: 23 issues, none blocking; 19 applied, 4 rejected (*wrist* is outside the defining vocabulary; *breeze* in a phrase example needs no mark). Applied: `breast-n` reordered (bird sense before the literary chest sense, meat as a subsense); British compounds removed from `breakdown-n`; *has just got married* changed in `bride-n`. Lint: *wrist*, *occasion* reworded. Back-links placed by hand in `discovery-n` and `wind-n`; `breast-n` now compares `chest-n` (type mismatch). Spend US$0.22.
+
 ## [2026-11-03] review | coverage pass: note, lose, live, lead
 
 Run 20261103T190802Z-q07nf2, cycle 3. Coverage reading of four six-sense band-1 entries (177 done). Added: `note-n` subsense for a taste or smell (*notes of chocolate*); `lose-v` subsense *lost him friends* and senses for a clock and for getting away from someone; `live-v` sense *live for something*; `lead-v` subsense *easily led*, *lead by example*. `lead-v` senses reordered (cause and way of life before the road sense). Duplicated notes cut in all four (usage notes of `lose-v` and `lead-v` removed; the grade fact in `note-n` kept only as a false friend). *Lose a chance* dropped (it contradicted the *miss* learner error). Panel: 51 issues, 5 blocking, all applied; 43 applied, 8 rejected (*lose track of*, *lose touch* by the keyword rule; listed inflections need no marks; *live through* and *live on* queued as phrasal verbs). Spend US$0.23.
