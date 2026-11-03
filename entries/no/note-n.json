@@ -44,7 +44,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A note is something short: a short piece of writing, a single musical sound, or a small sign of a feeling.",
+  "core_idea": "A note is usually something small: a written message or record, a single musical sound, a piece of paper money, or a sign of a feeling.",
   "senses": [
     {
       "n": 1,
@@ -98,7 +98,8 @@
             "a short note",
             "a quick note",
             "a thank-you note",
-            "a sticky note"
+            "a sticky note",
+            "a doctor's note"
           ]
         }
       ],
@@ -127,7 +128,7 @@
     },
     {
       "n": 2,
-      "signpost": "to help you remember",
+      "signpost": "written record",
       "definition": "words that you write down to help you remember something, such as what was said in a class or a meeting",
       "explanation": null,
       "grammar": {
@@ -229,8 +230,7 @@
         {
           "type": "noun + preposition",
           "items": [
-            "a note on something",
-            "a note at the bottom of the page"
+            "a note on something"
           ]
         },
         {
@@ -364,13 +364,6 @@
             "a ten-pound note",
             "a twenty-pound note"
           ]
-        },
-        {
-          "type": "adjective + noun",
-          "items": [
-            "a new note",
-            "a used note"
-          ]
         }
       ],
       "synonyms": [
@@ -451,7 +444,36 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "a small taste or smell that can be noticed in food or drink",
+          "explanation": null,
+          "grammar": null,
+          "labels": null,
+          "examples": [
+            {
+              "text": "This coffee has notes of chocolate and orange.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The soup has a note of lemon.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "noun + preposition",
+              "items": [
+                "a note of something",
+                "notes of something"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -499,7 +521,7 @@
     {
       "sub_id": "compare-notes",
       "text": "compare notes",
-      "definition": "talk with someone about an experience you have both had, to see if it was the same",
+      "definition": "share information or opinions with someone about an experience you have both had",
       "explanation": null,
       "labels": {
         "register": [],
@@ -632,23 +654,10 @@
       "incorrect": "I took a note of his address.",
       "correct": "I made a note of his address.",
       "note": "Use **make a note of** for one thing you write down; **take notes** is for writing many things down, in a class or a meeting."
-    },
-    {
-      "incorrect": "I got a good note in math.",
-      "correct": "I got a good grade in math.",
-      "note": "For a result in a test, English says **grade** or, especially in British English, **mark**; **note** is not used."
     }
   ],
   "etymology": null,
   "see_also": [
-    {
-      "slug": "notebook-n",
-      "note": null
-    },
-    {
-      "slug": "message-n",
-      "note": null
-    },
     {
       "slug": "memo-n",
       "note": null
@@ -664,7 +673,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-06T01:14:25Z",
-    "modified": "2026-10-16T12:57:23Z",
+    "modified": "2026-11-03T19:14:07Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261006T011043Z-rm8z5o",
     "reviews": [
@@ -706,6 +715,26 @@
         "file": "reviews/20261016T124458Z-enf23s/note-n.json",
         "ok": 90,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261103T190802Z-q07nf2",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-03",
+        "file": "reviews/20261103T190802Z-q07nf2/note-n.json",
+        "ok": 80,
+        "issues": 12,
+        "blocking": 2
+      },
+      {
+        "run_id": "20261103T190802Z-q07nf2",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-03",
+        "file": "reviews/20261103T190802Z-q07nf2/note-n.json",
+        "ok": 87,
+        "issues": 5,
         "blocking": 0
       }
     ],
