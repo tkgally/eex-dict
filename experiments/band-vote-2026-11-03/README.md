@@ -1,3 +1,5 @@
 # Band vote, 2026-11-03 (unbanded rows)
 
 The ninety-ninth lint pass (run 20261103T011616Z-pnlrgs) ran `tools/band_vote.py run --unbanded` on the 42 queue rows that tools had queued since the last vote (US$0.007). `votes-unbanded.tsv` holds the three word-list votes and the lower median: 6 rows in band 2, 23 in band 3, 13 in band 4. No split was wider than one band, so nothing needed settling. `apply --votes votes-unbanded.tsv` turned all 42 rows to `pending` with their bands. None of them has an entry yet, so no entry needed restamping. The scale and the method are in [rebanding](../../wiki/decisions/rebanding.md).
+
+The hundredth lint pass (run 20261103T184509Z-q07nf2) voted on 26 more unbanded rows (US$0.005): 1 row in band 1, 10 in band 2, 13 in band 3, 1 in band 4, 1 in band 5 (`sunny-n`, a part-of-speech guess). One split was wider than one band: `real-adv` (votes 1, 2, 3), settled at 2 in `settled.tsv` (very common in informal American speech). It then queued `left-wing-adj` and `right-wing-adj` (promised by `wing-n`'s usage note) and voted on them (US$0.002; both band 3). The file now holds all 70 rows of the day.
