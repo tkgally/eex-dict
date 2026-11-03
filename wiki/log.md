@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] build | twelve band-2 nouns: bay to bombing
+
+Run 20261103T125929Z-dl6vln, cycle 2. Built `bay-n`, `bear-n`, `beef-n`, `belly-n`, `belongings-n`, `bin-n`, `blouse-n`, `blow-n`, `blue-n`, `blueberry-n`, `board-game-n`, `bombing-n`; 24 transcriptions verified. `inflect.py` gave *blouse* the plural *blice* (its *louse* rule matched); fixed in data by adding `blouse` to `suffix_regular` in the exceptions table. Panel: 63 issues, 10 blocking; 59 applied, 4 rejected. Blocking: a toy-bear subsense added to `bear-n`, and `bear-v` removed from its family (unrelated homograph); the `blue-n` usage note was wrong about *the*; a music-history example was replaced; *out of the blue* moved from `blue-adj` to `blue-n` (noun keyword, both reviewers). By the same rule, *in black and white* may belong in `black-n`; rejected in cycle 1, so it is left for review. Spend US$0.34.
+
 ## [2026-11-03] closure | twelve family nouns: basics to blessing
 
 Run 20261103T124437Z-dl6vln, cycle 1. Built `basics-n`, `basketball-n`, `bathtub-n`, `bedtime-n`, `beginner-n`, `being-n`, `bet-n`, `billionaire-n`, `biology-n`, `bite-n`, `black-n`, `blessing-n` from `family` rows; inflections and 24 transcriptions verified. Panel: 43 issues, 5 blocking; 35 applied, 8 rejected. Blocking: `bite-n` sense 4 countability (applied, three lines); *paint something black* is an adjective use (applied); *in black and white* rejected (already a phrase in `black-adj`). The `bite-n` fishing sense was logged as "bait added", but *bait* is outside the defining vocabulary, so the final wording is *the food that has been put on a fishing line*. `approval-n` sense 2 mirror placed by hand. Spend US$0.38.
