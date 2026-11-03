@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] closure | twelve family nouns: basics to blessing
+
+Run 20261103T124437Z-dl6vln, cycle 1. Built `basics-n`, `basketball-n`, `bathtub-n`, `bedtime-n`, `beginner-n`, `being-n`, `bet-n`, `billionaire-n`, `biology-n`, `bite-n`, `black-n`, `blessing-n` from `family` rows; inflections and 24 transcriptions verified. Panel: 43 issues, 5 blocking; 35 applied, 8 rejected. Blocking: `bite-n` sense 4 countability (applied, three lines); *paint something black* is an adjective use (applied); *in black and white* rejected (already a phrase in `black-adj`). The `bite-n` fishing sense was logged as "bait added", but *bait* is outside the defining vocabulary, so the final wording is *the food that has been put on a fishing line*. `approval-n` sense 2 mirror placed by hand. Spend US$0.38.
+
 ## [2026-11-03] build | eight band-2 nouns: balcony to basement
 
 Run 20261103T070618Z-g0ufhy, cycle 3. Built `balcony-n`, `ballet-n`, `banner-n`, `bargain-n`, `barn-n`, `barrier-n`, `bartender-n`, `basement-n` (a smaller batch to leave room for wrap-up); inflections and 16 transcriptions verified. Panel: 9 issues, 0 blocking; 6 applied, 3 rejected (*a banner year* is an adjective-like use; *drove* is not a form of `bargain-n`; `barrier-n` mirrors `bar-n` sense 7). Applied: a weak `window-n` link removed; *do ballet* for *dance ballet*; *into the bargain* labeled British; *hay* for *dry grass*; a British ticket-barrier example replaced. Spend US$0.20.
