@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] review | coverage pass: note, lose, live, lead
+
+Run 20261103T190802Z-q07nf2, cycle 3. Coverage reading of four six-sense band-1 entries (177 done). Added: `note-n` subsense for a taste or smell (*notes of chocolate*); `lose-v` subsense *lost him friends* and senses for a clock and for getting away from someone; `live-v` sense *live for something*; `lead-v` subsense *easily led*, *lead by example*. `lead-v` senses reordered (cause and way of life before the road sense). Duplicated notes cut in all four (usage notes of `lose-v` and `lead-v` removed; the grade fact in `note-n` kept only as a false friend). *Lose a chance* dropped (it contradicted the *miss* learner error). Panel: 51 issues, 5 blocking, all applied; 43 applied, 8 rejected (*lose track of*, *lose touch* by the keyword rule; listed inflections need no marks; *live through* and *live on* queued as phrasal verbs). Spend US$0.23.
+
 ## [2026-11-03] build | twelve entries: approach to bra
 
 Run 20261103T185244Z-q07nf2, cycle 2. Built `approach-v` and `assign-v` (rows banded by this morning's vote), then band-2 nouns in queue order: `bond-n`, `bonus-n`, `booking-n`, `bookshop-n`, `bookstore-n`, `boost-n`, `bother-n`, `boundary-n`, `boxing-n`, `bra-n`. All 24 transcriptions verified. Panel: 24 issues, 3 blocking, all applied: `assign-v` sense 4 redefined (value, number, name, or blame); `bond-n` gained a chemistry subsense; a tense error in a `booking-n` example. 22 applied, 2 rejected (reviewer B called *usually passive* a code: it is in the pattern list). The generic semantic note on `bond-n` was removed (both reviewers). Lint: *referee* and *breasts* reworded out of definitions. Six NO-SENSE back-links placed by hand (`tie-n`, `link-n`, `trouble-n`, `limit-n`, `tackle-v`); `effort-n` dropped from `bother-n`. Spend US$0.34.
