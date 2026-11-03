@@ -7,7 +7,7 @@
 - 3,623 entries, all `reviewed`. Site checked 2026-11-02 (79 of 79). **Milestone 1 has no queue rows left**; closure is open, bands 1 and 2 only (A3); the `closure` source is empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows at each lint.
 - Spend 2026-11-03: US$1.95 of US$15 so far. Originality: last 2026-11-03 (rewrote `closet-n`, `temper-n`); next in twenty runs.
-- Reviewer A: Claude via `claude -p`, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
+- Reviewer A: Claude via `claude -p`, $0; on failure, re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
 
@@ -38,9 +38,9 @@
 
 ## For the owner
 
-- Latest report: `journal/2026-11-03-3.md`. Digest: `journal/digest-2026-10-31.md` (ten entries to sample).
+- Latest report: `journal/2026-11-03-3.md`. Digest: `journal/digest-2026-10-31.md` (ten to sample).
 - Curator line still open: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; working assumption: allowed there until you rule.
-- `PROJECT.md` still says "two non-Anthropic reviewers" (reviewer A is Claude since your 2026-10-25 ruling); the charter line is yours to update.
+- `PROJECT.md` still says "two non-Anthropic reviewers" (reviewer A is Claude since your 2026-10-25 ruling); yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); off until you say. The new model caught all four planted IPA errors.
 - Still open: continent names in definitions; *the former*/*the following* as nouns or pronouns (`wiki/open-questions.md`); pronunciation disputes in `reviews/needs_curator.txt`.
 - Site: <https://tkgally.github.io/eex-dict/>.
