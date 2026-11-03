@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] build | twelve entries: approach to bra
+
+Run 20261103T185244Z-q07nf2, cycle 2. Built `approach-v` and `assign-v` (rows banded by this morning's vote), then band-2 nouns in queue order: `bond-n`, `bonus-n`, `booking-n`, `bookshop-n`, `bookstore-n`, `boost-n`, `bother-n`, `boundary-n`, `boxing-n`, `bra-n`. All 24 transcriptions verified. Panel: 24 issues, 3 blocking, all applied: `assign-v` sense 4 redefined (value, number, name, or blame); `bond-n` gained a chemistry subsense; a tense error in a `booking-n` example. 22 applied, 2 rejected (reviewer B called *usually passive* a code: it is in the pattern list). The generic semantic note on `bond-n` was removed (both reviewers). Lint: *referee* and *breasts* reworded out of definitions. Six NO-SENSE back-links placed by hand (`tie-n`, `link-n`, `trouble-n`, `limit-n`, `tackle-v`); `effort-n` dropped from `bother-n`. Spend US$0.34.
+
 ## [2026-11-03] lint | hundredth pass
 
 Run 20261103T184509Z-q07nf2, cycle 1. Caps, links, gates clean. `crossref.py --all --apply` wrote four mirror back-links (`backpack-n`, `barrier-n`, `beef-n`, `belongings-n`); 7 NO-SENSE pairs: 2 placed by hand (`anxiety-n` sense 1 synonym `nerve-n`; `aspect-n` sense 1 synonym `way-n`), 5 left for the C1 audit (unchanged). Six spent claim files pruned. Band vote on 26 unbanded rows (US$0.005); `real-adv` settled at 2; `sunny-n` (a wrong part-of-speech guess) marked duplicate; *award winning* restored to *award-winning*. `--promises`: 7; `left-wing-adj` and `right-wing-adj` queued and voted (band 3); `corn-n-2`, `story-n-2`, `file-v-2` are homographs to hand-claim; the rest are false. A second vote in one session hit a stale reply cache ([note](notes/band-vote-unbanded-overwrite.md)). Precision: no new switch-offs; reviewer B `pronunciation` 0.38. Reports: 328 circular candidates, 930 missing-sense pairs. Index and pages agree; no duplicate curator lines. Spend US$0.007.
