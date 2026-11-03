@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] review | coverage pass: report, real
+
+Run 20261103T031657Z-r05mxh, cycle 4. Coverage reading of two six-sense band-1 entries (165 done), kept small because the run's context was running low. `report-v`: sense 6 gains company results (*report a profit*, *report a loss*); its grammar adaptation note dropped (it restated a learner error); *canceled* spelled the American way; a pattern tag removed from a passive example. `real-adj`: sense 3 no longer says "most important"; sense 5 is now *great or serious*, taking *a real chance* and *real progress* from sense 4; an ungrammatical *in real terms* example rewritten (blocking); a filler learner error (*I real like*) removed; the usage note now points to a new queue row, `real-adv`. Panel: 17 issues, 2 blocking; 10 applied, 7 rejected (*get real* goes under `get-v`, *the real thing* under `thing-n`; sense 6 of `report-v` is distinct; the inflection note is script-owned). Spend US$0.10.
+
 ## [2026-11-03] build | eight band-2 nouns: assault to athlete
 
 Run 20261103T030844Z-r05mxh, cycle 3. Built `assault-n`, `assessment-n`, `asset-n`, `assignment-n`, `assistance-n`, `association-n`, `assumption-n`, `athlete-n` (a smaller batch to leave room for the pipeline); inflections and 16 transcriptions verified. Panel: 14 issues, 0 blocking; all 14 applied. Added from coverage flags: `assessment-n` sense 3 (tax or value), `assignment-n` sense 3 (the act of assigning, *seat assignment*), both with core ideas. Also: `law` label off `assault-n` sense 1 (everyday attacks too); `assignment-n` sense 2 countable; `assumption-n` sense 2 uncountable; British *housing association* removed. Self-fix: *calculation* in `assessment-n` sense 3 was outside the defining vocabulary. Back-links placed by hand in `judgment-n`, `homework-n`, `organization-n`; `task-n` by the tool. Spend US$0.22.
