@@ -16,7 +16,7 @@
     "british": {
       "ipa": "ˈpɪə.ri.əd",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/3",
+      "checked_by": "agreement:2/3",
       "status": "verified"
     },
     "variants": [],
@@ -134,7 +134,9 @@
       "grammar": {
         "countability": "countable",
         "transitivity": null,
-        "codes": [],
+        "codes": [
+          "often before another noun"
+        ],
         "patterns": []
       },
       "labels": {
@@ -160,6 +162,11 @@
           "text": "She loves furniture from that period.",
           "note": null,
           "pattern": null
+        },
+        {
+          "text": "The actors wore period costume for the play.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
@@ -175,6 +182,14 @@
           "items": [
             "from that period",
             "during this period"
+          ]
+        },
+        {
+          "type": "noun + noun",
+          "items": [
+            "period costume",
+            "period furniture",
+            "a period drama"
           ]
         }
       ],
@@ -282,7 +297,7 @@
           "pattern": null
         },
         {
-          "text": "Many women get pains during their period.",
+          "text": "Many women have pain during their period.",
           "note": null,
           "pattern": null
         }
@@ -349,7 +364,16 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "put a period",
+            "end with a period",
+            "leave out a period"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -396,7 +420,23 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "adjective + noun",
+          "items": [
+            "the first period",
+            "the second period",
+            "the final period"
+          ]
+        },
+        {
+          "type": "preposition + noun",
+          "items": [
+            "in the second period",
+            "at the end of the period"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [
@@ -425,7 +465,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "For the mark at the end of a sentence, British English says **full stop**. In American speech, **period** can come at the end of a statement to show that the speaker's decision is firm and will not change (*I'm not going, period*). That use is not a noun and has its own entry.",
+  "usage_note": "For the mark at the end of a sentence, British English says **full stop**. For **period** at the end of a firm statement (*I'm not going, period*), see the interjection.",
   "learner_errors": [],
   "etymology": null,
   "see_also": [
@@ -435,7 +475,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "**period** covers a length of time, a part of the school day, the days of a woman's monthly bleeding, and the mark at the end of a sentence. Many languages use unrelated words for these; translate by sense.",
+    "semantic": "\"period\": *a free period* is a time in the school day with no lesson, not free time in general.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -444,7 +484,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-06T12:59:22Z",
-    "modified": "2026-10-18T01:00:39Z",
+    "modified": "2026-11-03T13:19:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261006T125700Z-k86x7r",
     "reviews": [
@@ -486,6 +526,26 @@
         "file": "reviews/20261018T004340Z-64dh0o/period-n.json",
         "ok": 70,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261103T131257Z-dl6vln",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-03",
+        "file": "reviews/20261103T131257Z-dl6vln/period-n.json",
+        "ok": 68,
+        "issues": 4,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261103T131257Z-dl6vln",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-03",
+        "file": "reviews/20261103T131257Z-dl6vln/period-n.json",
+        "ok": 70,
+        "issues": 2,
         "blocking": 0
       }
     ],

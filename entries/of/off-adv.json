@@ -164,7 +164,7 @@
           "pattern": null
         },
         {
-          "text": "Could you get the lid off this jar?",
+          "text": "This lid is stuck. Can you get it off?",
           "note": null,
           "pattern": null
         }
@@ -304,7 +304,7 @@
           "pattern": null
         },
         {
-          "text": "Do you get any time off at Christmas?",
+          "text": "Do you get any time off in the summer?",
           "note": null,
           "pattern": null
         }
@@ -371,7 +371,17 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "a long way off",
+            "far off",
+            "not far off",
+            "a few miles off"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -388,7 +398,7 @@
     {
       "n": 6,
       "signpost": "less",
-      "definition": "taken away from a price",
+      "definition": "so that a price is lower by the amount stated",
       "explanation": "After an amount of money or a percent, to say how much lower the price is.",
       "grammar": {
         "countability": null,
@@ -423,7 +433,78 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "ten percent off",
+            "half off",
+            "take something off"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 7,
+      "signpost": "completely",
+      "definition": "so that something is finished, or so that nothing is left",
+      "explanation": "After some verbs, to show that an action is done completely.",
+      "grammar": {
+        "countability": null,
+        "transitivity": null,
+        "codes": [
+          "not gradable"
+        ],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Finish off your dinner, and then you can play.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "It took them five years to pay off the loan.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The cold winter killed off most of the plants.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + adverb",
+          "items": [
+            "finish off",
+            "pay off",
+            "kill off",
+            "sell off"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -561,9 +642,9 @@
   "usage_note": "**Off** with a noun after it (*off the table*) is a preposition, in the entry **off** (preposition); **off** describing a state after **be** (*The milk is off*, *The game is off*) is an adjective. Many phrasal verbs use **off**, such as **take off**, **turn off**, **get off**, and **put off**; each has its own entry.",
   "learner_errors": [
     {
-      "incorrect": "Please open off the light.",
+      "incorrect": "Please close the light.",
       "correct": "Please turn off the light.",
-      "note": "A light or a machine is turned **off** or switched **off**; **open** and **close** are not used."
+      "note": "A light or a machine is turned **off** or switched **off**; **close** is not used."
     }
   ],
   "etymology": null,
@@ -590,7 +671,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "\"off\" with machines and lights: learners from several languages say *open* and *close* the light. English uses **turn off** or **switch off**. With clothes (*take off your coat*) many languages use one verb meaning \"remove\"; English needs **off**.",
+    "semantic": "\"off\" with clothes: many languages use one verb meaning *remove*, but everyday English says **take off** (*take off your coat*); **remove** is formal.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -599,7 +680,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-16T13:13:53Z",
-    "modified": "2026-10-16T13:25:45Z",
+    "modified": "2026-11-03T13:19:13Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261016T130922Z-enf23s",
     "reviews": [
@@ -622,6 +703,26 @@
         "ok": 84,
         "issues": 1,
         "blocking": 1
+      },
+      {
+        "run_id": "20261103T131257Z-dl6vln",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-03",
+        "file": "reviews/20261103T131257Z-dl6vln/off-adv.json",
+        "ok": 86,
+        "issues": 13,
+        "blocking": 4
+      },
+      {
+        "run_id": "20261103T131257Z-dl6vln",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-03",
+        "file": "reviews/20261103T131257Z-dl6vln/off-adv.json",
+        "ok": 94,
+        "issues": 2,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
