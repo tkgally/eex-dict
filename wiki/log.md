@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] build | eight band-2 nouns: balcony to basement
+
+Run 20261103T070618Z-g0ufhy, cycle 3. Built `balcony-n`, `ballet-n`, `banner-n`, `bargain-n`, `barn-n`, `barrier-n`, `bartender-n`, `basement-n` (a smaller batch to leave room for wrap-up); inflections and 16 transcriptions verified. Panel: 9 issues, 0 blocking; 6 applied, 3 rejected (*a banner year* is an adjective-like use; *drove* is not a form of `bargain-n`; `barrier-n` mirrors `bar-n` sense 7). Applied: a weak `window-n` link removed; *do ballet* for *dance ballet*; *into the bargain* labeled British; *hay* for *dry grass*; a British ticket-barrier example replaced. Spend US$0.20.
+
 ## [2026-11-03] review | coverage pass: reach, queen, place, piece
 
 Run 20261103T065706Z-g0ufhy, cycle 2. Coverage reading of four six-sense band-1 entries (169 done). Added: `reach-v` subsense 5a (*nothing seemed to reach him*); `queen-n` subsense 3a (beauty and prom queens) and sense 7 (American bed size); `place-v` sense 7 (find a home or job), *place a bet*, *place a call*, *place pressure on*; `piece-n` phrase *say your piece*. Fixed: a circular playing-card definition and a bee science claim (`queen-n`); *drama queen* removed (keyword `drama-n`, noted in `NEXT.md`); examples that did not fit their senses (`reach-v` ladder and news); duplicated adaptation notes (`reach-v`, `piece-n`). A five-piece subsense I added was withdrawn (adjective-type compound). `block-n`/`section-n` synonyms removed from `piece-n` both ways. Panel: 69 issues, 7 blocking, all applied; 56 applied, 13 rejected (`make-v` and `touch-v` synonym senses match; *chess* is outside the vocabulary; not-continuous is a pattern value). Spend US$0.20.
