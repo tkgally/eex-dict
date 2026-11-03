@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-03] build | twelve band-2 nouns: atmosphere to bakery
+
+Run 20261103T064347Z-g0ufhy, cycle 1. Built `atmosphere-n`, `attorney-n`, `august-n`, `avenue-n`, `award-n`, `awareness-n`, `backpack-n`, `backup-n`, `bacon-n`, `badge-n`, `baggage-n`, `bakery-n`; inflections and all 24 transcriptions verified (4/4 with the CMU vote). Panel: 43 issues, 8 blocking; 35 applied, 8 rejected. Blocking: `atmosphere-n` lost a weak indoor-air sense (the word for that is *air*); an unnatural *keep an awareness* example rewritten; `bakery-n`'s synonym `baker-n` now noted as British *the baker's* (kept, since `baker-n` mirrors it). Coverage adds: `backup-n` sense 4 (American, traffic or a drain), `award-n` sense 2 widened to money for study. Rejected: *power of attorney* goes under `power-n`; phrase examples need no hand marks; a British *badge of honour* variant has no slot. Self-fixes: four definition words outside the vocabulary; `support-n` synonym removed (no matching sense for a back-link). Spend US$0.35.
+
 ## [2026-11-03] review | coverage pass: report, real
 
 Run 20261103T031657Z-r05mxh, cycle 4. Coverage reading of two six-sense band-1 entries (165 done), kept small because the run's context was running low. `report-v`: sense 6 gains company results (*report a profit*, *report a loss*); its grammar adaptation note dropped (it restated a learner error); *canceled* spelled the American way; a pattern tag removed from a passive example. `real-adj`: sense 3 no longer says "most important"; sense 5 is now *great or serious*, taking *a real chance* and *real progress* from sense 4; an ungrammatical *in real terms* example rewritten (blocking); a filler learner error (*I real like*) removed; the usage note now points to a new queue row, `real-adv`. Panel: 17 issues, 2 blocking; 10 applied, 7 rejected (*get real* goes under `get-v`, *the real thing* under `thing-n`; sense 6 of `report-v` is distinct; the inflection note is script-owned). Spend US$0.10.
