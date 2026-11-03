@@ -1,11 +1,9 @@
 # Band vote: a second unbanded vote on one day overwrites the first
 
-*Observed 2026-10-24, eighty-sixth lint pass.*
+*Observed 2026-10-24 (eighty-sixth lint); recurred 2026-10-28.*
 
-`tools/band_vote.py run --unbanded` writes `experiments/band-vote-<date>/votes-unbanded.tsv` from scratch. The day's second unbanded vote replaced the 16 rows of the first, which had already been applied. Those votes are now kept only in git history. The lint pass merged the old rows back by hand, so the file holds all 65.
+`tools/band_vote.py run --unbanded` wrote the day's `votes-unbanded.tsv` from scratch, losing an earlier vote's rows, and `apply --votes` resolved paths only against the vote directory. Fixed 2026-10-29 (ninety-third pass): `run` merges with an existing file (new votes win; unit test), and `--votes` accepts a path from the working directory.
 
-A second problem: `apply --votes` takes a path relative to the vote directory, not the working directory. A path from the repository root fails with a doubled path.
+## 2026-11-03, hundredth pass: stale cache
 
-Recurred 2026-10-28 (ninety-second pass): the day's second vote overwrote the first lint's 45 rows; the old file was restored from git and the new 54 rows kept as `votes-unbanded-2.tsv`. Fix due.
-
-Fixed 2026-10-29 (ninety-third pass): `run` merges with an existing file of the same name (new votes win; unit test), and `--votes` also accepts a path from the working directory.
+A second `run --unbanded` in one session reused the first run's cached replies (`.tmp/band-vote/unbanded/chunk000-*`, keyed by chunk number, not content) and failed with a `KeyError` on a slug no longer asked. Worked around by moving the cache aside. Fix due a later run.
