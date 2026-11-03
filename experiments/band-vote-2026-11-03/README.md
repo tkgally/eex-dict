@@ -1,0 +1,3 @@
+# Band vote, 2026-11-03 (unbanded rows)
+
+The ninety-ninth lint pass (run 20261103T011616Z-pnlrgs) ran `tools/band_vote.py run --unbanded` on the 42 queue rows that tools had queued since the last vote (US$0.007). `votes-unbanded.tsv` holds the three word-list votes and the lower median: 6 rows in band 2, 23 in band 3, 13 in band 4. No split was wider than one band, so nothing needed settling. `apply --votes votes-unbanded.tsv` turned all 42 rows to `pending` with their bands. None of them has an entry yet, so no entry needed restamping. The scale and the method are in [rebanding](../../wiki/decisions/rebanding.md).

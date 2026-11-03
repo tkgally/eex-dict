@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-03 by run 20261103T010614Z-pnlrgs, cycle 3 (review).*
+*Rewritten 2026-11-03 by run 20261103T011616Z-pnlrgs, cycle 4 (lint).*
 
 ## State
 
 - 3,586 entries, all `reviewed`. Site checked 2026-11-02 (79 of 79). **Milestone 1 has no queue rows left**; closure is open, bands 1 and 2 only (A3); the `closure` source is empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
-- Bands re-voted 2026-10-24; later rows voted at each lint (latest [2026-11-02](experiments/band-vote-2026-11-02/README.md)).
-- Spend 2026-11-03: US$0.61 of US$15 so far. Originality: last 2026-11-02 (rewrote `character-n`); next in twenty runs.
+- Bands re-voted 2026-10-24; later rows voted at each lint (latest [2026-11-03](experiments/band-vote-2026-11-03/README.md)).
+- Spend 2026-11-03: US$0.62 of US$15 so far. Originality: last 2026-11-02 (rewrote `character-n`); next in twenty runs.
 - Reviewer A: Claude via `claude -p`, $0 ([reviewer-a-claude](wiki/decisions/reviewer-a-claude.md)); on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -20,7 +20,7 @@
 2. **originality**: ask reviewer-b in one call; search any wording it quotes.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `banking-n` (2026-11-02); then queue order. Hand-claim `rocket-n-2` (salad leaf); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); *a small fortune* (`fortune-n` when built); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; move *blow the whistle on* to `whistle-n`, add *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
-5. **lint**: every ten runs; last 2026-11-02 (ninety-eighth pass), next due in ten runs. Reviewer B `pronunciation` (0.35) nearest the line. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
+5. **lint**: every ten runs; last 2026-11-03 (ninety-ninth pass), next due in ten runs. Reviewer B `pronunciation` (0.40) nearest the line. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
 6. **Tooling notes** (`wiki/notes/`): fixes due for `lint-vocab-pos-guess-gap`, `pronounce-check-word-break`; seven more in `wiki/index.md`.
 
 ## Fences (do not re-grind)
