@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] build | eight entries: CD to childhood
+
+Run 20261104T130613Z-4sbmrv, cycle 3. Built and reviewed `cd-abbr`, `charity-n`, `chart-n`, `chat-n`, `chemistry-n`, `chewing-gum-n`, `chief-n`, `childhood-n`. *CD* settled as an abbreviation like `tv-abbr`: queue row `CD|abbr` added with the band of the old `cd|n` row, which is now `duplicate`; `record-n`'s compare link moved to `cd-abbr`. Its full forms (*compact disc*, *certificate of deposit*) went to the usage note because the vocabulary gate refuses them in a definition; a second sense (American savings) added on review. Adjudication: 38 issues (3 blocking), 39 decisions: 33 applied, 5 rejected, one rejection revised to apply. Main fixes: `charity-n` uncountable uses moved to the giving sense; `chart-n` gained *off the charts*; British forms replaced (*on the charts*, *a pack of gum*, *get along*). Two NO-SENSE mirrors placed by hand (`leader-n`, `boss-n`). Spend US$0.23.
+
 ## [2026-11-04] build | eleven entries: can (verb) to channel
 
 Run 20261104T124910Z-4sbmrv, cycle 2. Built and reviewed `can-v`, `interview-n`, `bond-v`, `boost-v`, `category-n`, `celebrity-n`, `cereal-n`, `ceremony-n`, `challenge-n`, `championship-n`, `channel-n`. `cd-n` released unbuilt: `TV` is `tv-abbr`, so *CD* may belong as `cd-abbr`; the queue row says so. `channel-n` British IPA corrected to the house `-əl` form before the panel agreed. Adjudication: 61 decisions, 49 applied, 12 rejected (syllable periods and `ɚ` asked by reviewer B; *master of ceremonies* under `master-n` by the keyword rule). Main fixes: `can-v` lost a learner error that was grammatical (*Can you can...?*); `challenge-n` sense 3 split into an invitation and a subsense for a title attempt; `channel-n` gained a feelings subsense. Twelve NO-SENSE mirror links placed by hand. Spend US$0.33.
