@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] build | twelve band-2 nouns: chip to click
+
+Run 20261104T184406Z-22pl62, cycle 1. Built and reviewed `chip-n`, `cigarette-n`, `cinema-n`, `circuit-n`, `circumstance-n`, `citizenship-n`, `clap-n`, `classmate-n`, `cleaner-n`, `cleaning-n`, `clerk-n`, `click-n`. All 24 transcriptions verified. Adjudication: 60 issues (2 blocking, both the same misfit example in `chip-n`), 47 applied, 13 rejected, 0 escalated. Coverage adds: *bargaining chip* (subsense), a law sense of `circuit-n`, countable *a good cleaning*. `cigarette-n` defines with *dried leaves*, since *tobacco* has no entry (reviewer B's request rejected). Back-links placed by hand: `film-n` 2, `track-n` 2, `condition-n` 2 to the new entries; `clerk-n`'s link to `assistant-n` is now *compare*, matching its mirror. Queued unbanded: `crisp-n`, `french-fry-n`, `chip-v`, `microchip-n`, `cigar-n`, `tobacco-n`, `nationality-n`, `applause-n`, `schoolmate-n`. Spend US$0.39.
+
 ## [2026-11-04] review | vote fixed; coverage pass: go out, get out, game, form
 
 Run 20261104T131852Z-4sbmrv, cycle 4. `vote-v` sense 2 no longer defines by *voting*; sense 1 widened to cover *against*, *on*, and group decisions; *vote out* and *vote down* queued as phrasal verbs (unbanded) and linked. Coverage (188 done): `go-out-phrv` senses for sympathy (*my heart goes out to*), fashion, leaving a competition, and a power-failure subsense; `get-out-phrv` senses for gaining something (*get a lot out of*) and surprise (*Get out!*), subsense for removing a stain; `game-n` sense for an area of business, phrase *the game is up*; `form-v` subsense for shaping character. `game-n`'s `toy-n` see-also removed with its mirror. Panel on five entries: 71 issues, 3 blocking; 62 applied, 9 rejected. Duplicated usage and adaptation notes cut on four entries. Spend US$0.28.
