@@ -4,7 +4,7 @@
 
 ## [2026-11-04] build | eleven entries: can (verb) to channel
 
-Run 20261104T124910Z-4sbmrv, cycle 2. Built and reviewed `can-v`, `interview-n`, `bond-v`, `boost-v`, `category-n`, `celebrity-n`, `cereal-n`, `ceremony-n`, `challenge-n`, `championship-n`, `channel-n`. `cd-n` released unbuilt: `TV` is `tv-abbr`, so *CD* may belong as `cd-abbr`; the queue row says so. `channel-n` British IPA corrected to the house `-əl` form before the panel agreed. Adjudication: 62 decisions, 50 applied, 12 rejected (syllable periods and `ɚ` asked by reviewer B; *master of ceremonies* under `master-n` by the keyword rule). Main fixes: `can-v` lost a learner error that was grammatical (*Can you can...?*); `challenge-n` sense 3 split into an invitation and a subsense for a title attempt; `channel-n` gained a feelings subsense. Twelve NO-SENSE mirror links placed by hand. Spend US$0.33.
+Run 20261104T124910Z-4sbmrv, cycle 2. Built and reviewed `can-v`, `interview-n`, `bond-v`, `boost-v`, `category-n`, `celebrity-n`, `cereal-n`, `ceremony-n`, `challenge-n`, `championship-n`, `channel-n`. `cd-n` released unbuilt: `TV` is `tv-abbr`, so *CD* may belong as `cd-abbr`; the queue row says so. `channel-n` British IPA corrected to the house `-əl` form before the panel agreed. Adjudication: 61 decisions, 49 applied, 12 rejected (syllable periods and `ɚ` asked by reviewer B; *master of ceremonies* under `master-n` by the keyword rule). Main fixes: `can-v` lost a learner error that was grammatical (*Can you can...?*); `challenge-n` sense 3 split into an invitation and a subsense for a title attempt; `channel-n` gained a feelings subsense. Twelve NO-SENSE mirror links placed by hand. Spend US$0.33.
 
 ## [2026-11-04] lint | hundred-and-first pass
 
