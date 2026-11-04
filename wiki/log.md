@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] lint | hundred-and-first pass
+
+Run 20261104T124347Z-4sbmrv, cycle 1. No open pull requests, orphan branches, inbox items, or entry reports. Caps, links, gates clean. `crossref.py --all --apply` wrote seven mirror back-links (`bookstore-n`, `breakdown-n`, `breakthrough-n`, `cafeteria-n`, `cart-n`, `cashier-n`, `celebration-n`); three NO-SENSE pairs placed by hand (`can-n` 1 compare `bottle-n`; `campaign-n` 1 synonym `drive-n`; `celebration-n` 1 synonym `festival-n`). Five spent claim files pruned. Band vote on 44 unbanded rows (US$0.007); `buy-n` settled at 3. Fixed two noted `band_vote.py` faults: the stale reply cache and the hard-coded settled date (two unit tests; `kid-v`, `real-adv`, `buy-n` row notes corrected). Precision: no new switch-offs; reviewer B `pronunciation` 0.38. Reports: 329 circular candidates, 931 missing-sense pairs, 6 promises (all known). Index and pages agree; no duplicate curator lines. The wiki stands at 29,992 of 30,000 words: the next page added needs a trim first. Spend US$0.007.
+
 ## [2026-11-04] originality | twentieth-run check: no rewrites
 
 Run 20261104T071407Z-9mj2yk, cycle 3 (forced: run 680 is a multiple of 20). Sampled 10 fields (`judge-n`, `hand-n` phrases; `turn-off-phrv`, `vote-v`, `ocean-n`, `out-prefix`, `pass-on-phrv`, `order-n`, `in-prep`, `far-adv` senses). Exact-phrase search found no verbatim match. Reviewer B answered *cannot tell* on nine and *original* on `out-prefix`, naming no source, so search decided. Verdicts: 6 original, 4 generic-overlap (`vote-v`, `ocean-n`, `order-n`, `far-adv`: plain formulas any dictionary would use), 0 rewrite. Found in passing: `vote-v` sense 2 is defined *by voting*, a circular definition; queued for review in `NEXT.md`. Record: `reviews/originality/2026-11-04.md`. Spend under US$0.01.

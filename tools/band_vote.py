@@ -38,6 +38,7 @@ if _tools_first is not None:
 import argparse  # noqa: E402
 import csv  # noqa: E402
 import json  # noqa: E402
+import re  # noqa: E402
 import subprocess  # noqa: E402
 from datetime import datetime, timezone
 from pathlib import Path
@@ -132,7 +133,9 @@ def ask(chunk_id: int, role: str, ch: list[dict], raw: Path) -> dict:
     path = raw / f"chunk{chunk_id:03d}.{role}.json"
     if path.exists():
         rec = json.loads(path.read_text(encoding="utf-8"))
-        if rec.get("pairs"):
+        # reuse a cached reply only when it answered this very chunk (a cache keyed by
+        # chunk number went stale between two votes in one session: 2026-11-03 note)
+        if rec.get("pairs") and rec.get("slugs") == [it["slug"] for it in ch]:
             return rec
     words = "\n".join(f"{j + 1}|{it['headword']}|{it['label']}" for j, it in enumerate(ch))
     user = USER.format(scale=SCALE, words=words, count=len(ch))
@@ -153,7 +156,7 @@ def ask(chunk_id: int, role: str, ch: list[dict], raw: Path) -> dict:
     except (ValueError, TypeError, AttributeError):
         pass
     rec = {"chunk": chunk_id, "role": role, "model": res.get("model") or model, "cost_usd": res.get("cost"),
-           "pairs": pairs, "asked": len(ch)}
+           "pairs": pairs, "asked": len(ch), "slugs": [it["slug"] for it in ch]}
     raw.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(rec, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     return rec
@@ -251,13 +254,21 @@ def cmd_settle(a) -> int:
     return 0
 
 
-def final_bands(rows: list[dict], settled: dict[str, tuple[int, str]], provisional: bool) -> tuple[dict, list[str]]:
+def vote_date(d: Path | None) -> str:
+    """The date in a votes directory's name (band-vote-YYYY-MM-DD), or "" when it has none."""
+    m = re.search(r"(\d{4}-\d{2}-\d{2})$", d.name) if d else None
+    return m.group(1) if m else ""
+
+
+def final_bands(rows: list[dict], settled: dict[str, tuple[int, str]], provisional: bool,
+                date: str = "") -> tuple[dict, list[str]]:
     out, unsettled = {}, []
     for r in rows:
         if not r["lower_median"]:
             continue
         if r["slug"] in settled:
-            out[r["slug"]] = (settled[r["slug"]][0], "band vote 2026-10-24, settled: " + settled[r["slug"]][1])
+            out[r["slug"]] = (settled[r["slug"]][0],
+                              ("band vote %s" % date if date else "band vote") + ", settled: " + settled[r["slug"]][1])
         elif r["spread"] and int(r["spread"]) > 1:
             unsettled.append(r["slug"])
             if provisional:
@@ -270,7 +281,7 @@ def final_bands(rows: list[dict], settled: dict[str, tuple[int, str]], provision
 def cmd_apply(a) -> int:
     d = Path(a.dir) if a.dir else latest_dir()
     rows = read_votes(d, a.votes)
-    bands, unsettled = final_bands(rows, read_settled(d), a.provisional)
+    bands, unsettled = final_bands(rows, read_settled(d), a.provisional, vote_date(d))
     if unsettled and not a.provisional:
         print(f"refused: {len(unsettled)} wide splits are not settled (band_vote.py settle; or --provisional)")
         return 1

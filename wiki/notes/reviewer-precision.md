@@ -338,6 +338,6 @@ No switch-offs. `reviewer-a:claude-sonnet-5-5` rose from 0.86 (272/316) to 0.80 
 
 `reviewer-a:claude-sonnet-5-5` 0.83 (3729/4495 at the ninety-eighth); lowest live pairs `coverage` 0.59 (live by ruling B1) and `grammar-code` 0.64. `reviewer-b:gemini-4-argon` 0.81 (1623/2008); `spelling-or-format` 0.27 (46/172), live by the owner's ruling; `pronunciation` 0.35 (8/23, down from 0.38), the nearest live pair to the line; `inflection` 0.36 (4/11), under twenty.
 
-## 2026-11-03: ninety-ninth and hundredth passes, no new switch-offs
+## 2026-11-03 to 2026-11-04: ninety-ninth to hundred-and-first passes, no new switch-offs
 
-`reviewer-a:claude-sonnet-5-5` 0.83 (4166/5004 at the hundredth); `inflection` already off. `reviewer-b:gemini-4-argon` 0.81 (1832/2259); `spelling-or-format` 0.28 (55/195), live by the owner's ruling; `pronunciation` 0.38 (10/26), the nearest live pair to the line; `inflection` 0.36 (5/14), under twenty.
+`reviewer-a:claude-sonnet-5-5` 0.84 (4369/5229 at the hundred-and-first). `reviewer-b:gemini-4-argon` 0.81 (1935/2384); `spelling-or-format` 0.29 (59/207), live by the owner's ruling; `pronunciation` 0.38 (11/29), the nearest live pair to the line; `inflection` 0.36 (5/14), under twenty.
