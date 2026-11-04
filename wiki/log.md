@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] originality | twentieth-run check: no rewrites
+
+Run 20261104T071407Z-9mj2yk, cycle 3 (forced: run 680 is a multiple of 20). Sampled 10 fields (`judge-n`, `hand-n` phrases; `turn-off-phrv`, `vote-v`, `ocean-n`, `out-prefix`, `pass-on-phrv`, `order-n`, `in-prep`, `far-adv` senses). Exact-phrase search found no verbatim match. Reviewer B answered *cannot tell* on nine and *original* on `out-prefix`, naming no source, so search decided. Verdicts: 6 original, 4 generic-overlap (`vote-v`, `ocean-n`, `order-n`, `far-adv`: plain formulas any dictionary would use), 0 rewrite. Found in passing: `vote-v` sense 2 is defined *by voting*, a circular definition; queued for review in `NEXT.md`. Record: `reviews/originality/2026-11-04.md`. Spend under US$0.01.
+
 ## [2026-11-04] review | cross-reference fixes; coverage pass: interest, hit, green
 
 Run 20261104T070057Z-9mj2yk, cycle 2. The five forward references that named a phrase, not a sense, are now entry-level see-also links with notes (`also-adv`, `too-adv` to `well-adv`; `slightly-adv` to `bit-n`; `whatever-pron` to `matter-n`); `look-after-phrv`'s compare is mirrored on `look-v` sense 2; `birthday-n`'s `anniversary-n` synonym is mirrored, its duplicate see-also dropped. Coverage (184 done): `interest-n` interest-group subsense, phrases *out of interest* (British), *have someone's interests at heart*; `hit-v` subsenses attack or rob, go to or arrive at, meet a problem; `green-adj` unseasoned wood. Mirrors removed with their links: `similarly-adv`, `pale-adj`. Panel on eight entries: 75 issues, 4 blocking; 62 applied, 13 rejected (*hit the road*, *hit the nail on the head*, *too bad* are under `road-n`, `nail-n`, `bad-adj`). Many duplicated notes cut. Spend US$0.33.
