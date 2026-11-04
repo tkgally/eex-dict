@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] build | twelve band-2 nouns: buyer to cart
+
+Run 20261104T064344Z-9mj2yk, cycle 1. Built `buyer-n`, `cab-n`, `cafe-n`, `cafeteria-n`, `calorie-n`, `campaign-n`, `can-n`, `candidate-n`, `cap-n`, `capacity-n`, `car-park-n` (British), `cart-n`. All 24 transcriptions verified. Phrases: *a buyer's market*, *open a can of worms*, *in the can*, *kick the can down the road*, *put on your thinking cap*, *put the cart before the horse*. Panel: 61 issues, 6 blocking (cafeteria stress on the third syllable, not the fourth; a science-fact example in `calorie-n`; `buyer-n` no longer limited to large purchases); 58 applied, 4 rejected. `candidate-n`: the exam sense widened to degree students and moved last. The mushroom subsense of `cap-n` was dropped because `mushroom-n` has no entry and the vocabulary gate fails; add it when `mushroom-n` is built. *Upset the apple cart* goes under `apple-n`. Four NO-SENSE back-links placed by hand (`lid-n`, `limit-n`, `ability-n`, `role-n`). Spend US$0.36.
+
 ## [2026-11-04] closure | six family nouns: calculation to chemical
 
 Run 20261104T011050Z-xicuhc, cycle 4. Built `calculation-n`, `calculator-n`, `cashier-n`, `catch-n`, `celebration-n`, `chemical-n` from `family` rows. All 12 transcriptions verified. `catch-n` has six senses (ball, hidden problem, the game, fish, a fastener, a partner), subsense *Good catch!*, phrase *a catch in someone's voice*. Panel: 22 issues, 1 blocking (*opened the catch*, now *undid*); 21 applied, 1 rejected. Applied: `calculation-n` sense 2 widened to judging likely results (*a political calculation*), countable or uncountable, no longer disapproving; `calculator-n` covers phone programs; `catch-n` synonym `latch-n`, `lock-n` moved to compare with a note (back-link placed by hand in `lock-n`), *safety catch* removed (a gun part). `cashier-n`, `chemical-n`: no issues. Spend US$0.18.
