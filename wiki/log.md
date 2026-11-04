@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] site | build and check, 79 of 79
+
+Run 20261104T004349Z-xicuhc, cycle 1. The selector chose site (highest scheduler debt). `tools/build_site.py` wrote 3,675 entries on 3,083 headword pages (6,818 files, no drafts withheld, no redirects); `tools/site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on all 3,089 pages. Nothing to fix; no entries changed. Pre-flight: no open pull requests, no orphan branches, no entry reports, inbox empty. Spend US$0.
+
 ## [2026-11-03] build | eight band-2 nouns: bracelet to bride
 
 Run 20261103T191821Z-q07nf2, cycle 4. Built `bracelet-n`, `brake-n`, `breakdown-n`, `breakthrough-n`, `breast-n`, `breathing-n`, `breeze-n`, `bride-n` (eight, not twelve: the run's last cycle, kept short). All 16 transcriptions verified. Phrases: *put the brakes on something*, *shoot the breeze* (American, informal), *make a clean breast of something* (old-fashioned). Panel: 23 issues, none blocking; 19 applied, 4 rejected (*wrist* is outside the defining vocabulary; *breeze* in a phrase example needs no mark). Applied: `breast-n` reordered (bird sense before the literary chest sense, meat as a subsense); British compounds removed from `breakdown-n`; *has just got married* changed in `bride-n`. Lint: *wrist*, *occasion* reworded. Back-links placed by hand in `discovery-n` and `wind-n`; `breast-n` now compares `chest-n` (type mismatch). Spend US$0.22.

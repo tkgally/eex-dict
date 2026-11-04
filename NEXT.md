@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-03 by run 20261103T191821Z-q07nf2, cycle 4 (build).*
+*Rewritten 2026-11-04 by run 20261104T004349Z-xicuhc, cycle 1 (site).*
 
 ## State
 
-- 3,675 entries, all `reviewed`. Site checked 2026-11-02 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
+- 3,675 entries, all `reviewed`. Site checked 2026-11-04 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows at each lint.
-- Spend 2026-11-03: US$3.92 of US$15 so far. Originality: last 2026-11-03; next in twenty runs.
+- Spend 2026-11-04: US$0 of US$15 so far (2026-11-03 closed at US$3.92). Originality: last 2026-11-03; next in twenty runs.
 - Reviewer A: Claude, $0; on failure, re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -20,7 +20,7 @@
 2. **originality**: ask reviewer-b in one call; search any wording it quotes, and headword plus opening words.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `blessing-n` (2026-11-03); then queue order. Hand-claim `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool) (usage-note promises); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); *a small fortune* (`fortune-n` when built); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; move *blow the whistle on* to `whistle-n`, add *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
-5. **lint**: every ten runs; last 2026-11-03 (hundredth pass), next due in ten runs. Reviewer B `pronunciation` (0.38) nearest the line. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
+5. **lint**: every ten runs; last 2026-11-03 (hundredth pass), next due in seven runs. Reviewer B `pronunciation` (0.38) nearest the line. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30, 0.20 over 20).
 6. **Tooling notes** (`wiki/notes/`): fixes due for `band-vote-unbanded-overwrite`, `band-vote-settled-date`, `queue-hyphen-loss`; more in the index.
 
 ## Fences (do not re-grind)
@@ -38,7 +38,7 @@
 
 ## For the owner
 
-- Latest report: `journal/2026-11-03-5.md`. Digest: `journal/digest-2026-10-31.md` (ten to sample).
+- Latest report: `journal/2026-11-04.md`. Digest: `journal/digest-2026-10-31.md` (ten to sample).
 - Curator line still open: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; working assumption: allowed there until you rule.
 - `PROJECT.md` still says "two non-Anthropic reviewers" (reviewer A is Claude since your 2026-10-25 ruling); yours to update.
 - For your judgment: your 2026-10-05 switch-off of reviewer A's pronunciation flags rested on the old model (0.26); off until you say. The new model caught all four planted IPA errors.
