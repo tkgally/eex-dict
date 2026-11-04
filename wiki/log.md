@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] build | eleven entries: can (verb) to channel
+
+Run 20261104T124910Z-4sbmrv, cycle 2. Built and reviewed `can-v`, `interview-n`, `bond-v`, `boost-v`, `category-n`, `celebrity-n`, `cereal-n`, `ceremony-n`, `challenge-n`, `championship-n`, `channel-n`. `cd-n` released unbuilt: `TV` is `tv-abbr`, so *CD* may belong as `cd-abbr`; the queue row says so. `channel-n` British IPA corrected to the house `-əl` form before the panel agreed. Adjudication: 61 decisions, 49 applied, 12 rejected (syllable periods and `ɚ` asked by reviewer B; *master of ceremonies* under `master-n` by the keyword rule). Main fixes: `can-v` lost a learner error that was grammatical (*Can you can...?*); `challenge-n` sense 3 split into an invitation and a subsense for a title attempt; `channel-n` gained a feelings subsense. Twelve NO-SENSE mirror links placed by hand. Spend US$0.33.
+
 ## [2026-11-04] lint | hundred-and-first pass
 
 Run 20261104T124347Z-4sbmrv, cycle 1. No open pull requests, orphan branches, inbox items, or entry reports. Caps, links, gates clean. `crossref.py --all --apply` wrote seven mirror back-links (`bookstore-n`, `breakdown-n`, `breakthrough-n`, `cafeteria-n`, `cart-n`, `cashier-n`, `celebration-n`); three NO-SENSE pairs placed by hand (`can-n` 1 compare `bottle-n`; `campaign-n` 1 synonym `drive-n`; `celebration-n` 1 synonym `festival-n`). Five spent claim files pruned. Band vote on 44 unbanded rows (US$0.007); `buy-n` settled at 3. Fixed two noted `band_vote.py` faults: the stale reply cache and the hard-coded settled date (two unit tests; `kid-v`, `real-adv`, `buy-n` row notes corrected). Precision: no new switch-offs; reviewer B `pronunciation` 0.38. Reports: 329 circular candidates, 931 missing-sense pairs, 6 promises (all known). Index and pages agree; no duplicate curator lines. The wiki stands at 29,992 of 30,000 words: the next page added needs a trim first. Spend US$0.007.
