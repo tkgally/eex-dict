@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] review | coverage pass: fair, exercise, escape, down
+
+Run 20261104T190245Z-22pl62, cycle 2. Coverage reading of four six-sense band-1 entries (192 done). Added: `fair-adj` sports subsense (*a fair tackle*), literary sense *beautiful*, phrase *fair's fair*; `down-adv` senses *behind in a game*, *done* (*two down, one to go*), *including all* (*down to the last detail*), *to later times* (*passed down*); `escape-v` sense 4 now covers *understood* (*the joke escaped me*) and sense 1 is transitive too (*escaped the burning car*). Duplicated facts cut: `exercise-n` usage note and two adaptation notes, `escape-v` grammar note, `down-adv` pronoun-order note; `fair-adj`'s generic semantic note removed. `exercise-n` compare `problem-n` removed both ways. Queued: `get-down-to-phrv`; `down-adj` row noted. Panel: 51 issues, 4 blocking, all applied; 44 applied, 7 rejected (*fair game* is under `game-n`; *not used in the passive* is a listed pattern). Spend US$0.24.
+
 ## [2026-11-04] build | twelve band-2 nouns: chip to click
 
 Run 20261104T184406Z-22pl62, cycle 1. Built and reviewed `chip-n`, `cigarette-n`, `cinema-n`, `circuit-n`, `circumstance-n`, `citizenship-n`, `clap-n`, `classmate-n`, `cleaner-n`, `cleaning-n`, `clerk-n`, `click-n`. All 24 transcriptions verified. Adjudication: 60 issues (2 blocking, both the same misfit example in `chip-n`), 47 applied, 13 rejected, 0 escalated. Coverage adds: *bargaining chip* (subsense), a law sense of `circuit-n`, countable *a good cleaning*. `cigarette-n` defines with *dried leaves*, since *tobacco* has no entry (reviewer B's request rejected). Back-links placed by hand: `film-n` 2, `track-n` 2, `condition-n` 2 to the new entries; `clerk-n`'s link to `assistant-n` is now *compare*, matching its mirror. Queued unbanded: `crisp-n`, `french-fry-n`, `chip-v`, `microchip-n`, `cigar-n`, `tobacco-n`, `nationality-n`, `applause-n`, `schoolmate-n`. Spend US$0.39.
