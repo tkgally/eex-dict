@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-04 by run 20261104T130613Z-4sbmrv, cycle 3 (build).*
+*Rewritten 2026-11-04 by run 20261104T131852Z-4sbmrv, cycle 4 (review).*
 
 ## State
 
 - 3,722 entries, all `reviewed`. Site checked 2026-11-04 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows at lints.
-- Spend 2026-11-04: US$1.95 of US$15 so far. Originality: last 2026-11-04.
+- Spend 2026-11-04: US$2.23 of US$15 so far. Originality: last 2026-11-04.
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -14,7 +14,7 @@
 0. **The owner's rulings of 2026-10-24** ([status](wiki/decisions/owner-rulings-2026-10-24.md)). For the Routine, in order:
    1. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates. A reference to a phrase goes in `see_also` with a note.
    2. **Build**: now closure ([build-order](wiki/decisions/build-order.md)).
-   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 184 done, the last `interest-n`, `hit-v`, `green-adj`; next the 22 unread six-sense content entries (from `go-out-phrv`, descending), then the five-sense ones; check new senses against subsenses). Fix `vote-v` sense 2 (circular: *by voting*), then the backlog by band.
+   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 188 done, the last `go-out-phrv`, `get-out-phrv`, `game-n`, `form-v`; next the 18 unread six-sense content entries (from `fair-adj`, descending), then the five-sense ones; check new senses against subsenses). Then the backlog by band.
    4. **Weekly digest**: written 2026-10-31; next when `signals.digest_due`. Entry reports: pre-flight step 5.
 1. **build**: band-2 verbs done (last `yell`); now band-2 nouns in queue order (through `childhood`; *CD* built as `cd-abbr`). At `black-adj`'s review, consider moving *in black and white* to `black-n`. Queue `tap-n-2` and `wind-v-2` (*winded*). Idioms, at next review or build: `balance-n` *tip the balance*, *strike a balance*; `scale-n` *tip the scales*; `blood-n` *sweat blood*; `stuff-n` *sweat the small stuff*; `fear-n` *strike fear into someone*; `time-n` *waste no time*; `face-n` *stare someone in the face*; `disbelief-n` *suspend disbelief*; `chord-n` *strike a chord*; `pose-n` *strike a pose*; `toast-n` *propose a toast*; `right-n` *reserve the right to*; `let-v` *let's face it*, *let rip*, *let something slip*; `keep-v` *keep someone posted*; `be-v` *too good to be true*, *to be sure*; `ring-v` *ring true*; `form-n` *true to form*; `power-n` *power of attorney*; `drama-n` *drama queen* (when built); `apple-n` *upset the apple cart*; `cap-n` mushroom-top subsense once `mushroom-n` exists. House rules 16 and 18; phrasal verbs get `separable` codes when next reviewed (B4 i).
 2. **originality**: ask reviewer-b in one call; search any wording it quotes, and headword plus opening words.

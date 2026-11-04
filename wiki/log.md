@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] review | vote fixed; coverage pass: go out, get out, game, form
+
+Run 20261104T131852Z-4sbmrv, cycle 4. `vote-v` sense 2 no longer defines by *voting*; sense 1 widened to cover *against*, *on*, and group decisions; *vote out* and *vote down* queued as phrasal verbs (unbanded) and linked. Coverage (188 done): `go-out-phrv` senses for sympathy (*my heart goes out to*), fashion, leaving a competition, and a power-failure subsense; `get-out-phrv` senses for gaining something (*get a lot out of*) and surprise (*Get out!*), subsense for removing a stain; `game-n` sense for an area of business, phrase *the game is up*; `form-v` subsense for shaping character. `game-n`'s `toy-n` see-also removed with its mirror. Panel on five entries: 71 issues, 3 blocking; 62 applied, 9 rejected. Duplicated usage and adaptation notes cut on four entries. Spend US$0.28.
+
 ## [2026-11-04] build | eight entries: CD to childhood
 
 Run 20261104T130613Z-4sbmrv, cycle 3. Built and reviewed `cd-abbr`, `charity-n`, `chart-n`, `chat-n`, `chemistry-n`, `chewing-gum-n`, `chief-n`, `childhood-n`. *CD* settled as an abbreviation like `tv-abbr`: queue row `CD|abbr` added with the band of the old `cd|n` row, which is now `duplicate`; `record-n`'s compare link moved to `cd-abbr`. Its full forms (*compact disc*, *certificate of deposit*) went to the usage note because the vocabulary gate refuses them in a definition; a second sense (American savings) added on review. Adjudication: 38 issues (3 blocking), 39 decisions: 33 applied, 5 rejected, one rejection revised to apply. Main fixes: `charity-n` uncountable uses moved to the giving sense; `chart-n` gained *off the charts*; British forms replaced (*on the charts*, *a pack of gum*, *get along*). Two NO-SENSE mirrors placed by hand (`leader-n`, `boss-n`). Spend US$0.23.
