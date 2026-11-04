@@ -6,4 +6,4 @@
 
 ## 2026-11-03, hundredth pass: stale cache
 
-A second `run --unbanded` in one session reused the first run's cached replies (`.tmp/band-vote/unbanded/chunk000-*`, keyed by chunk number, not content) and failed with a `KeyError` on a slug no longer asked. Worked around by moving the cache aside. Fix due a later run.
+A second `run --unbanded` in one session reused the first run's cached replies (`.tmp/band-vote/unbanded/chunk000-*`, keyed by chunk number, not content) and failed with a `KeyError` on a slug no longer asked. Worked around by moving the cache aside. **Fixed 2026-11-04**: a cached reply is reused only when its recorded slugs match the chunk (unit test).

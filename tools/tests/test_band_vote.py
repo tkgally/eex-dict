@@ -31,6 +31,37 @@ class FinalBandsTest(unittest.TestCase):
         bands, _u = band_vote.final_bands(self.rows, {}, provisional=True)
         self.assertEqual(bands["odd-adj"][0], 2)
 
+    def test_a_settled_row_carries_its_own_vote_date(self):
+        d = Path("experiments") / "band-vote-2026-11-04"
+        self.assertEqual(band_vote.vote_date(d), "2026-11-04")
+        bands, _u = band_vote.final_bands(self.rows, {"odd-adj": (3, "why")}, False, band_vote.vote_date(d))
+        self.assertEqual(bands["odd-adj"][1], "band vote 2026-11-04, settled: why")
+
+    def test_a_cached_reply_for_other_words_is_not_reused(self):
+        import json
+        import tempfile
+        with tempfile.TemporaryDirectory() as t:
+            raw = Path(t)
+            (raw / "chunk000.wordlist-1.json").write_text(json.dumps({"pairs": {"old-n": 2}, "slugs": ["old-n"]}))
+            calls = []
+            fake = type(sys)("openrouter")
+            fake.resolve_role = lambda role: "m"
+            fake.estimate_cost = lambda *a: 0.0
+            fake.call_with_budget = lambda *a, **k: calls.append(1) or {"text": '{"bands": [[1, 3]]}', "cost": 0}
+            fake.parse_json_reply = json.loads
+            fake.reasoning_for = lambda *a: None
+            saved = sys.modules.get("openrouter")
+            sys.modules["openrouter"] = fake
+            try:
+                rec = band_vote.ask(0, "wordlist-1", [{"slug": "new-n", "headword": "new", "label": "n"}], raw)
+            finally:
+                if saved is None:
+                    del sys.modules["openrouter"]
+                else:
+                    sys.modules["openrouter"] = saved
+            self.assertEqual(calls, [1])
+            self.assertEqual(rec["pairs"], {"new-n": 3})
+
     def test_the_scale_is_the_decision_page_scale(self):
         page = (Path(__file__).resolve().parents[2] / "wiki" / "decisions" / "rebanding.md").read_text(encoding="utf-8")
         for line in band_vote.SCALE.splitlines():
