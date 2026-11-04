@@ -6,7 +6,7 @@
 
 - 3,675 entries, all `reviewed`. Site checked 2026-11-04 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows at each lint.
-- Spend 2026-11-04: US$0 of US$15 so far (2026-11-03 closed at US$3.92). Originality: last 2026-11-03; next in twenty runs.
+- Spend 2026-11-04: US$0 of US$15 so far. Originality: last 2026-11-03; next in twenty runs.
 - Reviewer A: Claude, $0; on failure, re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
