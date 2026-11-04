@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] build | eight band-2 nouns: cliff to coffee shop
+
+Run 20261104T191202Z-22pl62, cycle 3. Built and reviewed `cliff-n`, `climbing-n`, `clip-n`, `clothing-n`, `clue-n`, `coach-n`, `coding-n`, `coffee-shop-n`; all 16 transcriptions verified. `clip-n` holds the cutting senses (video clip, a trim, a quick hit, a speed); the unrelated fastener (*paper clip*, *hair clip*) is to be built as `clip-n-2` by hand-claim, already named in `clip-n`'s see-also. Adjudication: 26 issues (3 blocking: a ball "giving a clip" in `clip-n`, flagged twice; and `clothing-n`'s learner-error advice to say *three new clothes*), 23 applied, 3 rejected (no marks needed on *fell* in a `cliff-n` phrase example; `clip-n`'s `video-n` synonym mirrors `video-n`). Back-link placed by hand: `car-n` sense 2 synonym `coach-n`. Spend US$0.23.
+
 ## [2026-11-04] review | coverage pass: fair, exercise, escape, down
 
 Run 20261104T190245Z-22pl62, cycle 2. Coverage reading of four six-sense band-1 entries (192 done). Added: `fair-adj` sports subsense (*a fair tackle*), literary sense *beautiful*, phrase *fair's fair*; `down-adv` senses *behind in a game*, *done* (*two down, one to go*), *including all* (*down to the last detail*), *to later times* (*passed down*); `escape-v` sense 4 now covers *understood* (*the joke escaped me*) and sense 1 is transitive too (*escaped the burning car*). Duplicated facts cut: `exercise-n` usage note and two adaptation notes, `escape-v` grammar note, `down-adv` pronoun-order note; `fair-adj`'s generic semantic note removed. `exercise-n` compare `problem-n` removed both ways. Queued: `get-down-to-phrv`; `down-adj` row noted. Panel: 51 issues, 4 blocking, all applied; 44 applied, 7 rejected (*fair game* is under `game-n`; *not used in the passive* is a listed pattern). Spend US$0.24.
