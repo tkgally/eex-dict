@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] review | cross-reference fixes; coverage pass: interest, hit, green
+
+Run 20261104T070057Z-9mj2yk, cycle 2. The five forward references that named a phrase, not a sense, are now entry-level see-also links with notes (`also-adv`, `too-adv` to `well-adv`; `slightly-adv` to `bit-n`; `whatever-pron` to `matter-n`); `look-after-phrv`'s compare is mirrored on `look-v` sense 2; `birthday-n`'s `anniversary-n` synonym is mirrored, its duplicate see-also dropped. Coverage (184 done): `interest-n` interest-group subsense, phrases *out of interest* (British), *have someone's interests at heart*; `hit-v` subsenses attack or rob, go to or arrive at, meet a problem; `green-adj` unseasoned wood. Mirrors removed with their links: `similarly-adv`, `pale-adj`. Panel on eight entries: 75 issues, 4 blocking; 62 applied, 13 rejected (*hit the road*, *hit the nail on the head*, *too bad* are under `road-n`, `nail-n`, `bad-adj`). Many duplicated notes cut. Spend US$0.33.
+
 ## [2026-11-04] build | twelve band-2 nouns: buyer to cart
 
 Run 20261104T064344Z-9mj2yk, cycle 1. Built `buyer-n`, `cab-n`, `cafe-n`, `cafeteria-n`, `calorie-n`, `campaign-n`, `can-n`, `candidate-n`, `cap-n`, `capacity-n`, `car-park-n` (British), `cart-n`. All 24 transcriptions verified. Phrases: *a buyer's market*, *open a can of worms*, *in the can*, *kick the can down the road*, *put on your thinking cap*, *put the cart before the horse*. Panel: 61 issues, 6 blocking (cafeteria stress on the third syllable, not the fourth; a science-fact example in `calorie-n`; `buyer-n` no longer limited to large purchases); 58 applied, 4 rejected. `candidate-n`: the exam sense widened to degree students and moved last. The mushroom subsense of `cap-n` was dropped because `mushroom-n` has no entry and the vocabulary gate fails; add it when `mushroom-n` is built. *Upset the apple cart* goes under `apple-n`. Four NO-SENSE back-links placed by hand (`lid-n`, `limit-n`, `ability-n`, `role-n`). Spend US$0.36.
