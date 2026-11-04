@@ -140,10 +140,38 @@
       "compare": [
         {
           "slug": "beat-v",
-          "note": "beat means hit many times"
+          "note": null
         }
       ],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "attack a place or a thing, or rob a place",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "Thieves hit three shops on the same street last night.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The army hit the bridge from the air.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -326,7 +354,7 @@
     {
       "n": 4,
       "signpost": "reach or meet",
-      "definition": "reach a particular level, amount, or point, or meet something such as traffic or a problem on the way",
+      "definition": "reach a particular level, amount, or point",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -351,14 +379,14 @@
           "pattern": "verb + object"
         },
         {
-          "text": "We hit heavy traffic on the way home.",
+          "text": "The team finally hit its sales target.",
           "note": null,
           "pattern": "verb + object"
         },
         {
-          "text": "The team finally hit its sales target.",
+          "text": "She couldn't hit the high notes.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": null
         }
       ],
       "collocations": [
@@ -367,8 +395,7 @@
           "items": [
             "hit a target",
             "hit a record high",
-            "hit a high",
-            "hit traffic"
+            "hit a high"
           ]
         }
       ],
@@ -380,7 +407,93 @@
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "go to or arrive at a place, or arrive in stores",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [
+              "informal"
+            ],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "The new phone hits the stores next week.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "Let's hit the beach this afternoon.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "We hit the shops early to beat the crowds.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "hit the stores",
+                "hit the shops",
+                "hit the beach"
+              ]
+            }
+          ]
+        },
+        {
+          "letter": "b",
+          "definition": "meet a problem or a difficulty on the way",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "We hit heavy traffic on the way home.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The project hit a problem in its first week.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "hit traffic",
+                "hit a problem",
+                "hit a snag"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -617,17 +730,15 @@
     "note": "**Hit** is the everyday word for one blow: *He hit the ball.* **Strike** is more formal and more common in writing: *The ship struck a rock.* **Beat** means hit many times, often to hurt: *The robbers beat him badly.*"
   },
   "usage_note": null,
-  "learner_errors": [
-    {
-      "incorrect": "He hitted the ball.",
-      "correct": "He hit the ball.",
-      "note": "**Hit** is irregular: the past tense and past participle are both **hit**."
-    }
-  ],
+  "learner_errors": [],
   "etymology": null,
   "see_also": [
     {
       "slug": "hit-back-phrv",
+      "note": null
+    },
+    {
+      "slug": "hit-on-phrv",
       "note": null
     }
   ],
@@ -641,7 +752,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T00:46:48Z",
-    "modified": "2026-10-29T19:04:01Z",
+    "modified": "2026-11-04T07:10:44Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T004257Z-f05pzl",
     "reviews": [
@@ -682,6 +793,26 @@
         "date": "2026-10-02",
         "file": "reviews/20261002T010345Z-2sgl1j/hit-v.json",
         "ok": 79,
+        "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261104T070057Z-9mj2yk",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-04",
+        "file": "reviews/20261104T070057Z-9mj2yk/hit-v.json",
+        "ok": 75,
+        "issues": 14,
+        "blocking": 2
+      },
+      {
+        "run_id": "20261104T070057Z-9mj2yk",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-04",
+        "file": "reviews/20261104T070057Z-9mj2yk/hit-v.json",
+        "ok": 85,
         "issues": 1,
         "blocking": 0
       }
