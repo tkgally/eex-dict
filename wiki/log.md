@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] closure | six family nouns: calculation to chemical
+
+Run 20261104T011050Z-xicuhc, cycle 4. Built `calculation-n`, `calculator-n`, `cashier-n`, `catch-n`, `celebration-n`, `chemical-n` from `family` rows. All 12 transcriptions verified. `catch-n` has six senses (ball, hidden problem, the game, fish, a fastener, a partner), subsense *Good catch!*, phrase *a catch in someone's voice*. Panel: 22 issues, 1 blocking (*opened the catch*, now *undid*); 21 applied, 1 rejected. Applied: `calculation-n` sense 2 widened to judging likely results (*a political calculation*), countable or uncountable, no longer disapproving; `calculator-n` covers phone programs; `catch-n` synonym `latch-n`, `lock-n` moved to compare with a note (back-link placed by hand in `lock-n`), *safety catch* removed (a gun part). `cashier-n`, `chemical-n`: no issues. Spend US$0.18.
+
 ## [2026-11-04] review | coverage pass: language, knock, kill, key
 
 Run 20261104T010109Z-xicuhc, cycle 3. Coverage reading of four six-sense band-1 entries (181 done). Added: `knock-v` sense *knock someone's confidence* and subsense *knock the snow off your boots*; `kill-v` senses *you're killing me* (make laugh) and *I'd kill for a drink*, subsense *kill the pain*, phrase *kill it*; `key-n` phrase *off key*, the answer key split into a subsense. Duplicated facts cut in all four (usage notes, grammar and pronunciation adaptation notes). `knock-v`: criticize sense moved up; examples that were really *knock over*, *knock down* replaced. `language-n`: sign language is not *without words* (now *without spoken words*); `tongue-n` synonym removed from both sides, kept as see-also in `tongue-n`. Panel: 51 issues, 8 blocking, all applied; 47 applied, 4 rejected (*kill two birds* is under `bird-n`; *a bad language* is a real learner error). Spend US$0.22.
