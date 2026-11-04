@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-04] build | ten band-2 nouns: broadcast to butcher
+
+Run 20261104T004845Z-xicuhc, cycle 2. Built `broadcast-n`, `brown-n`, `browser-n`, `budget-n`, `builder-n`, `bulb-n`, `bull-n`, `burden-n`, `businessman-n`, `butcher-n`. All 20 transcriptions verified. Phrases: *on a budget*; *take the bull by the horns*, *like a bull in a china shop*, *shoot the bull* (American, informal); *the burden of proof*. Panel: 42 issues, 2 blocking; 34 applied, 8 rejected. Blocking: `burden-n` sense 2 relabeled literary (applied); `butcher-n` store subsense keeps its regional explanation (rejected, style guide section 4). Applied: `builder-n` rebuilt American-first (new houses; the home-repair use noted British; *contractor* fact in the culture note only) with a new sense, *confidence builder*; `budget-n` sense 1 countable or uncountable (*over budget*); `burden-n` definition covers a person; `brown-n` usage note removed. Rejected: *beast of burden* (keyword rule; row deferred), a syllable break inside *tʃ*. Queued `budget-adj`. Back-link placed by hand in `program-n`. Spend US$0.28.
+
 ## [2026-11-04] site | build and check, 79 of 79
 
 Run 20261104T004349Z-xicuhc, cycle 1. The selector chose site (highest scheduler debt). `tools/build_site.py` wrote 3,675 entries on 3,083 headword pages (6,818 files, no drafts withheld, no redirects); `tools/site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on all 3,089 pages. Nothing to fix; no entries changed. Pre-flight: no open pull requests, no orphan branches, no entry reports, inbox empty. Spend US$0.
