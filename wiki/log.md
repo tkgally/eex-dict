@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] lint | hundred-and-third pass
+
+Run 20261105T184353Z-1bmr60, cycle 1. Forced by the selector: ten runs since the last lint (the previous `NEXT.md` said four; it counted runs, not cycles). No inbox items, no open pull requests, no entry reports; orphan `claude/gallant-carson-1i8gd4` has no residue and is already listed for pruning. Caps, links, and gates clean. `crossref.py --all --apply` wrote mirror back-links on six entries (`charge-v`, `currency-n`, `cycle-n`, `cyclist-n`, `daylight-n`, `daytime-n`); 0 NO-SENSE pairs. Five spent claim files pruned. Band vote on 24 unbanded rows (US$0.0043), no wide splits; all now pending. `repair-forms` finds no hyphen-lost rows. Precision: no pair newly under the line. Reports: 324 circular candidates, 963 missing-sense pairs, 6 promises (all known). Index and pages agree; no duplicate curator lines; open questions none. Spend US$0.0043.
+
 ## [2026-11-05] review | title names and coverage: bag, dr., lord, mrs., mr., title
 
 Run 20261105T150508Z-go42fb, cycle 4. Read six entries: the five named in ruling 1 of 2026-11-05 and `bag-n`, next in the coverage pass. Only `lord-n` still put a given name after a title (*Lord Ravi*, now *Lord Weber*); the others use full names with a listed family name, which the ruling allows. Panel: 40 issues, 1 blocking (`bag-n` sense 2 used *bag* in its own definition); 31 applied, 9 rejected (*humorous* is a register value; *lord it over* is a verb use, `lord-v` queued; House of Lords left to the culture note; others), none escalated. Also: `lord-n` gained a crime sense (*drug lord*); `bag-n` sense 5 labeled dated; repeated facts trimmed in `bag-n`, `dr-abbr`, `mr-abbr`; `title-n` sense 4 and its subsense reworded. Spend US$0.22.
