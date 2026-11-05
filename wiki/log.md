@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] build | five entries: crown, crush, crystal, cure, curiosity
+
+Run 20261105T132043Z-1i8gd4, cycle 4. Built `crown-n`, `crush-n`, `crystal-n`, `cure-n`, `curiosity-n` in queue order; five, to leave room for wrap-up at the end of a four-cycle run. Panel: 16 issues, 1 blocking (a figurative *cure for a broken heart* under the medical sense; moved to the "solution" sense); 15 applied, 1 rejected (merging the gemstone sense of `crystal-n` into the ice-and-salt sense), none escalated. Also: a paper-crown example that did not fit the definition removed; *interest* made a compare, not a synonym, of *curiosity*. Two definition words outside the vocabulary (*dentist*, *tiny*) reworded; six NO-SENSE mirrors placed by hand (`title-n`, `top-n`, `crowd-n`, `glass-n`, `solution-n`, `interest-n`). All 10 transcriptions verified. Spend US$0.15.
+
 ## [2026-11-05] review | coverage pass: bottom, book, big, ball
 
 Run 20261105T130429Z-1i8gd4, cycle 3. Four band-1 six-sense entries read (B1 coverage pass, now 207 done, the last `ball-n`). Two panel rounds: 83 issues, 2 blocking; 65 applied, 18 rejected, none escalated. Added: `big-adj` sense 7 *generous* (*big of you*) and 5a *a big fan*; `ball-n` the baseball *ball* as its own sense (now sense 5, before the vulgar senses); phrases *hit bottom*, *scrape the bottom of the barrel*, *a closed book*, *don't judge a book by its cover*, *a whole new ball game*. Notes discipline: the *large*/*big* fact, the at/in *bottom of* fact, the *by* for authors fact, and the dance-party pointer of `ball-n` each now live in one field; generic adaptation notes removed. `novel-n` and `book-n` now compare, not synonyms. Rejected: marks on non-headword forms (*fell*, *scraping*), idioms whose keyword is another word (*rock bottom*, *no big deal*, *the oldest trick in the book*). Spend US$0.46.
@@ -176,7 +180,7 @@ Run 20261102T191257Z-los030, cycle 4 (four of twelve allowed). Built `yell-v` (s
 
 ## [2026-11-02] closure | five nouns, ban to banking
 
-Run 20261102T190556Z-los030, cycle 3 (five of twelve allowed). The `closure` source had no rows left; built five `family` rows: `ban-n` (an official rule; an order keeping someone out of a sport or a place; learner error *ban on*), `bang-n` (noise, hit, American *bangs* for hair, with *fringe* as the British word; phrases *with a bang* and American *more bang for your buck*), `bank-holiday-n` (British; a culture note that it is not a holiday for banks only), `banker-n` (in a bank, in a game), `banking-n` (the business, using a bank). All transcriptions and inflections verified; `bank-holiday-n` now marks secondary stress on *bank*, as other compounds do. Panel: 11 issues, 0 blocking, all applied (a lifetime ban did not fit "for a period of time"; collocation types; the American word for a bank holiday). Spend US$0.14.
+Run 20261102T190556Z-los030, cycle 3 (five of twelve allowed). The `closure` source had no rows left; built five `family` rows: `ban-n` (an official rule; an order keeping someone out of a sport or a place; learner error *ban on*), `bang-n` (noise, hit, American *bangs* for hair, with *fringe* as the British word; phrases *with a bang* and American *more bang for your buck*), `bank-holiday-n` (British; a culture note that it is not a holiday for banks only), `banker-n` (in a bank, in a game), `banking-n` (the business, using a bank). All transcriptions and inflections verified; `bank-holiday-n` now marks secondary stress on *bank*, as other compounds do. Panel: 11 issues, 0 blocking, all applied (a lifetime ban did not fit "for a period of time"; collocation types; the American word for a bank holiday). Spend US$0.15.
 
 ## [2026-11-02] build | six band-2 verbs, waste to wreck
 
