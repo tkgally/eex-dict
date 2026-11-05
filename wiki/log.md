@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] build | eight entries: chef, comedian, conference, consumption, cross, crossing, case (2), clip (2)
+
+Run 20261105T124916Z-1i8gd4, cycle 2. Six from the queue (`chef-n` to `crossing-n`) and the two hand-claimed homographs `case-n-2` (container) and `clip-v-2` (fasten), which `case-n`, `box-n`, and `clip-v` already pointed to. Two panel rounds (the second on the three entries that gained senses): 39 issues, 4 blocking; 36 applied, 3 rejected, none escalated. Added after review: *press conference* as its own sense of `conference-n`; media consumption (`consumption-n` 1a); a meeting-of-roads subsense and border crossings (`crossing-n`). Rejected: an attitude label on `comedian-n` 2, an asterisk mark on the listed plural *crosses*, merging the British suitcase sense of `case-n-2`. Six definition words outside the vocabulary reworded; six NO-SENSE mirrors placed by hand (`meeting-n`, `check-n`, `mixture-n`, `journey-n`, `fasten-v`, `attach-v`). All 16 transcriptions verified. `clip-n-2` (the fastener) is still unbuilt. Spend US$0.36.
+
 ## [2026-11-05] site | site check, 79 of 79
 
 Run 20261105T124402Z-1i8gd4, cycle 1. Rebuilt the site from 3,784 reviewed entries (3,171 headword pages, 7,000 files, no drafts withheld, no redirects) and ran `site_check.py` at phone and desktop widths: 79 checks, 0 failed, no sideways scroll on any of 3,177 pages at 360 px. Nothing to fix; no entry changed; no paid calls (US$0).
