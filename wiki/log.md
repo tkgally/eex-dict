@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] build | twelve band-1 and band-2 nouns: pillow to dentist
+
+Run 20261105T184843Z-1bmr60, cycle 2. Twelve nouns from the queue: `pillow-n`, `bookcase-n`, `coaching-n`, `dancer-n`, `darkness-n`, `darling-n`, `database-n`, `deadline-n`, `deck-n`, `decline-n`, `demonstration-n`, `dentist-n`. All 24 transcriptions verified (panel plus CMU); inflections from rules. Panel: 30 issues, 1 blocking (the countability of *darkness* sense 2, changed to match *a darkness in his paintings*). Decisions: 28 apply, 2 reject (the colour sense of *darkness* kept as a separate sense; reviewer B's call to drop the demonstration adaptation note, which names a real trap). `deck-n` gained a presentation sense and the phrases *on deck* and *stack the deck*; *all hands on deck* belongs under `hand-n`. Vocabulary fixes: *evil*, *wooden*, *occasion* out of definitions. Back-links placed by hand on `light-n` and `fall-n`; the *coaching*/*training* synonym dropped. Spend US$0.32.
+
 ## [2026-11-05] lint | hundred-and-third pass
 
 Run 20261105T184353Z-1bmr60, cycle 1. Forced by the selector: ten runs since the last lint (the previous `NEXT.md` said four; it counted runs, not cycles). No inbox items, no open pull requests, no entry reports; orphan `claude/gallant-carson-1i8gd4` has no residue and is already listed for pruning. Caps, links, and gates clean. `crossref.py --all --apply` wrote mirror back-links on six entries (`charge-v`, `currency-n`, `cycle-n`, `cyclist-n`, `daylight-n`, `daytime-n`); 0 NO-SENSE pairs. Five spent claim files pruned. Band vote on 24 unbanded rows (US$0.0043), no wide splits; all now pending. `repair-forms` finds no hyphen-lost rows. Precision: no pair newly under the line. Reports: 324 circular candidates, 963 missing-sense pairs, 6 promises (all known). Index and pages agree; no duplicate curator lines; open questions none. Spend US$0.0043.
