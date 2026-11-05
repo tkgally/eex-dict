@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] closure | twelve band-2 nouns: mushroom, collapse to contribution
+
+Run 20261105T004357Z-wu5vp0, cycle 1. Built `mushroom-n` (closure source, from `cap-n`) and eleven family nouns from `collapse-n` to `contribution-n`; `cook-n` claimed by accident and released. Panel: 77 issues, 6 blocking; 70 applied, 7 rejected, none escalated. Real coverage gaps filled: *collection* now covers gathering (*data collection*, *tax collection*), *confirmation* gains official approval for a public job, *communications* as a field of work. Rejected: reviewer B's *ɚ* in *consideration* (CMU agrees with ours). `congratulation-n` British IPA kept with ʊ to match `congratulate-v`, 1 of 3 votes: flagged, curator line. Thirteen NO-SENSE mirror links placed by hand. Spend US$0.42 (a repeated pronunciation call wasted about US$0.01).
+
 ## [2026-11-04] build | eight band-2 nouns: cliff to coffee shop
 
 Run 20261104T191202Z-22pl62, cycle 3. Built and reviewed `cliff-n`, `climbing-n`, `clip-n`, `clothing-n`, `clue-n`, `coach-n`, `coding-n`, `coffee-shop-n`; all 16 transcriptions verified. `clip-n` holds the cutting senses (video clip, a trim, a quick hit, a speed); the unrelated fastener (*paper clip*, *hair clip*) is to be built as `clip-n-2` by hand-claim, already named in `clip-n`'s see-also. Adjudication: 26 issues (3 blocking: a ball "giving a clip" in `clip-n`, flagged twice; and `clothing-n`'s learner-error advice to say *three new clothes*), 23 applied, 3 rejected (no marks needed on *fell* in a `cliff-n` phrase example; `clip-n`'s `video-n` synonym mirrors `video-n`). Back-link placed by hand: `car-n` sense 2 synonym `coach-n`. Spend US$0.23.
