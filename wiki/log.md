@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] build | six entries: chip, clip, coach, consume, interview, champion
+
+Run 20261105T072508Z-tam4hf, cycle 4. Built `chip-v`, `clip-v`, `coach-v`, `consume-v`, `interview-v`, `champion-n` in queue order; six, not twelve, to leave room for the pipeline late in a long run. Panel: 33 issues, 8 blocking (a modifier example *champion horses* in a noun entry, a health claim in a `consume-v` example, two `clip-v` examples that did not fit); 28 applied, 5 rejected (two *usually passive* objections: it is in the closed pattern list; *clip someone's wings* belongs under `wing-n`), none escalated. Added: media use of *consume* (subsense), golf *chip onto the green*, workplace coaching. `clip-v` is the cutting verb; fastening is `clip-v-2`, unbuilt. Five NO-SENSE mirrors placed by hand. All 12 transcriptions verified. Spend US$0.19.
+
 ## [2026-11-05] review | coverage pass: collect, charge, case, break, box
 
 Run 20261105T070946Z-tam4hf, cycle 3. Five band-1 six-sense entries read (B1 coverage pass, now 203 done). Two panel rounds (the second after new senses were added): 90 issues, 7 blocking; 82 applied, 8 rejected, none escalated. Added: *receive money or a prize* as its own sense (`collect-v`); *charge that ...* (formal subsense) and the bull *charged the farmer* (`charge-v`, whose account sense became subsense 1a); *in the case of* (`case-n`); a pause subsense, *a tough break*, and *tax break* as a sense (`break-n`). Notes discipline: repeated *in case*, *take a break*, and *charge ... for* facts now live in one field each; generic adaptation notes removed. Fixed: circular *P.O. box* and *break* definitions; *done a crime* now *committed*. Found: `case-n` has no container sense, which belongs to an unbuilt homograph `case-n-2`; `case-n` and `box-n` now point there. Spend US$0.48.
