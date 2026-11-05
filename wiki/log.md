@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] build | twelve band-2 nouns: contrast to creation
+
+Run 20261105T064429Z-tam4hf, cycle 1. Built `contrast-n`, `cook-n`, `cooking-n`, `cop-n`, `correction-n`, `corridor-n`, `costume-n`, `couch-n`, `count-n`, `counter-n`, `countryside-n`, `creation-n` in queue order. Panel: 45 issues, 1 blocking (*in contrast to* defined as an adjective); 42 applied, 4 rejected (marks on a multi-word phrase, *the act of* padding, a subsense form note, a valid grammar code), none escalated. Added: American *corrections* (the prison system), *good cop, bad cop*, standalone *in contrast*; `count-n` sense 1 now covers the total as well as the process. `correction-n` had a second panel pass for its new sense. Mirrors placed by hand in `difference-n`, `comparison-n`, `officer-n`. `count-n-2` (nobleman) is named in `see_also` but not queued: hand-claim it. All 24 transcriptions verified. Spend US$0.40.
+
 ## [2026-11-05] review | coverage pass: make up, dead, cross, count, corner, come on
 
 Run 20261105T011419Z-wu5vp0, cycle 3. Six band-1 six-sense entries read (B1 coverage pass, now 198 done). Panel: 82 issues, 2 blocking (one fault: *my feet felt dead with cold*); 72 applied, 10 rejected, none escalated. Most fixes were notes discipline: the same fact in an explanation, a learner error, and an adaptation note now lives in one field (`corner-n`, `count-v`, `cross-v`, `dead-adj`). Added: *make it up to someone*, `separable` codes (`make-up-phrv`); *cross yourself* and a sport sense (`cross-v`); *count against someone*; *in someone's corner*; *come on* onto a stage or field; *the dead* in `dead-adj`'s usage note. Rejected: *over my dead body* (in `body-n`) and *play dead* (for `play-v`). Mirrors removed in `late-adj`, `makeup-n`; `humor-n` now compares with `comedy-n`. Spend US$0.31.
