@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] build | eight band-2 nouns: department store to diary
+
+Run 20261105T191639Z-1bmr60, cycle 4 (the last of run 1bmr60). Eight nouns from the queue, fewer than the cap of twelve to keep them full: `department-store-n`, `departure-n`, `depression-n`, `dessert-n`, `destination-n`, `determination-n`, `developer-n`, `diary-n`. All 16 transcriptions verified; plurals from rules. Panel: 10 issues, none blocking; 9 applied, 1 rejected (a British label on the weather sense of *depression*: *tropical depression* is standard American forecasting). `depression-n` senses 1 and 2 now countable or uncountable, sense 2 reframed as a short sad mood; `determination-n` sense 2 now covers the decision itself. *vacation* replaced in a definition. Queued unbanded: `depress-v`, `depressing-adj`, `pudding-n`. Spend US$0.22.
+
 ## [2026-11-05] review | coverage pass: baby, around, black, business, face, right
 
 Run 20261105T190132Z-1bmr60, cycle 3. Read `baby-n` and `around-adv` (the last six-sense band-1 entries in the coverage pass) and four five-sense entries with idioms queued: `black-adj`, `business-n`, `face-n`, `right-n`; also `black-n`, which received *in black and white* (black is a noun there). Panel: 93 issues, 6 blocking (unfitting examples in `around-adv` and `right-n`'s *in your own right*, `face-n` sense 3 against its own examples, and my new attributive *baby carrots* sense, withdrawn with `baby-adj` queued). Decisions: 83 apply, 10 reject, 0 escalate. Added: `around-adv` sense *to each person* and two subsenses; `black-adj` sense *dirty*; `business-n` industry sense (now sense 3) and *big business*; `face-n` subsense *the face of something*, *stare someone in the face*, *show your face*; `right-n` *reserve the right to do something*, *the rights and wrongs of something*. Rejected: phrasal verbs and a no-noun idiom (*have been around*, for `be-v`) as `around-adv` coverage; adaptation notes in the style guide's *bank* form. `face-down-adv` queued. Spend US$0.39.
