@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-05 after the owner's rulings of that day ([owner-rulings-2026-11-05](wiki/decisions/owner-rulings-2026-11-05.md)).*
+*Rewritten 2026-11-05 after closure run 20261105T143931Z-go42fb, cycle 1.*
 
 ## State
 
-- 3,797 entries, all `reviewed`. Site checked 2026-11-05 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
+- 3,809 entries, all `reviewed`. Site checked 2026-11-05 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows at lints.
-- Spend 2026-11-05: US$3.12 of US$15 so far. Originality: last 2026-11-04.
+- Spend 2026-11-05: US$3.45 of US$15 so far. Originality: last 2026-11-04.
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -19,8 +19,8 @@
 1. **build**: queue order (last built `curiosity-n`). Hand-claim `count-n-2` (nobleman), `clip-n-2` (the fastener; `clip-v-2` points to it). At `black-adj`'s review, consider moving *in black and white* to `black-n`. Later: `tap-n-2`, `wind-v-2` (*winded*). Idioms, at next review or build: `balance-n` *tip the balance*, *strike a balance*; `scale-n` *tip the scales*; `blood-n` *sweat blood*; `stuff-n` *sweat the small stuff*; `fear-n` *strike fear into someone*; `time-n` *waste no time*; `face-n` *stare someone in the face*; `disbelief-n` *suspend disbelief*; `chord-n` *strike a chord*; `pose-n` *strike a pose*; `toast-n` *propose a toast*; `right-n` *reserve the right to*; `let-v` *let's face it*, *let rip*, *let something slip*; `keep-v` *keep someone posted*; `be-v` *too good to be true*, *to be sure*; `ring-v` *ring true*; `form-n` *true to form*; `power-n` *power of attorney*; `chain-n` *chain of command*; `play-v` *play dead*; `drama-n` *drama queen* (when built); `apple-n` *upset the apple cart*; `rock-n` *rock bottom*; `trick-n` *the oldest trick in the book*; `deal-n` *no big deal*; House rules 16 and 18; phrasal verbs get `separable` codes when next reviewed (B4 i).
 2. **originality**: ask reviewer-b in one call; search any wording it quotes, and headword plus opening words.
 3. **review**: fix given names after *Mr.*/*Mrs.*/*Dr.*/*Lord* (*Mr. Sam*, *Mrs. Ana*, *Dr. Mari*, *Mr. Ravi*, *Lord Ravi*) in `dr-abbr`, `lord-n`, `mrs-abbr`, `mr-abbr`, `title-n` with a listed family name at their next review (ruling 1). Reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
-4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `contribution-n` (2026-11-05); then queue order. `mushroom-n` built: add the mushroom-top subsense to `cap-n` at its next review. Hand-claim `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); *a small fortune* (`fortune-n` when built); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`, *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
-5. **lint**: every ten runs; last 2026-11-05 (hundred-and-second pass), next due in eight runs. Wiki 27,262 of 30,000 words. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42).
+4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `detective-n` (2026-11-05); then queue order. `designer-adj` (*designer jeans*) queued as a crossref row. `mushroom-n` built: add the mushroom-top subsense to `cap-n` at its next review. Hand-claim `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); *a small fortune* (`fortune-n` when built); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`, *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
+5. **lint**: every ten runs; last 2026-11-05 (hundred-and-second pass), next due in seven runs. Wiki 27,262 of 30,000 words. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42).
 6. **Tooling notes** (`wiki/notes/`): fixes due: `queue-hyphen-loss`; a repeated `band_vote.py apply` doubles its note.
 
 ## Fences (do not re-grind)
@@ -38,6 +38,6 @@
 
 ## For the owner
 
-- Latest report: `journal/2026-11-05-3.md`. Rulings of 2026-11-05 carried out ([page](wiki/decisions/owner-rulings-2026-11-05.md)).
+- Latest report: `journal/2026-11-05-4.md`. Rulings of 2026-11-05 carried out ([page](wiki/decisions/owner-rulings-2026-11-05.md)).
 - Left for a session with you (ruling 6): pronunciation disputes in `reviews/needs_curator.txt`; the ten-entry sample in `journal/digest-2026-10-31.md`. Routine runs do not settle them.
 - Site: <https://tkgally.github.io/eex-dict/>
