@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] lint | hundred-and-second pass
+
+Run 20261105T070330Z-tam4hf, cycle 2. No inbox items or entry reports. Caps, links, gates clean. `crossref.py --all --apply` wrote six mirror back-links (`cereal-n`, `chart-n`, `chewing-gum-n`, `classmate-n`, `cook-n`, `cop-n`); ten NO-SENSE pairs placed by hand (`counter-n` from `bar-n` and `desk-n`; `complaint-n`, `collapse-n`, `combination-n`, `cooking-n`, `congress-n`, `celebrity-n`, `collection-n`, `challenge-n`). Seven spent claim files pruned. Band vote on 45 unbanded rows (US$0.007), no wide splits. Precision: reviewer B `pronunciation` 0.26 over 42 decisions, under the line: switched off in `tools/review_panel.py` (its rejections were house IPA form objections against verified votes). `reviewer-precision.md` passes two to forty-one condensed (wiki now 27,262 words). Reports: 328 circular candidates, 958 missing-sense pairs, 6 promises (all known). Index and pages agree; no duplicate curator lines. Spend US$0.007.
+
 ## [2026-11-05] build | twelve band-2 nouns: contrast to creation
 
 Run 20261105T064429Z-tam4hf, cycle 1. Built `contrast-n`, `cook-n`, `cooking-n`, `cop-n`, `correction-n`, `corridor-n`, `costume-n`, `couch-n`, `count-n`, `counter-n`, `countryside-n`, `creation-n` in queue order. Panel: 45 issues, 1 blocking (*in contrast to* defined as an adjective); 42 applied, 4 rejected (marks on a multi-word phrase, *the act of* padding, a subsense form note, a valid grammar code), none escalated. Added: American *corrections* (the prison system), *good cop, bad cop*, standalone *in contrast*; `count-n` sense 1 now covers the total as well as the process. `correction-n` had a second panel pass for its new sense. Mirrors placed by hand in `difference-n`, `comparison-n`, `officer-n`. `count-n-2` (nobleman) is named in `see_also` but not queued: hand-claim it. All 24 transcriptions verified. Spend US$0.40.
