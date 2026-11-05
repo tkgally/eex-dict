@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] build | twelve band-2 nouns: collar to context
+
+Run 20261105T010225Z-wu5vp0, cycle 2. Built `collar-n`, `combination-n`, `comedy-n`, `command-n`, `companion-n`, `complaint-n`, `concept-n`, `congress-n`, `consequence-n`, `construction-n`, `consumer-n`, `context-n` in queue order. Panel: 35 issues, 3 blocking (a circular definition in *complaint*; British *motor show* in *concept*); 31 applied, 4 rejected, none escalated. Added: *second in command* (`command-n`), a partner subsense (`companion-n`), creating ideas or systems (`construction-n`). Rejected: *chain of command* under `command-n` (its keyword is *chain*). All 24 transcriptions verified. Ten NO-SENSE mirror links placed by hand. Spend US$0.35.
+
 ## [2026-11-05] closure | twelve band-2 nouns: mushroom, collapse to contribution
 
 Run 20261105T004357Z-wu5vp0, cycle 1. Built `mushroom-n` (closure source, from `cap-n`) and eleven family nouns from `collapse-n` to `contribution-n`; `cook-n` claimed by accident and released. Panel: 77 issues, 6 blocking; 70 applied, 7 rejected, none escalated. Real coverage gaps filled: *collection* now covers gathering (*data collection*, *tax collection*), *confirmation* gains official approval for a public job, *communications* as a field of work. Rejected: reviewer B's *ɚ* in *consideration* (CMU agrees with ours). `congratulation-n` British IPA kept with ʊ to match `congratulate-v`, 1 of 3 votes: flagged, curator line. Thirteen NO-SENSE mirror links placed by hand. Spend US$0.42 (a repeated pronunciation call wasted about US$0.01).
