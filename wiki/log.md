@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] build | six entries: currency, cushion, customs, cycle, cyclist, dairy
+
+Run 20261105T145712Z-go42fb, cycle 3. Built `currency-n`, `cushion-n`, `customs-n`, `cycle-n`, `cyclist-n`, `dairy-n` in queue order; six, to keep the third cycle's entries as full as the first's. Panel: 30 issues, 2 blocking (a collocation without the headword in `currency-n`; *motorcycle* wrongly in the bicycle sense of `cycle-n`); 25 applied, 5 rejected (three *often before another noun* objections, *plural only* with a singular-or-plural verb, collocation order), none escalated. Also: *a vicious cycle* lost its American label; the *custom*/*customs* contrast now lives once, in a learner error; `dairy-n` sense 2 rewritten as one producer sense. *yogurt* reworded out of a definition. One NO-SENSE mirror placed by hand (`custom-n`). All 12 transcriptions verified. Spend US$0.17.
+
 ## [2026-11-05] originality | check of ten sampled definitions
 
 Run 20261105T145355Z-go42fb, cycle 2 (forced: run 700 is a multiple of twenty). Ten fields sampled by `originality_check.py` (`crash-v`, `bang-n`, `laugh-n`, `ticket-n`, `event-n`, `form-v`, `hair-n`, `get-v`, `death-n`, `murder-n`). Exact-phrase web searches found no published match for any; `event-n` *if something happens* and `hair-n` *thin threads* repeat the obvious plain formula and are generic overlap. Reviewer B, asked in one call, named no source. Verdicts: original 8, generic-overlap 2, rewrite 0; recorded in `reviews/originality/2026-11-05.md`. No entry changed. Spend US$0.005.
