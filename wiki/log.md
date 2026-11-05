@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] review | coverage pass: collect, charge, case, break, box
+
+Run 20261105T070946Z-tam4hf, cycle 3. Five band-1 six-sense entries read (B1 coverage pass, now 203 done). Two panel rounds (the second after new senses were added): 90 issues, 7 blocking; 82 applied, 8 rejected, none escalated. Added: *receive money or a prize* as its own sense (`collect-v`); *charge that ...* (formal subsense) and the bull *charged the farmer* (`charge-v`, whose account sense became subsense 1a); *in the case of* (`case-n`); a pause subsense, *a tough break*, and *tax break* as a sense (`break-n`). Notes discipline: repeated *in case*, *take a break*, and *charge ... for* facts now live in one field each; generic adaptation notes removed. Fixed: circular *P.O. box* and *break* definitions; *done a crime* now *committed*. Found: `case-n` has no container sense, which belongs to an unbuilt homograph `case-n-2`; `case-n` and `box-n` now point there. Spend US$0.48.
+
 ## [2026-11-05] lint | hundred-and-second pass
 
 Run 20261105T070330Z-tam4hf, cycle 2. No inbox items or entry reports. Caps, links, gates clean. `crossref.py --all --apply` wrote six mirror back-links (`cereal-n`, `chart-n`, `chewing-gum-n`, `classmate-n`, `cook-n`, `cop-n`); ten NO-SENSE pairs placed by hand (`counter-n` from `bar-n` and `desk-n`; `complaint-n`, `collapse-n`, `combination-n`, `cooking-n`, `congress-n`, `celebrity-n`, `collection-n`, `challenge-n`). Seven spent claim files pruned. Band vote on 45 unbanded rows (US$0.007), no wide splits. Precision: reviewer B `pronunciation` 0.26 over 42 decisions, under the line: switched off in `tools/review_panel.py` (its rejections were house IPA form objections against verified votes). `reviewer-precision.md` passes two to forty-one condensed (wiki now 27,262 words). Reports: 328 circular candidates, 958 missing-sense pairs, 6 promises (all known). Index and pages agree; no duplicate curator lines. Spend US$0.007.
