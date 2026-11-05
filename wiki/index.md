@@ -6,7 +6,7 @@
 
 - [conventions](conventions.md) — the schema of this knowledge base and every file format the tools read or write: slugs, shards, run ids, claims, the queue, review files, the decision ledger, the budget ledger, metrics.
 - [style-guide](style-guide.md) — the house style every drafting session reads: definitions, senses, examples, the inline marks, grammar, labels, boxes, phrases, adaptation notes, originality; three model entries (section 17).
-- [open-questions](open-questions.md) — questions for the owner with the working assumption in force; the first seven answered 2026-10-05 (the milestone-1 order superseded 2026-10-24); two open (continent names in definitions, 2026-10-10; noun or pronoun for *the former* and *the following*, 2026-10-11).
+- [open-questions](open-questions.md) — questions for the owner with the working assumption in force; none open (the first seven answered 2026-10-05, the milestone-1 order superseded 2026-10-24; continent names and *the former*/*the following* answered 2026-11-05).
 
 ## Decisions (one page each; binding)
 
@@ -40,7 +40,7 @@
 - [site](decisions/site.md) — static, mobile-first, built by CI, checked by a Routine mode.
 - [inline-markup](decisions/inline-markup.md) — the owner's ruling of 2026-09-18: words named as words and quoted illustrations are marked in the prose (`**word**`, `*phrase*`); the headword in examples is marked by the site; how the seed set is converted.
 - [part-of-speech-and-consistency](decisions/part-of-speech-and-consistency.md) — one part of speech per entry, the entry agrees with itself, origin claims only in etymology, grammar exceptions named as such, pronunciation notes in plain words (from the seed-set feedback of 2026-09-18).
-- [proper-names-in-definitions](decisions/proper-names-in-definitions.md) — the owner's ruling of 2026-10-05: a closed list of proper names (`proper_names` in `schema/vocabularies.json`) may appear in definitions; `lint_vocab.py` accepts them and never queues them.
+- [proper-names-in-definitions](decisions/proper-names-in-definitions.md) — the owner's ruling of 2026-10-05: a closed list of proper names (`proper_names` in `schema/vocabularies.json`) may appear in definitions; `lint_vocab.py` accepts them and never queues them. Continent names added 2026-11-05.
 - [reviewer-b-upgrade](decisions/reviewer-b-upgrade.md) — the owner's ruling of 2026-10-05: the `reviewer-b` role moves to the Pro-class Google model; only that role; the cap stays US$15.
 - [reviewer-a-claude](decisions/reviewer-a-claude.md) — the owner's ruling of 2026-10-25, after `experiments/claude-reviewers-v1`: `reviewer-a` becomes a Claude model run headless through `claude -p` at high effort on the owner's subscription ($0 in the ledger, tokens recorded); reviewer B unchanged; the old model's lint switch-offs reset, the owner's pronunciation switch-off kept; precision per model from then on.
 - [model-refresh-2026-10-25](decisions/model-refresh-2026-10-25.md) — the owner's ruling of 2026-10-25, after `experiments/model-refresh-v1`: `reviewer-b` becomes Gemini 4 Argon and `pronunciation-1` GPT-6.1 Sol (low reasoning effort); `wordlist-1` unchanged; prices updated; reviewer B's old lint switch-offs reset; precision per model.
@@ -55,6 +55,7 @@
 - [reviewer-house-rules](decisions/reviewer-house-rules.md) — rulings B1, E1, E2: a house-rules file for both reviewers, the required `coverage` and example-fit checks, the reviewer-b trial rule, the coverage pass, and the second-round review order.
 - [process-overhead](decisions/process-overhead.md) — rulings E3 and E5: lint every ten runs, originality every twenty; `NEXT.md` capped at 1,000 words; one journal per run with a section per cycle; a weekly digest; nothing depends on the run schedule.
 - [owner-in-the-loop](decisions/owner-in-the-loop.md) — ruling E4: ten entries for the owner to sample in each digest, a "Report a problem" link on every entry handled as untrusted claims, and the list of meaning questions settled against both reviewers.
+- [owner-rulings-2026-11-05](decisions/owner-rulings-2026-11-05.md) — family names after a title (a closed list), `PROJECT.md` reviewer wording, pronunciation checked by the panel plus CMU only, continent names in definitions, *the former*/*the latter*/*the following* as nouns; pronunciation disputes and the digest sample left for a session with the owner.
 
 ## Notes (observed problems, method records, experiment results)
 
