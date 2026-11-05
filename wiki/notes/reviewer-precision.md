@@ -221,3 +221,7 @@ No switch-offs. `reviewer-a:claude-sonnet-5-5` rose from 0.86 (272/316) to 0.80 
 ## 2026-11-05: hundred-and-second pass, reviewer B `pronunciation` switched off
 
 `reviewer-a:claude-sonnet-5-5` 0.84 (4693/5604). `reviewer-b:gemini-4-argon` 0.82 (2086/2557); `pronunciation` 0.26 (11 applied, 29 rejected, 2 escalated), now over twenty and under the line: added to `DISABLED_FAMILIES`. Its rejections since 2026-11-03 were nearly all objections to the house IPA form (optional syllable periods, the whole *ʊʃ* in *butcher*, *form* and *warm* rhyming), each against a verified panel and CMU vote. Both reviewers are now off pronunciation; transcriptions are still checked by `tools/pronounce_check.py` (panel plus CMU). `spelling-or-format` 0.31 (68/219), live by the owner's ruling; `inflection` 0.33 (5/15), under twenty.
+
+## 2026-11-05: hundred-and-third pass, no new switch-offs
+
+`reviewer-a:claude-sonnet-5-5` 0.84 (4926/5876); lowest live pairs `coverage` 0.60 (live by ruling B1) and `spelling-or-format` 0.62. `reviewer-b:gemini-4-argon` 0.82 (2193/2680); `spelling-or-format` 0.32 (73/228), live by the owner's ruling; `inflection` 0.33 (5/15), under twenty.
