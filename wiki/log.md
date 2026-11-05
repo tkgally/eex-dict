@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] closure | twelve family nouns: curse to detective
+
+Run 20261105T143931Z-go42fb, cycle 1. The `closure` source was empty, so twelve `family` rows were built in queue order: `curse-n`, `cycling-n`, `daddy-n`, `dancing-n`, `daylight-n`, `daytime-n`, `dealer-n`, `defeat-n`, `delivery-n`, `deposit-n`, `designer-n`, `detective-n`. Panel: 64 issues, 15 blocking; 57 applied, 7 rejected (four repeat *often before another noun* objections, two marginal coverage asks on `daylight-n`, *the dealer* in a card game), none escalated. Main changes: the attributive *designer jeans* use moved out of `designer-n` (`designer-adj` queued); a wrong "paid by the public" in the private-detective subsense; `delivery-n` gained a subsense for the goods and a formal service sense; `defeat-n` sense 2 made singular only. Three NO-SENSE mirrors placed by hand (`blessing-n`, `dance-n`, `loss-n`). All 24 transcriptions verified. Spend US$0.33.
+
 ## [2026-11-05] owner | rulings: family names, continents, *the former*, pronunciation check
 
 The owner ruled in an interactive session (text archived as `inbox/archive/20261105_owner_rulings.txt`; [page](decisions/owner-rulings-2026-11-05.md)). (1) A title may take a family name from a closed list of sixteen (Chen to Weber): style guide section 5, [examples](decisions/examples.md), the reviewer prompt, house rule 26; the curator line on titles is resolved. (2) `PROJECT.md` now says two reviewers from different labs. (3) The panel plus CMU stays the only pronunciation check; [pronunciation-pipeline](decisions/pronunciation-pipeline.md) and [reviewer-a-claude](decisions/reviewer-a-claude.md) updated. (4) The seven continent names joined `proper_names`. (5) *The former*, *the latter*, *the following* are nouns; `latter-n` queued; house rule 23 updated. Both open questions answered. (6) Pronunciation disputes and the digest sample wait for a session with the owner. No entry changed; no spend.
