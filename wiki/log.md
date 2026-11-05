@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] site | site check, 79 of 79
+
+Run 20261105T124402Z-1i8gd4, cycle 1. Rebuilt the site from 3,784 reviewed entries (3,171 headword pages, 7,000 files, no drafts withheld, no redirects) and ran `site_check.py` at phone and desktop widths: 79 checks, 0 failed, no sideways scroll on any of 3,177 pages at 360 px. Nothing to fix; no entry changed; no paid calls (US$0).
+
 ## [2026-11-05] build | six entries: chip, clip, coach, consume, interview, champion
 
 Run 20261105T072508Z-tam4hf, cycle 4. Built `chip-v`, `clip-v`, `coach-v`, `consume-v`, `interview-v`, `champion-n` in queue order; six, not twelve, to leave room for the pipeline late in a long run. Panel: 33 issues, 8 blocking (a modifier example *champion horses* in a noun entry, a health claim in a `consume-v` example, two `clip-v` examples that did not fit); 28 applied, 5 rejected (two *usually passive* objections: it is in the closed pattern list; *clip someone's wings* belongs under `wing-n`), none escalated. Added: media use of *consume* (subsense), golf *chip onto the green*, workplace coaching. `clip-v` is the cutting verb; fastening is `clip-v-2`, unbuilt. Five NO-SENSE mirrors placed by hand. All 12 transcriptions verified. Spend US$0.19.
