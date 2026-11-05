@@ -109,7 +109,7 @@
           "type": "noun + noun",
           "items": [
             "a book cover",
-            "a bookshelf"
+            "a book club"
           ]
         }
       ],
@@ -197,14 +197,14 @@
           ]
         }
       ],
-      "synonyms": [
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [
         {
           "slug": "novel-n",
-          "note": "a book that tells an invented story"
+          "note": "a **novel** is one kind of book, a long story that someone has made up"
         }
       ],
-      "antonyms": [],
-      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -218,7 +218,7 @@
     {
       "n": 3,
       "signpost": "set of things",
-      "definition": "a set of things such as tickets or paper matches fastened together like a book",
+      "definition": "a set of things such as tickets or matches fastened together inside a thin cover",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -380,7 +380,7 @@
     },
     {
       "n": 6,
-      "signpost": "part of a long work",
+      "signpost": "part of a work",
       "definition": "one of the main parts of a very long piece of writing",
       "explanation": null,
       "grammar": {
@@ -473,7 +473,7 @@
       "sub_id": "in-someones-good-books",
       "text": "in someone's good books",
       "definition": "liked by someone, especially after you have done something to please them",
-      "explanation": "The opposite is *in someone's bad books*.",
+      "explanation": "The opposite is *in someone's bad books*, not liked by someone because you have done something wrong.",
       "labels": {
         "register": [
           "informal"
@@ -487,7 +487,7 @@
       },
       "examples": [
         {
-          "text": "I cleaned the kitchen, so I'm in Mom's good books today.",
+          "text": "I cleaned the kitchen, so I'm in my mother's good books today.",
           "note": null,
           "pattern": null
         }
@@ -678,6 +678,72 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "sub_id": "a-closed-book",
+      "text": "a closed book",
+      "definition": "a subject that you do not understand or know anything about",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Math has always been a closed book to me.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "For most people, the law is a closed book.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "dont-judge-a-book-by-its-cover",
+      "text": "don't judge a book by its cover",
+      "definition": "do not decide what someone or something is like only from the way they look",
+      "explanation": "Also *you can't judge a book by its cover*.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "He looks unfriendly, but don't judge a book by its cover.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The restaurant looked old and dirty, but you can't judge a book by its cover.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "word_family": [
@@ -703,7 +769,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "To name the writer, use **by**: *a book by Sara*. To name the subject, use **about** or **on**: *a book about birds*. *Sara's book* can mean the book she wrote or the book she owns.",
+  "usage_note": "*Sara's book* can mean the book she wrote or the book she owns; *a book by Sara* is only one she wrote.",
   "learner_errors": [
     {
       "incorrect": "I'm reading a book of Omar.",
@@ -731,7 +797,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "**Book** covers the object and the text. Some languages use different words for a printed book and for a long written work; check which is meant.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -740,7 +806,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-01T01:16:32Z",
-    "modified": "2026-10-06T01:07:15Z",
+    "modified": "2026-11-05T13:17:17Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261001T011412Z-qqiz7l",
     "reviews": [
@@ -781,6 +847,26 @@
         "date": "2026-10-06",
         "file": "reviews/20261006T005934Z-rm8z5o/book-n.json",
         "ok": 110,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261105T130429Z-1i8gd4",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-05",
+        "file": "reviews/20261105T130429Z-1i8gd4/book-n.json",
+        "ok": 117,
+        "issues": 5,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261105T130429Z-1i8gd4",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-05",
+        "file": "reviews/20261105T130429Z-1i8gd4/book-n.json",
+        "ok": 122,
         "issues": 0,
         "blocking": 0
       }
