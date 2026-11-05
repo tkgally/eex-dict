@@ -45,7 +45,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**Black** is the darkest color; the word is also used for people with dark skin, for coffee without milk, and for things that are sad or unpleasant.",
+  "core_idea": "**Black** is the darkest color; the word is also used for people with dark skin whose families came from Africa, for coffee without milk, for dirt, and for humor or moods about sad or unpleasant things.",
   "senses": [
     {
       "n": 1,
@@ -166,8 +166,8 @@
     {
       "n": 2,
       "signpost": "people",
-      "definition": "belonging to a group of people who have dark skin, or connected with them",
-      "explanation": "Used especially of people whose families came from Africa, and of their history and culture.",
+      "definition": "belonging to a group of people with dark skin whose families came from Africa in the past, or connected with them",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -214,12 +214,7 @@
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "brown-adj",
-          "note": null
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -234,11 +229,13 @@
       "n": 3,
       "signpost": "coffee",
       "definition": "without milk or cream",
-      "explanation": "Used of coffee and tea.",
+      "explanation": "Used of coffee, and sometimes of tea.",
       "grammar": {
         "countability": null,
         "transitivity": null,
-        "codes": [],
+        "codes": [
+          "not gradable"
+        ],
         "patterns": []
       },
       "labels": {
@@ -270,8 +267,7 @@
         {
           "type": "adjective + noun",
           "items": [
-            "black coffee",
-            "black tea"
+            "black coffee"
           ]
         }
       ],
@@ -295,15 +291,13 @@
     },
     {
       "n": 4,
-      "signpost": "funny about bad things",
-      "definition": "making jokes about things that are unpleasant or frightening, such as death",
+      "signpost": "humor",
+      "definition": "treating unpleasant or frightening subjects, such as death, in a funny way",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": null,
-        "codes": [
-          "attributive only"
-        ],
+        "codes": [],
         "patterns": []
       },
       "labels": {
@@ -410,6 +404,64 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 6,
+      "signpost": "dirty",
+      "definition": "very dirty, especially from smoke, oil, or soil",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": null,
+        "codes": [],
+        "patterns": []
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "His hands were black with oil.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The walls were black from the smoke.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "After the game, the children's knees were black.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "adjective + preposition",
+          "items": [
+            "black with something",
+            "black from something"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [
@@ -450,7 +502,7 @@
       "sub_id": "black-and-white",
       "text": "black and white",
       "definition": "showing only black, white, and gray, not other colors",
-      "explanation": null,
+      "explanation": "It also describes a situation or a question in which right and wrong are clear and simple: *The problem is not as black and white as it seems*.",
       "labels": {
         "register": [],
         "region": [],
@@ -466,39 +518,6 @@
         },
         {
           "text": "She takes black and white photos.",
-          "note": null,
-          "pattern": null
-        }
-      ],
-      "adaptation": {
-        "semantic": null,
-        "grammar": null,
-        "culture": null,
-        "false_friends": null,
-        "pronunciation": null
-      },
-      "l1": {}
-    },
-    {
-      "sub_id": "in-black-and-white",
-      "text": "in black and white",
-      "definition": "in writing or in print, so that it is clear and can be checked",
-      "explanation": null,
-      "labels": {
-        "register": [],
-        "region": [],
-        "domain": [],
-        "currency": [],
-        "attitude": []
-      },
-      "examples": [
-        {
-          "text": "I want the offer in black and white before I agree.",
-          "note": null,
-          "pattern": null
-        },
-        {
-          "text": "The rules are there in black and white.",
           "note": null,
           "pattern": null
         }
@@ -551,7 +570,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "Coffee without milk is *black coffee* in English. Some languages describe it with a different word, not a color.",
+    "semantic": null,
     "grammar": null,
     "culture": "In many English-speaking countries, black clothes are worn at funerals and show sadness; in some other cultures a different color, such as white, is used.",
     "false_friends": null,
@@ -560,7 +579,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-10T09:08:17Z",
-    "modified": "2026-10-14T13:15:30Z",
+    "modified": "2026-11-05T19:12:00Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261010T090355Z-22po9n",
     "reviews": [
@@ -602,6 +621,26 @@
         "file": "reviews/20261014T130234Z-lztq6d/black-adj.json",
         "ok": 78,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261105T190132Z-1bmr60",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-05",
+        "file": "reviews/20261105T190132Z-1bmr60/black-adj.json",
+        "ok": 64,
+        "issues": 12,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261105T190132Z-1bmr60",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-05",
+        "file": "reviews/20261105T190132Z-1bmr60/black-adj.json",
+        "ok": 71,
+        "issues": 5,
         "blocking": 0
       }
     ],
