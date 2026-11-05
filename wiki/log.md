@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] review | title names and coverage: bag, dr., lord, mrs., mr., title
+
+Run 20261105T150508Z-go42fb, cycle 4. Read six entries: the five named in ruling 1 of 2026-11-05 and `bag-n`, next in the coverage pass. Only `lord-n` still put a given name after a title (*Lord Ravi*, now *Lord Weber*); the others use full names with a listed family name, which the ruling allows. Panel: 40 issues, 1 blocking (`bag-n` sense 2 used *bag* in its own definition); 31 applied, 9 rejected (*humorous* is a register value; *lord it over* is a verb use, `lord-v` queued; House of Lords left to the culture note; others), none escalated. Also: `lord-n` gained a crime sense (*drug lord*); `bag-n` sense 5 labeled dated; repeated facts trimmed in `bag-n`, `dr-abbr`, `mr-abbr`; `title-n` sense 4 and its subsense reworded. Spend US$0.22.
+
 ## [2026-11-05] build | six entries: currency, cushion, customs, cycle, cyclist, dairy
 
 Run 20261105T145712Z-go42fb, cycle 3. Built `currency-n`, `cushion-n`, `customs-n`, `cycle-n`, `cyclist-n`, `dairy-n` in queue order; six, to keep the third cycle's entries as full as the first's. Panel: 30 issues, 2 blocking (a collocation without the headword in `currency-n`; *motorcycle* wrongly in the bicycle sense of `cycle-n`); 25 applied, 5 rejected (three *often before another noun* objections, *plural only* with a singular-or-plural verb, collocation order), none escalated. Also: *a vicious cycle* lost its American label; the *custom*/*customs* contrast now lives once, in a learner error; `dairy-n` sense 2 rewritten as one producer sense. *yogurt* reworded out of a definition. One NO-SENSE mirror placed by hand (`custom-n`). All 12 transcriptions verified. Spend US$0.17.
