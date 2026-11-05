@@ -28,7 +28,7 @@ The TKG English Learner's Dictionary is an original English-English learner's di
 
 ## Process
 
-- **Drafting.** The Routine's model drafts entries in-session from its own knowledge and the style guide. Two non-Anthropic reviewers on OpenRouter check every field. Switching to flagship drafting via OpenRouter is a decision the owner makes after seeing the seed set; the drafter is a configuration setting.
+- **Drafting.** The Routine's model drafts entries in-session from its own knowledge and the style guide. Two reviewers from different labs (reviewer A Anthropic, reviewer B non-Anthropic) check every field. Switching to flagship drafting via OpenRouter is a decision the owner makes after seeing the seed set; the drafter is a configuration setting.
 - **External verification.** Pronunciation and inflections are checked by multi-model agreement and, where a run can reach one, by a run-time consultation of an open resource that leaves nothing in the repository. Frequency bands and regional labels are checked by multi-model agreement. Definitions, examples, grammar, labels, collocations, notes, and adaptation notes rely on multi-model review that reads every field, including notes.
 - **Seed set.** The founding session wrote the style guide and the exemplar entries through the full pipeline, for the owner's review before the Routine starts.
 - **Cadence.** One to six Routine runs per day; runs may overlap. The model and cadence may change later; nothing in the repository may depend on either.

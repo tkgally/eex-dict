@@ -8,6 +8,8 @@
 
 **Added.** **Moses**, 2026-10-05, for `judaism-n`: the plain accurate definition (*the religion of the Jewish people*) needs a word with no entry, and the alternative names the law that, Jews believe, God gave to Moses.
 
+**Added.** The seven continent names (**Africa**, **Antarctica**, **Asia**, **Australia**, **Europe**, **North America**, **South America**), 2026-11-05, by the owner's ruling ([owner-rulings-2026-11-05](owner-rulings-2026-11-05.md)), answering the open question of 2026-10-10; a definition no longer moves a continent name into its explanation.
+
 **What the tools do.** `tools/lint_vocab.py` reads the list and accepts each word of a listed name wherever it meets it in prose, so `--gate` passes a definition that uses one, and `--queue` never queues one as a headword. A name not on the list is still reported. The names are not headwords and get no entries.
 
 **Writing with them.** Use a listed name only where no plain wording is accurate (a religion and its followers, defined by the person it is named after or follows). Keep the definition neutral: what followers believe or follow, not whether it is true.

@@ -48,7 +48,7 @@ Rules:
 
 - **No checkable real-world facts.** No dates, statistics, named events, historical claims, science claims, prices, populations, records. *The river flooded last spring* is fine; *The river flooded in 1953* is not.
 - **Settings culturally neutral.** Homes, work, school, shops, weather, travel, family, friends. Nothing that assumes one country's institutions (no *the DMV*, no *A levels*).
-- **Names** only when a sentence needs one, and only from this list: Kim, Mari, Sam, Ana, Lee, Omar, Yuki, Ravi, Sara. No surnames, no brand names, no product names, no real companies, no place names smaller than a continent except in the entry for that kind of word.
+- **Names** only when a sentence needs one, and only from this list: Kim, Mari, Sam, Ana, Lee, Omar, Yuki, Ravi, Sara. After a title (*Mr.*, *Ms.*, *Dr.*, *Professor*) use a family name from this list: Chen, Diallo, Diaz, Ito, Khan, Kim, Lee, Mensah, Novak, Okafor, Park, Rossi, Sato, Shah, Silva, Weber ([owner-rulings-2026-11-05](decisions/owner-rulings-2026-11-05.md)). No other surnames, no brand names, no product names, no real companies, no place names smaller than a continent except in the entry for that kind of word.
 - **Natural.** Examples are sentences a person would say or write, in American spelling, ending in a period, question mark, or exclamation mark. Avoid the headword's rarer collocates; show the common ones.
 - **The `note`** on an example is for a short gloss of what the example shows (*passive*, *with a negative*), not for a translation or a paraphrase. Usually null.
 - **The `pattern`** on an example names the verb pattern it illustrates, from the closed list, or is null.

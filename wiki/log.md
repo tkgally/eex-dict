@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] owner | rulings: family names, continents, *the former*, pronunciation check
+
+The owner ruled in an interactive session (text archived as `inbox/archive/20261105_owner_rulings.txt`; [page](decisions/owner-rulings-2026-11-05.md)). (1) A title may take a family name from a closed list of sixteen (Chen to Weber): style guide section 5, [examples](decisions/examples.md), the reviewer prompt, house rule 26; the curator line on titles is resolved. (2) `PROJECT.md` now says two reviewers from different labs. (3) The panel plus CMU stays the only pronunciation check; [pronunciation-pipeline](decisions/pronunciation-pipeline.md) and [reviewer-a-claude](decisions/reviewer-a-claude.md) updated. (4) The seven continent names joined `proper_names`. (5) *The former*, *the latter*, *the following* are nouns; `latter-n` queued; house rule 23 updated. Both open questions answered. (6) Pronunciation disputes and the digest sample wait for a session with the owner. No entry changed; no spend.
+
 ## [2026-11-05] build | five entries: crown, crush, crystal, cure, curiosity
 
 Run 20261105T132043Z-1i8gd4, cycle 4. Built `crown-n`, `crush-n`, `crystal-n`, `cure-n`, `curiosity-n` in queue order; five, to leave room for wrap-up at the end of a four-cycle run. Panel: 16 issues, 1 blocking (a figurative *cure for a broken heart* under the medical sense; moved to the "solution" sense); 15 applied, 1 rejected (merging the gemstone sense of `crystal-n` into the ice-and-salt sense), none escalated. Also: a paper-crown example that did not fit the definition removed; *interest* made a compare, not a synonym, of *curiosity*. Two definition words outside the vocabulary (*dentist*, *tiny*) reworded; six NO-SENSE mirrors placed by hand (`title-n`, `top-n`, `crowd-n`, `glass-n`, `solution-n`, `interest-n`). All 10 transcriptions verified. Spend US$0.15.

@@ -15,7 +15,7 @@
 - Reviewer B is unchanged and stays non-Anthropic, so the panel still has one reviewer from another lab.
 - `PROJECT.md` still says "two non-Anthropic reviewers". The owner edits the charter, not a session; this ruling stands in its place until then.
 
-**Switched-off families.** The lint runs had switched off four (role, family) pairs for the old model: example-policy, grammar-code, sense-structure, and inflection. They are live again, because the measurement belonged to a different model. The pronunciation pair stays off, because it is the owner's ruling of 2026-10-05; it was based on the old model's precision of 0.26, so it is a question for the owner.
+**Switched-off families.** The lint runs had switched off four (role, family) pairs for the old model: example-policy, grammar-code, sense-structure, and inflection. They are live again, because the measurement belonged to a different model. The pronunciation pair stays off, because it is the owner's ruling of 2026-10-05; the owner confirmed on 2026-11-05 that it stays off ([owner-rulings-2026-11-05](owner-rulings-2026-11-05.md)).
 
 **Measuring it.** From 2026-10-25, decision lines carry the reviewer's `model`. `tools/metrics.py --precision` reports the new reviewer A as `reviewer-a:<model id>`, apart from its old model's all-time figures. The 30-percent switch-off rule applies to the new rows once they reach twenty decisions.
 

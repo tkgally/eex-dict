@@ -26,9 +26,10 @@
 20. Imperative *look*, *listen* used to get attention ("Look, I'm sorry") stay verb senses. *say hello*, *say goodbye* stay in the interjection entries.
 21. Clippings (*ad*, *app*, *info*) are nouns, not abbreviations. Affix definitions in the form "added to ..." are house style.
 22. Passive *be convinced* and *where X is concerned* are verb uses, not adjective entries. Adverbs before adjectives (*near impossible*, *the next best*) are not adjective uses.
-23. *the former*, *the latter*, *the following* standing alone are treated as nouns (working assumption, `wiki/open-questions.md`).
+23. *the former*, *the latter*, *the following* standing alone are nouns (the owner's ruling of 2026-11-05).
 24. *axe* is the headword with *ax* as an American variant.
 25. A word in `word_family` or a cross-reference may name an entry that does not exist yet. That is how new words are queued, and it is not an issue.
+26. A title may be followed by a family name from the closed list (Chen, Diallo, Diaz, Ito, Khan, Kim, Lee, Mensah, Novak, Okafor, Park, Rossi, Sato, Shah, Silva, Weber): *Dr. Lee*, *Ms. Okafor* (the owner's ruling of 2026-11-05). Continent names may appear in definitions.
 
 ## Notes discipline (style guide, notes rules of 2026-10-24)
 

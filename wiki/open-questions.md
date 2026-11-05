@@ -4,12 +4,14 @@
 
 ## Open
 
-- **Continent names in definitions** (raised 2026-10-10 by the build of `black-adj`; recorded here by the sixty-second lint pass, 2026-10-11). Should continent names such as *Africa* join the proper names allowed in definitions (`schema/vocabularies.json`, `proper_names`)? *Working assumption:* no; a definition that would need one puts the name in its `explanation` instead, as `black-adj` sense 2 does.
-- **Noun or pronoun for *the former*, *the latter*, *the following* standing alone** (raised 2026-10-11 by the build of `former-adj`; recorded by the sixty-fourth lint pass). reviewer-a calls these pronouns. *Working assumption:* nouns, queued as `former-n` and `following-n`, so the three are treated alike; a ruling either way would fix the part of speech before those rows are drafted.
+*None.*
 
 ## Answered
 
 *All seven were answered by the owner on 2026-10-05 (inbox file archived as `inbox/archive/20261005_owner_rulings.txt`).*
+
+- **Continent names in definitions** (raised 2026-10-10). *Answered 2026-11-05 by the owner:* yes; the seven continent names joined `proper_names` ([owner-rulings-2026-11-05](decisions/owner-rulings-2026-11-05.md)).
+- **Noun or pronoun for *the former*, *the latter*, *the following* standing alone** (raised 2026-10-11). *Answered 2026-11-05 by the owner:* nouns (`former-n`, `latter-n`, `following-n`).
 
 1. **Drafting model.** Drafting stays in-session; `drafter_via_openrouter` stays false. A standing ruling; nothing changed.
 2. **Reviewer B tier.** Upgrade now: `reviewer-b` moves from the Flash-class model to the Pro-class candidate, re-verified against the OpenRouter model list on 2026-10-05; only the reviewer-b role changes (the pronunciation and word-list panels keep theirs). The daily cap stays US$15. Files: `config/models.md`; [reviewer-b-upgrade](decisions/reviewer-b-upgrade.md). The lint passes report reviewer-b's precision from then on.
