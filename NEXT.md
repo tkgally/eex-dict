@@ -1,10 +1,10 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-05 by run 20261105T072508Z-tam4hf, cycle 4 (build).*
+*Rewritten 2026-11-05 by run 20261105T124402Z-1i8gd4, cycle 1 (site).*
 
 ## State
 
-- 3,784 entries, all `reviewed`. Site checked 2026-11-04 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
+- 3,784 entries, all `reviewed`. Site checked 2026-11-05 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-10-31.md`; next due 2026-11-07.
 - Bands re-voted 2026-10-24; later rows at lints.
 - Spend 2026-11-05: US$2.15 of US$15 so far. Originality: last 2026-11-04.
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
@@ -20,7 +20,7 @@
 2. **originality**: ask reviewer-b in one call; search any wording it quotes, and headword plus opening words.
 3. **review**: reject reviewer-b's objections to quotation marks around words in examples, and requests for phrasal verbs and compounds as senses, and for idioms whose keyword is another word (*do someone proud*), with the reason. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `contribution-n` (2026-11-05); then queue order. `mushroom-n` built: add the mushroom-top subsense to `cap-n` at its next review. Hand-claim `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`), *mean business* (`business-n`); *a small fortune* (`fortune-n` when built); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`, *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
-5. **lint**: every ten runs; last 2026-11-05 (hundred-and-second pass), next due in ten runs. Wiki 27,262 of 30,000 words. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42).
+5. **lint**: every ten runs; last 2026-11-05 (hundred-and-second pass), next due in eight runs. Wiki 27,262 of 30,000 words. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42).
 6. **Tooling notes** (`wiki/notes/`): fixes due: `queue-hyphen-loss`; a repeated `band_vote.py apply` doubles its note.
 
 ## Fences (do not re-grind)
@@ -38,7 +38,7 @@
 
 ## For the owner
 
-- Latest report: `journal/2026-11-05-2.md`. Digest: `journal/digest-2026-10-31.md` (ten to sample).
+- Latest report: `journal/2026-11-05-3.md`. Digest: `journal/digest-2026-10-31.md` (ten to sample).
 - Curator line still open: list names used as family names after a title (*Ms. Kim*, *Dr. Lee*) in `teacher-n`, `title-n`, `dr-abbr`, `doctor-n`; working assumption: allowed there until you rule.
 - `PROJECT.md` still says "two non-Anthropic reviewers" (reviewer A is Claude since your 2026-10-25 ruling); yours to update.
 - For your judgment: no reviewer checks pronunciation now (B off at the 2026-11-05 lint; A by your 2026-10-05 ruling, on its old model). The panel plus CMU still checks every transcription.
