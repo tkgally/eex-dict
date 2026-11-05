@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] review | coverage pass: make up, dead, cross, count, corner, come on
+
+Run 20261105T011419Z-wu5vp0, cycle 3. Six band-1 six-sense entries read (B1 coverage pass, now 198 done). Panel: 82 issues, 2 blocking (one fault: *my feet felt dead with cold*); 72 applied, 10 rejected, none escalated. Most fixes were notes discipline: the same fact in an explanation, a learner error, and an adaptation note now lives in one field (`corner-n`, `count-v`, `cross-v`, `dead-adj`). Added: *make it up to someone*, `separable` codes (`make-up-phrv`); *cross yourself* and a sport sense (`cross-v`); *count against someone*; *in someone's corner*; *come on* onto a stage or field; *the dead* in `dead-adj`'s usage note. Rejected: *over my dead body* (in `body-n`) and *play dead* (for `play-v`). Mirrors removed in `late-adj`, `makeup-n`; `humor-n` now compares with `comedy-n`. Spend US$0.31.
+
 ## [2026-11-05] build | twelve band-2 nouns: collar to context
 
 Run 20261105T010225Z-wu5vp0, cycle 2. Built `collar-n`, `combination-n`, `comedy-n`, `command-n`, `companion-n`, `complaint-n`, `concept-n`, `congress-n`, `consequence-n`, `construction-n`, `consumer-n`, `context-n` in queue order. Panel: 35 issues, 3 blocking (a circular definition in *complaint*; British *motor show* in *concept*); 31 applied, 4 rejected, none escalated. Added: *second in command* (`command-n`), a partner subsense (`companion-n`), creating ideas or systems (`construction-n`). Rejected: *chain of command* under `command-n` (its keyword is *chain*). All 24 transcriptions verified. Ten NO-SENSE mirror links placed by hand. Spend US$0.35.

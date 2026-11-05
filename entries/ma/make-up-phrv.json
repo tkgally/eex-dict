@@ -53,11 +53,13 @@
       "n": 1,
       "signpost": "invent",
       "definition": "invent a story, a song, an excuse, or a reason",
-      "explanation": "With an excuse or a reason, it often suggests that what is invented is not true.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
-        "codes": [],
+        "codes": [
+          "separable"
+        ],
         "patterns": [
           "verb + adverb + object",
           "verb + object + adverb"
@@ -120,12 +122,14 @@
     {
       "n": 2,
       "signpost": "form",
-      "definition": "be the parts that together form a whole, or a part of a whole",
-      "explanation": "The parts **make up** the whole; the whole **is made up of** the parts.",
+      "definition": "be the parts or members that together form something, or a particular part of it",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
-        "codes": [],
+        "codes": [
+          "inseparable"
+        ],
         "patterns": [
           "verb + adverb + object"
         ]
@@ -187,7 +191,7 @@
       "n": 3,
       "signpost": "be friends again",
       "definition": "become friends again after an argument",
-      "explanation": "**Make up with someone**, or two people **make up**.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -246,12 +250,14 @@
     {
       "n": 4,
       "signpost": "complete",
-      "definition": "add what is needed to make an amount or a number complete",
+      "definition": "add what is needed to make an amount complete, or to replace what has been lost",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
-        "codes": [],
+        "codes": [
+          "separable"
+        ],
         "patterns": [
           "verb + adverb + object",
           "verb + object + adverb"
@@ -313,12 +319,14 @@
     {
       "n": 5,
       "signpost": "prepare",
-      "definition": "prepare something, such as a bed for a guest, or put things together, such as a box of food",
+      "definition": "make something ready by putting it together or arranging it, such as a bed for a guest or a box of food",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
-        "codes": [],
+        "codes": [
+          "separable"
+        ],
         "patterns": [
           "verb + adverb + object",
           "verb + object + adverb"
@@ -370,12 +378,14 @@
     {
       "n": 6,
       "signpost": "put on makeup",
-      "definition": "put colors and creams on your face to make it look more attractive or different",
+      "definition": "put makeup on someone's face, or on your own face, to make it look more attractive or different",
       "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
-        "codes": [],
+        "codes": [
+          "separable"
+        ],
         "patterns": [
           "verb + object + adverb"
         ]
@@ -412,12 +422,7 @@
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "makeup-n",
-          "note": null
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -429,7 +434,41 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "make-it-up-to-someone",
+      "text": "make it up to someone",
+      "definition": "do something good for someone because you have hurt or disappointed them",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "I'm sorry I missed your party. I'll **make** it **up** to you.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "He worked hard to **make** it **up** to his family for being away so long.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
       "slug": "make-v",
@@ -459,8 +498,8 @@
     }
   ],
   "adaptation": {
-    "semantic": "\"make up\" has unrelated translations: *invent* (a story), *form* (a group), *become friends again*, *complete* (an amount), *prepare* (a bed), and *put on face color*. Choose by the object.",
-    "grammar": "In the form sense the parts are the subject (*women make up half the team*), or the whole is passive (*the team is made up of women and men*). In the invent sense a pronoun goes in the middle: *make it up*.",
+    "semantic": null,
+    "grammar": "In the form sense the parts are the subject (*women make up half the team*), or the whole is passive (*the team is made up of women and men*).",
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -468,7 +507,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-20T13:52:39Z",
-    "modified": "2026-10-20T14:01:46Z",
+    "modified": "2026-11-05T01:22:26Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261020T135108Z-6s5qm1",
     "reviews": [
@@ -490,6 +529,26 @@
         "file": "reviews/20261020T135108Z-6s5qm1/make-up-phrv.json",
         "ok": 70,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261105T011419Z-wu5vp0",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-05",
+        "file": "reviews/20261105T011419Z-wu5vp0/make-up-phrv.json",
+        "ok": 59,
+        "issues": 14,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261105T011419Z-wu5vp0",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-05",
+        "file": "reviews/20261105T011419Z-wu5vp0/make-up-phrv.json",
+        "ok": 69,
+        "issues": 4,
         "blocking": 0
       }
     ],
