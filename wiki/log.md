@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-05] originality | check of ten sampled definitions
+
+Run 20261105T145355Z-go42fb, cycle 2 (forced: run 700 is a multiple of twenty). Ten fields sampled by `originality_check.py` (`crash-v`, `bang-n`, `laugh-n`, `ticket-n`, `event-n`, `form-v`, `hair-n`, `get-v`, `death-n`, `murder-n`). Exact-phrase web searches found no published match for any; `event-n` *if something happens* and `hair-n` *thin threads* repeat the obvious plain formula and are generic overlap. Reviewer B, asked in one call, named no source. Verdicts: original 8, generic-overlap 2, rewrite 0; recorded in `reviews/originality/2026-11-05.md`. No entry changed. Spend US$0.005.
+
 ## [2026-11-05] closure | twelve family nouns: curse to detective
 
 Run 20261105T143931Z-go42fb, cycle 1. The `closure` source was empty, so twelve `family` rows were built in queue order: `curse-n`, `cycling-n`, `daddy-n`, `dancing-n`, `daylight-n`, `daytime-n`, `dealer-n`, `defeat-n`, `delivery-n`, `deposit-n`, `designer-n`, `detective-n`. Panel: 64 issues, 15 blocking; 57 applied, 7 rejected (four repeat *often before another noun* objections, two marginal coverage asks on `daylight-n`, *the dealer* in a card game), none escalated. Main changes: the attributive *designer jeans* use moved out of `designer-n` (`designer-adj` queued); a wrong "paid by the public" in the private-detective subsense; `delivery-n` gained a subsense for the goods and a formal service sense; `defeat-n` sense 2 made singular only. Three NO-SENSE mirrors placed by hand (`blessing-n`, `dance-n`, `loss-n`). All 24 transcriptions verified. Spend US$0.33.
