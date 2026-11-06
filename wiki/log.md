@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-06] build | race (people) and seven band-2 nouns: exhibition to explosion
+
+Run 20261106T190505Z-fwhuo1, cycle 3. Eight entries, fewer than the twelve allowed: `race-n-2` hand-claimed (the people-group homograph; `race-n` holds only the contest senses), then `exhibition-n` (*make an exhibition of yourself*, British), `existence-n`, `expansion-n`, `expectation-n`, `expense-n` (*at the expense of something*, *at someone's expense*), `expertise-n`, `explosion-n`. All 16 transcriptions verified; plurals from rules. Panel: 17 issues, 3 blocking (a general physics claim in an `expansion-n` example; two meanings merged in one `expense-n` phrase; uncountable *explosion*). Decisions: 17 apply, 0 reject. `queue.py stamp` gave `race-n-2` the `race-n` row's band 1 and defining flag; left for the next band vote to confirm. One NO-SENSE back-link placed by hand (`cost-n` sense 1). Spend US$0.24.
+
 ## [2026-11-06] review | coverage pass: bring, burn, busy, cheap
 
 Run 20261106T185637Z-fwhuo1, cycle 2. B1 coverage pass, next four of the 111 unread five-sense band-1 entries. Added before the panel: `bring-v` sense 6 (*bring a good price*) and phrase *bring it on*; `burn-v` subsense 1a (a light burning), sense 6 (*burn a CD*), sense 7 (*get burned*, informal); `cheap-adj` sense 6 (*talk is cheap*). Notes that restated other fields cut in all four. Panel: 43 issues, 3 blocking (a subject prefix in the `burn-v` subsense definition, flagged by both reviewers; a December shopping claim in a `busy-adj` example). Decisions: 28 apply, 15 reject (ten requests to hand-mark *brought*; *burn your bridges* and *burn the candle at both ends* belong under their nouns; two sense merges). From the panel: `bring-v` subsense 2a (*bring experience to the job*), `cheap-adj` sense 7 (*feel cheap*). `cheap-adv` queued (*I got it cheap*). Spend US$0.22. Next in the pass: `check-v`, `cold-adj`, `color-n`, `comfortable-adj`.
