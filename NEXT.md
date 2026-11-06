@@ -1,7 +1,5 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-**NOT MERGED: branch `claude/gallant-carson-zogw03` (12 closure entries) was pushed without a pull request; the GitHub tools did not load. Absorb it first.**
-
 *Rewritten 2026-11-06 after closure run 20261106T064419Z-zogw03 (cycle 1; the run ended there).*
 
 ## State
