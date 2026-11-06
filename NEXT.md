@@ -1,6 +1,6 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-06 after run 56et22, cycle 2 (review).*
+*Rewritten 2026-11-06 after run 56et22, cycle 3 (lint).*
 
 ## State
 
@@ -20,7 +20,7 @@
 2. **originality**: ask reviewer-b in one call; search any wording it quotes, and headword plus opening words.
 3. **review**: given names after titles fixed 2026-11-05 (`lord-n`; the rest already used listed family names). `lord-v` (*lord it over*) queued. Reject reviewer-b's objections to quotation marks around words in examples, requests for phrasal verbs and compounds as senses, and idioms keyed on another word (*do someone proud*). `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `ending-n` (2026-11-06); then queue order. Add *march to the beat of a different drummer* to `beat-n` at its next review. `designer-adj` (*designer jeans*) queued as a crossref row. `mushroom-n` built: add the mushroom-top subsense to `cap-n` at its next review. Hand-claim `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`); *a small fortune* (`fortune-n` when built); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`, *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
-5. **lint**: every ten runs (each cycle counts as one); last 2026-11-05 (hundred-and-third pass, run 1bmr60), due now (next run). Wiki 27,262 of 30,000 words. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). Reports at this lint: 963 missing-sense pairs, 324 circular candidates, 6 known promises.
+5. **lint**: every ten runs (each cycle counts as one); last 2026-11-06 (hundred-and-fourth pass, run 56et22 cycle 3), next due in ten runs. Wiki 27,288 of 30,000 words. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). Reports at this lint: 973 missing-sense pairs, 324 circular candidates, 6 known promises.
 6. **Tooling notes** (`wiki/notes/`): fixes due: `queue-hyphen-loss`; a repeated `band_vote.py apply` doubles its note.
 
 ## Fences (do not re-grind)
