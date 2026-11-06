@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-06] review | coverage pass: act, animal, appear, area
+
+Run 20261106T010017Z-1peemi, cycle 2. Read five five-sense band-1 entries in the coverage pass: `act-n`, `act-v`, `animal-n`, `appear-v`, `area-n`. Added before the panel: `act-n` *in the act of doing something*, *clean up your act*, *get in on the act*; `act-v` subsenses *act on* and *act for*, phrase *act your age*; `animal-n` *a different animal*; `appear-v` subsense *arrive*. Panel: 48 issues, 3 blocking (`act-n` law sense wrongly coded *often before another noun*; *the opening act* shows a performer, now subsense 4a). Decisions: 46 apply, 2 reject (a closed-list pattern called invalid; a hand mark asked for in *act his age*). Also: `act-v` subsense *pretend* (*act surprised*); `appear-v` reordered (*seem* second) with a published-or-listed subsense; synonyms `action-n` and `move-v` dropped with their mirrors; `animal-n` duplicate note removed. Spend US$0.24.
+
 ## [2026-11-06] build | twelve band-2 nouns: diet to doorbell
 
 Run 20261106T004355Z-1peemi, cycle 1. Twelve nouns from the queue: `diet-n`, `disagreement-n`, `disaster-n`, `discipline-n`, `dishwasher-n`, `dispute-n`, `distinction-n`, `district-n`, `division-n`, `documentary-n`, `donation-n`, `doorbell-n`. Twenty-four transcriptions verified; the British *documentary* was disputed with ə and verified with ʊ, matching `document-n`. Panel: 31 issues, 6 blocking (checkable facts in examples of `division-n` and `discipline-n`, a punishment example that showed the general sense). Decisions: 29 apply, 2 reject (*a recipe for disaster* already under `recipe-n`; *no distinction* is countable). `discipline-n` now has five senses with the sport event its own sense; `division-n` sense 5 covers leagues split by level or by area. Seven back-links placed by hand. Spend US$0.36.
