@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-06] review | coverage pass: art, ask, back
+
+Run 20261106T012014Z-1peemi, cycle 4 (the last of run 1peemi). Read `art-n`, `ask-v`, `back-adv`, `back-n`. Added before the panel: *arts and crafts*, *be asking for it*, *back to front* (British), *have your back to the wall*; the *back* translator notes lost their generic "translate each sense separately". Panel: 46 issues, 3 blocking (`ask-v` sense 3 defined with *ask*, now *invite*; a `back-n` sport example showing a position, not a player). Decisions: 40 apply, 6 reject (a closed-list noun code, the quoted opening of adaptation notes, three examples that fit, a use restriction in an explanation). Repeated facts cut to one field in all four entries' notes. Added: `ask-v` *couldn't ask for more*; `back-adv` subsense *back home*; `back-n` *on the back of something*. `ask-after-phrv` queued; `pose-v` synonym `ask-v` removed. Spend US$0.23.
+
 ## [2026-11-06] build | eight band-2 nouns: doorway to drill
 
 Run 20261106T010954Z-1peemi, cycle 3. Eight nouns, fewer than the cap of twelve to keep them full: `doorway-n`, `dot-n`, `double-n`, `downtown-n`, `dozen-n`, `drama-n` (with *drama queen*, as `NEXT.md` asked), `dressing-n`, `drill-n`. All 16 transcriptions verified; plurals from rules, and `dozen` gets an exceptions-table line for *two dozen* after a number. Panel: 47 issues, 6 blocking (all on `downtown-n`: an attributive *downtown area* belongs to the adjective). Decisions: 41 apply, 6 reject (two hand-mark requests; *plural only* for *doubles* with its singular verb named as the exception; *dozens of* as informal; *a dime a dozen* belongs under `dime-n`). Added a baseball sense to `double-n`; `dressing-n` sense 3 now uncountable with `stuffing-n` as synonym. Queued unbanded: `downtown-adj`, `downtown-adv`. Spend US$0.26.
