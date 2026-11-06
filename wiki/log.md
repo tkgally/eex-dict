@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-06] build | twelve band-2 nouns: estate to exhibit
+
+Run 20261106T184334Z-fwhuo1, cycle 1. Twelve from queue order: `estate-n` (a farm subsense; the British housing sense), `estimate-n`, `ethics-n`, `ethnicity-n`, `european-n` (*a European*, not *an*), `evaluation-n`, `ex-n`, `ex-wife-n` (*ex-wives* from rules), `examination-n` (*on closer examination*), `excess-n` (*in excess of*, *to excess*), `executive-n`, `exhibit-n` (*Exhibit A*). 23 of 24 transcriptions verified; `excess-n` American disputed (1 of 4 votes, CMU agrees), flagged with a curator line. Panel: 15 issues, 0 blocking; 14 apply, 1 reject (marking *ex-wives* by hand). Ten definition words outside the vocabulary rewritten (*property*, *culture*, *gallery* have no entries yet). Hand placements: `executive-n` on `manager-n`, `evaluation-n` on `assessment-n`. `race-n` has no people-group sense: `ethnicity-n` points to `race-n-2`, to be hand-claimed. Spend US$0.33.
+
 ## [2026-11-06] build | eight band-2 nouns: bookshelf to establishment
 
 Run 20261106T131142Z-56et22, cycle 4 (the last of run 56et22). Eight from queue order, fewer than the twelve allowed: `bookshelf-n`, `enthusiasm-n`, `envelope-n` (*push the envelope*), `equation-n` (a chemistry subsense added at review), `era-n`, `eraser-n`, `essay-n`, `establishment-n` (*the establishment*). All 16 transcriptions verified; plurals from rules (*bookshelves*). Panel: 25 issues, 1 blocking (a formal label on the countable sense of *enthusiasm*, removed). Decisions: 25 apply, 0 reject. Two learner errors and three definitions were corrected; `anti-establishment-adj` moved from collocations to the word family. Two NO-SENSE back-links placed by hand (`period-n`, `age-n` sense 2). *The end of an era* belongs under `end-n` (first noun): add it at that entry's next review. Spend US$0.22.
