@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-06] build | eight band-2 nouns: bookshelf to establishment
+
+Run 20261106T131142Z-56et22, cycle 4 (the last of run 56et22). Eight from queue order, fewer than the twelve allowed: `bookshelf-n`, `enthusiasm-n`, `envelope-n` (*push the envelope*), `equation-n` (a chemistry subsense added at review), `era-n`, `eraser-n`, `essay-n`, `establishment-n` (*the establishment*). All 16 transcriptions verified; plurals from rules (*bookshelves*). Panel: 25 issues, 1 blocking (a formal label on the countable sense of *enthusiasm*, removed). Decisions: 25 apply, 0 reject. Two learner errors and three definitions were corrected; `anti-establishment-adj` moved from collocations to the word family. Two NO-SENSE back-links placed by hand (`period-n`, `age-n` sense 2). *The end of an era* belongs under `end-n` (first noun): add it at that entry's next review. Spend US$0.22.
+
 ## [2026-11-06] lint | hundred-and-fourth pass
 
 Run 20261106T130714Z-56et22, cycle 3. Forced by the selector: ten runs since the last lint. Caps, links, and gates clean. `crossref.py --all --apply` wrote mirror back-links on eleven entries (among them `drama-n`, `downtown-n`, `doorway-n`, `deadline-n`, `dishwasher-n`); seven NO-SENSE pairs placed by hand (`black-adj` sense 2 from `brown-adj`; `disagreement-n` from `conflict-n` and `misunderstanding-n`; `disaster-n` sense 2 from `dog-n`; `emphasis-n` from `focus-n`; `determination-n` from `purpose-n`; `district-n` from `quarter-n`). Six spent claim files pruned. Band vote on 39 unbanded rows (US$0.0056); two wide splits settled (`ask-after-phrv` 4, `elbow-v` 3); all now pending. `repair-forms` finds nothing. Precision: no pair newly under the line ([note](notes/reviewer-precision.md)). Reports: 324 circular candidates, 973 missing-sense pairs, 6 promises (all known). Index and pages agree; no duplicate curator lines; open questions none. Spend US$0.0056.
