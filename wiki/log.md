@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-06] build | eight band-2 nouns: doorway to drill
+
+Run 20261106T010954Z-1peemi, cycle 3. Eight nouns, fewer than the cap of twelve to keep them full: `doorway-n`, `dot-n`, `double-n`, `downtown-n`, `dozen-n`, `drama-n` (with *drama queen*, as `NEXT.md` asked), `dressing-n`, `drill-n`. All 16 transcriptions verified; plurals from rules, and `dozen` gets an exceptions-table line for *two dozen* after a number. Panel: 47 issues, 6 blocking (all on `downtown-n`: an attributive *downtown area* belongs to the adjective). Decisions: 41 apply, 6 reject (two hand-mark requests; *plural only* for *doubles* with its singular verb named as the exception; *dozens of* as informal; *a dime a dozen* belongs under `dime-n`). Added a baseball sense to `double-n`; `dressing-n` sense 3 now uncountable with `stuffing-n` as synonym. Queued unbanded: `downtown-adj`, `downtown-adv`. Spend US$0.26.
+
 ## [2026-11-06] review | coverage pass: act, animal, appear, area
 
 Run 20261106T010017Z-1peemi, cycle 2. Read five five-sense band-1 entries in the coverage pass: `act-n`, `act-v`, `animal-n`, `appear-v`, `area-n`. Added before the panel: `act-n` *in the act of doing something*, *clean up your act*, *get in on the act*; `act-v` subsenses *act on* and *act for*, phrase *act your age*; `animal-n` *a different animal*; `appear-v` subsense *arrive*. Panel: 48 issues, 3 blocking (`act-n` law sense wrongly coded *often before another noun*; *the opening act* shows a performer, now subsense 4a). Decisions: 46 apply, 2 reject (a closed-list pattern called invalid; a hand mark asked for in *act his age*). Also: `act-v` subsense *pretend* (*act surprised*); `appear-v` reordered (*seem* second) with a published-or-listed subsense; synonyms `action-n` and `move-v` dropped with their mirrors; `animal-n` duplicate note removed. Spend US$0.24.
