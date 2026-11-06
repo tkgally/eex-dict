@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-11-06",
-  "spent_usd": 1.96617,
+  "spent_usd": 1.971776,
   "calls": [
     {
       "ts": "2026-11-06T00:48:18Z",
@@ -1191,6 +1191,33 @@
       "cost_usd": 0.055464,
       "tokens_in": 7077,
       "tokens_out": 4131
+    },
+    {
+      "ts": "2026-11-06T13:08:13Z",
+      "run_id": "20261106T130714Z-56et22",
+      "purpose": "band-vote:chunk000",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.001561,
+      "tokens_in": 741,
+      "tokens_out": 268
+    },
+    {
+      "ts": "2026-11-06T13:08:13Z",
+      "run_id": "20261106T130714Z-56et22",
+      "purpose": "band-vote:chunk000",
+      "model": "openai/gpt-5.6-terra",
+      "cost_usd": 0.003432,
+      "tokens_in": 708,
+      "tokens_out": 168
+    },
+    {
+      "ts": "2026-11-06T13:08:17Z",
+      "run_id": "20261106T130714Z-56et22",
+      "purpose": "band-vote:chunk000",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.000613,
+      "tokens_in": 693,
+      "tokens_out": 239
     }
   ],
   "history": {
