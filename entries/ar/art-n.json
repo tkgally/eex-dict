@@ -185,7 +185,7 @@
       "n": 3,
       "signpost": "the arts",
       "definition": "activities such as music, theater, painting, and writing, considered together",
-      "explanation": "Used as **the arts**.",
+      "explanation": null,
       "grammar": {
         "countability": "plural only",
         "transitivity": null,
@@ -280,7 +280,12 @@
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [],
+      "compare": [
+        {
+          "slug": "science-n",
+          "note": null
+        }
+      ],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -294,7 +299,7 @@
     {
       "n": 5,
       "signpost": "skill",
-      "definition": "a skill that you learn by practice, or an activity that needs special skill",
+      "definition": "the ability to do something well, learned by practice, or an activity that needs this ability",
       "explanation": null,
       "grammar": {
         "countability": "countable or uncountable",
@@ -338,12 +343,7 @@
       ],
       "synonyms": [],
       "antonyms": [],
-      "compare": [
-        {
-          "slug": "science-n",
-          "note": null
-        }
-      ],
+      "compare": [],
       "subsenses": [],
       "adaptation": {
         "semantic": null,
@@ -390,6 +390,39 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "sub_id": "arts-and-crafts",
+      "text": "arts and crafts",
+      "definition": "the activity of making attractive or useful objects by hand, such as pots, toys, or cloth",
+      "explanation": null,
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "The children did arts and crafts all afternoon.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The fair has a large arts and crafts section.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "word_family": [
@@ -422,7 +455,7 @@
   "see_also": [],
   "adaptation": {
     "semantic": "\"the arts\" includes music, theater, and writing, but **art** alone usually means painting and similar work. Some languages use one word for both.",
-    "grammar": "In the sense *paintings*, **art** is uncountable: *a lot of art*, *a piece of art*.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -430,7 +463,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-30T07:11:41Z",
-    "modified": "2026-10-20T13:48:12Z",
+    "modified": "2026-11-06T01:26:00Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260930T070827Z-oikyxz",
     "reviews": [
@@ -473,6 +506,26 @@
         "ok": 64,
         "issues": 2,
         "blocking": 1
+      },
+      {
+        "run_id": "20261106T012014Z-1peemi",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-06",
+        "file": "reviews/20261106T012014Z-1peemi/art-n.json",
+        "ok": 66,
+        "issues": 8,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261106T012014Z-1peemi",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-06",
+        "file": "reviews/20261106T012014Z-1peemi/art-n.json",
+        "ok": 70,
+        "issues": 3,
+        "blocking": 0
       }
     ],
     "status": "reviewed",

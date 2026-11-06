@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **ask** is to speak to someone because you want something from them: an answer, help, a thing, their company, or an amount of money.",
+  "core_idea": "To **ask** is to tell someone that you want something from them: an answer, help, a thing, their company, an amount of money, or an effort.",
   "senses": [
     {
       "n": 1,
@@ -101,7 +101,6 @@
           "type": "verb + noun",
           "items": [
             "ask a question",
-            "ask the way",
             "ask someone's name",
             "ask someone's opinion"
           ]
@@ -114,12 +113,7 @@
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "pose-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [
         {
           "slug": "answer-v",
@@ -239,7 +233,7 @@
     {
       "n": 3,
       "signpost": "invite",
-      "definition": "ask someone to come to a place or an event, or to take part in something",
+      "definition": "invite someone to come to a place or an event, or to take part in something",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -382,7 +376,7 @@
       "n": 5,
       "signpost": "expect",
       "definition": "want or expect someone to do or give something, especially something difficult",
-      "explanation": "Often in the phrases *ask a lot of someone* and *too much to ask*.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -412,7 +406,7 @@
           "pattern": null
         },
         {
-          "text": "Is it too much to ask for a little quiet?",
+          "text": "Is it too much to ask you to be on time?",
           "note": null,
           "pattern": null
         }
@@ -445,7 +439,7 @@
     {
       "sub_id": "if-you-ask-me",
       "text": "if you ask me",
-      "definition": "used before giving your own opinion",
+      "definition": "used when giving your own opinion",
       "explanation": null,
       "labels": {
         "register": [
@@ -544,11 +538,79 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "sub_id": "be-asking-for-it",
+      "text": "be asking for it",
+      "definition": "behave in a way that makes it likely that something bad will happen to you",
+      "explanation": "Also **you asked for it**, said to someone who has got the bad result that they caused.",
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Leaving your bike unlocked is just asking for it.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "He kept teasing the dog, so he was really asking for it.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "couldnt-ask-for-more",
+      "text": "couldn't ask for more",
+      "definition": "used to say that something is as good as it could be",
+      "explanation": "Also **couldn't ask for a better** with a noun, and **can't ask for more**.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "We couldn't ask for better weather.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "She's a great boss; I couldn't ask for more.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "word_family": [],
   "synonym_discrimination": null,
-  "usage_note": "**Ask** takes the person directly, with no **to**: *ask your teacher*. Use **for** before a thing you want to be given (*ask for help*, *ask him for the keys*), but not before a question or a piece of information (*ask a question*, *ask the way*). With **a favor**, *ask someone a favor* and *ask someone for a favor* are both common.",
+  "usage_note": "Use **for** before a thing you want to be given (*ask for help*), but not before a question or a piece of information (*ask a question*, *ask the time*). With **a favor**, both *ask someone a favor* and *ask someone for a favor* are common.",
   "learner_errors": [
     {
       "incorrect": "Can I ask to you a question?",
@@ -575,11 +637,15 @@
     {
       "slug": "ask-out-phrv",
       "note": null
+    },
+    {
+      "slug": "ask-after-phrv",
+      "note": null
     }
   ],
   "adaptation": {
     "semantic": "Many languages use one verb for asking a question (sense 1) and another for asking someone to give or do something (sense 2). English uses **ask** for both and adds **for** before the thing wanted.",
-    "grammar": "The person asked is a direct object: *ask the teacher*, not *ask to the teacher*. Many languages mark this person with a word like **to**.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -587,7 +653,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-22T05:12:20Z",
-    "modified": "2026-11-01T00:58:20Z",
+    "modified": "2026-11-06T01:26:00Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260922T051159Z-5k35hq",
     "reviews": [
@@ -630,6 +696,26 @@
         "ok": 75,
         "issues": 1,
         "blocking": 0
+      },
+      {
+        "run_id": "20261106T012014Z-1peemi",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-06",
+        "file": "reviews/20261106T012014Z-1peemi/ask-v.json",
+        "ok": 73,
+        "issues": 11,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261106T012014Z-1peemi",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-06",
+        "file": "reviews/20261106T012014Z-1peemi/ask-v.json",
+        "ok": 80,
+        "issues": 3,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
