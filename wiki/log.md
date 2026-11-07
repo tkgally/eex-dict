@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-07] build | frequency, function, fund, funding, fuss, gadget, gallery, gambling, gamer, gaming, gap, garbage can (nouns)
+
+Run x5565f, cycle 4 (the run's last). Twelve band-2 nouns from the queue, all reviewed. Panel: 33 issues, 2 blocking (one example about animal hearing, replaced): 30 applied, 3 rejected (merging *frequency* senses 1 and 2; the plural *fusses*, rare but real; *mind the gap*, a railway notice). Applied: British *keen gamer* changed to *avid*; `gap-n` senses reordered so the time sense comes last; `gallery-n` subsense 3a (theater seats); `gaming-n` widened to board games played as a hobby; `money-n` moved from `fund-n` sense 1 to sense 2. `crack-n`/`gap-n` changed from synonyms to compare in both entries, with notes. `difference-n` sense 1 got the `gap-n` mirror by hand. Spend US$0.35; the day stands at US$2.99.
+
 ## [2026-11-07] review | coverage pass: day, detail, direction, dirty
 
 Run x5565f, cycle 3. B1 coverage pass, the next four unread five-sense band-1 entries. Added before the panel: `day-n` phrases *at the end of the day*, *win the day*, *someone's days are numbered* and the collocation *twice a day*; `detail-n` a decorative-detail use; `dirty-adj` sense 6 (dull in color, *dirty blond*); *you* removed from three definitions. Panel: 48 issues, 8 blocking (three example sentences stating animal or science facts, two circular `day-n` definitions, two unnatural examples); 44 applied, 4 rejected (*special day* kept for its collocations; *someday* spelling kept in the phrase explanation; *a dirty look* kept as a sense; *play dirty* and *dirty work* key on *play* and *work*). At review: `day-n` subsense 1a (a day of the week), *day off* moved to sense 1; `detail-n` decoration made sense 5; `direction-n` subsense 4a (directing a film or play); repeated facts cut from usage and adaptation notes in three entries; the `pure-adj`/`dirty-adj` antonym pair removed both ways. Spend US$0.22.
