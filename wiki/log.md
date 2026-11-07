@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-07] site | site check, 79 of 79; weekly digest
+
+Run 20261107T004356Z-s3lzrg, cycle 1. The selector chose `site` (highest scheduler debt). `build_site.py` wrote 3,907 entries on 3,274 headword pages, no drafts withheld; `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on all 3,280 pages. No template change needed. The weekly digest was due: `journal/digest-2026-11-07.md` (518 entries built, 129 re-reviewed, reviewer precision 0.86 and 0.83, nothing open for the owner but the pronunciation disputes and the samples). Pre-flight clean: no open pull requests, no orphan branches, no entry reports, empty inbox. Spend US$0.
+
 ## [2026-11-06] build | race (people) and seven band-2 nouns: exhibition to explosion
 
 Run 20261106T190505Z-fwhuo1, cycle 3. Eight entries, fewer than the twelve allowed: `race-n-2` hand-claimed (the people-group homograph; `race-n` holds only the contest senses), then `exhibition-n` (*make an exhibition of yourself*, British), `existence-n`, `expansion-n`, `expectation-n`, `expense-n` (*at the expense of something*, *at someone's expense*), `expertise-n`, `explosion-n`. All 16 transcriptions verified; plurals from rules. Panel: 17 issues, 3 blocking (a general physics claim in an `expansion-n` example; two meanings merged in one `expense-n` phrase; uncountable *explosion*). Decisions: 17 apply, 0 reject. `queue.py stamp` gave `race-n-2` the `race-n` row's band 1 and defining flag; left for the next band vote to confirm. One NO-SENSE back-link placed by hand (`cost-n` sense 1). Spend US$0.24.
