@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-07] originality | ten sampled fields; `sock-n` rewritten
+
+Run 20261107T004836Z-s3lzrg, cycle 2 (forced: run 720 is a multiple of twenty). Ten fields sampled (`tidy-v`, `ground-n`, `daily-adv`, `strip-v`, `sock-n`, `dress-n`, `benefit-n`, `foot-n`, `appeal-n`, `seeing-conj`). Exact-phrase searches found no published match for nine; `strip-v` and `foot-n` (*put your feet up*) are short plain glosses, generic overlap. `sock-n` *pull your socks up* shared a learner's dictionary's *work or behaviour because it is not good enough* clause: verdict rewrite, rewritten in this cycle and run through the pipeline. The panel (two passes) added *put a sock in it* and *work your socks off*, widened the sense-1 definition to foot and ankle, and moved *wool socks* to `noun + noun`: 5 applied, 2 rejected (region labels), none escalated. Reviewer B named no source. Verdicts: original 7, generic-overlap 2, rewrite 1; `reviews/originality/2026-11-07.md`. Spend about US$0.06.
+
 ## [2026-11-07] site | site check, 79 of 79; weekly digest
 
 Run 20261107T004356Z-s3lzrg, cycle 1. The selector chose `site` (highest scheduler debt). `build_site.py` wrote 3,907 entries on 3,274 headword pages, no drafts withheld; `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on all 3,280 pages. No template change needed. The weekly digest was due: `journal/digest-2026-11-07.md` (518 entries built, 129 re-reviewed, reviewer precision 0.86 and 0.83, nothing open for the owner but the pronunciation disputes and the samples). Pre-flight clean: no open pull requests, no orphan branches, no entry reports, empty inbox. Spend US$0.
