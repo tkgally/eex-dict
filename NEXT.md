@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-07 after run loylrr, cycle 3 (lint).*
+*Rewritten 2026-11-07 after run loylrr, cycle 4 (review; the run ended there).*
 
 ## State
 
 - 3,942 entries, all `reviewed`. Site checked 2026-11-07 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-11-07.md`; next due 2026-11-14.
 - Bands re-voted 2026-10-24; later rows at lints.
-- Spend 2026-11-07: US$1.50 of US$15 so far. Originality: last 2026-11-07 (1 rewrite, `sock-n`).
+- Spend 2026-11-07: US$1.71 of US$15 so far. Originality: last 2026-11-07 (1 rewrite, `sock-n`).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -14,9 +14,9 @@
 0. **The owner's rulings of 2026-10-24** ([status](wiki/decisions/owner-rulings-2026-10-24.md)). For the Routine, in order:
    1. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates. A reference to a phrase goes in `see_also` with a note.
    2. **Build**: now closure ([build-order](wiki/decisions/build-order.md)).
-   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 235 done, the last `check-v`, `cold-adj`, `color-n`, `comfortable-adj`; next the unread five-sense ones from `company-n`; check new senses against subsenses). Then the backlog by band.
+   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 239 done, last `company-n` to `country-n`; next the unread five-sense ones from `day-n`; check new senses against subsenses). Then the backlog by band.
    4. **Weekly digest**: written 2026-11-07; next when `signals.digest_due`. Entry reports: pre-flight step 5.
-1. **build**: queue order (last built `firework-n`). `fight-n`: add *a fight to the finish*. `data-n`: point its `facts-n` link to `fact-n` at next review. Add *the end of an era* to `end-n` at its next review. Hand-claim `count-n-2` (nobleman), `clip-n-2` (fastener). Later: `tap-n-2`, `wind-v-2`. Idioms, at next review or build: `balance-n` *tip the balance*, *strike a balance*; `scale-n` *tip the scales*; `blood-n` *sweat blood*; `stuff-n` *sweat the small stuff*; `fear-n` *strike fear into someone*; `time-n` *waste no time*; `disbelief-n` *suspend disbelief*; `chord-n` *strike a chord*; `pose-n` *strike a pose*; `toast-n` *propose a toast*; `let-v` *let's face it*, *let rip*, *let something slip*; `keep-v` *keep someone posted*; `be-v` *too good to be true*, *to be sure*, *have been around*; `ring-v` *ring true*; `form-n` *true to form*; `power-n` *power of attorney*; `chain-n` *chain of command*; `play-v` *play dead*; `dime-n` *a dime a dozen* (when built); `apple-n` *upset the apple cart*; `rock-n` *rock bottom*; `trick-n` *the oldest trick in the book*; `deal-n` *no big deal*; House rules 16 and 18; phrasal verbs get `separable` codes when next reviewed (B4 i).
+1. **build**: queue order (last built `firework-n`). `fight-n`: add *a fight to the finish*; `dot-n`: *connect the dots*. `data-n`: point its `facts-n` link to `fact-n` at next review. Add *the end of an era* to `end-n` at its next review. Hand-claim `count-n-2` (nobleman), `clip-n-2` (fastener). Later: `tap-n-2`, `wind-v-2`. Idioms, at next review or build: `balance-n` *tip the balance*, *strike a balance*; `scale-n` *tip the scales*; `blood-n` *sweat blood*; `stuff-n` *sweat the small stuff*; `fear-n` *strike fear into someone*; `time-n` *waste no time*; `disbelief-n` *suspend disbelief*; `chord-n` *strike a chord*; `pose-n` *strike a pose*; `toast-n` *propose a toast*; `let-v` *let's face it*, *let rip*, *let something slip*; `keep-v` *keep someone posted*; `be-v` *too good to be true*, *to be sure*, *have been around*; `ring-v` *ring true*; `form-n` *true to form*; `power-n` *power of attorney*; `chain-n` *chain of command*; `play-v` *play dead*; `dime-n` *a dime a dozen* (when built); `apple-n` *upset the apple cart*; `rock-n` *rock bottom*; `trick-n` *the oldest trick in the book*; `deal-n` *no big deal*; House rules 16 and 18; phrasal verbs get `separable` codes when next reviewed (B4 i).
 2. **originality**: ask reviewer-b in one call; search any wording it quotes, and headword plus opening words.
 3. **review**: given names after titles fixed 2026-11-05 (`lord-n`; the rest already used listed family names). `lord-v` (*lord it over*) queued. Reject reviewer-b's objections to quotation marks around words in examples, phrasal verbs or compounds as senses, and idioms keyed on another word. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `formation-n` (2026-11-07); then queue order. Hand-claim `fit-n-2` (seizure; *have a fit*, *in fits and starts*) and `fold-n-2` (sheep; *return to the fold*). Add *march to the beat of a different drummer* to `beat-n` at its next review. `designer-adj` (*designer jeans*) queued as a crossref row. `mushroom-n` built: add the mushroom-top subsense to `cap-n` at its next review. Hand-claim `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`); *a small fortune* (`fortune-n` when built); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`, *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
@@ -30,11 +30,11 @@
 - No script writes a model-owned field; the one exception is `tools/ipa_format.py` (periods beside stress marks only, ruling B4 iv).
 - IPA house form: no period beside a stress mark. Bands come only from the band vote; never set one by hand.
 - `crossref.py` no longer guesses a sense: place each `NO-SENSE` pair by hand. A review that removes a cross-reference removes its mirror too.
-- Number entries (`-num`) hold their card, score, money, size, and *of* uses; reject requests for noun or pronoun entries. Tens (*forty* to *ninety*) carry a plural sense, *in her forties*; ordinals keep the date sense (*on the fourth*) but no adverbial *finished fourth*.
+- Number entries (`-num`) hold their card, score, money, size, and *of* uses; reject requests for noun or pronoun entries. Tens carry a plural sense (*in her forties*); ordinals keep the date sense (*on the fourth*) but no adverbial *finished fourth*.
 - Idioms with no noun go under their first verb even when another word carries the meaning: *make light of something* is under `make-v`, *fall flat* under `fall-v`; the adjective points to it in `see_also`.
 - Cross-references to a slug with no entry are allowed; the site shows them grey or hides them (C2). `no_link_words` changes only by an owner ruling (C4).
 - Rows and drafts keep their hyphens and periods. Unrelated homographs are separate entries (`-n-2`), never senses.
-- Timestamps come from `date -u`. Call `metrics.py` once per cycle, in wrap-up only.
+- Timestamps come from `date -u`. Call `metrics.py` once per cycle, at wrap-up.
 
 ## For the owner
 
