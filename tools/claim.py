@@ -5,6 +5,7 @@
     python3 tools/claim.py --taken                   # every slug claimed on origin/main, origin/claude/*, or locally, plus existing entries
     python3 tools/claim.py "bank|n" "give up|phrv"   # claim these headwords (headword|pos[|homograph])
     python3 tools/claim.py --from-queue --n 20 [--band 1] [--source closure] [--pos n]
+                                                     # --n is the run's total: slugs this run already claims count
     python3 tools/claim.py --prune                   # delete claim files whose slugs all have entries on origin/main, then queue.py sync (lint mode)
 
 A claim is headwords/claims/<run-id>.json (wiki/conventions.md section 3), written
@@ -90,6 +91,20 @@ def taken(fetch: bool = True) -> tuple[set[str], set[str]]:
     return claimed, existing
 
 
+def already_claimed(rid: str) -> int:
+    """How many slugs this run's claim file already holds (0 when there is none)."""
+    path = eexlib.ROOT / "headwords" / "claims" / f"{rid}.json"
+    if not path.exists():
+        return 0
+    return len(json.loads(path.read_text(encoding="utf-8")).get("slugs", []))
+
+
+def remaining(n: int, held: int) -> int:
+    """Slugs a --from-queue call may still claim: --n is the run's total, never above CAP
+    (wiki/notes/claim-source-overflow.md)."""
+    return max(0, min(n, CAP) - held)
+
+
 def write_claim(items: list[dict], mode: str) -> Path:
     rid = run_id()
     path = eexlib.ROOT / "headwords" / "claims" / f"{rid}.json"
@@ -155,7 +170,11 @@ def main() -> int:
         print(r.stdout.strip() or r.stderr.strip())   # also resets queue rows left `claimed` with no claim file
         return 0
     if a.from_queue:
-        cmd = [sys.executable, str(HERE / "queue.py"), "next", "--n", str(min(a.n, CAP))]
+        held = already_claimed(run_id())
+        want = remaining(a.n, held)
+        if want == 0:
+            print(f"nothing to claim: this run already claims {held} slug(s), the --n total"); return 1
+        cmd = [sys.executable, str(HERE / "queue.py"), "next", "--n", str(want)]
         for flag, val in (("--band", a.band), ("--source", a.source), ("--pos", a.pos)):
             if val:
                 cmd += [flag, val]

@@ -38,7 +38,7 @@ All tools are Python 3 standard library only and run from the repository root. E
 | `python3 tools/band_vote.py plan\|run\|settle\|apply [--unbanded]` | the three-model band vote on one written scale (ruling A1): paid; lower median; the session settles splits of more than one band in `settled.tsv`; `apply` writes the bands, then `queue.py stamp` |
 | `python3 tools/ipa_format.py [--apply]` | the IPA house form (ruling B4 iv): removes a period beside a stress mark, proves that only periods moved, refuses anything else; the one script allowed to touch IPA |
 | `python3 tools/claim.py --id` | this run's id (`.tmp/run-id`) |
-| `python3 tools/claim.py --from-queue --n N [--band B] [--source S]` or `"<headword>\|<pos>" ...` | claim slugs for this run in `headwords/claims/<run-id>.json`, skipping slugs claimed on any branch |
+| `python3 tools/claim.py --from-queue --n N [--band B] [--source S]` or `"<headword>\|<pos>" ...` | claim slugs for this run in `headwords/claims/<run-id>.json`, skipping slugs claimed on any branch; `--n` is the run's total, counting slugs it already claims |
 | `python3 tools/claim.py --taken` / `--prune` | every taken slug; delete claim files whose entries exist on main |
 
 ## The Routine
