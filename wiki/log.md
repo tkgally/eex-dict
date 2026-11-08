@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-08] review | coverage pass: divide, end, enter, expect
+
+Run gv3qmx, cycle 1. B1 coverage pass, the next four unread five-sense band-1 entries. Added before the panel: `divide-v` subsense 2a (dividing your time or attention), *opinion is divided*; `end-n` phrases *the end of an era* (from the baton), *end of story*, *be on the receiving end*, *end to end*, *go off the deep end*, and *be at an end*; `enter-v` subsenses 1a (onto a stage) and 2a (enter a plea), sense 6 (a feeling entering a voice or a relationship); `expect-v` phrases *what do you expect?*, *when you least expect it*. Panel: 46 issues, 5 blocking (a wrong claim about number order in `divide-v`'s adaptation note, a stage-direction explanation, a circular phrase definition, an example showing the wrong subsense); 38 applied, 8 rejected (no pattern names a bare intransitive use; *birth* kept as the opposite of *end* as it mirrors `birth-n`; three sense merges). At review: `end-n` sense 6 (a leftover piece, *cigarette ends*); four duplicate notes removed (one fact, one field). Pronunciations untouched. Spend US$0.25.
+
 ## [2026-11-07] build | frequency, function, fund, funding, fuss, gadget, gallery, gambling, gamer, gaming, gap, garbage can (nouns)
 
 Run x5565f, cycle 4 (the run's last). Twelve band-2 nouns from the queue, all reviewed. Panel: 33 issues, 2 blocking (one example about animal hearing, replaced): 30 applied, 3 rejected (merging *frequency* senses 1 and 2; the plural *fusses*, rare but real; *mind the gap*, a railway notice). Applied: British *keen gamer* changed to *avid*; `gap-n` senses reordered so the time sense comes last; `gallery-n` subsense 3a (theater seats); `gaming-n` widened to board games played as a hobby; `money-n` moved from `fund-n` sense 1 to sense 2. `crack-n`/`gap-n` changed from synonyms to compare in both entries, with notes. `difference-n` sense 1 got the `gap-n` mirror by hand. Spend US$0.35; the day stands at US$2.99.
