@@ -1,6 +1,6 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-08 after run rsgke3, cycle 2 (review).*
+*Rewritten 2026-11-08 after run qdu7dw, cycle 1 (lint).*
 
 ## State
 
@@ -20,8 +20,8 @@
 2. **originality**: ask reviewer-b in one call; search any wording it quotes, and headword plus opening words.
 3. **review**: given names after titles fixed 2026-11-05 (`lord-n`; the rest already used listed family names). `lord-v` (*lord it over*) queued. Reject reviewer-b's objections to quotation marks around words in examples, phrasal verbs or compounds as senses, and idioms keyed on another word. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `green-n` (2026-11-08); then queue order. `goods-n`: usage and grammar notes overlap; fix at next review. Hand-claim `fit-n-2` (seizure; *have a fit*, *in fits and starts*) and `fold-n-2` (sheep; *return to the fold*). Add *march to the beat of a different drummer* to `beat-n` at its next review. `designer-adj`, `graduate-adj` queued (crossref). `mushroom-n` built: add the mushroom-top subsense to `cap-n` at its next review. Hand-claim `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`, *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* (and *heaven forbid* to `heaven-n` when built) to `god-n` (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
-5. **lint**: every ten runs (each cycle counts); last 2026-11-07 (hundred-and-fifth pass); ten runs since: due now. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). Last reports: 976 missing-sense pairs, 324 circular, 6 promises.
-6. **Tooling notes** (`wiki/notes/`): fixes due: `queue-hyphen-loss`, `claim-source-overflow`; a repeated `band_vote.py apply` doubles notes.
+5. **lint**: every ten runs (each cycle counts); last 2026-11-08 (hundred-and-sixth pass); next due after ten more runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). Last reports: 989 missing-sense pairs, 324 circular, 6 promises.
+6. **Tooling notes** (`wiki/notes/`): `claim-source-overflow` fixed 2026-11-08 (`--n` is the run's total); `queue-hyphen-loss` recurrences handled by hand; a repeated `band_vote.py apply` doubles notes.
 
 ## Fences (do not re-grind)
 
@@ -38,6 +38,6 @@
 
 ## For the owner
 
-- Latest report: `journal/2026-11-08-2.md` (one section per cycle). Rulings of 2026-11-05 carried out ([page](wiki/decisions/owner-rulings-2026-11-05.md)).
+- Latest report: `journal/2026-11-08-3.md` (one section per cycle). Rulings of 2026-11-05 carried out ([page](wiki/decisions/owner-rulings-2026-11-05.md)).
 - Left for a session with you (ruling 6): pronunciation disputes in `reviews/needs_curator.txt`; the ten-entry samples in `journal/digest-2026-10-31.md` and `journal/digest-2026-11-07.md`. Routine runs do not settle them.
 - Site: <https://tkgally.github.io/eex-dict/>
