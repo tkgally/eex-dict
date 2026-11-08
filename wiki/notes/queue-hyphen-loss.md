@@ -13,3 +13,5 @@ Recurred 2026-10-22 on suffixes: cross-references queued *ic*, *ing*, *ity*, *le
 **2026-10-23.** Periods are lost the same way: rows `am`, `pm` (for *a.m.*, *p.m.*) and `sion` (for *-sion*). `queue.py sync` and `stamp` then read the wrong row: *p.m.* was stamped band 3, and *-less* and *a.m.* were not marked done until set by hand.
 
 **2026-11-03.** A `family` row arrived as *award winning* for `award-winning-adj`; `repair-forms` missed it (the referring entry names the slug with no `form`). Fixed by hand.
+
+**2026-11-08.** *grown-up* (n and adj) sits as *grown up*. `queue.py add "grown-up" n` updates the hyphenless row's note by slug but keeps its wrong headword, so it cannot fix the form; the rows were left as they were. Draft them as *grown-up*.
