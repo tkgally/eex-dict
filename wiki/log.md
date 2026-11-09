@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-09] originality | ten sampled fields; twin rewritten
+
+Run 20261109T005759Z-mdy32d, cycle 2 (forced: run 740 is a multiple of twenty). Ten fields sampled; exact-phrase searches found no match for nine. Reviewer B (one call) answered *original* on nine and *copied* on `twin-n`, quoting our own wording; a headword search then found a learner's dictionary with the same words in a different order (*one of two children born at the same time to the same mother*). Verdicts: original 8, generic-overlap 1 (`snow-n` sense 2), rewrite 1. `twin-n` sense 1 now reads *either of two children that a mother gives birth to at one time*; the panel ran three times (8 decisions: 7 applied, 1 rejected, the twin bed and twin room uses left for the queued `twin-adj`). Signpost *born together*; the usage note no longer says identical twins look exactly alike or ties *fraternal* to American English; the attributive *a twin brother* example replaced. Spend US$0.08.
+
 ## [2026-11-09] build | count (rank), grown-up, guidance, guideline, guitar, gum (two homographs), haircut, hairdresser, half hour, hallway
 
 Run 20261109T004404Z-mdy32d, cycle 1. Nine queue rows plus two hand-claimed homographs: `count-n-2` (the noble rank, from `NEXT.md`) and `gum-n-2` (the flesh around the teeth, split from `gum-n` because the two words are unrelated). `grown up` drafted as *grown-up*. Panel: 31 issues, 3 blocking (all on one `gum-n` example that used an uncountable sense as countable), 24 applied, 7 rejected. Main fixes: British *sweet* replaced in `gum-n` and `gum-n-2`; `grown-up-n` defined as *an adult* with the children's-word restriction in the explanation; `guidance-n` widened to official advice; `hairdresser-n` sense 2 no longer circular. Rejected: *play guitar* as uncountable, the form restriction of *the hairdresser's* out of the explanation, the `haircut-n` learner error. Five NO-SENSE back-links placed by hand (`lord-n`, `adult-n`, `child-n`, `rule-n`, `glue-n`). Spend US$0.30.
