@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-09 after run mdy32d, cycle 3 (build).*
+*Rewritten 2026-11-09 after run mdy32d, cycle 4 (review).*
 
 ## State
 
 - 4,042 entries, all `reviewed`. Site checked 2026-11-07 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-11-07.md`; next due 2026-11-14.
 - Bands re-voted 2026-10-24; later rows at lints.
-- Spend 2026-11-09: US$0.73 of US$15 so far. Originality: last 2026-11-09 (1 rewrite, `twin-n`).
+- Spend 2026-11-09: US$0.99 of US$15 so far. Originality: last 2026-11-09 (1 rewrite, `twin-n`).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -14,7 +14,7 @@
 0. **The owner's rulings of 2026-10-24** ([status](wiki/decisions/owner-rulings-2026-10-24.md)). For the Routine, in order:
    1. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates. A reference to a phrase goes in `see_also` with a note.
    2. **Build**: now closure ([build-order](wiki/decisions/build-order.md)).
-   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 255 done, last `focus-n` to `gray-adj` (2026-11-08); next the unread five-sense ones from `group-n`; check new senses against subsenses). Then the backlog by band.
+   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 259 done, last `group-n` to `hear-v` (2026-11-09); next the unread five-sense ones from `help-n`; check new senses against subsenses). Then the backlog by band.
    4. **Weekly digest**: written 2026-11-07; next when `signals.digest_due`. Entry reports: pre-flight step 5.
 1. **build**: queue order (last built `hazard-n`, 2026-11-09); draft the `grown up` adjective row as *grown-up*. `word-n`: add *words fail me*; `dot-n`: *connect the dots*. Later: `tap-n-2`, `wind-v-2`. `twin-adj` (queued) takes *twin bed*, *twin room*. Idioms, at next review or build: `balance-n` *tip the balance*, *strike a balance*; `scale-n` *tip the scales*; `blood-n` *sweat blood*; `stuff-n` *sweat the small stuff*; `fear-n` *strike fear into someone*; `time-n` *waste no time*; `disbelief-n` *suspend disbelief*; `chord-n` *strike a chord*; `pose-n` *strike a pose*; `toast-n` *propose a toast*; `let-v` *let's face it*, *let rip*, *let something slip*; `keep-v` *keep someone posted*; `be-v` *too good to be true*, *to be sure*, *have been around*; `ring-v` *ring true*; `form-n` *true to form*; `power-n` *power of attorney*; `chain-n` *chain of command*; `play-v` *play dead*; `dime-n` *a dime a dozen* (when built); `apple-n` *upset the apple cart*; `rock-n` *rock bottom*; `trick-n` *the oldest trick in the book*; `deal-n` *no big deal*; House rules 16 and 18; phrasal verbs get `separable` codes when next reviewed (B4 i).
 2. **originality**: ask reviewer-b once; search quoted wording and headword plus opening words.
