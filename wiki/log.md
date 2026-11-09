@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-09] build | hammer to hunt: twelve queue entries
+
+Run 20261109T170141Z-l9x8lv, cycle 3. Twelve rows: `hammer-v`, `hike-v`, `barber-n`, `chick-n`, `earphones-n`, `first-floor-n` (American and British senses), `grocery-store-n`, `hell-n`, `hiking-n`, `hood-n`, `hunger-n`, `hunt-n`. Pronunciation all verified first pass. Panel: 63 issues, 4 blocking (a heart example under the hitting sense of `hammer-v`, now its own subsense; a lion example in `hunt-n` that stated an animal fact). 51 applied, 12 rejected (clause idiom definitions, form marks the site supplies, plural headword of `earphones-n` kept with *earphone* named in the usage note). Added: `hammer-v` damage sense; `hell-n` *like hell*, *as hell*, *to hell with*, *raise hell*; singular-only coding gives `hunger-n` and `hell-n` no plural. Queued `hammer-out-phrv`, `hammer-away-at-phrv`, `hike-up-phrv`, `hell-interj`. Neighborhood *hood* belongs in a homograph `hood-n-2`. Seven NO-SENSE back-links placed by hand. Spend US$0.36.
+
 ## [2026-11-09] lint | hundred-and-seventh pass
 
 Run 20261109T165757Z-l9x8lv, cycle 2. Forced by the selector: ten runs since the last lint. No open pull requests, inbox items, or entry reports; the one orphan branch already has its curator line. Caps, links, and gates clean. `crossref.py --all --apply` wrote word-family mirror links on fourteen entries (compounds such as `headache-n`, `heart-attack-n`, `honeymoon-n` now list their parts); three NO-SENSE pairs placed by hand (`haircut-n` 1 synonym `cut-n`; `hero-n` 2 synonym `god-n`; `fan-n-2` 1 synonym `nut-n`, each with a note where the words differ). Six spent claim files pruned. Band vote on 39 unbanded rows (US$0.006); one wide split settled (`humanitarian-adj` 3). `repair-forms` finds nothing. Precision: no pair newly under the line. Reports: 319 circular, 992 missing-sense pairs, 6 promises (all known). Index and pages agree; no duplicate curator lines; no open questions.
