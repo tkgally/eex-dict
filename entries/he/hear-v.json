@@ -53,7 +53,7 @@
       "n": 1,
       "signpost": "sounds",
       "definition": "notice a sound with your ears",
-      "explanation": "Not normally used in the continuous. For a sound that is going on now, English often uses *can hear*: *I can hear a bird*, not *I am hearing a bird*.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive or intransitive",
@@ -124,7 +124,7 @@
       "compare": [
         {
           "slug": "listen-v",
-          "note": "hear happens without trying; listen means paying attention"
+          "note": null
         }
       ],
       "subsenses": [],
@@ -177,9 +177,9 @@
           "pattern": "verb + preposition + object"
         },
         {
-          "text": "I heard from Kim that the meeting was canceled.",
+          "text": "Where did you hear that?",
           "note": null,
-          "pattern": null
+          "pattern": "verb + object"
         }
       ],
       "collocations": [
@@ -269,7 +269,8 @@
           "items": [
             "hear a talk",
             "hear both sides",
-            "hear a concert"
+            "hear a band",
+            "hear a speech"
           ]
         }
       ],
@@ -335,7 +336,7 @@
       "n": 4,
       "signpost": "get a message",
       "definition": "get a letter, a phone call, an email, or other message from someone",
-      "explanation": "Usually followed by **from** and the person or organization that sends the message.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -401,7 +402,7 @@
       "n": 5,
       "signpost": "know about",
       "definition": "know that someone or something exists",
-      "explanation": "Followed by **of**; very common with *never* and in questions.",
+      "explanation": "Followed by **of**; very common with **never** and in questions.",
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -499,7 +500,7 @@
       "sub_id": "wont-hear-of-it",
       "text": "won't hear of it",
       "definition": "refuse to allow something",
-      "explanation": "Usually with *won't* or *wouldn't*, followed by *it* or by **of** and a noun or -ing form.",
+      "explanation": "Usually with **won't** or **wouldn't**: *she wouldn't hear of it*, *they won't hear of me leaving*.",
       "labels": {
         "register": [],
         "region": [],
@@ -515,6 +516,76 @@
         },
         {
           "text": "My parents won't hear of me leaving school.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "be-hearing-things",
+      "text": "be hearing things",
+      "definition": "imagine that you hear a sound that is not really there",
+      "explanation": "Used in the continuous, unlike the ordinary sense of **hear**.",
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "I thought someone called my name, but I must be hearing things.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "There's nobody at the door: you're hearing things.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "i-hear-you",
+      "text": "I hear you",
+      "definition": "used to say that you understand what someone means, often before you disagree or add something",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "I hear you, but we still have to finish by Friday.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "\"This job is so tiring.\" \"I hear you.\"",
           "note": null,
           "pattern": null
         }
@@ -564,16 +635,16 @@
     }
   ],
   "adaptation": {
-    "semantic": "\"hear\": some languages use one verb for both **hear** and **listen**. In English **hear** is about noticing a sound, and **listen** is about paying attention.",
+    "semantic": "\"hear\": some languages use one verb for both **hear** and **listen**.",
     "grammar": "\"hear\": after *hear someone*, use the base form or the -ing form, never **to**: *I heard him leave*, *I heard him leaving*.",
     "culture": null,
     "false_friends": null,
-    "pronunciation": "\"hear\": the past form **heard** does not sound like **hear** with **-d** added; it rhymes with **bird**."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-09-26T00:45:54Z",
-    "modified": "2026-10-02T01:11:01Z",
+    "modified": "2026-11-09T01:25:40Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T004257Z-f05pzl",
     "reviews": [
@@ -615,6 +686,26 @@
         "file": "reviews/20261002T010345Z-2sgl1j/hear-v.json",
         "ok": 71,
         "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261109T011831Z-mdy32d",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-09",
+        "file": "reviews/20261109T011831Z-mdy32d/hear-v.json",
+        "ok": 74,
+        "issues": 12,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261109T011831Z-mdy32d",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-09",
+        "file": "reviews/20261109T011831Z-mdy32d/hear-v.json",
+        "ok": 81,
+        "issues": 4,
         "blocking": 0
       }
     ],
