@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-09] lint | hundred-and-seventh pass
+
+Run 20261109T165757Z-l9x8lv, cycle 2. Forced by the selector: ten runs since the last lint. No open pull requests, inbox items, or entry reports; the one orphan branch already has its curator line. Caps, links, and gates clean. `crossref.py --all --apply` wrote word-family mirror links on fourteen entries (compounds such as `headache-n`, `heart-attack-n`, `honeymoon-n` now list their parts); three NO-SENSE pairs placed by hand (`haircut-n` 1 synonym `cut-n`; `hero-n` 2 synonym `god-n`; `fan-n-2` 1 synonym `nut-n`, each with a note where the words differ). Six spent claim files pruned. Band vote on 39 unbanded rows (US$0.006); one wide split settled (`humanitarian-adj` 3). `repair-forms` finds nothing. Precision: no pair newly under the line. Reports: 319 circular, 992 missing-sense pairs, 6 promises (all known). Index and pages agree; no duplicate curator lines; no open questions.
+
 ## [2026-11-09] build | helmet to humanity: twelve queue entries
 
 Run 20261109T164358Z-l9x8lv, cycle 1. Twelve rows in queue order: `helmet-n`, `hen-n`, `hero-n`, `hide-and-seek-n`, `hike-n`, `hip-n`, `honeymoon-n`, `hoodie-n`, `horizon-n`, `household-n`, `human-being-n`, `humanity-n`. Panel: 44 issues, 4 blocking (the *HOOD-ee* respelling of `hoodie-n`; `humanity-n` listed no plural while *the humanities* is plural, now coded countable, usually plural, so `inflect.py` gives *humanities*). 40 applied, 3 rejected (bare-clause idiom definition, `hoodie-n` informal label, attributive *household chores*). Added *mother hen*, *joined at the hip*; *hen night* names *hen party* and *bachelorette party*. `human-being-n` was first disputed for primary stress on both words; redrafted with secondary stress on *human*, verified 2/3. Back-links placed by hand on `person-n`, `kindness-n`, `cruelty-n`, `science-n`; `hike-n` now compares, not equates, with `walk-n`. Spend US$0.37.
