@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-10] site | site check, 79 of 79
+
+Run 20261110T004355Z-pgu4i9, cycle 1. The selector chose `site` (highest scheduler debt). `build_site.py` wrote 4,090 entries on 3,421 headword pages, no drafts withheld; `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on all 3,427 pages. No template change needed. Pre-flight clean: no open pull requests, no entry reports, empty inbox; the one orphan branch (`claude/friendly-mayer-mdy32d`) already has its curator line and no residue. Spend US$0.
+
 ## [2026-11-09] review | coverage pass: job, know, law, leg
 
 Run 20261109T171417Z-l9x8lv, cycle 4. B1 coverage pass, the next four unread five-sense band-1 entries. Before the panel: repeated notes cut (`job-n` adaptation grammar; `know-v` usage note and adaptation pronunciation; `law-n` usage note and adaptation grammar; `leg-n` usage note). Added: `job-n` *do the job*; `know-v` a sixth sense (*know hunger*, literary), *know right from wrong* subsense, *before you know it*, *be known as*, *be known for*, *you know what?*, *know something inside out*; `law-n` *there's no law against something*, *the law of averages*; `leg-n` *give someone a leg up*, *have legs*, sense 2 widened to ladders and other objects. Panel: 59 issues, 5 blocking (economics example in `law-n`; circular `leg-n` sense 4; a match with legs; *be known as* missing). 45 applied, 14 rejected (form marks the site supplies; `job-n` sense 4 explanation kept; *make the best of a bad job* stays until `best-n` exists). `act-n` synonym `law-n` removed as a mirror. Pass at 267 entries; next `load-n`. Spend US$0.28.
