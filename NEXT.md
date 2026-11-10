@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-10 after run k3huu9, cycle 2 (review).*
+*Rewritten 2026-11-10 after run k3huu9, cycle 3 (originality).*
 
 ## State
 
 - 4,142 entries, all `reviewed`. Site checked 2026-11-10 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now (built through `kingdom-n`, 2026-11-10), then `crossref`. Last weekly digest: `journal/digest-2026-11-07.md`; next due 2026-11-14.
 - Bands re-voted 2026-10-24; later rows at lints (last 2026-11-10, 42 rows).
-- Spend 2026-11-10: US$2.21 of US$15 so far. Originality: last 2026-11-09 (1 rewrite, `twin-n`).
+- Spend 2026-11-10: US$2.26 of US$15 so far. Originality: last 2026-11-10 (1 rewrite, `tie-n`).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
