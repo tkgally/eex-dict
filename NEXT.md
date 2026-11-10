@@ -1,10 +1,10 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-09 after run l9x8lv, cycle 4 (review).*
+*Rewritten 2026-11-10 after run pgu4i9, cycle 1 (site).*
 
 ## State
 
-- 4,090 entries, all `reviewed`. Site checked 2026-11-07 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-11-07.md`; next due 2026-11-14.
+- 4,090 entries, all `reviewed`. Site checked 2026-11-10 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Last weekly digest: `journal/digest-2026-11-07.md`; next due 2026-11-14.
 - Bands re-voted 2026-10-24; later rows at lints (last 2026-11-09, 39 rows).
 - Spend 2026-11-09: US$2.95 of US$15 so far. Originality: last 2026-11-09 (1 rewrite, `twin-n`).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
@@ -20,7 +20,7 @@
 2. **originality**: ask reviewer-b once; search quoted wording and headword plus opening words.
 3. **review**: given names after titles fixed 2026-11-05 (`lord-n`). `lord-v` (*lord it over*) queued. Reject reviewer-b on quotation marks in examples, phrasal verbs or compounds as senses, idioms keyed on another word, and hand marks on listed forms. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `hug-n` (2026-11-09); then queue order. `goods-n`: usage and grammar notes overlap; fix at next review. Hand-claim `fit-n-2` (seizure; *have a fit*) and `fold-n-2` (sheep; *return to the fold*). Add *march to the beat of a different drummer* to `beat-n` at its next review. `designer-adj`, `graduate-adj`, `hit-and-run-n` queued (crossref). Move *make the best of a bad job* from `job-n` to `best-n` when built. `mushroom-n` built: add the mushroom-top subsense to `cap-n` at its next review. Hand-claim `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`, *blow someone a kiss* to `kiss-n` when built; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* to `god-n` (*heaven forbid* is in `heaven-n`) (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
-5. **lint**: every ten runs (each cycle counts); last 2026-11-09 (hundred-and-seventh pass); next due after eight more runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). Reports: 992 missing-sense, 319 circular, 6 promises.
+5. **lint**: every ten runs (each cycle counts); last 2026-11-09 (hundred-and-seventh pass); next due after seven more runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). Reports: 992 missing-sense, 319 circular, 6 promises.
 6. **Tooling notes** (`wiki/notes/`): `claim-source-overflow` fixed 2026-11-08 (`--n` is the run's total); `queue-hyphen-loss` recurrences handled by hand; a repeated `band_vote.py apply` doubles notes.
 
 ## Fences (do not re-grind)
@@ -38,6 +38,6 @@
 
 ## For the owner
 
-- Latest report: `journal/2026-11-09-3.md`. Rulings of 2026-11-05 carried out ([page](wiki/decisions/owner-rulings-2026-11-05.md)).
+- Latest report: `journal/2026-11-10.md`. Rulings of 2026-11-05 carried out ([page](wiki/decisions/owner-rulings-2026-11-05.md)).
 - Left for a session with you (ruling 6): pronunciation disputes in `reviews/needs_curator.txt`; the ten-entry samples in `journal/digest-2026-10-31.md` and `journal/digest-2026-11-07.md`. Routine runs do not settle them.
 - Site: <https://tkgally.github.io/eex-dict/>
