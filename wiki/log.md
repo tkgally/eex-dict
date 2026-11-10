@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-10] build | hood to impression: twelve entries
+
+Run 20261110T004910Z-pgu4i9, cycle 2. Two hand-claims from `NEXT.md`: `hood-n-2` (slang, American: a neighborhood) and `grown-up-adj` (the queue row *grown up*, written with its hyphen; the two-word form is now a spelling variant). Ten queue rows: `hurricane-n`, `ice-skating-n`, `identification-n`, `idiom-n`, `idiot-n`, `imagination-n`, `immigrant-n`, `immigration-n`, `implication-n`, `impression-n`. Pronunciation: `grown-up-adj` was disputed with end stress (0/4, CMU against); it was redrafted as `ˈɡroʊnˌʌp` (stress shifts before a noun, the common use) and verified 3/4, with the shift told in the pronunciation adaptation note. Panel: 43 issues, 7 blocking (a graded example under the not-gradable adult sense of *grown-up*; a usage note that miscalled a sentence a participle; sense 3 of *identification* coded uncountable with *a strong identification*). 38 applied, 5 rejected (sense order of *identification*; the one-form explanation of *imagination* sense 3, which the style guide allows). Six NO-SENSE back-links placed by hand (`adult-adj`, `storm-n`, `expression-n`, `phrase-n`, `consequence-n`). Spend US$0.37.
+
 ## [2026-11-10] site | site check, 79 of 79
 
 Run 20261110T004355Z-pgu4i9, cycle 1. The selector chose `site` (highest scheduler debt). `build_site.py` wrote 4,090 entries on 3,421 headword pages, no drafts withheld; `site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on all 3,427 pages. No template change needed. Pre-flight clean: no open pull requests, no entry reports, empty inbox; the one orphan branch (`claude/friendly-mayer-mdy32d`) already has its curator line and no residue. Spend US$0.
