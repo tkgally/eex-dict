@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To pay is to give money for something, and so also to give or suffer something in return.",
+  "core_idea": "To pay is to give money for something, and so also to give something else, such as attention, or to suffer for something you did.",
   "senses": [
     {
       "n": 1,
@@ -63,7 +63,7 @@
           "verb + preposition + object",
           "verb + object + preposition + object",
           "verb + two objects",
-          "verb + adverb or preposition"
+          "verb + object + to-infinitive"
         ]
       },
       "labels": {
@@ -86,9 +86,9 @@
           "pattern": "verb + preposition + object"
         },
         {
-          "text": "They pay me every Friday.",
+          "text": "They paid me to clean the house.",
           "note": null,
-          "pattern": "verb + object"
+          "pattern": "verb + object + to-infinitive"
         },
         {
           "text": "Can I pay by card?",
@@ -100,8 +100,7 @@
         {
           "type": "verb + preposition",
           "items": [
-            "pay for",
-            "pay by"
+            "pay for"
           ]
         },
         {
@@ -143,8 +142,8 @@
       "subsenses": [
         {
           "letter": "a",
-          "definition": "give the worker a particular amount of money",
-          "explanation": "Used about jobs and work.",
+          "definition": "give a particular amount of money to the person who does it",
+          "explanation": "The subject is a job or a kind of work.",
           "grammar": {
             "countability": null,
             "transitivity": "transitive or intransitive",
@@ -173,6 +172,47 @@
               "items": [
                 "pay well",
                 "pay badly"
+              ]
+            }
+          ]
+        },
+        {
+          "letter": "b",
+          "definition": "produce an amount of money as profit or interest",
+          "explanation": "The subject is a bank account, an investment, or a business.",
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive or intransitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "This savings account pays very little interest.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The business is finally starting to pay.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "pay interest",
+                "pay a dividend"
               ]
             }
           ]
@@ -365,7 +405,7 @@
     {
       "n": 5,
       "signpost": "attention, a visit",
-      "definition": "give someone your attention, a visit, or praise",
+      "definition": "give your attention to something, or give someone a visit, praise, or respect",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -446,7 +486,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "You **pay** a person or a bill, but you **pay for** the thing you buy: *I paid the waiter*, *I paid the bill*, *I paid for the meal*.",
+  "usage_note": null,
   "learner_errors": [
     {
       "incorrect": "I paid the dinner.",
@@ -472,7 +512,7 @@
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"pay\" takes the person or the bill as its object (*pay the driver*, *pay the bill*), but takes **for** before the thing bought (*pay for the ticket*). Many languages use one pattern for both.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -480,7 +520,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T19:54:40Z",
-    "modified": "2026-11-08T17:03:31Z",
+    "modified": "2026-11-11T01:10:05Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T195326Z-iujuq0",
     "reviews": [
@@ -522,6 +562,26 @@
         "file": "reviews/20260928T005620Z-jf8wvz/pay-v.json",
         "ok": 62,
         "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261111T010144Z-co8yne",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-11",
+        "file": "reviews/20261111T010144Z-co8yne/pay-v.json",
+        "ok": 58,
+        "issues": 13,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261111T010144Z-co8yne",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-11",
+        "file": "reviews/20261111T010144Z-co8yne/pay-v.json",
+        "ok": 65,
+        "issues": 2,
         "blocking": 0
       }
     ],
