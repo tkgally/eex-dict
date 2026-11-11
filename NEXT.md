@@ -1,11 +1,11 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-11 after run wibk39, cycle 1 (build).*
+*Rewritten 2026-11-11 after run wibk39, cycle 2 (lint).*
 
 ## State
 
 - 4,194 entries, all `reviewed`. Site checked 2026-11-10 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now (built through `majority-n`, 2026-11-11), then `crossref`. Last weekly digest: `journal/digest-2026-11-07.md`; next due 2026-11-14.
-- Bands re-voted 2026-10-24; later rows at lints (last 2026-11-10, 42 rows).
+- Bands re-voted 2026-10-24; later rows at lints (last 2026-11-11, 38 rows).
 - Spend 2026-11-11: US$1.75 of US$15 so far. Originality: last 2026-11-10 (1 rewrite, `tie-n`).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
@@ -20,7 +20,7 @@
 2. **originality**: ask reviewer-b once; search quoted wording and headword plus opening words.
 3. **review**: given names after titles fixed 2026-11-05 (`lord-n`). `lord-v` (*lord it over*) queued. Reject reviewer-b on quotation marks in examples, phrasal verbs or compounds as senses, idioms keyed elsewhere, hand marks on listed forms. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: open since 2026-10-27; paused above band 2 (A3). `family` rows built through `majority-n` (2026-11-11). `killer-adj` queued (crossref): takes *a killer smile*, *a killer app*. `goods-n`: usage and grammar notes overlap; fix at next review. Hand-claim `fit-n-2` (seizure; *have a fit*) and `fold-n-2` (sheep; *return to the fold*). Add *march to the beat of a different drummer* to `beat-n` at its next review. `designer-adj`, `graduate-adj`, `hit-and-run-n` queued (crossref). Move *make the best of a bad job* from `job-n` to `best-n` when built. `mushroom-n` built: add the mushroom-top subsense to `cap-n` at its next review. Hand-claim `match-n-2` (fire stick), `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* to `god-n` (*heaven forbid* is in `heaven-n`) (rejected for `forbid-v`). A comparison form (*better*) takes an exceptions-table line.
-5. **lint**: every ten runs (each cycle counts); last 2026-11-10 (hundred-and-eighth pass); due now. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). Reports: 997 missing-sense, 320 circular, 6 promises.
+5. **lint**: every ten runs (each cycle counts); last 2026-11-11 (hundred-and-ninth); next after ten runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). Reports: 1,004 missing-sense, 321 circular, 6 promises.
 6. **Tooling notes** (`wiki/notes/`): `inflect-uncountable-plural-gap` (sixth case `making-n`: fix it); `queue-hyphen-loss` recurrences handled by hand; repeated `band_vote.py apply` doubles notes.
 
 ## Fences (do not re-grind)
