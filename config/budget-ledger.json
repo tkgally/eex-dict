@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-11-12",
-  "spent_usd": 0.889214,
+  "spent_usd": 1.011344,
   "calls": [
     {
       "ts": "2026-11-12T00:47:28Z",
@@ -507,6 +507,123 @@
       "cost_usd": 0.0,
       "tokens_in": 13930,
       "tokens_out": 12253
+    },
+    {
+      "ts": "2026-11-12T08:58:56Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "pronounce_check:pronunciation-1",
+      "model": "openai/gpt-6.1-sol",
+      "cost_usd": 0.005236,
+      "tokens_in": 283,
+      "tokens_out": 467
+    },
+    {
+      "ts": "2026-11-12T08:58:59Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "pronounce_check:pronunciation-2",
+      "model": "google/gemini-3.8-flash",
+      "cost_usd": 0.001246,
+      "tokens_in": 241,
+      "tokens_out": 284
+    },
+    {
+      "ts": "2026-11-12T08:59:00Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "pronounce_check:pronunciation-3",
+      "model": "deepseek/deepseek-v4-pro",
+      "cost_usd": 0.000628,
+      "tokens_in": 256,
+      "tokens_out": 265
+    },
+    {
+      "ts": "2026-11-12T08:59:22Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:mention-n:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.019874,
+      "tokens_in": 4472,
+      "tokens_out": 1093
+    },
+    {
+      "ts": "2026-11-12T08:59:28Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:mention-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8612,
+      "tokens_out": 3324
+    },
+    {
+      "ts": "2026-11-12T08:59:54Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:messenger-n:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.029368,
+      "tokens_in": 5284,
+      "tokens_out": 1880
+    },
+    {
+      "ts": "2026-11-12T08:59:57Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:messenger-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 9652,
+      "tokens_out": 4356
+    },
+    {
+      "ts": "2026-11-12T09:00:16Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:military-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8360,
+      "tokens_out": 2714
+    },
+    {
+      "ts": "2026-11-12T09:00:18Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:military-n:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.023308,
+      "tokens_in": 4284,
+      "tokens_out": 1474
+    },
+    {
+      "ts": "2026-11-12T09:00:34Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:milkshake-n:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.019328,
+      "tokens_in": 4229,
+      "tokens_out": 1087
+    },
+    {
+      "ts": "2026-11-12T09:00:41Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:milkshake-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 18846,
+      "tokens_out": 3769
+    },
+    {
+      "ts": "2026-11-12T09:00:55Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:millionaire-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 8344,
+      "tokens_out": 2010
+    },
+    {
+      "ts": "2026-11-12T09:01:02Z",
+      "run_id": "20261112T085725Z-ruj1dp",
+      "purpose": "review:millionaire-n:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.023142,
+      "tokens_in": 4251,
+      "tokens_out": 1464
     }
   ],
   "history": {
