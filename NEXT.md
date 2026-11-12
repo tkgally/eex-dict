@@ -1,10 +1,10 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-12 after run wnyybl, cycle 2 (build).*
+*Rewritten 2026-11-12 after run wnyybl, cycle 3 (site).*
 
 ## State
 
-- 4,210 entries, all `reviewed`. Site checked 2026-11-10 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now (built through `majority-n`, 2026-11-11), then `crossref`. Last weekly digest: `journal/digest-2026-11-07.md`; next due 2026-11-14.
+- 4,210 entries, all `reviewed`. Site checked 2026-11-12 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now (built through `majority-n`, 2026-11-11), then `crossref`. Last weekly digest: `journal/digest-2026-11-07.md`; next due 2026-11-14.
 - Bands re-voted 2026-10-24; later rows at lints (last 2026-11-11, 38 rows).
 - Spend 2026-11-12: US$0.50 of US$15 so far. Originality: last 2026-11-10 (1 rewrite, `tie-n`).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
