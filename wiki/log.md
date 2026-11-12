@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-12] build | meter to ministry: five queue entries
+
+Run 20261112T090349Z-ruj1dp, cycle 3. Five rows in queue order: `meter-n` (length, measuring machine with a parking-meter subsense, rhythm; British *metre* for two senses), `microwave-n` (oven; energy wave, technical), `midday-n`, `mineral-n` (in the ground; in food), `ministry-n` (government, with an American *department* usage note; church work). `microwave-n` American IPA disputed against CMU; re-drafted as `ˈmaɪ.krəˌweɪv`, verified 3/4 with CMU. *poem* and *poetry* are outside the defining vocabulary, so the rhythm sense of `meter-n` speaks of lines of writing. Panel: 17 issues, 3 blocking (science claims in `microwave-n` and `mineral-n` examples); 16 applied, 1 rejected (the vocabulary limit). Taxi meters and church youth ministries added on review. Back-links placed by hand: `department-n` 3 synonym `ministry-n`, `midnight-n` antonym `midday-n`. Spend US$0.15.
+
 ## [2026-11-12] closure | mention to millionaire: five family entries
 
 Run 20261112T085725Z-ruj1dp, cycle 2. The `closure` source is empty, so five `family` rows in queue order: `mention-n` (with an *honorable mention* subsense and a note on formal *make mention of*), `messenger-n` (courier and news-bringer senses; *shoot the messenger*), `military-n` (*the military*, with the error *my father is a military*), `milkshake-n` (a usage note on the American and British difference), `millionaire-n` (stress note *mil-yuh-NAIR*). Pronunciation and inflections verified first pass. Panel: 11 issues, 3 blocking, all on a messaging-app sense of `messenger-n` that is really brand-led; the sense was removed. 11 applied, 0 rejected. Also: `milkshake-n` countable only, its definition and usage note brought into agreement; `millionaire-n` defined by the threshold, with *property* reworded out (not yet an entry). `billionaire-n` gains the `millionaire-n` back-link. Spend US$0.12.
