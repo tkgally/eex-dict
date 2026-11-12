@@ -241,3 +241,7 @@ No switch-offs. `reviewer-a:claude-sonnet-5-5` rose from 0.86 (272/316) to 0.80 
 ## 2026-11-11: hundred-and-ninth pass, no new switch-offs
 
 `reviewer-a:claude-sonnet-5-5` 0.85 (6327/7467). `reviewer-b:gemini-4-argon` 0.82 (2785/3381); `spelling-or-format` 0.35 (99/283), live by the owner's ruling; `inflection` 0.32 (8/25), above the line but falling: the three `making-n` "no plural" rejections of 2026-11-11 are the known inflect gap, not reviewer error, and the tool fix would remove the cause.
+
+## 2026-11-12: hundred-and-tenth pass, no new switch-offs
+
+`reviewer-a:claude-sonnet-5-5` 0.85 (6522/7692). `reviewer-b:gemini-4-argon` 0.83 (2854/3456); `spelling-or-format` 0.36 (103/289), live by the owner's ruling; `inflection` 0.35 (9/26), above the line.
