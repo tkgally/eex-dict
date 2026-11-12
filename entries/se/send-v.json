@@ -132,7 +132,44 @@
           "note": null
         }
       ],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "show people an idea or a feeling through what you do",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "Closing the school would send the wrong message to parents.",
+              "note": null,
+              "pattern": "verb + object"
+            },
+            {
+              "text": "Her smile sent a clear signal that she was happy.",
+              "note": null,
+              "pattern": "verb + object"
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + noun",
+              "items": [
+                "send a message",
+                "send a signal",
+                "send the wrong message"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -153,7 +190,8 @@
         "codes": [],
         "patterns": [
           "verb + object + preposition + object",
-          "verb + object + adverb"
+          "verb + object + adverb",
+          "verb + object + to-infinitive"
         ]
       },
       "labels": {
@@ -179,6 +217,11 @@
           "text": "They sent their son to a school near the sea.",
           "note": null,
           "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "She sent me to buy some milk.",
+          "note": null,
+          "pattern": "verb + object + to-infinitive"
         }
       ],
       "collocations": [
@@ -187,16 +230,12 @@
           "items": [
             "send someone home",
             "send someone to school",
-            "send someone away"
+            "send someone away",
+            "send someone to prison"
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "refer-v",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -275,8 +314,7 @@
         "transitivity": "transitive",
         "codes": [],
         "patterns": [
-          "verb + object + preposition + object",
-          "verb + object + adjective"
+          "verb + object + preposition + object"
         ]
       },
       "labels": {
@@ -289,23 +327,23 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The long speech sent half the room to sleep.",
+          "text": "The news sent him into a panic.",
           "note": null,
           "pattern": "verb + object + preposition + object"
         },
         {
-          "text": "That noise is sending me crazy.",
+          "text": "Her joke sent the whole class into fits of laughter.",
           "note": null,
-          "pattern": "verb + object + adjective"
+          "pattern": "verb + object + preposition + object"
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "send someone to sleep",
-            "send someone crazy",
-            "send someone into a panic"
+            "send someone into a panic",
+            "send someone into fits of laughter",
+            "send someone into a rage"
           ]
         }
       ],
@@ -324,12 +362,12 @@
     },
     {
       "n": 5,
-      "signpost": "send for",
+      "signpost": "ask to come",
       "definition": "ask someone to come, or ask for something to be brought to you",
       "explanation": "Always followed by **for**.",
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "intransitive",
         "codes": [],
         "patterns": [
           "verb + preposition + object"
@@ -398,7 +436,7 @@
     {
       "incorrect": "I sent to her a letter yesterday.",
       "correct": "I sent her a letter yesterday.",
-      "note": "Say *send someone something* or *send something to someone*; **to** does not come straight after **send**."
+      "note": "With two objects, say *send someone something* or *send something to someone*; do not put **to** before the person when the thing comes after."
     }
   ],
   "etymology": null,
@@ -414,7 +452,7 @@
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"send\": the person receiving comes straight after the verb (*send her a letter*) or after **to** at the end (*send a letter to her*), never with **to** straight after **send**.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -422,7 +460,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T23:06:06Z",
-    "modified": "2026-09-27T18:56:09Z",
+    "modified": "2026-11-12T17:14:17Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T230451Z-poh5we",
     "reviews": [
@@ -464,6 +502,26 @@
         "file": "reviews/20260927T184359Z-zkagg1/send-v.json",
         "ok": 60,
         "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261112T170832Z-qq1w2s",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-12",
+        "file": "reviews/20261112T170832Z-qq1w2s/send-v.json",
+        "ok": 55,
+        "issues": 11,
+        "blocking": 2
+      },
+      {
+        "run_id": "20261112T170832Z-qq1w2s",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-12",
+        "file": "reviews/20261112T170832Z-qq1w2s/send-v.json",
+        "ok": 62,
+        "issues": 3,
         "blocking": 0
       }
     ],
