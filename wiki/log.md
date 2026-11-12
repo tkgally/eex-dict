@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-12] site | build and check, 79 of 79
+
+Run 20261112T010750Z-wnyybl, cycle 3. `tools/build_site.py` wrote 4,210 entries on 3,518 headword pages (no drafts withheld, no redirects); `tools/site_check.py` passed all 79 checks at phone and desktop widths. Spot checks on this run's changes: `march.html` carries both homographs (`march-n` the walk, `march-n-2` the month) with their anchors; `february.html` links to `#march-n-2`; `polite.html` links to `manner.html`. No template or tool changes. Spend US$0.
+
 ## [2026-11-12] build | march to mattress: eight queue entries
 
 Run 20261112T005619Z-wnyybl, cycle 2. Queue order gave `manners-n`, set `duplicate` (its polite-behavior sense is `manner-n` sense; `polite-adj` and `rude-adj` now point there). `march-n` was wanted by both `march-v` (the walk) and `february-n` (the month): `march-n` is the walk (protest, soldiers with a day's-march subsense, music, *the march of time*; *on the march*, *steal a march on someone*) and the month was hand-claimed as `march-n-2` (headword *March*; capital-letter learner error); `february-n` now points to `march-n-2`. Also `marker-n` (pen, place with a board-game subsense, sign of a quality, British sport and exam-marker senses; *lay down a marker*), `marketing-n`, `mask-n` (disguise, protection with oxygen, diving, sports subsenses, skin, hidden feelings; *someone's mask slips*), `mat-n` (false-friend note on *matte*), `mate-n` (friend, animal, pair, ship, helper; compounds usage note), `mattress-n`. All verified first pass. Panel: 29 issues, 0 blocking; 21 applied, 8 rejected. Five out-of-vocabulary definition words reworded. Two NO-SENSE pairs placed by hand (`sign-n` 2, `friend-n` 1). Spend US$0.27.
