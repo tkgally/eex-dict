@@ -10,13 +10,13 @@
     "american": {
       "ipa": "sit",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/3;cmudict:agree",
       "status": "verified"
     },
     "british": {
       "ipa": "siːt",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/3",
+      "checked_by": "agreement:2/2",
       "status": "verified"
     },
     "variants": [],
@@ -136,7 +136,7 @@
     {
       "n": 2,
       "signpost": "paid place",
-      "definition": "a place where you can sit at a theater, sports event, or on a plane, which you pay for",
+      "definition": "a place for one person at a theater or a sports event, or on a plane, that you pay for",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -185,12 +185,7 @@
           ]
         }
       ],
-      "synonyms": [
-        {
-          "slug": "place-n",
-          "note": null
-        }
-      ],
+      "synonyms": [],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -246,7 +241,40 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "the part of a pair of pants or a skirt that covers your bottom",
+          "explanation": null,
+          "grammar": {
+            "countability": "countable",
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "He tore the seat of his pants climbing over the fence.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The seat of her jeans was covered in mud.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "noun + preposition",
+              "items": [
+                "the seat of your pants"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -258,7 +286,7 @@
     },
     {
       "n": 4,
-      "signpost": "in an official group",
+      "signpost": "official position",
       "definition": "a position as a member of a parliament, a council, or another official group",
       "explanation": null,
       "grammar": {
@@ -300,7 +328,8 @@
           "items": [
             "win a seat",
             "lose a seat",
-            "hold a seat"
+            "hold a seat",
+            "keep a seat"
           ]
         },
         {
@@ -308,6 +337,13 @@
           "items": [
             "a seat on the board",
             "a seat in parliament"
+          ]
+        },
+        {
+          "type": "adjective + noun",
+          "items": [
+            "a safe seat",
+            "a vacant seat"
           ]
         }
       ],
@@ -336,9 +372,7 @@
         "patterns": []
       },
       "labels": {
-        "register": [
-          "formal"
-        ],
+        "register": [],
         "region": [],
         "domain": [],
         "currency": [],
@@ -355,6 +389,11 @@
           "text": "The old university is a famous seat of learning.",
           "note": null,
           "pattern": null
+        },
+        {
+          "text": "The county seat is a small town by the river.",
+          "note": null,
+          "pattern": null
         }
       ],
       "collocations": [
@@ -363,6 +402,12 @@
           "items": [
             "the seat of government",
             "a seat of learning"
+          ]
+        },
+        {
+          "type": "noun + noun",
+          "items": [
+            "a county seat"
           ]
         }
       ],
@@ -384,7 +429,7 @@
     {
       "sub_id": "take-a-back-seat",
       "text": "take a back seat",
-      "definition": "choose to have a less important part in something",
+      "definition": "become, or choose to become, less important or less active",
       "explanation": null,
       "labels": {
         "register": [],
@@ -492,18 +537,20 @@
       "note": null
     }
   ],
-  "synonym_discrimination": null,
-  "usage_note": "To ask someone politely to sit down, say *Please take a seat* or *Have a seat*. **Seat** is the general word; a **chair** has a back and is for one person, and a **bench** is long and is for several people.",
+  "synonym_discrimination": {
+    "words": [
+      "seat-n",
+      "chair-n",
+      "bench-n"
+    ],
+    "note": "**Seat** is the general word for any place to sit: *a car seat*, *take a seat*. A **chair** has a back and is for one person: *a kitchen chair*. A **bench** is long and is for several people: *a park bench*."
+  },
+  "usage_note": null,
   "learner_errors": [
     {
       "incorrect": "Please take a sit.",
       "correct": "Please take a seat.",
       "note": "**Sit** is the verb; the noun for the place is **seat**."
-    },
-    {
-      "incorrect": "Is this sit free?",
-      "correct": "Is this seat free?",
-      "note": "The noun is **seat**, with the long **ee** sound."
     }
   ],
   "etymology": null,
@@ -522,12 +569,12 @@
     "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": "\"seat\" has the long vowel of **see**; \"sit\" has a short one. Mixing them changes the word: *take a seat*, not *take a sit*."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-10-07T17:15:00Z",
-    "modified": "2026-10-21T01:23:03Z",
+    "modified": "2026-11-12T09:16:58Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261007T171258Z-2e317i",
     "reviews": [
@@ -570,6 +617,26 @@
         "ok": 76,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261112T091136Z-ruj1dp",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-12",
+        "file": "reviews/20261112T091136Z-ruj1dp/seat-n.json",
+        "ok": 71,
+        "issues": 9,
+        "blocking": 3
+      },
+      {
+        "run_id": "20261112T091136Z-ruj1dp",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-12",
+        "file": "reviews/20261112T091136Z-ruj1dp/seat-n.json",
+        "ok": 74,
+        "issues": 6,
+        "blocking": 1
       }
     ],
     "status": "reviewed",

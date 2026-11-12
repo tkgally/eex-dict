@@ -1,12 +1,12 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-12 after run ruj1dp, cycle 3 (build).*
+*Rewritten 2026-11-12 after run ruj1dp, cycle 4 (review).*
 
 ## State
 
 - 4,226 entries, all `reviewed`. Site checked 2026-11-12 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now (built through `millionaire-n`, 2026-11-12), then `crossref`. Last weekly digest: `journal/digest-2026-11-07.md`; next due 2026-11-14.
 - Bands re-voted 2026-10-24; later rows at lints.
-- Spend 2026-11-12: US$1.17 of US$15 so far. Originality: last 2026-11-10 (1 rewrite, `tie-n`).
+- Spend 2026-11-12: US$1.38 of US$15 so far. Originality: last 2026-11-10 (1 rewrite, `tie-n`).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -14,7 +14,7 @@
 0. **The owner's rulings of 2026-10-24** ([status](wiki/decisions/owner-rulings-2026-10-24.md)). For the Routine, in order:
    1. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates. A reference to a phrase goes in `see_also` with a note.
    2. **Build**: now closure ([build-order](wiki/decisions/build-order.md)).
-   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 299 done, last `right-adv` to `rule-n` (`out-prep` for the function-word round); next `sale-n`, `scene-n`; phrasal verbs skipped so far; check new senses against subsenses). Then the backlog by band.
+   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 303 done, last `sale-n` to `section-n` (`out-prep` for the function-word round); next `security-n`, `send-v`; phrasal verbs skipped so far; check new senses against subsenses). Then the backlog by band.
    4. **Weekly digest**: written 2026-11-07; next when `signals.digest_due`. Entry reports: pre-flight step 5.
 1. **build**: queue order (last built `meter-n` to `ministry-n`, 2026-11-12). `word-n`: add *words fail me*; `dot-n`: *connect the dots*. Then `tap-n-2`, `wind-v-2`, `lead-n-2`, `launch-n-2`. `twin-adj` (queued) takes *twin bed*, *twin room*. `red-n` takes *see red*; `blue-adj` needs *a blue state*. Idioms, next review or build: `balance-n` *tip the balance*, *strike a balance*; `scale-n` *tip the scales*; `blood-n` *sweat blood*; `stuff-n` *sweat the small stuff*; `fear-n` *strike fear into someone*; `time-n` *waste no time*; `disbelief-n` *suspend disbelief*; `chord-n` *strike a chord*; `pose-n` *strike a pose*; `toast-n` *propose a toast*; `let-v` *let's face it*, *let's roll*, *let rip*, *let something slip*; `keep-v` *keep someone posted*; `be-v` *too good to be true*, *to be sure*, *have been around*; `ring-v` *ring true*; `form-n` *true to form*; `power-n` *power of attorney*; `chain-n` *chain of command*; `play-v` *play dead*; `dime-n` *a dime a dozen*; `apple-n` *upset the apple cart*; `rock-n` *rock bottom*; `pavement-n` *pound the pavement*; `trick-n` *the oldest trick in the book*; `exception-n` *the exception that proves the rule*; `deal-n` *no big deal*; `price-n` *pay the price*; `field-n` *out of left field*; `way-n` *pick your way*; `hole-n` *pick holes in*; House rules 16 and 18; phrasal verbs get `separable` codes when next reviewed (B4 i).
 2. **originality**: ask reviewer-b once; search quoted wording and headword plus opening words.
