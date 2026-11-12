@@ -10,13 +10,13 @@
     "american": {
       "ipa": "ˈsɛk.ʃən",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:4/4;cmudict:agree",
+      "checked_by": "agreement:3/3;cmudict:agree",
       "status": "verified"
     },
     "british": {
       "ipa": "ˈsek.ʃən",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:3/3",
+      "checked_by": "agreement:2/2",
       "status": "verified"
     },
     "variants": [],
@@ -114,10 +114,6 @@
       "antonyms": [],
       "compare": [
         {
-          "slug": "paragraph-n",
-          "note": null
-        },
-        {
           "slug": "part-n",
           "note": null
         }
@@ -134,15 +130,13 @@
     },
     {
       "n": 2,
-      "signpost": "of a newspaper or store",
+      "signpost": "by subject",
       "definition": "a part of a newspaper, store, library, or website that deals with one subject or kind of thing",
       "explanation": null,
       "grammar": {
         "countability": "countable",
         "transitivity": null,
-        "codes": [
-          "often before another noun"
-        ],
+        "codes": [],
         "patterns": []
       },
       "labels": {
@@ -177,8 +171,8 @@
             "sports section",
             "business section",
             "travel section",
-            "children's section",
-            "comments section"
+            "comments section",
+            "news section"
           ]
         }
       ],
@@ -244,7 +238,51 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "one of the groups of students that a large course is divided into, each taught at a different time",
+          "explanation": null,
+          "grammar": {
+            "countability": "countable",
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": {
+            "register": [],
+            "region": [
+              "American"
+            ],
+            "domain": [
+              "education"
+            ],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "I'm in the morning section of the math class.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The course has four sections, so you can choose a time that suits you.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "adjective + noun",
+              "items": [
+                "the morning section",
+                "the evening section"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -285,7 +323,22 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "preposition + noun",
+          "items": [
+            "under section 4",
+            "under this section"
+          ]
+        },
+        {
+          "type": "noun + preposition",
+          "items": [
+            "a section of the law",
+            "a section of the contract"
+          ]
+        }
+      ],
       "synonyms": [],
       "antonyms": [],
       "compare": [],
@@ -302,7 +355,7 @@
     {
       "n": 5,
       "signpost": "view inside",
-      "definition": "a drawing or a thin piece that shows what the inside of something looks like when it is cut through",
+      "definition": "a drawing that shows what the inside of something looks like if it is cut through, or a thin piece cut from something so that you can look at it closely",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -343,7 +396,47 @@
       "synonyms": [],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "a group of people or things that is typical of a larger group",
+          "explanation": "Used in the phrase **a cross section of**.",
+          "grammar": {
+            "countability": "countable",
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "The study asked a cross section of the public for their views.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The class has a good cross section of students from all over town.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "a cross section of something",
+                "a representative cross section"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -389,7 +482,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-07T04:47:33Z",
-    "modified": "2026-11-03T07:03:06Z",
+    "modified": "2026-11-12T09:16:58Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261007T044419Z-hpvo8n",
     "reviews": [
@@ -432,6 +525,26 @@
         "ok": 61,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261112T091136Z-ruj1dp",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-12",
+        "file": "reviews/20261112T091136Z-ruj1dp/section-n.json",
+        "ok": 60,
+        "issues": 6,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261112T091136Z-ruj1dp",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-12",
+        "file": "reviews/20261112T091136Z-ruj1dp/section-n.json",
+        "ok": 62,
+        "issues": 3,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
