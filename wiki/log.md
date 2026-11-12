@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-12] build | miss to monitor: seven entries
+
+Run 20261112T165822Z-qq1w2s, cycle 3. Six queue rows and one hand claim, all reviewed: `miss-n` (failure to hit; *a near miss*, *give something a miss*), `miss-n-2` (headword *Miss*, hand-claimed as an unrelated homograph: title, address, to a teacher (British), beauty-contest title); `mrs-abbr` now points to `miss-n-2`. Also `mist-n` (air, small drops; *the mists of time*), `mix-n` (combination, ready-made with *trail mix*, music; *in the mix*; discrimination with *mixture*, *combination*), `mobile-n` (British phone, decoration; American variant *MOH-beel* after the first transcription was disputed against CMU), `mommy-n` (British form *mummy*), `monitor-n` (screen, machine, person, school helper). Panel: 22 issues, 3 blocking (a false origin claim in the `miss-n-2` usage note, from both; a `mist-n` example outside its sense), all applied; 21 apply, 1 reject. Two definition words reworded; two type mismatches aligned; one NO-SENSE pair placed (`display-n` 4). Spend US$0.20.
+
 ## [2026-11-12] build | April to minority: six queue entries
 
 Run 20261112T164923Z-qq1w2s, cycle 2. Six rows in queue order, all reviewed: `april-n` (with *April Fool's Day*), `microwave-v`, `kilometer-n` (American stress variant, British spelling *kilometre*), `medium-n` (five senses: communication, art, size, science, a person; *a happy medium*), `mineral-water-n`, `minority-n` (three senses mirroring `majority-n`). All twelve transcriptions verified. Panel: 27 issues, 3 blocking (a science-claim example in `medium-n` sense 4, from both reviewers; a narrowing culture note in `minority-n`), all applied. Decisions: 25 apply, 3 reject (a listed plural *media* to hand-mark; the `minority-n` vote sense, which mirrors `majority-n`; the `april-n` phrase explanation). The exceptions-table note for `medium` now gives *mediums* for sizes too. Seven NO-SENSE back-links placed or dropped by hand. Spend US$0.17.
