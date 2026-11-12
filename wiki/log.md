@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-12] build | means to membership: six queue entries
+
+Run 20261112T011146Z-wnyybl, cycle 4. Six rows in queue order, kept small in a fourth cycle: `means-n` (method; money, plural only; *by means of*, *by all means*, *by no means* with *not by any means*, *a means to an end*, *a person of means*; error *a mean of transport*; plural from the exceptions table), `mechanic-n` (repair worker; game rule, technical), `mechanism-n` (machine parts, system, process with a *defense/coping mechanism* subsense), `medal-n` (*deserve a medal*; American *medal*/*metal* sound-alike note), `medication-n`, `membership-n` (*membership in*/*of* usage note). Pronunciation and inflections verified first pass. Panel: 16 issues, 3 blocking (a *used to say* definition on the idiom *deserve a medal*; sense 2 of `membership-n` used uncountably); 15 applied, 1 rejected (*member* in the definition of *membership* is not circular). `medication-n` now names `medicine-n` as a synonym, matching `medicine-n`; one NO-SENSE pair placed by hand (`drug-n` 1 compare). Spend US$0.18.
+
 ## [2026-11-12] site | build and check, 79 of 79
 
 Run 20261112T010750Z-wnyybl, cycle 3. `tools/build_site.py` wrote 4,210 entries on 3,518 headword pages (no drafts withheld, no redirects); `tools/site_check.py` passed all 79 checks at phone and desktop widths. Spot checks on this run's changes: `march.html` carries both homographs (`march-n` the walk, `march-n-2` the month) with their anchors; `february.html` links to `#march-n-2`; `polite.html` links to `manner.html`. No template or tool changes. Spend US$0.
