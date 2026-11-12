@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-12] build | April to minority: six queue entries
+
+Run 20261112T164923Z-qq1w2s, cycle 2. Six rows in queue order, all reviewed: `april-n` (with *April Fool's Day*), `microwave-v`, `kilometer-n` (American stress variant, British spelling *kilometre*), `medium-n` (five senses: communication, art, size, science, a person; *a happy medium*), `mineral-water-n`, `minority-n` (three senses mirroring `majority-n`). All twelve transcriptions verified. Panel: 27 issues, 3 blocking (a science-claim example in `medium-n` sense 4, from both reviewers; a narrowing culture note in `minority-n`), all applied. Decisions: 25 apply, 3 reject (a listed plural *media* to hand-mark; the `minority-n` vote sense, which mirrors `majority-n`; the `april-n` phrase explanation). The exceptions-table note for `medium` now gives *mediums* for sizes too. Seven NO-SENSE back-links placed or dropped by hand. Spend US$0.17.
+
 ## [2026-11-12] lint | hundred-and-tenth pass
 
 Run 20261112T164411Z-qq1w2s, cycle 1. Caps and links clean. `crossref.py --all --apply` added three mirrors (`medal-n` synonym `decoration-n`, `microwave-n` compare `oven-n`, `millionaire-n` compare `billionaire-n`); four NO-SENSE pairs placed by hand (`record-n` 1 synonym `file-n`; `meter-n` 1 compare `foot-n`; `return-v` 2 synonym `restore-v`; `means-n` 1 synonym `vehicle-n`). Five stale claim files pruned. Band vote on 21 unbanded rows (US$0.004), no wide splits; all now pending. Reports: 1,008 missing-sense pairs, 319 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no switch-offs. Fixed the inflect uncountable-plural gap (sixth case): a nouns-table plural now overrides the no-plural default for that headword; table lines and regenerated inflections for `money-n`, `energy-n`, `finance-n`, `rain-n`, `making-n`; unit test added. Index, curator file, open questions consistent. Next lint due after ten more runs.
