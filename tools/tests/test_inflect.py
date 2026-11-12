@@ -210,6 +210,15 @@ class AllFormsTests(unittest.TestCase):
         self.assertEqual(I.all_forms("the", "det"), {"the"})
         self.assertEqual(I.all_forms("information", "n", countability="uncountable"), {"information"})
 
+    def test_table_plural_overrides_no_plural(self):
+        forms, regular, source, _status, _note = I.inflect("money", "n", countability="uncountable")
+        self.assertEqual((forms, regular, source), ({"plural": "monies"}, False, "exceptions"))
+        self.assertIn("moneys", I.all_forms("money", "n", countability="uncountable"))
+        # the override is for the headword itself: a compound keeps the no-plural default
+        self.assertEqual(I.inflect("pocket money", "n", countability="uncountable")[0], {"plural": None})
+        # a table line with a null plural keeps it null
+        self.assertEqual(I.inflect("police", "n", countability="plural only")[0], {"plural": None})
+
     def test_bad_input(self):
         with self.assertRaises(ValueError):
             I.inflect("word", "xyz")

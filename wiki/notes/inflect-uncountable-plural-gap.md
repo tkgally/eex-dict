@@ -11,3 +11,5 @@ Fix due a later run (about a fifth of a build or lint run at most): let a nouns-
 
 - 2026-10-20: `rain-n` (sense 1 uncountable, sense 2 plural-only *the rains*) drew "no plural" flags from both reviewers; rejected as this gap.
 - 2026-11-11: `making-n` (sense 1 uncountable, sense 2 plural-only *the makings of*): three blocking "no plural" flags; rejected as this gap, **makings** marked by hand.
+
+**Fixed 2026-11-12 (hundred-and-tenth lint).** A nouns-table line with a non-null plural now overrides the no-plural default for that exact headword (compounds keep the default; unit test). Table lines added for `money` (*monies*, also *moneys*), `energy`, `finance`, `rain`, `making`, each noted "usually no plural"; the five entries' `inflections` regenerated. A later case needs only a table line.

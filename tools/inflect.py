@@ -206,6 +206,13 @@ def plural_noun(headword, exc, abbreviation=False):
 
 def _noun_forms(headword, pos, countability, exc):
     if countability in NO_PLURAL:
+        # A nouns-table line naming a plural overrides the no-plural default for that headword only
+        # (a rare or one-sense plural: money -> monies, the rains); compounds keep the default.
+        value = exc["nouns"].get(headword.lower())
+        if value is not None:
+            plural, _alts, note = _table_plural(headword, value)
+            if plural is not None:
+                return {"plural": plural}, False, "exceptions", "verified", note
         note = "plural only" if countability == "plural only" else "no plural"
         return {"plural": None}, True, "rules", "verified", note
     if pos == "abbr" and countability is None:
