@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-13] build | nickname to notice: eight entries
+
+Run 20261113T010851Z-e9xei0, cycle 3. Eight queue rows (a smaller batch to keep entries full late in the run), all reviewed: `nickname-n` (with a place-or-thing subsense), `nightmare-n` (dream; bad experience, with a difficult-person subsense), `ninth-n` (the fraction; the date use stays in `ninth-num`), `nod-n` (head movement; informal permission, *get the nod*; *a nod to something*), `nonsense-n` (untrue or silly; behavior; no meaning; *make nonsense of something*), `noodle-n` (food; old-fashioned American *use your noodle*), `notebook-n` (paper; computer), `notice-n` (attention, sign, warning with a leaving-a-job subsense, review; *sit up and take notice*; usage note on *on*/*at short notice*). Panel: 22 issues, 2 blocking (a name outside the list in `nickname-n`; *humorous* called a non-register label, rejected). 18 applied, 4 rejected. Two NO-SENSE pairs placed by hand: `sign-n` 1, `review-n` 2. Spend US$0.24.
+
 ## [2026-11-13] review | coverage pass: share, shower, sick, sign
 
 Run 20261113T005751Z-e9xei0, cycle 2. B1 coverage pass, the next four unread five-sense band-1 content words. Before the panel: `share-v` gains 2a (*share the blame*, *share in the credit*), *share and share alike*, *share a post*; `shower-n` gains 4a (*a shower of praise*) and *a meteor shower*; `sick-adj` gains 2b (*sick with worry*); `sign-v` gains *sign a law*; three duplicating notes removed. Panel: 65 issues, 8 blocking (circular `shower-n` 2 and `sign-v` 4; *funny* as a synonym of ill; British *be sick* under the nausea sense, now its own subsense 2a; a dated *signed for us to stop*). 51 applied, 14 rejected. Added on review: `share-v` 5a (*share a border*). *sign your own death warrant* moved to `death-n`, which was then read in full: literal *starve to death* added, a repeated usage note, adaptation note, and two invented learner errors removed. Pass at 311 entries; next `single-adj`, `sister-n`. Spend US$0.23.
