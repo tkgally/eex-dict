@@ -45,7 +45,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**Sick** is about not being well: having an illness, feeling that food will come up from your stomach, being tired of something, or being cruel in a way that seems not normal.",
+  "core_idea": "**Sick** is mainly about not being well: having an illness or feeling that food will come up; it can also mean bored or annoyed, enjoying cruel things, or, in very informal use, very good.",
   "senses": [
     {
       "n": 1,
@@ -94,14 +94,16 @@
           "items": [
             "get sick",
             "call in sick",
-            "sick with something"
+            "sick with something",
+            "out sick",
+            "off sick"
           ]
         },
         {
           "type": "adverb + adjective",
           "items": [
             "very sick",
-            "seriously sick"
+            "really sick"
           ]
         },
         {
@@ -121,10 +123,6 @@
         },
         {
           "slug": "unwell-adj",
-          "note": null
-        },
-        {
-          "slug": "funny-adj",
           "note": null
         }
       ],
@@ -153,7 +151,7 @@
       "n": 2,
       "signpost": "stomach",
       "definition": "feeling that food is going to come up from your stomach and out of your mouth",
-      "explanation": "In British English, **be sick** means that this actually happens.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": null,
@@ -180,11 +178,6 @@
           "text": "The smell of fish makes me sick.",
           "note": null,
           "pattern": null
-        },
-        {
-          "text": "The baby was sick all over my shirt.",
-          "note": "British: the food came up",
-          "pattern": null
         }
       ],
       "collocations": [
@@ -192,8 +185,7 @@
           "type": "phrase",
           "items": [
             "feel sick",
-            "make someone sick",
-            "be sick"
+            "make someone sick"
           ]
         }
       ],
@@ -205,7 +197,76 @@
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "bringing food up from your stomach and out through your mouth",
+          "explanation": "Used after **be**.",
+          "grammar": null,
+          "labels": {
+            "register": [],
+            "region": [
+              "British"
+            ],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "The baby was sick all over my shirt.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "I was sick twice in the night.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "be sick"
+              ]
+            }
+          ]
+        },
+        {
+          "letter": "b",
+          "definition": "very upset, worried, or angry, so that you almost feel ill",
+          "explanation": null,
+          "grammar": null,
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "It makes me sick to see so much food thrown away.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "Her parents were sick with worry when she didn't come home.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "sick with worry"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -480,7 +541,7 @@
       "ill-adj",
       "unwell-adj"
     ],
-    "note": "In American English, **sick** is the usual word for having an illness: *I'm sick*. In British English, **ill** is more usual after a verb (*She's ill*), and **sick** often means feeling that food will come up (*I feel sick*). Before a noun, **sick** is common in both varieties (*a sick child*), though **ill** is also used, especially after an adverb (*seriously ill patients*). **Unwell** is more formal and polite: *He has been unwell for some time*."
+    "note": "In American English, **sick** is the usual word for having an illness: *I'm sick*. In British English, **ill** is more usual after a verb (*She's ill*), and **sick** often means feeling that food will come up (*I feel sick*), a use that American English shares. Before a noun, **sick** is common in both varieties (*a sick child*), though **ill** is also used, especially after an adverb (*seriously ill patients*). **Unwell** is more formal and polite: *He has been unwell for some time*."
   },
   "usage_note": "**The sick** means sick people as a group: *caring for the sick*. **Carsick**, **seasick**, and **airsick** describe feeling sick while traveling.",
   "learner_errors": [
@@ -507,7 +568,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "Sense 2 (feeling that you will bring food up) and sense 3 (bored or annoyed) need different words from sense 1 in many languages. Sense 5 is slang and means the opposite of its usual tone: *very good*.",
+    "semantic": "\"sick\": the slang sense *very good* (*That was sick!*) is praise, the opposite of the other senses; a word for ill or cruel would give the wrong meaning.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -516,7 +577,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-12T17:41:15Z",
-    "modified": "2026-10-12T20:44:36Z",
+    "modified": "2026-11-13T01:04:22Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261012T174049Z-m8x2rl",
     "reviews": [
@@ -539,6 +600,26 @@
         "ok": 65,
         "issues": 1,
         "blocking": 1
+      },
+      {
+        "run_id": "20261113T005751Z-e9xei0",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-13",
+        "file": "reviews/20261113T005751Z-e9xei0/sick-adj.json",
+        "ok": 59,
+        "issues": 12,
+        "blocking": 3
+      },
+      {
+        "run_id": "20261113T005751Z-e9xei0",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-13",
+        "file": "reviews/20261113T005751Z-e9xei0/sick-adj.json",
+        "ok": 68,
+        "issues": 2,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
