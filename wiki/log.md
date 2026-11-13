@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-13] build | May to pajamas: twelve queue entries
+
+Run 20261113T165745Z-m3t3kf, cycle 3. Twelve queue rows, all reviewed: `may-n` (*May Day*), `mile-n` (unit with a nautical subsense; *miles*, a long way; *go the extra mile*, *by a mile*, *be miles away*, *a mile a minute*, *miles from anywhere*, *stick out a mile*), `motivate-v`, `outline-v`, `alternative-n` (*have no alternative but to*; discrimination with *option*, *choice*), `kindergarten-n` (American school year; school for young children), `luxury-n` (comfort, thing, rare chance), `motivation-n`, `pace-n` (four phrases), `packet-n` (container, American papers, data, British money), `painkiller-n`, `pajamas-n`. `alternative-n` British IPA disputed 1/3 as `ɒl-`; changed to `ɔːl-` (2/3), `ɒl-` kept as a variant. Panel: 38 issues, 6 blocking (both reviewers: `may-n` adaptation said a capital tells the month from the verb at a sentence start; `pace-n` sense 2 coded uncountable), all applied; 32 applied, 6 rejected in all. Five NO-SENSE pairs placed by hand. Eight rows queued unbanded (`pace-v`, `alternative-adj`, `inspire-v`, others). Spend US$0.37.
+
 ## [2026-11-13] lint | hundred-and-eleventh pass
 
 Run 20261113T165344Z-m3t3kf, cycle 2. Caps and links clean. `crossref.py --all --apply` added three mirrors (`occasion-n` 1 synonym `time-n`; `overtime-n` family `time-n`; `outcome-n` family `come-out-phrv`); three NO-SENSE pairs placed by hand as synonyms on sense 1 (`option-n` <- `possibility-n`, `mix-n` <- `cross-n`, `sick-adj` <- `funny-adj`). Six stale claim files pruned. Band vote on 37 unbanded rows (US$0.006); one wide split, `may-n` (votes 4, 1, 3), settled at 1 with the other months; all now pending. Reports: 1,013 missing-sense pairs, 317 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no switch-offs. Index, curator file, open questions consistent; no log gaps since the last lint. Next lint due after ten more runs.
