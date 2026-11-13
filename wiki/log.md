@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-13] lint | hundred-and-eleventh pass
+
+Run 20261113T165344Z-m3t3kf, cycle 2. Caps and links clean. `crossref.py --all --apply` added three mirrors (`occasion-n` 1 synonym `time-n`; `overtime-n` family `time-n`; `outcome-n` family `come-out-phrv`); three NO-SENSE pairs placed by hand as synonyms on sense 1 (`option-n` <- `possibility-n`, `mix-n` <- `cross-n`, `sick-adj` <- `funny-adj`). Six stale claim files pruned. Band vote on 37 unbanded rows (US$0.006); one wide split, `may-n` (votes 4, 1, 3), settled at 1 with the other months; all now pending. Reports: 1,013 missing-sense pairs, 317 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no switch-offs. Index, curator file, open questions consistent; no log gaps since the last lint. Next lint due after ten more runs.
+
 ## [2026-11-13] site | build and check, 79 of 79
 
 Run 20261113T164915Z-m3t3kf, cycle 1. Pre-flight: no open pull request, no open issue; orphan `claude/friendly-mayer-mdy32d` has no residue and is already listed for pruning. `tools/build_site.py` wrote 4,281 entries on 3,577 headword pages (no drafts withheld, no redirects; 7,840 files); `tools/site_check.py` passed all 79 checks at phone and desktop widths. Spot checks: this day's new pages (`nursery`, `passage`, `occasion`, `outlet`) and the reviewed `smell` page are present. No template or tool changes. Spend US$0.
