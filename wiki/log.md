@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-13] site | build and check, 79 of 79
+
+Run 20261113T164915Z-m3t3kf, cycle 1. Pre-flight: no open pull request, no open issue; orphan `claude/friendly-mayer-mdy32d` has no residue and is already listed for pruning. `tools/build_site.py` wrote 4,281 entries on 3,577 headword pages (no drafts withheld, no redirects; 7,840 files); `tools/site_check.py` passed all 79 checks at phone and desktop widths. Spot checks: this day's new pages (`nursery`, `passage`, `occasion`, `outlet`) and the reviewed `smell` page are present. No template or tool changes. Spend US$0.
+
 ## [2026-11-13] review | coverage pass: single, sister, slow, smell
 
 Run 20261113T091116Z-v4afhu, cycle 3. B1 coverage pass, the next four unread five-sense band-1 content words. Before the panel: `single-adj` gains 2a (*the single most important*); `slow-adj` gains 1a (a slow movie or book); `sister-n` drops a noun explanation for a `half-sister-n` see-also (queued); `smell-v` loses a usage note and adaptation note that repeated other fields. Panel: 39 issues, 5 blocking (`smell-v` 1 and 4 defined with the noun *smell*, now *seem to the nose* and *be unpleasant to the nose*; the `slow-adj` clock sense was coded not gradable; `sister-n` 5 failed substitution; *sister* as a modifier called an adjective, rejected: noun modifier with *often before another noun*). 33 applied, 6 rejected. `slow-adj` 2 is now *not quick to act*; its synonym discrimination and `single-adj`'s usage note removed as duplicates of learner errors. Mirror `individual-adj` to `single-adj` removed. Pass at 315; next `smooth-adj`, `space-n`. Spend US$0.21.
