@@ -1,6 +1,6 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-13 after run m3t3kf, cycle 1 (site).*
+*Rewritten 2026-11-13 after run m3t3kf, cycle 2 (lint).*
 
 ## State
 
@@ -20,7 +20,7 @@
 2. **originality**: ask reviewer-b once; search quoted wording and headword plus opening words.
 3. **review**: given names after titles fixed 2026-11-05 (`lord-n`). `lord-v` (*lord it over*) queued. Reject reviewer-b on quotation marks in examples, phrasal verbs or compounds as senses, idioms keyed elsewhere, hand marks on listed forms. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calls `comparative with more` "not a grammar code": reject.
 4. **closure**: paused above band 2 (A3). `family` rows built through `paste-n` (2026-11-13). Hand-claim `rite-n` (*rite of passage*). `killer-adj` queued (crossref): takes *a killer smile*, *a killer app*. `goods-n`, `drug-n`: overlapping notes; fix at next review. Hand-claim `fit-n-2` (seizure; *have a fit*) and `fold-n-2` (sheep; *return to the fold*). Add *march to the beat of a different drummer* to `beat-n` at its next review. `designer-adj`, `graduate-adj`, `hit-and-run-n` queued (crossref). Move *make the best of a bad job* from `job-n` to `best-n` when built. `mushroom-n` built: add the mushroom-top subsense to `cap-n` at its next review. Hand-claim `match-n-2` (fire stick), `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Missing idioms: *not bat an eye* (`eye-n`), *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* to `god-n` (*heaven forbid* is in `heaven-n`) (rejected for `forbid-v`). 
-5. **lint**: every ten runs (each cycle counts); last 2026-11-12 (hundred-and-tenth); due next run. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). 
+5. **lint**: every ten runs (each cycle counts); last 2026-11-13 (hundred-and-eleventh); next after ten runs. Switched off: reviewer A `inflection` (2026-10-28), reviewer B `phrase` (2026-10-30), reviewer B `pronunciation` (2026-11-05, 0.26 over 42). 
 6. **Tooling notes** (`wiki/notes/`): `inflect-uncountable-plural-gap` fixed 2026-11-12; `queue-hyphen-loss` recurrences handled by hand; `band_vote.py apply` twice doubles notes.
 
 ## Fences (do not re-grind)
