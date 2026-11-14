@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-14] review | coverage pass: voice, walk, want
+
+Run 20261114T131015Z-8da3yb, cycle 3. B1 coverage pass, the next three band-1 content words. Before the panel: `voice-n` gains *with one voice*, *give voice to something*, *find your voice*; `walk-n` gains charity-walk collocations and *take a walk* (go away); `want-v` gains *if you want*, *want for nothing*, and a subsense for *want something done/ready*. Panel: 44 issues, 3 blocking, all applied (an invented learner error in `voice-n`; `walk-n` speed sense said "slow" against *a fast walk*; `want-v` *you're wanted on the phone* nested under the police sense, now sense 5). Repeated notes cut to one field in all three (style guide section 9). `walk-n` gains a baseball sense; `want-v` moves *like* and *wish* from sense 1 to sense 2. 42 applied, 2 rejected (*at the top of your voice* is under `top-n`). Pass at 332; next the unread band-1 words after `want-v` by senses. Spend US$0.18.
+
 ## [2026-11-14] build | mine to potential: twelve queue entries
 
 Run 20261114T125004Z-8da3yb, cycle 2. Built `mine-n`, `inspire-v`, `peek-v`, `perceive-v`, `pitch-v`, `heap-n`, `literature-n`, `peanut-butter-n`, `point-of-view-n`, `possession-n`, `poster-n`, `potential-n`. Pronunciation: 23 of 24 verified; British `peanut-butter-n` disputed (0/3), kept with stress on *butter*, flagged, one curator line. Panel: 55 issues, 9 blocking; 53 applied, 2 rejected (*a gold mine* belongs under `gold-n`; `perceive-v` noticing and sensing senses kept apart, as in `perception-n`). Real catches: `pitch-v` ship sense said side to side (now split into falling forward and the ship's front moving up and down); science claims in `perceive-v` examples; `potential-n` electric sense called a force; `possession-n` gained the territory subsense. `tent` is not yet an entry, so `pitch-v` sense 4 avoids it (gate). Nineteen NO-SENSE back-links placed by hand. Spend US$0.39.
