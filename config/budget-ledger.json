@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-11-14",
-  "spent_usd": 1.809138,
+  "spent_usd": 1.946764,
   "calls": [
     {
       "ts": "2026-11-14T00:47:16Z",
@@ -1101,6 +1101,51 @@
       "cost_usd": 0.0,
       "tokens_in": 11203,
       "tokens_out": 6684
+    },
+    {
+      "ts": "2026-11-14T09:14:12Z",
+      "run_id": "20261114T091322Z-e2gonv",
+      "purpose": "originality",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.00511,
+      "tokens_in": 340,
+      "tokens_out": 443
+    },
+    {
+      "ts": "2026-11-14T09:15:16Z",
+      "run_id": "20261114T091322Z-e2gonv",
+      "purpose": "review:sea-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 10693,
+      "tokens_out": 7489
+    },
+    {
+      "ts": "2026-11-14T09:15:18Z",
+      "run_id": "20261114T091322Z-e2gonv",
+      "purpose": "review:sea-n:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.051756,
+      "tokens_in": 6328,
+      "tokens_out": 3910
+    },
+    {
+      "ts": "2026-11-14T09:16:35Z",
+      "run_id": "20261114T091322Z-e2gonv",
+      "purpose": "review:figure-n:reviewer-b",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.08076,
+      "tokens_in": 8825,
+      "tokens_out": 6311
+    },
+    {
+      "ts": "2026-11-14T09:16:37Z",
+      "run_id": "20261114T091322Z-e2gonv",
+      "purpose": "review:figure-n:reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "cost_usd": 0.0,
+      "tokens_in": 13838,
+      "tokens_out": 12615
     }
   ],
   "history": {
