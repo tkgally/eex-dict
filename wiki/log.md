@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-14] build | poetry to portrait: six entries
+
+Run 20261114T092020Z-e2gonv, cycle 4. Six band-2 queue rows (fewer than the twelve allowed, late in a long run), all reviewed: `poetry-n` (poems; beauty; *poetry in motion*), `politician-n` (in government; in an organization, disapproving), `pond-n` (*across the pond*), `pork-n` (meat; government money, American), `portion-n` (part; food), `portrait-n` (picture; description; page shape, the mirror of `landscape-n`). All 12 transcriptions verified (`portrait-n` British by 2 of 3). Panel: 22 issues, 1 blocking (an origin claim in the `portrait-n` core idea), applied; 21 applied, 1 rejected (*humorous* is a register value). Five NO-SENSE back-links placed by hand (`pool-n`, `part-n`, `share-n`, `picture-n`, `painting-n`). Spend US$0.17.
+
 ## [2026-11-14] originality | ten sampled definitions, two rewritten
 
 Run 20261114T091322Z-e2gonv, cycle 3 (forced: run 800). Ten sampled definitions searched as exact phrases; reviewer B asked once (US$0.005). Verdicts: 6 original, 2 generic-overlap (`unless-conj` *except if; if not*, `sock-n` *put a sock in it*), 2 rewrite: `sea-n` sense 3 (*a very large number or amount of something*, found word for word in a published learner's dictionary) and `figure-n` sense 4 (same wording found on a site reproducing a learner's dictionary). Both rewritten and put through the panel: 30 issues, 1 blocking (`figure-n` shape sense said *fixed edges* of a circle), applied; 25 applied, 5 rejected. `sea-n` loses three explanations, a geography label on the everyday sense, and duplicate article and homophone notes. Record: `reviews/originality/2026-11-14.md`. Spend US$0.14.
