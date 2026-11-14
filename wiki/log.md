@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-14] lint | hundred-and-twelfth pass
+
+Run 20261114T124406Z-8da3yb, cycle 1. Pre-flight: no open pull request, no orphan branch, no inbox item, no entry report. Caps and links clean. `crossref.py --all --apply` wrote mirror back-links in twelve entries (family links for `packet-n`, `performer-n`, `photographer-n`, `planning-n`, `police-officer-n`, `policeman-n`, `postcard-n`; others in `peanut-n`, `petrol-n`, `physics-n`, `popcorn-n`, `pork-n`). Eleven NO-SENSE pairs placed by hand: `peak-n` 2 synonym `height-n`, antonym `valley-n`; `pile-n` 1 synonym `tower-n`, 2 synonym `mountain-n`; `price-n` 2 synonym `penalty-n`; `salt-n` 1 and `spice-n` 1 compare `pepper-n`; `view-n` 4, `impression-n` 1, `insight-n` 2 synonym `perception-n`; `tie-v` 1 antonym `undo-v`. Six spent claim files pruned. Band vote on 47 unbanded rows (US$0.007), no wide splits; all now pending. Reports: 1,023 missing-sense pairs, 316 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no switch-offs. Index, curator file, open questions consistent; no log gaps. Next lint due after ten more runs.
+
 ## [2026-11-14] build | poetry to portrait: six entries
 
 Run 20261114T092020Z-e2gonv, cycle 4. Six band-2 queue rows (fewer than the twelve allowed, late in a long run), all reviewed: `poetry-n` (poems; beauty; *poetry in motion*), `politician-n` (in government; in an organization, disapproving), `pond-n` (*across the pond*), `pork-n` (meat; government money, American), `portion-n` (part; food), `portrait-n` (picture; description; page shape, the mirror of `landscape-n`). All 12 transcriptions verified (`portrait-n` British by 2 of 3). Panel: 22 issues, 1 blocking (an origin claim in the `portrait-n` core idea), applied; 21 applied, 1 rejected (*humorous* is a register value). Five NO-SENSE back-links placed by hand (`pool-n`, `part-n`, `share-n`, `picture-n`, `painting-n`). Spend US$0.17.
