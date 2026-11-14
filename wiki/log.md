@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-14] originality | ten sampled definitions, two rewritten
+
+Run 20261114T091322Z-e2gonv, cycle 3 (forced: run 800). Ten sampled definitions searched as exact phrases; reviewer B asked once (US$0.005). Verdicts: 6 original, 2 generic-overlap (`unless-conj` *except if; if not*, `sock-n` *put a sock in it*), 2 rewrite: `sea-n` sense 3 (*a very large number or amount of something*, found word for word in a published learner's dictionary) and `figure-n` sense 4 (same wording found on a site reproducing a learner's dictionary). Both rewritten and put through the panel: 30 issues, 1 blocking (`figure-n` shape sense said *fixed edges* of a circle), applied; 25 applied, 5 rejected. `sea-n` loses three explanations, a geography label on the everyday sense, and duplicate article and homophone notes. Record: `reviews/originality/2026-11-14.md`. Spend US$0.14.
+
 ## [2026-11-14] review | coverage pass: together, top, train, use, value
 
 Run 20261114T090156Z-e2gonv, cycle 2. B1 coverage pass, the next five unread five-sense band-1 content words. Before the panel: `together-adv` gains a subsense (in one place or group, *close together*); `top-n` gains a plant-tops subsense and *from the top*; `use-n` gains *have no use for something* and noun + noun collocations (*drug use*); `value-n` gains *shock value*; duplicate notes cut in `use-n`, `value-n`, `train-v`. Panel: 50 issues, 1 blocking (*make the most use of* listed as a pattern in `use-n`), applied; 39 applied, 11 rejected in all (circularity for the defining-vocabulary verb *use*; *face value* under `face-n`; a closed pattern name). `value-n` senses reordered (good value for money moved after beliefs). `exercise-v` loses its `train-v` mirror. *Off the top of your head* is missing from `head-n`, where the style guide says it is. Pass at 329; next `voice-n`, `walk-n`. Spend US$0.28.
