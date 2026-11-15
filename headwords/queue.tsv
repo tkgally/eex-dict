@@ -2709,7 +2709,7 @@ barley	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wor
 barn	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
 basement	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
 bay	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
-beam	n	3	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
+beam	n	3	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by ray-n
 bear	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
 bear	v	2	band	done	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2); referenced by take-v; referenced by stand-v; referenced by birth-n; referenced by born-adj
 beef	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2); referenced by meat-n
@@ -2957,7 +2957,7 @@ discipline	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wo
 discipline	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by discipline-n
 disconnect	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3); referenced by connect-v
 discriminate	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
-discrimination	n	3	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2)
+discrimination	n	3	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by racism-n
 dishwasher	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by dish-n; referenced by washing-machine-n
 dismiss	v	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by employ-v; referenced by fire-v; referenced by hire-v; referenced by discount-v
 disorder	n	3	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by order-n
@@ -3495,7 +3495,7 @@ pr	abbr	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=2,word
 precise	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by exact-adj; referenced by specific-adj
 precisely	adv	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by exactly-adv
 predator	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3); referenced by hunter-n
-prejudice	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
+prejudice	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2); referenced by racism-n
 preliminary	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
 prescribe	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3)
 prescription	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3)
@@ -4146,9 +4146,9 @@ property	n	2	crossref	done	2026-09-16	referenced by house-n; referenced by owner
 quicken	v	4	family	pending	2026-09-16	referenced by quickly-adv; referenced by quick-adj
 quickness	n	4	family	pending	2026-09-16	referenced by quickly-adv; referenced by quick-adj; band vote 2026-10-24, settled: lower median kept: the middle vote fits the scale
 radiation	n	3	crossref	pending	2026-09-16	referenced by x-ray-n
-railway	n	2	family	pending	2026-09-16	referenced by way-n; referenced by rail-n
+railway	n	2	family	done	2026-09-16	referenced by way-n; referenced by rail-n
 rapidly	adv	2	crossref	pending	2026-09-16	referenced by quickly-adv
-ray	n	2	family	pending	2026-09-16	referenced by x-ray-n
+ray	n	2	family	done	2026-09-16	referenced by x-ray-n
 receive	v	1	crossref	done	2026-09-16	referenced by get-v; referenced by give-v; referenced by send-v; referenced by receipt-n
 recommendation	n	2	crossref	pending	2026-09-16	referenced by advice-n; referenced by recommend-v
 recorder	n	3	family	pending	2026-09-16	referenced by record-n; referenced by record-v
@@ -4315,7 +4315,7 @@ leaning	v	3	closure	declined	2026-09-20	used in against-prep senses[1].definitio
 opposed	v	3	closure	declined	2026-09-20	used in against-prep senses[0].definition; used predicatively ('opposed to'); correct pos is adj, requeued as opposed-adj
 opposition	n	2	closure	done	2026-09-20	used in against-prep core_idea; pos guessed (no morphological signal), check before claiming
 pressure	n	2	closure	done	2026-09-20	used in against-prep core_idea; pos guessed (no morphological signal), check before claiming
-rank	n	3	closure	declined	2026-09-20	used in above-prep core_idea; pos guessed (no morphological signal), check before claiming; stale: word no longer appears anywhere in entries/; reworded away since this row was queued; used in title-n senses[3].definition; pos guessed (no morphological signal), check before claiming; referenced by position-n; used in count-n-2 senses[0].definition; pos guessed (no morphological signal), check before claiming
+rank	n	3	closure	declined	2026-09-20	used in above-prep core_idea; pos guessed (no morphological signal), check before claiming; stale: word no longer appears anywhere in entries/; reworded away since this row was queued; used in title-n senses[3].definition; pos guessed (no morphological signal), check before claiming; referenced by position-n; used in count-n-2 senses[0].definition; pos guessed (no morphological signal), check before claiming; referenced by rating-n
 surrounded	v	3	closure	declined	2026-09-20	used in among-prep senses[0].definition; past participle of surround; real gap is the base verb, requeued as surround-v
 surrounding	v	3	closure	declined	2026-09-20	used in around-prep core_idea; appears only in a signpost, not defining prose; listed as an unlinked word-family form under surround-v instead
 about	adj	2	crossref	pending	2026-09-20	referenced by about-prep; band vote 2026-10-24, settled: lower median kept: the middle vote fits the scale; referenced by about-adv
@@ -4728,7 +4728,7 @@ elector	n	4	family	pending	2026-09-24	referenced by elect-v
 electoral	adj	3	family	pending	2026-09-24	referenced by elect-v; referenced by election-n
 employment	n	2	family	done	2026-09-24	referenced by employ-v; referenced by employee-n; referenced by employer-n
 emptiness	n	4	family	pending	2026-09-24	referenced by empty-v; referenced by empty-adj
-encouragement	n	3	family	pending	2026-09-24	referenced by encourage-v
+encouragement	n	3	family	pending	2026-09-24	referenced by encourage-v; referenced by push-n
 encouraging	adj	3	family	pending	2026-09-24	referenced by encourage-v
 ending	n	2	family	done	2026-09-24	referenced by end-v; referenced by end-n
 endless	adj	3	family	pending	2026-09-24	referenced by end-v; referenced by end-n
@@ -5037,7 +5037,7 @@ protective	adj	3	family	pending	2026-09-26	referenced by protect-v; referenced b
 proven	adj	3	family	pending	2026-09-26	referenced by prove-v; referenced by proof-n
 provider	n	3	family	pending	2026-09-26	referenced by provide-v
 provision	n	3	family	pending	2026-09-26	referenced by provide-v
-pull	n	2	family	pending	2026-09-26	referenced by pull-v
+pull	n	2	family	done	2026-09-26	referenced by pull-v
 pull up	phrv	2	crossref	pending	2026-09-26	referenced by pull-v
 reward	v	2	crossref	done	2026-09-26	referenced by punish-v
 attraction	n	2	family	done	2026-09-26	referenced by attractive-adj; referenced by attract-v
@@ -5066,14 +5066,14 @@ resourceful	adj	3	family	pending	2026-09-26	referenced by resource-n
 superlative	adj	4	crossref	pending	2026-09-26	referenced by comparative-adj; used in est-suffix senses[0].definition
 unattractive	adj	3	crossref	pending	2026-09-26	referenced by attractive-adj
 lower	v	2	crossref	done	2026-09-26	referenced by raise-v; referenced by reduce-v; referenced by low-adj
-push	n	2	family	pending	2026-09-26	referenced by push-v; referenced by press-n
-pushy	adj	3	family	pending	2026-09-26	referenced by push-v
+push	n	2	family	done	2026-09-26	referenced by push-v; referenced by press-n
+pushy	adj	3	family	pending	2026-09-26	referenced by push-v; referenced by push-n
 questionable	adj	3	family	pending	2026-09-26	referenced by question-v; referenced by question-n
-racer	n	3	family	pending	2026-09-26	referenced by race-v; referenced by race-n
-racing	n	2	family	pending	2026-09-26	referenced by race-v; referenced by race-n
+racer	n	3	family	pending	2026-09-26	referenced by race-v; referenced by race-n; referenced by racing-n
+racing	n	2	family	done	2026-09-26	referenced by race-v; referenced by race-n
 rainy	adj	2	family	pending	2026-09-26	referenced by rain-v; referenced by rain-n; referenced by dry-adj; referenced by wet-adj
-raise	n	2	family	pending	2026-09-26	referenced by raise-v
-reach	n	2	family	pending	2026-09-26	referenced by reach-v
+raise	n	2	family	done	2026-09-26	referenced by raise-v
+reach	n	2	family	done	2026-09-26	referenced by reach-v
 reach out	phrv	2	crossref	pending	2026-09-26	referenced by reach-v
 resign	v	2	crossref	done	2026-09-26	referenced by quit-v
 admit	v	2	crossref	done	2026-09-26	referenced by recognize-v
@@ -5117,7 +5117,7 @@ retired	adj	2	family	pending	2026-09-26	referenced by retire-v; referenced by re
 return	n	1	family	done	2026-09-26	referenced by return-v
 rider	n	2	family	pending	2026-09-26	referenced by ride-v; referenced by ride-n
 riding	n	3	family	pending	2026-09-26	referenced by ride-v; referenced by ride-n
-rise	n	2	family	pending	2026-09-26	referenced by rise-v; referenced by cut-n; referenced by fall-n; referenced by increase-n; referenced by decline-n; referenced by drop-n; referenced by hike-n; referenced by jump-n
+rise	n	2	family	pending	2026-09-26	referenced by rise-v; referenced by cut-n; referenced by fall-n; referenced by increase-n; referenced by decline-n; referenced by drop-n; referenced by hike-n; referenced by jump-n; referenced by raise-n
 rising	adj	3	family	pending	2026-09-26	referenced by rise-v
 roll	n	2	family	pending	2026-09-26	referenced by roll-v
 roll up	phrv	2	crossref	pending	2026-09-26	referenced by roll-v
@@ -5268,7 +5268,7 @@ sticker	n	2	family	pending	2026-09-29	referenced by stick-v
 stir	n	3	family	pending	2026-09-29	referenced by stir-v
 stir up	phrv	3	crossref	pending	2026-09-29	referenced by stir-v
 stirring	adj	3	family	pending	2026-09-29	referenced by stir-v
-stretch	n	2	family	pending	2026-09-29	referenced by stretch-v
+stretch	n	2	family	pending	2026-09-29	referenced by stretch-v; referenced by reach-n
 stretch out	phrv	2	crossref	pending	2026-09-29	referenced by stretch-v
 stretchy	adj	4	family	pending	2026-09-29	referenced by stretch-v
 strip off	phrv	3	crossref	pending	2026-09-29	referenced by strip-v
@@ -6956,11 +6956,11 @@ logic	n	2	crossref	done	2026-10-07	referenced by reason-n; referenced by logical
 pace	n	2	crossref	done	2026-10-07	referenced by rate-n; referenced by speed-n
 radio	v	3	family	pending	2026-10-07	referenced by radio-n; band vote 2026-10-24, settled: lower median kept: the middle vote fits the scale
 railing	n	3	crossref	pending	2026-10-07	referenced by rail-n
-railroad	n	2	family	pending	2026-10-07	referenced by rail-n
+railroad	n	2	family	done	2026-10-07	referenced by rail-n
 rainfall	n	3	family	pending	2026-10-07	referenced by rain-n
 range	v	2	family	done	2026-10-07	referenced by range-n
 rate	v	2	family	done	2026-10-07	referenced by rate-n
-rating	n	2	family	pending	2026-10-07	referenced by rate-n; referenced by rate-v
+rating	n	2	family	done	2026-10-07	referenced by rate-n; referenced by rate-v
 readership	n	4	family	pending	2026-10-07	referenced by reader-n
 relations	n	2	crossref	pending	2026-10-07	referenced by relationship-n
 variety	n	2	crossref	pending	2026-10-07	referenced by range-n; referenced by vary-v
@@ -7242,7 +7242,7 @@ thunderstorm	n	3	crossref	pending	2026-10-08	referenced by storm-n; referenced b
 tummy	n	2	crossref	pending	2026-10-08	referenced by stomach-n; referenced by belly-n
 creek	n	3	crossref	pending	2026-10-08	referenced by stream-n
 pupil	n	2	crossref	pending	2026-10-08	referenced by student-n
-strain	n	3	crossref	pending	2026-10-08	referenced by stress-n; referenced by tax-n
+strain	n	3	crossref	pending	2026-10-08	referenced by stress-n; referenced by tax-n; referenced by pull-n
 stream	v	3	family	pending	2026-10-08	referenced by stream-n
 stressed	adj	2	family	pending	2026-10-08	referenced by stress-n; referenced by stress-v
 stressful	adj	2	family	pending	2026-10-08	referenced by stress-n; referenced by stress-v
@@ -7917,8 +7917,8 @@ irregular	adj	3	crossref	pending	2026-10-12	referenced by regular-adj
 purely	adv	3	family	pending	2026-10-12	referenced by pure-adj
 purify	v	4	family	pending	2026-10-12	referenced by pure-adj
 purity	n	3	family	pending	2026-10-12	referenced by pure-adj
-purple	n	2	family	pending	2026-10-12	referenced by purple-adj
-purplish	adj	4	family	pending	2026-10-12	referenced by purple-adj
+purple	n	2	family	done	2026-10-12	referenced by purple-adj
+purplish	adj	4	family	pending	2026-10-12	referenced by purple-adj; referenced by purple-n
 quietly	adv	2	family	pending	2026-10-12	referenced by quiet-adj
 quietness	n	4	family	pending	2026-10-12	referenced by quiet-adj
 rarity	n	4	family	pending	2026-10-12	referenced by rare-adj
@@ -9069,8 +9069,8 @@ publishing	n	3	family	pending	2026-10-31	referenced by publish-v
 purchaser	n	4	family	pending	2026-10-31	referenced by purchase-v; referenced by buyer-n
 pursuer	n	4	family	pending	2026-10-31	referenced by pursue-v
 pursuit	n	3	family	pending	2026-10-31	referenced by pursue-v
-qualification	n	2	family	pending	2026-10-31	referenced by qualify-v
-qualified	adj	2	family	pending	2026-10-31	referenced by qualify-v
+qualification	n	2	family	done	2026-10-31	referenced by qualify-v
+qualified	adj	2	family	pending	2026-10-31	referenced by qualify-v; referenced by qualification-n
 qualifier	n	4	family	pending	2026-10-31	referenced by qualify-v
 recall	n	3	family	pending	2026-10-31	referenced by recall-v
 relegate	v	4	crossref	pending	2026-10-31	referenced by promote-v
@@ -9525,9 +9525,9 @@ cheap	adv	3	crossref	pending	2026-11-06	referenced by cheap-adj (I got it cheap)
 expansive	adj	4	family	pending	2026-11-06	referenced by expansion-n
 expend	v	4	family	pending	2026-11-06	referenced by expense-n
 expenditure	n	3	family	pending	2026-11-06	referenced by expense-n
-racial	adj	3	family	pending	2026-11-06	referenced by race-n-2
-racism	n	2	family	pending	2026-11-06	referenced by race-n-2
-racist	n	3	family	pending	2026-11-06	referenced by race-n-2
+racial	adj	3	family	pending	2026-11-06	referenced by race-n-2; referenced by racism-n
+racism	n	2	family	done	2026-11-06	referenced by race-n-2
+racist	n	3	family	pending	2026-11-06	referenced by race-n-2; referenced by racism-n
 agriculture	n	3	crossref	pending	2026-11-07	referenced by farming-n
 bookmark	n	2	crossref	done	2026-11-07	referenced by favorite-n
 expressionless	adj	4	family	pending	2026-11-07	referenced by expression-n
@@ -9826,3 +9826,9 @@ procedural	adj		family	unbanded	2026-11-15	referenced by procedure-n
 proceed	v		family	unbanded	2026-11-15	referenced by procedure-n
 profile	v		family	unbanded	2026-11-15	referenced by profile-n
 relegation	n		crossref	unbanded	2026-11-15	referenced by promotion-n
+certificate	n		crossref	unbanded	2026-11-15	referenced by qualification-n
+glimmer	n		crossref	unbanded	2026-11-15	referenced by ray-n
+racist	adj		family	unbanded	2026-11-15	referenced by racism-n
+shove	n		crossref	unbanded	2026-11-15	referenced by push-n
+tug	n		crossref	unbanded	2026-11-15	referenced by pull-n
+violet	n		crossref	unbanded	2026-11-15	referenced by purple-n
