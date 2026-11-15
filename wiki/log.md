@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-15] review | coverage pass: always, answer, apply, arm
+
+Run 20261115T170059Z-e6wb57, cycle 2. B1 coverage pass, four four-sense band-1 words. Before the panel: `answer-n` gains a local-version sense (*our town's answer to*), loses a usage note and a grammar note repeating the learner error, and a duplicate *in answer to*; `apply-v` gains *apply online*, *apply the brakes*; `arm-n` gains *the long arm of the law*, *within arm's reach*, *give your right arm for something*. Panel: 38 issues, 6 blocking, all applied (`ever-adv` is not a synonym of `always-adv`, removed both ways; `answer-n` test sense said *correct*; `apply-v` *be about* misdefined and a software example; `arm-n` chair sense used *arm*). 33 applied, 5 rejected (sleeve sense marginal; *apply the brakes* is force). Also: `apply-v` method sense moved before surface sense; `arm-n` machine and sea uses split; *not take no for an answer* added. Pass at 345; next `arrive-v`, `attention-n`, `bank-n`, `bath-n`. Spend US$0.19.
+
 ## [2026-11-15] build | quiet to rectangle: twelve queue entries
 
 Run 20261115T164344Z-e6wb57, cycle 1. Built `quiet-n`, `quiz-n`, `quote-n`, `rainbow-n`, `rat-n`, `reaction-n`, `real-estate-n`, `reality-n`, `reception-n`, `recognition-n`, `recommendation-n`, `rectangle-n`. Pronunciation: 23 of 24 verified; `real-estate-n` American disputed (panel wants two-part *real*), kept as in `real-adj`, flagged, curator line. Panel: 61 issues, 7 blocking, all applied (`quiet-n` note forbade *a quiet* against *a sudden quiet*; `rainbow-n` culture note named English and used an abbreviation; a science claim in `reaction-n`; *receive a reception*; `recognition-n` phrase defined with *recognized*). 57 applied, 4 rejected (*chain reaction* keys to `chain-n`; `quiet-n` calm sense and uncountable code kept). Also: `reception-n` gains the British school-class sense; `quiz-n` covers questions for fun; `quote-n` punctuation sense covers titles. Eleven NO-SENSE back-links placed by hand. Spend US$0.37.
