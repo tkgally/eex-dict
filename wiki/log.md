@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-15] closure | pull to reach: twelve family entries
+
+Run 20261115T084412Z-ev7512, cycle 1. Closure source empty, so twelve `family` rows: `pull-n`, `purple-n`, `push-n`, `qualification-n`, `racing-n`, `racism-n`, `railroad-n`, `railway-n`, `raise-n`, `rating-n`, `ray-n`, `reach-n`. Pronunciation: 24 of 24 verified. Panel: 46 issues, 2 blocking, both applied (`qualification-n` certificate sense is mainly British, now labeled and second; `reach-n` arm sense is countable or uncountable, *a long reach*). 40 applied, 6 rejected (double mark on a named phrase; `draw-n` is not the related noun; `railroad-n` system and company stay one sense). Also: `reach-n` gains *a bit of a reach* and moves *within easy reach of* under the distance sense; American wording in `racing-n`, `racism-n`, `rating-n`; usage notes cut from `railroad-n` and `railway-n` (the labels carry the fact). Seven NO-SENSE back-links placed by hand in six entries (`influence-n`, `drive-n`, `campaign-n`, `effort-n`, `grade-n`; `press-n` made a synonym in `push-n`). Definitions avoid *certificate* and *sailor* (no entries). Spend US$0.40.
+
 ## [2026-11-15] build | priority to property: ten queue entries
 
 Run 20261115T010900Z-5exo58, cycle 3. Built `priority-n`, `privacy-n`, `procedure-n`, `producer-n`, `production-n`, `professional-n`, `professor-n`, `profile-n`, `promotion-n`, `property-n` (ten of a possible twelve, to keep them full late in the run). Pronunciation: 20 of 20 verified. Panel: 28 issues, 1 blocking, applied (`production-n` lacked the natural sense, *the production of acid*; now subsense 1a). All 28 applied, none rejected. Also: `profile-n` gains a typical-features sense (*risk profile*) and objects in the side-view sense; `production-n` gains *make a production out of something*; `professional-n` loses a sport-only label. Three NO-SENSE back-links placed by hand (`operation-n`, `consumer-n`, `quality-n`). Spend US$0.30.
