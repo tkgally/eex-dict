@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-15] build | priority to property: ten queue entries
+
+Run 20261115T010900Z-5exo58, cycle 3. Built `priority-n`, `privacy-n`, `procedure-n`, `producer-n`, `production-n`, `professional-n`, `professor-n`, `profile-n`, `promotion-n`, `property-n` (ten of a possible twelve, to keep them full late in the run). Pronunciation: 20 of 20 verified. Panel: 28 issues, 1 blocking, applied (`production-n` lacked the natural sense, *the production of acid*; now subsense 1a). All 28 applied, none rejected. Also: `profile-n` gains a typical-features sense (*risk profile*) and objects in the side-view sense; `production-n` gains *make a production out of something*; `professional-n` loses a sport-only label. Three NO-SENSE back-links placed by hand (`operation-n`, `consumer-n`, `quality-n`). Spend US$0.30.
+
 ## [2026-11-15] review | coverage pass: warm, watch, water, white, year
 
 Run 20261115T005848Z-5exo58, cycle 2. B1 coverage pass, the last five unread five-sense band-1 content words (phrasal verbs and `so-adv` skipped). Before the panel: `warm-adj` gains *warm and fuzzy* and *warm applause*; `watch-v` an intransitive example; `water-n` gains *be in deep water*, *still waters run deep*, and loses three repeated notes; `year-n` gains a time-of-life sense and *put years on someone*. Panel: 54 issues, 3 blocking; 2 applied (`water-n` *two waters* is not an error; `white-adj` *white tea* is a kind of tea), 1 rejected (*white lie* is under `lie-n`; `see_also` added). 45 applied, 10 rejected in all (keyword rule for *head above water*, *fish out of water*, *white as a sheet*). Senses reordered by use in `water-n`, `white-adj`, `year-n`; `year-n` gains *of the year*; the `month-n`/`year-n` compare pair removed both ways. Pass at 337; next the four-sense band-1 words from `account-n`. Spend US$0.29.
