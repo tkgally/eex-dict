@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-15] lint | hundred-and-thirteenth pass
+
+Run 20261115T170840Z-e6wb57, cycle 3. Caps and links clean. `crossref.py --all --apply` wrote mirror back-links in seven entries (`poverty-n`, `presentation-n`, `princess-n`, `professor-n`, `puppy-n` compare `dog-n`, `railway-n`, `rainbow-n` family `rain-n`); two NO-SENSE pairs placed by hand (`puzzle-n` 2 compare `problem-n`; `purchase-n` 1 antonym `sale-n`). Six spent claim files pruned. Band vote on 45 unbanded rows (US$0.006); seven wide splits (`heap-v`, `preferably-adv`, `preferential-adj`, `pup-n`, `queue-v`, `quiz-v`, `shove-n`) settled at the middle vote; all now pending. Reports: 1,034 missing-sense pairs, 315 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no switch-offs. Index, curator file, open questions consistent; no duplicate curator lines; no log gaps. Next lint due after ten more cycles.
+
 ## [2026-11-15] review | coverage pass: always, answer, apply, arm
 
 Run 20261115T170059Z-e6wb57, cycle 2. B1 coverage pass, four four-sense band-1 words. Before the panel: `answer-n` gains a local-version sense (*our town's answer to*), loses a usage note and a grammar note repeating the learner error, and a duplicate *in answer to*; `apply-v` gains *apply online*, *apply the brakes*; `arm-n` gains *the long arm of the law*, *within arm's reach*, *give your right arm for something*. Panel: 38 issues, 6 blocking, all applied (`ever-adv` is not a synonym of `always-adv`, removed both ways; `answer-n` test sense said *correct*; `apply-v` *be about* misdefined and a software example; `arm-n` chair sense used *arm*). 33 applied, 5 rejected (sleeve sense marginal; *apply the brakes* is force). Also: `apply-v` method sense moved before surface sense; `arm-n` machine and sea uses split; *not take no for an answer* added. Pass at 345; next `arrive-v`, `attention-n`, `bank-n`, `bath-n`. Spend US$0.19.
