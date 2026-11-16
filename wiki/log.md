@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-16] build | prioritize to recycling: twelve queue entries
+
+Run 20261116T004405Z-iaohv3, cycle 1. Built `prioritize-v`, `proceed-v`, `puzzle-v`, `certificate-n`, `compliment-n`, `fantasy-n`, `front-desk-n`, `inspiration-n`, `mining-n`, `mystery-n`, `receptionist-n`, `recycling-n`. Pronunciation: 24 of 24 verified. Panel: 39 issues, 4 blocking, all applied (`mystery-n` subsense defined a modifier use as a noun, folded into sense 1 collocations; `compliment-n` sense 2 example was about words, not an action). 37 applied, 2 rejected (*often before another noun* is a valid code; *puzzle about* is real). Also: `proceed-v` sense 1 covers an activity as subject; `front-desk-n` gains a staff subsense; `fantasy-n` sense 2 countable or uncountable; `certificate-n` *diploma* moved to compare. `fantasy-n` synonym `dream-n` dropped (no matching sense); `confuse-v` 1 gains synonym `puzzle-v` by hand. Spend US$0.34.
+
 ## [2026-11-15] lint | hundred-and-thirteenth pass
 
 Run 20261115T170840Z-e6wb57, cycle 3. Caps and links clean. `crossref.py --all --apply` wrote mirror back-links in seven entries (`poverty-n`, `presentation-n`, `princess-n`, `professor-n`, `puppy-n` compare `dog-n`, `railway-n`, `rainbow-n` family `rain-n`); two NO-SENSE pairs placed by hand (`puzzle-n` 2 compare `problem-n`; `purchase-n` 1 antonym `sale-n`). Six spent claim files pruned. Band vote on 45 unbanded rows (US$0.006); seven wide splits (`heap-v`, `preferably-adv`, `preferential-adj`, `pup-n`, `queue-v`, `quiz-v`, `shove-n`) settled at the middle vote; all now pending. Reports: 1,034 missing-sense pairs, 315 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no switch-offs. Index, curator file, open questions consistent; no duplicate curator lines; no log gaps. Next lint due after ten more cycles.
