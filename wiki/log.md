@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-16] build | red to registration: twelve queue entries
+
+Run 20261116T010307Z-iaohv3, cycle 3. Built `red-n`, `reduction-n`, `referee-n`, `reference-n`, `reflection-n`, `reform-n`, `refrigerator-n`, `refugee-n`, `refund-n`, `regard-n`, `register-n`, `registration-n`. Pronunciation: 24 of 24 verified. Panel: 46 issues, 12 blocking, all applied. *In the red* moved from `red-adj` to `red-n` (red is a noun there; both reviewers); `red-n` wine sense defined without *red*; `reflection-n` gains a *reflection on someone* subsense, thought sense moved second with a countable subsense, `mirror-n` synonym dropped both ways; `regard-n` inflections now list *regards* (exceptions-table line); `registration-n` car-document sense no longer circular; `reference-n` number sense rewritten. 43 applied, 3 rejected (*saw red* needs no mark; *terms of reference* not added; `reduction-n` sense 1 keeps prices). British uses (*take the register*, *booking reference*, *shops*) removed. Hand back-links: `respect-n` 1, `reference-n` 3. Spend US$0.35.
+
 ## [2026-11-16] site | rebuild and check, 79 of 79
 
 Run 20261116T005848Z-iaohv3, cycle 2. `build_site.py`: 4,426 entries on 3,702 headword pages, no drafts withheld, no redirects. `site_check.py`: 79 of 79 checks pass at phone and desktop widths, including no sideways scroll on all 3,708 pages at 360 pixels. The twelve entries of cycle 1 render. No template or builder changes. Spend US$0.
