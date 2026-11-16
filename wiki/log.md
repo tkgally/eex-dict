@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-16] site | rebuild and check, 79 of 79
+
+Run 20261116T005848Z-iaohv3, cycle 2. `build_site.py`: 4,426 entries on 3,702 headword pages, no drafts withheld, no redirects. `site_check.py`: 79 of 79 checks pass at phone and desktop widths, including no sideways scroll on all 3,708 pages at 360 pixels. The twelve entries of cycle 1 render. No template or builder changes. Spend US$0.
+
 ## [2026-11-16] build | prioritize to recycling: twelve queue entries
 
 Run 20261116T004405Z-iaohv3, cycle 1. Built `prioritize-v`, `proceed-v`, `puzzle-v`, `certificate-n`, `compliment-n`, `fantasy-n`, `front-desk-n`, `inspiration-n`, `mining-n`, `mystery-n`, `receptionist-n`, `recycling-n`. Pronunciation: 24 of 24 verified. Panel: 39 issues, 4 blocking, all applied (`mystery-n` subsense defined a modifier use as a noun, folded into sense 1 collocations; `compliment-n` sense 2 example was about words, not an action). 37 applied, 2 rejected (*often before another noun* is a valid code; *puzzle about* is real). Also: `proceed-v` sense 1 covers an activity as subject; `front-desk-n` gains a staff subsense; `fantasy-n` sense 2 countable or uncountable; `certificate-n` *diploma* moved to compare. `fantasy-n` synonym `dream-n` dropped (no matching sense); `confuse-v` 1 gains synonym `puzzle-v` by hand. Spend US$0.34.
