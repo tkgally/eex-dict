@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-16] build | rubbish to sailing: six queue entries
+
+Run 20261116T171302Z-93pz5c, cycle 4. Six rather than twelve, to leave room for the pipeline at the end of a four-cycle run. Built `rubbish-n` (British; adjective use pointed to `rubbish-adj`, queued), `rumor-n`, `rush-n`, `sack-n` (American paper-sack subsense; *get the sack*, *give someone the sack*, *hit the sack*), `sadness-n`, `sailing-n` (*smooth sailing*). Pronunciation: 12 of 12 verified. Panel: 22 issues, 4 blocking (three on one `rush-n` example showing sudden demand, now its own subsense; the generated plural *sadnesses*, fixed by making the sense uncountable); 18 applied, 4 rejected (the American-football *sack*, *sack lunch*, a valid grammar code, the *plain sailing* explanation). `rush-n` now compares `hurry-n` instead of listing it as a synonym, matching `hurry-n`. `nonsense-n` back-link placed by hand. Spend: about US$0.17.
+
 ## [2026-11-16] review | coverage pass: beat, bed, boy, breathe
 
 Run 20261116T170138Z-93pz5c, cycle 3. B1 coverage pass on four four-sense band-1 words, plus the queued `relationship-n` fix (synonym `relations-n` now `relation-n`, with a plural note). Added: `beat-v` subsenses *beat an illness* and informal *be better than*, a sentence on beating a person, *if you can't beat them, join them*; `bed-n` hospital-bed subsense, rock-layer and truck senses; `boy-n` *golden boy*, *the old boy network* (British), *jobs for the boys* moved to `job-n` (keyword rule); `breathe-v` subsense *breathe on*, *breathe your last*. Duplicated notes cut (bed no-article, beat past participle, boy usage note). Panel: 55 issues, 3 blocking (all on `breathe-v` cross-references); 44 applied, 11 rejected. Mirrors removed with their links: `draw-v`, `cream-v`, `club-v`; `layer-n` placed by hand. Next coverage words: four-sense words after `breathe-v`. Spend: about US$0.30.
