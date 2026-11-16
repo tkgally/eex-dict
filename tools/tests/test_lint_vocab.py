@@ -124,7 +124,7 @@ class LemmatizerTests(TempRepo):
             self.assertTrue(all(hasattr(cls, m) for m in ("lemmatize", "candidates")))
         fn = link_words.external_lemmatizer({"run"})   # the linker's probe against the real repository
         self.assertIsNotNone(fn)
-        self.assertIn("run", fn("running"))
+        self.assertIn("run", fn("runs"))   # not "running": running-n is a headword of its own since 2026-11-16
 
     def test_tokenize(self):
         self.assertEqual(lint_vocab.tokenize("a [[cash-n|cash machine]] and [[give-up-phrv]]"), ["cash", "machine", "and", "give", "up"])
