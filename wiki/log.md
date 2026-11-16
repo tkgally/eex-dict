@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-16] build | rescue to row: twelve queue entries
+
+Run 20261116T164705Z-93pz5c, cycle 2. Built `rescue-n`, `reservation-n`, `reserve-n`, `resident-n`, `restroom-n`, `resume-n` (headword *résumé*), `revolution-n`, `reward-n`, `rival-n`, `romance-n`, `roommate-n`, `row-n` (the line; the British argument word is a separate homograph, not yet built). Pronunciation: 24 of 24 verified. Panel: 35 issues, none blocking; 29 applied, 6 rejected (a valid grammar code, a phrase-variant explanation, a British label on sports *reserves*, the one-example subsense rule, *pay a reward*, *death row* belongs under `death-n`). Main fixes: `reserve-n` military sense redefined as the force; `rescue-n` gains the animal-rescue group subsense; `romance-n` genre sense now countable or uncountable. Three definitions rewritten to stay in the defining vocabulary (*native*, *Canada*, *stadium*). Mirror links placed by hand on `bathroom-n`, `toilet-n`, `punishment-n`. Spend: about US$0.35.
+
 ## [2026-11-16] originality | ten sampled fields, all original
 
 Run 20261116T164342Z-93pz5c, cycle 1, forced (run 820, a multiple of twenty). Pre-flight clean: no open pull requests, no entry reports, inbox empty; `claude/zealous-mayer-8da3yb` already listed for pruning. `originality_check.py sample --n 10`: `sun-n`, `yourselves-pron` (phrase), `pair-n`, `help-interj`, `offer-n`, `some-det`, `doubt-n` (phrase), `bald-adj`, `he-pron` (usage note), `pull-n`. Ten exact-phrase web searches found no published dictionary with the same wording; reviewer B, asked once, called all ten original and named no source. Verdicts: original 10, rewrite 0; nothing rewritten. Record: `reviews/originality/2026-11-16.md`. Spend: US$0.004.
