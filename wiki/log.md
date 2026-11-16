@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-16] originality | ten sampled fields, all original
+
+Run 20261116T164342Z-93pz5c, cycle 1, forced (run 820, a multiple of twenty). Pre-flight clean: no open pull requests, no entry reports, inbox empty; `claude/zealous-mayer-8da3yb` already listed for pruning. `originality_check.py sample --n 10`: `sun-n`, `yourselves-pron` (phrase), `pair-n`, `help-interj`, `offer-n`, `some-det`, `doubt-n` (phrase), `bald-adj`, `he-pron` (usage note), `pull-n`. Ten exact-phrase web searches found no published dictionary with the same wording; reviewer B, asked once, called all ten original and named no source. Verdicts: original 10, rewrite 0; nothing rewritten. Record: `reviews/originality/2026-11-16.md`. Spend: US$0.004.
+
 ## [2026-11-16] closure | researcher to sacrifice: twelve family entries
 
 Run 20261116T085928Z-36vlk2, cycle 2. Closure source empty; twelve `family` rows: `researcher-n`, `resolution-n`, `restriction-n`, `rider-n`, `rise-n`, `roll-n`, `round-n`, `ruler-n`, `runner-n`, `running-n`, `rush-hour-n`, `sacrifice-n`. Pronunciation: `researcher-n` American settled against CMU (`ˈri.sɚ.tʃɚ`); 24 of 24 verified. Panel: 39 issues, 7 blocking, all applied (`running-n` sense 1 was circular; `resolution-n` sense 2 countability; a *plan* cannot be *out of the running*). Senses added on coverage findings: `resolution-n` determination, `round-n` part of a game (boxing, cards, golf; the golf sense folded in to avoid an undefined word), `runner-n` illegal goods and a baseball subsense, `roll-n` filled rolls. `round-n` phrase is *make the rounds* (American). Hand back-links on nine entries. `tools/tests/test_lint_vocab.py` probed *running* as a non-headword; now probes *runs*. Spend US$0.42.

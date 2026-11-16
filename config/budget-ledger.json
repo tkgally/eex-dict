@@ -2,7 +2,7 @@
   "_doc": "OpenRouter spending ledger, see wiki/conventions.md section 5. Written only by tools/spend.py: 'check --cost' refuses an estimate that would exceed daily_cap_usd for the current UTC day, 'record --cost' appends the billed usage.cost of a call. At UTC midnight the day's total moves into history and spent_usd/calls reset. Amounts are US dollars rounded to 6 decimals.",
   "daily_cap_usd": 15.0,
   "date": "2026-11-16",
-  "spent_usd": 1.629356,
+  "spent_usd": 1.633004,
   "calls": [
     {
       "ts": "2026-11-16T00:47:53Z",
@@ -1110,6 +1110,15 @@
       "cost_usd": 0.032896,
       "tokens_in": 4903,
       "tokens_out": 2309
+    },
+    {
+      "ts": "2026-11-16T16:44:18Z",
+      "run_id": "20261116T164342Z-93pz5c",
+      "purpose": "originality",
+      "model": "google/gemini-4-argon",
+      "cost_usd": 0.003648,
+      "tokens_in": 379,
+      "tokens_out": 289
     }
   ],
   "history": {
