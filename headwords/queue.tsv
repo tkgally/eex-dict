@@ -4788,7 +4788,7 @@ flow	n	2	family	done	2026-09-25	referenced by flow-v
 flowing	adj	3	family	pending	2026-09-25	referenced by flow-v; referenced by flow-n
 flyer	n	3	family	pending	2026-09-25	referenced by fly-v
 match	v	1	crossref	done	2026-09-25	referenced by fit-v; referenced by match-n
-sack	v	3	crossref	pending	2026-09-25	referenced by fire-v; referenced by dismiss-v; referenced by can-v
+sack	v	3	crossref	pending	2026-09-25	referenced by fire-v; referenced by dismiss-v; referenced by can-v; referenced by sack-n
 shoot	v	1	crossref	done	2026-09-25	referenced by fire-v; referenced by gun-n
 sink	v	2	crossref	done	2026-09-25	referenced by float-v; referenced by rise-v; referenced by sink-n
 suit	v	2	crossref	done	2026-09-25	referenced by fit-v; referenced by become-v; referenced by suit-n; referenced by suitable-adj; referenced by match-v
@@ -5137,8 +5137,8 @@ point	v	1	crossref	done	2026-09-26	referenced by aim-v; referenced by point-n; r
 rule out	phrv	2	crossref	pending	2026-09-26	referenced by rule-v; referenced by rule-n
 ruler	n	2	family	done	2026-09-26	referenced by rule-v; referenced by rule-n
 ruling	n	3	family	pending	2026-09-26	referenced by rule-v; referenced by decision-n; referenced by rule-n
-sailing	n	2	family	pending	2026-09-26	referenced by sail-v; referenced by sail-n
-sailor	n	2	family	pending	2026-09-26	referenced by sail-v; referenced by sail-n
+sailing	n	2	family	done	2026-09-26	referenced by sail-v; referenced by sail-n
+sailor	n	2	family	pending	2026-09-26	referenced by sail-v; referenced by sail-n; referenced by sailing-n
 satisfactory	adj	3	family	pending	2026-09-26	referenced by satisfy-v; referenced by satisfaction-n
 satisfying	adj	2	family	pending	2026-09-26	referenced by satisfy-v; referenced by satisfaction-n; referenced by satisfied-adj
 save	n	3	family	pending	2026-09-26	referenced by save-v
@@ -5374,7 +5374,7 @@ alert	v	3	crossref	pending	2026-09-30	referenced by warn-v; band vote 2026-10-24
 caution	v	3	crossref	pending	2026-09-30	referenced by warn-v
 labor	v	3	crossref	pending	2026-09-30	referenced by work-v; band vote 2026-10-24, settled: lower median kept: the middle vote fits the scale
 mutter	v	3	crossref	pending	2026-09-30	referenced by whisper-v
-rumor	v	4	crossref	pending	2026-09-30	referenced by whisper-v
+rumor	v	4	crossref	pending	2026-09-30	referenced by whisper-v; referenced by rumor-n
 succeed	v	2	crossref	done	2026-09-30	referenced by work-v; referenced by fail-v; referenced by success-n
 view	v	2	crossref	done	2026-09-30	referenced by watch-v; referenced by view-n
 wash off	phrv	3	crossref	pending	2026-09-30	referenced by wash-v
@@ -5480,7 +5480,7 @@ bag	v	3	family	done	2026-09-30	referenced by bag-n
 co author	n	3	family	pending	2026-09-30	referenced by author-n
 expert	n	2	crossref	done	2026-09-30	referenced by authority-n
 great aunt	n	3	family	pending	2026-09-30	referenced by aunt-n
-sack	n	2	crossref	pending	2026-09-30	referenced by bag-n
+sack	n	2	crossref	done	2026-09-30	referenced by bag-n
 viewer	n	2	crossref	pending	2026-09-30	referenced by audience-n; referenced by view-n; referenced by view-v; referenced by listener-n
 avoid	v	2	closure	done	2026-09-30	used in warn-v and attitude-n drafts; replaces bogus avoid-n
 amazed	adj	2	family	pending	2026-09-30	referenced by amaze-v; referenced by surprised-adj; referenced by amazing-adj
@@ -6526,7 +6526,7 @@ journey	v	3	family	pending	2026-10-04	referenced by journey-n
 joyful	adj	3	family	pending	2026-10-04	referenced by joy-n
 judgmental	adj	3	family	pending	2026-10-04	referenced by judgment-n
 juice	v	4	family	pending	2026-10-04	referenced by juice-n
-sadness	n	2	crossref	pending	2026-10-04	referenced by joy-n; referenced by sad-adj; referenced by grief-n; referenced by sorrow-n; referenced by happiness-n
+sadness	n	2	crossref	done	2026-10-04	referenced by joy-n; referenced by sad-adj; referenced by grief-n; referenced by sorrow-n; referenced by happiness-n
 bulb	n	2	crossref	done	2026-10-05	referenced by lamp-n
 candle	n	2	crossref	done	2026-10-05	referenced by lamp-n; referenced by wax-n
 crown	n	2	crossref	done	2026-10-05	referenced by king-n
@@ -7283,7 +7283,7 @@ cab	n	2	crossref	done	2026-10-09	referenced by taxi-n
 faucet	n	2	crossref	done	2026-10-09	referenced by tap-n
 preference	n	2	crossref	done	2026-10-09	referenced by taste-n; referenced by prefer-v
 professor	n	2	crossref	done	2026-10-09	referenced by teacher-n; referenced by lecturer-n
-rumor	n	2	crossref	pending	2026-10-09	referenced by talk-n
+rumor	n	2	crossref	done	2026-10-09	referenced by talk-n
 tasteful	adj	3	family	pending	2026-10-09	referenced by taste-n
 taxation	n	3	family	pending	2026-10-09	referenced by tax-n
 taxi	v	4	family	pending	2026-10-09	referenced by taxi-n
@@ -7377,7 +7377,7 @@ wall	v	3	family	pending	2026-10-09	referenced by wall-n
 alert	n	3	crossref	pending	2026-10-10	referenced by warning-n
 fortune	n	2	crossref	done	2026-10-10	referenced by wealth-n; referenced by fortunately-adv; referenced by luck-n
 recycle	v	2	crossref	done	2026-10-10	referenced by waste-n
-trash	n	2	crossref	pending	2026-10-10	referenced by waste-n; used in throw-away-phrv senses[0].definition; pos guessed (no morphological signal), check before claiming; referenced by garbage-n; referenced by litter-n
+trash	n	2	crossref	pending	2026-10-10	referenced by waste-n; used in throw-away-phrv senses[0].definition; pos guessed (no morphological signal), check before claiming; referenced by garbage-n; referenced by litter-n; referenced by rubbish-n
 warfare	n	3	family	pending	2026-10-10	referenced by war-n
 warrior	n	3	family	pending	2026-10-10	referenced by war-n
 wartime	n	3	family	pending	2026-10-10	referenced by war-n
@@ -7957,7 +7957,7 @@ roundness	n	5	family	pending	2026-10-12	referenced by round-adj
 rudely	adv	3	family	pending	2026-10-12	referenced by rude-adj; band vote 2026-10-24, settled: lower median kept: the middle vote fits the scale
 rudeness	n	4	family	pending	2026-10-12	referenced by rude-adj
 sadden	v	4	family	pending	2026-10-12	referenced by sad-adj
-sadly	adv	2	family	pending	2026-10-12	referenced by sad-adj; referenced by unfortunately-adv
+sadly	adv	2	family	pending	2026-10-12	referenced by sad-adj; referenced by unfortunately-adv; referenced by sadness-n
 safe	n	3	crossref	pending	2026-10-12	referenced by safe-adj
 same	pron	1	crossref	done	2026-10-12	referenced by same-adj
 sameness	n	4	family	pending	2026-10-12	referenced by same-adj
@@ -8338,7 +8338,7 @@ balanced	adj	2	family	pending	2026-10-22	referenced by balance-n
 hurried	adj	3	family	pending	2026-10-22	referenced by hurry-n
 imbalance	n	3	crossref	pending	2026-10-22	referenced by balance-n
 misunderstood	adj	3	family	pending	2026-10-22	referenced by misunderstand-v
-rush	n	2	crossref	pending	2026-10-22	referenced by hurry-n; referenced by rush-v; referenced by rush-hour-n
+rush	n	2	crossref	done	2026-10-22	referenced by hurry-n; referenced by rush-v; referenced by rush-hour-n
 unbalanced	adj	3	family	pending	2026-10-22	referenced by balance-n
 turnoff	n	3	family	pending	2026-10-22	referenced by turn-off-phrv
 turnover	n	3	family	pending	2026-10-22	referenced by turn-over-phrv
@@ -9581,7 +9581,7 @@ bridegroom	n	4	crossref	pending	2026-11-08	referenced by groom-n
 first floor	n	2	crossref	done	2026-11-08	referenced by ground-floor-n
 grocer	n	3	family	pending	2026-11-08	referenced by grocery-n
 grocery store	n	2	family	done	2026-11-08	referenced by grocery-n
-rubbish	n	2	crossref	pending	2026-11-08	referenced by garbage-n
+rubbish	n	2	crossref	done	2026-11-08	referenced by garbage-n
 warranty	n	3	crossref	pending	2026-11-08	referenced by guarantee-n
 barber	n	2	crossref	done	2026-11-09	referenced by hairdresser-n
 countess	n	4	family	pending	2026-11-09	referenced by count-n-2
@@ -9894,3 +9894,6 @@ romanticize	v		family	unbanded	2026-11-16	referenced by romance-n
 beat up	phrv		crossref	unbanded	2026-11-16	referenced by beat-v
 bed and breakfast	n		crossref	unbanded	2026-11-16	referenced by bed-n
 boy	interj		crossref	unbanded	2026-11-16	referenced by boy-n
+gossip	n		crossref	unbanded	2026-11-16	referenced by rumor-n
+rubbish	adj		crossref	unbanded	2026-11-16	referenced by rubbish-n
+rumored	adj		family	unbanded	2026-11-16	referenced by rumor-n
