@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-16] review | coverage pass: beat, bed, boy, breathe
+
+Run 20261116T170138Z-93pz5c, cycle 3. B1 coverage pass on four four-sense band-1 words, plus the queued `relationship-n` fix (synonym `relations-n` now `relation-n`, with a plural note). Added: `beat-v` subsenses *beat an illness* and informal *be better than*, a sentence on beating a person, *if you can't beat them, join them*; `bed-n` hospital-bed subsense, rock-layer and truck senses; `boy-n` *golden boy*, *the old boy network* (British), *jobs for the boys* moved to `job-n` (keyword rule); `breathe-v` subsense *breathe on*, *breathe your last*. Duplicated notes cut (bed no-article, beat past participle, boy usage note). Panel: 55 issues, 3 blocking (all on `breathe-v` cross-references); 44 applied, 11 rejected. Mirrors removed with their links: `draw-v`, `cream-v`, `club-v`; `layer-n` placed by hand. Next coverage words: four-sense words after `breathe-v`. Spend: about US$0.30.
+
 ## [2026-11-16] build | rescue to row: twelve queue entries
 
 Run 20261116T164705Z-93pz5c, cycle 2. Built `rescue-n`, `reservation-n`, `reserve-n`, `resident-n`, `restroom-n`, `resume-n` (headword *résumé*), `revolution-n`, `reward-n`, `rival-n`, `romance-n`, `roommate-n`, `row-n` (the line; the British argument word is a separate homograph, not yet built). Pronunciation: 24 of 24 verified. Panel: 35 issues, none blocking; 29 applied, 6 rejected (a valid grammar code, a phrase-variant explanation, a British label on sports *reserves*, the one-example subsense rule, *pay a reward*, *death row* belongs under `death-n`). Main fixes: `reserve-n` military sense redefined as the force; `rescue-n` gains the animal-rescue group subsense; `romance-n` genre sense now countable or uncountable. Three definitions rewritten to stay in the defining vocabulary (*native*, *Canada*, *stadium*). Mirror links placed by hand on `bathroom-n`, `toilet-n`, `punishment-n`. Spend: about US$0.35.
