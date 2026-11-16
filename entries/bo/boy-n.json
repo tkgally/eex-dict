@@ -44,12 +44,12 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "A **boy** is a male child, and, informally, a son, a man among friends, or a male pet.",
+  "core_idea": "A **boy** is a male child, and, informally, a son, a man among friends, or a male animal.",
   "senses": [
     {
       "n": 1,
       "signpost": "child",
-      "definition": "a male child",
+      "definition": "a male child or teenager",
       "explanation": null,
       "grammar": {
         "countability": "countable",
@@ -82,7 +82,7 @@
           "pattern": null
         },
         {
-          "text": "The boys were playing football in the street.",
+          "text": "The boys were playing soccer in the street.",
           "note": null,
           "pattern": null
         }
@@ -145,7 +145,9 @@
         "patterns": []
       },
       "labels": {
-        "register": [],
+        "register": [
+          "informal"
+        ],
         "region": [],
         "domain": [],
         "currency": [],
@@ -192,11 +194,13 @@
       "n": 3,
       "signpost": "man",
       "definition": "a man, especially one of a group of male friends",
-      "explanation": "Usually plural, in *the boys* or when speaking to a group of men.",
+      "explanation": null,
       "grammar": {
         "countability": "countable",
         "transitivity": null,
-        "codes": [],
+        "codes": [
+          "usually plural"
+        ],
         "patterns": []
       },
       "labels": {
@@ -298,7 +302,7 @@
       },
       "examples": [
         {
-          "text": "They broke a window playing football, but boys will be boys.",
+          "text": "They broke a window playing soccer, but boys will be boys.",
           "note": null,
           "pattern": null
         }
@@ -341,9 +345,44 @@
       "l1": {}
     },
     {
-      "sub_id": "jobs-for-the-boys",
-      "text": "jobs for the boys",
-      "definition": "jobs given to friends or people you know, not to the best person",
+      "sub_id": "golden-boy",
+      "text": "golden boy",
+      "definition": "a young man who is very successful and whom many people admire",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "He was the golden boy of the team until he got injured.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The young lawyer was the firm's golden boy.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "the-old-boy-network",
+      "text": "the old boy network",
+      "definition": "the way that men who went to the same schools or belong to the same groups help each other get good jobs",
       "explanation": null,
       "labels": {
         "register": [
@@ -360,7 +399,12 @@
       },
       "examples": [
         {
-          "text": "The new posts were just jobs for the boys.",
+          "text": "She says she never got promoted because she was not part of the old boy network.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Many of the top jobs still go through the old boy network.",
           "note": null,
           "pattern": null
         }
@@ -393,44 +437,36 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**Boy** usually means a male child or a teenager. Calling an adult man **boy** to his face can sound rude, and it has been used as an insult toward Black men; use **man** or his name. Among friends, *the boys* is friendly. The exclamation *oh boy* is a separate entry.",
+  "usage_note": "Calling an adult man **boy** to his face can sound rude, and it has been used as an insult toward Black men; use **man** or his name.",
   "learner_errors": [
     {
       "incorrect": "My brother is a boy of twenty-five.",
       "correct": "My brother is a young man of twenty-five.",
-      "note": "For an adult, use **man** or **young man**; **boy** usually means a child or teenager."
+      "note": "For an adult, use **man** or **young man**."
     }
   ],
   "etymology": null,
   "see_also": [
     {
-      "slug": "girl-n",
-      "note": null
-    },
-    {
-      "slug": "man-n",
-      "note": null
-    },
-    {
       "slug": "child-n",
       "note": null
     },
     {
-      "slug": "son-n",
-      "note": null
+      "slug": "boy-interj",
+      "note": "*oh boy*, an exclamation"
     }
   ],
   "adaptation": {
     "semantic": null,
     "grammar": null,
-    "culture": "Calling an adult man **boy** can be insulting, and in the United States it has been used as a racist insult. Keep this in mind when translating forms of address.",
+    "culture": null,
     "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-10-01T01:17:48Z",
-    "modified": "2026-10-06T04:58:00Z",
+    "modified": "2026-11-16T17:10:09Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261001T011412Z-qqiz7l",
     "reviews": [
@@ -472,6 +508,26 @@
         "file": "reviews/20261006T044809Z-favc2y/boy-n.json",
         "ok": 67,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261116T170138Z-93pz5c",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-16",
+        "file": "reviews/20261116T170138Z-93pz5c/boy-n.json",
+        "ok": 65,
+        "issues": 9,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261116T170138Z-93pz5c",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-16",
+        "file": "reviews/20261116T170138Z-93pz5c/boy-n.json",
+        "ok": 71,
+        "issues": 3,
         "blocking": 0
       }
     ],
