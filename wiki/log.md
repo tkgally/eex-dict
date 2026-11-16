@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-16] closure | researcher to sacrifice: twelve family entries
+
+Run 20261116T085928Z-36vlk2, cycle 2. Closure source empty; twelve `family` rows: `researcher-n`, `resolution-n`, `restriction-n`, `rider-n`, `rise-n`, `roll-n`, `round-n`, `ruler-n`, `runner-n`, `running-n`, `rush-hour-n`, `sacrifice-n`. Pronunciation: `researcher-n` American settled against CMU (`ˈri.sɚ.tʃɚ`); 24 of 24 verified. Panel: 39 issues, 7 blocking, all applied (`running-n` sense 1 was circular; `resolution-n` sense 2 countability; a *plan* cannot be *out of the running*). Senses added on coverage findings: `resolution-n` determination, `round-n` part of a game (boxing, cards, golf; the golf sense folded in to avoid an undefined word), `runner-n` illegal goods and a baseball subsense, `roll-n` filled rolls. `round-n` phrase is *make the rounds* (American). Hand back-links on nine entries. `tools/tests/test_lint_vocab.py` probed *running* as a non-headword; now probes *runs*. Spend US$0.42.
+
 ## [2026-11-16] build | regret to requirement: eleven queue entries
 
 Run 20261116T084356Z-36vlk2, cycle 1. Built `regret-n`, `regulation-n`, `release-n`, `reminder-n`, `rental-n`, `replacement-n`, `reply-n`, `report-card-n`, `reporter-n`, `reputation-n`, `requirement-n`. `relations-n` marked duplicate: `relation-n` sense 2 already holds the plural use; `relationship-n` still names it as a synonym (ruled-out target, retarget to `relation-n` at its next review). Pronunciation: three first drafts disputed; settled against CMU and the panel (`rɪˈkwaɪr.mənt`; British `jʊ` in *regulation*, *reputation*); 22 of 22 verified. Panel: 45 issues, 9 blocking. 39 applied, 6 rejected (the *regulation shirts* noun modifier stays in the noun under the house rule; *make reply* archaic). `release-n` press release made its own sense, feeling sense widened to an outlet; `regret-n` formal *regrets* a plural-only subsense. Hand back-links: `law-n` 2, `launch-n` 1, `relief-n` 1, `condition-n` 3. Spend US$0.33.
