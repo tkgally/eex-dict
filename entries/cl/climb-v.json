@@ -21,7 +21,7 @@
     },
     "variants": [],
     "audio": null,
-    "notes": "The **b** is silent: **climb** rhymes with **time**."
+    "notes": "The **b** is silent, also in **climbing** and **climber**: **climb** rhymes with **time**."
   },
   "inflections": {
     "forms": {
@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To **climb** is to go up or move with effort, often using your hands and feet, and a thing or an amount that climbs goes higher.",
+  "core_idea": "To **climb** is to go up or move with effort, often using your hands and feet, and a thing, an amount, or a person that climbs gets higher.",
   "senses": [
     {
       "n": 1,
@@ -108,7 +108,6 @@
           "type": "verb + adverb",
           "items": [
             "climb up",
-            "climb down",
             "climb higher"
           ]
         }
@@ -121,7 +120,55 @@
         }
       ],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "grow up a wall, a fence, or another support",
+          "explanation": "Used about plants.",
+          "grammar": null,
+          "labels": null,
+          "examples": [
+            {
+              "text": "Roses climbed the walls of the old house.",
+              "note": null,
+              "pattern": "verb + object"
+            },
+            {
+              "text": "The plant will climb up anything you give it.",
+              "note": null,
+              "pattern": "verb + adverb or preposition"
+            }
+          ],
+          "collocations": []
+        },
+        {
+          "letter": "b",
+          "definition": "go down something such as a ladder, a tree, or a rock, using your hands and feet",
+          "explanation": "Used with **down**.",
+          "grammar": null,
+          "labels": null,
+          "examples": [
+            {
+              "text": "He climbed down the ladder carefully.",
+              "note": null,
+              "pattern": "verb + adverb or preposition"
+            },
+            {
+              "text": "The cat was too scared to climb down from the tree.",
+              "note": null,
+              "pattern": "verb + adverb or preposition"
+            }
+          ],
+          "collocations": [
+            {
+              "type": "verb + adverb",
+              "items": [
+                "climb down"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -134,7 +181,7 @@
     {
       "n": 2,
       "signpost": "move with effort",
-      "definition": "move into, out of, over, or through something with effort, using your hands and feet",
+      "definition": "move into, out of, over, or through something, often slowly or with some effort",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -196,8 +243,8 @@
     {
       "n": 3,
       "signpost": "go higher",
-      "definition": "go higher in the air or up the side of a hill",
-      "explanation": null,
+      "definition": "go higher in the air, or lead up a hill",
+      "explanation": "Used about planes, the sun, and roads or paths.",
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -333,6 +380,79 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "rise in rank",
+      "definition": "move to a higher position in a list, a competition, or an organization",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive or intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + adverb or preposition",
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The team has climbed to third place.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
+        },
+        {
+          "text": "The song climbed the charts all summer.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "He climbed quickly through the ranks.",
+          "note": null,
+          "pattern": "verb + adverb or preposition"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "verb + noun",
+          "items": [
+            "climb the charts",
+            "climb the ladder",
+            "climb the rankings"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
+            "climb to the top"
+          ]
+        }
+      ],
+      "synonyms": [
+        {
+          "slug": "rise-v",
+          "note": null
+        }
+      ],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "phrases": [],
@@ -364,12 +484,12 @@
     "grammar": null,
     "culture": null,
     "false_friends": null,
-    "pronunciation": "The **b** at the end of **climb** is silent, as in **comb** and **lamb**. The **b** is also silent in **climbing** and **climber**."
+    "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-09-24T00:47:07Z",
-    "modified": "2026-09-29T19:37:41Z",
+    "modified": "2026-11-17T17:05:37Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260924T004259Z-o9up51",
     "reviews": [
@@ -411,6 +531,26 @@
         "file": "reviews/20260929T193018Z-y7kyhk/climb-v.json",
         "ok": 52,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261117T170050Z-2dr6rh",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-17",
+        "file": "reviews/20261117T170050Z-2dr6rh/climb-v.json",
+        "ok": 59,
+        "issues": 6,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261117T170050Z-2dr6rh",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-17",
+        "file": "reviews/20261117T170050Z-2dr6rh/climb-v.json",
+        "ok": 63,
+        "issues": 2,
         "blocking": 0
       }
     ],
