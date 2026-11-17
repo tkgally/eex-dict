@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-17] build | salesperson to scholarship: twelve queue entries
+
+Run 20261117T084350Z-ixets3, cycle 1. Built twelve band-2 nouns: `salesperson-n` (plural *salespeople* added to the exceptions table), `salon-n` (business; gathering), `sample-n` (four senses, free-sample subsense), `sandal-n`, `sausage-n` (*not a sausage*), `savings-n` (plural only; American *a savings of*), `saying-n` (*as the saying goes*), `scare-n` (health-scare subsense), `scarf-n`, `scenery-n` (scenery/view/landscape discrimination), `scheme-n` (British official plan, dishonest plan, arrangement; *in the scheme of things*), `scholarship-n`. Pronunciation: 24 of 24 verified. Panel: 33 issues, 1 blocking (an unattested *for sample* learner error, removed); 27 applied, 6 rejected (hand marks on the listed plural *salespeople*, twice; *go without saying* is under `go-v`; *a change of scenery* is keyed under `change-n`; two notes that add facts a label cannot). Twelve back-links placed by hand. Spend US$0.34.
+
 ## [2026-11-17] build | tomato to sailor: six queue entries
 
 Run 20261117T005748Z-k9ow4x, cycle 3. Six rather than twelve, to keep room for the pipeline in the third cycle of the run. Built `tomato-n` (plant subsense; American and British stress notes), `column-n` (table, newspaper, building, smoke, and line-of-people senses; silent **n**), `diploma-n` (British course sense; false-friends note against *degree*), `gossip-n` (talk, person, British *have a gossip*), `jogging-n`, `sailor-n` (work, sport, *a good/bad sailor*, *swear like a sailor*). Pronunciation: 12 of 12 verified. Panel: 31 issues, none blocking; 24 applied, 7 rejected (closed-list code *often before another noun*; double marks on phrases named as words, twice; page columns fit the table sense). Line of people became its own `column-n` sense; `sailor-n` sense 3 split from the sport sense; `ketchup-n` moved from family to see-also. `degree-n` back-link to `diploma-n` placed by hand. Spend US$0.17.
