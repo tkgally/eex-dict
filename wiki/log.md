@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-17] lint | hundred-and-fourteenth pass
+
+Run 20261117T004356Z-k9ow4x, cycle 1. Caps and links clean. `crossref.py --all --apply` wrote mirror back-links in four entries (`compliment-n` compare `praise-n`, `roommate-n` family `room-n`, `rumor-n`, `rush-n`). Eight NO-SENSE pairs placed by hand: `argument-n` synonym retargeted from `row-n` to `row-n-2` (the British argument word, not yet built); `row-n` 1 synonym `bank-n`; `reward-n` 1 synonym `fruit-n`, compare `award-n`, `prize-n`; `resident-n` 1 compare `citizen-n`; `beat-v` 2 synonym `overcome-v`. Six spent claim files pruned. Band vote on 52 unbanded rows (US$0.007); three wide splits (`attention-interj` 3, `boy-interj` 2, `rubbish-adj` 3) settled at the middle vote; all now pending. Reports: 1,039 missing-sense pairs, 314 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no new pair under 30 percent. Index, curator file, open questions consistent; no log gaps. Branch `claude/nice-hawking-93pz5c` fully absorbed; prune line added. Next lint after ten more cycles.
+
 ## [2026-11-16] build | rubbish to sailing: six queue entries
 
 Run 20261116T171302Z-93pz5c, cycle 4. Six rather than twelve, to leave room for the pipeline at the end of a four-cycle run. Built `rubbish-n` (British; adjective use pointed to `rubbish-adj`, queued), `rumor-n`, `rush-n`, `sack-n` (American paper-sack subsense; *get the sack*, *give someone the sack*, *hit the sack*), `sadness-n`, `sailing-n` (*smooth sailing*). Pronunciation: 12 of 12 verified. Panel: 22 issues, 4 blocking (three on one `rush-n` example showing sudden demand, now its own subsense; the generated plural *sadnesses*, fixed by making the sense uncountable); 18 applied, 4 rejected (the American-football *sack*, *sack lunch*, a valid grammar code, the *plain sailing* explanation). `rush-n` now compares `hurry-n` instead of listing it as a synonym, matching `hurry-n`. `nonsense-n` back-link placed by hand. Spend: about US$0.17.
