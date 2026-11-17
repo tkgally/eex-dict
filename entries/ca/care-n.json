@@ -88,7 +88,8 @@
           "items": [
             "medical care",
             "good care",
-            "special care"
+            "special care",
+            "intensive care"
           ]
         },
         {
@@ -96,7 +97,10 @@
           "items": [
             "health care",
             "child care",
-            "skin care"
+            "skin care",
+            "a care home",
+            "customer care",
+            "foster care"
           ]
         },
         {
@@ -197,11 +201,13 @@
       "n": 3,
       "signpost": "worry",
       "definition": "a feeling of worry, or something that causes worry",
-      "explanation": "Usually plural, **cares**.",
+      "explanation": null,
       "grammar": {
         "countability": "countable",
         "transitivity": null,
-        "codes": [],
+        "codes": [
+          "usually plural"
+        ],
         "patterns": []
       },
       "labels": {
@@ -341,7 +347,7 @@
     {
       "sub_id": "take-care",
       "text": "take care",
-      "definition": "be careful",
+      "definition": "be careful, or be careful to do or not to do something; also said as a friendly way of saying goodbye",
       "explanation": "Also said, often as *Take care!*, to say goodbye in a friendly way.",
       "labels": {
         "register": [],
@@ -353,6 +359,11 @@
       "examples": [
         {
           "text": "Take care on the stairs. They're wet.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Take care not to wake the baby.",
           "note": null,
           "pattern": null
         },
@@ -375,7 +386,7 @@
       "sub_id": "care-of",
       "text": "care of",
       "definition": "used on a letter to show that it should go to someone at another person's address",
-      "explanation": "Usually written **c/o** on an envelope or package. The full form is mainly British; American English usually says *in care of*.",
+      "explanation": "Usually written **c/o** on an envelope or package. American English also says *in care of*.",
       "labels": {
         "register": [],
         "region": [],
@@ -482,7 +493,7 @@
   "etymology": null,
   "see_also": [],
   "adaptation": {
-    "semantic": "**care** covers looking after someone (*child care*), doing something carefully (*with care*), and worry (*cares*). Many languages use separate words for these, and **take care** as a goodbye may need a different expression.",
+    "semantic": "**Take care** as a goodbye is a friendly wish, not a warning, and many languages need a different expression for it. The *looking after* sense (*child care*) and the *worry* sense (*cares*) often need different words.",
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -491,7 +502,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-01T13:07:30Z",
-    "modified": "2026-10-29T01:38:24Z",
+    "modified": "2026-11-17T09:03:24Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261001T130345Z-jf46i6",
     "reviews": [
@@ -533,6 +544,26 @@
         "file": "reviews/20261006T124415Z-k86x7r/care-n.json",
         "ok": 72,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261117T085809Z-ixets3",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-17",
+        "file": "reviews/20261117T085809Z-ixets3/care-n.json",
+        "ok": 63,
+        "issues": 12,
+        "blocking": 3
+      },
+      {
+        "run_id": "20261117T085809Z-ixets3",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-17",
+        "file": "reviews/20261117T085809Z-ixets3/care-n.json",
+        "ok": 73,
+        "issues": 1,
         "blocking": 0
       }
     ],
