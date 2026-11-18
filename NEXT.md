@@ -1,10 +1,10 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-18 after run 28iaq2, cycle 2 (build).*
+*Rewritten 2026-11-18 after run 28iaq2, cycle 3 (site).*
 
 ## State
 
-- 4,547 entries, all `reviewed`. Site checked 2026-11-16 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now (built through `single-n`, 2026-11-17), then `crossref`. Next weekly digest due 2026-11-21.
+- 4,547 entries, all `reviewed`. Site checked 2026-11-18 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now (built through `single-n`, 2026-11-17), then `crossref`. Next weekly digest due 2026-11-21.
 - Spend 2026-11-18: US$0.98 of US$15 so far. Originality: last 2026-11-16 (ten original, no rewrites).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
