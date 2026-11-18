@@ -4051,7 +4051,7 @@ house	v	2	family	done	2026-09-16	referenced by house-n
 houseboat	n	4	family	pending	2026-09-16	referenced by house-n
 housebound	adj	4	family	pending	2026-09-16	referenced by house-n
 householder	n	4	family	pending	2026-09-16	referenced by house-n; referenced by household-n
-housekeeper	n	3	family	pending	2026-09-16	referenced by house-n
+housekeeper	n	3	family	pending	2026-09-16	referenced by house-n; referenced by maid-n
 housekeeping	n	3	family	pending	2026-09-16	referenced by house-n
 housemate	n	3	family	pending	2026-09-16	referenced by house-n; referenced by roommate-n
 houseplant	n	3	family	pending	2026-09-16	referenced by house-n
@@ -5143,7 +5143,7 @@ satisfactory	adj	3	family	pending	2026-09-26	referenced by satisfy-v; referenced
 satisfying	adj	2	family	pending	2026-09-26	referenced by satisfy-v; referenced by satisfaction-n; referenced by satisfied-adj
 save	n	3	family	pending	2026-09-26	referenced by save-v
 save up	phrv	2	crossref	pending	2026-09-26	referenced by save-v
-saver	n	3	family	pending	2026-09-26	referenced by save-v; referenced by savings-n
+saver	n	3	family	pending	2026-09-26	referenced by save-v; referenced by savings-n; referenced by saving-n
 savings	n	2	family	done	2026-09-26	referenced by save-v
 scorer	n	3	family	pending	2026-09-26	referenced by score-v; referenced by score-n
 seeming	adj	4	family	pending	2026-09-26	referenced by seem-v
@@ -5242,7 +5242,7 @@ snowy	adj	2	family	pending	2026-09-29	referenced by snow-v; referenced by snow-n
 solvable	adj	4	family	pending	2026-09-29	referenced by solve-v
 sound out	phrv	4	crossref	pending	2026-09-29	referenced by sound-v
 spell out	phrv	3	crossref	pending	2026-09-29	referenced by spell-v
-spending	n	2	family	pending	2026-09-29	referenced by spend-v
+spending	n	2	family	pending	2026-09-29	referenced by spend-v; referenced by saving-n
 spent	adj	3	family	pending	2026-09-29	referenced by spend-v
 spill	n	3	family	pending	2026-09-29	referenced by spill-v
 split	n	2	family	pending	2026-09-29	referenced by split-v
@@ -9902,12 +9902,12 @@ columnist	n	3	family	pending	2026-11-17	referenced by column-n
 gossipy	adj	4	family	pending	2026-11-17	referenced by gossip-n
 pillar	n	3	crossref	pending	2026-11-17	referenced by column-n
 flip flop	n	3	crossref	pending	2026-11-17	referenced by sandal-n
-grant	n	2	crossref	pending	2026-11-17	referenced by scholarship-n
-hot dog	n	2	crossref	pending	2026-11-17	referenced by sausage-n
+grant	n	2	crossref	done	2026-11-17	referenced by scholarship-n
+hot dog	n	2	crossref	done	2026-11-17	referenced by sausage-n
 proverb	n	3	crossref	pending	2026-11-17	referenced by saying-n
 saleswoman	n	3	family	pending	2026-11-17	referenced by salesperson-n
 sample	v	3	family	pending	2026-11-17	referenced by sample-n
-saving	n	2	family	pending	2026-11-17	referenced by savings-n
+saving	n	2	family	done	2026-11-17	referenced by savings-n
 scheme	v	3	family	pending	2026-11-17	referenced by scheme-n
 scheming	adj	4	family	pending	2026-11-17	referenced by scheme-n
 scholar	n	2	family	pending	2026-11-17	referenced by scholarship-n
@@ -9917,19 +9917,28 @@ slipper	n	3	crossref	pending	2026-11-17	referenced by sandal-n
 certain	pron	3	crossref	pending	2026-11-17	referenced by certain-adj
 childbirth	n	3	family	pending	2026-11-17	referenced by child-n
 screenshot	v	3	family	pending	2026-11-17	referenced by screenshot-n
-screw	v	2	family	pending	2026-11-17	referenced by screw-n
+screw	v	2	family	done	2026-11-17	referenced by screw-n
 sculpt	v	3	family	pending	2026-11-17	referenced by sculpture-n
 sculptor	n	3	family	pending	2026-11-17	referenced by sculpture-n
 shriek	n	3	crossref	pending	2026-11-17	referenced by scream-n
-maid	n	2	crossref	pending	2026-11-17	referenced by servant-n
+maid	n	2	crossref	done	2026-11-17	referenced by servant-n
 selfless	adj	3	family	pending	2026-11-17	referenced by self-n
 shooter	n	3	family	pending	2026-11-17	referenced by shooting-n
 silverware	n	3	crossref	pending	2026-11-17	referenced by silver-n
 secretarial	adj	4	family	pending	2026-11-17	referenced by secretary-n
 segment	v	4	family	pending	2026-11-17	referenced by segment-n
-dominate	v	2	crossref	pending	2026-11-18	referenced by control-v
+dominate	v	2	crossref	done	2026-11-18	referenced by control-v
 hut	n	3	crossref	pending	2026-11-18	referenced by shed-n
 sequence	v	4	family	pending	2026-11-18	referenced by sequence-n
 sequential	adj	4	family	pending	2026-11-18	referenced by sequence-n
 shake up	n	3	crossref	pending	2026-11-18	referenced by shake-n
 shifty	adj	4	family	pending	2026-11-18	referenced by shift-n
+bridesmaid	n		crossref	unbanded	2026-11-18	referenced by maid-n
+dominance	n		family	unbanded	2026-11-18	referenced by dominate-v
+dominant	adj		family	unbanded	2026-11-18	referenced by dominate-v
+domination	n		family	unbanded	2026-11-18	referenced by dominate-v
+grant	v		family	unbanded	2026-11-18	referenced by grant-n
+hamburger	n		crossref	unbanded	2026-11-18	referenced by hot-dog-n
+screw around	phrv		crossref	unbanded	2026-11-18	referenced by screw-v
+screw up	phrv		crossref	unbanded	2026-11-18	referenced by screw-v
+unscrew	v		crossref	unbanded	2026-11-18	referenced by screw-v

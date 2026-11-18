@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-18] build | dominate to saving: six queue entries
+
+Run 20261118T133204Z-ej30lh, cycle 4. Six band-2 entries from the queue: `dominate-v`, `screw-v`, `grant-n`, `hot-dog-n`, `maid-n`, `saving-n`; all twelve transcriptions verified. Panel: 33 issues, 2 blocking (`screw-v` sense 1 defined with *screws*, now by turning small pointed pieces of metal; `grant-n` compare note *a grant does not*, now *need not be*); 27 applied (*screw it* and *screw you* added as phrases; `screw-v` labels, core idea, and usage note made to agree; `grant-n` sense 2 now covers the thing given; `hot-dog-n` loses *sausage* as a synonym; `maid-n` *cleaner* note now British; `saving-n` sense 2 widened to time and energy), 6 rejected (a closed-list pattern; an intransitive use needs no pattern; two `screw-v` senses translate differently; *screw around* is a phrasal-verb entry, now linked; one example is enough for a subsense; *savings* is also sense 1's plural). Five back-links placed by hand. Spend US$0.18.
+
 ## [2026-11-18] lint | hundred-and-fifteenth pass
 
 Run 20261118T132811Z-ej30lh, cycle 3. Caps and links clean. `crossref.py --all --apply` wrote mirror back-links in three entries (`salesperson-n` family `person-n`, `seafood-n` compare `fish-n`, `seat-belt-n` synonym `belt-n`). Five NO-SENSE pairs settled by hand: three were stale mirrors of links removed in cycle 1, removed from `borrow-v`, `rip-v`, and `take-over-phrv` (a review that removes a link removes its mirror); `scenery-n` 1 compare `scene-n`; `screw-n` 1 compare `nut-n`. Six spent claim files pruned. Band vote on 36 unbanded rows (US$0.006), no wide splits, all now pending (`settle` and `apply` take `--votes .../votes-unbanded.tsv`). Reports: 1,043 missing-sense pairs, 317 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no new pair under 30 percent. Index, curator file, open questions consistent; no log gaps. Next lint after ten more cycles.
