@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-18] lint | hundred-and-fifteenth pass
+
+Run 20261118T132811Z-ej30lh, cycle 3. Caps and links clean. `crossref.py --all --apply` wrote mirror back-links in three entries (`salesperson-n` family `person-n`, `seafood-n` compare `fish-n`, `seat-belt-n` synonym `belt-n`). Five NO-SENSE pairs settled by hand: three were stale mirrors of links removed in cycle 1, removed from `borrow-v`, `rip-v`, and `take-over-phrv` (a review that removes a link removes its mirror); `scenery-n` 1 compare `scene-n`; `screw-n` 1 compare `nut-n`. Six spent claim files pruned. Band vote on 36 unbanded rows (US$0.006), no wide splits, all now pending (`settle` and `apply` take `--votes .../votes-unbanded.tsv`). Reports: 1,043 missing-sense pairs, 317 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no new pair under 30 percent. Index, curator file, open questions consistent; no log gaps. Next lint after ten more cycles.
+
 ## [2026-11-18] build | seminar to shortage: eight queue entries
 
 Run 20261118T131823Z-ej30lh, cycle 2. Eight band-2 nouns from the queue: `seminar-n`, `senior-citizen-n`, `sequence-n`, `shake-n`, `shed-n`, `shift-n`, `shopping-center-n`, `shortage-n`. Pronunciation: all verified; *senior citizen* British scattered 1 of 3 on the first panel and agreed 2 of 3 on a second. Panel: 25 issues, none blocking; 21 applied (two core ideas that did not cover every sense; *a protein shake* widened the drink sense; *bottom of the garden* replaced by *backyard*; a gear-stick sense and *the graveyard shift* added to `shift-n`; an invented learner error and a repeated culture note removed; weak synonyms moved or dropped), 4 rejected (*the shakes* explanation carries the article; key names need no article; *at*/*in the shopping center* is a real choice; the gear link now fits). Four back-links placed by hand on `lecture-n`, `scene-n`, `garage-n`, `change-n`. Spend US$0.22.
