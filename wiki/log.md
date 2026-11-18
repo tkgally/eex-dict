@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-18] originality | ten sampled fields, two rewritten
+
+Run 20261118T170947Z-28iaq2, cycle 4, forced (run 840, a multiple of twenty). `originality_check.py sample --n 10`: `part-v`, `keep-v` (usage note), `state-v`, `open-adj`, `combine-v`, `shit-n` (phrase), `clean-up-phrv`, `house-n`, `time-n` (phrase), `credit-v`. No exact-phrase search matched a published dictionary. But the *state-v* search surfaced a learner's dictionary using *state something clearly and definitely* for *declare*, and reviewer B (asked once, all ten original) recalled a close learner-dictionary wording for `clean-up-phrv` sense 2. Out of caution both were rewritten: original 5, generic-overlap 3, rewrite 2. Both rewrites went through the pipeline: 15 issues, none blocking; 11 applied (`clean-up-phrv` pollution use split to subsense 1a, sense 3 now crime and dishonesty only, sense 1 object widened; `express-v` dropped as a `state-v` synonym, mirror removed), 4 rejected (*clean up your act* is under `act-n`; the reflexive sense kept; the *clean up after someone* explanation kept). Record: `reviews/originality/2026-11-18.md`. Spend US$0.06.
+
 ## [2026-11-18] site | rebuild and check, 79 of 79
 
 Run 20261118T170518Z-28iaq2, cycle 3. Site mode, chosen by scheduler debt. `build_site.py` wrote 4,547 entries on 3,793 headword pages (no drafts withheld, no redirects; 8,288 files in `docs/`, not committed). `site_check.py` passed all 79 checks at phone and desktop widths: no sideways scroll at 360 px on any of 3,799 pages, search, phrase search, *Did you mean*, the 404 search, sense menus, muted cross-references, dark mode. Spot check: this run's new senses and phrases (*cup* in golf, *save the date*, *for my sins*) appear on their pages. Nothing to fix. Spend US$0.
