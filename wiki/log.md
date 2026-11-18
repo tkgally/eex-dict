@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-18] site | rebuild and check, 79 of 79
+
+Run 20261118T170518Z-28iaq2, cycle 3. Site mode, chosen by scheduler debt. `build_site.py` wrote 4,547 entries on 3,793 headword pages (no drafts withheld, no redirects; 8,288 files in `docs/`, not committed). `site_check.py` passed all 79 checks at phone and desktop widths: no sideways scroll at 360 px on any of 3,799 pages, search, phrase search, *Did you mean*, the 404 search, sense menus, muted cross-references, dark mode. Spot check: this run's new senses and phrases (*cup* in golf, *save the date*, *for my sins*) appear on their pages. Nothing to fix. Spend US$0.
+
 ## [2026-11-18] build | scholar to sixth: eight queue entries
 
 Run 20261118T165541Z-28iaq2, cycle 2. Eight band-2 entries from the queue: `scholar-n`, `shorts-n`, `sibling-n`, `sightseeing-n`, `signature-n`, `sin-n`, `site-n`, `sixth-n`; all sixteen transcriptions verified (`sightseeing-n` American 3/4, CMU disagreeing on the second stress only). Panel: 26 issues, 1 blocking (*all the signatures of* is unnatural; replaced); 17 applied (the underwear example for `shorts-n` now unambiguous; *it's a sin to* and *not much of a scholar* moved from explanations to phrase collocations; *for my sins* added; `site-n` website sense defined without *website*, computing label dropped; core ideas widened), 9 rejected (double marks on named phrases, three times; *signature dish* is a noun modifier; a closed-list code; the date use of *sixth* belongs to `sixth-num`; the *on site* form note kept; sense order kept). Two back-links placed by hand (`scholarship-n`, `crime-n`). Spend US$0.20.
