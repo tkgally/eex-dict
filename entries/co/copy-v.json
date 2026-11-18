@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To copy is to make or do something so that it is the same as something that already exists.",
+  "core_idea": "To copy is to make or do something the same as something that already exists; it can also mean to send someone a copy of a message, or to hear a radio message.",
   "senses": [
     {
       "n": 1,
@@ -61,7 +61,8 @@
         "patterns": [
           "verb + object",
           "verb + object + preposition + object",
-          "verb + object + adverb"
+          "verb + object + adverb",
+          "verb + adverb + object"
         ]
       },
       "labels": {
@@ -100,7 +101,8 @@
           "items": [
             "copy a document",
             "copy a file",
-            "copy a picture"
+            "copy a picture",
+            "copy a design"
           ]
         },
         {
@@ -115,18 +117,10 @@
         {
           "slug": "duplicate-v",
           "note": null
-        },
-        {
-          "slug": "rip-v",
-          "note": null
         }
       ],
       "antonyms": [],
       "compare": [
-        {
-          "slug": "borrow-v",
-          "note": null
-        },
         {
           "slug": "trace-v",
           "note": null
@@ -185,8 +179,7 @@
           "type": "verb + noun",
           "items": [
             "copy someone's style",
-            "copy an idea",
-            "copy a design"
+            "copy an idea"
           ]
         }
       ],
@@ -288,7 +281,7 @@
       "n": 4,
       "signpost": "email",
       "definition": "send someone a copy of an email or a letter that you are sending to someone else",
-      "explanation": "**Copy someone in** is also used: *I copied her in on the email*.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "transitive",
@@ -322,8 +315,75 @@
         {
           "type": "verb + preposition",
           "items": [
-            "copy someone on something",
+            "copy someone on something"
+          ]
+        },
+        {
+          "type": "phrase",
+          "items": [
             "copy someone in"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "by radio",
+      "definition": "hear and understand a message sent by radio",
+      "explanation": null,
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive or intransitive",
+        "codes": [],
+        "patterns": [
+          "verb + object"
+        ]
+      },
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "Do you copy? Over.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We copy you loud and clear.",
+          "note": null,
+          "pattern": "verb + object"
+        },
+        {
+          "text": "Copy that. We're on our way.",
+          "note": null,
+          "pattern": "verb + object"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "do you copy?",
+            "copy that"
           ]
         }
       ],
@@ -374,7 +434,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-24T03:46:52Z",
-    "modified": "2026-11-02T13:01:23Z",
+    "modified": "2026-11-18T13:15:08Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260924T034301Z-p1vfqt",
     "reviews": [
@@ -416,6 +476,26 @@
         "file": "reviews/20260930T065911Z-oikyxz/copy-v.json",
         "ok": 52,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261118T130902Z-ej30lh",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-18",
+        "file": "reviews/20261118T130902Z-ej30lh/copy-v.json",
+        "ok": 57,
+        "issues": 7,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261118T130902Z-ej30lh",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-18",
+        "file": "reviews/20261118T130902Z-ej30lh/copy-v.json",
+        "ok": 61,
+        "issues": 2,
         "blocking": 0
       }
     ],
