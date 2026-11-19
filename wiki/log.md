@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-19] build | stall to steel: six queue entries
+
+Run 20261119T090730Z-mtlkkf, cycle 4. Six band-2 nouns from the queue: `stall-n`, `starter-n`, `statistics-n`, `statue-n`, `status-n`, `steel-n`. Pronunciation: all twelve verified. Panel: 17 issues, 1 blocking (reviewer A: `starter-n` lacked the sourdough sense, now sense 7); 13 applied, 4 rejected. Also added: `starter-n` 3 (*a late starter*), `status-n` 1a (prestige, *a status symbol*) and the phrase *the status quo*; an animal stall need not have three walls; a checkable fact about kitchen knives replaced. Rejected: *nerves of steel* under `steel-n` (keyword *nerves*: belongs under `nerve-n`, which lacks it), single marks on *the stalls*, the article explanation as a restatement, *often before another noun* as not a code. `figure-n` 1 synonym `statistics-n` placed by hand. Spend US$0.21.
+
 ## [2026-11-19] build | hamburger to stadium: eight queue entries
 
 Run 20261119T085739Z-mtlkkf, cycle 3. Eight queue entries: `hamburger-n`, `grant-v`, `spy-v`, `flake-n`, `microscope-n`, `snapshot-n`, `soft-drink-n`, `stadium-n`. Pronunciation: all verified except `soft-drink-n` American (panel 1 of 3 on three checks; flagged, curator line, first-word stress assumed). `stadium-n` plural takes *stadia* from the exceptions table. Panel: 19 issues, 3 blocking (all `spy-v`: the core idea and the adaptation note contradicted sense 1's *spy for*); 19 applied, 0 rejected. Other fixes: ground meat is not *cut*; `flake-n` widened to cover snow; *watch* is not a synonym of *spy on*; two collocations lifted from examples replaced. `granted-adv` queued (unbanded) for *Granted, ...*. Eight back-links placed by hand (`give-v`, `allow-v`, `award-v`, `refuse-v`, `deny-v`, `admit-v` to `grant-v`; `see-v` to `spy-v`; `juice-n` to `soft-drink-n`). Spend US$0.23.
