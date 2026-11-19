@@ -1,0 +1,463 @@
+{
+  "run_id": "20261119T010406Z-djj1yx",
+  "slug": "species-n",
+  "entry_modified": "2026-11-19T01:06:26Z",
+  "reviewers": [
+    {
+      "role": "reviewer-a",
+      "model": "claude-cli/claude-sonnet-5-5",
+      "requested_at": "2026-11-19T01:06:53Z",
+      "cost_usd": 0.0,
+      "tokens_in": 8245,
+      "tokens_out": 2167,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "issue",
+          "quote": "can produce young plants or animals together",
+          "severity": "minor",
+          "family": "definition-style",
+          "reason": "Awkward and repetitive wording ('young plants'); simpler: 'that can produce young together'. The definition also leaves out the biological classification idea, but remains understandable."
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "issue",
+          "quote": "The tiger is an endangered species.",
+          "severity": "blocking",
+          "family": "example-policy",
+          "reason": "States a checkable real-world conservation fact about a named animal; examples must not carry real-world facts."
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "coverage",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry is mostly sound. The main problem is the example \"The tiger is an endangered species.\", which states a checkable real-world fact. The definition's \"young plants or animals\" is also awkward (minor).",
+      "error": null
+    },
+    {
+      "role": "reviewer-b",
+      "model": "google/gemini-4-argon",
+      "requested_at": "2026-11-19T01:06:53Z",
+      "cost_usd": 0.018504,
+      "tokens_in": 4232,
+      "tokens_out": 1004,
+      "verdicts": [
+        {
+          "field": "headword_and_pos",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "variants",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.american",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "pronunciation.british",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "inflections",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "core_idea",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].signpost",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].definition",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].explanation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].grammar",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].labels",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].examples",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].collocations",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].cross_references",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "senses[0].adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "word_family",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "synonym_discrimination",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "usage_note",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "learner_errors",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "etymology",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "see_also",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "adaptation",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "sense_structure",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "consistency",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "coverage",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        },
+        {
+          "field": "examples_fit",
+          "verdict": "ok",
+          "quote": null,
+          "severity": null,
+          "family": null,
+          "reason": null
+        }
+      ],
+      "summary": "The entry is accurate, well-structured, and adheres to all house rules. No issues were found.",
+      "error": null
+    }
+  ]
+}
