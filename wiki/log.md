@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-19] build | hamburger to stadium: eight queue entries
+
+Run 20261119T085739Z-mtlkkf, cycle 3. Eight queue entries: `hamburger-n`, `grant-v`, `spy-v`, `flake-n`, `microscope-n`, `snapshot-n`, `soft-drink-n`, `stadium-n`. Pronunciation: all verified except `soft-drink-n` American (panel 1 of 3 on three checks; flagged, curator line, first-word stress assumed). `stadium-n` plural takes *stadia* from the exceptions table. Panel: 19 issues, 3 blocking (all `spy-v`: the core idea and the adaptation note contradicted sense 1's *spy for*); 19 applied, 0 rejected. Other fixes: ground meat is not *cut*; `flake-n` widened to cover snow; *watch* is not a synonym of *spy on*; two collocations lifted from examples replaced. `granted-adv` queued (unbanded) for *Granted, ...*. Eight back-links placed by hand (`give-v`, `allow-v`, `award-v`, `refuse-v`, `deny-v`, `admit-v` to `grant-v`; `see-v` to `spy-v`; `juice-n` to `soft-drink-n`). Spend US$0.23.
+
 ## [2026-11-19] lint | hundred-and-sixteenth pass
 
 Run 20261119T085351Z-mtlkkf, cycle 2. Caps and links clean. `crossref.py --all --apply` wrote mirror back-links in nine entries (among them `dark-adj` synonym `black-adj`, `sibling-n` synonym `brother-n`, `spending-n` antonym `saving-n`, `spite-n` family `in-spite-of-prep`). Five NO-SENSE pairs placed by hand: `specialist-n` 2 synonym `consultant-n`; `dark-adj` 2 antonym `fair-adj`; `site-n` 2 synonym `location-n`; `spray-n` 2 compare `mist-n`; `drop-n` 2 synonym `slide-n`. Thirteen entries changed in all. Five spent claim files pruned. Band vote on 32 unbanded rows (US$0.005); one wide split settled (`sin-v` band 3); all now pending. Reports: 1,046 missing-sense pairs, 317 circular, 6 promises (the same six). Precision: reviewer A 0.85, reviewer B 0.83; no new pair under 30 percent. Index, curator file, open questions consistent; no log gaps. Next lint after ten more cycles.
