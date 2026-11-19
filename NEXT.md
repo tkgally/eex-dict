@@ -1,11 +1,11 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-19 after run djj1yx, cycle 4 (closure).*
+*Rewritten 2026-11-19 after run mtlkkf, cycle 1 (review).*
 
 ## State
 
 - 4,579 entries, all `reviewed`. Site checked 2026-11-18 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Next weekly digest due 2026-11-21.
-- Spend 2026-11-19: US$1.09 of US$15 so far. Originality: last 2026-11-18 (two rewritten).
+- Spend 2026-11-19: US$1.28 of US$15 so far. Originality: last 2026-11-18 (two rewritten).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -13,7 +13,7 @@
 0. **The owner's rulings of 2026-10-24** ([status](wiki/decisions/owner-rulings-2026-10-24.md)). For the Routine, in order:
    1. **C1 audit**: mirror links with no note, at most 40 a batch; `crossref.py --missing-senses` lists the candidates. A reference to a phrase goes in `see_also` with a note.
    2. **Build**: closure ([build-order](wiki/decisions/build-order.md)).
-   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 377 done, last `dance-n` to `design-n`; next: `development-n`, `die-v`, `direct-adj`, `dish-n`; phrasal verbs skipped; check new senses against subsenses). Then the backlog by band.
+   3. **Review** (E2): drafts, open entry reports, the B1 coverage pass (band-1 content words by senses, skipping those read since 2026-10-24; 381 done, last `development-n` to `dish-n`; next: `double-adj`, `dream-v`, `dress-v`, `driver-n`; phrasal verbs skipped; check new senses against subsenses). Then the backlog by band.
    4. **Weekly digest** when `signals.digest_due`. Entry reports: pre-flight step 5.
 1. **build**: queue order (last built `specialist-n` to `stack-n` and `spell-n-2`, 2026-11-19; `snap-adj` queued (*snap decision*); `change-n` needs *a change of scenery*; hand-claim `row-n-2` (British: argument; `argument-n` already points at it); `chain-n` takes *chain reaction*; `peace-n` takes *peace and quiet*; `proof-n` takes *the proof of the pudding is in the eating*; `pitch-v` sense 4 takes **tent** once `tent-n` exists). Hand-claim `pile-n-2` (carpet) and `pitch-n-2` (tar; *pitch-black*); `finger-n` needs *have a finger in every pie*; `head-n` *off the top of your head*. `word-n`: add *words fail me*; `dot-n`: *connect the dots*. Then `tap-n-2`, `wind-v-2`, `lead-n-2`, `launch-n-2`. `twin-adj` takes *twin bed*. `blue-adj` needs *a blue state*. Idioms: `balance-n` *tip the balance*, *strike a balance*; `scale-n` *tip the scales*; `blood-n` *sweat blood*; `stuff-n` *sweat the small stuff*; `fear-n` *strike fear into someone*; `time-n` *waste no time*; `disbelief-n` *suspend disbelief*; `chord-n` *strike a chord*; `toast-n` *propose a toast*; `let-v` *let's face it*, *let's roll*, *let rip*, *let something slip*; `keep-v` *keep someone posted*; `be-v` *too good to be true*, *to be sure*, *have been around*; `ring-v` *ring true*; `form-n` *true to form*; `power-n` *power of attorney*; `chain-n` *chain of command*; `play-v` *play dead*; `dime-n` *a dime a dozen*; `tune-n` *dance to someone's tune*; `apple-n` *upset the apple cart*; `rock-n` *rock bottom*; `pavement-n` *pound the pavement*; `trick-n` *the oldest trick in the book*; `exception-n` *the exception that proves the rule*; `deal-n` *no big deal*; `price-n` *pay the price*; `field-n` *out of left field*; `way-n` *pick your way*; `hole-n` *pick holes in*; `end-n` *tie up loose ends*; House rules 16 and 18; phrasal verbs get `separable` codes when next reviewed (B4 i).
 2. **originality**: ask reviewer-b once; search quoted wording and headword plus opening words.
@@ -37,6 +37,6 @@
 
 ## For the owner
 
-- Latest report: `journal/2026-11-19.md`; weekly digest `journal/digest-2026-11-14.md`.
+- Latest report: `journal/2026-11-19-2.md`; weekly digest `journal/digest-2026-11-14.md`.
 - Left for a session with you (ruling 6): pronunciation disputes in `reviews/needs_curator.txt`; the ten-entry samples in `journal/digest-2026-10-31.md`, `-11-07.md`, and `-11-14.md`. Routine runs do not settle them.
 - Site: <https://tkgally.github.io/eex-dict/>
