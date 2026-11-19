@@ -2667,7 +2667,7 @@ apt.	abbr	4	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wo
 arcade	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 archive	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=3)
 archive	v	4	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=3)
-arena	n	3	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=1)
+arena	n	3	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=1); referenced by stadium-n
 aroma	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=1)
 arrival	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by arrive-v
 arrogance	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=2); referenced by pride-n
@@ -3685,7 +3685,7 @@ squeeze	v	2	band	done	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordl
 st	abbr	2	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=2,wordlist-3=4)
 stable	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3)
 stack	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by stack-n
-stadium	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2); referenced by park-n
+stadium	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=2,wordlist-2=2,wordlist-3=2); referenced by park-n
 stain	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by mark-n
 stain	v	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by discolor-v; referenced by dirty-v
 stall	n	2	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by stand-n
@@ -9937,8 +9937,8 @@ bridesmaid	n	3	crossref	pending	2026-11-18	referenced by maid-n
 dominance	n	3	family	pending	2026-11-18	referenced by dominate-v
 dominant	adj	2	family	pending	2026-11-18	referenced by dominate-v
 domination	n	3	family	pending	2026-11-18	referenced by dominate-v
-grant	v	2	family	pending	2026-11-18	referenced by grant-n
-hamburger	n	1	crossref	pending	2026-11-18	referenced by hot-dog-n
+grant	v	2	family	done	2026-11-18	referenced by grant-n
+hamburger	n	1	crossref	done	2026-11-18	referenced by hot-dog-n
 screw around	phrv	3	crossref	pending	2026-11-18	referenced by screw-v
 screw up	phrv	2	crossref	pending	2026-11-18	referenced by screw-v
 unscrew	v	4	crossref	pending	2026-11-18	referenced by screw-v
@@ -9950,18 +9950,24 @@ sinful	adj	4	family	pending	2026-11-18	referenced by sin-n
 sinner	n	3	family	pending	2026-11-18	referenced by sin-n
 snap	adj	3	crossref	pending	2026-11-19	referenced by snap-n review (snap decision)
 baking soda	n	3	crossref	pending	2026-11-19	referenced by soda-n
-flake	n	2	crossref	pending	2026-11-19	referenced by snowflake-n
+flake	n	2	crossref	done	2026-11-19	referenced by snowflake-n
 landslide	n	3	crossref	pending	2026-11-19	referenced by slide-n
 nonsmoker	n	4	crossref	pending	2026-11-19	referenced by smoker-n
-snapshot	n	2	crossref	pending	2026-11-19	referenced by snap-n
+snapshot	n	2	crossref	done	2026-11-19	referenced by snap-n
 snowball	v	4	family	pending	2026-11-19	referenced by snowball-n
-soft drink	n	2	crossref	pending	2026-11-19	referenced by soda-n
+soft drink	n	2	crossref	done	2026-11-19	referenced by soda-n
 spam	v	3	family	pending	2026-11-19	referenced by spam-n
 spammer	n	4	family	pending	2026-11-19	referenced by spam-n
 everyday	n	4	closure	pending	2026-11-19	used in sneaker-n senses[0].definition; pos guessed (no morphological signal), check before claiming
-microscope	n	2	closure	pending	2026-11-19	used in slide-n senses[4].definition; pos guessed (no morphological signal), check before claiming
+microscope	n	2	closure	done	2026-11-19	used in slide-n senses[4].definition; pos guessed (no morphological signal), check before claiming
 photographic	adj	3	closure	pending	2026-11-19	used in slide-n senses[0].subsenses[0].definition
 malice	n	4	crossref	pending	2026-11-19	referenced by spite-n
 spellbound	adj	4	family	pending	2026-11-19	referenced by spell-n
 spiteful	adj	4	family	pending	2026-11-19	referenced by spite-n
-spy	v	2	family	pending	2026-11-19	referenced by spy-n
+spy	v	2	family	done	2026-11-19	referenced by spy-n
+burger	n		crossref	unbanded	2026-11-19	referenced by hamburger-n
+flake	v		family	unbanded	2026-11-19	referenced by flake-n
+flaky	adj		family	unbanded	2026-11-19	referenced by flake-n
+granted	adv		crossref	unbanded	2026-11-19	referenced by grant-v
+microscopic	adj		family	unbanded	2026-11-19	referenced by microscope-n
+telescope	n		crossref	unbanded	2026-11-19	referenced by microscope-n
