@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To deal is to hand things out or pass them from one person to another, such as cards or goods.",
+  "core_idea": "Most senses of **deal** are about giving or passing something to someone: cards to players, things for sale to buyers, or a hard blow.",
   "senses": [
     {
       "n": 1,
@@ -126,9 +126,7 @@
         ]
       },
       "labels": {
-        "register": [
-          "informal"
-        ],
+        "register": [],
         "region": [],
         "domain": [
           "crime"
@@ -174,7 +172,7 @@
       "n": 3,
       "signpost": "do business in",
       "definition": "buy and sell a particular kind of thing as a business",
-      "explanation": "Always followed by **in**: *deal in something*.",
+      "explanation": null,
       "grammar": {
         "countability": null,
         "transitivity": "intransitive",
@@ -209,8 +207,92 @@
         {
           "type": "phrase",
           "items": [
-            "deal in something",
-            "deal in antiques"
+            "deal in antiques",
+            "deal in stolen goods"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compare": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "work mainly with a particular kind of thing, such as facts, ideas, or feelings",
+          "explanation": null,
+          "grammar": null,
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "As a scientist, she deals in facts, not opinions.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "That newspaper deals mostly in gossip.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "n": 4,
+      "signpost": "cause harm",
+      "definition": "give someone or something a hard hit, or cause them a sudden bad result",
+      "explanation": "Used mainly with **blow** as the object: *deal a blow to someone*, *deal someone a blow*.",
+      "grammar": {
+        "countability": null,
+        "transitivity": "transitive",
+        "codes": [],
+        "patterns": [
+          "verb + object + preposition + object",
+          "verb + two objects"
+        ]
+      },
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "The bad news from the bank dealt a heavy blow to the town.",
+          "note": null,
+          "pattern": "verb + object + preposition + object"
+        },
+        {
+          "text": "The injury dealt the team a serious blow.",
+          "note": null,
+          "pattern": "verb + two objects"
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "deal a blow to someone",
+            "deal someone a heavy blow",
+            "deal a setback to something"
           ]
         }
       ],
@@ -228,22 +310,19 @@
       "l1": {}
     },
     {
-      "n": 4,
-      "signpost": "cause harm",
-      "definition": "cause damage or harm to someone or something",
+      "n": 5,
+      "signpost": "cope",
+      "definition": "manage to accept a difficult or annoying situation and go on with your life",
       "explanation": null,
       "grammar": {
         "countability": null,
-        "transitivity": "transitive",
+        "transitivity": "intransitive",
         "codes": [],
-        "patterns": [
-          "verb + object + preposition + object",
-          "verb + two objects"
-        ]
+        "patterns": []
       },
       "labels": {
         "register": [
-          "formal"
+          "informal"
         ],
         "region": [],
         "domain": [],
@@ -253,27 +332,31 @@
       "pronunciation": null,
       "examples": [
         {
-          "text": "The bad news dealt a heavy blow to the town.",
+          "text": "I'm so tired that I just can't deal right now.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         },
         {
-          "text": "The storm dealt serious damage to the coast.",
+          "text": "If you don't like the new rules, you'll have to learn to deal.",
           "note": null,
-          "pattern": "verb + object + preposition + object"
+          "pattern": null
         }
       ],
       "collocations": [
         {
           "type": "phrase",
           "items": [
-            "deal a blow to someone",
-            "deal a heavy blow",
-            "deal damage to something"
+            "can't deal",
+            "learn to deal"
           ]
         }
       ],
-      "synonyms": [],
+      "synonyms": [
+        {
+          "slug": "cope-v",
+          "note": null
+        }
+      ],
       "antonyms": [],
       "compare": [],
       "subsenses": [],
@@ -331,7 +414,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "In everyday English the phrasal verb **deal with** (solve or handle) is far more common than this verb; its senses, for cards, drugs, trade, and harm, are each translated differently in many languages.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -340,7 +423,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-23T13:34:42Z",
-    "modified": "2026-10-24T01:07:32Z",
+    "modified": "2026-11-19T01:01:29Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261023T133125Z-x3gcgf",
     "reviews": [
@@ -363,6 +446,26 @@
         "ok": 52,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261119T005612Z-djj1yx",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-19",
+        "file": "reviews/20261119T005612Z-djj1yx/deal-v.json",
+        "ok": 45,
+        "issues": 11,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261119T005612Z-djj1yx",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-19",
+        "file": "reviews/20261119T005612Z-djj1yx/deal-v.json",
+        "ok": 51,
+        "issues": 5,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
