@@ -16,7 +16,7 @@
     "british": {
       "ipa": "ˌedʒ.ʊˈkeɪ.ʃən",
       "source": "model:anthropic/claude-sonnet-5",
-      "checked_by": "agreement:2/3",
+      "checked_by": "agreement:3/3",
       "status": "verified"
     },
     "variants": [],
@@ -44,7 +44,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**Education** is the teaching and learning that give people knowledge and skills, and the system that provides it.",
+  "core_idea": "**Education** is the teaching and learning that give people knowledge and skills, the system that provides it, the study of teaching, and what a person learns from it or from experience.",
   "senses": [
     {
       "n": 1,
@@ -94,14 +94,13 @@
             "free education",
             "higher education",
             "adult education",
-            "a good education"
+            "primary education",
+            "physical education"
           ]
         },
         {
           "type": "verb + noun",
           "items": [
-            "get an education",
-            "receive an education",
             "continue your education",
             "finish your education"
           ]
@@ -110,7 +109,9 @@
           "type": "noun + noun",
           "items": [
             "education system",
-            "education policy"
+            "education policy",
+            "sex education",
+            "health education"
           ]
         }
       ],
@@ -127,7 +128,52 @@
           "note": "training teaches the skills for one job or activity"
         }
       ],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "the system of schools, colleges, and universities, and the work of teaching in them",
+          "explanation": null,
+          "grammar": {
+            "countability": "uncountable",
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "She has worked in education for twenty years.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The government plans to spend more on education.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "Cuts to education have made classes bigger.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "preposition + noun",
+              "items": [
+                "in education"
+              ]
+            },
+            {
+              "type": "noun + noun",
+              "items": [
+                "education spending",
+                "the education budget"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -141,7 +187,7 @@
       "n": 2,
       "signpost": "knowledge you gain",
       "definition": "the knowledge and skills that a person gets from being taught",
-      "explanation": "Countable only when an adjective or a noun says what kind: *a good education*, *a college education*.",
+      "explanation": null,
       "grammar": {
         "countability": "countable or uncountable",
         "transitivity": null,
@@ -188,6 +234,8 @@
         {
           "type": "verb + noun",
           "items": [
+            "get an education",
+            "receive an education",
             "lack education",
             "have an education"
           ]
@@ -199,7 +247,7 @@
       "subsenses": [],
       "adaptation": {
         "semantic": null,
-        "grammar": "**Education** is usually uncountable, but it takes **a** when a word in front of it describes the kind of education a person gets: *a good education*, *a university education*.",
+        "grammar": null,
         "culture": null,
         "false_friends": null,
         "pronunciation": null
@@ -271,7 +319,7 @@
       "n": 4,
       "signpost": "useful experience",
       "definition": "an experience from which you learn something",
-      "explanation": "Used with **a** or **quite an**, often in a light or humorous way about an experience that taught you a lot.",
+      "explanation": "Used with **an**, often in *quite an education*, in a light or humorous way about an experience that taught you a lot.",
       "grammar": {
         "countability": "singular only",
         "transitivity": null,
@@ -350,11 +398,6 @@
   "usage_note": null,
   "learner_errors": [
     {
-      "incorrect": "She has a good educations.",
-      "correct": "She has a good education.",
-      "note": "**Education** has no plural in this use."
-    },
-    {
       "incorrect": "He has no education; he never says thank you.",
       "correct": "He has no manners; he never says thank you.",
       "note": "For politeness and good behavior, say **manners**, not **education**."
@@ -375,13 +418,13 @@
     "semantic": null,
     "grammar": null,
     "culture": null,
-    "false_friends": "In some languages a word that looks like **education** also means good manners learned at home. In English, **education** is about teaching and learning; for manners, say **upbringing** or *good manners*.",
+    "false_friends": null,
     "pronunciation": null
   },
   "l1": {},
   "provenance": {
     "created": "2026-10-07T04:47:33Z",
-    "modified": "2026-10-19T01:30:36Z",
+    "modified": "2026-11-20T01:12:23Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261007T044419Z-hpvo8n",
     "reviews": [
@@ -424,6 +467,26 @@
         "ok": 52,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261120T010640Z-nc6r9b",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-20",
+        "file": "reviews/20261120T010640Z-nc6r9b/education-n.json",
+        "ok": 48,
+        "issues": 8,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261120T010640Z-nc6r9b",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-20",
+        "file": "reviews/20261120T010640Z-nc6r9b/education-n.json",
+        "ok": 49,
+        "issues": 5,
+        "blocking": 2
       }
     ],
     "status": "reviewed",
