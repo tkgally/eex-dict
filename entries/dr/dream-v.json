@@ -100,12 +100,6 @@
             "dream about something",
             "dream of something"
           ]
-        },
-        {
-          "type": "adverb + verb",
-          "items": [
-            "often dream"
-          ]
         }
       ],
       "synonyms": [],
@@ -173,6 +167,12 @@
             "always dream",
             "secretly dream"
           ]
+        },
+        {
+          "type": "verb + adverb",
+          "items": [
+            "dream big"
+          ]
         }
       ],
       "synonyms": [
@@ -183,7 +183,41 @@
       ],
       "antonyms": [],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "believe that something you want will happen when it almost certainly will not",
+          "explanation": "Used informally, in the form **be dreaming**, often with an *if* clause: *You're dreaming if you think...*",
+          "grammar": {
+            "countability": null,
+            "transitivity": "intransitive",
+            "codes": [],
+            "patterns": []
+          },
+          "labels": {
+            "register": [
+              "informal"
+            ],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "You're dreaming if you think he'll pay you back.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "A house by the sea for that price? You're dreaming!",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": []
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -314,7 +348,7 @@
     {
       "sub_id": "not-dream-of-doing-something",
       "text": "not dream of doing something",
-      "definition": "never consider doing something, because it seems wrong or not right for you",
+      "definition": "never consider doing something, because it seems wrong",
       "explanation": "Usually in the form **wouldn't dream of** or **would never dream of**.",
       "labels": {
         "register": [],
@@ -417,7 +451,7 @@
   ],
   "adaptation": {
     "semantic": null,
-    "grammar": "\"dream\" takes **about** or **of** before what is dreamed: *dream about you*, *dream of being rich*. It does not take **with**, and in the hoping sense it does not take a **to** form.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -425,7 +459,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-24T18:48:13Z",
-    "modified": "2026-10-02T01:11:01Z",
+    "modified": "2026-11-20T00:51:04Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260924T184311Z-yq3eas",
     "reviews": [
@@ -466,6 +500,26 @@
         "date": "2026-09-30",
         "file": "reviews/20260930T191041Z-bhydso/dream-v.json",
         "ok": 60,
+        "issues": 2,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261120T004336Z-nc6r9b",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-20",
+        "file": "reviews/20261120T004336Z-nc6r9b/dream-v.json",
+        "ok": 62,
+        "issues": 4,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261120T004336Z-nc6r9b",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-20",
+        "file": "reviews/20261120T004336Z-nc6r9b/dream-v.json",
+        "ok": 64,
         "issues": 2,
         "blocking": 0
       }
