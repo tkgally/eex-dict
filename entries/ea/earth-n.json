@@ -146,7 +146,15 @@
           "pattern": null
         }
       ],
-      "collocations": [],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "fall to earth",
+            "deep in the earth"
+          ]
+        }
+      ],
       "synonyms": [
         {
           "slug": "ground-n",
@@ -243,7 +251,7 @@
       "n": 4,
       "signpost": "electric wire",
       "definition": "a wire that connects a machine that uses electricity to the ground so that the machine is safe to use",
-      "explanation": "American English uses **ground** for this.",
+      "explanation": null,
       "grammar": {
         "countability": "countable",
         "transitivity": null,
@@ -399,6 +407,41 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "sub_id": "promise-the-earth",
+      "text": "promise the earth",
+      "definition": "promise someone much more than you can really give them",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "Politicians always promise the earth before an election.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "The ad promised the earth, but the product was cheap and weak.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
   "word_family": [
@@ -427,7 +470,7 @@
     {
       "incorrect": "She is the best singer on the earth.",
       "correct": "She is the best singer in the world.",
-      "note": "To compare people or things, say **in the world**; **earth** is used more for the planet itself."
+      "note": "After a superlative, say **in the world** or **on earth**, without **the**."
     }
   ],
   "etymology": null,
@@ -438,7 +481,7 @@
     }
   ],
   "adaptation": {
-    "semantic": "Many languages use one word for the planet, the ground, and the soil, as English **earth** does; but when comparing people and things English usually says **world**: *the best in the world*.",
+    "semantic": null,
     "grammar": null,
     "culture": null,
     "false_friends": null,
@@ -447,7 +490,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-03T05:10:43Z",
-    "modified": "2026-10-09T17:15:01Z",
+    "modified": "2026-11-20T01:12:23Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261003T050722Z-kur5kk",
     "reviews": [
@@ -490,6 +533,26 @@
         "ok": 69,
         "issues": 3,
         "blocking": 3
+      },
+      {
+        "run_id": "20261120T010640Z-nc6r9b",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-20",
+        "file": "reviews/20261120T010640Z-nc6r9b/earth-n.json",
+        "ok": 68,
+        "issues": 6,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261120T010640Z-nc6r9b",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-20",
+        "file": "reviews/20261120T010640Z-nc6r9b/earth-n.json",
+        "ok": 71,
+        "issues": 3,
+        "blocking": 0
       }
     ],
     "status": "reviewed",
