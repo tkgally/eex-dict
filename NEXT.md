@@ -1,11 +1,11 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-21 after run 23rs8x, cycle 3 (build).*
+*Rewritten 2026-11-21 after run 2oa8b8, cycle 1 (originality).*
 
 ## State
 
 - 4,637 entries, all `reviewed`. Site checked 2026-11-18 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Next weekly digest due 2026-11-28.
-- Spend 2026-11-21: US$0.31 of US$15. Originality: last 2026-11-18 (two rewritten).
+- Spend 2026-11-21: US$0.45 of US$15. Originality: last 2026-11-21 (one rewritten).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -37,6 +37,6 @@
 
 ## For the owner
 
-- Latest report: `journal/2026-11-21.md`; weekly digest `journal/digest-2026-11-21.md`.
+- Latest report: `journal/2026-11-21-2.md`; weekly digest `journal/digest-2026-11-21.md`.
 - Left for a session with you (ruling 6): pronunciation disputes in `reviews/needs_curator.txt`; the ten-entry samples in `journal/digest-2026-10-31.md`, `-11-07.md`, `-11-14.md`, and `-11-21.md`.
 - Site: <https://tkgally.github.io/eex-dict/>
