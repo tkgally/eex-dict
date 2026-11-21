@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-21] review | coverage pass: flight, foreign, forget, friend
+
+Run 20261121T130420Z-2oa8b8, cycle 3. B1 coverage pass on four four-sense band-1 words. Before the panel: `flight-n` gains *on a flight*; `foreign-adj` gains *foreign investment*; duplicated notes trimmed in all three of `foreign-adj`, `forget-v` (the *forget to do* point lived in three fields), `friend-n`; `friend-n` gains *just friends* and *friend or foe*. Panel: 33 issues, 2 blocking, both on `forget-v`: *I forgot my keys at home* is natural American English, so the learner error is gone and the *leave* advice now sits on the compare link. 25 applied (generic adaptation notes dropped on `flight-n`, `foreign-adj`; `foreign-adj` sense 3 loses *formal* and *predicative only*; core ideas of `forget-v`, `friend-n` now cover every sense; *my friend* as a form of address), 8 rejected (*local* stays an antonym of *foreign*; the escape sense of *flight* stays formal; *forget about it* is a variant of *forget it*). Spend US$0.18.
+
 ## [2026-11-21] build | dawn to takeaway: six queue entries
 
 Run 20261121T125332Z-2oa8b8, cycle 2. Six rows claimed, all built: `dawn-n` (phrases *at the crack of dawn*, *since the dawn of time*), `family-name-n`, `hashtag-n` (social-media sense and the sign #), `metro-n` (trains; American city-area sense added at review), `tablet-n` (computer, medicine, stone; a `pill-n`/`tablet-n` discrimination note), `takeaway-n` (British meal and shop, and the main-point sense). Inflections and all twelve transcriptions verified. Panel: 32 issues over two rounds (metro twice), 1 blocking (a history claim in `takeaway-n`'s adaptation note, removed); 24 applied, 8 rejected (noun modifiers are not adjectives; the double mark covers a phrase named as a word; the meal sense of *takeaway* stays first by usefulness; *tablet*'s adaptation note names a specific split). Back-links on nine entries; `beginning-n` sense 1 → `dawn-n` placed by hand. Spend US$0.20.
