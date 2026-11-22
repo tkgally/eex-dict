@@ -3778,7 +3778,7 @@ times	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=1,wordlist-2=2,wordlis
 timetable	n	2	band	done	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by time-n; referenced by schedule-n; referenced by schedule-v
 tiny	adj	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=1,wordlist-3=2); referenced by little-adj; referenced by small-adj; referenced by huge-adj
 toaster	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by toast-n
-toddler	n	2	band	pending	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by child-n; referenced by infant-n
+toddler	n	2	band	done	2026-09-16	panel median 2 (wordlist-1=3,wordlist-2=2,wordlist-3=2); referenced by child-n; referenced by infant-n
 tolerance	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=2)
 tolerant	adj	3	band	pending	2026-09-16	panel median 3 (wordlist-1=4,wordlist-2=3,wordlist-3=2)
 tornado	n	3	band	pending	2026-09-16	panel median 3 (wordlist-1=3,wordlist-2=3,wordlist-3=3); referenced by hurricane-n
@@ -5962,7 +5962,7 @@ smoky	adj	3	family	pending	2026-10-02	referenced by smoke-v; referenced by smoke
 sob	v	3	crossref	pending	2026-10-02	referenced by cry-v
 swear	v	2	crossref	done	2026-10-02	referenced by promise-v
 tap	v	2	crossref	done	2026-10-02	referenced by knock-v; referenced by tap-n; referenced by drum-v
-tobacco	n	2	crossref	pending	2026-10-02	referenced by smoke-v; referenced by cigarette-n
+tobacco	n	2	crossref	done	2026-10-02	referenced by smoke-v; referenced by cigarette-n
 tremble	v	3	crossref	pending	2026-10-02	referenced by shake-v; referenced by shiver-v
 vibrate	v	3	crossref	pending	2026-10-02	referenced by shake-v
 vow	v	3	crossref	pending	2026-10-02	referenced by promise-v
@@ -9992,28 +9992,28 @@ first name	n	1	crossref	done	2026-11-20	referenced by surname-n
 last name	n	1	crossref	done	2026-11-20	referenced by surname-n
 sympathetic	adj	2	family	pending	2026-11-20	referenced by sympathy-n
 sympathize	v	3	family	pending	2026-11-20	referenced by sympathy-n
-cookie	n	1	closure	pending	2026-11-21	lemma of cookies (used in sweet-n senses[0].definition)
+cookie	n	1	closure	done	2026-11-21	lemma of cookies (used in sweet-n senses[0].definition)
 given name	n	3	crossref	pending	2026-11-21	referenced by first-name-n; referenced by family-name-n
 stock up	phrv	3	crossref	pending	2026-11-21	referenced by stock-v
 substitution	n	3	family	pending	2026-11-21	referenced by substitute-v
 dawn	v	3	family	pending	2026-11-21	referenced by dawn-n
 hashtag	v	3	family	pending	2026-11-21	referenced by hashtag-n
 binoculars	n	3	crossref	pending	2026-11-22	referenced by telescope-n
-cooperation	n	2	crossref	pending	2026-11-22	referenced by teamwork-n
+cooperation	n	2	crossref	done	2026-11-22	referenced by teamwork-n
 inclination	n	3	crossref	pending	2026-11-22	referenced by tendency-n
 marquee	n	4	crossref	pending	2026-11-22	referenced by tent-n
-target	v	2	family	pending	2026-11-22	referenced by target-n
+target	v	2	family	done	2026-11-22	referenced by target-n
 teaspoonful	n	4	family	pending	2026-11-22	referenced by teaspoon-n
 technical	adj	2	family	pending	2026-11-22	referenced by tech-n
 telescopic	adj	4	family	pending	2026-11-22	referenced by telescope-n
 telltale	adj	4	family	pending	2026-11-22	referenced by tale-n
 zone	n	2	family	pending	2026-11-22	referenced by time-zone-n
-panic	n	2	crossref	pending	2026-11-22	referenced by terror-n
+panic	n	2	crossref	done	2026-11-22	referenced by terror-n
 terrifying	adj	2	family	pending	2026-11-22	referenced by terror-n
 terrorize	v	3	family	pending	2026-11-22	referenced by terror-n
-thanksgiving	n	2	family	pending	2026-11-22	referenced by thanks-n
+thanksgiving	n	2	family	done	2026-11-22	referenced by thanks-n
 thematic	adj	4	family	pending	2026-11-22	referenced by theme-n
-theme park	n	2	family	pending	2026-11-22	referenced by theme-n
+theme park	n	2	family	done	2026-11-22	referenced by theme-n
 therapeutic	adj	3	family	pending	2026-11-22	referenced by therapy-n
 tidal	adj	4	family	pending	2026-11-22	referenced by tide-n
 tigress	n	5	family	pending	2026-11-22	referenced by tiger-n
@@ -10021,3 +10021,12 @@ timetable	v	4	family	pending	2026-11-22	referenced by timetable-n
 tin can	n	3	family	pending	2026-11-22	referenced by tin-n
 tinned	adj	3	family	pending	2026-11-22	referenced by tin-n
 tinny	adj	4	family	pending	2026-11-22	referenced by tin-n
+amusement park	n		crossref	unbanded	2026-11-22	referenced by theme-park-n
+biscuit	n		crossref	unbanded	2026-11-22	referenced by cookie-n
+collaboration	n		crossref	unbanded	2026-11-22	referenced by cooperation-n
+cooperate	v		family	unbanded	2026-11-22	referenced by cooperation-n
+cooperative	adj		family	unbanded	2026-11-22	referenced by cooperation-n
+panic	v		family	unbanded	2026-11-22	referenced by panic-n
+panicky	adj		family	unbanded	2026-11-22	referenced by panic-n
+tobacconist	n		family	unbanded	2026-11-22	referenced by tobacco-n
+toddle	v		family	unbanded	2026-11-22	referenced by toddler-n

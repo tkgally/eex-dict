@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-22] build | cookie to toddler: eight queue words
+
+Run 20261122T131139Z-g9rwg9, cycle 4. Eight rows, claimed below the cap of twelve to leave room for the pipeline in the run's last cycle, all built and reviewed: `cookie-n` (computer and *tough cookie* senses; *that's the way the cookie crumbles*), `target-v` (three transitive senses), `cooperation-n` (British *co-operation*), `panic-n` (*press the panic button*), `thanksgiving-n` (headword *Thanksgiving*; the religious sense lowercase), `theme-park-n`, `tobacco-n`, `toddler-n`. Inflections and 16 transcriptions verified. Panel: 32 issues, 6 blocking (an empty `cookie-n` core idea and person definition, `cookbook-n` in its family, a sense-2 example under sense 1 of `cooperation-n`, a *panic attack* subsense defining a compound), all applied; 30 applied, 2 rejected. Back-links placed by hand on `aim-v`, `fear-n`, `baby-n`. Spend US$0.23.
+
 ## [2026-11-22] lint | hundred-and-eighteenth pass
 
 Run 20261122T130701Z-g9rwg9, cycle 3. Caps and links clean. `crossref.py --all --apply` wrote one mirror back-link (`tiger-n` compare `lion-n`; `lion-n` dropped from its `see_also` so the pair is not shown twice). Two NO-SENSE pairs placed by hand: `technique-n` 1 compare `process-n`; `third-n` 1 compare `quarter-n`. Three entries changed. Five spent claim files pruned. Band vote on 29 unbanded rows (US$0.004); no wide splits; all now pending. Reports: 1,060 missing-sense pairs, 317 circular, 7 promises; the 36 cross-type mismatches are the known ones (`wiki/notes/crossref-cross-type-backlinks.md`). Precision: reviewer A 0.85, reviewer B 0.84; no new pair under 30 percent. Index, curator file, open questions consistent; no log gaps. Next lint after ten more cycles.
