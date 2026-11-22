@@ -47,7 +47,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "To pitch is to send or set something, or yourself, in a particular direction, place, or level: a ball at a player, an idea at a buyer, a camp on the ground.",
+  "core_idea": "To pitch is to send or set something, or yourself, in a particular direction, place, or level: a ball to a player, an idea to a buyer, a tent on the ground.",
   "senses": [
     {
       "n": 1,
@@ -91,10 +91,10 @@
       ],
       "collocations": [
         {
-          "type": "verb + noun",
+          "type": "phrase",
           "items": [
-            "pitch a stone",
-            "pitch a can"
+            "pitch something into something",
+            "pitch something over to someone"
           ]
         },
         {
@@ -126,7 +126,8 @@
             "transitivity": "transitive or intransitive",
             "codes": [],
             "patterns": [
-              "verb + object"
+              "verb + object",
+              "verb + preposition + object"
             ]
           },
           "labels": {
@@ -162,6 +163,41 @@
                 "pitch a ball",
                 "pitch a game",
                 "pitch an inning"
+              ]
+            }
+          ]
+        },
+        {
+          "letter": "b",
+          "definition": "suddenly put someone or something into a bad or difficult state",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": "transitive",
+            "codes": [],
+            "patterns": [
+              "verb + object + preposition + object"
+            ]
+          },
+          "labels": null,
+          "examples": [
+            {
+              "text": "The news pitched the whole town into panic.",
+              "note": null,
+              "pattern": "verb + object + preposition + object"
+            },
+            {
+              "text": "The storm pitched the island into darkness for three days.",
+              "note": null,
+              "pattern": "verb + object + preposition + object"
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "pitch someone into a crisis",
+                "pitch something into chaos"
               ]
             }
           ]
@@ -327,7 +363,7 @@
     {
       "n": 4,
       "signpost": "tent",
-      "definition": "put up a shelter made of cloth for sleeping outdoors, or set up a camp, in a particular place",
+      "definition": "put up a tent, or set up a camp, in a particular place",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -446,7 +482,7 @@
     },
     {
       "n": 6,
-      "signpost": "of a ship",
+      "signpost": "of a ship or plane",
       "definition": "move with the front going up and down, in rough water or in strong wind",
       "explanation": null,
       "grammar": {
@@ -537,7 +573,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-11-14T12:54:31Z",
-    "modified": "2026-11-14T13:07:05Z",
+    "modified": "2026-11-22T00:57:48Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261114T125004Z-8da3yb",
     "reviews": [
@@ -559,6 +595,26 @@
         "file": "reviews/20261114T125004Z-8da3yb/pitch-v.json",
         "ok": 64,
         "issues": 1,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261122T004417Z-qn2zjq",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-22",
+        "file": "reviews/20261122T004417Z-qn2zjq/pitch-v.json",
+        "ok": 67,
+        "issues": 7,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261122T004417Z-qn2zjq",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-22",
+        "file": "reviews/20261122T004417Z-qn2zjq/pitch-v.json",
+        "ok": 74,
+        "issues": 0,
         "blocking": 0
       }
     ],
