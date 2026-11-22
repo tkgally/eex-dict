@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-22] site | build and check: 79 of 79
+
+Run 20261122T130207Z-g9rwg9, cycle 2. `tools/build_site.py` wrote 4,679 entries on 3,893 headword pages (no drafts withheld, no redirects); `tools/site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on all 3,899 pages. The twelve new nouns from cycle 1 render, among them the *be toast* phrase and the *tyre* variant. No template or tool changes. Spend US$0.
+
 ## [2026-11-22] build | terror to toast: twelve queue nouns
 
 Run 20261122T124406Z-g9rwg9, cycle 1. Twelve band-2 nouns from the queue, all built and reviewed: `terror-n` (political violence; *a holy terror*), `thanks-n` (plural only; *thanks to*, *no thanks to*), `theme-n` (music subsense; a new screen-theme sense), `therapy-n` (informal *retail therapy* sense), `third-n` (part and gear), `tide-n` (*turn the tide*, *stem the tide of*), `tiger-n`, `times-n` (plural only; *move with the times*), `timetable-n`, `tin-n` (British container senses), `tire-n` (British *tyre*; *kick the tires*), `toast-n` (*propose a toast*; *be toast* as a phrase, not a sense). Inflections and 24 transcriptions verified. Panel: 102 issues, 15 blocking (checkable facts in `tiger-n` and `tin-n` examples, a circular gear definition, `tire-v` in the noun's word family, *be toast* as an adjective-shaped noun sense, a missing screen sense on `theme-n`), all applied; 87 applied, 11 rejected (idioms keyed on *reign*, *paper*, *sign*, and *time*). *A sign of the times* waits for `sign-n`. Back-links placed by hand on `treatment-n`, `flood-n`, `wave-n`, `age-n`, `period-n`, `pan-n`, `horror-n`, `subject-n`. Spend US$0.40.
