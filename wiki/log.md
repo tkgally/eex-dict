@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-22] lint | hundred-and-eighteenth pass
+
+Run 20261122T130701Z-g9rwg9, cycle 3. Caps and links clean. `crossref.py --all --apply` wrote one mirror back-link (`tiger-n` compare `lion-n`; `lion-n` dropped from its `see_also` so the pair is not shown twice). Two NO-SENSE pairs placed by hand: `technique-n` 1 compare `process-n`; `third-n` 1 compare `quarter-n`. Three entries changed. Five spent claim files pruned. Band vote on 29 unbanded rows (US$0.004); no wide splits; all now pending. Reports: 1,060 missing-sense pairs, 317 circular, 7 promises; the 36 cross-type mismatches are the known ones (`wiki/notes/crossref-cross-type-backlinks.md`). Precision: reviewer A 0.85, reviewer B 0.84; no new pair under 30 percent. Index, curator file, open questions consistent; no log gaps. Next lint after ten more cycles.
+
 ## [2026-11-22] site | build and check: 79 of 79
 
 Run 20261122T130207Z-g9rwg9, cycle 2. `tools/build_site.py` wrote 4,679 entries on 3,893 headword pages (no drafts withheld, no redirects); `tools/site_check.py` passed all 79 checks at phone and desktop widths, including no sideways scroll at 360 px on all 3,899 pages. The twelve new nouns from cycle 1 render, among them the *be toast* phrase and the *tyre* variant. No template or tool changes. Spend US$0.

@@ -7,3 +7,7 @@
 ## 2026-11-03, hundredth pass: stale cache
 
 A second `run --unbanded` in one session reused the first run's cached replies (`.tmp/band-vote/unbanded/chunk000-*`, keyed by chunk number, not content) and failed with a `KeyError` on a slug no longer asked. Worked around by moving the cache aside. **Fixed 2026-11-04**: a cached reply is reused only when its recorded slugs match the chunk (unit test).
+
+## 2026-11-22, hundred-and-eighteenth pass: default vote file
+
+`settle` and `apply` with no arguments look for `experiments/band-vote-<today>/votes.tsv` and fail with a traceback after `run --unbanded`, which writes `votes-unbanded.tsv`. Worked around with `--dir experiments/band-vote-<today> --votes <dir>/votes-unbanded.tsv`. No fix yet; `routine-prompt.md` names the steps without the arguments.
