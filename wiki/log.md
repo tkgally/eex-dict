@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-27] build | culture to collaboration: six queue words
+
+Run 20261127T064520Z-arwh4a, cycle 4. Six queue words claimed and built, below the cap of twelve so each could be full: `culture-n` (way of life; the arts, with *popular culture*; an organization's attitudes, *a culture of fear*; a technical biology sense; a false-friends note on *general knowledge*), `cooperate-v` (work together; do what is asked, with an informal *if the weather cooperates* subsense; British *co-operate*), `panic-v` (feel panic; make someone panic, *panic someone into*), `amusement-park-n`, `biscuit-n` (British hard biscuit, American soft bread; British *take the biscuit*), `collaboration-n` (working together, work made together, help to an occupying enemy). All inflections and 12 transcriptions verified first time. Panel: 22 issues, none blocking; 17 applied, 5 rejected (hand marks on *panicked*; the British sense of `biscuit-n` kept first as the one learners meet most). `biscuit-n` usage note dropped as a restatement of its labels. NO-SENSE mirrors placed by hand on `frighten-v` and `calm-v`; `theme-park-n` drops `amusement-park-n` from `see_also` now that it is a compare. Spend US$0.18.
+
 ## [2026-11-27] originality | ten sampled fields, none rewritten
 
 Run 20261127T064045Z-arwh4a, cycle 3, forced (run 880, a multiple of twenty). `originality_check.py sample --n 10`: `attach-v`, `this-det`, `confident-adj` (sense 2), `stand-v` (usage note), `season-n` (*in season*), `coin-v` (*coin it in*), `ash-n-2` (wood), `process-v` (computer sense), `ice-n` (*on thin ice*), `picture-n` (*the big picture*). No exact-phrase search matched a published dictionary; the closest was a city question-and-answer page with textbook wording near the `process-v` definition. Reviewer B, asked once, called nine original and `attach-v` *cannot tell* (short and generic). Verdicts: original 6, generic-overlap 4, rewrite 0. Record: `reviews/originality/2026-11-27.md`. Spend US$0.004.
