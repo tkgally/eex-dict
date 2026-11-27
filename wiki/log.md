@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-27] build | aggressive to artificial: six queue adjectives
+
+Run 20261127T122702Z-4k0wpu, cycle 3. Six band-2 adjectives, half the cap so each could be full: `aggressive` (angry; determined, with a tone note for translators; medical, with a subsense for *aggressive treatment*), `alternative` (other choice; not traditional, with a subsense for *alternative energy*; usage note on American *alternate*), `ambitious` (of a person, including ambition for someone else; of a plan), `ancient` (long ago; very old; informal and humorous), `appropriate` (with *where appropriate* and a note on the verb's different ending), `artificial` (not natural, with a subsense for *an artificial deadline*; not sincere). Panel: 24 issues, 1 blocking (reviewer A: the *alternative energy* definition wrongly said "not made by burning"; applied). 18 applied, 6 rejected. Three mirror links placed by hand. Spend US$0.16.
+
 ## [2026-11-27] review | coverage pass: learn, let, lie, light
 
 Run 20261127T121658Z-4k0wpu, cycle 2. B1 coverage pass on four band-1 words. Before the panel: `let-v` gains the five queued idioms (*let's face it*, *let's roll*, *let rip*, *let something slip*, *let yourself go*); `lie-v` gains a subsense for *lie ahead*, *lie in store*; `light-n` gains *make light of something*, *a leading light*, *at first light*. Panel: 46 issues, 2 blocking (reviewer A: `lie-v` sense 3 duplicates sense 1). Not merged, since a body lying down and an object lying somewhere translate differently; both definitions sharpened. 30 applied, 10 rejected. Notes brought into line with one-fact-one-field: `let-v` usage note and grammar adaptation removed, `lie-v` and `light-n` adaptation notes removed, an invented `learn-v` learner error removed. Added *let someone go* (dismiss) and *learn to live with it*. Spend US$0.25.
