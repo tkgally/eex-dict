@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-27] review | coverage pass: learn, let, lie, light
+
+Run 20261127T121658Z-4k0wpu, cycle 2. B1 coverage pass on four band-1 words. Before the panel: `let-v` gains the five queued idioms (*let's face it*, *let's roll*, *let rip*, *let something slip*, *let yourself go*); `lie-v` gains a subsense for *lie ahead*, *lie in store*; `light-n` gains *make light of something*, *a leading light*, *at first light*. Panel: 46 issues, 2 blocking (reviewer A: `lie-v` sense 3 duplicates sense 1). Not merged, since a body lying down and an object lying somewhere translate differently; both definitions sharpened. 30 applied, 10 rejected. Notes brought into line with one-fact-one-field: `let-v` usage note and grammar adaptation removed, `lie-v` and `light-n` adaptation notes removed, an invented `learn-v` learner error removed. Added *let someone go* (dismiss) and *learn to live with it*. Spend US$0.25.
+
 ## [2026-11-27] closure | affordable to bottom: twelve family adjectives
 
 Run 20261127T120016Z-4k0wpu, cycle 1. The `closure` source was empty, so twelve band-2 `family` rows were claimed and built: `affordable`, `aged` (stated age; very old, two syllables, formal; aged food), `amazed`, `annoyed`, `annoying`, `associated` (attributive only; *associated with* is the passive verb, usage note points to `associate-v`), `athletic`, `balanced` (right amounts first; fair; a calm person), `beneficial`, `bloody` (with blood; violent; British and Australian informal emphasis, pointing to `bloody-adv`, queued), `boiling`, `bottom` (all `-adj`). Panel: 64 issues, 2 blocking (both reviewer B on `associated`, applied). 31 applied, 10 rejected (reviewer A's "comparative with more is not a code", house rule). `aged-adj` carries `pronunciation-disputed`: the panel wanted the two-syllable form, CMU agrees with one syllable; curator line written. Seven mirror links placed by hand. Spend US$0.34.
