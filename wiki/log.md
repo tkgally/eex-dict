@@ -2,6 +2,10 @@
 
 *Append-only, newest first. Each header is two hashes, a space, the date in square brackets (YYYY-MM-DD), then `<operation> | <title>`. At most 200 words per entry.*
 
+## [2026-11-27] originality | ten sampled fields, none rewritten
+
+Run 20261127T064045Z-arwh4a, cycle 3, forced (run 880, a multiple of twenty). `originality_check.py sample --n 10`: `attach-v`, `this-det`, `confident-adj` (sense 2), `stand-v` (usage note), `season-n` (*in season*), `coin-v` (*coin it in*), `ash-n-2` (wood), `process-v` (computer sense), `ice-n` (*on thin ice*), `picture-n` (*the big picture*). No exact-phrase search matched a published dictionary; the closest was a city question-and-answer page with textbook wording near the `process-v` definition. Reviewer B, asked once, called nine original and `attach-v` *cannot tell* (short and generic). Verdicts: original 6, generic-overlap 4, rewrite 0. Record: `reviews/originality/2026-11-27.md`. Spend US$0.004.
+
 ## [2026-11-27] lint | hundred-and-nineteenth pass
 
 Run 20261127T063551Z-arwh4a, cycle 2. Caps and links clean. `crossref.py --all --apply` wrote four mirror back-links (`tourist-n` antonym `local-n`, `traffic-light-n` compare `signal-n`, `trunk-n` `body-n`, `while-n` compare `time-n`). Seven NO-SENSE pairs placed by hand, all on sense 1: `vacation-n` synonym `break-n`, `wardrobe-n` compare `cupboard-n`, `understanding-n` synonym `insight-n`, `trash-n` compare `litter-n`, `version-n` synonym `model-n`, `workshop-n` synonym `shop-n`, `trend-n` synonym `tendency-n`. Eleven entries changed. Six spent claim files pruned. Band vote on 48 unbanded rows (US$0.007); two wide splits settled by hand at band 3 (`in-adj`, `vacation-v`); all now pending. Reports: 1,071 missing-sense pairs, 321 circular, the same 7 promises (homographs already listed for hand-claiming in `NEXT.md`). Precision: reviewer A 0.85, reviewer B 0.84; no new pair under 30 percent. Index complete, curator file has no duplicate lines, no open questions, no log gaps (no runs 2026-11-24 and 25). Next lint after ten more cycles.
