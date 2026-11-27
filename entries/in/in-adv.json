@@ -45,7 +45,7 @@
     "currency": [],
     "attitude": []
   },
-  "core_idea": "**In** as an adverb means inside a place, or moving into it, without naming the place.",
+  "core_idea": "**In** as an adverb means inside a place, a group, or an area, or arriving there, without naming it.",
   "senses": [
     {
       "n": 1,
@@ -110,7 +110,36 @@
         }
       ],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "close to the land, or coming toward it",
+          "explanation": "Used of the sea when the tide is high or rising.",
+          "grammar": null,
+          "labels": null,
+          "examples": [
+            {
+              "text": "The tide is in, so we can't walk out to the rocks.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The tide comes in very fast on this beach.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "the tide is in",
+                "the tide comes in"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -163,8 +192,7 @@
           "type": "verb + adverb",
           "items": [
             "be in",
-            "stay in",
-            "stay in all day"
+            "stay in"
           ]
         }
       ],
@@ -188,8 +216,8 @@
     },
     {
       "n": 3,
-      "signpost": "arrived or given",
-      "definition": "arrived, or received by the people who were waiting for it",
+      "signpost": "arrived or handed in",
+      "definition": "arrived, or received by the people who are expecting it",
       "explanation": null,
       "grammar": {
         "countability": null,
@@ -300,9 +328,110 @@
         "pronunciation": null
       },
       "l1": {}
+    },
+    {
+      "n": 5,
+      "signpost": "taking part",
+      "definition": "willing to take part in a plan or an activity",
+      "explanation": "Usually after **be**, as an answer to an invitation: *I'm in*, *Are you in?*",
+      "grammar": {
+        "countability": null,
+        "transitivity": null,
+        "codes": [
+          "not gradable"
+        ],
+        "patterns": []
+      },
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "pronunciation": null,
+      "examples": [
+        {
+          "text": "If you're going to the beach on Sunday, I'm in.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "We need one more player. Are you in?",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "Lee said he was in, but then he changed his mind.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "collocations": [
+        {
+          "type": "phrase",
+          "items": [
+            "I'm in",
+            "are you in?"
+          ]
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [
+        {
+          "slug": "out-adv",
+          "note": null
+        }
+      ],
+      "compare": [],
+      "subsenses": [],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "in-and-out",
+      "text": "in and out",
+      "definition": "going into a place and leaving it again many times",
+      "explanation": "Often with **of**: *in and out of the hospital* means staying there many times over a long period.",
+      "labels": {
+        "register": [],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "People were in and out of the office all morning.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "My grandfather has been in and out of the hospital this year.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
       "slug": "in-prep",
@@ -311,7 +440,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "**In** is an adverb when no noun follows it (*Come in*); with a noun after it, it is a preposition (*in the room*). Phrasal verbs formed with it, such as **give in** and **fill in**, are treated as separate entries.",
+  "usage_note": "**In** is an adverb when no noun follows it (*Come in*); with a noun after it, it is a preposition (*in the room*). When **in** means *fashionable* (*Bright colors are in this year*), it is an adjective.",
   "learner_errors": [
     {
       "incorrect": "She isn't in home today.",
@@ -324,6 +453,10 @@
     {
       "slug": "into-prep",
       "note": null
+    },
+    {
+      "slug": "in-adj",
+      "note": "fashionable"
     }
   ],
   "adaptation": {
@@ -336,7 +469,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-15T13:17:20Z",
-    "modified": "2026-10-15T13:27:00Z",
+    "modified": "2026-11-27T06:29:58Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261015T131417Z-xeqhmd",
     "reviews": [
@@ -357,6 +490,26 @@
         "date": "2026-10-15",
         "file": "reviews/20261015T131417Z-xeqhmd/in-adv.json",
         "ok": 52,
+        "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261127T062112Z-arwh4a",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-27",
+        "file": "reviews/20261127T062112Z-arwh4a/in-adv.json",
+        "ok": 62,
+        "issues": 9,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261127T062112Z-arwh4a",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-27",
+        "file": "reviews/20261127T062112Z-arwh4a/in-adv.json",
+        "ok": 70,
         "issues": 0,
         "blocking": 0
       }
