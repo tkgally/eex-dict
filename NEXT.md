@@ -1,11 +1,11 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-27 after run arwh4a, cycle 2 (lint).*
+*Rewritten 2026-11-27 after run arwh4a, cycle 3 (originality).*
 
 ## State
 
 - 4,741 entries, all `reviewed`. Site checked 2026-11-22 (79 of 79). Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Next weekly digest due 2026-11-28.
-- Spend 2026-11-27: US$0.22 of US$15 so far. Originality: last 2026-11-21 (one rewritten).
+- Spend 2026-11-27: US$0.22 of US$15 so far. Originality: last 2026-11-27 (none rewritten).
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
