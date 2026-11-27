@@ -105,7 +105,7 @@
           ]
         },
         {
-          "type": "adverb + verb",
+          "type": "verb + adverb",
           "items": [
             "learn quickly",
             "learn fast"
@@ -149,7 +149,8 @@
         "patterns": [
           "verb + that-clause",
           "verb + preposition + object",
-          "verb + wh-clause"
+          "verb + wh-clause",
+          "verb + object"
         ]
       },
       "labels": {
@@ -224,7 +225,8 @@
         "codes": [],
         "patterns": [
           "verb + preposition + object",
-          "verb + object"
+          "verb + object",
+          "verb + to-infinitive"
         ]
       },
       "labels": {
@@ -250,6 +252,11 @@
           "text": "He learned the hard way that it's better to save money.",
           "note": null,
           "pattern": null
+        },
+        {
+          "text": "It's noisy here, but you'll learn to live with it.",
+          "note": null,
+          "pattern": "verb + to-infinitive"
         }
       ],
       "collocations": [
@@ -362,17 +369,12 @@
     ],
     "note": "**Study** is the activity of reading, practicing, and going to classes: *she studies every evening*. **Learn** is the result, getting the knowledge or the skill: *you can study a language for years and still not learn it well*. **Teach** is what the other person does: a teacher **teaches** you, and you **learn**."
   },
-  "usage_note": "The past form is **learned** in American English; **learnt** is also common in British English. **Learn to do something** and **learn how to do something** mean the same: *she learned (how) to swim*. The adjective **learned** (*a learned man*, someone who has read and studied a lot) is a different word, said in two parts: *LUR-nid*.",
+  "usage_note": "*Learn to do something* and *learn how to do something* mean the same: *she learned (how) to swim*. The adjective **learned** (*a learned man*, someone who has read and studied a lot) is a different word, said in two parts: *LUR-nid*.",
   "learner_errors": [
     {
       "incorrect": "Can you learn me English?",
       "correct": "Can you teach me English?",
       "note": "The person who gives the knowledge **teaches**; the person who gets it **learns**."
-    },
-    {
-      "incorrect": "I learned English to my little sister.",
-      "correct": "I taught English to my little sister.",
-      "note": "**Learn** does not take the person taught as an object; use **teach**."
     },
     {
       "incorrect": "I'm learning for my exam tomorrow.",
@@ -392,7 +394,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-09-26T18:59:03Z",
-    "modified": "2026-11-01T00:58:20Z",
+    "modified": "2026-11-27T12:23:41Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20260926T185648Z-iujuq0",
     "reviews": [
@@ -434,6 +436,26 @@
         "file": "reviews/20261002T204414Z-ex25pd/learn-v.json",
         "ok": 52,
         "issues": 0,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261127T121658Z-4k0wpu",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-27",
+        "file": "reviews/20261127T121658Z-4k0wpu/learn-v.json",
+        "ok": 50,
+        "issues": 4,
+        "blocking": 0
+      },
+      {
+        "run_id": "20261127T121658Z-4k0wpu",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-27",
+        "file": "reviews/20261127T121658Z-4k0wpu/learn-v.json",
+        "ok": 50,
+        "issues": 5,
         "blocking": 0
       }
     ],
