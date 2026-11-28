@@ -207,7 +207,95 @@
         }
       ],
       "compare": [],
-      "subsenses": [],
+      "subsenses": [
+        {
+          "letter": "a",
+          "definition": "seeming to last more time than it really does, because it is tiring, boring, or difficult",
+          "explanation": null,
+          "grammar": {
+            "countability": null,
+            "transitivity": null,
+            "codes": [],
+            "patterns": []
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "It's been a long day, and I just want to go to bed.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "The last week before the holidays always feels long.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "adjective + noun",
+              "items": [
+                "a long day",
+                "a long week",
+                "a long night"
+              ]
+            }
+          ]
+        },
+        {
+          "letter": "b",
+          "definition": "taking a lot of time to do something, or before something happens",
+          "explanation": "Used after **be**, mostly in negatives and questions.",
+          "grammar": {
+            "countability": null,
+            "transitivity": null,
+            "codes": [
+              "predicative only"
+            ],
+            "patterns": []
+          },
+          "labels": {
+            "register": [],
+            "region": [],
+            "domain": [],
+            "currency": [],
+            "attitude": []
+          },
+          "examples": [
+            {
+              "text": "Don't be long; dinner's almost ready.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "I won't be long. I'm just going to the store.",
+              "note": null,
+              "pattern": null
+            },
+            {
+              "text": "It won't be long before the baby starts walking.",
+              "note": null,
+              "pattern": null
+            }
+          ],
+          "collocations": [
+            {
+              "type": "phrase",
+              "items": [
+                "won't be long",
+                "don't be long",
+                "it won't be long before"
+              ]
+            }
+          ]
+        }
+      ],
       "adaptation": {
         "semantic": null,
         "grammar": null,
@@ -350,7 +438,73 @@
       "l1": {}
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "sub_id": "the-long-and-the-short-of-it",
+      "text": "the long and the short of it",
+      "definition": "the main point of a situation, put simply",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "The long and the short of it is that we can't afford a new car.",
+          "note": null,
+          "pattern": null
+        },
+        {
+          "text": "I won't tell you every detail; the long and the short of it is that she said yes.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    },
+    {
+      "sub_id": "be-long-on-something",
+      "text": "be long on something",
+      "definition": "have a lot of something, often in place of something more useful",
+      "explanation": null,
+      "labels": {
+        "register": [
+          "informal"
+        ],
+        "region": [],
+        "domain": [],
+        "currency": [],
+        "attitude": []
+      },
+      "examples": [
+        {
+          "text": "The plan is long on promises but short on details.",
+          "note": null,
+          "pattern": null
+        }
+      ],
+      "adaptation": {
+        "semantic": null,
+        "grammar": null,
+        "culture": null,
+        "false_friends": null,
+        "pronunciation": null
+      },
+      "l1": {}
+    }
+  ],
   "word_family": [
     {
       "slug": "length-n",
@@ -374,7 +528,7 @@
     }
   ],
   "synonym_discrimination": null,
-  "usage_note": "In questions and negatives, **long** alone is often an adverb: *Have you waited long?*, *I can't stay long*. In positive statements, **a long time** is more usual: *I waited a long time*, not usually *I waited long*. See **long** (adverb).",
+  "usage_note": "In questions and negatives, **long** alone is usually the adverb (*Have you waited long?*); see that entry.",
   "learner_errors": [
     {
       "incorrect": "I waited there long time.",
@@ -400,7 +554,7 @@
   ],
   "adaptation": {
     "semantic": "Some languages use different words for length in space and length in time. English uses **long** for both: *a long road*, *a long meeting*.",
-    "grammar": "With a measurement, **long** comes after the number and unit: *two meters long*, *an hour long*. Before a noun, the parts are joined by hyphens and the unit stays singular: *a two-hour-long meeting*.",
+    "grammar": null,
     "culture": null,
     "false_friends": null,
     "pronunciation": null
@@ -408,7 +562,7 @@
   "l1": {},
   "provenance": {
     "created": "2026-10-12T00:46:33Z",
-    "modified": "2026-10-12T13:38:41Z",
+    "modified": "2026-11-28T06:45:12Z",
     "drafted_by": "anthropic/claude-sonnet-5",
     "run_id": "20261012T004401Z-sq5thd",
     "reviews": [
@@ -431,6 +585,26 @@
         "ok": 52,
         "issues": 0,
         "blocking": 0
+      },
+      {
+        "run_id": "20261128T063837Z-qzzyaf",
+        "role": "reviewer-a",
+        "model": "claude-cli/claude-sonnet-5-5",
+        "date": "2026-11-28",
+        "file": "reviews/20261128T063837Z-qzzyaf/long-adj.json",
+        "ok": 60,
+        "issues": 7,
+        "blocking": 1
+      },
+      {
+        "run_id": "20261128T063837Z-qzzyaf",
+        "role": "reviewer-b",
+        "model": "google/gemini-4-argon",
+        "date": "2026-11-28",
+        "file": "reviews/20261128T063837Z-qzzyaf/long-adj.json",
+        "ok": 63,
+        "issues": 3,
+        "blocking": 1
       }
     ],
     "status": "reviewed",
