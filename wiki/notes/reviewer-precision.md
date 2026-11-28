@@ -277,3 +277,7 @@ No switch-offs. `reviewer-a:claude-sonnet-5-5` rose from 0.86 (272/316) to 0.80 
 ## 2026-11-27: hundred-and-nineteenth pass, no new switch-offs
 
 `reviewer-a:claude-sonnet-5-5` 0.85 (8500/9983). `reviewer-b:gemini-4-argon` 0.84 (3741/4456); `spelling-or-format` 0.41 (157/380), live by the owner's ruling; `inflection` 0.41 (12/29), above the line. The pairs under the line (`reviewer-a` `inflection` 0.21, `reviewer-b` `phrase` 0.20 and `pronunciation` 0.28) are already off.
+
+## 2026-11-28: hundred-and-twentieth pass, no new switch-offs
+
+`reviewer-a:claude-sonnet-5-5` 0.85 (8709/10247). `reviewer-b:gemini-4-argon` 0.84 (3836/4567); `spelling-or-format` 0.42 (164/390), live by the owner's ruling; `inflection` 0.41 (12/29), above the line. The pairs under the line (`reviewer-a` `inflection` 0.21, `reviewer-b` `phrase` 0.20 and `pronunciation` 0.28) are already off.

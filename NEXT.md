@@ -1,11 +1,11 @@
 # NEXT.md — baton (cap 60 lines and 1,000 words; rewrite, don't append; history lives in wiki/log.md)
 
-*Rewritten 2026-11-28 after run qzzyaf, cycle 2 (review).*
+*Rewritten 2026-11-28 after run qzzyaf, cycle 3 (lint).*
 
 ## State
 
 - 4,794 entries, all `reviewed`. Site checked 2026-11-22. Milestone 1 done; closure open, bands 1 and 2 only (A3); `closure` source empty; `family` rows now, then `crossref`. Weekly digest written 2026-11-28; next due 2026-12-05.
-- Spend 2026-11-28: US$0.60 of US$15 so far. Originality: last 2026-11-27.
+- Spend 2026-11-28: US$0.61 of US$15 so far. Originality: last 2026-11-27.
 - Reviewer A: Claude, $0; on failure re-run `--roles reviewer-a`. Reviewer B and pronunciation-1: [model-refresh](wiki/decisions/model-refresh-2026-10-25.md).
 
 ## Queue (top-down)
@@ -19,7 +19,7 @@
 2. **originality**: ask reviewer-b once; search quoted wording.
 3. **review**: Reject reviewer-b on quotes in examples, phrasal verbs or compounds as senses, idioms keyed elsewhere, hand marks. `verb + adjective` is not a collocation type; *usually passive* is a pattern, not a code. Reviewer A calling `comparative with more` "not a grammar code" or noun modifiers (*peak season*) adjectives: reject.
 4. **closure**: paused above band 2 (A3). `family` rows built through `yellow-n` and now `affordable-adj` to `bottom-adj` (`bloody-adv` queued); Hand-claim `pop-n-3` (father), `ray-n-2` (fish). `rite-n` (*rite of passage*). `goods-n`, `drug-n`: overlapping notes. `killer-adj` takes *a killer smile*, *a killer app*. Hand-claim `fit-n-2` (seizure; *have a fit*) and `fold-n-2` (sheep; *return to the fold*). `beat-n`: add *march to the beat of a different drummer*. Move *make the best of a bad job* from `job-n` to `best-n` when built. Add the mushroom-top subsense to `cap-n`. Hand-claim `match-n-2` (fire stick), `rocket-n-2`, `corn-n-2` (foot), `story-n-2` (floor), `file-v-2` (tool); link `bat-n`, `bit-n` to their `-2` homographs at next review. Idioms: *blow someone's mind* and *spring to mind* (`mind-n`), *spring a leak* (`leak-n` when built), *leave of absence* (`leave-n` when built), *defeat the purpose* (`purpose-n`); move *a state of affairs* from `affair-n` to `state-n` when `affair-n` is next reviewed; *blow the whistle on* to `whistle-n`; add *anything but* to `anything-pron`, *nothing but* to `nothing-pron`; add *God forbid* to `god-n`. 
-5. **lint**: every ten cycles; last 2026-11-27 (119th). Switched off: reviewer A `inflection`, reviewer B `phrase` and `pronunciation`. 
+5. **lint**: every ten cycles; last 2026-11-28 (120th). Switched off: reviewer A `inflection`, reviewer B `phrase` and `pronunciation`. 
 6. **Tooling**: `queue-hyphen-loss` by hand.
 
 ## Fences (do not re-grind)
